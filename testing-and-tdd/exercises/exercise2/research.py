@@ -1,17 +1,17 @@
 
 class ResearchSubjects:
     def __init__(self):
-        self.collection = []
+        self.__collection = {}
 
     def add(self, subject_to_add):
-        assert self.find(subject_to_add.identifier) is None, f" Subject {subject_to_add.identifier} already exists"
-        self.collection.append(subject_to_add)
+        assert subject_to_add.identifier not in self.__collection, f" Subject {subject_to_add.identifier} already exists"
+        self.__collection[subject_to_add.identifier] = subject_to_add
 
     def find(self, identifier):
-        return next(filter(lambda s: s.identifier == identifier, self.collection), None)
+        return self.__collection.get(identifier)
 
     def remove(self, identifier):
-        self.collection = list(filter(lambda s: s.identifier != identifier, self.collection))
+        del self.__collection[identifier]
 
     def update(self, updated_subject):
         self.remove(updated_subject.identifier)
