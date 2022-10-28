@@ -1,5 +1,5 @@
 
-from ..word_wrapper import wrap_words
+from word_wrapper import wrap_words
 
 def test_lgth():
     teststr = "A"*30
