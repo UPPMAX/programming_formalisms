@@ -11,3 +11,12 @@
 
 ## Introduction day
 <https://uppmax.github.io/programming_formalisms_intro/index.html>
+
+## Schedule
+
+[This is to show off to Lars]
+
+Day | Teacher | Topic
+----|---------|-------------------------------------------
+?1  | RB      | [TDD](tdd/README.md)
+?1  | RB      | [Optimalisation](optimalisation/README.md)
