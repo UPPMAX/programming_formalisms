@@ -1,4 +1,4 @@
-# Programming formalism
+# Programming formalisms
 - Course Repository for programming formalism course.
 - Under this projects, notes, excersises and lecture slides will be stored.
 
@@ -6,4 +6,4 @@
 
 
 ## Introduction day
-<https://uppmax.github.io/programming_formalism_intro/index.html>
+<https://uppmax.github.io/programming_formalisms_intro/index.html>
