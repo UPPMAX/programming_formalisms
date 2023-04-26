@@ -11,7 +11,7 @@
 
 Day | Teacher | Topic
 ----|---------|-------------------------------------------
-1   | BC      | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html){:target="_blank"}
+1   | BC      | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html)
 2   | LE      | [Needleman-Wunsch activity](DevelopmentDesign/Needleman_Wunsch_activity.md)
 2   | LE      | [Paradigms](DevelopmentDesign/README.md)
 2   | J?      | social coding
