@@ -4,13 +4,6 @@
 
 - Please view the setup.md file for preparations
 
- * [Needleman-Wunsch activity](DevelopmentDesign/Needleman_Wunsch_activity.md)
- * [Paradigms](DevelopmentDesign/README.md)
- * [TDD](tdd/README.md)
- * [Optimalisation](optimalisation/README.md)
-
-## Introduction day
-<https://uppmax.github.io/programming_formalisms_intro/index.html>
 
 ## Schedule
 
@@ -18,5 +11,11 @@
 
 Day | Teacher | Topic
 ----|---------|-------------------------------------------
-?1  | RB      | [TDD](tdd/README.md)
-?1  | RB      | [Optimalisation](optimalisation/README.md)
+1   | BC      | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html){:target="_blank"}
+2   | LE      | [Needleman-Wunsch activity](DevelopmentDesign/Needleman_Wunsch_activity.md)
+2   | LE      | [Paradigms](DevelopmentDesign/README.md)
+2   | J?      | social coding
+3   | LE      | Modular programming
+3   | RB      | [TDD](tdd/README.md)
+4   | ?       | Algorithms
+5   | RB      | [Optimalisation](optimalisation/README.md)
