@@ -5,7 +5,7 @@
 - Please view the setup.md file for preparations
 
  * [Needleman-Wunsch activity](DevelopmentDesign/Needleman_Wunsch_activity.md)
- * [Paradigms](DevelopmentDesign/notes_paradigms.md)
+ * [Paradigms](DevelopmentDesign/README.md)
  * [TDD](testing-and-tdd/README.md)
 
 ## Introduction day
