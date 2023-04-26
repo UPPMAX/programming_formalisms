@@ -136,9 +136,11 @@ https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
 ## TDD Test Driven Development
 
 Test-Driven Development (TDD) is a methodology in software development that focuses on an iterative development cycle where the emphasis is placed on writing test cases before the actual feature or function is written. The iterative cycle in TDD is often refered to as the RED-GREEN-REFACTOR were code first fails the test, the code is then modified until it succeds the test, lastly the code is refactored
- <image src="./img/TDD_Global_Lifecycle.png">
+ 
+  <image src="./img/TDD_Global_Lifecycle.png">
    <span style="font-size:10px">image contributated from Xarawn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons and released to the public domain with the afformention licens</span>
-The three laws of TDD
+
+ The three laws of TDD
 1.You are not allowed to write any production code unless it is to make a failing unit test pass.
 2.You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 3.You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
