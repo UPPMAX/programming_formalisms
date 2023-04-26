@@ -134,6 +134,15 @@ https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
    <span style="font-size:10px">The loops of eXtremeProgramming </span>
 
 ## TDD Test Driven Development
+Test-Driven Development (TDD) is a methodology in software development that focuses on an iterative development cycle where the emphasis is placed on writing test cases before the actual feature or function is written. The iterative cycle in TDD is often refered to as the RED-GREEN-REFACTOR were code first fails the test, the code is then modified until it succeds the test, lastly the code is refactored
+  
+The three laws of TDD
+1.You are not allowed to write any production code unless it is to make a failing unit test pass.
+2.You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+3.You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
+  http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
+
+
 TDD will be covered in detail elsewhere, but the genreal idea of TDD is to generate roubust solutions through the use of test for the whole life cycle.
 
 ## AGILE Development and the The AGILE manifesto
@@ -447,3 +456,6 @@ Some examples of where this pattern has been implemented in modern times are:
 - [Laravel](https://laravel.com/) PHP framework
 - [Angular](https://angular.io/) is built using TypeScript
 A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Obejct-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
+    
+ ### AI assisted programming
+    With the emergence of more complex AI and espceially the use of LLM(Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space.
