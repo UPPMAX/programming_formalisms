@@ -7,6 +7,7 @@
  * [Needleman-Wunsch activity](DevelopmentDesign/Needleman_Wunsch_activity.md)
  * [Paradigms](DevelopmentDesign/README.md)
  * [TDD](tdd/README.md)
+ * [Optimalisation](optimalisation/README.md)
 
 ## Introduction day
 <https://uppmax.github.io/programming_formalisms_intro/index.html>
