@@ -7,8 +7,6 @@
 
 ## Schedule
 
-[This is to show off to Lars]
-
 Day | Teacher | Topic
 ----|---------|-------------------------------------------
 1   | BC      | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html)
