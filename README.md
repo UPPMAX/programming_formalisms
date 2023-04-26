@@ -6,4 +6,4 @@
 
 
 ## Introduction day
-<https://uppmax.github.io/programming_formalism_intro/index.html>
+<https://uppmax.github.io/programming_formalisms_intro/index.html>
