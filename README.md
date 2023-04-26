@@ -4,6 +4,7 @@
 
 - Please view the setup.md file for preparations
 
+ * [TDD](testing-and-tdd/README.md)
 
 ## Introduction day
 <https://uppmax.github.io/programming_formalisms_intro/index.html>
