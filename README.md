@@ -1,5 +1,5 @@
 # Programming formalisms
-- Course Repository for programming formalism course.
+- Course Repository for programming formalisms course.
 - Under this projects, notes, excersises and lecture slides will be stored.
 
 - Please view the setup.md file for preparations
