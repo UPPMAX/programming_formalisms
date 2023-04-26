@@ -1,4 +1,7 @@
 # Programming formalisms
+
+![](Formalism.png)
+
 - Course Repository for programming formalisms course.
 - Under this projects, notes, excersises and lecture slides will be stored.
 
