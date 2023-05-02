@@ -24,3 +24,4 @@ Day | Teacher | Topic
 ## Links
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
+ * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
