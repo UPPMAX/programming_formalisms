@@ -18,5 +18,9 @@ Day | Teacher | Topic
 2   | J?      | [social coding](https://github.com/UPPMAX/programming_formalisms/tree/main/common-practices)
 3   | LE      | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
 3   | RB      | [TDD](tdd/README.md)
-4   | ?       | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)
+4   | RB      | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)
 5   | RB      | [Optimalisation](optimalisation/README.md)
+
+## Links
+
+ * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
