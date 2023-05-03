@@ -10,16 +10,17 @@
 
 ## Schedule
 
-Day | Teacher | Topic
-----|---------|-------------------------------------------
-1   | BC      | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html)
-2   | LE      | [Needleman-Wunsch activity](DevelopmentDesign/Needleman_Wunsch_activity.md)
-2   | LE      | [Paradigms](DevelopmentDesign/README.md)
-2   | J?      | [social coding](https://github.com/UPPMAX/programming_formalisms/tree/main/common-practices)
-3   | LE      | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
-3   | RB      | [TDD](tdd/README.md)
-4   | RB      | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)
-5   | RB      | [Optimalisation](optimalisation/README.md)
+Day | Time | Teacher | Topic
+----|----|-----|-------------------------------------------
+Mon |9-12, 13-16 |BC      | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html)
+Tue |9-12| LE|[Paradigms, Introduction to formalised development](DevelopmentDesign/README.md) 
+Tue  |13-16| RB | [Introduction to Test driven development (TDD)](tdd/README.md) 
+Wed  | 9-12| LE|[social coding, pair programming as  a tool for rapid development](https://github.com/UPPMAX/programming_formalisms/tree/main/common-practices)
+Wed   | 13-16|RB      | [TDD](tdd/README.md)
+Thu | 9-12 |RB      | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)
+Thu  |13-16 |RB      | [TDD](tdd/README.md)
+Fri | 9-12 |LE| [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
+Fri |13-16|RB| [Optimalisation](optimalisation/README.md)
 
 ## Links
 
