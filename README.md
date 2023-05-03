@@ -20,7 +20,7 @@ Wed |13-16       |RB       | [TDD](tdd/README.md)
 Thu |9-12        |RB       | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)
 Thu |13-16       |RB       | [TDD](tdd/README.md)
 Fri |9-12        |LE       | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
-Fri |13-16       |RB       | [Optimalisation](optimalisation/README.md)
+Fri |13-16       |RB       | [Optimisation](optimisation/README.md)
 
 ## Links
 
