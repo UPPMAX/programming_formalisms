@@ -12,10 +12,7 @@
    * Use picture of course
 
 ```
-//create_analysis("input.csv").run().save("output.csv")
-analysis a{"input.csv"};
-a.run();
-save(a, "output.csv");
+do_analysis()
 ```
 
  * Problem 2: when do you trust your program? If testing, when are you done testing?
@@ -57,4 +54,11 @@ save(a, "output.csv");
 
  * Project: refactor own code
 
- * Evaluation: view random students' GH commit history
+ * Evaluation: 
+  * Students have a Red-Green-Blue GitHub commit history
+  * Students have GHA enabled, code breaks sometimes
+
+ * Technical needs: 
+    * [Lars] List of student names
+    * [Lars] Zoom: `r number_of_students / 2` group rooms, everyone can screen share
+    * [Students]: GitHub account
