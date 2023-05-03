@@ -26,4 +26,4 @@ Fri |13-16|RB| [Optimalisation](optimalisation/README.md)
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
- * [Canvas page of this course](https://uppsala.instructure.com/courses/69215),with code 'NBIS_CS_FORM_HT22'
+ 
