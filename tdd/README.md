@@ -11,6 +11,13 @@
  * Problem 1: how do you grow/develop your code?
    * Use picture of course
 
+```
+//create_analysis("input.csv").run().save("output.csv")
+analysis a{"input.csv"};
+a.run();
+save(a, "output.csv");
+```
+
  * Problem 2: when do you trust your program? If testing, when are you done testing?
 
  * Learning goal: practice TDD cycle 5 times, 3x easy, 2x medium
