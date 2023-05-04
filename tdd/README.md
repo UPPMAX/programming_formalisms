@@ -11,6 +11,8 @@ Description                                 |PDF                  |HTML         
 [TDD 1 exercises](tdd_1_exercises/README.md)|`tdd_1_exercises.pdf`|`tdd_1_exercises.html`|`tdd_1_exercises/tdd_1_exercises.qmd`
 [TDD 2 exercises](tdd_2_exercises/README.md)|`tdd_2_exercises.pdf`|`tdd_2_exercises.html`|`tdd_2_exercises/tdd_2_exercises.qmd`
 
+:construction: the `code layout`-ed items will become links in the future :construction:
+
 ## Links
 
  * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
