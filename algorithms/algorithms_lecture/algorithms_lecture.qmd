@@ -1,0 +1,62 @@
+---
+title: "Algorithms"
+author: "Richèl Bilderbeek"
+format: revealjs
+editor: visual
+---
+
+## Algorithms
+
+![](programming_formalism_course.png) 
+
+## Problem
+
+How to write a good function?
+
+## What is a good function?
+
+A good function:
+
+ * Has a clear name
+ * Does one thing correctly
+ * Is tested
+ * Is documented
+ * Fast iff needed
+
+References:
+
+ * [C++ Core Guidelines on functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions)
+ * [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
+ * [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts) 
+ * ([PEP 20: The Zen of Python](https://peps.python.org/pep-0020/))
+
+## Definition of a good function in this course
+
+A non-technical person can agree/disagree that the tests are valid
+
+## Overview
+
+ * Types of algorithms
+ * Common data structures
+ * Big O complexity
+ * Parallelisms
+
+
+## Code
+
+::: columns
+::: {.column width="50%"}
+```{python}
+#| echo: true
+print("Hello from Python")
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+print("Hello from R")
+```
+:::
+:::
+
