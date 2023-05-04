@@ -1,7 +1,5 @@
 # TDD
 
- * Teacher: Richèl Bilderbeek
-
 ## Course material
 
 Description                                 |PDF                  |HTML                  |QMD
