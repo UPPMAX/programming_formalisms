@@ -4,65 +4,12 @@
 
 ## Course material
 
- * Lectures TDD 1: `tdd_1_lecture.pdf` (PDF) `tdd_1_lecture.html` (HTML) `tdd_1_lecture/tdd_1_lecture.qmd` (QMD) :construction:
- * Lectures TDD 2: `tdd_2_lecture.pdf` (PDF) `tdd_2_lecture.html` (HTML) `tdd_2_lecture/tdd_2_lecture.qmd` (QMD) :construction:
- * Exercises TDD 1: `tdd_1_exercises.pdf` (PDF) `tdd_1_exercises.html` (HTML) `tdd_1_exercises/tdd_1_exercises.qmd` (QMD) :construction:
- * Exercises TDD 2: `tdd_2_exercises.pdf` (PDF) `tdd_2_exercises.html` (HTML) `tdd_2_exercises/tdd_2_exercises.qmd` (QMD) :construction:
-
-## Chunk 1: no pair programming yet
-
-```
-do_analysis()
-```
-
- * Problem 2: when do you trust your program? If testing, when are you done testing?
-
- * Learning goal: practice TDD cycle 5 times, 3x easy, 2x medium
-
-  * is_zero
-  * is_odd/is_even
-  * divide (include division by zero)
-  * add (including overflow!)
-  * can_divide_by_three
-  * sum_digits
-  * get_array_length
-  * is_palindrome (string)
-  * is_palindrome (number)
-  * get_proper_divisors
-  * is_prime
-  * is_roman_str
-  * to_roman_str
-  * roman_str_to_number
-  * is_perfect
-  * [calc_n_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
-
- * Evaluation: 
-   * View random students' GH commit history
-   * Let random students demonstrate the TDD cycle
-   * Ask: why TDD?
-
- * Technical needs: 
-    * [Lars] List of student names
-    * [Lars] Zoom: `r number_of_students / 2` group rooms, everyone can screen share
-    * [Students]: GitHub account
-
-## Chunk 2: pair programming
-
- * Problem 1: when do you trust someone else's program? How do you talk?
-
- * Learning goal: practice TDD cycle 5 times with CI, 1x easy, 2x medium, 1x hard
-
- * Project: refactor own code
-
- * Evaluation: 
-  * Students have a Red-Green-Blue GitHub commit history
-  * Students have GHA enabled, code breaks sometimes
-
- * Technical needs: 
-    * [Lars] List of student names
-    * [Lars] Zoom: `r number_of_students / 2` group rooms, everyone can screen share
-    * [Students]: GitHub account
-
+Description                                 |PDF                  |HTML                  |QMD
+--------------------------------------------|---------------------|----------------------|------------------------------------
+[TDD 1 lecture](tdd_1_lecture/README.md)    |`tdd_1_lecture.pdf`  |`tdd_1_lecture.html`  |`tdd_1_lecture/tdd_1_lecture.qmd`
+[TDD 2 lecture](tdd_2_lecture/README.md)    |`tdd_2_lecture.pdf`  |`tdd_2_lecture.html`  |`tdd_2_lecture/tdd_2_lecture.qmd`
+[TDD 1 exercises](tdd_1_exercises/README.md)|`tdd_1_exercises.pdf`|`tdd_1_exercises.html`|`tdd_1_exercises/tdd_1_exercises.qmd`
+[TDD 2 exercises](tdd_2_exercises/README.md)|`tdd_2_exercises.pdf`|`tdd_2_exercises.html`|`tdd_2_exercises/tdd_2_exercises.qmd`
 
 ## Links
 
