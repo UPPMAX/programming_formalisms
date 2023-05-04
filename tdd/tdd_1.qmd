@@ -1,0 +1,32 @@
+---
+title: "TDD 1"
+author: "Richèl Bilderbeek"
+format: revealjs
+editor: visual
+---
+
+## Code
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{python}
+#| echo: true
+print("Hello from Python")
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| echo: true
+print("Hello from R")
+```
+
+:::
+
+::::
+
+

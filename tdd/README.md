@@ -6,7 +6,7 @@
 
  * [Project Euler](https://projecteuler.net/archives): plenty of programming problems
 
-## Chunk 1
+## Chunk 1: no pair programming yet
 
  * Problem 1: how do you grow/develop your code?
    * Use picture of course
@@ -46,7 +46,7 @@ do_analysis()
     * [Lars] Zoom: `r number_of_students / 2` group rooms, everyone can screen share
     * [Students]: GitHub account
 
-## Chunk 2
+## Chunk 2: pair programming
 
  * Problem 1: when do you trust someone else's program? How do you talk?
 
