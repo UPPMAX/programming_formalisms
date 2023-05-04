@@ -1,15 +1,15 @@
 # TDD
 
-[taught by Richel], 
-[this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
-[with some nice other problems at leetcode as well](https://leetcode.com/problemset/all/)
+ * Teacher: Richèl Bilderbeek
 
- * [Project Euler](https://projecteuler.net/archives): plenty of programming problems
+## Course material
+
+ * Lectures TDD 1: `tdd_1.pdf` (PDF) `tdd_1.html` (HTML) :construction:
+ * Lectures TDD 2: `tdd_2.pdf` (PDF) `tdd_2.html` (HTML) :construction:
+ * Exercises TDD 1: `tdd_1_exercises.md` :construction:
+ * Exercises TDD 2: `tdd_2_exercises.md` :construction:
 
 ## Chunk 1: no pair programming yet
-
- * Problem 1: how do you grow/develop your code?
-   * Use picture of course
 
 ```
 do_analysis()
@@ -62,3 +62,10 @@ do_analysis()
     * [Lars] List of student names
     * [Lars] Zoom: `r number_of_students / 2` group rooms, everyone can screen share
     * [Students]: GitHub account
+
+
+## Links
+
+ * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
+ * `https://leetcode.com/problemset/all/`: many simple questions
+ * [Project Euler](https://projecteuler.net/archives): plenty of programming problems

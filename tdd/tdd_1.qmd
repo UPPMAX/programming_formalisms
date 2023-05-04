@@ -5,28 +5,27 @@ format: revealjs
 editor: visual
 ---
 
+## TDD
+
+![](programming_formalism_course.png)
+## Problem
+
+How do you grow/develop your code?
+
 ## Code
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-
 ```{python}
 #| echo: true
 print("Hello from Python")
 ```
-
 :::
 
 ::: {.column width="50%"}
-
 ```{r}
 #| echo: true
 print("Hello from R")
 ```
-
 :::
-
-::::
-
-
+:::
