@@ -7,7 +7,8 @@ editor: visual
 
 ## TDD
 
-![](programming_formalism_course.png)
+![](programming_formalism_course.png) 
+
 ## Problem
 
 How do you grow/develop your code?

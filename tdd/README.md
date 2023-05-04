@@ -4,10 +4,10 @@
 
 ## Course material
 
- * Lectures TDD 1: `tdd_1.pdf` (PDF) `tdd_1.html` (HTML) :construction:
- * Lectures TDD 2: `tdd_2.pdf` (PDF) `tdd_2.html` (HTML) :construction:
- * Exercises TDD 1: `tdd_1_exercises.md` :construction:
- * Exercises TDD 2: `tdd_2_exercises.md` :construction:
+ * Lectures TDD 1: `tdd_1_lecture.pdf` (PDF) `tdd_1_lecture.html` (HTML) `tdd_1_lecture/tdd_1_lecture.qmd` (QMD) :construction:
+ * Lectures TDD 2: `tdd_2_lecture.pdf` (PDF) `tdd_2_lecture.html` (HTML) `tdd_2_lecture/tdd_2_lecture.qmd` (QMD) :construction:
+ * Exercises TDD 1: `tdd_1_exercises.pdf` (PDF) `tdd_1_exercises.html` (HTML) `tdd_1_exercises/tdd_1_exercises.qmd` (QMD) :construction:
+ * Exercises TDD 2: `tdd_2_exercises.pdf` (PDF) `tdd_2_exercises.html` (HTML) `tdd_2_exercises/tdd_2_exercises.qmd` (QMD) :construction:
 
 ## Chunk 1: no pair programming yet
 
