@@ -36,7 +36,7 @@ Short for 'Test-driven development' A systematic way to grow code
 
 ![](tdd_cycle_2.jpg)
 
-## First test case
+## First example: `is_zero`
 
 -   Function name: `is_zero`
 -   Output:
@@ -44,7 +44,7 @@ Short for 'Test-driven development' A systematic way to grow code
     -   Returns `False`/`FALSE` if the input is not zero
     -   :warning: Gives an error when the input is not a number
 
-## Red: write a test that breaks
+## Cycle 1, red: write a test that breaks
 
 ::: columns
 ::: {.column width="50%"}
@@ -71,7 +71,7 @@ expect_true(is_zero(0))
 
 :monocle_face: Is this code run?
 
-## Green: make the test pass
+## Cycle 1, green: make the test pass
 
 ::: columns
 ::: {.column width="50%"}
@@ -102,7 +102,7 @@ expect_true(is_zero(0))
 :::
 :::
 
-## Blue: refactor and commit
+## Cycle 1, blue: refactor and commit
 
 ```         
 git add .
@@ -112,7 +112,7 @@ git push
 
 ![](organised_male_programmer.png)
 
-## Red: write a test that breaks
+## Cycle 2, red: write a test that breaks
 
 ::: columns
 ::: {.column width="50%"}
@@ -121,12 +121,8 @@ git push
 ```{python}
 #| echo: true
 #| eval: false
-has_thrown = False
-try:
-  is_zero("")
-except:
-  has_thrown = True
-assert has_thrown
+assert is_zero(0)
+assert not is_zero(42)
 ```
 :::
 
@@ -138,12 +134,11 @@ assert has_thrown
 #| eval: false
 expect_true(is_zero(0))
 expect_false(is_zero(42))
-expect_error(is_zero(""))
 ```
 :::
 :::
 
-## Green: make the test pass
+## Cycle 2, green: make the test pass
 
 ::: columns
 ::: {.column width="50%"}
@@ -157,6 +152,9 @@ def is_zero(x):
 assert is_zero(0)
 assert not is_zero(42)
 ```
+
+:monocle_face: indent of 2 is non-standard, see [PEP 8](https://peps.python.org/pep-0008/)
+
 :::
 
 ::: {.column width="50%"}
@@ -176,7 +174,7 @@ expect_false(is_zero(42))
 :::
 :::
 
-## Blue: refactor and commit
+## Cycle 2, blue: refactor and commit
 
 ```         
 git add .
@@ -188,10 +186,11 @@ git push
 
 ## Reflection
 
-Q: Do developers really do this?
+Q: Do developers really do this? 
+
 A: Yes
 
-## Red: write a test that breaks
+## Cycle 3, red: write a test that breaks
 
 ::: columns
 ::: {.column width="50%"}
@@ -220,7 +219,7 @@ expect_error(is_zero(""))
 :::
 :::
 
-## Green: make the test pass
+## Cycle 3, green: make the test pass
 
 ::: columns
 ::: {.column width="50%"}
@@ -269,7 +268,7 @@ expect_error(is_zero(""))
 :::
 :::
 
-## Blue: refactor and commit
+## Cycle 3, blue: refactor and commit
 
 ```         
 git add .
@@ -279,14 +278,81 @@ git push
 
 ![](organised_male_programmer.png)
 
-## Exercise
+## Reflection
+
+Are we done?
+
+## Cycle 4, red: break the code
+
+::: columns
+::: {.column width="50%"}
+![](python_icon_26x32.png)
+
+```{python}
+#| echo: true
+#| eval: false
+assert not is_zero(0.1)
+```
+
+:no_mouth: This fails
+
+:::
+
+::: {.column width="50%"}
+![](r_icon_41x32.png)
+
+```{r}
+#| echo: true
+expect_false(is_zero(0.1))
+```
+
+:partying_face: This passes
+
+:::
+:::
+
+## Problem
+
+How many tests should I write?
+
+## Answer
+
+Until you cannot break your function anymore.
+
+## Exercise: `is_odd`
+
+`is_odd` is function that determines if a number is odd.
+
+ * Write the design document of `is_odd`
+ * Practice the TDD workflow
+
+![](chaotic_programmer.png)
+
+## Other exercises
+
+  * `is_even`
+  * `divide` (include division by zero)
+  * `add` (including overflow!)
+  * `can_divide_by_three`
+  * `sum_digits`
+  * `get_array_length`
+  * `is_palindrome` (string)
+  * `is_palindrome` (number)
+  * `get_proper_divisors`
+  * `is_prime`
+  * `is_roman_str`
+  * `to_roman_str`
+  * `roman_str_to_number`
+  * `is_perfect`
+  * [calc_n_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
+
 
 ## More complex tests
 
- * Arrange 
- * Act 
- * Assert
+-   Arrange
+-   Act
+-   Assert
 
 ## Links
 
- * [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
+-   [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)

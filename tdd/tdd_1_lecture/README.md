@@ -2,15 +2,6 @@
 
  * Teacher: Richèl Bilderbeek
 
-
-```
-do_analysis()
-```
-
- * Problem 2: when do you trust your program? If testing, when are you done testing?
-
-
-
 On average, 80% of the time we spend debugging.
 Test-driven development is a technique used by
 professional software developers to reduce this time,
@@ -23,7 +14,6 @@ to practice this way of developing.
 
 It is assumed you can read basic R code and that you
 have an R environment (e.g. R Studio) installed.
-
 
 ## Source to images
 
