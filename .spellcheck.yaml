@@ -2,12 +2,18 @@ matrix:
 - name: markdown
   pipeline:
   - pyspelling.filters.markdown
+    ignores:
+    - code
+    - pre
   sources:
   - '**/*.md'
   default_encoding: utf-8
 - name: Quarto markdown
   pipeline:
   - pyspelling.filters.markdown
+    ignores:
+    - code
+    - pre
   sources:
   - '**/*.qmd'
   default_encoding: utf-8
