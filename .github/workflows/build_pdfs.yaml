@@ -1,4 +1,5 @@
 # Render Quarto presentations to PDF
+name: Build PDFs
 
 on:
   push:
@@ -6,7 +7,6 @@ on:
   schedule:
   - cron: "0 0 1 * *"
 
-name: build_pdfs
 
 jobs:
   check_links:

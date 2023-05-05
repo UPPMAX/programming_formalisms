@@ -1,10 +1,12 @@
+# Check if any links are broken
+name: Check links
+
 on:
   push:
   pull_request:
   schedule:
   - cron: "0 0 1 * *"
 
-name: check_links
 
 jobs:
   check_links:
