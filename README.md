@@ -5,8 +5,7 @@
 - Course Repository for programming formalisms course.
 - Under this projects, notes, excersises and lecture slides will be stored.
 
-- Please view the setup.md file for preparations
-
+- Please view the [setup.md](setup.md) file for preparations
 
 ## Schedule
 
