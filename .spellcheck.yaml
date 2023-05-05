@@ -1,13 +1,13 @@
 matrix:
 - name: markdown
   pipeline:
-  - pyspelling.filters.text
+  - pyspelling.filters.markdown
   sources:
   - '**/*.md'
   default_encoding: utf-8
 - name: Quarto markdown
   pipeline:
-  - pyspelling.filters.text
+  - pyspelling.filters.markdown
   sources:
   - '**/*.qmd'
   default_encoding: utf-8
