@@ -22,8 +22,13 @@ Thu |13-16       |RB       | [TDD](tdd/README.md)
 Fri |9-12        |LE       | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
 Fri |13-16       |RB       | [Optimisation](optimisation/README.md)
 
+## Files
+
+Filename         |Descriptions
+-----------------|------------------------
+`mlc_config.json`|Used by the link checker
+
 ## Links
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
- 
