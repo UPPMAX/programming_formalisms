@@ -112,6 +112,14 @@ git push
 
 ![](organised_male_programmer.png)
 
+## Reflection
+
+Q: Do developers really do this? 
+
+A: Yes
+
+![](book_langr.jpg)
+
 ## Cycle 2, red: write a test that breaks
 
 ::: columns
@@ -186,9 +194,23 @@ git push
 
 ## Reflection
 
-Q: Do developers really do this? 
+Q: Does this really save time?
 
-A: Yes
+. . .
+
+A: No, it takes longer
+
+Study|Extra time|Effect
+-----|----------|-----------------------------
+1    |16%       |18% more black-box tests pass
+2    |15%       |2x higher code quality
+3    |15-35%    |40%-90% less defects
+
+## Reflection references
+
+ * [1] George, Boby, and Laurie Williams. "A structured experiment of test-driven development." Information and software Technology 46.5 (2004): 337-342.
+ * [2] Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.
+ * [3] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
 
 ## Cycle 3, red: write a test that breaks
 
