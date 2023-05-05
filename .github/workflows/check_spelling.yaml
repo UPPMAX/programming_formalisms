@@ -16,15 +16,4 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-
-      #- name: Check spelling
-      #  uses: reitermarkus/aspell@main
-      #  with:
-      #    files: article.tex
-      #    args: --lang=en_GB --mode=tex
-
-      - name: Install aspell
-        run: sudo apt-get install aspell
-
-      - name: Run spell check
-        run: ./scripts/do_spell_check.sh
+      - uses: igsekor/pyspelling-any@v0.0.2
