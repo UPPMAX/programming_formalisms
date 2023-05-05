@@ -20,13 +20,11 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
-          to: pdf # If set, it will be equivalent to `quarto render --to html`
-          path: algorithms/algorithms_lecture/algorithms_lecture.qmd
+          path: algorithms/algorithms_lecture
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
-          to: pdf # If set, it will be equivalent to `quarto render --to html`
-          path: tdd/tdd_1_lecture/tdd_1_lecture.qmd
+          path: tdd/tdd_1_lecture
 
       - name: Find the PDFs
         run: find . | egrep "pdf"
