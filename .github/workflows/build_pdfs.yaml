@@ -20,6 +20,10 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install the rmarkdown and reticulate R packages
+        run: install.packages(c("reticulate", "rmarkdown"))
+        shell: Rscript {0}
+
       - uses: quarto-dev/quarto-actions/render@v2
         with:
           to: pdf
