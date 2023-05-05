@@ -30,3 +30,10 @@ print("Hello from R")
 ```
 :::
 :::
+
+Cannot copy from Mentimeter :-/
+[here](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
+
+Arrange Act Assert
+
+
