@@ -3,6 +3,7 @@ title: "TDD 1"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
+from: markdown+emoji
 ---
 
 ## TDD
@@ -17,37 +18,275 @@ How do you grow/develop your code?
 
 'Just start somewhere'
 
+![](chaotic_programmer.png)
+
 ## Experienced developers
 
 Work systematically
 
+![](organised_female_programmer.png)
+
 ## TDD
 
-Short for 'Test-driven development'
-A systematic way to grow code
+Short for 'Test-driven development' A systematic way to grow code
+
+![](tdd_hat_2.jpg)
 
 ## TDD cycle
 
+![](tdd_cycle_2.jpg)
 
+## First test case
 
-## Code
+-   Function name: `is_zero`
+-   Output:
+    -   Returns `True`/`TRUE` if the input is zero
+    -   Returns `False`/`FALSE` if the input is not zero
+    -   :warning: Gives an error when the input is not a number
+
+## Red: write a test that breaks
 
 ::: columns
 ::: {.column width="50%"}
+![](python_icon_26x32.png)
+
 ```{python}
 #| echo: true
-print("Hello from Python")
+#| eval: false
+assert is_zero(0)
 ```
 :::
 
 ::: {.column width="50%"}
+![](r_icon_41x32.png)
+
 ```{r}
 #| echo: true
-print("Hello from R")
+#| eval: false
+library(testthat)
+expect_true(is_zero(0))
 ```
 :::
 :::
 
-Cannot copy from Mentimeter :-/ [here](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
+:monocle_face: Is this code run?
 
-Arrange Act Assert
+## Green: make the test pass
+
+::: columns
+::: {.column width="50%"}
+![](python_icon_26x32.png)
+
+```{python}
+#| echo: true
+def is_zero(number): 
+  return True
+
+assert is_zero(0)
+```
+:::
+
+::: {.column width="50%"}
+![](r_icon_41x32.png)
+
+```{r}
+#| echo: true
+library(testthat)
+
+is_zero <- function(number) {
+  TRUE
+}
+
+expect_true(is_zero(0))
+```
+:::
+:::
+
+## Blue: refactor and commit
+
+```         
+git add .
+git commit -m "Add stub of 'is_zero'"
+git push
+```
+
+![](organised_male_programmer.png)
+
+## Red: write a test that breaks
+
+::: columns
+::: {.column width="50%"}
+![](python_icon_26x32.png)
+
+```{python}
+#| echo: true
+#| eval: false
+has_thrown = False
+try:
+  is_zero("")
+except:
+  has_thrown = True
+assert has_thrown
+```
+:::
+
+::: {.column width="50%"}
+![](r_icon_41x32.png)
+
+```{r}
+#| echo: true
+#| eval: false
+expect_true(is_zero(0))
+expect_false(is_zero(42))
+expect_error(is_zero(""))
+```
+:::
+:::
+
+## Green: make the test pass
+
+::: columns
+::: {.column width="50%"}
+![](python_icon_26x32.png)
+
+```{python}
+#| echo: true
+def is_zero(x):
+  return x == 0
+
+assert is_zero(0)
+assert not is_zero(42)
+```
+:::
+
+::: {.column width="50%"}
+![](r_icon_41x32.png)
+
+```{r}
+#| echo: true
+library(testthat)
+
+is_zero <- function(number) {
+  number == 0
+}
+
+expect_true(is_zero(0))
+expect_false(is_zero(42))
+```
+:::
+:::
+
+## Blue: refactor and commit
+
+```         
+git add .
+git commit -m "'is_zero' responds correctly to numbers"
+git push
+```
+
+![](organised_female_programmer.png)
+
+## Reflection
+
+Q: Do developers really do this?
+A: Yes
+
+## Red: write a test that breaks
+
+::: columns
+::: {.column width="50%"}
+![](python_icon_26x32.png)
+
+```{python}
+#| echo: true
+#| eval: false
+has_thrown = False
+try:
+  is_zero("")
+except:
+  has_thrown = True
+assert has_thrown
+```
+:::
+
+::: {.column width="50%"}
+![](r_icon_41x32.png)
+
+```{r}
+#| echo: true
+#| eval: false
+expect_error(is_zero(""))
+```
+:::
+:::
+
+## Green: make the test pass
+
+::: columns
+::: {.column width="50%"}
+![](python_icon_26x32.png)
+
+```{python}
+#| echo: true
+def is_zero(x):
+  if not isinstance(x, int):
+    raise TypeError(
+      "'number' must be a number"
+    )
+  return x == 0
+
+assert is_zero(0)
+assert not is_zero(42)
+
+has_thrown = False
+try:
+  is_zero("")
+except:
+  has_thrown = True
+assert has_thrown
+```
+:::
+
+::: {.column width="50%"}
+![](r_icon_41x32.png)
+
+```{r}
+#| echo: true
+library(testthat)
+
+is_zero <- function(number) {
+  if (!is.numeric(number)) 
+    stop(
+      "'number' must be a number"
+    ) 
+  number == 0
+}
+
+expect_true(is_zero(0))
+expect_false(is_zero(42))
+expect_error(is_zero(""))
+```
+:::
+:::
+
+## Blue: refactor and commit
+
+```         
+git add .
+git commit -m "'is_zero' responds correctly to non-numbers"
+git push
+```
+
+![](organised_male_programmer.png)
+
+## Exercise
+
+## More complex tests
+
+ * Arrange 
+ * Act 
+ * Assert
+
+## Links
+
+ * [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
