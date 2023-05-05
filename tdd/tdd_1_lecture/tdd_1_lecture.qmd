@@ -13,6 +13,23 @@ editor: visual
 
 How do you grow/develop your code?
 
+## Newbie developers
+
+'Just start somewhere'
+
+## Experienced developers
+
+Work systematically
+
+## TDD
+
+Short for 'Test-driven development'
+A systematic way to grow code
+
+## TDD cycle
+
+
+
 ## Code
 
 ::: columns
@@ -31,9 +48,6 @@ print("Hello from R")
 :::
 :::
 
-Cannot copy from Mentimeter :-/
-[here](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
+Cannot copy from Mentimeter :-/ [here](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
 
 Arrange Act Assert
-
-
