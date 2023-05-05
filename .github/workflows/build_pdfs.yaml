@@ -39,5 +39,13 @@ jobs:
           to: pdf
           path: tdd/tdd_1_lecture/tdd_1_lecture.qmd
 
-      - name: Find the PDFs
-        run: find . | egrep "pdf"
+      #############################################
+      # Upload
+      #############################################
+      - name: Upload PDF to the workflow tab
+        uses: actions/upload-artifact@v2
+        with:
+          name: all_presentations
+          path: **/*.pdf
+          if-no-files-found: error
+
