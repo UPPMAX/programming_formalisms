@@ -1,0 +1,32 @@
+---
+title: "TDD 2"
+author: "Richèl Bilderbeek"
+format: revealjs
+editor: visual
+---
+
+## TDD
+
+![](programming_formalism_course.png)
+
+## Problem
+
+When do you trust code written by others? How do you convince other developers of a bug?
+
+## Code
+
+::: columns
+::: {.column width="50%"}
+```{python}
+#| echo: true
+print("Hello from Python")
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+print("Hello from R")
+```
+:::
+:::
