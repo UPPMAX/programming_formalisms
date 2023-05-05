@@ -20,11 +20,13 @@ jobs:
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
-          path: algorithms/algorithms_lecture
+          to: pdf
+          path: algorithms/algorithms_lecture/algorithms_lecture.qmd
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
-          path: tdd/tdd_1_lecture
+          to: pdf
+          path: tdd/tdd_1_lecture/tdd_1_lecture.qmd
 
       - name: Find the PDFs
         run: find . | egrep "pdf"
