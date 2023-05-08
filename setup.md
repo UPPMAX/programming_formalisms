@@ -1,5 +1,5 @@
 # Setup
-Parts taken from https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/
+Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
  and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
 
 ## Shell and Git
@@ -43,7 +43,7 @@ resources:
 - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
 
 ### Configure git
-Follow these instructions. https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git
+Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
 
 ## Github
 Sign up for GitHub account:
