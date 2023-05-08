@@ -44,11 +44,11 @@ resources:
 ### Configure git
 Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
 
-## Github
+## GitHub
 Sign up for GitHub account:
 [https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
 
-## Git/Github connection through ssh keys (This may take a while to get working, but is worth it)
+## Git/GitHub connection through ssh keys (This may take a while to get working, but is worth it)
 
 [https://coderefinery.github.io/installation/ssh/](https://coderefinery.github.io/installation/ssh/)
 

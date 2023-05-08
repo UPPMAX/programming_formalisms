@@ -5,6 +5,7 @@ behaviour
 Bilderbeek
 fibonacci
 findLargest
+GitHub
 linter
 megacorporation
 Megacorporation
@@ -14,6 +15,7 @@ parallel
 parallelism
 parallelization
 patentable
+PowerShell
 py
 pythonic
 qubits
