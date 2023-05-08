@@ -19,6 +19,7 @@ An algorithm is 'a step-by-step procedure for solving a problem or accomplishing
 
 Algorithms are the things we put into functions.
 
+
 ## Problem
 
 How to write a good function?
@@ -148,4 +149,5 @@ Actually, this is just the time complexity of the algorithm. But the number of e
 
 Welcome to space complexity. Instead of the number of steps, just count the number of variables, size of arrays, etc. But also consider the overhead of a function call. Here is a great resource for complexity of common algorithms
 
-https://www.bigocheatsheet.com
+ * [many algotithms](https://www.bigocheatsheet.com)
+
