@@ -19,7 +19,6 @@ An algorithm is 'a step-by-step procedure for solving a problem or accomplishing
 
 Algorithms are the things we put into functions.
 
-
 ## Problem
 
 How to write a good function?
@@ -42,6 +41,16 @@ References:
 -   [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
 -   [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts)
 -   ([PEP 20: The Zen of Python](https://peps.python.org/pep-0020/))
+
+## Function names
+
+### Example 
+
+
+
+
+
+
 
 ## Definition of a good function in this course
 
