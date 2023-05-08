@@ -71,6 +71,9 @@ expect_true(is_zero(0))
 
 :monocle_face: Is this code run?
 
+
+TODO: use non-run emoji (sleep?) to indicate when code is not run.
+
 ## Cycle 1, green: make the test pass
 
 ::: columns
@@ -212,6 +215,15 @@ Study|Extra time|Effect
  * [2] Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.
  * [3] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
 
+## References discussion
+
+Do note, the scope of these researches is limited:
+
+ * Mistakes can be costly
+ * TDD allows a dialogue
+ * TDD results is a better software architecture
+
+
 ## Cycle 3, red: write a test that breaks
 
 ::: columns
@@ -300,6 +312,10 @@ git push
 
 ![](organised_male_programmer.png)
 
+## Our work
+
+[Show git/GitHub history picture here]
+
 ## Reflection
 
 Are we done?
@@ -354,7 +370,7 @@ Until you cannot break your function anymore.
 
   * `is_even`
   * `divide` (include division by zero)
-  * `add` (including overflow!)
+  * `add` (for limited-sized ints, including overflow, like rocket!)
   * `can_divide_by_three`
   * `sum_digits`
   * `get_array_length`
