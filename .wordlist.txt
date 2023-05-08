@@ -15,6 +15,7 @@ parallel
 parallelism
 parallelization
 patentable
+PlantUML
 PowerShell
 py
 pythonic
