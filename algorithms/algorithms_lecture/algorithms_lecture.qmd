@@ -46,9 +46,40 @@ References:
 
 ### Example 
 
+Imagine two DNA sequences:
 
+```
+AAACCCGGGTTT
+ATACCCGGGTTT
+ *
+```
 
+How would you call the algorithm that detects the location of the `*`?
 
+### Example 
+
+Imagine two DNA sequences:
+
+```
+     *
+AAACCCGGGTTT
+AAACCGGGTTT
+```
+
+How would you call the algorithm that detects the location of the `*`?
+
+### Example 
+
+Imagine two DNA sequences:
+
+```
+     *
+AAACCCGGGTTT
+ATACCGGGTTT
+ *
+```
+
+How would you call the algorithm that detects the location of the `*`?
 
 
 
