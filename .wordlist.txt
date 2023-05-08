@@ -5,6 +5,7 @@ behaviour
 Bilderbeek
 fibonacci
 findLargest
+megacorporation
 Megacorporation
 Nonsolutions
 Optimisation
@@ -12,7 +13,9 @@ parallel
 parallelism
 parallelization
 patentable
+py
 qubits
 revealjs
+sourcery
 Richèl
 Tidyverse
