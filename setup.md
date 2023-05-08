@@ -1,6 +1,6 @@
 # Setup
 Parts taken from https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/
- and https://coderefinery.github.io/installation/
+ and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
 
 ## Shell and Git
 
@@ -21,7 +21,7 @@ adapted specifically for Windows. Nevertheless, in principle everything
 *should* be possible to run. A few ways you could setup:
 
 - Install Git Windows: https://gitforwindows.org/ (**easiest if you want to start fast and plan to work in windows environment**)
-  - See Windows part at https://coderefinery.github.io/installation/shell-and-git/#installation
+  - See Windows part at [https://coderefinery.github.io/installation/shell-and-git/#installation](https://coderefinery.github.io/installation/shell-and-git/#installation)
 - Run as Linux through a virtual machine (and see the Linux setup above)
 - Use the Windows 10 PowerShell, install git 
   - https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
@@ -47,10 +47,11 @@ Follow these instructions. https://nbis-reproducible-research.readthedocs.io/en/
 
 ## Github
 Sign up for GitHub account:
-https://coderefinery.github.io/installation/github/
+[https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
 
 ## Git/Github connection through ssh keys (This may take a while to get working, but is worth it)
-https://coderefinery.github.io/installation/ssh/
+
+[https://coderefinery.github.io/installation/ssh/](https://coderefinery.github.io/installation/ssh/)
 
 - Test: `ssh -T git@github.com`
 - If not working, these are the approximate steps to be done in your terminal. It can vary between systems, so link above is more certain.
@@ -64,7 +65,7 @@ ssh-add ~/.ssh/id_ed25519
 
 ## Miniconda3
 - We encourage you to use miniconda3 for working with conda environment.
-- Please follow the steps here: https://coderefinery.github.io/installation/conda/
+- Please follow the steps here: [https://coderefinery.github.io/installation/conda/](https://coderefinery.github.io/installation/conda/)
 - We will inform you during the lessons about Conda repos to use.
 
 ## PlantUML

@@ -5,6 +5,7 @@ behaviour
 Bilderbeek
 fibonacci
 findLargest
+linter
 megacorporation
 Megacorporation
 Nonsolutions
@@ -14,7 +15,9 @@ parallelism
 parallelization
 patentable
 py
+pythonic
 qubits
+repo
 revealjs
 sourcery
 Richèl
