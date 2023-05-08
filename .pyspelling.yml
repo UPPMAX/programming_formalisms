@@ -1,19 +1,35 @@
 matrix:
 - name: markdown
   pipeline:
-  - pyspelling.filters.markdown
-  ignores:
-  - code
-  - pre
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - markdown.extensions.extra:
+  - pyspelling.filters.html:
+      comments: false
+      attributes:
+      - alt
+      ignores:
+      - ':matches(code, pre)'
+      - 'code'
+      - 'pre'
+      - 'blockquote'
   sources:
   - '**/*.md'
   default_encoding: utf-8
 - name: Quarto markdown
   pipeline:
-  - pyspelling.filters.markdown
-  ignores:
-  - code
-  - pre
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - markdown.extensions.extra:
+  - pyspelling.filters.html:
+      comments: false
+      attributes:
+      - alt
+      ignores:
+      - ':matches(code, pre)'
+      - 'code'
+      - 'pre'
+      - 'blockquote'
   sources:
   - '**/*.qmd'
   default_encoding: utf-8
