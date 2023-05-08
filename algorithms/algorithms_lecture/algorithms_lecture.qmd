@@ -11,13 +11,13 @@ editor: visual
 
 ## Algorithm
 
-An algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' [1]
+An algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' \[1\]
 
- * [1] https://www.merriam-webster.com/dictionary/algorithm
+-   \[1\] https://www.merriam-webster.com/dictionary/algorithm
 
 ## For us
 
-We put algorithms into functions.
+Algorithms are the things we put into functions.
 
 ## Problem
 
@@ -72,31 +72,19 @@ print("Hello from R")
 :::
 :::
 
-Ruthless copy-paste from [here](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918),
-thanks Quarto for **not** copy-pasting formatted HTML :-/
+Ruthless copy-paste from [here](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918), thanks Quarto for **not** copy-pasting formatted HTML :-/
 
 ## Introduction to algorithms & datastructures
 
-Computer science is the study of how computers operate on information. 
-Both information and operations can be structured in different ways, 
-which gives them different properties and makes them more or less useful for different purposes.
+Computer science is the study of how computers operate on information. Both information and operations can be structured in different ways, which gives them different properties and makes them more or less useful for different purposes.
 
- 
 ## Lesson plan
 
-  Storing things
-  Searching for things
-  Sorting lists
-  BLAST
-  Parallellism
+Storing things Searching for things Sorting lists BLAST Parallellism
 
-Why these five topics? 
-The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. Parallell algorithms require special consideration beyond the usual.
+Why these five topics? The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. Parallell algorithms require special consideration beyond the usual.
 
- 
-But first some fundamentals
-What is an algorithm and what is a data structure?
-
+But first some fundamentals What is an algorithm and what is a data structure?
 
 An algorithm is not a program. A program implements algorithms on a practical level. Algorithms are mathematics. As such, they are discovered and not invented, and therefore not patentable unless you're a patent trolling megacorporation.
 
@@ -104,84 +92,60 @@ Moore's Law, which famously says that the number of transistors on a chip will d
 
 Links to an external site..
 
-Algorithmic improvements superimposed on Moore's Law
-Classification of algorithms
-Iterative or recursive
+Algorithmic improvements superimposed on Moore's Law Classification of algorithms Iterative or recursive
 
 Algorithms predicated on repeating steps either through recursion (self-referencing functions) or iteration (loops). Most algorithms naturally fall in one category, but both categories are computationally equivalent (i.e. there is always a recursive variant of an iterative algorithm and vice-versa).
 
-See exercise: converting a recursive algorithm to an iterative
-Serial, parallel, distributed
+See exercise: converting a recursive algorithm to an iterative Serial, parallel, distributed
 
-Traditionally, algorithms are expressed as a single thread of logical steps. This works perfectly well for designing programs for single-core computers, but modern machines have multiple cores and full performance is only reached through parallelisation. Unless otherwise specified, parallel algorithms assume that all data is available equally everywhere. Distributed algorithms are capable of working with data that is... distributed... on different machines. 
-Deterministic or non-deterministic
+Traditionally, algorithms are expressed as a single thread of logical steps. This works perfectly well for designing programs for single-core computers, but modern machines have multiple cores and full performance is only reached through parallelisation. Unless otherwise specified, parallel algorithms assume that all data is available equally everywhere. Distributed algorithms are capable of working with data that is... distributed... on different machines. Deterministic or non-deterministic
 
-For a given input, the execution of deterministic algorithms always yield the same result via the same steps. Non-deterministic algorithms include an element of randomness and will not, in general, generate exact repeatable results. An example of a non-deterministic step in an algorithm is randomly distributing points in a space to generate a mesh, or choosing random elements from a set. 
+For a given input, the execution of deterministic algorithms always yield the same result via the same steps. Non-deterministic algorithms include an element of randomness and will not, in general, generate exact repeatable results. An example of a non-deterministic step in an algorithm is randomly distributing points in a space to generate a mesh, or choosing random elements from a set.
 
-Because of the possibility of race conditions, parallel algorithms may be inadvertently non-deterministic. In computer science jargon, this is known as "fun". 
-Exact or approximate
+Because of the possibility of race conditions, parallel algorithms may be inadvertently non-deterministic. In computer science jargon, this is known as "fun". Exact or approximate
 
-Algorithms that never reach an exact result are called approximate algorithms. These can be far faster than an exact algorithm for the same problem, yet yield an equally useful result. Much of the advances in computational methods in the last 20 years have come about due to the discovery of better approximate algorithms.
-Digital or quantum
+Algorithms that never reach an exact result are called approximate algorithms. These can be far faster than an exact algorithm for the same problem, yet yield an equally useful result. Much of the advances in computational methods in the last 20 years have come about due to the discovery of better approximate algorithms. Digital or quantum
 
-Quantum algorithms rely on qubits and are well beyond the scope of this instructor's skillset. Let's just stick with ordinary digital computer science, shall we?
-More classification!
+Quantum algorithms rely on qubits and are well beyond the scope of this instructor's skillset. Let's just stick with ordinary digital computer science, shall we? More classification!
 
-    Divide and conquer algorithms – divide the problem into smaller subproblems of the same type; solve those smaller problems, and combine those solutions to solve the original problem.
-    Brute force algorithms – try all possible solutions until a satisfactory solution is found.
-    Randomized algorithms – use a random number at least once during the computation to find a solution to the problem.
-    Greedy algorithms – find an optimal solution at the local level with the intent of finding an optimal solution for the whole problem.
-    Recursive algorithms – solve the lowest and simplest version of a problem to then solve increasingly larger versions of the problem until the solution to the original problem is found.
-    Backtracking algorithms – divide the problem into subproblems, each which can be attempted to be solved; however, if the desired solution is not reached, move backwards in the problem until a path is found that moves it forward.
-    Dynamic programming algorithms – break a complex problem into a collection of simpler subproblems, then solve each of those subproblems only once, storing their solution for future use instead of re-computing their solutions.
+```         
+Divide and conquer algorithms – divide the problem into smaller subproblems of the same type; solve those smaller problems, and combine those solutions to solve the original problem.
+Brute force algorithms – try all possible solutions until a satisfactory solution is found.
+Randomized algorithms – use a random number at least once during the computation to find a solution to the problem.
+Greedy algorithms – find an optimal solution at the local level with the intent of finding an optimal solution for the whole problem.
+Recursive algorithms – solve the lowest and simplest version of a problem to then solve increasingly larger versions of the problem until the solution to the original problem is found.
+Backtracking algorithms – divide the problem into subproblems, each which can be attempted to be solved; however, if the desired solution is not reached, move backwards in the problem until a path is found that moves it forward.
+Dynamic programming algorithms – break a complex problem into a collection of simpler subproblems, then solve each of those subproblems only once, storing their solution for future use instead of re-computing their solutions.
+```
 
 Algorithmics
 
 How do computer scientists develop and analyse algorithms systematically?
 
-One of their main tools is complexity analysis — simply: how does the work required to solve a problem change with the size of the problem asymptotically?
+One of their main tools is complexity analysis --- simply: how does the work required to solve a problem change with the size of the problem asymptotically?
 
 Asymptotically means "for very big problems". This also means that, in practice, computer science can lead you astray.
 
 An example: the recursive Fibonacci function
 
-F(n):
-  if n=1 return 1
-  if n=2 return 1
-  return F(n-1) + F(n-2)
+F(n): if n=1 return 1 if n=2 return 1 return F(n-1) + F(n-2)
 
-
-For N=1 or 2, the function returns after just one or two instructions. But for N=3, it needs like seven instructions. For N=4, it'll need twelve. Here is how the work grows:
-n 	work
-3 	7
-4 	12
-5 	22
-6 	37
-7 	62
-8 	102
+For N=1 or 2, the function returns after just one or two instructions. But for N=3, it needs like seven instructions. For N=4, it'll need twelve. Here is how the work grows: n work 3 7 4 12 5 22 6 37 7 62 8 102
 
 The required amount of work for that algorithm grows faster than the Fibonacci sequence! As the plot below shows, it's an exponential increase! This is awful!
 
 cost of recursive fibonacci
 
- 
-
 Here is another example: finding the largest number in a random list
 
-findLargest(list):
-  largest = -1
-  for each item in list:
-     if item > largest:
-        set largest=item
-  return largest
+findLargest(list): largest = -1 for each item in list: if item \> largest: set largest=item return largest
 
-Here, we clearly see that we iterate over each item in the list. The number of instructions executed for a list of size N is 2 + 2*N+k, for some number k<N that depends on how unordered the list is. For big N, the constant term (2) is completely insignificant. 
+Here, we clearly see that we iterate over each item in the list. The number of instructions executed for a list of size N is 2 + 2\*N+k, for some number k\<N that depends on how unordered the list is. For big N, the constant term (2) is completely insignificant.
 
 In algorithmics, "big O notation" is often used to describe the asymptotical behaviour of an algorithm. In big O notation, the k is also dropped, because it is less than N, and the factor of 2 is dropped as well. The complexity of the findLargest algorithm is O(N).
 
 Actually, this is just the time complexity of the algorithm. But the number of execution steps may not be the only value of interest! Suppose you're interested in how *big* a problem becomes in memory?
 
-Welcome to space complexity. Instead of the number of steps, just count the number of variables, size of arrays, etc. But also consider the overhead of a function call.
-Here is a great resource for complexity of common algorithms
+Welcome to space complexity. Instead of the number of steps, just count the number of variables, size of arrays, etc. But also consider the overhead of a function call. Here is a great resource for complexity of common algorithms
 
 https://www.bigocheatsheet.com
