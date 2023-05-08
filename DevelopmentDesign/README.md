@@ -24,7 +24,7 @@ Evolutionary software development like the Living Software Development Process t
 
 [Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
 
-[Evolutionary software engineering, a review](https://www.sciencedirect.com/science/article/pii/S1568494604000778)
+ * Evolutionary software engineering, a review, `https://www.sciencedirect.com/science/article/pii/S1568494604000778`
 
 <br>
 Depending on the chosen method or metodology these steps are genarlly named sligthly diffrent dependent on model but i general the step fullfill the standard SDLC. 
@@ -60,7 +60,7 @@ then risk minimised,but in practice the choice is often determined by the cultur
 ## Spiral model
 The spiral model was developed in 1986 by Barry Boehm in his paper A Spiral Model of Software Development and Enhanchment
 The focus of the spiral model is to identify risk 
-<image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presentes by Boehm 1988, from https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png </span>
+<image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presentes by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
  
 ## RUP, Rational Unified Process
  Rational Unified Process is a software development metod based on iterative obejctoriented development. The idea is that you tailor the development method to fit the project, this howerver is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some consessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Buiseness modeling), Each phase in RUP is a complete itreation of the design steps Inception, Elaboration,Construction and Transition
@@ -126,7 +126,8 @@ Using Protoyping and minimal design to generate fast development cycles, this ha
 - Technical requirements are tight for the equipment to be used.
 
 futher reading:
-https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
+
+ * `https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_`
 
 
 ## eXtreme Programming
