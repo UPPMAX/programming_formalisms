@@ -24,9 +24,9 @@ Fri |13-16       |RB       | [Optimisation](optimisation/README.md)
 ## Files
 
 Filename          |Descriptions
-------------------|-------------------------
+------------------|---------------------------------------------------------------------------------------
 `mlc_config.json` |Used by the link checker
-`.spellcheck.yaml`|Used by the spell checker
+`.spellcheck.yaml`|Used by the spell checker, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
 
 ## Links
 
