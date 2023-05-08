@@ -20,11 +20,11 @@ computer. Neither is perhaps optimal, and the material itself has not been
 adapted specifically for Windows. Nevertheless, in principle everything
 *should* be possible to run. A few ways you could setup:
 
-- Install Git Windows: https://gitforwindows.org/ (**easiest if you want to start fast and plan to work in windows environment**)
+- Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/) (**easiest if you want to start fast and plan to work in windows environment**)
   - See Windows part at [https://coderefinery.github.io/installation/shell-and-git/#installation](https://coderefinery.github.io/installation/shell-and-git/#installation)
 - Run as Linux through a virtual machine (and see the Linux setup above)
 - Use the Windows 10 PowerShell, install git 
-  - https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
+  - [https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
 - Use the Linux Bash Shell (WSL) on Windows 10 (**perhaps best practice if you plan to run Linux as well**
   - instructions below 
 
@@ -32,8 +32,7 @@ adapted specifically for Windows. Nevertheless, in principle everything
 
 This will give you access to a full command-line bash shell based on Linux on your
 Windows 10 PC. For the difference between the Linux Bash Shell and the PowerShell on Windows
-10, see *e.g.* [this article](
-https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
+10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
 
 Install Bash on Windows 10 (WSL), following the instructions at *e.g.* **1** of these
 resources:
@@ -71,7 +70,7 @@ ssh-add ~/.ssh/id_ed25519
 ## PlantUML
 - We will use the tool PlantUML to render UML code to graphical diagrams and flowcharts. 
 - If you want PlantUML to render directly from a file on GitHub please install the extension PlantUML viewer to your web browser.
--  works for multiple browsers https://github.com/marcozaccari/markdown-diagrams-browser-extension
+-  works for multiple browsers [https://github.com/marcozaccari/markdown-diagrams-browser-extension](https://github.com/marcozaccari/markdown-diagrams-browser-extension)
 -  if the above does not work try
   - Firefox: PlantUML visualizer (is not compatible with !theme _none_ tag)
   - Chrome: Pegmatite,PlantUML viewer
