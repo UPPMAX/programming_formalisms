@@ -1,17 +1,17 @@
 ---
-title: "TDD 1 exercises"
+title: "Algorithms exercises"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
 ---
 
-## TDD
+## Algorithms
 
 ![](programming_formalism_course.png)
 
 ## Problem
 
-How do you grow/develop your code?
+...
 
 ## Code
 

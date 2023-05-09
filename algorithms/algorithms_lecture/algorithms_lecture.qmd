@@ -3,11 +3,24 @@ title: "Algorithms"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
+from: markdown+emoji
 ---
 
 ## Algorithms
 
 ![](programming_formalism_course.png)
+
+## Overview
+
+-   1h: A good function
+-   1h: Data types
+-   1h: Good functions with useful datatypes
+
+## Why important?
+
+Your program is as good as its parts.
+
+![](components)
 
 ## Algorithm
 
@@ -15,9 +28,9 @@ An algorithm is 'a step-by-step procedure for solving a problem or accomplishing
 
 -   \[1\] https://www.merriam-webster.com/dictionary/algorithm
 
-## For us
+For us:
 
-Algorithms are the things we put into functions.
+> Algorithms are the things we put into functions.
 
 ## Problem
 
@@ -32,86 +45,484 @@ A good function:
 -   Has a clear name
 -   Does one thing correctly
 -   Is tested
+-   Gives clear error messages
 -   Is documented
 -   Fast iff needed
 
-References:
+## References
 
 -   [C++ Core Guidelines on functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions)
 -   [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
 -   [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts)
 -   ([PEP 20: The Zen of Python](https://peps.python.org/pep-0020/))
 
-## Function names
+## A good function has a clear name
 
-### Example 
+> There are only two hard things in Computer Science: cache invalidation and naming things
+>
+> Phil Karlton
+
+![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
+
+## Example 1
 
 Imagine two DNA sequences:
 
-```
+```         
 AAACCCGGGTTT
-ATACCCGGGTTT
- *
+ATACCCGGGTAT
+ *        x
 ```
 
-How would you call the algorithm that detects the location of the `*`?
+How would you call the algorithm that detects the location of the `*` (but not of the `x`, as the `*` comes earlier)?
 
-### Example 
+## Solutions 1
+
+-   `get_first_mismatch_pos`
+-   `get_first_mismatch_locus` :sunglasses:
+-   `find_first_mismatch_pos`
+-   `find_first_mismatch_locus`
+-   you answer that ...
+    1.  starts with a verb
+    2.  is as English as possible
+    3.  only uses common abbreviations
+
+## Example 2
 
 Imagine two DNA sequences:
 
-```
-     *
+```         
 AAACCCGGGTTT
-AAACCGGGTTT
+ATACCCGGGTAT
+ *        *
 ```
 
-How would you call the algorithm that detects the location of the `*`?
+How would you call the algorithm that detects all the locations of the `*`s?
 
-### Example 
+## Solutions 2
+
+-   `find_mismatch_positions`
+-   `find_mismatch_loci`
+-   `get_mismatch_positions`
+-   `get_mismatch_loci` :sunglasses:
+-   you answer that ...
+    1.  starts with a verb
+    2.  is as English as possible
+    3.  only uses common abbreviations
+
+## Example 3
 
 Imagine two DNA sequences:
 
-```
-     *
+```         
 AAACCCGGGTTT
 ATACCGGGTTT
- *
 ```
 
-How would you call the algorithm that detects the location of the `*`?
+How would you call the algorithm that makes the sequences have as much similarities as possible, by possibly inserting a `-`
 
+```         
+AAACCCGGGTTT
+ATACC-GGGTTT
+```
 
+## Solutions 3
 
-## Definition of a good function in this course
+-   `align_seqs`
+-   `align_sequences`
+-   `align_dna_sequences`
+-   `align_dna_seqs` :sunglasses:
+-   `calc_aligned_seqs`
+-   `get_aligned_seqs`
+-   you answer that ...
+    1.  starts with a verb
+    2.  is as English as possible
+    3.  only uses common abbreviations
 
-A non-technical person can agree/disagree that the tests are valid
+## A good function has a clear name
 
-## Overview
+-   [F.1: "Package" meaningful operations as carefully named functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-package)
+-   [Use verbs, strive for names that are concise and meaningful](https://style.tidyverse.org/functions.html#naming)
 
--   Types of algorithms
--   Common data structures
--   Big O complexity
--   Parallelisms
+## A function does one thing correctly
 
-## Code
+## Example 1
+
+Imagine two DNA sequences:
+
+```         
+AAACCCGGGTTT
+ATACCGGGTTT
+```
+
+How would you call the algorithm that aligns the sequences and returns the mismatches?
+
+```         
+AAACCCGGGTTT
+ATACC-GGGTTT
+ *   *
+```
+
+## Solution 1
+
+-   ~~`align_and_collect_mismatched_loci`~~
+
+☹️ You should not write a function like this.
+
+-   [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical)
+
+You rarely need `and` in a function name.
+
+## What is a good function?
+
+A good function:
+
+-   **Has a clear name**
+-   **Does one thing correctly**
+-   Is tested
+-   Gives clear error messages
+-   Is documented
+-   Fast iff needed
+
+## A good function is tested
+
+-   [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical): A function that performs a single operation is simpler to understand, test, and reuse.
+-   [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf): Testability: Source code should be written to facilitate testability
+
+## Example 1
+
+Imagine two DNA sequences:
+
+```         
+AAACCCGGGTTT
+ATACCCGGGTAT
+ *        x
+```
+
+The function `get_first_mismatch_locus` detects the first mismatch locus. Which tests would you write?
+
+## Solutions 1
 
 ::: columns
 ::: {.column width="50%"}
 ```{python}
 #| echo: true
-print("Hello from Python")
-1 + 1
+#| eval: false
+assert get_first_mismatch_locus(
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT"
+  ) == 1
+assert get_first_mismatch_locus( 
+    { 
+      "AAACCCGGGTTT", 
+      "ATACCCGGGTAT" 
+    } 
+  ) == 1
 ```
 :::
 
 ::: {.column width="50%"}
 ```{r}
 #| echo: true
-print("Hello from R")
+#| eval: false
+expect_equal(
+  1, 
+  get_first_mismatch_locus(
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT"
+  )
+)
+expect_equal(
+  1, 
+  get_first_mismatch_locus(
+    c(
+      "AAACCCGGGTTT", 
+      "ATACCCGGGTAT"
+    )
+  )
+)
 ```
 :::
 :::
+
+:monocle_face: The different tests *signal* different expectations. This should end up in the documentation and/or error messages.
+
+## Example 2
+
+Imagine two DNA sequences:
+
+```         
+AAACCCGGGTTT
+ATACCCGGGTAT
+ *        *
+```
+
+The function `get_mismatch_loci` detects the mismatched loci. Which tests would you write?
+
+## Solutions 2
+
+::: columns
+::: {.column width="50%"}
+```{python}
+#| echo: true
+#| eval: false
+assert get_mismatch_loci(
+  "AAACCCGGGTTT", 
+  "ATACCCGGGTAT"
+  ) == {1, 10}
+assert get_mismatch_loci( 
+  { 
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT" 
+  } 
+) == {1, 10}
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| eval: false
+expect_equal(
+  get_mismatch_loci(
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT"
+  ),
+  c(1, 10)
+)
+expect_equal(
+  get_mismatch_loci(
+    c(
+      "AAACCCGGGTTT", 
+      "ATACCCGGGTAT"
+    )
+  ),
+  c(1, 10)
+)
+```
+:::
+:::
+
+:monocle_face: The different tests *signal* different expectations. This should end up in the documentation and/or error messages.
+
+## Example 3
+
+Imagine two DNA sequences:
+
+```         
+AAACCCGGGTTT
+ATACCGGGTTT
+```
+
+The function `align_dna_seqs` aligns two DNA sequences to this:
+
+```         
+AAACCCGGGTTT
+ATACC-GGGTTT
+```
+
+Which tests would you write?
+
+## Solutions 3
+
+::: columns
+::: {.column width="50%"}
+```{python}
+#| echo: true
+#| eval: false
+assert align_dna_seqs(
+  "AAACCCGGGTTT", 
+  "ATACCCGGGTAT"
+  ) == { 
+    "AAACCCGGGTTT", 
+    "ATACC-GGGTTT"
+  }
+assert align_dna_seqs( 
+  { 
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT" 
+  } 
+) == 
+  { 
+    "AAACCCGGGTTT", 
+    "ATACC-GGGTTT"
+  }
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| eval: false
+expect_equal(
+  align_dna_seqs(
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT"
+  ), 
+  c(
+    "AAACCCGGGTTT", 
+    "ATACC-GGGTTT"
+  )
+)
+expect_equal(
+  align_dna_seqs(
+    c(
+      "AAACCCGGGTTT", 
+      "ATACCCGGGTAT"
+    )
+  ),
+  c(
+    "AAACCCGGGTTT", 
+    "ATACC-GGGTTT"
+  )
+)
+```
+:::
+:::
+
+## What is a good function?
+
+A good function:
+
+-   **Has a clear name**
+-   **Does one thing correctly**
+-   **Is tested**
+-   Gives clear error messages
+-   Is documented
+-   Fast iff needed
+
+
+## Clear error messages
+
+
+
+## Overview
+
+-   **Types of algorithms**
+-   Common data structures
+-   Big O complexity
+-   Parallelisms
+
+## Types of algorithms
+
+::: columns
+::: {.column width="50%"}
+-   Divide and conquer algorithms
+-   Brute force algorithms
+-   Randomized algorithms
+-   Greedy algorithms
+-   Recursive algorithms
+-   Backtracking algorithms
+-   Dynamic programming algorithms
+:::
+
+::: {.column width="50%"}
+-   Iterative versus recursive
+-   Exact or approximate
+-   Deterministic or non-deterministic
+-   Single-thread, multi-threaded, distributed
+-   (Digital or quantum)
+:::
+:::
+
+## Recursive versus iterative
+
+-   Iterative: use a for-loop
+-   Recursive: a function that calls itself
+
+## Example 1: factorial
+
+| `n` | `n!`                  |
+|-----|-----------------------|
+| 0   | 1                     |
+| 1   | 1                     |
+| 2   | 2 \* 1 = 2            |
+| 3   | 3 \* 2 \* 1 = 6       |
+| 4   | 4 \* 3 \* 2 \* 1 = 24 |
+| 5   | 5 \* `4!`             |
+| `n` | `n` \* `(n-1)!`       |
+
+## Exercise 1: factorial
+
+-   Develop a function to get the factorial of a number
+-   If the function used a for-loop, create another function that uses recursion, or the other way around
+
+::: columns
+::: {.column width="50%"}
+```{python}
+#| echo: true
+#| eval: false
+assert calc_factorial_iterative(13) == 
+  calc_factorial_recursive(13)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| eval: false
+expect_equal(
+  calc_factorial_iterative(13),
+  calc_factorial_recursive(13)
+)
+```
+:::
+:::
+
+## Example 2
+
+Fibonacci sequence:
+
+| N    | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  |
+|------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| `Fn` | 0   | 1   | 1   | 2   | 3   | 5   | 8   | 13  | 21  | 34  | 55  |
+
+![https://en.wikipedia.org/wiki/File:Fibonacci_Squares.svg](fibonacci_squares.png)
+
+## Example 2
+
+| N   | `Fn`                    |
+|-----|-------------------------|
+| 0   | 0                       |
+| 1   | 1                       |
+| 2   | 1                       |
+| 3   | `Fn(1) + Fn(2)`         |
+| `n` | `Fn(n - 1) + Fn(n - 2)` |
+
+## Exercise
+
+-   Develop a function to get the `n`th value in the Fibonacci sequence
+-   If the function used a for-loop, create another function that uses recursion, or vise versa
+
+::: columns
+::: {.column width="50%"}
+```{python}
+#| echo: true
+#| eval: false
+assert get_nth_fibonacci_iterative(13) == 
+  get_nth_fibonacci_recursive(13)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| eval: false
+expect_equal(
+  get_nth_fibonacci_iterative(13),
+  get_nth_fibonacci_recursive(13)
+)
+```
+:::
+:::
+
+## Divide-and-conquer algorithms
+
+-   Divide a complex problem in many simpler problems
+-   Solve the simpler problems
+-   Combine the results
+
+## Appendix
 
 Ruthless copy-paste from [here](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918), thanks Quarto for **not** copy-pasting formatted HTML :-/
 
@@ -189,5 +600,4 @@ Actually, this is just the time complexity of the algorithm. But the number of e
 
 Welcome to space complexity. Instead of the number of steps, just count the number of variables, size of arrays, etc. But also consider the overhead of a function call. Here is a great resource for complexity of common algorithms
 
- * [many algorithms](https://www.bigocheatsheet.com)
-
+-   [many algorithms](https://www.bigocheatsheet.com)
