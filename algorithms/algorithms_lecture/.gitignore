@@ -1,3 +1,4 @@
 *.html
 tdd_1_lecture_files/
 algorithms_lecture_files/
+.Rhistory
