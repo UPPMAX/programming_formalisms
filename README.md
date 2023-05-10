@@ -12,6 +12,7 @@
 Day | Time       | Teacher | Topic
 ----|------------|---------|----------------------------------------------------
 Mon |9-12, 13-16 |BC       | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html)
+?Mon|?Last       |?JN      | ?Reflection
 Tue |9-12        |LE       | [Paradigms, Introduction to formalised development](DevelopmentDesign/README.md) 
 Tue |13-16       |RB       | [Introduction to Test driven development (TDD)](tdd/README.md) 
 Tue |Last        |JN       | Reflection
