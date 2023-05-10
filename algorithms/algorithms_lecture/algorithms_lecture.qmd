@@ -20,7 +20,7 @@ from: markdown+emoji
 
 Your program is as good as its parts.
 
-![](components)
+![](components.png)
 
 ## Algorithm
 
@@ -391,10 +391,7 @@ A good function:
 -   Is documented
 -   Fast iff needed
 
-
 ## Clear error messages
-
-
 
 ## Overview
 
