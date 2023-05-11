@@ -12,9 +12,7 @@ Remember that:
 
 In this task you will have to:
 
-1. Work in pairs and try to code the [Fibonacci function](https://en.wikipedia.org/wiki/Fibonacci_number) or other function suggested by an instructor.
-
-> In mathematics, the Fibonacci numbers, commonly denoted Fn , form a sequence, the Fibonacci sequence, in which each number is the sum of the two preceding ones.
+1. Work in pairs and try to code some of[the following functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md) or other function suggested by an instructor.
 
 2. Switch navigator/driver roles.
 3. Work in pairs and try to code the [Tribonacci function](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers) or other function suggested by an instructor.
