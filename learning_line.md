@@ -162,11 +162,9 @@ Name                          |Purpose
 `calc_p_is_prime_mr(x)`       |Returns the chance that number `x` is prime using the Miller-Rabin primality test
 `calc_p_is_prime_ss(x)`       |Returns the chance that number `x` is prime using the Solovay-Strassen primality method
 `is_coprime(a, b)`            |Returns `True` is `a` is coprime to `b`
+`is_factorial_prime(x)`       |Returns `True` if `x` is a factorial prime
 `is_mersenne_prime(x)`        |Returns `True` if `x` is a Mersenne prime
 `is_proth_prime(x)`           |Returns `True` if `x` is a Proth prime
-`is_factorial_prime(x)`       |Returns `True` if `x` is a factorial prime
-`is_primorial_prime(x)`       |Returns `True` if `x` is a primorial prime
-`is_twin_prime(x)`            |Returns `True` if `x` is a twin prime
 `is_perfect_power(x)`         |Returns `True` if `x` is a perfect power
 `is_prime_aks(x)`             |Returns `True` if `x` is prime using the Agrawal-Kayal-Saxena primality test
 `is_prime_bpsw(x)`            |Returns `True` if `x` is likely to be prime using the Baillie-PSW primality test
@@ -176,6 +174,45 @@ Name                          |Purpose
 `is_prime_ecpp(x)`            |Returns `True` if `x` is prime using the Atkin-Morain elliptic curve primality test
 `is_prime_ecgk(x)`            |Returns `True` if `x` is prime using the Goldwasser-Kilian elliptic curve primality test
 `is_prime_mr(x)`              |Returns `True` if `x` is likely to be prime using the Miller-Rabin primality test
+`is_primorial_prime(x)`       |Returns `True` if `x` is a primorial prime
+`is_twin_prime(x)`            |Returns `True` if `x` is a twin prime
+
+## Functions to be developed for The Medium Project
+
+These are barely (sometimes purposefully vague!) suggestions:
+
+ * if you do not need all, that is OK
+ * if you know better, that is OK
+
+Name                          |Purpose
+------------------------------|--------------------------------------------------------
+`bubble_sort(x)`              |Returns the sorted elements of `x` using bubble sort
+`block_sort(x)`               |Returns the sorted elements of `x` using block sort
+`cube_sort(x)`                |Returns the sorted elements of `x` using cube sort
+`cocktail_shaker_sort(x)`     |Returns the sorted elements of `x` using cocktail shaker sort
+`comb_sort(x)`                |Returns the sorted elements of `x` using comb sort
+`cycle_sort(x)`               |Returns the sorted elements of `x` using cycle sort
+`exchange_sort(x)`            |Returns the sorted elements of `x` using exchange sort
+`gnome_sort(x)`               |Returns the sorted elements of `x` using gnome sort
+`heap_sort(x)`                |Returns the sorted elements of `x` using heap sort
+`intro_sort(x)`               |Returns the sorted elements of `x` using intro sort
+`insertion_sort(x)`           |Returns the sorted elements of `x` using insertion sort
+`is_sorted(x)`                |Returns `True` if the elements of `x` are in ascending order
+`is_sorting_method(m)`        |Returns `True` if `m` is a sorting method
+`library_sort(x)`             |Returns the sorted elements of `x` using library sort
+`merge_sort(x)`               |Returns the sorted elements of `x` using merge sort
+`odd_even_sort(x)`            |Returns the sorted elements of `x` using odd-even sort
+`quick_sort(x)`               |Returns the sorted elements of `x` using quick sort
+`selection_sort(x)`           |Returns the sorted elements of `x` using selection sort
+`shell_sort(x)`               |Returns the sorted elements of `x` using shell sort
+`tim_sort(x)`                 |Returns the sorted elements of `x` using tim sort
+`tree_sort(x)`                |Returns the sorted elements of `x` using tree sort
+`patience_sort(x)`            |Returns the sorted elements of `x` using patience sort
+`smooth_sort(x)`              |Returns the sorted elements of `x` using smooth sort
+`sort(x)`                     |Returns the sorted elements of `x`
+`sort(x, m)`                  |Returns the sorted elements of `x` using method `m`
+`strand_sort(x)`              |Returns the sorted elements of `x` using strand sort
+`tournament_sort(x)`          |Returns the sorted elements of `x` using tournament sort
 
 ## Functions to be developed for The Big Project
 
