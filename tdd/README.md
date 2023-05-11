@@ -11,35 +11,6 @@ Description                                 |PDF                  |HTML         
 
 :construction: the `code layout`-ed items will become links in the future :construction:
 
-## Learning line
-
-### Day 1
-
- * What is TDD?
- * The TDD cycle?
-  * Practice
- * Reasons for why TDD?
- * How a git history of TDD cycle looks like
-  * Practice
- * Better software architecture
-  * Practice
- * Better error messages, difference between assert and if,
-   error messages are part of the interface
-  * Practice
- * Tests: your boss may actually read these
- * Different types of tests
- * [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
- * Testing frameworks
-
-## Day 2
-
- * Add CI to TDD development
- * Do PR to demonstrate a bug
- * Add linter
- * Add Markdown spellcheck
- * Add broken links checker
- * Measure codecov
- 
 ## Links
 
  * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
