@@ -15,16 +15,16 @@ Mon |9-12, 13-16 |BC       | [Introduction day](https://uppmax.github.io/program
 ?Mon|?Last       |?JN      | ?Reflection
 Tue |9-12        |LE       | [Paradigms, Introduction to formalised development](DevelopmentDesign/README.md) 
 Tue |13-16       |RB       | [Introduction to Test driven development (TDD)](tdd/README.md) 
-Tue |15:30-16:00 |JN       | Reflection
+Tue |15:30-16:00 |JN (RB)  | Reflection
 Wed |9-12        |JN       | [social coding, pair programming as  a tool for rapid development](https://github.com/UPPMAX/programming_formalisms/tree/main/common-practices)
 Wed |13-16       |RB       | [TDD](tdd/README.md)
-Wed |15:30-16:00 |JN       | Reflection
+Wed |15:30-16:00 |JN (RB)  | Reflection
 Thu |9-12        |RB       | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)
 Thu |13-16       |RB       | [TDD](tdd/README.md)
-Thu |15:30-16:00 |JN       | Reflection
+Thu |15:30-16:00 |JN (RB)  | Reflection
 Fri |9-12        |LE       | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
 Fri |13-16       |RB       | [Optimisation](optimisation/README.md)
-Fri |15:30-16:00 |JN       | Reflection
+Fri |15:30-16:00 |JN (RB)  | Reflection
 
 ## Big project overview
 
