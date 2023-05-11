@@ -16,7 +16,13 @@
  * [ ] Why tests are valuable: they are what you discuss with your boss
  * [ ] Different types of tests: unit tests, etc.
  * [ ] [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
- * Testing frameworks
+ * [ ] Writing functions for tests
+ * [ ] Testing frameworks (and why not in course)
+
+Other activities:
+
+ * Collect GitHub usernames
+ * Big project: individual repo with design
 
 > Evaluation: git history on students's repositories
 
@@ -27,13 +33,19 @@
 > Goal: students have done multiple TDD cycles socially
 
  * [ ] Add CI to TDD development
- * [ ] Do PR to demonstrate a bug
+ * [ ] Add build badge
  * [ ] Add linter CI script
  * [ ] Add Markdown spellcheck
  * [ ] Add broken links checker
  * [ ] Measure codecov
+ * [ ] Do PR to demonstrate a bug
 
-> Evaluation: Code on multiple GitHub tested by GHA, developed by groups
+Other activities:
+
+ * Rotate pairs
+ * Big project: shared repo with simple tests
+
+> Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
 
 ### Thursday part 1: algorithms
 
@@ -54,18 +66,16 @@
  * [ ] Using data structures to simplify algorithsm, e.g. use an ordered set to sort
  * [ ] Big O
 
-> Evaluation: Code on multiple GitHub tested by GHA, developed by groups
+> Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
 
 ### Thursday part 2: TDD
 
 > Goal: students have develop tested code together
 
- * [ ] Add CI to TDD development
- * [ ] Do PR to demonstrate a bug
- * [ ] Add linter CI script
- * [ ] Add Markdown spellcheck
- * [ ] Add broken links checker
- * [ ] Measure codecov
+ * Recursive tests
+ * Beyoncé principle
+ * YAGNI
+ * DRY
 
 > Evaluation: Code on multiple GitHub tested by GHA, 100% codecov, developed by groups
 

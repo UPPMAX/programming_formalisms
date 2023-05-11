@@ -26,7 +26,7 @@ No need to give a reason, we trust our students!
 
 ## We will be interactive
 
-We should \[1-5\].
+We should \[1-5\]:
 
 -   Turn on your camera
 -   You should/can/will be asked questions :-)
@@ -44,6 +44,13 @@ E.g., from \[1\]:
 -   \[3\] Schrum, Lynne, et al. "Post-secondary educators' professional development: Investigation of an online approach to enhancing teaching and learning." The Internet and higher education 8.4 (2005): 279-289.
 -   \[4\] Wallace, Raven M. "Online learning in higher education: A review of research on interactions among teachers and students." Education, Communication & Information 3.2 (2003): 241-280.
 -   \[5\] Roddy, Chantal, et al. "Applying best practice online learning, teaching, and support to intensive online environments: An integrative review." Frontiers in education. Vol. 2. Frontiers Media SA, 2017.
+
+## You should be interactive
+
+You are strongly encouraged to:
+
+-   Ask for clarification
+-   Criticise the reasoning
 
 ## Recommendations
 
