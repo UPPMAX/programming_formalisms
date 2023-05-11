@@ -114,13 +114,14 @@ These are barely (sometimes purposefully vague!) suggestions:
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
 `are_numbers(x)`              |Returns `True` if `x` is zero, one or more numbers
+`are_strings(x)`              |Returns `True` if `x` is zero, one or more strings
 `check_are_numbers(x)`        |Throws a helpful error if `x` is not zero, one or more numbers
 `check_different(a, b)`       |Throws a helpful error if `a` and `b` are not different
 `check_equal(a, b)`           |Throws a helpful error if `a` and `b` are different
 `check_is_number(x)`          |Throws a helpful error if `x` is not a number
 `check_is_probability(p)`     |Throws a helpful error if `p` is not a probability (i.e. a chance of something happening)
 `check_is_string(x)`          |Throws a helpful error if `s` is not a string
-`divide(a, b)`                |Divide `a` by `b`, throws a helpful error if `b` is zero
+`divide_safely(a, b)`         |Divide `a` by `b`, throws a helpful error if `b` is zero
 `is_dividable_by_three(x)`    |Returns `True` if `x` is dividable by 3
 `is_even(x)`                  |Returns `True` if `x` is even
 `is_number(x)`                |Returns `True` if `x` is a number
@@ -128,7 +129,6 @@ Name                          |Purpose
 `is_probability(p)`           |Returns `True` if `p` is a probability (i.e. a chance of something happening)
 `is_string(x)`                |Returns `True` if `s` is a string
 `is_zero(x)`                  |Returns `True` if `x` is zero
-`sum_digits(x)`               |Returns the sum of the digits of number `x`
 
 ### Medium
 
@@ -151,13 +151,16 @@ Name                          |Purpose
 `is_prime_ss(x, p)`           |Returns `True` if `x` is likelier than probability `p` to be prime using the Solovay-Strassen method
 `is_prime_method(m)`          |Returns `True` if `m` is a prime finding method
 `is_roman_number(s)`          |Returns `True` if `s` is a string that is a roman number
+`sum_digits(x)`               |Returns the sum of the digits of number `x`
 `to_roman_number(s)`          |Returns a number equivalent to the roman number that is string `s`
 
 ### Hard
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
-`calc_p_is_prime_ss(x)`       |Returns the change that number `x` is prime using the Solovay-Strassen primality method
+`calc_p_is_prime_bpsw(x)`     |Returns the chance that number `x` is prime using the Baillie-PSW primality test
+`calc_p_is_prime_mr(x)`       |Returns the chance that number `x` is prime using the Miller-Rabin primality test
+`calc_p_is_prime_ss(x)`       |Returns the chance that number `x` is prime using the Solovay-Strassen primality method
 `is_coprime(a, b)`            |Returns `True` is `a` is coprime to `b`
 `is_mersenne_prime(x)`        |Returns `True` if `x` is a Mersenne prime
 `is_proth_prime(x)`           |Returns `True` if `x` is a Proth prime
@@ -166,13 +169,13 @@ Name                          |Purpose
 `is_twin_prime(x)`            |Returns `True` if `x` is a twin prime
 `is_perfect_power(x)`         |Returns `True` if `x` is a perfect power
 `is_prime_aks(x)`             |Returns `True` if `x` is prime using the Agrawal-Kayal-Saxena primality test
-`is_prime_bsw(x)`             |Returns `True` if `x` is likely to be prime using the Baillie-PSW primality test
-`is_prime_mr(x)`              |Returns `True` if `x` is likely to be prime using the Miller-Rabin primality test
+`is_prime_bpsw(x)`            |Returns `True` if `x` is likely to be prime using the Baillie-PSW primality test
 `is_prime_ec(x)`              |Returns `True` if `x` is prime using an elliptic curve primality test
 `is_prime_ec(x, m)`           |Returns `True` if `x` is prime using the elliptic curve primality test `m`
 `is_prime_eccm(x)`            |Returns `True` if `x` is prime using the complex multiplication elliptic curve primality test
 `is_prime_ecpp(x)`            |Returns `True` if `x` is prime using the Atkin-Morain elliptic curve primality test
 `is_prime_ecgk(x)`            |Returns `True` if `x` is prime using the Goldwasser-Kilian elliptic curve primality test
+`is_prime_mr(x)`              |Returns `True` if `x` is likely to be prime using the Miller-Rabin primality test
 
 ## Functions to be developed for The Big Project
 
@@ -202,9 +205,3 @@ Name                          |Purpose
 `is_alignment_method(m)`      |Returns `True` if `m` is an alignment method
 `is_dna_seq(s)`               |Returns `True` if `s` is a DNA sequence
 `is_nw_params(p)`             |Returns `True` if `p` is a valid Needleman-Wunch parameter data structure
-
-
-
-
-
-
