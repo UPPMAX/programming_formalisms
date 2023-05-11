@@ -242,3 +242,13 @@ Name                          |Purpose
 `is_alignment_method(m)`      |Returns `True` if `m` is an alignment method
 `is_dna_seq(s)`               |Returns `True` if `s` is a DNA sequence
 `is_nw_params(p)`             |Returns `True` if `p` is a valid Needleman-Wunch parameter data structure
+
+## Projects overview
+
+Day|Group size|Branch model                |CI |Code review |DNA alignment project
+---|----------|----------------------------|---|------------|---------------------
+1  |1         | `master`                   |No |No          |Know it exists
+2  |1         | `master`                   |No |No          |The Small Project
+3  |2         | `master` and `develop`     |Yes|Pull Request|The Medium Project
+4  |4         | `master`, `develop`, topic |Yes|Pull Request|The Big Project
+5  |all       | `master`, `develop`, topic |Yes|Pull Request|Optimized functions of The Big Project

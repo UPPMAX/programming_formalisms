@@ -26,16 +26,6 @@ Fri |9-12        |LE       | [Modular programming](https://github.com/UPPMAX/pro
 Fri |13-16       |RB       | [Optimisation](optimisation/README.md)
 Fri |15:30-16:00 |JN (RB)  | Reflection
 
-## Big project overview
-
-Day|Group size|Branch model                |CI |Code review |DNA alignment project
----|----------|----------------------------|---|------------|---------------------
-1  |1         | `master`                   |No |No          |Know it exists
-2  |1         | `master`                   |No |No          |Trivial functions
-3  |2         | `master` and `develop`     |Yes|Pull Request|Simple functions
-4  |4         | `master`, `develop`, topic |Yes|Pull Request|Normal functions
-5  |all       | `master`, `develop`, topic |Yes|Pull Request|Optimized functions
-
 ## Files
 
 Filename          |Descriptions
@@ -47,3 +37,4 @@ Filename          |Descriptions
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
+ * [Learning lines](learning lines.md)
