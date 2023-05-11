@@ -240,8 +240,11 @@ Name                          |Purpose
 `check_is_nw_params(p)`       |Throws a helpful error if `p` is not a valid Needleman-Wunch parameter data structure
 `get_all_alignment_methods()` |Returns the descriptions of all implemented alignment methods
 `is_alignment_method(m)`      |Returns `True` if `m` is an alignment method
+`is_alignment_score_param(p)` |Returns `True` if `p` a parameter set to score how good an alignment is
 `is_dna_seq(s)`               |Returns `True` if `s` is a DNA sequence
 `is_nw_params(p)`             |Returns `True` if `p` is a valid Needleman-Wunch parameter data structure
+`score_alignment(a)`          |Returns a score for how good an alignment is
+`score_alignment(a, p)`       |Returns a score for how good an alignment is, based on parameter set `p`
 
 ## Projects overview
 
