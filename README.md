@@ -37,4 +37,4 @@ Filename          |Descriptions
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
- * [Learning lines](learning lines.md)
+ * [Learning line](learning_line.md)
