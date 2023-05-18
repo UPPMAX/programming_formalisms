@@ -252,6 +252,6 @@ Day|Group size|Branch model                |CI |Code review |DNA alignment proje
 ---|----------|----------------------------|---|------------|---------------------
 1  |1         | `master`                   |No |No          |Know it exists
 2  |1         | `master`                   |No |No          |[The Small Project](https://github.com/richelbilderbeek/programming_formalisms_small_project)
-3  |2         | `master` and `develop`     |Yes|Pull Request|[The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+3  |2         | `master`, `develop`        |Yes|No          |[The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
 4  |4         | `master`, `develop`, topic |Yes|Pull Request|The Big Project
 5  |all       | `master`, `develop`, topic |Yes|Pull Request|Optimized functions of The Big Project

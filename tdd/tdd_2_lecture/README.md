@@ -16,3 +16,10 @@
     * [Lars] List of student names
     * [Lars] Zoom: `r number_of_students / 2` group rooms, everyone can screen share
     * [Students]: GitHub account
+
+## To add
+
+ * [ ] TDD2: Work in groups of 2, work on develop, merge to master if all works
+ * [ ] TDD2: Use 100% codecov
+
+
