@@ -28,12 +28,13 @@ File                              |Source
 
 ## To add
 
- * [ ] TDD1: Test for documentation
- * [ ] TDD1: Can miss code to be tested, will measure codecov in TDD2
- * [ ] TDD1: Can test for style, will lint codecov in TDD2
- * [ ] TDD1: There is at least 1 easy function description that
+ * [ ] Test for documentation
+ * [ ] Can miss code to be tested, will measure codecov in TDD2
+ * [ ] Can test for style, will lint codecov in TDD2
+ * [ ] There is at least 1 easy function description that
        makes no sense when writing tests. Change the description
- * [ ] TDD1: Encourage to get sloppier in the end: there will be unexpected
+ * [ ] Encourage to get sloppier in the end: there will be unexpected
        errors :-)
+ * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
 
 
