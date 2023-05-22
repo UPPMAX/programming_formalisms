@@ -68,7 +68,7 @@ The focus of the spiral model is to identify risk
    <span style="font-size:10px">image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
 ### Inception
- The focus of the inception stage is to identify the user needs to initial usecase development 
+ The focus of the inception stage is to identify the user needs to initial use case development 
 - The purpose of the project
 - The scheduled time frame for its completion
 - The resources required for its completion
@@ -240,7 +240,7 @@ An object is the representation of a thing or concept, that encapsulates both da
 An object is characterised by a number of operations and a state which remembers the effect of these operations. 
 
 An object oriented model is comprised of a number of objects which are clearly delimited parts of the system.
-Objects also carry any association to other objects in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct communication that is they know of echother but to not pass messages between each other.
+Objects also carry any association to other objects in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct communication that is they know of each other but to not pass messages between each other.
 A dynamic object relationship on the other hand implies two or more objects that actually communicate with each other
 
 An object can be composed of other object, such can be achieved either through **composition** in the way that a person is composed by its parts head, arms, legs and body to give an example.
@@ -253,14 +253,14 @@ Key concepts in achieving these relationships are the relationships:
 Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstract a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. These classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are generally instantiated as objects again which are the interacting entities of our software. 
 
 The act of classification is when you take behaviour of an object and describe it as a general method that works for all objects of that type and the properties of the objects are abstracted to class properties, remember each property is should in pure OO only be accessible to the object itself that is to any one instance of a class.
-In the classification of an object sometimes it is advantageous to make a class that is a class whose purpose is to define a common interface for their subclasses and therefor can not be instanciated. 
+In the classification of an object sometimes it is advantageous to make a class that is a class whose purpose is to define a common interface for their subclasses and therefor can not be instantiated. 
 
 
  **The concept of message passing**
- Each object has a external interface through which it interacts whith other objects, it is the carriers of messages public(access qualifier, see below) methods of the Classes are the implemementation of message passing.
+ Each object has a external interface through which it interacts with other objects, it is the carriers of messages public(access qualifier, see below) methods of the Classes are the implementation of message passing.
 
-**Inheretance** 
-Inheratance is the carrier of beahivour betweem similar objects. When we implement the object model into a class model of common behaviour one of the most important features of object orientation(OO) is that it allows us to define the *is a* relationship such as a dog *is a* mamal this represented as en extention of the class where the subclass(dog) has all the carachteristics of the parent (mammal)
+**Inheritance** 
+Inheritance is the carrier of behaviour between similar objects. When we implement the object model into a class model of common behaviour one of the most important features of object orientation(OO) is that it allows us to define the *is a* relationship such as a dog *is a* mammal this represented as en extension of the class where the subclass(dog) has all the characteristics of the parent (mammal)
 ```plantuml
 @startuml
 class parent{
@@ -274,16 +274,16 @@ mammal<|-d-dog:is a
 @enduml
 ```
 <br>
-**The concept of Information Hiding** is about making sure that each time in the excecution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of sideeffects and it allows for multiple developers to work on the project without risking to step on each others toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
+**The concept of Information Hiding** is about making sure that each time in the execution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of side-effects and it allows for multiple developers to work on the project without risking to step on each others toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
 This is accomplished through the use of *access qualifier* of the parameter/property or method. The levels of privacy are generally defined as: 
-private, protected and public in increasing accesabillity to the inherance structure and other classes or objects. A private property is only accesible to the object itself, the proteced are accesible to objects and classes in the same inheratace structure and public are accesible to any class or object in the software
+private, protected and public in increasing accessibility to the inheritance structure and other classes or objects. A private property is only accessible to the object itself, the protected are accesible to objects and classes in the same inheritance structure and public are accesible to any class or object in the software
 
 
 
 # Paradigms of Programming 
 
 ### Structural programming
-The concept of structural programming is from 1950s with the aim of improving clarity and quality of software, by the introduction of structured controlflow and block structers that is clearly defined areas of computation. Edsger W. Dijkstra coined the term in his 
+The concept of structural programming is from 1950s with the aim of improving clarity and quality of software, by the introduction of structured control flow and block structures that is clearly defined areas of computation. Edsger W. Dijkstra coined the term in his 
 ### Imperative programming
 Imperative programming is a software development paradigm where functions are implicitly coded in every step required to solve a problem. In imperative programming, every operation is coded and the code itself specifies how the problem is to be solved, which means that pre-coded models are not called on.
 
@@ -295,20 +295,20 @@ Derived from Imperative programming, the basic concept of a procedure call where
 The evolution of programming languages that support the object oriented design paradigm is long and branched with different amounts of support for the different concepts. Any language can be used to code object oriented but the effort of doing so may not be useful or cost effective. 
 
 ### Functional programming
-In functional programming, based of the lambda caclulus of Alonzo Church during the 1930s, the idea of pure functions, are meant to have no side effects is implemented as a design strategy, the secon concept that needs to be implemented is the concept of recursion which functions as the mechanism of iteration in functional programming.
+In functional programming, based of the lambda calculus of Alonzo Church during the 1930s, the idea of pure functions, are meant to have no side effects is implemented as a design strategy, the second concept that needs to be implemented is the concept of recursion which functions as the mechanism of iteration in functional programming.
 
-Programming languages like Haskell, LISP, IPL are languges that represent languages that implement the functional paradigm to varying degrees, but as most design paradigms any language that allows for recursive high order functions will allow for functional programming.
+Programming languages like Haskell, LISP, IPL are languages that represent languages that implement the functional paradigm to varying degrees, but as most design paradigms any language that allows for recursive high order functions will allow for functional programming.
 ### Declarative programming
 A problem is solved is not specifically defined, but instead focuses on what needs to be solved. Declarative programming provides a constant to check to ensure the problem is solved correctly, but does not provide instructions on how to solve the problem. The exact manner in which the problem is solved is defined by the programming language’s implementation through models. Declarative programming is also called model-based programming. Functional, domain-specific (DSL) and logical programming languages fit under declarative programming, such as SQL, HTML, XML and CSS.
 (https://www.techtarget.com/whatis/definition/imperative-programming)
 
 ## Tools
 ### UML
-The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software enginering). it is by that nature very good att describing the Rational Unified Process (RUP), se below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintanined by the omg standard development organisation https://www.omg.org/spec/UML/2.5/PDF) 
-A breif history of the development of UML and other modeling languages which primarly are for objectoriented modeling(observ that the UML standard also works well for describing other models using such things as activity diagrams and sequence diagram to describe algorithms or interactions between sections of your code.)
-<image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model languge history fromhttps://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
+The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software engineering). It is by that nature very good at describing the Rational Unified Process (RUP), see below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintained by the omg standard development organisation https://www.omg.org/spec/UML/2.5/PDF) 
+A brief history of the development of UML and other modeling languages which primarily are for object-oriented modeling(observe that the UML standard also works well for describing other models using such things as activity diagrams and sequence diagram to describe algorithms or interactions between sections of your code.)
+<image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model languge history from https://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
 
-plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its crossplatform integration and its itegration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward enginering from models to code. There are ofcourse great comersial versions but also some decent free ones.
+plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its crossplatform integration and its itegration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward engineering from models to code. There are ofcourse great comersial versions but also some decent free ones.
 draw.io
 [Papyrus](https://www.eclipse.org/papyrus/)
 
@@ -319,7 +319,7 @@ draw.io
 ```plantuml
 @startuml
 !theme superhero
-title:"USECASE Diagrams"
+title:"use case Diagrams"
 skinparam actorStyle awesome
 Lecturer -d->(Present slides on UML)
 Participant-d->(learn UML from SLIDES)
@@ -368,7 +368,7 @@ endif
 stop
 @enduml
 ```
-Unified modeling language is defined and managed by the OMG(obeject management group)(omg.org), which is a standrard developments organisation with 27 countries and more than 230 organisations which produces standards for buissnes development and the software industry. UML is devided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behaviour. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and statemachines are great for describing the flow of a program and to supplement pseudo code when vizualing processes or algorithms.
+Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organisation with 27 countries and more than 230 organisations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behaviour. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
 **Diagrams** 
 <image src="./img/Uml_hierarchie_des_diagrammes.png"><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
 *Structure Diagrams* 
@@ -395,7 +395,7 @@ Unified modeling language is defined and managed by the OMG(obeject management g
 - Package Diagram
 
   Package diagram, a kind of structural diagram, shows the arrangement and organization of model elements in the project. Package diagram can show both structure and dependencies between sub-systems or modules, showing different views of a system, for example, as multi-layered or multi-tiered application 
-  The purpous of these diagrams are to:
+  The purpose of these diagrams are to:
    - Simplify complex class diagrams
    - collect and organise diagrams and documents and key deliverables into a collection. 
    - A package is a collection of logically related UML elements
