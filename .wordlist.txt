@@ -353,5 +353,31 @@ mlc
 txt
 wordlist
 PDFs
+tidyverse
+Gestión
+Madeyski
+Springer
+de
+información
+sistemas
+Hanser
+Herwig
+Ingenieurmäßige
+Mayr
+Projekt
+Projektgruppen
+Softwareentwicklung
+Verlag
+Erdogmus
+Hakan
+Maurizio
+Morisio
+Torchiano
+modularization
+VddlrNOeodg
+youtu
+mins
+
+
 
 

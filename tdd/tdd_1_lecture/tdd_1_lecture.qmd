@@ -46,9 +46,9 @@ Short for 'Test-driven development' A systematic way to grow code
     -   Returns `False`/`FALSE` if the input is not zero
     -   :warning: Gives an error when the input is not a number
 
-## Live demo (15 mins)
+## Live demo (15 minutes)
 
-[https://youtu.be/VddlrNOeodg](https://youtu.be/VddlrNOeodg)
+<https://youtu.be/VddlrNOeodg>
 
 ## Reflection 1
 
@@ -62,11 +62,11 @@ A: Yes
 
 ## Exercise
 
- * Create a GitHub repository called `is_even`
- * Share URL of repo with teachers
- * Develop a function called `is_even`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `is_even`
+-   Share URL of repo with teachers
+-   Develop a function called `is_even`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
@@ -112,8 +112,7 @@ A:
 
 -   TDD makes developers more productive \[1\]
 -   TDD increases quality of the code \[1\]
-    - There are plenty of costly programming mistakes documented!
-    
+    -   There are plenty of costly programming mistakes documented!
 -   TDD helps shape the project architecture \[2\]
 -   TDD helps better modularization \[3\]
 
@@ -135,11 +134,11 @@ A: Until you cannot break your function anymore.
 
 ## Exercise: `is_even`
 
- * Create a GitHub repository called `is_even`
- * Share URL of repo with teachers
- * Develop a function called `is_even`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `is_even`
+-   Share URL of repo with teachers
+-   Develop a function called `is_even`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
@@ -147,11 +146,11 @@ Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalism
 
 ## Exercise: `divide_safely`
 
- * Create a GitHub repository called `divide_safely`
- * Share URL of repo with teachers
- * Develop a function called `divide_safely`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `divide_safely`
+-   Share URL of repo with teachers
+-   Develop a function called `divide_safely`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
@@ -169,7 +168,7 @@ TDD idiom:
 -   Act: do it
 -   Assert: there must have been a change
 
-```
+```         
 a = 1
 b = add_one(a)
 assert b == a + 1
@@ -177,11 +176,11 @@ assert b == a + 1
 
 ## Exercise: `add_one`
 
- * Create a GitHub repository called `add_one`
- * Share URL of repo with teachers
- * Develop a function called `add_one`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `add_one`
+-   Share URL of repo with teachers
+-   Develop a function called `add_one`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
@@ -189,9 +188,8 @@ Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalism
 
 ## Bottom line
 
- * Today we wrote **unit tests**
- * The literature assumes a responsible programmer writes tests \[1,2,3\]
-   (it is built-in to Python!)
+-   Today we wrote **unit tests**
+-   The literature assumes a responsible programmer writes tests \[1,2,3\] (it is built-in to Python!)
 
 ![](thomas_and_hut_the_pragmatic_programmer.jpg)
 
