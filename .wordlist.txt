@@ -352,5 +352,6 @@ json
 mlc
 txt
 wordlist
+PDFs
 
 
