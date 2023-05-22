@@ -16,7 +16,7 @@ When |What
 -----|-------------------------
 13:00|Netiquette
 13:05|Explain TDD: Why? What? 
-13:20|Exercise: write `is_even`, `is_odd`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+13:20|Exercise: write `is_even`, `is_odd`, `divide_safely`
 13:45|Break, have a break
 
 ## 14:00-14:45 RB
@@ -26,8 +26,10 @@ When |What
 
 When |What
 -----|-------------------------
-14:00|second TDD cycle
-14:..|Practice
+14:00|Theory
+14:10|Practice: `is_odd`, `divide_safely`, `add_one`
+14:20|Theory
+14:30|Practice: `divide_safely`, `add_one`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 14:45|Break, have a break
 
 ## 15:00-15:45 RB
@@ -38,7 +40,8 @@ When |What
 
 When       |What
 -----------|-------------------------
-15:00      |Summarise
+15:00      |Bottom line
+15:05      |Practice: `add_one`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 15:15-15:45|Reflection, by JN
 15:45      |End, stay around for questions
 
