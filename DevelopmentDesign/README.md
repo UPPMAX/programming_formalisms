@@ -27,7 +27,7 @@ Evolutionary software development like the Living Software Development Process t
  * Evolutionary software engineering, a review, `https://www.sciencedirect.com/science/article/pii/S1568494604000778`
 
 <br>
-Depending on the chosen method or methodology these steps are generally named slightly different dependent on model but in general these steps fullfil the standard SDLC.
+Depending on the chosen method or methodology these steps are generally named slightly different dependent on model but in general these steps fulfill the standard SDLC.
 
 # PHASES OF THE SDLC 
 In our five phased version of SDLC we section the development into five phases which are somewhat arbitrary as most development is more fluid than the fixed models that have evolved from the waterfall model 
@@ -68,7 +68,7 @@ The focus of the spiral model is to identify risk
    <span style="font-size:10px">image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
 ### Inception
- The focus of the inception stage is to identify the user needs to initial uscase development 
+ The focus of the inception stage is to identify the user needs to initial usecase development 
 - The purpose of the project
 - The scheduled time frame for its completion
 - The resources required for its completion
@@ -98,7 +98,7 @@ Deliverables are:
 - A fully completed software system
 
 ### Transition
-The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects transitions in the organisation might bring on future organisation the requirements gathereing is commonly extracted from bug reports, design is almost never changed during the transition phase while Testing and deployment have mayor focus in this phase.
+The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects transitions in the organisation might bring on future organisation the requirements gathering is commonly extracted from bug reports, design is almost never changed during the transition phase while Testing and deployment have mayor focus in this phase.
 Deliverables:
 - Beta testing execution(firs iteration only)
 - Marketing and distributing of the product
@@ -139,7 +139,7 @@ further reading:
 Test-Driven Development (TDD) is a methodology in software development that focuses on an iterative development cycle where the emphasis is placed on writing test cases before the actual feature or function is written. The iterative cycle in TDD is often referred to as the RED-GREEN-REFACTOR were code first fails the test, the code is then modified until it succeeds the test, lastly the code is refactored
  <br />
   <image src="./img/TDD_Global_Lifecycle.png">
-   <span style="font-size:10px"> image contributed from Xarawn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons and released to the public domain with the aforemention license</span>
+   <span style="font-size:10px"> image contributed from Xarawn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons and released to the public domain with the aforementioned license</span>
 <br />
  The three laws of TDD:
 - 1.You are not allowed to write any production code unless it is to make a failing unit test pass.
@@ -220,7 +220,7 @@ In this course we will present a few methodologies which are in no way or form t
 
 # Paradigms of Design
 ## Modular development/programming
-A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the conept of modules in a language that have support for objects but not for modules.
+A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the concept of modules in a language that have support for objects but not for modules.
 The principles of modular programming was introduced in the 1960s by Larry LeRoy Constantine with the proposal of adding modules to ALGOL68 to ALGOL68-R being the concrete application of the modular development paradigm.
 
 [Code labs introduction to modular programming](https://codelabs.rocks/blog/detailed-guide-for-modular-programming-concept) state the following principles regarding modular programming:
@@ -240,17 +240,17 @@ An object is the representation of a thing or concept, that encapsulates both da
 An object is characterised by a number of operations and a state which remembers the effect of these operations. 
 
 An object oriented model is comprised of a number of objects which are clearly delimited parts of the system.
-Objects also carry any association to other obejcts in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct comunication that is they know of echother but to not pass messages between eachother.
-A dynamic object relationship on the other hand imples two or more objects that actually comunicae whith one and onther
+Objects also carry any association to other objects in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct communication that is they know of echother but to not pass messages between each other.
+A dynamic object relationship on the other hand implies two or more objects that actually communicate with each other
 
-An object can be composed of other object, such can be achived either through **composition** in the way that a person is composed by its parts head, arms, legs and body to give an example.
-Key concepts in achiving these relationships are the relationships:
+An object can be composed of other object, such can be achieved either through **composition** in the way that a person is composed by its parts head, arms, legs and body to give an example.
+Key concepts in achieving these relationships are the relationships:
 * The concept of Information Hiding 
 * The concept of Encapsulation
 * The concept of message passing
 
 
-Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstact a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. Thes classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are gennerally instanciated as objects again which are the interacting entities of our software. 
+Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstract a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. These classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are generally instantiated as objects again which are the interacting entities of our software. 
 
 The act of classification is when you take behaviour of an object and describe it as a general method that works for all objects of that type and the properties of the objects are abstracted to class properties, remember each property is should in pure OO only be accessible to the object itself that is to any one instance of a class.
 In the classification of an object sometimes it is advantageous to make a class that is a class whose purpous is to define a common interface for their subclasses and therefor can not be instanciated. 
@@ -274,7 +274,7 @@ mammal<|-d-dog:is a
 @enduml
 ```
 <br>
-**The concept of Information Hiding** is about making sure that each time in the excecution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of sideeffects and it allows for multiple developers to work on the project without risking to step on eachothers toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
+**The concept of Information Hiding** is about making sure that each time in the excecution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of sideeffects and it allows for multiple developers to work on the project without risking to step on each others toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
 This is accomplished through the use of *access qualifier* of the parameter/property or method. The levels of privacy are generally defined as: 
 private, protected and public in increasing accesabillity to the inherance structure and other classes or objects. A private property is only accesible to the object itself, the proteced are accesible to objects and classes in the same inheratace structure and public are accesible to any class or object in the software
 
@@ -424,7 +424,7 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
    - Sequence diagram
      A sequence diagram is an interaction diagram. From the name, it is clear that the diagram deals with some sequences, which are the sequence of messages flowing from one object to another.
       Interaction among the components of a system is very important from implementation and execution perspective. Sequence diagram is used to visualize the sequence of calls in a system to perform a specific functionality.
-   - Comunication diagram or collaboration diagram
+   - Communication diagram or collaboration diagram
     It represents the structural organization of a system and the messages sent/received. Structural organization consists of objects and links.
     The purpose of collaboration diagram is similar to sequence diagram. However, the specific purpose of collaboration diagram is to visualize the organization of objects and their interaction.
     <image src="./img/Communication-Diagram-Financial-Analysis.webp"><span style="font-size:10px"> [A MVC model descibing a finacial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>

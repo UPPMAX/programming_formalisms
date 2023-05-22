@@ -98,8 +98,10 @@ Step 2
 
 Next, I will clone the repository locally and enter the project
 
+```
 git clone git@github.com:MatPiq/CI-demo.git
 cd CI-demo
+```
 
 Step 3
 
@@ -110,18 +112,25 @@ touch .github/workflows/github-actions-demo.yml
 
 The directory should look something like this:
 
+```
 ├── .git
 ├── .github
 │   └── workflows
 │       └── github-actions-demo.yml
 └── README.md
+```
 
 We can now paste the example workflow into github-actions-demo.yml. For example using vim:
 
+```
 vim .github/workflows/github-actions-demo.yml
+```
 
+```
 github-actions-demo.yml
+```
 
+```
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
@@ -140,6 +149,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+```
 
 YAML syntax
 
@@ -155,9 +165,11 @@ Step 4
 
 We will now commit and push the changes to Github and inspect the workflow.
 
+```
 git add . 
 git commit -m "Added demo workflow"
 git push
+```
 
 Step 5
 
@@ -191,14 +203,16 @@ Step 2: Clone your repository, add program + tests and commit + push
 Begin by cloning the repository you just created. Then add the reverse_string.py. Note that we include a mistake in the code so that our test will fail (it should be easy to spot!).
 reverse_string.py
 
+```
 def reverse_string(s):
     return s[::-1][::-1]
+```
 
 Next, we add the corresponding test test_reverse_string.py. Note that pytest will automatically run any module named test_*.py or *_test.py.
 test_reverse_string.py
 
+```
 from reverse_string import reverse_string
-
 
 def test_reverse():
     # Arrange - set up the test case
@@ -239,19 +253,24 @@ test_string_manipulation.py:12: AssertionError
 ==================================== short test summary info ====================================
 FAILED test_string_manipulation.py::test_reverse - AssertionError: assert 'paris' == 'sirap'
 ======================================= 1 failed in 0.02s =======================================
+```
 
 What our project directory should look like
 
+```
 $ls -l 
 .git
 reverse_string.py
 test_reverse_string.py
 README.md
+```
 
 We should now be ready to add the files we have created, commit and push.
 
+```
 git add . & git commit -m "Initial commit"
 git push
+```
 
 Step 3: Create CI workflow
 
@@ -268,6 +287,7 @@ python-app.yml
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
+```
 name: Python application
 
 on:
@@ -298,6 +318,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest example.py
+```
 
 Step 4: Open an Issue on GitHub
 
@@ -311,12 +332,16 @@ git checkout -b matias/bugfix-reverse_string
 
 We can link the commit to the issue by using the keyword resolve (See more here).
 
+```
 git add reverse_string.py
 git commit -m "fix reverse_string.py, closes #1"
+```
 
 We should verify locally that the tests pass before pushing to GitHub. Remember to set the upstream to the new branch.
 
+```
 git push --set-upstream origin matias/bug-fix
+```
 
 Step 6: Accept pull request
 
@@ -386,7 +411,7 @@ Now going back to your own repository again, review the pull request your collea
 
 ## Slide 5
 
-Typechecking, linting and formatting
+Type checking, linting and formatting
 
 We are now going to see other parts of the development that be automated using GH Actions in order improve the quality of the code base. We will continue with Python and look at some modern and common tools used popular projects.
 Formatting with black
@@ -406,6 +431,8 @@ Black - The Uncompromising Code Formatter
 Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting. You will save time and mental energy for more important matters.
 
 Let us create a module formatting.py
+
+```
 formatting.py
 
 import numpy as np
@@ -417,6 +444,7 @@ a_short_list = [
 ]
 
 a_long_list = ["an element",  "an element",    "an element"  "an element",  "an element",  "an element", "an element",  "an element"]
+```
 
 Now we format at see what happens
 
@@ -427,6 +455,7 @@ Adding black to workflow
 To add black to the workflow we need to add it to the packages being pip-installed as well as create a new new step.
 python-app.yml
 
+```
     # This workflow will install Python dependencies, run tests and lint with a single version of Python
     # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
@@ -463,13 +492,14 @@ python-app.yml
         - name: Formatting with black
           run: |
             black formatting.py --check --diff
+```
 
 Formatting on push
 
 It is also possible to setup for your code to be automatically formatted when pushed to the repository. You can read more about that here.
 Linting with flake8
 
-Linting is a form of static code analysis that looks for and warns about code smells, possible errors and bad style in your code. You have probably seen this already if you are using a modern IDE like vscode or Pycharm with a built-in language server.
+Linting is a form of static code analysis that looks for and warns about code smells, possible errors and bad style in your code. You have probably seen this already if you are using a modern IDE like vscode or PyCharm with a built-in language server.
 
 A popular linter for Python that can be used directly from the command line (It can also be integrated into an IDE) is Flake8. Let us create a new file called linting.py in the same directory we used for automated testing. You can find all the error/violation codes here
 
@@ -477,12 +507,14 @@ touch linting.py
 
 linting.py
 
+```
 import numpy as np # F401
 from math import * # F403
 
 if True == False: #
     x = sqrt(9)
     break # F701
+```
 
 Static type-checking with mypy
 
@@ -509,6 +541,7 @@ Automated refactoring with sourcery (Bonus)
 sourcery is a new and interesting tool that is able to refactor the code to make it more pythonic. Since it requires that you sign up for an account, I will just quickly show its functionality. However, it can be added as a GitHub action and just like with black it can be used to automatically refactor the when you push. You can read more about this here.
 refactoring.py
 
+```
 # assign-if-exp
 condition = True
 if condition:
@@ -533,6 +566,7 @@ if 1 < b and b < 3:
 hats = ["basker", "cap", "bowler"]
 if any(hat == "bowler" for hat in hats):
     print("I have a bowler hat!")
+```
 
 We can check if any refactoring can be done using sourcery
 
