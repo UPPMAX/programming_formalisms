@@ -11,7 +11,7 @@
 
 Day | Time       | Teacher | Topic
 ----|------------|---------|----------------------------------------------------
-Mon |9-12, 13-16 |BC + JN  | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html), including a Reflection by JN from 15:15-15:45
+Mon |9-12, 13-16 |BC + JN  | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html), including a Reflection by JN from 15:30-16:00
 Tue |9-12        |LE       | [Paradigms, Introduction to formalised development](DevelopmentDesign/README.md) 
 Tue |13-16       |RB + JN  | [Introduction to Test driven development (TDD)](tdd/README.md), including a Reflection by JN from 15:15-15:45
 Wed |9-12        |JN       | [social coding, pair programming as  a tool for rapid development](https://github.com/UPPMAX/programming_formalisms/tree/main/common-practices)
