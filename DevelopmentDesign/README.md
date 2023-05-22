@@ -253,7 +253,7 @@ Key concepts in achieving these relationships are the relationships:
 Once a set of objects have been identified it is common to abstract these through the process of classification, a process where we abstract a given object into its concepts, as we build out our classes some concepts that have no connection to the objects of our design. These classes are commonly known as utility classes. Once the classification and message passing have been designed our classes are generally instantiated as objects again which are the interacting entities of our software. 
 
 The act of classification is when you take behaviour of an object and describe it as a general method that works for all objects of that type and the properties of the objects are abstracted to class properties, remember each property is should in pure OO only be accessible to the object itself that is to any one instance of a class.
-In the classification of an object sometimes it is advantageous to make a class that is a class whose purpous is to define a common interface for their subclasses and therefor can not be instanciated. 
+In the classification of an object sometimes it is advantageous to make a class that is a class whose purpose is to define a common interface for their subclasses and therefor can not be instanciated. 
 
 
  **The concept of message passing**
@@ -396,10 +396,10 @@ Unified modeling language is defined and managed by the OMG(obeject management g
 
   Package diagram, a kind of structural diagram, shows the arrangement and organization of model elements in the project. Package diagram can show both structure and dependencies between sub-systems or modules, showing different views of a system, for example, as multi-layered or multi-tiered application 
   The purpous of these diagrams are to:
-   - Simplyfy complex class diagrams
+   - Simplify complex class diagrams
    - collect and organise diagrams and documents and key deliverables into a collection. 
    - A package is a collection of logically related UML elements
-   - Packages are depiced as file folders.
+   - Packages are depicted as file folders.
 
 - **Note**  − If the above descriptions and usages are observed carefully then it is very clear that all the diagrams have some relationship with one another. Component diagrams are dependent upon the classes, interfaces, etc. which are part of class/object diagram. Again, the deployment diagram is dependent upon the components, which are used to make component diagrams. 
 
@@ -408,12 +408,12 @@ Unified modeling language is defined and managed by the OMG(obeject management g
 Activity diagram describes the flow of control in a system. It consists of activities and links. The flow can be sequential, concurrent, or branched.
 Activities are nothing but the functions of a system. Numbers of activity diagrams are prepared to capture the entire flow in a system.
 Activity diagrams are used to visualize the flow of controls in a system. This is prepared to have an idea of how the system will work when executed.
-Activity diagrams are also excellent to describe Algotithms, in conjuction with pseudo code. 
+Activity diagrams are also excellent to describe Algorithms, in conjunction with pseudo code. 
 
 - **Note** Due to that the dynamic nature of a system is very difficult to capture. UML has provided features to capture the dynamics of a system from different angles. Sequence diagrams and collaboration diagrams are isomorphic, hence they can be converted from one another without losing any information. This is also true for Statechart and activity diagram
 
 - Use Case diagram
-   A set of use cases, actors, and their relationships. They represent the use case view of a system. The intention of using a use case view and not just text to describe the usecases of your system is so you can describe the relationship between different stake holders, controllers (Actors)
+   A set of use cases, actors, and their relationships. They represent the use case view of a system. The intention of using a use case view and not just text to describe the use cases of your system is so you can describe the relationship between different stake holders, controllers (Actors)
    A use case represents a particular functionality of a system. It is used to describe the relationships among the functionalities and their internal/external controllers. 
 
 - State Machine Diagram
@@ -427,7 +427,7 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
    - Communication diagram or collaboration diagram
     It represents the structural organization of a system and the messages sent/received. Structural organization consists of objects and links.
     The purpose of collaboration diagram is similar to sequence diagram. However, the specific purpose of collaboration diagram is to visualize the organization of objects and their interaction.
-    <image src="./img/Communication-Diagram-Financial-Analysis.webp"><span style="font-size:10px"> [A MVC model descibing a finacial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
+    <image src="./img/Communication-Diagram-Financial-Analysis.webp"><span style="font-size:10px"> [A MVC model describing a financial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
    - **Note** Plant UML can not do Communication diagram/collaboration diagrams
 
    - Interaction overview diagram
@@ -452,17 +452,17 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
 
 
 ### Pair Programming 
- A tool for rapid development is the so called Pair Programming where two developers code on the same code simultatiously one as the "Driver" and one as the "Navigator" 
+ A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator" 
 
  ### Design Patterns
-  A design pattern is a collection of bestpractises to solve a given design problem. Such as window managent on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View(The User interface and external comunications of the program)
-  <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions betwen program interface, control and dat(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
+  A design pattern is a collection of bestpractises to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View(The User interface and external communications of the program)
+  <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions between program interface, control and data(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
 Some examples of where this pattern has been implemented in modern times are:
 - [Ruby on Rails](https://rubyonrails.org/)
 - [ASP.NET MVC](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) Microsoft Active Server Pagess in the .NET framework 
 - [Laravel](https://laravel.com/) PHP framework
 - [Angular](https://angular.io/) is built using TypeScript
-A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Obejct-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
+A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Object-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
  <br />   
  ### AI assisted programming
-    With the emergence of more complex AI and espceially the use of LLM(Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space.
+    With the emergence of more complex AI and especially the use of LLM(Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space.
