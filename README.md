@@ -28,10 +28,11 @@ Fri |15:30-16:00 |JN (RB)  | Reflection
 
 ## Files
 
-Filename          |Descriptions
-------------------|---------------------------------------------------------------------------------------
-`mlc_config.json` |Used by the link checker
-`.spellcheck.yaml`|Used by the spell checker, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+Filename                            |Descriptions
+------------------------------------|---------------------------------------------------------------------------------------
+[mlc_config.json](mlc_config.json)  |Link checker configuration file
+[.spellcheck.yaml](.spellcheck.yaml)|Spell checker configuration file, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+[.wordlist.txt](.wordlist.txt)      |Whitelist for spell checker
 
 ## Links
 
