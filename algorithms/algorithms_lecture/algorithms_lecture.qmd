@@ -531,7 +531,8 @@ Computer science is the study of how computers operate on information. Both info
 
 Storing things Searching for things Sorting lists BLAST parallelism
 
-Why these five topics? The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. Parallell algorithms require special consideration beyond the usual.
+Why these five topics? The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. 
+Parallel algorithms require special consideration beyond the usual.
 
 But first some fundamentals What is an algorithm and what is a data structure?
 

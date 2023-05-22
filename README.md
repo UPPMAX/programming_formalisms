@@ -3,7 +3,7 @@
 ![](Formalism.png)
 
 - Course Repository for programming formalisms course.
-- Under this projects, notes, excersises and lecture slides will be stored.
+- Under this projects, notes, exercises and lecture slides will be stored.
 
 - Please view the [setup.md](setup.md) file for preparations
 

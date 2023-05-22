@@ -1,69 +1,69 @@
 # Software development processes
 
 ## SDLC
-*SDLC* ,or the Software Development Life Cycle, is a model describing the process of bringing a peice of software to market and maintaining it. The basic steps or as they are know phases each encompass different tasks needed to be completed as the software goes from idea to frution.
+*SDLC* ,or the Software Development Life Cycle, is a model describing the process of bringing a piece of software to market and maintaining it. The basic steps or as they are know phases each encompass different tasks needed to be completed as the software goes from idea to fruition.
 <image src="./img/SDLC.png">
-<span style="font-size:10px"> Generalized SDLC phases as a cycle of steps where the cicle is traversed multiple times, there is a week correlation between cycles and versions</span>
-You will if you google around many varitations of this and the phases can change some what but the genreal idea stays constant. The following illustations show both a variation of the common lifecycel model and  the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
+<span style="font-size:10px"> Generalized SDLC phases as a cycle of steps where the circle is traversed multiple times, there is a week correlation between cycles and versions</span>
+You will if you google around many variations of this and the phases can change some what but the general idea stays constant. The following illustrations show both a variation of the common lifecycle model and  the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
   <!--- https://www.tutorialspoint.com/sdlc/index.htm --->
 <image src="./img/SDLC_ISO_IEC_12207.png"><span style="font-size:10px"> Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010
 Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Life Cycle Management</span>
  
  The early models where depicted as circles stemming from the waterflow model. <image src="./img/Waterfall_system_model.jpg"><span style="font-size:10px"> Illustration waterfall model from https://commons.wikimedia.org/wiki/File:Waterfall_system_model.jpg </span>
  
- After the 80s models tend  to focus on the iterative nature of development. One way of thinkning about the iterative nature of development while keeping the incremental cost of iteration is as a helix. Where a change in the desig in a lower sprial incurs the cost of the previous spirals, eventually the cost of introducing change into the next step will be larger that what is profitable for the project, at which time the efforts into the project usually trickles down rather than following the theoretical step of retirement. 
+ After the 80s models tend  to focus on the iterative nature of development. One way of thinking about the iterative nature of development while keeping the incremental cost of iteration is as a helix. Where a change in the design in a lower spiral incurs the cost of the previous spirals, eventually the cost of introducing change into the next step will be larger that what is profitable for the project, at which time the efforts into the project usually trickles down rather than following the theoretical step of retirement. 
  <image src="./img/helix_legend-01.png" > The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY licence<span style="font-size:10px"> </span>
 
-Iterative models like RUP or Spiral model will emphises that a software is developed in itterative steps where you may spend more or less time in any give phase, usualy earlier iteration focus on planing and later on development and maintenace. Each time a change is introducced the impact on the cost increases with number of iteration and phases. 
-Evolutionary software development like the Living Software Development Process takes inspiration from geneting algorithms and genetic programing to build a library of models from which to work.
+Iterative models like RUP or Spiral model will emphasises that a software is developed in iterative steps where you may spend more or less time in any give phase, usually earlier iteration focus on planing and later on development and maintenance. Each time a change is introduced the impact on the cost increases with number of iteration and phases. 
+Evolutionary software development like the Living Software Development Process takes inspiration from genetic algorithms and genetic programming to build a library of models from which to work.
 
 
-*recomended reading*
+*recommended reading*
 
-[SDLC stands for Software Development Life Cycle at www.tutorialspoint.com](https://www.tutorialspoint.com/sdlc/index.htm)
+ * [SDLC stands for Software Development Life Cycle at www.tutorialspoint.com](https://www.tutorialspoint.com/sdlc/index.htm)
 
-[Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
+ * [Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
 
  * Evolutionary software engineering, a review, `https://www.sciencedirect.com/science/article/pii/S1568494604000778`
 
 <br>
-Depending on the chosen method or metodology these steps are genarlly named sligthly diffrent dependent on model but i general the step fullfill the standard SDLC. 
+Depending on the chosen method or methodology these steps are generally named slightly different dependent on model but in general these steps fullfill the standard SDLC.
 
 # PHASES OF THE SDLC 
-In our five phased version of SDLC we section the development into five phases which are somewhat arbitray as most development is more fluid than the fixed models that have evolved from the waterfall model 
-while the ISO/IEC version of SDLC has nine phases below is an atempt to map the phases to eachother.
+In our five phased version of SDLC we section the development into five phases which are somewhat arbitrary as most development is more fluid than the fixed models that have evolved from the waterfall model 
+while the ISO/IEC version of SDLC has nine phases below is an attempt to map the phases to each other.
 
 ## First phase *Planning*
 
-In the first phase one needs to determine what Trauth et.al call Percetption of need, Feasabillity and Analysis
+In the first phase one needs to determine what Trauth et.al call Perception of need, Feasability and Analysis
 The ISO/IEC standard 12207 calls this **Needs Determination** 
 after the needs, the inital requirments, have been determined through the above mentions process they are then fleshed out in the **Concept and Exploration**
-according to the SDLC_ISO_IEC_12207 this is the time to make a risk anaysis of your development stategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evulotionary software model(Living Software Development Process)
-Most models cover some form of risk assesment, involved in the requiremnts gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
+according to the SDLC_ISO_IEC_12207 this is the time to make a risk analysis of your development strategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evolutionary software model(Living Software Development Process)
+Most models cover some form of risk assessment, involved in the requirements gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
 
 ## Second phase   *Design*
-This stage coresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirments put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a litlle less :-)  but still it is important to not over enginer when you and your team have a clear picture of what you whant to develop that is when we step to the next phase)
+This stage corresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirements put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a little less :-)  but still it is important to not over-engineer when you and your team have a clear picture of what you want to develop that is when we step to the next phase)
 
 ## Third phase  *Development*
- This stage coresponds to the fourth phase in the ISO/IEC standard **Enginering/Development** is the stage where you use processes to implement your software system that is this is the coding step.
+ This stage corresponds to the fourth phase in the ISO/IEC standard **Engineering/Development** is the stage where you use processes to implement your software system that is this is the coding step.
 
 ## Fourth phase *Deployment*/*Testing*
- The forth phase corseponds to phases of **Production/manufacturing** where you veryfi your product, and **Deployment/Sale**  where the product is released to the intended customers/audience
+ The forth phase corresponds to phases of **Production/manufacturing** where you verify your product, and **Deployment/Sale**  where the product is released to the intended customers/audience
 
 ## Fifth phase *Maintenance*/*Deployment and Maintenance*
- **Operations** , **Maintenance and support** as well as the **Retiermnet** phase of the ISO/IEC standard 
+ **Operations** , **Maintenance and support** as well as the **Retirement** phase of the ISO/IEC standard 
 
 # Development Processes
 Below some descriptions of Development process, what model should be chosen should according to ISO/IEC 12207 be determined through a risk analysis and
 then risk minimised,but in practice the choice is often determined by the culture of the development team and organisation policy. 
 
 ## Spiral model
-The spiral model was developed in 1986 by Barry Boehm in his paper A Spiral Model of Software Development and Enhanchment
+The spiral model was developed in 1986 by Barry Boehm in his paper A Spiral Model of Software Development and Enhancement
 The focus of the spiral model is to identify risk 
-<image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presentes by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
+<image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presented by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
  
 ## RUP, Rational Unified Process
- Rational Unified Process is a software development metod based on iterative obejctoriented development. The idea is that you tailor the development method to fit the project, this howerver is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some consessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Buiseness modeling), Each phase in RUP is a complete itreation of the design steps Inception, Elaboration,Construction and Transition
+ Rational Unified Process is a software development metod based on iterative obejctoriented development. The idea is that you tailor the development method to fit the project, this howerver is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some consessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete itreation of the design steps Inception, Elaboration,Construction and Transition
    <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
    <span style="font-size:10px">image contributated from  Wikimedia Commons and was originaly made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
@@ -80,8 +80,8 @@ The focus of the spiral model is to identify risk
 - The General vison of the project
 - The Project Plan and goal
 - The Project scope
-- Inital buissnes suit from finacial anlaysis, could be replaced by the scientific motivation, proposal for the project.
-- Requirments understanding, through use case design.
+- Initial business suit from financial analysis, could be replaced by the scientific motivation, proposal for the project.
+- Requirements understanding, through use case design.
 
 ### Elaboration
 The elaboration phase is focused on the refinment of requirments the design of the software and test that are to be run throught the project iteration lifetime.
@@ -150,7 +150,7 @@ Test-Driven Development (TDD) is a methodology in software development that focu
   http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
 
-TDD will be covered in detail elsewhere, but the genreal idea of TDD is to generate roubust solutions through the use of test for the whole life cycle.
+TDD will be covered in detail elsewhere, but the general idea of TDD is to generate roubust solutions through the use of test for the whole life cycle.
 
 ## AGILE Development and the The AGILE manifesto
 Manifesto for Agile Software Development

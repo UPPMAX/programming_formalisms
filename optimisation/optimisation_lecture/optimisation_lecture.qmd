@@ -65,7 +65,7 @@ An exception to the rule that these bottlenecks are easy to see and resolve can 
 
 Before we can discuss the optimisation of the actual instructions that do work, we must examine the CPU a bit closer.
 
-inteli7-1.png
+![inteli7-1.png](inteli7-1.png)
 
 As this diagram of a 4-core Intel i7 shows, a fair amount of CPU space is dedicated to a large cache, which is used to invisibly (to the programmer) preload data from RAM onto the CPU. This image actually understates the space dedicated to cache, because each core has L2 and L1 caches as well! Probably \>50% of the chip is occupied by cache.
 
@@ -79,19 +79,21 @@ All modern CPU's are pipelined. At the end of the single-core era, some CPU's ha
 
 a generic 4-stage instruction pipeline
 
-Because parts of a CPU are anyway designed to do different things, several instructions can be executed at once by fetching a new instruction (reading the next line of assembly) while the previous instruction is being decoded (translating the instruction's hexadecimal value into operations). This is known as Instruction-level Parallellism (ILP) The advantage of this setup is better utilisation of the CPU's hardware and (in this case) up to four sequential instructions of a single program executing in parallel. In real systems, a CPU core is only running at full performance if 10-20 instructions are in the pipeline at once.
+Because parts of a CPU are anyway designed to do different things, several instructions can be executed at once by fetching a new instruction (reading the next line of assembly) while the previous instruction is being decoded (translating the instruction's hexadecimal value into operations). This is known as Instruction-level parallelism (ILP) The advantage of this setup is better utilisation of the CPU's hardware and (in this case) up to four sequential instructions of a single program executing in parallel. In real systems, a CPU core is only running at full performance if 10-20 instructions are in the pipeline at once.
 
 In order to fill the pipeline, the CPU must be able guess at the instructions that will follow e.g. an "if" statement. Additionally, all of the instructions must have their data ready (i.e. in register if doing arithmetic, in L1 cache if loading a register, etc). If there is a cache miss, or the CPU guesses wrong, all the stuff in the pipeline must wait or be purged entirely, reducing the effective ILP. Modern CPUs ameliorate the impossibility of this to some extent by executing some instructions out of order. Vector/SIMD operations
 
-One of the main workhorses of a CPU core is the Arithmetic Logical Units (ALU), which does the math. Modern ALUs are equipped with wide "vector" registers, which perform SIMD parallellism. Typical high-precision floating point numbers use 4 bytes (32 bits). A vector register can store up to 16 doubles, and associated vector instructions can do operations on all the elements simultaneously.
+One of the main workhorses of a CPU core is the Arithmetic Logical Units (ALU), which does the math. Modern ALUs are equipped with wide "vector" registers, which perform SIMD parallelism. Typical high-precision floating point numbers use 4 bytes (32 bits). A vector register can store up to 16 doubles, and associated vector instructions can do operations on all the elements simultaneously.
 
-Needless to say, this is super handy if you have an algorithm that does a lot of the same operations on data that lies adjacent. But even if you do, the compiler often needs to be coaxed to issue such instructions, if you don't do it by hand. In either case, you will be subject to the whims of machine spirits --- prayers and offerings can go a long way. Parallellisation
+Needless to say, this is super handy if you have an algorithm that does a lot of the same operations on data that lies adjacent. But even if you do, the compiler often needs to be coaxed to issue such instructions, if you don't do it by hand. In either case, you will be subject to the whims of machine spirits --- prayers and offerings can go a long way. 
+
+## Parallellisation
 
 Of course, if you only issue instructions to one CPU core at a time with a single-threaded program, you're potentially missing out on a lot of performance. We'll discuss this more later.
 
 Ruthless copy-paste of [here](https://uppsala.instructure.com/courses/69215/pages/profiling?module_item_id=635528):
 
-Profiling
+## Profiling
 
 In many cases, the system will spend a majority of its time in a small amount of code. Clearly, this is the part of the code you need to improve. Amdahl's Law
 
@@ -103,7 +105,9 @@ Knowing the expected outcome of an optimisation effort is helpful when deciding 
 
 A simple method for timing is using the UNIX time function.
 
+```
 user\@system:\~/mydir\$ time ./myprogram real 0m0.008s user 0m0.000s sys 0m0.002s
+```
 
 This is super handy for checking whether a change made a difference, but can also hint at potential bottlenecks.
 
@@ -115,9 +119,10 @@ sys is time spent in system calls. Programs that spend their time here are usual
 
 To see this in action, create a short python program with the following lines:
 
+```
 for i in range(10000): with open("test.txt","w") as f: f.write(str(i)+"\n")
-
-Try running "time python3 fiotest.py" and examine the output. Then move the "with open..." line to the top of the script and compare.
+```
+Try running `time python3 fiotest.py` and examine the output. Then move the "with open..." line to the top of the script and compare.
 
 The timeit module in Python is useful for timing parts of your code. The equivalent in C is using the \<time.h\> library. Profilers
 
@@ -125,11 +130,13 @@ Profilers are tools, either internal or external, that can tell you more details
 
 Try profiling the fiotest.py script:
 
+```
 marcusl\$ python3 -m cProfile -s 'tottime' filetest.py 50003 function calls in 1.587 seconds
 
 Ordered by: internal time
 
 ncalls tottime percall cumtime percall filename:lineno(function) 10000 0.957 0.000 0.989 0.000 {built-in method io.open} 1 0.596 0.596 1.587 1.587 filetest.py:2() 10000 0.017 0.000 0.017 0.000 {built-in method \_locale.nl_langinfo} 10000 0.012 0.000 0.028 0.000 \_bootlocale.py:33(getpreferredencoding) 10000 0.005 0.000 0.005 0.000 codecs.py:186(**init**) 10000 0.002 0.000 0.002 0.000 {method 'write' of '\_io.TextIOWrapper' objects} 1 0.000 0.000 1.587 1.587 {built-in method builtins.exec} 1 0.000 0.000 0.000 0.000 {method 'disable' of '\_lsprof.Profiler' objects}
+```
 
 On SNIC systems, you have access to Intel VTune, which can do the same thing for C, Fortran, and other codes. Many IDE's have a profiler, including XCode.
 
@@ -145,11 +152,12 @@ Once you know the hotspots in your code, it may not be immediately evident what 
 
 Generally speaking, the execution of code is limited by the rate of arithmetic operations or by the rate of data flowing into the CPU. But which is it, and how can we tell? The Roofline model
 
-https://dl.acm.org/doi/10.1145/1498765.1498785
+[https://dl.acm.org/doi/10.1145/1498765.1498785](https://dl.acm.org/doi/10.1145/1498765.1498785)
+
 
 Links to an external site.
 
-https://www.sciencedirect.com/topics/computer-science/roofline-model
+[https://www.sciencedirect.com/topics/computer-science/roofline-model](https://www.sciencedirect.com/topics/computer-science/roofline-model)
 
 Links to an external site.
 
@@ -181,7 +189,7 @@ You also need to find the maximum bandwidth to memory, and this information is n
 
 Roofline model showing three levels of computational ceiling
 
-In the example above, borrowed from the best Roofline article ("Roofline:An insightful Visual Performance model for multicore Architectures"), you can see an example of computational ceilings for a certain computer. With "just" perfect thread-level parallellism (TLP), a program can attain at most 2 GFlops. With SIMD instructions doing 4 effective operations every instruction, the max performance increases accordingly. The last doubling of speed comes from "balancing" arithmetic operations, allowing the compiler to issue fused multiply-add instructions that effectively do two operations at once. Note that the height of some of these ceilings depends on whether you're doing single-precision or double-precision math.
+In the example above, borrowed from the best Roofline article ("Roofline:An insightful Visual Performance model for multicore Architectures"), you can see an example of computational ceilings for a certain computer. With "just" perfect thread-level parallelism (TLP), a program can attain at most 2 GFlops. With SIMD instructions doing 4 effective operations every instruction, the max performance increases accordingly. The last doubling of speed comes from "balancing" arithmetic operations, allowing the compiler to issue fused multiply-add instructions that effectively do two operations at once. Note that the height of some of these ceilings depends on whether you're doing single-precision or double-precision math.
 
 Roofline mode showing 3 levels of memory bandwidth
 
