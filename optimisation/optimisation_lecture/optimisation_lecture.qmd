@@ -256,7 +256,7 @@ Run with 2, 4, 8, etc threads using the same input. This gives you the strong sc
 Run with 2, 4, 8, etc threads, also doubling the size of the input. This shows you the weak scaling, which is the marginal capacity for doing larger problems. 
 ```
 
-A Parallell boid simulation
+A Parallel boid simulation
 
 Here I try to present an instructive example of how a relatively simple program turned out to be difficult to parallelise.
 
