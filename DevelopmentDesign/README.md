@@ -452,10 +452,13 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
 
 
 ### Pair Programming 
- A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator" 
 
- ### Design Patterns
-  A design pattern is a collection of bestpractises to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View(The User interface and external communications of the program)
+A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator" 
+
+### Design Patterns
+
+A design pattern is a collection of bestpractises to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View(The User interface and external communications of the program)
+
   <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions between program interface, control and data(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
 Some examples of where this pattern has been implemented in modern times are:
 - [Ruby on Rails](https://rubyonrails.org/)
@@ -463,6 +466,8 @@ Some examples of where this pattern has been implemented in modern times are:
 - [Laravel](https://laravel.com/) PHP framework
 - [Angular](https://angular.io/) is built using TypeScript
 A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Object-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
- <br />   
- ### AI assisted programming
-    With the emergence of more complex AI and especially the use of LLM(Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space.
+ <br />
+
+### AI assisted programming
+
+With the emergence of more complex AI and especially the use of LLM(Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space.
