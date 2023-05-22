@@ -26,8 +26,8 @@ When |What
 
 ## Tuesday 15:00-15:45 RB
 
-When |What
------|-------------------------
-15:00|more TDD cycles
-15:..|Practice
-15:45|End, stay around for questions
+When       |What
+-----------|-------------------------
+15:00      |Summarise
+15:15-15:45|Reflection, by JN
+15:45      |End, stay around for questions
