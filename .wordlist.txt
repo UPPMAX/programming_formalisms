@@ -345,3 +345,12 @@ yml
 YML
 zenodo
 Zenodo
+summarise
+Summarise
+config
+json
+mlc
+txt
+wordlist
+
+
