@@ -353,7 +353,7 @@ In this last step we will review the pull request on GitHub and verify that it i
 
 Exercise in pairs
 
-In this exercise will be very similar to what we just did but this time you will be sent out in break-out rooms and work in pairs where you will individually will begin by writing some code, a corresponding test and file an issue. You will then fork your partners repository, fix the issue and submit a pull request. This is exercise is also based on CodeReinery's Full-cycle collaborative workflow. You can look at their website if you are stucked and want an alternative source of information.
+In this exercise will be very similar to what we just did but this time you will be sent out in break-out rooms and work in pairs where you will individually will begin by writing some code, a corresponding test and file an issue. You will then fork your partners repository, fix the issue and submit a pull request. This is exercise is also based on CodeRefinery's Full-cycle collaborative workflow. You can look at their website if you are stuck and want an alternative source of information.
 
 What we will be doing
 
@@ -362,7 +362,7 @@ This exercise takes around 20-30 min
     A: Create a repository on GitHub
     B: Commit some code with errors and a corresponding test
     C: Open an issue and report the bug
-    D: Your colleague has also done step A-C. Now, fork your collegues repository, clone it and fix the issue
+    D: Your colleague has also done step A-C. Now, fork your colleague's repository, clone it and fix the issue
     E: Push your fix to GitHub and merge the pull request
 
 Step 1: Create a new repository on GitHub
@@ -397,7 +397,7 @@ and more generally about forking here:
 
 After you have forked the repository you should clone your fork so that you have it locally. This will probably look something like this:
 
-git clone git@GitHub.com:your-username/name-of-collegue-repo.git
+git clone git@GitHub.com:your-username/name-of-colleague-repo.git
 
 Step 6: Make the test pass!
 

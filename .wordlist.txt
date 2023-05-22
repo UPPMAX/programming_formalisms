@@ -1,3 +1,6 @@
+matias
+bugfix
+github
 acm
 agilemanifesto
 al
@@ -231,6 +234,7 @@ MVC
 TypeScript
 bestpractises
 OMG
+quickstart
 uml
 Behavioural
 firefox
