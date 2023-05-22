@@ -77,14 +77,14 @@ The focus of the spiral model is to identify risk
 - The estimated risk assessment, among others
 
  By the end of the Inception phase you should have determined the following:
-- The General vison of the project
+- The General vision of the project
 - The Project Plan and goal
 - The Project scope
 - Initial business suit from financial analysis, could be replaced by the scientific motivation, proposal for the project.
 - Requirements understanding, through use case design.
 
 ### Elaboration
-The elaboration phase is focused on the refinment of requirments the design of the software and test that are to be run throught the project iteration lifetime.
+The elaboration phase is focused on the refinement of requirements the design of the software and test that are to be run through the project iteration lifetime.
 Deliverables of the Elaboration phase is:
 - A full model with functional and non-functional requirements
 - A complete software architecture description
@@ -98,7 +98,7 @@ Deliverables are:
 - A fully completed software system
 
 ### Transition
-The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects tansitions in the organisation might bring on future oragnistation the requirements gathereing is commonly extracted from bug reports, design is almost never changed during the transition phase whil Testing and deployment have mayor focus in this phase.
+The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects transitions in the organisation might bring on future organisation the requirements gathereing is commonly extracted from bug reports, design is almost never changed during the transition phase while Testing and deployment have mayor focus in this phase.
 Deliverables:
 - Beta testing execution(firs iteration only)
 - Marketing and distributing of the product
@@ -107,9 +107,9 @@ Deliverables:
 - Assessments based on user experience
 
 ## RAD Rapid Application Development
-Using Protoyping and minimal design to generate fast development cycles, this has the disadvantage to generating very little structure and for larger or more complex systems the risk of deraling projects or unmaintainable solutions are high.
+Using Prototyping and minimal design to generate fast development cycles, this has the disadvantage to generating very little structure and for larger or more complex systems the risk of derailing projects or unmaintainable solutions are high.
 
-**Suitable paramaters** for using a RAD process
+**Suitable parameters** for using a RAD process
 - Focused project scope where business objectives are well defined and narrow.
 - Data for the project already exists (completely or in part). The project largely comprises analysis or reporting of the data.
 - Decisions can be made by a small number of people who are available and preferably co-located.
@@ -125,7 +125,7 @@ Using Protoyping and minimal design to generate fast development cycles, this ha
 - The technical architecture is unclear and much of the technology will be used for the first time within the project.
 - Technical requirements are tight for the equipment to be used.
 
-futher reading:
+further reading:
 
  * `https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_`
 
@@ -136,10 +136,10 @@ futher reading:
 
 ## TDD Test Driven Development
 
-Test-Driven Development (TDD) is a methodology in software development that focuses on an iterative development cycle where the emphasis is placed on writing test cases before the actual feature or function is written. The iterative cycle in TDD is often refered to as the RED-GREEN-REFACTOR were code first fails the test, the code is then modified until it succeds the test, lastly the code is refactored
+Test-Driven Development (TDD) is a methodology in software development that focuses on an iterative development cycle where the emphasis is placed on writing test cases before the actual feature or function is written. The iterative cycle in TDD is often referred to as the RED-GREEN-REFACTOR were code first fails the test, the code is then modified until it succeeds the test, lastly the code is refactored
  <br />
   <image src="./img/TDD_Global_Lifecycle.png">
-   <span style="font-size:10px"> image contributated from Xarawn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons and released to the public domain with the afformention licens</span>
+   <span style="font-size:10px"> image contributed from Xarawn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons and released to the public domain with the aforemention license</span>
 <br />
  The three laws of TDD:
 - 1.You are not allowed to write any production code unless it is to make a failing unit test pass.
@@ -150,7 +150,7 @@ Test-Driven Development (TDD) is a methodology in software development that focu
   http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
 
-TDD will be covered in detail elsewhere, but the general idea of TDD is to generate roubust solutions through the use of test for the whole life cycle.
+TDD will be covered in detail elsewhere, but the general idea of TDD is to generate robust solutions through the use of test for the whole life cycle.
 
 ## AGILE Development and the The AGILE manifesto
 Manifesto for Agile Software Development
@@ -165,8 +165,8 @@ Customer collaboration over contract negotiation
 Responding to change over following a plan
 
 That is, while there is value in the items on
-the right, we value the items on the left more.  
-https://agilemanifesto.org/, 
+the right, we value the items on the left more.
+[https://agilemanifesto.org](https://agilemanifesto.org)
 
 Kent Beck
 Mike Beedle
@@ -190,11 +190,11 @@ Dave Thomas
 this declaration may be freely copied in any form,
 but only in its entirety through this notice. 
 
-This manifesto was first concived at the Snowbird meeting in Utah in early 2001
+This manifesto was first conceived at the Snowbird meeting in Utah in early 2001
 
 ## DevOps 
 <image src="./img/Devops-toolchain.png">
-   <span style="font-size:10px">The DevOps Loop includes both the traditional SDLC and the Organistational tasks of the release</span>
+   <span style="font-size:10px">The DevOps Loop includes both the traditional SDLC and the Organisational tasks of the release</span>
 From the [GitLab DevOps] Page(https://about.gitlab.com/topics/devops/)
 
 DevOps can be best explained as people working together to conceive, build and deliver secure software at top speed. DevOps practices enable software developers (devs) and operations (ops) teams to accelerate delivery through automation, collaboration, fast feedback, and iterative improvement.
@@ -211,40 +211,40 @@ The DevOps methodology comprises four key principles that guide the effectivenes
 By adopting these principles, organizations can improve code quality, achieve a faster time to market, and engage in better application planning.
 
 # Tools and methodologies  
-The tools and methodologies are too numerous to describe in any complete way, and they are always evolving as developers find issues with the models and methodologies they are currently using. The trends in software development is to find the "lates and greatest" method a silver bullet of development, this is ofcourse not a reachable goal. It is better to find a method that is good enough for the task you need to achive. 
+The tools and methodologies are too numerous to describe in any complete way, and they are always evolving as developers find issues with the models and methodologies they are currently using. The trends in software development is to find the "latest and greatest" method a silver bullet of development, this is of course not a reachable goal. It is better to find a method that is good enough for the task you need to achieve. 
 First we need to define, 
-A system can be defined as any structure of concepts that helps categorize a concept. This defintion is quite broad and not very helpful the defintions of systems but they get more useful as we lower the degree of abstraction, for example when we talk about a biological system or a information system. An information system is a system consiting of organisation,harware and software that help convay information between a sender and reciver. Further refined we can talk about a software system as the delimiter between components that make up some software. As our scope narrows the concept of system goes from the abstract to the concrete.  
-The best way to aproach wich methodology one should use is to look at the development requirements of the system that you wish to create and choose the one that lets you do the least amount of work for the highest value. 
+A system can be defined as any structure of concepts that helps categorize a concept. This definition is quite broad and not very helpful the definitions of systems but they get more useful as we lower the degree of abstraction, for example when we talk about a biological system or a information system. An information system is a system consisting of organisation, hardware and software that help convey information between a sender and receiver. Further refined we can talk about a software system as the delimiter between components that make up some software. As our scope narrows the concept of system goes from the abstract to the concrete.  
+The best way to approach which methodology one should use is to look at the development requirements of the system that you wish to create and choose the one that lets you do the least amount of work for the highest value. 
 
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
 
 # Paradigms of Design
 ## Modular development/programming
 A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the conept of modules in a language that have support for objects but not for modules.
-The principles of modular programming was introduced in the 1960s by Larry LeRoy Constantine with the proposal of adding modules to AGOL68 to AGOL68-R being the concrete application of the modular development paradigm.
+The principles of modular programming was introduced in the 1960s by Larry LeRoy Constantine with the proposal of adding modules to ALGOL68 to ALGOL68-R being the concrete application of the modular development paradigm.
 
 [Code labs introduction to modular programming](https://codelabs.rocks/blog/detailed-guide-for-modular-programming-concept) state the following principles regarding modular programming:
-There are two types of module, *program control modules* which are purpously and only designed for controling the flow of the program. This is usually where the main functionallity of a program is defined. *Specific task modules* A modul that carries the data transfer amid the inital module and other modules. Specific task modules carries the functionality of the program and have a set of predefined data transmission options:
+There are two types of module, *program control modules* which are purposely and only designed for controlling the flow of the program. This is usually where the main functionality of a program is defined. *Specific task modules* A module that carries the data transfer amid the initial module and other modules. Specific task modules carries the functionality of the program and have a set of predefined data transmission options:
 - no communication in with no communication out
 - no communication in with some communication out
 - some communication in with some communication out
 - some communication in with no communication out
 
-The point of designing with modular development is to enforce information hiding which in this case manely makes the development independent of the specifc development team and enambles code reuse. At a higher state a modular design achive the same interchangablillity over the design space.  
+The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangability over the design space.
 
 ## Object Orientation
-Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declartive programming which focuses on how you code. One can use any number of programming paradigms to implement the objectorieted design.
+Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declarative programming which focuses on how you code. One can use any number of programming paradigms to implement the object-oriented design.
 
-An object is the representation of a thing or concept, that encapsulates both data and the actions perfomed on it. A key concept of an object is that it interactact with the world through message passing of its parameters. 
+An object is the representation of a thing or concept, that encapsulates both data and the actions performed on it. A key concept of an object is that it interacts with the world through message passing of its parameters. 
 
-An object is charachterised by a number of operations and a state which remembers the effect of these operations. 
+An object is characterised by a number of operations and a state which remembers the effect of these operations. 
 
 An object oriented model is comprised of a number of objects which are clearly delimited parts of the system.
 Objects also carry any association to other obejcts in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct comunication that is they know of echother but to not pass messages between eachother.
 A dynamic object relationship on the other hand imples two or more objects that actually comunicae whith one and onther
 
 An object can be composed of other object, such can be achived either through **composition** in the way that a person is composed by its parts head, arms, legs and body to give an example.
-Key conepts in achiving these relationships are the relationships:
+Key concepts in achiving these relationships are the relationships:
 * The concept of Information Hiding 
 * The concept of Encapsulation
 * The concept of message passing
@@ -413,7 +413,7 @@ Activity diagrams are also excellent to describe Algotithms, in conjuction with 
 - **Note** Due to that the dynamic nature of a system is very difficult to capture. UML has provided features to capture the dynamics of a system from different angles. Sequence diagrams and collaboration diagrams are isomorphic, hence they can be converted from one another without losing any information. This is also true for Statechart and activity diagram
 
 - Use Case diagram
-   A set of use cases, actors, and their relationships. They represent the use case view of a system. The intention of using a use case view and not just text to describe the uscases of your system is so you can describe the relationship between different stake holders, controllers (Actors)
+   A set of use cases, actors, and their relationships. They represent the use case view of a system. The intention of using a use case view and not just text to describe the usecases of your system is so you can describe the relationship between different stake holders, controllers (Actors)
    A use case represents a particular functionality of a system. It is used to describe the relationships among the functionalities and their internal/external controllers. 
 
 - State Machine Diagram
