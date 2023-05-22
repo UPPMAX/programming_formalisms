@@ -26,7 +26,10 @@ datastructures
 DOI
 Eghbal
 Eklund
+emphasises
+et
 Farian
+Feasability
 fibonacci
 findLargest
 formalised
@@ -57,6 +60,7 @@ Kayal
 Kilian
 Krarup
 licence
+lifecycle
 linter
 LUT
 LUTs
@@ -83,6 +87,7 @@ nth
 NUMA
 NumPy
 onboarding
+organisation
 organise
 optimisation
 Optimisation
@@ -145,6 +150,7 @@ Söderberg
 Richèl
 testability
 Testability
+th
 Tidyverse
 tim
 TLP

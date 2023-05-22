@@ -27,7 +27,7 @@ Evolutionary software development like the Living Software Development Process t
  * Evolutionary software engineering, a review, `https://www.sciencedirect.com/science/article/pii/S1568494604000778`
 
 <br>
-Depending on the chosen method or methodology these steps are generally named slightly different dependent on model but in general these steps fullfill the standard SDLC.
+Depending on the chosen method or methodology these steps are generally named slightly different dependent on model but in general these steps fullfil the standard SDLC.
 
 # PHASES OF THE SDLC 
 In our five phased version of SDLC we section the development into five phases which are somewhat arbitrary as most development is more fluid than the fixed models that have evolved from the waterfall model 
@@ -37,7 +37,7 @@ while the ISO/IEC version of SDLC has nine phases below is an attempt to map the
 
 In the first phase one needs to determine what Trauth et.al call Perception of need, Feasability and Analysis
 The ISO/IEC standard 12207 calls this **Needs Determination** 
-after the needs, the inital requirments, have been determined through the above mentions process they are then fleshed out in the **Concept and Exploration**
+after the needs, the initial requirements, have been determined through the above mentions process they are then fleshed out in the **Concept and Exploration**
 according to the SDLC_ISO_IEC_12207 this is the time to make a risk analysis of your development strategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evolutionary software model(Living Software Development Process)
 Most models cover some form of risk assessment, involved in the requirements gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
 
@@ -63,9 +63,9 @@ The focus of the spiral model is to identify risk
 <image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presented by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
  
 ## RUP, Rational Unified Process
- Rational Unified Process is a software development metod based on iterative obejctoriented development. The idea is that you tailor the development method to fit the project, this howerver is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some consessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete itreation of the design steps Inception, Elaboration,Construction and Transition
+ Rational Unified Process is a software development method based on iterative object-oriented development. The idea is that you tailor the development method to fit the project, this however is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some concessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete iteration of the design steps Inception, Elaboration,Construction and Transition
    <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
-   <span style="font-size:10px">image contributated from  Wikimedia Commons and was originaly made Jakob Farian Krarup and released to the public domain under cc 0 </span>
+   <span style="font-size:10px">image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
 ### Inception
  The focus of the inception stage is to identify the user needs to initial uscase development 
