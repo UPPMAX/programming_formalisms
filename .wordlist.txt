@@ -23,6 +23,7 @@ omg
 organisations
 visualizing
 visualising
+Pagess
 Rumbaugh
 modelling
 diagrammes
@@ -217,6 +218,7 @@ PSW
 py
 PyCharm
 pycodestyle
+des
 pydantic
 pytest
 pythonic

@@ -276,7 +276,7 @@ mammal<|-d-dog:is a
 <br>
 **The concept of Information Hiding** is about making sure that each time in the execution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of side-effects and it allows for multiple developers to work on the project without risking to step on each others toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
 This is accomplished through the use of *access qualifier* of the parameter/property or method. The levels of privacy are generally defined as: 
-private, protected and public in increasing accessibility to the inheritance structure and other classes or objects. A private property is only accessible to the object itself, the protected are accesible to objects and classes in the same inheritance structure and public are accesible to any class or object in the software
+private, protected and public in increasing accessibility to the inheritance structure and other classes or objects. A private property is only accessible to the object itself, the protected are accessible to objects and classes in the same inheritance structure and public are accessible to any class or object in the software
 
 
 
@@ -306,9 +306,9 @@ A problem is solved is not specifically defined, but instead focuses on what nee
 ### UML
 The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software engineering). It is by that nature very good at describing the Rational Unified Process (RUP), see below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintained by the omg standard development organisation https://www.omg.org/spec/UML/2.5/PDF) 
 A brief history of the development of UML and other modeling languages which primarily are for object-oriented modeling(observe that the UML standard also works well for describing other models using such things as activity diagrams and sequence diagram to describe algorithms or interactions between sections of your code.)
-<image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model languge history from https://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
+<image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model language history from https://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
 
-plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its crossplatform integration and its itegration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use som sort of moddeling software, a complete modeling software allows for atleast forward engineering from models to code. There are ofcourse great comersial versions but also some decent free ones.
+plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its cross-platform integration and its integration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use some sort of modeling software, a complete modeling software allows for at least forward engineering from models to code. There are of course great commercial versions but also some decent free ones.
 draw.io
 [Papyrus](https://www.eclipse.org/papyrus/)
 
