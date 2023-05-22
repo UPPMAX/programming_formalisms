@@ -65,7 +65,7 @@ Other activities:
  * [ ] Measuring speed to make rooftop plot
  * [ ] Caching results/LUTs
  * [ ] Do the bare minimum, e.g. `nth_element`
- * [ ] Using data structures to simplify algorithsm, e.g. use an ordered set to sort
+ * [ ] Using data structures to simplify algorithms, e.g. use an ordered set to sort
  * [ ] Big O
  * [ ] Data structure: `dict`, for NW parameters
 

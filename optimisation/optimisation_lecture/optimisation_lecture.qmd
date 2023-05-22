@@ -87,7 +87,7 @@ One of the main workhorses of a CPU core is the Arithmetic Logical Units (ALU), 
 
 Needless to say, this is super handy if you have an algorithm that does a lot of the same operations on data that lies adjacent. But even if you do, the compiler often needs to be coaxed to issue such instructions, if you don't do it by hand. In either case, you will be subject to the whims of machine spirits --- prayers and offerings can go a long way. 
 
-## Parallellisation
+## Parallelisation
 
 Of course, if you only issue instructions to one CPU core at a time with a single-threaded program, you're potentially missing out on a lot of performance. We'll discuss this more later.
 

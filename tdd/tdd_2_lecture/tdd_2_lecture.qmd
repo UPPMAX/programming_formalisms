@@ -31,21 +31,21 @@ print("Hello from R")
 :::
 :::
 
-Ruthlessly copy-pasted from [here](https://uppmax.github.io/programming_formalism-automated_testing/)
+Ruthlessly copy-pasted from [here](https://uppmax.GitHub.io/programming_formalism-automated_testing/)
 
 
 Overview
 
-This short module is intended to introduce how testing can be automated using Github(GH) Actions. We will also look into other common usages of GH Actions like formatting, linting and type checking.
+This short module is intended to introduce how testing can be automated using GitHub(GH) Actions. We will also look into other common usages of GH Actions like formatting, linting and type checking.
 Learning Outcomes
 
     Understand the value of continuous integration (CI)
-    Practical experience about how Github actions can be used to automate testing
+    Practical experience about how GitHub actions can be used to automate testing
     Understand how code quality can be improved by automating type checking, linting and code formatting
 
 Schedule
 Time 	Topic
-14:30-14:45 	Continuous integration and Intro to Github Actions
+14:30-14:45 	Continuous integration and Intro to GitHub Actions
 14:45-15:05 	Automated (py)testing with GH Actions (code along)
 15:05-15:15 	Break
 15:15-15:45 	Exercise in pairs of two
@@ -55,8 +55,8 @@ Prerequisites
 To follow the code-along and complete the exercises you should have the following things prepared before the class:
 
     Git
-    Github: It must be configured so that you can push to a remote repository. Revisit the install instructions if needed: https://github.com/UPPMAX/programming_formalism/blob/main/setup.md.
-    Miniconda (Optional): We will be using Python and the packages pytest, black, flake8 and mypy all of which can be installed in a conda environment. However, everything we do will be run by a virtual machine through Github actions so you only need this if you want to also test things locally.
+    GitHub: It must be configured so that you can push to a remote repository. Revisit the install instructions if needed: https://GitHub.com/UPPMAX/programming_formalism/blob/main/setup.md.
+    Miniconda (Optional): We will be using Python and the packages pytest, black, flake8 and mypy all of which can be installed in a conda environment. However, everything we do will be run by a virtual machine through GitHub actions so you only need this if you want to also test things locally.
 
 Get environment ready
 
@@ -76,11 +76,11 @@ The ingredients of CI
     Version control for the entire codebase/project
     Automated testing of the code
     Automated building e.g. using cmake and pyproject.toml
-    A platform/infrastructure for automation e.g. Github, GitLab or circleci
+    A platform/infrastructure for automation e.g. GitHub, GitLab or circleci
 
-A first look at Github Actions
+A first look at GitHub Actions
 
-Github actions lets you automate the process of testing (and much more).
+GitHub actions lets you automate the process of testing (and much more).
 
 Some common use cases
 
@@ -90,64 +90,66 @@ Some common use cases
     Generating websites/documentation (this webpage)
     Code scanning (security vulnerabilities)
 
-We will now take a first look at GH Actions using the example from Github's quickstart guide.
+We will now take a first look at GH Actions using the example from GitHub's quickstart guide.
 Step 1
 
-We need to create a repository on Github. Have have prepared one here.
+We need to create a repository on GitHub. Have have prepared one here.
 Step 2
 
 Next, I will clone the repository locally and enter the project
 
 ```
-git clone git@github.com:MatPiq/CI-demo.git
+git clone git@GitHub.com:MatPiq/CI-demo.git
 cd CI-demo
 ```
 
 Step 3
 
-We create the .github/workflows directory and add the github-actions-demo.yml file.
+We create the .GitHub/workflows directory and add the GitHub-actions-demo.yml file.
 
-mkdir -p .github/workflows
-touch .github/workflows/github-actions-demo.yml
+```
+mkdir -p .GitHub/workflows
+touch .GitHub/workflows/GitHub-actions-demo.yml
+```
 
 The directory should look something like this:
 
 ```
 ├── .git
-├── .github
+├── .GitHub
 │   └── workflows
-│       └── github-actions-demo.yml
+│       └── GitHub-actions-demo.yml
 └── README.md
 ```
 
-We can now paste the example workflow into github-actions-demo.yml. For example using vim:
+We can now paste the example workflow into GitHub-actions-demo.yml. For example using vim:
 
 ```
-vim .github/workflows/github-actions-demo.yml
+vim .GitHub/workflows/GitHub-actions-demo.yml
 ```
 
 ```
-github-actions-demo.yml
+GitHub-actions-demo.yml
 ```
 
 ```
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ GitHub.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🎉 The job was automatically triggered by a ${{ GitHub.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "🔎 The name of your branch is ${{ GitHub.ref }} and your repository is ${{ GitHub.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "💡 The ${{ GitHub.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          ls ${{ GitHub.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
 
@@ -163,7 +165,7 @@ YAML syntax
 There are many more options available that can be found here.
 Step 4
 
-We will now commit and push the changes to Github and inspect the workflow.
+We will now commit and push the changes to GitHub and inspect the workflow.
 
 ```
 git add . 
@@ -173,7 +175,7 @@ git push
 
 Step 5
 
-We can now go to "Actions" tab in the repository on Github to inspect our workflow.
+We can now go to "Actions" tab in the repository on GitHub to inspect our workflow.
 
 
 ## Slide 3
@@ -181,11 +183,11 @@ We can now go to "Actions" tab in the repository on Github to inspect our workfl
 Continuous (py)Testing
 Type-along automating pytest
 
-We are now going to continue working on the test example using pytest introduced by Per. This time we will use the power of github actions to automatically run the tests for us.
+We are now going to continue working on the test example using pytest introduced by Per. This time we will use the power of GitHub actions to automatically run the tests for us.
 
 Note
 
-This code-along as well as the exercise we will be doing are based on the fantastic CodeRefinery workshop and their introduction to automated testing: https://coderefinery.github.io/testing/continuous-integration/#type-along-exercise-continuous-integration. They also include examples for testing in other languages like Fortran, Julia, R and C++.
+This code-along as well as the exercise we will be doing are based on the fantastic CodeRefinery workshop and their introduction to automated testing: https://coderefinery.GitHub.io/testing/continuous-integration/#type-along-exercise-continuous-integration. They also include examples for testing in other languages like Fortran, Julia, R and C++.
 
 What we will be doing
 
@@ -274,18 +276,18 @@ git push
 
 Step 3: Create CI workflow
 
-The next step is to create an actions workflow that runs our tests. There are two ways to do this. Either we can do as before by manually adding the workflow yaml under .github/workflows, or, we can also add it directly through GitHub.
+The next step is to create an actions workflow that runs our tests. There are two ways to do this. Either we can do as before by manually adding the workflow yaml under .GitHub/workflows, or, we can also add it directly through GitHub.
 Alternative 1: Adding through GitHub
 
 Go to your repository and choose click on the Actions tab. Then configure the Python application
 
 Alternative 2: Adding manually
 
-Create the file .github/workflows/python-app.yml, then commit and push it to GitHub.
+Create the file .GitHub/workflows/python-app.yml, then commit and push it to GitHub.
 python-app.yml
 
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+# For more information see: https://help.GitHub.com/actions/language-and-framework-guides/using-python-with-GitHub-actions
 
 ```
 name: Python application
@@ -360,7 +362,7 @@ This exercise takes around 20-30 min
     A: Create a repository on GitHub
     B: Commit some code with errors and a corresponding test
     C: Open an issue and report the bug
-    D: Your collegue has also done step A-C. Now, fork your collegues repository, clone it and fix the issue
+    D: Your colleague has also done step A-C. Now, fork your collegues repository, clone it and fix the issue
     E: Push your fix to GitHub and merge the pull request
 
 Step 1: Create a new repository on GitHub
@@ -376,7 +378,7 @@ And the test. Run it to see what is going wrong!
 Dijkstra's two-stack algorithm
 Step 3: Add the workflow to your repository
 
-This time you can try adding the workflow manually by creating .github/workflows/python-app.yml yourself. You can copy the content from the previous exercise. If you decide to do it this way remember that you need to add, commit and push the file. Conversely, if you do it directly on GitHub you will have to pull the changes to your local repository.
+This time you can try adding the workflow manually by creating .GitHub/workflows/python-app.yml yourself. You can copy the content from the previous exercise. If you decide to do it this way remember that you need to add, commit and push the file. Conversely, if you do it directly on GitHub you will have to pull the changes to your local repository.
 Tip
 Step 4: Verify that the test ran (but failed) and open issue
 
@@ -387,15 +389,15 @@ This is a completely new step from the last exercise. You should begin by forkin
 
 You can read about creating pull requests using a fork here:
 
-    https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
+ * [https://docs.GitHub.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork](https://docs.GitHub.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
 and more generally about forking here:
 
-    https://docs.github.com/en/get-started/quickstart/fork-a-repo.
+ * [https://docs.GitHub.com/en/get-started/quickstart/fork-a-repo](https://docs.GitHub.com/en/get-started/quickstart/fork-a-repo)
 
 After you have forked the repository you should clone your fork so that you have it locally. This will probably look something like this:
 
-git clone git@github.com:your-username/name-of-collegue-repo.git
+git clone git@GitHub.com:your-username/name-of-collegue-repo.git
 
 Step 6: Make the test pass!
 
@@ -457,7 +459,7 @@ python-app.yml
 
 ```
     # This workflow will install Python dependencies, run tests and lint with a single version of Python
-    # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+    # For more information see: https://docs.GitHub.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
     name: Python application
 
