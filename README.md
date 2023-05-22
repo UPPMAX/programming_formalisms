@@ -26,6 +26,14 @@ Thu |13-16       |RB + JN  | [TDD](tdd/README.md), including a Reflection by JN 
 Fri |9-12        |LE       | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)
 Fri |13-16       |RB + JN  | [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45
 
+## Retrospective sessions
+
+* [Day 1 retro](https://miro.com/app/board/uXjVMGFbuDc=/?share_link_id=331302708095)
+* [Day 2 retro](https://miro.com/app/board/uXjVMGFbuPc=/?share_link_id=378898143874)
+* [Day 3 retro](https://miro.com/app/board/uXjVMGFbuLA=/?share_link_id=773461339385)
+* [Day 4 retro](https://miro.com/app/board/uXjVMGFbuUY=/?share_link_id=502732078544)
+* [Day 5 retro](https://miro.com/app/board/uXjVMGFbuW8=/?share_link_id=125486410202)
+
 ## Files
 
 Filename                            |Descriptions
