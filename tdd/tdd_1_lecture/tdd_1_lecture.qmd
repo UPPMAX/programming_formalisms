@@ -14,6 +14,8 @@ from: markdown+emoji
 
 How do you grow/develop your code?
 
+![](beck_tdd_by_example.jpg)
+
 ## Newbie developers
 
 'Just start somewhere'
@@ -44,156 +46,35 @@ Short for 'Test-driven development' A systematic way to grow code
     -   Returns `False`/`FALSE` if the input is not zero
     -   :warning: Gives an error when the input is not a number
 
-## Cycle 1, red: write a test that breaks
+## Live demo (15 mins)
 
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
+[https://youtu.be/VddlrNOeodg](https://youtu.be/VddlrNOeodg)
 
-```{python}
-#| echo: true
-#| eval: false
-assert is_zero(0)
-```
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png)
-
-```{r}
-#| echo: true
-#| eval: false
-library(testthat)
-expect_true(is_zero(0))
-```
-:::
-:::
-
-:monocle_face: Is this code run?
-
-TODO: use non-run emoji (sleep?) to indicate when code is not run.
-
-## Cycle 1, green: make the test pass
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
-
-```{python}
-#| echo: true
-def is_zero(number): 
-  return True
-
-assert is_zero(0)
-```
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png)
-
-```{r}
-#| echo: true
-library(testthat)
-
-is_zero <- function(number) {
-  TRUE
-}
-
-expect_true(is_zero(0))
-```
-:::
-:::
-
-## Cycle 1, blue: refactor and commit
-
-```         
-git add .
-git commit -m "Add stub of 'is_zero'"
-git push
-```
-
-![](organised_male_programmer.png)
-
-## Reflection
+## Reflection 1
 
 Q: Do developers really do this?
+
+. . .
 
 A: Yes
 
 ![](book_langr.jpg)
 
-## Cycle 2, red: write a test that breaks
+## Exercise
 
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
+ * Create a GitHub repository called `is_even`
+ * Share URL of repo with teachers
+ * Develop a function called `is_even`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
-```{python}
-#| echo: true
-#| eval: false
-assert is_zero(0)
-assert not is_zero(42)
-```
-:::
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
-::: {.column width="50%"}
-![](r_icon_41x32.png)
+## Break
 
-```{r}
-#| echo: true
-#| eval: false
-expect_true(is_zero(0))
-expect_false(is_zero(42))
-```
-:::
-:::
+![](dilbert_agile_2.png)
 
-## Cycle 2, green: make the test pass
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
-
-```{python}
-#| echo: true
-def is_zero(x):
-  return x == 0
-
-assert is_zero(0)
-assert not is_zero(42)
-```
-
-:monocle_face: indent of 2 is non-standard, see [PEP 8](https://peps.python.org/pep-0008/)
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png)
-
-```{r}
-#| echo: true
-library(testthat)
-
-is_zero <- function(number) {
-  number == 0
-}
-
-expect_true(is_zero(0))
-expect_false(is_zero(42))
-```
-:::
-:::
-
-## Cycle 2, blue: refactor and commit
-
-```         
-git add .
-git commit -m "'is_zero' responds correctly to numbers"
-git push
-```
-
-![](organised_female_programmer.png)
-
-## Reflection
+## Reflection 2
 
 Q: Does this really save time?
 
@@ -213,7 +94,7 @@ A: No, it takes longer
 -   \[2\] Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.
 -   \[3\] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
 
-## References discussion
+## Discussion on Reflection 2
 
 Do note, the scope of these researches is limited:
 
@@ -221,170 +102,117 @@ Do note, the scope of these researches is limited:
 -   TDD allows a dialogue
 -   TDD results is a better software architecture
 
-## Cycle 3, red: write a test that breaks
+## Reflection 3
 
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
+Q: Why do TDD?
 
-```{python}
-#| echo: true
-#| eval: false
-has_thrown = False
-try:
-  is_zero("")
-except:
-  has_thrown = True
-assert has_thrown
-```
-:::
+. . .
 
-::: {.column width="50%"}
-![](r_icon_41x32.png)
+A:
 
-```{r}
-#| echo: true
-#| eval: false
-expect_error(is_zero(""))
-```
-:::
-:::
+-   TDD makes developers more productive \[1\]
+-   TDD increases quality of the code \[1\]
+    - There are plenty of costly programming mistakes documented!
+    
+-   TDD helps shape the project architecture \[2\]
+-   TDD helps better modularization \[3\]
 
-## Cycle 3, green: make the test pass
+## References for Reflection 3
 
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
+-   \[1\] Erdogmus, Hakan, Maurizio Morisio, and Marco Torchiano. "On the effectiveness of the test-first approach to programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
+-   \[2\] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
+-   \[3\] Madeyski, Lech, and Gestión de sistemas de información. Test-driven development: An empirical evaluation of agile practice. Heidelberg: Springer, 2010.
 
-```{python}
-#| echo: true
-def is_zero(x):
-  if not isinstance(x, int):
-    raise TypeError(
-      "'number' must be a number"
-    )
-  return x == 0
+## Reflection 4
 
-assert is_zero(0)
-assert not is_zero(42)
+Q: How many tests should I write?
 
-has_thrown = False
-try:
-  is_zero("")
-except:
-  has_thrown = True
-assert has_thrown
-```
-:::
+. . .
 
-::: {.column width="50%"}
-![](r_icon_41x32.png)
+A: Until you cannot break your function anymore.
 
-```{r}
-#| echo: true
-library(testthat)
+![](beck_tdd_by_example.jpg)
 
-is_zero <- function(number) {
-  if (!is.numeric(number)) 
-    stop(
-      "'number' must be a number"
-    ) 
-  number == 0
-}
+## Exercise: `is_even`
 
-expect_true(is_zero(0))
-expect_false(is_zero(42))
-expect_error(is_zero(""))
-```
-:::
-:::
+ * Create a GitHub repository called `is_even`
+ * Share URL of repo with teachers
+ * Develop a function called `is_even`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
-## Cycle 3, blue: refactor and commit
-
-```         
-git add .
-git commit -m "'is_zero' responds correctly to non-numbers"
-git push
-```
-
-![](organised_male_programmer.png)
-
-## Our work
-
-\[Show git/GitHub history picture here\]
-
-## Reflection
-
-Are we done?
-
-## Cycle 4, red: break the code
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
-
-```{python}
-#| echo: true
-#| eval: false
-assert not is_zero(0.1)
-```
-
-:no_mouth: This fails
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png)
-
-```{r}
-#| echo: true
-expect_false(is_zero(0.1))
-```
-
-:partying_face: This passes
-:::
-:::
-
-## Problem
-
-How many tests should I write?
-
-## Answer
-
-Until you cannot break your function anymore.
-
-## Exercise: `is_odd`
-
-`is_odd` is function that determines if a number is odd.
-
--   Write the design document of `is_odd`
--   Practice the TDD workflow
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
 ![](chaotic_programmer.png)
 
-## Other exercises
+## Exercise: `divide_safely`
 
--   `is_even`
--   `divide` (include division by zero)
--   `add` (for limited-sized ints, including overflow, like rocket!)
--   `can_divide_by_three`
--   `sum_digits`
--   `get_array_length`
--   `is_palindrome` (string)
--   `is_palindrome` (number)
--   `get_proper_divisors`
--   `is_prime`
--   `is_roman_str`
--   `to_roman_str`
--   `roman_str_to_number`
--   `is_perfect`
--   [calc_n\_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
+ * Create a GitHub repository called `divide_safely`
+ * Share URL of repo with teachers
+ * Develop a function called `divide_safely`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
-## More complex tests
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
--   Arrange
--   Act
--   Assert
+![](chaotic_programmer.png)
+
+## Break 2
+
+![](dilbert_agile_1.png)
+
+## AAA
+
+TDD idiom:
+
+-   Arrange: what is before
+-   Act: do it
+-   Assert: there must have been a change
+
+```
+a = 1
+b = add_one(a)
+assert b == a + 1
+```
+
+## Exercise: `add_one`
+
+ * Create a GitHub repository called `add_one`
+ * Share URL of repo with teachers
+ * Develop a function called `add_one`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
+
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+
+![](chaotic_programmer.png)
+
+## Bottom line
+
+ * Today we wrote **unit tests**
+ * The literature assumes a responsible programmer writes tests \[1,2,3\]
+   (it is built-in to Python!)
+
+![](thomas_and_hut_the_pragmatic_programmer.jpg)
+
+## References
+
+-   \[1\] [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+-   \[2\] [The tidyverse style guide](https://style.tidyverse.org)
+-   \[3\] [Python PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
+
+## Finally
+
+Time for a Reflection!
+
+Afterwards, you can rest or ask your final questions.
+
+![](dilbert_tdd_3.png)
+
+## The End
+
+![](dilbert_tdd_4.gif)
 
 ## Links
 
--   [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct)
+-   [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct) of previous year

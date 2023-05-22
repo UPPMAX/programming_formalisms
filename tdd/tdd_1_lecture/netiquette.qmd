@@ -58,3 +58,4 @@ You are strongly encouraged to:
     -   Phone
     -   Programs/websites with popups
 -   Take a (boring!) break
+    -   There will always be a break after 45 minutes

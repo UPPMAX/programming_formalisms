@@ -16,8 +16,7 @@ When |What
 -----|-------------------------
 13:00|Netiquette
 13:05|Explain TDD: Why? What? 
-13:10|Show one TDD cycle
-13:..|Practice, focus on students that cannot get it to work
+13:20|Exercise: write `is_even`, `is_odd`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 13:45|Break, have a break
 
 ## 14:00-14:45 RB
