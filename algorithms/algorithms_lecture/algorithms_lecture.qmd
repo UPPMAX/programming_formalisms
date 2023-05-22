@@ -14,7 +14,7 @@ from: markdown+emoji
 
 -   1h: A good function
 -   1h: Data types
--   1h: Good functions with useful datatypes
+-   1h: Good functions with useful data types
 
 ## Why important?
 
@@ -488,7 +488,7 @@ Fibonacci sequence:
 
 ## Exercise
 
--   Develop a function to get the `n`th value in the Fibonacci sequence
+-   Develop a function to get the nth value in the Fibonacci sequence
 -   If the function used a for-loop, create another function that uses recursion, or vise versa
 
 ::: columns

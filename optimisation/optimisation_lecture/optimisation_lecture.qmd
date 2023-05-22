@@ -165,13 +165,13 @@ Often, the algorithm will tell you roughly what the OI of your kernel is, but yo
 
 From a naive matrix-matrix multiply (double precision):
 
-40: f3 0f 10 01 movss (%rcx),%xmm0 :4 B 44: 83 c2 01 add \$0x1,%edx :1 op 47: f3 0f 59 c1 mulss %xmm1,%xmm0 :1 op 4b: 48 83 c1 04 add \$0x4,%rcx :1 op 4f: f3 0f 58 00 addss (%rax),%xmm0 :1 op 4 B 53: f3 0f 11 00 movss %xmm0,(%rax) :4 B 57: 48 83 c0 04 add \$0x4,%rax :1 op (for loop bookkeeping) 5b: 81 fa 00 08 00 00 cmp \$0x800,%edx :1 op (for loop bookkeeping) 61: 75 dd jne 40 \<matmul_ref+0x40\>
+[assembly code]
 
 Total (ignoring bookkeeping): 4 ops and 12 bytes, giving us 0.333 ops/byte or 1.33 ops/word.
 
 The same program had an auto-SIMDised version of the function:
 
-b0: 0f 28 04 01 movaps (%rcx,%rax,1),%xmm0 :16 B b4: 0f 59 c1 mulps %xmm1,%xmm0 :4 op b7: 0f 58 04 02 addps (%rdx,%rax,1),%xmm0 :4 op 16 B bb: 0f 29 04 02 movaps %xmm0,(%rdx,%rax,1) :16 B bf: 48 83 c0 10 add \$0x10,%rax :1 op (for loop bookkeeping) c3: 48 3d 00 20 00 00 cmp \$0x2000,%rax :1 op (for loop bookkeeping) c9: 75 e5 jne b0 \<matmul_autovec+0x30\>
+[assembly code]
 
 Total (ignoring bookkeeping)l: 8 ops, 48 bytes, giving us 0.333 ops/byte or 1.33 ops/word. Drawing a roofline graph
 
@@ -274,11 +274,11 @@ quadtree algorithm
 
 Then, finding the nearest neighbour looks like this:
 
-nearest neighbours search algo
+nearest neighbours search algorithm
 
 The fast boid algorithm is then:
 
-fast boid alg
+fast boid algorithm
 
 Profiling a C implementation of this shows that 96% of the runtime is spent in the force interaction loop between lines 7-11. Amdahl's Law suggests that we should be able to achieve a maximum speedup of 25x with infinite parallelism, and about 6.25x speedup on 8 threads or 10x speedup on 16 threads. Moreover, this loop is embarrassingly parallel.
 
