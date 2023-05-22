@@ -4,11 +4,12 @@
  * Richel
  * Goals: 
    * Students have an idea what not to optimize
+   * Students have an idea what not to optimize
 
 ## 13:00-13:45 RB
 
  * Goals: 
-   * Students can add, commit, push
+   * Measure Big-O
 
 When |What
 -----|-------------------------
@@ -21,7 +22,7 @@ When |What
 ## 14:00-14:45 RB
 
  * Goals: 
-   * Students can do a TDD cycle
+   * Obtain a speed profile
 
 When |What
 -----|-------------------------

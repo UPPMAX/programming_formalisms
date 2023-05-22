@@ -10,10 +10,10 @@
 ## 9:00-9:45 RB
 
  * Goals: 
-   * Students can work on their own branch
+   * Students can work on their own topic branch
 
-When |What
------|-------------------------
+When|What
+----|-------------------------
 9:00|Netiquette
 9:05|Explain TDD: Why? What? 
 9:10|Show one TDD cycle

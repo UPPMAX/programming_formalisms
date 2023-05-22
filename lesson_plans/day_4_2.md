@@ -8,7 +8,7 @@
 ## 13:00-13:45 RB
 
  * Goals: 
-   * Students can add, commit, push
+   * Students can write a good function
 
 When |What
 -----|-------------------------
@@ -21,7 +21,7 @@ When |What
 ## 14:00-14:45 RB
 
  * Goals: 
-   * Students can do a TDD cycle
+   * Students write a function that uses local caching
 
 When |What
 -----|-------------------------
