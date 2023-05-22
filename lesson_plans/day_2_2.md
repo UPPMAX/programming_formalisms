@@ -43,3 +43,6 @@ When       |What
 15:15-15:45|Reflection, by JN
 15:45      |End, stay around for questions
 
+## Links
+
+ * [YouTube: TDD in Python 'is_zero' and upload to GitHub](https://youtu.be/VddlrNOeodg)
