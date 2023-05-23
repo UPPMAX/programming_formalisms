@@ -37,7 +37,7 @@ jobs:
       - uses: quarto-dev/quarto-actions/render@v2
         with:
           to: pdf
-          path: tdd/tdd_1_lecture/tdd_1_lecture.qmd
+          path: tdd/tdd_lecture/tdd_lecture.qmd
 
       #############################################
       # Upload

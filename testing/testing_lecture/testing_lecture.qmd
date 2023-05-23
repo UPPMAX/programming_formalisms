@@ -1,69 +1,198 @@
 ---
-title: "TDD 2"
+title: "Testing"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
+from: markdown+emoji
 ---
 
-## TDD
+## Testing
 
 ![](programming_formalism_course.png)
 
 ## Problem
 
-When do you trust code written by others? How do you convince other developers of a bug?
+When do you trust your code? 
+When do you trust code written by others? 
+How do you convince other developers of a bug?
 
-## Code
+## Testing
 
-::: columns
-::: {.column width="50%"}
-```{python}
-#| echo: true
-print("Hello from Python")
+![](beck_tdd_by_example.jpg)
+![](langr_tdd.jpg)
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+
+## Testing framework
+
+ * Makes it easier to write unit tests
+ * Takes some scaffolding
+ * Failed tests give a better error message.
+
+## Test if something is true
+
+```python
+assert 1 + 1 == 2
 ```
-:::
 
-::: {.column width="50%"}
-```{r}
-#| echo: true
-print("Hello from R")
+```python
+import unittest
+
+class TestSmall(unittest.TestCase):
+    def test_is_true(self):
+        self.assertIsTrue(1 + 1 == 2)
 ```
-:::
-:::
 
-Ruthlessly copy-pasted from [here](https://uppmax.GitHub.io/programming_formalism-automated_testing/)
+:neutral_face: Mostly scaffolding here
+
+
+## Test if something is equal
+
+```python
+assert 1 + 1 == 2
+```
+
+```python
+import unittest
+
+class TestSmall(unittest.TestCase):
+    def test_is_equal(self):
+        self.assertEqual(1 + 1, 2)
+```
+
+:monocle_face: Hamcrest notation can give better error message.
+
+## Test if something raises an exception
+
+```python
+def raise_error():
+    raise RunType("Raise an error!")
+
+has_raised = False
+try:
+    raise_error() 
+except:
+    has_raised = True
+assert has_raised
+```
+
+```python
+import unittest
+
+class TestSmall(unittest.TestCase):
+    def test_raises(self):
+        self.assertRaises(RunTimeError, raise_error)
+```
+
+:smile: here it pays off.
+
+## First example: `is_prime`
+
+-   Function name: `is_prime`
+-   Output:
+    -   Returns `True`/`TRUE` if the input is prime
+    -   Returns `False`/`FALSE` if the input is not prime
+    -   :warning: Gives an error when the input is not an integer
+-   Work within scaffolding of [https://github.com/richelbilderbeek/programming_formalisms_medium_project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+
+## Live demo (15 minutes)
+
+<https://youtu.be/qVtHieuwM1M>
+
+ * (or [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv))
+
+## Reflection 
+
+[Reflection]
+
+## Exercise
+
+-   Pair up
+-   Switch roles every 3 minutes
+-   Discuss how to keep the time first
+-   Person with GitHub username first in alphabet starts
+-   Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_medium_project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+-   Develop a function called `get_digits`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
+
+Instructors will visit the rooms to observe.
+
+Done? Try [more easy prime functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#prime-easy)
+
+## Break
+
+[Break]
+
+`get_digits` video: 
+
+-    [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)
+-    [YouTube](https://youtu.be/qVtHieuwM1M)
+
+## Problem
+
+How to work together well?
+
+. . .
+
+Encourage/enforce:
+
+-    URL links are valid
+-    Correct spelling
+-    Code must pass all tests
+-    High code coverage
+-    Uniform coding style
+
+## Continuous Integration
+
+Scripts that are triggered when `push`ing code.
+
+Assures quality:
+
+-   Code has consistent style
+-   Links are valid (i.e. not broken)
+-   Spelling is correct
+-   Tests pass
+-   [your check here]
+
+## Test coding style
+
+Linter: program that tests code for style.
+
+In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, 
+`autopep8`, Pychecker, Pylama
+
+## 
+
+14:00|Theory: CI: why, lint, code coverage 
+13:15|Practice in new pair: `???`. 3 mins per round. Instructors view the Zoom rooms, do not talk
+14:45|Break, have a break
+
+
 
 
 Overview
 
-This short module is intended to introduce how testing can be automated using GitHub(GH) Actions. We will also look into other common usages of GH Actions like formatting, linting and type checking.
-Learning Outcomes
+This short module is intended to introduce how testing can be automated using GitHub(GH) Actions. We will also look into other common usages of GH Actions like formatting, linting and type checking. Learning Outcomes
 
-    Understand the value of continuous integration (CI)
-    Practical experience about how GitHub actions can be used to automate testing
-    Understand how code quality can be improved by automating type checking, linting and code formatting
+```         
+Understand the value of continuous integration (CI)
+Practical experience about how GitHub actions can be used to automate testing
+Understand how code quality can be improved by automating type checking, linting and code formatting
+```
 
-Schedule
-Time 	Topic
-14:30-14:45 	Continuous integration and Intro to GitHub Actions
-14:45-15:05 	Automated (py)testing with GH Actions (code along)
-15:05-15:15 	Break
-15:15-15:45 	Exercise in pairs of two
-15:45-16:00 	Automated type checking, linting and formatting
-Prerequisites
+Schedule Time Topic 14:30-14:45 Continuous integration and Intro to GitHub Actions 14:45-15:05 Automated (py)testing with GH Actions (code along) 15:05-15:15 Break 15:15-15:45 Exercise in pairs of two 15:45-16:00 Automated type checking, linting and formatting Prerequisites
 
 To follow the code-along and complete the exercises you should have the following things prepared before the class:
 
-    Git
-    GitHub: It must be configured so that you can push to a remote repository. Revisit the install instructions if needed: https://GitHub.com/UPPMAX/programming_formalism/blob/main/setup.md.
-    Miniconda (Optional): We will be using Python and the packages pytest, black, flake8 and mypy all of which can be installed in a conda environment. However, everything we do will be run by a virtual machine through GitHub actions so you only need this if you want to also test things locally.
+```         
+Git
+GitHub: It must be configured so that you can push to a remote repository. Revisit the install instructions if needed: https://GitHub.com/UPPMAX/programming_formalism/blob/main/setup.md.
+Miniconda (Optional): We will be using Python and the packages pytest, black, flake8 and mypy all of which can be installed in a conda environment. However, everything we do will be run by a virtual machine through GitHub actions so you only need this if you want to also test things locally.
+```
 
 Get environment ready
 
-conda activate my-env # Activate environment
-conda install black flake8 mypy pytest # Install necessary packages
-
-
+conda activate my-env \# Activate environment conda install black flake8 mypy pytest \# Install necessary packages
 
 ## CI
 
@@ -73,10 +202,12 @@ Continuous Integration(CI) is a popular practice where changes to the code are c
 
 The ingredients of CI
 
-    Version control for the entire codebase/project
-    Automated testing of the code
-    Automated building e.g. using cmake and pyproject.toml
-    A platform/infrastructure for automation e.g. GitHub, GitLab or circleci
+```         
+Version control for the entire codebase/project
+Automated testing of the code
+Automated building e.g. using cmake and pyproject.toml
+A platform/infrastructure for automation e.g. GitHub, GitLab or circleci
+```
 
 A first look at GitHub Actions
 
@@ -84,21 +215,21 @@ GitHub actions lets you automate the process of testing (and much more).
 
 Some common use cases
 
-    Testing
-    Building and deployment
-    Code quality e.g. linting and formatting
-    Generating websites/documentation (this webpage)
-    Code scanning (security vulnerabilities)
+```         
+Testing
+Building and deployment
+Code quality e.g. linting and formatting
+Generating websites/documentation (this webpage)
+Code scanning (security vulnerabilities)
+```
 
-We will now take a first look at GH Actions using the example from GitHub's quickstart guide.
-Step 1
+We will now take a first look at GH Actions using the example from GitHub's quickstart guide. Step 1
 
-We need to create a repository on GitHub. Have have prepared one here.
-Step 2
+We need to create a repository on GitHub. Have have prepared one here. Step 2
 
 Next, I will clone the repository locally and enter the project
 
-```
+```         
 git clone git@GitHub.com:MatPiq/CI-demo.git
 cd CI-demo
 ```
@@ -107,14 +238,14 @@ Step 3
 
 We create the .GitHub/workflows directory and add the GitHub-actions-demo.yml file.
 
-```
+```         
 mkdir -p .GitHub/workflows
 touch .GitHub/workflows/GitHub-actions-demo.yml
 ```
 
 The directory should look something like this:
 
-```
+```         
 ├── .git
 ├── .GitHub
 │   └── workflows
@@ -124,15 +255,15 @@ The directory should look something like this:
 
 We can now paste the example workflow into GitHub-actions-demo.yml. For example using vim:
 
-```
+```         
 vim .GitHub/workflows/GitHub-actions-demo.yml
 ```
 
-```
+```         
 GitHub-actions-demo.yml
 ```
 
-```
+```         
 name: GitHub Actions Demo
 run-name: ${{ GitHub.actor }} is testing out GitHub Actions 🚀
 on: [push]
@@ -155,19 +286,20 @@ jobs:
 
 YAML syntax
 
-    name: Name of workflow shown under "Actions" tab
-    run-name: Name specific for the run
-    on: When the workflow should be triggered e.g. push, pull request (can be several)
-    runs-on: Which virtual machine to run the tests on
-    steps: Logically separated "tasks" in your workflow. A step can run commands or an action. Changes to environment variables are not preserved between steps.
-    run:
+```         
+name: Name of workflow shown under "Actions" tab
+run-name: Name specific for the run
+on: When the workflow should be triggered e.g. push, pull request (can be several)
+runs-on: Which virtual machine to run the tests on
+steps: Logically separated "tasks" in your workflow. A step can run commands or an action. Changes to environment variables are not preserved between steps.
+run:
+```
 
-There are many more options available that can be found here.
-Step 4
+There are many more options available that can be found here. Step 4
 
 We will now commit and push the changes to GitHub and inspect the workflow.
 
-```
+```         
 git add . 
 git commit -m "Added demo workflow"
 git push
@@ -177,11 +309,9 @@ Step 5
 
 We can now go to "Actions" tab in the repository on GitHub to inspect our workflow.
 
-
 ## Slide 3
 
-Continuous (py)Testing
-Type-along automating pytest
+Continuous (py)Testing Type-along automating pytest
 
 We are now going to continue working on the test example using pytest introduced by Per. This time we will use the power of GitHub actions to automatically run the tests for us.
 
@@ -191,29 +321,28 @@ This code-along as well as the exercise we will be doing are based on the fantas
 
 What we will be doing
 
-    A: Create a repository on GitHub
-    B: Commit Per's test example (The tests will not pass at this point)
-    C: Open an issue and report the bug
-    D: Create a new branch to fix the bug and open a pull request
-    E: Merge the pull request into the main branch
+```         
+A: Create a repository on GitHub
+B: Commit Per's test example (The tests will not pass at this point)
+C: Open an issue and report the bug
+D: Create a new branch to fix the bug and open a pull request
+E: Merge the pull request into the main branch
+```
 
 Step 1: Create a new repository on GitHub
 
-Go to GitHub and create a new repository.
-Step 2: Clone your repository, add program + tests and commit + push
+Go to GitHub and create a new repository. Step 2: Clone your repository, add program + tests and commit + push
 
-Begin by cloning the repository you just created. Then add the reverse_string.py. Note that we include a mistake in the code so that our test will fail (it should be easy to spot!).
-reverse_string.py
+Begin by cloning the repository you just created. Then add the reverse_string.py. Note that we include a mistake in the code so that our test will fail (it should be easy to spot!). reverse_string.py
 
-```
+```         
 def reverse_string(s):
     return s[::-1][::-1]
 ```
 
-Next, we add the corresponding test test_reverse_string.py. Note that pytest will automatically run any module named test_*.py or *_test.py.
-test_reverse_string.py
+Next, we add the corresponding test test_reverse_string.py. Note that pytest will automatically run any module named test\_*.py or* \_test.py. test_reverse_string.py
 
-```
+```         
 from reverse_string import reverse_string
 
 def test_reverse():
@@ -259,7 +388,7 @@ FAILED test_string_manipulation.py::test_reverse - AssertionError: assert 'paris
 
 What our project directory should look like
 
-```
+```         
 $ls -l 
 .git
 reverse_string.py
@@ -269,27 +398,26 @@ README.md
 
 We should now be ready to add the files we have created, commit and push.
 
-```
+```         
 git add . & git commit -m "Initial commit"
 git push
 ```
 
 Step 3: Create CI workflow
 
-The next step is to create an actions workflow that runs our tests. There are two ways to do this. Either we can do as before by manually adding the workflow yaml under .GitHub/workflows, or, we can also add it directly through GitHub.
-Alternative 1: Adding through GitHub
+The next step is to create an actions workflow that runs our tests. There are two ways to do this. Either we can do as before by manually adding the workflow yaml under .GitHub/workflows, or, we can also add it directly through GitHub. Alternative 1: Adding through GitHub
 
 Go to your repository and choose click on the Actions tab. Then configure the Python application
 
 Alternative 2: Adding manually
 
-Create the file .GitHub/workflows/python-app.yml, then commit and push it to GitHub.
-python-app.yml
+Create the file .GitHub/workflows/python-app.yml, then commit and push it to GitHub. python-app.yml
 
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
+
 # For more information see: https://help.GitHub.com/actions/language-and-framework-guides/using-python-with-GitHub-actions
 
-```
+```         
 name: Python application
 
 on:
@@ -324,30 +452,30 @@ jobs:
 
 Step 4: Open an Issue on GitHub
 
-Now that we have automated the test and we can see that it is failing, it is time to open an issue on GitHub. Click on the issues tab and then New issue. Let us call it reverse string is broken.
-Step 5: Fix the issue and submit pull request
+Now that we have automated the test and we can see that it is failing, it is time to open an issue on GitHub. Click on the issues tab and then New issue. Let us call it reverse string is broken. Step 5: Fix the issue and submit pull request
 
 We will now create a new branch where we fix the issue in reverse_string.py and submit a pull request.
 
 # Create and checkout new branch
+
 git checkout -b matias/bugfix-reverse_string
 
 We can link the commit to the issue by using the keyword resolve (See more here).
 
-```
+```         
 git add reverse_string.py
 git commit -m "fix reverse_string.py, closes #1"
 ```
 
 We should verify locally that the tests pass before pushing to GitHub. Remember to set the upstream to the new branch.
 
-```
+```         
 git push --set-upstream origin matias/bug-fix
 ```
 
 Step 6: Accept pull request
 
-In this last step we will review the pull request on GitHub and verify that it indeed fixes the issue in reverse_string.py. Since we used the keyword closes the issue will be automatically closed as we accept the pull request and merge the fix into the main branch of the repository. 
+In this last step we will review the pull request on GitHub and verify that it indeed fixes the issue in reverse_string.py. Since we used the keyword closes the issue will be automatically closed as we accept the pull request and merge the fix into the main branch of the repository.
 
 ## Slide 4
 
@@ -359,55 +487,47 @@ What we will be doing
 
 This exercise takes around 20-30 min
 
-    A: Create a repository on GitHub
-    B: Commit some code with errors and a corresponding test
-    C: Open an issue and report the bug
-    D: Your colleague has also done step A-C. Now, fork your colleague's repository, clone it and fix the issue
-    E: Push your fix to GitHub and merge the pull request
+```         
+A: Create a repository on GitHub
+B: Commit some code with errors and a corresponding test
+C: Open an issue and report the bug
+D: Your colleague has also done step A-C. Now, fork your colleague's repository, clone it and fix the issue
+E: Push your fix to GitHub and merge the pull request
+```
 
 Step 1: Create a new repository on GitHub
 
-Create a new repository where you will host your code and tests and share the url for cloning to your colleague. Important: Make sure that you and your colleague have chosen different names.
-Step 2: Clone your repository, add program + tests and commit + push
+Create a new repository where you will host your code and tests and share the url for cloning to your colleague. Important: Make sure that you and your colleague have chosen different names. Step 2: Clone your repository, add program + tests and commit + push
 
 Begin by cloning your own repository.
 
-You should now add the code you want to test. You are encouraged to come up with your own example but please make it simple (Or at least the FIX simple)! If you want you can use the reverse_string.py code from before or you can write your own program. Below I have also included two other examples that you could use.
-Stack implementation
-And the test. Run it to see what is going wrong!
-Dijkstra's two-stack algorithm
-Step 3: Add the workflow to your repository
+You should now add the code you want to test. You are encouraged to come up with your own example but please make it simple (Or at least the FIX simple)! If you want you can use the reverse_string.py code from before or you can write your own program. Below I have also included two other examples that you could use. Stack implementation And the test. Run it to see what is going wrong! Dijkstra's two-stack algorithm Step 3: Add the workflow to your repository
 
-This time you can try adding the workflow manually by creating .GitHub/workflows/python-app.yml yourself. You can copy the content from the previous exercise. If you decide to do it this way remember that you need to add, commit and push the file. Conversely, if you do it directly on GitHub you will have to pull the changes to your local repository.
-Tip
-Step 4: Verify that the test ran (but failed) and open issue
+This time you can try adding the workflow manually by creating .GitHub/workflows/python-app.yml yourself. You can copy the content from the previous exercise. If you decide to do it this way remember that you need to add, commit and push the file. Conversely, if you do it directly on GitHub you will have to pull the changes to your local repository. Tip Step 4: Verify that the test ran (but failed) and open issue
 
-Check that pytest ran as you expected by failing to complete the test. Afterward, create an issue with a reasonable title and you can also add a description if you wish.
-Step 5: Fork and clone the repository of your colleague
+Check that pytest ran as you expected by failing to complete the test. Afterward, create an issue with a reasonable title and you can also add a description if you wish. Step 5: Fork and clone the repository of your colleague
 
 This is a completely new step from the last exercise. You should begin by forking the repository of your colleague. Use the url to navigate to the GitHub page and then click fork:
 
 You can read about creating pull requests using a fork here:
 
- * [https://docs.GitHub.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork](https://docs.GitHub.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
+-   <https://docs.GitHub.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>
 
 and more generally about forking here:
 
- * [https://docs.GitHub.com/en/get-started/quickstart/fork-a-repo](https://docs.GitHub.com/en/get-started/quickstart/fork-a-repo)
+-   <https://docs.GitHub.com/en/get-started/quickstart/fork-a-repo>
 
 After you have forked the repository you should clone your fork so that you have it locally. This will probably look something like this:
 
-git clone git@GitHub.com:your-username/name-of-colleague-repo.git
+git clone git\@GitHub.com:your-username/name-of-colleague-repo.git
 
 Step 6: Make the test pass!
 
-Now that you have forked the repo of your colleague, it is time to inspect the issue and fix the code so that the test passes! Before making any commits you can verify locally with pytest.
-Step 7: Create a pull request
+Now that you have forked the repo of your colleague, it is time to inspect the issue and fix the code so that the test passes! Before making any commits you can verify locally with pytest. Step 7: Create a pull request
 
 You are now ready to create a pull request by committing and pushing your fix. As long as you reference the issue number in the commit message GitHub and use a keyword like closes (see here for more) GitHub will create it for you.
 
-Once done, you can ask your colleague to review the pull request!
-Step 8: Merge pull request
+Once done, you can ask your colleague to review the pull request! Step 8: Merge pull request
 
 Now going back to your own repository again, review the pull request your colleague suggested. If the tests passed and you are happy with the fix you can merge it to the main branch. You are now done with the exercise!
 
@@ -415,16 +535,17 @@ Now going back to your own repository again, review the pull request your collea
 
 Type checking, linting and formatting
 
-We are now going to see other parts of the development that be automated using GH Actions in order improve the quality of the code base. We will continue with Python and look at some modern and common tools used popular projects.
-Formatting with black
+We are now going to see other parts of the development that be automated using GH Actions in order improve the quality of the code base. We will continue with Python and look at some modern and common tools used popular projects. Formatting with black
 
 How your code is formatted matters for the readability. This is a hot topic and people have different styles and preferences. When working together however, it is often more important that the style is coherent than which exact style use.
 
 In Python some of the most popular formatters are:
 
-    Black
-    autopep8
-    YAPF
+```         
+Black
+autopep8
+YAPF
+```
 
 We will be looking using Black since this is the mostly commonly used
 
@@ -434,7 +555,7 @@ Black is the uncompromising Python code formatter. By using it, you agree to ced
 
 Let us create a module formatting.py
 
-```
+```         
 formatting.py
 
 import numpy as np
@@ -454,10 +575,9 @@ black formatting.py
 
 Adding black to workflow
 
-To add black to the workflow we need to add it to the packages being pip-installed as well as create a new new step.
-python-app.yml
+To add black to the workflow we need to add it to the packages being pip-installed as well as create a new new step. python-app.yml
 
-```
+```         
     # This workflow will install Python dependencies, run tests and lint with a single version of Python
     # For more information see: https://docs.GitHub.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
@@ -498,8 +618,7 @@ python-app.yml
 
 Formatting on push
 
-It is also possible to setup for your code to be automatically formatted when pushed to the repository. You can read more about that here.
-Linting with flake8
+It is also possible to setup for your code to be automatically formatted when pushed to the repository. You can read more about that here. Linting with flake8
 
 Linting is a form of static code analysis that looks for and warns about code smells, possible errors and bad style in your code. You have probably seen this already if you are using a modern IDE like vscode or PyCharm with a built-in language server.
 
@@ -509,7 +628,7 @@ touch linting.py
 
 linting.py
 
-```
+```         
 import numpy as np # F401
 from math import * # F403
 
@@ -520,11 +639,9 @@ if True == False: #
 
 Static type-checking with mypy
 
-Python is an interpreted language, however, as of PEP 484 it supports Type Hints. Some very popular packages like pydantic even use type hints to evaluate input at runtime.
-type_checking.py
+Python is an interpreted language, however, as of PEP 484 it supports Type Hints. Some very popular packages like pydantic even use type hints to evaluate input at runtime. type_checking.py
 
-def reverse_string(s: str) -> str:
-    return s.reverse()
+def reverse_string(s: str) -\> str: return s.reverse()
 
 We can now evaluate if there are any type errors using mypy.
 
@@ -532,18 +649,18 @@ mypy type_checking.py
 
 Benefits of Type Hints
 
-    Improves readability (I think)
-    Easier to spot bugs and maintain project
-    Forces you to think
-    Better autocomplete if using language server
-
-Final workflow
-Automated refactoring with sourcery (Bonus)
-
-sourcery is a new and interesting tool that is able to refactor the code to make it more pythonic. Since it requires that you sign up for an account, I will just quickly show its functionality. However, it can be added as a GitHub action and just like with black it can be used to automatically refactor the when you push. You can read more about this here.
-refactoring.py
-
+```         
+Improves readability (I think)
+Easier to spot bugs and maintain project
+Forces you to think
+Better autocomplete if using language server
 ```
+
+Final workflow Automated refactoring with sourcery (Bonus)
+
+sourcery is a new and interesting tool that is able to refactor the code to make it more pythonic. Since it requires that you sign up for an account, I will just quickly show its functionality. However, it can be added as a GitHub action and just like with black it can be used to automatically refactor the when you push. You can read more about this here. refactoring.py
+
+```         
 # assign-if-exp
 condition = True
 if condition:
@@ -580,8 +697,15 @@ sourcery review --in-place refactoring.py
 
 Where to go from here
 
-If you are interested in learning more tools and ways to improve the quality of your project, a really good place to start is looking at cookie cutter templates. Two great ones for Python are:
+If you are interested in learning more tools and ways to improve the quality of your project, 
+a really good place to start is looking at cookie cutter templates. Two great ones for Python are:
 
-    https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/
-    https://scikit-hep.org/developer
+```         
+https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/
+https://scikit-hep.org/developer
+```
 
+
+## Links
+
+ * [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)

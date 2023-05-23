@@ -1,5 +1,5 @@
 ---
-title: "TDD 1"
+title: "TDD"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
