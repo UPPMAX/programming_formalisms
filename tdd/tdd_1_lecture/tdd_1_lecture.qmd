@@ -1,0 +1,203 @@
+---
+title: "TDD 1"
+author: "Richèl Bilderbeek"
+format: revealjs
+editor: visual
+from: markdown+emoji
+---
+
+## TDD
+
+![](programming_formalism_course.png)
+
+## Problem
+
+How do you grow/develop your code?
+
+![](beck_tdd_by_example.jpg)
+
+## Newbie developers
+
+'Just start somewhere'
+
+![](chaotic_programmer.png)
+
+## Experienced developers
+
+Work systematically
+
+![](organised_female_programmer.png)
+
+## TDD
+
+Short for 'Test-driven development' A systematic way to grow code
+
+![](tdd_hat_2.jpg)
+
+## TDD cycle
+
+![](tdd_cycle_2.jpg)
+
+## First example: `is_zero`
+
+-   Function name: `is_zero`
+-   Output:
+    -   Returns `True`/`TRUE` if the input is zero
+    -   Returns `False`/`FALSE` if the input is not zero
+    -   :warning: Gives an error when the input is not a number
+
+## Live demo (15 minutes)
+
+<https://youtu.be/VddlrNOeodg>
+
+## Reflection 1
+
+Q: Do developers really do this?
+
+. . .
+
+A: Yes
+
+![](book_langr.jpg)
+
+## Exercise
+
+-   Create a GitHub repository called `is_even`
+-   Share URL of repo with teachers
+-   Develop a function called `is_even`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
+
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+
+## Break
+
+![](dilbert_agile_2.png)
+
+## Reflection 2
+
+Q: Does this really save time?
+
+. . .
+
+A: No, it takes longer
+
+| Study | Extra time | Effect                        |
+|-------|------------|-------------------------------|
+| 1     | 16%        | 18% more black-box tests pass |
+| 2     | 15%        | 2x higher code quality        |
+| 3     | 15-35%     | 40%-90% less defects          |
+
+## Reflection references
+
+-   \[1\] George, Boby, and Laurie Williams. "A structured experiment of test-driven development." Information and software Technology 46.5 (2004): 337-342.
+-   \[2\] Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.
+-   \[3\] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
+
+## Discussion on Reflection 2
+
+Do note, the scope of these researches is limited:
+
+-   Mistakes can be costly
+-   TDD allows a dialogue
+-   TDD results is a better software architecture
+
+## Reflection 3
+
+Q: Why do TDD?
+
+. . .
+
+A:
+
+-   TDD makes developers more productive \[1\]
+-   TDD increases quality of the code \[1\]
+    -   There are plenty of costly programming mistakes documented!
+-   TDD helps shape the project architecture \[2\]
+-   TDD helps better modularization \[3\]
+
+## References for Reflection 3
+
+-   \[1\] Erdogmus, Hakan, Maurizio Morisio, and Marco Torchiano. "On the effectiveness of the test-first approach to programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
+-   \[2\] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
+-   \[3\] Madeyski, Lech, and Gestión de sistemas de información. Test-driven development: An empirical evaluation of agile practice. Heidelberg: Springer, 2010.
+
+## Reflection 4
+
+Q: How many tests should I write?
+
+. . .
+
+A: Until you cannot break your function anymore.
+
+![](beck_tdd_by_example.jpg)
+
+## Exercise: `is_even`
+
+-   Create a GitHub repository called `is_even`
+-   Share URL of repo with teachers
+-   Develop a function called `is_even`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
+
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+
+![](chaotic_programmer.png)
+
+## Exercise: `divide_safely`
+
+-   Create a GitHub repository called `divide_safely`
+-   Share URL of repo with teachers
+-   Develop a function called `divide_safely`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
+
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+
+![](chaotic_programmer.png)
+
+## Break 2
+
+![](dilbert_agile_1.png)
+
+## Exercise: `is_prime`
+
+-   Create a GitHub repository called `is_prime`
+-   Share URL of repo with teachers
+-   Develop a function called `is_prime`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
+
+Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+
+![](chaotic_programmer.png)
+
+## Bottom line
+
+-   Today we wrote **unit tests**
+-   It is only those your boss may read
+-   The literature assumes a responsible programmer writes tests \[1,2,3\] (it is built-in to Python!)
+
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+
+## References
+
+-   \[1\] [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+-   \[2\] [The tidyverse style guide](https://style.tidyverse.org)
+-   \[3\] [Python PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
+
+## Finally
+
+Time for a Reflection!
+
+Afterwards, you can rest or ask your final questions.
+
+![](dilbert_tdd_3.png)
+
+## The End
+
+![](dilbert_tdd_4.png)
+
+## Links
+
+-   [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct) of previous year
