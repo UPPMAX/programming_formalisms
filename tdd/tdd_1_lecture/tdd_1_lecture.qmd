@@ -178,7 +178,7 @@ Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalism
 -   It is only those your boss may read
 -   The literature assumes a responsible programmer writes tests \[1,2,3\] (it is built-in to Python!)
 
-![](thomas_and_hut_the_pragmatic_programmer.jpg)
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 ## References
 
