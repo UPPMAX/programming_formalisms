@@ -116,45 +116,60 @@ These are barely (sometimes purposefully vague!) suggestions:
  * if you do not need all, that is OK
  * if you know better, that is OK
 
-### Easy
+### Trivial
+
+ * At day 'TDD'
+
+Name                          |Purpose
+------------------------------|-----------------------------------------------------------------------
+`is_even(x)`                  |Returns `True` if `x` is even
+`is_odd(x)`                   |Returns `True` if `x` is odd
+`is_probability(p)`           |Returns `True` if `p` is a probability (i.e. a chance of something happening)
+`is_zero(x)`                  |Returns `True` if `x` is zero
+
+#### Extra
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
 `are_numbers(x)`              |Returns `True` if `x` is zero, one or more numbers
 `are_strings(x)`              |Returns `True` if `x` is zero, one or more strings
-`divide_safely(a, b)`         |Divide `a` by `b`, throws a helpful error if `b` is zero
 `is_dividable_by_three(x)`    |Returns `True` if `x` is dividable by 3
-`is_even(x)`                  |Returns `True` if `x` is even
 `is_number(x)`                |Returns `True` if `x` is a number
-`is_odd(x)`                   |Returns `True` if `x` is odd
-`is_probability(p)`           |Returns `True` if `p` is a probability (i.e. a chance of something happening)
 `is_string(x)`                |Returns `True` if `s` is a string
-`is_zero(x)`                  |Returns `True` if `x` is zero
 
-### Medium
+### Prime, easy
+
+ * At day 'Testing'
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
 `are_primes(x)`               |Returns `True`/`False` for each element in `x` being prime yes/no
-`are_primes(x, m)`            |Returns `True`/`False` for each element in `x` being prime yes/no using method `m`
-`can_use_prime_method(x, m)`  |Returns `True` if `m` is a prime finding method that can be used on `x`
-`get_all_prime_methods()`     |Returns all prime finding methods
 `get_digits(n)`               |Returns all the digits of number `n`
 `get_proper_divisors(n)`      |Returns all proper divisors of number `n`
 `is_palindrome(n)`            |Returns `True` if the number `n` is a palindrome
 `is_palindrome(s)`            |Returns `True` if the string `s` is a palindrome
 `is_perfect(x)`               |Returns `True` if `x` is a perfect number
 `is_prime(x)`                 |Returns `True` if `x` is prime
+`is_roman_number(s)`          |Returns `True` if `s` is a string that is a roman number
+`sum_digits(x)`               |Returns the sum of the digits of number `x`
+`to_roman_number(s)`          |Returns a number equivalent to the roman number that is string `s`
+
+#### Extra
+
+Name                          |Purpose
+------------------------------|-----------------------------------------------------------------------
+`are_primes(x, m)`            |Returns `True`/`False` for each element in `x` being prime yes/no using method `m`
+`can_use_prime_method(x, m)`  |Returns `True` if `m` is a prime finding method that can be used on `x`
+`get_all_prime_methods()`     |Returns all prime finding methods
 `is_prime(x, m)`              |Returns `True` if `x` is prime using method `m`
 `is_prime_td(x)`              |Returns `True` if `x` is prime using the Trial Division method
 `is_prime_ss(x)`              |Returns `True` if `x` is likely to be prime using the Solovay-Strassen method
 `is_prime_ss(x, p)`           |Returns `True` if `x` is likelier than probability `p` to be prime using the Solovay-Strassen method
 `is_prime_method(m)`          |Returns `True` if `m` is a prime finding method
-`is_roman_number(s)`          |Returns `True` if `s` is a string that is a roman number
-`sum_digits(x)`               |Returns the sum of the digits of number `x`
-`to_roman_number(s)`          |Returns a number equivalent to the roman number that is string `s`
 
-### Hard
+### Prime, advanced
+
+ * At day 'Testing' and 'Optimization'
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -179,6 +194,8 @@ Name                          |Purpose
 `is_twin_prime(x)`            |Returns `True` if `x` is a twin prime
 
 ## Functions to be developed for The Medium Project
+
+ * At day 'Algorithms' and 'Optimization'
 
 These are barely (sometimes purposefully vague!) suggestions:
 
@@ -216,6 +233,8 @@ Name                          |Purpose
 `tournament_sort(x)`          |Returns the sorted elements of `x` using tournament sort
 
 ## Functions to be developed for The Big Project
+
+ * At days 'Data structures' and 'Optimization'
 
 These are barely (sometimes purposefully vague!) suggestions:
 

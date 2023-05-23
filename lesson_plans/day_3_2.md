@@ -32,6 +32,8 @@ When |What
 13:15|Practice in new pair: `???`. 3 mins per round. Instructors view the Zoom rooms, do not talk
 14:45|Break, have a break
 
+ * Video: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv) [YouTube](https://youtu.be/vmRuSWhdA7c)
+
 ## 15:00-15:45 RB
 
  * Goals: 
