@@ -382,6 +382,13 @@ ogv
 assertEqual
 assertRaises
 assertTrue
+Codacy
+Pychecker
+Pylama
+Pylint
+ing
+richelbilderbeek
+qVtHieuwM
 
 
 
