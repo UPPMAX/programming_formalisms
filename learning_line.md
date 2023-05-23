@@ -137,6 +137,11 @@ Name                          |Purpose
 `is_number(x)`                |Returns `True` if `x` is a number
 `is_string(x)`                |Returns `True` if `s` is a string
 
+  * roman_str_to_number
+  * is_perfect
+  * [calc_n_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
+
+
 ### Prime, easy
 
  * At day 'Testing'
@@ -151,8 +156,9 @@ Name                          |Purpose
 `is_perfect(x)`               |Returns `True` if `x` is a perfect number
 `is_prime(x)`                 |Returns `True` if `x` is prime
 `is_roman_number(s)`          |Returns `True` if `s` is a string that is a roman number
+`roman_number_to_int(s)`      |Returns an integer equal to the roman number that is string `s`
 `sum_digits(x)`               |Returns the sum of the digits of number `x`
-`to_roman_number(s)`          |Returns a number equivalent to the roman number that is string `s`
+`to_roman_number(i)`          |Returns a Roman number as a string equivalent to the integer that is `i`
 
 #### Extra
 
