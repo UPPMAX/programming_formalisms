@@ -41,3 +41,6 @@ When       |What
 15:15-15:45|Reflection, by JN
 15:45      |End, stay around for questions
 
+## Observables
+
+ * `richelbilderbeek/programming_formalisms_the_big_project`

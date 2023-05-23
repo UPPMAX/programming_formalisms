@@ -160,25 +160,11 @@ Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalism
 
 ![](dilbert_agile_1.png)
 
-## AAA
+## Exercise: `is_prime`
 
-TDD idiom:
-
--   Arrange: what is before
--   Act: do it
--   Assert: there must have been a change
-
-```         
-a = 1
-b = add_one(a)
-assert b == a + 1
-```
-
-## Exercise: `add_one`
-
--   Create a GitHub repository called `add_one`
+-   Create a GitHub repository called `is_prime`
 -   Share URL of repo with teachers
--   Develop a function called `add_one`
+-   Develop a function called `is_prime`
 -   Try to be **exemplary**
 -   We'll discuss a repo history after the break
 
@@ -189,6 +175,7 @@ Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalism
 ## Bottom line
 
 -   Today we wrote **unit tests**
+-   It is only those your boss may read
 -   The literature assumes a responsible programmer writes tests \[1,2,3\] (it is built-in to Python!)
 
 ![](thomas_and_hut_the_pragmatic_programmer.jpg)

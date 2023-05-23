@@ -12,14 +12,18 @@
  * [x] What is TDD?
  * [x] What is the TDD cycle?
  * [x] How the git history of TDD cycle looks like
- * [ ] Why TDD gives better software architecture
- * [ ] Why helpful error messages are important
- * [ ] How TDD allows for more helpful error messages
- * [ ] Why tests are valuable: they are what you discuss with your boss
- * [ ] Different types of tests: unit tests, etc.
- * [ ] [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
- * [ ] Writing functions for tests
- * [ ] Testing frameworks (and why not in course)
+ * [x] Why TDD gives better software architecture
+ * [x] Why helpful error messages are important
+ * [x] Different types of tests: unit tests, etc.
+ * [x] Test for documentation
+ * [x] Why tests are valuable: they are what you discuss with your boss
+ * [x] Encourage to get sloppier in the end: there will be unexpected
+       errors :-)
+ * [ ] Can miss code to be tested, will measure codecov in TDD2
+ * [ ] Can test for style, will lint codecov in TDD2
+ * [ ] There is at least 1 easy function description that
+       makes no sense when writing tests. Change the description
+ * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
 
 Other activities:
 
@@ -32,7 +36,7 @@ Other activities:
 
 ## Wednesday part 2: TDD
 
-> Goal: students have done multiple TDD cycles socially
+> Goal: students have done multiple TDD cycles within a testing framework socially
 
  * [ ] Add CI to TDD development
  * [ ] Add build badge
@@ -41,6 +45,9 @@ Other activities:
  * [ ] Add broken links checker
  * [ ] Measure codecov
  * [ ] Do PR to demonstrate a bug
+ * [ ] [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
+ * [ ] Writing functions for tests
+ * [ ] Testing frameworks (and why not in course)
 
 Other activities:
 
@@ -115,12 +122,6 @@ Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
 `are_numbers(x)`              |Returns `True` if `x` is zero, one or more numbers
 `are_strings(x)`              |Returns `True` if `x` is zero, one or more strings
-`check_are_numbers(x)`        |Throws a helpful error if `x` is not zero, one or more numbers
-`check_different(a, b)`       |Throws a helpful error if `a` and `b` are not different
-`check_equal(a, b)`           |Throws a helpful error if `a` and `b` are different
-`check_is_number(x)`          |Throws a helpful error if `x` is not a number
-`check_is_probability(p)`     |Throws a helpful error if `p` is not a probability (i.e. a chance of something happening)
-`check_is_string(x)`          |Throws a helpful error if `s` is not a string
 `divide_safely(a, b)`         |Divide `a` by `b`, throws a helpful error if `b` is zero
 `is_dividable_by_three(x)`    |Returns `True` if `x` is dividable by 3
 `is_even(x)`                  |Returns `True` if `x` is even
@@ -136,7 +137,6 @@ Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
 `are_primes(x)`               |Returns `True`/`False` for each element in `x` being prime yes/no
 `are_primes(x, m)`            |Returns `True`/`False` for each element in `x` being prime yes/no using method `m`
-`calc_p_is_prime(x, m)`       |Returns the change that number `x` is prime using method `m`
 `can_use_prime_method(x, m)`  |Returns `True` if `m` is a prime finding method that can be used on `x`
 `get_all_prime_methods()`     |Returns all prime finding methods
 `get_digits(n)`               |Returns all the digits of number `n`
@@ -158,6 +158,7 @@ Name                          |Purpose
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
+`calc_p_is_prime(x, m)`       |Returns the change that number `x` is prime using method `m`
 `calc_p_is_prime_bpsw(x)`     |Returns the chance that number `x` is prime using the Baillie-PSW primality test
 `calc_p_is_prime_mr(x)`       |Returns the chance that number `x` is prime using the Miller-Rabin primality test
 `calc_p_is_prime_ss(x)`       |Returns the chance that number `x` is prime using the Solovay-Strassen primality method
@@ -253,5 +254,6 @@ Day|Group size|Branch model                |CI |Code review |DNA alignment proje
 1  |1         | `master`                   |No |No          |Know it exists
 2  |1         | `master`                   |No |No          |[The Small Project](https://github.com/richelbilderbeek/programming_formalisms_small_project)
 3  |2         | `master`, `develop`        |Yes|No          |[The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
-4  |4         | `master`, `develop`, topic |Yes|Pull Request|The Big Project
+4-1|4         | `master`, `develop`, topic |Yes|No          |The Big Project
+4-2|all       | `master`, `develop`, topic |Yes|Pull Request|The Big Project
 5  |all       | `master`, `develop`, topic |Yes|Pull Request|Optimized functions of The Big Project

@@ -1,7 +1,5 @@
 # TDD
 
- * Teacher: Richèl Bilderbeek
-
 On average, 80% of the time we spend debugging.
 Test-driven development is a technique used by
 professional software developers to reduce this time,
@@ -12,8 +10,8 @@ in correct code quicker.
 In this hands-on workshop, we'll write tests for simple functions
 to practice this way of developing.
 
-It is assumed you can read basic R code and that you
-have an R environment (e.g. R Studio) installed.
+It is assumed you can read basic Python code and that you
+have an Python environment (e.g. Visual Studio Code) installed.
 
 ## Source to images
 
@@ -25,16 +23,3 @@ File                              |Source
 [tdd_cycle_2.png](tdd_cycle_2.png)|[here](https://d2wlcd8my7k9h4.cloudfront.net/media/images/7308af76-14a6-44a9-b842-d0abbd432968.jpg)
 [dilbert_tdd.gif](dilbert_tdd.gif)|[here](https://dilbert.com)
 [all others]                      |Free to use
-
-## To add
-
- * [ ] Test for documentation
- * [ ] Can miss code to be tested, will measure codecov in TDD2
- * [ ] Can test for style, will lint codecov in TDD2
- * [ ] There is at least 1 easy function description that
-       makes no sense when writing tests. Change the description
- * [ ] Encourage to get sloppier in the end: there will be unexpected
-       errors :-)
- * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
-
-

@@ -13,10 +13,9 @@
 
 When |What
 -----|-------------------------
-13:00|Netiquette
-13:05|Explain TDD: Why? What? 
-13:10|Show one TDD cycle
-13:..|Practice, focus on students that cannot get it to work
+13:00|Theory: Testing framework: why, Hamcrest, assertTrue, assertEqual, assertRaises
+13:05|[Video] Show to use starting code with CI and unit tests, `is_prime`
+13:15|Practice: `get_digits`. 3 mins per round. Instructors view the Zoom rooms, do not talk
 13:45|Break, have a break
 
 ## 14:00-14:45 RB
@@ -27,8 +26,8 @@ When |What
 
 When |What
 -----|-------------------------
-14:00|second TDD cycle
-14:..|Practice
+14:00|Theory: CI: why, lint, code coverage 
+13:15|Practice in new pair: `???`. 3 mins per round. Instructors view the Zoom rooms, do not talk
 14:45|Break, have a break
 
 ## 15:00-15:45 RB
@@ -42,4 +41,9 @@ When       |What
 15:00      |Summarise
 15:15-15:45|Reflection, by JN
 15:45      |End, stay around for questions
+
+## Observables
+
+ * `owner_name/?` (of duos)
+ * `owner_name/?` (of duos)
 
