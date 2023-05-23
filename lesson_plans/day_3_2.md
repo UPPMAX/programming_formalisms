@@ -14,9 +14,11 @@
 When |What
 -----|-------------------------
 13:00|Theory: Testing framework: why, Hamcrest, assertTrue, assertEqual, assertRaises
-13:05|[Video] Show to use starting code with CI and unit tests, `is_prime`
+13:05|Show to use starting code with CI and unit tests, `is_prime`, [YouTube video](https://youtu.be/qVtHieuwM1M)
 13:15|Practice: `get_digits`. 3 mins per round. Instructors view the Zoom rooms, do not talk
 13:45|Break, have a break
+
+ * Video: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv) [YouTube](https://youtu.be/qVtHieuwM1M)
 
 ## 14:00-14:45 RB
 

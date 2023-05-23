@@ -19,6 +19,8 @@ When |What
 13:20|Exercise: write `is_even`, `is_odd`
 13:45|Break, have a break
 
+ * Video: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_zero.ogv) [YouTube](https://youtu.be/VddlrNOeodg)
+
 ## 14:00-14:45 RB
 
  * Goals: 
