@@ -39,7 +39,7 @@ Fri |13-16       |RB + JN  | [Optimisation](optimisation/README.md), including a
 Filename                            |Descriptions
 ------------------------------------|---------------------------------------------------------------------------------------
 [mlc_config.json](mlc_config.json)  |Link checker configuration file
-[.spellcheck.yaml](.spellcheck.yaml)|Spell checker configuration file, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+[.spellcheck.yml](.spellcheck.yml)  |Spell checker configuration file, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
 [.wordlist.txt](.wordlist.txt)      |Whitelist for spell checker
 
 ## Links
