@@ -14,8 +14,7 @@
 
 When |What
 -----|-------------------------
-13:00|Netiquette
-13:05|Explain TDD: Why? What? 
+13:00|Theory: list, set, dict
 13:10|Show one TDD cycle
 13:..|Practice, focus on students that cannot get it to work
 13:45|Break, have a break
@@ -27,7 +26,7 @@ When |What
 
 When |What
 -----|-------------------------
-14:00|second TDD cycle
+14:00|Theory: Refactoring and combining functions: `are_primes`/`are_primes_[method]`
 14:..|Practice
 14:45|Break, have a break
 

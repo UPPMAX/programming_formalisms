@@ -26,14 +26,14 @@ When|What
 
 When |What
 -----|-------------------------
-10:00|Theory: role of `assert`, algorithms types
+10:00|Theory: role of `assert`, RNG, RNG seed and testing
 10:15|Practice
 10:45|Break, have a break
 
 ## 11:00-11:45 RB
 
  * Goals: 
-   * .
+   * Theory: Combining functions, `is_prime`, `is_prime_for_loop`, `is_prime_special`
 
 When       |What
 -----------|-------------------------

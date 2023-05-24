@@ -15,10 +15,8 @@
 
 When |What
 -----|-------------------------
-13:00|Netiquette
-13:05|Explain TDD: Why? What? 
-13:10|Show one TDD cycle
-13:..|Practice, focus on students that cannot get it to work
+13:00|Theory: Big-O
+13:..|Practice
 13:45|Break, have a break
 
 ## 14:00-14:45 RB
@@ -28,7 +26,7 @@ When |What
 
 When |What
 -----|-------------------------
-14:00|second TDD cycle
+14:00|Theory: profile
 14:..|Practice
 14:45|Break, have a break
 
