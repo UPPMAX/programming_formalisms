@@ -6,7 +6,7 @@
 
 ## Tuesday part 2: TDD
 
-> Goal: students have done multiple TDD cycles
+> Goal: students have done multiple TDD cycles individually
 
  * [x] Why is TDD important?
  * [x] What is TDD?
@@ -17,24 +17,22 @@
  * [x] Different types of tests: unit tests, etc.
  * [x] Test for documentation
  * [x] Why tests are valuable: they are what you discuss with your boss
- * [x] Encourage to get sloppier in the end: there will be unexpected
+ * [ ] Encourage to get sloppier in the end: there will be unexpected
        errors :-)
- * [ ] Can miss code to be tested, will measure codecov in TDD2
- * [ ] Can test for style, will lint codecov in TDD2
  * [ ] There is at least 1 easy function description that
        makes no sense when writing tests. Change the description
- * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
+ * [ ] Can miss code to be tested, will measure codecov in TDD2
+ * [ ] Can test for style, will lint codecov in TDD2
 
 Other activities:
 
  * Collect GitHub usernames
- * Big project: individual repo with design
 
 > Evaluation: git history on students's repositories
 
 ## Wednesday part 1: social coding, pair programming as a tool for rapid development
 
-## Wednesday part 2: TDD
+## Wednesday part 2: Testing
 
 > Goal: students have done multiple TDD cycles within a testing framework socially
 
@@ -47,7 +45,9 @@ Other activities:
  * [ ] Do PR to demonstrate a bug
  * [ ] [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
  * [ ] Writing functions for tests
- * [ ] Testing frameworks (and why not in course)
+ * [ ] Testing frameworks
+ * [ ] Beyoncé principle
+ * [ ] Recursive tests
 
 Other activities:
 
@@ -60,6 +60,8 @@ Other activities:
 
 > Goal: students have created multiple different types of algorithms
 
+ * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
+ * [ ] DRY
  * [ ] What is a good algorithm
  * [ ] Dimensions of a algorithm: speed, memory, disc, network
  * [ ] Type of algorithms overview
@@ -78,14 +80,14 @@ Other activities:
 
 > Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
 
-## Thursday part 2: TDD
+## Thursday part 2: data structures
 
 > Goal: students have develop tested code together
 
- * Recursive tests
- * Beyoncé principle
- * YAGNI
- * DRY
+ * [ ] Essential Python classes
+ * [ ] YAGNI
+ * [ ] Winnebago class
+ * [ ] Design a simple class
 
 > Evaluation: Code on multiple GitHub tested by GHA, 100% codecov, developed by groups
 
@@ -116,7 +118,7 @@ These are barely (sometimes purposefully vague!) suggestions:
  * if you do not need all, that is OK
  * if you know better, that is OK
 
-### Trivial
+### Easy
 
  * At day 'TDD'
 
@@ -140,7 +142,6 @@ Name                          |Purpose
   * roman_str_to_number
   * is_perfect
   * [calc_n_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
-
 
 ### Prime, easy
 

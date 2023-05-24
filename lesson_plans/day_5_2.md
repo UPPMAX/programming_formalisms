@@ -46,4 +46,4 @@ When       |What
 
 ## Observables
 
- * `richelbilderbeek/programming_formalisms_the_big_project`
+ * `richelbilderbeek/programming_formalisms_medium_project` (PRs by groups)

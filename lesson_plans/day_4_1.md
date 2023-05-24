@@ -26,7 +26,7 @@ When|What
 
 When |What
 -----|-------------------------
-10:00|Theory: algorithms type
+10:00|Theory: role of `assert`, algorithms types
 10:15|Practice
 10:45|Break, have a break
 
@@ -43,5 +43,4 @@ When       |What
 
 ## Observables
 
- * `owner_name/?` (in groups of four)
- * `owner_name/?` (in groups of four)
+ * `owner_name/programming_formalisms_medium_project` (in groups of four)

@@ -29,7 +29,7 @@ When |What
 
 When |What
 -----|-------------------------
-14:00|Theory: CI: why, lint, code coverage 
+14:00|Theory: CI: why, lint, code coverage, `noqa`
 13:15|Practice in new pair: `???`. 3 mins per round. Instructors view the Zoom rooms, do not talk
 14:45|Break, have a break
 
@@ -49,6 +49,4 @@ When       |What
 
 ## Observables
 
- * `owner_name/?` (of duos)
- * `owner_name/?` (of duos)
-
+ * `owner_name/programming_formalisms_medium_project` (in duos)

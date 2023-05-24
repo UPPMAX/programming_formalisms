@@ -45,4 +45,4 @@ When       |What
 
 ## Observables
 
- * `richelbilderbeek/programming_formalisms_the_big_project`
+ * `owner_name/programming_formalisms_medium_project` (in groups of four)
