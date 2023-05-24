@@ -60,9 +60,10 @@ Other activities:
 
 > Goal: students have created multiple different types of algorithms
 
+ * [ ] Design by contract
  * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
- * [ ] DRY
  * [ ] What is a good algorithm
+ * [ ] DRY
  * [ ] Dimensions of a algorithm: speed, memory, disc, network
  * [ ] Type of algorithms overview
  * [ ] Iterative versus recursive

@@ -10,17 +10,16 @@ from: markdown+emoji
 
 ![](programming_formalism_course.png)
 
-## Overview
+## Problem
 
--   1h: A good function
--   1h: Data types
--   1h: Good functions with useful data types
+How do I write functions [1] that are:
 
-## Why important?
+ * use to use
+ * correct
+ * fast [2]
 
-Your program is as good as its parts.
-
-![](components.png)
+[1] For now, we use `algorithm == function`
+[2] pick any vague definition
 
 ## Algorithm
 
@@ -32,11 +31,44 @@ For us:
 
 > Algorithms are the things we put into functions.
 
-## Problem
+## Design by Contract
 
-How to write a good function?
+![](design_by_contract.png)
 
-What is 'good'?
+## The role of `assert`
+
+Within functions, `assert` is used for:
+
+ * as a stub
+ * to do things in debug mode only
+ * to document assumptions a developer makes
+
+## `assert` as a stub
+
+```python
+def align(dna_sequences):
+    """Align the DNA sequences"""
+    assert len(dna_sequences) >= 2
+    assert len(dna_sequences) == 2 # TODO
+```
+
+## `assert` in debug mode
+
+```python
+def align_two_dna_sequences(dna_sequences):
+    """Internal function to align two DNA sequences"""
+    assert len(dna_sequences) == 2 # TODO
+```
+
+## `assert` to document assumptions a developer makes
+
+```python
+def align_two_dna_sequences(dna_sequences):
+    """Align the DNA sequences"""
+    # ....
+    results = ["AAAA", "AAC-"] # Mock
+    assert len(results[1]) == len(results[2]
+```
 
 ## What is a good function?
 
@@ -531,8 +563,7 @@ Computer science is the study of how computers operate on information. Both info
 
 Storing things Searching for things Sorting lists BLAST parallelism
 
-Why these five topics? The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. 
-Parallel algorithms require special consideration beyond the usual.
+Why these five topics? The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. Parallel algorithms require special consideration beyond the usual.
 
 But first some fundamentals What is an algorithm and what is a data structure?
 
