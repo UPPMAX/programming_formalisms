@@ -3,7 +3,8 @@
  * 13:00-16:00
  * Richel
  * Goals: 
-   * Students have done multiple TDD cycles socially
+   * Theory: testing
+   * Form: group size: 2, use `develop`, use CI scripts, no code review
 
 ## 13:00-13:45 RB
 

@@ -3,9 +3,10 @@
  * 13:00-16:00
  * Richel
  * Goals: 
+   * Theory: TDD
    * Students can add, commit, push
    * Students have done multiple TDD cycles
-   * Students know what TDD is and why it is important
+   * Form: group size: 1, use `master`, no CI scripts, no code review
 
 ## 13:00-13:45 RB
 
@@ -52,9 +53,9 @@ When       |What
  * `owner_name/is_zero`
  * `owner_name/is_even`
  * `owner_name/is_odd`
- * `owner_name/divide_safely`
  * `owner_name/is_prime`
 
 ## Links
 
- * [YouTube: TDD in Python 'is_zero' and upload to GitHub](https://youtu.be/VddlrNOeodg)
+ * Video 'TDD in Python 'is_zero'': [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_zero.ogv) [YouTube](https://youtu.be/VddlrNOeodg)
+ * [Project Euler](https://projecteuler.net/)

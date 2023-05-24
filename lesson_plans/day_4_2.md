@@ -3,7 +3,9 @@
  * 13:00-16:00
  * Richel
  * Goals: 
-   * Students at ease with developing good algorithms together
+   * Theory on data structures
+   * Students design a good classes
+   * Form: group size: 4, use topic branches, use CI scripts, use code review
 
 ## 13:00-13:45 RB
 

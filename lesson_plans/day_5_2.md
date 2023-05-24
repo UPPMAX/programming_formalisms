@@ -3,8 +3,10 @@
  * 13:00-16:00
  * Richel
  * Goals: 
+   * Theory on optimization: big-O, run-time profile
    * Students have an idea what not to optimize
    * Students have an idea what not to optimize
+   * Form: group size: Inf, use topic branches, use CI scripts, use code review
 
 ## 13:00-13:45 RB
 
