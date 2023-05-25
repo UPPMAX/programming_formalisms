@@ -397,7 +397,7 @@ Within functions, `assert` is used for:
 
 ## `assert` as a stub
 
-``` python
+```{python}
 def align(dna_sequences):
     """Align the DNA sequences"""
     assert len(dna_sequences) >= 2
@@ -406,7 +406,7 @@ def align(dna_sequences):
 
 ## `assert` in debug mode
 
-``` python
+```{python}
 def align_two_dna_sequences(dna_sequences):
     """Internal function to align two DNA sequences"""
     assert len(dna_sequences) == 2 # TODO
@@ -414,7 +414,7 @@ def align_two_dna_sequences(dna_sequences):
 
 ## `assert` to document assumptions a developer makes
 
-``` python
+```{python}
 def align_two_dna_sequences(dna_sequences):
     """Align the DNA sequences"""
     # ....
