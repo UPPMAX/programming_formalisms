@@ -33,13 +33,15 @@ When |What
 ## 11:00-11:45 RB
 
  * Goals: 
-   * Theory: Combining functions, `is_prime`, `is_prime_for_loop`, `is_prime_special`
+   * Theory: Combining functions, `is_prime`, `is_prime_recursion`, `is_prime_for_loop`, `is_prime_special`
 
 When       |What
 -----------|-------------------------
-11:00      |Theory: combining algorithms
+11:00      |Theory: combining algorithms (which ones are best?), using internal algorithms
 11:15      |Practice
 11:45      |End, stay around for questions
+
+ * [Pythonpool article](https://www.pythonpool.com/check-if-number-is-prime-in-python/)
 
 ## Observables
 

@@ -16,7 +16,7 @@
 When |What
 -----|-------------------------
 13:00|Theory: Big-O
-13:..|Practice
+13:..|Practice: `is_prime`, `is_recursive`, `are_primes_cache_with_dict`, `are_primes_cache_with_set`
 13:45|Break, have a break
 
 ## 14:00-14:45 RB

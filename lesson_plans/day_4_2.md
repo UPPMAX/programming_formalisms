@@ -14,7 +14,7 @@
 
 When |What
 -----|-------------------------
-13:00|Theory: list, set, dict
+13:00|Theory: list, set, dict, `set_sort`
 13:10|Show one TDD cycle
 13:..|Practice, focus on students that cannot get it to work
 13:45|Break, have a break
