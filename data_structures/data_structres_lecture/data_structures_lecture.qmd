@@ -22,6 +22,7 @@ How do I write these myself?
  * (`tuple`: immutable `list`)
  * `set`: sets
  * `dict`: dictionary
+ * Regular expressions: text patterns
 
 From [Python 'Data Structures' documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -30,6 +31,8 @@ From [Python 'Data Structures' documentation](https://docs.python.org/3/tutorial
 Sorted collection of unique elements.
 
 ```python
+#| echo: true
+#| eval: true
 data = [3, 1, 4, 1, 5]
 s = set(data)
 assert 3 in s
@@ -51,10 +54,12 @@ assert list(s) == [1, 3, 4, 5]
 
 A dictionary:
 
-```python
+```{python}
+#| echo: true
+#| eval: true
 periodic_table = dict({1: "Hydrogen", 2: "Helium", 3: "Lithium"})
 periodic_table[2] = "helium"
-assert periodic_table[1] == "helium"
+assert periodic_table[2] == "helium"
 ```
 
  * Commonly uses as a look-up table
@@ -68,6 +73,30 @@ assert periodic_table[1] == "helium"
    * Collect all unique values in the input
    * Store for each unique values if it is prime yes/no
    * Look up each input value in the prime look-table
- 
+
+## Regular expressions
+
+A state-machine for a pattern in text
+
+```{python}
+#| echo: true
+#| eval: true
+import re
+dna_regex = re.compile("^[ACGT]*$")
+assert dna_regex.match("")
+assert dna_regex.match("A")
+assert dna_regex.match("CA")
+assert dna_regex.match("GCA")
+assert dna_regex.match("TGCA")
+assert dna_regex.match("TGCAAAAAA")
+assert not dna_regex.match("nonsense")
+```
+
+ * [https://docs.python.org/3/library/re.html](https://docs.python.org/3/library/re.html)
+
+
+## Our own class
+
+ * [https://docs.python.org/3/tutorial/classes.html](https://docs.python.org/3/tutorial/classes.html)
  
  
