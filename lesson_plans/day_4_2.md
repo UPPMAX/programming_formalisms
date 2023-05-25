@@ -14,9 +14,8 @@
 
 When |What
 -----|-------------------------
-13:00|Theory: list, set, dict, `set_sort`
-13:10|Show one TDD cycle
-13:..|Practice, focus on students that cannot get it to work
+13:00|Theory: `list`, `set`, `dict`
+13:..|Practice: develop `are_primes_using_dict`/`are_primes_using_set` in duos
 13:45|Break, have a break
 
 ## 14:00-14:45 RB
