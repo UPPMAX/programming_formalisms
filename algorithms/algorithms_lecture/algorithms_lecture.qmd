@@ -12,13 +12,14 @@ from: markdown+emoji
 
 ## Problem
 
-How do I write functions \[1\] that are:
+How do I write functions [1] that are:
 
--   use to use
--   correct
--   fast \[2\]
+ * use to use
+ * correct
+ * fast [2]
 
-\[1\] For now, we use `algorithm == function` \[2\] pick any vague definition
+[1] For now, we use `algorithm == function`
+[2] pick any vague definition
 
 ## Algorithm
 
@@ -33,6 +34,41 @@ For us:
 ## Design by Contract
 
 ![](design_by_contract.png)
+
+## The role of `assert`
+
+Within functions, `assert` is used for:
+
+ * as a stub
+ * to do things in debug mode only
+ * to document assumptions a developer makes
+
+## `assert` as a stub
+
+```python
+def align(dna_sequences):
+    """Align the DNA sequences"""
+    assert len(dna_sequences) >= 2
+    assert len(dna_sequences) == 2 # TODO
+```
+
+## `assert` in debug mode
+
+```python
+def align_two_dna_sequences(dna_sequences):
+    """Internal function to align two DNA sequences"""
+    assert len(dna_sequences) == 2 # TODO
+```
+
+## `assert` to document assumptions a developer makes
+
+```python
+def align_two_dna_sequences(dna_sequences):
+    """Align the DNA sequences"""
+    # ....
+    results = ["AAAA", "AAC-"] # Mock
+    assert len(results[1]) == len(results[2]
+```
 
 ## What is a good function?
 
@@ -386,66 +422,6 @@ A good function:
 -   Gives clear error messages
 -   Is documented
 -   Fast iff needed
-
-## The role of `assert` within functions
-
-Within functions, `assert` is used for:
-
--   as a stub
--   to do things in debug mode only
--   to document assumptions a developer makes
-
-## `assert` as a stub
-
-``` python
-def align(dna_sequences):
-    """Align the DNA sequences"""
-    assert len(dna_sequences) >= 2
-    assert len(dna_sequences) == 2 # TODO
-```
-
-## `assert` in debug mode
-
-``` python
-def align_two_dna_sequences(dna_sequences):
-    """Internal function to align two DNA sequences"""
-    assert len(dna_sequences) == 2 # TODO
-```
-
-## `assert` to document assumptions a developer makes
-
-``` python
-def align_two_dna_sequences(dna_sequences):
-    """Align the DNA sequences"""
-    # ....
-    results = ["AAAA", "AAC-"] # Mock
-    assert len(results[1]) == len(results[2]
-```
-
-## Indeterministic functions
-
-Functions that do not always return the same values.
-
-```{python}
-def flip_coin():
-    """Produce a random boolean."""
-    return random.randint(0, 1) > 0
-```
-
-How to test these?
-
-## Randomness
-
-A Random Number Generator ('RNG') produces the same random values
-after setting the same RNG seed.
-
-```{python}
-import random
-random.seed(5)
-assert flip_coin()
-random.seed(2)
-assert not flip_coin()
-```
 
 ## Clear error messages
 
