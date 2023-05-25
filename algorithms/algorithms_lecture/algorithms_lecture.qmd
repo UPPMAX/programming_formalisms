@@ -18,31 +18,22 @@ How do I write functions \[1\] that are:
 -   correct
 -   fast \[2\]
 
-\[1\] For now, we use `algorithm == function` \[2\] pick any vague definition
+References;
 
-## Algorithm
-
-An algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' \[1\]
-
--   \[1\] https://www.merriam-webster.com/dictionary/algorithm
-
-For us:
-
-> Algorithms are the things we put into functions.
-
-## Design by Contract
-
-![](design_by_contract.png)
+-   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is
+      'a step-by-step procedure for solving a problem or accomplishing some end' \[3\],
+-   \[2\] pick any vague definition
+-   \[3\] [https://www.merriam-webster.com/dictionary/algorithm](https://www.merriam-webster.com/dictionary/algorithm)
 
 ## What is a good function?
 
 A good function:
 
+-   Is documented
 -   Has a clear name
 -   Does one thing correctly
 -   Is tested
 -   Gives clear error messages
--   Is documented
 -   Fast iff needed
 
 ## References
@@ -51,6 +42,27 @@ A good function:
 -   [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
 -   [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts)
 -   ([PEP 20: The Zen of Python](https://peps.python.org/pep-0020/))
+
+## A good function is documented
+
+```{python}
+#| echo: true
+#| eval: true
+def sort_1(x):
+  """Sort list `x` in-place. 
+  
+  Returns nothing
+  """
+
+def sort_2(x):
+  """Sort list `x`.
+  
+  Returns the sorted list.
+  """
+
+assert sort_1.__doc__ is not None
+assert sort_2.__doc__ is not None
+```
 
 ## A good function has a clear name
 
@@ -387,6 +399,14 @@ A good function:
 -   Is documented
 -   Fast iff needed
 
+## Gives clear error messages
+
+Design by Contract: check input
+
+![](design_by_contract.png)
+
+> Source: [https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg](https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg)
+
 ## The role of `assert` within functions
 
 Within functions, `assert` is used for:
@@ -419,7 +439,7 @@ def align_two_dna_sequences(dna_sequences):
     """Align the DNA sequences"""
     # ....
     results = ["AAAA", "AAC-"] # Mock
-    assert len(results[1]) == len(results[2]
+    assert len(results[1]) == len(results[2])
 ```
 
 ## Indeterministic functions
