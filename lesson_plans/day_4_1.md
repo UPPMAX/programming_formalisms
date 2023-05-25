@@ -15,7 +15,7 @@
 When|What
 ----|-------------------------
 9:00|Theory: algorithms: what is good? Why? Design by contract
-9:15|Practice, focus on students that cannot get it to work
+9:15|Practice: 
 9:45|Break, have a break
 
 ## 10:00-10:45 RB
@@ -27,7 +27,7 @@ When|What
 When |What
 -----|-------------------------
 10:00|Theory: role of `assert`, RNG, RNG seed and testing
-10:15|Practice
+10:15|Practice (`medium`): `flip_coin`, `roll_dice`
 10:45|Break, have a break
 
 ## 11:00-11:45 RB
