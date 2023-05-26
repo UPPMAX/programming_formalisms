@@ -442,30 +442,6 @@ def align_two_dna_sequences(dna_sequences):
     assert len(results[1]) == len(results[2])
 ```
 
-## Indeterministic functions
-
-Functions that do not always return the same values.
-
-```{python}
-def flip_coin():
-    """Produce a random boolean."""
-    return random.randint(0, 1) > 0
-```
-
-How to test these?
-
-## Randomness
-
-A Random Number Generator ('RNG') produces the same random values
-after setting the same RNG seed.
-
-```{python}
-import random
-random.seed(5)
-assert flip_coin()
-random.seed(2)
-assert not flip_coin()
-```
 
 ## Clear error messages
 
