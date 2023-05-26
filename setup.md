@@ -20,7 +20,7 @@ computer. Neither is perhaps optimal, and the material itself has not been
 adapted specifically for Windows. Nevertheless, in principle everything
 *should* be possible to run. A few ways you could setup:
 
-#### Most straght-forward way with a commandline and Git integrated.
+#### Most straight-forward way with a command line and Git integrated.
 - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/) (**easiest if you want to start fast and plan to work in windows environment**)
   - See Windows part at [https://coderefinery.github.io/installation/shell-and-git/#installation](https://coderefinery.github.io/installation/shell-and-git/#installation)
   - Included will be the Git Bash
