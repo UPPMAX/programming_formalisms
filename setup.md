@@ -20,15 +20,19 @@ computer. Neither is perhaps optimal, and the material itself has not been
 adapted specifically for Windows. Nevertheless, in principle everything
 *should* be possible to run. A few ways you could setup:
 
+#### Most straght-forward way with a commandline and Git integrated.
 - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/) (**easiest if you want to start fast and plan to work in windows environment**)
   - See Windows part at [https://coderefinery.github.io/installation/shell-and-git/#installation](https://coderefinery.github.io/installation/shell-and-git/#installation)
+  - Included will be the Git Bash
+
+#### Other possibilities
 - Run as Linux through a virtual machine (and see the Linux setup above)
 - Use the Windows 10 PowerShell, install git 
   - [https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
 - Use the Linux Bash Shell (WSL) on Windows 10 (**perhaps best practice if you plan to run Linux as well**
   - instructions below 
 
-#### Running in the Linux Bash Shell on Windows 10
+##### Running in the Linux Bash Shell on Windows 10
 
 This will give you access to a full command-line bash shell based on Linux on your
 Windows 10 PC. For the difference between the Linux Bash Shell and the PowerShell on Windows
@@ -65,10 +69,10 @@ ssh-add ~/.ssh/id_ed25519
 ## Python
 - Use what you already have
 - If you don't have it there are different ways to go. We won't use Conda during the lessons, for instance.
-- In Linux and Bash Python should work from the commandline by typing python[3] or runnign a script with python[3] <script name>
+- In Linux and Bash Python should work from the command line by typing python[3] or running a script with python[3] <script name>
 
  ### Windows
-- Get it working from gitbash
+- Get it working from Git Bash
   - if the command ``type python`` gives you a path, then proceed
     - otherwise you may have to do a new installation
   - ``$ alias python='winpty python.exe'``
