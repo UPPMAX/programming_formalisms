@@ -1,35 +1,92 @@
 ---
-title: "TDD 1 exercises"
+title: "Optimisation"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
 ---
 
-## TDD
+## Optimization
 
 ![](programming_formalism_course.png)
 
 ## Problem
 
-How do you grow/develop your code?
+What to do, when your code is too slow?
 
-## Code
+How often should we try to make our code faster?
 
-::: columns
-::: {.column width="50%"}
-```{python}
-#| echo: true
-print("Hello from Python")
-```
-:::
+## When to optimize for speed?
 
-::: {.column width="50%"}
-```{r}
-#| echo: true
-print("Hello from R")
-```
-:::
-:::
+ * [C++ Core Guidelines: Per.1: Don't optimize without reason ](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+ * [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
+ * [C++ Core Guidelines: Per.3: Don’t optimize something that’s not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+  
+
+## Famous quote
+
+> We should forget about small efficiencies, 
+> say about 97% of the time: premature optimization is the root of all evil. 
+> Yet we should not pass up our opportunities in that critical 3%. 
+>
+> Donald Knuth
+
+![Donald Knuth](donald_knuth.jpg)
+
+Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
+
+## Two measurements
+
+ * [C++ Core Guidelines: Per.6: Don’t make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)  
+
+ * Big O complexity
+ * Run-time speed profile
+
+## Big O
+
+How your (combination of) algorithms scales with more complex input.
+
+ * Counting the words in a book: O(n)
+ * Looking up a word in a dictionary: O(log2(n))
+
+## Exercise
+
+## Break 1
+
+## Run-time speed profile
+
+ * 95% of all time, the program spends in 5% of the code
+ * Even expert programmers are bad at predicting this
+ * Without measuring where this is, your time is wasted
+
+## Misconceptions
+
+ * Do not assume you need to learn Assembly/C/C++/Rust
+ * [C++ Core Guidelines: Per.4: Don’t assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
+ * [C++ Core Guidelines: Per.5: Don’t assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
+
+## Exercise
+
+## Break 2
+
+## Recap quote
+
+> It is far, far easier to make a correct program fast, 
+> than it is to make a fast program correct.
+>
+> Herb Sutter
+
+![Herb Sutter](herb_sutter.jpg)
+
+
+
+## Recap
+
+ * Tested and clean code always comes first
+ * Measure where the problem is
+ * Conclude what to do
+
+Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+
 
 Ruthless copy-paste of [here](https://uppsala.instructure.com/courses/69215/pages/optimisation-when-and-how?module_item_id=503139):
 
@@ -65,7 +122,7 @@ An exception to the rule that these bottlenecks are easy to see and resolve can 
 
 Before we can discuss the optimisation of the actual instructions that do work, we must examine the CPU a bit closer.
 
-![inteli7-1.png](inteli7-1.png)
+![](inteli7-1.png)
 
 As this diagram of a 4-core Intel i7 shows, a fair amount of CPU space is dedicated to a large cache, which is used to invisibly (to the programmer) preload data from RAM onto the CPU. This image actually understates the space dedicated to cache, because each core has L2 and L1 caches as well! Probably \>50% of the chip is occupied by cache.
 
@@ -85,7 +142,7 @@ In order to fill the pipeline, the CPU must be able guess at the instructions th
 
 One of the main workhorses of a CPU core is the Arithmetic Logical Units (ALU), which does the math. Modern ALUs are equipped with wide "vector" registers, which perform SIMD parallelism. Typical high-precision floating point numbers use 4 bytes (32 bits). A vector register can store up to 16 doubles, and associated vector instructions can do operations on all the elements simultaneously.
 
-Needless to say, this is super handy if you have an algorithm that does a lot of the same operations on data that lies adjacent. But even if you do, the compiler often needs to be coaxed to issue such instructions, if you don't do it by hand. In either case, you will be subject to the whims of machine spirits --- prayers and offerings can go a long way. 
+Needless to say, this is super handy if you have an algorithm that does a lot of the same operations on data that lies adjacent. But even if you do, the compiler often needs to be coaxed to issue such instructions, if you don't do it by hand. In either case, you will be subject to the whims of machine spirits --- prayers and offerings can go a long way.
 
 ## Parallelisation
 
@@ -105,7 +162,7 @@ Knowing the expected outcome of an optimisation effort is helpful when deciding 
 
 A simple method for timing is using the UNIX time function.
 
-```
+```         
 user\@system:\~/mydir\$ time ./myprogram real 0m0.008s user 0m0.000s sys 0m0.002s
 ```
 
@@ -119,9 +176,10 @@ sys is time spent in system calls. Programs that spend their time here are usual
 
 To see this in action, create a short python program with the following lines:
 
-```
+```         
 for i in range(10000): with open("test.txt","w") as f: f.write(str(i)+"\n")
 ```
+
 Try running `time python3 fiotest.py` and examine the output. Then move the "with open..." line to the top of the script and compare.
 
 The timeit module in Python is useful for timing parts of your code. The equivalent in C is using the \<time.h\> library. Profilers
@@ -130,7 +188,7 @@ Profilers are tools, either internal or external, that can tell you more details
 
 Try profiling the fiotest.py script:
 
-```
+```         
 marcusl\$ python3 -m cProfile -s 'tottime' filetest.py 50003 function calls in 1.587 seconds
 
 Ordered by: internal time
@@ -152,12 +210,11 @@ Once you know the hotspots in your code, it may not be immediately evident what 
 
 Generally speaking, the execution of code is limited by the rate of arithmetic operations or by the rate of data flowing into the CPU. But which is it, and how can we tell? The Roofline model
 
-[https://dl.acm.org/doi/10.1145/1498765.1498785](https://dl.acm.org/doi/10.1145/1498765.1498785)
-
+<https://dl.acm.org/doi/10.1145/1498765.1498785>
 
 Links to an external site.
 
-[https://www.sciencedirect.com/topics/computer-science/roofline-model](https://www.sciencedirect.com/topics/computer-science/roofline-model)
+<https://www.sciencedirect.com/topics/computer-science/roofline-model>
 
 Links to an external site.
 
@@ -173,13 +230,13 @@ Often, the algorithm will tell you roughly what the OI of your kernel is, but yo
 
 From a naive matrix-matrix multiply (double precision):
 
-[assembly code]
+\[assembly code\]
 
 Total (ignoring bookkeeping): 4 ops and 12 bytes, giving us 0.333 ops/byte or 1.33 ops/word.
 
 The same program had an auto-SIMDised version of the function:
 
-[assembly code]
+\[assembly code\]
 
 Total (ignoring bookkeeping)l: 8 ops, 48 bytes, giving us 0.333 ops/byte or 1.33 ops/word. Drawing a roofline graph
 
