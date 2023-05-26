@@ -18,12 +18,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
+      - name: Setup Python
+        uses: actions/setup-python@master
 
       - name: Install Python packages
         run: pip install nbformat nbclient
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
 
       - uses: r-lib/actions/setup-r@v2
 
