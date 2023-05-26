@@ -69,7 +69,7 @@ ssh-add ~/.ssh/id_ed25519
 ## Python
 - Use what you already have
 - If you don't have it there are different ways to go. We won't use Conda during the lessons, for instance.
-- In Linux and Bash Python should work from the command line by typing python[3] or running a script with python[3] <script name>
+- In Linux and Bash Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 
  ### Windows
 - Get it working from Git Bash
