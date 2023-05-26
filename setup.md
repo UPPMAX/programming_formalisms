@@ -62,15 +62,27 @@ ssh-add ~/.ssh/id_ed25519
 - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 
-## Miniconda3
-- We encourage you to use miniconda3 for working with conda environment.
-- Please follow the steps here: [https://coderefinery.github.io/installation/conda/](https://coderefinery.github.io/installation/conda/)
-- We will inform you during the lessons about Conda repos to use.
+## Python
+- Use what you already have
+- If you don't have it there are different ways to go. We won't use Conda during the lessons, for instance.
+- In Linux and Bash Python should work from the commandline by typing python[3] or runnign a script with python[3] <script name>
+
+ ### Windows
+- Get it working from gitbash
+  - if the command ``type python`` gives you a path, then proceed
+    - otherwise you may have to do a new installation
+  - ``$ alias python='winpty python.exe'``
+  - ``$ python -V``
+    - does it give you the python version 3-something?
+ - Make it permanent
+ -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
+
+
 
 ## PlantUML
 - We will use the tool PlantUML to render UML code to graphical diagrams and flowcharts. 
-- If you want PlantUML to render directly from a file on GitHub please install the extension PlantUML viewer to your web browser.
--  works for multiple browsers [https://github.com/marcozaccari/markdown-diagrams-browser-extension](https://github.com/marcozaccari/markdown-diagrams-browser-extension)
+- If you want PlantUML to render directly from a file on GitHub please install the **extension PlantUML viewer to your web browser**.
+- works for multiple browsers [https://github.com/marcozaccari/markdown-diagrams-browser-extension](https://github.com/marcozaccari/markdown-diagrams-browser-extension)
 -  if the above does not work try
   - Firefox: PlantUML visualizer (is not compatible with !theme _none_ tag)
   - Chrome: Pegmatite,PlantUML viewer
