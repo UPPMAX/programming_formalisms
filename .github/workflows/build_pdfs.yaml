@@ -23,7 +23,7 @@ jobs:
           tinytex: true
 
       - name: Install Python packages
-        run: pip install nbformat
+        run: pip install nbformat nbclient
 
       - uses: r-lib/actions/setup-r@v2
 
