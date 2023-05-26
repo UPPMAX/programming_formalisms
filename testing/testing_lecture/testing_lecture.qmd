@@ -86,7 +86,7 @@ class TestSmall(unittest.TestCase):
 -   Function name: `is_prime`
 -   Output:
     -   Returns `True` if the input is prime
-    -   Returns `False`/`FALSE` if the input is not prime
+    -   Returns `False` if the input is not prime
     -   :warning: Gives an error when the input is not an integer
 -   Work within scaffolding of <https://github.com/richelbilderbeek/programming_formalisms_medium_project>
 
