@@ -18,15 +18,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
 
+      - name: Install Python packages
+        run: pip install nbformat
+
       - uses: r-lib/actions/setup-r@v2
 
       - name: Install R packages
-        run: install.packages(c("nbformat", "testthat", "reticulate", "rmarkdown"))
+        run: install.packages(c("testthat", "reticulate", "rmarkdown"))
         shell: Rscript {0}
 
       - uses: quarto-dev/quarto-actions/render@v2
