@@ -144,11 +144,11 @@ Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalism
 
 ![](chaotic_programmer.png)
 
-## Exercise: `divide_safely`
+## Exercise: `is_probability`
 
--   Create a GitHub repository called `divide_safely`
+-   Create a GitHub repository called `is_probability`
 -   Share URL of repo with teachers
--   Develop a function called `divide_safely`
+-   Develop a function called `is_probability`
 -   Try to be **exemplary**
 -   We'll discuss a repo history after the break
 

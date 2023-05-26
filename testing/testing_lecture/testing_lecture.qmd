@@ -12,30 +12,26 @@ from: markdown+emoji
 
 ## Problem
 
-When do you trust your code? 
-When do you trust code written by others? 
-How do you convince other developers of a bug?
+When do you trust your code? When do you trust code written by others? How do you convince other developers of a bug?
 
 ## Testing
 
-![](beck_tdd_by_example.jpg)
-![](langr_tdd.jpg)
-![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+![](beck_tdd_by_example.jpg) ![](langr_tdd.jpg) ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 ## Testing framework
 
- * `unittest`, `pytest`, or `nose`
- * Makes it easier to write unit tests
- * Takes some scaffolding
- * Failed tests give a better error message.
+-   **`unittest`**, `pytest`, `nose`, etc.
+-   Makes it easier to write unit tests
+-   Takes some scaffolding
+-   Failed tests give a better error message.
 
 ## Test if something is true
 
-```python
+```{python}
 assert 1 + 1 == 2
 ```
 
-```python
+```{python}
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -45,14 +41,13 @@ class TestSmall(unittest.TestCase):
 
 :neutral_face: Mostly scaffolding here
 
-
 ## Test if something is equal
 
-```python
+```{python}
 assert 1 + 1 == 2
 ```
 
-```python
+```{python}
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -64,7 +59,7 @@ class TestSmall(unittest.TestCase):
 
 ## Test if something raises an exception
 
-```python
+```{python}
 def raise_error():
     raise RunType("Raise an error!")
 
@@ -76,7 +71,7 @@ except:
 assert has_raised
 ```
 
-```python
+```{python}
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -90,18 +85,18 @@ class TestSmall(unittest.TestCase):
 
 -   Function name: `is_prime`
 -   Output:
-    -   Returns `True`/`TRUE` if the input is prime
+    -   Returns `True` if the input is prime
     -   Returns `False`/`FALSE` if the input is not prime
     -   :warning: Gives an error when the input is not an integer
--   Work within scaffolding of [https://github.com/richelbilderbeek/programming_formalisms_medium_project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+-   Work within scaffolding of <https://github.com/richelbilderbeek/programming_formalisms_medium_project>
 
 ## Live demo (15 minutes)
 
 <https://youtu.be/qVtHieuwM1M>
 
- * (or [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv))
+-   (or [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv))
 
-## Reflection 
+## Reflection
 
 [Reflection]
 
@@ -111,7 +106,7 @@ class TestSmall(unittest.TestCase):
 -   Switch roles every 3 minutes
 -   Discuss how to keep the time first
 -   Person with GitHub username first in alphabet starts
--   Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_medium_project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+-   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_medium_project>
 -   Develop a function called `get_digits`
 -   Try to be **exemplary**
 -   We'll discuss a repo history after the break
@@ -122,12 +117,12 @@ Done? Try [more easy prime functions](https://github.com/UPPMAX/programming_form
 
 ## Break
 
-[Break]
+[Break](#break-1)
 
-`get_digits` video: 
+`get_digits` video:
 
--    [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
--    [YouTube](https://youtu.be/qVtHieuwM1M)
+-   [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
+-   [YouTube](https://youtu.be/qVtHieuwM1M)
 
 ## Problem
 
@@ -137,11 +132,11 @@ How to work together well?
 
 Encourage/enforce:
 
--    URL links are valid
--    Correct spelling
--    Code must pass all tests
--    High code coverage
--    Uniform coding style
+-   URL links are valid
+-   Correct spelling
+-   Code must pass all tests
+-   High code coverage
+-   Uniform coding style
 
 ## Continuous Integration
 
@@ -153,18 +148,17 @@ Assures quality:
 -   Links are valid (i.e. not broken)
 -   Spelling is correct
 -   Tests pass
--   [your check here]
+-   \[your check here\]
 
 ## Test coding style
 
 Linter: program that tests code for style.
 
-In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, 
-`autopep8`, Pychecker, Pylama
+In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, Pychecker, Pylama
 
-## Break
+## Break {#break-1}
 
-[Break]
+[Break](#break-1)
 
 ## Recap
 
@@ -174,10 +168,9 @@ In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8,
 
 ### Static type-checking with mypy
 
-Python is an interpreted language, however, as of PEP 484 it supports Type Hints. 
-Some very popular packages like pydantic even use type hints to evaluate input at runtime. 
+Python is an interpreted language, however, as of PEP 484 it supports Type Hints. Some very popular packages like pydantic even use type hints to evaluate input at runtime.
 
-```
+```         
 type_checking.py
 
 def reverse_string(s: str) -\> str: return s.reverse()
@@ -185,28 +178,26 @@ def reverse_string(s: str) -\> str: return s.reverse()
 
 We can now evaluate if there are any type errors using mypy.
 
-```
+```         
 mypy type_checking.py
 ```
 
 Benefits of Type Hints
 
- * Improves readability (I think)
- * Easier to spot bugs and maintain project
- * Forces you to think
- * Better autocomplete if using language server
+-   Improves readability (I think)
+-   Easier to spot bugs and maintain project
+-   Forces you to think
+-   Better autocomplete if using language server
 
 ### Where to go from here
 
-If you are interested in learning more tools and ways to improve the quality of your project, 
-a really good place to start is looking at cookie cutter templates. Two great ones for Python are:
+If you are interested in learning more tools and ways to improve the quality of your project, a really good place to start is looking at cookie cutter templates. Two great ones for Python are:
 
 ```         
 https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/
 https://scikit-hep.org/developer
 ```
 
-
 ## Links
 
- * [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)
+-   [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)

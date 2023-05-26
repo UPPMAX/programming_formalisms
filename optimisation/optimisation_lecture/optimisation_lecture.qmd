@@ -50,13 +50,15 @@ How your (combination of) algorithms scales with more complex input.
 
 ## Exercise
 
+
+
 ## Break 1
 
 ## Run-time speed profile
 
  * 95% of all time, the program spends in 5% of the code
  * Even expert programmers are bad at predicting this
- * Without measuring where this is, your time is wasted
+ * Without measuring where the program spends its cycles, your time is wasted
 
 ## Misconceptions
 
