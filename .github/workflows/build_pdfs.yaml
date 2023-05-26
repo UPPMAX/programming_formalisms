@@ -32,12 +32,32 @@ jobs:
       - uses: quarto-dev/quarto-actions/render@v2
         with:
           to: pdf
-          path: algorithms/algorithms_lecture/algorithms_lecture.qmd
+          path: tdd/tdd_lecture/netiquette.qmd
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
           to: pdf
           path: tdd/tdd_lecture/tdd_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: testing/testing_lecture/testing_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: data_structures/data_structres_lecture/data_structures_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: algorithms/algorithms_lecture/algorithms_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: optimisation/optimisation_lecture/optimisation_lecture.qmd
 
       #############################################
       # Upload
