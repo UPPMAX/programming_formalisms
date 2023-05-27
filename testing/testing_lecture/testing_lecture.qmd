@@ -96,17 +96,13 @@ class TestSmall(unittest.TestCase):
 
 -   (or [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv))
 
-## Reflection
-
-[Reflection]
-
 ## Exercise
 
 -   Pair up
 -   Switch roles every 3 minutes
 -   Discuss how to keep the time first
 -   Person with GitHub username first in alphabet starts
--   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_medium_project>
+-   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
 -   Develop a function called `get_digits`
 -   Try to be **exemplary**
 -   We'll discuss a repo history after the break

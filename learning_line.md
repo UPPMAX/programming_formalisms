@@ -276,11 +276,11 @@ Name                          |Purpose
 
 ## Projects overview
 
-Day|Group size|Branch model                |CI |Code review |DNA alignment project
----|----------|----------------------------|---|------------|---------------------
-1  |1         | `master`                   |No |No          |Know it exists
-2  |1         | `master`                   |No |No          |[The Small Project](https://github.com/richelbilderbeek/programming_formalisms_small_project)
-3  |2         | `master`, `develop`        |Yes|No          |`medium_questions.py` of [The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
-4-1|4         | `master`, `develop`, topic |Yes|No          |?`prime_question.py` of [The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
-4-2|all       | `master`, `develop`, topic |Yes|Pull Request|?`sort_question.py` of [The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
-5  |all       | `master`, `develop`, topic |Yes|Pull Request|Optimized functions of The Big Project
+Day|Description    |Group size  |Branch model                |CI |Code review |Code
+---|---------------|------------|----------------------------|---|------------|----------------------------------------
+1  |Introduction   |            | `master`                   |No |No          |.
+2  |TDD            |1           | `master`                   |No |No          |[programming_formalisms_tdd](https://github.com/richelbilderbeek/programming_formalisms_tdd)
+3  |Testing        |2           | `master`, `develop`        |Yes|No          |[programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+4-1|Algorithms     |4           | `master`, `develop`, topic |Yes|No          |[programming_formalisms_algorithms](https://github.com/richelbilderbeek/programming_formalisms_algorithms)
+4-2|Data structures|all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_data_structures](https://github.com/richelbilderbeek/programming_formalisms_data_structures)
+5  |Optimization   |all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_optimization](https://github.com/richelbilderbeek/programming_formalisms_optimization)
