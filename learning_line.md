@@ -146,7 +146,7 @@ Name                          |Purpose
 
 ### Prime, easy
 
- * At day 'Testing'
+ * At day 'Testing', `medium_questions.py`
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -280,7 +280,7 @@ Day|Group size|Branch model                |CI |Code review |DNA alignment proje
 ---|----------|----------------------------|---|------------|---------------------
 1  |1         | `master`                   |No |No          |Know it exists
 2  |1         | `master`                   |No |No          |[The Small Project](https://github.com/richelbilderbeek/programming_formalisms_small_project)
-3  |2         | `master`, `develop`        |Yes|No          |[The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
-4-1|4         | `master`, `develop`, topic |Yes|No          |The Big Project
-4-2|all       | `master`, `develop`, topic |Yes|Pull Request|The Big Project
+3  |2         | `master`, `develop`        |Yes|No          |`medium_questions.py` of [The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+4-1|4         | `master`, `develop`, topic |Yes|No          |?`prime_question.py` of [The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
+4-2|all       | `master`, `develop`, topic |Yes|Pull Request|?`sort_question.py` of [The Medium Project](https://github.com/richelbilderbeek/programming_formalisms_medium_project)
 5  |all       | `master`, `develop`, topic |Yes|Pull Request|Optimized functions of The Big Project

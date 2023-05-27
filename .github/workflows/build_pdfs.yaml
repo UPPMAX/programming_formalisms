@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-  check_links:
+  build_pdfs:
 
     runs-on: ubuntu-latest
     env:
