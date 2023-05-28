@@ -8,6 +8,8 @@ Description                               |PDF                  |HTML           
 
 :construction: the `code layout`-ed items will become links in the future :construction:
 
+ * GitHub repository with exercises: [https://github.com/richelbilderbeek/programming_formalisms_tdd](https://github.com/richelbilderbeek/programming_formalisms_tdd)
+
 ## Links
 
  * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
