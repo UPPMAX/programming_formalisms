@@ -30,7 +30,7 @@ From [Python 'Data Structures' documentation](https://docs.python.org/3/tutorial
 
 Sorted collection of unique elements.
 
-```python
+```{python}
 #| echo: true
 #| eval: true
 data = [3, 1, 4, 1, 5]
