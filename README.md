@@ -44,6 +44,8 @@ Filename                            |Descriptions
 [.spellcheck.yml](.spellcheck.yml)  |Spell checker configuration file, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
 [.wordlist.txt](.wordlist.txt)      |Whitelist for spell checker
 
+## Other course repositories build statuses
+
 ## Links
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
