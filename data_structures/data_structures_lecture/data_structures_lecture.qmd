@@ -6,7 +6,7 @@ editor: visual
 from: markdown+emoji
 ---
 
-## Algorithms
+## Data structures
 
 ![](programming_formalism_course.png)
 
@@ -97,3 +97,7 @@ assert not dna_regex.match("nonsense")
 ## Our own class
 
 -   <https://docs.python.org/3/tutorial/classes.html>
+
+```
+DnaSequence
+```

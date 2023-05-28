@@ -50,7 +50,9 @@ How your (combination of) algorithms scales with more complex input.
 
 ## Exercise
 
+Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
+Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
 
 ## Break 1
 
@@ -67,6 +69,11 @@ How your (combination of) algorithms scales with more complex input.
  * [C++ Core Guidelines: Per.5: Don’t assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
 
 ## Exercise
+
+Create speed profile of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+
+Create speed profile of DNA alignment
+
 
 ## Break 2
 
