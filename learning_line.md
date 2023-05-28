@@ -94,7 +94,7 @@ Other activities:
 
 ## Friday part 1: Modular programming
 
-## Friday part 2: Optimization
+## Friday part 2: Optimisation
 
 > Goal: students have attempted to optimize code together
 
@@ -177,7 +177,7 @@ Name                          |Purpose
 
 ### Prime, advanced
 
- * At day 'Testing' and 'Optimization'
+ * At day 'Testing' and 'Optimisation'
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -203,7 +203,7 @@ Name                          |Purpose
 
 ## Functions to be developed for The Medium Project
 
- * At day 'Algorithms' and 'Optimization'
+ * At day 'Algorithms' and 'Optimisation'
 
 These are barely (sometimes purposefully vague!) suggestions:
 
@@ -242,7 +242,7 @@ Name                          |Purpose
 
 ## Functions to be developed for The Big Project
 
- * At days 'Data structures' and 'Optimization'
+ * At days 'Data structures' and 'Optimisation'
 
 These are barely (sometimes purposefully vague!) suggestions:
 
@@ -283,4 +283,4 @@ Day|Description    |Group size  |Branch model                |CI |Code review |C
 3  |Testing        |2           | `master`, `develop`        |Yes|No          |[programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
 4-1|Algorithms     |4           | `master`, `develop`, topic |Yes|No          |[programming_formalisms_algorithms](https://github.com/richelbilderbeek/programming_formalisms_algorithms)
 4-2|Data structures|all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_data_structures](https://github.com/richelbilderbeek/programming_formalisms_data_structures)
-5  |Optimization   |all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_optimization](https://github.com/richelbilderbeek/programming_formalisms_optimization)
+5  |Optimisation   |all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_optimisation](https://github.com/richelbilderbeek/programming_formalisms_optimisation)
