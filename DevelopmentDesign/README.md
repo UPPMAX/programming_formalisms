@@ -149,8 +149,65 @@ Test-Driven Development (TDD) is a methodology in software development that focu
    <br />
   http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
+The following Use Case model describes some common steps followed when developing according to TDD, in this scenario only one developer actor is present but this can be several people holding the role of developer when
+     they interact with the model. In TDD pair programming is very common and  a practice of writing tests for your colleague is common practice. So one developer works on the code and one developer is working on the test and then they
+switch.
+```plantuml
+@startuml
 
-TDD will be covered in detail elsewhere, but the general idea of TDD is to generate robust solutions through the use of test for the whole life cycle.
+actor Developer as Dev
+
+rectangle TDD {
+  Dev -- (Write Test)
+  Dev -- (Run Test)
+  Dev -- (Write Code)
+  Dev -- (Refactor Code)
+  Dev -- (Repeat)
+  
+  (Write Test) --> (Analyze Requirements)
+  (Write Test) --> (Design Test)
+  (Write Test) --> (Implement Test)
+  (Run Test) --> (Execute Test)
+  (Run Test) --> (Evaluate Test Results)
+  (Evaluate Test Results) --> (Test Failed)
+  (Evaluate Test Results) --> (Test Passed)
+  (Test Failed) --> (Write Test)
+  (Test Passed) --> (Write Code)
+  (Write Code) --> (Run Test)
+  (Write Code) --> (Refactor Code)
+  (Refactor Code) --> (Run Test)
+  (Refactor Code) --> (Write Test)
+}
+
+
+@enduml
+```     
+In this diagram, a relatively detailed representation of the TDD process has been rendered:
+
+    Write Test: The developer goes through three sub-steps:
+        Analyze Requirements: The developer analyzes the requirements or user stories to understand the desired behavior.
+        Design Test: The developer designs the test case(s) based on the requirements, ensuring complete coverage.
+        Implement Test: The developer writes the test code without implementing the corresponding functionality in the system.
+
+    Run Test: The developer proceeds with two sub-steps:
+        Execute Test: The developer runs the test case(s) against the system or the code being developed.
+        Evaluate Test Results: The developer evaluates the test results to determine if the test case(s) passed or failed.
+
+    Test Failed or Test Passed: Based on the evaluation, the test can either fail or pass.
+
+    If the test failed, the developer goes back to "Write Test" to create a new or modified test case that will capture the desired behavior. This iteration ensures that the system is designed to pass the new test case.
+
+    If the test passed, the developer moves on to "Write Code" to implement the necessary functionality that will make the test pass.
+
+    After writing code, the developer can choose to either "Run Test" to ensure the new functionality works as expected or "Refactor Code" to improve the code's structure without changing its functionality.
+
+    If the code is refactored, the developer repeats the "Run Test" and "Write Test" steps to ensure the refactoring did not introduce any issues.
+
+The diagram illustrates the iterative nature of TDD, where the process repeats until all the desired functionality is implemented, and all test cases pass.
+
+Please note that this diagram is still a simplified representation of the TDD process and can be customized further based on specific requirements or methodologies followed in different contexts.
+     
+TDD will be covered in detail in other parts of the material, but the general idea of TDD is to generate robust solutions through the use of test for the whole life cycle.
 
 ## AGILE Development and the The AGILE manifesto
 Manifesto for Agile Software Development
