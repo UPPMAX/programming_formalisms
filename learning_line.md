@@ -17,12 +17,12 @@
  * [x] Different types of tests: unit tests, etc.
  * [x] Test for documentation
  * [x] Why tests are valuable: they are what you discuss with your boss
- * [ ] Encourage to get sloppier in the end: there will be unexpected
+ * [x] Encourage to get sloppier in the end: there will be unexpected
        errors :-)
- * [ ] There is at least 1 easy function description that
+ * [x] There is at least 1 easy function description that
        makes no sense when writing tests. Change the description
- * [ ] Can miss code to be tested, will measure codecov in TDD2
- * [ ] Can test for style, will lint codecov in TDD2
+ * [x] Can miss code to be tested, will measure codecov in TDD2
+ * [x] Can test for style, will lint codecov in TDD2
 
 Other activities:
 
@@ -36,8 +36,8 @@ Other activities:
 
 > Goal: students have done multiple TDD cycles within a testing framework socially
 
- * [ ] Add CI to TDD development
- * [ ] Add build badge
+ * [x] Add CI to TDD development
+ * [x] Add build badge
  * [ ] Add linter CI script
  * [ ] Add Markdown spellcheck
  * [ ] Add broken links checker

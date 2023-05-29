@@ -102,18 +102,16 @@ class TestSmall(unittest.TestCase):
 
 ## First example: `is_prime`
 
--   Function name: `is_prime`
--   Output:
-    -   Returns `True` if the input is prime
-    -   Returns `False` if the input is not prime
-    -   :warning: Gives an error when the input is not an integer
--   Work within scaffolding of <https://github.com/richelbilderbeek/programming_formalisms_medium_project>
+ * Function name: `is_prime`
+ * Output:
+   * Returns `True` if the input is prime
+   * Returns `False` if the input is not prime
+   * :warning: Gives an error when the input is not an integer
+ * Work within scaffolding of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
 
 ## Live demo (15 minutes)
 
-<https://youtu.be/qVtHieuwM1M>
-
--   (or [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv))
+ * Or video: [YouTube](https://youtu.be/qVtHieuwM1M) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)
 
 ## Exercise
 
@@ -121,7 +119,7 @@ class TestSmall(unittest.TestCase):
 -   Switch roles every 3 minutes
 -   Discuss how to keep the time first
 -   Person with GitHub username first in alphabet starts
--   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
+-   Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
 -   Develop a function called `get_digits`
 -   Try to be **exemplary**
 -   We'll discuss a repo history after the break
