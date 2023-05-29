@@ -149,8 +149,8 @@ Test-Driven Development (TDD) is a methodology in software development that focu
    <br />
   http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 
-The following Use Case model describes some common steps followed when developing according to TDD, in this scenario only one developer actor is present but this can be several peopople holding the role of developer when
-     they interact with the model. In TDD pair programming is very common and  a practice of writing tests for your colleuge is common practice. So one developer works on the code and one deveopler is working on the test and then they
+The following Use Case model describes some common steps followed when developing according to TDD, in this scenario only one developer actor is present but this can be several people holding the role of developer when
+     they interact with the model. In TDD pair programming is very common and  a practice of writing tests for your colleague is common practice. So one developer works on the code and one developer is working on the test and then they
 switch.
 ```plantuml
 @startuml
@@ -182,7 +182,7 @@ rectangle TDD {
 
 @enduml
 ```     
-In this diagram, a relativly detailed representation of the TDD process has been rendered:
+In this diagram, a relatively detailed representation of the TDD process has been rendered:
 
     Write Test: The developer goes through three sub-steps:
         Analyze Requirements: The developer analyzes the requirements or user stories to understand the desired behavior.
