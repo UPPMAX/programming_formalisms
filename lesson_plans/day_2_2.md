@@ -29,7 +29,7 @@ When |What
 
 When |What
 -----|-------------------------
-14:00|Theory
+14:00|Theory, 7 mins: [YouTube](https://youtu.be/f4MCy9f8oAM)
 14:10|Practice: `is_odd`, `is_prime`
 14:20|Theory
 14:30|Practice: `is_prime`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
@@ -43,8 +43,8 @@ When |What
 
 When       |What
 -----------|-------------------------
-15:00      |Bottom line
-15:05      |Practice: `is_prime`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+15:00      |Bottom line, 4 mins: [YouTube](https://youtu.be/633qwj2DUNc)
+15:04      |Practice: `is_prime`, [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 15:15-15:45|Reflection, by JN
 15:45      |End, stay around for questions
 
