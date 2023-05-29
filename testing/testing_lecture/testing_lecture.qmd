@@ -262,21 +262,16 @@ Break 2
 ## Theory: software degradation
 
  * Software degrades
- * 'bit rot' [1] or 'software collapse' [2]
+ * 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019dealing
+ * Impossible to counteract @benureau2018re
+
 
 Solution:
 
- * Xtreme programming: 'embrace change' [3]
+ * Xtreme programming: 'embrace change' @beck2000extreme
  * Add a scheduled monthly test on your CI script
 
-## References
-
- * [1] Steele Jr, Guy L., et al. The hacker's dictionary: a guide to the world of computer wizards. Harper & Row Publishers, Inc., 1983.
- * [2] Hinsen, Konrad. "Dealing with software collapse." Computing in Science & Engineering 21.3 (2019): 104-108.
- * [3] Beck, Kent. Extreme programming explained: embrace change. addison-wesley professional, 2000.
- 
 ## Recap
-
 
 ## End
 
