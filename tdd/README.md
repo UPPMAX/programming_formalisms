@@ -4,7 +4,6 @@
 
  * Lecture slides:
    * [PDF](tdd_lecture/tdd_lecture.pdf) 
-   * [HTML](tdd_lecture/tdd_lecture.html) 
    * [qmd](tdd_lecture/tdd_lecture.qmd)
 
 ## Solutions
