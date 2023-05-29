@@ -25,12 +25,14 @@ Solution `is_prime`          |  9 mins | [here](https://richelbilderbeek.nl/tdd_
 
 ## Observables
 
- * `owner_name/is_zero`
- * `owner_name/is_even`
- * `owner_name/is_odd`
- * `owner_name/is_probability`
-
- * Video 'TDD in Python 'is_zero'': [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_zero.ogv) [YouTube](https://youtu.be/VddlrNOeodg)
+ * 0: `owner_name/is_zero`
+ * 1: `owner_name/is_even`
+ * 2: `owner_name/is_odd`
+ * 3: `owner_name/is_probability`
+ * (4: `owner_name/is_number`)
+ * (5: `owner_name/are_numbers`)
+ * (S1: `owner_name/is_roman_number`)
+ * (S2: `owner_name/is_prime`)
 
 ## Links
 
