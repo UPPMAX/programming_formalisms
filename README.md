@@ -10,7 +10,6 @@
  * Course Repository for programming formalisms course.
  * Under this projects, notes, exercises and lecture slides will be stored.
  * Please view the [setup.md](setup.md) file for preparations
- * Zoom room: [here](https://uu-se.zoom.us/j/65052228138) (note it has a password)
 
 ## Schedule
 
