@@ -7,10 +7,10 @@
 [![Check spelling](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml)
 [![Deploy GitHub Pages](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml)
 
-- Course Repository for programming formalisms course.
-- Under this projects, notes, exercises and lecture slides will be stored.
-
-- Please view the [setup.md](setup.md) file for preparations
+ * Course Repository for programming formalisms course.
+ * Under this projects, notes, exercises and lecture slides will be stored.
+ * Please view the [setup.md](setup.md) file for preparations
+ * Zoom room: [here](https://uu-se.zoom.us/j/65052228138)
 
 ## Schedule
 

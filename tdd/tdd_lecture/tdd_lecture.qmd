@@ -93,14 +93,6 @@ A: No, it takes longer
 | @bhat2006evaluating      | 15%        | 2x higher code quality        |
 | @nagappan2008realizing   | 15-35%     | 40%-90% less defects          |
 
-## Discussion on Reflection
-
-Do note, the scope of these researches is limited:
-
- * Mistakes can be costly
- * TDD allows a dialogue
- * TDD results is a better software architecture
-
 ## Reflection
 
 Q: Why do TDD?
