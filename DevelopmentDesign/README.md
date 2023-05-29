@@ -146,6 +146,8 @@ Most models cover some form of risk assessment, involved in the requirements gat
   </tr>
 </table>
 
+A good rescource for risk assesment templates are is https://openregulatory.com/ which has somme templates for ISO 13485, IEC 62304, ISO 14971 and IEC 62366.
+
 ## Second phase   *Design*
 This stage corresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirements put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a little less :-)  but still it is important to not over-engineer when you and your team have a clear picture of what you want to develop that is when we step to the next phase)
 
