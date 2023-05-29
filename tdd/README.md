@@ -3,8 +3,8 @@
 ## Course material
 
  * Lecture slides:
-   * [PDF](tdd_1_lecture.pdf) 
-   * [HTML](tdd_1_lecture.html) 
+   * [PDF](tdd_lecture/tdd_lecture.pdf) 
+   * [HTML](tdd_lecture/tdd_lecture.html) 
    * [qmd](tdd_lecture/tdd_lecture.qmd)
 
 ## Solutions
