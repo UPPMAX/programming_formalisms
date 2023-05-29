@@ -8,7 +8,7 @@ bibliography: testing_lecture.bib
 csl: vancouver.csl
 ---
 
-## Testing
+## Testing ![](CC-BY-NC-SA.png)
 
 ![](programming_formalism_course.png)
 
