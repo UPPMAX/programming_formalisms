@@ -52,7 +52,6 @@ jobs:
       # ?Cannot use reticulate with quarto-actions/render@v2?
       # Issue posted at
       # https://github.com/quarto-dev/quarto-actions/issues/80
-      #
       - uses: quarto-dev/quarto-actions/render@v2
         with:
           to: pdf
