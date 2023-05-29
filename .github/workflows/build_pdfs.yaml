@@ -57,10 +57,10 @@ jobs:
       #    to: pdf
       #    path: testing/testing_lecture/testing_lecture.qmd
 
-      #- uses: quarto-dev/quarto-actions/render@v2
-      #  with:
-      #    to: pdf
-      #    path: data_structures/data_structures_lecture/data_structures_lecture.qmd
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: data_structures/data_structures_lecture/data_structures_lecture.qmd
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:

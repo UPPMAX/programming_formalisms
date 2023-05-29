@@ -92,12 +92,12 @@ assert dna_regex.match("TGCAAAAAA")
 assert not dna_regex.match("nonsense")
 ```
 
--   <https://docs.python.org/3/library/re.html>
+ * [https://docs.python.org/3/library/re.html](https://docs.python.org/3/library/re.html)
 
 ## Our own class
 
--   <https://docs.python.org/3/tutorial/classes.html>
+ * [https://docs.python.org/3/tutorial/classes.html](https://docs.python.org/3/tutorial/classes.html)
 
-```
+```         
 DnaSequence
 ```
