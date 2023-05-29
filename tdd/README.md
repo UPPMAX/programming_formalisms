@@ -2,13 +2,14 @@
 
 ## Course material
 
-Description                               |PDF                  |HTML                  |QMD
-------------------------------------------|---------------------|----------------------|------------------------------------
-[TDD lecture](tdd_lecture/README.md)      |`tdd_1_lecture.pdf`  |`tdd_1_lecture.html`  |[here](tdd_lecture/tdd_lecture.qmd)
+ * Lecture slides:
+   * [PDF](tdd_1_lecture.pdf) 
+   * [HTML](tdd_1_lecture.html) 
+   * [qmd](tdd_lecture/tdd_lecture.qmd)
 
-:construction: the `code layout`-ed items will become links in the future :construction:
+## Solutions
 
- * GitHub repository with exercises: [https://github.com/richelbilderbeek/programming_formalisms_tdd](https://github.com/richelbilderbeek/programming_formalisms_tdd)
+ * GitHub repository with solutions to the exercises: [https://github.com/richelbilderbeek/programming_formalisms_tdd](https://github.com/richelbilderbeek/programming_formalisms_tdd)
 
 ## Videos
 

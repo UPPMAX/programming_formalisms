@@ -1,17 +1,4 @@
-# TDD
-
-On average, 80% of the time we spend debugging.
-Test-driven development is a technique used by
-professional software developers to reduce this time,
-by writing tests before the actual code.
-Although this initially feels 'inside-out', it results
-in correct code quicker.
-
-In this hands-on workshop, we'll write tests for simple functions
-to practice this way of developing.
-
-It is assumed you can read basic Python code and that you
-have an Python environment (e.g. Visual Studio Code) installed.
+# TDD lecture details
 
 ## Source to images
 
