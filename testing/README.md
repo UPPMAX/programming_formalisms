@@ -2,7 +2,7 @@
 
 ## Course material
 
- * 'Testing' lecture:
+ * Lecture:
   * `testing_lecture.pdf`
   * `[.qmd](testing_lecture/testing_lecture.qmd)
  * GitHub repository to Fork: [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
@@ -10,6 +10,12 @@
   * Solutions of TDD exercises, now with within testing framework: [src/pftesting_richelbilderbeek/tdd_solutions.py](https://github.com/richelbilderbeek/programming_formalisms_testing/blob/master/src/pftesting_richelbilderbeek/tdd_solutions.py)
 
 :construction: the `code layout`-ed items will become links in the future :construction:
+
+
+Title           |Download                                                     |YouTube
+----------------|-------------------------------------------------------------|---------------------------------------
+`is_prime` (OLD)|[here](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)  |[YouTube](https://youtu.be/qVtHieuwM1M)
+`get_digits`    |[here](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)|[YouTube](https://youtu.be/vmRuSWhdA7c)
 
 ## Solutions
 

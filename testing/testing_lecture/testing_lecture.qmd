@@ -12,9 +12,17 @@ csl: vancouver.csl
 
 ![](programming_formalism_course.png)
 
-## Problem
+## Problems
 
-When do you trust your code? When do you trust code written by others? How do you convince other developers of a bug?
+When do you trust your code? 
+
+. . .
+
+When do you trust code written by others? 
+
+. . .
+
+How do you convince other developers of a bug?
 
 ## Testing
 
@@ -30,15 +38,19 @@ Testing *helps* ensure the correctness of code.
  * **`unittest`**, `pytest`, `nose`, etc.
  * Makes it easier to write unit tests
  * Takes some scaffolding
- * Failed tests give a better error message.
+ * Failed tests give a better error message
 
 ## Test if something is true
+
+No testing framework:
 
 ```{python}
 #| echo: true
 #| eval: true
 assert 1 + 1 == 2
 ```
+
+Using `unittest`:
 
 ```{python}
 #| echo: true
@@ -54,11 +66,15 @@ class TestSmall(unittest.TestCase):
 
 ## Test if something is equal
 
+No testing framework:
+
 ```{python}
 #| echo: true
 #| eval: true
 assert 1 + 1 == 2
 ```
+
+Using `unittest`:
 
 ```{python}
 #| echo: true
@@ -74,6 +90,8 @@ class TestSmall(unittest.TestCase):
 
 ## Test if something raises an exception
 
+No testing framework:
+
 ```{python}
 #| echo: true
 #| eval: true
@@ -87,6 +105,8 @@ except:
     has_raised = True
 assert has_raised
 ```
+
+Using `unittest`:
 
 ```{python}
 #| echo: true
@@ -111,44 +131,37 @@ class TestSmall(unittest.TestCase):
 
 ## Live demo (15 minutes)
 
- * Or video: [YouTube](https://youtu.be/qVtHieuwM1M) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)
-
-## Exercise: `is_prime`
-
- * Pair up
- * Switch roles every 3 minutes
- * Discuss how to keep the time first
- * Person with GitHub username first in alphabet starts
- * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
- * Modify `README.md`: replace `richelbilderbeek` by your own username
- * Develop a function called `get_digits`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
-
-## Exercise: `get_digits`
+ * Or videos: [YouTube](https://youtu.be/qVtHieuwM1M) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)
+ 
+## Exercise: `is_prime`, form
 
  * Pair up
  * Switch roles every 3 minutes
  * Discuss how to keep the time first
  * Person with GitHub username first in alphabet starts
+ * Work on `master` branch only, share code using `git push` and `git pull`
+ * Try to be **an exemplary duo** 
+
+## Exercise: `is_prime`, technical
+
  * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+ * Develop a function called `is_prime`:
+   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+   * `tests/test_testing_questions.py`
  * Modify `README.md`: replace `richelbilderbeek` by your own username
- * Develop a function called `get_digits`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
-
-Instructors will visit the rooms to observe.
-
-Done? Try [more easy prime functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#prime-easy)
+ * Extra: make all tests pass
 
 ## Break 1
 
 Break!
 
-`get_digits` video:
+## Problem
 
- * [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
- * [YouTube](https://youtu.be/qVtHieuwM1M)
+Q: What is the hardest in programming?
+
+. . .
+
+A: to work with people?
 
 ## Problem
 
@@ -187,8 +200,6 @@ Assures quality:
  * Correlates with code quality @horgan1994 @del1995correlation
  * 100% mandatory to pass a code peer-review by rOpenSci @ram2018community
 
-## References
-
 ## Coding style
 
  * Following a consistent coding style improves software quality @fang2001
@@ -202,6 +213,69 @@ Assures quality:
  * Linter: program that tests code for style.
 
 In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, Pychecker, Pylama
+
+## Disable a `ruff` test
+
+```{python}
+import random
+random.randint(0, 1) # noqa: S311
+```
+
+You will need to defend this in a code review.
+
+## Exercise: `get_digits`, form
+
+ * Pair up again
+ * Switch roles every 3 minutes
+ * Discuss how to keep the time first
+ * Person with GitHub username first in alphabet starts
+ * Work on `master` branch only, share code using `git push` and `git pull`
+ * Try to be **an exemplary duo** 
+
+## Exercise: `get_digits`, technical
+
+ * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+ * Modify `README.md`: replace `richelbilderbeek` by your own username
+ * Develop a function called `get_digits`:
+   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+   * `tests/test_testing_questions.py`
+ * **Get all CI scripts to pass**
+
+## Solutions
+
+`get_digits` video:
+
+ * [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
+ * [YouTube](https://youtu.be/qVtHieuwM1M)
+
+## Untestable functions
+
+Q: How to test this function?
+
+```{python}
+def print_hello():
+    print("Hello world")
+```
+
+. . .
+
+A: Never write untestable functions
+
+## Making untestable functions testable
+
+Q: How to make this function testable?
+
+```{python}
+def print_hello():
+    print("Hello world")
+```
+
+. . .
+
+```{python}
+def get_hello_world_text():
+    return "Hello world"
+```
 
 ## Testing indeterministic functions
 
@@ -217,6 +291,25 @@ def flip_coin():
 
 How to test these?
 
+## Testing graphical functions
+
+Q: How to test this function throroughly:
+ * Plot looks pretty
+ * Colors are correct
+ * Trendline is drawn
+
+```{python}
+def save_plot(filename, x_y_data):
+    """Save the X-Y data as a scatter plot"""
+```
+
+. . .
+
+A: usually: use **a human**, e.g. a code reviewer
+
+In most cases, graphical analysis tools and/or AI are overkill.
+If you are stubborn: try!
+
 ## Randomness
 
 A Random Number Generator ('RNG') produces the same random values after setting the same RNG seed.
@@ -230,6 +323,32 @@ assert flip_coin()
 random.seed(2)
 assert not flip_coin()
 ```
+
+## Exercise: `flip_coin``, form
+
+ * Pair up again
+ * Switch roles every 3 minutes
+ * Discuss how to keep the time first
+ * Person with GitHub username first in alphabet starts
+ * Work on `master` branch only, share code using `git push` and `git pull`
+ * Try to be **an exemplary duo** 
+
+## Exercise: `flip_coin`, technical
+
+ * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+ * Modify `README.md`: replace `richelbilderbeek` by your own username
+ * Develop a function called `flip_coin`:
+   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+   * `tests/test_testing_questions.py`
+ * **Get all CI scripts to pass**
+
+## Break 2
+
+> If all tests pass, we are -by definition- happy.
+>
+> Programming team [tresinformal](https://github.com/tresinformal)
+
+Break 2
 
 ## Problem
 
@@ -245,7 +364,7 @@ def get_test_dna_sequence():
 
 . . .
 
-A: The Beyoncé Rule
+A: Apply the Beyoncé Rule
 
 ## Beyoncé rule
 
@@ -257,65 +376,60 @@ A: The Beyoncé Rule
 assert get_test_dna_sequence() == "ACGTACGT"
 ```
 
+Teams should be reluctant to change tests: this will likely break other code.
+
 ![Beyoncé](beyonce.png)
 
 > Source: [Wikimedia](https://commons.wikimedia.org/wiki/Category:Beyonc%C3%A9_Knowles_in_2020#/media/File:Beyonc%C3%A9_Black_Is_King_Still.png)
 
-## Exercise
+## Problem
 
-## Break 2
+Q: how to counter 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019dealing
 
-Break 2
+(we know: impossible to counteract @benureau2018re)
 
-## Theory: software degradation
+...
 
- * Software degrades
- * 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019dealing
- * Impossible to counteract @benureau2018re
-
-Solution:
+A: 
 
  * Xtreme programming: 'embrace change' @beck2000extreme
  * Add a scheduled monthly test on your CI script
 
-## Recap
+## Consider static type checking
 
-## End
+ * Use static type checking, see [PEP 484](https://peps.python.org/pep-0484/)
 
-## Extra
-
-### Static type-checking with mypy
-
-Python is an interpreted language, however, as of PEP 484 it supports Type Hints. Some very popular packages like pydantic even use type hints to evaluate input at runtime.
-
-```         
-type_checking.py
-
+```
 def reverse_string(s: str) -\> str: return s.reverse()
 ```
 
-We can now evaluate if there are any type errors using mypy.
+## Recap
 
-```         
-mypy type_checking.py
-```
+ * Testing helps code correctness
+   * Use the Beyoncé Rule on precious behavior
+ * Continuous Integration helps work together
+   * Use scheduled CI against bit rot
 
-Benefits of Type Hints
+## Problems
 
- * Improves readability (I think)
- * Easier to spot bugs and maintain project
- * Forces you to think
- * Better autocomplete if using language server
+ * We developed only simple algorithms
+ * We only use simple data structures
+ * We ignore if code is fast [*]
 
-### Where to go from here
+ * [*] vague wording on purpose
 
-If you are interested in learning more tools and ways to improve the quality of your project, a really good place to start is looking at cookie cutter templates. Two great ones for Python are:
+## Finally
 
-```         
-https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/
-https://scikit-hep.org/developer
-```
+Time for a Reflection!
+
+Afterwards, you can rest or ask your final questions.
+
+## The End
+
+[The End]
 
 ## Links
 
  * [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)
+ * [Hypermodern Python Cookiecutter](https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/)
+ * [Scikit-HEP project info for developers](https://scikit-hep.org/developer)
