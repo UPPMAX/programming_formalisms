@@ -32,7 +32,6 @@ Testing *helps* ensure the correctness of code.
  * Takes some scaffolding
  * Failed tests give a better error message.
 
-
 ## Test if something is true
 
 ```{python}
@@ -114,7 +113,19 @@ class TestSmall(unittest.TestCase):
 
  * Or video: [YouTube](https://youtu.be/qVtHieuwM1M) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)
 
-## Exercise
+## Exercise: `is_prime`
+
+ * Pair up
+ * Switch roles every 3 minutes
+ * Discuss how to keep the time first
+ * Person with GitHub username first in alphabet starts
+ * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+ * Modify `README.md`: replace `richelbilderbeek` by your own username
+ * Develop a function called `get_digits`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
+
+## Exercise: `get_digits`
 
  * Pair up
  * Switch roles every 3 minutes
