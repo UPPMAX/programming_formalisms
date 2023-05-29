@@ -44,17 +44,17 @@ Short for 'Test-driven development' A systematic way to grow code
 
 ## Example exercise: `is_zero`
 
--   Function name: `is_zero`
--   Output:
-    -   Returns `True` if the input is zero
-    -   Returns `False` if the input is not zero
-    -   :warning: Gives an error when the input is not a number
+ * Function name: `is_zero`
+ * Output:
+     * Returns `True` if the input is zero
+     * Returns `False` if the input is not zero
+     * :warning: Gives an error when the input is not a number
 
 ## Live demo (15 minutes)
 
--   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg)
--   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
--   Or see also slides beyond end
+ * [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg)
+ * [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
+ * Or see also slides beyond end
 
 ## Reflection
 
@@ -68,13 +68,13 @@ A: Yes
 
 ## Exercise 1: `is_even`
 
--   Create a GitHub repository called `is_even`
--   Share URL of repo with teachers
--   Develop a function called `is_even`
--   Try to be **exemplary**
--   We'll discuss a repo history after the break
+ * Create a GitHub repository called `is_even`
+ * Share URL of repo with teachers
+ * Develop a function called `is_even`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
-Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
+Done? Write `is_odd`, then `is_probility`.
 
 ## Break 1
 
@@ -102,12 +102,12 @@ Q: Why do TDD?
 
 A:
 
--   TDD makes developers more productive @erdogmus2005effectiveness
--   TDD increases quality of the code @erdogmus2005effectiveness @alkaoud2018quality @janzen2006test
-    -   There are plenty of costly programming mistakes documented!
--   TDD helps shape the project architecture @mayr2005projekt
--   TDD helps better modularisation @madeyski2010test
--   TDD works great with Xtreme programming and CI
+ * TDD makes developers more productive @erdogmus2005effectiveness
+ * TDD increases quality of the code @erdogmus2005effectiveness @alkaoud2018quality @janzen2006test
+     * There are plenty of costly programming mistakes documented!
+ * TDD helps shape the project architecture @mayr2005projekt
+ * TDD helps better modularisation @madeyski2010test
+ * TDD works great with Xtreme programming and CI
 
 ## Reflection
 
@@ -121,11 +121,11 @@ A: Until you cannot break your function anymore.
 
 ## Exercise 2: `is_odd`
 
--   Create a GitHub repository called `is_odd`
--   Share URL of repo with teachers
--   Develop a function called `is_odd`
--   Try to be **exemplary**
--   We'll discuss a repo history after the break
+ * Create a GitHub repository called `is_odd`
+ * Share URL of repo with teachers
+ * Develop a function called `is_odd`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
 Done? Try exercise 3: `is_probability`.
 
@@ -137,11 +137,11 @@ Done? Try exercise 3: `is_probability`.
 
 ## Exercise 3: `is_probability`
 
--   Create a GitHub repository called `is_probability`
--   Share URL of repo with teachers
--   Develop a function called `is_probability`
--   Try to be **exemplary**
--   We'll discuss a repo history after the break
+ * Create a GitHub repository called `is_probability`
+ * Share URL of repo with teachers
+ * Develop a function called `is_probability`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
 ## Extra exercises
 
@@ -156,18 +156,19 @@ Done?
 
 ## Bottom line
 
--   Today we wrote **unit tests**
--   It is only those your boss may read
--   The literature assumes a responsible programmer writes tests, in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
+ * Today we wrote **unit tests**
+ * It is only those your boss may read
+ * The literature assumes a responsible programmer writes tests, in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 ## Problems
 
--   We only test manually
--   We only test om our computer
--   We are not sure if our functions are tested completely
--   We do not test the code for style
+ * We only test manually
+ * We only test om our computer
+ * We are not sure if our functions are tested completely
+ * We do not test the code for style
+ * We should consider using a testing framework
 
 ## Finally
 
@@ -183,19 +184,19 @@ Afterwards, you can rest or ask your final questions.
 
 ## Links
 
--   [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct) of previous year
+ * [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct) of previous year
 
 ## TDD cycles in text
 
--   In both Python and R
+ * In both Python and R
 
 ## First example: `is_zero`
 
--   Function name: `is_zero`
--   Output:
-    -   Returns `True`/`TRUE` if the input is zero
-    -   Returns `False`/`FALSE` if the input is not zero
-    -   :warning: Gives an error when the input is not a number
+ * Function name: `is_zero`
+ * Output:
+     * Returns `True`/`TRUE` if the input is zero
+     * Returns `False`/`FALSE` if the input is not zero
+     * :warning: Gives an error when the input is not a number
 
 ## Cycle 1, red: write a test that breaks
 
