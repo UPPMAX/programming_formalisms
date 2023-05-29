@@ -1,5 +1,5 @@
 ---
-title: "TDD"
+title: "Test-Driven Development"
 author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
@@ -8,7 +8,7 @@ bibliography: tdd_lecture.bib
 csl: vancouver.csl
 ---
 
-## TDD
+## Test-Driven Development ![](CC-BY-NC-SA.png)
 
 ![](programming_formalism_course.png)
 
@@ -16,7 +16,7 @@ csl: vancouver.csl
 
 How do you grow/develop your code?
 
-![](beck_tdd_by_example.jpg)
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 ## Newbie developers
 
@@ -42,15 +42,17 @@ Short for 'Test-driven development' A systematic way to grow code
 
 ## Example exercise: `is_zero`
 
--   Function name: `is_zero`
--   Output:
-    -   Returns `True`/`TRUE` if the input is zero
-    -   Returns `False`/`FALSE` if the input is not zero
-    -   :warning: Gives an error when the input is not a number
+ * Function name: `is_zero`
+ * Output:
+    * Returns `True` if the input is zero
+    * Returns `False` if the input is not zero
+    * :warning: Gives an error when the input is not a number
 
 ## Live demo (15 minutes)
 
-<https://youtu.be/VddlrNOeodg>
+ * **[Python video for 'is_zero'](https://youtu.be/VddlrNOeodg)**
+ * [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
+ * Or see also slides beyond end
 
 ## Reflection
 
@@ -60,15 +62,16 @@ Q: Do developers really do this?
 
 A: Yes
 
+![](beck_tdd_by_example.jpg)
 ![](book_langr.jpg)
 
-## Exercise 1:`is_even`
+## Exercise 1: `is_even`
 
--   Create a GitHub repository called `is_even`
--   Share URL of repo with teachers
--   Develop a function called `is_even`
--   Try to be **exemplary**
--   We'll discuss a repo history after the break
+ * Create a GitHub repository called `is_even`
+ * Share URL of repo with teachers
+ * Develop a function called `is_even`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
 Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
@@ -94,9 +97,9 @@ A: No, it takes longer
 
 Do note, the scope of these researches is limited:
 
--   Mistakes can be costly
--   TDD allows a dialogue
--   TDD results is a better software architecture
+ * Mistakes can be costly
+ * TDD allows a dialogue
+ * TDD results is a better software architecture
 
 ## Reflection
 
@@ -122,14 +125,15 @@ Q: How many tests should I write?
 A: Until you cannot break your function anymore.
 
 ![](beck_tdd_by_example.jpg)
+![](book_langr.jpg)
 
 ## Exercise 2: `is_odd`
 
--   Create a GitHub repository called `is_odd`
--   Share URL of repo with teachers
--   Develop a function called `is_odd`
--   Try to be **exemplary**
--   We'll discuss a repo history after the break
+ * Create a GitHub repository called `is_odd`
+ * Share URL of repo with teachers
+ * Develop a function called `is_odd`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
 Done? Try exercise 3: `is_probability`.
 
@@ -141,11 +145,11 @@ Done? Try exercise 3: `is_probability`.
 
 ## Exercise 3: `is_probability`
 
--   Create a GitHub repository called `is_probability`
--   Share URL of repo with teachers
--   Develop a function called `is_probability`
--   Try to be **exemplary**
--   We'll discuss a repo history after the break
+ * Create a GitHub repository called `is_probability`
+ * Share URL of repo with teachers
+ * Develop a function called `is_probability`
+ * Try to be **exemplary**
+ * We'll discuss a repo history after the break
 
 ## Extra exercises
 
@@ -169,10 +173,10 @@ Done?
 
 ## Problems
 
--   We only test manually
--   We only test om our computer
--   We are not sure if our functions are tested completely
--   We do not test the code for style
+ * We only test manually
+ * We only test om our computer
+ * We are not sure if our functions are tested completely
+ * We do not test the code for style
 
 ## Finally
 
