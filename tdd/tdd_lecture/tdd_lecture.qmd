@@ -110,17 +110,20 @@ Q: Why do TDD?
 
 A:
 
--   TDD makes developers more productive \[1\]
--   TDD increases quality of the code \[1\]
+-   TDD makes developers more productive [1]
+-   TDD increases quality of the code [1-3]
     -   There are plenty of costly programming mistakes documented!
--   TDD helps shape the project architecture \[2\]
--   TDD helps better modularization \[3\]
+-   TDD helps shape the project architecture [20]
+-   TDD helps better modularisation [30]
+-   TDD works great with Xtreme programming and CI
 
 ## References for Reflection
 
--   \[1\] Erdogmus, Hakan, Maurizio Morisio, and Marco Torchiano. "On the effectiveness of the test-first approach to programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
--   \[2\] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
--   \[3\] Madeyski, Lech, and Gestión de sistemas de información. Test-driven development: An empirical evaluation of agile practice. Heidelberg: Springer, 2010.
+ * [1] Erdogmus, Hakan, Maurizio Morisio, and Marco Torchiano. "On the effectiveness of the test-first approach to programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
+ * [2] Quality metrics of test suites in test-driven designed applications
+ * [3] Janzen, David S., and Hossein Saiedian. "Test-driven learning: intrinsic integration of testing into the CS/SE curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
+-   [20] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
+-   [30] Madeyski, Lech, and Gestión de sistemas de información. Test-driven development: An empirical evaluation of agile practice. Heidelberg: Springer, 2010.
 
 ## Reflection
 

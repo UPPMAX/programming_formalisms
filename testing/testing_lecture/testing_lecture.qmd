@@ -4,6 +4,8 @@ author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
 from: markdown+emoji
+bibliography: testing_lecture.bib
+csl: vancouver.csl
 ---
 
 ## Testing
@@ -14,7 +16,13 @@ from: markdown+emoji
 
 When do you trust your code? When do you trust code written by others? How do you convince other developers of a bug?
 
-## Testing
+## Testing 
+
+ * Coding errors are extremely common @baggerly2009deriving
+ * Contribute to the reproducibility crisis in science @vable2021code, 
+   e.g. @rahman2020exploratory
+
+Testing *helps* ensure the correctness of code.
 
 ![](beck_tdd_by_example.jpg) ![](langr_tdd.jpg) ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
@@ -158,12 +166,35 @@ Assures quality:
 -   Tests pass
 -   \[your check here\]
 
-## Test coding style
+## Continuous Integration
 
-Linter: program that tests code for style.
+ * CI significantly increase the number of bugs exposed @vasilescu2015
+ * CI increases the speed at which new features are added @vasilescu2015
+
+## Code coverage
+
+ * Percentage of code tested
+ * Correlates with code quality @horgan1994 @del1995correlation
+ * 100% mandatory to pass a code peer-review by rOpenSci @ram2018community
+
+## References
+
+
+## Coding style
+
+ * Following a consistent coding style improves software quality @fang2001
+   * Python: PEP8 @van2001pep
+   * R: Tidyverse @wickham2019advanced
+ * May include cyclomatic complexity
+   * More complex code, more bugs @abd2018calculating @chen2019empirical @zimmermann2008predicting
+
+## Coding style tools
+
+ * Linter: program that tests code for style.
 
 In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, Pychecker, Pylama
 
+ 
 ## Testing indeterministic functions
 
 Functions that do not always return the same values.
@@ -235,13 +266,15 @@ Break 2
 
 Solution:
 
+ * Xtreme programming: 'embrace change' [3]
  * Add a scheduled monthly test on your CI script
 
 ## References
 
  * [1] Steele Jr, Guy L., et al. The hacker's dictionary: a guide to the world of computer wizards. Harper & Row Publishers, Inc., 1983.
  * [2] Hinsen, Konrad. "Dealing with software collapse." Computing in Science & Engineering 21.3 (2019): 104-108.
-
+ * [3] Beck, Kent. Extreme programming explained: embrace change. addison-wesley professional, 2000.
+ 
 ## Recap
 
 
