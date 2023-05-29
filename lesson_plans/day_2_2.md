@@ -21,7 +21,7 @@ When |What
 13:26|Introduce exercise: `is_even`, video 3/3, 3 mins: [download (.ogv)](https://richelbilderbeek.nl/programming_formalisms_tdd_1_3.ogv) [YouTube](https://youtu.be/7V-zE__S6M8)
 13:29|Start exercise
 13:45|Break, have a break. Solution `is_even`: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_even.ogv) [YouTube](https://youtu.be/ZcgJEdaRRpc) 
-	
+
 ## 14:00-14:45 RB
 
  * Goals: 
