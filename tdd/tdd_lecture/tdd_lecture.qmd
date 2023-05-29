@@ -158,14 +158,14 @@ Done? Try exercise 3: `is_probability`.
 
 ## Extra exercises
 
-Done? 
+Done?
 
-Exercise|Function name    |Function purpose
---------|-----------------|----------------------------------------------------
-4       |`is_number`      |Determines if an object is a number
-5       |`are_numbers`    |Determines if an object is a list of numbers
-S1      |`is_roman_number`|Determine if a string is a roman number
-S2      |`is_prime`       |Determine if a number is a prime number
+| Exercise | Function name     | Function purpose                             |
+|--------------|--------------|-------------------------------------------|
+| 4        | `is_number`       | Determines if an object is a number          |
+| 5        | `are_numbers`     | Determines if an object is a list of numbers |
+| S1       | `is_roman_number` | Determine if a string is a roman number      |
+| S2       | `is_prime`        | Determine if a number is a prime number      |
 
 ## Bottom line
 
@@ -206,7 +206,7 @@ Afterwards, you can rest or ask your final questions.
 
 ## TDD cycles in text
 
- * In both Python and R
+-   In both Python and R
 
 ## First example: `is_zero`
 
@@ -220,7 +220,7 @@ Afterwards, you can rest or ask your final questions.
 
 ::: columns
 ::: {.column width="50%"}
-![](python_icon_26x32.png) :worm:
+![](python_icon_26x32.png) 🪱
 
 ```{python}
 #| echo: true
@@ -230,7 +230,7 @@ assert is_zero(0)
 :::
 
 ::: {.column width="50%"}
-![](r_icon_41x32.png) :worm:
+![](r_icon_41x32.png) 🪱
 
 ```{r}
 #| echo: true
@@ -241,8 +241,7 @@ expect_true(is_zero(0))
 :::
 :::
 
-:monocle_face: code that is not run, uses :worm:, as
-a worm cannot run.
+:monocle_face: code that is not run, uses 🪱, as a worm cannot run.
 
 ## Cycle 1, green: make the test pass
 
@@ -289,7 +288,7 @@ git push
 
 ::: columns
 ::: {.column width="50%"}
-![](python_icon_26x32.png) :worm:
+![](python_icon_26x32.png) 🪱
 
 ```{python}
 #| echo: true
@@ -300,7 +299,7 @@ assert not is_zero(42)
 :::
 
 ::: {.column width="50%"}
-![](r_icon_41x32.png) :worm:
+![](r_icon_41x32.png) 🪱
 
 ```{r}
 #| echo: true

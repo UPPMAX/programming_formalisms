@@ -28,10 +28,14 @@ When do you trust your code? When do you trust code written by others? How do yo
 ## Test if something is true
 
 ```{python}
+#| echo: true
+#| eval: true
 assert 1 + 1 == 2
 ```
 
 ```{python}
+#| echo: true
+#| eval: true
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -44,10 +48,14 @@ class TestSmall(unittest.TestCase):
 ## Test if something is equal
 
 ```{python}
+#| echo: true
+#| eval: true
 assert 1 + 1 == 2
 ```
 
 ```{python}
+#| echo: true
+#| eval: true
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -60,6 +68,8 @@ class TestSmall(unittest.TestCase):
 ## Test if something raises an exception
 
 ```{python}
+#| echo: true
+#| eval: true
 def raise_error():
     raise RunType("Raise an error!")
 
@@ -72,6 +82,8 @@ assert has_raised
 ```
 
 ```{python}
+#| echo: true
+#| eval: true
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -111,9 +123,9 @@ Instructors will visit the rooms to observe.
 
 Done? Try [more easy prime functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#prime-easy)
 
-## Break
+## Break 1
 
-[Break](#break-1)
+Break!
 
 `get_digits` video:
 
@@ -157,6 +169,8 @@ In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, P
 Functions that do not always return the same values.
 
 ```{python}
+#| echo: true
+#| eval: true
 def flip_coin():
     """Produce a random boolean."""
     return random.randint(0, 1) > 0
@@ -166,10 +180,11 @@ How to test these?
 
 ## Randomness
 
-A Random Number Generator ('RNG') produces the same random values
-after setting the same RNG seed.
+A Random Number Generator ('RNG') produces the same random values after setting the same RNG seed.
 
 ```{python}
+#| echo: true
+#| eval: true
 import random
 random.seed(5)
 assert flip_coin()
@@ -177,13 +192,58 @@ random.seed(2)
 assert not flip_coin()
 ```
 
+## Problem
+
+Q: When one works in a team, how to make sure my code keeps doing the same?
+
+```{python}
+#| echo: true
+#| eval: true
+def get_test_dna_sequence():
+  """Get a DNA sequence to be used in testing"""
+  return "ACGTACGT"
+```
+
+. . .
+
+A: The Beyoncé Rule
+
+## Beyoncé rule
+
+'If you like it, then you gotta put a test on it'
+
+```{python}
+#| echo: true
+#| eval: true
+assert get_test_dna_sequence() == "ACGTACGT"
+```
+
+![Beyoncé](beyonce.png)
+
+> Source: [Wikimedia](https://commons.wikimedia.org/wiki/Category:Beyonc%C3%A9_Knowles_in_2020#/media/File:Beyonc%C3%A9_Black_Is_King_Still.png)
+
 ## Exercise
 
-## Break {#break-1}
+## Break 2
 
-[Break](#break-1)
+Break 2
+
+## Theory: software degradation
+
+ * Software degrades
+ * 'bit rot' [1] or 'software collapse' [2]
+
+Solution:
+
+ * Add a scheduled monthly test on your CI script
+
+## References
+
+ * [1] Steele Jr, Guy L., et al. The hacker's dictionary: a guide to the world of computer wizards. Harper & Row Publishers, Inc., 1983.
+ * [2] Hinsen, Konrad. "Dealing with software collapse." Computing in Science & Engineering 21.3 (2019): 104-108.
 
 ## Recap
+
 
 ## End
 
