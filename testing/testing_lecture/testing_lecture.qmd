@@ -16,11 +16,10 @@ csl: vancouver.csl
 
 When do you trust your code? When do you trust code written by others? How do you convince other developers of a bug?
 
-## Testing 
+## Testing
 
- * Coding errors are extremely common @baggerly2009deriving
- * Contribute to the reproducibility crisis in science @vable2021code, 
-   e.g. @rahman2020exploratory
+-   Coding errors are extremely common @baggerly2009deriving
+-   Contribute to the reproducibility crisis in science @vable2021code, e.g. @rahman2020exploratory
 
 Testing *helps* ensure the correctness of code.
 
@@ -168,33 +167,31 @@ Assures quality:
 
 ## Continuous Integration
 
- * CI significantly increase the number of bugs exposed @vasilescu2015
- * CI increases the speed at which new features are added @vasilescu2015
+-   CI significantly increase the number of bugs exposed @vasilescu2015
+-   CI increases the speed at which new features are added @vasilescu2015
 
 ## Code coverage
 
- * Percentage of code tested
- * Correlates with code quality @horgan1994 @del1995correlation
- * 100% mandatory to pass a code peer-review by rOpenSci @ram2018community
+-   Percentage of code tested
+-   Correlates with code quality @horgan1994 @del1995correlation
+-   100% mandatory to pass a code peer-review by rOpenSci @ram2018community
 
 ## References
 
-
 ## Coding style
 
- * Following a consistent coding style improves software quality @fang2001
-   * Python: PEP8 @van2001pep
-   * R: Tidyverse @wickham2019advanced
- * May include cyclomatic complexity
-   * More complex code, more bugs @abd2018calculating @chen2019empirical @zimmermann2008predicting
+-   Following a consistent coding style improves software quality @fang2001
+    -   Python: PEP8 @van2001pep
+    -   R: Tidyverse @wickham2019advanced
+-   May include cyclomatic complexity
+    -   More complex code, more bugs @abd2018calculating @chen2019empirical @zimmermann2008predicting
 
 ## Coding style tools
 
- * Linter: program that tests code for style.
+-   Linter: program that tests code for style.
 
 In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, Pychecker, Pylama
 
- 
 ## Testing indeterministic functions
 
 Functions that do not always return the same values.
@@ -261,15 +258,14 @@ Break 2
 
 ## Theory: software degradation
 
- * Software degrades
- * 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019dealing
- * Impossible to counteract @benureau2018re
-
+-   Software degrades
+-   'bit rot' @steele1983hacker or 'software collapse' @hinsen2019dealing
+-   Impossible to counteract @benureau2018re
 
 Solution:
 
- * Xtreme programming: 'embrace change' @beck2000extreme
- * Add a scheduled monthly test on your CI script
+-   Xtreme programming: 'embrace change' @beck2000extreme
+-   Add a scheduled monthly test on your CI script
 
 ## Recap
 

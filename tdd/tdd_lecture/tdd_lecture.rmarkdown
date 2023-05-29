@@ -8,6 +8,7 @@ bibliography: tdd_lecture.bib
 csl: vancouver.csl
 ---
 
+
 ## TDD
 
 ![](programming_formalism_course.png)
@@ -208,15 +209,18 @@ Afterwards, you can rest or ask your final questions.
 ::: {.column width="50%"}
 ![](python_icon_26x32.png) 🪱
 
+
 ```{python}
 #| echo: true
 #| eval: false
 assert is_zero(0)
 ```
+
 :::
 
 ::: {.column width="50%"}
 ![](r_icon_41x32.png) 🪱
+
 
 ```{r}
 #| echo: true
@@ -224,6 +228,7 @@ assert is_zero(0)
 library(testthat)
 expect_true(is_zero(0))
 ```
+
 :::
 :::
 
@@ -235,6 +240,7 @@ expect_true(is_zero(0))
 ::: {.column width="50%"}
 ![](python_icon_26x32.png)
 
+
 ```{python}
 #| echo: true
 def is_zero(number): 
@@ -242,10 +248,12 @@ def is_zero(number):
 
 assert is_zero(0)
 ```
+
 :::
 
 ::: {.column width="50%"}
 ![](r_icon_41x32.png)
+
 
 ```{r}
 #| echo: true
@@ -257,6 +265,7 @@ is_zero <- function(number) {
 
 expect_true(is_zero(0))
 ```
+
 :::
 :::
 
@@ -276,16 +285,19 @@ git push
 ::: {.column width="50%"}
 ![](python_icon_26x32.png) 🪱
 
+
 ```{python}
 #| echo: true
 #| eval: false
 assert is_zero(0)
 assert not is_zero(42)
 ```
+
 :::
 
 ::: {.column width="50%"}
 ![](r_icon_41x32.png) 🪱
+
 
 ```{r}
 #| echo: true
@@ -293,6 +305,7 @@ assert not is_zero(42)
 expect_true(is_zero(0))
 expect_false(is_zero(42))
 ```
+
 :::
 :::
 
@@ -301,6 +314,7 @@ expect_false(is_zero(42))
 ::: columns
 ::: {.column width="50%"}
 ![](python_icon_26x32.png)
+
 
 ```{python}
 #| echo: true
@@ -311,11 +325,13 @@ assert is_zero(0)
 assert not is_zero(42)
 ```
 
+
 :monocle_face: indent of 2 is non-standard, see [PEP 8](https://peps.python.org/pep-0008/)
 :::
 
 ::: {.column width="50%"}
 ![](r_icon_41x32.png)
+
 
 ```{r}
 #| echo: true
@@ -328,6 +344,7 @@ is_zero <- function(number) {
 expect_true(is_zero(0))
 expect_false(is_zero(42))
 ```
+
 :::
 :::
 
@@ -340,3 +357,4 @@ git push
 ```
 
 ![](organised_female_programmer.png)
+
