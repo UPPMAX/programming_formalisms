@@ -6,7 +6,7 @@ editor: visual
 from: markdown+emoji
 ---
 
-## Data structures
+## Data structures ![](CC-BY-NC-SA.png)
 
 ![](programming_formalism_course.png)
 
@@ -18,11 +18,11 @@ How do I write these myself?
 
 ## Python classes
 
--   (`list`: heterogeneous container)
--   (`tuple`: immutable `list`)
--   `set`: sets
--   `dict`: dictionary
--   Regular expressions: text patterns
+ * (`list`: heterogeneous container)
+ * (`tuple`: immutable `list`)
+ * `set`: sets
+ * `dict`: dictionary
+ * Regular expressions: text patterns
 
 From [Python 'Data Structures' documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -39,16 +39,16 @@ assert 3 in s
 assert list(s) == [1, 3, 4, 5]
 ```
 
--   No need to check for elements existing twice
+ * No need to check for elements existing twice
 
 ## `set` example for `are_primes`
 
--   `are_primes` determines of each value in a list if it is prime yes/no
--   Problem: values in that list can occur multiple times, e.g. `[42, 42, 42]`
--   Solution with a `set`:
-    -   Collect all unique values in the input
-    -   Put the unique values that are prime in a set
-    -   Check each input value to be in the set of primes
+ * `are_primes` determines of each value in a list if it is prime yes/no
+ * Problem: values in that list can occur multiple times, e.g. `[42, 42, 42]`
+ * Solution with a `set`:
+     * Collect all unique values in the input
+     * Put the unique values that are prime in a set
+     * Check each input value to be in the set of primes
 
 ## `dict`
 
@@ -62,17 +62,17 @@ periodic_table[2] = "helium"
 assert periodic_table[2] == "helium"
 ```
 
--   Commonly uses as a look-up table
--   A look-up table can store the results of earlier calculations
+ * Commonly uses as a look-up table
+ * A look-up table can store the results of earlier calculations
 
 ## `dict` example for `are_primes`
 
--   `are_primes` determines of each value in a list if it is prime yes/no
--   Problem: values in that list can occur multiple times, e.g. `[42, 42, 42]`
--   Solution with a `set`:
-    -   Collect all unique values in the input
-    -   Store for each unique values if it is prime yes/no
-    -   Look up each input value in the prime look-table
+ * `are_primes` determines of each value in a list if it is prime yes/no
+ * Problem: values in that list can occur multiple times, e.g. `[42, 42, 42]`
+ * Solution with a `set`:
+     * Collect all unique values in the input
+     * Store for each unique values if it is prime yes/no
+     * Look up each input value in the prime look-table
 
 ## Regular expressions
 
@@ -92,11 +92,11 @@ assert dna_regex.match("TGCAAAAAA")
 assert not dna_regex.match("nonsense")
 ```
 
- * [https://docs.python.org/3/library/re.html](https://docs.python.org/3/library/re.html)
+ * <https://docs.python.org/3/library/re.html>
 
 ## Our own class
 
- * [https://docs.python.org/3/tutorial/classes.html](https://docs.python.org/3/tutorial/classes.html)
+ * <https://docs.python.org/3/tutorial/classes.html>
 
 ```         
 DnaSequence
