@@ -12,9 +12,9 @@
 :construction: the `code layout`-ed items will become links in the future :construction:
 
 
-Title           |Download                                                     |YouTube
-----------------|-------------------------------------------------------------|---------------------------------------
-`is_prime` (OLD)|[here](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)  |[YouTube](https://youtu.be/qVtHieuwM1M)
+Title           |Download                                                                 |YouTube
+----------------|-------------------------------------------------------------------------|---------------------------------------
+`is_prime`      |[here](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)|[YouTube](https://youtu.be/jwAyMlaODfo)
 `get_digits`    |[here](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)|[YouTube](https://youtu.be/vmRuSWhdA7c)
 
 ## Solutions
