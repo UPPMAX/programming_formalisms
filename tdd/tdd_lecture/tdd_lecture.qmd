@@ -10,6 +10,8 @@ csl: vancouver.csl
 
 ## Test-Driven Development ![](CC-BY-NC-SA.png)
 
+[https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd](https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd)
+
 ![](programming_formalism_course.png)
 
 ## Problem
@@ -42,17 +44,17 @@ Short for 'Test-driven development' A systematic way to grow code
 
 ## Example exercise: `is_zero`
 
- * Function name: `is_zero`
- * Output:
-    * Returns `True` if the input is zero
-    * Returns `False` if the input is not zero
-    * :warning: Gives an error when the input is not a number
+-   Function name: `is_zero`
+-   Output:
+    -   Returns `True` if the input is zero
+    -   Returns `False` if the input is not zero
+    -   :warning: Gives an error when the input is not a number
 
 ## Live demo (15 minutes)
 
- * **[Python video for 'is_zero'](https://youtu.be/VddlrNOeodg)**
- * [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
- * Or see also slides beyond end
+-   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg)
+-   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
+-   Or see also slides beyond end
 
 ## Reflection
 
@@ -62,16 +64,15 @@ Q: Do developers really do this?
 
 A: Yes
 
-![](beck_tdd_by_example.jpg)
-![](book_langr.jpg)
+![](beck_tdd_by_example.jpg) ![](book_langr.jpg)
 
 ## Exercise 1: `is_even`
 
- * Create a GitHub repository called `is_even`
- * Share URL of repo with teachers
- * Develop a function called `is_even`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `is_even`
+-   Share URL of repo with teachers
+-   Develop a function called `is_even`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 Done? Try [other easy functions](https://github.com/UPPMAX/programming_formalisms/blob/main/learning_line.md#easy)
 
@@ -87,11 +88,11 @@ Q: Does this really save time?
 
 A: No, it takes longer
 
-| Study                    | Extra time | Effect                        |
-|--------------------------|------------|-------------------------------|
-| @george2004structured    | 16%        | 18% more black-box tests pass |
-| @bhat2006evaluating      | 15%        | 2x higher code quality        |
-| @nagappan2008realizing   | 15-35%     | 40%-90% less defects          |
+| Study                  | Extra time | Effect                        |
+|------------------------|------------|-------------------------------|
+| @george2004structured  | 16%        | 18% more black-box tests pass |
+| @bhat2006evaluating    | 15%        | 2x higher code quality        |
+| @nagappan2008realizing | 15-35%     | 40%-90% less defects          |
 
 ## Reflection
 
@@ -101,12 +102,12 @@ Q: Why do TDD?
 
 A:
 
- * TDD makes developers more productive @erdogmus2005effectiveness
- * TDD increases quality of the code @erdogmus2005effectiveness @alkaoud2018quality @janzen2006test
-    * There are plenty of costly programming mistakes documented!
- * TDD helps shape the project architecture @mayr2005projekt
- * TDD helps better modularisation @madeyski2010test
- * TDD works great with Xtreme programming and CI
+-   TDD makes developers more productive @erdogmus2005effectiveness
+-   TDD increases quality of the code @erdogmus2005effectiveness @alkaoud2018quality @janzen2006test
+    -   There are plenty of costly programming mistakes documented!
+-   TDD helps shape the project architecture @mayr2005projekt
+-   TDD helps better modularisation @madeyski2010test
+-   TDD works great with Xtreme programming and CI
 
 ## Reflection
 
@@ -116,16 +117,15 @@ Q: How many tests should I write?
 
 A: Until you cannot break your function anymore.
 
-![](beck_tdd_by_example.jpg)
-![](book_langr.jpg)
+![](beck_tdd_by_example.jpg) ![](book_langr.jpg)
 
 ## Exercise 2: `is_odd`
 
- * Create a GitHub repository called `is_odd`
- * Share URL of repo with teachers
- * Develop a function called `is_odd`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `is_odd`
+-   Share URL of repo with teachers
+-   Develop a function called `is_odd`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 Done? Try exercise 3: `is_probability`.
 
@@ -137,18 +137,18 @@ Done? Try exercise 3: `is_probability`.
 
 ## Exercise 3: `is_probability`
 
- * Create a GitHub repository called `is_probability`
- * Share URL of repo with teachers
- * Develop a function called `is_probability`
- * Try to be **exemplary**
- * We'll discuss a repo history after the break
+-   Create a GitHub repository called `is_probability`
+-   Share URL of repo with teachers
+-   Develop a function called `is_probability`
+-   Try to be **exemplary**
+-   We'll discuss a repo history after the break
 
 ## Extra exercises
 
 Done?
 
 | Exercise | Function name     | Function purpose                             |
-|----------------|----------------|----------------------------------------|
+|-----------------|-----------------|--------------------------------------|
 | 4        | `is_number`       | Determines if an object is a number          |
 | 5        | `are_numbers`     | Determines if an object is a list of numbers |
 | S1       | `is_roman_number` | Determine if a string is a roman number      |
@@ -156,19 +156,18 @@ Done?
 
 ## Bottom line
 
- * Today we wrote **unit tests**
- * It is only those your boss may read
- * The literature assumes a responsible programmer writes tests,
-   in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
+-   Today we wrote **unit tests**
+-   It is only those your boss may read
+-   The literature assumes a responsible programmer writes tests, in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 ## Problems
 
- * We only test manually
- * We only test om our computer
- * We are not sure if our functions are tested completely
- * We do not test the code for style
+-   We only test manually
+-   We only test om our computer
+-   We are not sure if our functions are tested completely
+-   We do not test the code for style
 
 ## Finally
 
