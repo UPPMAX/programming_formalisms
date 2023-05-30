@@ -262,10 +262,10 @@ How to test these?
 
 ## Testing graphical functions
 
-Q: How to test this function throroughly:
+Q: How to test this function thoroughly:
  * Plot looks pretty
  * Colors are correct
- * Trendline is drawn
+ * Trend line is drawn
 
 ```{python}
 def save_plot(filename, x_y_data):

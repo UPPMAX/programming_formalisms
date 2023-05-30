@@ -437,6 +437,11 @@ benureau
 hinsen
 steele
 qmd
+Scikit
+Cookiecutter
+Hypermodern
+untestable
+Untestable
 
 
 
