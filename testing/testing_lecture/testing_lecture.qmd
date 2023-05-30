@@ -254,20 +254,6 @@ def get_hello_world_text():
     return "Hello world"
 ```
 
-## Testing indeterministic functions
-
-Functions that do not always return the same values.
-
-```{python}
-#| echo: true
-#| eval: true
-def flip_coin():
-    """Produce a random boolean."""
-    return random.randint(0, 1) > 0
-```
-
-How to test these?
-
 ## Testing graphical functions
 
 Q: How to test this function thoroughly:
@@ -289,6 +275,21 @@ A: usually: use **a human**, e.g. a code reviewer
 
 In most cases, graphical analysis tools and/or AI are overkill.
 If you are stubborn: try!
+
+## Testing indeterministic functions
+
+Functions that do not always return the same values.
+
+```{python}
+#| echo: true
+#| eval: true
+def flip_coin():
+    """Produce a random boolean."""
+    return random.randint(0, 1) > 0
+```
+
+How to test these?
+
 
 ## Randomness
 

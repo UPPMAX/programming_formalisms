@@ -107,8 +107,15 @@ Now the participants:
 
 ```{r}
 owner_names <- c(
-  "richelbilderbeek", 
-  "tresinformal"
+  # Michael Konopik
+  "acorbat", # Agustin Corbat
+  # Johanna von Seth
+  "RenateWilcke ", # Renate Wilcke
+  "semccomas", # Sarah McComas
+  # Siaperas Roamnos
+  # Thomas Frank [can be many] 
+  # Tina Gorsek
+  "richelbilderbeek"
 )
 repo_names <- c("is_zero", "is_even", "is_odd", "is_probability", "is_number", "are_numbers", "is_roman_number", "is_prime")
 t <- create_table(owner_names = owner_names, repo_names = repo_names)
