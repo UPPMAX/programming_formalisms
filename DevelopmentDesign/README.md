@@ -42,7 +42,7 @@ according to the SDLC_ISO_IEC_12207 this is the time to make a risk analysis of 
 Most models cover some form of risk assessment, involved in the requirements gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
 ### Risk assesment
 
-
+***This table does not render correctly in preview mode see the github pages for a complete view***
   <table>
  <tr>
     <th>Probability/Severity</th>

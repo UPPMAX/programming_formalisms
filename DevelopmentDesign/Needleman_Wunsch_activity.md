@@ -1,3 +1,9 @@
+BLAST: A real-world example
+
+"In bioinformatics, BLAST (basic local alignment search tool)[2]
+Links to an external site. is an algorithm and program for comparing primary biological sequence information, 
+such as the amino-acid sequences of proteins or the nucleotides of DNA and/or RNA sequences." (https://en.wikipedia.org/wiki/BLAST_(biotechnology)#cite_note-KarlinObit.NYT-2)
+
 First copy the pseudo code into the markdown code ticks
 ```
 for i in length(A):
