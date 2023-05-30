@@ -10,6 +10,8 @@ csl: vancouver.csl
 
 ## Testing ![](CC-BY-NC-SA.png)
 
+[https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd](https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd)
+
 ![](programming_formalism_course.png)
 
 ## Problems
@@ -157,25 +159,17 @@ Break!
 
 ## Problem
 
-Q: What is the hardest in programming?
-
-. . .
-
-A: to work with people?
-
-## Problem
-
 How to work together well?
 
 . . .
 
 Encourage/enforce:
 
- * URL links are valid
- * Correct spelling
  * Code must pass all tests
  * High code coverage
  * Uniform coding style
+ * URL links are valid
+ * Correct spelling
 
 ## Continuous Integration
 
@@ -183,10 +177,10 @@ Scripts that are triggered when `push`ing code.
 
 Assures quality:
 
+ * Tests pass
  * Code has consistent style
  * Links are valid (i.e. not broken)
  * Spelling is correct
- * Tests pass
  * \[your check here\]
 
 ## Continuous Integration
@@ -222,31 +216,6 @@ random.randint(0, 1) # noqa: S311
 ```
 
 You will need to defend this in a code review.
-
-## Exercise: `get_digits`, form
-
- * Pair up again
- * Switch roles every 3 minutes
- * Discuss how to keep the time first
- * Person with GitHub username first in alphabet starts
- * Work on `master` branch only, share code using `git push` and `git pull`
- * Try to be **an exemplary duo** 
-
-## Exercise: `get_digits`, technical
-
- * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
- * Modify `README.md`: replace `richelbilderbeek` by your own username
- * Develop a function called `get_digits`:
-   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-   * `tests/test_testing_questions.py`
- * **Get all CI scripts to pass**
-
-## Solutions
-
-`get_digits` video:
-
- * [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
- * [YouTube](https://youtu.be/qVtHieuwM1M)
 
 ## Untestable functions
 
@@ -403,12 +372,40 @@ A:
 def reverse_string(s: str) -\> str: return s.reverse()
 ```
 
+## Exercise: `get_digits`, form
+
+ * Pair up again
+ * Switch roles every 3 minutes
+ * Discuss how to keep the time first
+ * Person with GitHub username first in alphabet starts
+ * Work on `master` branch only, share code using `git push` and `git pull`
+ * Try to be **an exemplary duo** 
+
+## Exercise: `get_digits`, technical
+
+ * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+ * Modify `README.md`: replace `richelbilderbeek` by your own username
+ * Develop a function called `get_digits`:
+   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+   * `tests/test_testing_questions.py`
+ * **Get all CI scripts to pass**
+
+## Solutions
+
+`get_digits` video:
+
+ * [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
+ * [YouTube](https://youtu.be/vmRuSWhdA7c)
+
 ## Recap
 
  * Testing helps code correctness
    * Use the Beyoncé Rule on precious behavior
- * Continuous Integration helps work together
-   * Use scheduled CI against bit rot
+ * Testing + CI:
+   * Helps teaching
+   * Helps bug reporting
+ * Testing + CI: 
+   * Detects bit rot
 
 ## Problems
 
