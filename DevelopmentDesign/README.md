@@ -40,7 +40,7 @@ The ISO/IEC standard 12207 calls this **Needs Determination**
 after the needs, the initial requirements, have been determined through the above mentions process they are then fleshed out in the **Concept and Exploration**
 according to the SDLC_ISO_IEC_12207 this is the time to make a risk analysis of your development strategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evolutionary software model(Living Software Development Process)
 Most models cover some form of risk assessment, involved in the requirements gathering process. In the Spiral model the concept of risk assessment is essential while in models like RUP it has a lesser role. 
-### Risk assesment
+### Risk assessment
 
 ***This table does not render correctly in preview mode see the github pages for a complete view***
   <table>
@@ -55,7 +55,7 @@ Most models cover some form of risk assessment, involved in the requirements gat
   <tr>
     <td>P5</td>
     <td style="background-color: DARKGOLDENROD">
-      <p align=center>5</p>Suplementary issue
+      <p align=center>5</p>Supplementary issue
     </td>
     <td style="background-color: ORANGE">
       <p align=center>10</p>Issue
@@ -77,7 +77,7 @@ Most models cover some form of risk assessment, involved in the requirements gat
      <p align=center>4</p>Acceptable
     </td>
     <td style="background-color: DARKGOLDENROD">
-      <p align=center>8</p>Suplementary issue
+      <p align=center>8</p>Supplementary issue
     </td>
     <td style="background-color: ORANGE">
       <p align=center>12</p>Issue
@@ -96,10 +96,10 @@ Most models cover some form of risk assessment, involved in the requirements gat
    <p align=center>3</p>Acceptable
    </td>
     <td style="background-color: DARKGOLDENROD">
-    <p align=center>6</p>Suplementary issue
+    <p align=center>6</p>Supplementary issue
     </td>
     <td style="background-color: DARKGOLDENROD">
-      <p align=center>9</p>Suplementary issue
+      <p align=center>9</p>Supplementary issue
     </td>
     <td style="background-color: ORANGE">
       <p align=center>12</p>Issue
@@ -117,10 +117,10 @@ Most models cover some form of risk assessment, involved in the requirements gat
     <p align=center>4</p>Acceptable
     </td>
     <td style="background-color: DARKGOLDENROD">
-    <p align=center>6</p>Suplementary issue
+    <p align=center>6</p>Supplementary issue
     </td>
     <td style="background-color: DARKGOLDENROD">
-    <p align=center>8</p>Suplementary issue
+    <p align=center>8</p>Supplementary issue
     </td>
     <td style="background-color: ORANGE">
     <p align=center>10</p>issue
@@ -141,12 +141,12 @@ Most models cover some form of risk assessment, involved in the requirements gat
     <p align=center>4</p>Acceptable
     </td>
     <td style="background-color: DARKGOLDENROD">
-    <p align=center>5</p>Suplementary issue
+    <p align=center>5</p>Supplementary issue
     </td>
   </tr>
 </table>
 
-A good rescource for risk assesment templates are is https://openregulatory.com/ which has somme templates for ISO 13485, IEC 62304, ISO 14971 and IEC 62366.
+A good resource for risk assessment templates are is https://openregulatory.com/ which has some templates for ISO 13485, IEC 62304, ISO 14971 and IEC 62366.
 
 ## Second phase   *Design*
 This stage corresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirements put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a little less :-)  but still it is important to not over-engineer when you and your team have a clear picture of what you want to develop that is when we step to the next phase)
