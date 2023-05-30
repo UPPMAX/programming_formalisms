@@ -10,17 +10,17 @@ csl: vancouver.csl
 
 ## Testing ![](CC-BY-NC-SA.png)
 
-[https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd](https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd)
+<https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd>
 
 ![](programming_formalism_course.png)
 
 ## Problems
 
-When do you trust your code? 
+When do you trust your code?
 
 . . .
 
-When do you trust code written by others? 
+When do you trust code written by others?
 
 . . .
 
@@ -28,8 +28,8 @@ How do you convince other developers of a bug?
 
 ## Testing
 
- * Coding errors are extremely common @baggerly2009deriving
- * Contribute to the reproducibility crisis in science @vable2021code, e.g. @rahman2020exploratory
+-   Coding errors are extremely common @baggerly2009deriving
+-   Contribute to the reproducibility crisis in science @vable2021code, e.g. @rahman2020exploratory
 
 Testing *helps* ensure the correctness of code.
 
@@ -37,10 +37,10 @@ Testing *helps* ensure the correctness of code.
 
 ## Testing framework
 
- * **`unittest`**, `pytest`, `nose`, etc.
- * Makes it easier to write unit tests
- * Takes some scaffolding
- * Failed tests give a better error message
+-   **`unittest`**, `pytest`, `nose`, etc.
+-   Makes it easier to write unit tests
+-   Takes some scaffolding
+-   Failed tests give a better error message
 
 ## Test if something is true
 
@@ -124,34 +124,34 @@ class TestSmall(unittest.TestCase):
 
 ## First example: `is_prime`
 
- * Function name: `is_prime`
- * Output:
-   * Returns `True` if the input is prime
-   * Returns `False` if the input is not prime
-   * :warning: Gives an error when the input is not an integer
- * Work within scaffolding of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
+-   Function name: `is_prime`
+-   Output:
+    -   Returns `True` if the input is prime
+    -   Returns `False` if the input is not prime
+    -   :warning: Gives an error when the input is not an integer
+-   Work within scaffolding of <https://github.com/richelbilderbeek/programming_formalisms_testing>
 
 ## Live demo (15 minutes)
 
- * Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)
- 
+-   Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)
+
 ## Exercise: `is_prime`, form
 
- * Pair up
- * Switch roles every 3 minutes
- * Discuss how to keep the time first
- * Person with GitHub username first in alphabet starts
- * Work on `master` branch only, share code using `git push` and `git pull`
- * Try to be **an exemplary duo** 
+-   Pair up
+-   Switch roles every 3 minutes
+-   Discuss how to keep the time first
+-   Person with GitHub username first in alphabet starts
+-   Work on `master` branch only, share code using `git push` and `git pull`
+-   Try to be **an exemplary duo**
 
 ## Exercise: `is_prime`, technical
 
- * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
- * Develop a function called `is_prime`:
-   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-   * `tests/test_testing_questions.py`
- * Modify `README.md`: replace `richelbilderbeek` by your own username
- * Extra: make all tests pass
+-   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
+-   Develop a function called `is_prime`:
+    -   `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+    -   `tests/test_testing_questions.py`
+-   Modify `README.md`: replace `richelbilderbeek` by your own username
+-   Extra: make all tests pass
 
 ## Break 1
 
@@ -165,11 +165,11 @@ How to work together well?
 
 Encourage/enforce:
 
- * Code must pass all tests
- * High code coverage
- * Uniform coding style
- * URL links are valid
- * Correct spelling
+-   Code must pass all tests
+-   High code coverage
+-   Uniform coding style
+-   URL links are valid
+-   Correct spelling
 
 ## Continuous Integration
 
@@ -177,34 +177,34 @@ Scripts that are triggered when `push`ing code.
 
 Assures quality:
 
- * Tests pass
- * Code has consistent style
- * Links are valid (i.e. not broken)
- * Spelling is correct
- * \[your check here\]
+-   Tests pass
+-   Code has consistent style
+-   Links are valid (i.e. not broken)
+-   Spelling is correct
+-   \[your check here\]
 
 ## Continuous Integration
 
- * CI significantly increase the number of bugs exposed @vasilescu2015
- * CI increases the speed at which new features are added @vasilescu2015
+-   CI significantly increase the number of bugs exposed @vasilescu2015
+-   CI increases the speed at which new features are added @vasilescu2015
 
 ## Code coverage
 
- * Percentage of code tested
- * Correlates with code quality @horgan1994 @del1995correlation
- * 100% mandatory to pass a code peer-review by rOpenSci @ram2018community
+-   Percentage of code tested
+-   Correlates with code quality @horgan1994 @del1995correlation
+-   100% mandatory to pass a code peer-review by rOpenSci @ram2018community
 
 ## Coding style
 
- * Following a consistent coding style improves software quality @fang2001
-     * Python: PEP8 @van2001pep
-     * R: Tidyverse @wickham2019advanced
- * May include cyclomatic complexity
-     * More complex code, more bugs @abd2018calculating @chen2019empirical @zimmermann2008predicting
+-   Following a consistent coding style improves software quality @fang2001
+    -   Python: PEP8 @van2001pep
+    -   R: Tidyverse @wickham2019advanced
+-   May include cyclomatic complexity
+    -   More complex code, more bugs @abd2018calculating @chen2019empirical @zimmermann2008predicting
 
 ## Coding style tools
 
- * Linter: program that tests code for style.
+-   Linter: program that tests code for style.
 
 In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, Pychecker, Pylama
 
@@ -258,9 +258,9 @@ def get_hello_world_text():
 
 Q: How to test this function thoroughly:
 
- * Plot looks pretty
- * Colors are correct
- * Trend line is drawn
+-   Plot looks pretty
+-   Colors are correct
+-   Trend line is drawn
 
 ```{python}
 #| echo: true
@@ -273,8 +273,7 @@ def save_plot(filename, x_y_data):
 
 A: usually: use **a human**, e.g. a code reviewer
 
-In most cases, graphical analysis tools and/or AI are overkill.
-If you are stubborn: try!
+In most cases, graphical analysis tools and/or AI are overkill. If you are stubborn: try!
 
 ## Testing indeterministic functions
 
@@ -289,7 +288,6 @@ def flip_coin():
 ```
 
 How to test these?
-
 
 ## Randomness
 
@@ -307,21 +305,21 @@ assert not flip_coin()
 
 ## Exercise: `flip_coin`, form
 
- * Pair up again
- * Switch roles every 3 minutes
- * Discuss how to keep the time first
- * Person with GitHub username first in alphabet starts
- * Work on `master` branch only, share code using `git push` and `git pull`
- * Try to be **an exemplary duo** 
+-   Pair up again
+-   Switch roles every 3 minutes
+-   Discuss how to keep the time first
+-   Person with GitHub username first in alphabet starts
+-   Work on `master` branch only, share code using `git push` and `git pull`
+-   Try to be **an exemplary duo**
 
 ## Exercise: `flip_coin`, technical
 
- * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
- * Modify `README.md`: replace `richelbilderbeek` by your own username
- * Develop a function called `flip_coin`:
-   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-   * `tests/test_testing_questions.py`
- * **Get all CI scripts to pass**
+-   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
+-   Modify `README.md`: replace `richelbilderbeek` by your own username
+-   Develop a function called `flip_coin`:
+    -   `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+    -   `tests/test_testing_questions.py`
+-   **Get all CI scripts to pass**
 
 ## Break 2
 
@@ -371,61 +369,63 @@ Q: how to counter 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019
 
 . . .
 
-A: 
+A:
 
- * Xtreme programming: 'embrace change' @beck2000extreme
- * Add a scheduled monthly test on your CI script
+-   Xtreme programming: 'embrace change' @beck2000extreme
+-   Add a scheduled monthly test on your CI script
 
 ## Consider static type checking
 
- * Use static type checking, see [PEP 484](https://peps.python.org/pep-0484/)
+-   Use static type checking, see [PEP 484](https://peps.python.org/pep-0484/)
 
-```
+```         
 def reverse_string(s: str) -\> str: return s.reverse()
 ```
 
 ## Exercise: `get_digits`, form
 
- * Pair up again
- * Switch roles every 3 minutes
- * Discuss how to keep the time first
- * Person with GitHub username first in alphabet starts
- * Work on `master` branch only, share code using `git push` and `git pull`
- * Try to be **an exemplary duo** 
+-   Pair up again
+-   Switch roles every 3 minutes
+-   Discuss how to keep the time first
+-   Person with GitHub username first in alphabet starts
+-   Work on `master` branch only, share code using `git push` and `git pull`
+-   Try to be **an exemplary duo**
 
 ## Exercise: `get_digits`, technical
 
- * Create a Fork of [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
- * Modify `README.md`: replace `richelbilderbeek` by your own username
- * Develop a function called `get_digits`:
-   * `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-   * `tests/test_testing_questions.py`
- * **Get all CI scripts to pass**
+-   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
+-   Modify `README.md`: replace `richelbilderbeek` by your own username
+-   Develop a function called `get_digits`:
+    -   `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
+    -   `tests/test_testing_questions.py`
+-   **Get all CI scripts to pass**
 
 ## Solutions
 
 `get_digits` video:
 
- * [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
- * [YouTube](https://youtu.be/vmRuSWhdA7c)
+-   [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
+-   [YouTube](https://youtu.be/vmRuSWhdA7c)
 
 ## Recap
 
- * Testing helps code correctness
-   * Use the Beyoncé Rule on precious behavior
- * Testing + CI:
-   * Helps teaching
-   * Helps bug reporting
- * Testing + CI: 
-   * Detects bit rot
+-   Testing helps code correctness
+    -   Use the Beyoncé Rule on precious behavior
+-   Testing + CI:
+    -   Helps teaching
+    -   Helps bug reporting
+-   Testing + CI:
+    -   Detects bit rot
 
 ## Problems
 
- * We developed only simple algorithms
- * We only use simple data structures
- * We ignore if code is fast [*]
+-   We developed only simple algorithms
 
- * [*] vague wording on purpose
+-   We only use simple data structures
+
+-   We ignore if code is fast \[\*\]
+
+-   \[\*\] vague wording on purpose
 
 ## Finally
 
@@ -439,6 +439,6 @@ Afterwards, you can rest or ask your final questions.
 
 ## Links
 
- * [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)
- * [Hypermodern Python Cookiecutter](https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/)
- * [Scikit-HEP project info for developers](https://scikit-hep.org/developer)
+-   [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)
+-   [Hypermodern Python Cookiecutter](https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/)
+-   [Scikit-HEP project info for developers](https://scikit-hep.org/developer)
