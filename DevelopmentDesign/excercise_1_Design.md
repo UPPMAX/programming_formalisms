@@ -18,3 +18,5 @@ A short cheklist of categories
    -   such as yeailding the wrong result
    -   Causing unintended system behavior
 
+another good source 
+- Effective Methods for Software Testing: Includes Complete Guidelines, Checklists, and Templates 3rd Edition 
