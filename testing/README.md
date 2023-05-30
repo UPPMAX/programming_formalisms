@@ -12,11 +12,11 @@
 :construction: the `code layout`-ed items will become links in the future :construction:
 
 
-Title            |Download                                                                 |YouTube
------------------|-------------------------------------------------------------------------|---------------------------------------
-Testing lecture 1|[here](https://richelbilderbeek.nl/programming_formalisms_testing_1.ogv) |[here](https://youtu.be/FXdEtzl-wws)
-`is_prime`       |[here](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)|[here](https://youtu.be/jwAyMlaODfo)
-`get_digits`     |[here](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)            |[here](https://youtu.be/vmRuSWhdA7c)
+Title                        |Length   |Download                                                                |YouTube
+-----------------------------|---------|------------------------------------------------------------------------|---------------------------------------------------------
+Testing lecture 1            |10 mins  |[here](https://richelbilderbeek.nl/programming_formalisms_testing_1.ogv) |[here](https://youtu.be/FXdEtzl-wws)
+`is_prime`                   |19 mins  |[here](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)|[here](https://youtu.be/jwAyMlaODfo)
+`get_digits`                 |24 mins  |[here](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)            |[here](https://youtu.be/vmRuSWhdA7c)
 
 ## Solutions
 
