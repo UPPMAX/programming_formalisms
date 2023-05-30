@@ -1,0 +1,128 @@
+---
+title: "TDD progress"
+format: html
+editor: visual
+---
+
+Determine if a URL is present:
+
+```{r}
+#' @param x a single URL
+#' @param non_2xx_return_value what to do if the site exists but the
+#'        HTTP status code is not in the `2xx` range. Default is to return `FALSE`.
+#' @param quiet if not `FALSE`, then every time the `non_2xx_return_value` condition
+#'        arises a warning message will be displayed. Default is `FALSE`.
+#' @param ... other params (`timeout()` would be a good one) passed directly
+#'        to `httr::HEAD()` and/or `httr::GET()`
+#' @url from https://stackoverflow.com/a/52915256
+url_exists <- function(x, non_2xx_return_value = FALSE, quiet = FALSE,...) {
+
+  suppressPackageStartupMessages({
+    require("httr", quietly = FALSE, warn.conflicts = FALSE)
+  })
+
+  # you don't need thse two functions if you're alread using `purrr`
+  # but `purrr` is a heavyweight compiled pacakge that introduces
+  # many other "tidyverse" dependencies and this doesnt.
+
+  capture_error <- function(code, otherwise = NULL, quiet = TRUE) {
+    tryCatch(
+      list(result = code, error = NULL),
+      error = function(e) {
+        if (!quiet)
+          message("Error: ", e$message)
+
+        list(result = otherwise, error = e)
+      },
+      interrupt = function(e) {
+        stop("Terminated by user", call. = FALSE)
+      }
+    )
+  }
+
+  safely <- function(.f, otherwise = NULL, quiet = TRUE) {
+    function(...) capture_error(.f(...), otherwise, quiet)
+  }
+
+  sHEAD <- safely(httr::HEAD)
+  sGET <- safely(httr::GET)
+
+  # Try HEAD first since it's lightweight
+  res <- sHEAD(x, ...)
+
+  if (is.null(res$result) || 
+      ((httr::status_code(res$result) %/% 200) != 1)) {
+
+    res <- sGET(x, ...)
+
+    if (is.null(res$result)) return(NA) # or whatever you want to return on "hard" errors
+
+    if (((httr::status_code(res$result) %/% 200) != 1)) {
+      return(FALSE)
+      #if (!quiet) warning(sprintf("Requests for [%s] responded but without an HTTP status code in the 200-299 range", x))
+      #return(non_2xx_return_value)
+    }
+
+    return(TRUE)
+
+  } else {
+    return(TRUE)
+  }
+}
+
+
+is_present <- function(owner_name = "richelbilderbeek", repo_name = "conquer_chess") {
+  url <- paste0("https://github.com/", owner_name, "/", repo_name)
+  url_exists(url)  
+}
+
+testthat::expect_true(is_present(owner_name = "richelbilderbeek", repo_name = "conquer_chess"))
+testthat::expect_false(is_present(owner_name = "richelbilderbeek", repo_name = "lsrvgbaeoub"))
+```
+
+Make the table:
+
+```{r}
+#' Create a table in Tidyverse format: 
+create_table <- function(owner_names, repo_names) {
+  t <- tidyr::expand_grid(repo_name = repo_names, owner_name = owner_names, present = NA)
+  for (i in seq_len(nrow(t))) {
+    t$present[i] <- is_present(owner_name = t$owner_name[i], repo_name = t$repo_name[i])
+  }
+  t
+}
+
+
+testthat::expect_equal(3, ncol(create_table(owner_names = "richelbilderbeek", repo_names = "conquer_chess")))
+testthat::expect_equal(1, nrow(create_table(owner_names = "richelbilderbeek", repo_names = "conquer_chess")))
+
+owner_names <- c("richelbilderbeek", "tresinformal")
+repo_names <- c("conquer_chess", "drakkar", "cv")
+t <- create_table(owner_names = owner_names, repo_names = repo_names)
+testthat::expect_equal(nrow(t), 2 * 3)
+testthat::expect_equal(ncol(t), 3)
+```
+
+Now the participants:
+
+```{r}
+owner_names <- c(
+  "richelbilderbeek", 
+  "tresinformal"
+)
+repo_names <- c("is_zero", "is_even", "is_odd", "is_probability", "is_number", "are_numbers", "is_roman_number", "is_prime")
+t <- create_table(owner_names = owner_names, repo_names = repo_names)
+```
+
+Show long form:
+
+```{r}
+knitr::kable(t)
+```
+
+Show wide form:
+
+```{r}
+t_wide <- tidyr::pivot_wider(t, names_from = repo_name, values_from = present)
+knitr::kable(t_wide)
+```

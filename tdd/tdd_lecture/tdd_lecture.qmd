@@ -148,7 +148,7 @@ Done? Try exercise 3: `is_probability`.
 Done?
 
 | Exercise | Function name     | Function purpose                             |
-|-----------------|-----------------|--------------------------------------|
+|----------|-------------------|----------------------------------------------|
 | 4        | `is_number`       | Determines if an object is a number          |
 | 5        | `are_numbers`     | Determines if an object is a list of numbers |
 | S1       | `is_roman_number` | Determine if a string is a roman number      |
