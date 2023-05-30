@@ -211,8 +211,10 @@ In Python: `ruff`, Sonar, `pytype`, Black, Codacy, Pylint, Flake8, `autopep8`, P
 ## Disable a `ruff` test
 
 ```{python}
+#| echo: true
+#| eval: true
 import random
-random.randint(0, 1) # noqa: S311
+i = random.randint(0, 1) # noqa: S311
 ```
 
 You will need to defend this in a code review.
@@ -222,6 +224,8 @@ You will need to defend this in a code review.
 Q: How to test this function?
 
 ```{python}
+#| echo: true
+#| eval: true
 def print_hello():
     print("Hello world")
 ```
@@ -235,6 +239,8 @@ A: Never write untestable functions
 Q: How to make this function testable?
 
 ```{python}
+#| echo: true
+#| eval: true
 def print_hello():
     print("Hello world")
 ```
@@ -242,6 +248,8 @@ def print_hello():
 . . .
 
 ```{python}
+#| echo: true
+#| eval: true
 def get_hello_world_text():
     return "Hello world"
 ```
@@ -263,11 +271,14 @@ How to test these?
 ## Testing graphical functions
 
 Q: How to test this function thoroughly:
+
  * Plot looks pretty
  * Colors are correct
  * Trend line is drawn
 
 ```{python}
+#| echo: true
+#| eval: true
 def save_plot(filename, x_y_data):
     """Save the X-Y data as a scatter plot"""
 ```
@@ -293,7 +304,7 @@ random.seed(2)
 assert not flip_coin()
 ```
 
-## Exercise: `flip_coin``, form
+## Exercise: `flip_coin`, form
 
  * Pair up again
  * Switch roles every 3 minutes
@@ -357,7 +368,7 @@ Q: how to counter 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019
 
 (we know: impossible to counteract @benureau2018re)
 
-...
+. . .
 
 A: 
 
