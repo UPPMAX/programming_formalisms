@@ -170,7 +170,86 @@ The focus of the spiral model is to identify risk
 <image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presented by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
  
 ## RUP, Rational Unified Process
- Rational Unified Process is a software development method based on iterative object-oriented development. The idea is that you tailor the development method to fit the project, this however is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some concessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete iteration of the design steps Inception, Elaboration,Construction and Transition
+Rational Unified Process is a software development method based on iterative object-oriented development. The idea is that you tailor the development method to fit the project, this however is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some concessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete iteration of the design steps Inception, Elaboration,Construction and Transition
+
+```plantuml
+@startuml
+
+skinparam packageStyle rectangle
+skinparam packageTitleFontColor #ffffff
+skinparam packageTitleBackgroundColor #3288bd
+
+actor "Manager" as manager
+actor "Software Architect" as architect
+actor "Devloper" as dev
+actor "Deployment engineer" as depEng
+
+rectangle "Inception" as inception {
+  usecase "Define Project Vision" as defineVision
+  usecase "Create Business Case" as createBusinessCase
+  usecase "Perform Risk Assessment" as performRiskAssessment
+}
+
+rectangle "Elaboration" as elaboration {
+  usecase "Develop Use Case Model" as developUseCaseModel
+  usecase "Create Analysis Model" as createAnalysisModel
+  usecase "Design System Architecture" as designSystemArchitecture
+  usecase "Develop Iteration Plan" as developIterationPlan
+}
+
+rectangle "Construction" as construction {
+  usecase "Implement System Components" as implementSystemComponents
+  usecase "Perform Unit Testing" as performUnitTesting
+  usecase "Integrate System Components" as integrateSystemComponents
+  usecase "Perform System Testing" as performSystemTesting
+  usecase "Deploy System" as deploySystem
+}
+
+rectangle "Transition" as transition {
+  usecase "Gather User Feedback" as gatherUserFeedback
+  usecase "Release Software" as releaseSoftware
+  usecase "Perform Lessons Learned" as performLessonsLearned
+}
+
+manager -- defineVision
+manager -- createBusinessCase
+manager -- gatherUserFeedback
+manager -- performLessonsLearned
+
+architect -- performRiskAssessment
+architect -- developUseCaseModel
+architect -- createAnalysisModel
+architect -- designSystemArchitecture
+architect -- developIterationPlan
+dev -- implementSystemComponents
+dev -- performUnitTesting
+dev -- integrateSystemComponents
+depEng -- deploySystem
+depEng -- releaseSoftware
+
+defineVision --> developUseCaseModel
+createBusinessCase --> createAnalysisModel
+performRiskAssessment --> designSystemArchitecture
+
+developUseCaseModel --> createAnalysisModel
+developUseCaseModel --> designSystemArchitecture
+createAnalysisModel --> developIterationPlan
+
+designSystemArchitecture --> implementSystemComponents
+developIterationPlan --> implementSystemComponents
+implementSystemComponents --> performUnitTesting
+performUnitTesting --> integrateSystemComponents
+integrateSystemComponents --> performSystemTesting
+performSystemTesting --> deploySystem
+
+gatherUserFeedback --> releaseSoftware
+releaseSoftware --> performLessonsLearned
+
+@enduml
+```
+
+What follows next is an emphasis diagram which describes where the focus of the work should be put in at which time of the project. It is common to have a signof at the end of each phase before starting the next one.
+ 
 <p>
  <p>
    <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
