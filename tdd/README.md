@@ -3,7 +3,7 @@
 ## Course material
 
  * Lecture slides:
-   * [PDF](tdd_lecture/tdd_lecture.pdf) 
+   * [PDF](tdd_lecture.pdf) 
    * [qmd](tdd_lecture/tdd_lecture.qmd)
 
 ## Solutions
