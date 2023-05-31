@@ -46,13 +46,10 @@ jobs:
           to: pdf
           path: tdd/tdd_lecture/tdd_lecture.qmd
 
-      # ?Cannot use reticulate with quarto-actions/render@v2?
-      # Issue posted at
-      # https://github.com/quarto-dev/quarto-actions/issues/80
-      #- uses: quarto-dev/quarto-actions/render@v2
-      #  with:
-      #    to: pdf
-      #    path: testing/testing_lecture/testing_lecture.qmd
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: testing/testing_lecture/testing_lecture.qmd
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
