@@ -29,6 +29,10 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
 
  * `([names])` means that `[names]` assist or observe
 
+## Feedback to students
+
+ * [Testing](feedback/feedback_testing.md)
+
 ## Retrospective sessions
 
 Link                                                                               | Result
