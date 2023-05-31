@@ -18,6 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Remove folders that do not care about broken links
+        run: |
+          rm -rf DevelopmentDesign
+
       - uses: lycheeverse/lychee-action@v1.2.0
         with:
           fail: true
