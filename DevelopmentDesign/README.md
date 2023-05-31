@@ -171,6 +171,8 @@ The focus of the spiral model is to identify risk
  
 ## RUP, Rational Unified Process
  Rational Unified Process is a software development method based on iterative object-oriented development. The idea is that you tailor the development method to fit the project, this however is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some concessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete iteration of the design steps Inception, Elaboration,Construction and Transition
+<p>
+ <p>
    <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
    <span style="font-size:10px">image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
@@ -213,6 +215,16 @@ Deliverables:
 - Converting existing data
 - Assessments based on user experience
 
+Further reading RUP and examples of applied RUP:
+
+* The Rational Unified Process--An Introduction., Kruchten, Philippe. (2000).
+ <br/> https://www.researchgate.net/publication/220018149_The_Rational_Unified_Process--An_Introduction 
+<br/>the links are are outaded as the sale of RUP to IBM in 2003 his references lead to DevOps (IBMs newest development model) 
+ * Real world example RUP as used by volvo, Åsa Nordin( Master Thesis, Trollhättan 2003):
+  <br/> https://www.diva-portal.org/smash/get/diva2:215156/FULLTEXT01.pdf
+ * Using Rational Unified Process in an SME – A Case Study,  Hansen et. al (springer 2005)
+  <br/> https://www.researchgate.net/publication/221045898_Using_Rational_Unified_Process_in_an_SME_-_A_Case_Study 
+
 ## RAD Rapid Application Development
 Using Prototyping and minimal design to generate fast development cycles, this has the disadvantage to generating very little structure and for larger or more complex systems the risk of derailing projects or unmaintainable solutions are high.
 
@@ -232,10 +244,8 @@ Using Prototyping and minimal design to generate fast development cycles, this h
 - The technical architecture is unclear and much of the technology will be used for the first time within the project.
 - Technical requirements are tight for the equipment to be used.
 
-further reading:
-
- * `https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_`
-
+further reading for RAD (Rapid Aplication Development):
+ * https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
 
 ## eXtreme Programming
 <image src="./img/Extreme_Programming_bgw.png">
