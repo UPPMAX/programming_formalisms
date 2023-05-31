@@ -174,6 +174,7 @@ Rational Unified Process is a software development method based on iterative obj
 
 ```plantuml
 @startuml
+ !theme blueprint 
 
 skinparam packageStyle rectangle
 skinparam packageTitleFontColor #ffffff
