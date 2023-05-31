@@ -215,10 +215,15 @@ Deliverables:
 - Converting existing data
 - Assessments based on user experience
 
-Further reading RUP:
- 
- * Real world example RUP as used by volvo Master Thesis of Åsa Nordin(2003):
+Further reading RUP and examples of applied RUP:
+
+* The Rational Unified Process--An Introduction., Kruchten, Philippe. (2000).
+ <br/> https://www.researchgate.net/publication/220018149_The_Rational_Unified_Process--An_Introduction 
+<br/>the links are are outaded as the sale of RUP to IBM in 2003 his references lead to DevOps (IBMs newest development model) 
+ * Real world example RUP as used by volvo, Åsa Nordin( Master Thesis, Trollhättan 2003):
   <br/> https://www.diva-portal.org/smash/get/diva2:215156/FULLTEXT01.pdf
+ * Using Rational Unified Process in an SME – A Case Study,  Hansen et. al (springer 2005)
+  <br/> https://www.researchgate.net/publication/221045898_Using_Rational_Unified_Process_in_an_SME_-_A_Case_Study 
 
 ## RAD Rapid Application Development
 Using Prototyping and minimal design to generate fast development cycles, this has the disadvantage to generating very little structure and for larger or more complex systems the risk of derailing projects or unmaintainable solutions are high.
