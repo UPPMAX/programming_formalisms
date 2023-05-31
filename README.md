@@ -24,7 +24,7 @@ Wed |9-12        |JN      (LE, RB) | [Social coding, pair programming as  a tool
 Wed |13-16       |RB + JN (LE)     | [Testing](tdd/README.md), including a Reflection by JN from 15:15-15:45                                                                         |[PDF](testing/testing_lecture.pdf)
 Thu |9-12        |RB               | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)           |[PDF](algorithms/algorithms_lecture.pdf)
 Thu |13-16       |RB + JN          | [Data structures](tdd/README.md), including a Reflection by JN from 15:15-15:45                                                                 |[PDF](data_structures/data_structures_lecture.pdf)
-Fri |9-12        |LE      (RB)     | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)                     |[PDF](https://github.com/UPPMAX/programming_formalisms/DevelopmentDesign/Modular_Programming.pdf)
+Fri |9-12        |LE      (RB)     | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/DevelopmentDesign/Modular_Programming.pdf)                     |[PDF](DevelopmentDesign/Modular_Programming.pdf)
 Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45                                                           |[PDF](optimisation/optimisation_lecture.pdf)
 
  * `([names])` means that `[names]` assist or observe
