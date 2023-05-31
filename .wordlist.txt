@@ -460,6 +460,36 @@ NYT
 nucleotides
 Wunsch
 openregulatory
+invariants
+sutter
+fowler
+WB
+aspnet
+dotnet
+enduml
+kb
+laravel
+libris
+microsoft
+mvc
+rubyonrails
+se
+startuml
+Hyperfocus
+codelabs
+FULLTEXT
+IBMs
+Kruchten
+Nordin
+SME
+Trollhättan
+cfm
+pdf
+processMain
+researchgate
+springer
+volvo
+Åsa
 
 
 
