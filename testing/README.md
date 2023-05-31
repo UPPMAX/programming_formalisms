@@ -3,8 +3,8 @@
 ## Course material
 
  * Lecture:
-  * `testing_lecture.pdf`
-  * `[.qmd](testing_lecture/testing_lecture.qmd)
+  * [.pdf](testing_lecture.pdf)
+  * [.qmd](testing_lecture/testing_lecture.qmd)
  * GitHub repository to Fork: [https://github.com/richelbilderbeek/programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
   * File to work in: [src/pftesting_richelbilderbeek/testing_questions.py](https://github.com/richelbilderbeek/programming_formalisms_testing/blob/master/src/pftesting_richelbilderbeek/testing_questions.py)
   * Solutions of TDD exercises, now with within testing framework: [src/pftesting_richelbilderbeek/tdd_solutions.py](https://github.com/richelbilderbeek/programming_formalisms_testing/blob/master/src/pftesting_richelbilderbeek/tdd_solutions.py)
