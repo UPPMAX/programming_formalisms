@@ -4,9 +4,13 @@ author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
 from: markdown+emoji
+bibliography: algorithms_lecture.bib
+csl: vancouver.csl
 ---
 
-## Algorithms
+## Algorithms ![](CC-BY-NC-SA.png)
+
+<https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd>
 
 ![](programming_formalism_course.png)
 
@@ -14,23 +18,25 @@ from: markdown+emoji
 
 How do I write functions \[1\] that are:
 
--   use to use
+-   easy to use
 -   correct
 -   fast \[2\]
 
 References;
 
--   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is
-      'a step-by-step procedure for solving a problem or accomplishing some end' \[3\],
+-   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' \[3\],
 -   \[2\] pick any vague definition
--   \[3\] [https://www.merriam-webster.com/dictionary/algorithm](https://www.merriam-webster.com/dictionary/algorithm)
+-   \[3\] <https://www.merriam-webster.com/dictionary/algorithm>
 
 ## What is a good function?
 
 A good function:
 
+. . .
+
 -   Is documented
 -   Has a clear name
+-   Has a clear interface
 -   Does one thing correctly
 -   Is tested
 -   Gives clear error messages
@@ -42,6 +48,12 @@ A good function:
 -   [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
 -   [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts)
 -   ([PEP 20: The Zen of Python](https://peps.python.org/pep-0020/))
+
+## Design by contract
+
+![](design_by_contract.png)
+
+> [Source: Wikipedia](https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg)
 
 ## A good function is documented
 
@@ -72,6 +84,28 @@ assert sort_2.__doc__ is not None
 
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
+## Examples of bad function names?
+
+Could you give examples of bad function names?
+
+. . .
+
+-   `calculate`: calculates what?
+
+. . .
+
+-   `calc_bfgt`: calculates what?? 
+
+. . .
+
+-   `prime`: a prime number is a data type. What does this function do?
+
+. . .
+
+-   `needleman_wunch`: this is a technique to get a DNA alignment. 
+
+. . .
+
 ## Example 1
 
 Imagine two DNA sequences:
@@ -86,10 +120,8 @@ How would you call the algorithm that detects the location of the `*` (but not o
 
 ## Solutions 1
 
--   `get_first_mismatch_pos`
--   `get_first_mismatch_locus` :sunglasses:
--   `find_first_mismatch_pos`
--   `find_first_mismatch_locus`
+-   `get_first_mismatch_pos`, `get_first_mismatch_locus`, 
+    `find_first_mismatch_pos`, `find_first_mismatch_locus`
 -   you answer that ...
     1.  starts with a verb
     2.  is as English as possible
@@ -109,10 +141,8 @@ How would you call the algorithm that detects all the locations of the `*`s?
 
 ## Solutions 2
 
--   `find_mismatch_positions`
--   `find_mismatch_loci`
--   `get_mismatch_positions`
--   `get_mismatch_loci` :sunglasses:
+-   `find_mismatch_positions`, `find_mismatch_loci`, `get_mismatch_positions`,
+    `get_mismatch_loci`
 -   you answer that ...
     1.  starts with a verb
     2.  is as English as possible
@@ -136,12 +166,8 @@ ATACC-GGGTTT
 
 ## Solutions 3
 
--   `align_seqs`
--   `align_sequences`
--   `align_dna_sequences`
--   `align_dna_seqs` :sunglasses:
--   `calc_aligned_seqs`
--   `get_aligned_seqs`
+-   `align_seqs`, `align_sequences`, `align_dna_sequences`, 
+    `align_dna_seqs`, `calc_aligned_seqs`, `get_aligned_seqs`
 -   you answer that ...
     1.  starts with a verb
     2.  is as English as possible
@@ -151,6 +177,105 @@ ATACC-GGGTTT
 
 -   [F.1: "Package" meaningful operations as carefully named functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-package)
 -   [Use verbs, strive for names that are concise and meaningful](https://style.tidyverse.org/functions.html#naming)
+
+## A function has a clear interface 1/3
+
+Comment on this [function from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/):
+
+```{python}
+#| echo: true
+#| eval: true
+i=2
+ 
+def Prime(no, i):
+    if no == i:
+        return True
+    elif no % i == 0:
+        return False
+    return Prime(no, i + 1)
+```
+
+. . .
+
+Function names start with lowercase character, 
+name does not start with a verb, 
+input is not checked, 
+clumsy interface:
+
+```{python}
+#| echo: true
+#| eval: true
+assert Prime(2, 2)
+assert Prime(3, 2)
+assert Prime(3, 3) # Nothing stops me!
+assert not Prime(4, 2)
+assert Prime(5, 2)
+```
+
+
+*The* classic on refactoring is @fowler2018refactoring. 
+
+## A function has a clear interface 2/3
+
+Comment on this function again:
+
+```{python}
+#| echo: true
+#| eval: true
+def is_prime(no, i = 2):
+    assert isinstance(no, int)
+    assert isinstance(i, int)
+    if no == i:
+        return True
+    elif no % i == 0:
+        return False
+    return is_prime(no, i + 1)
+```
+
+. . .
+
+ * Clumsy interface:
+
+```{python}
+#| echo: true
+#| eval: true
+assert is_prime(2)
+assert is_prime(2, 2) # Nothing stops me!
+assert is_prime(3)
+assert not is_prime(4)
+assert is_prime(5)
+```
+
+## A function has a clear interface 3/3
+
+Comment on this function again:
+
+```{python}
+#| echo: true
+#| eval: true
+def is_prime(no):
+    if not isinstance(no, int):
+        raise TypeError("'no' must be integer")
+    return is_prime_internal(no)
+
+def is_prime_internal(no, i = 2):
+    assert isinstance(no, int)
+    assert isinstance(i, int)
+    if no == i:
+        return True
+    elif no % i == 0:
+        return False
+    return is_prime_internal(no, i + 1)
+  
+assert is_prime(2)
+assert is_prime(3)
+assert not is_prime(4)
+assert is_prime(5)
+```
+
+. . .
+
+I think it is OK, please correct me :-)
 
 ## A function does one thing correctly
 
@@ -211,8 +336,12 @@ The function `get_first_mismatch_locus` detects the first mismatch locus. Which 
 
 ## Solutions 1
 
+
 ::: columns
 ::: {.column width="50%"}
+
+:worm:
+
 ```{python}
 #| echo: true
 #| eval: false
@@ -230,6 +359,9 @@ assert get_first_mismatch_locus(
 :::
 
 ::: {.column width="50%"}
+
+:worm:
+
 ```{r}
 #| echo: true
 #| eval: false
@@ -271,6 +403,9 @@ The function `get_mismatch_loci` detects the mismatched loci. Which tests would 
 
 ::: columns
 ::: {.column width="50%"}
+
+:worm:
+
 ```{python}
 #| echo: true
 #| eval: false
@@ -288,6 +423,9 @@ assert get_mismatch_loci(
 :::
 
 ::: {.column width="50%"}
+
+:worm:
+
 ```{r}
 #| echo: true
 #| eval: false
@@ -335,6 +473,9 @@ Which tests would you write?
 
 ::: columns
 ::: {.column width="50%"}
+
+:worm:
+
 ```{python}
 #| echo: true
 #| eval: false
@@ -359,6 +500,9 @@ assert align_dna_seqs(
 :::
 
 ::: {.column width="50%"}
+
+:worm:
+
 ```{r}
 #| echo: true
 #| eval: false
@@ -399,14 +543,6 @@ A good function:
 -   Is documented
 -   Fast iff needed
 
-## Gives clear error messages
-
-Design by Contract: check input
-
-![](design_by_contract.png)
-
-> Source: [https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg](https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg)
-
 ## The role of `assert` within functions
 
 Within functions, `assert` is used for:
@@ -415,33 +551,59 @@ Within functions, `assert` is used for:
 -   to do things in debug mode only
 -   to document assumptions a developer makes
 
+## `assert` differs between debug and release
+
+```
+$ cat assert.py 
+assert 1 == 2
+
+$ python -O assert.py 
+
+$ python assert.py 
+Traceback (most recent call last):
+  File "/home/richel/assert.py", line 1, in <module>
+    assert 1 == 2
+AssertionError
+```
+
 ## `assert` as a stub
 
+:worm:
+
 ```{python}
+#| echo: true
+#| eval: false
 def align(dna_sequences):
     """Align the DNA sequences"""
-    assert len(dna_sequences) >= 2
     assert len(dna_sequences) == 2 # TODO
 ```
 
 ## `assert` in debug mode
 
 ```{python}
+#| echo: true
+#| eval: false
 def align_two_dna_sequences(dna_sequences):
     """Internal function to align two DNA sequences"""
     assert len(dna_sequences) == 2 # TODO
 ```
 
+Superior to documentation, as it cannot be ignored.
+
+'Assert liberally to document internal assumptions and invariants' 
+@sutter2004cpp chapter 68.
+
 ## `assert` to document assumptions a developer makes
 
 ```{python}
+#| echo: true
+#| eval: false
 def align_two_dna_sequences(dna_sequences):
     """Align the DNA sequences"""
     # ....
     results = ["AAAA", "AAC-"] # Mock
     assert len(results[1]) == len(results[2])
 ```
-
 
 ## Clear error messages
 
