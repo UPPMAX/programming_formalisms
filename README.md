@@ -28,6 +28,8 @@ Fri |9-12        |LE      (RB)     | [Modular programming](https://github.com/UP
 Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45                                                           |[PDF](optimisation/optimisation_lecture.pdf)
 
  * `([names])` means that `[names]` assist or observe
+ * Regular course room is at the room sent around
+ * **Thursday meeting is at [https://uu-se.zoom.us/j/7093465705](https://uu-se.zoom.us/j/7093465705), with passcode 42**
 
 ## Feedback to students
 

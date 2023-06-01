@@ -4,13 +4,13 @@
  * Richel
  * Goals: 
    * Theory: good algorithms
-   * Students develop together in groups of 4
-   * Form: group size: 4, use topic branches, use CI scripts, use code review
+   * Students develop together on big project
+   * Form: use feature branches, use CI scripts, use code review
 
 ## 9:00-9:45 RB
 
  * Goals: 
-   * Students can work in two pairs on one shared repo with `master`, `develop`, topic
+   * Theory: algorithms
 
 When|What
 ----|-------------------------
@@ -21,8 +21,7 @@ When|What
 ## 10:00-10:45 RB
 
  * Goals: 
-   * Students can do a PR
-   * Students can give a code review
+   * Start big project
 
 When |What
 -----|-------------------------
