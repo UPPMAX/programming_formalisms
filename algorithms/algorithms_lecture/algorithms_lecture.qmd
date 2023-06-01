@@ -1,7 +1,7 @@
 ---
 title: "Algorithms"
 author: "Richèl Bilderbeek"
-format: revealjs
+format: pdf
 editor: visual
 from: markdown+emoji
 bibliography: algorithms_lecture.bib
@@ -94,7 +94,7 @@ Could you give examples of bad function names?
 
 . . .
 
--   `calc_bfgt`: calculates what?? 
+-   `calc_bfgt`: calculates what??
 
 . . .
 
@@ -102,7 +102,7 @@ Could you give examples of bad function names?
 
 . . .
 
--   `needleman_wunch`: this is a technique to get a DNA alignment. 
+-   `needleman_wunch`: this is a technique to get a DNA alignment.
 
 . . .
 
@@ -120,8 +120,7 @@ How would you call the algorithm that detects the location of the `*` (but not o
 
 ## Solutions 1
 
--   `get_first_mismatch_pos`, `get_first_mismatch_locus`, 
-    `find_first_mismatch_pos`, `find_first_mismatch_locus`
+-   `get_first_mismatch_pos`, `get_first_mismatch_locus`, `find_first_mismatch_pos`, `find_first_mismatch_locus`
 -   you answer that ...
     1.  starts with a verb
     2.  is as English as possible
@@ -141,8 +140,7 @@ How would you call the algorithm that detects all the locations of the `*`s?
 
 ## Solutions 2
 
--   `find_mismatch_positions`, `find_mismatch_loci`, `get_mismatch_positions`,
-    `get_mismatch_loci`
+-   `find_mismatch_positions`, `find_mismatch_loci`, `get_mismatch_positions`, `get_mismatch_loci`
 -   you answer that ...
     1.  starts with a verb
     2.  is as English as possible
@@ -166,8 +164,7 @@ ATACC-GGGTTT
 
 ## Solutions 3
 
--   `align_seqs`, `align_sequences`, `align_dna_sequences`, 
-    `align_dna_seqs`, `calc_aligned_seqs`, `get_aligned_seqs`
+-   `align_seqs`, `align_sequences`, `align_dna_sequences`, `align_dna_seqs`, `calc_aligned_seqs`, `get_aligned_seqs`
 -   you answer that ...
     1.  starts with a verb
     2.  is as English as possible
@@ -197,10 +194,7 @@ def Prime(no, i):
 
 . . .
 
-Function names start with lowercase character, 
-name does not start with a verb, 
-input is not checked, 
-clumsy interface:
+Function names start with lowercase character, name does not start with a verb, input is not checked, clumsy interface:
 
 ```{python}
 #| echo: true
@@ -212,8 +206,7 @@ assert not Prime(4, 2)
 assert Prime(5, 2)
 ```
 
-
-*The* classic on refactoring is @fowler2018refactoring. 
+*The* classic on refactoring is @fowler2018refactoring.
 
 ## A function has a clear interface 2/3
 
@@ -234,7 +227,7 @@ def is_prime(no, i = 2):
 
 . . .
 
- * Clumsy interface:
+-   Clumsy interface:
 
 ```{python}
 #| echo: true
@@ -279,32 +272,30 @@ I think it is OK, please correct me :-)
 
 ## A function does one thing correctly
 
-## Example 1
+[F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical), hence don't:
 
-Imagine two DNA sequences:
+```{python}
+#| echo: true
+#| eval: true
+def do_x_and_y(): pass
 
-```         
-AAACCCGGGTTT
-ATACCGGGTTT
+do_x_and_y()
 ```
 
-How would you call the algorithm that aligns the sequences and returns the mismatches?
+Do:
 
-```         
-AAACCCGGGTTT
-ATACC-GGGTTT
- *   *
+```{python}
+#| echo: true
+#| eval: true
+def do_x(): pass
+
+def do_y(): pass
+
+do_x()
+do_y()
 ```
 
-## Solution 1
-
--   ~~`align_and_collect_mismatched_loci`~~
-
-☹️ You should not write a function like this.
-
--   [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical)
-
-You rarely need `and` in a function name.
+You rarely need `and` in a function name. Possible exception: mean and standard deviation
 
 ## What is a good function?
 
@@ -328,135 +319,6 @@ Imagine two DNA sequences:
 
 ```         
 AAACCCGGGTTT
-ATACCCGGGTAT
- *        x
-```
-
-The function `get_first_mismatch_locus` detects the first mismatch locus. Which tests would you write?
-
-## Solutions 1
-
-
-::: columns
-::: {.column width="50%"}
-
-:worm:
-
-```{python}
-#| echo: true
-#| eval: false
-assert get_first_mismatch_locus(
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT"
-  ) == 1
-assert get_first_mismatch_locus( 
-    { 
-      "AAACCCGGGTTT", 
-      "ATACCCGGGTAT" 
-    } 
-  ) == 1
-```
-:::
-
-::: {.column width="50%"}
-
-:worm:
-
-```{r}
-#| echo: true
-#| eval: false
-expect_equal(
-  1, 
-  get_first_mismatch_locus(
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT"
-  )
-)
-expect_equal(
-  1, 
-  get_first_mismatch_locus(
-    c(
-      "AAACCCGGGTTT", 
-      "ATACCCGGGTAT"
-    )
-  )
-)
-```
-:::
-:::
-
-:monocle_face: The different tests *signal* different expectations. This should end up in the documentation and/or error messages.
-
-## Example 2
-
-Imagine two DNA sequences:
-
-```         
-AAACCCGGGTTT
-ATACCCGGGTAT
- *        *
-```
-
-The function `get_mismatch_loci` detects the mismatched loci. Which tests would you write?
-
-## Solutions 2
-
-::: columns
-::: {.column width="50%"}
-
-:worm:
-
-```{python}
-#| echo: true
-#| eval: false
-assert get_mismatch_loci(
-  "AAACCCGGGTTT", 
-  "ATACCCGGGTAT"
-  ) == {1, 10}
-assert get_mismatch_loci( 
-  { 
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT" 
-  } 
-) == {1, 10}
-```
-:::
-
-::: {.column width="50%"}
-
-:worm:
-
-```{r}
-#| echo: true
-#| eval: false
-expect_equal(
-  get_mismatch_loci(
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT"
-  ),
-  c(1, 10)
-)
-expect_equal(
-  get_mismatch_loci(
-    c(
-      "AAACCCGGGTTT", 
-      "ATACCCGGGTAT"
-    )
-  ),
-  c(1, 10)
-)
-```
-:::
-:::
-
-:monocle_face: The different tests *signal* different expectations. This should end up in the documentation and/or error messages.
-
-## Example 3
-
-Imagine two DNA sequences:
-
-```         
-AAACCCGGGTTT
 ATACCGGGTTT
 ```
 
@@ -469,12 +331,11 @@ ATACC-GGGTTT
 
 Which tests would you write?
 
-## Solutions 3
+## Solutions 1
 
 ::: columns
 ::: {.column width="50%"}
-
-:worm:
+🪱
 
 ```{python}
 #| echo: true
@@ -500,8 +361,7 @@ assert align_dna_seqs(
 :::
 
 ::: {.column width="50%"}
-
-:worm:
+🪱
 
 ```{r}
 #| echo: true
@@ -553,7 +413,7 @@ Within functions, `assert` is used for:
 
 ## `assert` differs between debug and release
 
-```
+```         
 $ cat assert.py 
 assert 1 == 2
 
@@ -568,7 +428,7 @@ AssertionError
 
 ## `assert` as a stub
 
-:worm:
+🪱
 
 ```{python}
 #| echo: true
@@ -590,8 +450,7 @@ def align_two_dna_sequences(dna_sequences):
 
 Superior to documentation, as it cannot be ignored.
 
-'Assert liberally to document internal assumptions and invariants' 
-@sutter2004cpp chapter 68.
+'Assert liberally to document internal assumptions and invariants' @sutter2004cpp chapter 68.
 
 ## `assert` to document assumptions a developer makes
 
@@ -601,42 +460,11 @@ Superior to documentation, as it cannot be ignored.
 def align_two_dna_sequences(dna_sequences):
     """Align the DNA sequences"""
     # ....
-    results = ["AAAA", "AAC-"] # Mock
+    results = ["AAAA", "AAC-"] # Should be result of calculation
     assert len(results[1]) == len(results[2])
 ```
 
-## Clear error messages
-
-## Overview
-
--   **Types of algorithms**
--   Common data structures
--   Big O complexity
--   Parallelisms
-
-## Types of algorithms
-
-::: columns
-::: {.column width="50%"}
--   Divide and conquer algorithms
--   Brute force algorithms
--   Randomized algorithms
--   Greedy algorithms
--   Recursive algorithms
--   Backtracking algorithms
--   Dynamic programming algorithms
-:::
-
-::: {.column width="50%"}
--   Iterative versus recursive
--   Exact or approximate
--   Deterministic or non-deterministic
--   Single-thread, multi-threaded, distributed
--   (Digital or quantum)
-:::
-:::
-
-## Recursive versus iterative
+## Recursive algorithms
 
 -   Iterative: use a for-loop
 -   Recursive: a function that calls itself
@@ -727,88 +555,15 @@ expect_equal(
 :::
 :::
 
-## Divide-and-conquer algorithms
+## Recap
 
--   Divide a complex problem in many simpler problems
--   Solve the simpler problems
--   Combine the results
+-   Function design is hard
+-   Documentation helps
+-   TDD helps
+-   assert helps in debug mode only
 
 ## Appendix
 
-Ruthless copy-paste from [here](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918), thanks Quarto for **not** copy-pasting formatted HTML :-/
+## Links
 
-## Introduction to algorithms & datastructures
-
-Computer science is the study of how computers operate on information. Both information and operations can be structured in different ways, which gives them different properties and makes them more or less useful for different purposes.
-
-## Lesson plan
-
-Storing things Searching for things Sorting lists BLAST parallelism
-
-Why these five topics? The first three exemplify how much your choice of data structure matters, and they're simple and general enough that they're accessible for a brief course such as this. BLAST is included as an introduction to a practical algorithm which has become a theme for countless variations. Parallel algorithms require special consideration beyond the usual.
-
-But first some fundamentals What is an algorithm and what is a data structure?
-
-An algorithm is not a program. A program implements algorithms on a practical level. Algorithms are mathematics. As such, they are discovered and not invented, and therefore not patentable unless you're a patent trolling megacorporation.
-
-Moore's Law, which famously says that the number of transistors on a chip will double every other year, is usually touted as the explanation for why modern computing is such a powerful tool. This is a misrepresentation
-
-Links to an external site..
-
-Algorithmic improvements superimposed on Moore's Law Classification of algorithms Iterative or recursive
-
-Algorithms predicated on repeating steps either through recursion (self-referencing functions) or iteration (loops). Most algorithms naturally fall in one category, but both categories are computationally equivalent (i.e. there is always a recursive variant of an iterative algorithm and vice-versa).
-
-See exercise: converting a recursive algorithm to an iterative Serial, parallel, distributed
-
-Traditionally, algorithms are expressed as a single thread of logical steps. This works perfectly well for designing programs for single-core computers, but modern machines have multiple cores and full performance is only reached through parallelization. Unless otherwise specified, parallel algorithms assume that all data is available equally everywhere. Distributed algorithms are capable of working with data that is... distributed... on different machines. Deterministic or non-deterministic
-
-For a given input, the execution of deterministic algorithms always yield the same result via the same steps. Non-deterministic algorithms include an element of randomness and will not, in general, generate exact repeatable results. An example of a non-deterministic step in an algorithm is randomly distributing points in a space to generate a mesh, or choosing random elements from a set.
-
-Because of the possibility of race conditions, parallel algorithms may be inadvertently non-deterministic. In computer science jargon, this is known as "fun". Exact or approximate
-
-Algorithms that never reach an exact result are called approximate algorithms. These can be far faster than an exact algorithm for the same problem, yet yield an equally useful result. Much of the advances in computational methods in the last 20 years have come about due to the discovery of better approximate algorithms. Digital or quantum
-
-Quantum algorithms rely on qubits and are well beyond the scope of this instructor's skill set. Let's just stick with ordinary digital computer science, shall we? More classification!
-
-```         
-Divide and conquer algorithms – divide the problem into smaller subproblems of the same type; solve those smaller problems, and combine those solutions to solve the original problem.
-Brute force algorithms – try all possible solutions until a satisfactory solution is found.
-Randomized algorithms – use a random number at least once during the computation to find a solution to the problem.
-Greedy algorithms – find an optimal solution at the local level with the intent of finding an optimal solution for the whole problem.
-Recursive algorithms – solve the lowest and simplest version of a problem to then solve increasingly larger versions of the problem until the solution to the original problem is found.
-Backtracking algorithms – divide the problem into subproblems, each which can be attempted to be solved; however, if the desired solution is not reached, move backwards in the problem until a path is found that moves it forward.
-Dynamic programming algorithms – break a complex problem into a collection of simpler subproblems, then solve each of those subproblems only once, storing their solution for future use instead of re-computing their solutions.
-```
-
-Algorithms
-
-How do computer scientists develop and analyse algorithms systematically?
-
-One of their main tools is complexity analysis --- simply: how does the work required to solve a problem change with the size of the problem asymptotically?
-
-Asymptotically means "for very big problems". This also means that, in practice, computer science can lead you astray.
-
-An example: the recursive Fibonacci function
-
-F(n): if n=1 return 1 if n=2 return 1 return F(n-1) + F(n-2)
-
-For N=1 or 2, the function returns after just one or two instructions. But for N=3, it needs like seven instructions. For N=4, it'll need twelve. Here is how the work grows: n work 3 7 4 12 5 22 6 37 7 62 8 102
-
-The required amount of work for that algorithm grows faster than the Fibonacci sequence! As the plot below shows, it's an exponential increase! This is awful!
-
-cost of recursive fibonacci
-
-Here is another example: finding the largest number in a random list
-
-findLargest(list): largest = -1 for each item in list: if item \> largest: set largest=item return largest
-
-Here, we clearly see that we iterate over each item in the list. The number of instructions executed for a list of size N is 2 + 2\*N+k, for some number k\<N that depends on how unordered the list is. For big N, the constant term (2) is completely insignificant.
-
-In the study of algorithms, "big O notation" is often used to describe the asymptotical behaviour of an algorithm. In big O notation, the k is also dropped, because it is less than N, and the factor of 2 is dropped as well. The complexity of the findLargest algorithm is O(N).
-
-Actually, this is just the time complexity of the algorithm. But the number of execution steps may not be the only value of interest! Suppose you're interested in how *big* a problem becomes in memory?
-
-Welcome to space complexity. Instead of the number of steps, just count the number of variables, size of arrays, etc. But also consider the overhead of a function call. Here is a great resource for complexity of common algorithms
-
--   [many algorithms](https://www.bigocheatsheet.com)
+-   [Course materials of 2022](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918).
