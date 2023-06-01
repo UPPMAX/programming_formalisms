@@ -8,7 +8,7 @@ from: markdown+emoji
 
 ## Data structures ![](CC-BY-NC-SA.png)
 
-<https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/data_structures_lecture.qmd>
+<https://github.com/UPPMAX/programming_formalisms/blob/main/data_structures/data_structures_lecture/data_structures_lecture.qmd>
 
 ![](programming_formalism_course.png)
 
@@ -102,19 +102,17 @@ Q: What is a good class?
 
 . . .
 
-A: 
+A:
 
- * guarantees its stored data is valid, 
-   e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
- * the quality requirements for a function, 
-   among others a good interface
- * writing a design, documentation and tests all help
+-   guarantees its stored data is valid, e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
+-   the quality requirements for a function, among others a good interface
+-   writing a design, documentation and tests all help
 
 ## Class anatomy
 
- * `__init__`: instantiation operation (a.k.a. 'constructor')
- * Private variables: what it secretly is
- * Methods: how to work on it
+-   `__init__`: instantiation operation (a.k.a. 'constructor')
+-   Private variables: what it secretly is
+-   Methods: how to work on it
 
 ```{python}
 #| echo: false
@@ -139,10 +137,9 @@ assert a.get_str() == "ACGT"
 
 ## Private variables are a social convention
 
-Use of `_` before the name of a private variable
-is a social convention!
+Use of `_` before the name of a private variable is a social convention!
 
-```
+```         
 self._sequence = sequence # convention
 ```
 
@@ -157,7 +154,31 @@ assert a.get_str() == "XXX"
 
 Some other programming languages offer stronger guarantees.
 
+## Inheritance and polymorphism
+
+> C++ is a horrible language. It's made more horrible by the fact that a lot of substandard programmers use it, to the point where it's much much easier to generate total and utter crap with it.
+>
+> Linus Torvalds, 2007-09-06
+
+## Inheritance and polymorphism
+
+-   Can create class hierarchies
+    -   'All Animal objects can make a sounds'
+-   Easy to abuse, hard to use correctly
+-   Design Patterns are known to work well
+
+## Design Patterns
+
+-   Named proven-to-work class hierarchies
+-   Examples:
+    -   Singleton: make sure an object exists once
+    -   Strategy: multiple ways to the same thing
+    -   Memento: allow for undo functionality
+-   Classic: [the Gang of Four book](https://en.wikipedia.org/wiki/Design_Patterns)
+
 ## Class design
 
- * [Python classes](https://docs.python.org/3/tutorial/classes.html)
- * [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
+-   [Python classes](https://docs.python.org/3/tutorial/classes.html)
+-   [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
+
+## Recap

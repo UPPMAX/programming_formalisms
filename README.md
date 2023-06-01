@@ -39,10 +39,10 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
 
 Link                                                                               | Result
 -----------------------------------------------------------------------------------|------------------------------
-[Day 1 retro](https://miro.com/app/board/uXjVMGFbuDc=/?share_link_id=331302708095) |[TODO](https://github.com/UPPMAX/programming_formalisms/issues/9)
-[Day 2 retro](https://miro.com/app/board/uXjVMGFbuPc=/?share_link_id=378898143874) |[TODO](https://github.com/UPPMAX/programming_formalisms/issues/9)
-[Day 3 retro](https://miro.com/app/board/uXjVMGFbuLA=/?share_link_id=773461339385) |[PDF](retrospects/day_3.pdf)
-[Day 4 retro](https://miro.com/app/board/uXjVMGFbuUY=/?share_link_id=502732078544) |.
+[Day 1 retro](https://miro.com/app/board/uXjVMGFbuDc=/?share_link_id=331302708095) |[PDF](retrospects/retro_day1.pdf)
+[Day 2 retro](https://miro.com/app/board/uXjVMGFbuPc=/?share_link_id=378898143874) |[PDF](retrospects/retro_day2.pdf)
+[Day 3 retro](https://miro.com/app/board/uXjVMGFbuLA=/?share_link_id=773461339385) |[PDF](retrospects/retro_day3.pdf)
+[Day 4 retro](https://miro.com/app/board/uXjVMGFbuUY=/?share_link_id=502732078544) |[PDF](retrospects/retro_day4.pdf)
 [Day 5 retro](https://miro.com/app/board/uXjVMGFbuW8=/?share_link_id=125486410202) |.
 
 ## Files

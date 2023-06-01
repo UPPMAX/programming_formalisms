@@ -8,6 +8,7 @@ bibliography: algorithms_lecture.bib
 csl: vancouver.csl
 ---
 
+
 ## Algorithms ![](CC-BY-NC-SA.png)
 
 <https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd>
@@ -57,6 +58,7 @@ A good function:
 
 ## A good function is documented
 
+
 ```{python}
 #| echo: true
 #| eval: true
@@ -75,6 +77,7 @@ def sort_2(x):
 assert sort_1.__doc__ is not None
 assert sort_2.__doc__ is not None
 ```
+
 
 ## A good function has a clear name
 
@@ -179,6 +182,7 @@ ATACC-GGGTTT
 
 Comment on this [function from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/):
 
+
 ```{python}
 #| echo: true
 #| eval: true
@@ -192,9 +196,11 @@ def Prime(no, i):
     return Prime(no, i + 1)
 ```
 
+
 . . .
 
 Function names start with lowercase character, name does not start with a verb, input is not checked, clumsy interface:
+
 
 ```{python}
 #| echo: true
@@ -206,11 +212,13 @@ assert not Prime(4, 2)
 assert Prime(5, 2)
 ```
 
+
 *The* classic on refactoring is @fowler2018refactoring.
 
 ## A function has a clear interface 2/3
 
 Comment on this function again:
+
 
 ```{python}
 #| echo: true
@@ -225,9 +233,11 @@ def is_prime(no, i = 2):
     return is_prime(no, i + 1)
 ```
 
+
 . . .
 
 -   Clumsy interface:
+
 
 ```{python}
 #| echo: true
@@ -239,9 +249,11 @@ assert not is_prime(4)
 assert is_prime(5)
 ```
 
+
 ## A function has a clear interface 3/3
 
 Comment on this function again:
+
 
 ```{python}
 #| echo: true
@@ -266,6 +278,7 @@ assert not is_prime(4)
 assert is_prime(5)
 ```
 
+
 . . .
 
 I think it is OK, please correct me :-)
@@ -273,6 +286,7 @@ I think it is OK, please correct me :-)
 ## A function does one thing correctly
 
 [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical), hence don't:
+
 
 ```{python}
 #| echo: true
@@ -282,7 +296,9 @@ def do_x_and_y(): pass
 do_x_and_y()
 ```
 
+
 Do:
+
 
 ```{python}
 #| echo: true
@@ -294,6 +310,7 @@ def do_y(): pass
 do_x()
 do_y()
 ```
+
 
 You rarely need `and` in a function name. Possible exception: mean and standard deviation
 
@@ -337,6 +354,7 @@ Which tests would you write?
 ::: {.column width="50%"}
 🪱
 
+
 ```{python}
 #| echo: true
 #| eval: false
@@ -358,10 +376,12 @@ assert align_dna_seqs(
     "ATACC-GGGTTT"
   }
 ```
+
 :::
 
 ::: {.column width="50%"}
 🪱
+
 
 ```{r}
 #| echo: true
@@ -389,6 +409,7 @@ expect_equal(
   )
 )
 ```
+
 :::
 :::
 
@@ -430,6 +451,7 @@ AssertionError
 
 🪱
 
+
 ```{python}
 #| echo: true
 #| eval: false
@@ -438,7 +460,9 @@ def align(dna_sequences):
     assert len(dna_sequences) == 2 # TODO
 ```
 
+
 ## `assert` in debug mode
+
 
 ```{python}
 #| echo: true
@@ -448,11 +472,13 @@ def align_two_dna_sequences(dna_sequences):
     assert len(dna_sequences) == 2 # TODO
 ```
 
+
 Superior to documentation, as it cannot be ignored.
 
 'Assert liberally to document internal assumptions and invariants' @sutter2004cpp chapter 68.
 
 ## `assert` to document assumptions a developer makes
+
 
 ```{python}
 #| echo: true
@@ -463,6 +489,7 @@ def align_two_dna_sequences(dna_sequences):
     results = ["AAAA", "AAC-"] # Should be result of calculation
     assert len(results[1]) == len(results[2])
 ```
+
 
 ## Recursive algorithms
 
@@ -488,15 +515,18 @@ def align_two_dna_sequences(dna_sequences):
 
 ::: columns
 ::: {.column width="50%"}
+
 ```{python}
 #| echo: true
 #| eval: false
 assert calc_factorial_iterative(13) == 
   calc_factorial_recursive(13)
 ```
+
 :::
 
 ::: {.column width="50%"}
+
 ```{r}
 #| echo: true
 #| eval: false
@@ -505,6 +535,7 @@ expect_equal(
   calc_factorial_recursive(13)
 )
 ```
+
 :::
 :::
 
@@ -535,15 +566,18 @@ Fibonacci sequence:
 
 ::: columns
 ::: {.column width="50%"}
+
 ```{python}
 #| echo: true
 #| eval: false
 assert get_nth_fibonacci_iterative(13) == 
   get_nth_fibonacci_recursive(13)
 ```
+
 :::
 
 ::: {.column width="50%"}
+
 ```{r}
 #| echo: true
 #| eval: false
@@ -552,6 +586,7 @@ expect_equal(
   get_nth_fibonacci_recursive(13)
 )
 ```
+
 :::
 :::
 
@@ -567,3 +602,4 @@ expect_equal(
 ## Links
 
 -   [Course materials of 2022](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918).
+
