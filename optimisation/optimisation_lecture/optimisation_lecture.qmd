@@ -284,24 +284,21 @@ ACGTACGTACGT-CGTACGTACGT
 
 ## Run-time speed profile: code
 
-🪱
-
 ```{python}
 #| echo: true
 #| eval: false
 def is_sorted(data): return data == sorted(data)
-def stupid_sort(data):
-    while True:
-        if (is_sorted(data)):
-            return data
+def richel_sort(data):
+    while not is_sorted(data):
         from random import shuffle
         shuffle(data)
+    return data
 
 def create(): return list(range(0, 10))
 def reverse(x): 
     x.reverse() 
     return x
-def sort(x): return stupid_sort(x)
+def sort(x): return richel_sort(x)
 
 def my_function(): return sort(reverse(create()))
 
