@@ -1,5 +1,11 @@
 # Reflection Richel
 
+Start working on the bigger project earlier.
+Explain the file structure on day
+
+Use **one** project (I felt it was better to split up, but it would be better
+if the students don't move between GitHub repos all the time).
+
 When pair programming, always use 30 mins as a minimum:
 15 minutes is too short to get a commit in.
 
