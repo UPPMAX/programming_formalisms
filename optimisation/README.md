@@ -12,5 +12,6 @@ Description                                                 |PDF                
 
 ## Links
 
+ * [Open Science presentation by Richel](https://github.com/richelbilderbeek/science_fika_open_science_20230129)
  * [Project Euler](https://projecteuler.net/archives): plenty of programming problems
  * [Former Canvas page of this course](https://uppsala.instructure.com/courses/69215), with code 'NBIS_CS_FORM_HT22'
