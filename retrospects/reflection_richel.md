@@ -1,4 +1,10 @@
-# Reflection Richel
+# Reflection Richel, 2023-06-02
+
+My part of the course turned out to be below the level of the students.
+I am happy I noticed this quickly, from an exercise done at my first
+course sesssion. I am happy I adapted to this immediately and I knew
+it would result in less well-prepared lectures, as I would not
+have the time to go deeper than expected. 
 
 Start working on the bigger project earlier.
 Explain the file structure on day
