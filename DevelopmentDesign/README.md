@@ -486,6 +486,10 @@ There are two types of module, *program control modules* which are purposely and
 
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangability over the design space.
 
+### Aditonal material on  Practical implementation of modular design
+The following is a reference to practical  applied modular developemn and design of Agri software it has a good practice described.
+<br>Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. https://www.sciencedirect.com/science/article/pii/S0308521X01000543
+
 ## Object Orientation
 Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declarative programming which focuses on how you code. One can use any number of programming paradigms to implement the object-oriented design.
 
@@ -531,7 +535,11 @@ mammal<|-d-dog:is a
 **The concept of Information Hiding** is about making sure that each time in the execution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of side-effects and it allows for multiple developers to work on the project without risking to step on each others toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
 This is accomplished through the use of *access qualifier* of the parameter/property or method. The levels of privacy are generally defined as: 
 private, protected and public in increasing accessibility to the inheritance structure and other classes or objects. A private property is only accessible to the object itself, the protected are accessible to objects and classes in the same inheritance structure and public are accessible to any class or object in the software
-
+<br>
+<br>
+Aditonal material (From one of the Icons in OO):
+<br>
+Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20. 
 
 
 # Paradigms of Programming 
