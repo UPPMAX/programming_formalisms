@@ -494,9 +494,10 @@ polymorphism
 instantiation
 passcode
 uu
-
-
-
+HPC
+parallelize
+langues
+prechelt
 
 
 
