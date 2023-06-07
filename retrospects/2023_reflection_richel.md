@@ -66,7 +66,83 @@ Especially the last day, I wanted to hear that I was not as concise
 as before (as I wasn't). Due to this, I would enjoy a more ruthless and
 anonymous evaluation at the last day.
 
+I feel all teachers could have learned more would the evaluations be 
+anonymous.
 
+## Course as part of the cirriculum
+
+I wonder if we reached our own goals. 
+Here I evaluate, from [the course desciption](https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/):
+
+> This course aims to give life scientists, bioinformaticians, and other scientists with some experience in programming and scripting 
+
+The audience is clear.
+
+> an understanding of the underlying principles of software development, design, and programming. 
+
+I think we did.
+
+> The course aims to strengthen the understanding of more advanced programming concepts, 
+
+Did I?
+
+> ability to produce more reusable scripts through modular programming 
+
+Was that so?
+
+> and to enable a better understanding of how to evaluate a script or programs performance.
+
+This was done by me, in a meagre way.
+
+> We will cover an introduction to Algorithms and Data structures, 
+
+This was done by me, in a meagre way.
+
+> Programming Paradigms especially structured and object oriented programming 
+> and to give a overview of other paradigms like functional programming. 
+
+AFAICS, we did not.
+
+> Modular development 
+
+Unsure.
+
+> and (code) reusability, 
+
+Unsure.
+
+> testing 
+
+This was done by me, quite extensively.
+
+> and optimisation.
+
+This was done by me, in a mediocre way.
+
+> We will cover theory with bridging practical examples and applications 
+
+I know the students wanted more practical examples in parts taught by other teachers.
+
+> to enhance the theoretical understanding of the principles.
+
+Is this really the goal? Should it? 
+Shouldn't is be: 'to be able to design, write, test and optimize a research project in a structured way'?
+
+## Definition of quality
+
+I still struggle to see how we answer the question: 'How do we teachers
+know we did a good job teaching?'. 
+
+## Ideas for next year
+
+ * More focus on academics, e.g. start from writing a paper.
+   It would make the course similar to 'Tools for reproducible research',
+   yet more focused on how to use these.
+   'Programming formalisms for research/open science/preregistrations'
+ * As instructors, do one big project together, to align our ideas
+ * Add a speed profile to the big project
+ * Add a big-O measurement to the big project
+ * Get at least 1 anonymous evaluation
 
 
 
