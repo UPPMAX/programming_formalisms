@@ -1,5 +1,7 @@
 # Reflection Richel, 2023-06-02
 
+(note that below there is an interview with a student)
+
 ## Adaptation to students
 
 My part of the course turned out to be below the level of the students.
@@ -45,15 +47,18 @@ on optimizing.
 
 ## Academics are the audience
 
-I agree with the students that it is the academic paper
-where the design starts.
+I agree with some students that it is the academic paper
+where the design starts and with other students that we should keep the
+industrial approach as well.
+
 I will volunteer to have a more streamlined course order with:
 
-1. Academic paper, especially a pre-registered paper as an example
-2. Design
-3. TDD
-4. Programming details
-5. In the end, go back to the paper again
+ * 1a Academic paper, especially a pre-registered paper as an example
+ * 1b Industrial design of the same problem
+ * 2 Design
+ * 3 TDD
+ * 4 Programming details
+ * 5 In the end, go back to the paper again
 
 ## Reflections
 
@@ -135,7 +140,7 @@ know we did a good job teaching?'.
 
 ## Ideas for next year
 
- * More focus on academics, e.g. start from writing a paper.
+ * Add an academic starting point, e.g. start from writing a paper.
    It would make the course similar to 'Tools for reproducible research',
    yet more focused on how to use these.
    'Programming formalisms for research/open science/preregistrations'
@@ -144,6 +149,18 @@ know we did a good job teaching?'.
  * Add a big-O measurement to the big project
  * Get at least 1 anonymous evaluation
 
+## Appendix
 
+### Interview with a student
 
+I contacted a student after the course and asked some questions.
 
+In front of each bullet point, it can be read: 'The student thinks/suggests/feels that ...'
+
+ * It was useful to hear the names of all the concepts
+ * Day 1 was mostly git, which is so common that making this into a course
+   requirement would not have been strange
+ * There should be less theory. 'If there is no time for an exercise applying
+   a certain piece of theory, avoid talking about that piece of theory'
+ * Both academic and industrial practices should be mentioned
+ * Homework would be a good addition to the course.
