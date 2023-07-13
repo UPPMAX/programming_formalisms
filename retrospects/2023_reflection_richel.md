@@ -74,10 +74,10 @@ anonymous evaluation at the last day.
 I feel all teachers could have learned more would the evaluations be 
 anonymous.
 
-## Course as part of the cirriculum
+## Course as part of the curriculum
 
 I wonder if we reached our own goals. 
-Here I evaluate, from [the course desciption](https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/):
+Here I evaluate, from [the course description](https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/):
 
 > This course aims to give life scientists, bioinformaticians, and other scientists with some experience in programming and scripting 
 
