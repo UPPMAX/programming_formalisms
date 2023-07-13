@@ -276,11 +276,14 @@ Name                          |Purpose
 
 ## Projects overview
 
-Day|Description    |Group size  |Branch model                |CI |Code review |Code
----|---------------|------------|----------------------------|---|------------|----------------------------------------
-1  |Introduction   |            | `master`                   |No |No          |.
-2  |TDD            |1           | `master`                   |No |No          |[programming_formalisms_tdd](https://github.com/richelbilderbeek/programming_formalisms_tdd)
-3  |Testing        |2           | `master`, `develop`        |Yes|No          |[programming_formalisms_testing](https://github.com/richelbilderbeek/programming_formalisms_testing)
-4-1|Algorithms     |4           | `master`, `develop`, topic |Yes|No          |[programming_formalisms_algorithms](https://github.com/richelbilderbeek/programming_formalisms_algorithms)
-4-2|Data structures|all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_data_structures](https://github.com/richelbilderbeek/programming_formalisms_data_structures)
-5  |Optimisation   |all         | `master`, `develop`, topic |Yes|Pull Request|[programming_formalisms_optimisation](https://github.com/richelbilderbeek/programming_formalisms_optimisation)
+Day|Description    |Group size  |Branch model                |CI |Code review 
+---|---------------|------------|----------------------------|---|------------
+1  |Introduction   |            | `master`                   |No |No          
+2  |TDD            |1           | `master`                   |No |No          
+3  |Testing        |2           | `master`, `develop`        |Yes|No          
+4-1|Algorithms     |4           | `master`, `develop`, topic |Yes|No          
+4-2|Data structures|all         | `master`, `develop`, topic |Yes|Pull Request
+5  |Optimisation   |all         | `master`, `develop`, topic |Yes|Pull Request
+
+ * [programming_formalisms_project_2023](https://github.com/programming-formalisms/programming_formalisms_project_2023): GitHub repo of 2023
+
