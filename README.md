@@ -34,7 +34,7 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
 
  * [Lesson plans](lesson_plans/README.md)
  * [Feedback to students](feedback_to_students/README.md)
- * [Retrospects](retrospects/README.md)
+ * [Retrospectives](retrospectives/README.md)
  * [Evaluations](evaluations/README.md)
  * [Reflections](reflections/README.md)
 
