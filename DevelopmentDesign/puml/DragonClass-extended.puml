@@ -1,0 +1,38 @@
+@startuml
+!theme _none_
+abstract Class Character{
+    #n_instances:number
+    #number get_n_instances()
+    } 
+abstract Class Monster{
+    #monster_type:string
+    #name:string
+    +set_name(name:string)
+    +string get_name()
+} 
+Class Dragon{
+    #HP:number
+    +number get_HP()
+    +number set_HP(HP:number)
+} 
+Class Orc{
+    -HP:number
+    #Faviorite axe:string
+
+    +number get_HP()
+    +number set_HP(HP:number)
+    #swing_axe()
+}
+Class Hero{
+    -HP:number
+    -name:string
+    #Player:string
+    #Player_ID:number
+    {method}bunch_of_methods
+
+}
+Character <|-- Monster
+Character <|-- Hero
+Monster <|-- Dragon
+Monster <|-- Orc
+@enduml

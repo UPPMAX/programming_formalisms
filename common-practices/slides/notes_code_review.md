@@ -220,7 +220,7 @@ Consider the following scenario:
 
 - Should not be used to evaluate individuals
 - Revealing mistakes should not come with penalties or shame.
-- Sshould also be done early and often
+- Should also be done early and often
 
 ---
 
