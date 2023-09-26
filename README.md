@@ -30,29 +30,13 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
  * `([names])` means that `[names]` assist or observe
  * Regular course room is at the room sent around
 
-## Feedback to students
+## Other course links
 
- * [Testing](feedback/feedback_testing.md)
-
-## Retrospective sessions
-
-Link                                                                               | Result
------------------------------------------------------------------------------------|------------------------------
-[Day 1 retro](https://miro.com/app/board/uXjVMGFbuDc=/?share_link_id=331302708095) |[PDF](retrospects/retro-day1.pdf)
-[Day 2 retro](https://miro.com/app/board/uXjVMGFbuPc=/?share_link_id=378898143874) |[PDF](retrospects/retro-day2.pdf)
-[Day 3 retro](https://miro.com/app/board/uXjVMGFbuLA=/?share_link_id=773461339385) |[PDF](retrospects/retro-day3.pdf)
-[Day 4 retro](https://miro.com/app/board/uXjVMGFbuUY=/?share_link_id=502732078544) |[PDF](retrospects/retro-day4.pdf)
-[Day 5 retro](https://miro.com/app/board/uXjVMGFbuW8=/?share_link_id=125486410202) |[PDF](retrospects/retro-day5.pdf)
-
-## Files
-
-Filename                            |Descriptions
-------------------------------------|---------------------------------------------------------------------------------------
-[mlc_config.json](mlc_config.json)  |Link checker configuration file
-[.spellcheck.yml](.spellcheck.yml)  |Spell checker configuration file, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
-[.wordlist.txt](.wordlist.txt)      |Whitelist for spell checker
-
-## Other course repositories build statuses
+ * [Lesson plans](lesson_plans/README.md)
+ * [Feedback to students](feedback_to_students/README.md)
+ * [Retrospectives](retrospectives/README.md)
+ * [Evaluations](evaluations/README.md)
+ * [Reflections](reflections/README.md)
 
 ## Links
 
