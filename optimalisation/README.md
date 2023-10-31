@@ -1,3 +1,0 @@
-# Optimalisation
-
-[taught by Richel]

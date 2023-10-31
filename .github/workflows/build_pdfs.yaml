@@ -1,0 +1,84 @@
+# Render Quarto presentations to PDF
+name: Build PDFs
+
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: "0 0 16 * *"
+
+
+jobs:
+  build_pdfs:
+
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@master
+        with:
+          python-version: '3.10' 
+
+      - name: Install Python and pip
+        run: python3 -m pip install jupyter
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      - uses: r-lib/actions/setup-r@v2
+
+      - name: Install R packages
+        run: install.packages(c("ggplot2", "reticulate", "rmarkdown", "testthat", "tidyr"))
+        shell: Rscript {0}
+
+      # These PDFs are there so that git does not check a PDF each change.
+      # The idea is to put the PDFs created by GHA (i.e. this script)
+      # there manually
+      - name: Delete old PDFs
+        run: |
+          rm tdd/tdd_lecture.pdf
+          rm testing/testing_lecture.pdf
+          rm data_structures/data_structures_lecture.pdf
+          rm optimisation/optimisation_lecture.pdf
+          rm algorithms/algorithms_lecture.pdf
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: tdd/tdd_lecture/tdd_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: testing/testing_lecture/testing_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: algorithms/algorithms_lecture/algorithms_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: data_structures/data_structures_lecture/data_structures_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: optimisation/optimisation_lecture/optimisation_lecture.qmd
+
+      #############################################
+      # Upload
+      #############################################
+      - name: Upload PDF to the workflow tab
+        uses: actions/upload-artifact@v2
+        with:
+          name: all_presentations
+          path: "**/*.pdf"
+          if-no-files-found: error
+
