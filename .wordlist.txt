@@ -525,5 +525,10 @@ ChatGPT
 DPD
 DPAI
 UI
+USECASE
+AIDV
+JW
+Keating
+ai
 
 

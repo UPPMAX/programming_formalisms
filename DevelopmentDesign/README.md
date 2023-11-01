@@ -300,7 +300,7 @@ Further reading RUP and examples of applied RUP:
 
 * The Rational Unified Process--An Introduction., Kruchten, Philippe. (2000).
  <br/> https://www.researchgate.net/publication/220018149_The_Rational_Unified_Process--An_Introduction 
-<br/>the links are are outaded as the sale of RUP to IBM in 2003 his references lead to DevOps (IBMs newest development model) 
+<br/>the links are outdated as the sale of RUP to IBM in 2003 his references lead to DevOps (IBMs newest development model) 
  * Real world example RUP as used by volvo, Åsa Nordin( Master Thesis, Trollhättan 2003):
   <br/> https://www.diva-portal.org/smash/get/diva2:215156/FULLTEXT01.pdf
  * Using Rational Unified Process in an SME – A Case Study,  Hansen et. al (springer 2005)
@@ -325,7 +325,7 @@ Using Prototyping and minimal design to generate fast development cycles, this h
 - The technical architecture is unclear and much of the technology will be used for the first time within the project.
 - Technical requirements are tight for the equipment to be used.
 
-further reading for RAD (Rapid Aplication Development):
+further reading for RAD (Rapid Application Development):
  * https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=_
 
 ## eXtreme Programming
@@ -487,8 +487,8 @@ There are two types of module, *program control modules* which are purposely and
 
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangability over the design space.
 
-### Aditonal material on  Practical implementation of modular design
-The following is a reference to practical  applied modular developemn and design of Agri software it has a good practice described.
+### Additional material on Practical implementation of modular design
+The following is a reference to practical applied modular development and design of Agri software it has a good practice described.
 <br>Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. https://www.sciencedirect.com/science/article/pii/S0308521X01000543
 
 ## Object Orientation
@@ -720,7 +720,7 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 ### Design Patterns
 
-A design pattern is a collection of bestpractises to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View(The User interface and external communications of the program)
+A design pattern is a collection of best practises to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View (The User interface and external communications of the program)
 
   <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions between program interface, control and data(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
 Some examples of where this pattern has been implemented in modern times are:
@@ -733,5 +733,5 @@ A good source for learning Design patterns and using as a reference material is 
 
 ### AI assisted programming
 
-With the emergence of more complex AI and especially the use of LLM(Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space. One of the issues is that whenever we employ ai or construct ai we need to be aware of the particular etichs surounding this, As it stands we as developers and writers have the soul accountabillity for anny development don on and with ai. A good starting point in these ethics are the RDA guidelines from the AIDV working group that will be presentet in full in may, until then another good source is the [UNESCO recomendations on ai ethics](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
- These comprehensive recomendations basically states that in all development done with or on ai we need to keep a view of what is good for humanity in perspective. One hard issue in the scientific endevour when using ai assisted development is credit. How do we credit. So how can we use AI in development, In the design and development fase Traditionally we seek the requirements as described above, but we can get a head start and generate a discussion point.
+With the emergence of more complex AI and especially the use of LLM (Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space. One of the issues is that whenever we employ AI or construct AI we need to be aware of the particular ethics surrounding this, As it stands we as developers and writers have the soul accountability for any development don on and with ai. A good starting point in these ethics are the RDA guidelines from the AIDV working group that will be presentet in full in may, until then another good source is the [UNESCO recommendations on AI ethics](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
+These comprehensive recommendations basically states that in all development done with or on ai we need to keep a view of what is good for humanity in perspective. One hard issue in the scientific endeavor when using AI assisted development is credit. How do we credit. So how can we use AI in development, In the design and development fase Traditionally we seek the requirements as described above, but we can get a head start and generate a discussion point.

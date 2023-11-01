@@ -30,6 +30,20 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
  * `([names])` means that `[names]` assist or observe
  * Regular course room is at the room sent around
 
+## Files
+
+Filename                           |Descriptions
+-----------------------------------|------------------------------------------------------------------------------------------------------
+[mlc_config.json](mlc_config.json) |Configuration of the link checker
+[.spellcheck.yml](.spellcheck.yml) |Configuration of the spell checker, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+[.wordlist.txt](.wordlist.txt)     |Whitelisted words for the spell checker, use `pyspelling -c .spellcheck.yml` to do spellcheck locally
+[.pylintrc](.pylintrc)             |Configuration file for pylint
+[pyproject.toml](pyproject.toml)   |Configuration file of this package
+
+## Links
+
+ * [Project Euler](https://projecteuler.net/archives)
+
 ## Other course links
 
  * [Lesson plans](lesson_plans/README.md)
@@ -49,3 +63,5 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
  * [Learning line](learning_line.md)
  * [Lesson plans](lesson_plans/README.md)
+
+
