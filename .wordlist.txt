@@ -518,7 +518,12 @@ retrospectives
 Retrospectives
 retrospective
 Retrospective
-
-
+Lennard
+framerate
+initialised
+ChatGPT
+DPD
+DPAI
+UI
 
 
