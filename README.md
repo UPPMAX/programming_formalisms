@@ -30,6 +30,14 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
  * `([names])` means that `[names]` assist or observe
  * Regular course room is at the room sent around
 
+## Projects
+
+Logo                                                                        |Link
+----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------
+![](images/programming_formalisms_student_team_autumn_2023_logo_116x116.png)|[Autumn 2023](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023)
+![](images/programming_formalisms_teacher_team_logo_116x116.png)            |[Example project](https://github.com/programming-formalisms/programming_formalisms_example_project)
+![](images/programming_formalisms_student_team_summer_2023_logo_116x116.png)|[Summer 2023](https://github.com/programming-formalisms/programming_formalisms_project_summer_2023)
+
 ## Files
 
 Filename                           |Descriptions
@@ -42,28 +50,11 @@ Filename                           |Descriptions
 
 ## Links
 
- * [Project Euler](https://projecteuler.net/archives)
-
-## Other course links
-
- * [Lesson plans](lesson_plans/README.md)
- * [Retrospectives](retrospectives/README.md)
- * [Evaluations](evaluations/README.md)
- * [Reflections](reflections/README.md)
-
-## Projects
-
-Logo                                                                        |Link
-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------
-![](images/programming_formalisms_student_team_autumn_2023_logo_116x116.png)|[Autumn 2023](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023)
-![](images/programming_formalisms_teacher_team_logo_116x116.png)            |[Example project](https://github.com/programming-formalisms/programming_formalisms_example_project)
-![](images/programming_formalisms_student_team_summer_2023_logo_116x116.png)|[Summer 2023](https://github.com/programming-formalisms/programming_formalisms_project_summer_2023)
-
-## Links
-
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
  * [Learning line](learning_line.md)
  * [Lesson plans](lesson_plans/README.md)
-
-
+ * [Retrospectives](retrospectives/README.md)
+ * [Evaluations](evaluations/README.md)
+ * [Reflections](reflections/README.md)
+ * [Project Euler](https://projecteuler.net/archives)
