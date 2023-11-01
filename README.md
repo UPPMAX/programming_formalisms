@@ -38,10 +38,15 @@ Fri |13-16       |RB + JN (LE)     | [Optimisation](optimisation/README.md), inc
  * [Evaluations](evaluations/README.md)
  * [Reflections](reflections/README.md)
 
+## Projects
+
+ * [Example project](https://github.com/programming-formalisms/programming_formalisms_example_project)
+ * [Autumn 2023](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023)
+ * ([Summer 2023](https://github.com/programming-formalisms/programming_formalisms_project_summer_2023))
+
 ## Links
 
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
- * [The Programming Formalisms project of 2023](https://github.com/programming-formalisms/programming_formalisms_project_2023.git)
  * [Learning line](learning_line.md)
  * [Lesson plans](lesson_plans/README.md)
