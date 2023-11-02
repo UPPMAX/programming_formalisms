@@ -20,7 +20,7 @@ jobs:
 
       - name: Remove folders that do not care about broken links
         run: |
-          rm -rf DevelopmentDesign
+          rm -rf development_design
 
       - uses: lycheeverse/lychee-action@v1.2.0
         with:
