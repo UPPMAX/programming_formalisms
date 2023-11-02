@@ -22,6 +22,7 @@ jobs:
       - name: Remove folders that do not care about spelling
         run: |
           rm -rf DevelopmentDesign
+          rm -rf projects
           rm -rf feedback
 
       - uses: igsekor/pyspelling-any@v0.0.2
