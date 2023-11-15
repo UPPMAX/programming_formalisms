@@ -1,0 +1,8 @@
+*.iml
+**/.idea/*
+.pytest_cache
+**/__pycache__tdd_1.html
+tdd_1_files/
+tdd_1.html
+show_progress_files/
+*.html

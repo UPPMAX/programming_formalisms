@@ -1,0 +1,410 @@
+---
+title: "Optimisation"
+author: "Richèl Bilderbeek"
+format: revealjs
+editor: visual
+from: markdown+emoji
+bibliography: optimisation_lecture.bib
+csl: vancouver.csl
+---
+
+## Optimisation ![](CC-BY-NC-SA.png)
+
+<https://github.com/UPPMAX/programming_formalisms/blob/main/optimisation/optimisation_lecture/optimisation_lecture.qmd>
+
+![](programming_formalism_course.png)
+
+## Problem
+
+Q: What would be **bad advice** to improve the run-time speed of an algorithm?
+
+. . .
+
+-   'Use C or C++ or Rust' @prechelt2000empirical
+-   'No for loops', 'unroll for-loops', any other micro-optimization
+-   'Always parallelize'
+-   'Optimize the function where you feel the performance problem is'
+-   'Optimize each function'
+-   'In C++: use arrays of std::vector. Trust me: I measured!'
+
+## Bad advice 1
+
+'Use C or C++ or Rust'
+
+. . .
+
+Variance within programming languages 
+is bigger than variance between languages @prechelt2000empirical
+(e.g. figure 2 below)
+
+![](prechelt_fig_2.png)
+
+## Bad advice 2
+
+'No for loops', 'unroll for-loops', any other micro-optimization.
+
+. . .
+
+This is a micro-optimization.
+
+Likely there is no measurable effect
+
+## Bad advice 3
+
+'Always parallelize'
+
+. . .
+
+-   Hard to debug
+-   Overhead is underestimated, e.g. 10x as much processor time for 2x speed [1]
+
+ * [1] HPC cluster training, now [behind a login](https://wiki.hpc.rug.nl/peregrine/start) :-(
+ 
+## Bad advice 4
+
+'Optimize the function where you feel the performance problem is'
+
+Developers -also very experienced developers- are known to have a bad intuition @sutter2004cpp
+
+## Bad advice 5
+
+'Optimize each function'
+
+-   The 90-10 rule: 90% of all time, the program spends in 10% of the code.
+-   Your working hours can be spent once
+
+## Bad advice 6
+
+'In C++: use arrays of std::vector. Trust me: I measured!'
+
+-   Shows a misunderstanding of beginners
+-   C++ (and many other languages) have a *debug* and *release* mode
+-   The well-intended advice is only true in debug mode :-) \[1\]
+-   \[1\] [My own benchmark](https://github.com/richelbilderbeek/cpp_benchmark_array_versus_std_vector)
+
+## Problem
+
+Q: When to optimize for speed?
+
+. . .
+
+A:
+
+-   [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+-   [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
+-   [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+
+## Famous quote
+
+> We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
+>
+> Donald Knuth
+
+![Donald Knuth](donald_knuth.jpg)
+
+> Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
+
+## Problem
+
+Q: How to improve the run-time speed of an algorithm?
+
+. . .
+
+A (simplified):
+
+1.  Measure big-O
+2.  Measure speed profile
+3.  Think
+4.  Change code
+5.  Measure again
+
+## Measurement 1: big-O
+
+How your (combination of) algorithms scales with more complex input.
+
+-   Counting the words in a book: O(n)
+-   Looking up a word in a dictionary: O(log2(n))
+
+:warning: Do measure big-O in release mode!
+
+## Your algorithm
+
+![](many_scatter_plots.png)
+
+## Example
+
+```{r}
+create_big_o_example <- function(n = seq(0, 100)) {
+  t_wide <- tibble::tibble(n = n)
+  t_wide$a <- 10 + log10(t_wide$n + 0.1)
+  t_wide$b <- t_wide$n
+  t_wide$c <- 0.001 * (t_wide$n ^ 2)
+  t_wide$total <- t_wide$a + t_wide$b + t_wide$c
+  t <- tidyr::pivot_longer(t_wide, cols = c("a", "b", "c", "total"))
+  colnames(t) <- c("n", "sub", "t")
+  t
+}
+t <- create_big_o_example(n = seq(0, 100))
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
+  ggplot2::geom_line(size = 4) + 
+  ggplot2::theme(text = ggplot2::element_text(size = 20))
+```
+
+:monocle_face: Work on B?
+
+## Example
+
+```{r}
+t <- create_big_o_example(n = seq(0, 500))
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
+  ggplot2::geom_line(size = 4) + 
+  ggplot2::theme(text = ggplot2::element_text(size = 20))
+```
+
+## Example
+
+```{r}
+t <- create_big_o_example(n = seq(0, 2000))
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
+  ggplot2::geom_line(size = 4) + 
+  ggplot2::theme(text = ggplot2::element_text(size = 20))
+```
+
+:sunglasses: No, work on C instead
+
+## Conclusions
+
+Big-O helps to:
+
+-   find algorithm to profile
+-   make predictions
+
+## Exercise 1
+
+-   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+
+::: columns
+::: {.column width="50%"}
+
+🪱
+
+```{python}
+#| echo: true
+#| eval: false
+def isprime(num):
+  for n in range(
+    2, int(num**0.5)+1
+  ):
+    if num%n==0:
+      return False
+  return True
+```
+:::
+
+::: {.column width="50%"}
+🪱
+
+```{python}
+#| echo: true
+#| eval: false
+def isprime(num):
+    if num> 1:  
+        for n in range(2,num):  
+            if (num % n) == 0:  
+                return False
+        return True
+    else:
+        return False
+```
+:::
+
+:::
+
+## Exercise 1
+
+-   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+
+::: columns
+::: {.column width="50%"}
+
+🪱
+
+```{python}
+#| echo: true
+#| eval: false
+def isprime(num):
+  for n in range(
+    2, int(num**0.5)+1
+  ):
+    if num%n==0:
+      return False
+  return True
+```
+:::
+
+::: {.column width="50%"}
+
+🪱
+
+```{python}
+#| echo: true
+#| eval: false
+def Prime(no, i = 2):
+    if no == i:
+        return True
+    elif no % i == 0:
+        return False
+    return Prime(no, i + 1)
+```
+:::
+
+:::
+
+
+## Exercise 2
+
+-   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
+
+```
+ACGTACGTACGTACGTACGTACGT
+ACGTACGTACGTCGTACGTACGT
+```
+
+```
+ACGTACGTACGTACGTACGTACGT
+ACGTACGTACGT-CGTACGTACGT
+```
+
+## Measurement 2: Run-time speed profile
+
+-   See which code is spent most time in
+-   :monocle_face: Use an input of suitable complexity
+    -   Note to self: next example should take at least 10 seconds!
+-   :sunglasses: Consider using CI to obtain a speed profile every push!
+
+## Run-time speed profile: code
+
+```{python}
+#| echo: true
+#| eval: false
+def is_sorted(data): return data == sorted(data)
+def richel_sort(data):
+    while not is_sorted(data):
+        from random import shuffle
+        shuffle(data)
+    return data
+
+def create(): return list(range(0, 10))
+def reverse(x): 
+    x.reverse() 
+    return x
+def sort(x): return richel_sort(x)
+
+def my_function(): return sort(reverse(create()))
+
+import cProfile
+cProfile.run("my_function()")
+```
+
+## Run-time speed profile: results
+
+```{python}
+#| echo: false
+#| eval: true
+def is_sorted(data): return data == sorted(data)
+def stupid_sort(data):
+    while True:
+        if (is_sorted(data)):
+            return data
+        from random import shuffle
+        shuffle(data)
+
+def create(): return list(range(0, 10))
+def reverse(x): 
+    x.reverse() 
+    return x
+def sort(x): return stupid_sort(x)
+
+def my_function(): return sort(reverse(create()))
+
+import cProfile
+cProfile.run("my_function()")
+```
+
+## Myth 1
+
+```{python}
+#| echo: true
+#| eval: true
+def slow_tmp_swap(x, y):
+    tmp = x
+    x = y
+    y = tmp
+    return x, y
+
+def superfast_xor_swap(x, y):
+    x ^= y
+    y ^= x
+    x ^= y
+    return x, y
+```
+
+. . .
+
+-   [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
+-   [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
+
+## Exercise
+
+Create speed profile of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+
+Create speed profile of DNA alignment
+
+## Step 3: Think
+
+-   How to achieve the same with less calculations?
+    -   Aim to change big-O, not some micro-optimization
+    -   For example, store earlier results in a sorted look-up table
+
+> Feynman Problem Solving Algorithm:
+>
+> 1.  Write down the problem.
+> 2.  Think very hard.
+> 3.  Write down the answer
+
+## Step 4: Measure again
+
+In TDD, this test would have been present already:
+
+```{python}
+#| echo: true
+#| eval: false
+assert 10.0 * get_t_runtime_b() < get_t_runtime_a()
+```
+
+Adapt the constant to reality.
+
+-   [C++ Core Guidelines: Per.6: Don't make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)
+
+## Recap quote
+
+> It is far, far easier to make a correct program fast, than it is to make a fast program correct.
+>
+> Herb Sutter
+
+![Herb Sutter](herb_sutter.jpg)
+
+> Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+
+## Recap
+
+-   Be critical on speed optimization solutions
+-   Tested and clean code always comes first
+-   Measure correctly, at the right complexity, before and after
+-   Prefer changing big-O over micro-optimizations (but see first point!)
+
+## The End
+
+## Links
+
+-   Lecture of 2022: [here](https://uppsala.instructure.com/courses/69215/pages/optimisation-when-and-how?module_item_id=503139):
