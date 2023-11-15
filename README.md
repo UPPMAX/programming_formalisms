@@ -15,6 +15,8 @@
 
 ## Schedule
 
+> This schedule is in the incorrect order, see the HackMD for the correct one
+
 Day | Time       | Teacher         | Topic                                                                                                                                           | Material
 ----|------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------
 Mon |9-12, 13-16 |BC + JN (LE, RB) | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html), including a Reflection by JN from 15:30-16:00             |[HTML](https://uppmax.github.io/programming_formalisms_intro/index.html)
