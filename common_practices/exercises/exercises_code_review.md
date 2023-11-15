@@ -13,9 +13,6 @@ Remember that:
 In this task you will have to:
 
 1. Work in pairs and try to code the [Fibonacci function](https://en.wikipedia.org/wiki/Fibonacci_number) or other function suggested by an instructor.
-
-> In mathematics, the Fibonacci numbers, commonly denoted Fn , form a sequence, the Fibonacci sequence, in which each number is the sum of the two preceding ones.
-
 2. Switch navigator/driver roles.
 3. Work in pairs and try to code the [Tribonacci function](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers) or other function suggested by an instructor.
    > The tribonacci numbers are like the Fibonacci numbers, but instead of starting with two predetermined terms, the sequence starts with three predetermined terms and each term afterwards is the sum of the preceding three terms.
