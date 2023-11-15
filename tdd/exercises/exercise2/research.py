@@ -8,9 +8,7 @@ class ResearchSubjects:
         self.__collection[subject_to_add.identifier] = subject_to_add
 
     def find(self, identifier):
-        if identifier not in self.__collection:
-            return None
-        return self.__collection[identifier]
+        return self.__collection.get(identifier)
 
     def remove(self, identifier):
         del self.__collection[identifier]
