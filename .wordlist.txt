@@ -534,4 +534,5 @@ pylint
 pylintrc
 pyproject
 toml
+uppmax
 
