@@ -6,13 +6,29 @@ editor: visual
 from: markdown+emoji
 bibliography: testing_lecture.bib
 csl: vancouver.csl
+css: styles.css
+slide-number: true
+number-sections: true
 ---
 
-## Testing ![](CC-BY-NC-SA.png)
+# The Big Picture ![](CC-BY-NC-SA.png)
 
-<https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd>
+<https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
 
-![](programming_formalism_course.png)
+![](programming_formalism_logo_25_cropped.png)
+
+## Breaks
+
+Please take breaks: these are important for learning. 
+Ideally, do something boring @newport2016deep!
+
+## Schedule
+
+-   13:45-14:00: Break
+-   14:45-15:00: Break
+-   16:00 Done!
+
+# Testing
 
 ## Problems
 
@@ -122,40 +138,55 @@ class TestSmall(unittest.TestCase):
 
 :smile: here it pays off.
 
-## First example: `is_prime`
+# Example exercise: `is_prime`
 
--   Function name: `is_prime`
+-   Only observe, no type-along!
+-   Ask questions on the go! When in doubt: ask that question!
+-   Time: 30 minutes
+
+## Exercise: `is_prime`
+
+-   Function name: `is_prime_[name]`, 
+    for example, `is_prime_richel`
 -   Output:
     -   Returns `True` if the input is prime
     -   Returns `False` if the input is not prime
-    -   :warning: Gives an error when the input is not an integer
--   Work within scaffolding of <https://github.com/richelbilderbeek/programming_formalisms_testing>
+    -   Gives an error when the input is not an integer
 
-## Live demo (15 minutes)
-
--   Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)
-
-## Exercise: `is_prime`, form
+## Exercise: `is_prime`, social
 
 -   Pair up
--   Switch roles every 3 minutes
--   Discuss how to keep the time first
--   Person with GitHub username first in alphabet starts
--   Work on `master` branch only, share code using `git push` and `git pull`
+-   Switch roles every 
+    - (1) `x` minutes, e.g. every 5 minutes, or
+    - (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
 
 ## Exercise: `is_prime`, technical
 
--   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
--   Develop a function called `is_prime`:
-    -   `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-    -   `tests/test_testing_questions.py`
--   Modify `README.md`: replace `richelbilderbeek` by your own username
--   Extra: make all tests pass
+-   Work within scaffolding of the learners project
+    -   Functions are in `src/[package_name]/testing.py`
+    -   Tests are in `tests/test_testing.py`
+-   Work on the main branch only, 
+    share code using `git push` and `git pull`
+-   order the `is_prime_[name]` 
+    functions and tests alphabetically,
+    e.g. `is_prime_lars` comes before `is_prime_richel`
 
-## Break 1
+## Live demo (30 minutes)
 
-Break!
+-   Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)
+
+# Exercise 1: `is_prime`
+
+-   Time: 45 minutes
+-   Do the same exercise in pairs
+-   There are multiple ways to do this:
+    pick the way you feel is
+    most natural
+
+# Continuous integration 
 
 ## Problem
 
@@ -219,6 +250,108 @@ i = random.randint(0, 1) # noqa: S311
 
 You will need to defend this in a code review.
 
+## Testing indeterministic functions
+
+Functions that do not always return the same values.
+
+```{python}
+#| echo: true
+#| eval: true
+def flip_coin():
+    """Produce a random boolean."""
+    return random.randint(0, 1) > 0
+```
+
+How to test these?
+
+## Randomness
+
+A Random Number Generator ('RNG') produces the same random values after setting the same RNG seed.
+
+```{python}
+#| echo: true
+#| eval: true
+import random
+random.seed(5)
+assert flip_coin()
+random.seed(2)
+assert not flip_coin()
+```
+
+# Exercise 2: `flip_coin`
+
+-   Time: 45 minutes
+
+## Exercise 2: `flip_coin`
+
+-   Function name: `flip_coin_[name]`, 
+    for example, `flip_coin_richel`
+-   Input: none
+-   Output: Returns `True` in 50% of all cases,
+    else returns `False`
+-   **Get all CI scripts to pass**
+
+## Exercise 2: `flip_coin`, social
+
+-   Pair up
+-   Switch roles every 
+    - (1) `x` minutes, e.g. every 5 minutes, or
+    - (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
+-   Try to be **an exemplary duo**
+
+## Exercise 2: `flip_coin`, technical
+
+-   Work within scaffolding of the learners project
+    -   Functions are in `src/[package_name]/testing.py`
+    -   Tests are in `tests/test_testing.py`
+-   Work on the main branch only, 
+    share code using `git push` and `git pull`
+-   order the `flip_coin_[name]` 
+    functions and tests alphabetically,
+    e.g. `flip_coin_lars` comes before `flip_coin_richel`
+
+# Tests in a team
+
+> If all tests pass, we are -by definition- happy.
+>
+> Programming team [tresinformal](https://github.com/tresinformal)
+
+## Problem
+
+Q: When one works in a team, 
+how to make sure my code keeps doing the same?
+
+```{python}
+#| echo: true
+#| eval: true
+def get_test_dna_sequence():
+  """Get a DNA sequence to be used in testing"""
+  return "ACGTACGT"
+```
+
+. . .
+
+A: Apply the Beyoncé Rule
+
+## Beyoncé rule
+
+'If you like it, then you gotta put a test on it'
+
+```{python}
+#| echo: true
+#| eval: true
+assert get_test_dna_sequence() == "ACGTACGT"
+```
+
+Teams should be reluctant to change tests: 
+this will likely break other code.
+
+![Beyoncé](beyonce.png)
+
+> Source: [Wikimedia](https://commons.wikimedia.org/wiki/Category:Beyonc%C3%A9_Knowles_in_2020#/media/File:Beyonc%C3%A9_Black_Is_King_Still.png)
+
 ## Untestable functions
 
 Q: How to test this function?
@@ -275,170 +408,95 @@ A: usually: use **a human**, e.g. a code reviewer
 
 In most cases, graphical analysis tools and/or AI are overkill. If you are stubborn: try!
 
-## Testing indeterministic functions
+# Exercise 3: `get_digits`
 
-Functions that do not always return the same values.
+-   Time: 45 minutes
 
-```{python}
-#| echo: true
-#| eval: true
-def flip_coin():
-    """Produce a random boolean."""
-    return random.randint(0, 1) > 0
-```
+## Exercise 3: `get_digits`
 
-How to test these?
-
-## Randomness
-
-A Random Number Generator ('RNG') produces the same random values after setting the same RNG seed.
-
-```{python}
-#| echo: true
-#| eval: true
-import random
-random.seed(5)
-assert flip_coin()
-random.seed(2)
-assert not flip_coin()
-```
-
-## Exercise: `flip_coin`, form
-
--   Pair up again
--   Switch roles every 3 minutes
--   Discuss how to keep the time first
--   Person with GitHub username first in alphabet starts
--   Work on `master` branch only, share code using `git push` and `git pull`
--   Try to be **an exemplary duo**
-
-## Exercise: `flip_coin`, technical
-
--   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
--   Modify `README.md`: replace `richelbilderbeek` by your own username
--   Develop a function called `flip_coin`:
-    -   `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-    -   `tests/test_testing_questions.py`
+-   Function name: `get_digits_[name]`, 
+    for example, `get_digits_richel`
+-   Input: a positive number
+-   Output:
+    -   Returns the number split into a list of digits, 
+        e.g. `314` become `[3, 1, 4]`
+    -   Gives an error when the input is not a positive integer
 -   **Get all CI scripts to pass**
 
-## Break 2
+## Exercise 3: `get_digits`, social
 
-> If all tests pass, we are -by definition- happy.
->
-> Programming team [tresinformal](https://github.com/tresinformal)
-
-Break 2
-
-## Problem
-
-Q: When one works in a team, how to make sure my code keeps doing the same?
-
-```{python}
-#| echo: true
-#| eval: true
-def get_test_dna_sequence():
-  """Get a DNA sequence to be used in testing"""
-  return "ACGTACGT"
-```
-
-. . .
-
-A: Apply the Beyoncé Rule
-
-## Beyoncé rule
-
-'If you like it, then you gotta put a test on it'
-
-```{python}
-#| echo: true
-#| eval: true
-assert get_test_dna_sequence() == "ACGTACGT"
-```
-
-Teams should be reluctant to change tests: this will likely break other code.
-
-![Beyoncé](beyonce.png)
-
-> Source: [Wikimedia](https://commons.wikimedia.org/wiki/Category:Beyonc%C3%A9_Knowles_in_2020#/media/File:Beyonc%C3%A9_Black_Is_King_Still.png)
-
-## Problem
-
-Q: how to counter 'bit rot' @steele1983hacker or 'software collapse' @hinsen2019dealing
-
-(we know: impossible to counteract @benureau2018re)
-
-. . .
-
-A:
-
--   Xtreme programming: 'embrace change' @beck2000extreme
--   Add a scheduled monthly test on your CI script
-
-## Consider static type checking
-
--   Use static type checking, see [PEP 484](https://peps.python.org/pep-0484/)
-
-```         
-def reverse_string(s: str) -\> str: return s.reverse()
-```
-
-## Exercise: `get_digits`, form
-
--   Pair up again
--   Switch roles every 3 minutes
--   Discuss how to keep the time first
--   Person with GitHub username first in alphabet starts
--   Work on `master` branch only, share code using `git push` and `git pull`
+-   Pair up
+-   Switch roles every 
+    - (1) `x` minutes, e.g. every 5 minutes, or
+    - (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
 
-## Exercise: `get_digits`, technical
+## Exercise 3: `get_digits`, technical
 
--   Create a Fork of <https://github.com/richelbilderbeek/programming_formalisms_testing>
--   Modify `README.md`: replace `richelbilderbeek` by your own username
--   Develop a function called `get_digits`:
-    -   `src/pftesting_richelbilderbeek/testing_questions.py` (has more questions)
-    -   `tests/test_testing_questions.py`
--   **Get all CI scripts to pass**
+-   Work within scaffolding of the learners project
+    -   Functions are in `src/[package_name]/testing.py`
+    -   Tests are in `tests/test_testing.py`
+-   Work on the main branch only, 
+    share code using `git push` and `git pull`
+-   order the `get_digits_[name]` 
+    functions and tests alphabetically,
+    e.g. `get_digits_lars` comes before `get_digits_richel`
 
-## Solutions
+## Exercise 3: solution
 
 `get_digits` video:
 
 -   [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
 -   [YouTube](https://youtu.be/vmRuSWhdA7c)
 
-## Recap
+# Recap
 
 -   Testing helps code correctness
     -   Use the Beyoncé Rule on precious behavior
 -   Testing + CI:
     -   Helps teaching
     -   Helps bug reporting
--   Testing + CI:
-    -   Detects bit rot
 
-## Problems
+## Weaknesses
 
 -   We developed only simple algorithms
-
 -   We only use simple data structures
-
 -   We ignore if code is fast \[\*\]
+
+This will be addressed in the next lectures :-)
 
 -   \[\*\] vague wording on purpose
 
-## Finally
+## Questions?
 
-Time for a Reflection!
-
-Afterwards, you can rest or ask your final questions.
+Questions?
 
 ## The End
 
-[The End]
+![](dilbert_tdd_4.png)
 
 ## Links
 
 -   [Former lecture on testing](https://uppmax.github.io/programming_formalism-automated_testing/)
 -   [Hypermodern Python Cookiecutter](https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/)
 -   [Scikit-HEP project info for developers](https://scikit-hep.org/developer)
+
+# Breaks
+
+I put the break slides in the end
+
+## Break 1: 13:45-14:00
+
+![](dilbert_agile_2.png)
+
+## Break 2: 14:45-15:00
+
+![](dilbert_agile_1.png)
+
+## Done: 16:00
+
+![](dilbert_tdd_3.png)
+
+## References
