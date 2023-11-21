@@ -1,6 +1,6 @@
 # Programming formalisms
 
-![](Formalism.png)
+![](images/programming_formalism_logo.png)
 
 > 'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund
 
