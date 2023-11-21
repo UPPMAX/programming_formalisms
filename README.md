@@ -25,7 +25,7 @@ Wed |13-16       |RB + JN (LE)     | [Testing](tdd/README.md), including a Refle
 Thu |9-12        |RB      (LE)     | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)                                                          |[PDF](algorithms/algorithms_lecture.pdf)
 Thu |13-16       |RB + JN (LE)     | [Data structures](tdd/README.md), including a Reflection by JN from 15:15-15:45                                                                                                                |[PDF](data_structures/data_structures_lecture.pdf)
 Fri |9-12        |LE      (RB)     | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)                                                                   |[PDF](development_design/Modular_Programming.pdf)
-Fri |13-16       |RB + ML + JB (LE)| [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45                                                                                                          |[PDF](optimisation/optimisation_lecture.pdf)
+Fri |13-16       |RB + ML + JN (LE)| [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45                                                                                                          |[PDF](optimisation/optimisation_lecture.pdf)
 
  * `([names])` means that `[names]` assist or observe
  * Regular course room is at the room sent around
