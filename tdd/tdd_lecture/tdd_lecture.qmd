@@ -68,11 +68,13 @@ A: Yes
 
 ## Exercise 1: `is_even`
 
--   Create a GitHub repository called `is_even`
--   Share URL of repo with teachers
+-   Use the GitHub repository for the learners of this course,
+    e.g. https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023
+-   Create a folder repository called `learners/[your_name]/is_even`, 
+    e.g. `learners/richel/is_even`
 -   Develop a function called `is_even`
 -   Try to be **exemplary**
--   We'll discuss a repo history after the break
+-   We'll discuss a commit history after the break
 
 Done? Write `is_odd`, then `is_probility`.
 
@@ -121,11 +123,13 @@ A: Until you cannot break your function anymore.
 
 ## Exercise 2: `is_odd`
 
--   Create a GitHub repository called `is_odd`
--   Share URL of repo with teachers
+-   Use the GitHub repository for the learners of this course,
+    e.g. https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023
+-   Create a folder repository called `learners/[your_name]/is_odd`, 
+    e.g. `learners/richel/is_odd`
 -   Develop a function called `is_odd`
 -   Try to be **exemplary**
--   We'll discuss a repo history after the break
+-   We'll discuss a commit history after the break
 
 Done? Try exercise 3: `is_probability`.
 
@@ -137,18 +141,20 @@ Done? Try exercise 3: `is_probability`.
 
 ## Exercise 3: `is_probability`
 
--   Create a GitHub repository called `is_probability`
--   Share URL of repo with teachers
+-   Use the GitHub repository for the learners of this course,
+    e.g. https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023
+-   Create a folder repository called `learners/[your_name]/is_probability`, 
+    e.g. `learners/richel/is_probability`
 -   Develop a function called `is_probability`
 -   Try to be **exemplary**
--   We'll discuss a repo history after the break
+-   We'll discuss a commit history after the break
 
 ## Extra exercises
 
 Done?
 
 | Exercise | Function name     | Function purpose                             |
-|-----------------|-----------------|--------------------------------------|
+|------------------|------------------|-------------------------------------|
 | 4        | `is_number`       | Determines if an object is a number          |
 | 5        | `are_numbers`     | Determines if an object is a list of numbers |
 | S1       | `is_roman_number` | Determine if a string is a roman number      |
@@ -162,7 +168,7 @@ Done?
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
-## Problems
+## Weaknesses
 
 -   We only test manually
 -   We only test om our computer
