@@ -6,13 +6,30 @@ editor: visual
 from: markdown+emoji
 bibliography: tdd_lecture.bib
 csl: vancouver.csl
+css: styles.css
+slide-number: true
+number-sections: true
 ---
 
-## Test-Driven Development ![](CC-BY-NC-SA.png)
+# The Big Picture ![](CC-BY-NC-SA.png)
 
 <https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
 
-![](programming_formalism_course.png)
+![](programming_formalism_logo_25_cropped.png)
+
+## Breaks
+
+Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
+
+## Break schedule
+
+-   10:00-10:15: Break
+-   11:00-11:15: Break
+-   12:00-13:00: Lunch
+
+# Growing code
+
+![](programming_formalism_logo_25_cropped.png)
 
 ## Problem
 
@@ -42,6 +59,12 @@ Short for 'Test-driven development' A systematic way to grow code
 
 ![](tdd_cycle_2.jpg)
 
+# Example exercise: `is_zero`
+
+-   Only observe, no type-along!
+-   Ask questions on the go! When in doubt: ask that question!
+-   Time: 15 minutes
+
 ## Example exercise: `is_zero`
 
 -   Function name: `is_zero`
@@ -50,9 +73,19 @@ Short for 'Test-driven development' A systematic way to grow code
     -   Returns `False` if the input is not zero
     -   :warning: Gives an error when the input is not a number
 
+## Example exercise: `is_zero` technical
+
+-   Use the GitHub repository for the learners of this course
+-   Work on the main branch
+-   Work in a file called `learners/[your_name]/is_zero.py`
+
 ## Live demo (15 minutes)
 
--   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg)
+-   Only observe, no type-along!
+
+Videos:
+
+-   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
 -   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
 -   Or see also slides beyond end
 
@@ -62,23 +95,37 @@ Q: Do developers really do this?
 
 . . .
 
-A: Yes
+A: Yes @beck2022test@langr2013modern
 
 ![](beck_tdd_by_example.jpg) ![](book_langr.jpg)
 
-## Exercise 1: `is_even`
+# Exercise 1: `is_even`
 
--   Create a GitHub repository called `is_even`
--   Share URL of repo with teachers
+-   Time: 30 mins
+
+## Exercise 1: `is_even` (30 mins)
+
 -   Develop a function called `is_even`
+-   Output:
+    -   Returns `True` if the input is even
+    -   Returns `False` if the input is not even
+    -   :warning: Gives an error when the input is not a number
 -   Try to be **exemplary**
--   We'll discuss a repo history after the break
+-   We'll discuss a random commit history
+
+## Exercise 1: `is_even` technical (30 mins)
+
+-   Use the GitHub repository for the learners of this course
+-   Work on the main branch
+-   Create a file called `learners/[your_name]/is_even.py`
 
 Done? Write `is_odd`, then `is_probility`.
 
-## Break 1
+## Exercise 1 feedback
 
-![](dilbert_agile_2.png)
+-   [ ] Ask for a volunteer for feedback
+    -   If none: pick a random folder
+-   [ ] Discuss history
 
 ## Reflection
 
@@ -115,40 +162,70 @@ Q: How many tests should I write?
 
 . . .
 
-A: Until you cannot break your function anymore.
+A: Until you cannot break your function anymore @beck2022test@langr2013modern
 
 ![](beck_tdd_by_example.jpg) ![](book_langr.jpg)
 
-## Exercise 2: `is_odd`
+# Exercise 2: `is_odd`
 
--   Create a GitHub repository called `is_odd`
--   Share URL of repo with teachers
+-   Time: 30 mins
+
+## Exercise 2: `is_odd` (30 mins)
+
 -   Develop a function called `is_odd`
+-   Output:
+    -   Returns `True` if the input is odd
+    -   Returns `False` if the input is not odd
+    -   :warning: Gives an error when the input is not a number
 -   Try to be **exemplary**
--   We'll discuss a repo history after the break
+-   We'll discuss a commit history after the exercise
+
+## Exercise 2: `is_odd`, technical (30 mins)
+
+-   Use the GitHub repository for the learners of this course, e.g. https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023
+-   Work on the main branch
+-   Use a file called `learners/[your_name]/is_odd.py`
 
 Done? Try exercise 3: `is_probability`.
 
-![](chaotic_programmer.png)
+## Exercise 2 feedback
 
-## Break 2
+-   [ ] Ask for a volunteer for feedback
+    -   If none: pick a random folder
+-   [ ] Discuss history
 
-![](dilbert_agile_1.png)
+# Exercise 3: `is_probability`
 
-## Exercise 3: `is_probability`
+-   Time: 30 mins
 
--   Create a GitHub repository called `is_probability`
--   Share URL of repo with teachers
+## Exercise 3: `is_probability` (30 mins)
+
 -   Develop a function called `is_probability`
+-   Output:
+    -   Returns `True` if the input is in range \[0.0, 1.0\]
+    -   Returns `False` if the input is outside that range
+    -   :warning: Gives an error when the input is not a floating point number
 -   Try to be **exemplary**
--   We'll discuss a repo history after the break
+-   We'll discuss a commit history after the exercise
+
+## Exercise 3: `is_probability`, technical (30 mins)
+
+-   Use the GitHub repository for the learners of this course
+-   Work on the main branch\
+-   Use a file called `learners/[your_name]/is_probability.py`
+
+## Exercise 3 feedback
+
+-   [ ] Ask for a volunteer for feedback
+    -   If none: pick a random folder
+-   [ ] Discuss history
 
 ## Extra exercises
 
 Done?
 
 | Exercise | Function name     | Function purpose                             |
-|-----------------|-----------------|--------------------------------------|
+|------------------|------------------|------------------------------------|
 | 4        | `is_number`       | Determines if an object is a number          |
 | 5        | `are_numbers`     | Determines if an object is a list of numbers |
 | S1       | `is_roman_number` | Determine if a string is a roman number      |
@@ -156,13 +233,13 @@ Done?
 
 ## Bottom line
 
--   Today we wrote **unit tests**
+-   This session, we wrote **unit tests**
 -   It is only those your boss may read
 -   The literature assumes a responsible programmer writes tests, in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
-## Problems
+## Weaknesses
 
 -   We only test manually
 -   We only test om our computer
@@ -170,21 +247,15 @@ Done?
 -   We do not test the code for style
 -   We should consider using a testing framework
 
-## Finally
+These are addressed in the session called 'Testing' :-)
 
-Time for a Reflection!
+## Questions?
 
-Afterwards, you can rest or ask your final questions.
-
-![](dilbert_tdd_3.png)
+Questions?
 
 ## The End
 
 ![](dilbert_tdd_4.png)
-
-## Links
-
--   [Mentimeter presentation](https://www.mentimeter.com/app/presentation/al6k1j9uduvzeru5wabwsq3b411mwnt1/xp2pfbgddtct) of previous year
 
 ## TDD cycles in text
 
@@ -336,3 +407,21 @@ git push
 ```
 
 ![](organised_female_programmer.png)
+
+# Breaks
+
+I put the break slides in the end
+
+## Break 1: 10:00-10:15
+
+![](dilbert_agile_2.png)
+
+## Break 2: 11:00-11:15
+
+![](dilbert_agile_1.png)
+
+## Lunch: 12:00-13:00
+
+![](dilbert_tdd_3.png)
+
+## References

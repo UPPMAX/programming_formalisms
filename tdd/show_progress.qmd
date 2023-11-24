@@ -106,12 +106,19 @@ testthat::expect_equal(ncol(t), 3)
 Now the participants:
 
 # Agutin:
+
 # Daniel: https://github.com/DanielRiepl/programming_formalism_is_even_dr
+
 # Jonas: https://github.com/Netzach/is_even
+
 # Renate: https://github.com/RenateWilcke/tdd_progform/blame/main/tdd/is_zero.py
+
 # Sarah: https://github.com/semccomas/is_even
+
 # Romanos: https://github.com/Roman-Si/is_even
-# Thomas Frank: 
+
+# Thomas Frank:
+
 # Tina: https://github.com/TinclG/Programming_formalism_course_TGS.git
 
 ```{r}

@@ -535,4 +535,7 @@ pylintrc
 pyproject
 toml
 uppmax
+css
+newport
+langr
 

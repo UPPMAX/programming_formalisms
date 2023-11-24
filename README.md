@@ -1,6 +1,6 @@
 # Programming formalisms
 
-![](Formalism.png)
+![](images/programming_formalism_logo.png)
 
 > 'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund
 
@@ -15,17 +15,17 @@
 
 ## Schedule
 
-Day | Time       | Teacher         | Topic                                                                                                                                                                                          | Material
-----|------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------
-Mon |9-12, 13-16 |BC + JN (LE, RB) | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html), including a Reflection by JN from 15:30-16:00                                                            |[HTML](https://uppmax.github.io/programming_formalisms_intro/index.html)
-Tue |9-12        |LE      (RB)     | [Paradigms, Introduction to formalised development](development_design/README.md)                                                                                                              |[PDF](development_design/Development_and_Programming_Formalisms.pdf)
-Tue |13-16       |JN + RB (LE, RB) | [Social coding, pair programming as  a tool for rapid development](https://github.com/UPPMAX/programming_formalisms/tree/main/common_practices), including a Reflection by RB from 15:15-15:45 |[PDF](common_practices/slides/notes_social_coding.pdf)
-Wed |9-12        |RB      (LE)     | [TDD](tdd/README.md)                                                                                                                                                                           |[PDF](tdd/tdd_lecture.pdf)
-Wed |13-16       |RB + JN (LE)     | [Testing](tdd/README.md), including a Reflection by JN from 15:15-15:45                                                                                                                        |[PDF](testing/testing_lecture.pdf)
-Thu |9-12        |RB      (LE)     | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)                                                          |[PDF](algorithms/algorithms_lecture.pdf)
-Thu |13-16       |RB + JN (LE)     | [Data structures](tdd/README.md), including a Reflection by JN from 15:15-15:45                                                                                                                |[PDF](data_structures/data_structures_lecture.pdf)
-Fri |9-12        |LE      (RB)     | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)                                                                   |[PDF](development_design/Modular_Programming.pdf)
-Fri |13-16       |RB + ML + JB (LE)| [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45                                                                                                          |[PDF](optimisation/optimisation_lecture.pdf)
+Day | Time       | Teacher            | Topic                                                                                                                                                                                          | Material
+----|------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------
+Mon |9-12, 13-16 |BC + JN (LE, RB)    | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html), including a Reflection by JN from 15:30-16:00                                                            |[HTML](https://uppmax.github.io/programming_formalisms_intro/index.html)
+Tue |9-12        |LE      (RB)        | [Paradigms, Introduction to formalised development](development_design/README.md)                                                                                                              |[PDF](development_design/Development_and_Programming_Formalisms.pdf)
+Tue |13-16       |JN + RB (LE, RB)    | [Social coding, pair programming as  a tool for rapid development](https://github.com/UPPMAX/programming_formalisms/tree/main/common_practices), including a Reflection by RB from 15:15-15:45 |[PDF](common_practices/slides/notes_social_coding.pdf)
+Wed |9-12        |RB      (LE)        | [TDD](tdd/README.md)                                                                                                                                                                           |[PDF](tdd/tdd_lecture.pdf)
+Wed |13-16       |RB + JN (LE)        | [Testing](tdd/README.md), including a Reflection by JN from 15:15-15:45                                                                                                                        |[PDF](testing/testing_lecture.pdf)
+Thu |9-12        |RB      (LE)        | [Algorithms](https://uppsala.instructure.com/courses/69215/pages/introduction-to-algorithms-and-datastructures?module_item_id=502918)                                                          |[PDF](algorithms/algorithms_lecture.pdf)
+Thu |13-16       |RB + LE (LE)        | [Data structures](tdd/README.md), including a Reflection by LE from 15:15-15:45                                                                                                                |[PDF](data_structures/data_structures_lecture.pdf)
+Fri |9-12        |LE      (RB)        | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)                                                                   |[PDF](development_design/Modular_Programming.pdf)
+Fri |13-16       |RB + ML + JN (LE,RB)| [Optimisation](optimisation/README.md), including a Reflection by JN from 15:15-15:45                                                                                                          |[PDF](optimisation/optimisation_lecture.pdf)
 
  * `([names])` means that `[names]` assist or observe
  * Regular course room is at the room sent around
