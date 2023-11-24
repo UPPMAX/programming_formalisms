@@ -417,7 +417,6 @@ In this diagram, a relatively detailed representation of the TDD process has bee
   * Execute Test: The developer runs the test case(s) against the system or the code being developed.
   * Evaluate Test Results: The developer evaluates the test results to determine if the test case(s) passed or failed.
 
-
 Test Failed or Test Passed: Based on the evaluation, the test can either fail or pass.
 If the test failed, the developer goes back to "Write Test" to create a new or modified test case that will capture the desired behavior. This iteration ensures that the system is designed to pass the new test case.
 
@@ -679,7 +678,7 @@ stop
 @enduml
 ```
 
-Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organisation with 27 countries and more than 230 organisations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behaviour. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
+Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organisation with 27 countries and more than 230 organisations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behavior. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
 **Diagrams**
 <image src="./img/Uml_hierarchie_des_diagrammes.png"><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
 *Structure Diagrams*
@@ -715,7 +714,7 @@ Unified modeling language is defined and managed by the OMG(object management gr
 
 * **Note**  − If the above descriptions and usages are observed carefully then it is very clear that all the diagrams have some relationship with one another. Component diagrams are dependent upon the classes, interfaces, etc. which are part of class/object diagram. Again, the deployment diagram is dependent upon the components, which are used to make component diagrams.
 
-*Behaviour Diagrams*
+### Behavior Diagrams
 
 * Activity Diagram
 Activity diagram describes the flow of control in a system. It consists of activities and links. The flow can be sequential, concurrent, or branched.
@@ -770,17 +769,16 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 ### Design Patterns
 
-A design pattern is a collection of best practises to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View (The User interface and external communications of the program)
+A design pattern is a collection of best practices to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View (The User interface and external communications of the program)
 
   <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions between program interface, control and data(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
 Some examples of where this pattern has been implemented in modern times are:
 
 * [Ruby on Rails](https://rubyonrails.org/)
-* [ASP.NET MVC](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) Microsoft Active Server Pagess in the .NET framework
+* [ASP.NET MVC](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc) Microsoft Active Server Pages in the .NET framework
 * [Laravel](https://laravel.com/) PHP framework
 * [Angular](https://angular.io/) is built using TypeScript
 A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Object-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
- <br />
 
 ### AI assisted programming/AI
 
