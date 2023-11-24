@@ -6,13 +6,34 @@ editor: visual
 from: markdown+emoji
 bibliography: algorithms_lecture.bib
 csl: vancouver.csl
+css: styles.css
+slide-number: true
+number-sections: true
 ---
 
-## Algorithms ![](CC-BY-NC-SA.png)
+# The Big Picture ![](CC-BY-NC-SA.png)
 
-<https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd>
+<https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
 
-![](programming_formalism_course.png)
+![](programming_formalism_logo_25_cropped.png)
+
+## Breaks
+
+Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
+
+## Break schedule
+
+-   10:00-10:15: Break
+-   11:00-11:15: Break
+-   12:00-13:00: Lunch
+
+# Algorithms
+
+```{python}
+#| echo: true
+#| eval: true
+import this
+```
 
 ## Problem
 
@@ -47,7 +68,7 @@ A good function:
 -   [C++ Core Guidelines on functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions)
 -   [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
 -   [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts)
--   ([PEP 20: The Zen of Python](https://peps.python.org/pep-0020/))
+-   [PEP 20: The Zen of Python](https://peps.python.org/pep-0020/)
 
 ## Design by contract
 
@@ -72,8 +93,8 @@ def sort_2(x):
   Returns the sorted list.
   """
 
-assert sort_1.__doc__ is not None
-assert sort_2.__doc__ is not None
+assert sort_1.__doc__
+assert sort_2.__doc__
 ```
 
 ## A good function has a clear name
@@ -526,12 +547,12 @@ Fibonacci sequence:
 | 1   | 1                       |
 | 2   | 1                       |
 | 3   | `Fn(1) + Fn(2)`         |
-| `n` | `Fn(n - 1) + Fn(n - 2)` |
+| `n` | `Fn(n - 2) + Fn(n - 1)` |
 
 ## Exercise
 
 -   Develop a function to get the nth value in the Fibonacci sequence
--   If the function used a for-loop, create another function that uses recursion, or vise versa
+-   If the function used a for-loop, create another function that uses recursion, or vice versa
 
 ::: columns
 ::: {.column width="50%"}

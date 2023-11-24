@@ -73,6 +73,8 @@ Short for 'Test-driven development' A systematic way to grow code
     -   Returns `False` if the input is not zero
     -   :warning: Gives an error when the input is not a number
 
+ * [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+
 ## Example exercise: `is_zero` technical
 
 -   Use the GitHub repository for the learners of this course

@@ -4,24 +4,166 @@ author: "Richèl Bilderbeek"
 format: revealjs
 editor: visual
 from: markdown+emoji
+bibliography: data_structures_lecture.bib
+csl: vancouver.csl
+css: styles.css
+slide-number: true
+number-sections: true
 ---
 
-## Data structures ![](CC-BY-NC-SA.png)
+# The Big Picture ![](CC-BY-NC-SA.png)
 
-<https://github.com/UPPMAX/programming_formalisms/blob/main/data_structures/data_structures_lecture/data_structures_lecture.qmd>
+<https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
 
-![](programming_formalism_course.png)
+![](programming_formalism_logo_25_cropped.png)
+
+## Breaks
+
+Please take breaks: these are important for learning. 
+Ideally, do something boring @newport2016deep!
+
+## Schedule
+
+-   13:45-14:00: Break
+-   14:45-15:00: Break
+-   16:00 Done!
+
+# Data structures
+
+```{python}
+#| echo: true
+#| eval: true
+import this
+```
+
+# Why data structures?
+
+ * Increase expressiveness
+ * To bundle data that belongs together
+
+## Increase expressiveness
+
+```{python}
+#| echo: true
+#| eval: true
+a = [3.14, 2.72]
+print(type(a))
+```
+
+A list is created ...?
+
+. . .
+
+```{python}
+#| echo: false
+#| eval: true
+class Coordinat:
+    def __init__(self, any_x, any_y):
+      x = any_x
+      y = any_y
+```
+
+```{python}
+#| echo: true
+#| eval: true
+b = Coordinat(3.14, 2.72)
+print(type(b))
+```
+
+Ah, it is a **coordinat**!
+
+ * [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
+ * [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
+
+## Bundle data
+
+```{python}
+#| echo: false
+#| eval: false
+# The PlantUML does not render, even not after
+# quarto add pandoc-ext/diagram
+# See https://github.com/pandoc-ext/diagram/issues/6
+```
+
+```{python}
+#| echo: false
+#| eval: false
+@startuml
+
+class Particle
+struct Speed
+struct Position
+
+Particle --* Speed
+Particle --* Position
+
+class Particle {
+  - _position
+  - _speed
+  - _max_speed
+}
+
+struct Speed {
+  + delta_x
+  + delta_y
+}
+
+struct Position {
+  + x
+  + y
+}
+
+@enduml
+```
+
+![](class_particle.png)
+
+ * [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
+
+## Bundle data
+
+```{python}
+#| echo: false
+#| eval: false
+# The PlantUML does not render, even not after
+# quarto add pandoc-ext/diagram
+# See https://github.com/pandoc-ext/diagram/issues/6
+```
+
+```{python}
+#| echo: false
+#| eval: false
+@startuml
+
+struct Position
+class Range
+
+struct Position {
+  + x
+  + y
+}
+
+class Range {
+  + _lowest
+  + _highest
+}
+
+@enduml
+```
+
+ * [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
+ * [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)
+
+# Built-in data structures
 
 ## Problem
 
 Are there classes that can help me solve problems more elegantly?
 
-How do I write these myself?
-
 ## Python classes
 
--   (`list`: heterogeneous container)
--   (`tuple`: immutable `list`)
+-   `list`: heterogeneous container
+-   `tuple`: immutable `list`
 -   `set`: sets
 -   `dict`: dictionary
 -   Regular expressions: text patterns
@@ -43,15 +185,6 @@ assert list(s) == [1, 3, 4, 5]
 
 -   No need to check for elements existing twice
 
-## `set` example for `are_primes`
-
--   `are_primes` determines of each value in a list if it is prime yes/no
--   Problem: values in that list can occur multiple times, e.g. `[42, 42, 42]`
--   Solution with a `set`:
-    -   Collect all unique values in the input
-    -   Put the unique values that are prime in a set
-    -   Check each input value to be in the set of primes
-
 ## `dict`
 
 A dictionary:
@@ -66,15 +199,6 @@ assert periodic_table[2] == "helium"
 
 -   Commonly uses as a look-up table
 -   A look-up table can store the results of earlier calculations
-
-## `dict` example for `are_primes`
-
--   `are_primes` determines of each value in a list if it is prime yes/no
--   Problem: values in that list can occur multiple times, e.g. `[42, 42, 42]`
--   Solution with a `set`:
-    -   Collect all unique values in the input
-    -   Store for each unique values if it is prime yes/no
-    -   Look up each input value in the prime look-table
 
 ## Regular expressions
 
@@ -96,7 +220,7 @@ assert not dna_regex.match("nonsense")
 
 -   <https://docs.python.org/3/library/re.html>
 
-## Writing our own classes
+# Writing a good class
 
 Q: What is a good class?
 
@@ -167,14 +291,7 @@ Some other programming languages offer stronger guarantees.
 -   Easy to abuse, hard to use correctly
 -   Design Patterns are known to work well
 
-## Design Patterns
-
--   Named proven-to-work class hierarchies
--   Examples:
-    -   Singleton: make sure an object exists once
-    -   Strategy: multiple ways to the same thing
-    -   Memento: allow for undo functionality
--   Classic: [the Gang of Four book](https://en.wikipedia.org/wiki/Design_Patterns)
+![@gamma1995elements](design_patterns_book.jpg)
 
 ## Class design
 
@@ -182,3 +299,5 @@ Some other programming languages offer stronger guarantees.
 -   [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
 
 ## Recap
+
+## References

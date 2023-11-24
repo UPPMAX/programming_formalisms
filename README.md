@@ -29,6 +29,7 @@ Fri |13-16       |RB + ML + JN (LE,RB)| [Optimisation](optimisation/README.md), 
 
  * `([names])` means that `[names]` assist or observe
  * Regular course room is at the room sent around
+ * [Detailed schedule](detailed_schedule.md)
 
 ## Projects
 
