@@ -31,6 +31,14 @@ Fri |13-16       |RB + ML + JN (LE,RB)| [Optimisation](optimisation/README.md), 
  * Regular course room is at the room sent around
  * [Detailed schedule](detailed_schedule.md)
 
+## Shared documents
+
+ * [Day 1](https://hackmd.io/@LarsEklundScilifeLife/DayOneHT2023)
+ * [Day 2](https://hackmd.io/@LarsEklundScilifeLife/DayTwoHT2023)
+ * [Day 3](https://hackmd.io/@LarsEklundScilifeLife/DayThreeHT2023)
+ * [Day 4](https://hackmd.io/@LarsEklundScilifeLife/DayFourHT2023)
+ * [Day 5](https://hackmd.io/@LarsEklundScilifeLife/DayFiveHT2023)
+
 ## Projects
 
 Team logo                                                                   |Link

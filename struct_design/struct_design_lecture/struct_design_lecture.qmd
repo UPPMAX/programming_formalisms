@@ -145,9 +145,22 @@ struct Position {
 -   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
 -   [C.2: (...) Use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
 
-## Exercise
+## structure versus class
 
+Parameter              |structure      |class
+-----------------------|---------------|-------
+Python keyword         |`class`        |`class`
+All states are valid   |Yes            |No
+Maintains a valid state|No             |Yes
+Example                |A number for an x coordinate|A string for a DNA sequence
 
+ * A structure is also called a `struct` or 'Plain Old Datatype' (POD)
+ * Class design in later session :-)
+ 
+## Exercise (10 mins)
+
+ * Which structures does the project need?
+ * Make an alphabetic list of structures
 
 ## Problem
 
