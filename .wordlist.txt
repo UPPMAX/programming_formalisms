@@ -538,4 +538,6 @@ uppmax
 css
 newport
 langr
+struct
+structs
 
