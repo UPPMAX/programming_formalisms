@@ -23,14 +23,14 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 ## Schedule
 
-Day|From |To   |What
----|-----|-----|------------------------------------------
-Thu|9:00 |10:00|Class diagram for project
-Thu|10:00|10:15|Break
-Thu|10:15|11:00|Creating files and first tests for project
-Thu|11:00|11:15|Break
-Thu|11:15|12:00|Lecture: Class design
-Thu|12:00|13:00|Lunch
+| Day | From  | To    | What                                       |
+|-----|-------|-------|--------------------------------------------|
+| Thu | 9:00  | 10:00 | Class diagram for project                  |
+| Thu | 10:00 | 10:15 | Break                                      |
+| Thu | 10:15 | 11:00 | Creating files and first tests for project |
+| Thu | 11:00 | 11:15 | Break                                      |
+| Thu | 11:15 | 12:00 | Lecture: Class design                      |
+| Thu | 12:00 | 13:00 | Lunch                                      |
 
 # Data structures
 
@@ -40,14 +40,9 @@ Thu|12:00|13:00|Lunch
 import this
 ```
 
-> The Zen of Python, by Tim Peters 
-> 
-> [...]
-> Readability counts. 
-> [...]
-> If the implementation is hard to explain, it's a bad idea. 
-> If the implementation is easy to explain, it may be a good idea.
-> [...]
+> The Zen of Python, by Tim Peters
+>
+> \[...\] Readability counts. \[...\] If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. \[...\]
 
 # Why data structures?
 
@@ -108,7 +103,6 @@ Ah, it is a **coordinat**!
 
 ## Bundle data
 
-
 ```{python}
 #| echo: false
 #| eval: false
@@ -152,20 +146,19 @@ struct Position {
 
 ## structure versus class
 
-Parameter              |structure      |class
------------------------|---------------|-------
-Python keyword         |`class`        |`class`
-All states are valid   |Yes            |No
-Maintains a valid state|No             |Yes
-Example                |A number for an x coordinate|A string for a DNA sequence
+| Parameter               | structure                    | class                       |
+|----------------------------------|----------------------|----------------|
+| Python keyword          | `class`                      | `class`                     |
+| All states are valid    | Yes                          | No                          |
+| Maintains a valid state | No                           | Yes                         |
+| Example                 | A number for an x coordinate | A string for a DNA sequence |
 
- * A structure is also called a `struct` or 'Plain Old Datatype' (POD)
- * Class design in later session :-)
- 
+-   A structure is also called a `struct` or 'Plain Old Datatype' (POD)
+-   Class design in later session :-)
+
 ## Exercise (10 mins)
 
- * Which structures does the project need?
- * Together: make an alphabetic list of structures in the shared document
- 
+-   Which structures does the project need?
+-   Together: make an alphabetic list of structures in the shared document
 
 ## References

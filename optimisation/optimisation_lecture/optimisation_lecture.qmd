@@ -6,8 +6,10 @@ editor: visual
 from: markdown+emoji
 bibliography: optimisation_lecture.bib
 csl: vancouver.csl
+css: styles.css
+slide-number: true
+number-sections: true
 ---
-
 
 # The Big Picture ![](CC-BY-NC-SA.png)
 
@@ -17,39 +19,39 @@ csl: vancouver.csl
 
 ## Breaks
 
-Please take breaks: these are important for learning. 
-Ideally, do something boring @newport2016deep!
+Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
 
 ## Schedule
 
-Day|From |To   |What
----|-----|-----|------------------------------------------
-Fri|12:00|13:00|Lunch
-Fri|13:00|14:00|Lecture: optimization
-Fri|14:00|14:15|Break
-Fri|14:15|15:00|Project: write/optimize code
-Fri|15:00|15:15|Break
-Fri|15:15|15:45|Project: write/optimize code
-Fri|15:45|16:00|Reflection
+| Day | From  | To    | What                         |
+|-----|-------|-------|------------------------------|
+| Fri | 12:00 | 13:00 | Lunch                        |
+| Fri | 13:00 | 14:00 | Lecture: optimization        |
+| Fri | 14:00 | 14:15 | Break                        |
+| Fri | 14:15 | 15:00 | Project: write/optimize code |
+| Fri | 15:00 | 15:15 | Break                        |
+| Fri | 15:15 | 15:45 | Project: write/optimize code |
+| Fri | 15:45 | 16:00 | Reflection                   |
 
-## Optimisation
+# Optimisation
 
 <https://github.com/UPPMAX/programming_formalisms/blob/main/optimisation/optimisation_lecture/optimisation_lecture.qmd>
 
 ![](programming_formalism_course.png)
 
-## Problem
+# Why optimization?
+
+To improve the runtime speed (or memory use) of a program
+
+![](captain_obvious.png)
+
+> [Captain Obvious](https://allthetropes.org/wiki/File:Captainobvious02_778_7124.png)
+
+# Misconceptions
 
 Q: What would be **bad advice** to improve the run-time speed of an algorithm?
 
-. . .
-
--   'Use C or C++ or Rust' @prechelt2000empirical
--   'No for loops', 'unroll for-loops', any other micro-optimization
--   'Always parallelize'
--   'Optimize the function where you feel the performance problem is'
--   'Optimize each function'
--   'In C++: use arrays of std::vector. Trust me: I measured!'
+Fill in in the shared document!
 
 ## Bad advice 1
 
@@ -57,11 +59,9 @@ Q: What would be **bad advice** to improve the run-time speed of an algorithm?
 
 . . .
 
-Variance within programming languages 
-is bigger than variance between languages @prechelt2000empirical
-(e.g. figure 2 below)
+Variance within programming languages is bigger than variance between languages (adapted fig 2, from @prechelt2000empirical)
 
-![](prechelt_fig_2.png)
+![](prechelt_fig_2_sub.png)
 
 ## Bad advice 2
 
@@ -69,9 +69,22 @@ is bigger than variance between languages @prechelt2000empirical
 
 . . .
 
-This is a micro-optimization.
+Premature optimization is the root of all evil.
+It likely has no measurable effect.
 
-Likely there is no measurable effect
+## Bad advice 2
+
+> We should forget about small efficiencies, 
+> say about 97% of the time: 
+> premature optimization is the root of all evil. 
+> Yet we should not pass up our opportunities 
+> in that critical 3%.
+>
+> Donald Knuth
+
+![Donald Knuth](donald_knuth.jpg)
+
+> Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
 
 ## Bad advice 3
 
@@ -79,32 +92,37 @@ Likely there is no measurable effect
 
 . . .
 
+-   Depends on proportion spent in
+    the parallelized part @rodgers1985improvements
+-   Overhead is underestimated
 -   Hard to debug
--   Overhead is underestimated, e.g. 10x as much processor time for 2x speed [1]
 
- * [1] HPC cluster training, now [behind a login](https://wiki.hpc.rug.nl/peregrine/start) :-(
- 
+## Bad advice 3
+
+![amdahls_law.png](https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg#file)
+
 ## Bad advice 4
 
-'Optimize the function where you feel the performance problem is'
+'Optimize the function where 
+you feel the performance problem is'
 
 Developers -also very experienced developers- are known to have a bad intuition @sutter2004cpp
+
+Instead, from @chellappa2008write:
+
+1. finding code program spends most time in
+2. measure timing of that code
+3. analyze the measured runtimes
 
 ## Bad advice 5
 
 'Optimize each function'
 
--   The 90-10 rule: 90% of all time, the program spends in 10% of the code.
+-   The 90-10 rule: 
+    90% of all time, the program spends in 10% of the code.
 -   Your working hours can be spent once
 
-## Bad advice 6
-
-'In C++: use arrays of std::vector. Trust me: I measured!'
-
--   Shows a misunderstanding of beginners
--   C++ (and many other languages) have a *debug* and *release* mode
--   The well-intended advice is only true in debug mode :-) \[1\]
--   \[1\] [My own benchmark](https://github.com/richelbilderbeek/cpp_benchmark_array_versus_std_vector)
+# Proper method
 
 ## Problem
 
@@ -118,21 +136,27 @@ A:
 -   [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
 -   [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
 
-## Famous quote
-
-> We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
->
-> Donald Knuth
-
-![Donald Knuth](donald_knuth.jpg)
-
-> Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
 
 ## Problem
 
 Q: How to improve the run-time speed of an algorithm?
 
 . . .
+
+> Make it work, make it right, make it fast.
+>
+> Kent Beck
+
+A (simplified):
+
+1.  Measure (hard to do @bartz2020benchmarking)
+2.  Think
+3.  Change code
+4.  Measure again
+
+## Problem
+
+Q: How to improve the run-time speed of an algorithm?
 
 A (simplified):
 
@@ -209,7 +233,6 @@ Big-O helps to:
 
 ::: columns
 ::: {.column width="50%"}
-
 🪱
 
 ```{python}
@@ -241,7 +264,6 @@ def isprime(num):
         return False
 ```
 :::
-
 :::
 
 ## Exercise 1
@@ -250,7 +272,6 @@ def isprime(num):
 
 ::: columns
 ::: {.column width="50%"}
-
 🪱
 
 ```{python}
@@ -267,7 +288,6 @@ def isprime(num):
 :::
 
 ::: {.column width="50%"}
-
 🪱
 
 ```{python}
@@ -281,20 +301,18 @@ def Prime(no, i = 2):
     return Prime(no, i + 1)
 ```
 :::
-
 :::
-
 
 ## Exercise 2
 
 -   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
 
-```
+```         
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTCGTACGTACGT
 ```
 
-```
+```         
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGT-CGTACGTACGT
 ```
