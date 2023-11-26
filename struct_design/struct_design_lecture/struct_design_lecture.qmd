@@ -23,9 +23,14 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 ## Schedule
 
--   13:45-14:00: Break
--   14:45-15:00: Break
--   16:00 Done!
+Day|From |To   |What
+---|-----|-----|------------------------------------------
+Thu|9:00 |10:00|Class diagram for project
+Thu|10:00|10:15|Break
+Thu|10:15|11:00|Creating files and first tests for project
+Thu|11:00|11:15|Break
+Thu|11:15|12:00|Lecture: Class design
+Thu|12:00|13:00|Lunch
 
 # Data structures
 

@@ -8,7 +8,31 @@ bibliography: optimisation_lecture.bib
 csl: vancouver.csl
 ---
 
-## Optimisation ![](CC-BY-NC-SA.png)
+
+# The Big Picture ![](CC-BY-NC-SA.png)
+
+<https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
+
+![](programming_formalism_logo_25_cropped.png)
+
+## Breaks
+
+Please take breaks: these are important for learning. 
+Ideally, do something boring @newport2016deep!
+
+## Schedule
+
+Day|From |To   |What
+---|-----|-----|------------------------------------------
+Fri|12:00|13:00|Lunch
+Fri|13:00|14:00|Lecture: optimization
+Fri|14:00|14:15|Break
+Fri|14:15|15:00|Project: write/optimize code
+Fri|15:00|15:15|Break
+Fri|15:15|15:45|Project: write/optimize code
+Fri|15:45|16:00|Reflection
+
+## Optimisation
 
 <https://github.com/UPPMAX/programming_formalisms/blob/main/optimisation/optimisation_lecture/optimisation_lecture.qmd>
 
