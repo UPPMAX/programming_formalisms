@@ -52,6 +52,8 @@ def test_update():
     new_data = 66.2
     updated_subject = ResearchSubject(test_subject.identifier, new_data)
     subjects.update(updated_subject)
-    stored = next(filter(lambda s: s.identifier == test_subject.identifier, subjects.collection))
+    stored = next(
+        filter(lambda s: s.identifier == test_subject.identifier, subjects.collection)
+    )
     assert stored.identifier == test_subject.identifier
     assert stored.data == updated_subject.data
