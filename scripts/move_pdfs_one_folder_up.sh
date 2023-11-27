@@ -18,11 +18,14 @@ if [[ "$PWD" =~ scripts$ ]]; then
     exit 42
 fi
 
-if [[ ! -z "$CI" ]]; then
+if [[ -z "$CI" ]]; then
     echo "FATAL ERROR."
     echo "This script must be run on GitHub Actions."
     exit 43
 fi
+
+exit 44
+
 for file in find . | grep "pdf$"; do
   mv $file dirname(dirname($file))
 done
