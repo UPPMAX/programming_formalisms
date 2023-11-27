@@ -3,15 +3,15 @@
 ## SDLC
 
 *SDLC* ,or the Software Development Life Cycle, is a model describing the process of bringing a piece of software to market and maintaining it. The basic steps or as they are know phases each encompass different tasks needed to be completed as the software goes from idea to fruition.
-<image src="./img/SDLC.png">
+<image src="./img/SDLC.png"/>
 <span style="font-size:10px"> Generalized SDLC phases as a cycle of steps where the circle is traversed multiple times, there is a week correlation between cycles and versions</span>
 
 You will if you google around many variations of this and the phases can change some what but the general idea stays constant. The following illustrations show both a variation of the common lifecycle model and  the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
   <!--- https://www.tutorialspoint.com/sdlc/index.htm --->
-<image src="./img/SDLC_ISO_IEC_12207.png"><span style="font-size:10px"> Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010
+<image src="./img/SDLC_ISO_IEC_12207.png"/><span style="font-size:10px"/> Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010
 Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Life Cycle Management</span>
 
- The early models where depicted as circles stemming from the water fall model. <image src="./img/Waterfall_system_model.jpg"><span style="font-size:10px"> Illustration waterfall model from <https://commons.wikimedia.org/wiki/File:Waterfall_system_model.jpg> </span>
+ The early models where depicted as circles stemming from the water fall model. <image src="./img/Waterfall_system_model.jpg"/><span style="font-size:10px"> Illustration waterfall model from <https://commons.wikimedia.org/wiki/File:Waterfall_system_model.jpg> </span>
 
  After the 80s models tend  to focus on the iterative nature of development. One way of thinking about the iterative nature of development while keeping the incremental cost of iteration is as a helix. Where a change in the design in a lower spiral incurs the cost of the previous spirals, eventually the cost of introducing change into the next step will be larger that what is profitable for the project, at which time the efforts into the project usually trickles down rather than following the theoretical step of retirement.
  <image src="./img/helix_legend-01.png" > The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license<span style="font-size:10px"> </span>
@@ -45,7 +45,7 @@ Most models cover some form of risk assessment, involved in the requirements gat
 #### Risk assessment
 
 ***This table does not render correctly in preview mode see the github pages for a complete view***
-  <table>
+<table>
  <tr>
     <th>Probability/Severity</th>
     <th>S1</th>
@@ -771,7 +771,7 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 A design pattern is a collection of best practices to solve a given design problem. Such as window management on your computer. One such pattern is the Model View Control pattern developed by  first introduced in 1979 by computer scientist Trygve Mikkjel Heyerdahl Reenskaug it describes the partition of a system into three components Model(the Data of the system and data interactions), the Controller/Control(the process control flow of the program) and the View (The User interface and external communications of the program)
 
-  <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"> [MVC model describing the interactions between program interface, control and data(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
+  <image src="./img/Model-View-Controller_architectural_pattern.png"><span style="font-size:10px"/> [MVC model describing the interactions between program interface, control and data(Model)](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Model-View-Controller_architectural_pattern.svg/2560px-Model-View-Controller_architectural_pattern.svg.png)</span>
 Some examples of where this pattern has been implemented in modern times are:
 
 * [Ruby on Rails](https://rubyonrails.org/)
