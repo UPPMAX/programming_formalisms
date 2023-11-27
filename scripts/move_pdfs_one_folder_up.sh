@@ -44,5 +44,5 @@ for filename in $(find . | grep "pdf$"); do
   to=$(dirname "${from}")
   echo "to: ${to}"
 
-  #mv ${from} ${to}
+  mv ${from} ${to}
 done
