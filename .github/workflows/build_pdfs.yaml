@@ -36,11 +36,15 @@ jobs:
         run: install.packages(c("ggplot2", "reticulate", "rmarkdown", "testthat", "tidyr"))
         shell: Rscript {0}
 
+      # This will break the scripts
+      - name: Delete folders that have PDFs with spaces
+        run: rm -rf development_design
+
       # These PDFs are there so that git does not check a PDF each change.
       # The idea is to put the PDFs created by GHA (i.e. this script)
       # there manually
       - name: Delete old PDFs
-        run: rm $(find . | egrep "pdf$") || true
+        run: rm $(find . | egrep "pdf$")
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
