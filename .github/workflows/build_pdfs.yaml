@@ -73,6 +73,12 @@ jobs:
           path: testing/testing_lecture/testing_lecture.qmd
 
       #############################################
+      # Move all PDFs one folder up, for each copy
+      #############################################
+      - name: Move all PDFs one folder up
+        run: ./scripts/move_pdfs_one_folder_up.sh
+
+      #############################################
       # Upload
       #############################################
       - name: Upload PDF to the workflow tab
