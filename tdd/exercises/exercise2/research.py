@@ -4,7 +4,7 @@ class ResearchSubjects:
         self.__collection = {}
 
     def add(self, subject_to_add):
-        assert subject_to_add.identifier not in self.__collection, f" Subject {subject_to_add.identifier} already exists"
+        assert subject_to_add.identifier not in self.__collection, f" Subject {subject_to_add.identifier} already exists" # noqa: E501 indeed a long line
         self.__collection[subject_to_add.identifier] = subject_to_add
 
     def find(self, identifier):

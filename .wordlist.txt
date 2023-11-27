@@ -540,4 +540,11 @@ newport
 langr
 struct
 structs
+bartz
+benchmarking
+runtimes
+chellappa
+parallelized
+rodgers
+AmdahlsLaw
 

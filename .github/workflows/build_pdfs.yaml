@@ -40,22 +40,7 @@ jobs:
       # The idea is to put the PDFs created by GHA (i.e. this script)
       # there manually
       - name: Delete old PDFs
-        run: |
-          rm tdd/tdd_lecture.pdf
-          rm testing/testing_lecture.pdf
-          rm data_structures/data_structures_lecture.pdf
-          rm optimisation/optimisation_lecture.pdf
-          rm algorithms/algorithms_lecture.pdf
-
-      - uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: pdf
-          path: tdd/tdd_lecture/tdd_lecture.qmd
-
-      - uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: pdf
-          path: testing/testing_lecture/testing_lecture.qmd
+        run: rm $(find . | egrep "pdf$")
 
       - uses: quarto-dev/quarto-actions/render@v2
         with:
@@ -71,6 +56,21 @@ jobs:
         with:
           to: pdf
           path: optimisation/optimisation_lecture/optimisation_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: struct_design/struct_design_lecture/struct_design.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: tdd/tdd_lecture/tdd_lecture.qmd
+
+      - uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: pdf
+          path: testing/testing_lecture/testing_lecture.qmd
 
       #############################################
       # Upload

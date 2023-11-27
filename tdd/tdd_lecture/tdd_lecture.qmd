@@ -21,11 +21,16 @@ number-sections: true
 
 Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
 
-## Break schedule
+## Schedule
 
--   10:00-10:15: Break
--   11:00-11:15: Break
--   12:00-13:00: Lunch
+Day|From |To   |What
+---|-----|-----|--------------------------
+Wed|9:00 |10:00|TDD
+Wed|10:00|10:15|Break
+Wed|10:15|11:00|TDD
+Wed|11:00|11:15|Break
+Wed|11:15|12:00|TDD
+Wed|12:00|13:00|Lunch
 
 # Growing code
 
