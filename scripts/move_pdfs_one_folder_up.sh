@@ -18,14 +18,31 @@ if [[ "$PWD" =~ scripts$ ]]; then
     exit 42
 fi
 
-if [[ -z "$CI" ]]; then
-    echo "FATAL ERROR."
-    echo "This script must be run on GitHub Actions."
-    exit 43
-fi
+#if [[ -z "$CI" ]]; then
+#    echo "FATAL ERROR."
+#    echo "This script must be run on GitHub Actions."
+#    exit 43
+#fi
 
-exit 44
+for filename in $(find . | grep "pdf$"); do
+  if [[ "${filename}" =~ development_design ]]; then
+    echo "Skipping 'development_design' filename: ${filename}"
+    continue
+  fi
+  if [[ "${filename}" =~ retrospectives ]]; then
+    echo "Skipping 'retrospectives' filename: ${filename}"
+    continue
+  fi
+  if [[ "${filename}" =~ common_practices ]]; then
+    echo "Skipping 'common_practices' filename: ${filename}"
+    continue
+  fi
+  echo "filename: ${filename}"
+  from="${filename}"
+  echo "from: ${from}"
+  folder=$(dirname "${from}")
+  to=$(dirname "${from}")
+  echo "to: ${to}"
 
-for file in find . | grep "pdf$"; do
-  mv $file dirname(dirname($file))
+  #mv ${from} ${to}
 done
