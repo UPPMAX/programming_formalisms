@@ -69,16 +69,11 @@ Variance within programming languages is bigger than variance between languages 
 
 . . .
 
-Premature optimization is the root of all evil.
-It likely has no measurable effect.
+Premature optimization is the root of all evil. It likely has no measurable effect.
 
 ## Bad advice 2
 
-> We should forget about small efficiencies, 
-> say about 97% of the time: 
-> premature optimization is the root of all evil. 
-> Yet we should not pass up our opportunities 
-> in that critical 3%.
+> We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
 >
 > Donald Knuth
 
@@ -92,34 +87,31 @@ It likely has no measurable effect.
 
 . . .
 
--   Depends on proportion spent in
-    the parallelized part @rodgers1985improvements
+-   Maximum gain depends on proportion spent in the parallelized part @rodgers1985improvements
 -   Overhead is underestimated
 -   Hard to debug
 
 ## Bad advice 3
 
-![amdahls_law.png](https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg#file)
+![https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg#file](amdahls_law.png)
 
 ## Bad advice 4
 
-'Optimize the function where 
-you feel the performance problem is'
+'Optimize the function where you feel the performance problem is'
 
 Developers -also very experienced developers- are known to have a bad intuition @sutter2004cpp
 
 Instead, from @chellappa2008write:
 
-1. finding code program spends most time in
-2. measure timing of that code
-3. analyze the measured runtimes
+1.  finding code program spends most time in
+2.  measure timing of that code
+3.  analyze the measured runtimes
 
 ## Bad advice 5
 
 'Optimize each function'
 
--   The 90-10 rule: 
-    90% of all time, the program spends in 10% of the code.
+-   The 90-10 rule: 90% of all time, the program spends in 10% of the code.
 -   Your working hours can be spent once
 
 # Proper method
@@ -135,7 +127,6 @@ A:
 -   [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
 -   [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
 -   [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
-
 
 ## Problem
 
