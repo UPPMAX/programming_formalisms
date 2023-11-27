@@ -41,7 +41,7 @@ for filename in $(find . | grep "pdf$"); do
   from="${filename}"
   echo "from: ${from}"
   folder=$(dirname "${from}")
-  to=$(dirname "${from}")
+  to=$(dirname "${folder}")
   echo "to: ${to}"
 
   mv ${from} ${to}
