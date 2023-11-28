@@ -64,11 +64,6 @@ jobs:
       - uses: quarto-dev/quarto-actions/render@v2
         with:
           to: pdf
-          path: struct_design/struct_design_lecture/struct_design_lecture.qmd
-
-      - uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: pdf
           path: tdd/tdd_lecture/tdd_lecture.qmd
 
       - uses: quarto-dev/quarto-actions/render@v2
