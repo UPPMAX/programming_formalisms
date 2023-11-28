@@ -6,10 +6,6 @@
    * [PDF](tdd_lecture.pdf) 
    * [qmd](tdd_lecture/tdd_lecture.qmd)
 
-## Solutions
-
- * GitHub repository with solutions to the exercises: [https://github.com/richelbilderbeek/programming_formalisms_tdd](https://github.com/richelbilderbeek/programming_formalisms_tdd)
-
 ## Videos
 
 Title                        |Length   |Download                                                                |YouTube
