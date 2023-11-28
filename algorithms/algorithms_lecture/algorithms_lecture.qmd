@@ -517,6 +517,7 @@ def align_two_dna_sequences(dna_sequences):
 -   Develop a function to get the factorial of a number
 -   If the function used a for-loop, 
     create another function that uses recursion, or the other way around
+-   Write the code of the function as a pair and/or with help of an AI
 
 ::: columns
 ::: {.column width="50%"}
@@ -564,6 +565,7 @@ Fibonacci sequence:
 
 -   Develop a function to get the nth value in the Fibonacci sequence
 -   If the function used a for-loop, create another function that uses recursion, or vice versa
+-   Write the code of the function as a pair and/or with help of an AI
 
 ::: columns
 ::: {.column width="50%"}
