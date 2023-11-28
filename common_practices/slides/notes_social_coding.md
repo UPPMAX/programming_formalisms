@@ -65,7 +65,7 @@ From [Nature editorial policy](https://www.nature.com/authors/policies/availabil
 - Do not lock yourself out of own code
 - Attract developers
 - Engagement from industry
-- It could to become standard
+- It could become standard
 
 ---
 
