@@ -13,25 +13,24 @@ number-sections: true
 
 # The Big Picture ![](CC-BY-NC-SA.png)
 
-<https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
+<https://github.com/UPPMAX/programming_formalisms/blob/main/data_structures/data_structures_lecture/data_structures_lecture.qmd>
 
 ![](programming_formalism_logo_25_cropped.png)
 
 ## Breaks
 
-Please take breaks: these are important for learning. 
-Ideally, do something boring @newport2016deep!
+Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
 
 ## Schedule
 
-Day|From |To   |What
----|-----|-----|------------------------------------------
-Thu|9:00 |10:00|Class diagram for project
-Thu|10:00|10:15|Break
-Thu|10:15|11:00|Creating files and first tests for project
-Thu|11:00|11:15|Break
-Thu|11:15|12:00|Lecture: Class design
-Thu|12:00|13:00|Lunch
+| Day | From  | To    | What                                       |
+|-----|-------|-------|--------------------------------------------|
+| Thu | 9:00  | 10:00 | Class diagram for project                  |
+| Thu | 10:00 | 10:15 | Break                                      |
+| Thu | 10:15 | 11:00 | Creating files and first tests for project |
+| Thu | 11:00 | 11:15 | Break                                      |
+| Thu | 11:15 | 12:00 | Lecture: Class design                      |
+| Thu | 12:00 | 13:00 | Lunch                                      |
 
 # Data structures
 
@@ -43,8 +42,8 @@ import this
 
 # Why data structures?
 
- * Increase expressiveness
- * To bundle data that belongs together
+-   Increase expressiveness
+-   To bundle data that belongs together
 
 ## Increase expressiveness
 
@@ -77,8 +76,8 @@ print(type(b))
 
 Ah, it is a **coordinat**!
 
- * [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
- * [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
+-   [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
+-   [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
 ## Bundle data
 
@@ -123,7 +122,7 @@ struct Position {
 
 ![](class_particle.png)
 
- * [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
+-   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
 
 ## Bundle data
 
@@ -156,8 +155,8 @@ class Range {
 @enduml
 ```
 
- * [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
- * [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)
+-   [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
+-   [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)
 
 # Built-in data structures
 

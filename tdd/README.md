@@ -34,6 +34,15 @@ Solution `is_prime`          |  9 mins | [here](https://richelbilderbeek.nl/tdd_
  * (S1: `owner_name/is_roman_number`)
  * (S2: `owner_name/is_prime`)
 
+## Videos on GitHub workflows
+
+  1. [Modify README on main branch using GitHub web interface](https://youtu.be/xBH2xZoKof4?si=ohdG6-y8lzarSqIa)
+  2. [Modify README on topic branch using GitHub web interface](https://youtu.be/vPyHWsnbXw8?si=XjD6a3WDY44I97Se)
+  3. [Modify README on main branch using git](https://youtu.be/A85wZTiCMTc?si=oUyrg_53gVlqEanb)
+  4. [Modify README on topic branch using git](https://youtu.be/ZkfjAfu9Wo4?si=myBTkJ179n9fXHrS)
+  5. [Merge topic branch to develop yourself](https://youtu.be/1fKdU1m3Uug?si=qox0K-EdZ-tDpcRY)
+  6. [Merge topic branch to develop with a code review](https://youtu.be/VexyXysb-BM?si=uCOuqCVuZ_ylsUtI)
+
 ## Links
 
  * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)

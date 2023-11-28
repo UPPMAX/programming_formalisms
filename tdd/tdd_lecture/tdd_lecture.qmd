@@ -23,14 +23,14 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 ## Schedule
 
-Day|From |To   |What
----|-----|-----|--------------------------
-Wed|9:00 |10:00|TDD
-Wed|10:00|10:15|Break
-Wed|10:15|11:00|TDD
-Wed|11:00|11:15|Break
-Wed|11:15|12:00|TDD
-Wed|12:00|13:00|Lunch
+| Day | From  | To    | What                  |
+|-----|-------|-------|-----------------------|
+| Wed | 9:00  | 10:00 | TDD: `is_even`        |
+| Wed | 10:00 | 10:15 | Break                 |
+| Wed | 10:15 | 11:00 | TDD: `is_odd`         |
+| Wed | 11:00 | 11:15 | Break                 |
+| Wed | 11:15 | 12:00 | TDD: `is_probability` |
+| Wed | 12:00 | 13:00 | Lunch                 |
 
 # Growing code
 
@@ -56,7 +56,9 @@ Work systematically
 
 ## TDD
 
-Short for 'Test-driven development' A systematic way to grow code
+Short for 'Test-driven development'. 
+A systematic way to grow code, used in academia and industry.
+It works @martin2011clean!
 
 ![](tdd_hat_2.jpg)
 
@@ -77,12 +79,26 @@ Short for 'Test-driven development' A systematic way to grow code
     -   Returns `True` if the input is zero
     -   Returns `False` if the input is not zero
     -   :warning: Gives an error when the input is not a number
+-   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
- * [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+## Example exercise: `is_zero`, social
+
+-   Pair up
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
+-   Try to be **an exemplary duo**
 
 ## Example exercise: `is_zero` technical
 
--   Use the GitHub repository for the learners of this course
+-   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
 -   Work on the main branch
 -   Work in a file called `learners/[your_name]/is_zero.py`
 
@@ -119,6 +135,21 @@ A: Yes @beck2022test@langr2013modern
     -   :warning: Gives an error when the input is not a number
 -   Try to be **exemplary**
 -   We'll discuss a random commit history
+
+## Exercise 1: `is_even` social (30 mins)
+
+-   Pair up
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
+-   Try to be **an exemplary duo**
 
 ## Exercise 1: `is_even` technical (30 mins)
 
@@ -187,6 +218,21 @@ A: Until you cannot break your function anymore @beck2022test@langr2013modern
 -   Try to be **exemplary**
 -   We'll discuss a commit history after the exercise
 
+## Exercise 2: `is_odd` social (30 mins)
+
+-   Pair up
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
+-   Try to be **an exemplary duo**
+
 ## Exercise 2: `is_odd`, technical (30 mins)
 
 -   Use the GitHub repository for the learners of this course, e.g. https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023
@@ -215,6 +261,21 @@ Done? Try exercise 3: `is_probability`.
 -   Try to be **exemplary**
 -   We'll discuss a commit history after the exercise
 
+## Exercise 3: `is_probability` social (30 mins)
+
+-   Pair up
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
+-   Discuss how and when to switch roles first!
+-   Person with first name first in alphabet starts
+-   Try to be **an exemplary duo**
+
 ## Exercise 3: `is_probability`, technical (30 mins)
 
 -   Use the GitHub repository for the learners of this course
@@ -232,7 +293,7 @@ Done? Try exercise 3: `is_probability`.
 Done?
 
 | Exercise | Function name     | Function purpose                             |
-|------------------|------------------|------------------------------------|
+|-------------------|-------------------|-----------------------------------|
 | 4        | `is_number`       | Determines if an object is a number          |
 | 5        | `are_numbers`     | Determines if an object is a list of numbers |
 | S1       | `is_roman_number` | Determine if a string is a roman number      |

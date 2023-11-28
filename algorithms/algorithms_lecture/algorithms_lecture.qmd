@@ -23,17 +23,17 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 ## Schedule
 
-Day|From |To   |What
----|-----|-----|------------------------------------------
-Thu|12:00|13:00|Lunch
-Thu|13:00|14:00|Project: improve class code
-Thu|14:00|14:15|Break
-Thu|14:15|15:00|Lecture: Function design
-Thu|15:00|15:15|Break
-Thu|15:15|15:45|Project: improve function code
-Thu|15:45|16:00|Reflection
+| Day | From  | To    | What                           |
+|-----|-------|-------|--------------------------------|
+| Thu | 12:00 | 13:00 | Lunch                          |
+| Thu | 13:00 | 14:00 | Project: improve class code    |
+| Thu | 14:00 | 14:15 | Break                          |
+| Thu | 14:15 | 15:00 | Lecture: Function design       |
+| Thu | 15:00 | 15:15 | Break                          |
+| Thu | 15:15 | 15:45 | Project: improve function code |
+| Thu | 15:45 | 16:00 | Reflection                     |
 
-# Algorithms
+## The Zen of Pi
 
 ```{python}
 #| echo: true
@@ -51,30 +51,23 @@ How do I write functions \[1\] that are:
 
 References;
 
--   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' \[3\],
+-   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' @dictionary_algorithm
 -   \[2\] pick any vague definition
--   \[3\] <https://www.merriam-webster.com/dictionary/algorithm>
 
 ## What is a good function?
 
-A good function:
+A good function ...
 
 . . .
 
--   Is documented
--   Has a clear name
--   Has a clear interface
--   Does one thing correctly
--   Is tested
--   Gives clear error messages
--   Fast iff needed
-
-## References
-
--   [C++ Core Guidelines on functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions)
--   [R Tidyverse style guidelines on functions](https://style.tidyverse.org/functions.html)
--   [The Hitchhiker's Guide to Python on general concepts](https://docs.python-guide.org/writing/style/#general-concepts)
--   [PEP 20: The Zen of Python](https://peps.python.org/pep-0020/)
+-   Sometimes: is documented @ram2013ropensci @tidyverse_style_guide_functions
+-   Is small @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
+-   Has a good (:innocent:) name @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions @pep_20 @hitchhikers_guide_to_python_general_concepts
+-   Is easy to use correctly and hard to use incorrectly @meyers2005effective @cpp_core_guidelines_functions @pep_20
+-   Does one thing correctly @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
+-   Is tested @martin2011clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
+-   Raises helpful exceptions @@martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions @pep_20
+-   Fast iff needed @cpp_core_guidelines_functions
 
 ## Design by contract
 
@@ -103,13 +96,24 @@ assert sort_1.__doc__
 assert sort_2.__doc__
 ```
 
-## A good function has a clear name
+Mandatory in some contexts @ram2013ropensci @tidyverse_style_guide_functions
+
+## A good function has a good name 
 
 > There are only two hard things in Computer Science: cache invalidation and naming things
 >
 > Phil Karlton
 
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
+
+-   starts with a verb @tidyverse_style_guide_functions 
+-   readable @pep_20
+-   intention-revealing @martin2009clean
+-   pronounceable @martin2009clean
+-   searchable @martin2009clean
+-   not cute @martin2009clean
+-   no pun @martin2009clean
+-   carefully @cpp_core_guidelines_functions 
 
 ## Examples of bad function names?
 
@@ -511,7 +515,8 @@ def align_two_dna_sequences(dna_sequences):
 ## Exercise 1: factorial
 
 -   Develop a function to get the factorial of a number
--   If the function used a for-loop, create another function that uses recursion, or the other way around
+-   If the function used a for-loop, 
+    create another function that uses recursion, or the other way around
 
 ::: columns
 ::: {.column width="50%"}

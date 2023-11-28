@@ -24,15 +24,15 @@ Ideally, do something boring @newport2016deep!
 
 ## Schedule
 
-Day|From |To   |What
----|-----|-----|--------------------------
-Wed|12:00|13:00|Lunch
-Wed|13:00|14:00|Testing
-Wed|14:00|14:15|Break
-Wed|14:15|15:00|Testing
-Wed|15:00|15:15|Break
-Wed|15:15|15:45|Testing
-Wed|15:45|16:00|Reflection
+| Day | From  | To    | What       |
+|-----|-------|-------|------------|
+| Wed | 12:00 | 13:00 | Lunch      |
+| Wed | 13:00 | 14:00 | Testing, `is_prime_[names]` |
+| Wed | 14:00 | 14:15 | Break      |
+| Wed | 14:15 | 15:00 | Testing, `flip_coin_[names]` |
+| Wed | 15:00 | 15:15 | Break      |
+| Wed | 15:15 | 15:45 | Testing, `get_digits_[names]` |
+| Wed | 15:45 | 16:00 | Reflection |
 
 # Testing
 
@@ -152,8 +152,7 @@ class TestSmall(unittest.TestCase):
 
 ## Exercise: `is_prime`
 
--   Function name: `is_prime_[name]`, 
-    for example, `is_prime_richel`
+-   Function name: `is_prime_[name]`, for example, `is_prime_richel`
 -   Output:
     -   Returns `True` if the input is prime
     -   Returns `False` if the input is not prime
@@ -162,9 +161,14 @@ class TestSmall(unittest.TestCase):
 ## Exercise: `is_prime`, social
 
 -   Pair up
--   Switch roles every 
-    - (1) `x` minutes, e.g. every 5 minutes, or
-    - (2) after a piece of work has been done
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
 -   Discuss how and when to switch roles first!
 -   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
@@ -174,11 +178,8 @@ class TestSmall(unittest.TestCase):
 -   Work within scaffolding of the learners project
     -   Functions are in `src/[package_name]/testing.py`
     -   Tests are in `tests/test_testing.py`
--   Work on the main branch only, 
-    share code using `git push` and `git pull`
--   order the `is_prime_[name]` 
-    functions and tests alphabetically,
-    e.g. `is_prime_lars` comes before `is_prime_richel`
+-   Work on the main branch only, share code using `git push` and `git pull`
+-   order the `is_prime_[name]` functions and tests alphabetically, e.g. `is_prime_lars` comes before `is_prime_richel`
 
 ## Live demo (30 minutes)
 
@@ -186,13 +187,11 @@ class TestSmall(unittest.TestCase):
 
 # Exercise 1: `is_prime`
 
--   Time: 45 minutes
+-   Time: 30 minutes
 -   Do the same exercise in pairs
--   There are multiple ways to do this:
-    pick the way you feel is
-    most natural
+-   There are multiple ways to do this: pick the way you feel is most natural
 
-# Continuous integration 
+# Continuous integration
 
 ## Problem
 
@@ -224,6 +223,8 @@ Assures quality:
 
 -   CI significantly increase the number of bugs exposed @vasilescu2015
 -   CI increases the speed at which new features are added @vasilescu2015
+
+-> Demo on learners repo
 
 ## Code coverage
 
@@ -290,19 +291,22 @@ assert not flip_coin()
 
 ## Exercise 2: `flip_coin`
 
--   Function name: `flip_coin_[name]`, 
-    for example, `flip_coin_richel`
+-   Function name: `flip_coin_[name]`, for example, `flip_coin_richel`
 -   Input: none
--   Output: Returns `True` in 50% of all cases,
-    else returns `False`
+-   Output: Returns `True` in 50% of all cases, else returns `False`
 -   **Get all CI scripts to pass**
 
 ## Exercise 2: `flip_coin`, social
 
 -   Pair up
--   Switch roles every 
-    - (1) `x` minutes, e.g. every 5 minutes, or
-    - (2) after a piece of work has been done
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
 -   Discuss how and when to switch roles first!
 -   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
@@ -312,11 +316,8 @@ assert not flip_coin()
 -   Work within scaffolding of the learners project
     -   Functions are in `src/[package_name]/testing.py`
     -   Tests are in `tests/test_testing.py`
--   Work on the main branch only, 
-    share code using `git push` and `git pull`
--   order the `flip_coin_[name]` 
-    functions and tests alphabetically,
-    e.g. `flip_coin_lars` comes before `flip_coin_richel`
+-   Work on the main branch only, share code using `git push` and `git pull`
+-   order the `flip_coin_[name]` functions and tests alphabetically, e.g. `flip_coin_lars` comes before `flip_coin_richel`
 
 # Tests in a team
 
@@ -326,8 +327,7 @@ assert not flip_coin()
 
 ## Problem
 
-Q: When one works in a team, 
-how to make sure my code keeps doing the same?
+Q: When one works in a team, how to make sure my code keeps doing the same?
 
 ```{python}
 #| echo: true
@@ -351,8 +351,7 @@ A: Apply the Beyoncé Rule
 assert get_test_dna_sequence() == "ACGTACGT"
 ```
 
-Teams should be reluctant to change tests: 
-this will likely break other code.
+Teams should be reluctant to change tests: this will likely break other code.
 
 ![Beyoncé](beyonce.png)
 
@@ -420,21 +419,24 @@ In most cases, graphical analysis tools and/or AI are overkill. If you are stubb
 
 ## Exercise 3: `get_digits`
 
--   Function name: `get_digits_[name]`, 
-    for example, `get_digits_richel`
+-   Function name: `get_digits_[name]`, for example, `get_digits_richel`
 -   Input: a positive number
 -   Output:
-    -   Returns the number split into a list of digits, 
-        e.g. `314` become `[3, 1, 4]`
+    -   Returns the number split into a list of digits, e.g. `314` become `[3, 1, 4]`
     -   Gives an error when the input is not a positive integer
 -   **Get all CI scripts to pass**
 
 ## Exercise 3: `get_digits`, social
 
 -   Pair up
--   Switch roles every 
-    - (1) `x` minutes, e.g. every 5 minutes, or
-    - (2) after a piece of work has been done
+-   Switch roles every
+    -   
+
+        (1) `x` minutes, e.g. every 5 minutes, or
+
+    -   
+
+        (2) after a piece of work has been done
 -   Discuss how and when to switch roles first!
 -   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
@@ -444,11 +446,8 @@ In most cases, graphical analysis tools and/or AI are overkill. If you are stubb
 -   Work within scaffolding of the learners project
     -   Functions are in `src/[package_name]/testing.py`
     -   Tests are in `tests/test_testing.py`
--   Work on the main branch only, 
-    share code using `git push` and `git pull`
--   order the `get_digits_[name]` 
-    functions and tests alphabetically,
-    e.g. `get_digits_lars` comes before `get_digits_richel`
+-   Work on the main branch only, share code using `git push` and `git pull`
+-   order the `get_digits_[name]` functions and tests alphabetically, e.g. `get_digits_lars` comes before `get_digits_richel`
 
 ## Exercise 3: solution
 
