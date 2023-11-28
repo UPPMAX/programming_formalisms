@@ -25,38 +25,71 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 | Day | From  | To    | What                                       |
 |-----|-------|-------|--------------------------------------------|
-| Thu | 9:00  | 10:00 | Class diagram for project                  |
+| Thu | 9:00  | 10:00 | `struct` diagram for project               |
 | Thu | 10:00 | 10:15 | Break                                      |
-| Thu | 10:15 | 11:00 | Creating files and first tests for project |
+| Thu | 10:15 | 11:00 | `struct` relations                         |
 | Thu | 11:00 | 11:15 | Break                                      |
-| Thu | 11:15 | 12:00 | Lecture: Class design                      |
+| Thu | 11:15 | 12:00 | Class design                               |
 | Thu | 12:00 | 13:00 | Lunch                                      |
 
 # Data structures
 
 ```{python}
-#| echo: true
-#| eval: true
+#| echo: false
+#| eval: false
 import this
 ```
 
-# Why data structures?
+> The Zen of Python, by Tim Peters
+>
+> \[...\] Readability counts. \[...\] If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. \[...\]
+
+## What and why?
+
+Data structure are 'ways to organize your data'.
+-   Bad way: put all in one `list`
+
+Good (:innocent:) data structures:
 
 -   Increase expressiveness
--   To bundle data that belongs together
+-   Bundles data that belongs together
+-   Ensures correct state of the program
 
-## Increase expressiveness
+# `struct` design
+
+Good (:innocent:) data structures:
+
+-   **Increase expressiveness**
+-   Bundles data that belongs together
+-   Ensures correct state of the program
+
+## Increase expressiveness, in design
+
+"A two-dimensional coordinate **has a** x and a y component"
+
+![](struct_coordinat.png)
+
+> Class diagram of a two-dimensional coordinate
+
+## Increase expressiveness, in code
+
+```{python}
+#| echo: false
+#| eval: true
+def get_a():
+    return [3.14, 2.72]
+```
 
 ```{python}
 #| echo: true
 #| eval: true
-a = [3.14, 2.72]
+a = get_a()
 print(type(a))
 ```
 
-A list is created ...?
+What is `a`?
 
-. . .
+## Increase expressiveness, in code
 
 ```{python}
 #| echo: false
@@ -65,12 +98,15 @@ class Coordinat:
     def __init__(self, any_x, any_y):
       x = any_x
       y = any_y
+
+def get_b():
+    return Coordinat(3.14, 2.72)
 ```
 
 ```{python}
 #| echo: true
 #| eval: true
-b = Coordinat(3.14, 2.72)
+b = get_b()
 print(type(b))
 ```
 
@@ -79,52 +115,65 @@ Ah, it is a **coordinat**!
 -   [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
 -   [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
-## Bundle data
+## structure versus class
 
-```{python}
-#| echo: false
-#| eval: false
-# The PlantUML does not render, even not after
-# quarto add pandoc-ext/diagram
-# See https://github.com/pandoc-ext/diagram/issues/6
-```
+| Parameter               | structure                    | class                       |
+|--------------------------------|----------------------|------------------|
+| Python keyword          | `class`                      | `class`                     |
+| All states are valid    | Yes                          | No                          |
+| Maintains a valid state | No                           | Yes                         |
+| Example                 | A number for an x coordinate | A string for a DNA sequence |
 
-```{python}
-#| echo: false
-#| eval: false
-@startuml
+-   A structure is also called a `struct` or 'Plain Old Datatype' (POD)
+-   Class design in later session :-)
 
-class Particle
-struct Speed
-struct Position
+## Optional exercise 1: design a struct (15 mins)
 
-Particle --* Speed
-Particle --* Position
+Design the structs to contain:
 
-class Particle {
-  - _position
-  - _speed
-  - _max_speed
-}
+-   A square
+-   A rectangle
+-   A circle
 
-struct Speed {
-  + delta_x
-  + delta_y
-}
+## Exercise 2: overview of struct (15 mins)
 
-struct Position {
-  + x
-  + y
-}
+-   Which structures does the project need?
+-   Together:
+    -   make an alphabetic list of structures in the shared document
+    -   add exactly 1 maintainer to each struct
+-   Put the list on the GitHub project repository
 
-@enduml
-```
+## Exercise 3: create structs (30 mins)
 
-![](class_particle.png)
+-   Per struct maintainer, create one group
+-   Add the struct to the GitHub project repository
+
+# `struct` relations
+
+Good (:innocent:) data structures:
+
+-   Increase expressiveness
+-   **Bundles data that belongs together**
+-   Ensures correct state of the program
+
+## A has-a relationship
+
+When one data type has a 'has-a' relationship with another, 
+this is called *composition*.
+
+![](struct_coordinat.png)
+
+A `Coordinat` has an `x` and `y`
+
+## Composition of structs
+
+![](struct_particle_speed_position.png)
 
 -   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
 
-## Bundle data
+# `class design
+
+## An invariant
 
 ```{python}
 #| echo: false
@@ -138,14 +187,6 @@ struct Position {
 #| echo: false
 #| eval: false
 @startuml
-
-struct Position
-class Range
-
-struct Position {
-  + x
-  + y
-}
 
 class Range {
   + _lowest
@@ -157,6 +198,7 @@ class Range {
 
 -   [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
 -   [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)
+
 
 # Built-in data structures
 
