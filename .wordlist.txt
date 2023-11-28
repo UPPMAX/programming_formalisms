@@ -547,4 +547,8 @@ chellappa
 parallelized
 rodgers
 AmdahlsLaw
+ropensci
+meyers
+README
+
 
