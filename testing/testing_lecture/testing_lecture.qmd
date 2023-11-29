@@ -19,20 +19,19 @@ number-sections: true
 
 ## Breaks
 
-Please take breaks: these are important for learning. 
-Ideally, do something boring @newport2016deep!
+Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
 
 ## Schedule
 
-| Day | From  | To    | What       |
-|-----|-------|-------|------------|
-| Wed | 12:00 | 13:00 | Lunch      |
-| Wed | 13:00 | 14:00 | Testing, `is_prime_[names]` |
-| Wed | 14:00 | 14:15 | Break      |
-| Wed | 14:15 | 15:00 | Testing, `flip_coin_[names]` |
-| Wed | 15:00 | 15:15 | Break      |
-| Wed | 15:15 | 15:45 | Testing, `get_digits_[names]` |
-| Wed | 15:45 | 16:00 | Reflection |
+| Day | From  | To    | What                          |
+|-----|-------|-------|-------------------------------|
+| Wed | 12:00 | 13:00 | Lunch                         |
+| Wed | 13:00 | 13:45 | Testing, `is_prime_[names]`   |
+| Wed | 13:45 | 14:00 | Break                         |
+| Wed | 14:00 | 14:45 | Testing, `flip_coin_[names]`  |
+| Wed | 14:45 | 15:00 | Break                         |
+| Wed | 15:00 | 15:30 | Testing, `get_digits_[names]` |
+| Wed | 15:30 | 16:00 | Reflection                    |
 
 # Testing
 
@@ -160,15 +159,7 @@ class TestSmall(unittest.TestCase):
 
 ## Exercise: `is_prime`, social
 
--   Pair up
--   Switch roles every
-    -   
-
-        (1) `x` minutes, e.g. every 5 minutes, or
-
-    -   
-
-        (2) after a piece of work has been done
+-   Ping-Pong Pair programming
 -   Discuss how and when to switch roles first!
 -   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
@@ -224,7 +215,7 @@ Assures quality:
 -   CI significantly increase the number of bugs exposed @vasilescu2015
 -   CI increases the speed at which new features are added @vasilescu2015
 
--> Demo on learners repo
+-\> Demo on learners repo
 
 ## Code coverage
 
@@ -298,15 +289,7 @@ assert not flip_coin()
 
 ## Exercise 2: `flip_coin`, social
 
--   Pair up
--   Switch roles every
-    -   
-
-        (1) `x` minutes, e.g. every 5 minutes, or
-
-    -   
-
-        (2) after a piece of work has been done
+-   Ping-Pong Pair programming
 -   Discuss how and when to switch roles first!
 -   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
@@ -428,15 +411,7 @@ In most cases, graphical analysis tools and/or AI are overkill. If you are stubb
 
 ## Exercise 3: `get_digits`, social
 
--   Pair up
--   Switch roles every
-    -   
-
-        (1) `x` minutes, e.g. every 5 minutes, or
-
-    -   
-
-        (2) after a piece of work has been done
+-   Ping-Pong Pair programming
 -   Discuss how and when to switch roles first!
 -   Person with first name first in alphabet starts
 -   Try to be **an exemplary duo**
