@@ -9,6 +9,17 @@ Goals:
    * git with branches: exercise fairytale on branches, #5
  * Do lectures with exercises
 
+Improvements:
+
+ * Talk about CI is too long and vague,
+   instead make the students feel the concepts
+   first and do the `flip_coin`. Or:
+   the CI part feels out of place: move it to
+   later
+
+
+
+
 ## Thursdays
 
  * Catch-up
