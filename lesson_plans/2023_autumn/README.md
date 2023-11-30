@@ -57,6 +57,10 @@ equivalents.
 [I really wished I had had the csv with text,
 I will screenshots for now]
 
+day_3_reflection_1.png
+day_3_reflection_2.png
+day_3_reflection_3.png
+day_3_reflection_4.png
 
 
 
