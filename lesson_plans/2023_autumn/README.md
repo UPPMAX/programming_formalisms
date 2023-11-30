@@ -23,6 +23,18 @@ Exercises felt at better length.
 The learners need time to get things to work
 as part of the exercise and they had.
 
+The breaks sometimes hurt: learners were
+sometimes in the middle of something very
+fun and rewarding (this was true for
+the end of the exercise less frequently
+and in way milder form). Still, breaks are
+important, so I should do this. 
+And it is nice to feel motivated to get back to
+work again. I will keep this, yet mention 
+this at the start that breaks sometimes 
+are a nuisance.
+
+
 Before the lecture I felt the need to prepare
 some git exercises, so the learners could
 catch up from Monday:
@@ -61,7 +73,9 @@ running when all students are ready. Also,
 this was a bit of a search and I jumped between
 rooms to get the pairs formed.
 
-
+There was a bug in my scheduling script.
+Due to that, I (1) was interrupted while
+lecturing, and (2) I missed a break :-)
 
 ### Feedback
 
@@ -153,6 +167,15 @@ Or in general, as suggested:
    This can also be done as early as when
    writing a faiytale and then adding the
    spellchecker!
+
+Also, I feel the repository should always be
+in a valid state, so we build up pride
+over our exemplary work. In that way,
+it could help achieve learners feel that
+their code is 'good enough', instead of 'ugly'.
+
+ * [ ] Always keep the learners' project 
+   repository in a valid state. Fix together.
 
 Adding R examples including videos is easy,
 as I already have these. Refer to these in

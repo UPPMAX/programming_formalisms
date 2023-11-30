@@ -23,15 +23,20 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 ## Schedule
 
-| Day | From  | To    | What                           |
-|-----|-------|-------|--------------------------------|
-| Thu | 12:00 | 13:00 | Lunch                          |
-| Thu | 13:00 | 14:00 | Project: improve class code    |
-| Thu | 14:00 | 14:15 | Break                          |
-| Thu | 14:15 | 15:00 | Lecture: Function design       |
-| Thu | 15:00 | 15:15 | Break                          |
-| Thu | 15:15 | 15:45 | Project: improve function code |
-| Thu | 15:45 | 16:00 | Reflection                     |
+| From  | To    | What                           |
+|-------|-------|--------------------------------|
+| 9:00  | 10:00 | .                              |
+| 10:00 | 10:15 | Break                          |
+| 10:15 | 11:00 | .                              |
+| 11:00 | 11:15 | Break                          |
+| 11:15 | 12:00 | .                              |
+| 12:00 | 13:00 | Lunch                          |
+| 13:00 | 13:45 | .                              |
+| 13:45 | 14:00 | Break                          |
+| 14:00 | 14:45 | .                              |
+| 14:45 | 15:00 | Break                          |
+| 15:00 | 15:30 | .                              |
+| 15:30 | 16:00 | Reflection                     |
 
 ## The Zen of Pi
 
@@ -66,7 +71,7 @@ A good function ...
 -   Is easy to use correctly and hard to use incorrectly @meyers2005effective @cpp_core_guidelines_functions @pep_20
 -   Does one thing correctly @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
 -   Is tested @martin2011clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
--   Raises helpful exceptions @@martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions @pep_20
+-   Raises helpful exceptions \@@martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions @pep_20
 -   Fast iff needed @cpp_core_guidelines_functions
 
 ## Design by contract
@@ -98,7 +103,7 @@ assert sort_2.__doc__
 
 Mandatory in some contexts @ram2013ropensci @tidyverse_style_guide_functions
 
-## A good function has a good name 
+## A good function has a good name
 
 > There are only two hard things in Computer Science: cache invalidation and naming things
 >
@@ -106,14 +111,14 @@ Mandatory in some contexts @ram2013ropensci @tidyverse_style_guide_functions
 
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
--   starts with a verb @tidyverse_style_guide_functions 
+-   starts with a verb @tidyverse_style_guide_functions
 -   readable @pep_20
 -   intention-revealing @martin2009clean
 -   pronounceable @martin2009clean
 -   searchable @martin2009clean
 -   not cute @martin2009clean
 -   no pun @martin2009clean
--   carefully @cpp_core_guidelines_functions 
+-   carefully @cpp_core_guidelines_functions
 
 ## Examples of bad function names?
 
@@ -515,8 +520,7 @@ def align_two_dna_sequences(dna_sequences):
 ## Exercise 1: factorial
 
 -   Develop a function to get the factorial of a number
--   If the function used a for-loop, 
-    create another function that uses recursion, or the other way around
+-   If the function used a for-loop, create another function that uses recursion, or the other way around
 -   Write the code of the function as a pair and/or with help of an AI
 
 ::: columns
