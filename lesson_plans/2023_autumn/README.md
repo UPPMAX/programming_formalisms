@@ -150,6 +150,9 @@ Or in general, as suggested:
  * [ ] Build up the repo from scratch during the
    course: it is beautifully in line with the
    course; to formalize our workflow!
+   This can also be done as early as when
+   writing a faiytale and then adding the
+   spellchecker!
 
 Adding R examples including videos is easy,
 as I already have these. Refer to these in
@@ -163,7 +166,12 @@ Show how to do ruff from CLI (`pip install ruff; ruff .`)
 
 ![](day_3_reflection_4.png)
 
+I should indeed add more book pictures to
+my lectures; references seem to feel 
+giving to little glory  :-)
+
  * [ ] Make sure Day 1 does what is needed for me
+
 
 ## Thursdays
 
@@ -172,7 +180,9 @@ Show how to do ruff from CLI (`pip install ruff; ruff .`)
      * Pick a project and Design Lead, #6
      * Decide upon class names and have class owners, #7
  * Do lectures with exercises
-
-
+ * Incorporate Reflection of Day 3:
+    * Start with overview of Day
+    * Explicitly state goals of exercise
+    * If time: Show R equivalent
 
 
