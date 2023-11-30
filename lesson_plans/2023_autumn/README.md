@@ -77,6 +77,18 @@ There was a bug in my scheduling script.
 Due to that, I (1) was interrupted while
 lecturing, and (2) I missed a break :-)
 
+I dislike my use of the word 'Conclusion'
+on slides, as if it is the only
+thing to conclude. Instead,
+learners should think critically
+('Always document everything', really?).
+and be encouraged to challenge these ideas.
+If the points I present are challenged,
+I can observe I did a bad job convincing
+the learners. Use the word 'Discussion'
+as a slide title instead and write explicitly
+they are encouraged to be critical!
+
 ### Feedback
 
 [I really wished I had had the csv with text,
