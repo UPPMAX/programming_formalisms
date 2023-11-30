@@ -52,26 +52,118 @@ Do show the theory though, especially
 more Hamcrest example. Also, show the R
 equivalents.
 
+The learners worked in 5 different duos.
+I let the pick manually so learners pick
+different partners. At the start of an exercise,
+this did take away time and I think that that
+is unfair: the exercise time should start
+running when all students are ready. Also,
+this was a bit of a search and I jumped between
+rooms to get the pairs formed.
+
+
+
 ### Feedback
 
 [I really wished I had had the csv with text,
-I will screenshots for now]
+I will screenshots for now. This will make
+me skip items :-/ !]
 
-day_3_reflection_1.png
-day_3_reflection_2.png
-day_3_reflection_3.png
-day_3_reflection_4.png
+![](day_3_reflection_1.png)
 
+I seems many thought the balance between
+exercises and theory was good.
+And I enjoy to see that some learners 
+find -to me!- details so fun.
+I should add those CI scripts live :-)
 
+![](day_3_reflection_2.png)
 
+I am happy to see the clearly seem
+to have the same pain points as I either
+felt (e.g. manual pairing is tedious)
+or predicted (e.g. getting things to
+work) or intended (e.g. merge conflicts are
+annoying (hence, use branches)).
 
+ * [ ] Add to Day 1 goals: let all learners do a git basic workflow
+ * [ ] Add to Day 1 goals: let learners feel merge conflicts
+ * [ ] Add to Day 1 goals: let all learners do a git workflow with branches
 
+Using one IDE is a choice, will give stuff
+to figure out, so these are things I 
+expect to see:
 
+ * VS code magic
+ * VSCode issues - but fixing these taught something
+ * obvious favoritism for VScode (make the terminal great again)
+ * VS test did not work smoothly. Would be good to have more explanations
+ * Visual studio code setup
 
+Showing multiple IDEs is possible, as well
+as the terminal (it is 
+just `python -m unittest tests/test_*`), at the cost of
+less theory and the feedback 'Always
+use the same tool/IDE for the same thing'.
+The CLI to unittest should be mentioned,
+this makes VSCode less important:
 
+ * [ ] Mention `python -m unittest tests/test_*`
+   in course material
 
+Due to time, focus on things I think I should
+discuss and/or change:
 
+Exercise goals should indeed be clear. The
+`is_odd` exercise seems redundant if I do
+not share the goals. In that way, it is 
+explicit that coding of this very similar
+same function was not a goal at all.
 
+ * [ ] Add exercise goals
+
+It should be made clear that the repo 
+architecture is standard. However,
+using one file was a choice by me to
+get good commit disciple: if all pairs push
+their code every iteration, this would not
+have been a problem. However -and ignoring
+that learners needed to be added to the
+GitHub Team and I forgot to add that as an
+exercise (ideally at Day 1!)- not all
+learners get VSCode to work.
+
+ * [ ] Add to Day 1 goals: add all learners to the team
+ * [ ] Think deeper about this later
+
+![](day_3_reflection_3.png)
+
+The learners agree with the thin unittest
+part and CI scripts part. I can do that
+better next time.
+
+ * [ ] Increase Hamcrest in unittest
+ * [ ] Add CI scripts live and fix with learners
+
+Or in general, as suggested:
+
+ * [ ] Build up the repo from scratch during the
+   course: it is beautifully in line with the
+   course; to formalize our workflow!
+
+Adding R examples including videos is easy,
+as I already have these. Refer to these in
+exercises
+
+ * [ ] Consider having an R subteam (but what
+   if there are learners that cannot do R not
+   Python??)
+
+Show how to do ruff from CLI (`pip install ruff; ruff .`)
+
+![](day_3_reflection_4.png)
+
+ * [ ] Make sure Day 1 does what is needed for me
 
 ## Thursdays
 
