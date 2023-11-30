@@ -25,11 +25,6 @@ Please take breaks: these are important for learning. Ideally, do something bori
 
 | From  | To    | What                           |
 |-------|-------|--------------------------------|
-| 9:00  | 10:00 | .                              |
-| 10:00 | 10:15 | Break                          |
-| 10:15 | 11:00 | .                              |
-| 11:00 | 11:15 | Break                          |
-| 11:15 | 12:00 | .                              |
 | 12:00 | 13:00 | Lunch                          |
 | 13:00 | 13:45 | .                              |
 | 13:45 | 14:00 | Break                          |
@@ -593,12 +588,14 @@ expect_equal(
 :::
 :::
 
-## Recap
+## Discuss
 
 -   Function design is hard
 -   Documentation helps
 -   TDD helps
--   assert helps in debug mode only
+-   `assert` helps
+
+Agree yes/no?
 
 ## Appendix
 
