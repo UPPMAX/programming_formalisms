@@ -27,19 +27,19 @@ Ideally, do something boring @newport2016deep!
 
 ## Schedule
 
-| From  | To    | What       |
-|-------|-------|------------|
-| 12:00 | 13:00 | Lunch      |
-| 13:00 | 13:45 | Discuss Retrospect, misconceptions |
-| 13:45 | 14:00 | Break      |
-| 14:00 | 14:45 | .          |
-| 14:45 | 15:00 | Break      |
-| 15:00 | 15:30 | .          |
-| 15:30 | 16:00 | Reflection |
+| From  | To    | What                                                    |
+|-------|-------|---------------------------------------------------------|
+| 12:00 | 13:00 | Lunch                                                   |
+| 13:00 | 13:45 | Discuss Retrospect, misconceptions, get a speed profile |
+| 13:45 | 14:00 | Break                                                   |
+| 14:00 | 14:45 | Get a speed profile, ?case study                        |
+| 14:45 | 15:00 | Break                                                   |
+| 15:00 | 15:30 | Course recap, Open discussion                           |
+| 15:30 | 16:00 | Reflection                                              |
 
 # Retrospect
 
- * [ ] Discuss
+-   [ ] Discuss
 
 # Optimisation
 
@@ -230,7 +230,7 @@ Big-O helps to:
 
 Agree yes/no
 
-## Exercise 1 [SKIP]
+## Exercise 1 \[SKIP\]
 
 -   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
@@ -269,7 +269,7 @@ def isprime(num):
 :::
 :::
 
-## Exercise 1 [SKIP]
+## Exercise 1 \[SKIP\]
 
 -   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
@@ -306,7 +306,7 @@ def Prime(no, i = 2):
 :::
 :::
 
-## Exercise 2 [SKIP]
+## Exercise 2 \[SKIP\]
 
 -   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
 
@@ -329,10 +329,10 @@ ACGTACGTACGT-CGTACGTACGT
 
 ## Run-time speed profile: code
 
- * [ ] Show R code in repo
- * [ ] Run R code from RStudio
- * [ ] Show Python code in repo
- * [ ] Run Python code from command line
+-   [ ] Show R code in repo
+-   [ ] Run R code from RStudio
+-   [ ] Show Python code in repo
+-   [ ] Run Python code from command line
 
 ## Myth 1
 
@@ -357,17 +357,17 @@ def superfast_xor_swap(x, y):
 -   [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
 -   [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
 
-## Exercise 1 [30 mins]
+## Exercise 1 \[30 mins\]
 
 Create speed profile of any function you like.
 
- * [ ] Remind Python and R code on learner's repo
+-   [ ] Remind Python and R code on learner's repo
 
-## Exercise 2 [SKIP]
+## Exercise 2 \[SKIP\]
 
 Create speed profile of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
-## Exercise 3 [SKIP]
+## Exercise 3 \[SKIP\]
 
 Create speed profile of DNA alignment
 
@@ -409,15 +409,16 @@ Adapt the constant to reality.
 
 ## Case study
 
- * [ ] Show ProjectRampal
- * [ ] Maybe Marcus has a case study :-)
+-   [ ] Show ProjectRampal
 
-## Recap
+## Discussion
 
 -   Be critical on speed optimization solutions
 -   Tested and clean code always comes first
 -   Measure correctly, at the right complexity, before and after
 -   Prefer changing big-O over micro-optimizations (but see first point!)
+
+Agree yes/no?
 
 ## The End
 
