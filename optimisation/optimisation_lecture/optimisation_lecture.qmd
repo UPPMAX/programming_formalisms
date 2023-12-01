@@ -30,12 +30,16 @@ Ideally, do something boring @newport2016deep!
 | From  | To    | What       |
 |-------|-------|------------|
 | 12:00 | 13:00 | Lunch      |
-| 13:00 | 13:45 | .          |
+| 13:00 | 13:45 | Discuss Retrospect, misconceptions |
 | 13:45 | 14:00 | Break      |
 | 14:00 | 14:45 | .          |
 | 14:45 | 15:00 | Break      |
 | 15:00 | 15:30 | .          |
 | 15:30 | 16:00 | Reflection |
+
+# Retrospect
+
+ * [ ] Discuss
 
 # Optimisation
 
@@ -56,6 +60,8 @@ To improve the runtime speed (or memory use) of a program
 Q: What would be **bad advice** to improve the run-time speed of an algorithm?
 
 Fill in in the shared document!
+
+(if you dare and have time: add good advice too)
 
 ## Bad advice 1
 
@@ -215,14 +221,16 @@ ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
 
 :sunglasses: No, work on C instead
 
-## Conclusions
+## Discussion
 
 Big-O helps to:
 
 -   find algorithm to profile
 -   make predictions
 
-## Exercise 1
+Agree yes/no
+
+## Exercise 1 [SKIP]
 
 -   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
@@ -261,7 +269,7 @@ def isprime(num):
 :::
 :::
 
-## Exercise 1
+## Exercise 1 [SKIP]
 
 -   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
@@ -298,7 +306,7 @@ def Prime(no, i = 2):
 :::
 :::
 
-## Exercise 2
+## Exercise 2 [SKIP]
 
 -   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
 
@@ -312,7 +320,7 @@ ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGT-CGTACGTACGT
 ```
 
-## Measurement 2: Run-time speed profile
+# Measurement 2: Run-time speed profile
 
 -   See which code is spent most time in
 -   :monocle_face: Use an input of suitable complexity
@@ -321,52 +329,10 @@ ACGTACGTACGT-CGTACGTACGT
 
 ## Run-time speed profile: code
 
-```{python}
-#| echo: true
-#| eval: false
-def is_sorted(data): return data == sorted(data)
-def richel_sort(data):
-    while not is_sorted(data):
-        from random import shuffle
-        shuffle(data)
-    return data
-
-def create(): return list(range(0, 10))
-def reverse(x): 
-    x.reverse() 
-    return x
-def sort(x): return richel_sort(x)
-
-def my_function(): return sort(reverse(create()))
-
-import cProfile
-cProfile.run("my_function()")
-```
-
-## Run-time speed profile: results
-
-```{python}
-#| echo: false
-#| eval: true
-def is_sorted(data): return data == sorted(data)
-def stupid_sort(data):
-    while True:
-        if (is_sorted(data)):
-            return data
-        from random import shuffle
-        shuffle(data)
-
-def create(): return list(range(0, 10))
-def reverse(x): 
-    x.reverse() 
-    return x
-def sort(x): return stupid_sort(x)
-
-def my_function(): return sort(reverse(create()))
-
-import cProfile
-cProfile.run("my_function()")
-```
+ * [ ] Show R code in repo
+ * [ ] Run R code from RStudio
+ * [ ] Show Python code in repo
+ * [ ] Run Python code from command line
 
 ## Myth 1
 
@@ -391,13 +357,21 @@ def superfast_xor_swap(x, y):
 -   [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
 -   [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
 
-## Exercise
+## Exercise 1 [30 mins]
+
+Create speed profile of any function you like.
+
+ * [ ] Remind Python and R code on learner's repo
+
+## Exercise 2 [SKIP]
 
 Create speed profile of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
+## Exercise 3 [SKIP]
+
 Create speed profile of DNA alignment
 
-## Step 3: Think
+# Step 3: Think
 
 -   How to achieve the same with less calculations?
     -   Aim to change big-O, not some micro-optimization
@@ -409,7 +383,7 @@ Create speed profile of DNA alignment
 > 2.  Think very hard.
 > 3.  Write down the answer
 
-## Step 4: Measure again
+# Step 4: Measure again
 
 In TDD, this test would have been present already:
 
@@ -432,6 +406,10 @@ Adapt the constant to reality.
 ![Herb Sutter](herb_sutter.jpg)
 
 > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+
+## Case study
+
+ * [ ] Show ProjectRampal
 
 ## Recap
 
