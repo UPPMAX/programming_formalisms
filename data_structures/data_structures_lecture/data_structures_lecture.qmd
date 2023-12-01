@@ -327,13 +327,7 @@ Goals:
 -   Together:
     -   make an alphabetic list of structures in the shared document
     -   add exactly 1 maintainer to each struct
--   Put the list on the GitHub project repository
-
-Class name|Owner
-----------|-----
-Animal    |Anna
-Duck      |Bas
-.         |.
+-   Put it on the GitHub repository
 
 ## Exercise 3: create structs (30 mins)
 
@@ -387,7 +381,8 @@ Q: What is a good class?
 
 A:
 
--   guarantees its stored data is valid, e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
+-   guarantees its stored data is valid, 
+    e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
 -   the quality requirements for a function, among others a good interface
 -   writing a design, documentation and tests all help
 
