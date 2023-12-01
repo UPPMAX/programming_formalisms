@@ -410,6 +410,7 @@ Adapt the constant to reality.
 ## Case study
 
  * [ ] Show ProjectRampal
+ * [ ] Maybe Marcus has a case study :-)
 
 ## Recap
 
