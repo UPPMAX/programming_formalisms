@@ -19,19 +19,23 @@ number-sections: true
 
 ## Breaks
 
-Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
+Please take breaks: these are important for learning. 
+
+It can sometimes be painful/annoying when there is a break in the middle of the exercise.
+
+Ideally, do something boring @newport2016deep!
 
 ## Schedule
 
-| From  | To    | What                           |
-|-------|-------|--------------------------------|
-| 12:00 | 13:00 | Lunch                          |
-| 13:00 | 13:45 | .                              |
-| 13:45 | 14:00 | Break                          |
-| 14:00 | 14:45 | .                              |
-| 14:45 | 15:00 | Break                          |
-| 15:00 | 15:30 | .                              |
-| 15:30 | 16:00 | Reflection                     |
+| From  | To    | What       |
+|-------|-------|------------|
+| 12:00 | 13:00 | Lunch      |
+| 13:00 | 13:45 | .          |
+| 13:45 | 14:00 | Break      |
+| 14:00 | 14:45 | .          |
+| 14:45 | 15:00 | Break      |
+| 15:00 | 15:30 | .          |
+| 15:30 | 16:00 | Reflection |
 
 ## The Zen of Pi
 
