@@ -1,4 +1,4 @@
-# Reflection results Day 2
+# Retrospective day 2
 
 Copied literally.
 
