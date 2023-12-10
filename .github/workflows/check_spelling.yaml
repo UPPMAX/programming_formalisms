@@ -26,5 +26,6 @@ jobs:
           rm -rf feedback
           rm -rf retrospectives
           rm -rf reflections
+          rm -rf shared_documents
 
       - uses: igsekor/pyspelling-any@v0.0.2
