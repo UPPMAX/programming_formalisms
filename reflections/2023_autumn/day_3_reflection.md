@@ -1,21 +1,4 @@
-# Lesson plan Day 3 autumn 2023
-
-Goals:
-
- * Catch-up
-   * git basic workflow: exercise fairytale basic, [#4](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/issues/4)
-   * git with branches: exercise fairytale on branches, [#5](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/issues/5)
- * Do lectures with exercises
-
-Improvements:
-
- * Talk about CI is too long and vague,
-   instead make the students feel the concepts
-   first and do the `flip_coin`. Or:
-   the CI part feels out of place: move it to
-   later
-
-### Reflection
+# Reflection day 3 autumn 2023
 
 Exercises felt at better length. 
 The learners need time to get things to work
@@ -98,7 +81,7 @@ if Python syntax is in their way.
 I will screenshots for now. This will make
 me overlook items :-/ !]
 
-![](day_3_reflection_1.png)
+![](day_3_retrospective_1.png)
 
 I seems many thought the balance between
 exercises and theory was good.
@@ -106,7 +89,7 @@ And I enjoy to see that some learners
 find -to me!- details so fun.
 I should add those CI scripts live :-)
 
-![](day_3_reflection_2.png)
+![](day_3_retrospective_2.png)
 
 I am happy to see the clearly seem
 to have the same pain points as I either
@@ -165,7 +148,7 @@ learners get VSCode to work.
  * [ ] Add to Day 1 goals: add all learners to the team
  * [ ] Think deeper about this later
 
-![](day_3_reflection_3.png)
+![](day_3_retrospective_3.png)
 
 The learners agree with the thin unittest
 part and CI scripts part. I can do that
@@ -202,7 +185,7 @@ exercises
 
 Show how to do ruff from CLI (`pip install ruff; ruff .`)
 
-![](day_3_reflection_4.png)
+![](day_3_retrospective_4.png)
 
 I should indeed add more book pictures to
 my lectures; references seem to feel 

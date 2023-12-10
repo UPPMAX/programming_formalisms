@@ -1,3 +1,6 @@
 # Reflections
 
- * [2023-06-02, by Richel](20230602_richel.md)
+Reflections are the thoughts of teachers looking back.
+
+ * [Autumn 2023](autumn_2023/README.md)
+ * [Summer 2023](summer_2023/README.md)
