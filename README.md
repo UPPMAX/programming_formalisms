@@ -48,7 +48,7 @@ Team logo                                                                   |Lin
 ![](images/programming_formalisms_student_team_autumn_2023_logo_116x116.png)|[Autumn 2023](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023)
 ![](images/programming_formalisms_student_team_summer_2023_logo_116x116.png)|[Summer 2023](https://github.com/programming-formalisms/programming_formalisms_project_summer_2023)
 
-## Files
+## Files used for continuous integration scripts
 
 Filename                           |Descriptions
 -----------------------------------|------------------------------------------------------------------------------------------------------
