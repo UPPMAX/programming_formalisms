@@ -58,14 +58,15 @@ flowchart TD
   algorithms --> optimisation
 ```
 
- * MO-1: Class design (in groups, on repo, using web interface only)
- * MO-2: git basic (in groups, on repo)
- * TU-1: Create project's class diagram (using git)
- * TU-2: pair programming, DD
- * WE-1: git branches
- * WE-2: TDD
- * WE-3: Code reviews
- * TH-1: Data structures
- * TH-2: Algorithms
- * FR-1: Modular programming
- * FR-2 Optimisation
+Day      |Time       |Teacher|Subject
+---------|-----------|-------|-----------------------------------------------------------
+Monday   |09:00-12:00|Lars   |Class design (in groups, on repo, using web interface only)
+Monday   |13:00-16:00|Björn  |git basic (in groups, on repo)
+Tueday   |09:00-12:00|Richel |Create project's class diagram (using git)
+Tueday   |13:00-16:00|Richel |pair programming + TDD
+Wednesday|09:00-12:00|Björn  |git branches
+Wednesday|13:00-16:00|Richel |TDD + Code reviews
+Thursday |09:00-12:00|Richel |Data structures
+Thursday |13:00-16:00|Richel |Algorithms
+Friday   |09:00-12:00|Lars   |Modular programming
+Friday   |13:00-16:00|R (M)  |Optimisation
