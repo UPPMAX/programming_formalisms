@@ -84,6 +84,8 @@ Friday   |13:00-16:00|R (M)  |Optimisation
 
 ## Principles from [Saiyad et al., 2020]
 
+![Figure 1 from Saiyad et al., 2020](saiyad_et_al_2020_fig_1.jpg)
+
  * Principle 1: Teaching–Learning methods must match curriculum and objectives
  * Principle 2: Must encourage synchronous and asynchronous teacher–student interaction
  * Principle 3: Promote higher order thinking skills and communication skills
