@@ -6,7 +6,7 @@ template: home.html
 
 <br/><br/>
 
-<img src="assets/UU_logo_color.svg" alt="drawing" width="200"/>
+<img src="../images/programming_formalism_logo.png" alt="'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund"/>
 
 <br/><br/>
 
