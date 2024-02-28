@@ -6,7 +6,7 @@ template: home.html
 
 <br/><br/>
 
-![](images/programming_formalism_logo.png)
+![](../images/programming_formalism_logo.png)
 
 > 'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund
 
