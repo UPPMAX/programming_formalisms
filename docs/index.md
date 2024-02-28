@@ -8,22 +8,32 @@ template: home.html
 
 <img src="assets/UU_logo_color.svg" alt="drawing" width="200"/>
 
-<br/>
+<br/><br/>
 
 
-# Welcome to the UPPMAX documentation
+# Welcome to the Bianca workshop!
+    
+</center>
 
+!!! info "Programming formalisms"
+    
+  - give scientists with some experience in programming and scripting:
+    - an **understanding** of the **underlying principles** of software development, design, and programming.
+  - strengthen the **understanding** of:
+    - more **advanced programming concept**s
+    - **ability to produce** more reusable scripts through modular programming
+    - enable a better **understanding** of how to evaluate a script or programs **performance**.
+  - encourage the **use of software development tools**, like:
+    - Unified Model Language
+    - Git and Github
+  - convince the benefits of **sharing and social coding**
+<center>
+<br>
+    
+<br/><br/>
 
-<br/>
-
-[Apply for a project](getting_started/project_apply.md){ .md-button .md-button--primary }
-
-[:material-rocket-launch: Getting started](getting_started/get_started.md){: .md-button .md-button--primary }
-[:material-rocket-launch: Software](software/overview.md){: .md-button .md-button--primary }
-[:material-rocket-launch: Lost credentials](https://supr.naiss.se/login/){: .md-button .md-button--primary }
-[:material-rocket-launch: Back to UPPMAX home](http://www.uppmax.uu.se){: .md-button .md-button--primary }
-
-[:material-alert-box: Migration to Dardel](cluster_guides/dardel_migration.md){ .md-button .md-button--primary }
+[Prerequirements](prereqs.md){ .md-button .md-button--primary }
+[Intro ](intro.md){ .md-button .md-button--primary }
 
 <br/><br/>
 
