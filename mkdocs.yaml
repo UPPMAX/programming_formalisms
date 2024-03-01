@@ -4,6 +4,9 @@ repo_url: https://github.com/UPPMAX/programming_formalisms
 
 nav:
   - Home: index.md
+  - Monday:
+    - Intro: monday_intro.md
+    - SDLC tools: introductions/sdlc_tools.md
 
 
 
