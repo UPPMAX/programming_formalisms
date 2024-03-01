@@ -17,6 +17,7 @@ nav:
     - Intro: thursday_intro.md
   - Friday:
     - Intro: friday_intro.md
+    - Deploy: deployment/deploy.md
   - Reading material:
   - Extra material:
 
