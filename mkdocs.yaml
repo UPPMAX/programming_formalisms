@@ -4,9 +4,19 @@ repo_url: https://github.com/UPPMAX/programming_formalisms
 
 nav:
   - Home: index.md
+  - Pre-requirements: prereqs.md
+  - About the course: intro.md
   - Monday:
     - Intro: monday_intro.md
     - SDLC tools: introductions/sdlc_tools.md
+  - Tuesday:
+    - Intro: tuesday_intro.md
+  - Wednesday:
+    - Intro: wednesday_intro.md
+  - Thursday:
+    - Intro: thursday_intro.md
+  - Friday:
+    - Intro: friday_intro.md
 
 
 
