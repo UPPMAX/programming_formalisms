@@ -20,8 +20,15 @@ nav:
     - Deploy: deployment/deploy.md
   - Reading material:
     - Reading material: reading.md
-  - Extra material:
-    - Extra reading material: extra.md
+  - More about:
+    - Extra material: extra.md
+    - Software development Lifecycle (SDLC) models: extra_BC/SDLC_models.md
+    - More about Git: extra_BC/git_deeper.md
+    - More about collaboration: extra_BC/collab_deeper.md
+    - More about reproducibility: extra_BC/reproducible_deeper.md
+    - More about sharing: extra_BC/sharing_deeper.md
+    - More about documentation: extra_BC/documentation_deeper.md
+    - More about deploying: extra_BC/deploy_deeper.md
 
 
 
