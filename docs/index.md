@@ -10,6 +10,12 @@ template: home.html
 
 > 'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund
 
+<figure markdown="span">
+  ![Programming formalism logo](images/programming_formalism_logo.png){ width="300" }
+  <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
+</figure>
+
+
 <br/><br/>
 
 
