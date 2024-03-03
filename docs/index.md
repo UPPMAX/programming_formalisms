@@ -6,12 +6,8 @@ template: home.html
 
 <br/><br/>
 
-![](assets/programming_formalism_logo.png)
-
-> 'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund
-
 <figure markdown="span">
-  ![Programming formalism logo](assets/programming_formalism_logo.png){ width="300" }
+  ![Programming formalism logo](assets/programming_formalism_logo.png){ width="500" }
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
