@@ -13,14 +13,16 @@ nav:
     - Intro: tuesday_intro.md
   - Wednesday:
     - Intro: wednesday_intro.md
+    - Branching and merging: git/branches.md
   - Thursday:
     - Intro: thursday_intro.md
   - Friday:
     - Intro: friday_intro.md
     - Deploy: deployment/deploy.md
   - Reading material
+    - Reading material: reading.md
   - Extra material
-
+    - Extra reading material: extra.md
 
 
 
