@@ -1,5 +1,4 @@
-site_name: UPPMAX Documentation
-
+site_name: Programming formalisms
 repo_url: https://github.com/UPPMAX/programming_formalisms
 
 nav:
