@@ -15,7 +15,7 @@ template: home.html
 <br/><br/>
 
 
-# Welcome to the Bianca workshop!
+# Welcome to the Programming formalisms course!
     
 </center>
 
