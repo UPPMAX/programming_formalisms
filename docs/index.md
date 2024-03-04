@@ -36,7 +36,7 @@ template: home.html
     
 <br/><br/>
 
-[Prerequirements](prereqs.md){ .md-button .md-button--primary }
+[Pre-requirements](prereqs.md){ .md-button .md-button--primary }
 [Intro ](intro.md){ .md-button .md-button--primary }
 
 <br/><br/>
