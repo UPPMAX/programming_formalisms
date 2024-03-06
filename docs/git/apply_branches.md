@@ -12,10 +12,20 @@
 
     Lesson plan:
 
-    * 5 mins: prior knowledge
-    * 5 mins: presentation
-    * 15 mins: challenge
-    * 5 mins: feedback
+    - 5 mins: prior knowledge
+      - What is a branch?
+      - What is the problem that branches alleviate?
+      - What is the name/names of the most important branch?
+      - What is our git branching setup?
+      - What is the goal of that setup?
+      - Why do we use that setup instead of a different one?
+      - What is the purpose of each of those branches?
+      - Does creating a branch create a new version? Why?
+      - Does changing a branch change the content of your local computer? Why?
+      - Does deleting a branch create a new version? Why?
+    - 5 mins: presentation
+    - 25 mins: challenge
+    - 10 mins: feedback
 
 ## Exercises
 

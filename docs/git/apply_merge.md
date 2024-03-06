@@ -18,10 +18,17 @@
 
     Lesson plan:
 
-    * 5 mins: prior knowledge
-    * 5 mins: presentation
-    * 15 mins: challenge
-    * 5 mins: feedback
+    - 5 mins: prior knowledge
+      - What does a merge do?
+      - What does a merge do?
+      - Do we need merging? When? Why?
+      - When does a merge give a merge conflict?
+      - Can a `git commit` result in a merge conflict? Why?
+      - Can a `git push` result in a merge conflict? Why?
+      - Can a `git pull` result in a merge conflict? Why?
+    - 5 mins: presentation
+    - 25 mins: challenge
+    - 10 mins: feedback
 
 ## Exercises
 
