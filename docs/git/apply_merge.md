@@ -84,10 +84,15 @@ gitGraph
     commit id: "Modify Sven's file"
     checkout main
     commit id: "Another commit"
-    merge anna
-    commit id: "Some other commit"
     merge sven
+    branch anders
+    checkout anders
+    commit id: "Modify Anders' file"
+    checkout main
+    merge anna
     commit id: "After fixing many merge conflicts"
+    merge anders
+    commit id: "After fixing many moremerge conflicts"
 ```
 
 - For our GitHub repo, create a branch with your first name that is
