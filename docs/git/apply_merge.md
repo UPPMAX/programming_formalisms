@@ -32,6 +32,8 @@
 
 ## Exercises
 
+See the exercise procedure [here](../misc/exercise_procedure.md).
+
 ### Exercise 1: practice merging `git` branches
 
 !!!- info "Learning objectives"
