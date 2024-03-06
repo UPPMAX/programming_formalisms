@@ -13,6 +13,8 @@ nav:
   - Wednesday:
     - Intro: wednesday_intro.md
     - Branching and merging: git/branches.md
+    - Branching in practice : git/apply_branches.md
+    - Merging in practice: git/apply_merge.md
   - Thursday:
     - Intro: thursday_intro.md
   - Friday:
