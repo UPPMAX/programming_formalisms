@@ -1,0 +1,63 @@
+---
+title: "Who is Richèl"
+author: "Richèl Bilderbeek"
+format: revealjs
+editor: visual
+from: markdown+emoji
+bibliography: who_is_richel.bib
+csl: vancouver.csl
+css: styles.css
+slide-number: true
+number-sections: true
+---
+
+# Who is Richèl?
+
+<https://github.com/richelbilderbeek/awk_course/blob/master/lesson_plans/20240122/who_is_richel.qmd> ![](CC-BY-NC-SA.png)
+
+## How to pronounce my name
+
+| Language  | Pronounciation |
+|-----------|----------------|
+| **Dutch** | 'Rie-sjel'     |
+| English   | 'Rea-shell'    |
+| French    | 'Richèl'       |
+| German    | 'Ri-shäll'     |
+| Swedish   | 'Ri-kjell'     |
+
+## Teaching
+
+-   2007-2008 MSc: Teaching in Pre-higher education in Biology
+-   Oct 2008-Aug 2010: 0.6 FTE teacher and team leader, 12-18 yo
+-   Jan 2014-Jan 2021: coordinator of multiple courses, as volunteer, 8-18 yo
+-   Sep 2022-now: coordinator of multiple courses, as volunteer, 8-18 yo
+-   Sep 2019-now: team leader of programming team, 13-38 yo
+-   Mar 2023-now: teacher at UPPMAX, 18-88 yo
+
+## Teaching style
+
+-   Literate
+-   Evidence-based, e.g. @hattie2012visible, @schwartz2012evidence
+-   Active learning
+-   Learning community
+-   Well-prepared
+-   Student-centered
+-   Transparent
+
+## Features
+
+-   Every learner needs to be active
+-   Follows the pace of learners that need more time
+-   Fast learners help
+-   Asks learners randomly @bell2020fundamentals
+-   Dare to try out new things (and fail in plain sight) @bell2020fundamentals
+
+## Lecturing
+
+I only do this for unimportant topics.
+
+This was the only lecture in the course :-)
+
+(I **do** need to tell about myself @schwartz2012evidence)
+
+## References
