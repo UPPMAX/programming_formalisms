@@ -17,6 +17,7 @@ nav:
     - Merging in practice: git/apply_merge.md
   - Thursday:
     - Intro: thursday_intro.md
+    - Optimisation: optimisation/README.md
   - Friday:
     - Intro: friday_intro.md
     - Deploy: deployment/deploy.md
