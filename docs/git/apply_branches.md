@@ -50,7 +50,6 @@ gitGraph
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
 
-
 ## Links
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)

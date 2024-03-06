@@ -31,17 +31,6 @@
 
     - practice merging git branches without a merge conflict
 
-- For our GitHub repo, create a branch with your first name that is
-  unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
-  You may branch of from `main` or `develop` (if it exists).
-  You may use the web interface (easiest!) or use the command line
-- On your local computer, switch to that branch, change the repo 
-  and push your changes online. Verify the changes are online
-- On your local computer, switch to the `main` branch
-- Delete your branch (i.e. the one with the unique name).
-  You may use the web interface (easiest!) or use the command line
-- On your local computer, update your code
-
 ```mermaid
 gitGraph
     commit id: "Before start"
@@ -54,12 +43,43 @@ gitGraph
     commit id: "Another commit"
 ```
 
-### Exercise 2: practice merge conflicts
+- For our GitHub repo, create a branch with your first name that is
+  unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
+  You may branch of from `main` or `develop` (if it exists).
+  You may use the web interface (easiest!) or use the command line
+- On your local computer, switch to that branch, change the repo 
+  and push your changes online. Verify the changes are online
+- On your local computer, switch to the `main` branch
+- Delete your branch (i.e. the one with the unique name).
+  You may use the web interface (easiest!) or use the command line
+- On your local computer, update your code
+
+
+### Exercise 2: practice merge conflicts between branches
 
 !!!- info "Learning objectives"
 
-    - experience merge conflicts
-    - fix merge conflicts
+    - experience merge conflicts between branches
+    - fix merge conflicts between branches
+
+```mermaid
+gitGraph
+    commit id: "Before start"
+    commit id: "Branching version"
+    branch anna
+    checkout anna
+    commit id: "Modify Anna's file"
+    checkout main
+    branch sven
+    checkout sven
+    commit id: "Modify Sven's file"
+    checkout main
+    commit id: "Another commit"
+    merge anna
+    commit id: "Some other commit"
+    merge sven
+    commit id: "After fixing many merge conflicts"
+```
 
 - For our GitHub repo, create a branch with your first name that is
   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
