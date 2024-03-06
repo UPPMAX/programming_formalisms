@@ -42,6 +42,17 @@
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
 
+```mermaid
+gitGraph
+    commit id: "Before start"
+    commit id: "Branching version"
+    branch sven
+    checkout sven
+    commit id: "Modify my file"
+    checkout main
+    merge sven
+    commit id: "Another commit"
+```
 
 ### Exercise 2: practice merge conflicts
 
