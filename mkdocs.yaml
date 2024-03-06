@@ -26,7 +26,7 @@ nav:
     - Intro: friday_intro.md
     - Deploy: deployment/deploy.md
   - Reading material:
-    - Reading material: reading.md
+    - Reading material: reading/README.md
   - More about:
     - Extra material: extra.md
     - Software development Lifecycle (SDLC) models: extra_BC/SDLC_models.md
