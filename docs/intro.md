@@ -1,9 +1,8 @@
 # Introduction of the week
 
+!!! note "Course mottos"
 
-!!! admonition:: Course punchlines
-   
-    - "Turning scripters into computer scientists”
-    - "Add theory to bolster already present practical skills"
+    - Turning scripters into computer scientists
+    - Add theory to bolster already present practical skills
    
 
