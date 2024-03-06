@@ -19,7 +19,7 @@ nav:
     - Merging in practice: git/apply_merge.md
   - Thursday:
     - Testing: testing/README.md
-    - Data structures: data_structure/README.md
+    - Data structures: data_structures/README.md
     - Algorithms: algorithms/README.md
     - Optimisation: optimisation/README.md
   - Friday:
