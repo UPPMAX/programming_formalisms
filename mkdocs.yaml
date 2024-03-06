@@ -10,13 +10,17 @@ nav:
     - SDLC tools: introductions/sdlc_tools.md
   - Tuesday:
     - Intro: tuesday_intro.md
+    - Social coding: social_coding/README.md
+    - TDD: tdd/README.md
   - Wednesday:
     - Intro: wednesday_intro.md
     - Branching and merging: git/branches.md
     - Branching in practice : git/apply_branches.md
     - Merging in practice: git/apply_merge.md
   - Thursday:
-    - Intro: thursday_intro.md
+    - Testing: testing/README.md
+    - Data structures: data_structure/README.md
+    - Algorithms: algorithms/README.md
     - Optimisation: optimisation/README.md
   - Friday:
     - Intro: friday_intro.md
