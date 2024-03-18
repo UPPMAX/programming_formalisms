@@ -29,13 +29,13 @@ nav:
     - Reading material: reading/README.md
   - More about:
     - Extra material: extra.md
-    - Software development Lifecycle (SDLC) models: extra_BC/SDLC_models.md
-    - More about Git: extra_BC/git_deeper.md
-    - More about collaboration: extra_BC/collab_deeper.md
-    - More about reproducibility: extra_BC/reproducible_deeper.md
-    - More about sharing: extra_BC/sharing_deeper.md
-    - More about documentation: extra_BC/documentation_deeper.md
-    - More about deploying: extra_BC/deploy_deeper.md
+    - Software development Lifecycle (SDLC) models: extra_bc/SDLC_models.md
+    - More about Git: extra_bc/git_deeper.md
+    - More about collaboration: extra_bc/collab_deeper.md
+    - More about reproducibility: extra_bc/reproducible_deeper.md
+    - More about sharing: extra_bc/sharing_deeper.md
+    - More about documentation: extra_bc/documentation_deeper.md
+    - More about deploying: extra_bc/deploy_deeper.md
   - Misc:
     - Exercise procedure: misc/exercise_procedure.md
     - Richèl: misc/richel.md
