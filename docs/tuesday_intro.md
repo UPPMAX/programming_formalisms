@@ -3,5 +3,5 @@
 Today we will:
 
 - create a class diagram
-- practice pair programming
-- practice test-driven development
+- [practice pair programming](social_coding/README.md)
+- [practice test-driven development](tdd/README.md)
