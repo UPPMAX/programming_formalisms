@@ -1,7 +1,7 @@
 # Introduction to Thursday
 
-Today we will discuss:
+Today we will:
 
-- data structures
-- algorithms
-- optimization
+- [Understand data structures](data_structures/README.md)
+- [Understand algorithms](algorithms/README.md)
+- [Understand optimisation](optimisation/README.md)

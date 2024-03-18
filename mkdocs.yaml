@@ -17,9 +17,9 @@ nav:
     - Branching and merging: git/branches.md
     - Branching in practice : git/apply_branches.md
     - Merging in practice: git/apply_merge.md
+    - Testing: testing/README.md
   - Thursday:
     - Intro: thursday_intro.md
-    - Testing: testing/README.md
     - Data structures: data_structures/README.md
     - Algorithms: algorithms/README.md
     - Optimisation: optimisation/README.md
