@@ -1,9 +1,7 @@
-# Social coding
+# Pair programming
 
 !!!- info "Learning objectives"
 
-    - Understand what social coding is
-    - Understand why social coding is important
     - Understand why pair programming is important
     - Understand how good pair programming looks like
     - Practice pair programming
@@ -27,12 +25,6 @@
     - 5 mins: presentation
     - 25 mins: challenge
     - 10 mins: feedback
-
-    How to generate the slides:
-
-    ```
-    marp --html --pdf <name_of_slide>.md
-    ```
 
 ## Exercises
 
