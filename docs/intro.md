@@ -14,26 +14,26 @@ flowchart TD
   classDef lars_node fill:#dfd,color:#000,stroke:#0f0
   classDef richel_node fill:#fdd,color:#000,stroke:#f00
 
-  subgraph day_1
+  subgraph day_1[Monday]
     git_basic[git basic workflow]:::bjorn_node
     class_design[Class design]:::lars_node
   end
-  subgraph day_2
+  subgraph day_2[Tuesday]
     class_diagram[Create project's class diagram]:::lars_node
     pair_programming[Pair programming]:::richel_node
     tdd[TDD]:::richel_node
   end
-  subgraph day_3
+  subgraph day_3[Wednesday]
     testing[Testing]:::richel_node
     code_reviews[Code reviews]:::richel_node
     git_branches[git branches]:::bjorn_node
   end
-  subgraph day_4
+  subgraph day_4[Thursday]
     data_structures[Data structures]:::richel_node
     algorithms[Algorithms]:::richel_node
     optimisation[Optimisation]:::richel_node
   end
-  subgraph day_5
+  subgraph day_5[Friday]
     modular_programming[Modular programming]:::lars_node
     deployment[Deployment]:::bjorn_node
   end
