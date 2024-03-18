@@ -624,7 +624,7 @@ There are different types of remotes:
 - [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
 
 ```{seealso}
-- Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuedays afternoon.
+- Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesdays afternoon.
 ```
 
 

@@ -64,8 +64,8 @@ Day      |Time       |Teacher|Subject
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
 Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
 |||
-Tueday   |09:00-12:00|Lars   |Create project's class diagram (using git)
-Tueday   |13:00-16:00|Richel |pair programming + TDD
+Tuesday  |09:00-12:00|Lars   |Create project's class diagram (using git)
+Tuesday  |13:00-16:00|Richel |pair programming + TDD
 |
 Wednesday|09:00-10:00|Björn  |understand git branches, git merge
 Wednesday|10:15-11:00|Richel |apply git branches
