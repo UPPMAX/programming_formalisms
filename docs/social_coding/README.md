@@ -8,6 +8,10 @@
 
 ???- question "For teachers"
 
+    Prerequisites are:
+
+    - Learners can do the git basic workflow on `master`
+
     Teaching goals are:
 
     - Learners can tell why pair programming is important

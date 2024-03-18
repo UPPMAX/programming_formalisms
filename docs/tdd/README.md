@@ -1,5 +1,38 @@
 # TDD
 
+!!!- info "Learning objectives"
+
+    - Understand what TDD is
+    - Understand why TDD is important
+    - Practice TDD
+
+???- question "For teachers"
+
+    Prerequisites are:
+
+    - Learners have practiced pair programming
+    - Learners can do the git basic workflow on `master`
+
+    Teaching goals are:
+
+    - Learners understand what TDD is
+    - Learners understand why TDD is important
+    - Learners have done multiple TDD cycles
+
+    Teaching form used:
+
+    - Pair programming
+    - `master` branch
+
+    Lesson plan:
+
+    - 5 mins: prior knowledge
+      - [questions]
+    - 5 mins: presentation
+    - 25 mins: challenge
+    - 10 mins: feedback
+
+
 ## Course material
 
  * Lecture slides:
