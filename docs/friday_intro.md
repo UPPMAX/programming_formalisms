@@ -1,1 +1,3 @@
 # Introduction to Friday
+
+Today we will...
