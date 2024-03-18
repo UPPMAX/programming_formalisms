@@ -76,7 +76,7 @@ digraph {
 ```
 
 **Most other models are Agile...**
-see the extra reading section: [SDLC models](https://uppmax.github.io/programming_formalisms_intro/SDLC_models.html)
+see the extra reading section: [SDLC models](https://uppmax.github.io/programming_formalisms_intro/sdlc_models.html)
 
 - Modern principles: 
   - automated tests, continuous integration

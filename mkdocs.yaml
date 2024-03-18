@@ -29,7 +29,7 @@ nav:
     - Reading material: reading/README.md
   - More about:
     - Extra material: extra.md
-    - Software development Lifecycle (SDLC) models: extra_bc/SDLC_models.md
+    - Software development Lifecycle (SDLC) models: extra_bc/sdlc_models.md
     - More about Git: extra_bc/git_deeper.md
     - More about collaboration: extra_bc/collab_deeper.md
     - More about reproducibility: extra_bc/reproducible_deeper.md
