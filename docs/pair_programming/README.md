@@ -26,6 +26,10 @@
     - 25 mins: challenge
     - 10 mins: feedback
 
+## Introduction
+
+- Best way to transfer knowledge
+
 ## Exercises
 
 See the exercise procedure [here](../misc/exercise_procedure.md).
@@ -67,5 +71,6 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 ## Links
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+- [Martin Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
 
 
