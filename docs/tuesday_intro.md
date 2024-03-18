@@ -1,7 +1,11 @@
 # Introduction to Tuesday
 
-Today we will:
+Today we will create a class diagram of our project.
 
-- create a class diagram
-- [practice pair programming](social_coding/README.md)
-- [practice test-driven development](tdd/README.md)
+After learning about [pair programming](social_coding/README.md),
+we will adding stubs of these classes to our project.
+
+To be able new features, we will 
+[practice test-driven development](tdd/README.md)
+in pairs.
+
