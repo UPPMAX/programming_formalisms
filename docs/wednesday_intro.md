@@ -24,5 +24,9 @@ Today we will discuss:
 - [Practice doing a Pull Request using a code review](git/apply_merge.md)
 
 We will formalize our [practice test-driven development](tdd/README.md)
-by using the standard branch model with code reviews
+by using a standard branch model with code reviews
 and maybe we start to [practice formal testing](testing/README.md).
+
+We will be using our shared repository,
+[the Programming Formalisms project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2024),
+where we work on the `main`, `develop` and topic branches.
