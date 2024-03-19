@@ -26,18 +26,18 @@ an understanding of formal principles of software development.
 
 Teach evidence-based or expert-recommended best practices on how to:
 
-- [RICHEL: Lars, would you agree?] write design documents for a project
+- write design documents for a project
 - work as a team
 - share code
 - develop code
 - test code
 - optimize code
-- [RICHEL: Lars, would you agree?] write reusable code
+- write reusable code
 - [RICHEL: Björn, would you agree?] deploy code
 
 Understand and do formal software development practices:
 
-- [RICHEL: Lars, would you agree?] understand, use and create a UML class diagram
+- understand, use and create a UML class diagram
 - understand and use a formal git branching model
 - understand and use a formal GitHub workflow
 - understand and practice social coding, such as pair programming and code reviews
