@@ -1283,7 +1283,7 @@ schwartz
 hattie
 FTE
 MSc
- Rea
+Rea
 Ri
 Rie
 kjell
@@ -1293,6 +1293,4 @@ awk
 richel
 Björn's
 mottos
-
-
-
+sed
