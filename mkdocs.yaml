@@ -50,7 +50,7 @@ theme:
     text: Lato
     code: JetBrains Mono
 
-  logo: assets/logo_color.png
+  logo: assets/programming_formalism_logo_rhs.png
 
   features:
     - toc.integrate
