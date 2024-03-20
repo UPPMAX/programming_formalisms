@@ -59,24 +59,24 @@ flowchart TD
 
 ## Schedule   
 
+This is a general course schedule, that intends to give a general overview
+of the course's teaching.
+For a detailed daily schedule, see the detailed schedule of that day.
+
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
-Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
-|||
+Monday   |13:00-15:45|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
+Monday   |15:45-16:00|Richel |Retrospect
 Tuesday  |09:00-12:00|Lars   |Create project's class diagram (using git)
-Tuesday  |13:00-16:00|Richel |pair programming + TDD
-|
-Wednesday|09:00-10:00|Björn  |understand git branches, git merge
-Wednesday|10:15-11:00|Richel |apply git branches
-Wednesday|11:15-12:00|Björn  |understand git pull request with code review
-Wednesday|13:00-14:00|Richel |apply code review 
-Wednesday|14:15-15:00|Richel |understand TDD (+data structures)
-Wednesday|15:15-15:45|Richel |apply TDD (+data structures)
-Wednesday|15:45-16:00|Richel |retrospect
-|||
+Tuesday  |13:00-15:45|Richel |pair programming + TDD
+Tuesday  |15:45-16:00|Richel |Retrospect
+Wednesday|09:00-12:00|Björn  |Formal git workflow
+Wednesday|13:00-16:00|Richel |Formal GitHub and software development work
+Wednesday|15:45-16:00|Richel |Retrospect
 Thursday |09:00-12:00|Richel |Data structures (+ algorithms)
 Thursday |13:00-16:00|R (+M) |Algorithms + Optimisation
-|
+Thursday |15:45-16:00|Richel |Retrospect
 Friday   |09:00-12:00|Lars   |Modular programming deep
 Friday   |13:00-16:00|Björn  |Deployment
+Thursday |15:45-16:00|Richel |Evaluation

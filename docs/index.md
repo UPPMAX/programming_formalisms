@@ -33,7 +33,7 @@ Teach evidence-based or expert-recommended best practices on how to:
 - test code
 - optimize code
 - write reusable code
-- [RICHEL: Björn, would you agree?] deploy code
+- deploy code
 
 Understand and do formal software development practices:
 
