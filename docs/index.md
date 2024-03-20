@@ -13,12 +13,14 @@ template: home.html
 -->
 
 ![Programming formalism logo](assets/programming_formalism_logo_rhs.png)
+
+
 <br/><br/>
 
 
 
 
-  
+ 
 # Welcome to the Programming Formalisms course!
     
 
@@ -30,6 +32,8 @@ template: home.html
 
 
 <br>
+<center>
+  
 
 <br/><br/>
 
@@ -38,4 +42,4 @@ template: home.html
 
 <br/><br/>
 
-
+</center>
