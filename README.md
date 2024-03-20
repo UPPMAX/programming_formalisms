@@ -9,34 +9,6 @@
 [![Check spelling](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml)
 [![Deploy GitHub Pages](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml)
 
- * Course Repository for programming formalisms course.
- * Under this projects, notes, exercises and lecture slides will be stored.
- * Please view the [setup.md](setup.md) file for preparations
-
-## Schedule
-
-Day | Time       | Teacher            | Topic                                                                                                                                                                                          | Material
-----|------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------
-Mon |9-12, 13-16 |BC + JN (LE, RB)    | [Introduction day](https://uppmax.github.io/programming_formalisms_intro/index.html), including a Reflection by JN from 15:30-16:00                                                            |[HTML](https://uppmax.github.io/programming_formalisms_intro/index.html)
-Tue |9-12        |LE      (RB)        | [Paradigms, Introduction to formalised development](development_design/README.md)                                                                                                              |[PDF](development_design/development_and_programming_formalisms_ht2023.pdf)
-Tue |13-16       |JN + RB (LE, RB)    | [Social coding, pair programming as  a tool for rapid development](https://github.com/UPPMAX/programming_formalisms/tree/main/common_practices), including a Reflection by RB from 15:30-16:00 |[PDF](common_practices/slides/notes_social_coding.pdf) and [PDF](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_code_review.pdf)
-Wednesday|09:00-10:00|Björn  |understand git branches, git merge
-Wednesday|10:15-11:00|Richel |apply git branches
-Wednesday|11:15-12:00|Björn  |understand git pull request with code review
-Wednesday|13:00-14:00|Richel |apply code review 
-Wednesday|14:15-15:00|Richel |understand TDD (+data structures)
-Wednesday|15:15-15:45|Richel |apply TDD (+data structures)
-Wednesday|15:45-16:00|Richel |retrospect
-Wed |9-12        |RB      (LE)        | [TDD](tdd/README.md)                                                                                                                                                                           |[PDF](tdd/tdd_lecture.pdf)
-Wed |13-16       |RB + JN (LE)        | [Testing](testing/README.md), including a Reflection by JN from 15:30-16:00                                                                                                                    |[PDF](testing/testing_lecture.pdf)
-Thu |9-12        |RB      (LE)        | [Data structures](tdd/README.md), including a Reflection by LE from 15:30-16:00                                                                                                                |[PDF](data_structures/data_structures_lecture.pdf)
-Thu |13-16       |RB + LE (LE)        | [Algorithms](algorithms/README.md)                                                                                                                                                             |[PDF](algorithms/algorithms_lecture.pdf)
-Fri |9-12        |LE      (RB)        | [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/analysis_and_design_programming_formalism_ht_2023.pdf)                                                                   |[PDF](development_design/analysis_and_design_programming_formalism_ht_2023.pdf)
-Fri |13-16       |RB + ML + JN (LE,RB)| [Optimisation](optimisation/README.md), including a Reflection by JN from 15:30-16:00                                                                                                          |[PDF](optimisation/optimisation_lecture.pdf)
-
- * `([names])` means that `[names]` assist or observe
- * Regular course room is at the room sent around
-
 ## Shared documents
 
  * [Shared documents](shared_documents/README.md)
