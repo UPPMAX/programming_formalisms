@@ -19,6 +19,7 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
  and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
 
 **There are several solutions in how to work with coding and the environments around it**
+
 - You can work in the environment(s) you are used to.
 - Many of the teachers will use **Visual Studio Code (VS code)**
 - This is not necessary if you have other solution
