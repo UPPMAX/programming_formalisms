@@ -105,4 +105,4 @@ Thursday |13:00-16:00|R (+M) |Algorithms + Optimisation
 Thursday |15:45-16:00|Richel |Retrospect
 Friday   |09:00-12:00|Lars   |Modular programming deep
 Friday   |13:00-16:00|Björn  |Deployment
-Thursday |15:45-16:00|Richel |Evaluation
+Friday   |15:45-16:00|Richel |Evaluation
