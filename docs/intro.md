@@ -7,6 +7,32 @@
 
 ## Course overview
 
+
+!!! info "Programming Formalisms goal"
+    
+    Give scientists with some experience in programming and scripting
+    an understanding of formal principles of software development.
+    
+    Teach evidence-based or expert-recommended best practices on how to:
+     
+    - write design documents for a project
+    - work as a team
+    - share code
+    - develop code
+    - test code
+    - optimize code
+    - write reusable code
+    - deploy code
+
+    Understand and do formal software development practices:
+
+    - understand, use and create a UML class diagram
+    - understand and use a formal git branching model
+    - understand and use a formal GitHub workflow
+    - understand and practice social coding, such as pair programming and code reviews
+    - understand and use a run-time speed profiler
+
+
 ```mermaid
 flowchart TD
 
@@ -79,4 +105,4 @@ Thursday |13:00-16:00|R (+M) |Algorithms + Optimisation
 Thursday |15:45-16:00|Richel |Retrospect
 Friday   |09:00-12:00|Lars   |Modular programming deep
 Friday   |13:00-16:00|Björn  |Deployment
-Thursday |15:45-16:00|Richel |Evaluation
+Friday   |15:45-16:00|Richel |Evaluation
