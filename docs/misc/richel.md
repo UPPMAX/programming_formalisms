@@ -2,7 +2,7 @@
 
 ## How to pronounce my name
 
-| Language  | Pronounciation |
+| Language  | Pronunciation |
 |-----------|----------------|
 | **Dutch** | 'Rie-sjel'     |
 | English   | 'Rea-shell'    |
