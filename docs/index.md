@@ -7,14 +7,14 @@ template: home.html
 <br/><br/>
 
 <figure markdown="span">
-  ![Programming formalism logo](assets/programming_formalism_logo.png){ width="500" }
+  ![Programming formalism logo](assets/programming_formalism_logo_rhs.png){ width="500" }
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
-
+</center>
 <br/><br/>
 
-
+<center>
 # Welcome to the Programming Formalisms course!
     
 
