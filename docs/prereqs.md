@@ -2,6 +2,19 @@
 
 <base target="_blank">
 
+!!! note "What do you need to be prepared?" 
+
+    - **Python** installation
+    - A shell **terminal**
+      - Linux/Bash
+      - Mac terminal
+    - **Git/GitHub** account
+    - We recommend **VS Code** but other coding tools can work
+
+  
+
+
+
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
  and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
 
