@@ -84,7 +84,7 @@ Study                     | Extra time | Effect
   -   Person with first name first in alphabet starts
   -   Try to be **an exemplary duo**
 
-## Exercise 0: `is_zero`
+### Exercise 0: `is_zero`
 
 !!! note "Learning objectives"
 
@@ -109,121 +109,49 @@ showed at 'Exercises'.
   -   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
 
 
-# Exercise 1: `is_even`
+### Exercise 1: `is_even`
 
 -   Time: 30 mins
 
-## Exercise 1: `is_even` (30 mins)
+Develop a function called `is_even`:
 
--   Develop a function called `is_even`
--   Output:
-    -   Returns `True` if the input is even
-    -   Returns `False` if the input is not even
-    -   :warning: Gives an error when the input is not a number
--   Try to be **exemplary**
--   We'll discuss a random commit history
+!!! note "`is_even`"
 
-## Exercise 1: `is_even` social (30 mins)
+  - Function name: `is_even`
+  - Output:
+    - Returns `True` if the input is even
+    - Returns `False` if the input is not even
+    - :warning: Gives an error when the input is not a number
 
--   Ping-Pong Pair programming
--   Discuss how and when to switch roles first!
--   Person with first name first in alphabet starts
--   Try to be **an exemplary duo**
-
-## Exercise 1: `is_even` technical (30 mins)
-
--   Use the GitHub repository for the learners of this course
--   Work on the main branch
--   Create a file called `learners/[your_name]/is_even.py`
-
-Done? Write `is_odd`, then `is_probility`.
-
-## Exercise 1 feedback
-
--   [ ] Ask for a volunteer for feedback
-    -   If none: pick a random folder
--   [ ] Discuss history
-
-# Exercise 2: `is_odd`
+### Exercise 2: `is_odd`
 
 -   Time: 30 mins
 
-## Exercise 2: `is_odd` (30 mins)
+Develop a function called `is_odd`:
 
--   Develop a function called `is_odd`
--   Output:
+!!! note "`is_odd`"
+
+  - Function name: `is_odd`
+  -   Output:
     -   Returns `True` if the input is odd
     -   Returns `False` if the input is not odd
     -   :warning: Gives an error when the input is not a number
--   Try to be **exemplary**
--   We'll discuss a commit history after the exercise
 
-## Exercise 2: `is_odd` social (30 mins)
+Consider using the `is_even` function.
 
--   Ping-Pong Pair programming
--   Discuss how and when to switch roles first!
--   Person with first name first in alphabet starts
--   Try to be **an exemplary duo**
-
-## Exercise 2: `is_odd`, technical (30 mins)
-
--   Use the GitHub repository for the learners of this course, e.g. https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023
--   Work on the main branch
--   Use a file called `learners/[your_name]/is_odd.py`
-
-Done? Try exercise 3: `is_probability`.
-
-## Exercise 2 feedback
-
--   [ ] Ask for a volunteer for feedback
-    -   If none: pick a random folder
--   [ ] Discuss history
-
-# Exercise 3: `is_probability`
+### Exercise 3: `is_probability`
 
 -   Time: 30 mins
 
-## Exercise 3: `is_probability` (30 mins)
+Develop a function called `is_probability`.
 
--   Develop a function called `is_probability`
--   Output:
-    -   Returns `True` if the input is in range \[0.0, 1.0\]
-    -   Returns `False` if the input is outside that range
-    -   :warning: Gives an error when the input is not a floating point number
--   Try to be **exemplary**
--   We'll discuss a commit history after the exercise
+!!! note "`is_probability`"
 
-## Exercise 3: `is_probability` social (30 mins)
-
--   Ping-Pong Pair programming
--   Discuss how and when to switch roles first!
--   Person with first name first in alphabet starts
--   Try to be **an exemplary duo**
-
-## Exercise 3: `is_probability`, technical (30 mins)
-
--   Use the GitHub repository for the learners of this course
--   Work on the main branch\
--   Use a file called `learners/[your_name]/is_probability.py`
-
-## Exercise 3 feedback
-
--   [ ] Ask for a volunteer for feedback
-    -   If none: pick a random folder
--   [ ] Discuss history
-
-## Extra exercises
-
-Done?
-
-| Exercise | Function name     | Function purpose                             |
-|-------------------|-------------------|----------------------------------|
-| 4        | `is_number`       | Determines if an object is a number          |
-| 5        | `are_numbers`     | Determines if an object is a list of numbers |
-| S1       | `is_roman_number` | Determine if a string is a roman number      |
-| S2       | `is_prime`        | Determine if a number is a prime number      |
-
-!!! note "To here
+  - Function name: `is_probability`
+  - Output:
+    - Returns `True` if the input is in range `[0.0, 1.0]`
+    - Returns `False` if the input is outside that range
+    - :warning: Gives an error when the input is not a floating point number
 
 ## Conclusion
 
