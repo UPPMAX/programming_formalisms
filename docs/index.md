@@ -12,7 +12,10 @@ template: home.html
 </figure>
 -->
 
+![Programming formalism logo](assets/programming_formalism_logo_rhs.png)
 <br/><br/>
+
+
 
 
   
