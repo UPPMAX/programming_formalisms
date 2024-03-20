@@ -5,6 +5,13 @@ template: home.html
 
 
 <br/><br/>
+
+<figure markdown="span">
+  ![Image title](https://dummyimage.com/600x400/){ width="300" }
+  <figcaption>Image caption</figcaption>
+</figure>
+
+
 <!--
 <figure markdown="span">
   ![Programming formalism logo](assets/programming_formalism_logo_rhs.png)
