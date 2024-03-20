@@ -2,7 +2,7 @@
 template: home.html
 ---
 
-<center>
+
 
 <br/><br/>
 
@@ -14,7 +14,6 @@ template: home.html
 
 <br/><br/>
 
-</center>
 
   
 # Welcome to the Programming Formalisms course!
@@ -28,7 +27,7 @@ template: home.html
 
 
 <br>
-<center>
+
 <br/><br/>
 
 [Pre-requirements](prereqs.md){ .md-button .md-button--primary }
@@ -37,4 +36,3 @@ template: home.html
 <br/><br/>
 
 
-</center>
