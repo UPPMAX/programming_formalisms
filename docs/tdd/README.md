@@ -72,41 +72,41 @@ Study                     | Extra time | Effect
 
 !!! note "Technical rules"
 
-  -   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
-  -   Work on the main branch
-  -   Work in a file called `learners/[your_name]/is_zero.py`, where `[your_name]` is the person with first name first in alphabet
-  -   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+    -   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
+    -   Work on the main branch
+    -   Work in a file called `learners/[your_name]/is_zero.py`, where `[your_name]` is the person with first name first in alphabet
+    -   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
 !!! note "Social rules"
 
-  -   Ping-Pong Pair programming
-  -   Discuss how and when to switch roles first!
-  -   Person with first name first in alphabet starts
-  -   Try to be **an exemplary duo**
+    -   Ping-Pong Pair programming
+    -   Discuss how and when to switch roles first!
+    -   Person with first name first in alphabet starts
+    -   Try to be **an exemplary duo**
 
 ### Exercise 0: `is_zero`
 
 !!! note "Learning objectives"
 
-  - First practice of TDD by re-doing a function that has been developed
+    - First practice of TDD by re-doing a function that has been developed
 
 Develop the function `is_zero` with the technical and social rules
 showed at 'Exercises'.
 
 !!! note "`is_zero`"
 
-  -   Function name: `is_zero`
-  -   Output:
-    -   Returns `True` if the input is zero
-    -   Returns `False` if the input is not zero
-    -   :warning: Gives an error when the input is not a number
+    - Function name: `is_zero`
+    - Output:
+      - Returns `True` if the input is zero
+      - Returns `False` if the input is not zero
+      - :warning: Gives an error when the input is not a number
 
 ???- question "Need a video?"
 
-  Here are two videos that show how to develop `is_zero` for Python and R:
+    Here are two videos that show how to develop `is_zero` for Python and R:
 
-  -   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
-  -   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
+    - [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
+    - [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
 
 
 ### Exercise 1: `is_even`
@@ -117,11 +117,11 @@ Develop a function called `is_even`:
 
 !!! note "`is_even`"
 
-  - Function name: `is_even`
-  - Output:
-    - Returns `True` if the input is even
-    - Returns `False` if the input is not even
-    - :warning: Gives an error when the input is not a number
+    - Function name: `is_even`
+    - Output:
+      - Returns `True` if the input is even
+      - Returns `False` if the input is not even
+      - :warning: Gives an error when the input is not a number
 
 ### Exercise 2: `is_odd`
 
@@ -131,11 +131,11 @@ Develop a function called `is_odd`:
 
 !!! note "`is_odd`"
 
-  - Function name: `is_odd`
-  -   Output:
-    -   Returns `True` if the input is odd
-    -   Returns `False` if the input is not odd
-    -   :warning: Gives an error when the input is not a number
+    - Function name: `is_odd`
+    -   Output:
+      -   Returns `True` if the input is odd
+      -   Returns `False` if the input is not odd
+      -   :warning: Gives an error when the input is not a number
 
 Consider using the `is_even` function.
 
@@ -147,11 +147,11 @@ Develop a function called `is_probability`.
 
 !!! note "`is_probability`"
 
-  - Function name: `is_probability`
-  - Output:
-    - Returns `True` if the input is in range `[0.0, 1.0]`
-    - Returns `False` if the input is outside that range
-    - :warning: Gives an error when the input is not a floating point number
+    - Function name: `is_probability`
+    - Output:
+      - Returns `True` if the input is in range `[0.0, 1.0]`
+      - Returns `False` if the input is outside that range
+      - :warning: Gives an error when the input is not a floating point number
 
 ## Conclusion
 
