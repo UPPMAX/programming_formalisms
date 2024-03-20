@@ -11,7 +11,7 @@ nav:
   - Tuesday:
     - Intro: tuesday_intro.md
     - Pair programming: pair_programming/README.md
-    - TDD: tdd/README.md
+    - Test-driven development: tdd/README.md
   - Wednesday:
     - Intro: wednesday_intro.md
     - Branching and merging: git/branches.md
