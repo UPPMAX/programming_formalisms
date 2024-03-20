@@ -7,7 +7,7 @@ template: home.html
 <br/><br/>
 
 <figure markdown="span">
-  ![Programming formalism logo](assets/programming_formalism_logo_rhs.png){ width="200" }
+  ![Programming formalism logo](docs/assets/programming_formalism_logo_rhs.png){ width="200" }
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
