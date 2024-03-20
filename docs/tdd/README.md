@@ -27,126 +27,87 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-      - [questions]
+      - How do you grow/develop your code?
+      - How do others grow/develop their code?
+      - Why would it be important to have a formal way to grow/develop your code?
     - 5 mins: presentation
+    - 10 mins: demonstration `is_zero`
     - 25 mins: challenge
     - 10 mins: feedback
 
-!!! note "Work in progress from here"
+## Introduction
 
----
-title: "Test-Driven Development"
-author: "Richèl Bilderbeek"
-format: revealjs
-editor: visual
-from: markdown+emoji
-bibliography: tdd_lecture.bib
-csl: vancouver.csl
-css: styles.css
-slide-number: true
-number-sections: true
----
-
-# The Big Picture ![](CC-BY-NC-SA.png)
-
-<https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture/tdd_lecture.qmd>
-
-![](programming_formalism_logo_25_cropped.png)
-
-## Breaks
-
-Please take breaks: these are important for learning. Ideally, do something boring @newport2016deep!
-
-## Schedule
-
-| Day | From  | To    | What                  |
-|-----|-------|-------|-----------------------|
-| Wed | 9:00  | 10:00 | TDD: `is_even`        |
-| Wed | 10:00 | 10:15 | Break                 |
-| Wed | 10:15 | 11:00 | TDD: `is_odd`         |
-| Wed | 11:00 | 11:15 | Break                 |
-| Wed | 11:15 | 12:00 | TDD: `is_probability` |
-| Wed | 12:00 | 13:00 | Lunch                 |
-
-# Growing code
-
-![](programming_formalism_logo_25_cropped.png)
-
-## Problem
-
-How do you grow/develop your code?
-
-![](thomas_and_hunt_the_pragmatic_programmer.jpg)
-
-## Newbie developers
-
-'Just start somewhere'
-
-![](chaotic_programmer.png)
-
-## Experienced developers
-
-Work systematically
-
-![](organised_female_programmer.png)
-
-## TDD
-
-Short for 'Test-driven development'. A systematic way to grow code, used in academia and industry. It works @martin2011clean!
+Test-driven development (TDD) is a systematic way to grow code, 
+used in academia and industry. It works [Martin, 2011]!
 
 ![](tdd_hat_2.jpg)
 
-## TDD cycle
+> A TDD developer
 
 ![](tdd_cycle_2.jpg)
 
-# Example exercise: `is_zero`
+> The TDD cycle
 
--   Only observe, no type-along!
--   Ask questions on the go! When in doubt: ask that question!
--   Time: 15 minutes
+The TDD cycles end when you cannot break your function anymore [Beck, 2022][Langr, 2013].
 
-## Example exercise: `is_zero`
+Advantages of TDD are:
 
--   Function name: `is_zero`
--   Output:
+- TDD makes developers more productive [Erdogmus & Morisio, 2005]
+- TDD increases quality of the code [Erdogmus & Morisio, 2005][Alkaoud & Walcott, 2018][Janzen & Saiedian, 2006]
+  -   There are plenty of costly programming mistakes documented!
+- TDD helps shape the project architecture [Mayr, 2005]
+- TDD helps better modularisation [Madeyski et al., 2010]
+- TDD works great with Xtreme programming and CI
+
+Developers do really do this [Beck, 2022][Langr, 2013], even
+though TDD takes longer:
+
+Study                     | Extra time | Effect
+--------------------------|------------|-------------------------------
+[George & Williams, 2004] | 16%        | 18% more black-box tests pass 
+[Bhat & Nagappan, 2006]   | 15%        | 2x higher code quality
+[Nagappan et al., 2008]   | 15-35%     | 40%-90% less defects
+
+## Exercises
+
+!!! note "Technical rules"
+
+  -   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
+  -   Work on the main branch
+  -   Work in a file called `learners/[your_name]/is_zero.py`, where `[your_name]` is the person with first name first in alphabet
+  -   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+
+!!! note "Social rules"
+
+  -   Ping-Pong Pair programming
+  -   Discuss how and when to switch roles first!
+  -   Person with first name first in alphabet starts
+  -   Try to be **an exemplary duo**
+
+## Exercise 0: `is_zero`
+
+!!! note "Learning objectives"
+
+  - First practice of TDD by re-doing a function that has been developed
+
+Develop the function `is_zero` with the technical and social rules
+showed at 'Exercises'.
+
+!!! note "`is_zero`"
+
+  -   Function name: `is_zero`
+  -   Output:
     -   Returns `True` if the input is zero
     -   Returns `False` if the input is not zero
     -   :warning: Gives an error when the input is not a number
--   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
-## Example exercise: `is_zero`, social
+???- question "Need a video?"
 
--   Ping-Pong Pair programming
--   Discuss how and when to switch roles first!
--   Person with first name first in alphabet starts
--   Try to be **an exemplary duo**
+  Here are two videos that show how to develop `is_zero` for Python and R:
 
-## Example exercise: `is_zero` technical
+  -   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
+  -   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
 
--   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
--   Work on the main branch
--   Work in a file called `learners/[your_name]/is_zero.py`, where `[your_name]` is the person with first name first in alphabet
-
-## Live demo (15 minutes)
-
--   Only observe, no type-along!
-
-Videos:
-
--   [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
--   [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
--   Or see also slides beyond end
-
-## Reflection
-
-Q: Do developers really do this?
-
-. . .
-
-A: Yes @beck2022test@langr2013modern
-
-![](beck_tdd_by_example.jpg) ![](book_langr.jpg)
 
 # Exercise 1: `is_even`
 
@@ -182,45 +143,6 @@ Done? Write `is_odd`, then `is_probility`.
 -   [ ] Ask for a volunteer for feedback
     -   If none: pick a random folder
 -   [ ] Discuss history
-
-## Reflection
-
-Q: Does this really save time?
-
-. . .
-
-A: No, it takes longer
-
-| Study                  | Extra time | Effect                        |
-|------------------------|------------|-------------------------------|
-| @george2004structured  | 16%        | 18% more black-box tests pass |
-| @bhat2006evaluating    | 15%        | 2x higher code quality        |
-| @nagappan2008realizing | 15-35%     | 40%-90% less defects          |
-
-## Reflection
-
-Q: Why do TDD?
-
-. . .
-
-A:
-
--   TDD makes developers more productive @erdogmus2005effectiveness
--   TDD increases quality of the code @erdogmus2005effectiveness @alkaoud2018quality @janzen2006test
-    -   There are plenty of costly programming mistakes documented!
--   TDD helps shape the project architecture @mayr2005projekt
--   TDD helps better modularisation @madeyski2010test
--   TDD works great with Xtreme programming and CI
-
-## Reflection
-
-Q: How many tests should I write?
-
-. . .
-
-A: Until you cannot break your function anymore @beck2022test@langr2013modern
-
-![](beck_tdd_by_example.jpg) ![](book_langr.jpg)
 
 # Exercise 2: `is_odd`
 
@@ -301,192 +223,21 @@ Done?
 | S1       | `is_roman_number` | Determine if a string is a roman number      |
 | S2       | `is_prime`        | Determine if a number is a prime number      |
 
-## Bottom line
+!!! note "To here
+
+## Conclusion
 
 -   This session, we wrote **unit tests**
 -   It is only those your boss may read
 -   The literature assumes a responsible programmer writes tests, in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
 
-![](thomas_and_hunt_the_pragmatic_programmer.jpg)
-
-## Weaknesses
+## Discussion
 
 -   We only test manually
 -   We only test on our own computer
 -   We are not sure if our functions are tested completely
 -   We do not test the code for style
 -   We should consider using a testing framework
-
-These are addressed in the session called 'Testing' :-)
-
-## Questions?
-
-Questions?
-
-## The End
-
-![](dilbert_tdd_4.png)
-
-## TDD cycles in text
-
--   In both Python and R
-
-## First example: `is_zero`
-
--   Function name: `is_zero`
--   Output:
-    -   Returns `True`/`TRUE` if the input is zero
-    -   Returns `False`/`FALSE` if the input is not zero
-    -   :warning: Gives an error when the input is not a number
-
-## Cycle 1, red: write a test that breaks
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png) 🪱
-
-```{python}
-#| echo: true
-#| eval: false
-assert is_zero(0)
-```
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png) 🪱
-
-```{r}
-#| echo: true
-#| eval: false
-library(testthat)
-expect_true(is_zero(0))
-```
-:::
-:::
-
-:monocle_face: code that is not run, uses 🪱, as a worm cannot run.
-
-## Cycle 1, green: make the test pass
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
-
-```{python}
-#| echo: true
-def is_zero(number): 
-  return True
-
-assert is_zero(0)
-```
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png)
-
-```{r}
-#| echo: true
-library(testthat)
-
-is_zero <- function(number) {
-  TRUE
-}
-
-expect_true(is_zero(0))
-```
-:::
-:::
-
-## Cycle 1, blue: refactor and commit
-
-```         
-git add .
-git commit -m "Add stub of 'is_zero'"
-git push
-```
-
-![](organised_male_programmer.png)
-
-## Cycle 2, red: write a test that breaks
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png) 🪱
-
-```{python}
-#| echo: true
-#| eval: false
-assert is_zero(0)
-assert not is_zero(42)
-```
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png) 🪱
-
-```{r}
-#| echo: true
-#| eval: false
-expect_true(is_zero(0))
-expect_false(is_zero(42))
-```
-:::
-:::
-
-## Cycle 2, green: make the test pass
-
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
-
-```{python}
-#| echo: true
-def is_zero(x):
-  return x == 0
-
-assert is_zero(0)
-assert not is_zero(42)
-```
-
-:monocle_face: indent of 2 is non-standard, see [PEP 8](https://peps.python.org/pep-0008/)
-:::
-
-::: {.column width="50%"}
-![](r_icon_41x32.png)
-
-```{r}
-#| echo: true
-library(testthat)
-
-is_zero <- function(number) {
-  number == 0
-}
-
-expect_true(is_zero(0))
-expect_false(is_zero(42))
-```
-:::
-:::
-
-## Cycle 2, blue: refactor and commit
-
-```         
-git add .
-git commit -m "'is_zero' responds correctly to numbers"
-git push
-```
-
-![](organised_female_programmer.png)
-
-![](dilbert_agile_2.png)
-
-![](dilbert_agile_1.png)
-
-![](dilbert_tdd_3.png)
-
-
-!!! note "To here
-
 
 ## Course material
 
@@ -521,3 +272,34 @@ Solution `is_prime`          |  9 mins | [here](https://richelbilderbeek.nl/tdd_
  * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
  * `https://leetcode.com/problemset/all/`: many simple questions
  * [Project Euler](https://projecteuler.net/archives): plenty of programming problems
+
+## References
+
+ * [Alkaoud & Walcott, 2018] Alkaoud, Hessah, and Kristen R. Walcott. "Quality metrics of test suites in test-driven designed applications." International Journal of Software Engineering Applications (IJSEA) 2018 (2018).
+
+![](beck_tdd_by_example.jpg) 
+
+ * [Beck, 2022] Beck, Kent. Test driven development: By example. Addison-Wesley Professional, 2022.
+ * [Bhat & Nagappan, 2006] Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.
+ * [Erdogmus & Morisio, 2005] Erdogmus, Hakan, Maurizio Morisio, and Marco Torchiano. "On the effectiveness of the test-first approach to programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
+ * [George & Williams, 2004] George, Boby, and Laurie Williams. "A structured experiment of test-driven development." Information and software Technology 46.5 (2004): 337-342.
+ * [Janzen & Saiedian, 2006] Janzen, David S., and Hossein Saiedian. "Test-driven learning: intrinsic integration of testing into the CS/SE curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
+
+![](book_langr.jpg)
+
+ * [Langr, 2013] Langr, Jeff. Better, Code, and Sleep Better. "Modern C++ Programming with Test-Driven Development." (2013).
+ * [Madeyski et al., 2010] Madeyski, Lech, and Gestión de sistemas de información. Test-driven development: An empirical evaluation of agile practice. Heidelberg: Springer, 2010.
+
+![](martin_the_clean_coder.jpg)
+
+ * [Martin, 2011] Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
+ * [Mayr, 2005] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
+ * [Nagappan et al., 2008] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
+
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+
+ * [Thomas & Hunt, 2019] Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
+
+![](python_logo.png)
+
+ * [Zen of Python] [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
