@@ -17,7 +17,6 @@ template: home.html
 
 # Welcome to the Programming Formalisms course!
     
-</center>
 
 !!! note "Course mottos"
 
@@ -26,7 +25,6 @@ template: home.html
 
 
 
-<center>
 <br>
     
 <br/><br/>
