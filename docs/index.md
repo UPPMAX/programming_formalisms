@@ -11,10 +11,10 @@ template: home.html
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
-</center>
+
 <br/><br/>
 
-<center>
+</center>
 
   
 # Welcome to the Programming Formalisms course!
@@ -28,7 +28,7 @@ template: home.html
 
 
 <br>
-    
+<center>
 <br/><br/>
 
 [Pre-requirements](prereqs.md){ .md-button .md-button--primary }
