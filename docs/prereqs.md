@@ -24,9 +24,9 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 - Many of the teachers will use **Visual Studio Code (VS code)**
 - This is not necessary if you have other solution
 - Benefit:  
-  - integrate you terminal and Git work with **code development**
-  - graphical user interface
-  - available in **all platforms**
+    - integrate you terminal and Git work with **code development**
+    - graphical user interface
+    - available in **all platforms**
  
 - [Install VS Code](https://code.visualstudio.com/)
 
@@ -56,25 +56,26 @@ Otherwise follow the steps below!
 
     There are several different ways to run the course material on a Windows computer. Neither is perhaps optimal, and the material itself has not been adapted specifically for Windows. Nevertheless, in principle everything *should* be possible to run. A few ways you could setup:
 
-    **Git-windos with a command line and Git integrated**
+    **Git-windows with a command line and Git integrated**
 
     - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
       
-       - See Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/)
-       - Included will be the **Git Bash**
+        - See Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/)
+        - Included will be the **Git Bash**
 
     **Other possibilities**
     - Use the **Windows 10 PowerShell**
 
-      - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
+        - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
         
     - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
-       - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
-       - instructions below
-       - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
+    
+        - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
+        - instructions below
+        - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
 
     - Run as Linux through a **virtual machine** (and see the Linux setup above)
-      - not shown
+        - not shown
 
     **Install Bash on Windows 10/11 (WSL)**, following the instructions at *e.g.* **1** of these resources:
 
