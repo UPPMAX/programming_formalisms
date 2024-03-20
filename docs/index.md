@@ -7,8 +7,8 @@ template: home.html
 <br/><br/>
 
 <figure markdown="span">
-  ![Image title](https://dummyimage.com/600x400/){ width="300" }
-  <figcaption>Image caption</figcaption>
+  ![Programming formalism logo](https://dummyimage.com/600x400/){ width="300" }
+  <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
 
