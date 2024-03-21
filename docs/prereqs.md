@@ -2,17 +2,31 @@
 
 <base target="_blank">
 
+!!! note "What do you need to be prepared?" 
+
+    - **Python** installation
+    - A shell **terminal**
+      - Linux/Bash
+      - Mac terminal
+    - **Git/GitHub** account
+    - We recommend **VS Code** but other coding tools can work
+
+  
+
+
+
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
  and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
 
 **There are several solutions in how to work with coding and the environments around it**
+
 - You can work in the environment(s) you are used to.
 - Many of the teachers will use **Visual Studio Code (VS code)**
 - This is not necessary if you have other solution
 - Benefit:  
-  - integrate you terminal and Git work with **code development**
-  - graphical user interface
-  - available in **all platforms**
+    - integrate you terminal and Git work with **code development**
+    - graphical user interface
+    - available in **all platforms**
  
 - [Install VS Code](https://code.visualstudio.com/)
 
@@ -28,49 +42,48 @@ If you will not use VS code, follow steps below.
 **Git and terminals are already integrated in VS Code and can be the first choice**
 Otherwise follow the steps below!
 
-`````{tabs} 
-````{tab} Mac & Linux
+=== "Mac & Linux"
 
-- We will use terminal to some extent.
-- Choose one of your choice, the built-in or another!
+    - We will use terminal to some extent.
+    - Choose one of your choice, the built-in or another!
 
-- Chances are big that you already have **git installed on your computer**. You can check by running e.g. `git --version`. 
-- If you don't have git, install it following the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
-- If you have a very old version of git you might want to update to a later version.
-````
+    - Chances are big that you already have **git installed on your computer**. You can check by running e.g. `git --version`. 
+    - If you don't have git, install it following the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+    - If you have a very old version of git you might want to update to a later version.
 
-````{tab}  Windows
 
-There are several different ways to run the course material on a Windows computer. Neither is perhaps optimal, and the material itself has not been adapted specifically for Windows. Nevertheless, in principle everything *should* be possible to run. A few ways you could setup:
+=== "Windows"
 
-**Git-windos with a command line and Git integrated**
+    There are several different ways to run the course material on a Windows computer. Neither is perhaps optimal, and the material itself has not been adapted specifically for Windows. Nevertheless, in principle everything *should* be possible to run. A few ways you could setup:
 
-- Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
+    **Git-windows with a command line and Git integrated**
+
+    - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
       
-   - See Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/)
-   - Included will be the **Git Bash**
+        - See Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/)
+        - Included will be the **Git Bash**
 
-**Other possibilities**
-- Use the **Windows 10 PowerShell**
+    **Other possibilities**
+    - Use the **Windows 10 PowerShell**
 
-  - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
+        - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
         
-- Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
-   - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
-   - instructions below
-   - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
+    - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
+    
+        - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
+        - instructions below
+        - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
 
-- Run as Linux through a **virtual machine** (and see the Linux setup above)
-  - not shown
+    - Run as Linux through a **virtual machine** (and see the Linux setup above)
+        - not shown
 
-**Install Bash on Windows 10/11 (WSL)**, following the instructions at *e.g.* **1** of these resources:
+    **Install Bash on Windows 10/11 (WSL)**, following the instructions at *e.g.* **1** of these resources:
 
 
-- [Installing the Windows Subsystem and the Linux Bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-- [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
-- [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
-````
-`````
+    - [Installing the Windows Subsystem and the Linux Bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+    - [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
+    - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
+
 
 ### Configure git
 
