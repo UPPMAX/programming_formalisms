@@ -28,7 +28,12 @@
 
 ## Introduction
 
-- Best way to transfer knowledge
+Pair programming is a facet of developing code better.
+We use it a lot in this course, because:
+
+- we should
+- it works great with recommended teaching practices
+
 
 ## Exercises
 
@@ -38,9 +43,33 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 
 !!!- info "Learning objectives"
 
-    - [objectives]
+    - Understand what pair programming is
+    - First guess at understanding what **good** pair programming is
 
-- [exercise]
+???- question "For teachers"
+
+    Time schedule:
+    - 5 mins: introduce exercise procedure
+    - 10 mins: start
+    - 5 mins: feedback
+
+- Together, read the questions before reading the material
+- Together, divide which team member is going to read which source:
+  - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
+  - [Martin Fowler's page on Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
+  - (if with three: [Codecademy's page on Pair Programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/))
+- Together, set a timer for 10 minutes
+- Individually, answer the questions within the time limit
+- Together, write down a shared answer on the GitHub project repository
+  with path `learners/[a teammember's name]/pair_programming.md`
+- Upload the file
+
+Questions:
+
+- What is pair programming?
+- When to switch roles?
+- How does a good pair behave?
+- What effects does pair programming have?
 
 ### Exercise 2: practice pair programming
 
@@ -72,5 +101,3 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 - [Martin Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
-
-
