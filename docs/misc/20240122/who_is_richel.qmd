@@ -48,7 +48,7 @@ number-sections: true
 
 -   Every learner needs to be active
 -   Follows the pace of learners that need more time
--   Fast learners help
+-   Fast learners learn by helping
 -   Asks learners randomly @bell2020fundamentals
 -   Dare to try out new things (and fail in plain sight) @bell2020fundamentals
 

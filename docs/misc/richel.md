@@ -21,21 +21,21 @@
 
 ## Teaching style
 
--   Literate
--   Evidence-based, e.g. @hattie2012visible, @schwartz2012evidence
+-   Literate [1]
+-   Evidence-based, e.g. [Hattie, 2012][Schwartz, 2012]
 -   Active learning
 -   Learning community
--   Well-prepared
+-   Well-prepared [1]
 -   Student-centered
--   Transparent
+-   Transparent [1]
 
 ## Features
 
 -   Every learner needs to be active
 -   Follows the pace of learners that need more time
--   Fast learners help
--   Asks learners randomly @bell2020fundamentals
--   Dare to try out new things (and fail in plain sight) @bell2020fundamentals
+-   Fast learners learn by helping
+-   Asks learners randomly [Bell, 2020]
+-   Dare to try out new things (and fail in plain sight) [Bell, 2020]
 
 ## Lecturing
 
@@ -43,6 +43,11 @@ I only do this for unimportant topics.
 
 This was the only lecture in the course :-)
 
-(I **do** need to tell about myself @schwartz2012evidence)
+(I **do** need to tell about myself [Schwartz, 2012])
 
 ## References
+
+ * [1] <https://github.com/richelbilderbeek/teaching>
+ * [Bell, 2020] Bell, Mike. The fundamentals of teaching: A five-step model to put the research evidence into practice. Routledge, 2020.
+ * [Hattie, 2012] Hattie, John. Visible learning for teachers: Maximizing impact on learning. Routledge, 2012.
+ * [Schwartz, 2012] Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012.
