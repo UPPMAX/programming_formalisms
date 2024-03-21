@@ -53,6 +53,21 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
     - 10 mins: start
     - 5 mins: feedback
 
+```mermaid
+gantt
+    title Exercise procedure minutes
+    dateFormat X
+    axisFormat %s
+    section Main room
+    Move to breakout room : 0, 5
+    section Breakout room, together
+    Prepare: 5, 6
+    Discuss: 16,21
+    Back to main room: 21,22
+    section Breakout room, individually
+    Read   : 6,16
+```
+
 - Together, read the questions before reading the material
 - Together, divide which team member is going to read which source:
   - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
