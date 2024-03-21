@@ -23,31 +23,31 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 
 ## Checkpoints
 
-???- Do you have Visual Studio Code installed?
+???- question "Do you have Visual Studio Code installed?"
 
      - No go [here](#Visual-Studio)
 
-???- Do you have Git installed?
+???- question "Do you have Git installed?"
 
      - No go here
 
-???- Have you configured a Git account?
+???- question "Have you configured a Git account?"
 
      - No, go here
 
-???- Have you set up a GitHub account?
+???- question "Have you set up a GitHub account?"
 
      - No, go here
 
-???- Do you know basic git?
+???- question "Do you know basic git?"
 
      - No, go here
 
-???- Have you installed Python?
+???- question "Have you installed Python?"
 
      - No, go here
 
-???- Do you know basic Python Python?
+???- question "Do you know basic Python?"
 
      - No, go here
 
