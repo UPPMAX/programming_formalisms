@@ -11,12 +11,49 @@
     - **Git/GitHub** account
     - We recommend **VS Code** but other coding tools can work
 
-  
-
-
 
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
  and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
+
+ 
+
+- Follow the steps from [configure git](https://uppmax.github.io/programming_formalisms_intro/setup.html#configure-git) if not done already
+- Follow the steps from [configure GitHub](https://uppmax.github.io/programming_formalisms_intro/setup.html#github) if not done already
+- Follow the steps from [configure ssh-keys](https://uppmax.github.io/programming_formalisms_intro/setup.html#git-github-connection-through-ssh-keys-this-may-take-a-while-to-get-working-but-is-worth-it) if not done already
+
+## Checkpoints
+
+???- Do you have Visual Studio Code installed?
+
+     - No go [here](#Visual-Studio)
+
+???- Do you have Git installed?
+
+     - No go here
+
+???- Have you configured a Git account?
+
+     - No, go here
+
+???- Have you set up a GitHub account?
+
+     - No, go here
+
+???- Do you know basic git?
+
+     - No, go here
+
+???- Have you installed Python?
+
+     - No, go here
+
+???- Do you know basic Python Python?
+
+     - No, go here
+
+
+## Visual Studio
+
 
 **There are several solutions in how to work with coding and the environments around it**
 
@@ -27,12 +64,10 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
     - integrate you terminal and Git work with **code development**
     - graphical user interface
     - available in **all platforms**
- 
-- [Install VS Code](https://code.visualstudio.com/)
 
-- Follow the steps from [configure git](https://uppmax.github.io/programming_formalisms_intro/setup.html#configure-git) if not done already
-- Follow the steps from [configure GitHub](https://uppmax.github.io/programming_formalisms_intro/setup.html#github) if not done already
-- Follow the steps from [configure ssh-keys](https://uppmax.github.io/programming_formalisms_intro/setup.html#git-github-connection-through-ssh-keys-this-may-take-a-while-to-get-working-but-is-worth-it) if not done already
+## Shell and Git
+
+
 
 ## Shell and Git
 If you will not use VS code, follow steps below.
