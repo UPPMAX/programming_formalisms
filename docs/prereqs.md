@@ -70,26 +70,16 @@
 - [Download](https://code.visualstudio.com/Download)
     - Note for Mac Users: If Safari does not let you download, try Chrome or other web browser.
 
+!!! info
 
+    Go back to [checkpoints](prereqs.md#checkpoints)
 
-## Shell and Git
-If you will not use VS code, follow steps below.
- 
-### Terminal & git
+## Install Git
 
 **Git (specific installation may be required) and terminals are already integrated in VS Code and can be the first choice**
-Otherwise follow the steps below!
+Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#other-solutions)!
 
-=== "Mac & Linux"
-
-    - We will use terminal to some extent.
-    - Choose one of your choice, the built-in or another!
-
-    - Chances are big that you already have **git installed on your computer**. You can check by running e.g. `git --version`. 
-    - If you don't have git, install it following the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
-         - Follow the setup insctructions from the Mac part of [Git installation](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
-    - If you have a very old version of git you might want to update to a later version.
-
+- Version >= 2.28 would do
 
 === "Windows"
 
@@ -102,6 +92,28 @@ Otherwise follow the steps below!
         - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
 
+=== "Mac"
+
+    - We will use terminal to some extent.
+    - Choose one of your choice, the built-in or another!
+    - Chances are big that you already have **git installed on your computer**.     
+    - You can check by running e.g. `git --version`. 
+        -  and if it reports 2.28 or higher, then you are good.
+    - If you have a very old version of git or you don't have it, install it following the instructions [here](https://git-scm.com/download/mac)     
+        - You may have to do ``xcode select --install`` from the Mac terminal.
+
+=== "Linux"
+
+    - We will use terminal to some extent.
+    - Chances are big that you already have **git installed on your computer**.     
+    - You can check by running e.g. `git --version`. 
+        -  and if it reports 2.28 or higher, then you are good.
+    - If you have a very old version of git or you don't have it, install it following the Linux instructions [here](https://coderefinery.github.io/installation/git-in-terminal/#installation)     
+
+
+### Using git in VS code
+
+- When Git is instaeld yu may need to restart a shel in VS code before it works.
 
 ### Using VS Code as a git editor
 
@@ -113,7 +125,6 @@ Otherwise follow the steps below!
 ```console
 git config --global core.editor "code --wait"
 ```
-
 
 
 ### Configure git
@@ -144,14 +155,14 @@ $ clip < ~/.ssh/id_ed25519.pub
 ```
 
 - Then go to your GitHub account on the web.
-  1. In the upper-right corner of any page, click your profile photo, then click Settings.
-  2. In the "Access" section of the sidebar, click SSH and GPG keys.
-  3. Click New SSH key or Add SSH key.
-  4. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
-  5. Select the type of key **authentication**.
-  6. In the "Key" field, paste your public key.
-  7. Click Add SSH key.
-  8. If prompted, confirm access to your account on GitHub.
+    1. In the upper-right corner of any page, click your profile photo, then click Settings.
+    2. In the "Access" section of the sidebar, click SSH and GPG keys.
+    3. Click New SSH key or Add SSH key.
+    4. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal laptop, you might call this key "Personal laptop".
+    5. Select the type of key **authentication**.
+    6. In the "Key" field, paste your public key.
+    7. Click Add SSH key.
+    8. If prompted, confirm access to your account on GitHub.
 
 - Now test again in your terminal: `ssh -T git@github.com`
   - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
@@ -159,7 +170,7 @@ $ clip < ~/.ssh/id_ed25519.pub
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
   -   
 
-## Git course
+## Git courses
 
 - Learn the basics!
 - Choose one or several of these!
@@ -176,50 +187,43 @@ $ clip < ~/.ssh/id_ed25519.pub
 ## Python
 - Use what you already have
 - If you don't have Python there are different ways to go. We won't use Conda during the lessons, for instance.
-  - Bare python (recommended for the **"bare metal" user**)
-    - you need to install other packages (pip)
-    - [install python](https://www.python.org/downloads/)
-    - **note macOS**: the system install of Python on macOS is not supported, instead:
-      - ``brew install python3`` 
-  - Anaconda (recommended for **python/R developers liking GUI:s**)
-    - includes many many packages
-    - includes conda packager
-    - GUI launchers, like example
-    - jupyter notebook/lab
-    - Spyder
-    - RStudio
-    - etc...
-    - [install Anaconda](https://www.anaconda.com/download)
-  - miniconda (recommended for **terminal user**)
-    - less packages than Anaconda, and no GUI launcher but:
-    - conda packager
-    - pip
-    - etc...
-    - [install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
+    - Bare python (recommended for the **"bare metal" user**)
+        - You may need to install other packages (pip)
+        - [install python](https://www.python.org/downloads/)
+        - **note macOS**: the system install of Python on macOS is not supported, instead:
+            - ``brew install python3`` 
+   - Anaconda (recommended for **python/R developers liking GUI:s**)
+        - **Count with 15-20 minutes**  
+        - includes
+            - many many packages
+            - conda packager
+            - pip installer
+            - GUI launchers, like example
+            - jupyter notebook/lab
+            - Spyder
+            - RStudio
+            - etc...
+        - [install Anaconda](https://www.anaconda.com/download)
+    - miniconda (recommended for **terminal user**)
+        - **Faster to install**
+        - Includes:
+            - less packages than Anaconda, and no GUI launcher but:
+            - conda packager
+            - pip installer
+            - etc...
+        - [install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
 
 - In Linux and Bash, Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 
 ### In VS Code
 
-- Step 1. Install a supported version of Python on your system 
-  - note: that the system install of Python on macOS is not supported
-  - ``brew install python3`` 
-- Step 2. Install the Python extension for Visual Studio Code.
-- Step 3. Open or create a Python file and start coding!
+- Step 1. Install a supported version of Python on your system, see above
+- Step 2. Install the Python extension for Visual Studio Code from the left menu bar.
+- Step 3. Open or create a Python file and start coding.
+    -  Example: make a hello.py script and run it with the "play" button.
+    -  Choose which Python interpreter to use. 
+- Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
 
-### In Git-bash (Windows)
-- Get it working from **Git Bash**
-  - if the command ``type python`` gives you a path, then proceed
-    - otherwise you may have to do a new installation
-    - or find the path
-    - if anaconda installation you may add something like this:
-    - ``echo 'export PATH="<path/to/Anaconda/root>:<path/to/anaconda/root>/Scripts:$PATH:' >> .bashrc``
-      - example:  ``/c/Users/bjcar425/AppData/Local/anaconda3:/c/Users/bjcar425/AppData/Local/anaconda3/Scripts``
-  - ``$ alias python='winpty python.exe'``
-  - ``$ python -V``
-    - does it give you the python version 3-something?
- - Make it permanent
- -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
 
 ## Other solutions
 
@@ -259,6 +263,19 @@ There are some other solutions for installations but they are probably not suppo
     - [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
     - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
 
+### Python from In Git-bash (Windows)
+- Get it working from **Git Bash**
+  - if the command ``type python`` gives you a path, then proceed
+    - otherwise you may have to do a new installation
+    - or find the path
+    - if anaconda installation you may add something like this:
+    - ``echo 'export PATH="<path/to/Anaconda/root>:<path/to/anaconda/root>/Scripts:$PATH:' >> .bashrc``
+      - example:  ``/c/Users/bjcar425/AppData/Local/anaconda3:/c/Users/bjcar425/AppData/Local/anaconda3/Scripts``
+  - ``$ alias python='winpty python.exe'``
+  - ``$ python -V``
+    - does it give you the python version 3-something?
+ - Make it permanent
+ -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
 
 
 
