@@ -65,10 +65,10 @@
     - graphical user interface
     - available in **all platforms**
  
-- You may want to check https://coderefinery.github.io/installation/vscode/ as well!
+- You may want to check [VS Code installation](https://coderefinery.github.io/installation/vscode/) as well!
 
 - [Download](https://code.visualstudio.com/Download)
-    - Note for Mac Users: If Safari does not let you download, try Chrome or other web broswer.
+    - Note for Mac Users: If Safari does not let you download, try Chrome or other web browser.
 
 
 
@@ -101,6 +101,18 @@ Otherwise follow the steps below!
       
         - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
+
+
+### Using VS Code as a git editor
+
+- This will set VS Code as the editor that Git starts. 
+- It will start a new tab, and Git will wait until you save and close that tab.
+- Git for Windows on Windows may automatically set this if you select it as an editor.
+- Otherwise:
+
+```console
+git config --global core.editor "code --wait"
+```
 
 
 
