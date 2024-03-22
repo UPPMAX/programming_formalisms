@@ -6,18 +6,16 @@
 
     - **Python** installation
     - A shell **terminal**
-      - Linux/Bash
-      - Mac terminal
+        - Linux/Bash
+        - Mac terminal
     - **Git/GitHub** account
     - We recommend **VS Code** but other coding tools can work
 
 
-Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
  and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
 
  
 
-- Follow the steps from [configure git](https://uppmax.github.io/programming_formalisms_intro/setup.html#configure-git) if not done already
 - Follow the steps from [configure GitHub](https://uppmax.github.io/programming_formalisms_intro/setup.html#github) if not done already
 - Follow the steps from [configure ssh-keys](https://uppmax.github.io/programming_formalisms_intro/setup.html#git-github-connection-through-ssh-keys-this-may-take-a-while-to-get-working-but-is-worth-it) if not done already
 
@@ -25,31 +23,41 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 
 ???- question "Do you have Visual Studio Code installed?"
 
-     - No go [here](prereqs.md#Visual-Studio)
+     - No go [here](prereqs.md#visual-studio)
 
 ???- question "Do you have Git installed?"
 
-     - No go here](prereqs.md#Terminal-&-git)
+     - No go [here](prereqs.md#terminal-&-git)
 
 ???- question "Have you configured a Git account?"
 
-     - No, go here](prereqs.md#Visual-Studio)
+     - No, go [here](prereqs.md#configure-git)
 
 ???- question "Have you set up a GitHub account?"
 
-     - No, go here](prereqs.md#Visual-Studio)
+     - No, go [here](prereqs.md#github)
+
+???- question "Have you set up a git ssh-keys?"
+
+     - Test: `ssh -T git@github.com`
+         - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
+     
+     - If not working, go [here](prereqs.md#gitgithub-connection-through-ssh-keys)
 
 ???- question "Do you know basic git?"
 
-     - No, go here](prereqs.md#Visual-Studio)
+     - I am familiar with basic git commands like 
+        - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
+     
+     - No, go [here](prereqs.md#git)
 
 ???- question "Have you installed Python?"
 
-     - No, go here](prereqs.md#Visual-Studio)
+     - No, go [here](prereqs.md#Visual-Studio)
 
 ???- question "Do you know basic Python?"
 
-     - No, go here](prereqs.md#Visual-Studio)
+     - No, go [here](prereqs.md#Visual-Studio)
 
 
 ## Visual Studio
@@ -167,6 +175,7 @@ $ clip < ~/.ssh/id_ed25519.pub
 - Git courses
     - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
     - [CodeRefinery](https://coderefinery.github.io/git-intro/)
+    - [NAISS](https://www.hpc2n.umu.se/node/982)
 
 - [Pro Git book](https://git-scm.com/book/en/v2)
 - 
@@ -218,4 +227,7 @@ $ clip < ~/.ssh/id_ed25519.pub
     - does it give you the python version 3-something?
  - Make it permanent
  -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
+
+
+Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
 
