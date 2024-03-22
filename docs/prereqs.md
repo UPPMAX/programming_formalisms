@@ -25,31 +25,31 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 
 ???- question "Do you have Visual Studio Code installed?"
 
-     - No go [here](#Visual-Studio)
+     - No go [here](prereqs.md#Visual-Studio)
 
 ???- question "Do you have Git installed?"
 
-     - No go here
+     - No go here](prereqs.md#Terminal-&-git)
 
 ???- question "Have you configured a Git account?"
 
-     - No, go here
+     - No, go here](prereqs.md#Visual-Studio)
 
 ???- question "Have you set up a GitHub account?"
 
-     - No, go here
+     - No, go here](prereqs.md#Visual-Studio)
 
 ???- question "Do you know basic git?"
 
-     - No, go here
+     - No, go here](prereqs.md#Visual-Studio)
 
 ???- question "Have you installed Python?"
 
-     - No, go here
+     - No, go here](prereqs.md#Visual-Studio)
 
 ???- question "Do you know basic Python?"
 
-     - No, go here
+     - No, go here](prereqs.md#Visual-Studio)
 
 
 ## Visual Studio
@@ -162,6 +162,14 @@ $ clip < ~/.ssh/id_ed25519.pub
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
   -   
 
+## Git
+
+- Git courses
+    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
+    - [CodeRefinery](https://coderefinery.github.io/git-intro/)
+
+- [Pro Git book](https://git-scm.com/book/en/v2)
+- 
 
 ## Python
 - Use what you already have
