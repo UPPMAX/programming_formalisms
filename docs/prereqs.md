@@ -42,15 +42,15 @@
      - I am familiar with basic git commands like 
         - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
      
-     - No, go [here](prereqs.md#git)
+     - No, go [here](prereqs.md#git-courses)
 
 ???- question "Have you installed Python?"
 
-     - No, go [here](prereqs.md#Visual-Studio)
+     - No, go [here](prereqs.md#python)
 
 ???- question "Do you know basic Python?"
 
-     - No, go [here](prereqs.md#Visual-Studio)
+     - No, go [here](prereqs.md#python courses)
 
 
 ## Visual Studio
