@@ -67,9 +67,8 @@
  
 - You may want to check https://coderefinery.github.io/installation/vscode/ as well!
 
-- Download https://code.visualstudio.com/Download
-
-## Shell and Git
+- [Download](https://code.visualstudio.com/Download)
+    - Note for Mac Users: If Safari does not let you download, try Chrome or other web broswer.
 
 
 
@@ -78,7 +77,7 @@ If you will not use VS code, follow steps below.
  
 ### Terminal & git
 
-**Git and terminals are already integrated in VS Code and can be the first choice**
+**Git (specific installation may be required) and terminals are already integrated in VS Code and can be the first choice**
 Otherwise follow the steps below!
 
 === "Mac & Linux"
@@ -103,26 +102,6 @@ Otherwise follow the steps below!
         - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
 
-    **Other possibilities**
-    - Use the **Windows 10 PowerShell**
-
-        - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
-        
-    - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
-    
-        - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
-        - instructions below
-        - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
-
-    - Run as Linux through a **virtual machine** (and see the Linux setup above)
-        - not shown
-
-    **Install Bash on Windows 10/11 (WSL)**, following the instructions at *e.g.* **1** of these resources:
-
-
-    - [Installing the Windows Subsystem and the Linux Bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-    - [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
-    - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
 
 
 ### Configure git
@@ -168,7 +147,10 @@ $ clip < ~/.ssh/id_ed25519.pub
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
   -   
 
-## Git
+## Git course
+
+- Learn the basics!
+- Choose one or several of these!
 
 - Git courses
     - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
@@ -176,7 +158,8 @@ $ clip < ~/.ssh/id_ed25519.pub
     - [NAISS](https://www.hpc2n.umu.se/node/982)
 
 - [Pro Git book](https://git-scm.com/book/en/v2)
-- 
+
+
 
 ## Python
 - Use what you already have
@@ -225,6 +208,46 @@ $ clip < ~/.ssh/id_ed25519.pub
     - does it give you the python version 3-something?
  - Make it permanent
  -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
+
+## Other solutions
+
+There are some other solutions for installations but they are probably not supported by the teachers of the course.
+
+### Terminals
+
+=== "Windows"
+
+    There are several different ways to run the course material on a Windows computer. Neither is perhaps optimal, and the material itself has not been adapted specifically for Windows. Nevertheless, in principle everything *should* be possible to run. A few ways you could setup:
+
+    **Git-windows with a command line and Git integrated**
+
+    - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
+      
+        - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
+        - Included will be the **Git Bash**
+
+    **Other possibilities**
+    - Use the **Windows 10 PowerShell**
+
+        - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
+        
+    - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
+    
+        - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
+        - instructions below
+        - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
+
+    - Run as Linux through a **virtual machine** (and see the Linux setup above)
+        - not shown
+
+    **Install Bash on Windows 10/11 (WSL)**, following the instructions at *e.g.* **1** of these resources:
+
+
+    - [Installing the Windows Subsystem and the Linux Bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+    - [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
+    - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
+
+
 
 
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
