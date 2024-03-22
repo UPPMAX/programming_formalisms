@@ -11,14 +11,7 @@
     - **Git/GitHub** account
     - We recommend **VS Code** but other coding tools can work
 
-
- and [https://coderefinery.github.io/installation/](https://coderefinery.github.io/installation/)
-
  
-
-- Follow the steps from [configure GitHub](https://uppmax.github.io/programming_formalisms_intro/setup.html#github) if not done already
-- Follow the steps from [configure ssh-keys](https://uppmax.github.io/programming_formalisms_intro/setup.html#git-github-connection-through-ssh-keys-this-may-take-a-while-to-get-working-but-is-worth-it) if not done already
-
 ## Checkpoints
 
 ???- question "Do you have Visual Studio Code installed?"
@@ -62,7 +55,6 @@
 
 ## Visual Studio
 
-
 **There are several solutions in how to work with coding and the environments around it**
 
 - You can work in the environment(s) you are used to.
@@ -72,6 +64,10 @@
     - integrate you terminal and Git work with **code development**
     - graphical user interface
     - available in **all platforms**
+ 
+- You may want to check https://coderefinery.github.io/installation/vscode/ as well!
+
+- Download https://code.visualstudio.com/Download
 
 ## Shell and Git
 
@@ -92,6 +88,7 @@ Otherwise follow the steps below!
 
     - Chances are big that you already have **git installed on your computer**. You can check by running e.g. `git --version`. 
     - If you don't have git, install it following the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
+         - Follow the setup insctructions from the Mac part of [Git installation](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
     - If you have a very old version of git you might want to update to a later version.
 
 
@@ -103,7 +100,7 @@ Otherwise follow the steps below!
 
     - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
       
-        - See Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/)
+        - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
 
     **Other possibilities**
@@ -133,6 +130,7 @@ Otherwise follow the steps below!
 **This must be done**
 
 Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
+
 
 ### GitHub
 Sign up for GitHub account:
