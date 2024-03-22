@@ -168,7 +168,7 @@ $ clip < ~/.ssh/id_ed25519.pub
   - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
 
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-  -   
+
 
 ## Git courses
 
@@ -223,6 +223,12 @@ $ clip < ~/.ssh/id_ed25519.pub
     -  Example: make a hello.py script and run it with the "play" button.
     -  Choose which Python interpreter to use. 
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
+
+## Python courses
+
+- Learn the basics!
+- Choose one or several of these!
+
 
 
 ## Other solutions
