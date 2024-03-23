@@ -16,7 +16,8 @@
 !!! info
 
     If you have not set up Git/GitHub and have not installed Git, Python and VS code.
-    - Count with ~1 hour of preparations
+  
+    - **Count with ~1 hour of preparations**, depending on choices you make (Anaconda takes time to install).
  
 ## Checkpoints
 
