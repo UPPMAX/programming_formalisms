@@ -4,13 +4,19 @@
 
 !!! note "What do you need to be prepared?" 
 
-    - **Python** installation
     - A shell **terminal**
         - Linux/Bash
         - Mac terminal
-    - **Git/GitHub** account
     - We recommend **VS Code** but other coding tools can work
+       - This also includes built-in terminals
+       - Good integrated system
+    - **Git/GitHub** account and local installation
+    - **Python** installation
 
+!!! info
+
+    If you have not set up Git/GitHub and have not installed Git, Python and VS code.
+    - Count with ~1 hour of preparations
  
 ## Checkpoints
 
