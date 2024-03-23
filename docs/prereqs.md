@@ -16,41 +16,58 @@
 
 ???- question "Do you have Visual Studio Code installed?"
 
+     - Yes!
      - No go [here](prereqs.md#visual-studio)
 
 ???- question "Do you have Git installed?"
 
+     - Yes!
      - No go [here](prereqs.md#terminal-&-git)
 
-???- question "Have you configured a Git account?"
+???- question "Can you run Git from VS code?"
 
+     - Yes!
+     - No go to [Using git in VS code](prereqs.md#using-git-in-VS-code)
+
+???- question "Have you configured a Git (local) account?"
+
+     - Yes!
      - No, go [here](prereqs.md#configure-git)
 
 ???- question "Have you set up a GitHub account?"
 
+     - Yes!
      - No, go [here](prereqs.md#github)
 
 ???- question "Have you set up a git ssh-keys?"
 
      - Test: `ssh -T git@github.com`
          - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
+     - Yes!
      
      - If not working, go [here](prereqs.md#gitgithub-connection-through-ssh-keys)
 
 ???- question "Do you know basic git?"
 
      - I am familiar with basic git commands like 
-        - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
+         - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
      
      - No, go [here](prereqs.md#git-courses)
 
 ???- question "Have you installed Python?"
 
-     - No, go [here](prereqs.md#python)
+     - Yes!
+     - No, go to [here](prereqs.md#python)
+
+???- question "Can you run Python from VS Code?"
+
+     - Yes!
+     - No, go to [here](prereqs.md#python-in-vs-code)
 
 ???- question "Do you know basic Python?"
 
-     - No, go [here](prereqs.md#python courses)
+     - Yes!
+     - No, go to [here](prereqs.md#python courses)
 
 
 ## Visual Studio
@@ -110,11 +127,15 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
         -  and if it reports 2.28 or higher, then you are good.
     - If you have a very old version of git or you don't have it, install it following the Linux instructions [here](https://coderefinery.github.io/installation/git-in-terminal/#installation)     
 
+!!! info
 
-### Using git in VS code
+    Go back to [checkpoints](prereqs.md#checkpoints)
 
-- When Git is instaeld yu may need to restart a shel in VS code before it works.
+## Using git in VS code
 
+- When Git is installed you may need to restart a shell in VS code before it works.
+
+<!-- 
 ### Using VS Code as a git editor
 
 - This will set VS Code as the editor that Git starts. 
@@ -125,6 +146,11 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 ```console
 git config --global core.editor "code --wait"
 ```
+-->
+
+!!! info
+
+    Go back to [checkpoints](prereqs.md#checkpoints)
 
 
 ### Configure git
@@ -133,10 +159,19 @@ git config --global core.editor "code --wait"
 
 Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
 
+!!! info
+
+    Go back to [checkpoints](prereqs.md#checkpoints)
+
 
 ### GitHub
 Sign up for GitHub account:
 [https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
+
+!!! info
+
+    Go back to [checkpoints](prereqs.md#checkpoints)
+
 
 ### Git/GitHub connection through ssh keys 
 (This may take a while to get working, but is worth it)
@@ -169,6 +204,10 @@ $ clip < ~/.ssh/id_ed25519.pub
 
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
+!!! info
+
+    Go back to [checkpoints](prereqs.md#checkpoints)
+
 
 ## Git courses
 
@@ -182,6 +221,9 @@ $ clip < ~/.ssh/id_ed25519.pub
 
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
+!!! info
+
+    Go back to [checkpoints](prereqs.md#checkpoints)
 
 
 ## Python
@@ -215,7 +257,7 @@ $ clip < ~/.ssh/id_ed25519.pub
 
 - In Linux and Bash, Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 
-### In VS Code
+## Python in VS Code
 
 - Step 1. Install a supported version of Python on your system, see above
 - Step 2. Install the Python extension for Visual Studio Code from the left menu bar.
@@ -223,6 +265,11 @@ $ clip < ~/.ssh/id_ed25519.pub
     -  Example: make a hello.py script and run it with the "play" button.
     -  Choose which Python interpreter to use. 
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
+
+!!! info
+
+    Go back to [checkpoints](prereqs.md#checkpoints)
+
 
 ## Python courses
 
