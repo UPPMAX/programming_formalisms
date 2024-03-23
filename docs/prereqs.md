@@ -14,15 +14,19 @@
  
 ## Checkpoints
 
+### Visual Studio
+
 ???- question "Do you have Visual Studio Code installed?"
 
      - Yes!
-     - No go [here](prereqs.md#visual-studio)
+     - No, go to [Visual studio](prereqs.md#visual-studio)
+
+### Git
 
 ???- question "Do you have Git installed?"
 
      - Yes!
-     - No go [here](prereqs.md#terminal-&-git)
+     - No go to [Terminal and Git](prereqs.md#terminal-&-git)
 
 ???- question "Can you run Git from VS code?"
 
@@ -32,12 +36,12 @@
 ???- question "Have you configured a Git (local) account?"
 
      - Yes!
-     - No, go [here](prereqs.md#configure-git)
+     - No, go to [Configure Git](prereqs.md#configure-git)
 
 ???- question "Have you set up a GitHub account?"
 
      - Yes!
-     - No, go [here](prereqs.md#github)
+     - No, go to [Github](prereqs.md#github)
 
 ???- question "Have you set up a git ssh-keys?"
 
@@ -45,30 +49,37 @@
          - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
      - Yes!
      
-     - If not working, go [here](prereqs.md#gitgithub-connection-through-ssh-keys)
+     - If not working, go to [to here](prereqs.md#git-github-connection-through-ssh-keys)
 
 ???- question "Do you know basic git?"
 
      - I am familiar with basic git commands like 
          - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
      
-     - No, go [here](prereqs.md#git-courses)
+     - No, go to [Git courses](prereqs.md#git-courses)
+
+### Python
 
 ???- question "Have you installed Python?"
 
      - Yes!
-     - No, go to [here](prereqs.md#python)
+     - No, go to [Python](prereqs.md#python)
 
 ???- question "Can you run Python from VS Code?"
 
      - Yes!
-     - No, go to [here](prereqs.md#python-in-vs-code)
+     - No, go to Python in VS Code](prereqs.md#python-in-vs-code)
 
 ???- question "Do you know basic Python?"
 
      - Yes!
-     - No, go to [here](prereqs.md#python courses)
+     - Even though it is not part of the course we will use Python in the exercises. 
+         - With other programming languages you can get far, but you may want to learn the basic syntax used in Python!
+     - To learn more, go to [Python courses](prereqs.md#python-courses)
 
+### Some other solutions
+
+Do you want to work in another environment you are used to, you can do some of the steps above and get some inspiration from the [other solutions](prereqs.md#other-solutions) further down.
 
 ## Visual Studio
 
@@ -173,7 +184,7 @@ Sign up for GitHub account:
     Go back to [checkpoints](prereqs.md#checkpoints)
 
 
-### Git/GitHub connection through ssh keys 
+### Git–GitHub connection through ssh keys 
 (This may take a while to get working, but is worth it)
 [https://coderefinery.github.io/installation/ssh/](https://coderefinery.github.io/installation/ssh/)
 
@@ -215,10 +226,11 @@ $ clip < ~/.ssh/id_ed25519.pub
 - Choose one or several of these!
 
 - Git courses
-    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
-    - [CodeRefinery](https://coderefinery.github.io/git-intro/)
+    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/) 
+    - [Git by CodeRefinery](https://coderefinery.github.io/git-intro/)
+    - [GitHub by CodeRefinery](https://coderefinery.github.io/git-collaborative/)
     - [NAISS](https://www.hpc2n.umu.se/node/982)
-
+ 
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
 !!! info
@@ -273,8 +285,11 @@ $ clip < ~/.ssh/id_ed25519.pub
 
 ## Python courses
 
-- Learn the basics!
-- Choose one or several of these!
+- We assume familiarity with python at least equivalent
+- Learn the basics by choosing one or several of these  courses!
+
+    - [Python part](https://uppmax.github.io/uppmax_intro_python/) of the UPPMAX introductory course
+    - [Python programming with applications to bioinformatics](https://uppsala.instructure.com/courses/85913).
 
 
 
