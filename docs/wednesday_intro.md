@@ -3,9 +3,29 @@
 Today we will discuss:
 
 - Understand git branching and merging](git/branches.md
+
+???- info "Learning objectives of 'Practice using git branches'"
+
+    - create, switch and delete a `git` branch
+
 - [Practice using git branches](git/apply_branches.md)
 - Understand git Pull Request with code review
+
+???- info "Learning objectives of 'Practice doing a Pull Request using a code review'"
+
+    - practice merging `git` branches
+    - practice fixing merge conflicts
+    - practice doing a code review
+
 - [Practice doing a Pull Request using a code review](git/apply_merge.md)
+
+???- info "Learning objectives of 'Do formal testing'"
+
+    - understand the benefit of using a testing framework
+    - practice writing tests within a formal testing framework
+    - understand the benefit of continuous integration tests
+    - practice fixing continuous integration tests
+
 - [Do formal testing](testing/README.md)
 
 We will formalize our [practice test-driven development](tdd/README.md)

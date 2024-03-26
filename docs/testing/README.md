@@ -1,5 +1,12 @@
 # Testing
 
+!!!- info "Learning objectives"
+
+    - understand the benefit of using a testing framework
+    - practice writing tests within a formal testing framework
+    - understand the benefit of continuous integration tests
+    - practice fixing continuous integration tests
+
 ## Course material
 
  * Lecture:

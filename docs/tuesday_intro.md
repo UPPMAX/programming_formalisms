@@ -2,8 +2,20 @@
 
 Today we will create a class diagram of our project.
 
+???- info "Learning objectives for pair programming"
+
+    - Understand why pair programming is important
+    - Understand how good pair programming looks like
+    - Practice pair programming
+
 After learning about [pair programming](pair_programming/README.md),
 we will adding stubs of these classes to our project.
+
+???- info "Learning objectives for TDD"
+
+    - Understand what TDD is
+    - Understand why TDD is important
+    - Practice TDD
 
 To be able new features, we will 
 [practice test-driven development](tdd/README.md)

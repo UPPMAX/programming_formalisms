@@ -1,5 +1,11 @@
 # Algorithms
 
+!!!- info "Learning objectives"
+
+    - Understand design by contract
+    - Understand algorithm names increase expressiveness of code
+    - Understand difference between `if` and `assert` in function writing
+
 ## Course material
 
 Description                                           |PDF                       |HTML                       |QMD

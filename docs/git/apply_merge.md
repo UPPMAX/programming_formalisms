@@ -4,6 +4,7 @@
 
     - practice merging `git` branches
     - practice fixing merge conflicts
+    - practice doing a code review
 
 ???- question "For teachers"
 
@@ -11,6 +12,7 @@
 
     - Learners have merged `git` branches
     - Learners have fixed merge conflicts
+    - Learners have done a code review
 
     Preparation:
 
@@ -105,6 +107,9 @@ gitGraph
 - Delete your branch (i.e. the one with the unique name).
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
+
+### Exercise 3: practice merge conflicts between branches
+
 
 ## Links
 
