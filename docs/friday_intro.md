@@ -1,9 +1,28 @@
 # Introduction to Friday
 
+
+
+   reproducible.md 
+   documentation.md
+   #sharing.md
+   deploy.md
+   documentation2.md
+   summary.md
+
 Today we will
 
 - understand the principles of modular programming
 - understand the principles of deployment
+
+???- info "Learning objectives of 'Modular programming'"
+
+
+
+???- info "Learning objectives of 'Deployment'"
+
+     - prepare for different users: local computer, Cluster
+     - documentation
+
 
 We will be using our shared repository,
 [the Programming Formalisms project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2024),
