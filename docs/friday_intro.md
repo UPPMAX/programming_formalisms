@@ -20,8 +20,24 @@ Today we will
 
 ???- info "Learning objectives of 'Deployment'"
 
-     - prepare for different users: local computer, Cluster
-     - documentation
+    - prepare for different users: local computer, Cluster
+    - documentation
+
+    - Installing tools
+        - Pypi
+        - Conda
+        - Make
+        - cmake
+    - Notebooks
+    -	Readmes
+    -	Tutorials
+    -	Headers in R and python /bin/env
+    -	Windows
+    -	Mac
+    -	linux
+    -	Check background
+    -	Tabs?
+
 
 
 We will be using our shared repository,
