@@ -1,12 +1,28 @@
 # Introduction to Monday
 
-Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
-Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
-|||
+Today we will:
+
+- get an overview of the Software development lifecycle
+- get an overview of the tools
+- understand the basics of a design
+
+- get started with a git/github project
+- get started with planning the porject
+- do the basic `git` workflow
 
 
-Class design (in groups, on repo, using web interface only)
-git basic (in groups, on repo)
+!!!- info "Learning objectives"
+
+    - give an **introduction** to the week
+    - give some introduction to **concepts** used in the course
+    - give some introduction to handy **tools for the software developer**
+    - try to **set up the mindset** to find the rest of the week interesting and useful!
+    
+    - Practice to ...
+    - Practice to ...
+    - Understand ...
+
+
 
     - overview
         - Lessons
@@ -28,43 +44,21 @@ git basic (in groups, on repo)
 
 
 
-|||
-
-    introductions/intro.md
-    sdlc_tools.md
-    class design
-    #flowcharts.md
-    startup.md
-    #startup_code.md
-    #documentation.md
-    sourcecontrol.md
-    %sharing.md
-    collab.md
-
-github/git
 
 
-Today we will:
+???- info "Learning objectives of 'Intro'"
 
-- understand the basics of a design
-- get an overview of the Software development lifecycle
-- get an overview of the tools
-- get started with a git/github project
-- get started with 
-- do the basic `git` workflow
-- 
+    - We will have an introduction to some SDLC key features
+    - We will get some theory of project tools and thinking.
 
+- [Software Development Lifecycle (SDLC) tools](introductions/sdlc_tools.md)
 
-!!!- info "Learning objectives"
+???- info "Learning objectives of 'Software development'"
 
-    - give an **introduction** to the week
-    - give some introduction to **concepts** used in the course
-    - give some introduction to handy **tools for the software developer**
-    - try to **set up the mindset** to find the rest of the week interesting and useful!
-    
-    - Practice to ...
-    - Practice to ...
-    - Understand ...
+    - We will have an introduction to some SDLC key features
+    - We will get some theory of project tools and thinking.
+
+- [Software Development Lifecycle (SDLC) tools](introductions/sdlc_tools.md)
 
 ???- info "Learning objectives of 'Software Development Lifecycle (SDLC) tools'"
 
@@ -117,10 +111,22 @@ where we work on the main branch.
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Monday   |09:00-10:00|?Björn |?git basic workflow
+Monday   |09:00-10:00|?Björn |Introduction
 Monday   |10:15-11:00|?Björn |?git basic workflow
 Monday   |11:15-12:00|?Björn |?git basic workflow
 Monday   |13:00-14:00|?Lars  |?project design
 Monday   |14:15-15:00|?Lars  |?project design
 Monday   |15:15-15:45|?Lars  |?project design
 Monday   |15:45-16:00|Richel |Retrospect
+
+
+
+Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
+Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
+|||
+
+
+Class design (in groups, on repo, using web interface only)
+git basic (in groups, on repo)
+
+
