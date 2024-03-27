@@ -1,21 +1,45 @@
 # Introduction to Monday
 
-Day      |Time       |Teacher|Subject
----------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
 Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
 |||
 
-   introductions/intro.md
-   sdlc_tools.md
-   class design
-   #flowcharts.md
-   startup.md
-   #startup_code.md
-   #documentation.md
-   sourcecontrol.md
-   %sharing.md
-   collab.md
+
+Class design (in groups, on repo, using web interface only)
+git basic (in groups, on repo)
+
+    - overview
+        - Lessons
+            - Less "what is programming/scripting"
+            - SDLCs 
+            - risk analys
+            - modules intro
+            - oo intro (students ready for Tue morning)
+            - (paradigms/formalised devel)
+            - tools (all presented) [name=Björn]
+        - Activities
+            - discussions
+    - Start project with planning
+        - Week Project with interspersed theory
+            - initiate git/github [name=Björn] 
+            - UML, (pseudocode), design
+            - object (early process)
+            - initial documentation (how) [name=Björn]
+
+
+
+|||
+
+    introductions/intro.md
+    sdlc_tools.md
+    class design
+    #flowcharts.md
+    startup.md
+    #startup_code.md
+    #documentation.md
+    sourcecontrol.md
+    %sharing.md
+    collab.md
 
 github/git
 
@@ -23,7 +47,12 @@ github/git
 Today we will:
 
 - understand the basics of a design
+- get an overview of the Software development lifecycle
+- get an overview of the tools
+- get started with a git/github project
+- get started with 
 - do the basic `git` workflow
+- 
 
 
 !!!- info "Learning objectives"
