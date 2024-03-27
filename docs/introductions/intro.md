@@ -45,7 +45,7 @@
     - Encapsulation/_information hiding_
    
 
-## Code Exammple???
+## Code Example???
    
 ## Software Development Life Cycle (SDLC)
 
