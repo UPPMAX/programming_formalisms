@@ -1,5 +1,43 @@
 # Introduction
 
+
+## Instructor notes
+=== "For students"
+
+    Prerequisites are:
+
+    - Learners know basic Git
+    - Learners know basic Python
+    - Learners have installed necessary tools
+
+    Lesson Plan: 
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
+
+
+=== "For teachers"
+
+    Prerequisites are:
+
+    - Learners know basic Git
+    - Learners know basic Python
+    - Learners have installed necessary tools
+
+    Teaching goals are:
+
+    - Learners can can understand why a formalized development of software is important.
+
+    Lesson Plan: 
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
+
+
+
+
 ## What is software?
 *Wikipedia*
 - set of computer programs and associated documentation and data.
