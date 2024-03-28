@@ -120,7 +120,10 @@ Monday   |15:15-15:45|?Lars  |?project design
 Monday   |15:45-16:00|Richel |Retrospect
 
 
+## Alternative schedule
 
+Day      |Time       |Teacher|Subject
+---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
 Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
 |||
@@ -129,4 +132,4 @@ Monday   |13:00-16:00|Björn  |Start project git basic on documents (no coding?)
 Class design (in groups, on repo, using web interface only)
 git basic (in groups, on repo)
 
-
+Files
