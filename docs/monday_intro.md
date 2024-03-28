@@ -5,7 +5,7 @@ Today we will:
 - get an overview of the Software development lifecycle
 - get an overview of the tools
 - understand the basics of a design
-
+- Talk about risks
 - get started with a git/github project
 - get started with planning the porject
 - do the basic `git` workflow
@@ -25,22 +25,22 @@ Today we will:
 
 
  - overview
-        - Lessons
-            - Less "what is programming/scripting"
-            - SDLCs 
-            - risk analys
-            - modules intro
-            - oo intro (students ready for Tue morning)
-            - (paradigms/formalised devel)
-            - tools (all presented) [name=Björn]
-        - Activities
-            - discussions
+    - Lessons
+        - Less "what is programming/scripting"
+        - SDLCs 
+        - risk analys
+        - modules intro
+        - oo intro (students ready for Tue morning)
+        - (paradigms/formalised devel)
+        - tools (all presented) [name=Björn]
+    - Activities
+        - discussions
 - Start project with planning
-        - Week Project with interspersed theory
-            - initiate git/github [name=Björn] 
-            - UML, (pseudocode), design
-            - object (early process)
-            - initial documentation (how) [name=Björn]
+    - Week Project with interspersed theory
+        - initiate git/github [name=Björn] 
+        - UML, (pseudocode), design
+        - object (early process)
+        - initial documentation (how) [name=Björn]
 
 
 
