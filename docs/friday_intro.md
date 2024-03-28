@@ -3,33 +3,36 @@
 
 Today we will
 
-- understand the principles of modular programming
-- understand the principles of deployment
+    - view the principles of modular programming
+    - practice principles of modular programming
+    - vie the principles of deployment
+    - practice preparing for installations by users
+    - finalize the documentation of the project.
+
+## Modular programming
 
 ???- info "Learning objectives of 'Modular programming'"
 
+    - understand the principles of modular programming
+    - practice principles of modular programming
 
+- [Modular programming](deployment/deploy.md)
+  
+## Deployment
 
 ???- info "Learning objectives of 'Deployment'"
 
+    - understand the needs from the users and "installation" managers 
+    - get overview of available tools for reporducibility and installations
     - prepare for different users: local computer, Cluster
-    - documentation
 
-    - Installing tools
-        - Pypi
-        - Conda
-        - Make
-        - cmake
-    - Notebooks
-    -	Readmes
-    -	Tutorials
-    -	Headers in R and python /bin/env
-    -	Windows
-    -	Mac
-    -	linux
-    -	Check background
-    -	Tabs?
+- [Deploy](deployment/deploy.md)
 
+???- info "Learning objectives of 'Final documentation'"
+
+    - finalize the documentation of the project
+    
+- [Documentation](deployment/documentation.md)
 
 
 We will be using our shared repository,
@@ -44,18 +47,8 @@ Day      |Time       |Teacher|Subject
 Friday   |09:00-10:00|?Lars  |?Modular programming
 Friday   |10:15-11:00|?Lars  |?Modular programming
 Friday   |11:15-12:00|?Lars  |?Modular programming
-Friday   |13:00-14:00|?Björn |?Deployment
-Friday   |14:15-15:00|?Björn |?Deployment
-Friday   |15:15-15:45|?Björn |?Deployment
+Friday   |13:00-14:00|?Björn |Reproducibility and deployment
+Friday   |14:15-15:00|?Björn |Deployment and documentaion
+Friday   |15:15-15:45|?Björn |Documentation and summary
 Friday   |15:45-16:00|Richel |Evaluation
-
-
-Files
-
-    reproducible.md 
-    documentation.md
-    #sharing.md
-    deploy.md
-    documentation2.md
-    summary.md
 
