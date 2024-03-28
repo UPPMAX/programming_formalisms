@@ -1,23 +1,7 @@
 # Introduction
 
 
-## Instructor notes
-=== "For students"
-
-    Prerequisites are:
-
-    - Learners know basic Git
-    - Learners know basic Python
-    - Learners have installed necessary tools
-
-    Lesson Plan: 
-    
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
-
-
-=== "For teachers"
+!!! note "Instructor notes"
 
     Prerequisites are:
 
