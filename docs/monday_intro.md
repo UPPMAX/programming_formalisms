@@ -2,17 +2,55 @@
 
 Today we will:
 
-- Intro (Björn/(LARS))
-    - problematize. why?
-- get an overview of the Software development lifecycle (LARS)
-    - paradigms/formalised development
-- get an overview of the tools (BJÖRN)
-- get started with a git/github project (BJÖRN)
-- LUNCH??
-- do the basic `git` workflow (BJÖRN)
-   - create documents
-   - initial documentation
-- understand the basics of a analysis and design (LARS)
+
+
+!!!- info "Learning objectives"
+
+    - get an **introduction** to the week
+    - get introduction to **concepts** used in the course
+    - understand 
+    - get introduction to handy **tools for the software developer**
+    - try to **set up the mindset** to find the rest of the week interesting and useful!
+    
+    - Practice to start projects in Git and GitHub
+    - Practice using basic git commands
+    - Practice in project analysis and design 
+
+???- info "Learning objectives of 'Introduction'"
+
+    - We will have an introduction to the week
+    - We weillset the start in why a formalized development of software is needed.
+
+- [Introduction](introductions/intro.md)
+
+???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
+
+    - get an overview of the Software development lifecycle (LARS)
+        - paradigms/formalised development
+    - We will have an introduction to some SDLC key features
+    - We will get some theory of project tools and thinking.
+
+- [Software Development Lifecycle (SDLC)](introductions/sdlc_tools.md)
+
+???- info "Learning objectives of 'SDLC tools'"
+
+    - We will get some theory of project tools and thinking.
+
+- [SDLC tools](introductions/sdlc_tools.md)
+
+???- info "Learning objectives of 'Get started with Git/GitHub'"
+
+    - get started with a git/github project (BJÖRN)
+    - do the basic `git` workflow (BJÖRN)
+       - create documents
+       - initial documentation
+    
+- [Get started with Git/GitHub](project_start/startup.md)
+
+
+???- info "Learning objectives of 'Project start with analysis and design'"
+
+    - understand the basics of a analysis and design (LARS)
     - analysis
       - Talk about risks
       - UML
@@ -20,53 +58,9 @@ Today we will:
       - UML, (pseudocode)
       - modular intro
       - object orientation intro (students ready for Tue morning)
-- get started with planning the project (LARS)
-
-!!!- info "Learning objectives"
-
-    - give an **introduction** to the week
-    - give some introduction to **concepts** used in the course
-    - give some introduction to handy **tools for the software developer**
-    - try to **set up the mindset** to find the rest of the week interesting and useful!
-    
-    - Practice to do risk analysis
-    - Practice using git in starting phase of project
-    - Understand ...
-
-
-???- info "Learning objectives of 'Introduction'"
-
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
-
-- [Introduction](introductions/intro.md)
-
-???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
-
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
-
-- Software Development Lifecycle (SDLC)
-
-???- info "Learning objectives of 'SDLC tools'"
-
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
-
-- [SDLC tools](introductions/sdlc_tools.md)
-
-???- info "Learning objectives of 'Get started with Git/GitHub'"
-
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
-
-- [Get started with Git/GitHub](project_start/startup.md)
-
-
-???- info "Learning objectives of 'Project start with analysis and design'"
-
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
+    - get started with planning the project (LARS)
+        - We will have an introduction to some SDLC key features
+        - We will get some theory of project tools and thinking.
 
 - [Project start with analysis and design](project_start/analysis_design.md)
 
