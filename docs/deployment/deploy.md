@@ -1,4 +1,4 @@
-# Deploy touyr code
+# Deploy your code
 
     - Installing tools
         - Pypi
