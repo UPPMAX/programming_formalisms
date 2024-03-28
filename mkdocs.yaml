@@ -30,7 +30,7 @@ nav:
     - Optimisation: optimisation/README.md
   - Friday:
     - Intro: friday_intro.md
-    - Reproducibility: deployment/reproducible.md
+    - Modular programming: modularity/modular.md
     - Deploy: deployment/deploy.md
     - Documentation: deployment/documentation.md
     - Summary of day: friday_summary.md
