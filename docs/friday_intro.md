@@ -1,14 +1,6 @@
 # Introduction to Friday
 
 
-
-   reproducible.md 
-   documentation.md
-   #sharing.md
-   deploy.md
-   documentation2.md
-   summary.md
-
 Today we will
 
 - understand the principles of modular programming
@@ -56,3 +48,14 @@ Friday   |13:00-14:00|?Björn |?Deployment
 Friday   |14:15-15:00|?Björn |?Deployment
 Friday   |15:15-15:45|?Björn |?Deployment
 Friday   |15:45-16:00|Richel |Evaluation
+
+
+Files
+
+    reproducible.md 
+    documentation.md
+    #sharing.md
+    deploy.md
+    documentation2.md
+    summary.md
+
