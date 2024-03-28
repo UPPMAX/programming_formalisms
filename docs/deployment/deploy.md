@@ -1,5 +1,22 @@
 # Deploy and document for usage
 
+    - Installing tools
+        - Pypi
+        - Conda
+        - Make
+        - cmake
+    - Notebooks
+    -	Readmes
+    -	Tutorials
+    -	Headers in R and python /bin/env
+    -	Windows
+    -	Mac
+    -	linux
+    -	Check background
+    -	Tabs?
+
+
+
 ```{Objectives}
    - We will prepare for use of your code
    - Update the README
