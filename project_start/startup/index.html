@@ -1,0 +1,2187 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../introductions/sdlc_tools/">
+      
+      
+        <link rel="next" href="../analysis_design/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>Get started with Git/GitHub - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#start-the-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Get started with Git/GitHub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../prereqs/" class="md-tabs__link">
+        
+  
+    
+  
+  Pre-requirements
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../intro/" class="md-tabs__link">
+        
+  
+    
+  
+  About the course
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../monday_intro/" class="md-tabs__link">
+          
+  
+  Monday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tuesday_intro/" class="md-tabs__link">
+          
+  
+  Tuesday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../wednesday_intro/" class="md-tabs__link">
+          
+  
+  Wednesday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../thursday_intro/" class="md-tabs__link">
+          
+  
+  Thursday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../friday_intro/" class="md-tabs__link">
+          
+  
+  Friday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reading/" class="md-tabs__link">
+          
+  
+  Reading material
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../extra/" class="md-tabs__link">
+          
+  
+  More about
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../misc/exercise_procedure/" class="md-tabs__link">
+          
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prereqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Monday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Monday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Development Lifecycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDLC tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Get started with Git/GitHub
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Get started with Git/GitHub
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#order-your-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order your files!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-with-a-new-github-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start with a new GitHub project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readme-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      README files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-plan-background-the-climate-last-about-1-million-years-has-been-largely-determined-but-the-change-of-the-eccentricity-elongation-of-earths-orbit-one-of-the-milankovitch-cycleshttpsclimatenasagovnews2948milankovitch-orbital-cycles-and-their-role-in-earths-climate-the-glacial-cycles-daily-speaking-ice-ages-with-a-period-of-about-100-000-years-are-thought-to-be-due-to-this-theory-the-gravity-form-the-other-planets-especially-jupiter-causes-the-change-of-the-eccentricity-problem-reproduce-milankovitch-cycle-of-eccentricity-100ka-method-use-python-lets-go-for-functional-programming-input-some-initial-positions-of-the-planets-but-no-external-data-perhaps-also-user-input-of-length-of-simulation-output-graph-of-orbits-and-a-timeseries-of-an-eccentricity-parameter-development-steps-we-extend-the-program-with-iterations-1-earth-sun-system-1-add-jupiter-1-make-modular-1-add-more-planets-plantuml-uml-startuml-skin-rose-title-planet-flowchart-start-define-some-parameters-initialize-earth-and-jupiter-repeat-calculate-new-position-calculate-acceleration-calculate-velocity-in-two-dimensions-repeat-while-simulation-time-is-met-is-no-yes-figure-plotting-stop-pseudocode-code-define-constants-define-initial-values-positions-velocity-balance-of-gravity-and-centrifugal-force-allocate-book-space-for-long-vectors-plan-iteration-iteration-change-of-positions-calc-acc-gravity-calc-new-velocity-plot-resulting-ellipses-calculate-orbit-parameters-plot-time-series-of-parameter-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      ````{solution} # Plan ## Background - The climate last about 1 million years has been largely determined but the change of the eccentricity (elongation) of Earth&#39;s orbit (One of the [Milankovitch cycles](https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/)). - The glacial cycles (daily speaking: ice ages) with a period of about 100 000 years are thought to be due to this. - Theory: The gravity form the other planets, especially Jupiter, causes the change of the eccentricity - **Problem**: Reproduce Milankovitch cycle of eccentricity (100ka) - **Method**: Use Python - Let&#39;s go for functional programming - **Input**: Some initial positions of the planets but no external data - Perhaps also user input of length of simulation - **Output**: Graph of orbits and a timeseries of an eccentricity parameter **Development steps** (we extend the program with iterations) 1. Earth-sun system 1. Add Jupiter 1. Make modular 1. Add more planets? ## PlantUML ```uml @startuml skin rose title Planet flowchart start :define some parameters; :initialize earth (and Jupiter); repeat :calculate new position; :calculate acceleration; :calculate velocity in two dimensions; repeat while (simulation time is met) is (no) -&gt;yes; :figure plotting; stop ``` ## Pseudocode ```code Define constants Define initial values positions velocity (balance of gravity and centrifugal force) (Allocate (book) space for long vectors plan iteration) Iteration Change of positions Calc acc (gravity) Calc new velocity Plot resulting ellipses Calculate orbit parameters Plot time series of parameter change ```
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-git-and-what-is-a-git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Git, and what is a Git repository?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloning-our-plane-repository-to-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cloning our Plane repository to local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-on-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working on GitHub
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project start with analysis and design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tuesday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tuesday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tuesday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pair_programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pair programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test-driven development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wednesday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Wednesday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wednesday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/branches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Branching and merging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/apply_branches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Branching in practice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/apply_merge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Merging in practice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Thursday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Thursday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thursday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_structures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data structures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithms
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Friday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Friday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../friday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modularity/modular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modular programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../friday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../summary_week/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of week
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reading material
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Reading material
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    More about
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            More about
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/sdlc_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software development Lifecycle (SDLC) models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/git_deeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More about Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/collab_deeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More about collaboration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/reproducible_deeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More about reproducibility
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/sharing_deeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More about sharing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/documentation_deeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More about documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra_bc/deploy_deeper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More about deploying
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/exercise_procedure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercise procedure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/richel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Richèl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="start-the-project">Start the project<a class="headerlink" href="#start-the-project" title="Anchor link to this section for reference">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>   - Think about structure of the files and folders for the project
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   - Think about documentation already
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>- Many projects/scripts start as something for personal use, but expands to be distributed.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>- Let&#39;s start in that end and be prepared.
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>- The following steps can be very valuable for you in a couple of months as well as you revisit your code and don&#39;t know what it does or why you did this and that.
+</code></pre></div>
+<h2 id="order-your-files">Order your files!<a class="headerlink" href="#order-your-files" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Think that <strong>everything is worth to be part of documentation</strong> (like GitHub directory tree)</li>
+<li>The parts from the software development cycle</li>
+<li>The planning parts<ul>
+<li>Requirements: <ul>
+<li>what should the program deliver</li>
+<li>dependencies</li>
+<li>OS platforms</li>
+</ul>
+</li>
+<li>Risk analysis</li>
+</ul>
+</li>
+<li>Design documentation<ul>
+<li>Analysis: pseudo code and UML</li>
+</ul>
+</li>
+<li>Source code<ul>
+<li>with in-code documentation</li>
+</ul>
+</li>
+<li>README</li>
+<li>(Full documentation)</li>
+<li>(Tutorial)</li>
+</ul>
+<p>```{admonition} Directory structure
+Different projects should have separate folders
+  - ReadMe file
+  - Data        (version controlled)(.gitignore)
+  - Processed data  intermediate
+  - (Manuscript)  <br />
+  - Results     data, tables, figures (version controlled, git tags for manuscript version)
+  - Src     version controlled code
+    - License (here or in the 1st level)
+    - Requirements.txt
+  - Doc
+    - index
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>```{note}
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
+</code></pre></div></p>
+<h2 id="start-with-a-new-github-project">Start with a new GitHub project<a class="headerlink" href="#start-with-a-new-github-project" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>- For the course project we do it in this order, but that is not necessary in all cases.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>- Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>- The reason for starting here is that we can get our PlantUML render in the browser!
+</code></pre></div>
+<h3 id="type-along-create-a-new-repository-on-github">Type-along: Create a new repository on GitHub<a class="headerlink" href="#type-along-create-a-new-repository-on-github" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Make sure that you are **logged into GitHub**.
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>```{figure} img/New_repo.png
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>:width: 60%
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>:class: with-border
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>To create a repository we either click the green button &quot;New&quot; (top left corner).
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>```
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>```{figure} img/new-top-right.png
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>:width: 60%
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>:class: with-border
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>Or if you see your profile page, there is a &quot;+&quot; menu (top right corner).
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>```
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>---
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>On this page choose a project name, e.g. ``planets-&lt;username&gt;`` 
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>  - the name there so there are no clashes when/if you collaborate and fork other repositories)
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>For the sake of this exercise **do select**
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>&quot;Initialize this repository with a README&quot;
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>and
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>&quot;Choose a license&quot;
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>- Let&#39;s choose MIT (we may discuss this later on
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>```{figure} img/New_repo_formalisms.png
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>:width: 100%
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>:class: with-border
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>```
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>**Done!**
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a>**Let&#39;s view the license!**
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a>- There are prewritten text for the different types.
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>- More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+</code></pre></div>
+<h2 id="readme-files">README files<a class="headerlink" href="#readme-files" title="Anchor link to this section for reference">&para;</a></h2>
+<p><strong>Advantages</strong>
+- Versioned (goes with the code development)
+- It is often good enough to have a <code>README.md</code> or <code>README.rst</code> along with your code/script
+- If you use README files, use either
+  <a href="http://docutils.sourceforge.net/rst.html">RST</a> or
+  <a href="https://commonmark.org/help/">Markdown</a>
+- A great guide to README files: <a href="https://www.makeareadme.com/">MakeaREADME</a></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>README file should include:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - A descriptive project title
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  - Motivation (why the project exists)
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  - How to setup
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  - Copy-pastable quick start code example
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  - Recommended citation
+</code></pre></div>
+<p><strong>We are ready to</strong>
+- Extend the README file
+- Make some folders according to the above list
+- Put the planning documents in a docs folder</p>
+<p>````{challenge} 10 min
+1. Extend the README file a little bit with an <strong>About section</strong> in Markdown format describing the project.
+  - Use the <strong>Pencil</strong> button
+  - Use the goals stated in last session, <a href="https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#analysis">Analysis</a>
+  - Get inspiration from <a href="https://www.makeareadme.com/">https://www.makeareadme.com/</a> and a favorite Git repo or <a href="https://github.com/yampelo/beagle">https://github.com/yampelo/beagle</a>. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gs">**Cheat sheet**</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="gh"># This is a section in Markdown   </span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="gu">## This is a subsection           </span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>Nothing special needed for        
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>a normal paragraph.               
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    This is a code block          
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="gs">**Bold**</span> and <span class="ge">*emphasized*</span>.       
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>A list:                           
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="k">-</span><span class="w"> </span>this is an item                 
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="k">-</span><span class="w"> </span>another item                   
+</code></pre></div>
+<ol>
+<li>Create the planning document in markdown <strong>Add file</strong> button and choose "Create file".</li>
+<li>Call the file <code>doc/plan.md</code><ul>
+<li>this will on the fly create the directory <code>doc</code>.</li>
+</ul>
+</li>
+<li>Copy paste the example code found in the last session for <a href="https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#lets-make-a-flowchart-of-the-program-parts">PlantUML</a> and <a href="https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#do-some-pseudocode-of-the-calculations">pseudocode</a>.<ul>
+<li>Type <code>"```uml"</code> (without ") above the UML code and <code>"```"</code> below, and it should render nicely.</li>
+<li>Type <code>"```code"</code> (without ") above the pseudo code and <code>"```"</code> below, and it should render nicely.</li>
+</ul>
+</li>
+<li>Add some suitable headings for the code sections</li>
+</ol>
+<h2 id="solution-plan-background-the-climate-last-about-1-million-years-has-been-largely-determined-but-the-change-of-the-eccentricity-elongation-of-earths-orbit-one-of-the-milankovitch-cycleshttpsclimatenasagovnews2948milankovitch-orbital-cycles-and-their-role-in-earths-climate-the-glacial-cycles-daily-speaking-ice-ages-with-a-period-of-about-100-000-years-are-thought-to-be-due-to-this-theory-the-gravity-form-the-other-planets-especially-jupiter-causes-the-change-of-the-eccentricity-problem-reproduce-milankovitch-cycle-of-eccentricity-100ka-method-use-python-lets-go-for-functional-programming-input-some-initial-positions-of-the-planets-but-no-external-data-perhaps-also-user-input-of-length-of-simulation-output-graph-of-orbits-and-a-timeseries-of-an-eccentricity-parameter-development-steps-we-extend-the-program-with-iterations-1-earth-sun-system-1-add-jupiter-1-make-modular-1-add-more-planets-plantuml-uml-startuml-skin-rose-title-planet-flowchart-start-define-some-parameters-initialize-earth-and-jupiter-repeat-calculate-new-position-calculate-acceleration-calculate-velocity-in-two-dimensions-repeat-while-simulation-time-is-met-is-no-yes-figure-plotting-stop-pseudocode-code-define-constants-define-initial-values-positions-velocity-balance-of-gravity-and-centrifugal-force-allocate-book-space-for-long-vectors-plan-iteration-iteration-change-of-positions-calc-acc-gravity-calc-new-velocity-plot-resulting-ellipses-calculate-orbit-parameters-plot-time-series-of-parameter-change"><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>````{solution}
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a># Plan
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>## Background
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>- The climate last about 1 million years has been largely determined but the change of the eccentricity (elongation) of Earth&#39;s orbit (One of the [Milankovitch cycles](https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/)).
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>- The glacial cycles (daily speaking: ice ages) with a period of about 100 000 years are thought to be due to this.
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  - Theory: The gravity form the other planets, especially Jupiter, causes the change of the eccentricity
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>- **Problem**: Reproduce Milankovitch cycle of eccentricity (100ka)
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>- **Method**: Use Python
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  - Let&#39;s go for functional programming
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>- **Input**: Some initial positions of the planets but no external data
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  - Perhaps also user input of length of simulation
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>- **Output**: Graph of orbits and a timeseries of an eccentricity parameter
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>**Development steps** (we extend the program with iterations)
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>1. Earth-sun system
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>1. Add Jupiter
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>1. Make modular
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>1. Add more planets?
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>## PlantUML
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>```uml
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>@startuml
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>skin rose
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>title Planet flowchart
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>start
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>:define some parameters;
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>:initialize earth (and Jupiter);
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>repeat
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>  :calculate new position;
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a>  :calculate acceleration;
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a>  :calculate velocity in two dimensions;
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a>repeat while (simulation time is met) is (no)
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a>-&gt;yes;
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a>:figure plotting;
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a>stop
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a>```
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a>## Pseudocode
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a>
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a>```code
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a>Define constants
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a>Define initial values
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a>    positions
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a>    velocity (balance of gravity and centrifugal force)
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a>(Allocate (book) space for long vectors plan iteration)
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a>Iteration
+<a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a>    Change of positions
+<a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a>    Calc acc (gravity)
+<a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a>    Calc new velocity
+<a id="__codelineno-7-55" name="__codelineno-7-55" href="#__codelineno-7-55"></a>Plot resulting ellipses
+<a id="__codelineno-7-56" name="__codelineno-7-56" href="#__codelineno-7-56"></a>Calculate orbit parameters
+<a id="__codelineno-7-57" name="__codelineno-7-57" href="#__codelineno-7-57"></a>Plot time series of parameter change
+<a id="__codelineno-7-58" name="__codelineno-7-58" href="#__codelineno-7-58"></a>```
+</code></pre></div><a class="headerlink" href="#solution-plan-background-the-climate-last-about-1-million-years-has-been-largely-determined-but-the-change-of-the-eccentricity-elongation-of-earths-orbit-one-of-the-milankovitch-cycleshttpsclimatenasagovnews2948milankovitch-orbital-cycles-and-their-role-in-earths-climate-the-glacial-cycles-daily-speaking-ice-ages-with-a-period-of-about-100-000-years-are-thought-to-be-due-to-this-theory-the-gravity-form-the-other-planets-especially-jupiter-causes-the-change-of-the-eccentricity-problem-reproduce-milankovitch-cycle-of-eccentricity-100ka-method-use-python-lets-go-for-functional-programming-input-some-initial-positions-of-the-planets-but-no-external-data-perhaps-also-user-input-of-length-of-simulation-output-graph-of-orbits-and-a-timeseries-of-an-eccentricity-parameter-development-steps-we-extend-the-program-with-iterations-1-earth-sun-system-1-add-jupiter-1-make-modular-1-add-more-planets-plantuml-uml-startuml-skin-rose-title-planet-flowchart-start-define-some-parameters-initialize-earth-and-jupiter-repeat-calculate-new-position-calculate-acceleration-calculate-velocity-in-two-dimensions-repeat-while-simulation-time-is-met-is-no-yes-figure-plotting-stop-pseudocode-code-define-constants-define-initial-values-positions-velocity-balance-of-gravity-and-centrifugal-force-allocate-book-space-for-long-vectors-plan-iteration-iteration-change-of-positions-calc-acc-gravity-calc-new-velocity-plot-resulting-ellipses-calculate-orbit-parameters-plot-time-series-of-parameter-change" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="what-is-git-and-what-is-a-git-repository">What is Git, and what is a Git repository?<a class="headerlink" href="#what-is-git-and-what-is-a-git-repository" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Git is a version control system: can <strong>record/save snapshots</strong> and track the content of a folder as it changes over time.</li>
+<li>Every time we <strong>commit</strong> a snapshot, Git records a snapshot of the <strong>entire project</strong>, saves it, and assigns it a version.</li>
+<li>These snapshots are kept inside a sub-folder called <code>.git</code>.</li>
+<li>If we remove <code>.git</code>, we remove the repository and history (but keep the working directory!).</li>
+<li><code>.git</code> uses relative paths - you can move the whole thing somewhere else and it will still work</li>
+<li>Git doesn't do anything unless you ask it to (it does not record anything automatically).</li>
+<li>Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).</li>
+</ul>
+<p><code>``{admonition} Concepts in Git
+- **repository**: The project, contains all data and history (commits, branches, tags).
+- **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
+- **commit**: Snapshot of the project, gets a unique identifier (e.g.</code>c7f0e8bfc718be04525847fc7ac237f470add76e<code>).
+- **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
+-</code>git clone<code>copies everything: all commits and all branches.
+- Branches on the remote appear as (read-only) local branches with a prefix, e.g.</code>origin/main<code>.
+- We synchronize commits between local and remote with</code>git fetch<code>/</code>git pull<code>and</code>git push`.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>## Before we continue we need to configure Git
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>```{prereq}
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>   -  **Git and GitHub should be configured prior to the course**
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>      following [Setup](https://uppmax.github.io/programming_formalisms_intro/setup.html).
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>      - Test: ``ssh -T git@github.com``
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        - Output should be something like this: ``Hi bclaremar! You&#39;ve successfully authenticated, but GitHub does not provide shell access.``
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>   -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>   -  Students should be familiar with using a **text editor** on their system.
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>      - Emacs and Vim are excellent choices if you know how to use them
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>      - but Nano or
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>      - Notepad on Windows are sufficient.
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>- Start your terminal of choice
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>   - Terminal in Visual Studio code
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>   - MAC terminal 
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>   - iTerm (Mac)
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>   - Git BASH  (Windows)
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>   - WSL (Windows subsystem Linux) environment in
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>     - MobaxTerm
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>     - Powershell
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>   - PowerShell
+</code></pre></div>
+<p>If you haven't already configured Git, please follow the instructions in the
+<a href="https://uppmax.github.io/programming_formalisms_intro/setup.html#shell-and-git">installation instructions</a>.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;&lt;Your Name&gt;&quot;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>&lt;your<span class="w"> </span>GitHub-connected<span class="w"> </span>email<span class="w"> </span>address&gt;
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>nano
+</code></pre></div>
+or replace nano with another editor, like in Windows: <code>notepad</code>
+Verify with:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--list
+</code></pre></div>
+- Also, test:
+- <code>ssh -T git@github.com</code></p>
+<ul>
+<li>Output should be something like this:</li>
+<li><code>Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.</code></li>
+</ul>
+<h2 id="cloning-our-plane-repository-to-local">Cloning our Plane repository to local<a class="headerlink" href="#cloning-our-plane-repository-to-local" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Now you and other people can clone this repository and contribute changes. </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>- You may want to create a directory for this course. You can do it in the normal way or use your terminal, like this in a good place (like &quot;Courses&quot; if you have that)
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  - ``cd Courses``
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  - ``mkdir Programming_formalisms``
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  - ``cd Programming_formalisms``
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>- In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>- Back in your terminal type ``git clone`` followed by pasting the copied text.
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>- The result shall look something like this:
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>```console
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>$ git clone git@github.com:&lt;user&gt;/planet-&lt;user&gt;.git
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>```
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>```{tip}
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>- Using the SSH makes it very straight-forward to upload your local changes back ot GitHub. Use HTTP if you clone repos that do not belong to you or your group.
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>```
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>- This creates a directory called ``planet-&lt;user&gt;`` unless it already exists.
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>What just happened?
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>- `cd` the new directory that was created
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>- list the files with `ls`
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>- **Think of cloning as downloading the `.git` part to your computer**. 
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>- After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
+</code></pre></div>
+<h2 id="working-on-github">Working on GitHub<a class="headerlink" href="#working-on-github" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>You can do basically the <strong>same work at GitHub as in your local git repo</strong></li>
+<li>The <strong>graphical view</strong> makes it easier to work with in everyday editing work at least.</li>
+<li>Depends on your own preferences of course.</li>
+<li>Here your commit each file at a time with the "commit button". </li>
+<li><strong>No staging</strong> that is.</li>
+<li>Be aware of that feature!</li>
+<li><strong>GitHub Actions</strong> are workflows defined by you, like:</li>
+<li>for automatic testing after each commit (Used in the test lessons)</li>
+<li>for GitHub Pages, briefly covered in last session today or Extra reading: <a href="https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html">Documentation</a>.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>- [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
+</code></pre></div>
+<p>```{admonition} Parts to be covered</p>
+<ul>
+<li>&#9745; Planning</li>
+<li>Pseudocode</li>
+<li>Unified Modelling Language</li>
+<li>&#9744; Testing</li>
+<li>Different levels</li>
+<li>We don't do this today!</li>
+<li>&#9745; Source/version control</li>
+<li>Git<ul>
+<li>We have a starting point!</li>
+</ul>
+</li>
+<li>GitHub as remote backup</li>
+<li>&#9744; Collaboration</li>
+<li>GitHub</li>
+<li>&#9745; Sharing</li>
+<li>&#9745; open science</li>
+<li>&#9744; citation</li>
+<li>&#9745; licensing  </li>
+<li>&#9744; Documentation</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>```{keypoints}
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>- A repository can have one or multiple remotes (we will revisit these later).
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>- A remote (GitHub) in this case serves as a full backup of your work.
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>- Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../introductions/sdlc_tools/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SDLC tools">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                SDLC tools
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../analysis_design/" class="md-footer__link md-footer__link--next" aria-label="Next: Project start with analysis and design">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Project start with analysis and design
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
