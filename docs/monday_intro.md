@@ -24,7 +24,7 @@ Today we will:
 
 
 
-    - overview
+ - overview
         - Lessons
             - Less "what is programming/scripting"
             - SDLCs 
@@ -35,7 +35,7 @@ Today we will:
             - tools (all presented) [name=Björn]
         - Activities
             - discussions
-    - Start project with planning
+- Start project with planning
         - Week Project with interspersed theory
             - initiate git/github [name=Björn] 
             - UML, (pseudocode), design
