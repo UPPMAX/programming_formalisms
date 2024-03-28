@@ -1,22 +1,5 @@
 # Deploy your code
 
-    - Installing tools
-        - Pypi
-        - Conda
-        - Make
-        - cmake
-    - Notebooks
-    -	Readmes
-    -	Tutorials
-    -	Headers in R and python /bin/env
-    -	Windows
-    -	Mac
-    -	linux
-    -	Check background
-    -	Tabs?
-
-
-
 ```{Objectives}
    - We will prepare for use of your code
    - Revisit licence
@@ -31,6 +14,9 @@
 - Make your program or workflow work for others and yourself in the future.
 - Let people understand how to use your program/tool
 ```
+
+
+
 
 ## Recording dependencies
 -	**Reproducibility**: We can control our code but how can we control dependencies?
