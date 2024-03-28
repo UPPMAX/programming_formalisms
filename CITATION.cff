@@ -1,0 +1,41 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Programming Formalism Course
+message: >-
+  If you use the material in presented in this repository,
+  please cite the following
+type: dataset
+authors:
+  - given-names: 'Lars Urban '
+    family-names: Eklund
+    email: lars.eklund@it.uu.se
+    affiliation: Uppsala University/NBIS
+    orcid: 'https://orcid.org/0000-0002-0572-9410'
+  - given-names: Björn
+    family-names: Claremar
+    email: bjorn.claremar@uppmax.uu.se
+    affiliation: Uppsala University/NAISS
+  - given-names: Richel
+    email: richel.bilderbeek@icm.uu.se
+    family-names: ' Bilderbeek'
+    affiliation: NBIS/Uppsala University
+repository-code: 'https://github.com/UPPMAX/programming_formalisms/tree/main'
+url: 'https://uppmax.github.io/programming_formalisms/'
+abstract: >-
+  This is a course in Programming formalism, an introduction
+  course in software development with focus on over all
+  principles exemplified through Test Driven
+  Development(TDD), the course aims to give a foundation of
+  theory and practice in creating a sustainable development
+  cycle from analysis to deployment. The course assumes
+  familiarity with git and programming at least scripting.
+  Examples are given using Python but any language can be
+  used to implement the principles taught.
+keywords:
+  - Software Development
+  - Formalism
+  - course
+  - computer science
+license: CC-BY-4.0
