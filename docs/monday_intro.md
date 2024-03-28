@@ -34,25 +34,34 @@ Today we will:
     - Understand ...
 
 
-???- info "Learning objectives of 'Intro'"
+???- info "Learning objectives of 'Introduction'"
 
     - We will have an introduction to some SDLC key features
     - We will get some theory of project tools and thinking.
 
-- [Software Development Lifecycle (SDLC) tools](introductions/sdlc_tools.md)
+- [Introduction](introductions/intro.md)
 
-???- info "Learning objectives of 'Software development'"
+???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
 
     - We will have an introduction to some SDLC key features
     - We will get some theory of project tools and thinking.
 
-- [Software Development Lifecycle (SDLC) tools](introductions/sdlc_tools.md)
+- Software Development Lifecycle (SDLC)
+
+???- info "Learning objectives of 'Get started with Git/GitHub'"
+
+    - We will have an introduction to some SDLC key features
+    - We will get some theory of project tools and thinking.
+
+- [Get started with Git/GitHub](proj_start/startup.md)
 
 
+???- info "Learning objectives of 'Project start with analysis and design'"
 
-???- info "Learning objectives of 'XXX'"
+    - We will have an introduction to some SDLC key features
+    - We will get some theory of project tools and thinking.
 
-
+- [Project start with analysis and design](proj_start/analysis_design.md)
 
 !!! hint
 
@@ -68,7 +77,7 @@ Today we will:
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Monday   |09:00-10:00|Björn |Introduction + intro to SLDC
+Monday   |09:00-10:00|Björn |Syllabus + Introduction 
 Monday   |10:15-11:00|Lars | SLDC
 Monday   |11:15-12:00|Björn |Tools
 Monday   |13:00-14:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo) (show both local /GitHub)
@@ -76,10 +85,3 @@ Monday   |14:15-15:00|Lars  |project/class design?project design
 Monday   |15:15-15:45|Lars |project design (in groups, on repo, using web interface only)
 Monday   |15:45-16:00|Richel |Retrospect
 
-## Files
-
-Introductions/introduction
-Design_develop/
-Introductions/SLDC-tools
-Proj_start/startup.md (   sourcecontrol.md)
-Design_develop/
