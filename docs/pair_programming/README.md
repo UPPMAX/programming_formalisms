@@ -11,7 +11,7 @@
 
     Prerequisites are:
 
-    - Learners can do the git basic workflow on `master`
+    - Learners can do the git basic workflow on `main`
 
     Teaching goals are:
 
@@ -23,6 +23,9 @@
     Preparation:
 
     - A shared document where duos can assign themselves to a class,
+      needed for exercise 2
+    - The learner project must have a folder `/src/[package_name]`
+      where learners can put their code,
       needed for exercise 2
 
     Lesson plan:
@@ -40,7 +43,6 @@ We use it a lot in this course, because:
 
 - we should
 - it works great with recommended teaching practices
-
 
 ## Exercises
 
@@ -93,6 +95,15 @@ Questions:
 - How does a good pair behave?
 - What effects does pair programming have?
 
+???- question "Answers"
+
+    The goals of this exercise are:
+
+    - Understand what pair programming is
+    - First guess at understanding what **good** pair programming is
+
+    You just did that. We'll discuss in class :-)
+
 ### Exercise 2: practice pair programming
 
 !!!- info "Learning objectives"
@@ -106,28 +117,37 @@ Before doing the exercises:
   decide upon the first driver and when to switch roles.
 
 The exercise, to be done as a pair:
-- In the course's shared document, there is a list of classes
-  extracted from the design document. Assign yourselves to write a class
-- 
 
+- In the course's shared document, there is a list of classes
+  extracted from the design document. Assign yourselves to write a class together
+- Find the GitHub repository of a Programming Formalism student project 
+  done in an earlier cohort. Find where the Python code for classes ended up.
+  Look for the Python code of the most simple class.
+- Write the minimal code of your class together. 
+  Share code by `push`ing it to the `main` branch 
+
+Reflect:
+
+- Were roles swapped often enough?
+- Did you solve unexpected problems well?
+- Did the driver always share his/her screen?
+- Did each team member contribute?
+- Did each team member contribute to the code in the Python class? This can be measured :-)
 
 ### Exercise 3: practice pair programming again
 
 !!!- info "Learning objectives"
 
-    - [objectives]
-    - reflect
+    - Practice pair programming
+    - Practice to convert class diagrams to real code
 
-- [exercise]
+- Do the previous exercise for another class, including the reflection
 
-### Exercise 4: practice pair programming again again
+Reflect additionally:
 
-!!!- info "Learning objectives"
-
-    - [objectives]
-    - reflect
-
-- [exercise]
+- As a pair, how did you improve?
+- As a pair, how could you have done better?
+- As an individual, how could you have done better?
 
 ## Links
 
