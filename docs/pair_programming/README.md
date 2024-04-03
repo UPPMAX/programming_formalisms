@@ -124,7 +124,8 @@ The exercise, to be done as a pair:
   done in an earlier cohort. Find where the Python code for classes ended up.
   Look for the Python code of the most simple class.
 - Write the minimal code of your class together. 
-  Share code by `push`ing it to the `main` branch 
+  Share code by `push`ing it to the `main` branch.
+  'Minimal code' means only the name of the class, without any behavior!
 
 Reflect:
 
