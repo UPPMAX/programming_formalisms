@@ -47,14 +47,14 @@ nav:
     - More about documentation: extra_bc/documentation_deeper.md
     - More about deploying: extra_bc/deploy_deeper.md
   - Misc:
+    - Projects: misc/projects.md
+    - Professional GitHub workflow: misc/professional_github_workflow.md
     - Exercise procedure: misc/exercise_procedure.md
     - Richèl: misc/richel.md
 
-
-
 theme:
   name: material
-  greetings: Welcome to Programming formalisms materials
+  greetings: Welcome to the Programming Formalisms course materials
   font:
     text: Lato
     code: JetBrains Mono

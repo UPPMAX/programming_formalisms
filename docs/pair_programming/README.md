@@ -20,6 +20,11 @@
     - Learners have practiced pair programming
     - Learners have converted class diagrams to real code
 
+    Preparation:
+
+    - A shared document where duos can assign themselves to a class,
+      needed for exercise 2
+
     Lesson plan:
 
     - 5 mins: prior knowledge
@@ -93,8 +98,18 @@ Questions:
 !!!- info "Learning objectives"
 
     - Practice pair programming
+    - Practice to convert class diagrams to real code
 
-- [exercise]
+Before doing the exercises:
+
+- Reach an agreement on how to do pair programming: among others, 
+  decide upon the first driver and when to switch roles.
+
+The exercise, to be done as a pair:
+- In the course's shared document, there is a list of classes
+  extracted from the design document. Assign yourselves to write a class
+- 
+
 
 ### Exercise 3: practice pair programming again
 
