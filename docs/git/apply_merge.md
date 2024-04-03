@@ -61,7 +61,8 @@ gitGraph
 - On your local computer, switch to that branch, change the repo 
   and push your changes online. Verify the changes are online
 - On your local computer, switch to the `main` branch
-- Delete your branch (i.e. the one with the unique name).
+- Merge your topic branch to `main`
+- Delete your topic branch (i.e. the one with the unique name).
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
 
@@ -94,22 +95,23 @@ gitGraph
     merge anna
     commit id: "After fixing many merge conflicts"
     merge anders
-    commit id: "After fixing many moremerge conflicts"
+    commit id: "After fixing many more merge conflicts"
 ```
 
-- For our GitHub repo, create a branch with your first name that is
-  unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
-  You may branch of from `main` or `develop` (if it exists).
-  You may use the web interface (easiest!) or use the command line
-- On your local computer, switch to that branch, change the repo 
-  and push your changes online. Verify the changes are online
-- On your local computer, switch to the `main` branch
-- Delete your branch (i.e. the one with the unique name).
-  You may use the web interface (easiest!) or use the command line
-- On your local computer, update your code
+- Create a merge conflict
 
-### Exercise 3: practice merge conflicts between branches
+### Exercise 3: practice code review
 
+For team member A:
+
+- Create a topic branch (from `develop`) 
+- Do something trivial on that topic branch
+- Submit a GitHub Pull Request to merge it to `develop`
+- Assign the other team member as the reviewer
+- Do a pretend code review until the Pull Request is accepted
+- The reviewer merges the code to `develop`
+
+Now do the same for team member B.
 
 ## Links
 
