@@ -17,10 +17,11 @@ authors:
     family-names: Claremar
     email: bjorn.claremar@uppmax.uu.se
     affiliation: Uppsala University/NAISS
-  - given-names: Richel
+  - given-names: Richèl
     email: richel.bilderbeek@icm.uu.se
-    family-names: ' Bilderbeek'
-    affiliation: NBIS/Uppsala University
+    family-names: Bilderbeek
+    affiliation: NBIS/UPPMAX/Uppsala University
+    orcid: 'https://orcid.org/0000-0003-1107-7049'
 repository-code: 'https://github.com/UPPMAX/programming_formalisms/tree/main'
 url: 'https://uppmax.github.io/programming_formalisms/'
 abstract: >-
