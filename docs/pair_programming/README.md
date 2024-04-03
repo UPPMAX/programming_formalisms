@@ -3,8 +3,9 @@
 !!!- info "Learning objectives"
 
     - Understand why pair programming is important
-    - Understand how good pair programming looks like
+    - Understand what good pair programming looks like
     - Practice pair programming
+    - Practice to convert class diagrams to real code
 
 ???- question "For teachers"
 
@@ -17,6 +18,7 @@
     - Learners can tell why pair programming is important
     - Learners can tell how good pair programming looks like
     - Learners have practiced pair programming
+    - Learners have converted class diagrams to real code
 
     Lesson plan:
 
@@ -55,29 +57,29 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 
 ```mermaid
 gantt
-    title Exercise procedure minutes
-    dateFormat X
-    axisFormat %s
-    section Main room
+  title Exercise procedure minutes
+  dateFormat X
+  axisFormat %s
+  section Main room
     Move to breakout room : 0, 5
-    section Breakout room, together
+  section Breakout room, together
     Prepare: 5, 6
     Discuss: 16,21
     Back to main room: 21,22
-    section Breakout room, individually
-    Read   : 6,16
+  section Breakout room, individually
+  Read   : 6,16
 ```
 
 - Together, read the questions before reading the material
 - Together, divide which team member is going to read which source:
-  - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
-  - [Martin Fowler's page on Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
-  - (if with three: [Codecademy's page on Pair Programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/))
+    - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
+    - [Martin Fowler's page on Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
+    - (if with three: [Codecademy's page on Pair Programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/))
 - Together, set a timer for 10 minutes
 - Individually, answer the questions within the time limit
 - Together, write down a shared answer on the GitHub project repository
   with path `learners/[a teammember's name]/pair_programming.md`
-- Upload the file
+- Upload the file to the GitHub repo
 
 Questions:
 
@@ -90,7 +92,7 @@ Questions:
 
 !!!- info "Learning objectives"
 
-    - [objectives]
+    - Practice pair programming
 
 - [exercise]
 
