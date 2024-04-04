@@ -48,7 +48,8 @@ nav:
     - More about deploying: extra_bc/deploy_deeper.md
   - Misc:
     - Exercise procedure: misc/exercise_procedure.md
-    - Professional GitHub workflow: misc/professional_github_workflow.md
+    - git workflow: misc/git_workflow.md
+    - GitHub workflow: misc/github_workflow.md
     - Projects: misc/projects.md
     - Retrospective: misc/retrospective.md
     - Richèl: misc/richel.md

@@ -51,3 +51,7 @@ This was the only lecture in the course :-)
  * [Bell, 2020] Bell, Mike. The fundamentals of teaching: A five-step model to put the research evidence into practice. Routledge, 2020.
  * [Hattie, 2012] Hattie, John. Visible learning for teachers: Maximizing impact on learning. Routledge, 2012.
  * [Schwartz, 2012] Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012.
+
+## Links
+
+- Copied this text from [here](https://github.com/richelbilderbeek/teaching/tree/master/who_is_richel)
