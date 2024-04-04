@@ -2,7 +2,7 @@
 
 Today we will discuss:
 
-- Understand git branching and merging](git/branches.md
+- Understand [git branching and merging](git/branches.md)
 
 ???- info "Learning objectives of 'Practice using git branches'"
 
