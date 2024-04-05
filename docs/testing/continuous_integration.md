@@ -1,4 +1,4 @@
-# Continous integration
+# Continuous integration
 
 !!!- info "Learning objectives"
 
@@ -280,4 +280,4 @@ Testing lecture 2            |15 mins  |[here](https://richelbilderbeek.nl/progr
  * [Ram et al., 2018] Ram, Karthik, et al. "A community of practice around peer review for long-term research software sustainability." Computing in Science & Engineering 21.2 (2018): 59-65.
  * [Van Rossum et al., 2001] Van Rossum, Guido, Barry Warsaw, and Nick Coghlan. "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
  * [Vasilescu et al., 2015] Vasilescu, Bogdan, et al. "Quality and productivity outcomes relating to continuous integration in GitHub." Proceedings of the 2015 10th joint meeting on foundations of software engineering. 2015.
- * [Wickham, 2019] Wickham, Hadley. Advanced R. chapman and hall/CRC, 2019.
+ * [Wickham, 2019] Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.

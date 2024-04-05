@@ -165,5 +165,5 @@ Testing lecture 1            |10 mins  |[here](https://youtu.be/FXdEtzl-wws)
 ## References
 
  * [Baggerly & Coombes, 2009] Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
- * [Rahman & Farhana, 2020] Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in covid-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
+ * [Rahman & Farhana, 2020] Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in COVID-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
  * [Vable et al., 2021] Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour. "Code review as a simple trick to enhance reproducibility, accelerate learning, and improve the quality of your team’s research." American Journal of Epidemiology 190.10 (2021): 2172-2177.
