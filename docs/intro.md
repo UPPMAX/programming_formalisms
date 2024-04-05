@@ -208,6 +208,7 @@ flowchart TB
   classDef lars_node fill:#dfd,color:#000,stroke:#0f0
   classDef richel_node fill:#fdd,color:#000,stroke:#f00
 
+  version_control[Version control]:::bjorn_node
   uml_class_diagram[UML Class diagram]:::lars_node
   minimal_classes[Minimal classes]:::richel_node
   unit_tests[Unit tests\n+ automated]:::richel_node
@@ -220,6 +221,7 @@ flowchart TB
   module[?Module]:::lars_node
   documentation[?Documentation]:::bjorn_node
 
+  version_control --> uml_class_diagram
   uml_class_diagram --> minimal_classes
   minimal_classes --> classes_with_elements
   minimal_classes --> unit_tests
@@ -232,3 +234,8 @@ flowchart TB
   unit_tests --> runtime_speed_profile
   classes_with_behavior --> runtime_speed_profile
 ```
+
+> Overview of the course project.
+> Red: Richel.
+> Green: Lars.
+> Blue: Björn.
