@@ -24,7 +24,7 @@ nav:
     - Merging in practice: git/apply_merge.md
     - Testing: testing/README.md
     - Testing, using a formal testing framework: testing/testing_framework.md
-    - Testing, continuous integration: testing/continueous_integration.md
+    - Testing, continuous integration: testing/continuous_integration.md
     - Testing, testing in a team: testing/testing_in_a_team.md
   - Thursday:
     - Intro: thursday_intro.md
