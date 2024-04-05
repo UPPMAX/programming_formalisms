@@ -20,6 +20,11 @@ TH            |Optimization      |Draft of content, draft of exercises
  * [1] This hour falls off at the end of the day
  * [2] Need more hours of TDD
 
+TODO:
+
+ * [ ] Tie exercises to course project
+ * [ ] Go through material again
+
 ## Suggest course schedules
 
 These are, I'd say, the dependencies in the course:
