@@ -11,9 +11,11 @@ TU 14:00-14:45|Pair programming 2|Draft of content, draft of exercises
 TU 15:00-15:45|TDD 1             |[1] Draft of content, draft of exercises
 WE 10:15-11:00|Switch branch     |No content, draft of exercises
 WE 13:00-14:00|Merge, PR, review |No content, draft of exercises
-WE 14:15-15:00|formal testing 1  |[2] QMD content with exercises
-WE 15:15-15:45|formal testing 2  |QMD content with exercises
-TH            |All               |QMD content with exercises
+WE 14:15-15:00|formal testing 1  |[2] Draft of content, draft of exercises
+WE 15:15-15:45|formal testing 2  |Draft of content, draft of exercises
+TH            |Data structures   |Draft of content, draft of exercises
+TH            |Algorithms        |QMD content with exercises
+TH            |Optimization      |QMD content with exercises
 
  * [1] This hour falls off at the end of the day
  * [2] Need more hours of TDD
