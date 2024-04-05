@@ -193,6 +193,12 @@ flowchart TB
   runtime_speed_profiles --> |creates| runtime_speed_profile
 ```
 
+> Overview of the course content.
+> Red: Richel.
+> Green: Lars.
+> Blue: Björn.
+> Grey: Project.
+> Project nodes are not connected to obtain a clearer graph
 
 ## Project overview
 
