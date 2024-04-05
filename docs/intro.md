@@ -148,7 +148,11 @@ flowchart TD
       assert[assert]:::richel_node
       recursive_algorithms[Recursive algorithms]:::richel_node
     end
-    optimisation[Optimisation]:::richel_node
+    subgraph optimisation[Optimisation]
+      misconceptions[Misconceptions]:::richel_node
+      big_o[Big-O]:::richel_node
+      runtime_speed_profiles[Runtime speed profiles]:::richel_node
+    end
   end
   subgraph day_5[Friday]
     modular_programming[Modular programming]:::lars_node

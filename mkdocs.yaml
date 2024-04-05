@@ -37,6 +37,9 @@ nav:
     - Algorithms, assert: algorithms/assert.md
     - Algorithms, recursive algorithms: algorithms/recursive_algorithms.md
     - Optimisation: optimisation/README.md
+    - Optimisation, misconceptions: optimisation/misconceptions.md
+    - Optimisation, big-O: optimisation/big_o.md
+    - Optimisation, runtime speed profiles: optimisation/runtime_speed_profiles.md
   - Friday:
     - Intro: friday_intro.md
     - Modular programming: modularity/modular.md

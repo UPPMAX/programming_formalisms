@@ -14,8 +14,8 @@ WE 13:00-14:00|Merge, PR, review |No content, draft of exercises
 WE 14:15-15:00|formal testing 1  |[2] Draft of content, draft of exercises
 WE 15:15-15:45|formal testing 2  |Draft of content, draft of exercises
 TH            |Data structures   |Draft of content, draft of exercises
-TH            |Algorithms        |QMD content with exercises
-TH            |Optimization      |QMD content with exercises
+TH            |Algorithms        |Draft of content, draft of exercises
+TH            |Optimization      |Draft of content, draft of exercises
 
  * [1] This hour falls off at the end of the day
  * [2] Need more hours of TDD
