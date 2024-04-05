@@ -143,7 +143,11 @@ flowchart TD
       built_in_datatypes[Built-in datatypes]:::richel_node
       has_a_relationship --> |needed for| class_design_in_code
     end
-    algorithms[Algorithms]:::richel_node
+    subgraph algorithms[Algorithms]
+      function_design[Function design]:::richel_node
+      assert[assert]:::richel_node
+      recursive_algorithms[Recursive algorithms]:::richel_node
+    end
     optimisation[Optimisation]:::richel_node
   end
   subgraph day_5[Friday]

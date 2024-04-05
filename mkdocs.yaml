@@ -33,6 +33,9 @@ nav:
     - Data structures, a 'has-a' relation: data_structures/has_a_relation.md
     - Data structures, class design: data_structures/class_design.md
     - Algorithms: algorithms/README.md
+    - Algorithms, function design: algorithms/function_design.md
+    - Algorithms, assert: algorithms/assert.md
+    - Algorithms, recursive algorithms: algorithms/recursive_algorithms.md
     - Optimisation: optimisation/README.md
   - Friday:
     - Intro: friday_intro.md

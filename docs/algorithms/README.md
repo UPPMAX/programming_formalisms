@@ -6,6 +6,30 @@
     - Understand algorithm names increase expressiveness of code
     - Understand difference between `if` and `assert` in function writing
 
+## Intro
+
+How do I write functions \[1\] that are:
+
+-   easy to use
+-   correct
+-   fast \[2\]
+
+References;
+
+-   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' @dictionary_algorithm
+-   \[2\] pick any vague definition
+
+- [Function design](function_design.md)
+- [assert](assert.md)
+- [Recursive algorithms](recursive_algorithms.md)
+
+## Discuss
+
+-   Function design is hard
+-   Documentation helps
+-   TDD helps
+-   `assert` helps
+
 ## Course material
 
 Description                                           |PDF                       |HTML                       |QMD
