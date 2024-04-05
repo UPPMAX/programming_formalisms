@@ -118,18 +118,18 @@ flowchart TB
   classDef richel_node fill:#fdd,color:#000,stroke:#f00
   classDef project_node fill:#ddd,color:#000,stroke:#000
   subgraph project[Project]
-    uml_class_diagram[UML Class diagram]:::project_node
-    minimal_classes[Minimal classes]:::project_node
-    unit_tests[Unit tests]:::project_node
-    automated_tests[Automated tests]:::project_node
-    classes_with_elements[Classes with elements]:::project_node
-    classes_with_behavior[Classes with behavior]:::project_node
-    runtime_speed_profile[Runtime-speed profile]:::project_node
+    p_uml_class_diagram[UML Class diagram]:::project_node
+    p_minimal_classes[Minimal classes]:::project_node
+    p_unit_tests[Unit tests]:::project_node
+    p_automated_tests[Automated tests]:::project_node
+    p_classes_with_elements[Classes with elements]:::project_node
+    p_classes_with_behavior[Classes with behavior]:::project_node
+    p_runtime_speed_profile[Runtime-speed profile]:::project_node
 
-    uml_class_diagram ---> minimal_classes
-    minimal_classes ---> classes_with_elements
-    classes_with_elements ---> classes_with_behavior
-    unit_tests ---> automated_tests
+    p_uml_class_diagram ---> p_minimal_classes
+    p_minimal_classes ---> p_classes_with_elements
+    p_classes_with_elements ---> p_classes_with_behavior
+    p_unit_tests ---> p_automated_tests
 
   end
   subgraph course[Course]
@@ -142,12 +142,16 @@ flowchart TB
     class_design_2[Class design]:::lars_node
     pair_programming[Pair programming]:::richel_node
     tdd[TDD]:::richel_node
+    uml_class_diagram[UML class diagram]:::project_node
+    minimal_classes[Minimal classes]:::project_node
   end
   subgraph day_3[Wednesday]
     subgraph testing[Testing]
       testing_framework[Using a formal testing framework]:::richel_node
       continuous_integration[Continuous integration]:::richel_node
       testing_in_a_team[Testing in a team and project]:::richel_node
+      unit_tests[Unit tests]:::project_node
+      automated_tests[Automated tests]:::project_node
     end
     code_reviews[Code reviews]:::richel_node
     git_branches[git branches]:::bjorn_node
@@ -159,16 +163,20 @@ flowchart TB
       class_design_in_code[Class design]:::richel_node
       built_in_datatypes[Built-in datatypes]:::richel_node
       has_a_relationship --> |needed for| class_design_in_code
+      classes_with_elements[Classes with elements]:::project_node
     end
     subgraph algorithms[Algorithms]
       function_design[Function design]:::richel_node
       assert[assert]:::richel_node
       recursive_algorithms[Recursive algorithms]:::richel_node
+      classes_with_behavior[Classes with behavior]:::project_node
     end
     subgraph optimisation[Optimisation]
       misconceptions[Misconceptions]:::richel_node
       big_o[Big-O]:::richel_node
       runtime_speed_profiles[Runtime speed profiles]:::richel_node
+      runtime_speed_profile[Runtime speed profile]:::project_node
+
     end
   end
   subgraph day_5[Friday]
@@ -202,5 +210,4 @@ flowchart TB
   has_a_relationship --> |creates| classes_with_elements
   function_design --> |creates| classes_with_behavior
   runtime_speed_profiles --> |creates| runtime_speed_profile
-
 ```
