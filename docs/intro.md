@@ -111,18 +111,35 @@ Friday   |15:45-16:00|Richel |Evaluation
 ## Detailed overview
 
 ```mermaid
-flowchart TD
+flowchart TB
 
   classDef bjorn_node fill:#ddf,color:#000,stroke:#00f
   classDef lars_node fill:#dfd,color:#000,stroke:#0f0
   classDef richel_node fill:#fdd,color:#000,stroke:#f00
+  classDef project_node fill:#ddd,color:#000,stroke:#000
+  subgraph project[Project]
+    uml_class_diagram[UML Class diagram]:::project_node
+    minimal_classes[Minimal classes]:::project_node
+    unit_tests[Unit tests]:::project_node
+    automated_tests[Automated tests]:::project_node
+    classes_with_elements[Classes with elements]:::project_node
+    classes_with_behavior[Classes with behavior]:::project_node
+    runtime_speed_profile[Runtime-speed profile]:::project_node
 
+    uml_class_diagram ---> minimal_classes
+    minimal_classes ---> classes_with_elements
+    classes_with_elements ---> classes_with_behavior
+    unit_tests ---> automated_tests
+
+  end
+  subgraph course[Course]
+    direction TB
   subgraph day_1[Monday]
     git_basic[git basic workflow]:::bjorn_node
     class_design[Class design]:::lars_node
   end
   subgraph day_2[Tuesday]
-    class_diagram[Create project's class diagram]:::lars_node
+    class_design_2[Class design]:::lars_node
     pair_programming[Pair programming]:::richel_node
     tdd[TDD]:::richel_node
   end
@@ -158,15 +175,18 @@ flowchart TD
     modular_programming[Modular programming]:::lars_node
     deployment[Deployment]:::bjorn_node
   end
+  end
 
 
   git_basic --> pair_programming
   pair_programming --> tdd
   git_basic --> git_branches
   pair_programming --> code_reviews
+  pair_programming --> |created| minimal_classes
   git_branches --> code_reviews
-  class_design --> class_diagram
-  class_diagram --> tdd
+  class_design --> class_design_2
+  class_design_2 --> |creates| uml_class_diagram
+  class_design_2 --> tdd
   git_basic --> tdd
   tdd --> testing
   git_branches --> testing
@@ -176,4 +196,11 @@ flowchart TD
   data_structures --> algorithms
   algorithms --> modular_programming
   algorithms --> optimisation
+
+  testing_framework --> |creates| unit_tests
+  continuous_integration --> |creates| automated_tests
+  has_a_relationship --> |creates| classes_with_elements
+  function_design --> |creates| classes_with_behavior
+  runtime_speed_profiles --> |creates| runtime_speed_profile
+
 ```
