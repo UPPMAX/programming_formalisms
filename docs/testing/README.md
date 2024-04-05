@@ -7,22 +7,57 @@
     - understand the benefit of continuous integration tests
     - practice fixing continuous integration tests
 
-## Course material
+???- question "For teachers"
 
- * Lecture:
-  * [.pdf](testing_lecture.pdf)
-  * [.qmd](testing_lecture/testing_lecture.qmd)
- * GitHub repository to Fork: [https://github.com/richelbilderbeek/programming_formalisms_project_2023](https://github.com/richelbilderbeek/programming_formalisms_project_2023)
+    Prerequisites are:
 
-:construction: the `code layout`-ed items will become links in the future :construction:
+    - Learners have practiced pair programming
+    - Learners can do the git basic workflow on `master`
 
+    Teaching goals are:
 
-Title                        |Length   |Download                                                                 |YouTube
------------------------------|---------|-------------------------------------------------------------------------|---------------------------------------------------------
-Testing lecture 1            |10 mins  |[here](https://richelbilderbeek.nl/programming_formalisms_testing_1.ogv) |[here](https://youtu.be/FXdEtzl-wws)
-`is_prime`                   |19 mins  |[here](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)|[here](https://youtu.be/jwAyMlaODfo)
-Testing lecture 2            |15 mins  |[here](https://richelbilderbeek.nl/programming_formalisms_testing_2.ogv) |[here](https://youtu.be/FMNG6oO8McA)
-`get_digits`                 |24 mins  |[here](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)            |[here](https://youtu.be/vmRuSWhdA7c)
+    - Learners understand what TDD is
+    - Learners understand why TDD is important
+    - Learners have done multiple TDD cycles
+
+    Teaching form used:
+
+    - Pair programming
+    - `master` branch
+
+    Lesson plan:
+
+    - 5 mins: prior knowledge
+      - When do you trust your code?
+      - When do you trust code written by others?
+      - How do you convince other developers of a bug?
+
+    - 5 mins: presentation
+    - 10 mins: demonstration `is_zero`
+    - 25 mins: challenge
+    - 10 mins: feedback
+
+## Testing
+
+- [Using a formal testing framework](testing_framework.md)
+- [Continuous integration](continuous_integration.md)
+- [Testing in a team and project](testing_in_a_team.md)
+
+## Recap
+
+-   Testing helps code correctness
+    -   Use the Beyoncé Rule on precious behavior
+-   Testing + CI:
+    -   Helps teaching
+    -   Helps bug reporting
+
+## Weaknesses
+
+-   We developed only simple algorithms
+-   We only use simple data structures
+-   We ignore if code is fast (vague wording on purpose!)
+
+This will be addressed in the next lectures :-)
 
 ## Observables
 
@@ -32,7 +67,3 @@ In duos, `owner_name` is the GitHub username first in the alphabet.
  * 2: `owner_name/get_digits(x)`
  * 3: `owner_name/flip_coin(x)`
  * 4: `owner_name/roll_dice(x)`
-
-## Links
-
- * [Project Euler](https://projecteuler.net/archives): plenty of programming problems

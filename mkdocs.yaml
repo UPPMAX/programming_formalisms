@@ -23,6 +23,9 @@ nav:
     - Branching in practice : git/apply_branches.md
     - Merging in practice: git/apply_merge.md
     - Testing: testing/README.md
+    - Using a formal testing framework: testing/testing_framework.md
+    - Continuous integration: testing/continueous_integration.md
+    - Testing in a team: testing/testing_in_a_team.md
   - Thursday:
     - Intro: thursday_intro.md
     - Data structures: data_structures/README.md
