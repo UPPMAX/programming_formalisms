@@ -19,5 +19,9 @@ matrix:
       - 'pre'
       - 'blockquote'
   sources:
+  - README.md
+  - learning_line.md
+  - setup.md
   - 'docs/**/*.md'
+  - 'lesson_plans/**/*.md'
   default_encoding: utf-8
