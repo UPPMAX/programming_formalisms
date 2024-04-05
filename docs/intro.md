@@ -210,17 +210,25 @@ flowchart TB
 
   uml_class_diagram[UML Class diagram]:::lars_node
   minimal_classes[Minimal classes]:::richel_node
-  unit_tests[Unit tests]:::richel_node
-  automated_tests[Automated tests]:::richel_node
+  unit_tests[Unit tests\n+ automated]:::richel_node
+  style_tests[Style tests\ne.g. documentation\n+ automated]:::richel_node
   classes_with_elements[Classes with elements]:::richel_node
   classes_with_behavior[Classes with behavior]:::richel_node
-  runtime_speed_profile[Runtime-speed profile]:::richel_node
+  runtime_speed_profile[Runtime-speed profile\n+ automated]:::richel_node
+  big_o[Big-O analysis\n+ automated]:::richel_node
+  package[?Package]:::bjorn_node
+  module[?Module]:::lars_node
+  documentation[?Documentation]:::bjorn_node
 
   uml_class_diagram --> minimal_classes
   minimal_classes --> classes_with_elements
   minimal_classes --> unit_tests
+  minimal_classes --> style_tests
   classes_with_elements --> classes_with_behavior
-  unit_tests --> automated_tests
-  automated_tests --> runtime_speed_profile
+  classes_with_behavior --> package
+  classes_with_behavior --> module
+  classes_with_behavior --> big_o
+  style_tests --> documentation
+  unit_tests --> runtime_speed_profile
   classes_with_behavior --> runtime_speed_profile
 ```
