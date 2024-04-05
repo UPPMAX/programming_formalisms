@@ -116,24 +116,7 @@ flowchart TB
   classDef bjorn_node fill:#ddf,color:#000,stroke:#00f
   classDef lars_node fill:#dfd,color:#000,stroke:#0f0
   classDef richel_node fill:#fdd,color:#000,stroke:#f00
-  classDef project_node fill:#ddd,color:#000,stroke:#000
-  subgraph project[Project]
-    p_uml_class_diagram[UML Class diagram]:::project_node
-    p_minimal_classes[Minimal classes]:::project_node
-    p_unit_tests[Unit tests]:::project_node
-    p_automated_tests[Automated tests]:::project_node
-    p_classes_with_elements[Classes with elements]:::project_node
-    p_classes_with_behavior[Classes with behavior]:::project_node
-    p_runtime_speed_profile[Runtime-speed profile]:::project_node
-
-    p_uml_class_diagram ---> p_minimal_classes
-    p_minimal_classes ---> p_classes_with_elements
-    p_classes_with_elements ---> p_classes_with_behavior
-    p_unit_tests ---> p_automated_tests
-
-  end
-  subgraph course[Course]
-    direction TB
+  classDef project_node fill:#fff,color:#000,stroke:#000
   subgraph day_1[Monday]
     git_basic[git basic workflow]:::bjorn_node
     class_design[Class design]:::lars_node
@@ -183,8 +166,6 @@ flowchart TB
     modular_programming[Modular programming]:::lars_node
     deployment[Deployment]:::bjorn_node
   end
-  end
-
 
   git_basic --> pair_programming
   pair_programming --> tdd
@@ -210,4 +191,30 @@ flowchart TB
   has_a_relationship --> |creates| classes_with_elements
   function_design --> |creates| classes_with_behavior
   runtime_speed_profiles --> |creates| runtime_speed_profile
+```
+
+
+## Project overview
+
+```mermaid
+flowchart TB
+  classDef bjorn_node fill:#ddf,color:#000,stroke:#00f
+  classDef lars_node fill:#dfd,color:#000,stroke:#0f0
+  classDef richel_node fill:#fdd,color:#000,stroke:#f00
+
+  uml_class_diagram[UML Class diagram]:::lars_node
+  minimal_classes[Minimal classes]:::richel_node
+  unit_tests[Unit tests]:::richel_node
+  automated_tests[Automated tests]:::richel_node
+  classes_with_elements[Classes with elements]:::richel_node
+  classes_with_behavior[Classes with behavior]:::richel_node
+  runtime_speed_profile[Runtime-speed profile]:::richel_node
+
+  uml_class_diagram --> minimal_classes
+  minimal_classes --> classes_with_elements
+  minimal_classes --> unit_tests
+  classes_with_elements --> classes_with_behavior
+  unit_tests --> automated_tests
+  automated_tests --> runtime_speed_profile
+  classes_with_behavior --> runtime_speed_profile
 ```
