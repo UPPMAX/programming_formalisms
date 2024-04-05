@@ -106,3 +106,66 @@ Thursday |15:45-16:00|Richel |Retrospect
 Friday   |09:00-12:00|Lars   |Modular programming deep
 Friday   |13:00-16:00|Björn  |Deployment
 Friday   |15:45-16:00|Richel |Evaluation
+
+
+## Detailed overview
+
+```mermaid
+flowchart TD
+
+  classDef bjorn_node fill:#ddf,color:#000,stroke:#00f
+  classDef lars_node fill:#dfd,color:#000,stroke:#0f0
+  classDef richel_node fill:#fdd,color:#000,stroke:#f00
+
+  subgraph day_1[Monday]
+    git_basic[git basic workflow]:::bjorn_node
+    class_design[Class design]:::lars_node
+  end
+  subgraph day_2[Tuesday]
+    class_diagram[Create project's class diagram]:::lars_node
+    pair_programming[Pair programming]:::richel_node
+    tdd[TDD]:::richel_node
+  end
+  subgraph day_3[Wednesday]
+    subgraph testing[Testing]
+      testing_framework[Using a formal testing framework]:::richel_node
+      continuous_integration[Continuous integration]:::richel_node
+      testing_in_a_team[Testing in a team and project]:::richel_node
+    end
+    code_reviews[Code reviews]:::richel_node
+    git_branches[git branches]:::bjorn_node
+  end
+  subgraph day_4[Thursday]
+    subgraph data_structures[Data structures]
+      expressive_data_types[Expressive data types]:::richel_node
+      has_a_relationship[A has-a relationship]:::richel_node
+      class_design_in_code[Class design]:::richel_node
+      built_in_datatypes[Built-in datatypes]:::richel_node
+      has_a_relationship --> |needed for| class_design_in_code
+    end
+    algorithms[Algorithms]:::richel_node
+    optimisation[Optimisation]:::richel_node
+  end
+  subgraph day_5[Friday]
+    modular_programming[Modular programming]:::lars_node
+    deployment[Deployment]:::bjorn_node
+  end
+
+
+  git_basic --> pair_programming
+  pair_programming --> tdd
+  git_basic --> git_branches
+  pair_programming --> code_reviews
+  git_branches --> code_reviews
+  class_design --> class_diagram
+  class_diagram --> tdd
+  git_basic --> tdd
+  tdd --> testing
+  git_branches --> testing
+  code_reviews --> data_structures
+  testing --> data_structures
+  testing --> code_reviews
+  data_structures --> algorithms
+  algorithms --> modular_programming
+  algorithms --> optimisation
+```
