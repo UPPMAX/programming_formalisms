@@ -25,7 +25,7 @@ flowchart TD
   staged --> |Commit staged files\ngit commit -m my_commit_description| committed
   committed ---> |Upload\ngit push| clean
   committed --> |Upload\ngit push| github  
-```mermaid
+```
 
 
 ## git workflow with branches
@@ -41,4 +41,3 @@ flowchart TD
   new_branch --> |Create on GitHub|another_branch
   your_branch --> |Update\ngit pull| your_branch
 ```
-
