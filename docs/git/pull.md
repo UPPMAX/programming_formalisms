@@ -2,23 +2,16 @@
 
 !!! questions
 
-    - How to make your program work for others?
+    - How to collaborate in a project
+    - How to contribute to someone else's project?
 
 !!! info Content
 
-   - We will prepare for use of your code
-   - Revisit licence
-   - But also...
-     - some theory of packages
-     - some theory of workflows
-     - some theory of containers
-     - some info about Tutorials/Reference/HowTo guides
+    - ...
 
 ???- info "Learning objectives of 'Deployment'"
 
-    - learners can mentalize the installation needs from the users perspective
-    - learners can evaluate different available tools for reproducibility and installations
-    - learners can prepare for different users: local computer, Cluster
+    - explain and evaluate the usefulness of git Pull Request with code review
 
 !!! note "Instructor notes"
 
