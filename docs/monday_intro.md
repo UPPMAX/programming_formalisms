@@ -47,10 +47,6 @@
 ???- info "Learning objectives of 'Get started with Git/GitHub'"
 
     - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
-    - get started with a git/github project (BJÖRN)
-    - do the basic `git` workflow (BJÖRN)
-       - create documents
-       - initial documentation
     
 - [Get started with Git/GitHub](project_start/startup.md)
 
