@@ -9,7 +9,6 @@
     - finalize the documentation of the project.
 
  
-
 ## Modular programming
 
 ???- info "Learning objectives of 'Modular programming'"
@@ -23,15 +22,15 @@
 
 ???- info "Learning objectives of 'Deployment'"
 
-    - understand the needs from the users and "installation" managers 
-    - get overview of available tools for reporducibility and installations
-    - prepare for different users: local computer, Cluster
+    - learners can mentalize the installation needs from the users perspective
+    - learners can evaluate different available tools for reproducibility and installations
+    - learners can prepare for different users: local computer, Cluster
 
 - [Deploy](deployment/deploy.md)
 
 ???- info "Learning objectives of 'Final documentation'"
 
-    - finalize the documentation of the project
+    - learners can finalize the documentation of the project
     
 - [Documentation](deployment/documentation.md)
 
