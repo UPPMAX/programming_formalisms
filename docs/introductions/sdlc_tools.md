@@ -1,22 +1,36 @@
 # Software Development Lifecycle (SDLC) tools
 
-```{questions}
-- What are the key concepts and steps in the SDLC
-- What are the tools for a project?
+!!! questions
 
-```
+    - What are the key concepts and steps in the SDLC
+    - What are the tools for a project?
 
-```{objectives}
-- We will have an introduction to some SDLC key features
-- We will get some theory of project tools and thinking.
-```
 
-```{instructor-note}
-   - Theory
-   - Demos/type-alongs
-   - Exercise
-   
-```
+!!! info Content
+
+    - We will have an introduction to some SDLC key features
+    - We will get some theory of project tools and thinking.
+
+
+!!! info "Learning objectives of 'SDLC tools'"
+
+    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - Understanding the Software development Life Cycle
+
+    Teaching goals are:
+
+    - Learners can compare and contrast various software development tools and justify their relevance to specific development tasks.
+
+    Lesson Plan: 
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
 
 ## The waterfall model
 
