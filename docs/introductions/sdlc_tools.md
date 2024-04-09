@@ -26,7 +26,7 @@
 
     - Learners can compare and contrast various software development tools and justify their relevance to specific development tasks.
 
-    Lesson Plan: 
+    Lesson Plan: **FIX**
     
     - **Total** 30 min
     - Theory 20
