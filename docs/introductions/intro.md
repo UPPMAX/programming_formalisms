@@ -11,17 +11,7 @@
 
 !!! info Content
 
-    1.  We start with a more theoretical introduction covering the software and tools and mindsets for software development.
-
-    2.  The second part follows the development of a simple software project.
-
-    - The exercises and type-alongs are mostly based on copy-pasting code.
-
-    - So you don’t need to program yourself or understand the python syntax used.
-
-    - The important aspect is the workflow!
-
-    - Deeper material not covered in the lessons today can be found in the extra reading part.
+    1.  We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
 
 
 !!! info "Learning objectives of 'SDLC tools'"
