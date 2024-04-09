@@ -1,13 +1,14 @@
 # Introduction to Friday
 
-
-Today we will
+!!! info "Today we will:"
 
     - view the principles of modular programming
     - practice principles of modular programming
     - view the principles of deployment
     - practice preparing for installations by users
     - finalize the documentation of the project.
+
+ 
 
 ## Modular programming
 
