@@ -2,42 +2,35 @@
 
 Today we will:
 
-!!!- info "Learning objectives"
-
-    - Identify the main topics and objectives for the week's lessons.
-    - Define the fundamental concepts introduced in the course and explain their significance in software development.
-    - Explain the core principles and theories underlying software development concepts covered in the course.
-    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
-    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.        
-
-    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
-    - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
-    - Apply analytical and design techniques to plan and conceptualize software development projects effectively.
+  - set the start in why a formalized development of software is needed.
+  - Identify the main topics and objectives for the week's lessons
 
 ???- info "Learning objectives of 'Introduction'"
 
-    - We will have an introduction to the week
-    - We weillset the start in why a formalized development of software is needed.
+    - Identify the main topics and objectives for the week's lessons.
+    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.        
+
+    - We will set the start in why a formalized development of software is needed.
 
 - [Introduction](introductions/intro.md)
 
 ???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
 
-    - get an overview of the Software development lifecycle (LARS)
-        - paradigms/formalised development
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
+    - Define the fundamental concepts introduced in the course and explain their significance in software development.
+    - Explain the core principles and theories underlying software development concepts covered in the course.
+
 
 - [Software Development Lifecycle (SDLC)](introductions/sdlc_tools.md)
 
 ???- info "Learning objectives of 'SDLC tools'"
 
-    - We will get some theory of project tools and thinking.
+    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
 
 - [SDLC tools](introductions/sdlc_tools.md)
 
 ???- info "Learning objectives of 'Get started with Git/GitHub'"
 
+    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
     - get started with a git/github project (BJÖRN)
     - do the basic `git` workflow (BJÖRN)
        - create documents
@@ -47,6 +40,9 @@ Today we will:
 
 
 ???- info "Learning objectives of 'Project start with analysis and design'"
+
+    - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
+    - Apply analytical and design techniques to plan and conceptualize software development projects effectively.
 
     - understand the basics of a analysis and design (LARS)
     - analysis
