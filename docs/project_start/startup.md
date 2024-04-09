@@ -1,4 +1,43 @@
 # Start the project
+
+!!! questions
+
+    - How to get started?
+    - How can I use Git/GitHub?
+
+
+!!! info Content
+
+    - get started with a git/github project (BJÖRN)
+    - do the basic `git` workflow (BJÖRN)
+        - create documents
+        - initial documentation
+
+!!! info "Learning objectives of 'SDLC tools'"
+
+    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - Git acoount
+    - GitHub account
+    - Git set up on computer
+
+    Teaching goals are:
+
+    - Learners can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+    Lesson Plan: **FIX**
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
+
+
+
+
 ```{Objectives}
    - Think about structure of the files and folders for the project
    - Think about documentation already
