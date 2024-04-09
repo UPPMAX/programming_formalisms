@@ -1,4 +1,33 @@
 # The iterations and Git
+
+!!! questions
+
+    - How to not ruin working code when adding new features?
+    - How to work on parallel tracks (many developers, versions)?
+    - How to fix mistakes?
+
+!!! info Content
+
+   - ...
+
+???- info "Learning objectives of 'Deployment'"
+
+    - learners can explain and evaluate the usefulness for different git commands
+
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - ...
+
+    Lesson Plan: **FIX**
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
+
+
 ```{questions}
   - Why should you use source/version control?
 ```
