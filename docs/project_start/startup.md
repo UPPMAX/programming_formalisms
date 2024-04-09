@@ -8,8 +8,8 @@
 
 !!! info Content
 
-    - get started with a git/github project (BJÖRN)
-    - do the basic `git` workflow (BJÖRN)
+    - get started with a git/github project
+    - do the basic `git` workflow
         - create documents
         - initial documentation
 
