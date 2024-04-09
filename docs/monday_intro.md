@@ -1,11 +1,13 @@
 # Introduction to Monday
 
-!!! "Today we will:"
+!!! info "Today we will:"
 
     - set the start in why a formalized development of software is needed.
-    - Identify the main topics and objectives for the week's lessons
+    - identify the main topics and objectives for the week's lessons.
+    - learn bout the tools and processes in the software development cycle.
+    - start a software project following a formalized development and tools.
 
-!!! How?
+!!! info How?
 
     1.  We start with a more theoretical introduction covering the software and tools and mindsets for software development.
 
