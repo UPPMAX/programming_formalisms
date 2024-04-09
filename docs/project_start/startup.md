@@ -166,42 +166,43 @@ README file should include:
 - Make some folders according to the above list
 - Put the planning documents in a docs folder
 
-````{challenge} 10 min
-1. Extend the README file a little bit with an **About section** in Markdown format describing the project.
-  - Use the **Pencil** button
-  - Use the goals stated in last session, [Analysis](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#analysis)
-  - Get inspiration from <https://www.makeareadme.com/> and a favorite Git repo or <https://github.com/yampelo/beagle>. 
+???+ "challenge 10 min"
+
+   1. Extend the README file a little bit with an **About section** in Markdown format describing the project.
+      - Use the **Pencil** button
+      - Use the goals stated in last session, [Analysis](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#analysis)
+      - Get inspiration from <https://www.makeareadme.com/> and a favorite Git repo or <https://github.com/yampelo/beagle>. 
 
 
-```markdown
-**Cheat sheet**
-# This is a section in Markdown   
+    ```markdown
+    **Cheat sheet**
+    # This is a section in Markdown   
 
-## This is a subsection           
+    ## This is a subsection           
 
-Nothing special needed for        
-a normal paragraph.               
+    Nothing special needed for        
+    a normal paragraph.               
 
-    This is a code block          
+        This is a code block          
 
 
-**Bold** and *emphasized*.       
+    **Bold** and *emphasized*.       
 
-A list:                           
-- this is an item                 
-- another item                   
+    A list:                           
+    - this is an item                 
+    - another item                   
                
-```
+    ```
 
-2. Create the planning document in markdown **Add file** button and choose "Create file".
-  - Call the file ``doc/plan.md``
-	- this will on the fly create the directory ``doc``.
-  - Copy paste the example code found in the last session for [PlantUML](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#lets-make-a-flowchart-of-the-program-parts) and [pseudocode](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#do-some-pseudocode-of-the-calculations).
-    - Type ``"```uml"`` (without ") above the UML code and ``"```"`` below, and it should render nicely.
-    - Type ``"```code"`` (without ") above the pseudo code and ``"```"`` below, and it should render nicely.
-  - Add some suitable headings for the code sections
+    2. Create the planning document in markdown **Add file** button and choose "Create file".
+        - Call the file ``doc/plan.md``
+	    - this will on the fly create the directory ``doc``.
+        - Copy paste the example code found in the last session for [PlantUML](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#lets-make-a-flowchart-of-the-program-parts) and [pseudocode](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#do-some-pseudocode-of-the-calculations).
+            - Type ``"```uml"`` (without ") above the UML code and ``"```"`` below, and it should render nicely.
+            - Type ``"```code"`` (without ") above the pseudo code and ``"```"`` below, and it should render nicely.
+        - Add some suitable headings for the code sections
 
-````
+
 
 ???- solution
 
@@ -217,7 +218,7 @@ A list:
       - Let's go for functional?? programming
    - **Input**: Some initial ...
        - Perhaps also user input of ...
-   - **Output**: Graph of orbits and a timeseries of an eccentricity parameter
+   - **Output**: Graph of ...
 
    **Development steps** (we extend the program with iterations)
    1. XX system
