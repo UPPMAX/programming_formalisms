@@ -2,19 +2,17 @@
 
 Today we will:
 
-
-
 !!!- info "Learning objectives"
 
-    - get an **introduction** to the week
-    - get introduction to **concepts** used in the course
-    - understand 
-    - get introduction to handy **tools for the software developer**
-    - try to **set up the mindset** to find the rest of the week interesting and useful!
-    
-    - Practice to start projects in Git and GitHub
-    - Practice using basic git commands
-    - Practice in project analysis and design 
+    - Identify the main topics and objectives for the week's lessons.
+    - Define the fundamental concepts introduced in the course and explain their significance in software development.
+    - Explain the core principles and theories underlying software development concepts covered in the course.
+    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
+    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.        
+
+    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+    - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
+    - Apply analytical and design techniques to plan and conceptualize software development projects effectively.
 
 ???- info "Learning objectives of 'Introduction'"
 
