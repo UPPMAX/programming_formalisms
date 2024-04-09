@@ -10,13 +10,13 @@ Today we will:
 
     2.  The second part follows the development of a simple software project.
 
-    - The exercises and type-alongs are mostly based on copy-pasting code.
+        - The exercises and type-alongs are mostly based on copy-pasting code.
 
-    - So you don’t need to program yourself or understand the python syntax used.
+        - So you don’t need to program yourself or understand the python syntax used.
 
-    - The important aspect is the workflow!
+        - The important aspect is the workflow!
 
-    - Deeper material not covered in the lessons today can be found in the extra reading part.
+    3. Deeper material not covered in the lessons today can be found in the extra reading part.
 
 ???- info "Learning objectives of 'Introduction'"
 
