@@ -3,9 +3,7 @@
 
 !!! questions
 
-    - How to get started?
-    - How can I use Git/GitHub?
-
+    - How to make your program work for others?
 
 !!! info Content
 
