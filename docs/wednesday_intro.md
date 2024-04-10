@@ -1,6 +1,13 @@
 # Introduction to Wednesday
 
-Today we will discuss:
+!!! info "Today we will:"
+
+    - learn and practice git workflows while coding
+    - learn and practive testing 
+
+???- info "Learning objectives of 'Understand git branches, git merge'"
+
+    - explain and evaluate the usefulness for different git commands
 
 - Understand [git branching and merging](git/branches.md)
 
@@ -9,7 +16,13 @@ Today we will discuss:
     - create, switch and delete a `git` branch
 
 - [Practice using git branches](git/apply_branches.md)
-- Understand git Pull Request with code review
+
+???- info "Learning objectives of 'Understand git Pull Request with code review'"
+
+    - explain and evaluate the usefulness of git Pull Request with code review
+
+- [Understand git Pull Request with code review](git/pull.md)
+
 
 ???- info "Learning objectives of 'Practice doing a Pull Request using a code review'"
 

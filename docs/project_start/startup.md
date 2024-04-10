@@ -1,14 +1,53 @@
 # Start the project
-```{Objectives}
-   - Think about structure of the files and folders for the project
-   - Think about documentation already
-```
 
-```{note}
-- Many projects/scripts start as something for personal use, but expands to be distributed.
-- Let's start in that end and be prepared.
-- The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
-```
+!!! questions
+
+    - How to get started?
+    - How can I use Git/GitHub?
+
+
+!!! info Content
+
+    - get started with a git/github project
+    - do the basic `git` workflow
+        - create documents
+        - initial documentation
+
+!!! info "Learning objectives of 'SDLC tools'"
+
+    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - Git acoount
+    - GitHub account
+    - Git set up on computer
+
+    Teaching goals are:
+
+    - Learners can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+    Lesson Plan: **FIX**
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
+
+!!! note "Think about:"
+    
+    - structure of the files and folders for the project
+    - documentation already
+
+
+!!! note
+   
+   - Many projects/scripts start as something for personal use, but expands to be distributed.
+   - Let's start in that end and be prepared.
+   - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+
+
 
 ## Order your files!
 
@@ -127,102 +166,83 @@ README file should include:
 - Make some folders according to the above list
 - Put the planning documents in a docs folder
 
-````{challenge} 10 min
-1. Extend the README file a little bit with an **About section** in Markdown format describing the project.
-  - Use the **Pencil** button
-  - Use the goals stated in last session, [Analysis](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#analysis)
-  - Get inspiration from <https://www.makeareadme.com/> and a favorite Git repo or <https://github.com/yampelo/beagle>. 
+???+ "challenge 10 min"
+
+   1. Extend the README file a little bit with an **About section** in Markdown format describing the project.
+      - Use the **Pencil** button
+      - Use the goals stated in last session, [Analysis](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#analysis)
+      - Get inspiration from <https://www.makeareadme.com/> and a favorite Git repo or <https://github.com/yampelo/beagle>. 
 
 
-```markdown
-**Cheat sheet**
-# This is a section in Markdown   
+    ```markdown
+    **Cheat sheet**
+    # This is a section in Markdown   
 
-## This is a subsection           
+    ## This is a subsection           
 
-Nothing special needed for        
-a normal paragraph.               
+    Nothing special needed for        
+    a normal paragraph.               
 
-    This is a code block          
+        This is a code block          
 
 
-**Bold** and *emphasized*.       
+    **Bold** and *emphasized*.       
 
-A list:                           
-- this is an item                 
-- another item                   
+    A list:                           
+    - this is an item                 
+    - another item                   
                
-```
+    ```
 
-2. Create the planning document in markdown **Add file** button and choose "Create file".
-  - Call the file ``doc/plan.md``
-	- this will on the fly create the directory ``doc``.
-  - Copy paste the example code found in the last session for [PlantUML](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#lets-make-a-flowchart-of-the-program-parts) and [pseudocode](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#do-some-pseudocode-of-the-calculations).
-    - Type ``"```uml"`` (without ") above the UML code and ``"```"`` below, and it should render nicely.
-    - Type ``"```code"`` (without ") above the pseudo code and ``"```"`` below, and it should render nicely.
-  - Add some suitable headings for the code sections
+    2. Create the planning document in markdown **Add file** button and choose "Create file".
+        - Call the file ``doc/plan.md``
+	    - this will on the fly create the directory ``doc``.
+        - Copy paste the example code found in the last session for [PlantUML](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#lets-make-a-flowchart-of-the-program-parts) and [pseudocode](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#do-some-pseudocode-of-the-calculations).
+            - Type ``"```uml"`` (without ") above the UML code and ``"```"`` below, and it should render nicely.
+            - Type ``"```code"`` (without ") above the pseudo code and ``"```"`` below, and it should render nicely.
+        - Add some suitable headings for the code sections
 
-````
 
-````{solution}
-# Plan
 
-## Background
-- The climate last about 1 million years has been largely determined but the change of the eccentricity (elongation) of Earth's orbit (One of the [Milankovitch cycles](https://climate.nasa.gov/news/2948/milankovitch-orbital-cycles-and-their-role-in-earths-climate/)).
-- The glacial cycles (daily speaking: ice ages) with a period of about 100 000 years are thought to be due to this.
-  - Theory: The gravity form the other planets, especially Jupiter, causes the change of the eccentricity
-- **Problem**: Reproduce Milankovitch cycle of eccentricity (100ka)
-- **Method**: Use Python
-  - Let's go for functional programming
-- **Input**: Some initial positions of the planets but no external data
-  - Perhaps also user input of length of simulation
-- **Output**: Graph of orbits and a timeseries of an eccentricity parameter
+???- solution
 
-**Development steps** (we extend the program with iterations)
-1. Earth-sun system
-1. Add Jupiter
-1. Make modular
-1. Add more planets?
+    
+   # Plan
 
-## PlantUML
+   ## Background
 
-```uml
-@startuml
-skin rose
-title Planet flowchart
-start
+   - Some text
+   - Theory: 
+   - **Problem**: 
+   - **Method**: Use Python
+      - Let's go for functional?? programming
+   - **Input**: Some initial ...
+       - Perhaps also user input of ...
+   - **Output**: Graph of ...
 
-:define some parameters;
-:initialize earth (and Jupiter);
+   **Development steps** (we extend the program with iterations)
+   1. XX system
+   1. Add YY
+   1. Make modular
+   1. Add more ZZ
 
-repeat
-  :calculate new position;
-  :calculate acceleration;
-  :calculate velocity in two dimensions;
+   ## PlantUML/mermaid
 
-repeat while (simulation time is met) is (no)
-->yes;
-:figure plotting;
-stop
-```
+   ```mermaid
 
-## Pseudocode
+   ```
 
-```code
-Define constants
-Define initial values
-	positions
-	velocity (balance of gravity and centrifugal force)
-(Allocate (book) space for long vectors	plan iteration)
-Iteration
-	Change of positions
-	Calc acc (gravity)
-	Calc new velocity
-Plot resulting ellipses
-Calculate orbit parameters
-Plot time series of parameter change
-```
-````
+   ## Pseudocode
+
+   ```code
+   Define constants
+   Define initial values
+   (Allocate (book) space for long vectors)
+   Iteration
+   Plot resulting ...
+   Calculate ...
+   ```
+
 ---
 
 ## What is Git, and what is a Git repository?

@@ -1,7 +1,11 @@
 # Ending documentation
 
+!!! questions
 
-```{Objectives}
+    - How can the user understand how to run your program and what it does?
+
+!!! info Content
+
    - We will prepare for use of your code
    - Update the README
    - Update a Doc Index
@@ -11,13 +15,22 @@
      - some theory of workflows
      - some theory of containers
      - some info about Tutorials/Reference/HowTo guides
-```
 
-```{attention}
-- Make your program or workflow work for others and yourself in the future.
-- Let people understand how to use your program/tool
-```
+???- info "Learning objectives of 'Deployment'"
 
+    - learners can finalize the documentation of the project
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - ...
+
+    Lesson Plan: **FIX**
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
 
 ## In-code documentation
 

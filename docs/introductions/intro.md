@@ -1,5 +1,23 @@
 # Introduction
 
+!!! questions
+
+    - What is the Purpose of Formalism in Computer Science?
+
+    - What is software development life cycle
+
+    - There seem to be many concepts in this course. What do they mean?
+
+
+!!! info Content
+
+    1.  We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
+
+
+!!! info "Learning objectives of 'SDLC tools'"
+
+    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
+
 
 !!! note "Instructor notes"
 

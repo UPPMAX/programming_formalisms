@@ -1,16 +1,36 @@
 # The iterations and Git
-```{questions}
-  - Why should you use source/version control?
-```
+
+!!! questions
+
+    - How to not ruin working code when adding new features?
+    - How to work on parallel tracks (many developers, versions)?
+    - How to fix mistakes?
+
+!!! info Content
+
+    - We will
+      - work with the basic commands in git
+      - go through branching and merging
+
+
+???- info "Learning objectives of 'Deployment'"
+
+    - learners can explain and evaluate the usefulness for different git commands
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - ...
+
+    Lesson Plan: **FIX**
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
 
 ```{Discussion} Have you used Git (locally) in your own work?
 Answer in **Menti**
-```
-
-```{Objectives}
-   - We will
-      - work with the basic commands in git
-      - go through branching and merging
 ```
 
 ```{note}

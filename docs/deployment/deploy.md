@@ -1,6 +1,12 @@
 # Deploy your code
 
-```{Objectives}
+
+!!! questions
+
+    - How to make your program work for others?
+
+!!! info Content
+
    - We will prepare for use of your code
    - Revisit licence
    - But also...
@@ -8,15 +14,41 @@
      - some theory of workflows
      - some theory of containers
      - some info about Tutorials/Reference/HowTo guides
-```
 
-```{attention}
-- Make your program or workflow work for others and yourself in the future.
-- Let people understand how to use your program/tool
-```
+???- info "Learning objectives of 'Deployment'"
+
+    - learners can mentalize the installation needs from the users perspective
+    - learners can evaluate different available tools for reproducibility and installations
+    - learners can prepare for different users: local computer, Cluster
+
+!!! note "Instructor notes"
+
+    Prerequisites are:
+
+    - ...
+
+    Lesson Plan: **FIX**
+    
+    - **Total** 30 min
+    - Theory 20
+    - Discussions 10 min
+
+!!! note "Think about:"
+    
+    - structure of the files and folders for the project
+    - documentation already
+
+!!! note
+   
+   - Many projects/scripts start as something for personal use, but expands to be distributed.
+   - Let's start in that end and be prepared.
+   - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
+!!! attention
 
+    - Make your program or workflow work for others and yourself in the future.
+    - Let people understand how to use your program/tool
 
 ## Recording dependencies
 -	**Reproducibility**: We can control our code but how can we control dependencies?
