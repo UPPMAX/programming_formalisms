@@ -39,7 +39,7 @@
     - Theory 20
     - Discussions 10 min
 
-!!! info TOC
+!!! info "TOC"
 
     - What is software?
        - software concepts
