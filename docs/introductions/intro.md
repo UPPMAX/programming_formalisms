@@ -16,8 +16,9 @@
 
 !!! info "Learning objectives of 'SDLC tools'"
 
-    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
-
+    - Identify the main topics and objectives for the week's lessons.
+    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.
+    - We will set the start in why a formalized development of software is needed.
 
 !!! note "Instructor notes"
 
@@ -94,7 +95,6 @@
     - Independent _modules_
     - Encapsulation/_information hiding_
    
-
 ## Code Example???
    
 ## Software Development Life Cycle (SDLC)
