@@ -2,7 +2,9 @@
 
 The frequently asked questions, about:
 
-- [egilibity](#eligibility), i.e. can I join?
+- [egilibity](#eligibility), i.e. when to join the course
+- [preparation](#preparation)
+- [course teaching](#course-teaching), i.e. how the course is conducted and ideas behind it
 
 ## Eligibility
 
@@ -52,13 +54,13 @@ your camera is likely to make you feel excluded.
 
 See [Projects](projects.md) for the goal of the shared project.
 
-## What happens to the retrospectives?
+### What happens to the retrospectives?
 
 These are published online in unedited form in
 [the 'retrospecives' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/retrospectives)
 of this GitHub repository.
 
-## What happens to the evaluations?
+### What happens to the evaluations?
 
 These are published online in unedited form in
 [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations)
