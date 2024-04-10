@@ -32,7 +32,7 @@
     - Theory 20
     - Discussions 10 min
 
-!!! info TOC
+!!! info "TOC"
 
     - Review SDLC steps
         - waterfall and iteration
