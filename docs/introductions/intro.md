@@ -11,7 +11,7 @@
 
 !!! info Content
 
-    1.  We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
+    We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
 
 
 !!! info "Learning objectives of 'SDLC tools'"
@@ -38,7 +38,16 @@
     - Theory 20
     - Discussions 10 min
 
+!!! info TOC
 
+    - What is software?
+       - software concepts
+       - types
+       - outcome
+           correct, reusable, efficient, changable
+       - modularity  
+    - Example
+    - SLDC   
 
 
 ## What is software?
