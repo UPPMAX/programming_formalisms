@@ -32,6 +32,21 @@
     - Theory 20
     - Discussions 10 min
 
+!!! info TOC
+
+    - Review SDLC steps
+        - waterfall and iteration
+    - Planning: Analysis and design
+        - top-down vs bottom-up
+        - UML (mermaid)
+        - pseudocode
+    - Testing
+    - Source/version control
+    - Collaboration
+    - Reproducibility and sharing
+    - Documentation
+    
+
 ## The waterfall model
 
 1.	Requirements
