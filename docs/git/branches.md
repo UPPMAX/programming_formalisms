@@ -6,7 +6,7 @@
     - How to work on parallel tracks (many developers, versions)?
     - How to fix mistakes?
 
-!!! info Content
+!!! info "Content"
 
     - We will
       - work with the basic commands in git
@@ -42,6 +42,7 @@
     - Branching
         - background
         - workflows
+        - in-code doc? where to put?
         - examples/demos
         - discussion
         - "quiz"
