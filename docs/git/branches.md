@@ -8,12 +8,14 @@
 
 !!! info Content
 
-   - ...
+    - We will
+      - work with the basic commands in git
+      - go through branching and merging
+
 
 ???- info "Learning objectives of 'Deployment'"
 
     - learners can explain and evaluate the usefulness for different git commands
-
 
 !!! note "Instructor notes"
 
@@ -27,19 +29,8 @@
     - Theory 20
     - Discussions 10 min
 
-
-```{questions}
-  - Why should you use source/version control?
-```
-
 ```{Discussion} Have you used Git (locally) in your own work?
 Answer in **Menti**
-```
-
-```{Objectives}
-   - We will
-      - work with the basic commands in git
-      - go through branching and merging
 ```
 
 ```{note}
