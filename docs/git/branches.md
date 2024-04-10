@@ -28,15 +28,14 @@
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
+!!! Discussion "Have you used Git (locally) in your own work?Answer in **Menti**"
 
-```{Discussion} Have you used Git (locally) in your own work?
-Answer in **Menti**
-```
 
-```{note}
-- We will cover the most basic things with Git such that you can use it this week.
-- For deeper understanding and hands-on on branching etcetera, please confer the course material of [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/) and [CodeRefinery](https://coderefinery.github.io/git-intro/).
-```
+!!! note
+   
+    - We will cover the most basic things with Git such that you can use it this week.
+    - For deeper understanding and hands-on on branching etcetera, please confer the course material of [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/) and [CodeRefinery](https://coderefinery.github.io/git-intro/).
+
 
 !!! info "Table of content"
 
@@ -56,9 +55,9 @@ Answer in **Menti**
 
 ## Start with pushing your changes in the local Git to GitHub
 
- ```console
-  $ git push
-  ```
+```console
+$ git push
+```
 
 You should now see something like:
 
@@ -76,7 +75,8 @@ branch 'main' set up to track 'origin/main'.
 
 ```
 
-``````{admonition} If you get errors
+!!! admonition "If you get errors"
+
 ---
 class: warning, dropdown
 ---
