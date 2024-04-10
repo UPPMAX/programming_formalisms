@@ -59,6 +59,7 @@ nav:
     - More about documentation: extra_bc/documentation_deeper.md
     - More about deploying: extra_bc/deploy_deeper.md
   - Misc:
+    - FAQ: misc/faq.md
     - Exercise procedure: misc/exercise_procedure.md
     - git workflow: misc/git_workflow.md
     - GitHub workflow: misc/github_workflow.md

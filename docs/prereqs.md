@@ -4,6 +4,7 @@
 
 !!! note "What do you need to be prepared?" 
 
+    - A good Zoom setup: microphone, camera and a place where you can talk
     - A shell **terminal**
         - Linux/Bash
         - Mac terminal
