@@ -6,7 +6,7 @@
     - What are the tools for a project?
 
 
-!!! info Content
+!!! info "Content"
 
     - We will have an introduction to some SDLC key features
     - We will get some theory of project tools and thinking.
