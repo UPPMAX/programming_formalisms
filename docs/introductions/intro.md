@@ -9,7 +9,7 @@
     - There seem to be many concepts in this course. What do they mean?
 
 
-!!! info Content
+!!! info "Content"
 
     We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
 
