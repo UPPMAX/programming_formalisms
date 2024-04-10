@@ -39,3 +39,10 @@
     - Centralized workflow
     - Distributed version control and Forking workflow
     - How to contribute changes to somebody else’s project
+        - Contributing very minor changes
+        - If you observe an issue and have an idea how to fix it
+
+## GitHub
+## Centralized workflow
+## Distributed version control and Forking workflow
+## How to contribute changes to somebody else’s project
