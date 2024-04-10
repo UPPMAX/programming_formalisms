@@ -6,14 +6,14 @@
     - How can I use Git/GitHub?
 
 
-!!! info Content
+!!! info "Content"
 
     - get started with a git/github project
     - do the basic `git` workflow
         - create documents
         - initial documentation
 
-!!! info "Learning objectives of 'SDLC tools'"
+!!! info "Learning objectives of 'Get started with Git/GitHub'"
 
     - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
 
@@ -34,6 +34,17 @@
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
+
+!!! note "TOC"
+
+    - Demo on starting a project
+        - github --> local git
+    	- own repo???
+    - Intro documentation 
+        - in-code doc? where to put?
+    - Start with the steps related to the project
+
+    
 
 !!! note "Think about:"
     
