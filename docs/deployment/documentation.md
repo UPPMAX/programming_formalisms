@@ -4,7 +4,7 @@
 
     - How can the user understand how to run your program and what it does?
 
-!!! info Content
+!!! info "Content"
 
    - We will prepare for use of your code
    - Update the README
@@ -16,7 +16,7 @@
      - some theory of containers
      - some info about Tutorials/Reference/HowTo guides
 
-???- info "Learning objectives of 'Deployment'"
+???- info "Learning objectives of 'Documentation'"
 
     - learners can finalize the documentation of the project
 
@@ -31,6 +31,26 @@
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
+
+!!! info "TOC" 
+
+    - In-code documentation review
+    - Documentation 
+        - tutorials/howto/reference
+        - project doc
+        - html site generators
+        - deployment on servers
+    - Hands-on
+        - update README
+          - installation procedure
+        - update license
+        - update citation
+        - update index
+        
+        
+        
+      
+    
 
 ## In-code documentation
 
