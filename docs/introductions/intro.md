@@ -42,11 +42,12 @@
 !!! info "TOC"
 
     - What is software?
-       - software concepts
-       - types
-       - outcome
-           correct, reusable, efficient, changable
-       - modularity  
+        - software concepts
+        - types
+        - outcome
+            - correct, reusable, efficient, changable
+        - modularity  
+        - functional vs object-orientation
     - Example
     - SLDC   
 
