@@ -55,8 +55,8 @@
 4.	Test
 5.	Development and maintenance
 
-```dot
-digraph {
+```graphviz dot waterfall.svg
+digraph G {
    rankdir=LR;
   "Requirements" -> "Analysis and design" -> "Development" -> Test -> "Development and maintenance";
 }
