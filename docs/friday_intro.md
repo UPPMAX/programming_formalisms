@@ -13,6 +13,12 @@
 
 ???- info "Learning objectives of 'Modular programming'"
 
+    **NEW** (Needs some revision to be more student-centered)
+    - The student has a introductory understaning to the modular programming paradigm and the concept of iterative refactoring of code. 
+    - The concepts of common interface and protocols are introduced
+    - Learns the importance of modularisation when collaborating on larger projects by example of the reduced number of conflicts of commits.
+    - The students partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
+    **OLD**
     - understand the principles of modular programming
     - practice principles of modular programming
 
@@ -22,7 +28,7 @@
 
 ???- info "Learning objectives of 'Deployment'"
 
-    - learners can mentalize the installation needs from the users perspective
+    - learners can mentalize the installation needs from the users perspective (**HOW TO TEST?**)
     - learners can evaluate different available tools for reproducibility and installations
     - learners can prepare for different users: local computer, Cluster
 
