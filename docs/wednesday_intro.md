@@ -3,7 +3,7 @@
 !!! info "Today we will:"
 
     - learn and practice git workflows while coding
-    - learn and practive testing 
+    - learn and practice formal testing 
 
 ???- info "Learning objectives of 'Understand git branches, git merge'"
 
