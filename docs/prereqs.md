@@ -22,6 +22,16 @@
  
 ## Checkpoints
 
+### A good Zoom setup
+
+You have a Zoom good setup, if:
+
+- [ ] you can talk freely. If not, find a room/place where you can
+- [ ] others in the Zoom room can clearly hear what you say. 
+      If not, use a microphone
+- [ ] you can clearly hear what others in the Zoom room say.
+      If not, use a headset
+
 ### Visual Studio
 
 ???- question "Do you have Visual Studio Code installed?"
