@@ -76,7 +76,7 @@ digraph G {
 
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
-!!! warning}
+!!! warning
     - Error is spreading 
     - small mistakes in the beginning will have large impact on the end result. 
         - e.g. bugs, architecture limiting extensions
