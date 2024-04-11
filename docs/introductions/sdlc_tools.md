@@ -132,7 +132,7 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
         - Write function to fail test
         - Write code to pass test
    
-!!! seealso
+!!! note "See also"
     - [Software Development Lifecycle on Tuesday](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md)
 
 
@@ -411,9 +411,9 @@ Car -- Person : < owns
     - [Planning phase section](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html) aims to 
        - Introduce flowcharts and UML expressions
        - Get into UML coding with PlantUML
-       - Test Pseudocoding
+       - Test Pseudo coding
 
-!!! seealso
+!!! note "See also"
 
     - Diagrams will be cover on
         - Tuesday during several part of the [Software development processes](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md#software-development-processes)
@@ -455,7 +455,7 @@ stop
 
 ```
 
-!!! seealso
+!!! note "See also"
 
     - More about testing day 3.
     - [Test-driven development(TDD)](https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture.pdf)
@@ -571,7 +571,7 @@ There are different types of remotes:
      - Contributing to other's projects
 
 
-!!! seealso
+!!! note "See also"
     - Git and GitHub will be used in the other days as well
 
 
@@ -598,7 +598,7 @@ There are different types of remotes:
            - Conda
            - Environments
            - Tools for other languages than Python
-   - We will develop our code in a virtualenvironment with the python tool ``venv ``   
+   - We will develop our code in a virtual environment with the python tool ``venv ``   
   
 ```
   
@@ -664,7 +664,7 @@ There are different types of remotes:
 - Think the same as for a scientific paper
 - [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
 
-!!! seealso
+!!! note "See also"
     - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
 
 
