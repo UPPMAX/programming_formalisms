@@ -25,7 +25,7 @@
     - understand the principles of modular programming
     - practice principles of modular programming
 
-- [Modular programming](deployment/deploy.md)
+- [Modular programming](modularity/modular.md)
   
 ## Deployment
 
