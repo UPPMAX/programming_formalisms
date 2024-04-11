@@ -95,7 +95,7 @@ digraph G {
 1. Risk driven
 
 <figure markdown="span">
-  ![spiral](img/spiral-1-1024x945.jpg){ width="50%" }
+  ![spiral](../img/spiral-1-1024x945.jpg){ width="50%" }
   <figcaption>Spiral model</figcaption>
 </figure>
 
