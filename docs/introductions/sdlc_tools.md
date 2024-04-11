@@ -94,10 +94,11 @@ digraph G {
 1. Each lab is new cycle: prototype--> RC --> launch
 1. Risk driven
 
-```{figure} img/spiral-1-1024x945.jpg
-:alt: spiral
-:width: 50%
-```
+<figure markdown="span">
+  ![spiral](img/spiral-1-1024x945.jpg){ width="50%" }
+  <figcaption>Spiral model</figcaption>
+</figure>
+
 
 - **Disadvantages**
   - Expensive: Spiral Model is **not suitable for small projects**
