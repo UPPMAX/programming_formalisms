@@ -110,12 +110,12 @@ digraph G {
 
 "Agile = characterized by the division of tasks into short phases of work and frequent re-assessment and adaptation of plans."
 
-```{admonition} Values
-- **Individuals and interactions** over processes and tools
-- **Working software** over comprehensive documentation
-- **Customer collaboration** over contract negotiation
-- **Responding to change** over following a plan
-```
+!!! admonition "Values"
+    - **Individuals and interactions** over processes and tools
+    - **Working software** over comprehensive documentation
+    - **Customer collaboration** over contract negotiation
+    - **Responding to change** over following a plan
+
 
 **Most other models are Agile...**
 see the extra reading section: [SDLC models](https://uppmax.github.io/programming_formalisms_intro/sdlc_models.html)
@@ -124,75 +124,75 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
   - automated tests, continuous integration
 - Deliver as fast as possible: small iterations are easier to manage
 - Extreme Programming
-  - Pair programming
-    - Collaborate, continuous code inspection
-    - Real-time development technique to increase algorithm implementation
-  - Test-driven development
-    - Write test
-    - Write function to fail test
-    - Write code to pass test
+    - Pair programming
+        - Collaborate, continuous code inspection
+        - Real-time development technique to increase algorithm implementation
+    - Test-driven development
+        - Write test
+        - Write function to fail test
+        - Write code to pass test
    
-```{seealso}
-- [Software Development Lifecycle on Tuesday](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md]
-```
+!!! seealso
+    - [Software Development Lifecycle on Tuesday](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md]
 
-```{admonition} Conclusion
-  - Each team has unique requirements
-  - Try out agile practices that make the most sense
-  - Don’t be afraid of trial and error
-```
+
+!!! admonition "Conclusion"
+    - Each team has unique requirements
+    - Try out agile practices that make the most sense
+    - Don’t be afraid of trial and error
+
 
 ## The tools/concepts for Developing a programming project
 
-```{admonition} Parts to be covered
+!!! admonition "Parts to be covered"
 
-- &#9745; Planning
-  - Pseudocode
-  - Unified Modelling Language
-- &#9745; Testing
-  - Different levels
-- &#9745; Source/version control
-  - Git etc
-- &#9745; Collaboration
-  - GitHub
-- &#9745; Reproducibility (for you and others)
-  - Dependencies
-  - (Workflows)
-  - Containers (deployment)
-- &#9745; Sharing
-  - open science
-  - citation
-  - licensing  
-- &#9745; Documentation
-  - Tutorials
-  - How-to guides
-  - Explanation
-  - Reference 
-```
+    - &#9745; Planning
+        - Pseudocode
+        - Unified Modelling Language
+    - &#9745; Testing
+        - Different levels
+    - &#9745; Source/version control
+        - Git etc
+    - &#9745; Collaboration
+        - GitHub
+    - &#9745; Reproducibility (for you and others)
+        - Dependencies
+        - (Workflows)
+        - Containers (deployment)
+    - &#9745; Sharing
+        - open science
+        - citation
+        - licensing  
+    - &#9745; Documentation
+        - Tutorials
+        - How-to guides
+        - Explanation
+        - Reference 
 
 ## Planning: Analysis and design
 
-```{note}
-"If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe.
--	Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements. It prepares you to build the real thing to reduce any potential risk of failure. "
-```
+!!! note
 
-```{note}
-- Planning step is to ...
-   - get an overview of the project/program.
-   - help planning writing the code
-   - identify parts needed
-   - (risk analysis)
-- Can be divided into analysis and design
-- Analysis part is to state the problem and define inputs and outputs
-   - graphical tools like UML
-   - text
-   - objects in OOP
-- Design phase to find out the specific algorithms needed
-   - pseudocode+UML
-   - classes in OOP
-   - functions/modules in functional programming
-```
+    "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe.
+    -	Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements. It prepares you to build the real thing to reduce any potential risk of failure. "
+
+
+!!! note
+    - Planning step is to ...
+        - get an overview of the project/program.
+        - help planning writing the code
+        - identify parts needed
+        - (risk analysis)
+    - Can be divided into analysis and design
+    - Analysis part is to state the problem and define inputs and outputs
+        - graphical tools like UML
+        - text
+        - objects in OOP
+    - Design phase to find out the specific algorithms needed
+        - pseudocode+UML
+        - classes in OOP
+        - functions/modules in functional programming
+
 
 ### Top-down
 1. Clearly state whole problem
@@ -221,21 +221,21 @@ stop
 ### Bottom-Up
 Start with parts first and develop a bigger organization with time.
 
-```{Discussion} How do you program? 
-**Menti**
-- Top-down
-- Bottom-up
-```
+!!! discussion "How do you program?" 
+
+    **Menti**
+    - Top-down
+    - Bottom-up
 
 ### Flowcharts or Unified Modeling Language
 
 <https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools>
 
 - Modeling
-  - Code generation
-  -	Reverse engineering
-  - Analyze code complexity
-  -	Other metrics
+    - Code generation
+    - Reverse engineering
+    - Analyze code complexity
+    - Other metrics
 
 ```{graphviz}
 digraph{
@@ -249,11 +249,10 @@ Interaction -> Sequence, Communication, Timing, "Interaction overview"
 }
 ```
 
-```{admonition} We will in the course use
-  - Sequence
-  - Activity/algorithm flowchart
-  - Class diagrams
-```
+!!! admonition "We will in the course use"
+    - Sequence
+    - Activity/algorithm flowchart
+    - Class diagrams
 
 ##### Sequence
 
@@ -346,26 +345,26 @@ Car -- Person : < owns
 
 #### Tools
 - **PlantUML** used in this course
-  - Open-source
-  -	Can be integrated with IDE:s, Java documentation, Word
-  -	Scripts rather than drawing tools
-  -	<http://www.plantuml.com/plantuml>
+    - Open-source
+    -	Can be integrated with IDE:s, Java documentation, Word
+    -	Scripts rather than drawing tools
+    -	<http://www.plantuml.com/plantuml>
 - Graphviz
-  - Graphviz is open source graph visualization software. 
-  - Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. 
-  - It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
-  - <https://graphviz.org/>
+    - Graphviz is open source graph visualization software. 
+    - Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. 
+    - It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
+    - <https://graphviz.org/>
 - Mermaid
-  - Open-source
-  - Not as many diagrams
-  - renders in browser
-  - <https://mermaid.js.org/>
+    - Open-source
+    - Not as many diagrams
+    - renders in browser
+    - <https://mermaid.js.org/>
 
 ### Pseudocode
 - Pseudocode does not have syntax rules of any particular language
-   - no systematic standard form. 
+    - no systematic standard form. 
 - Some borrow style and syntax from some conventional programming language
-   - like Fortran, Pascal, BASIC, C, C++, Java, Lisp, and ALGOL. 
+    - like Fortran, Pascal, BASIC, C, C++, Java, Lisp, and ALGOL. 
 - Variable declarations are typically omitted. 
 - Function calls and blocks of code, such as code contained within a loop, are often replaced by a one-line natural language sentence.
 
@@ -394,8 +393,8 @@ Car -- Person : < owns
     return f
 ```
 - Depending on the writer, pseudocode may therefore vary widely in style, 
-  - from a near-exact imitation of a real programming language at one extreme
-  - to a description approaching formatted prose at the other. 
+    - from a near-exact imitation of a real programming language at one extreme
+    - to a description approaching formatted prose at the other. 
 
 #### Mathematical style pseudocode
 - Used in numerical computation
@@ -408,19 +407,18 @@ Car -- Person : < owns
 \sum_{k\in S} x_k
 ```
 
-```{objectives}
-   - [Planning phase section](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html) aims to 
-     - Introduce flowcharts and UML expressions
-     - Get into UML coding with PlantUML
-     - Test Pseudocoding
-```
+!!! objectives
+    - [Planning phase section](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html) aims to 
+       - Introduce flowcharts and UML expressions
+       - Get into UML coding with PlantUML
+       - Test Pseudocoding
 
-```{seealso}
-- Diagrams will be cover on
-  - Tuesday during several part of the [Software development processes](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md#software-development-processes)
-  - Friday during [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)
+!!! seealso
 
-```
+    - Diagrams will be cover on
+        - Tuesday during several part of the [Software development processes](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md#software-development-processes)
+        - Friday during [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)
+
 
 ## Testing
 
