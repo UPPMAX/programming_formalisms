@@ -34,12 +34,24 @@ You have a Zoom good setup, if:
 
 ### Visual Studio
 
+You have installed Visual Studio, if:
+
+- [ ] You can start Visual Studio
+
 ???- question "Do you have Visual Studio Code installed?"
 
      - Yes!
      - No, go to [Visual studio](prereqs.md#visual-studio)
 
 ### Git
+
+You have installed `git`, if:
+
+- [ ] In a terminal, `git version` shows your version of `git`
+- [ ] In a terminal, `git config --global user.name` shows your name
+- [ ] In a terminal, `git config --global user.email` shows your email address
+- [ ] In a terminal, `git config --global pull.rebase` shows something, 
+      e.g. the text `false`
 
 ???- question "Do you have Git installed?"
 
@@ -56,11 +68,6 @@ You have a Zoom good setup, if:
      - Yes!
      - No, go to [Configure Git](prereqs.md#configure-git)
 
-???- question "Have you set up a GitHub account?"
-
-     - Yes!
-     - No, go to [Github](prereqs.md#github)
-
 ???- question "Have you set up a git ssh-keys?"
 
      - Test: `ssh -T git@github.com`
@@ -69,6 +76,18 @@ You have a Zoom good setup, if:
      
      - If not working, go to [to here](prereqs.md#git-github-connection-through-ssh-keys)
 
+You have good enough knowledge of `git`, if:
+
+- [ ] You know what cloning is
+- [ ] You know what staging is
+- [ ] You know what a commit is
+- [ ] You know what pushing is
+- [ ] You know what pulling is
+- [ ] You know how to see the status of your `git` repository
+- [ ] You can do a basic `git` workflow, 
+      as described [here](https://uppmax.github.io/programming_formalisms/misc/git_workflow/)
+      in 5 minutes. 
+
 ???- question "Do you know basic git?"
 
      - I am familiar with basic git commands like 
@@ -76,7 +95,22 @@ You have a Zoom good setup, if:
      
      - No, go to [Git courses](prereqs.md#git-courses)
 
+### GitHub
+
+You have set up a GitHub account, if:
+
+- [ ] You can login at [https://github.com/](https://github.com/)
+
+???- question "Have you set up a GitHub account?"
+
+     - Yes!
+     - No, go to [Github](prereqs.md#github)
+
 ### Python
+
+You have installed Python, if:
+
+- [ ] In a terminal, running `python --version` or `python3 --version` shows the Python version.
 
 ???- question "Have you installed Python?"
 
@@ -87,6 +121,12 @@ You have a Zoom good setup, if:
 
      - Yes!
      - No, go to Python in VS Code](prereqs.md#python-in-vs-code)
+
+You know enough basic Python, if:
+
+- [ ] You can describe what a variable is
+- [ ] You can change the value of a variable
+- [ ] You can show the value of a variable on screen
 
 ???- question "Do you know basic Python?"
 
@@ -106,7 +146,7 @@ Do you want to work in another environment you are used to, you can do some of t
 - You can work in the environment(s) you are used to.
 - Many of the teachers will use **Visual Studio Code (VS code)**
 - This is not necessary if you have other solution
-- Benefit:  
+- Benefit:
     - integrate you terminal and Git work with **code development**
     - graphical user interface
     - available in **all platforms**
@@ -150,11 +190,8 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 
 === "Linux"
 
-    - We will use terminal to some extent.
-    - Chances are big that you already have **git installed on your computer**.     
-    - You can check by running e.g. `git --version`. 
-        -  and if it reports 2.28 or higher, then you are good.
-    - If you have a very old version of git or you don't have it, install it following the Linux instructions [here](https://coderefinery.github.io/installation/git-in-terminal/#installation)     
+    - `git` comes installed with all Linux distributions
+    - To install `git`, do `sudo apt-get install git`
 
 !!! info
 
