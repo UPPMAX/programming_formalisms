@@ -8,6 +8,8 @@ The frequently asked questions, about:
 
 ## Eligibility
 
+![](./img/eligibility.png)
+
 ### I have never programmed before. Am I eligible?
 
 Not yet (for your own good)!
@@ -29,11 +31,14 @@ In the course, we will use Python as the workhorse language,
 as most of our learners have experience with Python.
 
 You will write code in Python in exercises.
-To make that possible for non-Python programmers,
-(1) code will be simple and/or copy-pasted, (2) learners
-are usually paired up, so that usually one of the learners knows Python.
+To make that possible for non-Python programmers:
+
+- code will be simple and/or copy-pasted
+- learners are usually paired up, so that usually one of the learners knows Python.
 
 ## Preparation
+
+![](./img/preparation.png)
 
 ### How do I prepare?
 
@@ -48,6 +53,8 @@ Not being able to talk and/or share your screen and/or
 your camera is likely to make you feel excluded.
 
 ## Course teaching
+
+![](./img/course_teaching.png)
 
 ### What is the goal of the shared project?
 
