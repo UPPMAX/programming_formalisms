@@ -8,7 +8,7 @@ The frequently asked questions, about:
 
 ## Eligibility
 
-![](./img/eligibility.png)
+![](./img/eligibility.jpg)
 
 ### I have never programmed before. Am I eligible?
 
@@ -38,7 +38,7 @@ To make that possible for non-Python programmers:
 
 ## Preparation
 
-![](./img/preparation.png)
+![](./img/preparation.jpg)
 
 ### How do I prepare?
 
@@ -54,7 +54,7 @@ your camera is likely to make you feel excluded.
 
 ## Course teaching
 
-![](./img/course_teaching.png)
+![](./img/course_teaching.jpg)
 
 ### What is the goal of the shared project?
 
