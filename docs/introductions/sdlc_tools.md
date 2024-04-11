@@ -55,6 +55,8 @@
 4.	Test
 5.	Development and maintenance
 
+
+<!---
 ```graphviz dot waterfall.svg
 digraph {
    rankdir=LR;
@@ -70,7 +72,7 @@ digraph G {
     Earth -> Mars
 }
 ```
-
+--->
 
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
