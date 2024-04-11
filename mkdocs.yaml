@@ -27,6 +27,7 @@ nav:
     - Testing, using a formal testing framework: testing/testing_framework.md
     - Testing, continuous integration: testing/continuous_integration.md
     - Testing, testing in a team: testing/testing_in_a_team.md
+    - Summary of day: wednesday_summary.md
   - Thursday:
     - Intro: thursday_intro.md
     - Data structures: data_structures/README.md
@@ -41,6 +42,7 @@ nav:
     - Optimisation, misconceptions: optimisation/misconceptions.md
     - Optimisation, big-O: optimisation/big_o.md
     - Optimisation, runtime speed profiles: optimisation/runtime_speed_profiles.md
+    - Summary of day: thursday_summary.md
   - Friday:
     - Intro: friday_intro.md
     - Modular programming: modularity/modular.md
