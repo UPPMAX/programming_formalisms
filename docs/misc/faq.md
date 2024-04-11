@@ -60,11 +60,19 @@ your camera is likely to make you feel excluded.
 
 See [Projects](projects.md) for the goal of the shared project.
 
+### How is the course prepared?
+
+- meetings
+- lesson plans in the course material
+- general lesson plans, which can be found in [the 'lesson_plans' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/lesson_plans) of this GitHub repository
+
 ### What happens to the retrospectives?
 
-These are published online in unedited form in
-[the 'retrospectives' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/retrospectives)
-of this GitHub repository.
+Retrospectives are:
+
+- published online in unedited form in [the 'retrospectives' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/retrospectives) of this GitHub repository
+- discussed by the teachers after the lessons
+- reflected upon, where the reflections can be found in [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
 
 ### Why do you publish your retrospectives?
 
@@ -72,12 +80,16 @@ Because we like to be transparent.
 
 ### What happens to the evaluations?
 
-These are published online in unedited form in
-[the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations)
-of this GitHub repository.
+Evaluations are:
+
+- published online in unedited form in [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations) of this GitHub repository.
+- discussed by the teachers after the course
+- reflected upon, where the reflections can be found in [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
 
 ### Why do you publish your evaluations?
 
 Because we like to be transparent.
 
+### Why do you publish your reflections?
 
+Because we like to be transparent.
