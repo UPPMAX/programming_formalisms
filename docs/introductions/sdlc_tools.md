@@ -57,15 +57,14 @@ html comment
 5.	Development and maintenance
 
 
-<!--
-```graphviz dot waterfall.svg
+```graphviz
 digraph {
    rankdir=LR;
   "Requirements" -> "Analysis and design" -> "Development" -> Test -> "Development and maintenance";
 }
 ```
 
-```graphviz dot attack_plan.svg
+```graphviz
 digraph G {
     rankdir=LR
     Earth [peripheries=2]
@@ -73,7 +72,7 @@ digraph G {
     Earth -> Mars
 }
 ```
--->
+
 
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
