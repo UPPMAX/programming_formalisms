@@ -125,8 +125,34 @@ Different projects should have separate folders
 !!! note
 - If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
 
+--------------------------------
+
 
 ## Start with a new GitHub project
+
+See the tree!
+
+```code
+├── CODE_OF_CONDUCT.md
+├── design
+│   └── README.md
+├── fairytale.md
+├── learners
+│   ├── README.md
+│   └── richel
+│       └── README.md
+├── LICENSE
+├── programming_formalisms_student_team_summer_2024_logo_50.png
+├── README.md
+├── run_and_tumble.jpg
+└── src
+    └── bacsim
+        └── README.md
+```
+
+
+## WARNING OLD
+
 
 
 ### Type-along: Create a new repository on GitHub
