@@ -133,7 +133,7 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
         - Write code to pass test
    
 !!! seealso
-    - [Software Development Lifecycle on Tuesday](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md]
+    - [Software Development Lifecycle on Tuesday](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md)
 
 
 !!! admonition "Conclusion"
@@ -370,7 +370,7 @@ Car -- Person : < owns
 
 **Example**
 
-```{code}
+```code
   algorithm ford-fulkerson is
     input: Graph G with flow capacity c, 
            source node s, 
@@ -399,7 +399,7 @@ Car -- Person : < owns
 #### Mathematical style pseudocode
 - Used in numerical computation
 
-```{math}
+```math
 \sum_{k\in S} x_k
 ```
 
@@ -455,13 +455,13 @@ stop
 
 ```
 
-```{seealso}
+!!! seealso
 
-- More about testing day 3.
-  - [Test-driven development(TDD)](https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture.pdf)
-  - [Testing lecture](https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture.pdf)
+    - More about testing day 3.
+    - [Test-driven development(TDD)](https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture.pdf)
+    - [Testing lecture](https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture.pdf)
 
-```
+
 ## Source/version control and collaboration
 
 ###  The essence of version control
@@ -506,23 +506,21 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
   - |:-1:| What if you want to work on **multiple versions** at the same time? Do you make a copy? How do you merge copies?
   - |:-1:| What if you **don't have internet**?
 
-```{discussion} Why Git?
-We will use [Git](https://git-scm.com) to record snapshots of our work:
-- **Easy to set up**: no server needed.
-- **Very popular**: chances are high you will need to contribute to somebody else's code which is tracked with Git.
-- **Distributed**: good backup, no single point of failure, you can track and
-  clean-up changes offline, simplifies collaboration model for open-source
-  projects.
-- Important **platforms** such as [GitHub](https://github.com), [GitLab](https://gitlab.com), and [Bitbucket](https://bitbucket.org)
-  build on top of Git.
+!!! discussion "Why Git?"
 
-However, any version control is better than no version control and it is OK to prefer a different tool than Git.
+    We will use [Git](https://git-scm.com) to record snapshots of our work:
+    - **Easy to set up**: no server needed.
+    - **Very popular**: chances are high you will need to contribute to somebody else's code which is tracked with Git.
+    - **Distributed**: good backup, no single point of failure, you can track and clean-up changes offline, simplifies collaboration model for open-source projects.
+    - Important **platforms** such as [GitHub](https://github.com), [GitLab](https://gitlab.com), and [Bitbucket](https://bitbucket.org) build on top of Git.
 
-Other tools:
-- [Subversion](https://subversion.apache.org)
-- [Mercurial](https://www.mercurial-scm.org)
-- [Pijul](https://pijul.org/)
-```
+    However, any version control is better than no version control and it is OK to prefer a different tool than Git.
+
+    Other tools:
+    - [Subversion](https://subversion.apache.org)
+    - [Mercurial](https://www.mercurial-scm.org)
+    - [Pijul](https://pijul.org/)
+
 ### Sharing Online
 
 - What if the hard disk fails?
@@ -546,12 +544,13 @@ There are different types of remotes:
 - [Bitbucket](https://bitbucket.org) is yet another popular commercial site.
 - Another option is [NotABug](https://notabug.org)
 
-```{objectives}
-   - [Source and version control](https://uppmax.github.io/programming_formalisms_intro/sourcecontrol.html) aims to
-      - Introduce git and GitHub
-      - Get into working with git
-      - Get into using GitHub as a remote repository
-```
+!!! objectives
+   
+    - [Source and version control](https://uppmax.github.io/programming_formalisms_intro/sourcecontrol.html) aims to
+        - Introduce git and GitHub
+        - Get into working with git
+        - Get into using GitHub as a remote repository
+
 
 ## Collaboration
 
@@ -564,17 +563,17 @@ There are different types of remotes:
   -  we will be able to propose changes to repositories of others
   -  review changes submitted by external contributors.
 
-```{objectives}
+!!! objectives
    - [Collaboration](https://uppmax.github.io/programming_formalisms_intro/collab.html) aims to 
      - Get into working more with GitHub for collaboration
      - **Centralized** workflow (good within a group)
      - **Forking** (better for contribution to other's project)
      - Contributing to other's projects
-```
 
-```{seealso}
-- Git and GitHub will be used in the other days as well
-```
+
+!!! seealso
+    - Git and GitHub will be used in the other days as well
+
 
 ## Reproducibility and sharing
 
@@ -586,52 +585,54 @@ There are different types of remotes:
 
 - We will integrate this topic in the hands-on.
 - We will discuss different methods and tools for better reproducibility in research software and data.
-  - Virtual environments with ``pip install`` (venv/virtualenv) will be covered in the hands-on.
-  - Conda environment is referred to in the extra material. 
+    - Virtual environments with ``pip install`` (venv/virtualenv) will be covered in the hands-on.
+    - Conda environment is referred to in the extra material. 
 - We will demonstrate how version control, workflows, containers, and package managers can be used to record reproducible environments and computational steps.
 - [Extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html)
 
-```{objectives}
-   - [More about reproducibility](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html) aims to 
-     - Get a short overview of recording dependencies
-     - Get short intro to tools:
-       - Pip and PyPI
-       - Conda
-       - Environments
-       - Tools for other languages than Python
+!!! objectives
+    - [More about reproducibility](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html) aims to 
+       - Get a short overview of recording dependencies
+       - Get short intro to tools:
+           - Pip and PyPI
+           - Conda
+           - Environments
+           - Tools for other languages than Python
    - We will develop our code in a virtualenvironment with the python tool ``venv ``   
   
 ```
   
 ### Sharing and licensing and citations
  
-```{Discussion} One-time usage towards distributed package
-**Menti**
-- Have others used your code?
-- Did you plan it from beginning?
-- Did you take actions somehow?
-```
+!!! Discussion "One-time usage towards distributed package"
+
+    **Menti**
+    - Have others used your code?
+    - Did you plan it from beginning?
+    - Did you take actions somehow?
+
 #### Open science
 - The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
 - **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
-- 
-```[admonition} FAIR
 
-**The current buzzword for data management**
-- You may be asked about it in, for example, making data management plans for grants:
+!!! admonition "FAIR"
 
-- **F**indable
-  - Will anyone else know that your data exists?
-  - Solutions: put it in a standard repository, or at least a description of the data. Get a digital object identifier (DOI).
-- **A**ccessible
-   - Once someone knows that the data exists, can they get it?
-   - Usually solved by being in a repository, but for non-open data, may require more procedures.
-- **I**nter-operable
-   - Is your data in a format that can be used by others, like csv instead of PDF?
-   - Or better than csv. Example: 5-star open data
-- **R**eusable
-   - Is there a license allowing others to re-use?
-```
+    **The current buzzword for data management**
+    - You may be asked about it in, for example, making data management plans for grants:
+
+    - **F**indable
+        - Will anyone else know that your data exists?
+        - Solutions: put it in a standard repository, or at least a description of the data. Get a digital object identifier (DOI).
+    - **A**ccessible
+         - Once someone knows that the data exists, can they get it?
+         - Usually solved by being in a repository, but for non-open data, may require more procedures.
+    - **I**nter-operable
+         - Is your data in a format that can be used by others, like csv instead of PDF?
+         - Or better than csv. Example: 5-star open data
+    - **R**eusable
+         - Is there a license allowing others to re-use?
+
+
 ### Licensing
 
 #### Copyright
@@ -647,12 +648,12 @@ There are different types of remotes:
 
 **Examples**
 -  Custom/closed/proprietary
-  - Derivative work typically not possible
-  - Unusual in academics 
+    - Derivative work typically not possible
+    - Unusual in academics 
 -  Permissive (**MIT**, BSD, Apache)
-  - Derivative work does not have to be shared    
+    - Derivative work does not have to be shared    
 -  Weak copyleft share-alike (LGPL, MPL)
-  - Derivative work is free software but is limited to the component    
+    - Derivative work is free software but is limited to the component    
 -  Strong copyleft share-alike (**GPL**, AGPL)
   - Derivative work is free software and derivative work extends to the combined project    
 
@@ -663,70 +664,71 @@ There are different types of remotes:
 - Think the same as for a scientific paper
 - [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
 
-```{seealso}
-- Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesdays afternoon.
-```
+!!! seealso
+    - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
 
 
-```{keypoints}
-- Share your code! Eventually others will probably use it anyway.
-- Licence your software and do it early. **Default is “no one can make copies or derivative works”**.
-- Get DOI or at least state how to cite your software
-```
 
-```{objectives}
+!!! keypoints
 
-- [More about sharing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html) aims to:
-  - introduce reproducibility and sharing, licensing and citation
-  - get into thinking about dependencies and solutions
-  - get into choosing license, citation and DOI
-```
+    - Share your code! Eventually others will probably use it anyway.
+    - Licence your software and do it early. **Default is “no one can make copies or derivative works”**.
+    - Get DOI or at least state how to cite your software
+
+
+!!! objectives
+
+    - [More about sharing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html) aims to:
+        - introduce reproducibility and sharing, licensing and citation
+        - get into thinking about dependencies and solutions
+        - get into choosing license, citation and DOI
+
 
 ## Documentation
 
-```{admonition} Documentation comes in different forms
+!!! admonition "Documentation comes in different forms"
 
-What *is* documentation?
-  - **Tutorials**: learning-oriented, allows the newcomer to get started
-  - **How-to guides**: goal-oriented, shows how to solve a specific problem
-  - **Explanation**: understanding-oriented, explains a concept
-  - **Reference**: information-oriented, describes the machinery
-  **Not to forget**
-  - Project documentation:
-    - requirements: what is the goal of the software, risks, platforms
-    - the analysis: pseudocode and UML
-    - risk analysis
-```
+    What *is* documentation?
+        - **Tutorials**: learning-oriented, allows the newcomer to get started
+        - **How-to guides**: goal-oriented, shows how to solve a specific problem
+        - **Explanation**: understanding-oriented, explains a concept
+        - **Reference**: information-oriented, describes the machinery
+        **Not to forget**
+        - Project documentation:
+            - requirements: what is the goal of the software, risks, platforms
+            - the analysis: pseudocode and UML
+            - risk analysis
 
 **There is no one size fits all**: often for small projects a `README.md` or
 `README.rst` can be enough (more about these formats later).
 
-```{objectives}
-   - [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html) aims to:
-     - introduce motivation for documentation
-     - get tips for in-code documentation
-     - get tips for README files
-     - get tips for full documentation and tutorials
-```
+!!! objectives
+     - [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html) aims to:
+         - introduce motivation for documentation
+         - get tips for in-code documentation
+         - get tips for README files
+         - get tips for full documentation and tutorials
+
 
 ## Summary of SDLC tools
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
 
-```{Keypoints}
-- Software development is both series of steps: 
-     1.	Requirements
-     2.	Analysis and design
-     3.	Development
-     4.	Test
-     5.	Development and maintenance
-- ... and iteration of these
-- Planning for reproducibility, modularity and documentation should be started in the beginning
-- Tools for the developer
-  - Planning: UML and pseudocode
-  - Development iteration: git
-  - Testing: test functions (Covered later)
-  - Collaboration: GitHub
-  - Sharing: GitHub, licenses, citation
-  - Documentation: In-code, READMEs, html
+!!! Keypoints
 
-```
+    - Software development is both series of steps: 
+        1.	Requirements
+        2.	Analysis and design
+        3.	Development
+        4.	Test
+        5.	Development and maintenance
+    - ... and iteration of these
+    - Planning for reproducibility, modularity and documentation should be started in the beginning
+    - Tools for the developer
+        - Planning: UML and pseudocode
+        - Development iteration: git
+        - Testing: test functions (Covered later)
+        - Collaboration: GitHub
+        - Sharing: GitHub, licenses, citation
+        - Documentation: In-code, READMEs, html
+
+
