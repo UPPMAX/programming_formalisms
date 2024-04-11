@@ -7,7 +7,7 @@
     - learn bout the tools and processes in the software development cycle.
     - start a software project following a formalized development and tools.
 
-!!! info How?
+!!! info "How?"
 
     1.  We start with a more theoretical introduction covering the software and tools and mindsets for software development.
 

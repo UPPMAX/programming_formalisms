@@ -5,7 +5,7 @@
 
     - How to make your program work for others?
 
-!!! info Content
+!!! info "Content"
 
    - We will prepare for use of your code
    - Revisit licence
@@ -32,6 +32,15 @@
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
+
+!!! info TOC
+
+    - Overview
+        - Recording dependencies
+        - workflows
+        - containers
+    - Make a package    
+
 
 !!! note "Think about:"
     

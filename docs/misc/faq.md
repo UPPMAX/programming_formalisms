@@ -2,7 +2,7 @@
 
 The frequently asked questions, about:
 
-- [egilibity](#eligibility), i.e. when to join the course
+- [eligibility](#eligibility), i.e. when to join the course
 - [preparation](#preparation)
 - [course teaching](#course-teaching), i.e. how the course is conducted and ideas behind it
 

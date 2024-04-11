@@ -9,15 +9,16 @@
     - There seem to be many concepts in this course. What do they mean?
 
 
-!!! info Content
+!!! info "Content"
 
-    1.  We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
+    We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
 
 
 !!! info "Learning objectives of 'SDLC tools'"
 
-    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
-
+    - Identify the main topics and objectives for the week's lessons.
+    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.
+    - We will set the start in why a formalized development of software is needed.
 
 !!! note "Instructor notes"
 
@@ -38,7 +39,17 @@
     - Theory 20
     - Discussions 10 min
 
+!!! info "TOC"
 
+    - What is software?
+        - software concepts
+        - types
+        - outcome
+            - correct, reusable, efficient, changable
+        - modularity  
+        - functional vs object-orientation
+    - Example
+    - SLDC   
 
 
 ## What is software?
@@ -85,7 +96,6 @@
     - Independent _modules_
     - Encapsulation/_information hiding_
    
-
 ## Code Example???
    
 ## Software Development Life Cycle (SDLC)

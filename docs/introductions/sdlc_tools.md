@@ -6,7 +6,7 @@
     - What are the tools for a project?
 
 
-!!! info Content
+!!! info "Content"
 
     - We will have an introduction to some SDLC key features
     - We will get some theory of project tools and thinking.
@@ -32,6 +32,21 @@
     - Theory 20
     - Discussions 10 min
 
+!!! info "TOC"
+
+    - Review SDLC steps
+        - waterfall and iteration
+    - Planning: Analysis and design
+        - top-down vs bottom-up
+        - UML (mermaid)
+        - pseudocode
+    - Testing
+    - Source/version control
+    - Collaboration
+    - Reproducibility and sharing
+    - Documentation
+    
+
 ## The waterfall model
 
 1.	Requirements
@@ -40,21 +55,31 @@
 4.	Test
 5.	Development and maintenance
 
-```{graphviz}
+```graphviz dot waterfall.svg
 digraph {
    rankdir=LR;
   "Requirements" -> "Analysis and design" -> "Development" -> Test -> "Development and maintenance";
 }
 ```
 
+```graphviz dot attack_plan.svg
+digraph G {
+    rankdir=LR
+    Earth [peripheries=2]
+    Mars
+    Earth -> Mars
+}
+```
+
+
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
-```{warning}
-- Error is spreading 
-  - small mistakes in the beginning will have large impact on the end result. 
-    - e.g. bugs, architecture limiting extensions
-  - large costs economically and timely
-```
+!!! warning}
+    - Error is spreading 
+    - small mistakes in the beginning will have large impact on the end result. 
+        - e.g. bugs, architecture limiting extensions
+    - large costs economically and timely
+
 
 
 ## Include iteration
