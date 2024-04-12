@@ -52,6 +52,12 @@ You will be working together with other learners a lot.
 Not being able to talk and/or share your screen and/or
 your camera is likely to make you feel excluded.
 
+### Do I really need a git SSH key?
+
+No.
+
+But is is thought of to be quite convenient :-)
+
 ## Course teaching
 
 ![](./img/course_teaching.jpg)
