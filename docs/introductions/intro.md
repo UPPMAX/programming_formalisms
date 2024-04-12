@@ -46,8 +46,6 @@
         - types
         - outcome
             - correct, reusable, efficient, changable
-        - modularity  
-        - functional vs object-orientation
     - Example
     - SLDC   
 
@@ -57,7 +55,7 @@
 - set of computer programs and associated documentation and data.
 - This is in contrast to hardware, from which the system is built and which actually performs the work. 
 - **User-written software: End-user development**
-  - Users create this software themselves and _often overlook how important it may be to others_.
+    - Users create this software themselves and _often overlook how important it may be to others_.
 
 ### Some software concepts
 - program
@@ -67,16 +65,27 @@
 - application
 ---
 
-```{admonition} Scripting vs programming
-  - **Python** is an **interpreted language**.
-    - Python uses an interpreter to translate and run its code. Hence Python is a **scripting language**.
-  - Programs written in **C++** are **compiled** and then the compiled code runs to generate the output.
-    - Hence, C++ is  a **programming language** and not a scripting language, since scripting languages are directly interpreted at run time and no prior compilation of the code takes place.
----
-
-```{Note}
+!!! Note
    We will not be very definite in the course in when to use scripting, program or tools 
-```
+
+## Different types of Scientific software:
+- analysis of data
+    - statistics
+    - figures
+    - visualization
+- tools for process data
+    - refining data (formatting)
+    - bioinformatics
+- workflows
+- modelling (mimic the reality)
+    - simulations time-varying bahaviour of a system
+    - mathematical models of relationships among variables in a system 
+- decision assistance
+
+!!! discussion
+
+    **What do you develop for?**
+    - Use Menti
 
 ### Outcome of a Program
 - **Correct**
@@ -97,16 +106,11 @@
     - Encapsulation/_information hiding_
    
 ## Code Example???
-```{Discussion}
-**What do you develop for?**
-- Use Menti
-```
 
 ???+ exercise
 
     **Planet application**
-    - Make a program that simulates the Earth's change of orbit due to the interaction with other planets-
-
+    - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in MATLAB with no thought of best practices, just trying to solve the problem!
 
     ???- Code
@@ -234,59 +238,53 @@
         - **Efficient**?
         - **Reusable**?
         - **Changeable**?
-    
-
-
-
-   
+      
 ## Software Development Life Cycle (SDLC)
 
 - We need a workflow in our programming projects!
 
 ### Some common steps 
 
-- Planning
-  - Analysis and design
-- Development
-  - Source control
-  - Algorithms
-  - In-code documentation
-  - Optimization
-    - Parallelism
-- Test
-- Development and maintenance
-  - Documentation
-  - Reproducibility and sharing
+- **Planning**
+    - Analysis and design
+- **Development**
+    - Source control
+    - Algorithms
+    - In-code documentation
+    - Optimization
+        - Parallelism
+    - Tests
+- **Deployment** and **maintenance**
+    - Documentation
+    - Reproducibility and sharing
+        - Packaging and dependencies  
 --- 
 - ... and **Iterations**
 ---
 ### Agile development
-  - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
+    - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
 
-```{seealso}
-More about life cycles in next session and later this week
-```
+!!! seealso
 
-```{todo}
-Links
+    More about life cycles in next session and later this week
 ```
 
 ## Summary of Introduction
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
 
-```{Keypoints}
-- A program shall be or have content/components that is:
-  - Correct
-  - Efficient
-  - Reusable
-  - Changeable
+!!! note "Keypoints"
 
-- Software development is both series of steps: 
-     1.	Requirements
-     2.	Analysis and design
-     3.	Development
-     4.	Test
-     5.	Development and maintenance
-- ... and iteration of these
+    - A program shall be or have content/components that is:
+        - Correct
+        - Efficient
+        - Reusable
+        - Changeable
 
-```
+    - Software development is both series of steps: 
+        1.	Requirements
+        2.	Analysis and design
+        3.	Development
+        4.	Test
+        5.	Development and maintenance
+    - ... and iteration of these
+
