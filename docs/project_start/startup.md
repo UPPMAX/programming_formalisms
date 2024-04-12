@@ -329,32 +329,17 @@ README file should include:
    
 ## Before we continue we need to configure Git
 
-!!! prereq
+!!! note "Pre-requirements
 
-   -  **Git and GitHub should be configured prior to the course**
-      following [Setup](https://uppmax.github.io/programming_formalisms_intro/setup.html).
-      - Test: ``ssh -T git@github.com``
+    -  **Git and GitHub should be configured prior to the course**
+        - Test: ``ssh -T git@github.com``
         - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+    -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
+    -  Students should be familiar with using a **text editor** on their system.
 
 
-   -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
-   -  Students should be familiar with using a **text editor** on their system.
-      - Emacs and Vim are excellent choices if you know how to use them
-      - but Nano or
-      - Notepad on Windows are sufficient.
-      
-    
-   
 !!! Attention
 - Start your terminal of choice
-   - Terminal in Visual Studio code
-   - MAC terminal 
-   - iTerm (Mac)
-   - Git BASH  (Windows)
-   - WSL (Windows subsystem Linux) environment in
-     - MobaxTerm
-     - Powershell
-   - PowerShell
 
 
 If you haven't already configured Git, please follow the instructions in the
@@ -394,7 +379,7 @@ Now you and other people can clone this repository and contribute changes.
 $ git clone git@github.com:<user>/planet-<user>.git
 ```
 !!! tip
-- Using the SSH makes it very straight-forward to upload your local changes back ot GitHub. Use HTTP if you clone repos that do not belong to you or your group.
+- Using the SSH makes it very straight-forward to upload your local changes back to GitHub. Use HTTP if you clone repos that do not belong to you or your group.
 
 
 - This creates a directory called ``planet-<user>`` unless it already exists.
@@ -418,8 +403,9 @@ What just happened?
   - for automatic testing after each commit (Used in the test lessons)
   - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
 
-!!! seealso
-- [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
 
  
 !!! admonition "Parts to be covered!"
