@@ -37,12 +37,23 @@
 
 !!! note "TOC"
 
-    - Demo on starting a project
-        - github --> local git
-    	- own repo???
+    - A test project: Type-along on starting a project
+        - REASON: have tested this step
+	- test project (Planet)
+	    - code file
+            - git init
+            - add and commit
+	    	- you can also start a directory and do git init 
     - Intro documentation 
-        - in-code doc? where to put?
-    - Start with the steps related to the project
+        - order your files
+	   - README
+           - license
+	   - git diff
+    - Start with the steps related to the project (Type-along)
+        - Git locally with config and cloning
+	- mkdir user
+        - work in user/
+        
 
     
 
@@ -58,9 +69,28 @@
    - Let's start in that end and be prepared.
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
+## A test project started locally
+### Initial code base
+- Let's say you have some code you have started to work with
+
+### Initiate a project
 
 
-## Order your files!
+
+### Upload to GitHub
+
+### Start from GitHub and clone to your local computer
+
+!!! note "Write the opposite!"
+- For the course project we do it in this order, but that is not necessary in all cases.
+- Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
+- The reason for starting here is that we can get our PlantUML render in the browser!
+
+
+
+## Introduction to documentation
+
+### Order your files!
 
 - Think that **everything is worth to be part of documentation** (like GitHub directory tree)
 - The parts from the software development cycle
@@ -78,7 +108,7 @@
   - (Full documentation)
   - (Tutorial)
 
-```{admonition} Directory structure
+!!! admonition "Directory structure
 Different projects should have separate folders
   - ReadMe file
   - Data		(version controlled)(.gitignore)
@@ -90,34 +120,54 @@ Different projects should have separate folders
     - Requirements.txt
   - Doc
     - index
-```
 
-```{note}
+
+!!! note
 - If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
 
-```
+--------------------------------
+
 
 ## Start with a new GitHub project
 
-```{note}
-- For the course project we do it in this order, but that is not necessary in all cases.
-- Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
-- The reason for starting here is that we can get our PlantUML render in the browser!
+See the tree!
+
+```code
+├── CODE_OF_CONDUCT.md
+├── design
+│   └── README.md
+├── fairytale.md
+├── learners
+│   ├── README.md
+│   └── richel
+│       └── README.md
+├── LICENSE
+├── programming_formalisms_student_team_summer_2024_logo_50.png
+├── README.md
+├── run_and_tumble.jpg
+└── src
+    └── bacsim
+        └── README.md
 ```
+
+
+## WARNING OLD
+
+
 
 ### Type-along: Create a new repository on GitHub
 
-``````{type-along}
+```!!! type-along
 Make sure that you are **logged into GitHub**.
 
-```{figure} img/New_repo.png
+!!! figure "img/New_repo.png
 :width: 60%
 :class: with-border
 
 To create a repository we either click the green button "New" (top left corner).
-```
 
-```{figure} img/new-top-right.png
+
+!!! figure "img/new-top-right.png
 :width: 60%
 :class: with-border
 
@@ -135,10 +185,10 @@ and
 "Choose a license"
 - Let's choose MIT (we may discuss this later on
 
-```{figure} img/New_repo_formalisms.png
+!!! figure "img/New_repo_formalisms.png
 :width: 100%
 :class: with-border
-```
+
 
 **Done!**
 
@@ -158,7 +208,7 @@ and
   [Markdown](https://commonmark.org/help/)
 - A great guide to README files: [MakeaREADME](https://www.makeareadme.com/)
 
-````{keypoints}
+`!!! keypoints}
 README file should include:
 
   - A descriptive project title
@@ -170,7 +220,7 @@ README file should include:
   - Copy-pastable quick start code example
 
   - Recommended citation
-````
+`
 
 **We are ready to**
 - Extend the README file
@@ -267,7 +317,7 @@ README file should include:
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
   
-```{admonition} Concepts in Git
+!!! admonition "Concepts in Git"
 - **repository**: The project, contains all data and history (commits, branches, tags).
 - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
 - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
@@ -279,7 +329,7 @@ README file should include:
    
 ## Before we continue we need to configure Git
 
-```{prereq}
+!!! prereq
 
    -  **Git and GitHub should be configured prior to the course**
       following [Setup](https://uppmax.github.io/programming_formalisms_intro/setup.html).
@@ -293,9 +343,9 @@ README file should include:
       - but Nano or
       - Notepad on Windows are sufficient.
       
-```    
+    
    
-```{Attention}
+!!! Attention
 - Start your terminal of choice
    - Terminal in Visual Studio code
    - MAC terminal 
@@ -306,7 +356,6 @@ README file should include:
      - Powershell
    - PowerShell
 
-```
 
 If you haven't already configured Git, please follow the instructions in the
 [installation instructions](https://uppmax.github.io/programming_formalisms_intro/setup.html#shell-and-git).
@@ -332,7 +381,7 @@ $ git config --list
 Now you and other people can clone this repository and contribute changes. 
 
 
-``````{type-along}
+```!!! type-along
 - You may want to create a directory for this course. You can do it in the normal way or use your terminal, like this in a good place (like "Courses" if you have that)
   - ``cd Courses``
   - ``mkdir Programming_formalisms``
@@ -344,9 +393,9 @@ Now you and other people can clone this repository and contribute changes.
 ```console
 $ git clone git@github.com:<user>/planet-<user>.git
 ```
-```{tip}
+!!! tip
 - Using the SSH makes it very straight-forward to upload your local changes back ot GitHub. Use HTTP if you clone repos that do not belong to you or your group.
-```
+
 
 - This creates a directory called ``planet-<user>`` unless it already exists.
 
@@ -355,7 +404,7 @@ What just happened?
 - list the files with `ls`
 - **Think of cloning as downloading the `.git` part to your computer**. 
 - After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
-``````
+```
 
 ## Working on GitHub
 
@@ -369,11 +418,11 @@ What just happened?
   - for automatic testing after each commit (Used in the test lessons)
   - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
 
-```{seealso}
+!!! seealso
 - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
-``` 
+
  
-```{admonition} Parts to be covered
+!!! admonition "Parts to be covered!"
 
 - &#9745; Planning
   - Pseudocode
@@ -393,11 +442,11 @@ What just happened?
   - &#9745; licensing  
 - &#9744; Documentation
 
-```
 
 
-```{keypoints}
+
+!!! keypoints
 - A repository can have one or multiple remotes (we will revisit these later).
 - A remote (GitHub) in this case serves as a full backup of your work.
 - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
-```
+

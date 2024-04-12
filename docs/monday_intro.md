@@ -32,8 +32,10 @@
 
 ???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
 
-    - Define the fundamental concepts introduced in the course and explain their significance in software development.
-    - Explain the core principles and theories underlying software development concepts covered in the course.
+    - The student has an undertanding of the overview concepts software development process and understands the basic reasoning behind iterative software development
+    - Content
+        - Define the fundamental concepts introduced in the course and explain their significance in software development.
+        - Explain the core principles and theories underlying software development concepts covered in the course.
 
 
 - [Software Development Lifecycle (SDLC)](introductions/sdlc_tools.md)
@@ -53,20 +55,22 @@
 
 ???- info "Learning objectives of 'Project start with analysis and design'"
 
-    - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
-    - Apply analytical and design techniques to plan and conceptualize software development projects effectively.
+    - Analysis
+        - The student understands and can show how to de construct a project breif into a requirments document then transfer that into a simple matrix based risk anlysis.
+        - The students complete a requirements gathering and risk analysis for the Student Project
+    - Content    
+        - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
+        - Apply analytical and design techniques to plan and conceptualize software development projects effectively.
 
-    - understand the basics of a analysis and design (LARS)
-    - analysis
-      - Talk about risks
-      - UML
-    - design
-      - UML, (pseudocode)
-      - modular intro
-      - object orientation intro (students ready for Tue morning)
-    - get started with planning the project (LARS)
-        - We will have an introduction to some SDLC key features
-        - We will get some theory of project tools and thinking.
+        - understand the basics of a analysis and design 
+        - analysis
+            - Talk about risks
+            - UML
+        - design
+            - UML, (pseudocode)
+            - modular intro
+            - object orientation intro (students ready for Tue morning)
+        - get started with planning the project 
 
 - [Project start with analysis and design](project_start/analysis_design.md)
 

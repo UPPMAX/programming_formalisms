@@ -2,6 +2,14 @@
 
 Today we will create a class diagram of our project.
 
+???- info "Learning objectives of 'Design'"
+
+    - The student has an introductory level of understaning of design paradigms, especially with the objectoriented design prinicples
+    - The students can turn a short requirements document and feature list into objects and make an inital class diagram, for the student project.-
+
+**LINK TO MATERIAL**
+
+
 ???- info "Learning objectives for pair programming"
 
     - Understand why pair programming is important
