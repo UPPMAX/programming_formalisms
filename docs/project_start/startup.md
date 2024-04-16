@@ -410,29 +410,40 @@ What just happened?
  
 !!! admonition "Parts to be covered!"
 
-- &#9745; Planning
-  - Pseudocode
-  - Unified Modelling Language
-- &#9744; Testing
-  - Different levels
-  - We don't do this today!
-- &#9745; Source/version control
-  - Git
-    - We have a starting point!
-  - GitHub as remote backup
-- &#9744; Collaboration
-  - GitHub
-- &#9745; Sharing
-  - &#9745; open science
-  - &#9744; citation
-  - &#9745; licensing  
-- &#9744; Documentation
+	- &#9745; Planning
+	    - Pseudocode
+	    - Unified Modelling Language
+	- &#9744; Testing
+	    - Different levels
+	    - We don't do this today!
+	- &#9745; Source/version control
+	    - Git
+	    - We have a starting point!
+            - GitHub as remote backup
+        - &#9744; Collaboration
+  	    - GitHub
+	- &#9745; Sharing
+	    - &#9745; open science
+	    - &#9744; citation
+	    - &#9745; licensing  
+	- &#9744; Documentation
+
+
+## EXTRA
+
+## GitHub
+There are two more ways to create “copies” of repositories into your user space:
+
+- A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
+- You can **import** a repository from another hosting service or web address. This will preserve the history of the imported project.
+
 
 
 
 
 !!! keypoints
-- A repository can have one or multiple remotes (we will revisit these later).
-- A remote (GitHub) in this case serves as a full backup of your work.
-- Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
+
+    - A repository can have one or multiple remotes (we will revisit these later).
+    - A remote (GitHub) in this case serves as a full backup of your work.
+    - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
 
