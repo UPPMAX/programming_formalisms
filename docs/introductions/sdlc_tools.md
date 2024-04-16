@@ -186,6 +186,41 @@ Start with parts first and develop a bigger organization with time.
     - Analyze code complexity
     - Other metrics
 
+```mermaid
+mindmap
+    A["UML diagrams"] --> Structure & Behaviour
+```
+
+```markmap
+# Tutorial
+
+## Text editor
+### Regex
+ctrl + f
+/<regular expression>/
+### Emojjis
+### mathjax & UML
+https://hackmd.io/MathJax-and-UML?both
+- $$
+#### UML
+- markmap
+- sequence
+- flow
+- graphviz
+- mermaid gantt
+- abc
+### table
+https://hackmd.io/s/how-to-create-table
+    table icon 
+    We use |, -, and enter to create table with Markdown.
+### paste from excel
+    Set Enable smart paste
+### search/open notes (spotlight)
+- :mag: icon
+
+```    
+   
+
 ```graphviz
 digraph{
 "UML diagrams"
