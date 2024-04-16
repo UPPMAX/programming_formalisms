@@ -264,7 +264,7 @@
 ### Agile development
     - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
 
-!!! seealso
+!!! note "See also"
 
     More about life cycles in next session and later this week
 ```
