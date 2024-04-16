@@ -186,12 +186,22 @@ Start with parts first and develop a bigger organization with time.
     - Analyze code complexity
     - Other metrics
 
-```mermaid
+``` mermaid
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
+```
+
+
+``` mermaid
 mindmap
     A["UML diagrams"] --> Structure & Behaviour
 ```
 
-```markmap
+``` markmap
 # Tutorial
 
 ## Text editor
