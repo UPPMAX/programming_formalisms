@@ -105,6 +105,93 @@
     - Independent _modules_
     - Encapsulation/_information hiding_
    
+## How to program?
+
+### Independent modules
+- Modular coding is really good!
+- Object-oriented or functional programming, see below.
+- Modularity could be within a program but also for a workflow.
+
+```{demo} Workflow
+- Here's an example of a bash script taking care of runs with executable files.
+  - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
+```
+
+### Functional vs. object-oriented programming
+
+#### Object oriented programming
+- Object-oriented (OO) programming is 
+  - a mindset of mimicking the real-world as:
+  - entities (`objects`) that are different 
+  - or share attributes with each-other (within a `class`)
+  - info-hiding mindset...
+
+```{uml}
+@startuml
+class Elevator{
+  direction : String
+  floor : Integer
+  
+  void goto_floor()
+  void stop()
+  void which_floor()
+}
+@enduml
+```
+
+```{uml}
+@startuml
+object elevator1{
+direction="up"
+floor=2
+}
+object elevator2{
+direction="rest"
+floor=5
+}
+
+@enduml
+
+```
+```{note}
+**Object orientation (OO) in some programming languages**
+- OO (built-in classes)
+  - C++
+  - Java
+  - Python
+  - Julia
+- OO features
+  - Fortran 2003-
+  - MATLAB
+  - Perl
+  - PHP
+- OO object-based (but not class-based)
+  - Javascript
+```
+
+#### Functional programming
+
+- More classical as it is more focused on the algorithms
+- Functions
+- Modules: a way to _gather functions_ with similar functionality
+- Also to some extent info-hiding mindset
+
+```{admonition} To sum up
+
+- At its simplest, functional programming uses immutable data to tell the program exactly what to do. 
+- Object-oriented programming tells the program how to achieve results through objects altering the program's state. 
+- Both paradigms can be used to create elegant code.
+
+```
+
+```{seealso} 
+- More on Tuesday: [Object-orientation](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md#object-orientation)
+- More on Tues: [Algorithms](https://github.com/UPPMAX/programming_formalisms/blob/main/algorithms/algorithms_lecture.pdf)
+- More on Friday: [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)
+
+```
+
+   
 ## Code Example???
 
 ???+ exercise
