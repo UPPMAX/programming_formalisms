@@ -186,8 +186,30 @@ Start with parts first and develop a bigger organization with time.
     - Analyze code complexity
     - Other metrics
 
+#### Tools
+- PlantUML
+    - Open-source
+    -	Can be integrated with IDE:s, Java documentation, Word
+    -	Scripts rather than drawing tools
+    -	requires plug-in to render in browser
+    -	<http://www.plantuml.com/plantuml>
+- Graphviz
+    - open source graph visualization software. 
+    - It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
+    - <https://graphviz.org/>
+- **Mermaid** used in this course
+    - Open-source
+    - Not as many diagrams
+    - renders in browser withput plug-ins
+    - <https://mermaid.js.org/>
+    - https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh1t5fCFurN6SFo7AztfDBGpKj_fcd62c0pvM_zhkzY-JYxx-7px0ZTFKhK5SDNoS50NL1Y6m-QZZ_ziQWsd_ya4fhx8tBrH4Jx993mH1cJium8agyijXssGyre_R_HM5T1mYL4cPtLqtHP8FWbi07n_xMdObW-647yjrKGIhQU3wru0XK0ZNr0_rQmCkWzZYV5WlvuaHiKQuWWpNIg_vpyDeYSB97jEFoSLg3dI9ktXH4B_cJWqw
+
+
 
 ```dot
+---
+title: _Mermaid diagram_ of the UML graph types
+---
 digraph{
 "UML diagrams"
 Structure, Behaviour
@@ -292,23 +314,6 @@ Car *- Wheel : have 4 >
 Car -- Person : < owns
 @enduml
 ```
-
-#### Tools
-- **PlantUML** used in this course
-    - Open-source
-    -	Can be integrated with IDE:s, Java documentation, Word
-    -	Scripts rather than drawing tools
-    -	<http://www.plantuml.com/plantuml>
-- Graphviz
-    - Graphviz is open source graph visualization software. 
-    - Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. 
-    - It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
-    - <https://graphviz.org/>
-- Mermaid
-    - Open-source
-    - Not as many diagrams
-    - renders in browser
-    - <https://mermaid.js.org/>
 
 ### Pseudocode
 - Pseudocode does not have syntax rules of any particular language
