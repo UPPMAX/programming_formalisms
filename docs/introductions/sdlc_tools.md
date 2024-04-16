@@ -167,14 +167,6 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
 5. Test the resulting program
 
 
-```mermaid
-flowchart TD;
-    A["Clearly state whole problem"] -->  B["Define inputs and outputs"] --> C["Design the algorithm with `pseudocode`'&#000A; - Decomposition&#000A;
-        - Stepwise refinement"]  -->  D["Turn the algorithm into specific language statements"] --> E["Test the resulting program"]
-
-```
-
-
 ### Bottom-Up
 Start with parts first and develop a bigger organization with time.
 
@@ -194,7 +186,7 @@ Start with parts first and develop a bigger organization with time.
     - Analyze code complexity
     - Other metrics
 
-```{graphviz}
+```graphviz
 digraph{
 "UML diagrams"
 Structure, Behaviour
