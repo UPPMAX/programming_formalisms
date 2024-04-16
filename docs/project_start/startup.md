@@ -410,22 +410,22 @@ What just happened?
  
 !!! admonition "Parts to be covered!"
 
-    - &#9745; Planning
-        - Pseudocode
-	- Unified Modelling Language
-    - &#9744; Testing
-	- Different levels
-	- We don't do this today!
     - &#9745; Source/version control
 	- Git
 	- We have a starting point!
         - GitHub as remote backup
+    - &#9744; Planning
+        - UML
+        - Pseudocode
+    - &#9744; Testing
+        - Different levels
+        - We don't do this today!
     - &#9744; Collaboration
         - GitHub
     - &#9745; Sharing
-	- &#9745; open science
-	- &#9744; citation
-	- &#9745; licensing  
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing  
     - &#9744; Documentation
 
 
