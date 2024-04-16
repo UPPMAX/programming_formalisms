@@ -78,7 +78,7 @@
     - bioinformatics
 - workflows
 - modelling (mimic the reality)
-    - simulations time-varying bahaviour of a system
+    - simulations time-varying behaviour of a system
     - mathematical models of relationships among variables in a system 
 - decision assistance
 
