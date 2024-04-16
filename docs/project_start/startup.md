@@ -411,8 +411,8 @@ What just happened?
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
-	- Git
-	- We have a starting point!
+        - Git
+        - We have a starting point!
         - GitHub as remote backup
     - &#9744; Planning
         - UML
