@@ -21,7 +21,8 @@ nav:
   - Wednesday:
     - Intro: wednesday_intro.md
     - Branching and merging: git/branches.md
-    - Branching in practice : git/apply_branches.md
+    - Branching in practice: git/apply_branches.md
+    - Understand git pull request with code review: git/pull.md
     - Merging in practice: git/apply_merge.md
     - Testing: testing/README.md
     - Testing, using a formal testing framework: testing/testing_framework.md
