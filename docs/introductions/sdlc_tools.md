@@ -166,15 +166,15 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
 4. Turn the algorithm into specific language statements
 5. Test the resulting program
 
+<!--
+flowchart 
+    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Development and maintenance"] --> Requirements
+-->
+
 ```mermaid
-graph TD;
-    :Clearly state whole problem;
-    :Define inputs and outputs;
-    :Design the algorithm with `pseudocode`'
-        - Decomposition
-        - Stepwise refinement;
-    :Turn the algorithm into specific language statements;
-    :Test the resulting program;
+flowchart TD;
+    A["Clearly state whole problem"] -->  B["Define inputs and outputs"] --> C["Design the algorithm with `pseudocode`' - Decomposition
+        - Stepwise refinement"]  -->  D["Turn the algorithm into specific language statements"] --> E["Test the resulting program"]
 
 ```
 
