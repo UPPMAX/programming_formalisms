@@ -57,21 +57,11 @@ html comment
 5.	Development and maintenance
 
 
-```graphviz
-digraph {
-   rankdir=LR;
-  "Requirements" -> "Analysis and design" -> "Development" -> Test -> "Development and maintenance";
-}
+```mermaid
+flowchart 
+    "Requirements" --> "Analysis and design" --> "Development" --> Test --> "Development and maintenance" --> "Requirements"
 ```
 
-```graphviz
-digraph G {
-    rankdir=LR
-    Earth [peripheries=2]
-    Mars
-    Earth -> Mars
-}
-```
 
 
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
