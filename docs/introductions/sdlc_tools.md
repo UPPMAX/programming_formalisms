@@ -59,7 +59,7 @@ html comment
 
 ```mermaid
 flowchart 
-    Requirements --> A["Analysis and design"] --> "Development" --> Test --> D["Development and maintenance"] --> "Requirements"
+    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Development and maintenance"] --> Requirements
 ```
 
 
