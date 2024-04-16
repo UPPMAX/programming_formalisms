@@ -167,18 +167,14 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
 5. Test the resulting program
 
 ```mermaid
-
-start
-:Clearly state whole problem;
-:Define inputs and outputs;
-:Design the algorithm with `pseudocode`'
-  - Decomposition
-  - Stepwise refinement;
-:Turn the algorithm into specific language statements;
-:Test the resulting program;
-
-stop
-
+graph TD;
+    :Clearly state whole problem;
+    :Define inputs and outputs;
+    :Design the algorithm with `pseudocode`'
+        - Decomposition
+        - Stepwise refinement;
+    :Turn the algorithm into specific language statements;
+    :Test the resulting program;
 
 ```
 
