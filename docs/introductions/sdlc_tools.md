@@ -62,8 +62,6 @@ flowchart
     Requirements --> A["Analysis and design"] --> Development --> Test --> D["Development and maintenance"] --> Requirements
 ```
 
-
-
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
 !!! warning
@@ -73,29 +71,7 @@ flowchart
     - large costs economically and timely
 
 
-
-## Include iteration
-### Spiral model
-
-1. Planning: reqs, identification: analysis
-1. Risk analysis: build prototypes to identify risks
-1. Engineering: software implementation
-1. Evaluation: stakeholder review, feedback, plan next iteration
-1. Each lab is new cycle: prototype--> RC --> launch
-1. Risk driven
-
-<figure markdown="span">
-  ![spiral](../img/spiral-1-1024x945.jpg){ width="50%" }
-  <figcaption>Spiral model</figcaption>
-</figure>
-
-
-- **Disadvantages**
-  - Expensive: Spiral Model is **not suitable for small projects**
-  - **Too much dependability on Risk Analysis**
-
-
-## Take aways from other methods 
+## Take aways 
 ### [The Agile manifest](https://agilemanifesto.org/)
 
 "Agile = characterized by the division of tasks into short phases of work and frequent re-assessment and adaptation of plans."
@@ -123,8 +99,7 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
         - Write code to pass test
    
 !!! note "See also"
-    - [Software Development Lifecycle on Tuesday](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md)
-
+    - Software Development Lifecycle on Tuesday **FIX LINK**
 
 !!! admonition "Conclusion"
     - Each team has unique requirements
@@ -191,8 +166,8 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
 4. Turn the algorithm into specific language statements
 5. Test the resulting program
 
-```{uml}
-@startuml
+```mermaid
+
 start
 :Clearly state whole problem;
 :Define inputs and outputs;
@@ -204,7 +179,7 @@ start
 
 stop
 
-@enduml
+
 ```
 
 
