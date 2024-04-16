@@ -187,7 +187,7 @@ Start with parts first and develop a bigger organization with time.
     - Other metrics
 
 
-```graphviz
+```dot
 digraph{
 "UML diagrams"
 Structure, Behaviour
@@ -204,7 +204,7 @@ Interaction -> Sequence, Communication, Timing, "Interaction overview"
     - Activity/algorithm flowchart
     - Class diagrams
 
-##### Sequence
+#### Sequence
 
 ```{uml} puml/external.uml
 ```
@@ -219,7 +219,7 @@ Alice <-- Bob: Another authentication Response
 @enduml
 ```
 
-##### Activity
+#### Activity
 
 A flowchart that shows the process and its correlating decisions, including an **algorithm**  or a business process.
 
@@ -243,7 +243,7 @@ stop
 @enduml
 ```
 
-##### Algorithm flowchart
+#### Algorithm flowchart
 ```{uml}
 @startuml
 start
@@ -266,7 +266,7 @@ stop
 @enduml
 ```
 
-##### Class
+#### Class
 
  A diagram that shows the system classes and relationships between them.
 
