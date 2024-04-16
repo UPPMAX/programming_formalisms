@@ -57,7 +57,7 @@ html comment
 5.	Development and maintenance
 
 
-```mermaid
+``` mermaid
 flowchart 
     Requirements --> A["Analysis and design"] --> Development --> Test --> D["Development and maintenance"] --> Requirements
 ```
@@ -198,7 +198,8 @@ graph LR
 
 ``` mermaid
 mindmap
-    A["UML diagrams"] --> Structure & Behaviour
+    A["UML diagrams"] --> Structure
+    A["UML diagrams"] --> Behaviour
 ```
 
 ``` markmap
@@ -231,7 +232,7 @@ https://hackmd.io/s/how-to-create-table
 ```    
    
 
-```graphviz
+```dot
 digraph{
 "UML diagrams"
 Structure, Behaviour
