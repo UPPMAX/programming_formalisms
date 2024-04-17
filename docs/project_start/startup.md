@@ -69,6 +69,18 @@
    - Let's start in that end and be prepared.
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
+
+## All Exercises
+
+???- question "Exercise: start the test project"
+
+???- question "Exercise: git add git commit"
+
+???- question "Exercise: github and git push"
+
+???- question "Exercise: clone course project and create folders
+
+
 ## Before we continue we need to configure Git
 
 !!! Attention
@@ -424,17 +436,6 @@ What just happened?
         - &#9744; citation
         - &#9745; licensing  
     - &#9744; Documentation
-
-
-## EXTRA
-
-## GitHub
-There are two more ways to create “copies” of repositories into your user space:
-
-- A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
-- You can **import** a repository from another hosting service or web address. This will preserve the history of the imported project.
-
-
 
 
 
