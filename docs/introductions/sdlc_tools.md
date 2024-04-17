@@ -373,30 +373,18 @@ Does it work for all legal input data sets??
 
 **Typical testing process**
 
-```{uml}
-@startuml
-start
-:Unit testing of individual subtasks;
--> subtasks validated separately;
-repeat: Successive builds \n - adding subtasks to the program;
-backward:As many times as necessary;
-repeat while
--> subtasks combined into program;
-repeat: Alpha release;
-backward:As many times as necessary;
-repeat while
--> worst bugs fixed;
-
-repeat: Beta release;
-backward:As many times as necessary;
-repeat while
--> minor bugs fixed;
-:Finished program;
-
-stop
-
-@enduml
-
+```mermaid
+flowchart TD
+  unit_tests[Unit test]
+  unit_tests --> |As many times as necessary| unit_tests
+  unit_tests --> |worst bugs fixed| alpha
+  alpha[Alpha release]
+  alpha --> |As many times as necessary| unit_tests
+  alpha --> |worst bugs fixed| beta
+  beta[Beta release]
+  beta --> |As many times as necessary| alpha
+  beta --> |minor bugs fixed| done
+  done[Finished program]
 ```
 
 !!! note "See also"
