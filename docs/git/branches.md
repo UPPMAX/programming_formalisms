@@ -57,7 +57,7 @@
 
 ## All Exercises
 
-???- question "Demo: add jupiter"
+???- question "Demo: add Jupiter"
 
 ???- question "Demo: modular code in branch"
 
