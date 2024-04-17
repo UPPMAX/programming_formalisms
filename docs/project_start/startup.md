@@ -88,13 +88,13 @@
 !!! Attention
     - Start your terminal of choice
 
-!!! note "Pre-requirements
+!!! note "Pre-requirements"
 
-    -  **Git and GitHub should be configured prior to the course**
+    - **Git and GitHub should be configured prior to the course**
         - Test: ``ssh -T git@github.com``
         - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
-    -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
-    -  Students should be familiar with using a **text editor** on their system.
+    - Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
+    - Students should be familiar with using a **text editor** on their system.
     - We hope also that you have already done these steps:
     
     ```console
@@ -140,21 +140,19 @@
 !!! example "Demo"
 
     
-    Make sure that you are **logged into GitHub**.
+    - Make sure that you are **logged into GitHub**.
 
-    ```figure img/New_repo.png
-    :width: 60%
-    :class: with-border
+    <figure markdown="span">
+    ![New repo](img/New_repo.png){ width="500" }
+    </figure>
 
-    To create a repository we either click the green button "New" (top left corner).
-    ```
 
-    ```figure img/new-top-right.png
-    :width: 60%
-    :class: with-border
+    To-  create a repository we either click the green button "New" (top left corner).
 
-    Or if you see your profile page, there is a "+" menu (top right corner).
-    ```
+    ![Programming formalism logo](img/new-top-right.png){ width=60% }
+    
+    - Or if you see your profile page, there is a "+" menu (top right corner).
+
 
     ---
 
