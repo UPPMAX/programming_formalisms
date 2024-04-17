@@ -42,6 +42,16 @@
         - Contributing very minor changes
         - If you observe an issue and have an idea how to fix it
 
+## All Exercises
+
+???- question "Demo with other teacher: Add to someone else's project (another planet)"
+
+???- disussion
+
+???- question "quiz"
+
+
+
 ## GitHub
 
 There are two more ways to create “copies” of repositories into your user space:

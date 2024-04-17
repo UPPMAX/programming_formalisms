@@ -69,21 +69,119 @@
    - Let's start in that end and be prepared.
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
+
+## All Exercises
+
+???- question "Exercise: start the test project"
+
+???- question "Exercise: git add git commit"
+
+???- question "Exercise: github and git push"
+
+???- question "Exercise: clone course project and create folders
+
+
+## Before we continue we need to configure Git
+
+!!! Attention
+    - Start your terminal of choice
+
+!!! note "Pre-requirements
+
+    -  **Git and GitHub should be configured prior to the course**
+        - Test: ``ssh -T git@github.com``
+        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+    -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
+    -  Students should be familiar with using a **text editor** on their system.
+    - We hope also that you have already done these steps:
+    
+    ```console
+    $ git config --global user.name "<Your Name>"
+    $ git config --global user.email <your GitHub-connected email address>
+    $ git config --global init.defaultBranch "main"
+    $ git config --global core.editor nano
+    ```
+    or replace nano with another editor, like in Windows: ``notepad``
+    Verify with:
+    ```console
+    $ git config --list
+    ```
+
+
 ## A test project started locally
 ### Initial code base
 - Let's say you have some code you have started to work with
 
+!!! example "Demo"
+
+    **You can also listen and try this out yourself when you have time**
+    
+    - Example code, planets.py
+
+    !!!- Code
+
+         python code
+
+    - Make sure the code is in a code folder and in a folder with a good project name
+        - Example: planets/code/
+
 ### Initiate a project
 
+!!! example "Demo"
+
+    - run ``git init``
+    - make sure that there is a ``.git`` directory created
 
 
 ### Upload to GitHub
 
+!!! example "Demo"
+
+    
+    Make sure that you are **logged into GitHub**.
+
+    ```figure img/New_repo.png
+    :width: 60%
+    :class: with-border
+
+    To create a repository we either click the green button "New" (top left corner).
+    ```
+
+    ```figure img/new-top-right.png
+    :width: 60%
+    :class: with-border
+
+    Or if you see your profile page, there is a "+" menu (top right corner).
+    ```
+
+    ---
+
+    On this page choose a project name, e.g. ``planets-<username>`` 
+      - the name there so there are no clashes when/if you collaborate and fork other repositories)
+
+    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
+    - but "Choose a license"
+    - Let's choose MIT (we may discuss this later on)
+
+    ```figure img/New_repo_formalisms.png
+    :width: 100%
+    :class: with-border
+    ```
+
+    **Done!**
+
+**Let's view the license!**
+- There are prewritten text for the different types.
+- More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+
+    
+
 ### Start from GitHub and clone to your local computer
 
 !!! note "Write the opposite!"
-- For the course project we do it in this order, but that is not necessary in all cases.
-- Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
+   
+    - For the course project we do it in this order, but that is not necessary in all cases.
+    - Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
 - The reason for starting here is that we can get our PlantUML render in the browser!
 
 
@@ -128,7 +226,7 @@ Different projects should have separate folders
 --------------------------------
 
 
-## Start with a new GitHub project
+## Start with course project
 
 See the tree!
 
@@ -151,52 +249,6 @@ See the tree!
 ```
 
 
-## WARNING OLD
-
-
-
-### Type-along: Create a new repository on GitHub
-
-```!!! type-along
-Make sure that you are **logged into GitHub**.
-
-!!! figure "img/New_repo.png
-:width: 60%
-:class: with-border
-
-To create a repository we either click the green button "New" (top left corner).
-
-
-!!! figure "img/new-top-right.png
-:width: 60%
-:class: with-border
-
-Or if you see your profile page, there is a "+" menu (top right corner).
-```
-
----
-
-On this page choose a project name, e.g. ``planets-<username>`` 
-  - the name there so there are no clashes when/if you collaborate and fork other repositories)
-   
-For the sake of this exercise **do select**
-"Initialize this repository with a README"
-and
-"Choose a license"
-- Let's choose MIT (we may discuss this later on
-
-!!! figure "img/New_repo_formalisms.png
-:width: 100%
-:class: with-border
-
-
-**Done!**
-
-**Let's view the license!**
-- There are prewritten text for the different types.
-- More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
-
-``````
 
 ## README files
 
@@ -306,16 +358,6 @@ README file should include:
 
 ---
 
-## What is Git, and what is a Git repository?
-
-- Git is a version control system: can **record/save snapshots** and track the content of a folder as it changes over time.
-- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
-- These snapshots are kept inside a sub-folder called `.git`.
-- If we remove `.git`, we remove the repository and history (but keep the working directory!).
-- `.git` uses relative paths - you can move the whole thing somewhere else and it will still work
-- Git doesn't do anything unless you ask it to (it does not record anything automatically).
-- Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
-
   
 !!! admonition "Concepts in Git"
 - **repository**: The project, contains all data and history (commits, branches, tags).
@@ -327,39 +369,6 @@ README file should include:
 - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
 ```
    
-## Before we continue we need to configure Git
-
-!!! note "Pre-requirements
-
-    -  **Git and GitHub should be configured prior to the course**
-        - Test: ``ssh -T git@github.com``
-        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
-    -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
-    -  Students should be familiar with using a **text editor** on their system.
-
-
-!!! Attention
-- Start your terminal of choice
-
-
-If you haven't already configured Git, please follow the instructions in the
-[installation instructions](https://uppmax.github.io/programming_formalisms_intro/setup.html#shell-and-git).
-
-```console
-$ git config --global user.name "<Your Name>"
-$ git config --global user.email <your GitHub-connected email address>
-$ git config --global core.editor nano
-```
-or replace nano with another editor, like in Windows: ``notepad``
-Verify with:
-```console
-$ git config --list
-```
-- Also, test:
-- ``ssh -T git@github.com``
-
-- Output should be something like this:
-- ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
 
 ## Cloning our Plane repository to local
 
@@ -427,17 +436,6 @@ What just happened?
         - &#9744; citation
         - &#9745; licensing  
     - &#9744; Documentation
-
-
-## EXTRA
-
-## GitHub
-There are two more ways to create “copies” of repositories into your user space:
-
-- A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
-- You can **import** a repository from another hosting service or web address. This will preserve the history of the imported project.
-
-
 
 
 

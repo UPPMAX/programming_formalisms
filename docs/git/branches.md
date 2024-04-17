@@ -13,9 +13,9 @@
       - go through branching and merging
 
 
-???- info "Learning objectives of 'Deployment'"
+???- info "Learning objectives of 'Branches'"
 
-    - learners can explain and evaluate the usefulness for different git commands
+    - learners can explain and evaluate the usefulness for branches
 
 !!! note "Instructor notes"
 
@@ -54,6 +54,17 @@
         - discussion
         - "quiz"
 
+
+## All Exercises
+
+???- question "Demo: add jupiter"
+
+???- question "Demo: modular code in branch"
+
+???- question "Demo: git merge"
+
+???- question "quiz"
+
 ## Start with pushing your changes in the local Git to GitHub
 
 ```console
@@ -76,54 +87,6 @@ branch 'main' set up to track 'origin/main'.
 
 ```
 
-!!! admonition "If you get errors"
-
----
-class: warning, dropdown
----
-If you instead get something like the below, your SSH keys are not correctly configured. 
-```text
-git@github.com: Permission denied (publickey).
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-```
-If `ssh -T git@github.com` gives an error, this is the case.
-
-
-- [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- Approximate steps
-```console
-ssh-keygen -t ed25519 -C "email address"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-```
-- [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-- Hope you can **fix this in Lunch Break**. **Follow the rest by listening for now.**
-
-``````
-
-**Reload your GitHub project website and - taa-daa - your commits should now be
-online!**
-
-What just happened? **Think of publishing a repository as uploading the `.git` part online**.
-
----
-
-## Alternative way to initialize Git
-
-```{admonition} A new repository from an existing project on own computer or HPC user account.
-
-- Say you’ve got an existing project that you want to start tracking with git.
-
-    - Go into the directory containing the project.
-    - Type `git init`.
-    - Type `git add` to add all of the relevant files.
-    - You’ll probably want to create a `.gitignore` file right away, to indicate all of the files you don’t want to track. Use `git add .gitignore`, too.
-    - Type `git commit`.
-
-```
 
 ## Make the next iteration of the planet project
 
