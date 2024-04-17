@@ -10,7 +10,7 @@ nav:
     - Introduction: introductions/intro.md
     - Software Development Lifecycle: introductions/sdlc.md
     - SDLC tools: introductions/sdlc_tools.md
-    - Get started with Git/GitHub: project_start/startup.md
+    - Get started with a project: project_start/startup.md
     - Project start with analysis and design: project_start/analysis_design.md
     - Summary of day: monday_summary.md
   - Tuesday:
