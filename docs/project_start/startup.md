@@ -69,6 +69,33 @@
    - Let's start in that end and be prepared.
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
+## Before we continue we need to configure Git
+
+!!! Attention
+    - Start your terminal of choice
+
+!!! note "Pre-requirements
+
+    -  **Git and GitHub should be configured prior to the course**
+        - Test: ``ssh -T git@github.com``
+        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+    -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
+    -  Students should be familiar with using a **text editor** on their system.
+    - We hope also that you have already done these steps:
+    
+    ```console
+    $ git config --global user.name "<Your Name>"
+    $ git config --global user.email <your GitHub-connected email address>
+    $ git config --global init.defaultBranch "main"
+    $ git config --global core.editor nano
+    ```
+    or replace nano with another editor, like in Windows: ``notepad``
+    Verify with:
+    ```console
+    $ git config --list
+    ```
+
+
 ## A test project started locally
 ### Initial code base
 - Let's say you have some code you have started to work with
@@ -213,20 +240,6 @@ See the tree!
 
 
 
-### Type-along: Create a new repository on GitHub
-
-```!!! type-along
-Make sure that you are **logged into GitHub**.
-
-!!! figure "img/New_repo.png
-:width: 60%
-:class: with-border
-
-To create a repository we either click the green button "New" (top left corner).
-
-
-!!! figure "img/new-top-right.png
-:width: 60%
 :class: with-border
 
 Or if you see your profile page, there is a "+" menu (top right corner).
@@ -364,16 +377,6 @@ README file should include:
 
 ---
 
-## What is Git, and what is a Git repository?
-
-- Git is a version control system: can **record/save snapshots** and track the content of a folder as it changes over time.
-- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
-- These snapshots are kept inside a sub-folder called `.git`.
-- If we remove `.git`, we remove the repository and history (but keep the working directory!).
-- `.git` uses relative paths - you can move the whole thing somewhere else and it will still work
-- Git doesn't do anything unless you ask it to (it does not record anything automatically).
-- Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
-
   
 !!! admonition "Concepts in Git"
 - **repository**: The project, contains all data and history (commits, branches, tags).
@@ -385,39 +388,6 @@ README file should include:
 - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
 ```
    
-## Before we continue we need to configure Git
-
-!!! note "Pre-requirements
-
-    -  **Git and GitHub should be configured prior to the course**
-        - Test: ``ssh -T git@github.com``
-        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
-    -  Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
-    -  Students should be familiar with using a **text editor** on their system.
-
-
-!!! Attention
-- Start your terminal of choice
-
-
-If you haven't already configured Git, please follow the instructions in the
-[installation instructions](https://uppmax.github.io/programming_formalisms_intro/setup.html#shell-and-git).
-
-```console
-$ git config --global user.name "<Your Name>"
-$ git config --global user.email <your GitHub-connected email address>
-$ git config --global core.editor nano
-```
-or replace nano with another editor, like in Windows: ``notepad``
-Verify with:
-```console
-$ git config --list
-```
-- Also, test:
-- ``ssh -T git@github.com``
-
-- Output should be something like this:
-- ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
 
 ## Cloning our Plane repository to local
 
