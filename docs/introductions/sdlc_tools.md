@@ -236,17 +236,12 @@ flowchart TD
 
 #### Sequence
 
-```{uml} puml/external.uml
-```
-
-```console
-@startuml
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: Another authentication Response
-@enduml
+```mermaid
+sequenceDiagram
+    Alice ->>+Bob: Authentication Request
+    Bob-->>-Alice: Authentication Response
+    Alice->>+Bob: Another authentication Request
+    Bob-->>-Alice: Another authentication Response
 ```
 
 #### Activity
