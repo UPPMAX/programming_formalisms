@@ -109,6 +109,27 @@
     $ git config --list
     ```
 
+## What is Git, and what is a Git repository?
+
+- Git is a version control system: can **record/save snapshots** and track the content of a folder as it changes over time.
+- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
+- These snapshots are kept inside a sub-folder called `.git`.
+- If we remove `.git`, we remove the repository and history (but keep the working directory!).
+- `.git` uses relative paths - you can move the whole thing somewhere else and it will still work
+- Git doesn't do anything unless you ask it to (it does not record anything automatically).
+- Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
+
+  
+!!! admonition "Concepts in Git"
+
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+    - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
+    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
+    - `git clone` copies everything: all commits and all branches.
+    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
+    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
+
 
 ## A test project started locally
 ### Initial code base
@@ -400,6 +421,117 @@ def mean_temperature(data):
     return float(sum(temperatures)/len(temperatures))  
   
 ```
+## Staging files
+
+
+As mentioned above, in Git you can always check the status of files in your repository using
+`git status`. It is always a safe command to run and in general a good idea to
+do when you are trying to figure out what to do next:
+
+### Example
+
+```console
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        activity.puml
+        class.puml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+```
+   
+The two files are untracked in the repository (directory). You want to **add the files** (focus the camera)
+to the list of files tracked by Git. Git does not track
+any files automatically and you need make a conscious decision to add a file. Let's do what
+Git hints at and add the files:
+
+
+```console
+$ git add .    # < -- "." means all files
+$ git status
+
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   activity.puml
+        new file:   class.puml
+```
+
+Now this change is *staged* and ready to be committed.
+
+## Commit
+
+### Example
+Let us now commit the change to the repository:
+
+```console
+$ git commit -m "adding class and activity diagrams"
+
+[master (root-commit) 8adee34] adding class and activity diagrams
+ 2 files changed, 26 insertions(+)
+ create mode 100644 activity.puml
+ create mode 100644 class.puml
+```
+
+Right after we query the status to get this useful command into our muscle memory:
+
+```console
+$ git status
+
+On branch master
+nothing to commit, working tree clean
+
+```
+
+What does the `-m` flag mean? Let us check the help page for that command:
+
+```console
+$ git help commit
+```
+
+- You should see a very long help page as the tool is very versatile (press q to quit).
+- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+- Note that help pages also work when you don't have a network connection!   
+
+
+   
+## Make the code a part of the git record
+   
+``````{type-along}
+
+**Make your code part of git**
+
+- Check the status. 
+- Add all files (``.``) to staging
+
+```console
+   git status   
+   git add .
+```
+- Check the status. 
+- The output should show the new changes since your work on GitHub  
+```console
+   git status
+```
+- Commit with the message "First commit of code"
+```console
+   git commit -m "First commit of code"
+```
+- Check the status   
+- The output should show "Nothing to commit
+```console
+   git status
+```
+
 
 
 
