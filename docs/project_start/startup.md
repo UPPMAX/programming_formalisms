@@ -73,17 +73,75 @@
 ### Initial code base
 - Let's say you have some code you have started to work with
 
+!!! example "Demo"
+
+    **You can also listen and try this out yourself when you have time**
+    
+    - Example code, planets.py
+
+    !!!- Code
+
+         python code
+
+    - Make sure the code is in a code folder and in a folder with a good project name
+        - Example: planets/code/
+
 ### Initiate a project
 
+!!! example "Demo"
+
+    - run ``git init``
+    - make sure that there is a ``.git`` directory created
 
 
 ### Upload to GitHub
 
+!!! example "Demo"
+
+    
+    Make sure that you are **logged into GitHub**.
+
+    ```figure img/New_repo.png
+    :width: 60%
+    :class: with-border
+
+    To create a repository we either click the green button "New" (top left corner).
+    ```
+
+    ```figure img/new-top-right.png
+    :width: 60%
+    :class: with-border
+
+    Or if you see your profile page, there is a "+" menu (top right corner).
+    ```
+
+    ---
+
+    On this page choose a project name, e.g. ``planets-<username>`` 
+      - the name there so there are no clashes when/if you collaborate and fork other repositories)
+
+    For the sake of this exercise **do select**
+    "Initialize this repository with a README"
+    and
+    "Choose a license"
+    - Let's choose MIT (we may discuss this later on
+
+    ```figure img/New_repo_formalisms.png
+    :width: 100%
+    :class: with-border
+    ```
+
+    **Done!**
+
+
+    
+
 ### Start from GitHub and clone to your local computer
 
 !!! note "Write the opposite!"
-- For the course project we do it in this order, but that is not necessary in all cases.
-- Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
+   
+    - For the course project we do it in this order, but that is not necessary in all cases.
+    - Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
 - The reason for starting here is that we can get our PlantUML render in the browser!
 
 
