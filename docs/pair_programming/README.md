@@ -36,6 +36,33 @@
     - 25 mins: challenge
     - 10 mins: feedback
 
+
+```mermaid
+gantt
+  title Lesson plan pair programming 1
+  dateFormat X
+  axisFormat %s
+  Introduction : intro, 0, 5s
+  Theory 1: theory_1, after intro, 5s
+  Exercise 1: crit, exercise_1, after theory_1, 10s
+  Feedback 1: feedback_1, after exercise_1, 5s
+  Theory 2: theory_2, after feedback_1, 5s
+  Exercise 2: crit, exercise_2, after theory_2, 15s
+  Break: crit, break, 45, 15s```
+
+```mermaid
+gantt
+  title Lesson plan pair programming 2
+  dateFormat X
+  axisFormat %s
+  Feedback 2: feedback_2, 0, 10s
+  Theory 3: theory_3, after feedback_2, 5s
+  Exercise 3: crit, exercise_3, after theory_3, 10s
+  Feedback 3: feedback_3, after exercise_3, 5s
+  Start TDD: done, extra, after feedback_3, 45
+  Break: crit, 45, 15s
+```
+
 ## Introduction
 
 Pair programming is a facet of developing code better.
@@ -61,26 +88,6 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
     - 5 mins: introduce exercise procedure
     - 10 mins: start
     - 5 mins: feedback
-
-```mermaid
-gantt
-  title Lesson plan
-  dateFormat X
-  axisFormat %s
-  Introduction : intro, 0, 5s
-  Theory 1: theory_1, after intro, 5s
-  Exercise 1: crit, exercise_1, after theory_1, 10s
-  Feedback 1: feedback_1, after exercise_1, 5s
-  Theory 2: theory_2, after feedback_1, 5s
-  Exercise 2: crit, exercise_2, after theory_2, 15s
-  Break 1: crit, break_1, 45, 15s
-  Feedback 2: feedback_2, after break_1, 10s
-  Theory 3: theory_3, after feedback_2, 10s
-  Exercise 3: crit, exercise_3, after theory_3, 10s
-  Feedback 3: feedback_3, after exercise_3, 5s
-  Extra/Break: after feedback_3, 10s
-  Break 2: crit, 105, 15s
-```
 
 - Together, read the questions before reading the material
 - Together, divide which team member is going to read which source:

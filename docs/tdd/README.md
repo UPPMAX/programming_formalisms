@@ -35,6 +35,30 @@
     - 25 mins: challenge
     - 10 mins: feedback
 
+```mermaid
+gantt
+  title Lesson plan pair programming 2
+  dateFormat X
+  axisFormat %s
+  Feedback 2: feedback_2, 0, 10s
+  Theory 3: theory_3, after feedback_2, 5s
+  Exercise 3: crit, exercise_3, after theory_3, 10s
+  Feedback 3: feedback_3, after exercise_3, 5s
+  Start TDD: done, extra, after feedback_3, 45
+  Break: crit, 45, 15s
+```
+
+```mermaid
+gantt
+  title Lesson plan TDD 2
+  dateFormat X
+  axisFormat %s
+  Exercise 1: crit, exercise_1, 0, 20s
+  Feedback 1: feedback_1, after exercise_1, 10s
+  Retrospect: crit, 30, 15s
+  Break: crit, 45, 15s
+```
+
 ## Introduction
 
 Test-driven development (TDD) is a systematic way to grow code, 
