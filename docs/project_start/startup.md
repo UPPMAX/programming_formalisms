@@ -147,11 +147,9 @@
     On this page choose a project name, e.g. ``planets-<username>`` 
       - the name there so there are no clashes when/if you collaborate and fork other repositories)
 
-    For the sake of this exercise **do select**
-    "Initialize this repository with a README"
-    and
-    "Choose a license"
-    - Let's choose MIT (we may discuss this later on
+    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
+    - but "Choose a license"
+    - Let's choose MIT (we may discuss this later on)
 
     ```figure img/New_repo_formalisms.png
     :width: 100%
@@ -160,6 +158,9 @@
 
     **Done!**
 
+**Let's view the license!**
+- There are prewritten text for the different types.
+- More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
 
     
 
@@ -213,7 +214,7 @@ Different projects should have separate folders
 --------------------------------
 
 
-## Start with a new GitHub project
+## Start with course project
 
 See the tree!
 
@@ -236,38 +237,6 @@ See the tree!
 ```
 
 
-## WARNING OLD
-
-
-
-:class: with-border
-
-Or if you see your profile page, there is a "+" menu (top right corner).
-```
-
----
-
-On this page choose a project name, e.g. ``planets-<username>`` 
-  - the name there so there are no clashes when/if you collaborate and fork other repositories)
-   
-For the sake of this exercise **do select**
-"Initialize this repository with a README"
-and
-"Choose a license"
-- Let's choose MIT (we may discuss this later on
-
-!!! figure "img/New_repo_formalisms.png
-:width: 100%
-:class: with-border
-
-
-**Done!**
-
-**Let's view the license!**
-- There are prewritten text for the different types.
-- More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
-
-``````
 
 ## README files
 
