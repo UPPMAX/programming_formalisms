@@ -41,7 +41,6 @@
       Feedback 1: feedback_1, after exercise_1, 5s
       Theory 2: theory_2, after feedback_1, 5s
       Exercise 2: crit, exercise_2, after theory_2, 15s
-      Break: crit, break, 45, 15s```
     ```
 
     ```mermaid
@@ -54,7 +53,6 @@
       Exercise 3: crit, exercise_3, after theory_3, 10s
       Feedback 3: feedback_3, after exercise_3, 5s
       Start TDD: done, extra, after feedback_3, 45
-      Break: crit, 45, 15s
     ```
 
 
