@@ -223,65 +223,68 @@ Different projects should have separate folders
 
 
 !!! note
-- If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
+    - If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
 
---------------------------------
-
-
-## Start with course project
-
-See the tree!
-
-```code
-├── CODE_OF_CONDUCT.md
-├── design
-│   └── README.md
-├── fairytale.md
-├── learners
-│   ├── README.md
-│   └── richel
-│       └── README.md
-├── LICENSE
-├── programming_formalisms_student_team_summer_2024_logo_50.png
-├── README.md
-├── run_and_tumble.jpg
-└── src
-    └── bacsim
-        └── README.md
-```
-
-
-
-## README files
+### README files
 
 **Advantages**
 - Versioned (goes with the code development)
 - It is often good enough to have a `README.md` or `README.rst` along with your code/script
 - If you use README files, use either
-  [RST](http://docutils.sourceforge.net/rst.html) or
-  [Markdown](https://commonmark.org/help/)
+    - [RST](http://docutils.sourceforge.net/rst.html) or
+    - [Markdown](https://commonmark.org/help/)
 - A great guide to README files: [MakeaREADME](https://www.makeareadme.com/)
 
-`!!! keypoints}
-README file should include:
+   
+!!! info "A README file should include"
 
-  - A descriptive project title
+    - A descriptive project title
 
-  - Motivation (why the project exists)
+    - Motivation (why the project exists)
 
-  - How to setup
+    - How to setup
 
-  - Copy-pastable quick start code example
+    - Copy-pastable quick start code example
 
-  - Recommended citation
-`
+    - Recommended citation
+
+
+### In-code documentation
+
+- Comments, function docstrings, ...
+- Advantages
+  - Good for programmers
+  - Version controlled alongside code
+  - Can be used to auto-generate documentation for functions/classes
+- Disadvantage
+  - Probably not enough for users
+
+**Why and not how**
+
+#### Docstrings
+A docstring is a structured comment associated to a segment of code (i.e. function or class)
+
+Good docstrings describe:
+
+    What the function does
+    What goes in (including the type of the input variables)
+    What goes out (including the return type)
+    Python example: help()
+
+!!! info "keypoints"
+
+    - Comments should describe the why for your code not the what.
+    - Writing docstrings is an easy way to write documentation while you type code.
+    - Copy-pastable quick start code example
+    - Recommended citation
+
 
 **We are ready to**
 - Extend the README file
 - Make some folders according to the above list
 - Put the planning documents in a docs folder
 
-???+ "challenge 10 min"
+???+ "Example"
 
    1. Extend the README file a little bit with an **About section** in Markdown format describing the project.
       - Use the **Pencil** button
@@ -308,16 +311,6 @@ README file should include:
     - another item                   
                
     ```
-
-    2. Create the planning document in markdown **Add file** button and choose "Create file".
-        - Call the file ``doc/plan.md``
-	    - this will on the fly create the directory ``doc``.
-        - Copy paste the example code found in the last session for [PlantUML](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#lets-make-a-flowchart-of-the-program-parts) and [pseudocode](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#do-some-pseudocode-of-the-calculations).
-            - Type ``"```uml"`` (without ") above the UML code and ``"```"`` below, and it should render nicely.
-            - Type ``"```code"`` (without ") above the pseudo code and ``"```"`` below, and it should render nicely.
-        - Add some suitable headings for the code sections
-
-
 
 ???- solution
 
@@ -357,6 +350,32 @@ README file should include:
    Plot resulting ...
    Calculate ...
    ```
+
+
+--------------------------------
+
+
+## Start with course project
+
+See the tree!
+
+```code
+├── CODE_OF_CONDUCT.md
+├── design
+│   └── README.md
+├── fairytale.md
+├── learners
+│   ├── README.md
+│   └── richel
+│       └── README.md
+├── LICENSE
+├── programming_formalisms_student_team_summer_2024_logo_50.png
+├── README.md
+├── run_and_tumble.jpg
+└── src
+    └── bacsim
+        └── README.md
+```
 
 ---
 
