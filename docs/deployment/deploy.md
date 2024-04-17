@@ -118,6 +118,23 @@ $ pip install -r requirements.txt
 
 ``````
 
+## Ignoring files and paths with .gitignore
+
+Compiled and generated files are not
+committed to version control. There are many reasons for this:
+
+- Your code could be run on different platforms.
+- These files are automatically generated and thus do not contribute in any meaningful way.
+- The number of changes to track per source code change can increase quickly.
+- When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use `.gitignore` files. Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
+
+- Not important for our project right now.
+- **But**, we should had omitted the virtual environment, i.e. the directory ``planet-project``.
+
+
+
 ## Workflows
 
 ```{seealso}
