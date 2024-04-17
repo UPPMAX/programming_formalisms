@@ -54,6 +54,17 @@
         - discussion
         - "quiz"
 
+
+## All Exercises
+
+???- question "Demo: add jupiter
+
+???- question "Demo: modular code in branch"
+
+???- question "Demo: git merge"
+
+???- question "quiz"
+
 ## Start with pushing your changes in the local Git to GitHub
 
 ```console
