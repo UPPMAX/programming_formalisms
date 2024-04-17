@@ -65,6 +65,12 @@
 
 ???- question "quiz"
 
+
+## Branching, why
+
+
+
+
 ## Start with pushing your changes in the local Git to GitHub
 
 ```console
@@ -87,11 +93,10 @@ branch 'main' set up to track 'origin/main'.
 
 ```
 
+## add Jupiter in a new branch
 
-## Make the next iteration of the planet project
-
-``````{challenge} Type-along: Add Jupiter
-- We will add some lines to count with the effects from the gravity of Jupiter on Earth
+!!! example "Type-along: Add Jupiter"
+    - We will add some lines to count with the effects from the gravity of Jupiter on Earth
 
 ````{solution} Code
 ```python
@@ -367,20 +372,6 @@ index 60b8b20..8061461 100644
   ```
 ``````
 
-## Ignoring files and paths with .gitignore
-
-Compiled and generated files are not
-committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use `.gitignore` files. Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
-
-- Not important for our project right now.
-- **But**, we should had omitted the virtual environment, i.e. the directory ``planet-project``.
 
 ## Branching and merging
 Software development is often not linear:
@@ -734,27 +725,27 @@ $ git merge
 :class: with-border
 ```   
 
-```{admonition} Parts to be covered
-- &#9745; Planning
-  - Pseudocode
-  - Unified Modelling Language
-- &#9744; Testing
-  - We don't do this today!
-- &#9745; Source/version control
-  - We have a starting point with code
-  - git history
-  - git branches
-  - GitHub as remote backup
-- &#9744; Collaboration
-  - GitHub
-- &#9745; Sharing
-  - &#9745; open science
-  - &#9744; citation
-  - &#9745; licensing  
-- &#9744; Documentation
-  - **docstrings** should actually be **implemented directly**!!
-    - **we save that now for next sesson**
-```
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+        - branches
+    - &#9745; Planning
+        - &#9745; Analysis
+        - &#9745;Design
+    - &#9745; Testing
+        - Different levels
+    - &#9744; Collaboration
+        - GitHub
+        - pull requests
+    - &#9744; Sharing
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing  
+    - &#9744; Documentation
+        - &#9745; in-code documentation
   
 ```{Keypoints}
 - Initializing a Git repository is simple: ``git init``.
