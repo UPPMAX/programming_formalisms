@@ -155,6 +155,117 @@
     - run ``git init``
     - make sure that there is a ``.git`` directory created
 
+### Staging files
+
+
+As mentioned above, in Git you can always check the status of files in your repository using
+`git status`. It is always a safe command to run and in general a good idea to
+do when you are trying to figure out what to do next:
+
+#### Example
+
+```console
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        activity.puml
+        class.puml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+```
+   
+The two files are untracked in the repository (directory). You want to **add the files** (focus the camera)
+to the list of files tracked by Git. Git does not track
+any files automatically and you need make a conscious decision to add a file. Let's do what
+Git hints at and add the files:
+
+
+```console
+$ git add .    # < -- "." means all files
+$ git status
+
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   activity.puml
+        new file:   class.puml
+```
+
+Now this change is *staged* and ready to be committed.
+
+### Commit
+
+### Example
+Let us now commit the change to the repository:
+
+```console
+$ git commit -m "adding class and activity diagrams"
+
+[master (root-commit) 8adee34] adding class and activity diagrams
+ 2 files changed, 26 insertions(+)
+ create mode 100644 activity.puml
+ create mode 100644 class.puml
+```
+
+Right after we query the status to get this useful command into our muscle memory:
+
+```console
+$ git status
+
+On branch master
+nothing to commit, working tree clean
+
+```
+
+What does the `-m` flag mean? Let us check the help page for that command:
+
+```console
+$ git help commit
+```
+
+- You should see a very long help page as the tool is very versatile (press q to quit).
+- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+- Note that help pages also work when you don't have a network connection!   
+
+
+   
+## Make the code a part of the git record
+   
+!!! example "type-along"
+
+    **Make your code part of git**
+
+    - Check the status. 
+    - Add all files (``.``) to staging
+
+    ```console
+       git status   
+       git add .
+    ```
+    - Check the status. 
+    - The output should show the new changes since your work on GitHub  
+    ```console
+       git status
+    ```
+    - Commit with the message "First commit of code"
+    ```console
+       git commit -m "First commit of code"
+    ```
+    - Check the status   
+    - The output should show "Nothing to commit
+    ```console
+   git status
+   ```
+
 
 ### Upload to GitHub
 
@@ -421,119 +532,44 @@ def mean_temperature(data):
     return float(sum(temperatures)/len(temperatures))  
   
 ```
-## Staging files
 
+## Add in-code documentation in test project
 
-As mentioned above, in Git you can always check the status of files in your repository using
-`git status`. It is always a safe command to run and in general a good idea to
-do when you are trying to figure out what to do next:
+### Git diff
 
-### Example
+- Add some text documentation
 
-```console
-On branch master
+???- Code
 
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        activity.puml
-        class.puml
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-```
-   
-The two files are untracked in the repository (directory). You want to **add the files** (focus the camera)
-to the list of files tracked by Git. Git does not track
-any files automatically and you need make a conscious decision to add a file. Let's do what
-Git hints at and add the files:
-
+- When you are done editing the file, try `git diff`:
 
 ```console
-$ git add .    # < -- "." means all files
-$ git status
-
-On branch master
-
-Initial commit
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-        new file:   activity.puml
-        new file:   class.puml
+  $ git diff
 ```
 
-Now this change is *staged* and ready to be committed.
+- You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
+- You will see some thing like this.
 
-## Commit
-
-### Example
-Let us now commit the change to the repository:
+- Now first stage and then commit (what happens when we leave out the `-m` flag?):
 
 ```console
-$ git commit -m "adding class and activity diagrams"
-
-[master (root-commit) 8adee34] adding class and activity diagrams
- 2 files changed, 26 insertions(+)
- create mode 100644 activity.puml
- create mode 100644 class.puml
+  $ git add python.py     # <-- we can state exactly which file to stage as well
+  $ git commit                   # <-- we have left out -m "..."
 ```
 
-Right after we query the status to get this useful command into our muscle memory:
+  When you leave out the `-m` flag, Git should open an editor where you can edit
+  your commit message. This message will be associated and stored with the
+  changes you made. This message is your chance to explain what you've done and
+  convince others (and your future self) that the changes you made were
+  justified.  Write a message (like ``added in-doc`` and save and close the file.
 
-```console
-$ git status
+  When you are done committing the changes, experiment with these commands:
 
-On branch master
-nothing to commit, working tree clean
-
-```
-
-What does the `-m` flag mean? Let us check the help page for that command:
-
-```console
-$ git help commit
-```
-
-- You should see a very long help page as the tool is very versatile (press q to quit).
-- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-- Note that help pages also work when you don't have a network connection!   
-
-
-   
-## Make the code a part of the git record
-   
-``````{type-along}
-
-**Make your code part of git**
-
-- Check the status. 
-- Add all files (``.``) to staging
-
-```console
-   git status   
-   git add .
-```
-- Check the status. 
-- The output should show the new changes since your work on GitHub  
-```console
-   git status
-```
-- Commit with the message "First commit of code"
-```console
-   git commit -m "First commit of code"
-```
-- Check the status   
-- The output should show "Nothing to commit
-```console
-   git status
-```
-
-
-
+  ```console
+  $ git log
+  $ git log --stat
+  $ git log --oneline
+  ```
 
 
 --------------------------------
