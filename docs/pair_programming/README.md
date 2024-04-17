@@ -64,17 +64,22 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 
 ```mermaid
 gantt
-  title Exercise procedure minutes
+  title Lesson plan
   dateFormat X
   axisFormat %s
-  section Main room
-    Move to breakout room : 0, 5
-  section Breakout room, together
-    Prepare: 5, 6
-    Discuss: 16,21
-    Back to main room: 21,22
-  section Breakout room, individually
-  Read   : 6,16
+  Introduction : intro, 0, 5s
+  Theory 1: theory_1, after intro, 5s
+  Exercise 1: crit, exercise_1, after theory_1, 10s
+  Feedback 1: feedback_1, after exercise_1, 5s
+  Theory 2: theory_2, after feedback_1, 5s
+  Exercise 2: crit, exercise_2, after theory_2, 15s
+  Break 1: crit, break_1, 45, 15s
+  Feedback 2: feedback_2, after break_1, 10s
+  Theory 3: theory_3, after feedback_2, 10s
+  Exercise 3: crit, exercise_3, after theory_3, 10s
+  Feedback 3: feedback_3, after exercise_3, 5s
+  Extra/Break: after feedback_3, 10s
+  Break 2: crit, 105, 15s
 ```
 
 - Together, read the questions before reading the material
