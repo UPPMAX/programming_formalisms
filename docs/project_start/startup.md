@@ -76,6 +76,8 @@
 
 ???- question "Exercise: git add git commit"
 
+???- question "Exercise: in-code docs"
+
 ???- question "Exercise: github and git push"
 
 ???- question "Exercise: clone course project and create folders
