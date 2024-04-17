@@ -658,25 +658,13 @@ There are different types of remotes:
 **There is no one size fits all**: often for small projects a `README.md` or
 `README.rst` can be enough (more about these formats later).
 
-Docstrings
-
-A docstring is a structured comment associated to a segment of code (i.e. function or class)
-
-Good docstrings describe:
-
-    What the function does
-
-    What goes in (including the type of the input variables)
-
-    What goes out (including the return type)
-
-    Python example: help()
-
 
 !!! objectives
-     - [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html) aims to:
+     - [Documentation part 1](project_start/startup.md#introduction-to-documentation) aims to:
          - introduce motivation for documentation
          - get tips for in-code documentation
+         - get tips for README files
+     - [Documentation part 2](deployment/documentation.md) aims to:
          - get tips for README files
          - get tips for full documentation and tutorials
 
