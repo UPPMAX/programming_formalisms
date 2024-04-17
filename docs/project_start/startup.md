@@ -396,9 +396,12 @@ def mean_temperature(data):
 
 ## Start with course project
 
-See the tree!
 
-```code
+- View the GitHub project at: https://github.com/programming-formalisms/programming_formalisms_project_summer_2024
+
+- See the tree!
+
+```bash
 ├── CODE_OF_CONDUCT.md
 ├── design
 │   └── README.md
@@ -420,57 +423,57 @@ See the tree!
 
   
 !!! admonition "Concepts in Git"
-- **repository**: The project, contains all data and history (commits, branches, tags).
-- **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
-- **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-- **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-- `git clone` copies everything: all commits and all branches.
-- Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
-- We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
-```
-   
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+    - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
+    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
+    - `git clone` copies everything: all commits and all branches.
+    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
+    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
 
-## Cloning our Plane repository to local
+   
+## Cloning the course project
 
 Now you and other people can clone this repository and contribute changes. 
 
+!!! type-along
 
-```!!! type-along
-- You may want to create a directory for this course. You can do it in the normal way or use your terminal, like this in a good place (like "Courses" if you have that)
-  - ``cd Courses``
-  - ``mkdir Programming_formalisms``
-  - ``cd Programming_formalisms``
-- In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
-- Back in your terminal type ``git clone`` followed by pasting the copied text.
-- The result shall look something like this:
+    - You may want to create a directory for this course. You can do it in the normal way or use your terminal, like this in a good place (like "Courses" if you have that)
+    - ``mkdir Programming_formalisms``
+    - ``cd Programming_formalisms``
+    - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
+    - Back in your terminal type ``git clone`` followed by pasting the copied text.
+    - The result shall look something like this:
 
-```console
-$ git clone git@github.com:<user>/planet-<user>.git
-```
+     ```console
+     $ git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
+     ```
+
 !!! tip
-- Using the SSH makes it very straight-forward to upload your local changes back to GitHub. Use HTTP if you clone repos that do not belong to you or your group.
+    - Using the SSH makes it very straight-forward to upload your local changes back to GitHub. 
+    - Use HTTP if you clone repos that do not belong to you or your group.
 
 
-- This creates a directory called ``planet-<user>`` unless it already exists.
+- This creates a directory called ``programming_formalisms_project_summer_2024.git`` unless it already exists.
 
-What just happened?
+**What just happened?**
 - `cd` the new directory that was created
 - list the files with `ls`
 - **Think of cloning as downloading the `.git` part to your computer**. 
 - After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
-```
+
 
 ## Working on GitHub
 
 - You can do basically the **same work at GitHub as in your local git repo**
 - The **graphical view** makes it easier to work with in everyday editing work at least.
-  - Depends on your own preferences of course.
+    - Depends on your own preferences of course.
 - Here your commit each file at a time with the "commit button". 
-  - **No staging** that is.
-  - Be aware of that feature!
+    - **No staging** that is.
+    - Be aware of that feature!
 - **GitHub Actions** are workflows defined by you, like:
-  - for automatic testing after each commit (Used in the test lessons)
-  - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+    - for automatic testing after each commit (Used in the test lessons)
+    - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
 
 !!! note "See also"
 
@@ -497,14 +500,13 @@ What just happened?
         - &#9745; licensing  
     - &#9744; Documentation
 
-## Typical "Workflow for the course projecct"
+## Typical workflow for the course project
 
 - students make development in local git and push to github?
 - in principle centralized workflow
 
-```{figure} img/centralized.svg
-:alt: Centralized layout
-:width: 50%
+![Centralized layout](../img/centralized.svg){ width=50% }
+
 
 **Centralized layout**
 - **Red** is the repository on GitHub.
