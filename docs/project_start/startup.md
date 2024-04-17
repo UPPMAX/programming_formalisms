@@ -458,7 +458,24 @@ What just happened?
         - &#9745; licensing  
     - &#9744; Documentation
 
+## Typical "Workflow for the course projecct"
 
+- students make development in local git and push to github?
+- in principle centralized workflow
+
+```{figure} img/centralized.svg
+:alt: Centralized layout
+:width: 50%
+
+**Centralized layout**
+- **Red** is the repository on GitHub.
+- **Blue** is where all contributors work on their own computers.
+```
+
+- Centralized workflow is often used for **remote collaborative work**.
+- `origin` refers to where you cloned from (but you can relocate it).
+- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
+- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
 
 !!! keypoints
 
