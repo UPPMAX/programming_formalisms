@@ -26,17 +26,17 @@
 
 You have a Zoom good setup, if:
 
-- [ ] you can talk freely. If not, find a room/place where you can
-- [ ] others in the Zoom room can clearly hear what you say. 
+- :black_square_button: you can talk freely. If not, find a room/place where you can
+- :black_square_button: others in the Zoom room can clearly hear what you say. 
       If not, use a microphone
-- [ ] you can clearly hear what others in the Zoom room say.
+- :black_square_button: you can clearly hear what others in the Zoom room say.
       If not, use a headset
 
 ### Visual Studio
 
 You have installed Visual Studio, if:
 
-- [ ] You can start Visual Studio
+- :black_square_button: You can start Visual Studio
 
 ???- question "Do you have Visual Studio Code installed?"
 
@@ -47,10 +47,10 @@ You have installed Visual Studio, if:
 
 You have installed `git`, if:
 
-- [ ] In a terminal, `git version` shows your version of `git`
-- [ ] In a terminal, `git config --global user.name` shows your name
-- [ ] In a terminal, `git config --global user.email` shows your email address
-- [ ] In a terminal, `git config --global pull.rebase` shows something, 
+- :black_square_button: In a terminal, `git version` shows your version of `git`
+- :black_square_button: In a terminal, `git config --global user.name` shows your name
+- :black_square_button: In a terminal, `git config --global user.email` shows your email address
+- :black_square_button: In a terminal, `git config --global pull.rebase` shows something, 
       e.g. the text `false`
 
 ???- question "Do you have Git installed?"
