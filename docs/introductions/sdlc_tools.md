@@ -244,12 +244,27 @@ sequenceDiagram
     Bob-->>-Alice: Another authentication Response
 ```
 
+```
+sequenceDiagram
+    Alice ->>+Bob: Authentication Request
+    Bob-->>-Alice: Authentication Response
+    Alice->>+Bob: Another authentication Request
+    Bob-->>-Alice: Another authentication Response
+```
+
 #### Activity
 
 A flowchart that shows the process and its correlating decisions, 
 including an **algorithm**  or a business process.
 
 ```mermaid
+flowchart TD
+  is_installed{Graphviz installed?}
+  is_installed --> |yes| process_all[process all\ndiagrams]
+  is_installed --> |no| process_sub[process only\nsequence and activity diagrams]
+```
+
+```
 flowchart TD
   is_installed{Graphviz installed?}
   is_installed --> |yes| process_all[process all\ndiagrams]
@@ -265,32 +280,29 @@ flowchart TD
   condition --> |no| is_false[Do action 2]
 ```
 
+```
+flowchart TD
+  condition{Is something true?}
+  condition --> |yes| is_true[Do action 1]
+  condition --> |no| is_false[Do action 2]
+```
+
 #### Class
 
  A diagram that shows the system classes and relationships between them.
 
-```{uml} puml/class.puml
+```mermaid
+classDiagram
+    Driver o-- Car : owns
+    Car *-- Wheel : have 4
 ```
 
-```{uml}
-@startuml
-class Car
-
-Driver - Car : drives >
-Car *- Wheel : have 4 >
-Car -- Person : < owns
-@enduml
+```
+classDiagram
+    Driver o-- Car : owns
+    Car *-- Wheel : have 4
 ```
 
-```console
-@startuml
-class Car
-
-Driver - Car : drives >
-Car *- Wheel : have 4 >
-Car -- Person : < owns
-@enduml
-```
 
 ### Pseudocode
 - Pseudocode does not have syntax rules of any particular language
