@@ -245,6 +245,92 @@
     - Copy-pastable quick start code example
     - Recommended citation
 
+#### Cheat-sheet
+
+```markdown
+    **Cheat sheet**
+    # This is a section in Markdown   
+
+    ## This is a subsection           
+
+    Nothing special needed for        
+    a normal paragraph.               
+
+        This is a code block          
+
+
+    **Bold** and *emphasized*.       
+
+    A list:                           
+    - this is an item                 
+    - another item                   
+               
+```
+
+!!! example "README.md for the test project"
+
+    ```code    
+    # Plan
+
+    ## Background
+
+    - Some text
+    - Theory: 
+    - **Problem**: 
+    - **Method**: Use Python
+        - Let's go for functional?? programming
+    - **Input**: Some initial ...
+        - Perhaps also user input of ...
+    - **Output**: Graph of ...
+
+    **Development steps** (we extend the program with iterations)
+    1. XX system
+    1. Add YY
+    1. Make modular
+    1. Add more ZZ
+
+    ## PlantUML
+
+    ```uml
+    @startuml
+    skin rose
+    title Planet flowchart
+    start
+    
+    :define some parameters;
+    :initialize earth (and Jupiter);
+    
+    repeat
+      :calculate new position;
+      :calculate acceleration;
+      :calculate velocity in two dimensions;
+    
+    repeat while (simulation time is met) is (no)
+    ->yes;
+    :figure plotting;
+    stop
+    ```
+
+    ## Pseudocode
+
+    ```code
+    Define constants
+    Define initial values
+    	positions
+    	velocity (balance of gravity and centrifugal force)
+    (Allocate (book) space for long vectors	plan iteration)
+    Iteration
+    	Change of positions
+    	Calc acc (gravity)
+    	Calc new velocity
+    Plot resulting ellipses
+    Calculate orbit parameters
+    Plot time series of parameter change
+    ```
+
+
+
+
 ### In-code documentation
 
 - Comments, function docstrings, ...
@@ -255,7 +341,6 @@
 - Disadvantage
   - Probably not enough for users
 
-````{discussion} In BO:s?
 **Comments examples**
 
 Let's take a look at two example comments (comments in python start with `#`):
@@ -273,14 +358,11 @@ if temperature > -50:
 if temperature > -50:
     print('do something')
 ```
-Which of these comments is best? Can you explain why?
-````
-```{solution} Solution
+
 - Comment A describes **what** happens in this piece of code, whereas comment B describes **why** this piece of code is there, i.e. its **purpose**.
 - Comments in the form of B are much more useful, comments of form A are redundant and we should avoid them.
-```
- 
 
+ 
 **Why and not how**
 
 #### Function docstrings
@@ -303,6 +385,7 @@ Good docstrings describe:
 **Example**
   
 ```python
+
 def mean_temperature(data):
     """
     Get the mean temperature
@@ -318,77 +401,7 @@ def mean_temperature(data):
   
 ```
 
-**We are ready to**
-- Extend the README file
-- Make some folders according to the above list
-- Put the planning documents in a docs folder
 
-???+ "Example"
-
-   1. Extend the README file a little bit with an **About section** in Markdown format describing the project.
-      - Use the **Pencil** button
-      - Use the goals stated in last session, [Analysis](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html#analysis)
-      - Get inspiration from <https://www.makeareadme.com/> and a favorite Git repo or <https://github.com/yampelo/beagle>. 
-
-
-    ```markdown
-    **Cheat sheet**
-    # This is a section in Markdown   
-
-    ## This is a subsection           
-
-    Nothing special needed for        
-    a normal paragraph.               
-
-        This is a code block          
-
-
-    **Bold** and *emphasized*.       
-
-    A list:                           
-    - this is an item                 
-    - another item                   
-               
-    ```
-
-???- solution
-
-    
-   # Plan
-
-   ## Background
-
-   - Some text
-   - Theory: 
-   - **Problem**: 
-   - **Method**: Use Python
-      - Let's go for functional?? programming
-   - **Input**: Some initial ...
-       - Perhaps also user input of ...
-   - **Output**: Graph of ...
-
-   **Development steps** (we extend the program with iterations)
-   1. XX system
-   1. Add YY
-   1. Make modular
-   1. Add more ZZ
-
-   ## PlantUML/mermaid
-
-   ```mermaid
-
-   ```
-
-   ## Pseudocode
-
-   ```code
-   Define constants
-   Define initial values
-   (Allocate (book) space for long vectors)
-   Iteration
-   Plot resulting ...
-   Calculate ...
-   ```
 
 
 --------------------------------
