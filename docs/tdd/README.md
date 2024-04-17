@@ -24,40 +24,35 @@
     - Pair programming
     - `master` branch
 
+    Prior knowledge questions:
+
+    - How do you grow/develop your code?
+    - How do others grow/develop their code?
+    - Why would it be important to have a formal way to grow/develop your code?
+
     Lesson plan:
 
-    - 5 mins: prior knowledge
-      - How do you grow/develop your code?
-      - How do others grow/develop their code?
-      - Why would it be important to have a formal way to grow/develop your code?
-    - 5 mins: presentation
-    - 10 mins: demonstration `is_zero`
-    - 25 mins: challenge
-    - 10 mins: feedback
+    ```mermaid
+    gantt
+      title Lesson plan TDD 1
+      dateFormat X
+      axisFormat %s
+      Pair programming: done, 0, 30
+      Theory: extra, after feedback_3, 45
+      Break: crit, 45, 15s
+    ```
 
-```mermaid
-gantt
-  title Lesson plan pair programming 2
-  dateFormat X
-  axisFormat %s
-  Feedback 2: feedback_2, 0, 10s
-  Theory 3: theory_3, after feedback_2, 5s
-  Exercise 3: crit, exercise_3, after theory_3, 10s
-  Feedback 3: feedback_3, after exercise_3, 5s
-  Start TDD: done, extra, after feedback_3, 45
-  Break: crit, 45, 15s
-```
+    ```mermaid
+    gantt
+      title Lesson plan TDD 2
+      dateFormat X
+      axisFormat %s
+      Exercise 1: crit, exercise_1, 0, 20s
+      Feedback 1: feedback_1, after exercise_1, 10s
+      Retrospect: crit, 30, 15s
+      Break: crit, 45, 15s
+    ```
 
-```mermaid
-gantt
-  title Lesson plan TDD 2
-  dateFormat X
-  axisFormat %s
-  Exercise 1: crit, exercise_1, 0, 20s
-  Feedback 1: feedback_1, after exercise_1, 10s
-  Retrospect: crit, 30, 15s
-  Break: crit, 45, 15s
-```
 
 ## Introduction
 
