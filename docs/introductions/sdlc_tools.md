@@ -206,19 +206,27 @@ Start with parts first and develop a bigger organization with time.
 
 
 
-```dot
----
-title: _Mermaid diagram_ of the UML graph types
----
-digraph{
-"UML diagrams"
-Structure, Behaviour
-"UML diagrams" -> Structure
-"UML diagrams" -> Behaviour
-Structure -> Class, Component, Object, composite
-Behaviour -> "Use case", Activity, Interaction
-Interaction -> Sequence, Communication, Timing, "Interaction overview"
-}
+```mermaid
+flowchart TD
+
+  uml_diagrams["UML graph types"]
+  structure[Structure]
+  behaviour[Behavior]
+  interaction[Interaction]
+
+  uml_diagrams --> structure
+  uml_diagrams --> behaviour
+  structure --> class_diagram[Class diagram]
+  structure --> component[Component diagram]
+  structure --> object[Object diagram]
+  structure --> composite[Composite diagram]
+  behaviour --> use_case[Use case diagram]
+  behaviour --> activity[Activity diagram]
+  behaviour --> interaction
+  interaction --> sequence[Sequence diagram]
+  interaction --> communication[Communication]
+  interaction --> timing[Timing]
+  interaction --> interaction_overview[Interaction overview]
 ```
 
 !!! admonition "We will in the course use"
