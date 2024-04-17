@@ -246,49 +246,23 @@ sequenceDiagram
 
 #### Activity
 
-A flowchart that shows the process and its correlating decisions, including an **algorithm**  or a business process.
+A flowchart that shows the process and its correlating decisions, 
+including an **algorithm**  or a business process.
 
-```{uml} puml/activity.puml
-```
-
-```console
-@startuml
-
-start
-
-if (Graphviz installed?) then (yes)
-  :process all\ndiagrams;
-else (no)
-  :process only
-  __sequence__ and __activity__ diagrams;
-endif
-
-stop
-
-@enduml
+```mermaid
+flowchart TD
+  is_installed{Graphviz installed?}
+  is_installed --> |yes| process_all[process all\ndiagrams]
+  is_installed --> |no| process_sub[process only\nsequence and activity diagrams]
 ```
 
 #### Algorithm flowchart
-```{uml}
-@startuml
-start
-if (stuff) then (true) 
-   :action 2;
-endif
 
-stop
-@enduml
-```
-
-```console
-@startuml
-start
-if (stuff) then (true) 
-   :action 2;
-endif
-
-stop
-@enduml
+```{mermaid}
+flowchart TD
+  condition{Is something true?}
+  condition --> |yes| is_true[Do action 1]
+  condition --> |no| is_false[Do action 2]
 ```
 
 #### Class
