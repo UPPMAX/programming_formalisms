@@ -643,11 +643,12 @@ There are different types of remotes:
 
 !!! admonition "Documentation comes in different forms"
 
-    What *is* documentation?
+    - What *is* documentation?
         - **Tutorials**: learning-oriented, allows the newcomer to get started
         - **How-to guides**: goal-oriented, shows how to solve a specific problem
         - **Explanation**: understanding-oriented, explains a concept
         - **Reference**: information-oriented, describes the machinery
+        - **In-code documentaion — docstrings** 
         **Not to forget**
         - Project documentation:
             - requirements: what is the goal of the software, risks, platforms
@@ -656,6 +657,21 @@ There are different types of remotes:
 
 **There is no one size fits all**: often for small projects a `README.md` or
 `README.rst` can be enough (more about these formats later).
+
+Docstrings
+
+A docstring is a structured comment associated to a segment of code (i.e. function or class)
+
+Good docstrings describe:
+
+    What the function does
+
+    What goes in (including the type of the input variables)
+
+    What goes out (including the return type)
+
+    Python example: help()
+
 
 !!! objectives
      - [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html) aims to:

@@ -76,6 +76,8 @@
 
 ???- question "Exercise: git add git commit"
 
+???- question "Exercise: in-code docs"
+
 ???- question "Exercise: github and git push"
 
 ???- question "Exercise: clone course project and create folders
@@ -171,7 +173,7 @@
     **Done!**
 
 **Let's view the license!**
-- There are prewritten text for the different types.
+- There is pre-written text for the different types.
 - More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
 
     

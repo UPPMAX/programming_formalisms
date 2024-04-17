@@ -44,9 +44,9 @@
 
 ## All Exercises
 
-???- question "Demo with other teacher: Add to someone else's project (another planet)"
+???- question "Demo with Richel: Add to someone else's project (another planet)"
 
-???- disussion
+???- question "discussion"
 
 ???- question "quiz"
 
