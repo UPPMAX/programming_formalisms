@@ -158,6 +158,7 @@
 
     On this page choose a project name, e.g. ``planets-<username>`` 
       - the name there so there are no clashes when/if you collaborate and fork other repositories)
+      - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
 
     - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
     - but "Choose a license"
@@ -204,18 +205,21 @@
   - (Full documentation)
   - (Tutorial)
 
-!!! admonition "Directory structure
-Different projects should have separate folders
-  - ReadMe file
-  - Data		(version controlled)(.gitignore)
-  - Processed data	intermediate
-  - (Manuscript)	
-  - Results		data, tables, figures (version controlled, git tags for manuscript version)
-  - Src		version controlled code
-    - License (here or in the 1st level)
-    - Requirements.txt
-  - Doc
+!!! admonition "Directory structure"
+
+    - **Different projects should have separate folders**
+
+    - ReadMe file
+    - Data		(version controlled)(.gitignore)
+    - Processed data	intermediate
+    - (Manuscript)	
+    - Results		data, tables, figures (version controlled, git tags for manuscript version)
+    - Src		version controlled code goes here
+      - License (here or in the 1st level)
+      - Requirements.txt
+    - Doc
     - index
+    - .gitignore file
 
 
 !!! note
@@ -224,6 +228,7 @@ Different projects should have separate folders
 ### README files
 
 **Advantages**
+
 - Versioned (goes with the code development)
 - It is often good enough to have a `README.md` or `README.rst` along with your code/script
 - If you use README files, use either
@@ -235,15 +240,10 @@ Different projects should have separate folders
 !!! info "A README file should include"
 
     - A descriptive project title
-
     - Motivation (why the project exists)
-
     - How to setup
-
     - Copy-pastable quick start code example
-
     - Recommended citation
-
 
 ### In-code documentation
 
@@ -255,9 +255,35 @@ Different projects should have separate folders
 - Disadvantage
   - Probably not enough for users
 
+````{discussion} In BO:s?
+**Comments examples**
+
+Let's take a look at two example comments (comments in python start with `#`):
+
+**Comment A**
+```python
+# Now we check if temperature is larger then -50:
+if temperature > -50:
+    print('do something')
+```
+
+**Comment B**
+```python
+# We regard temperatures below -50 degrees as measurement errors
+if temperature > -50:
+    print('do something')
+```
+Which of these comments is best? Can you explain why?
+````
+```{solution} Solution
+- Comment A describes **what** happens in this piece of code, whereas comment B describes **why** this piece of code is there, i.e. its **purpose**.
+- Comments in the form of B are much more useful, comments of form A are redundant and we should avoid them.
+```
+ 
+
 **Why and not how**
 
-#### Docstrings
+#### Function docstrings
 A docstring is a structured comment associated to a segment of code (i.e. function or class)
 
 Good docstrings describe:
@@ -273,7 +299,24 @@ Good docstrings describe:
     - Writing docstrings is an easy way to write documentation while you type code.
     - Copy-pastable quick start code example
     - Recommended citation
+    
+**Example**
+  
+```python
+def mean_temperature(data):
+    """
+    Get the mean temperature
 
+    Args:
+        data (pandas.DataFrame): A pandas dataframe with air temperature measurements.
+
+    Returns:
+        The mean air temperature (float)
+    """
+    temperatures = data['Air temperature (degC)']
+    return float(sum(temperatures)/len(temperatures))  
+  
+```
 
 **We are ready to**
 - Extend the README file
