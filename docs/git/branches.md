@@ -13,9 +13,9 @@
       - go through branching and merging
 
 
-???- info "Learning objectives of 'Deployment'"
+???- info "Learning objectives of 'Branches'"
 
-    - learners can explain and evaluate the usefulness for different git commands
+    - learners can explain and evaluate the usefulness for branches
 
 !!! note "Instructor notes"
 
@@ -57,7 +57,7 @@
 
 ## All Exercises
 
-???- question "Demo: add jupiter
+???- question "Demo: add jupiter"
 
 ???- question "Demo: modular code in branch"
 
