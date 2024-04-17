@@ -273,7 +273,7 @@ flowchart TD
 
 #### Algorithm flowchart
 
-```{mermaid}
+```mermaid
 flowchart TD
   condition{Is something true?}
   condition --> |yes| is_true[Do action 1]
