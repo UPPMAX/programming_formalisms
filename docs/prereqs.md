@@ -78,13 +78,13 @@ You have installed `git`, if:
 
 You have good enough knowledge of `git`, if:
 
-- [ ] You know what cloning is
-- [ ] You know what staging is
-- [ ] You know what a commit is
-- [ ] You know what pushing is
-- [ ] You know what pulling is
-- [ ] You know how to see the status of your `git` repository
-- [ ] You can do a basic `git` workflow, 
+- :black_square_button: You know what cloning is
+- :black_square_button: You know what staging is
+- :black_square_button: You know what a commit is
+- :black_square_button: You know what pushing is
+- :black_square_button: You know what pulling is
+- :black_square_button: You know how to see the status of your `git` repository
+- :black_square_button: You can do a basic `git` workflow, 
       as described [here](https://uppmax.github.io/programming_formalisms/misc/git_workflow/)
       in 5 minutes. 
 
@@ -99,7 +99,7 @@ You have good enough knowledge of `git`, if:
 
 You have set up a GitHub account, if:
 
-- [ ] You can login at [https://github.com/](https://github.com/)
+- :black_square_button: You can login at [https://github.com/](https://github.com/)
 
 ???- question "Have you set up a GitHub account?"
 
@@ -110,7 +110,7 @@ You have set up a GitHub account, if:
 
 You have installed Python, if:
 
-- [ ] In a terminal, running `python --version` or `python3 --version` shows the Python version.
+- :black_square_button: In a terminal, running `python --version` or `python3 --version` shows the Python version.
 
 ???- question "Have you installed Python?"
 
@@ -124,9 +124,9 @@ You have installed Python, if:
 
 You know enough basic Python, if:
 
-- [ ] You can describe what a variable is
-- [ ] You can change the value of a variable
-- [ ] You can show the value of a variable on screen
+- :black_square_button: You can describe what a variable is
+- :black_square_button: You can change the value of a variable
+- :black_square_button: You can show the value of a variable on screen
 
 ???- question "Do you know basic Python?"
 
