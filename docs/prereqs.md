@@ -48,15 +48,54 @@ You have installed Visual Studio, if:
 You have installed `git`, if:
 
 - :black_square_button: In a terminal, `git version` shows your version of `git`
+
+???- question "Don't have Git installed?"
+
+    Go to [Terminal and Git](prereqs.md#terminal-&-git)
+
 - :black_square_button: In a terminal, `git config --global user.name` shows your name
+
+???- question "Does not show your name?"
+
+    In a terminal, type:
+
+    ```
+    git config --global user.name "[your regular name]"
+    ```
+
+    where `[your regular name]` is your regular name, for example:
+
+    ```
+    git config --global user.name "Sven Svensson"
+    ```
+
 - :black_square_button: In a terminal, `git config --global user.email` shows your email address
+
+???- question "Does not show your email?"
+
+    In a terminal, type:
+
+    ```
+    git config --global user.email "[your email]"
+    ```
+
+    where `[your email]` is your email address, for example:
+
+    ```
+    git config --global user.email "sven@svensson.se"
+    ```
+
 - :black_square_button: In a terminal, `git config --global pull.rebase` shows something, 
+
       e.g. the text `false`
 
-???- question "Do you have Git installed?"
+???- question "Does not show your rebase strategy?"
 
-     - Yes!
-     - No go to [Terminal and Git](prereqs.md#terminal-&-git)
+    In a terminal, to change this to the default, type:
+
+    ```
+    git config --global pull.rebase false
+    ```
 
 ???- question "Can you run Git from VS code?"
 
