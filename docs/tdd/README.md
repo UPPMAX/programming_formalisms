@@ -39,7 +39,6 @@
       axisFormat %s
       Pair programming: done, 0, 30
       Theory: extra, 30, 45
-      Break: crit, 45, 15s
     ```
 
     ```mermaid
@@ -50,7 +49,6 @@
       Exercise 1: crit, exercise_1, 0, 20s
       Feedback 1: feedback_1, after exercise_1, 10s
       Retrospect: crit, 30, 15s
-      Break: crit, 45, 15s
     ```
 
 
