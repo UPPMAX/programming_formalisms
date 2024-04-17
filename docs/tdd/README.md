@@ -38,7 +38,7 @@
       dateFormat X
       axisFormat %s
       Pair programming: done, 0, 30
-      Theory: extra, after feedback_3, 45
+      Theory: extra, 30, 45
       Break: crit, 45, 15s
     ```
 
