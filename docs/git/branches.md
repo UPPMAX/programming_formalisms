@@ -661,35 +661,32 @@ $ git graph
 - It turned out that our experiment with modularity was a good idea. 
 - Our goal now is to merge modularity into main.
  
-```{figure} img/git-collaborative.svg
-:alt: Isolated tracks
-:width: 50%
+![Isolated tracks](img/git-collaborative.svg){width: 50%}
 
-Isolated tracks of work.
-```
-``````{challenge} Merge into main
-- once all features are ready, switch to main
-```console
-$ git checkout main    # switch to main branch
-$ git branch           # check that we are on main branch
-$ git merge  modularity          # merge modularity into main
-```
-- let's now check the graphical view:
+!!! example !Merge into main
+
+    - once all features are ready, switch to main!
+    ```console
+    $ git checkout main    # switch to main branch
+    $ git branch           # check that we are on main branch
+    $ git merge  modularity          # merge modularity into main
+    ```
+    - let's now check the graphical view:
   
-```git
-$ git graph
-*   dc3f83f (HEAD -> main) modular
-|\
-| * fc007d4 (modularity) modular code
-* | 413d0e3 rm printing output
-|/
-* 5434395 add Jupiter
-* f3c1fb5 planet.py
+    ```git
+    $ git graph
+    *   dc3f83f (HEAD -> main) modular
+    |\
+    | * fc007d4 (modularity) modular code
+    * | 413d0e3 rm printing output
+    |/
+    * 5434395 add Jupiter
+    * f3c1fb5 planet.py
+     
+    ```
+    - push to GitHub
+    - ``git push``
 
-```
-- push to GitHub
-- ``git push``
-``````
 
 ## Summary
 
@@ -720,10 +717,9 @@ $ git merge
 ```
 
 **Overview workflow**
-```{figure} img/git_branches.png
-:width: 100%
-:class: with-border
-```   
+![](../img/git_branches.png)
+
+ 
 
 !!! admonition "Parts to be covered!"
 
@@ -747,14 +743,15 @@ $ git merge
     - &#9744; Documentation
         - &#9745; in-code documentation
   
-```{Keypoints}
-- Initializing a Git repository is simple: ``git init``.
-- Commits should be used to tell a story.
-- Git uses the .git folder to store the snapshots.
-- Don’t be afraid to stage and commit often. Better too often than not often enough.
-- A branch is a division unit of work, to be merged with other units of work.
-- A tag is a pointer to a moment in the history of a project.
-- A repository can have one or multiple remotes (we will revisit these later).
-- Local branches often track remote branches.
-- A remote serves as a full backup of your work.
-```
+!!! Keypoints
+
+    - Initializing a Git repository is simple: ``git init``.
+    - Commits should be used to tell a story.
+    - Git uses the .git folder to store the snapshots.
+    - Don’t be afraid to stage and commit often. Better too o
+    - A branch is a division unit of work, to be merged with 
+    - A tag is a pointer to a moment in the history of a proj
+    - A repository can have one or multiple remotes (we will 
+    - Local branches often track remote branches.
+    - A remote serves as a full backup of your work.
+
