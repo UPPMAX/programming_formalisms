@@ -80,7 +80,7 @@
 
 ???- question "Exercise: github and git push"
 
-???- question "Exercise: clone course project and create folders
+???- question "Exercise: clone course project and create folders"
 
 
 ## Before we continue we need to configure Git
@@ -173,7 +173,7 @@
     - Or if you see your profile page, there is a "+" menu (top right corner).
 
 
-    !New top-right](../img/new-top-right.png){ width=60% }
+    ![New top-right](../img/new-top-right.png){ width=60% }
     
     ---
 
@@ -212,19 +212,19 @@
 
 - Think that **everything is worth to be part of documentation** (like GitHub directory tree)
 - The parts from the software development cycle
-  - The planning parts
-      - Requirements: 
+    - The planning parts
+        - Requirements: 
         - what should the program deliver
         - dependencies
         - OS platforms
-      - Risk analysis
-  - Design documentation
-      - Analysis: pseudo code and UML
-  - Source code
-    - with in-code documentation
-  - README
-  - (Full documentation)
-  - (Tutorial)
+        - Risk analysis
+    - Design documentation
+        - Analysis: pseudo code and UML
+    - Source code
+        - with in-code documentation
+    - README
+    - (Full documentation)
+    - (Tutorial)
 
 !!! admonition "Directory structure"
 
@@ -236,8 +236,8 @@
     - (Manuscript)	
     - Results		data, tables, figures (version controlled, git tags for manuscript version)
     - Src		version controlled code goes here
-      - License (here or in the 1st level)
-      - Requirements.txt
+        - License (here or in the 1st level)
+        - Requirements.txt
     - Doc
     - index
     - .gitignore file
@@ -290,7 +290,7 @@
 
 !!! example "README.md for the test project"
 
-    ```code    
+    ````code    
     # Plan
 
     ## Background
@@ -312,7 +312,7 @@
 
     ## PlantUML
 
-    ```uml
+    
     @startuml
     skin rose
     title Planet flowchart
@@ -330,11 +330,11 @@
     ->yes;
     :figure plotting;
     stop
-    ```
+    
 
     ## Pseudocode
 
-    ```code
+    
     Define constants
     Define initial values
     	positions
