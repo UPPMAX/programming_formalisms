@@ -147,13 +147,13 @@
     </figure>
 
 
-    To-  create a repository we either click the green button "New" (top left corner).
+    - To create a repository we either click the green button "New" (top right corner).
 
-    ![Programming formalism logo](../img/new-top-right.png){ width=60% }
-    
     - Or if you see your profile page, there is a "+" menu (top right corner).
 
 
+    !New top-right](../img/new-top-right.png){ width=60% }
+    
     ---
 
     On this page choose a project name, e.g. ``planets-<username>`` 
@@ -163,27 +163,25 @@
     - but "Choose a license"
     - Let's choose MIT (we may discuss this later on)
 
-    ```figure img/New_repo_formalisms.png
-    :width: 100%
-    :class: with-border
-    ```
+    ![New repo ](../img/New_repo_formalisms.png)
 
+    - Press "**Create repository**"
+
+    ![Create and push](../img/created_push.PNG)     
+
+    - Choose **SSH**
+    - Copy-paste the code for "**…or push an existing repository from the command line**"
+    - Go to **local git terminal** and go to the **git project you started above**
+    - Paste the code
+
+    - Did it work??
+    - Reload the GitHub page and see the fiels present locally is also present there.
+    
     **Done!**
 
-**Let's view the license!**
+- **Let's view the license!**
 - There is pre-written text for the different types.
-- More info at [Licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
-
-    
-
-### Start from GitHub and clone to your local computer
-
-!!! note "Write the opposite!"
-   
-    - For the course project we do it in this order, but that is not necessary in all cases.
-    - Typically you may start locally in Git repository and later push to a GitHub repository (more next session about Git)
-- The reason for starting here is that we can get our PlantUML render in the browser!
-
+- More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
 
 
 ## Introduction to documentation
