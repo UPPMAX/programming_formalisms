@@ -143,13 +143,13 @@
     - Make sure that you are **logged into GitHub**.
 
     <figure markdown="span">
-    ![New repo](img/New_repo.png){ width="500" }
+    ![New repo](../img/New_repo.png){ width="500" }
     </figure>
 
 
     To-  create a repository we either click the green button "New" (top left corner).
 
-    ![Programming formalism logo](img/new-top-right.png){ width=60% }
+    ![Programming formalism logo](../img/new-top-right.png){ width=60% }
     
     - Or if you see your profile page, there is a "+" menu (top right corner).
 
