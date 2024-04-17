@@ -1,4 +1,4 @@
-# Start the project
+# Get started with a project
 
 !!! questions
 
