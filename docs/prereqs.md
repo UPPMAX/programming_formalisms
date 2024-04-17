@@ -159,7 +159,7 @@ You have installed Python, if:
 ???- question "Can you run Python from VS Code?"
 
      - Yes!
-     - No, go to Python in VS Code](prereqs.md#python-in-vs-code)
+     - No, go to [Python in VS Code](prereqs.md#python-in-vs-code)
 
 You know enough basic Python, if:
 
