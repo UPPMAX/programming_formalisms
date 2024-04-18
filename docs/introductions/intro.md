@@ -193,7 +193,7 @@ floor=5
 
 
    
-## Code Example???
+## Code Example
 
 ???+ exercise
 
@@ -201,7 +201,7 @@ floor=5
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
 
-    ???- Code
+    ???- exercise "planet.py"
 
         ```python
         #planet
