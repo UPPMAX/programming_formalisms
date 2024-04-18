@@ -128,18 +128,8 @@
   - or share attributes with each-other (within a `class`)
   - info-hiding mindset...
 
-```{uml}
-@startuml
-class Elevator{
-  direction : String
-  floor : Integer
-  
-  void goto_floor()
-  void stop()
-  void which_floor()
-}
-@enduml
-```
+
+**Objects**
 
 ```{uml}
 @startuml
@@ -155,6 +145,23 @@ floor=5
 @enduml
 
 ```
+**Class**
+
+```mermaid
+classDiagram
+  class Elevator{
+    +string direction
+    +int floor 
+  
+    +goto_floor()
+    +stop()
+    + which_floor()
+  }
+```
+
+
+
+
 !!!- note "Object orientation (OO) in some programming languages"
 
     - OO (built-in classes)
