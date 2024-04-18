@@ -59,31 +59,31 @@ There are two more ways to create “copies” of repositories into your user sp
 - A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
 - You can **import** a repository from another hosting service or web address. This will preserve the history of the imported project.
 
-```{admonition} Cheat-sheet
-**Commits, branches, repositories, forks, clones**
+!!! admonition "Cheat-sheet"
 
-- **repository**: The project, contains all data and history (commits, branches, tags).
-- **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-- **branch**: Independent development line, often we call the main development line `master` or `main`.
-- **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque)
+    **Commits, branches, repositories, forks, clones**
+
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - **branch**: Independent development line, often we call the main development line `master` or `main`.
+    - **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque)
   that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
-- **cloning**: Copying the whole repository to your laptop - the first time.
-  - It is not necessary to download each file one by one.
-  - good within a group  
-- **forking**: Taking a copy of a repository (which is typically not yours)
-  - your copy (fork) stays on GitHub and you can make changes to your copy.
-  - better for contribution to other's project
-- `git clone` copies everything: all commits and all branches.
-- Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/master`.
-- We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
-- Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
-- Repositories that are forked or cloned **do not automatically synchronize themselves**.
-``` 
+    - **cloning**: Copying the whole repository to your laptop - the first time.
+        - It is not necessary to download each file one by one.
+        - good within a group  
+    - **forking**: Taking a copy of a repository (which is typically not yours)
+        - our copy (fork) stays on GitHub and you can make changes to your copy.
+        - better for contribution to other's project
+    - `git clone` copies everything: all commits and all branches.
+    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/master`.
+    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
+    - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
+    - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
 ## Contributing to existing repositories using pull requests
 Based on: https://coderefinery.github.io/github-without-command-line/contributing/
 
-- Step 1 How to add collaborators to your repository: [https://coderefinery.github.io/github-without-command-line/contributing/](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)
+- **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
 - Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll
 actually do it with review).
@@ -107,7 +107,7 @@ In this exercise we will not change the `master` branch directly but
 we will submit a "pull request" (a **change proposal**) towards the `master` branch
 for **code review**.
 
-<img src="../img/contributing/propose-file-change.png" width="800px" style="border:2px solid #000000;">
+![](../img/contributing/propose-file-change.png){ width="800px" style="border:2px solid #000000;}
 
 - After we click "Propose file change" we are taken to this form:
 <img src="../img/contributing/pull-request-form.png" width="400px" style="border:2px solid #000000;">
