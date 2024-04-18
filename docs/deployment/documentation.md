@@ -113,7 +113,7 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 #### Read the Docs
 - Somewhat more possibilities, like having several versions of documentation to switch between.
                                       
-### Wiki:s
+### Wikis
 - Popular solutions (but many others exist):
     - [MediaWiki](https://www.mediawiki.org)
     - [Dokuwiki](https://www.dokuwiki.org)
