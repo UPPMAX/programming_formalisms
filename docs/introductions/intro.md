@@ -169,7 +169,7 @@ classDiagram
     - More on Friday: [Modular programming](friday_intro.md)
 
 ###  Modular coding
-- Modular coding breaks up the code in blocks that could be seperate files. 
+- Modular coding breaks up the code in blocks that could be separate files. 
 - Modularity could be within a program but also for a workflow.
 
 !!! example "WRF module and a workflow in 'runtime-"
