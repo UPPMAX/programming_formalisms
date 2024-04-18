@@ -19,3 +19,18 @@ In this week, we:
 - [ ] can describe in general terms with Amdahl's Law is
 - [ ] can describe what big-O is
 - [ ] can describe what a run-time profile is
+
+
+- A program shall be or have content/components that is:
+    - Correct
+    - Efficient
+    - Reusable
+    - Changeable
+
+- Software development is both series of steps: 
+    1.	Requirements
+    2.	Analysis and design
+    3.	Development
+    4.	Test
+    5.	Development and maintenance
+- ... and iteration of these
