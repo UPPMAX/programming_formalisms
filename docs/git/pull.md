@@ -110,6 +110,7 @@ for **code review**.
 ![](../img/contributing/propose-file-change.png){ width="800px" style="border:2px solid #000000;}
 
 - After we click "Propose file change" we are taken to this form:
+  
 ![](../img/contributing/pull-request-form.png){ width="400px" style="border:2px solid #000000;}
 
 - In there we verify the **source and target branch**, verify the **file changes**,
@@ -217,7 +218,7 @@ We can practice how a conflict looks and how to resolve it:
 
 ## Distributed version control and Forking workflow
 
-![Forking layout](img/forking-overview.svg){width: 50%}
+![Forking layout](../img/forking-overview.svg){width: 50%}
 
 **Forking workflow**
 - **Red** is the central repository, where only owners have access.
