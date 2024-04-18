@@ -67,26 +67,27 @@
 ### Conda, Anaconda, pip, Virtualenv, Pipenv, pyenv, Poetry, requirements.txt …
 
 **These _Python-related_ tools try to solve the following problems:**
+
 -	**Defining a specific set of dependencies**, possibly with well-defined versions
 -	**Installing those dependencies** mostly automatically
 -	**Recording the versions** for all dependencies
 -	**Isolated environments**
-   -	On your computer for projects so they can use different software.
-   -	Isolate environments on computers with many users (and allow self-installations)
-   -	Using **different Python/R versions** per project??
-   -    Provide tools and services to **share packages**
+    -	On your computer for projects so they can use different software.
+    -	Isolate environments on computers with many users (and allow self-installations)
+    -	Using **different Python/R versions** per project??
+    -    Provide tools and services to **share packages**
 
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 - Make Python packages of your code.
   
 - **Possibilities for other languages can be**
-  - C/C+
-    - CMake
-    - Conda
-  - Fortran
-    - Fortran package manager
-  - Julia
-    - Pkg.jl
+    - C/C+
+        - CMake
+        - Conda
+    - Fortran
+        - Fortran package manager
+    - Julia
+        - Pkg.jl
 - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
 
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
