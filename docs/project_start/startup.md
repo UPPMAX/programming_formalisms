@@ -126,7 +126,7 @@
     - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-    - `git clone` copies everything: all commits and all branches.
+        - `git clone` copies everything: all commits and all branches.
     - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
     - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
 
@@ -135,73 +135,155 @@
 ### Initial code base
 - Let's say you have some code you have started to work with
 
-!!! example "Demo"
+!!! example "Type-along or Demo"
 
     **You can also listen and try this out yourself when you have time**
     
-    - Example code, planets.py
+    - Example code, `planets.py`
 
     !!!- Code
 
-         python code
+        ```python
+        #planet
+        import numpy as np
+        import matplotlib.pyplot as plt 
 
-    - Make sure the code is in a code folder and in a folder with a good project name
-        - Example: planets/code/
+        #constants
+        G=6.6743e-11
+        AU=149.597871e9 # 1 astronomical unit (AU) is the mean distance between su
+        AU1=150.8e9
+        mj=5.97219e24
+        mJ=1.899e27
+        M=1.9891e30
+        day=86400;
+        year=31556926;
+        v0=AU*2*np.pi/year;
+        Fg=G*M*mj/AU**2
+        ag=Fg/mj
+        Fc=mj*v0**2/AU
+        ac=Fc/mj
+
+        L=2
+
+        x0=AU1;
+        y0=0;
+        u0=0;
+        x=np.zeros(365*L, dtype=float);
+        y=np.zeros(365*L, dtype=float);
+
+        x[0]=x0;
+        y[0]=y0;
+        u=u0;
+        v=v0;
+
+        for i in range(1,365*L):    
+            print(i)
+            x[i]=x[i-1]+day*u;
+            y[i]=y[i-1]+day*v;
+            ax=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
+            ay=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
+            u=u+ax*day;
+            v=v+ay*day;
+
+        rj=(x**2+y**2)**.5
+        a=max(rj)
+        b=min(rj)
+        e=1-2/(a/b+1)
+        rel=(a/b-1)
+
+
+        fig=plt.figure(1,figsize=(12,5))
+        ax=fig.add_subplot(1,2,1)
+        ax.plot(x,y)
+        ax.plot (0,0,'o')
+        #axis equal
+
+        ax=fig.add_subplot(1,2,2)
+        ax.plot(range(0,365*2),rj)
+
+        plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight') 
+
+        ```
+    - Make a folder with name `planets` 
+    - and make a folder within that with the name ``code``
+    - In that folder, create a file 
+    - Copy paste the python code above into it and save as ``planets.py``
 
 ### Initiate a project
 
-!!! example "Demo"
+!!! example "Type-along or demo"
 
+    - Be in a terminal and go to the ``planets`` folder, which will be the project repository (**repo**)
     - run ``git init``
     - make sure that there is a ``.git`` directory created
 
-### Staging files
 
-
-As mentioned above, in Git you can always check the status of files in your repository using
-`git status`. It is always a safe command to run and in general a good idea to
+    - Now you have a git repo called planets
+    - check with the command: ``git status``
+    - It is always a safe command to run and in general a good idea to
 do when you are trying to figure out what to do next:
 
-#### Example
+    - So far, there is no content. We have to manually add the content to the repo.
 
-```console
-On branch master
+    - This is done with the commands ``add`` and ``commit``
 
-No commits yet
+### Staging files
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        activity.puml
-        class.puml
+!!! example "no type-along"
 
-nothing added to commit but untracked files present (use "git add" to track)
+    ```console
+    $ git status
+    
+    On branch master
 
-```
-   
+    No commits yet
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            activity.puml
+            class.puml
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    ```   
+    
 The two files are untracked in the repository (directory). You want to **add the files** (focus the camera)
 to the list of files tracked by Git. Git does not track
 any files automatically and you need make a conscious decision to add a file. Let's do what
 Git hints at and add the files:
 
+!!! example "Type-along or demo"
 
-```console
-$ git add .    # < -- "." means all files
-$ git status
+    ```console
+    $ git add .    # < -- "." means all files
+    $ git status
 
-On branch master
+    On branch master
 
-Initial commit
+    Initial commit
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
 
-        new file:   activity.puml
-        new file:   class.puml
-```
+            new file:   activity.puml
+            new file:   class.puml
+    ```
 
-Now this change is *staged* and ready to be committed.
+    Now this change is *staged* and ready to be committed.
+
+
+!!! example "Type-along or demo"
+
+    - Let's follow the example above
+    - We do: 
+    ```
+    $ git add .
+    $ git status
+    ```
 
 ### Commit
+- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
+- BUT only what we have added to the "staging" area!
 
 ### Example
 Let us now commit the change to the repository:
