@@ -89,8 +89,9 @@
     - Pkg.jl
 - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
 
-[The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
+- [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
 
+**FIX**
 
 
 **Course advertisement**
@@ -98,21 +99,27 @@
 
 ### Record our environment for other users
 
+#### Example using python pip
+
 - We can make other users aware of the dependencies for our Python project.
 - One can state those specifically as a list in a README
 - Or, we can make a ready file (in python) 
 
-``````{type-along} Save your requirements as a file 
-- Save your requirements as a file that user can run to get the same dependencies as you
+!!! example "type-along"
 
-```console
-$ pip freeze > requirements.txt
-```
-- Users can then install the same packages with:
+    **Save your requirements as a file** 
 
-```console
-$ pip install -r requirements.txt
-```
+   - Identify 
+   - Save your requirements as a file that user can run to get the same dependencies as you
+
+   ```console
+   $ pip freeze > requirements.txt
+   ```
+   - Users can then install the same packages with:
+
+   ```console
+   $ pip install -r requirements.txt
+   ```
 
 **TIP** Inform about this in the last exercise (updating the README file)
 
@@ -137,11 +144,13 @@ For this we use `.gitignore` files. Read more https://uppmax.github.io/programmi
 
 ## Workflows
 
-```{seealso}
-**Learn more**
-[Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
-[Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
-```
+!!! info "See also"
+
+    **Learn more**
+    [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
+    [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
+
+
 ## Containers
 
 **Popular container implementations:**
@@ -155,36 +164,34 @@ For this we use `.gitignore` files. Read more https://uppmax.github.io/programmi
 - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
 
 
-```{keypoints}
-**Make sure it works for other or you in the future!**
-  - Preserve the steps for re-generating published results.
-  - Hundreds of workflow management tools exist.
-  - Snakemake is a comparatively simple and lightweight option to create transferable and scalable data analyses.
-  - Sometimes a script is enough.
-```
+!!! info "key points"
+
+    **Make sure it works for other or you in the future!**
 
 
-```{admonition} Parts to be covered
-- &#9745; Planning
-  - Pseudocode
-  - Unified Modelling Language
-- &#9744; Testing
-  - We don't do this today!
-- &#9745; Source/version control
-  - git history
-  - git branches
-- &#9744; Collaboration
-- &#9745; Sharing
-  - &#9745; open science
-  - &#9745; citation
-  - &#9745; licensing
-  - &#9745; reproducible
-- &#9745; Documentation
-  - docstrings
-  - README
 
-```
+!!! admonition "Parts to be covered!"
 
-
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+        - branches
+    - &#9745; Planning
+        - &#9745; Analysis
+        - &#9745; Design
+    - &#9745; Testing
+        - Different levels
+    - &#9745; Collaboration
+        - GitHub
+        - pull requests
+    - &#9744; Sharing
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing
+        - &#9745; deploying
+    - &#9744; Documentation
+        - &#9745; in-code documentation
+        - &#9744; finish documentation
 
 
