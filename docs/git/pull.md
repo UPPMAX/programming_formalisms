@@ -110,7 +110,7 @@ for **code review**.
 ![](../img/contributing/propose-file-change.png){ width="800px" style="border:2px solid #000000;}
 
 - After we click "Propose file change" we are taken to this form:
-<img src="../img/contributing/pull-request-form.png" width="400px" style="border:2px solid #000000;">
+![](../img/contributing/pull-request-form.png){ width="400px" style="border:2px solid #000000;}
 
 - In there we verify the **source and target branch**, verify the **file changes**,
   can edit the **title** and **description** of the "pull request" (change proposal)
@@ -120,12 +120,11 @@ for **code review**.
 
 !!! Discussion
 
->
-> - Ideally submitter and reviewer should be two different persons.
->   When is this best? When not?
-> - You can modify an open "pull request" by committing new changes to the branch
-> - Review is not only to assure quality but also to enhance learning and **knowledge transfer** within the group
-{: .discussion}
+    - Ideally submitter and reviewer should be two different persons.
+        - When is this best? When not?
+    - You can modify an open "pull request" by committing new changes to the branch
+    - Review is not only to assure quality but also to enhance learning and **knowledge transfer** within the group
+
 
 ---
 
@@ -134,14 +133,14 @@ can push commits to it directly, it can be useful to "protect" branches.
 
 - "Settings", then "Branches", then "Add rule":
 
-![](../img/contributing/branch-protection.png){ width="800px" style="border:2px solid #000000;}
+![](../img/contributing/branch-protection.png){ width="800px" }
 
 > ## Discussion
 >
-> - Protecting the `master` branch "forces" all changes to it to be reviewed first.
+> - Protecting the `main` branch "forces" all changes to it to be reviewed first.
 >   **We recommend this for group repositories**.
 >   Discuss the advantages/disadvantages of this.
-{: .discussion}
+
 
 ---
 
@@ -162,7 +161,9 @@ sharing screen:
 
 ---
 
-## Step 4: Resolving a conflict
+## Step 4: Resolving a conflict   
+
+**FIX**
 
 ```{instructor-note}
 - "Non-talking instructor" prepares a conflicting commit during session (check
@@ -196,7 +197,7 @@ We can practice how a conflict looks and how to resolve it:
 >
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
-{: .discussion}
+
 
 
 
