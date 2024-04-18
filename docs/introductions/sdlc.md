@@ -1,8 +1,8 @@
 # Software Development Lifecycle
 
-!!! info "Overview of oftware Development Lifecycle (SDLC)"
+!!! info "Overview of Software Development Lifecycle (SDLC)"
     
-    This is a breef intro to the concept of SDLC further reading can
+    This is a brief intro to the concept of SDLC further reading can
     be found in the reading material<br>
     == __All software have a life cycle__ ==<br> Weather you control that through formalism or if it is chaos is up to you.
     THE SDLC is usually broken down into phases 
