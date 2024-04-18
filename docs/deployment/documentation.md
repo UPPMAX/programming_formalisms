@@ -229,26 +229,34 @@ Copyleft is the legal technique of granting certain freedoms over copies of copy
         
 ```
 
-```{admonition} Parts to be covered
-- &#9745; Planning
-  - Pseudocode
-  - Unified Modelling Language
-- &#9744; Testing
-  - We don't do this today!
-- &#9745; Source/version control
-  - git history
-  - git branches
-- &#9744; Collaboration
-- &#9745; Sharing
-  - &#9745; open science
-  - &#9745; citation
-  - &#9745; licensing
-  - &#9745; reproducible
-- &#9745; Documentation
-  - docstrings
-  - README
 
-```
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+        - branches
+    - &#9745; Planning
+        - &#9745; Analysis
+        - &#9745; Design
+    - &#9745; Testing
+        - Different levels
+    - &#9745; Collaboration
+        - GitHub
+        - pull requests
+    - &#9745; Sharing
+        - &#9745; open science
+        - &#9745; citation
+        - &#9745; licensing
+        - &#9745; deploying
+    - &#9745; Documentation
+        - &#9745; in-code documentation
+        - &#9745; finish documentation
+
+  
+
+
 
 ``````{challenge} (Optional) Update your documentation
 - You can now work in GitHub directly
