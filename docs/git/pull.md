@@ -134,7 +134,7 @@ can push commits to it directly, it can be useful to "protect" branches.
 
 - "Settings", then "Branches", then "Add rule":
 
-<img src="../img/contributing/branch-protection.png" width="800px" style="border:2px solid #000000;">
+![](../img/contributing/branch-protection.png){ width="800px" style="border:2px solid #000000;}
 
 > ## Discussion
 >
@@ -179,18 +179,18 @@ We can practice how a conflict looks and how to resolve it:
 - Two participants should send two "pull requests" (change proposals)
   branching from `master` changing the same line in two different ways
 
-<img src="../img/contributing/conflict-edit-1.png" width="400px" style="border:2px solid #000000;">
-<img src="../img/contributing/conflict-edit-2.png" width="400px" style="border:2px solid #000000;">
+![](../img/contributing/conflict-edit-1.png){ width="400px" style="border:2px solid #000000;"}
+![](../img/contributing/conflict-edit-2.png){ width="400px" style="border:2px solid #000000;"}
 
 - We merge together one of the pull requests (this will work)
 - Then we try to merge the other and we see a conflict:
 
-<img src="../img/contributing/conflict-pull-request.png" width="600px" style="border:2px solid #000000;">
+![](../img/contributing/conflict-pull-request.png){ width="600px" style="border:2px solid #000000;}
 
 - We try to resolve the conflict via web
 - Choose the version that you wish to keep, remove conflict markers, "Mark as resolved" and commit the change
 
-<img src="../img/contributing/conflict-resolution.png" width="800px" style="border:2px solid #000000;">
+![]("../img/contributing/conflict-resolution.png){width="800px" style="border:2px solid #000000;}
 
 > ## Discussion
 >
@@ -202,14 +202,12 @@ We can practice how a conflict looks and how to resolve it:
 
 
 ## Centralized workflow
-```{figure} img/centralized.svg
-:alt: Centralized layout
-:width: 50%
+![Centralized layout](../img/centralized.svg){width: 50%}
 
 **Centralized layout**
 - **Red** is the repository on GitHub.
 - **Blue** is where all contributors work on their own computers.
-```
+
 
 - Centralized workflow is often used for **remote collaborative work**.
 - `origin` refers to where you cloned from (but you can relocate it).
@@ -218,15 +216,13 @@ We can practice how a conflict looks and how to resolve it:
 
 ## Distributed version control and Forking workflow
 
-```{figure} img/forking-overview.svg
-:alt: Centralized layout
-:width: 50%
+![Forking layout](img/forking-overview.svg){width: 50%}
 
 **Forking workflow**
 - **Red** is the central repository, where only owners have access.
 - **Green** are *forks* on GitHub (copy for a single user to work on).
 - **Blue** are local copies where contributors work on their own computer.
-```
+
 
 In the forking layout described above we work with **multiple remotes**,
 in this case **two remotes**: One remote refers to the **"central"** repository, and the other remote refers to the **"fork"**.
@@ -261,35 +257,27 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 - If you are working on the fix, indicate it in the issue so that others know that somebody is working on it and who is working on it
 - Submit your fix as pull request or merge request which references/closes the issue
 
-```{challenge} (Optional) Add to someone else's project
+!!!- example "(Optional demo) Add to someone else's project"
 
-**You can from the breakout room group decide on some collaboration if you want to!**
+    - Can we easily add one or more planets?
 
-- Make issue and pull requests
-- Remember that we were not happy with the results
-- Can we easily add one or more planets?
+    - The importance of each planet should be determined by the distance and the mass of it. 
+        - The acceleration effect should proportional with MASS/distance^2
+        - That means that we can ignore small planets and/or far away planets
+    - Below, see a first sorted out table of mass of the planets and their approximate shortest distance to Earth.
 
-- The importance of each planet should be determined by the distance and the mass of it. 
-  - The acceleration effect should proportional with MASS/distance^2
-  - That means that we can ignore small planets and/or far away planets
-- Below, see a first sorted out table of mass of the planets and their approximate shortest distance to Earth.
+    |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
+    |----|---|---|---|
+    Venus| 0.815 | 0.72 | 0.28
+    March| 0.107 | 1.52 | 0.52
+    Jupiter| 318 | 5.2 | 4.2
+    Saturn| 95.2 | 9.54 | 8.54
 
-|Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
-|----|---|---|---|
-Venus| 0.815 | 0.72 | 0.28
-March| 0.107 | 1.52 | 0.52
-Jupiter| 318 | 5.2 | 4.2
-Saturn| 95.2 | 9.54 | 8.54
+    - Adding a planet should be pretty straight-forward in our modular code!
 
-- Adding a planet should be pretty straight-forward in our modular code!
-
-- For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
+    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
   
-```
 
-```{seealso}
-You will work more with Git and GitHub and collaborate the other days of the week.
-```
 
 !!! admonition "Parts to be covered!"
 
