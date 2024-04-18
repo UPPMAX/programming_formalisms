@@ -131,6 +131,8 @@
 
 **Objects**
 
+![Elevator objects](../img/elevators.png)
+
 ```{uml}
 @startuml
 object elevator1{
