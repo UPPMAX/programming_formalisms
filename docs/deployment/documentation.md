@@ -130,21 +130,21 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 ## (Optional) Last hands on your documentation
 - Some inspiration [Beagle](https://github.com/yampelo/beagle)
 
-```{admonition} A little more about licensing
+!!! admonition "A little more about licensing"
 
-Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
+    - Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
 
-1. Custom/closed/proprietary
-  - Derivative work typically not possible
-  - Unusual in academics 
-2. Permissive (**MIT**, BSD, Apache)
-  - Derivative work does not have to be shared    
-3. Weak copyleft share-alike (**LGPL**, MPL)
-  - Derivative work is free software but is limited to the component
-4. Strong copyleft share-alike (**GPL**, AGPL)
-  - Derivative work is free software and derivative work extends to the combined project    
+    1. Custom/closed/proprietary
+        - Derivative work typically not possible
+        - Unusual in academics 
+    2. Permissive (**MIT**, BSD, Apache)
+      - Derivative work does not have to be shared    
+    3. Weak copyleft share-alike (**LGPL**, MPL)
+      - Derivative work is free software but is limited to the component
+    4. Strong copyleft share-alike (**GPL**, AGPL)
+      - Derivative work is free software and derivative work extends to the combined project    
 
-```
+
 
 !!! admonition "Citation bullets"
 
@@ -173,13 +173,29 @@ Copyleft is the legal technique of granting certain freedoms over copies of copy
         
 
 
+
+
+???+ Question "(Optional) Update your documentation"
+
+    - You can now work in GitHub directly
+    - Do ``git push`` first from local command-line!
+    - Revisit your README and update it with info after all our commits
+        - About
+        - Installation
+    - Users should be able to install the required python packages with:
+        ``pip install -r requirements.txt`` (depending on system ``--user`` may be added)
+    - Citing
+    - License
+    - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
+    - Do a ``git pull`` to have the same version of your project repo locally!
+
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
         - Git
         - We have a starting point!
         - GitHub as remote backup
-        - branches
+        - Branches
     - &#9745; Planning
         - &#9745; Analysis
         - &#9745; Design
@@ -196,25 +212,6 @@ Copyleft is the legal technique of granting certain freedoms over copies of copy
     - &#9745; Documentation
         - &#9745; in-code documentation
         - &#9745; finish documentation
-
-  
-
-
-
-???+ Question "(Optional) Update your documentation"
-
-    - You can now work in GitHub directly
-    - Do ``git push`` first from local command-line!
-    - Revisit your README and update it with info after all our commits
-        - About
-        - Installation
-    - Users should be able to install the required python packages with:
-        ``pip install -r requirements.txt`` (depending on system ``--user`` may be added)
-    - Citing
-    - License
-    - Lastly, you may, if tme allows, update the doc/index.md file that should describe the content
-    - Do a ``git pull`` to have the same version of your project repo locally!
-
 
 
 
