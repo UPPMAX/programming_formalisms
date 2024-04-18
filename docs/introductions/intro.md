@@ -168,11 +168,11 @@ classDiagram
     - More on Thursday: [Algorithms](thursday_intro.md)
     - More on Friday: [Modular programming](friday_intro.md)
 
-### Independent modules
-- Modular coding: is really good!
+###  Modular coding
+- Modular coding breaks up the code in blocks that could be seperate files. 
 - Modularity could be within a program but also for a workflow.
 
-!!! example "WRF module and a workflow in "runtime""
+!!! example "WRF module and a workflow in 'runtime-"
     
     - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
    
@@ -181,9 +181,10 @@ classDiagram
 ???+ exercise "Problems with this code? 5 min"
 
     **Planet application**
+    
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
-    
+    ---
     - **Correct** Skip this for now!
         - and _flawless_
     - **Efficient** Skip this !
@@ -200,11 +201,6 @@ classDiagram
             - Adapt to _new requirements_
             - Independent _modules_
             - Encapsulation/_information hiding_
-            - **Readability?**
-            - **Reusable?**
-            - **Changeable?**
-            - **Correct?** Skip this for now!!
-            - **Efficient?**
 
     ???- exercise "planet.py"
 
