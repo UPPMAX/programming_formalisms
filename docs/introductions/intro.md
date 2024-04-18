@@ -108,20 +108,7 @@
     
 ## How to program?
 
-### Independent modules
-- Modular coding is really good!
-- Object-oriented or functional programming, see below.
-- Modularity could be within a program but also for a workflow.
-
-!!! example "Workflow"
-
-    - Here's an example of a bash script taking care of runs with executable files.
-    - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
-
-
-### Functional vs. object-oriented programming
-
-#### Object oriented programming
+### Object oriented programming
 - Object-oriented (OO) programming is 
   - a mindset of mimicking the real-world as:
   - entities (`objects`) that are different 
@@ -133,20 +120,6 @@
 
 ![Elevator objects](../img/elevators.png)
 
-```{uml}
-@startuml
-object elevator1{
-direction="up"
-floor=2
-}
-object elevator2{
-direction="rest"
-floor=5
-}
-
-@enduml
-
-```
 **Class**
 
 ```mermaid
@@ -160,9 +133,6 @@ classDiagram
     + which_floor()
   }
 ```
-
-
-
 
 !!!- note "Object orientation (OO) in some programming languages"
 
@@ -179,8 +149,7 @@ classDiagram
     - OO object-based (but not class-based)
         - Javascript
 
-
-#### Functional programming
+### Functional programming
 
 - More classical as it is more focused on the algorithms
 - Functions
@@ -199,16 +168,43 @@ classDiagram
     - More on Thursday: [Algorithms](thursday_intro.md)
     - More on Friday: [Modular programming](friday_intro.md)
 
+### Independent modules
+- Modular coding: is really good!
+- Modularity could be within a program but also for a workflow.
 
-
+!!! example "WRF module and a workflow in "runtime""
+    
+    - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
    
 ## Code Example
 
-???+ exercise
+???+ exercise "Problems with this code? 5 min"
 
     **Planet application**
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
+    
+    - **Correct** Skip this for now!
+        - and _flawless_
+    - **Efficient** Skip this !
+        - _Utilize_ the computer system's resources
+    - **Reusable**
+        - Finished _components_
+        - Lower _development_ _costs_
+        - _Faster_
+        - Higher _quality_
+        - _packaging_ technology
+    - **Changeable**
+        - _Maintenance_ cost
+            - Fix errors, bugs
+            - Adapt to _new requirements_
+            - Independent _modules_
+            - Encapsulation/_information hiding_
+            - **Readability?**
+            - **Reusable?**
+            - **Changeable?**
+            - **Correct?** Skip this for now!!
+            - **Efficient?**
 
     ???- exercise "planet.py"
 
@@ -276,11 +272,7 @@ classDiagram
 
     - What are the problems?
     - Discuss!
-        - **Readability?**
-        - **Correct**?
-        - **Efficient**?
-        - **Reusable**?
-        - **Changeable**?
+
       
 ## Software Development Life Cycle (SDLC)
 
@@ -301,16 +293,11 @@ classDiagram
     - Documentation
     - Reproducibility and sharing
         - Packaging and dependencies  
---- 
+
 - ... and **Iterations**
----
-### Agile development
+
+- Agile development
     - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
-
-!!! note "See also"
-
-    More about life cycles in next session and later this week
-```
 
 ## Summary of Introduction
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
