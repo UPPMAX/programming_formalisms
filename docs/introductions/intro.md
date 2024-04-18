@@ -178,13 +178,17 @@ classDiagram
    
 ## Code Example
 
-???+ exercise "Problems with this code? 5 min"
+???+ exercise "Problems with this code? 5-10 min"
 
     **Planet application**
     
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
     ---
+    
+    - What are the problems?
+    - Discuss the needs below:
+
     - **Reusable**
         - Finished _components_
         - Lower _development_ _costs_
@@ -265,9 +269,6 @@ classDiagram
         plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight') 
 
         ```
-
-    - What are the problems?
-    - Discuss!
 
       
 ## Software Development Life Cycle (SDLC)
