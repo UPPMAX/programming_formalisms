@@ -185,10 +185,6 @@ classDiagram
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
     ---
-    - **Correct** Skip this for now!
-        - and _flawless_
-    - **Efficient** Skip this !
-        - _Utilize_ the computer system's resources
     - **Reusable**
         - Finished _components_
         - Lower _development_ _costs_
@@ -201,6 +197,10 @@ classDiagram
             - Adapt to _new requirements_
             - Independent _modules_
             - Encapsulation/_information hiding_
+    - **Correct** Skip this for now!
+        - and _flawless_
+    - **Efficient** Skip this for now!
+        - _Utilize_ the computer system's resources
 
     ???- exercise "planet.py"
 
