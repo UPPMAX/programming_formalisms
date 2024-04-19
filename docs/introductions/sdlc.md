@@ -24,7 +24,7 @@ THE SDLC is usually broken down into phases
 
     This means first finding the needs of your project then analysing those needs for risk which may then lead to further analysis
 
-???- what is  risk?
+???- what is risk?
     
     -  ISO 31000 defines risk as "The effect of uncertainty on objectives"
 
