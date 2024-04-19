@@ -24,11 +24,11 @@ THE SDLC is usually broken down into phases
 
     This means first finding the needs of your project then analysing those needs for risk which may then lead to further analysis
 
-??? what is  risk?
+???- what is  risk?
     
     -  ISO 31000 defines risk as "The effect of uncertainty on objectives"
 
-??? What is risk Management?
+???- What is risk Management?
     -"coordinated activities to direct and control and organization with regard to risk"
 
 graph TD;
@@ -51,7 +51,7 @@ graph TD;
 
 So how do we identify the needs of our system
 
-??? Where do you start
+???- Where do you start
         
         - project brief, if you are given a project breif or write one your self the project breif should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
 
@@ -59,3 +59,8 @@ So how do we identify the needs of our system
 
      Is a process of finding the subjects and verbs of the project brief and formalise them as testable statements, once that is done we do our firast iteration of risk analysis on those sets.
 
+???- Excercise Needs determination
+    We now look at the Course project and start setting upp our first development diagrams and design documents for the course project.
+    - Hint! Start by looking at the example design document...
+    - Hint! Analyse the project breif and make 5 short statements about the software
+    
