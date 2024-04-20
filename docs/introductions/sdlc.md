@@ -9,17 +9,17 @@
 
 ## The SDLC is usually broken down into phases
     
-![Software Development Life Cycle showing the iterative nature of SDLC](../../development_design/img/SDLC.png)   
+![Software Development Life Cycle showing the iterative nature of SDLC](../img/development_design/SDLC.png)   
 
 - This is formalised in the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
 
-![ISO/IEC TR 24748-1:2010](../../development_design/img/SDLC_ISO_IEC_12207.png)
+![ISO/IEC TR 24748-1:2010](../img/development_design/SDLC_ISO_IEC_12207.png)
 
 - When developing a software the cumulative cost of the development increases with each iteration which means that bugs or forgotten features increase in cost when discovered later.
 - There is a point in the life cycle of software where the software is retired when cost of maintaining the software is higher than the benefit for the developer - Most retirement does not mean the complete stop of the software existing.
-- This can be illustrated using a helixal spiral of SDLC
+- This can be illustrated using a helical spiral of SDLC
 
-![The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license](../../development_design/img/helix_legend-01.png)
+![The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license](../img/development_design/helix_legend-01.png)
 
 !!! info "Planning or needs determination"
     
