@@ -4,7 +4,7 @@
     
     This is a brief intro to the concept of SDLC further reading can
     be found in the reading material<br>
-    == __All software have a life cycle__ ==<br> Weather you control that through formalism or if it is chaos is up to you.
+    == __All software have a life cycle__ ==<br> Whether you control that through formalism or if it is chaos is up to you.
     
 
 THE SDLC is usually broken down into phases
@@ -14,21 +14,21 @@ THE SDLC is usually broken down into phases
     When developing a software the cummulative cost of the development increases with each iteration which means that bugs or forgotten features increase in cost when discovered later. There is a point in the life cycle of software where the software is retiered when cost of maintianing the software is higher than the benifit for the developer most retierement does not mean the complete stop of the software existing. This can be illustrated using a healical spiral of SDLC
     ![The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license](../../development_design/img/helix_legend-01.png)
 
-!!! Planing or needs determination
+!!! "Planning or needs determination"
     
     In the first phase one needs to determine what Trauth et.al call Perception of need, Feasibility and Analysis The ISO/IEC standard 12207 calls this Needs Determination after the needs, the initial requirements, have been determined through the above mentions process they are then fleshed out in the Concept and Exploration according to the SDLC_ISO_IEC_12207 this is the time to make a risk analysis of your development strategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evolutionary software model(Living Software Development Process) Most models cover some form of risk assessment, involved in the requirements gathering process. In the Spiral model the concept of risk assessment is essential while in models like Rational Unified Process(RUP) it has a lesser role.
 
     As we go fowrard through out this course we adopt the Test Driven Design model which is a riskbased statategy, meaning to you asses the risk that your software has to fail and create a test for that.
 
-!!! Taking a riskbased aproach to needs determination.
+!!! "Taking a riskbased aproach to needs determination"
 
     This means first finding the needs of your project then analysing those needs for risk which may then lead to further analysis
 
-???- what is risk?
+???- "what is risk?"
     
     -  ISO 31000 defines risk as "The effect of uncertainty on objectives"
 
-???- What is risk Management?
+???- "What is risk Management?"
     -"coordinated activities to direct and control and organization with regard to risk"
 
 graph TD;
@@ -51,15 +51,16 @@ graph TD;
 
 So how do we identify the needs of our system
 
-???- Where do you start
+???- "Where do you start?"
         
         - project brief, if you are given a project breif or write one your self the project breif should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
 
-!!! Fining the needs!
+!!! "Finding the needs!"
 
      Is a process of finding the subjects and verbs of the project brief and formalise them as testable statements, once that is done we do our firast iteration of risk analysis on those sets.
 
-???- Excercise Needs determination
+???- Excercise "Needs determination"
+    
     We now look at the Course project and start setting upp our first development diagrams and design documents for the course project.
     - Hint! Start by looking at the example design document...
     - Hint! Analyse the project breif and make 5 short statements about the software
