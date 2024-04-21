@@ -333,8 +333,7 @@ $ git help commit
         - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
 
     - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
-    - but "Choose a license"
-    - Let's choose MIT (we may discuss this later on)
+    - and **NO Licence**
 
     ![New repo ](../img/New_repo_formalisms.png)
 
