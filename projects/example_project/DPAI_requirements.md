@@ -87,3 +87,44 @@ USECASE MODEL:
 
 @enduml
 ```
+
+```mermaid
+graph TD;
+    User((User))
+    StartSimulation((Start Simulation))
+    StopSimulation((Stop Simulation))
+    PauseSimulation((Pause Simulation))
+    ConfigureSimulation((Configure Simulation))
+    ViewSimulation((View Simulation))
+    StepSimulation((Step Simulation))
+    ResumeSimulation((Resume Simulation))
+    AdvanceSimulation((Advance Simulation))
+    CollisionDetection((Collision Detection))
+    ExitSimulation((Exit Simulation))
+    RenderFrame((Render Frame))
+    ParticleField(Particle Field)
+    Particle(Particle)
+    Gravity(Gravitational Interaction)
+    Boundary(Boundary Condition)
+    
+    User --> StartSimulation
+    User --> StopSimulation
+    User --> PauseSimulation
+    User --> ConfigureSimulation
+    User --> ViewSimulation
+    StartSimulation --> ParticleField
+    ConfigureSimulation --> Particle
+    ConfigureSimulation --> Gravity
+    ConfigureSimulation --> Boundary
+    ConfigureSimulation --> StepSimulation
+    PauseSimulation --> ResumeSimulation
+    StepSimulation --> AdvanceSimulation
+    AdvanceSimulation --> Particle
+    AdvanceSimulation --> CollisionDetection
+    StopSimulation --> ExitSimulation
+    ViewSimulation --> RenderFrame
+    RenderFrame --> ParticleField
+    ParticleField --> Particle
+    ParticleField --> Boundary
+    ```
+    

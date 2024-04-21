@@ -15,7 +15,8 @@ So how do we identify the needs of our system
 
 ???- info "Hint!" 
 
-    Start by looking at the example design document...
+    Start by looking at the example design document ![Design Process Document](../../projects/example_project/DPD_unassisted.md) How we design
+    ![Requirements document](../../projects/example_project/DPUA_requirementspecification.md)
 
 ???- info "Hint!" 
 
