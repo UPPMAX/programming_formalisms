@@ -78,9 +78,9 @@ So how do we identify the needs of our system
 
 !!!- info Hint! 
 
-Start by looking at the example design document...
+    Start by looking at the example design document...
 
 !!!- info Hint! 
 
-Analyse the project breif and make 5 short statements about the software
+    Analyse the project breif and make 5 short statements about the software
     
