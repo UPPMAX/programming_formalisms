@@ -635,6 +635,19 @@ There are different types of remotes:
          - get tips for README files
          - get tips for full documentation and tutorials
 
+## Do you remember?
+???- "Why do we want to work with the mentioned tools?"
+
+???- "What is Unified modelling language"
+
+???- "What is source control and what are  the benefits?"
+
+???- "When to write documentation?"
+
+???- "What does reproducibility mean?"
+
+???- "Why sharing?"
+
 
 ## Summary of SDLC tools
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
