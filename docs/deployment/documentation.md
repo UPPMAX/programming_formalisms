@@ -72,7 +72,24 @@
   - Derivative work is free software and derivative work extends to the combined project    
 
 [Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)      
-    
+
+
+### Software Citation
+
+!!! info "See also"
+
+    - We will talk about this the last day!
+
+
+- Think the same as for a scientific paper
+- [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
+
+!!! note "See also"
+    - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
+
+
+
+
 
 ## In-code documentation
 
