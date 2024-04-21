@@ -347,16 +347,18 @@ flowchart TD
 
     return f
 ```
+
 - Depending on the writer, pseudocode may therefore vary widely in style, 
     - from a near-exact imitation of a real programming language at one extreme
-    - to a description approaching formatted prose at the other. 
+    - to a description approaching formatted prose at the other.
+    - 
 
 #### Mathematical style pseudocode
 - Used in numerical computation
 
-```math
+$
 \sum_{k\in S} x_k
-```
+$
 
 ```console
 \sum_{k\in S} x_k
