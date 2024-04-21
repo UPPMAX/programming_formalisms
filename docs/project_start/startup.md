@@ -434,7 +434,7 @@ $ git help commit
 !!! note
     - If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
 
-## README files
+### README files
 
 **Advantages**
 
@@ -454,7 +454,7 @@ $ git help commit
     - Copy-pastable quick start code example
     - Recommended citation
 
-### Cheat-sheet
+#### Cheat-sheet
 
 ```markdown
     **Cheat sheet**
@@ -571,10 +571,10 @@ def mean_temperature(data):
    
     - Use GitHub
     - Open ``planet.py``
-    - Add some documentation  
+    - Add some documentation (comments in python start with `#`)
     - Example:
-    	- # Time iteration of the postion of Earth
-     	- # Make subplots of Earth's revolution and the change of Sun–Earth distance
+    	- Time iteration of the postion of Earth
+     	- Make subplots of Earth's revolution and the change of Sun–Earth distance
     - Commit your changes
     	- Note that there is no staging area on GitHub
     - Go to your local git folder in a terminal to get the GitHub changes locally.
