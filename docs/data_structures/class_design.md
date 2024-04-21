@@ -8,27 +8,12 @@
 
 ## An invariant
 
-```{python}
-#| echo: false
-#| eval: false
-# The PlantUML does not render, even not after
-# quarto add pandoc-ext/diagram
-# See https://github.com/pandoc-ext/diagram/issues/6
-#
-# I use {python} as this renders nicer than verbatim
-```
-
-```{python}
-#| echo: false
-#| eval: false
-@startuml
-
-class Range {
-  + _lowest
-  + _highest
-}
-
-@enduml
+```mermaid
+classDiagram
+  class Range{
+    -lowest
+    -highest
+  }
 ```
 
 -   [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
@@ -60,15 +45,7 @@ A:
 
 ## Class anatomy in Python
 
-```{python}
-#| echo: false
-#| eval: true
-def is_dna_string(s): return True
-```
-
-```{python}
-#| echo: true
-#| eval: true
+```python
 class DnaSequence:
     def __init__(self, sequence):
         assert is_dna_string(sequence)
@@ -91,9 +68,7 @@ self._sequence = sequence # convention
 
 Nothing stops you from:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 a._sequence = "XXX"
 assert a.get_str() == "XXX"
 ```
@@ -102,7 +77,9 @@ Some other programming languages offer stronger guarantees.
 
 ## Inheritance and polymorphism
 
-> C++ is a horrible language. It's made more horrible by the fact that a lot of substandard programmers use it, to the point where it's much much easier to generate total and utter crap with it.
+> C++ is a horrible language. 
+> It's made more horrible by the fact that a lot of substandard programmers use it, 
+> to the point where it's much much easier to generate total and utter crap with it.
 >
 > Linus Torvalds, 2007-09-06
 

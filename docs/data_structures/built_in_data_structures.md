@@ -24,9 +24,7 @@ From [Python 'Data Structures' documentation](https://docs.python.org/3/tutorial
 
 Sorted collection of unique elements.
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 data = [3, 1, 4, 1, 5]
 s = set(data)
 assert 3 in s
@@ -39,9 +37,7 @@ assert list(s) == [1, 3, 4, 5]
 
 A dictionary:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 periodic_table = dict({1: "Hydrogen", 2: "Helium", 3: "Lithium"})
 periodic_table[2] = "helium"
 assert periodic_table[2] == "helium"
@@ -54,9 +50,7 @@ assert periodic_table[2] == "helium"
 
 A state-machine for a pattern in text
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 import re
 dna_regex = re.compile("^[ACGT]*$")
 assert dna_regex.match("")
@@ -67,5 +61,5 @@ assert dna_regex.match("TGCA")
 assert dna_regex.match("TGCAAAAAA")
 assert not dna_regex.match("nonsense")
 ```
-
 -   <https://docs.python.org/3/library/re.html>
+
