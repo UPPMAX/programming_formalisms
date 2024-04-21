@@ -47,10 +47,56 @@
         - update citation
         - update index
         
+### Licencing       
         
-        
-      
-    
+#### Copyright
+- Protects creative expression
+- Automatically created
+- **Derivative works** usually inherit copyright of the thing derived
+- Time frame: essentially forever (lifetime + X years)
+
+**When can you use?**
+- When there is a **license** saying you can
+- Limited other cases (private use, fair use: context dependent)
+- In practice: people do many things, but then can't share their output if license does not allow it or is not clarified
+
+**Examples**
+-  Custom/closed/proprietary
+    - Derivative work typically not possible
+    - Unusual in academics 
+-  Permissive (**MIT**, BSD, Apache)
+    - Derivative work does not have to be shared    
+-  Weak copyleft share-alike (LGPL, MPL)
+    - Derivative work is free software but is limited to the component    
+-  Strong copyleft share-alike (**GPL**, AGPL)
+  - Derivative work is free software and derivative work extends to the combined project    
+
+[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)      
+
+
+### Software Citation
+
+!!! info "See also"
+
+    - We will talk about this the last day!
+
+
+- Think the same as for a scientific paper
+- [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
+
+!!! note "See also"
+    - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
+
+
+!!! objectives
+
+    - [More about sharing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html) aims to:
+        - introduce reproducibility and sharing, licensing and citation
+        - get into thinking about dependencies and solutions
+        - get into choosing license, citation and DOI
+
+
+
 
 ## In-code documentation
 

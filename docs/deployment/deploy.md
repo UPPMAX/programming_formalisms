@@ -54,6 +54,15 @@
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
+!!! Discussion "One-time usage towards distributed package"
+
+    
+    - Have others used your code?
+    - Did you plan it from beginning?
+    - Did you take actions somehow?
+
+
+
 !!! attention
 
     - Make your program or workflow work for others and yourself in the future.
