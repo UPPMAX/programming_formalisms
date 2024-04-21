@@ -89,8 +89,8 @@
 
     **What do you develop for?**
 
+## Outcome of a Program
 
-### Outcome of a Program
 - **Correct**
     - and _flawless_
 - **Efficient**
@@ -180,7 +180,7 @@ classDiagram
    
 ## Code Example
 
-???+ exercise "Exercise: Problems with this code? 5-10 min"
+???+ exercise "Exercise: Problems with this code? 7-8 min"
 
     **Breakout room, 3-4 people, 10m**
    
