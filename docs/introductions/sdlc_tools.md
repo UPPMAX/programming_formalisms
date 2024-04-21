@@ -22,9 +22,6 @@
 
     - Understanding the Software development Life Cycle
 
-    Teaching goals are:
-
-    - Learners can compare and contrast various software development tools and justify their relevance to specific development tasks.
 
     Lesson Plan: **FIX**
     
@@ -634,7 +631,13 @@ There are different types of remotes:
          - get tips for README files
          - get tips for full documentation and tutorials
 
+
+!!! Goal
+
+    - [ ] Compare and contrast various software development tools and justify their relevance to specific development tasks.
+
 ## Do you remember?
+
 ???- "Why do we want to work with the mentioned tools?"
 
 ???- "What is Unified modelling language"
@@ -648,8 +651,11 @@ There are different types of remotes:
 ???- "Why sharing?"
 
 
+
+
+
 ## Summary of SDLC tools
-- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+
 
 !!! Keypoints
 
@@ -668,5 +674,7 @@ There are different types of remotes:
         - Collaboration: GitHub
         - Sharing: GitHub, licenses, citation
         - Documentation: In-code, READMEs, html
+- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+
 
 

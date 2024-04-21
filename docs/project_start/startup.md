@@ -527,8 +527,7 @@ Good docstrings describe:
     What the function does
     What goes in (including the type of the input variables)
     What goes out (including the return type)
-    Python example: help()
-
+    Python example: ``help()``
     
 **Example**
   
@@ -549,16 +548,33 @@ def mean_temperature(data):
   
 ```
 
+!!! info "Working on GitHub"
+
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button". 
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+
+
 ### Add in-code documentation on Github and pull from local git
 
-???- question "Exercise: in-code docs"
+!!! example "Type-along: in-code docs"
    
     - Use GitHub
-    - Open planet.py
-    - Add some documentation  
+    - Open ``planet.py``
+    - Add some documentation (comments in python start with `#`)
     - Example:
-    	- # Time iteration of the postion of Earth
-     	- # Make subplots of Earth's revolution and the change of Sun–Earth distance
+    	- Time iteration of the postion of Earth
+     	- Make subplots of Earth's revolution and the change of Sun–Earth distance
     - Commit your changes
     	- Note that there is no staging area on GitHub
     - Go to your local git folder in a terminal to get the GitHub changes locally.
@@ -613,7 +629,7 @@ R <--> Node5
 
 ```
 
---------------------------------
+---
 
 
 ## Start with course project
@@ -650,22 +666,19 @@ R <--> Node5
     - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-    - `git clone` copies everything: all commits and all branches.
-    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
-    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
+        - `git clone` copies everything: all commits and all branches.
+    - We synchronize commits between local and remote with 
+    	- **git fetch**/**pull** and **git push**.
 
    
 ### Clone the course project
 
-???- question "Exercise: clone course project and create folders"
+???+ question "Exercise: clone course project and create folders"
 
+     **Now you and other people can clone this repository and contribute changes.**
 
-
-Now you and other people can clone this repository and contribute changes. 
-
-!!! type-along
-
-    - You may want to create a directory for this course. You can do it in the normal way or use your terminal, like this in a good place (like "Courses" if you have that)
+    - You may want to create a directory on your computer for this course. 
+    	- You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
     - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
@@ -675,38 +688,63 @@ Now you and other people can clone this repository and contribute changes.
      ```console
      $ git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
      ```
+    
+    !!! tip 
+        - Using the SSH makes it very straight-forward to upload your local changes back to GitHub. 
+        - Use HTTP if you clone repos that do not belong to you or your group.
 
-!!! tip
-    - Using the SSH makes it very straight-forward to upload your local changes back to GitHub. 
-    - Use HTTP if you clone repos that do not belong to you or your group.
+    **What just happened?**
+    
+    - `cd` the new directory that was created
+    - list the files with `ls`
+    - **Think of cloning as downloading the `.git` part to your computer**. 
+    - After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
+
+    **Create a folder with your name**
+
+    - step into (``cd``) the ``learners/`` directory
+    - ``mkdir <your-name>``
+    - git add/commit this file
+
+    **Push your changes to the GitHub repo**
+
+    - ``git push``
+    
+    **When everyone are done pull the latest changes to the local git repo**
+
+    - ``git pull``
+
+## Typical workflow for the course project
+
+- students make development in local git and push to github?
+- in principle centralized workflow
+
+![Centralized layout](../img/centralized.svg){ width=50% }
 
 
-- This creates a directory called ``programming_formalisms_project_summer_2024.git`` unless it already exists.
+**Centralized layout**
+- **Red** is the repository on GitHub.
+- **Blue** is where all contributors work on their own computers.
 
-**What just happened?**
-- `cd` the new directory that was created
-- list the files with `ls`
-- **Think of cloning as downloading the `.git` part to your computer**. 
-- After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
+- Centralized workflow is often used for **remote collaborative work**.
+- `origin` refers to where you cloned from (but you can relocate it).
+- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
+- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
+
+## Remarks
+
+!!! Goal
+
+    - [ ] Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+!!! keypoints
+
+    - A repository can have one or multiple remotes (we will revisit these later).
+    - A remote (GitHub) in this case serves as a full backup of your work.
+    - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
 
 
-## Working on GitHub
 
-- You can do basically the **same work at GitHub as in your local git repo**
-- The **graphical view** makes it easier to work with in everyday editing work at least.
-    - Depends on your own preferences of course.
-- Here your commit each file at a time with the "commit button". 
-    - **No staging** that is.
-    - Be aware of that feature!
-- **GitHub Actions** are workflows defined by you, like:
-    - for automatic testing after each commit (Used in the test lessons)
-    - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
-
-!!! note "See also"
-
-    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
-
- 
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
@@ -727,27 +765,5 @@ Now you and other people can clone this repository and contribute changes.
         - &#9745; licensing  
     - &#9744; Documentation
 
-## Typical workflow for the course project
 
-- students make development in local git and push to github?
-- in principle centralized workflow
-
-![Centralized layout](../img/centralized.svg){ width=50% }
-
-
-**Centralized layout**
-- **Red** is the repository on GitHub.
-- **Blue** is where all contributors work on their own computers.
-```
-
-- Centralized workflow is often used for **remote collaborative work**.
-- `origin` refers to where you cloned from (but you can relocate it).
-- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
-- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
-
-!!! keypoints
-
-    - A repository can have one or multiple remotes (we will revisit these later).
-    - A remote (GitHub) in this case serves as a full backup of your work.
-    - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
 
