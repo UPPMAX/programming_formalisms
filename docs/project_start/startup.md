@@ -669,9 +669,8 @@ R <--> Node5
     - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-    - `git clone` copies everything: all commits and all branches.
-    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
-    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
+        - `git clone` copies everything: all commits and all branches.
+    - We synchronize commits between local and remote with `git fetch`/**`git pull`** and **`git push`**.
 
    
 ### Clone the course project
