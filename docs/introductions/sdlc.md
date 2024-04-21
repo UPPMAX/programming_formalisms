@@ -72,15 +72,15 @@ So how do we identify the needs of our system
 
      Is a process of finding the subjects and verbs of the project brief and formalise them as testable statements, once that is done we do our firast iteration of risk analysis on those sets.
 
-???- exercise "Needs determination"
+???+ exercise "Needs determination"
     
     We now look at the Course project and start setting upp our first development diagrams and design documents for the course project.
 
-!!!- Hint! 
+!!!- info Hint! 
 
 Start by looking at the example design document...
 
-!!!- Hint! 
+!!!- info Hint! 
 
 Analyse the project breif and make 5 short statements about the software
     
