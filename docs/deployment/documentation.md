@@ -47,9 +47,31 @@
         - update citation
         - update index
         
+### Licencing       
         
-        
-      
+#### Copyright
+- Protects creative expression
+- Automatically created
+- **Derivative works** usually inherit copyright of the thing derived
+- Time frame: essentially forever (lifetime + X years)
+
+**When can you use?**
+- When there is a **license** saying you can
+- Limited other cases (private use, fair use: context dependent)
+- In practice: people do many things, but then can't share their output if license does not allow it or is not clarified
+
+**Examples**
+-  Custom/closed/proprietary
+    - Derivative work typically not possible
+    - Unusual in academics 
+-  Permissive (**MIT**, BSD, Apache)
+    - Derivative work does not have to be shared    
+-  Weak copyleft share-alike (LGPL, MPL)
+    - Derivative work is free software but is limited to the component    
+-  Strong copyleft share-alike (**GPL**, AGPL)
+  - Derivative work is free software and derivative work extends to the combined project    
+
+[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)      
     
 
 ## In-code documentation
