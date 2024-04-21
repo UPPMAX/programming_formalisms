@@ -29,7 +29,29 @@
     - 25 mins: challenge
     - 10 mins: feedback
 
-# A 'has-a' relationship
+# `struct` relations
+
+Good (:innocent:) data structures:
+
+-   Increase expressiveness
+-   **Bundles data that belongs together**
+-   Ensures correct state of the program
+
+## A 'has-a' relationship
+
+When one data type has a 'has-a' relationship with another, this is called *composition*.
+
+```
+classDiagram
+    class Coordinat{
+      -x
+      -y
+    }
+```
+
+A `Coordinat` has an `x` and `y`
+
+## Composition versus aggregation
 
 A university has departments, where a department has professors.
 These are two different 'has-a' relationships.
@@ -40,7 +62,27 @@ Ownership of its elements              |Yes                         |No
 What happens to elements when destroyed|Destroyed                   |Left intact
 Example                                |A university has departments|A department has professors
 
-We use composition.
+## Composition of structs
+
+```mermaid
+classDiagram
+    class Particle{
+      -position
+      -velocity
+    }
+    class Velocity{
+      -delta_x
+      -delta_y
+    }
+    class Position{
+      -x
+      -y
+    }
+    Particle "*-- Velocity
+    Particle "*-- Position
+```
+
+-   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
 
 ## Exercise 1: design a struct (15 mins)
 
@@ -61,8 +103,6 @@ What are their elements? Which do you guess are structures? Were they?
 
 -   consists out of an `x`, `y` and `z` coordinate
 -   `struct`: all combinations valid
-
-. . .
 
 But:
 
@@ -93,46 +133,3 @@ A square has
     -   maybe an angle (:monocle_face:)
 -   a two opposing coordinats: struct?
 
-# `struct` relations
-
-Good (:innocent:) data structures:
-
--   Increase expressiveness
--   **Bundles data that belongs together**
--   Ensures correct state of the program
-
-## A has-a relationship
-
-When one data type has a 'has-a' relationship with another, this is called *composition*.
-
-![](struct_coordinat.png)
-
-A `Coordinat` has an `x` and `y`
-
-## Composition of structs
-
-![](struct_particle_speed_position.png)
-
--   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
-
-## Exercise 2: create overview of classes (15 mins)
-
-Goals:
-
--   Experience first step in design
--   Allow feeling that design could be improved in hindsight
--   Distribute ownership of project
-
-## Exercise 2: overview of classes (20 mins)
-
--   Read project description
--   Which classes does the project need?
--   Together:
-    -   make an alphabetic list of structures in the shared document
-    -   add exactly 1 maintainer to each struct
--   Put it on the GitHub repository
-
-## Exercise 3: create structs (30 mins)
-
--   Per struct maintainer, create one group
--   Add the struct to the GitHub project repository

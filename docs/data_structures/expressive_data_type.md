@@ -110,11 +110,11 @@ Ah, it is a **coordinat**!
 
 ## Exercise 1: design a struct (15 mins)
 
-Goal:
+???- info "Learning objectives"
 
--   to convince design is trickier than one thinks
--   to convince design has implications
--   to grow appreciation of classes
+     - to convince design is trickier than one thinks
+     - to convince design has implications
+     - to grow appreciation of classes
 
 What are their elements? Which do you guess are structures? Were they?
 
@@ -122,3 +122,25 @@ What are their elements? Which do you guess are structures? Were they?
 -   A velocity in two dimensions
 -   A circle
 -   A square
+
+## Exercise 2: create overview of classes (15 mins)
+
+Goals:
+
+-   Experience first step in design
+-   Allow feeling that design could be improved in hindsight
+-   Distribute ownership of project
+
+## Exercise 2: overview of classes (20 mins)
+
+-   Read project description
+-   Which classes does the project need?
+-   Together:
+    -   make an alphabetic list of structures in the shared document
+    -   add exactly 1 maintainer to each struct
+-   Put it on the GitHub repository
+
+## Exercise 3: create structs (30 mins)
+
+-   Per struct maintainer, create one group
+-   Add the struct to the GitHub project repository
