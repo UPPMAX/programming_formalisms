@@ -364,16 +364,10 @@ $$
 \sum_{k\in S} x_k
 ```
 
-!!! objectives
-    - [Planning phase section](https://uppmax.github.io/programming_formalisms_intro/flowcharts.html) aims to 
-       - Introduce flowcharts and UML expressions
-       - Get into UML coding with PlantUML
-       - Test Pseudo coding
-
 !!! note "See also"
 
     - Diagrams will be cover on
-        - Tuesday during several part of the [Software development processes](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md#software-development-processes)
+        - Monday and Tuesday during part of the [Project start with analysis and design](project_start/analysis_design/) and [Design paradigms](design_develop/class_design/)
         - Friday during [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)
 
 
@@ -403,8 +397,8 @@ flowchart TD
 !!! note "See also"
 
     - More about testing day 3.
-    - [Test-driven development(TDD)](https://github.com/UPPMAX/programming_formalisms/blob/main/tdd/tdd_lecture.pdf)
-    - [Testing lecture](https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture.pdf)
+    - [Test-driven development(TDD)](../tdd/README.md)
+    - [Testing lecture](../testing/README.md)
 
 
 ## Source/version control and collaboration
@@ -493,7 +487,7 @@ There are different types of remotes:
 
 !!! objectives
    
-    - [Get started with a project](project_start/startup.md) aims to
+    - [Get started with a project](../project_start/startup.md) aims to
         - Introduce git and GitHub
         - Get into working with git
         - Get into using GitHub as a remote repository
@@ -511,7 +505,7 @@ There are different types of remotes:
   -  review changes submitted by external contributors.
 
 !!! objectives
-   - [Collaboration](https://uppmax.github.io/programming_formalisms_intro/collab.html) aims to 
+   - [Collaboration](../git/pull.md) aims to 
      - Get into working more with GitHub for collaboration
      - **Centralized** workflow (good within a group)
      - **Forking** (better for contribution to other's project)
@@ -553,7 +547,7 @@ There are different types of remotes:
  
 !!! Discussion "One-time usage towards distributed package"
 
-    **Menti**
+    
     - Have others used your code?
     - Did you plan it from beginning?
     - Did you take actions somehow?
@@ -579,42 +573,23 @@ There are different types of remotes:
     - **R**eusable
          - Is there a license allowing others to re-use?
 
+!!! info "See also"
+
+    - We will talk about this the last day!
 
 ### Licensing
 
-#### Copyright
-- Protects creative expression
-- Automatically created
-- **Derivative works** usually inherit copyright of the thing derived
-- Time frame: essentially forever (lifetime + X years)
+!!! info "See also"
 
-**When can you use?**
-- When there is a **license** saying you can
-- Limited other cases (private use, fair use: context dependent)
-- In practice: people do many things, but then can't share their output if license does not allow it or is not clarified
+    - We will talk about this the last day!
 
-**Examples**
--  Custom/closed/proprietary
-    - Derivative work typically not possible
-    - Unusual in academics 
--  Permissive (**MIT**, BSD, Apache)
-    - Derivative work does not have to be shared    
--  Weak copyleft share-alike (LGPL, MPL)
-    - Derivative work is free software but is limited to the component    
--  Strong copyleft share-alike (**GPL**, AGPL)
-  - Derivative work is free software and derivative work extends to the combined project    
 
-[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)
 
 ### Software Citation
 
-- Think the same as for a scientific paper
-- [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
+!!! info "See also"
 
-!!! note "See also"
-    - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
-
-
+    - We will talk about this the last day!
 
 !!! keypoints
 
@@ -652,11 +627,11 @@ There are different types of remotes:
 
 
 !!! objectives
-     - [Documentation part 1](project_start/startup.md#introduction-to-documentation) aims to:
+     - [Documentation part 1](../project_start/startup.md#introduction-to-documentation) aims to:
          - introduce motivation for documentation
          - get tips for in-code documentation
          - get tips for README files
-     - [Documentation part 2](deployment/documentation.md) aims to:
+     - [Documentation part 2](../deployment/documentation.md) aims to:
          - get tips for README files
          - get tips for full documentation and tutorials
 
