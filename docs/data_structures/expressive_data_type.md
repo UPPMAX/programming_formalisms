@@ -37,6 +37,14 @@ Good (:innocent:) data structures:
 
 ## Increase expressiveness, in code
 
+![](python_icon_26x32.png) | ![](r_icon_41x32.png)
+---------------------------|----------------------
+`{python} a = get_a()`     |.
+`python print(a)`          |.
+`python print(type(a))`    |.
+
+wee
+
 ### ![](python_icon_26x32.png)
 
 ```{python}
