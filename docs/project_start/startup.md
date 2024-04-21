@@ -194,9 +194,11 @@
 
         ```
     - Make a folder with name `planets` 
-    - and make a folder within that with the name ``code``
-    - In that folder, create a file 
-    - Copy paste the python code above into it and save as ``planets.py``
+    	BASH: ´´mkdir planets``
+    - Create a folder in the ``planets/`` folder, called ``Figures/``
+    - Also create a folder within ``planets/`` folder with the name ``code``
+    - In the ``code`` folder, create a file.
+    - Copy paste the python code above into it and save as ``planets.py``.
 
 ### Initiate a project
 
