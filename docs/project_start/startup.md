@@ -434,7 +434,7 @@ $ git help commit
 !!! note
     - If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project
 
-### README files
+## README files
 
 **Advantages**
 
@@ -454,7 +454,7 @@ $ git help commit
     - Copy-pastable quick start code example
     - Recommended citation
 
-#### Cheat-sheet
+### Cheat-sheet
 
 ```markdown
     **Cheat sheet**
@@ -527,8 +527,7 @@ Good docstrings describe:
     What the function does
     What goes in (including the type of the input variables)
     What goes out (including the return type)
-    Python example: help()
-
+    Python example: ``help()``
     
 **Example**
   
@@ -549,19 +548,17 @@ def mean_temperature(data):
   
 ```
 
+!!! info "Working on GitHub"
 
-
-### Working on GitHub
-
-- You can do basically the **same work at GitHub as in your local git repo**
-- The **graphical view** makes it easier to work with in everyday editing work at least.
-    - Depends on your own preferences of course.
-- Here your commit each file at a time with the "commit button". 
-    - **No staging** that is.
-    - Be aware of that feature!
-- **GitHub Actions** are workflows defined by you, like:
-    - for automatic testing after each commit (Used in the test lessons)
-    - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button". 
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
 
 !!! note "See also"
 
@@ -570,10 +567,10 @@ def mean_temperature(data):
 
 ### Add in-code documentation on Github and pull from local git
 
-???- question "Exercise: in-code docs"
+!!! example "Type-along: in-code docs"
    
     - Use GitHub
-    - Open planet.py
+    - Open ``planet.py``
     - Add some documentation  
     - Example:
     	- # Time iteration of the postion of Earth
@@ -670,20 +667,18 @@ R <--> Node5
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
         - `git clone` copies everything: all commits and all branches.
-    - We synchronize commits between local and remote with `git fetch`/**`git pull`** and **`git push`**.
+    - We synchronize commits between local and remote with 
+    	- **git fetch**/**pull** and **git push**.
 
    
 ### Clone the course project
 
-???- question "Exercise: clone course project and create folders"
+???+ question "Exercise: clone course project and create folders"
 
+     **Now you and other people can clone this repository and contribute changes.**
 
-
-Now you and other people can clone this repository and contribute changes. 
-
-!!! type-along
-
-    - You may want to create a directory for this course. You can do it in the normal way or use your terminal, like this in a good place (like "Courses" if you have that)
+    - You may want to create a directory on your computer for this course. 
+    	- You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
     - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
@@ -699,6 +694,7 @@ Now you and other people can clone this repository and contribute changes.
         - Use HTTP if you clone repos that do not belong to you or your group.
 
     **What just happened?**
+    
     - `cd` the new directory that was created
     - list the files with `ls`
     - **Think of cloning as downloading the `.git` part to your computer**. 
@@ -716,29 +712,7 @@ Now you and other people can clone this repository and contribute changes.
     
     **When everyone are done pull the latest changes to the local git repo**
 
-   - ``git push``
-
-
-
-!!! admonition "Parts to be covered!"
-
-    - &#9745; Source/version control
-        - Git
-        - We have a starting point!
-        - GitHub as remote backup
-    - &#9744; Planning
-        - UML
-        - Pseudocode
-    - &#9744; Testing
-        - Different levels
-        - We don't do this today!
-    - &#9744; Collaboration
-        - GitHub
-    - &#9745; Sharing
-        - &#9745; open science
-        - &#9744; citation
-        - &#9745; licensing  
-    - &#9744; Documentation
+    - ``git pull``
 
 ## Typical workflow for the course project
 
@@ -768,6 +742,28 @@ Now you and other people can clone this repository and contribute changes.
     - A repository can have one or multiple remotes (we will revisit these later).
     - A remote (GitHub) in this case serves as a full backup of your work.
     - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
+
+
+
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+    - &#9744; Planning
+        - UML
+        - Pseudocode
+    - &#9744; Testing
+        - Different levels
+        - We don't do this today!
+    - &#9744; Collaboration
+        - GitHub
+    - &#9745; Sharing
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing  
+    - &#9744; Documentation
 
 
 
