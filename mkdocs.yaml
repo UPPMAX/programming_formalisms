@@ -15,6 +15,7 @@ nav:
     - Summary of day: monday_summary.md
   - Tuesday:
     - Intro: tuesday_intro.md
+    - Class design: design_develop/class_design.md
     - Pair programming: pair_programming/README.md
     - Test-driven development: tdd/README.md
     - Summary of day: tuesday_summary.md
