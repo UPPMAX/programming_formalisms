@@ -7,16 +7,6 @@
     - Understand difference between composition and aggregation
     - Practice to use composition for a 'has-a' relationship
 
-# Data structures
-
-```{python}
-import this
-```
-
-> The Zen of Python, by Tim Peters
->
-> \[...\] Readability counts. \[...\] If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. \[...\]
-
 ## What and why?
 
 Data structure are 'ways to organize your data'.
@@ -29,7 +19,7 @@ Good (:innocent:) data structures:
 -   Bundles data that belongs together
 -   Ensures correct state of the program
 
-# `struct` design
+## `struct` design
 
 Good (:innocent:) data structures:
 
@@ -46,6 +36,14 @@ Good (:innocent:) data structures:
 > Class diagram of a two-dimensional coordinate
 
 ## Increase expressiveness, in code
+
+![](python_icon_26x32.png) | ![](r_icon_41x32.png)
+---------------------------|----------------------
+`{python} a = get_a()`     |.
+`python print(a)`          |.
+`python print(type(a))`    |.
+
+wee
 
 ### ![](python_icon_26x32.png)
 
