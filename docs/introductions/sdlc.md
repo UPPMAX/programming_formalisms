@@ -76,11 +76,11 @@ So how do we identify the needs of our system
     
     We now look at the Course project and start setting upp our first development diagrams and design documents for the course project.
 
-!!!- info Hint! 
+!!!- info "Hint!" 
 
     Start by looking at the example design document...
 
-!!!- info Hint! 
+!!!- info "Hint!" 
 
     Analyse the project breif and make 5 short statements about the software
     
