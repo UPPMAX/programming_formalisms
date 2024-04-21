@@ -356,9 +356,9 @@ flowchart TD
 #### Mathematical style pseudocode
 - Used in numerical computation
 
-$
+$$
 \sum_{k\in S} x_k
-$
+$$
 
 ```console
 \sum_{k\in S} x_k
