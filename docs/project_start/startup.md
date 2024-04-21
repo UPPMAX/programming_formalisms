@@ -565,7 +565,7 @@ def mean_temperature(data):
 
 !!! note "See also"
 
-    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
 
 ### Add in-code documentation on Github and pull from local git
@@ -632,7 +632,7 @@ R <--> Node5
 
 ```
 
---------------------------------
+---
 
 
 ## Start with course project
