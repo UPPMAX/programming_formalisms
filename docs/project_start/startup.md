@@ -70,19 +70,6 @@
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
-## All Exercises
-
-???- question "Exercise: start the test project"
-
-???- question "Exercise: git add git commit"
-
-???- question "Exercise: in-code docs"
-
-???- question "Exercise: github and git push"
-
-???- question "Exercise: clone course project and create folders"
-
-
 ## Before we continue we need to configure Git
 
 !!! Attention
@@ -134,6 +121,8 @@
 ## A test project started locally
 ### Initial code base
 - Let's say you have some code you have started to work with
+
+???- question "Exercise: start the test project"
 
 !!! example "Type-along or Demo"
 
@@ -229,6 +218,8 @@ do when you are trying to figure out what to do next:
 
 ### Staging files
 
+???- question "Exercise: git add git commit"
+
 !!! example "no type-along"
 
     ```console
@@ -318,9 +309,7 @@ $ git help commit
 - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
 - Note that help pages also work when you don't have a network connection!   
 
-
-   
-### Make the code a part of the git record
+ ### Make the code a part of the git record
    
 !!! example "type-along"
 
@@ -348,10 +337,16 @@ $ git help commit
     git status
     ```
 
+!!! info "git diff"
+
+    - The ``git diff`` command sorts out what are the difference between the "latest saved file" (working tree)/"staged file"/"committed"
+    - [Git book](https://git-scm.com/docs/git-diff)
 
 ### Upload to GitHub
 
-!!! example "Demo"
+???- question "Exercise: github and git push"
+
+!!! example "Demo or Type-along"
 
     
     - Make sure that you are **logged into GitHub**.
@@ -481,69 +476,14 @@ $ git help commit
                
 ```
 
-!!! example "README.md for the test project"
+!!! example "Demo/Type-along"
 
-    ```code    
-    # Plan
-
-    ## Background
-
-    - Some text
-    - Theory: 
-    - **Problem**: 
-    - **Method**: Use Python
-        - Let's go for functional?? programming
-    - **Input**: Some initial ...
-        - Perhaps also user input of ...
-    - **Output**: Graph of ...
-
-    **Development steps** (we extend the program with iterations)
-    1. XX system
-    1. Add YY
-    1. Make modular
-    1. Add more ZZ
-
-    ## PlantUML
-
-    
-    @startuml
-    skin rose
-    title Planet flowchart
-    start
-    
-    :define some parameters;
-    :initialize earth (and Jupiter);
-    
-    repeat
-      :calculate new position;
-      :calculate acceleration;
-      :calculate velocity in two dimensions;
-    
-    repeat while (simulation time is met) is (no)
-    ->yes;
-    :figure plotting;
-    stop
-    
-
-    ## Pseudocode
-
-    
-    Define constants
-    Define initial values
-    	positions
-    	velocity (balance of gravity and centrifugal force)
-    (Allocate (book) space for long vectors	plan iteration)
-    Iteration
-    	Change of positions
-    	Calc acc (gravity)
-    	Calc new velocity
-    Plot resulting ellipses
-    Calculate orbit parameters
-    Plot time series of parameter change
-    ```
+    - Add a README 
 
 
+!!! info "See also"
 
+    We will later look at the README file, present in the Course project repository
 
 ### In-code documentation
 
@@ -589,12 +529,6 @@ Good docstrings describe:
     What goes out (including the return type)
     Python example: help()
 
-!!! info "Key points"
-
-    - Comments should describe the why for your code not the what.
-    - Writing docstrings is an easy way to write documentation while you type code.
-    - Copy-pastable quick start code example
-    - Recommended citation
     
 **Example**
   
@@ -615,51 +549,41 @@ def mean_temperature(data):
   
 ```
 
-### Add in-code documentation and git diff
+### Add in-code documentation on Github and pull from local git
 
-- Add some text documentation
+???- question "Exercise: in-code docs"
+   
+    - Use GitHub
+    - Open planet.py
+    - Add some documentation  
     - Example:
-    	- Time iteration of the postion of Earth
-     	- Make subplots of Earth's revolution and the change of Sun–Earth distance
+    	- # Time iteration of the postion of Earth
+     	- # Make subplots of Earth's revolution and the change of Sun–Earth distance
+    - Commit your changes
+    	- Note that there is no staging area on GitHub
+    - Go to your local git folder in a terminal to get the GitHub changes locally.
+    - Do ``git pull`` in the terminal 
+    - Also try these commands!
+    
+    ```console
+    $ git log
+    $ git log --stat
+    $ git log --oneline
+    ```
 
-- When you are done editing the file, try `git diff`:
+!!! info "Key points"
 
-```console
-  $ git diff
-```
-
-- You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
-- You will see some thing like this.
-
-- **FIX**
-
-- Now first stage and then commit (what happens when we leave out the `-m` flag?):
-
-```console
-  $ git add python.py     # <-- we can state exactly which file to stage as well
-  $ git commit                   # <-- we have left out -m "..."
-```
-
-  When you leave out the `-m` flag, Git should open an editor where you can edit
-  your commit message. This message will be associated and stored with the
-  changes you made. This message is your chance to explain what you've done and
-  convince others (and your future self) that the changes you made were
-  justified.  Write a message (like ``added in-doc`` and save and close the file.
-
-  When you are done committing the changes, experiment with these commands:
-
-  ```console
-  $ git log
-  $ git log --stat
-  $ git log --oneline
-  ```
-
+    - Comments should describe the why for your code not the what.
+    - Writing docstrings is an easy way to write documentation while you type code.
+    - Copy-pastable quick start code example
+    - Recommended citation
 
 --------------------------------
 
 
 ## Start with course project
 
+### View the project
 
 - View the GitHub project at: https://github.com/programming-formalisms/programming_formalisms_project_summer_2024
 
@@ -683,7 +607,8 @@ def mean_temperature(data):
         └── README.md
 ```
 
-
+- View README.md
+- View License
   
 !!! admonition "Concepts in Git"
     - **repository**: The project, contains all data and history (commits, branches, tags).
@@ -695,7 +620,11 @@ def mean_temperature(data):
     - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
 
    
-## Cloning the course project
+### Clone the course project
+
+???- question "Exercise: clone course project and create folders"
+
+
 
 Now you and other people can clone this repository and contribute changes. 
 
