@@ -588,6 +588,7 @@ P["Project idea"] -->|git init| Node2
 P["Project idea"] --> planet.py -->|git add| Node4
 Node4 --> |git commit| Node1
 Node2 --> |git push| Node5
+R <--> Node2
 
 C[Uncommited changed README.md] -->|commit button| R
 R --> |"git pull (from local git)"| R2
