@@ -53,80 +53,55 @@ Good (:innocent:) data structures:
     class(a)
     ```
 
-???+ info "Python version"
-
-    ```python
-    a = get_a()
-    print(a)
-    print(type(a))
-    ```
-
-???- info "R version"
-
-    ```r
-    a <- get_a()
-    a
-    class(a)
-    ```
-
-What is `a`?
-
 ## Increase expressiveness, in code
 
-::: columns
-::: {.column width="50%"}
-![](python_icon_26x32.png)
+=== "Python"
 
-```{python}
-#| echo: false
-#| eval: true
-class Coordinat:
-    def __init__(self, any_x, any_y):
-      self.x = any_x
-      self.y = any_y
-    def __repr__(self):
-        return "Coordinat"
-    def __str__(self):
-        return "(" + str(self.x) + ", " + str(self.y) + ")"
-def get_a():
-    return Coordinat(3.14, 2.72)
-```
+    ```{python}
+    #| echo: false
+    #| eval: true
+    class Coordinat:
+        def __init__(self, any_x, any_y):
+          self.x = any_x
+          self.y = any_y
+        def __repr__(self):
+            return "Coordinat"
+        def __str__(self):
+            return "(" + str(self.x) + ", " + str(self.y) + ")"
+    def get_a():
+        return Coordinat(3.14, 2.72)
+    ```
 
-```{python}
-#| echo: true
-#| eval: true
-a = get_a()
-print(a)
-```
+    ```{python}
+    #| echo: true
+    #| eval: true
+    a = get_a()
+    print(a)
+    ```
 
-```{python}
-#| echo: true
-#| eval: true
-print(type(a))
-```
-:::
+    ```{python}
+    #| echo: true
+    #| eval: true
+    print(type(a))
+    ```
+=== "R"
 
-::: {.column width="50%"}
-![](r_icon_41x32.png)
+    ```{r echo=FALSE}
+    get_a <- function() {
+      a <- c(3.14, 2.72)
+      class(a) <- "Coordinat"
+      a
+    }
+    ```
 
-```{r echo=FALSE}
-get_a <- function() {
-  a <- c(3.14, 2.72)
-  class(a) <- "Coordinat"
-  a
-}
-```
+    ```{r echo=TRUE}
+    a <- get_a()
+    a
+    ```
 
-```{r echo=TRUE}
-a <- get_a()
-a
-```
-
-```{r echo=TRUE}
-class(a)
-```
-:::
-:::
+    ```{r echo=TRUE}
+    class(a)
+    ```
 
 Ah, it is a **coordinat**!
 
