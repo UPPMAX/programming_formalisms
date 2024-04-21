@@ -285,7 +285,7 @@ Git hints at and add the files:
 - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
 - BUT only what we have added to the "staging" area!
 
-### Example
+#### Example
 Let us now commit the change to the repository:
 
 ```console
@@ -320,7 +320,7 @@ $ git help commit
 
 
    
-## Make the code a part of the git record
+### Make the code a part of the git record
    
 !!! example "type-along"
 
@@ -345,8 +345,8 @@ $ git help commit
     - Check the status   
     - The output should show "Nothing to commit
     ```console
-   git status
-   ```
+    git status
+    ```
 
 
 ### Upload to GitHub
@@ -615,7 +615,7 @@ def mean_temperature(data):
   
 ```
 
-## Add in-code documentation in test project
+### Add in-code documentation in test project
 
 ### Git diff
 
@@ -682,7 +682,6 @@ def mean_temperature(data):
         └── README.md
 ```
 
----
 
   
 !!! admonition "Concepts in Git"
