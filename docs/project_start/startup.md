@@ -211,8 +211,7 @@
 
     - Now you have a git repo called planets
     - check with the command: ``git status``
-    - It is always a safe command to run and in general a good idea to
-do when you are trying to figure out what to do next:
+    - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
 
     - So far, there is no content. We have to manually add the content to the repo.
 
@@ -220,9 +219,7 @@ do when you are trying to figure out what to do next:
 
 ### Staging files
 
-???- question "Exercise: git add git commit"
-
-!!! example "no type-along"
+!!! example "Demo or type-along"
 
     ```console
     $ git status
@@ -257,9 +254,11 @@ do when you are trying to figure out what to do next:
     Changes to be committed:
       (use "git rm --cached <file>..." to unstage)
             new file:   Figures/planet_earth.png
-            new file:   code/planet.py    ```
+            new file:   code/planet.py
+    ```
 
     Now this change is *staged* and ready to be committed.
+
 
 ### Commit
 - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
@@ -274,7 +273,8 @@ Let us now commit the change to the repository:
     [main (root-commit) 6a416b5] add folders and planet code
      2 files changed, 58 insertions(+)
      create mode 100644 Figures/planet_earth.png
-     create mode 100644 code/planet.py```
+     create mode 100644 code/planet.py
+    ```
 
     Right after we query the status to get this useful command into our muscle memory:
 
@@ -292,10 +292,11 @@ $ git help commit
 ```
 
 - You should see a very long help page as the tool is very versatile (press q to quit).
-- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-- Note that help pages also work when you don't have a network connection!
+	- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+	- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+	- Note that help pages also work when you don't have a network connection!
 
+**Alternative commits**
 - You can also omit the ``-m`` option and a text editor will open.
 - The first line will be your commit message.
 - You can add other lines to add some more detailed info about your changes.
@@ -306,8 +307,6 @@ $ git help commit
 
     
 ### Upload to GitHub
-
-???- question "Exercise: github and git push"
 
 !!! example "Demo or Type-along"
 
@@ -328,9 +327,10 @@ $ git help commit
     
     ---
 
-    On this page choose a project name, e.g. ``planets-<username>`` 
-      - the name there so there are no clashes when/if you collaborate and fork other repositories)
-      - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
+    - On this page choose a project name, e.g. ``planets-<username>``
+    
+        - Add your name there so there are no clashes when/if you collaborate and fork other repositories
+        - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
 
     - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
     - but "Choose a license"
