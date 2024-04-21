@@ -590,7 +590,7 @@ Node4 --> |git commit| Node1
 Node2 --> |git push| Node5
 
 C[Uncommited changed README.md] -->|commit button| R
-R --> |git pull (from local git| R2
+R --> |"git pull (from local git)"| R2
 
         
         subgraph "Local Git"
