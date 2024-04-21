@@ -8,8 +8,8 @@
 
 !!! info "Content"
 
-    - get started with a git/github project
-    - do the basic `git` workflow
+    - Get started with a git/github project
+    - Do the basic `git` workflow
         - create documents
         - initial documentation
 
@@ -227,23 +227,22 @@ do when you are trying to figure out what to do next:
     ```console
     $ git status
     
-    On branch master
+    On branch main
 
     No commits yet
 
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-            activity.puml
-            class.puml
-
+            Figures/
+            code/
     nothing added to commit but untracked files present (use "git add" to track)
 
     ```   
     
-The two files are untracked in the repository (directory). You want to **add the files** (focus the camera)
-to the list of files tracked by Git. Git does not track
-any files automatically and you need make a conscious decision to add a file. Let's do what
-Git hints at and add the files:
+- The two files are untracked in the repository (directory).
+- You want to **add the files** (focus the camera) to the list of files tracked by Git.
+- Git does not track any files automatically and you need make a conscious decision to add a file.
+- Let's do what Git hints at and add the files:
 
 !!! example "Type-along or demo"
 
@@ -251,55 +250,41 @@ Git hints at and add the files:
     $ git add .    # < -- "." means all files
     $ git status
 
-    On branch master
+    On branch main
 
-    Initial commit
+    No commits yet
 
     Changes to be committed:
       (use "git rm --cached <file>..." to unstage)
-
-            new file:   activity.puml
-            new file:   class.puml
-    ```
+            new file:   Figures/planet_earth.png
+            new file:   code/planet.py    ```
 
     Now this change is *staged* and ready to be committed.
-
-
-!!! example "Type-along or demo"
-
-    - Let's follow the example above
-    - We do: 
-    ```
-    $ git add .
-    $ git status
-    ```
 
 ### Commit
 - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
 - BUT only what we have added to the "staging" area!
 
-#### Example
 Let us now commit the change to the repository:
 
-```console
-$ git commit -m "adding class and activity diagrams"
+!!! example "Demo or Type-along"
+    ```console
+    $ git commit -m "add folders and planet code"
 
-[master (root-commit) 8adee34] adding class and activity diagrams
- 2 files changed, 26 insertions(+)
- create mode 100644 activity.puml
- create mode 100644 class.puml
-```
+    [main (root-commit) 6a416b5] add folders and planet code
+     2 files changed, 58 insertions(+)
+     create mode 100644 Figures/planet_earth.png
+     create mode 100644 code/planet.py```
 
-Right after we query the status to get this useful command into our muscle memory:
+    Right after we query the status to get this useful command into our muscle memory:
 
-```console
-$ git status
+    ```console
+    $ git status
 
-On branch master
-nothing to commit, working tree clean
-
-```
-
+    On branch master
+    nothing to commit, working tree clean
+    ```
+    
 What does the `-m` flag mean? Let us check the help page for that command:
 
 ```console
@@ -311,38 +296,6 @@ $ git help commit
 - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
 - Note that help pages also work when you don't have a network connection!   
 
- ### Make the code a part of the git record
-   
-!!! example "type-along"
-
-    **Make your code part of git**
-
-    - Check the status. 
-    - Add all files (``.``) to staging
-
-    ```console
-       git status   
-       git add .
-    ```
-    - Check the status. 
-    - The output should show the new changes since your work on GitHub  
-    ```console
-       git status
-    ```
-    - Commit with the message "First commit of code"
-    ```console
-       git commit -m "First commit of code"
-    ```
-    - Check the status   
-    - The output should show "Nothing to commit
-    ```console
-    git status
-    ```
-
-!!! info "git diff"
-
-    - The ``git diff`` command sorts out what are the difference between the "latest saved file" (working tree)/"staged file"/"committed"
-    - [Git book](https://git-scm.com/docs/git-diff)
 
 ### Upload to GitHub
 
