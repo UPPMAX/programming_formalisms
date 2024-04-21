@@ -90,13 +90,7 @@ Agree yes/no
 
 -   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
-::: columns
-::: {.column width="50%"}
-🪱
-
-```{python}
-#| echo: true
-#| eval: false
+```python
 def isprime(num):
   for n in range(
     2, int(num**0.5)+1
@@ -105,14 +99,8 @@ def isprime(num):
       return False
   return True
 ```
-:::
 
-::: {.column width="50%"}
-🪱
-
-```{python}
-#| echo: true
-#| eval: false
+```python
 def isprime(num):
     if num> 1:  
         for n in range(2,num):  
@@ -122,20 +110,13 @@ def isprime(num):
     else:
         return False
 ```
-:::
-:::
 
-## Exercise 1 \[SKIP\]
+## Exercise 1 [SKIP]
 
 -   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
 
-::: columns
-::: {.column width="50%"}
-🪱
 
-```{python}
-#| echo: true
-#| eval: false
+```python
 def isprime(num):
   for n in range(
     2, int(num**0.5)+1
@@ -144,14 +125,8 @@ def isprime(num):
       return False
   return True
 ```
-:::
 
-::: {.column width="50%"}
-🪱
-
-```{python}
-#| echo: true
-#| eval: false
+```python
 def Prime(no, i = 2):
     if no == i:
         return True
@@ -159,8 +134,6 @@ def Prime(no, i = 2):
         return False
     return Prime(no, i + 1)
 ```
-:::
-:::
 
 ## Exercise 2 [SKIP]
 
