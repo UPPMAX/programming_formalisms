@@ -64,9 +64,7 @@ classDiagram
 
 === "Python"
 
-    ```{python}
-    #| echo: false
-    #| eval: true
+    ```python
     class Coordinat:
         def __init__(self, any_x, any_y):
           self.x = any_x
@@ -79,34 +77,22 @@ classDiagram
         return Coordinat(3.14, 2.72)
     ```
 
-    ```{python}
-    #| echo: true
-    #| eval: true
+    ```python
     a = get_a()
     print(a)
     ```
 
-    ```{python}
-    #| echo: true
-    #| eval: true
+    ```python
     print(type(a))
     ```
 === "R"
 
-    ```{r echo=FALSE}
-    get_a <- function() {
-      a <- c(3.14, 2.72)
-      class(a) <- "Coordinat"
-      a
-    }
-    ```
-
-    ```{r echo=TRUE}
+    ```r
     a <- get_a()
     a
     ```
 
-    ```{r echo=TRUE}
+    ```r
     class(a)
     ```
 
