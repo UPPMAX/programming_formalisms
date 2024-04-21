@@ -582,18 +582,18 @@ def mean_temperature(data):
 ### What have we done?
 
 ```mermaid
-      graph TB
+  graph TB
 
 P["Project idea"] -->|git init| Node2
 P["Project idea"] --> planet.py -->|git add| Node4
 Node4 --> |git commit| Node1
 Node2 --> |git push| Node5
-R <--> Node2
 
-C[Uncommited changed README.md] -->|commit button| R
+C[Uncommited changed README.md] -->|commit| R
+Node5 --> |"git pull (from local git)"| Node2
 R --> |"git pull (from local git)"| R2
+R2 <--> Node2
 
-        
         subgraph "Local Git"
         Node2[project]
         Node1[planet.py] 
@@ -609,6 +609,7 @@ R --> |"git pull (from local git)"| R2
         Node5[project]
         R[README.md]
         end
+
 
 ```
 
