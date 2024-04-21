@@ -1,4 +1,3 @@
-html comment
 # Software Development Lifecycle (SDLC) tools
 
 ???+ questions
@@ -85,28 +84,20 @@ flowchart
 --->
 
 **Most other models are Agile...**
-see the extra reading section: [SDLC models](https://uppmax.github.io/programming_formalisms_intro/sdlc_models.html)
 
 - Modern principles: 
-    - automated tests, continuous integration
+    - automated tests, continuous integration (CI)
 - Deliver as fast as possible:
     - small iterations are easier to manage
 - Extreme Programming
     - Pair programming
-        - Collaborate, continuous code inspection
-        - Real-time development technique to increase algorithm implementation
     - Test-driven development
-        - Write test
-        - Write function to fail test
-        - Write code to pass test
    
-!!! note "See also"
-    - Software Development Lifecycle on Tuesday **FIX LINK**
-
-!!! admonition "Conclusion"
+!!! info "Conclusion"
     - Each team has unique requirements
     - Try out agile practices that make the most sense
     - Don’t be afraid of trial and error
+    - More info in [Software Development Lifecycle today](sldc.md) 
 
 
 ## The tools/concepts for Developing a programming project
@@ -115,7 +106,7 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
 
     - &#9745; Planning
         - Pseudocode
-        - Unified Modelling Language
+        - Unified Modelling Language (UML)
     - &#9745; Testing
         - Different levels
     - &#9745; Source/version control
@@ -123,9 +114,9 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
     - &#9745; Collaboration
         - GitHub
     - &#9745; Reproducibility (for you and others)
+        - Deployment
         - Dependencies
         - (Workflows)
-        - Containers (deployment)
     - &#9745; Sharing
         - open science
         - citation
@@ -154,11 +145,11 @@ see the extra reading section: [SDLC models](https://uppmax.github.io/programmin
     - Analysis part is to state the problem and define inputs and outputs
         - graphical tools like UML
         - text
-        - objects in OOP
+        - if object-oriented programming: **objects**
     - Design phase to find out the specific algorithms needed
         - pseudocode+UML
-        - classes in OOP
-        - functions/modules in functional programming
+        - if object-oriented programming: **classes**
+        - if functional programming: **functions/modules**
 
 
 ### Top-down
@@ -174,7 +165,6 @@ Start with parts first and develop a bigger organization with time.
 
 !!! discussion "How do you program?" 
 
-    **Menti**
     - Top-down
     - Bottom-up
 
@@ -204,9 +194,9 @@ Start with parts first and develop a bigger organization with time.
     - Not as many diagrams
     - renders in browser without plug-ins
     - <https://mermaid.js.org/>
-    - https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkL9Q94WGh1t5fCFurN6SFo7AztfDBGpKj_fcd62c0pvM_zhkzY-JYxx-7px0ZTFKhK5SDNoS50NL1Y6m-QZZ_ziQWsd_ya4fhx8tBrH4Jx993mH1cJium8agyijXssGyre_R_HM5T1mYL4cPtLqtHP8FWbi07n_xMdObW-647yjrKGIhQU3wru0XK0ZNr0_rQmCkWzZYV5WlvuaHiKQuWWpNIg_vpyDeYSB97jEFoSLg3dI9ktXH4B_cJWqw
+    - [Live editor](https://mermaid.live/)
 
-
+**Types**
 
 ```mermaid
 flowchart TD
@@ -246,6 +236,8 @@ sequenceDiagram
     Bob-->>-Alice: Another authentication Response
 ```
 
+Mermaid code
+
 ```
 sequenceDiagram
     Alice ->>+Bob: Authentication Request
@@ -253,6 +245,25 @@ sequenceDiagram
     Alice->>+Bob: Another authentication Request
     Bob-->>-Alice: Another authentication Response
 ```
+
+#### Class
+
+ A diagram that shows the system classes and relationships between them.
+
+```mermaid
+classDiagram
+    Driver o-- Car : owns
+    Car *-- Wheel : have 4
+```
+
+Mermaid code
+
+```
+classDiagram
+    Driver o-- Car : owns
+    Car *-- Wheel : have 4
+```
+
 
 #### Activity
 
@@ -265,6 +276,8 @@ flowchart TD
   is_installed --> |yes| process_all[process all\ndiagrams]
   is_installed --> |no| process_sub[process only\nsequence and activity diagrams]
 ```
+
+Mermaid code
 
 ```
 flowchart TD
@@ -282,6 +295,8 @@ flowchart TD
   condition --> |no| is_false[Do action 2]
 ```
 
+Mermaid code
+
 ```
 flowchart TD
   condition{Is something true?}
@@ -289,22 +304,31 @@ flowchart TD
   condition --> |no| is_false[Do action 2]
 ```
 
-#### Class
+!!! info "shape of boxes"
 
- A diagram that shows the system classes and relationships between them.
+    - initial state (small circle)
+        - ``[*]``
+        - ```mermaid
+             [*]
+             ```
+    - end state (small solid-filled circle)
+    
+    - state (rectangle)
+    - activity (rounded recatngle)
+    - choice (diamond)
+    - Other syntac: <https://mermaid.js.org/ecosystem/tutorials.html>
 
-```mermaid
-classDiagram
-    Driver o-- Car : owns
-    Car *-- Wheel : have 4
-```
 
-```
-classDiagram
-    Driver o-- Car : owns
-    Car *-- Wheel : have 4
-```
+!!! example "Exercise: Make a Algorithm (flow chart) diagram"
 
+    - Start with the [Live editor with a sample diagram](https://mermaid.live/edit#pako:eNpVjk2Lg0AMhv9KyGkX6h_wUGh1txehhfbmeAgaO0M7H4yRUtT_vuN62c0p5Hne8E7Y-o4xx_7pX62mKHArlYM0h7rQ0QxiaWggy_bziQWsd_ye4fhx8jBoH4Jx98_NP64SFFO1agyijXssGyp-82fHM5R1RUF8aP6S28vP8FWbi07v_xMdOaW-657ynrKWIhQUG9yh5WjJdKn6tAYUimbLCvO0dtzT-BSFyi1JpVH89e1azCWOvMMxdCRcGrpHsttx-QG-cVWh) and modify it to instead reflect:
+
+    1. We have a problem
+    1. Let's program
+    1. Choose format among object-orientation (which gives the choices Python or C++) and functional (choices Python or Fortran)
+    
+    - Syntax cheat sheet [here](https://mermaid.js.org/syntax/flowchart.html)
+    
 
 ### Pseudocode
 - Pseudocode does not have syntax rules of any particular language
