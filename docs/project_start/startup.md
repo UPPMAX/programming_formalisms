@@ -696,6 +696,22 @@ R <--> Node5
 
 ## Remarks
 
+### Git Cheat sheet
+
+```console
+$ git init    # initialize new repository
+$ git add     # add files or stage file(s)
+$ git commit  # commit staged file(s)
+$ git status  # see what is going on
+$ git log     # see history
+$ git diff    # show unstaged/uncommitted modifications
+$ git show    # show the change for a specific commit
+$ git mv      # move tracked files
+$ git rm      # remove tracked files  (from repository only)
+```
+
+
+
 !!! Goal
 
     - [ ] Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
