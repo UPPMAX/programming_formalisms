@@ -88,6 +88,13 @@
     - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
 
 
+!!! objectives
+
+    - [More about sharing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html) aims to:
+        - introduce reproducibility and sharing, licensing and citation
+        - get into thinking about dependencies and solutions
+        - get into choosing license, citation and DOI
+
 
 
 
