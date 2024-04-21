@@ -3,7 +3,7 @@
 !!! info "Overview of Software Development Lifecycle (SDLC)"
     
     - This is a brief intro to the concept of SDLC further reading can be found in the reading material
-    - == __All software have a life cycle__ ==
+    - ==__All software have a life cycle__==
     - Whether you control that through formalism or if it is chaos is up to you.
     
 
