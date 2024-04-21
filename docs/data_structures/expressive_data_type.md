@@ -39,7 +39,7 @@ Good (:innocent:) data structures:
 
 ![](python_icon_26x32.png) | ![](r_icon_41x32.png)
 ---------------------------|----------------------
-`{python} a = get_a()`     |.
+`a = get_a()`{:.python}    |.
 `python print(a)`          |.
 `python print(type(a))`    |.
 
