@@ -19,8 +19,6 @@ Fill in in the shared document!
 
 'Use C or C++ or Rust'
 
-. . .
-
 Variance within programming languages is bigger than variance between languages (adapted fig 2, from @prechelt2000empirical)
 
 ![](prechelt_fig_2_sub.png)
@@ -28,8 +26,6 @@ Variance within programming languages is bigger than variance between languages 
 ## Bad advice 2
 
 'No for loops', 'unroll for-loops', any other micro-optimization.
-
-. . .
 
 Premature optimization is the root of all evil. It likely has no measurable effect.
 
@@ -46,8 +42,6 @@ Premature optimization is the root of all evil. It likely has no measurable effe
 ## Bad advice 3
 
 'Always parallelize'
-
-. . .
 
 -   Maximum gain depends on proportion spent in the parallelized part @rodgers1985improvements
 -   Overhead is underestimated

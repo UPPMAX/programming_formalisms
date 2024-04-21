@@ -24,9 +24,7 @@
 
 ## Myth 1
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 def slow_tmp_swap(x, y):
     tmp = x
     x = y
@@ -39,8 +37,6 @@ def superfast_xor_swap(x, y):
     x ^= y
     return x, y
 ```
-
-. . .
 
 -   [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
 -   [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
@@ -75,9 +71,7 @@ Create speed profile of DNA alignment
 
 In TDD, this test would have been present already:
 
-```{python}
-#| echo: true
-#| eval: false
+```python
 assert 10.0 * get_t_runtime_b() < get_t_runtime_a()
 ```
 

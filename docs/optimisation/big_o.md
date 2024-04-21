@@ -13,8 +13,6 @@
 
 Q: When to optimize for speed?
 
-. . .
-
 A:
 
 -   [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
@@ -189,7 +187,7 @@ def Prime(no, i = 2):
 :::
 :::
 
-## Exercise 2 \[SKIP\]
+## Exercise 2 [SKIP]
 
 -   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
 
