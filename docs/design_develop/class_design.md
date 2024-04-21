@@ -1,2 +1,2 @@
-# Class design
+# Design paradigms
 

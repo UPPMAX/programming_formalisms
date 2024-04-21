@@ -1,7 +1,7 @@
 html comment
 # Software Development Lifecycle (SDLC) tools
 
-!!! questions
+???+ questions
 
     - What are the key concepts and steps in the SDLC
     - What are the tools for a project?
@@ -46,7 +46,7 @@ html comment
     - Collaboration
     - Reproducibility and sharing
     - Documentation
-    
+---    
 
 ## The waterfall model
 
@@ -76,19 +76,21 @@ flowchart
 
 "Agile = characterized by the division of tasks into short phases of work and frequent re-assessment and adaptation of plans."
 
+<!---
 !!! admonition "Values"
     - **Individuals and interactions** over processes and tools
     - **Working software** over comprehensive documentation
     - **Customer collaboration** over contract negotiation
     - **Responding to change** over following a plan
-
+--->
 
 **Most other models are Agile...**
 see the extra reading section: [SDLC models](https://uppmax.github.io/programming_formalisms_intro/sdlc_models.html)
 
 - Modern principles: 
-  - automated tests, continuous integration
-- Deliver as fast as possible: small iterations are easier to manage
+    - automated tests, continuous integration
+- Deliver as fast as possible:
+    - small iterations are easier to manage
 - Extreme Programming
     - Pair programming
         - Collaborate, continuous code inspection
