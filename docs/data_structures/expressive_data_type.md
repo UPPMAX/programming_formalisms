@@ -31,7 +31,14 @@ Good (:innocent:) data structures:
 
 "A two-dimensional coordinate **has a** x and a y component"
 
-![](struct_coordinat.png)
+```mermaid
+classDiagram
+  class Particle{
+    -position
+    -velocity
+  }
+```
+
 
 > Class diagram of a two-dimensional coordinate
 
