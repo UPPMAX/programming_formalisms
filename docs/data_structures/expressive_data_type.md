@@ -37,37 +37,37 @@ Good (:innocent:) data structures:
 
 ## Increase expressiveness, in code
 
-![](python_icon_26x32.png) | ![](r_icon_41x32.png)
----------------------------|----------------------
-`a = get_a()`              |`a <- get_a()`
-`print(a)`                 |`a`
-`print(type(a))`           |`class(a)`
+=== "Python"
 
-What is `a`?
+    ```python
+    a = get_a()
+    print(a)
+    print(type(a))
+    ```
 
-### ![](python_icon_26x32.png)
+=== "R"
 
-```{python}
-a = get_a()
-print(a)
-```
+    ```r
+    a <- get_a()
+    a
+    class(a)
+    ```
 
-```{python}
-print(type(a))
-```
+???+ info "Python version"
 
-What is `a`?
+    ```python
+    a = get_a()
+    print(a)
+    print(type(a))
+    ```
 
-### ![](r_icon_41x32.png)
+???- info "R version"
 
-```{r}
-a <- get_a()
-a
-```
-
-```{r}
-class(a)
-```
+    ```r
+    a <- get_a()
+    a
+    class(a)
+    ```
 
 What is `a`?
 
