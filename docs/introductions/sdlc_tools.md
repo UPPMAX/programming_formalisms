@@ -69,21 +69,7 @@ flowchart
         - e.g. bugs, architecture limiting extensions
     - large costs economically and timely
 
-
-## Take aways 
-### [The Agile manifest](https://agilemanifesto.org/)
-
-"Agile = characterized by the division of tasks into short phases of work and frequent re-assessment and adaptation of plans."
-
-<!---
-!!! admonition "Values"
-    - **Individuals and interactions** over processes and tools
-    - **Working software** over comprehensive documentation
-    - **Customer collaboration** over contract negotiation
-    - **Responding to change** over following a plan
---->
-
-**Most other models are Agile...**
+## Other Models
 
 - Modern principles: 
     - automated tests, continuous integration (CI)
@@ -95,7 +81,6 @@ flowchart
    
 !!! info "Conclusion"
     - Each team has unique requirements
-    - Try out agile practices that make the most sense
     - Don’t be afraid of trial and error
     - More info in [Software Development Lifecycle today](sldc.md) 
 
@@ -131,8 +116,9 @@ flowchart
 
 !!! note
 
-    "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe.
-    -	Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements. It prepares you to build the real thing to reduce any potential risk of failure. "
+    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements. 
+    - It prepares you to build the real thing to reduce any potential risk of failure. "
 
 
 !!! note
@@ -142,14 +128,16 @@ flowchart
         - identify parts needed
         - (risk analysis)
     - Can be divided into analysis and design
-    - Analysis part is to state the problem and define inputs and outputs
-        - graphical tools like UML
-        - text
-        - if object-oriented programming: **objects**
-    - Design phase to find out the specific algorithms needed
-        - pseudocode+UML
-        - if object-oriented programming: **classes**
-        - if functional programming: **functions/modules**
+        - **Analysis** part is to state the problem and define inputs and outputs
+            - graphical tools like UML
+            - text
+            - if object-oriented programming: **objects**
+        - **Design** phase to find out the specific algorithms needed
+            - pseudocode+UML
+            - if object-oriented programming: **classes**
+            - if functional programming: **functions/modules**
+
+    - More in afternoon!    
 
 
 ### Top-down
@@ -163,20 +151,12 @@ flowchart
 ### Bottom-Up
 Start with parts first and develop a bigger organization with time.
 
-!!! discussion "How do you program?" 
+!!! discussion "Answer in HackMD: How do you program?" 
 
     - Top-down
     - Bottom-up
 
-### Flowcharts or Unified Modeling Language
-
-<https://en.wikipedia.org/wiki/List_of_Unified_Modeling_Language_tools>
-
-- Modeling
-    - Code generation
-    - Reverse engineering
-    - Analyze code complexity
-    - Other metrics
+### Flowcharts or Unified Modeling Language (UML)
 
 #### Tools
 - PlantUML
@@ -308,15 +288,26 @@ flowchart TD
 
     - initial state (small circle)
         - ``[*]``
-        - ```mermaid
+        ```mermaid
              [*]
-             ```
+        ```
     - end state (small solid-filled circle)
+        - ``[*]``
+        ```mermaid
+             [*]
+        ```
     
     - state (rectangle)
+        - ``[A]``
+        ```mermaid
+             [A]
+        ```
+        
     - activity (rounded recatngle)
     - choice (diamond)
-    - Other syntac: <https://mermaid.js.org/ecosystem/tutorials.html>
+    - arrow
+    
+    - Other syntax: <https://mermaid.js.org/ecosystem/tutorials.html>
 
 
 !!! example "Exercise: Make a Algorithm (flow chart) diagram"
