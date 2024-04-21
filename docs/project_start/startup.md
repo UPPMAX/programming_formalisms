@@ -483,7 +483,7 @@ $ git help commit
 
 !!! example "README.md for the test project"
 
-    ````code    
+    ```code    
     # Plan
 
     ## Background
@@ -589,7 +589,7 @@ Good docstrings describe:
     What goes out (including the return type)
     Python example: help()
 
-!!! info "keypoints"
+!!! info "Key points"
 
     - Comments should describe the why for your code not the what.
     - Writing docstrings is an easy way to write documentation while you type code.
@@ -615,13 +615,12 @@ def mean_temperature(data):
   
 ```
 
-### Add in-code documentation in test project
-
-### Git diff
+### Add in-code documentation and git diff
 
 - Add some text documentation
-
-???- Code
+    - Example:
+    	- Time iteration of the postion of Earth
+     	- Make subplots of Earth's revolution and the change of Sun–Earth distance
 
 - When you are done editing the file, try `git diff`:
 
@@ -631,6 +630,8 @@ def mean_temperature(data):
 
 - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
 - You will see some thing like this.
+
+- **FIX**
 
 - Now first stage and then commit (what happens when we leave out the `-m` flag?):
 
