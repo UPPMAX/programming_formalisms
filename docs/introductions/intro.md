@@ -1,6 +1,6 @@
 # Introduction
 
-!!! questions
+???+ questions
 
     - What is the Purpose of Formalism in Computer Science?
 
@@ -49,6 +49,7 @@
     - Example
     - SLDC   
 
+---
 
 ## What is software?
 *Wikipedia*
@@ -65,11 +66,11 @@
 - model
 - application
 
-!!! Note
+!!! info
    
     We will not be very definite in the course in when to use scripting, program or tools. 
 
-## Different types of Scientific software:
+## Different types of Scientific software
 - analysis of data
     - statistics
     - figures
@@ -82,6 +83,7 @@
     - simulations time-varying behaviour of a system
     - mathematical models of relationships among variables in a system 
 - decision assistance
+- Other
 
 !!! discussion
 
@@ -110,10 +112,10 @@
 
 ### Object oriented programming
 - Object-oriented (OO) programming is 
-  - a mindset of mimicking the real-world as:
-  - entities (`objects`) that are different 
-  - or share attributes with each-other (within a `class`)
-  - info-hiding mindset...
+    - a mindset of mimicking the real-world as:
+    - **entities (`objects`)** that are different 
+    - or **share attributes **with each-other (within a `**class**`)
+    - info-hiding mindset...
 
 
 **Objects**
@@ -134,7 +136,7 @@ classDiagram
   }
 ```
 
-!!!- note "Object orientation (OO) in some programming languages"
+???- info "Object orientation (OO) in some programming languages"
 
     - OO (built-in classes)
         - C++
@@ -156,7 +158,7 @@ classDiagram
 - Modules: a way to _gather functions_ with similar functionality
 - Also to some extent info-hiding mindset
 
-!!! admonition "To sum up"
+!!! info "To sum up"
 
     - At its simplest, functional programming uses immutable data to tell the program exactly what to do. 
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state. 
@@ -165,29 +167,33 @@ classDiagram
 !!! info "See also" 
 
     - More on Tuesday: Object-orientation **FIXLINK**
-    - More on Thursday: [Algorithms](thursday_intro.md)
-    - More on Friday: [Modular programming](friday_intro.md)
+    - More on Thursday: [Algorithms](../thursday_intro.md)
+    - More on Friday: [Modular programming](../friday_intro.md)
 
 ###  Modular coding
 - Modular coding breaks up the code in blocks that could be separate files. 
 - Modularity could be within a program but also for a workflow.
 
-!!! example "WRF module and a workflow in 'runtime-"
+!!! example "Demo: WRF module and a workflow in 'runtime'"
     
     - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
    
 ## Code Example
 
-???+ exercise "Problems with this code? 5-10 min"
+???+ exercise "Exercise: Problems with this code? 5-10 min"
 
+    **Breakout room, 3-4 people, 10m**
+   
     **Planet application**
     
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
     ---
     
+    - Discuss the needs below
     - What are the problems?
-    - Discuss the needs below:
+    - What can be improved
+
 
     - **Reusable**
         - Finished _components_
@@ -297,9 +303,9 @@ classDiagram
     - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
 
 ## Summary of Introduction
-- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+- Now after the overview you are ready to dig deeper about the tools!
 
-!!! note "Keypoints"
+!!! info "Keypoints"
 
     - A program shall be or have content/components that is:
         - Correct
