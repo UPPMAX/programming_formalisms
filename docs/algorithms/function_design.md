@@ -11,16 +11,16 @@
 
 ## Problem
 
-How do I write functions \[1\] that are:
+How do I write functions [1] that are:
 
--   easy to use
--   correct
--   fast \[2\]
+- easy to use
+- correct
+- fast [2]
 
 References;
 
--   \[1\] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' @dictionary_algorithm
--   \[2\] pick any vague definition
+- [1] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' @dictionary_algorithm
+- [2] pick any vague definition
 
 ## What is a good function?
 
@@ -45,24 +45,45 @@ A good function ...
 
 ## A good function is documented
 
-```{python}
-#| echo: true
-#| eval: true
-def sort_1(x):
-  """Sort list `x` in-place. 
-  
-  Returns nothing
-  """
+=== "Python"
 
-def sort_2(x):
-  """Sort list `x`.
-  
-  Returns the sorted list.
-  """
+	```python
+	def sort_1(x):
+	  """Sort list `x` in-place. 
+	  
+	  Returns nothing
+	  """
 
-assert sort_1.__doc__
-assert sort_2.__doc__
-```
+	def sort_2(x):
+	  """Sort list `x`.
+	  
+	  Returns the sorted list.
+	  """
+
+	assert sort_1.__doc__
+	assert sort_2.__doc__
+    ```
+
+=== "R"
+
+	```r
+    #' Sort list `x` in-place.
+    #' @param x a list
+    #' @return nothing
+	sort_1 <- function(x) {
+      # ...
+    }
+	  
+    #' Sort list `x`
+    #' @param x a list
+    #' @return the sorted list
+	sort_2 <- function(x) {
+      # ...
+	}
+
+	# Check if functions have documentation here
+    ```
+
 
 Mandatory in some contexts @ram2013ropensci @tidyverse_style_guide_functions
 
@@ -178,9 +199,7 @@ ATACC-GGGTTT
 
 Comment on this [function from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/):
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 i=2
  
 def Prime(no, i):
@@ -195,9 +214,7 @@ def Prime(no, i):
 
 Function names start with lowercase character, name does not start with a verb, input is not checked, clumsy interface:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 assert Prime(2, 2)
 assert Prime(3, 2)
 assert Prime(3, 3) # Nothing stops me!
@@ -211,9 +228,7 @@ assert Prime(5, 2)
 
 Comment on this function again:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 def is_prime(no, i = 2):
     assert isinstance(no, int)
     assert isinstance(i, int)
@@ -228,9 +243,7 @@ def is_prime(no, i = 2):
 
 -   Clumsy interface:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 assert is_prime(2)
 assert is_prime(2, 2) # Nothing stops me!
 assert is_prime(3)
@@ -242,9 +255,7 @@ assert is_prime(5)
 
 Comment on this function again:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 def is_prime(no):
     if not isinstance(no, int):
         raise TypeError("'no' must be integer")
@@ -273,9 +284,7 @@ I think it is OK, please correct me :-)
 
 [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical), hence don't:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 def do_x_and_y(): pass
 
 do_x_and_y()
@@ -283,9 +292,7 @@ do_x_and_y()
 
 Do:
 
-```{python}
-#| echo: true
-#| eval: true
+```python
 def do_x(): pass
 
 def do_y(): pass
@@ -332,64 +339,55 @@ Which tests would you write?
 
 ## Solutions 1
 
-::: columns
-::: {.column width="50%"}
-🪱
 
-```{python}
-#| echo: true
-#| eval: false
-assert align_dna_seqs(
-  "AAACCCGGGTTT", 
-  "ATACCCGGGTAT"
-  ) == { 
-    "AAACCCGGGTTT", 
-    "ATACC-GGGTTT"
-  }
-assert align_dna_seqs( 
-  { 
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT" 
-  } 
-) == 
-  { 
-    "AAACCCGGGTTT", 
-    "ATACC-GGGTTT"
-  }
-```
-:::
+=== "Python"
 
-::: {.column width="50%"}
-🪱
+	```python
+	assert align_dna_seqs(
+	  "AAACCCGGGTTT", 
+	  "ATACCCGGGTAT"
+	  ) == { 
+		"AAACCCGGGTTT", 
+		"ATACC-GGGTTT"
+	  }
+	assert align_dna_seqs( 
+	  { 
+		"AAACCCGGGTTT", 
+		"ATACCCGGGTAT" 
+	  } 
+	) == 
+	  { 
+		"AAACCCGGGTTT", 
+		"ATACC-GGGTTT"
+	  }
+	```
 
-```{r}
-#| echo: true
-#| eval: false
-expect_equal(
-  align_dna_seqs(
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT"
-  ), 
-  c(
-    "AAACCCGGGTTT", 
-    "ATACC-GGGTTT"
-  )
-)
-expect_equal(
-  align_dna_seqs(
-    c(
-      "AAACCCGGGTTT", 
-      "ATACCCGGGTAT"
-    )
-  ),
-  c(
-    "AAACCCGGGTTT", 
-    "ATACC-GGGTTT"
-  )
-)
-```
-:::
-:::
+=== "R"
+
+	```r
+	expect_equal(
+	  align_dna_seqs(
+		"AAACCCGGGTTT", 
+		"ATACCCGGGTAT"
+	  ), 
+	  c(
+		"AAACCCGGGTTT", 
+		"ATACC-GGGTTT"
+	  )
+	)
+	expect_equal(
+	  align_dna_seqs(
+		c(
+		  "AAACCCGGGTTT", 
+		  "ATACCCGGGTAT"
+		)
+	  ),
+	  c(
+		"AAACCCGGGTTT", 
+		"ATACC-GGGTTT"
+	  )
+	)
+	```
 
 ## What is a good function?
 

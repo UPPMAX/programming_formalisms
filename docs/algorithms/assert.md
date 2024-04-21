@@ -31,11 +31,8 @@ AssertionError
 
 ## `assert` as a stub
 
-🪱
 
-```{python}
-#| echo: true
-#| eval: false
+```python
 def align(dna_sequences):
     """Align the DNA sequences"""
     assert len(dna_sequences) == 2 # TODO
@@ -43,9 +40,7 @@ def align(dna_sequences):
 
 ## `assert` in debug mode
 
-```{python}
-#| echo: true
-#| eval: false
+```python
 def align_two_dna_sequences(dna_sequences):
     """Internal function to align two DNA sequences"""
     assert len(dna_sequences) == 2 # TODO
@@ -57,9 +52,7 @@ Superior to documentation, as it cannot be ignored.
 
 ## `assert` to document assumptions a developer makes
 
-```{python}
-#| echo: true
-#| eval: false
+```python
 def align_two_dna_sequences(dna_sequences):
     """Align the DNA sequences"""
     # ....

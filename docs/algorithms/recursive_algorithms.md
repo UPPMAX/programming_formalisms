@@ -29,27 +29,21 @@
 -   If the function used a for-loop, create another function that uses recursion, or the other way around
 -   Write the code of the function as a pair and/or with help of an AI
 
-::: columns
-::: {.column width="50%"}
-```{python}
-#| echo: true
-#| eval: false
-assert calc_factorial_iterative(13) == 
-  calc_factorial_recursive(13)
-```
-:::
+=== "Python"
 
-::: {.column width="50%"}
-```{r}
-#| echo: true
-#| eval: false
-expect_equal(
-  calc_factorial_iterative(13),
-  calc_factorial_recursive(13)
-)
-```
-:::
-:::
+    ```python
+    assert calc_factorial_iterative(13) == 
+      calc_factorial_recursive(13)
+    ```
+
+=== "R"
+
+    ```r
+    expect_equal(
+      calc_factorial_iterative(13),
+      calc_factorial_recursive(13)
+    )
+    ```
 
 ## Example 2
 
@@ -77,24 +71,18 @@ Fibonacci sequence:
 -   If the function used a for-loop, create another function that uses recursion, or vice versa
 -   Write the code of the function as a pair and/or with help of an AI
 
-::: columns
-::: {.column width="50%"}
-```{python}
-#| echo: true
-#| eval: false
-assert get_nth_fibonacci_iterative(13) == 
-  get_nth_fibonacci_recursive(13)
-```
-:::
+=== "Python"
 
-::: {.column width="50%"}
-```{r}
-#| echo: true
-#| eval: false
-expect_equal(
-  get_nth_fibonacci_iterative(13),
-  get_nth_fibonacci_recursive(13)
-)
-```
-:::
-:::
+    ```python
+    assert get_nth_fibonacci_iterative(13) == 
+      get_nth_fibonacci_recursive(13)
+    ```
+
+=== "R"
+
+    ```r
+    expect_equal(
+      get_nth_fibonacci_iterative(13),
+      get_nth_fibonacci_recursive(13)
+    )
+    ```
