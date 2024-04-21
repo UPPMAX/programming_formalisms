@@ -438,11 +438,6 @@ $ git help commit
                
 ```
 
-!!! example "Demo/Type-along"
-
-    - Add a README 
-
-
 !!! info "See also"
 
     We will later look at the README file, present in the Course project repository
@@ -648,7 +643,7 @@ R <--> Node5
     - The result shall look something like this:
 
      ```console
-     $ git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
+     $ git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
      ```
     
     !!! tip 
@@ -659,9 +654,7 @@ R <--> Node5
     
     - `cd` the new directory that was created
     - list the files with `ls`
-    - **Think of cloning as downloading the `.git` part to your computer**. 
-    - After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
-
+    
     **Create a folder with your name**
 
     - step into (``cd``) the ``learners/`` directory
