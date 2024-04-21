@@ -1,3 +1,4 @@
+#!/bin/Rscript
 create_big_o_example <- function(n = seq(0, 100)) {
   t_wide <- tibble::tibble(n = n)
   t_wide$a <- 10 + log10(t_wide$n + 0.1)
@@ -19,3 +20,9 @@ ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
   ggplot2::geom_line(linewidth = 4) + 
   ggplot2::theme(text = ggplot2::element_text(size = 20))
 ggplot2::ggsave(filename = "big_o_500.png", width = 7, height = 7)
+
+t <- create_big_o_example(n = seq(0, 2000))
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
+  ggplot2::geom_line(linewidth = 4) + 
+  ggplot2::theme(text = ggplot2::element_text(size = 20))
+ggplot2::ggsave(filename = "big_o_2000.png", width = 7, height = 7)
