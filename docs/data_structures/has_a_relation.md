@@ -41,12 +41,12 @@ Good (:innocent:) data structures:
 
 When one data type has a 'has-a' relationship with another, this is called *composition*.
 
-```
+```mermaid
 classDiagram
-    class Coordinat{
-      -x
-      -y
-    }
+  class Coordinat{
+    -x
+    -y
+  }
 ```
 
 A `Coordinat` has an `x` and `y`
@@ -66,20 +66,20 @@ Example                                |A university has departments|A departmen
 
 ```mermaid
 classDiagram
-    class Particle{
-      -position
-      -velocity
-    }
-    class Velocity{
-      -delta_x
-      -delta_y
-    }
-    class Position{
-      -x
-      -y
-    }
-    Particle "*-- Velocity
-    Particle "*-- Position
+  class Particle{
+    -position
+    -velocity
+  }
+  class Velocity{
+    -delta_x
+    -delta_y
+  }
+  class Position{
+    -x
+    -y
+  }
+  Particle *-- Velocity
+  Particle *-- Position
 ```
 
 -   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
