@@ -2,10 +2,10 @@
 
 !!! info "Today we will:"
 
-    - set the start in why a formalized development of software is needed.
-    - identify the main topics and objectives for the week's lessons.
-    - learn bout the tools and processes in the software development cycle.
-    - start a software project following a formalized development and tools.
+    - Set the start in why a formalized development of software is needed.
+    - Identify the main topics and objectives for the week's lessons.
+    - Learn bout the tools and processes in the software development cycle.
+    - Start a software project following a formalized development and tools.
 
 !!! info "How?"
 
@@ -13,7 +13,7 @@
 
     2.  The second part follows the development of a simple software project.
 
-        - The exercises and type-alongs are mostly based on copy-pasting code.
+        - The exercises and type-alongs are to some extent based on copy-pasting code.
 
         - So you don’t need to program yourself or understand the python syntax used.
 
@@ -30,16 +30,6 @@
 
 - [Introduction](introductions/intro.md)
 
-???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
-
-    - The student has an undertanding of the overview concepts software development process and understands the basic reasoning behind iterative software development
-    - Content
-        - Define the fundamental concepts introduced in the course and explain their significance in software development.
-        - Explain the core principles and theories underlying software development concepts covered in the course.
-
-
-- [Software Development Lifecycle (SDLC)](introductions/sdlc_tools.md)
-
 ???- info "Learning objectives of 'SDLC tools'"
 
     - Compare and contrast various software development tools and justify their relevance to specific development tasks.
@@ -52,6 +42,16 @@
     
 - [Get started with Git/GitHub](project_start/startup.md)
 
+
+???- info "Learning objectives of 'Software Development Lifecycle (SDLC)'"
+
+    - The student has an undertanding of the overview concepts software development process and understands the basic reasoning behind iterative software development
+    - Content
+        - Define the fundamental concepts introduced in the course and explain their significance in software development.
+        - Explain the core principles and theories underlying software development concepts covered in the course.
+
+
+- [Software Development Lifecycle (SDLC)](introductions/sdlc.md)
 
 ???- info "Learning objectives of 'Project start with analysis and design'"
 
@@ -74,14 +74,6 @@
 
 - [Project start with analysis and design](project_start/analysis_design.md)
 
-!!! hint
-
-    1. We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
-    2. The second part follows the development of a simple software **project**.
-        - The exercises and type-alongs are mostly based on copy-pasting code.
-        - So you don't need to program yourself or understand the python syntax used.
-        - The important aspect is the **workflow**!
-    3. **Deeper material** not covered in the lessons today can be found in the extra reading part.
 
 
 ## Detailed schedule
@@ -89,10 +81,11 @@
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-10:00|Björn |Syllabus + Introduction 
-Monday   |10:15-11:00|Lars | SDLC
-Monday   |11:15-12:00|Björn |Tools
-Monday   |13:00-14:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo) (show both local /GitHub)
-Monday   |14:15-15:00|Lars  |project/class design?project design
+Monday   |10:15-11:00|Björn |Tools
+Monday   |11:15-12:00|Björn  |Start project git basic on documents (no coding?) (in groups, on repo) (show both local /GitHub)
+Monday   |13:00-14:00|Lars | SDLC
+Monday   |14:15-15:00|Lars  |project/class design 
 Monday   |15:15-15:45|Lars |project design (in groups, on repo, using web interface only)
 Monday   |15:45-16:00|Richel |Retrospect
+
 
