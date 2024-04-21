@@ -578,6 +578,39 @@ def mean_temperature(data):
     - Copy-pastable quick start code example
     - Recommended citation
 
+
+### What have we done?
+
+```mermaid
+      graph TB
+
+P["Project idea"] -->|git init| Node2
+P["Project idea"] --> planet.py -->|git add| Node4
+Node4 --> |git commit| Node1
+Node2 --> |git push| Node5
+
+C[Uncommited changed README.md] -->|commit| R
+R --> |git pull| R2
+
+        
+        subgraph "Local Git"
+        Node2[project]
+        Node1[planet.py] 
+        Node1 <--> Node2
+        R2[README.md]
+        end 
+
+        subgraph "staging area"
+        Node4[planet.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[README.md]
+        end
+
+```
+
 --------------------------------
 
 
