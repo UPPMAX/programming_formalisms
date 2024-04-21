@@ -549,6 +549,25 @@ def mean_temperature(data):
   
 ```
 
+
+
+### Working on GitHub
+
+- You can do basically the **same work at GitHub as in your local git repo**
+- The **graphical view** makes it easier to work with in everyday editing work at least.
+    - Depends on your own preferences of course.
+- Here your commit each file at a time with the "commit button". 
+    - **No staging** that is.
+    - Be aware of that feature!
+- **GitHub Actions** are workflows defined by you, like:
+    - for automatic testing after each commit (Used in the test lessons)
+    - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
+
+
 ### Add in-code documentation on Github and pull from local git
 
 ???- question "Exercise: in-code docs"
@@ -675,38 +694,33 @@ Now you and other people can clone this repository and contribute changes.
      ```console
      $ git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
      ```
+    
+    !!! tip 
+        - Using the SSH makes it very straight-forward to upload your local changes back to GitHub. 
+        - Use HTTP if you clone repos that do not belong to you or your group.
 
-!!! tip
-    - Using the SSH makes it very straight-forward to upload your local changes back to GitHub. 
-    - Use HTTP if you clone repos that do not belong to you or your group.
+    **What just happened?**
+    - `cd` the new directory that was created
+    - list the files with `ls`
+    - **Think of cloning as downloading the `.git` part to your computer**. 
+    - After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
+
+    **Create a folder with your name**
+
+    - step into (``cd``) the ``learners/`` directory
+    - ``mkdir <your-name>``
+    - git add/commit this file
+
+    **Push your changes to the GitHub repo**
+
+    - ``git push``
+    
+    **When everyone are done pull the latest changes to the local git repo**
+
+   - ``git push``
 
 
-- This creates a directory called ``programming_formalisms_project_summer_2024.git`` unless it already exists.
 
-**What just happened?**
-- `cd` the new directory that was created
-- list the files with `ls`
-- **Think of cloning as downloading the `.git` part to your computer**. 
-- After downloading the `.git` part the branch pointed to by HEAD is automatically checked out.
-
-
-## Working on GitHub
-
-- You can do basically the **same work at GitHub as in your local git repo**
-- The **graphical view** makes it easier to work with in everyday editing work at least.
-    - Depends on your own preferences of course.
-- Here your commit each file at a time with the "commit button". 
-    - **No staging** that is.
-    - Be aware of that feature!
-- **GitHub Actions** are workflows defined by you, like:
-    - for automatic testing after each commit (Used in the test lessons)
-    - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
-
-!!! note "See also"
-
-    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/ )
-
- 
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
