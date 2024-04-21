@@ -752,16 +752,23 @@ Now you and other people can clone this repository and contribute changes.
 **Centralized layout**
 - **Red** is the repository on GitHub.
 - **Blue** is where all contributors work on their own computers.
-```
 
 - Centralized workflow is often used for **remote collaborative work**.
 - `origin` refers to where you cloned from (but you can relocate it).
 - `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
 - These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
 
+## Remarks
+
+!!! Goal
+
+    - [ ] Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
 !!! keypoints
 
     - A repository can have one or multiple remotes (we will revisit these later).
     - A remote (GitHub) in this case serves as a full backup of your work.
     - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
+
+
 
