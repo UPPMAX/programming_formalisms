@@ -83,6 +83,15 @@ flowchart TD
   algorithms --> optimisation
 ```
 
+## The project
+
+!!! note "Help us add you to the ptroject repository"
+
+    - <https://github.com/UPPMAX/programming_formalisms/issues/37>
+    - Add you GitHub name!
+    - The project will be located here: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
+
+
 ## Schedule   
 
 This is a general course schedule, that intends to give a general overview
