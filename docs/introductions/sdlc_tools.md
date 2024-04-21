@@ -446,7 +446,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - |:-1:| What if you want to work on **multiple versions** at the same time? Do you make a copy? How do you merge copies?
     - |:-1:| What if you **don't have internet**?
 
-!!! discussion "Why Git?"
+!!! info "Why Git?"
 
     We will use [Git](https://git-scm.com) to record snapshots of our work:
     
@@ -457,10 +457,11 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
     However, any version control is better than no version control and it is OK to prefer a different tool than Git.
 
-    Other tools:
-    - [Subversion](https://subversion.apache.org)
-    - [Mercurial](https://www.mercurial-scm.org)
-    - [Pijul](https://pijul.org/)
+    - Other tools:
+    
+        - [Subversion](https://subversion.apache.org)
+        - [Mercurial](https://www.mercurial-scm.org)
+        - [Pijul](https://pijul.org/)
 
 ### Sharing Online
 
@@ -498,22 +499,20 @@ There are different types of remotes:
 ### Example
 - Someone has given you access to a repository online and **you want to contribute** to it.
 - Quite easy to make a **copy and send a change back**.
-  1. get repository, make a change locally, and send the change directly back.
-  2. make a "pull request" that allows a review.
+    1. get repository, make a change locally, and send the change directly back.
+    2. make a "pull request" that allows a review.
 - Once we know how code review works:
-  -  we will be able to propose changes to repositories of others
-  -  review changes submitted by external contributors.
+    -  we will be able to propose changes to repositories of others
+    -  review changes submitted by external contributors.
 
 !!! objectives
-   - [Collaboration](../git/pull.md) aims to 
-     - Get into working more with GitHub for collaboration
-     - **Centralized** workflow (good within a group)
-     - **Forking** (better for contribution to other's project)
-     - Contributing to other's projects
+   
+    - [Collaboration](../git/pull.md) aims to 
+        - Get into working more with GitHub for collaboration
+        - **Centralized** workflow (good within a group)
+        - **Forking** (better for contribution to other's project)
+        - Contributing to other's projects
 
-
-!!! note "See also"
-    - Git and GitHub will be used in the other days as well
 
 
 ## Reproducibility and sharing
