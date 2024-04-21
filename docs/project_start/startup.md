@@ -294,9 +294,17 @@ $ git help commit
 - You should see a very long help page as the tool is very versatile (press q to quit).
 - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
 - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-- Note that help pages also work when you don't have a network connection!   
+- Note that help pages also work when you don't have a network connection!
 
+- You can also omit the ``-m`` option and a text editor will open.
+- The first line will be your commit message.
+- You can add other lines to add some more detailed info about your changes.
 
+!!! tip "Writing useful commit messages"
+
+    [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
+
+    
 ### Upload to GitHub
 
 ???- question "Exercise: github and git push"
