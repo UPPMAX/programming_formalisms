@@ -39,7 +39,7 @@ So how do we identify the needs of our system
     Facilitate reusability through inherentance
     Interaction through behaviour
 
-???+ Excercise Model the Features of the projects as objects
+???+ Exercise Model the Features of the projects as objects
     
     using the graph feature of mermaid graph TD model objects that will be translated into the classes we will implement
 
