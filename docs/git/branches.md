@@ -74,7 +74,7 @@ Software development is often not linear:
   Often they are unfinished.
 - We need to be able to separate different lines of work really well.
 
-```{figure} img/git-collaborative.svg
+![](../img/git-collaborative.svg
 :alt: Isolated tracks
 :width: 50%
 
@@ -242,7 +242,7 @@ plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
 - **Do not run because we changed from 2 years simulation time to 5000 years!**
 - The output should look like this at least.
 
-```{figure} img/planet_earthJupiter.png
+![](../img/planet_earthJupiter.png)
 :width: 100%
 :class: with-border
 ```   
