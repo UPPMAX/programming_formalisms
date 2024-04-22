@@ -50,12 +50,12 @@
 2.	Analysis and design
 3.	Development
 4.	Test
-5.	Development and maintenance
+5.	Deployment and maintenance
 
 
 ``` mermaid
 flowchart 
-    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Development and maintenance"] --> Requirements
+    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] --> Requirements
 ```
 
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
@@ -664,7 +664,7 @@ There are different types of remotes:
         2.	Analysis and design
         3.	Development
         4.	Test
-        5.	Development and maintenance
+        5.	Deployment and maintenance
     - ... and iteration of these
     - Planning for reproducibility, modularity and documentation should be started in the beginning
     - Tools for the developer
@@ -673,6 +673,7 @@ There are different types of remotes:
         - Testing: test functions (Covered later)
         - Collaboration: GitHub
         - Sharing: GitHub, licenses, citation
+        - Reproducibility
         - Documentation: In-code, READMEs, html
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
 
