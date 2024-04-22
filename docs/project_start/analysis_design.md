@@ -21,7 +21,7 @@ So how do we identify the needs of our system
 ???- info "Hint!" 
 
     Analyse the project breif and make 5 short statements about the software
-!!! Requirments matrix to Feature list
+!!! Requirements matrix to Feature list
 
     Using the Requirements and risk matrix we can design a feature list these can be tracked using issues in Git or in a separate document the feature list describes how to solve a requirment in plain text english and with flowcharts
 
