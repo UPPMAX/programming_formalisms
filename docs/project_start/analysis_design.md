@@ -32,7 +32,7 @@ So how do we identify the needs of our system
 
     In object design we try and find the objects that will help us identify the classes of our project ![Geeks for geeks introduction to OOP](https://www.geeksforgeeks.org/oops-object-oriented-design/) and here is a link to a tutorial for python ![Geeks for geeks introduction to OO for python](https://www.geeksforgeeks.org/python-oops-concepts/)
 
-???- What are the main concepts of object design
+???- "What are the main concepts of object design"
 
     Model the realworld through classes
     Facilitate __information hiding__ through Encapsulation
