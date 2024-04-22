@@ -113,8 +113,8 @@ You have installed `git`, if:
          - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
      - Yes!
      
-     - If not working, go to [to here](prereqs.md#git-github-connection-through-ssh-keys)
-
+     - If not working, go to [to here](prereqs.md#gitgithub-connection-through-ssh-keys) 
+     
 You have good enough knowledge of `git`, if:
 
 - :black_square_button: You know what cloning is
@@ -290,9 +290,17 @@ Sign up for GitHub account:
 $ ssh-keygen -t ed25519 -C "<email address for your GitHub account>"
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/id_ed25519
-$ # Copy the SSH public key to your clipboard.
+$ # Copy the SSH public key to your clipboard. For WINDOWS:
 $ clip < ~/.ssh/id_ed25519.pub
 ```
+
+- On Mac, use ``pbcopy`` instead, like:
+
+```console
+$ # Copy the SSH public key to your clipboard. For MAC:
+$ pbcopy < ~/.ssh/id_ed25519.pub
+```
+
 
 - Then go to your GitHub account on the web.
     1. In the upper-right corner of any page, click your profile photo, then click Settings.
