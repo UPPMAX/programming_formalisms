@@ -93,7 +93,7 @@ flowchart TD
 
 ## Shared document
 
-- <https://hackmd.io/lPmOnlj4Qw6FSVgizuFJKg?both>
+- [HackMD](https://hackmd.io/@bclaremar/progform24apr/both)
 
 ## Schedule   
 
