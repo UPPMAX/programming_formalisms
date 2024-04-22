@@ -630,7 +630,7 @@ $ git graph
 - It turned out that our experiment with modularity was a good idea. 
 - Our goal now is to merge modularity into main.
  
-![Isolated tracks](img/git-collaborative.svg){width: 50%}
+![Isolated tracks](../img/git-collaborative.svg){width: 50%}
 
 !!! example !Merge into main
 
