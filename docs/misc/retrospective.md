@@ -3,13 +3,19 @@
 These are the questions posed at a Retrospective:
 
 ```
-## Continue: What went well?
+## Retrospective
 
-## Improve: Which section(s) scheduled enough time for exercises?
+Teachers are learners too. Please help us improve by sharing your opinion.
+Ideally, it is something fixable, e.g. 'My camera did not work' is something
+we cannot fix, but 'I had no way to interact (as my camera did not work) and the Zoom chat was not listened to' is.
 
-## Stop: What held us back?
+### Continue: What went well?
 
-## Invent: What can we improve?
+### Improve: Which section(s) scheduled enough time for exercises?
 
-## Action points by teachers
+### Stop: What held us back?
+
+### Invent: What can we improve?
+
+### Action points by teachers
 ```
