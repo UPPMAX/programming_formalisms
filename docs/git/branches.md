@@ -66,7 +66,50 @@
 ???- question "quiz"
 
 
-## Branching, why
+## Branching and merging
+Software development is often not linear:
+
+- We typically need at least one version of the code to "work" (to compile, to give expected results, ...).
+- At the same time we work on new features, often several features concurrently.
+  Often they are unfinished.
+- We need to be able to separate different lines of work really well.
+
+```{figure} img/git-collaborative.svg
+:alt: Isolated tracks
+:width: 50%
+
+Isolated tracks of work.
+```
+
+The strength of version control is that it permits the researcher to **isolate
+different tracks of work**, which can later be merged to create a composite
+version that contains all changes.
+
+- We see branching points and merging points.
+- Main line development is often called `master` or `main`.
+- Other than this convention there is nothing special about `master` or `main`, it is just a branch.
+- Commits form a directed acyclic graph (we have left out the arrows to avoid confusion about the time arrow).
+
+A group of commits that create a single narrative are called a **branch**.
+There are different branching strategies, but it is useful to think that a branch
+tells the story of a feature, e.g. "fast sequence extraction" or "Python interface" or "fixing bug in
+matrix inversion algorithm".
+
+### Typical workflows
+
+One typical workflow:
+
+```console
+$ git checkout -b new-feature  # create branch, switch to it
+$ git commit                   # work, work, work, ..., and test
+$ git checkout master          # once feature is ready, switch to master
+$ git merge new-feature        # merge work to master
+$ git branch -d new-feature    # remove branch
+```
+
+```{note}
+[More about branches](https://coderefinery.github.io/git-intro/branches/)
+```
 
 
 
