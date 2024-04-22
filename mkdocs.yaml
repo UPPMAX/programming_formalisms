@@ -55,14 +55,7 @@ nav:
   - Reading material:
     - Reading material: reading/README.md
   - More about:
-    - Extra material: extra.md
-    - Software development Lifecycle (SDLC) models: extra_bc/sdlc_models.md
-    - More about Git: extra_bc/git_deeper.md
-    - More about collaboration: extra_bc/collab_deeper.md
-    - More about reproducibility: extra_bc/reproducible_deeper.md
-    - More about sharing: extra_bc/sharing_deeper.md
-    - More about documentation: extra_bc/documentation_deeper.md
-    - More about deploying: extra_bc/deploy_deeper.md
+    - Extra material (Earlier Intro day materials): extra.md
   - Misc:
     - FAQ: misc/faq.md
     - Exercise procedure: misc/exercise_procedure.md
