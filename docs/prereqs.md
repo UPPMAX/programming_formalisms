@@ -113,8 +113,8 @@ You have installed `git`, if:
          - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
      - Yes!
      
-     - If not working, go to [to here](prereqs.md#git-github-connection-through-ssh-keys)
-
+     - If not working, go to [to here](prereqs.md#gitgithub-connection-through-ssh-keys) 
+     
 You have good enough knowledge of `git`, if:
 
 - :black_square_button: You know what cloning is
