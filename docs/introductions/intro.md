@@ -318,6 +318,6 @@ classDiagram
         2.	Analysis and design
         3.	Development
         4.	Test
-        5.	Development and maintenance
+        5.	Deployment and maintenance
     - ... and iteration of these
 
