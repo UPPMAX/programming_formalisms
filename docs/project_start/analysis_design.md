@@ -39,7 +39,7 @@ So how do we identify the needs of our system
     Facilitate reusability through inherentance
     Interaction through behaviour
 
-???+ Exercise Model the Features of the projects as objects
+???+ "Exercise Model the Features of the projects as objects"
     
     using the graph feature of mermaid graph TD model objects that will be translated into the classes we will implement
 
@@ -47,22 +47,23 @@ So how do we identify the needs of our system
 
     This is a basic representation of what an object diagram for bacterial simulation could look like
     ```mermaid
-        graph TD;    
-        A(Simulation) -->|initialize| B(world);
-        C(bacteria) -->|exits in| B;
-        C -->|moves twoards| D(Food Source);
-        C--> |consumes| D
-        A-->|updates|A
-        E(Graphical User Interface)-->|Displays|A
+    graph TD;    
+    A(Simulation) -->|initialize| B(world);
+    C(bacteria) -->|exits in| B;
+    C -->|moves twoards| D(Food Source);
+    C--> |consumes| D
+    A-->|updates|A
+    E(Graphical User Interface)-->|Displays|A
     
-        classDef red fill:#f9cccc,stroke:#333,stroke-width:2px;
-        classDef orange fill:#ffe6cc,stroke:#333,stroke-width:2px;
-        classDef green fill:#ccffcc,stroke:#333,stroke-width:2px;
-        classDef blue fill:#00aaff,stroke:#333,stroke-width:2px;
-        class A red;
-        class B, orange;
-        class C,D,G green;
-        class E blue
+    classDef red fill:#f9cccc,stroke:#333,stroke-width:2px;
+    classDef orange fill:#ffe6cc,stroke:#333,stroke-width:2px;
+    classDef green fill:#ccffcc,stroke:#333,stroke-width:2px;
+    classDef blue fill:#00aaff,stroke:#333,stroke-width:2px;
+    
+    class A red;
+    class B, orange;
+    class C,D,G green;
+    class E blue
     ```
 
 !!! "Class diagrams"
