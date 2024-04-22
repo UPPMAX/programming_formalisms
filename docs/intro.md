@@ -91,6 +91,9 @@ flowchart TD
     - Add your GitHub name!
     - The project will be located here: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
 
+## Shared document
+
+- [HackMD](https://hackmd.io/yNiCUuPsReuu1m1FQbC_qA)
 
 ## Schedule   
 
