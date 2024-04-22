@@ -74,12 +74,9 @@ Software development is often not linear:
   Often they are unfinished.
 - We need to be able to separate different lines of work really well.
 
-![](../img/git-collaborative.svg
-:alt: Isolated tracks
-:width: 50%
+![Isolated tracks](../img/git-collaborative.svg){width: 50%}
+_Isolated tracks of work._
 
-Isolated tracks of work.
-```
 
 The strength of version control is that it permits the researcher to **isolate
 different tracks of work**, which can later be merged to create a composite
@@ -107,11 +104,9 @@ $ git merge new-feature        # merge work to master
 $ git branch -d new-feature    # remove branch
 ```
 
-```{note}
-[More about branches](https://coderefinery.github.io/git-intro/branches/)
-```
+!!! info "Sea also"
 
-
+    [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
 
 ## Start with pushing your changes in the local Git to GitHub
@@ -243,9 +238,8 @@ plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
 - The output should look like this at least.
 
 ![](../img/planet_earthJupiter.png)
-:width: 100%
-:class: with-border
-```   
+
+
 
 - Do **not** stage (add) yet!
 
@@ -390,30 +384,8 @@ index 60b8b20..8061461 100644
 ```
 ````
 ``````
-## Stage and commit the changes
 
-``````{type-along}
-- Now first stage and then commit (what happens when we leave out the `-m` flag?):
 
-```console
-  $ git add python.py     # <-- we can state exactly which file to stage as well
-  $ git commit                   # <-- we have left out -m "..."
-```
-
-  When you leave out the `-m` flag, Git should open an editor where you can edit
-  your commit message. This message will be associated and stored with the
-  changes you made. This message is your chance to explain what you've done and
-  convince others (and your future self) that the changes you made were
-  justified.  Write a message (like ``added Jupiter`` and save and close the file.
-
-  When you are done committing the changes, experiment with these commands:
-
-  ```console
-  $ git log
-  $ git log --stat
-  $ git log --oneline
-  ```
-``````
 
 ## Let's make our code modular (test in branch)
 
