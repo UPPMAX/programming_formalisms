@@ -193,15 +193,15 @@ Develop a function called `is_probability`.
 ## Videos
 
 Title                        |Length   |Download                                                                |YouTube
------------------------------|---------|------------------------------------------------------------------------|---------------------------------------------------------
-TDD 1/3: TDD                 |  5 mins | [here](https://richelbilderbeek.nl/programming_formalisms_tdd_1_1.ogv) | [YouTube](https://youtu.be/gw_4jVrkDok)
-TDD 2/3: `is_zero`           | 16 mins | [here](https://richelbilderbeek.nl/tdd_python_is_zero.ogv)             | [YouTube](https://youtu.be/VddlrNOeodg)
-TDD 3/3: Introduce `is_even` |  3 mins | [here](https://richelbilderbeek.nl/programming_formalisms_tdd_1_3.ogv) | [YouTube](https://youtu.be/7V-zE__S6M8)
-Solution `is_even`           | 12 mins | [here](https://richelbilderbeek.nl/tdd_python_is_even.ogv)             | [YouTube](https://youtu.be/ZcgJEdaRRpc) 
-TDD 2: introduce `is_odd`    |  7 mins | [here](https://richelbilderbeek.nl/programming_formalisms_tdd_2_1.ogv) | [YouTube](https://youtu.be/f4MCy9f8oAM)
-Solution `is_odd`            |  7 mins | [here](https://richelbilderbeek.nl/tdd_python_is_odd.ogv)              | [YouTube](https://youtu.be/BxyIsJw3E14)
-TDD 3: TDD bottom line       |  4 mins | [here](https://richelbilderbeek.nl/programming_formalisms_tdd_3_1.ogv) | [YouTube](https://youtu.be/633qwj2DUNc)
-Solution `is_prime`          |  9 mins | [here](https://richelbilderbeek.nl/tdd_python_is_prime.ogv)            | [YouTube](https://youtu.be/qVtHieuwM1M)
+-----------------------------|---------|---------------------------------------------------------
+TDD 1/3: TDD                 |  5 mins | [YouTube](https://youtu.be/gw_4jVrkDok)
+TDD 2/3: `is_zero`           | 16 mins | [YouTube](https://youtu.be/VddlrNOeodg)
+TDD 3/3: Introduce `is_even` |  3 mins | [YouTube](https://youtu.be/7V-zE__S6M8)
+Solution `is_even`           | 12 mins | [YouTube](https://youtu.be/ZcgJEdaRRpc) 
+TDD 2: introduce `is_odd`    |  7 mins | [YouTube](https://youtu.be/f4MCy9f8oAM)
+Solution `is_odd`            |  7 mins | [YouTube](https://youtu.be/BxyIsJw3E14)
+TDD 3: TDD bottom line       |  4 mins | [YouTube](https://youtu.be/633qwj2DUNc)
+Solution `is_prime`          |  9 mins | [YouTube](https://youtu.be/qVtHieuwM1M)
 
 ## Videos on GitHub workflows
 
