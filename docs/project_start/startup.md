@@ -194,7 +194,7 @@
 
         ```
     - Make a folder with name `planets` 
-    	BASH: ´´mkdir planets``
+    	- BASH: ``mkdir planets``
     - Create a folder in the ``planets/`` folder, called ``Figures/``
     - Also create a folder within ``planets/`` folder with the name ``code``
     - In the ``code`` folder, create a file.
@@ -659,6 +659,13 @@ R <--> Node5
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
+
+    - Git needs files to be able to commit.
+    
+    - Therefore **create an empty README file in the created folder** 
+
+    - ``touch README.md``
+    
     - git add/commit this file
 
     **Push your changes to the GitHub repo**
