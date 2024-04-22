@@ -43,7 +43,7 @@ So how do we identify the needs of our system
     
     using the graph feature of mermaid graph TD model objects that will be translated into the classes we will implement
 
-???- info Hint!
+???- info "Hint!"
 
     This is a basic representation of what an object diagram for bacterial simulation could look like
     ```mermaid
@@ -65,11 +65,11 @@ So how do we identify the needs of our system
         class E blue
     ```
 
-!!! Class diagrams
+!!! "Class diagrams"
     A good way to show your design is through class diagrams which shows the relationships and the class definitions 
     A class is and abstraction of an object where its Data is abstracted as attributes and its behaviour as methods
 
-???+ Excercise
+???+ "Exercise"
 
     Taking our feature list and requirments and object modeling now we try and find the classes and  model a class diagram that implements those features.
     ![mermaid class diagrams](http://mermaid.js.org/syntax/classDiagram.html)
