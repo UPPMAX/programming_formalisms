@@ -147,7 +147,7 @@ class TestSmall(unittest.TestCase):
 
 ## Live demo (30 minutes)
 
--   Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_prime_unittest_fork.ogv)
+-   Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) 
 
 # Exercise 5: `is_prime`
 

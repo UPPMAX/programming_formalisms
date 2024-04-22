@@ -258,16 +258,15 @@ In most cases, graphical analysis tools and/or AI are overkill. If you are stubb
 
 `get_digits` video:
 
--   [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
 -   [YouTube](https://youtu.be/vmRuSWhdA7c)
 
 ## Videos
 
 
-Title                        |Length   |Download                                                                 |YouTube
------------------------------|---------|-------------------------------------------------------------------------|---------------------------------------------------------
-Testing lecture 2            |15 mins  |[here](https://richelbilderbeek.nl/programming_formalisms_testing_2.ogv) |[here](https://youtu.be/FMNG6oO8McA)
-`get_digits`                 |24 mins  |[here](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)            |[here](https://youtu.be/vmRuSWhdA7c)
+Title                        |Length   |YouTube
+-----------------------------|---------|------------------------------------
+Testing lecture 2            |15 mins  |[here](https://youtu.be/FMNG6oO8McA)
+`get_digits`                 |24 mins  |[here](https://youtu.be/vmRuSWhdA7c)
 
 ## References
 

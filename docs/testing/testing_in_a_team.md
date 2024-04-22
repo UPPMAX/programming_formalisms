@@ -155,5 +155,4 @@ In most cases, graphical analysis tools and/or AI are overkill. If you are stubb
 
 `get_digits` video:
 
--   [download (.ogv)](https://richelbilderbeek.nl/tdd_python_get_digits.ogv)
 -   [YouTube](https://youtu.be/vmRuSWhdA7c)
