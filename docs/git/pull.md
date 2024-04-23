@@ -210,22 +210,21 @@ We can practice how a conflict looks and how to resolve it:
 
 !!!- example "(Optional demo) Add to someone else's project"
 
-    - Can we easily add one or more planets?
-
-    - The importance of each planet should be determined by the distance and the mass of it. 
-        - The acceleration effect should proportional with MASS/distance^2
-        - That means that we can ignore small planets and/or far away planets
-    - Below, see a first sorted out table of mass of the planets and their approximate shortest distance to Earth.
+    - Adding a planet should be pretty straight-forward in our modular code!
 
     |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
     |----|---|---|---|
-    Venus| 0.815 | 0.72 | 0.28
-    March| 0.107 | 1.52 | 0.52
     Jupiter| 318 | 5.2 | 4.2
     Saturn| 95.2 | 9.54 | 8.54
 
-    - Adding a planet should be pretty straight-forward in our modular code!
+    - Co-teacher adds info about Saturn
+    - Update the files below in ``code/`` by just replacing the existing code with this: 
+    
+        ???- "planet_main.py"`
 
+             
+        
+        ???- "planet_data.py
 
 ### Summary
 
@@ -248,8 +247,6 @@ We can practice how a conflict looks and how to resolve it:
 !!! info "See also"
 
     - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
-
-
 
 
 ## How to contribute changes to somebody else’s project
