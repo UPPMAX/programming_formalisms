@@ -204,7 +204,7 @@ Click on 'Configure Python Tests'.
 
 ???- question "How does that look like?"
 
-  ![](testing_tab_select_framework.png)
+    ![](testing_tab_select_framework.png)
 
 Select 'unittest Standard Python test framework'
 
