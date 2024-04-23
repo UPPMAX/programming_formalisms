@@ -9,32 +9,25 @@ Understand git branches and merging
 !!! info "Content"
 
     - We will
-      - work with the basic commands in git
-      - go through branching and merging
+        - work with the basic commands in git
+        - go through branching and merging
 
 
 ???- info "Learning objectives of 'Branches'"
 
-    - learners can explain and evaluate the usefulness for branches
+    - learners can explain and evaluate the usefulness of branches
 
 !!! note "Instructor notes"
 
     Prerequisites are:
 
-    - ...
+    - git basics
 
     Lesson Plan: **FIX**
     
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
-!!! Discussion "Have you used Git (locally) in your own work?Answer in **Menti**"
-
-
-!!! note
-   
-    - We will cover the most basic things with Git such that you can use it this week.
-    - For deeper understanding and hands-on on branching etcetera, please confer the course material of [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/) and [CodeRefinery](https://coderefinery.github.io/git-intro/).
 
 
 !!! info "Table of content"
@@ -42,28 +35,17 @@ Understand git branches and merging
     - Branching
         - background
         - workflows
-        - in-code doc? where to put?
         - examples/demos
         - discussion
         - "quiz"
     - Merging
         - background
         - workflows
-        - conflicts
+        - conflicts?
         - examples/demos
         - discussion
         - "quiz"
 
-
-## All Exercises
-
-???- question "Demo: add Jupiter"
-
-???- question "Demo: modular code in branch"
-
-???- question "Demo: git merge"
-
-???- question "quiz"
 
 
 ## Branching and merging
@@ -111,6 +93,12 @@ $ git branch -d new-feature    # remove branch
 
 
 ## add Jupiter in a new branch
+
+
+More info...
+
+???- question "Demo: add Jupiter"
+
 
 !!! example "Demo or Type-along: Add Jupiter"
     - We will add some lines to count with the effects from the gravity of Jupiter on Earth
@@ -232,6 +220,9 @@ $ git branch -d new-feature    # remove branch
 ## git diff
 
 **show unstaged/uncommitted modifications**
+
+
+???- question "Demo: modular code in branch"
 
 !!! example "Demo or type-along"
 
@@ -366,6 +357,10 @@ $ git branch -d new-feature    # remove branch
         ```
 
 ## Let's make our code modular (test in branch)
+
+
+???- question "Demo: git branch"
+
 
 ``````{challenge} Make four modules (10-15 minutes in BO)
 - First make a branch called ``modularity`` and go to that branch
@@ -610,6 +605,13 @@ $ git graph
  
 ![Isolated tracks](../img/git-collaborative.svg)
 
+
+???- question "Demo: git merge"
+
+???- question "quiz"
+
+
+
 !!! example "Merge into main"
 
     - once all features are ready, switch to main!
@@ -666,7 +668,10 @@ $ git merge
 **Overview workflow**
 ![](../img/git_branches.png)
 
- 
+
+???- question "quiz"
+
+
 
 !!! admonition "Parts to be covered!"
 
