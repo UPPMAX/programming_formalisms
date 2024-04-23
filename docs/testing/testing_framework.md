@@ -352,6 +352,30 @@ Below is a list of function description.
     - Returns `False` if the input is not a roman numeral
     - If the input is not one String, a `TypeError` is raised.
 
+!!! note `sum_divisors(x)`
+
+    - Returns the sum of [the proper divisors](https://en.wikipedia.org/wiki/Divisor#proper_divisor) 
+      of the input. For example, the proper divisors of 4 are 1 and 2,
+      as 4 can be divided by both 1 and 2.
+
+      Input|Expected output
+      -----|---------------
+      1    |0
+      2    |1
+      3    |1
+      4    |1+2=3
+      5    |1
+      6    |1+2+3=6
+      7    |1
+      8    |1+2+4=7
+
+    - If the input is not one integer that is at least one, a `TypeError` is raised.
+
+???- question "Too easy?"
+
+    Go ahead and write a function to solve
+    a question at [Project Euler](https://projecteuler.net/archives).
+
 ## References
 
  * [Baggerly & Coombes, 2009] Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
