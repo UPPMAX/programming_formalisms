@@ -192,7 +192,7 @@ is called `tests/test_richel_utils.py`.
 
     Instead, click on the green 'Testing' tab at the right.
 
-Click on the 'Testing' tab (with the erlenmeyer) at the right.
+Click on the 'Testing' tab (with the erlenmeyer flask) at the right.
 
 If you do this for the first time, you get some blue buttons.
 
