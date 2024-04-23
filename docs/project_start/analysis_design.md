@@ -66,7 +66,7 @@ So how do we identify the needs of our system
     class E blue
     ```
 
-!!! "Class diagrams"
+!!! info "Class diagrams"
     A good way to show your design is through class diagrams which shows the relationships and the class definitions 
     A class is and abstraction of an object where its Data is abstracted as attributes and its behaviour as methods
 
