@@ -1,13 +1,14 @@
 # Project start with analysis and design
+
 So how do we identify the needs of our system
 
 ???- "Where do you start?"
         
-        - project brief, if you are given a project breif or write one your self the project breif should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
+    - project brief, if you are given a project breif or write one your self the project breif should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
 
 !!! info "Finding the needs!"
 
-     Is a process of finding the subjects and verbs of the project brief and formalise them as testable statements, once that is done we do our firast iteration of risk analysis on those sets.
+    Is a process of finding the subjects and verbs of the project brief and formalise them as testable statements, once that is done we do our firast iteration of risk analysis on those sets.
 
 ???+ exercise "Needs determination"
     
@@ -21,7 +22,8 @@ So how do we identify the needs of our system
 ???- info "Hint!" 
 
     Analyse the project breif and make 5 short statements about the software
-!!! Requirements matrix to Feature list
+
+!!! info "Requirements matrix to Feature list"
 
     Using the Requirements and risk matrix we can design a feature list these can be tracked using issues in Git or in a separate document the feature list describes how to solve a requirment in plain text english and with flowcharts
 
@@ -40,18 +42,18 @@ classDiagram
 ```
 
 
-!!! Object design
+!!! info "Object design"
 
     In object design we try and find the objects that will help us identify the classes of our project ![Geeks for geeks introduction to OOP](https://www.geeksforgeeks.org/oops-object-oriented-design/) and here is a link to a tutorial for python ![Geeks for geeks introduction to OO for python](https://www.geeksforgeeks.org/python-oops-concepts/)
 
-???- "What are the main concepts of object design"
+???- question "What are the main concepts of object design"
 
     Model the realworld through classes
     Facilitate __information hiding__ through Encapsulation
     Facilitate reusability through inherentance
     Interaction through behaviour
 
-???+ "Exercise Model the Features of the projects as objects"
+???+ info "Exercise Model the Features of the projects as objects"
     
     using the graph feature of mermaid graph TD model objects that will be translated into the classes we will implement
 
@@ -83,7 +85,7 @@ classDiagram
     A good way to show your design is through class diagrams which shows the relationships and the class definitions 
     A class is and abstraction of an object where its Data is abstracted as attributes and its behaviour as methods
 
-???+ "Exercise"
+???+ question "Exercise"
 
     Taking our feature list of requirments and object modeling now we try and find the classes and  model a class diagram that implements those features.
     ![mermaid class diagrams](http://mermaid.js.org/syntax/classDiagram.html)
