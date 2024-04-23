@@ -65,11 +65,11 @@ We use it a lot in this course, because:
 - it is recommended by influential software development 
   classics [Martin, 2011][Thomas & Hunt, 2019]
 - scientific evidence is mixed, however, e.g.
-  - a pair considers more alternative ways for a solution [Flor et al., 1991],
-    however, this is only 2 programming teams
-  - 96% of developers prefer pair programming over developing 
-    alone [Williams & Kessler, 2000], however, 
-    this is only 41 respondents
+    - a pair considers more alternative ways for a solution [Flor et al., 1991],
+      however, this is only 2 programming teams
+    - 96% of developers prefer pair programming over developing 
+      alone [Williams & Kessler, 2000], however, 
+      this is only 41 respondents
 - what is for sure: it works great with recommended teaching practices,
   e.g. grouping up learners 
   is effective [Hattie, 2012][Schwartz & Gurung, 2012, page 65]
