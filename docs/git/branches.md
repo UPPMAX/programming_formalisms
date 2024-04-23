@@ -596,6 +596,8 @@ More info...
     * f3c1fb5 planet.py
     ...
     ```
+
+**TODO** Make a git graph in mermaid
   
 ## Merging
 
@@ -607,20 +609,19 @@ More info...
 
 ???- question "Demo: git merge"
 
-???- question "quiz"
-
-
-
 !!! example "Merge into main"
 
     - once all features are ready, switch to main!
-    ```console
+    
+    ```git
     $ git checkout main    # switch to main branch
     $ git branch           # check that we are on main branch
     $ git merge  modularity          # merge modularity into main
     ```
     - let's now check the graphical view:
-  
+
+    **TODO** update git graph below!
+    
     ```git
     $ git graph
     *   dc3f83f (HEAD -> main) modular
@@ -630,8 +631,8 @@ More info...
     |/
     * 5434395 add Jupiter
     * f3c1fb5 planet.py
-     
     ```
+
     - push to GitHub
     - ``git push``
 
@@ -640,7 +641,7 @@ More info...
 
 - Now we know how to save snapshots:
 
-```console
+```git
 $ git add <file(s)>
 $ git commit
 ```
@@ -648,7 +649,7 @@ $ git commit
 - And that is what we do as we program.
 - Other very useful commands are these:
 
-```console
+```git
 $ git init    # initialize new repository
 $ git add     # add files or stage file(s)
 $ git commit  # commit staged file(s)
@@ -665,12 +666,12 @@ $ git merge
 ```
 
 **Overview workflow**
+
+
 ![](../img/git_branches.png)
 
 
 ???- question "quiz"
-
-
 
 !!! admonition "Parts to be covered!"
 
