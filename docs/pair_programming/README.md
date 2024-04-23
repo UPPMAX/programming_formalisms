@@ -55,15 +55,24 @@
       Start TDD: done, extra, after feedback_3, 45
     ```
 
-
-
 ## Introduction
 
 Pair programming is a facet of developing code better.
 We use it a lot in this course, because:
 
-- we should
-- it works great with recommended teaching practices
+- it is recommended by influential software development 
+  classics [Martin, 2011][Thomas & Hunt, 2019]
+- scientific evidence is mixed, however, e.g.
+  - a pair considers more alternative ways for a solution [Flor et al., 1991],
+    however, this is only 2 programming teams
+  - 96% of developers prefer pair programming over developing 
+    alone [Williams & Kessler, 2000], however, 
+    this is only 41 respondents
+- what is for sure: it works great with recommended teaching practices,
+  e.g. grouping up learners (with the optimal group size of 2)
+  is effective [Hattie, 2012][Schwartz & Gurung, 2012]
+  and indeed the Programming Formalisms learners like it 
+  [as they write in the retrospective](../../retrospectives/2023_autumn/retrospectives_result_day_5.md)
 
 ## Exercises
 
@@ -97,18 +106,55 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 Questions:
 
 - What is pair programming?
-- When to switch roles?
-- How does a good pair behave?
+- How does a good pair behave? Describe what can be observed when pairing online
+- When to switch roles? Give a procedure 
 - What effects does pair programming have?
 
 ???- question "Answers"
 
-    The goals of this exercise are:
+    > - What is pair programming?
 
-    - Understand what pair programming is
-    - First guess at understanding what **good** pair programming is
+    Pair programming is a software development practice
+    in which two developers work on the same computer.
+    The person with the keyboard ('the driver') develops new code.
+    The person without the keyboard ('the navigator') reviews the code.
 
-    You just did that. We'll discuss in class :-)
+    > - How does a good pair behave? Describe what can be observed when pairing online
+
+    In an online course:
+
+    - A good pair has the driver sharing his/her screen
+    - In a good pair, both people talk a lot
+    - A good pair switches roles regularly
+    - A good pair has a lot of commits
+
+    > - When to switch roles? Give a procedure
+
+    Any procedure to achieve the goal of regularly switching roles:
+
+    - after enough work has been done to put in a `git commit`
+      such as 'Add documentation', 'Add test', 'Pass test'
+    - each time a timer goes off, e.g. after 5 minutes
+
+    The first procedure sometimes fails when a driver (thinks he/she) 
+    has much more knowledge than the navigator on the subject
+    and is (apparently) inexperienced in good pair programming.
+    In such cases, the second procedure work better.
+
+    > - What effects does pair programming have?
+
+    All material for this exercise show references to studies that
+    show advantages of pair programming,
+    for example (from two Wikipedia references):
+    - a pair considers more alternative ways for a solution [Flor et al., 1991]
+    - 96% of developers prefer pair programming over developing alone [Williams & Kessler, 2000]
+
+    However, the first study uses only 2 programming teams,
+    the second study 41 self-selected respondents. 
+    One can/should be critical on these studies.
+
+    Yet, for teaching, working is groups has a high effect size [Hattie, 2012],
+    where the optimal group size is two [Schwartz & Gurung, 2012].
 
 ### Exercise 2: practice pair programming
 
@@ -139,7 +185,55 @@ Reflect:
 - Did you solve unexpected problems well?
 - Did the driver always share his/her screen?
 - Did each team member contribute?
-- Did each team member contribute to the code in the Python class? This can be measured :-)
+- Did each team member contribute to the code in the Python class?
+
+???- question "Answers to what needs to be done"
+
+    The hardest part will be to understand how little needs to be done here.
+
+    A file needs to be created at  `src/bacsim/[class_name].py`. 
+    For example, for a coordinate, 
+    this file will be called `src/bacsim/coordinate.py`
+
+    The contents of the file is -maybe unexpectedly- minimal.
+    Here I show a good example from [an earlier Programming Formalisms cohort](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/blob/main/src/pfpa2023/coordinate.py):
+
+    ```python
+    """A coordinate somewhere in space."""
+
+    class Coordinate:
+
+        """Where am I?."""
+    ```
+
+???- question "Answers to reflection"
+
+    > - Were roles swapped often enough?
+
+    Ideally, each learner was the driver at least twice.
+    However, the task may have been finished before that happened
+    and if that is the case, that is OK.
+
+    > - Did you solve unexpected problems well?
+
+    One can expected some unexpected problems.
+    It can be that one person struggled with `git`
+    and he/she should have been given the proper time to fix this
+    **and** work on the problem.
+
+    > - Did the driver always share his/her screen?
+
+    Sure, one can stop sharing when opening an email client for a GitHub message :-)
+
+    > - Did each team member contribute?
+
+    This does not need to be code!
+
+    > - Did each team member contribute to the code in the Python class?
+
+    With this problem, maybe not everyone in the duo wrote the one line
+    of actual code. This is OK.
+   
 
 ### Exercise 3: practice pair programming again
 
@@ -156,7 +250,22 @@ Reflect additionally:
 - As a pair, how could you have done better?
 - As an individual, how could you have done better?
 
-## Links
+## References
 
-- [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-- [Martin Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
+- [Flor et al., 1991] Flor, Nick V.; Hutchins, Edwin L. (1991). "Analyzing Distributed Cognition in Software Teams: A Case Study of Team Programming During Perfective Software Maintenance". In Koenemann-Belliveau, Jürgen; Moher, Thomas G.; Robertson, Scott P. (eds.). Empirical Studies of Programmers: Fourth Workshop. Ablex. pp. 36–64. ISBN 978-0-89391-856-9.
+- [Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
+- [Hattie, 2012] Hattie, John. Visible learning for teachers: Maximizing impact on learning. Routledge, 2012. TODO: check that this is a reference for optimal group size of 2
+
+![](martin_the_clean_coder.jpg)
+
+- [Martin, 2011] Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
+- [Schwartz & Gurung, 2012] Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012. TODO: check that this is a reference for optimal group size of 2
+
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+
+- [Thomas & Hunt, 2019] Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
+- [Williams & Kessler, 2000] Williams, Laurie; Kessler, Robert R.; Cunningham, Ward; Jeffries, Ron (2000). "Strengthening the case for pair programming" (PDF). IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248. doi:10.1109/52.854064.
+
+
+
+
