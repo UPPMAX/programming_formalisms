@@ -28,6 +28,17 @@ So how do we identify the needs of our system
 
 ## Design
 
+The design process takes over once you have completed the anlaysis phase (Needs/requirements gathering, risk assesment of needs and the software process) Once we have identified the features and needs engough to start our software it is time to start designing our system. Depending on the aproach or paradigm we follow we will endup with diffrent design documents the idea of the process is to give us a record of our thoughs and to be able to explain our design choices to others. In general flowcharts and sequence diagrams are used to describe events or information flow and in an object oriented paradigm the use of class diagrams build our class structure which is the Data and enacapsulated behaviour we have modeld.
+
+The reason to chose an objectoriented aproach in this case is because of the smaller semantic gap from reality to model and that it is a very common model. When we keep developing you will see that we will use many diffrent paradigms that work together, a project is not nescessary one or the other, One of the design principles of functional programming I like to adhere to even if I design object oriented is from functional programing it can be summariezed in that a fuction or method should only have one output and no side effects. That is the effect should only affect the parameter that you e.g. SetSpeed() only sets the speed of the bacteria and does not affect rotation, the method move is a composition of changedirection and setspeed and changeposistion
+```Mermaid
+classDiagram
+    Move *-- Set_speed
+    Move *-- Set_direction
+    Move *-- ChangePosition
+```
+
+
 !!! Object design
 
     In object design we try and find the objects that will help us identify the classes of our project ![Geeks for geeks introduction to OOP](https://www.geeksforgeeks.org/oops-object-oriented-design/) and here is a link to a tutorial for python ![Geeks for geeks introduction to OO for python](https://www.geeksforgeeks.org/python-oops-concepts/)
@@ -72,7 +83,7 @@ So how do we identify the needs of our system
 
 ???+ "Exercise"
 
-    Taking our feature list and requirments and object modeling now we try and find the classes and  model a class diagram that implements those features.
+    Taking our feature list of requirments and object modeling now we try and find the classes and  model a class diagram that implements those features.
     ![mermaid class diagrams](http://mermaid.js.org/syntax/classDiagram.html)
 
 
