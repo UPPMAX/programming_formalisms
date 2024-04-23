@@ -49,7 +49,7 @@
       title Lesson plan pair programming 2
       dateFormat X
       axisFormat %s
-      Exercise 2: exercise_2, 0, 5s
+      Exercise 2: crit, exercise_2, 0, 5s
       Feedback 2: feedback_2, after exercise_2, 10s
       Theory 3: theory_3, after feedback_2, 5s
       Exercise 3: crit, exercise_3, after theory_3, 10s
