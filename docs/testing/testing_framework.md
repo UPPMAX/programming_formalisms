@@ -385,6 +385,13 @@ Below is a list of function description.
     - Returns `False` if the input is not a list of numbers
     - If the input is an empty list, a `TypeError` is raised.
 
+!!! note "`get_digits(x)`"
+
+    - Returns the number split into a list of digits, e.g. `314` become `[3, 1, 4]`
+    - If the input is not one integer, or is negative, a `TypeError` is raised.
+
+    - [YouTube video showing how to develop it using TDD](https://youtu.be/vmRuSWhdA7c)
+
 !!! note "`is_roman_numeral(x)`"
 
     - Returns `True` if the input is a roman numeral, 
