@@ -625,6 +625,11 @@ More info...
 
     ```
 
+
+    **TODO** Make a git graph in mermaid
+
+
+
 ## Meanwhile...  
 
 **Back in main branch**
@@ -646,8 +651,30 @@ More info...
     git commit -m "rm print"  
     ```
 
+    - And do the graph!
+
+    ```git
+    $ git graph
+    * 000b440 (HEAD -> main) rm print
+    | * 4d4acaf (modularity) 4 modular files
+    |/
+    | * 2d4e252 (jupiter) add jupiter
+    |/
+    * b9465e4 (origin/main) planet.py documentation
+    * 6a416b5 add folders and planet code
+
+    ```
+
 
 **TODO** Make a git graph in mermaid
+
+### On GitHub
+
+- Let's view the branches on Github!
+- Go to _Insights_ in the top menu of the `planet-bjorn` repo and then go to _Network_ in side-bar
+- If we do this after the merging the branches do not show up.
+
+
   
 ## Merging
 
@@ -664,9 +691,21 @@ More info...
     - once all features are ready, switch to main!
     
     ```git
-    $ git checkout main    # switch to main branch
+    $ git switch main    # switch to main branch
     $ git branch           # check that we are on main branch
     $ git merge  modularity          # merge modularity into main
+
+    Merge made by the 'ort' strategy.
+     code/planet_data.py      | 46 +++++++++++++++++++++++++++++++++++++++++++
+     code/planet_functions.py | 29 +++++++++++++++++++++++++++
+     code/planet_iter.py      | 17 ++++++++++++++++
+     code/planet_main.py      | 51 ++++++++++++++++++++++++++++++++++++++++++++++++       
+     4 files changed, 143 insertions(+)
+     create mode 100644 code/planet_data.py
+     create mode 100644 code/planet_functions.py
+     create mode 100644 code/planet_iter.py
+     create mode 100644 code/planet_main.py
+
     ```
     - let's now check the graphical view:
 
@@ -674,23 +713,40 @@ More info...
     
     ```git
     $ git graph
-    *   dc3f83f (HEAD -> main) modular
+    * 1b29a8f (HEAD -> main) Merge branch 'modularity'
     |\
-    | * fc007d4 (modularity) modular code
-    * | 413d0e3 rm printing output
+    | * 4d4acaf (modularity) 4 modular files
+    * | 000b440 rm print
+    |/  
+    | * 2d4e252 (jupiter) add jupiter
     |/
-    * 5434395 add Jupiter
-    * f3c1fb5 planet.py
+    * b9465e4 (origin/main) planet.py documentation
+    * 6a416b5 add folders and planet code    
     ```
 
+    - NOTE that (origin/main) planet.py documentation is not up-to-date
+        - In other words: GitHub has an old version of the project
     - push to GitHub
     - ``git push``
 
+    ```git
+    $ git graph
+    *   1b29a8f (HEAD -> main, origin/main) Merge branch 'modularity'
+    |\
+    | * 4d4acaf (modularity) 4 modular files
+    * | 000b440 rm print
+    |/
+    | * 2d4e252 (jupiter) add jupiter
+    |/
+    * b9465e4 planet.py documentation
+    * 6a416b5 add folders and planet code
+    ```
 
 ### On GitHub
 
 - Let's view the branches on Github!
 - Go to _Insights_ in the top menu of the `planet-bjorn` repo and then go to _Network_ in side-bar
+- If we did this after the merging the branches do not show up.
 
 
 
