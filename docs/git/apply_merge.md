@@ -211,14 +211,9 @@ gitGraph
     checkout main
     commit id: "Another commit"
     merge sven
-    branch anders
-    checkout anders
-    commit id: "Modify the file too too"
     checkout main
     merge anna
-    commit id: "After fixing many merge conflicts"
-    merge anders
-    commit id: "After fixing many more merge conflicts"
+    commit id: "End"
 ```
 
 - Create a merge conflict
