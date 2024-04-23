@@ -79,10 +79,10 @@ matrix inversion algorithm".
 One typical workflow:
 
 ```console
-$ git checkout -b new-feature  # create branch, switch to it
+$ git switch -c new-feature  # create branch, switch to it
 $ git commit                   # work, work, work, ..., and test
-$ git checkout master          # once feature is ready, switch to master
-$ git merge new-feature        # merge work to master
+$ git switch master          # once feature is ready, switch to master
+$ git merge new-feature        # merge work to present branch
 $ git branch -d new-feature    # remove branch
 ```
 
@@ -94,13 +94,35 @@ $ git branch -d new-feature    # remove branch
 
 ## add Jupiter in a new branch
 
-
+- Let's make a new branch called ``jupiter``
+- Here we add some code taking care of the motion of Jupiter and interaction with Earth
 More info...
 
-???- question "Demo: add Jupiter"
-
-
 !!! example "Demo or Type-along: Add Jupiter"
+
+    - Make sure we are in phase with our GitHub remote!
+
+    ```git
+    git pull
+    ```
+    - Let's make a new branch called ``jupiter``
+
+    ```git
+    $ git switch -c jupiter
+    ```
+
+    - Check that we are in that branch!
+
+    ```git
+    $ git branch
+    
+    * jupiter
+    main
+
+    ```
+    
+    - Note that we have the same working tree right now as before (code/ and Figures/ folders and the planet.py file).
+    - Let's open the 
     - We will add some lines to count with the effects from the gravity of Jupiter on Earth
 
 
@@ -220,7 +242,6 @@ More info...
 ## git diff
 
 **show unstaged/uncommitted modifications**
-
 
 ???- question "Demo: modular code in branch"
 
@@ -356,20 +377,43 @@ More info...
 
         ```
 
-## Let's make our code modular (test in branch)
+        - OK, now git add/commit!
+        - After that, check the status:
 
-- We condiser the Jupiter branch dead-end
+        ```git
+        $ git status
+        On branch jupiter
+        nothing to commit, working tree clean
+        ```
+
+## Let's make our code modular (test in another branchbranch)
+
+- We consider the Jupiter branch dead-end.
 - Let's instead start from the main branch and create a "modularity" 
 
 !!! example "Demo or Type-along: git branch 2"
 
-     **Make four modules**
-     
-    - First make a branch called ``modularity`` and go to that branch
-    ```console
-    $ git checkout -b modularity    # create branch, switch to it
-    $ git branch                    # check that we are on the new branch
+     **Make four modules/files**
+    - Make sure you get back to the main branch
+
+    ```git
+    $ git switch main
+    
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
     ```
+    
+    - Make a branch called ``modularity`` and go to that branch
+    
+    ```console
+    $ git switch -c modularity    # create branch, switch to it
+    $ git branch                    # check that we are on the new branch
+    
+      jupiter
+      main
+    * modularity
+    ```
+    
     - We can now do our changes
     - We will make four files
         - ``planet_main.py``, containing an overview e.g. the main program
@@ -544,31 +588,15 @@ More info...
 
         ```
  
-    - add and commit, possibly several times
-
-
-
-## Meanwhile...  
-
-**Back in main branch**
-- We spotted some unnecessary ``print`` lines in the main branch code.
-
-!!! example "Demo or type-along"
-
-    - Go to the main branch:
-    ```git
-    git checkout main
-    ```
- 
-    - Let's remove the two print lines around row 80 in the second for-loop.
     - add and commit
 
     ```git
-    git add planet.py
-    git commit -m "rm print"  
+    $ git add .
+    $ git commit -m '4 modular files'
     ```
-  
+
     - We can now check the history with a command that graphically tries to show the log with branches
+
 
 !!! tip
 
@@ -583,19 +611,41 @@ More info...
     This will enable you to use ``git graph`` for short
 
 
-    - It will give you something like this:
+    - It will now give you something like this:
 
   
     ```git 
   
     $ git graph
-    * 413d0e3 (HEAD -> master) rm printing output
-    | * fc007d4 (modular) modular code
+    * 4d4acaf (HEAD -> modularity) 4 modular files
+    | * 2d4e252 (jupiter) add jupiter
     |/
-    * 5434395 add Jupiter
-    * f3c1fb5 planet.py
-    ...
+    * b9465e4 (origin/main, main) planet.py documentation
+    * 6a416b5 add folders and planet code
+
     ```
+
+## Meanwhile...  
+
+**Back in main branch**
+- We spotted an unnecessary ``print`` line in the main branch code.
+- Perhaps we're not finished with the modular branch, so let's fix this in the main branch.
+
+!!! example "Demo or type-along"
+
+    - Go to the main branch:
+    ```git
+    git switch main
+    ```
+    - Note that we now just find the ``planet.py`` file!
+    - Let's remove the print line around row 35 in the for-loop.
+    - Save, add and commit
+
+    ```git
+    git add planet.py
+    git commit -m "rm print"  
+    ```
+
 
 **TODO** Make a git graph in mermaid
   
