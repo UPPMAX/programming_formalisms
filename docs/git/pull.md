@@ -85,7 +85,7 @@ There are two more ways to create “copies” of repositories into your user sp
 ## Different workflows
 
 ### Centralized workflow
-![Centralized layout](../img/centralized.svg){width: 50%}
+![Centralized layout](../img/centralized.svg)
 
 **Centralized layout**
 - **Red** is the repository on GitHub.
@@ -99,7 +99,7 @@ There are two more ways to create “copies” of repositories into your user sp
 
 ### Distributed version control and Forking workflow
 
-![Forking layout](../img/forking-overview.svg){width: 50%}
+![Forking layout](../img/forking-overview.svg)
 
 **Forking workflow**
 
@@ -138,11 +138,11 @@ In this exercise we will not change the `main` branch directly but
 we will submit a "pull request" (a **change proposal**) towards the `main` branch
 for **code review**.
 
-![](../img/contributing/propose-file-change.png){ width="800px" style="border:2px solid #000000;}
+![](../img/contributing/propose-file-change.png)
 
 - After we click "Propose file change" we are taken to this form:
   
-![](../img/contributing/pull-request-form.png){ width="400px" style="border:2px solid #000000;}
+![](../img/contributing/pull-request-form.png)
 
 - In there we verify the **source and target branch**, verify the **file changes**,
   can edit the **title** and **description** of the "pull request" (change proposal)
@@ -165,7 +165,7 @@ can push commits to it directly, it can be useful to "protect" branches.
 
 - "Settings", then "Branches", then "Add rule":
 
-![](../img/contributing/branch-protection.png){ width="800px" }
+![](../img/contributing/branch-protection.png)
 
 > ## Discussion
 >
@@ -211,18 +211,18 @@ We can practice how a conflict looks and how to resolve it:
 - Two participants should send two "pull requests" (change proposals)
   branching from `main` changing the same line in two different ways
 
-![](../img/contributing/conflict-edit-1.png){ width="400px" style="border:2px solid #000000;"}
-![](../img/contributing/conflict-edit-2.png){ width="400px" style="border:2px solid #000000;"}
+![](../img/contributing/conflict-edit-1.png)
+![](../img/contributing/conflict-edit-2.png)
 
 - We merge together one of the pull requests (this will work)
 - Then we try to merge the other and we see a conflict:
 
-![](../img/contributing/conflict-pull-request.png){ width="600px" style="border:2px solid #000000;}
+![](../img/contributing/conflict-pull-request.png)
 
 - We try to resolve the conflict via web
 - Choose the version that you wish to keep, remove conflict markers, "Mark as resolved" and commit the change
 
-![]("../img/contributing/conflict-resolution.png){width="800px" style="border:2px solid #000000;}
+![](../img/contributing/conflict-resolution.png)
 
 
 > ## Discussion
