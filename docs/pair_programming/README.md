@@ -75,11 +75,9 @@ We use it a lot in this course, because:
   is effective [Hattie, 2012][Schwartz & Gurung, 2012, page 65]
   (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it 
-  [as they write in the retrospective](../../retrospectives/2023_autumn/retrospectives_result_day_5.md)
+  [as they write in the retrospective](https://github.com/UPPMAX/programming_formalisms/blob/main/retrospectives/2023_autumn/retrospective_results_day_5.md)
 
 ## Exercises
-
-See the exercise procedure [here](../misc/exercise_procedure.md).
 
 ### Exercise 1: understand pair programming
 
@@ -87,13 +85,6 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 
     - Understand what pair programming is
     - First guess at understanding what **good** pair programming is
-
-???- question "For teachers"
-
-    Time schedule:
-    - 5 mins: introduce exercise procedure
-    - 10 mins: start
-    - 5 mins: feedback
 
 - Together, read the questions before reading the material
 - Together, divide which team member is going to read which source:
