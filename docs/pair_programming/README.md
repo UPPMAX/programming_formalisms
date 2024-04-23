@@ -69,8 +69,9 @@ We use it a lot in this course, because:
     alone [Williams & Kessler, 2000], however, 
     this is only 41 respondents
 - what is for sure: it works great with recommended teaching practices,
-  e.g. grouping up learners (with the optimal group size of 2)
-  is effective [Hattie, 2012][Schwartz & Gurung, 2012]
+  e.g. grouping up learners 
+  is effective [Hattie, 2012][Schwartz & Gurung, 2012, page 65]
+  (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it 
   [as they write in the retrospective](../../retrospectives/2023_autumn/retrospectives_result_day_5.md)
 
@@ -259,6 +260,8 @@ Reflect additionally:
 ![](martin_the_clean_coder.jpg)
 
 - [Martin, 2011] Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
+- [reference for best group size 2] The reference that a group size of 2
+  is best
 - [Schwartz & Gurung, 2012] Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012. TODO: check that this is a reference for optimal group size of 2
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
