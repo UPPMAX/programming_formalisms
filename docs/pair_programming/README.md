@@ -141,8 +141,9 @@ Questions:
     All material for this exercise show references to studies that
     show advantages of pair programming,
     for example (from two Wikipedia references):
-    - a pair considers more alternative ways for a solution [Flor et al., 1991]
-    - 96% of developers prefer pair programming over developing alone [Williams & Kessler, 2000]
+
+     * a pair considers more alternative ways for a solution [Flor et al., 1991]
+     * 96% of developers prefer pair programming over developing alone [Williams & Kessler, 2000]
 
     However, the first study uses only 2 programming teams,
     the second study 41 self-selected respondents. 
