@@ -77,7 +77,7 @@ Advantages of TDD are:
 - TDD works great with Xtreme programming and CI
 
 Developers do really do this [Beck, 2022][Langr, 2013], even
-though TDD takes longer:
+though TDD takes longer (but note [study I cannot find]):
 
 Study                     | Extra time | Effect
 --------------------------|------------|-------------------------------
@@ -362,6 +362,9 @@ Solution `is_prime`          |  9 mins | [YouTube](https://youtu.be/qVtHieuwM1M)
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
+ * [study I cannot find] in one of the classics, there was a bar chart that
+   showed developers write functions such as `is_prime` with and without TDD
+   and showed that TDD was twice as fast. TODO: find this reference
  * [Thomas & Hunt, 2019] Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
 
 ![](python_logo.png)
