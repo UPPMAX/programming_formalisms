@@ -314,7 +314,9 @@ Develop a function called `is_prime`.
 
 -   This session, we wrote **unit tests**
 -   It is only those your boss may read
--   The literature assumes a responsible programmer writes tests, in C++ @stroustrup2018cpp, R @wickham2019advanced and Python @van2001pep
+-   The literature assumes a responsible programmer writes tests, 
+    in C++ [Stroustrup & Sutter, 2017], 
+    R [Wickham, 2019] and Python [PEP 8]
 
 ## Discussion
 
@@ -359,14 +361,18 @@ Solution `is_prime`          |  9 mins | [YouTube](https://youtu.be/qVtHieuwM1M)
  * [Martin, 2011] Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
  * [Mayr, 2005] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
  * [Nagappan et al., 2008] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
+ * [PEP 8] Van Rossum, Guido, Barry Warsaw, and Nick Coghlan. "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
+ * [Stroustrup & Sutter, 2017] Stroustrup, Bjarne, and Herb Sutter. "C++ Core Guidelines (2017)." URL http://isocpp. github. io/CppCoreGuidelines/CppCoreGuidelines.(Cited on pages 100 and 103) (2015).
  * [study I cannot find] in one of the classics, there was a bar chart that
    showed developers write functions such as `is_prime` with and without TDD
    and showed that TDD was twice as fast. TODO: find this reference
  * [Thomas & Hunt, 2019] Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
+ * [Wickham, 2019] Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
 ![](python_logo.png)
 
  * [Zen of Python] [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+
