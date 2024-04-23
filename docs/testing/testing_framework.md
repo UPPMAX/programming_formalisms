@@ -84,7 +84,7 @@ class TestSmall(unittest.TestCase):
         self.assertEqual(1 + 1, 2)
 ```
 
-:monocle_face: Hamcrest notation can give better error message.
+Hamcrest notation can give better error message.
 
 ### Test if something raises an exception
 
