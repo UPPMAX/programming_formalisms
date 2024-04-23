@@ -29,8 +29,6 @@
 
 ## Exercises
 
-See the exercise procedure [here](../misc/exercise_procedure.md).
-
 ### Exercise 1: create, switch and delete a `git` branch
 
 !!!- info "Learning objectives"
