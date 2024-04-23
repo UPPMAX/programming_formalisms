@@ -40,8 +40,9 @@
 ## Testing
 
 - [Using a formal testing framework](testing_framework.md)
-- [Continuous integration](continuous_integration.md)
+- [Testing indeterminate functions](testing_indeterminate_functions.md)
 - [Testing in a team and project](testing_in_a_team.md)
+- [Continuous integration](continuous_integration.md)
 
 ## Recap
 

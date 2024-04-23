@@ -39,7 +39,7 @@
 
 Q: When one works in a team, how to make sure my code keeps doing the same?
 
-```{python}
+```python
 #| echo: true
 #| eval: true
 def get_test_dna_sequence():
@@ -55,7 +55,7 @@ A: Apply the Beyoncé Rule
 
 'If you like it, then you gotta put a test on it'
 
-```{python}
+```python
 #| echo: true
 #| eval: true
 assert get_test_dna_sequence() == "ACGTACGT"
@@ -71,7 +71,7 @@ Teams should be reluctant to change tests: this will likely break other code.
 
 Q: How to test this function?
 
-```{python}
+```python
 #| echo: true
 #| eval: true
 def print_hello():
@@ -86,7 +86,7 @@ A: Never write untestable functions
 
 Q: How to make this function testable?
 
-```{python}
+```python
 #| echo: true
 #| eval: true
 def print_hello():
@@ -95,7 +95,7 @@ def print_hello():
 
 . . .
 
-```{python}
+```python
 #| echo: true
 #| eval: true
 def get_hello_world_text():
@@ -110,7 +110,7 @@ Q: How to test this function thoroughly:
 -   Colors are correct
 -   Trend line is drawn
 
-```{python}
+```python
 #| echo: true
 #| eval: true
 def save_plot(filename, x_y_data):
