@@ -34,6 +34,10 @@
 
 ## Testing
 
+???- question "Prefer this lecture as a video?"
+
+    See [this YouTube video](https://youtu.be/FXdEtzl-wws)
+
 Testing *helps* ensure the correctness of code.
 
 -   Coding errors are extremely common [Baggerly & Coombes, 2009]
@@ -235,51 +239,118 @@ Clicking on the 'Run'/'Play' button to run the tests.
 
 ## Exercises
 
-### Exercise 1: `is_prime` observe
+## Exercise 1: first attempt
 
--   Only observe, no type-along!
--   Ask questions on the go! When in doubt: ask that question!
--   Time: 30 minutes
+???- info "Learning objectives"
 
-## Exercise 2: `is_prime`
+    - practice writing tests within a formal testing framework
 
--   Function name: `is_prime_[name]`, for example, `is_prime_richel`
--   Output:
-    -   Returns `True` if the input is prime
-    -   Returns `False` if the input is not prime
-    -   Gives an error when the input is not an integer
+In pairs, develop a function using TDD using the `unittest` framework.
 
-## Exercise 3: `is_prime`, social
+The function is a function to determine if a number is prime.
 
--   Ping-Pong Pair programming
--   Discuss how and when to switch roles first!
--   Person with first name first in alphabet starts
--   Try to be **an exemplary duo**
+???- question "Too easy or too hard?"
 
-## Exercise 4: `is_prime`, technical
+    The learning objective of this exercise is to 
+    practice writing tests within a formal testing framework.
+    Which function to implement is irrelevant,
+    so feel free to pick a function that fits your level.
+    If needed, one can find inspiration at [these example functions](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py)
 
--   Work within scaffolding of the learners project
-    -   Functions are in `src/[package_name]/testing.py`
-    -   Tests are in `tests/test_testing.py`
--   Work on the main branch only, share code using `git push` and `git pull`
--   order the `is_prime_[name]` functions and tests alphabetically, e.g. `is_prime_lars` comes before `is_prime_richel`
+!!! info "The function"
 
-## Live demo (30 minutes)
+    -   Function name: `is_prime_[names]`, for example, `is_prime_anna_and_sven`
+    -   Output:
+        -   Returns `True` if the input is prime
+        -   Returns `False` if the input is not prime
+        -   Gives an error when the input is not one integer
 
--   Or videos: [YouTube](https://youtu.be/jwAyMlaODfo) 
+!!! info "Social"
 
-# Exercise 5: `is_prime`
+    -   Ping-Pong Pair programming
+    -   Discuss how and when to switch roles first!
+    -   Person with first name first in alphabet starts
+    -   Try to be **an exemplary duo**
 
--   Time: 30 minutes
--   Do the same exercise in pairs
--   There are multiple ways to do this: pick the way you feel is most natural
+!!! info "Technical"
 
-## Course material
+    -   Work within scaffolding of the learners project
+        -   Functions are in `src/[package_name]/`. 
+            Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
+        -   Tests are in `tests/`.
+            Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
+    -   Work on the main branch only, share code using `git push` and `git pull`
 
-Title                        |Length   |YouTube
------------------------------|---------|------------------------------------
-Testing lecture 1            |10 mins  |[here](https://youtu.be/FXdEtzl-wws)
-`is_prime`                   |19 mins  |[here](https://youtu.be/jwAyMlaODfo)
+???- question "Need a video?"
+
+    See [this YouTube video](https://youtu.be/jwAyMlaODfo) 
+
+## Exercise 2: second attempt
+
+???- info "Learning objectives"
+
+    - practice writing tests within a formal testing framework
+
+In pairs, develop a function using TDD using the `unittest` framework.
+
+Use the same setup as exercise 1.
+
+However, decide upon an interesting function at your estimated level.
+When disagreeing: pick the easiest function.
+
+If needed, one can find inspiration at the section [Other functions](#other-functions) below.
+
+## Other functions
+
+Below is a list of function description. 
+
+???- question "Need an example implementation?"
+
+    Example implementations can be found [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+
+!!! note `is_zero`
+
+    - Returns `True` if the input is zero
+    - Returns `False` if the input is not zero
+    - If the input is not one number, a `TypeError` is raised.
+
+!!! note `is_even(x)`
+
+    - Returns `True` if the input is even
+    - Returns `False` if the input is not even
+    - If the input is not one integer, a `TypeError` is raised.
+
+!!! note `is_odd(x)`
+
+    - Returns `True` if the input is odd
+    - Returns `False` if the input is not odd
+    - If the input is not one integer, a `TypeError` is raised.
+
+!!! note `is_probability(p)`
+
+    - Returns `True` if the input is in the range [0.0, 1.0],
+      that is from and including zero to and including one
+    - Returns `False` if the input is not in that range
+    - If the input is not one floating point number, a `TypeError` is raised.
+
+!!! note `is_number(x)`
+
+    - Returns `True` if the input is a number
+    - Returns `False` if the input is not a number
+    - If the input is not one element, a `TypeError` is raised.
+
+!!! note `are_numbers(x)`
+
+    - Returns `True` if the input is a list of numbers number
+    - Returns `False` if the input is not a list of numbers
+    - If the input is an empty list, a `TypeError` is raised.
+
+!!! note `is_roman_numeral(x)`
+
+    - Returns `True` if the input is a roman numeral, 
+      e.g. 'I', 'II', 'IV', 'XI', etc.
+    - Returns `False` if the input is not a roman numeral
+    - If the input is not one String, a `TypeError` is raised.
 
 ## References
 
