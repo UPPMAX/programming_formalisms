@@ -65,9 +65,8 @@ There are two more ways to create “copies” of repositories into your user sp
 
     - **repository**: The project, contains all data and history (commits, branches, tags).
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-    - **branch**: Independent development line, often we call the main development line `master` or `main`.
-    - **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque)
-  that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
+    - **branch**: Independent development line, often we call the main development line `main` or `main`.
+    - **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque) that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
     - **cloning**: Copying the whole repository to your laptop - the first time.
         - It is not necessary to download each file one by one.
         - good within a group  
@@ -75,13 +74,52 @@ There are two more ways to create “copies” of repositories into your user sp
         - our copy (fork) stays on GitHub and you can make changes to your copy.
         - better for contribution to other's project
     - `git clone` copies everything: all commits and all branches.
-    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/master`.
+    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
     - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
     - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
+
+## Centralized workflow
+![Centralized layout](../img/centralized.svg){width: 50%}
+
+**Centralized layout**
+- **Red** is the repository on GitHub.
+- **Blue** is where all contributors work on their own computers.
+
+
+- Centralized workflow is often used for **remote collaborative work**.
+- `origin` refers to where you cloned from (but you can relocate it).
+- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
+- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
+
+## Distributed version control and Forking workflow
+
+![Forking layout](../img/forking-overview.svg){width: 50%}
+
+**Forking workflow**
+
+- **Red** is the central repository, where only owners have access.
+- **Green** are *forks* on GitHub (copy for a single user to work on).
+- **Blue** are local copies where contributors work on their own computer.
+
+
+In the forking layout described above we work with **multiple remotes**,
+in this case **two remotes**: One remote refers to the **"central"** repository, and the other remote refers to the **"fork"**.
+
+- Working with multiple remotes is not as scary as it might look.
+- `origin` is just an alias/placeholder.
+- We can add and remove remotes.
+- We can call these aliases/placeholders as we like.
+- We typically synchronize/updates remotes via the local clone.
+- To see all remotes use `git remote -v`.
+- If you are more than one person contributing to a project, consider using code review.
+
+
+
+
 ## Contributing to existing repositories using pull requests
-Based on: https://coderefinery.github.io/github-without-command-line/contributing/
+Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
 
 - **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
@@ -103,8 +141,8 @@ In the last episodes we learned how to directly commit changes either via web
 or via the desktop and you need to be a collaborator (have write permissions)
 to be able to do that.
 
-In this exercise we will not change the `master` branch directly but
-we will submit a "pull request" (a **change proposal**) towards the `master` branch
+In this exercise we will not change the `main` branch directly but
+we will submit a "pull request" (a **change proposal**) towards the `main` branch
 for **code review**.
 
 ![](../img/contributing/propose-file-change.png){ width="800px" style="border:2px solid #000000;}
@@ -129,7 +167,7 @@ for **code review**.
 
 ---
 
-To make sure that *all* changes of the `master` branch are reviewed and nobody
+To make sure that *all* changes of the `main` branch are reviewed and nobody
 can push commits to it directly, it can be useful to "protect" branches.
 
 - "Settings", then "Branches", then "Add rule":
@@ -145,15 +183,16 @@ can push commits to it directly, it can be useful to "protect" branches.
 
 ---
 
-## Step 3: Submit a small change via the web interface as external contributor
+**Step 3: Submit a small change via the web interface as external contributor**
 
 Submitting a change proposal as external contributor (we assume you are not added
 as "collaborator" and thus have no write-permissions to a repository) looks very similar
-to submitting a "pull request" to a repository with a protected `master` branch.
+to submitting a "pull request" to a repository with a protected `main` branch.
 Only this time you have no other choice than "Propose file change".
 
 Let's try this with one participant who has not been added as collaborator
 sharing screen:
+
 - Edit a file with the "pen" button
 - Edit the commit message and click green button "Propose file change"
 - This creates a **fork** of the repository (GitHub makes a copy of the original repository to your user space)
@@ -162,7 +201,7 @@ sharing screen:
 
 ---
 
-## Step 4: Resolving a conflict   
+**Step 4: Resolving a conflict**
 
 **FIX**
 
@@ -179,7 +218,7 @@ has been modified in two **different** ways on the two branches.
 
 We can practice how a conflict looks and how to resolve it:
 - Two participants should send two "pull requests" (change proposals)
-  branching from `master` changing the same line in two different ways
+  branching from `main` changing the same line in two different ways
 
 ![](../img/contributing/conflict-edit-1.png){ width="400px" style="border:2px solid #000000;"}
 ![](../img/contributing/conflict-edit-2.png){ width="400px" style="border:2px solid #000000;"}
@@ -201,41 +240,6 @@ We can practice how a conflict looks and how to resolve it:
 
 
 
-
-
-## Centralized workflow
-![Centralized layout](../img/centralized.svg){width: 50%}
-
-**Centralized layout**
-- **Red** is the repository on GitHub.
-- **Blue** is where all contributors work on their own computers.
-
-
-- Centralized workflow is often used for **remote collaborative work**.
-- `origin` refers to where you cloned from (but you can relocate it).
-- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
-- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
-
-## Distributed version control and Forking workflow
-
-![Forking layout](../img/forking-overview.svg){width: 50%}
-
-**Forking workflow**
-- **Red** is the central repository, where only owners have access.
-- **Green** are *forks* on GitHub (copy for a single user to work on).
-- **Blue** are local copies where contributors work on their own computer.
-
-
-In the forking layout described above we work with **multiple remotes**,
-in this case **two remotes**: One remote refers to the **"central"** repository, and the other remote refers to the **"fork"**.
-
-- Working with multiple remotes is not as scary as it might look.
-- `origin` is just an alias/placeholder.
-- We can add and remove remotes.
-- We can call these aliases/placeholders as we like.
-- We typically synchronize/updates remotes via the local clone.
-- To see all remotes use `git remote -v`.
-- If you are more than one person contributing to a project, consider using code review.
 
 
 ## How to contribute changes to somebody else’s project

@@ -66,9 +66,47 @@
 ???- question "quiz"
 
 
-## Branching, why
+## Branching and merging
+Software development is often not linear:
+
+- We typically need at least one version of the code to "work" (to compile, to give expected results, ...).
+- At the same time we work on new features, often several features concurrently.
+  Often they are unfinished.
+- We need to be able to separate different lines of work really well.
+
+![Isolated tracks](../img/git-collaborative.svg){width: 50%}
+_Isolated tracks of work._
 
 
+The strength of version control is that it permits the researcher to **isolate
+different tracks of work**, which can later be merged to create a composite
+version that contains all changes.
+
+- We see branching points and merging points.
+- Main line development is often called `master` or `main`.
+- Other than this convention there is nothing special about `master` or `main`, it is just a branch.
+- Commits form a directed acyclic graph (we have left out the arrows to avoid confusion about the time arrow).
+
+A group of commits that create a single narrative are called a **branch**.
+There are different branching strategies, but it is useful to think that a branch
+tells the story of a feature, e.g. "fast sequence extraction" or "Python interface" or "fixing bug in
+matrix inversion algorithm".
+
+### Typical workflows
+
+One typical workflow:
+
+```console
+$ git checkout -b new-feature  # create branch, switch to it
+$ git commit                   # work, work, work, ..., and test
+$ git checkout master          # once feature is ready, switch to master
+$ git merge new-feature        # merge work to master
+$ git branch -d new-feature    # remove branch
+```
+
+!!! info "Sea also"
+
+    [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
 
 ## Start with pushing your changes in the local Git to GitHub
@@ -199,10 +237,9 @@ plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
 - **Do not run because we changed from 2 years simulation time to 5000 years!**
 - The output should look like this at least.
 
-```{figure} img/planet_earthJupiter.png
-:width: 100%
-:class: with-border
-```   
+![](../img/planet_earthJupiter.png)
+
+
 
 - Do **not** stage (add) yet!
 
@@ -347,76 +384,8 @@ index 60b8b20..8061461 100644
 ```
 ````
 ``````
-## Stage and commit the changes
-
-``````{type-along}
-- Now first stage and then commit (what happens when we leave out the `-m` flag?):
-
-```console
-  $ git add python.py     # <-- we can state exactly which file to stage as well
-  $ git commit                   # <-- we have left out -m "..."
-```
-
-  When you leave out the `-m` flag, Git should open an editor where you can edit
-  your commit message. This message will be associated and stored with the
-  changes you made. This message is your chance to explain what you've done and
-  convince others (and your future self) that the changes you made were
-  justified.  Write a message (like ``added Jupiter`` and save and close the file.
-
-  When you are done committing the changes, experiment with these commands:
-
-  ```console
-  $ git log
-  $ git log --stat
-  $ git log --oneline
-  ```
-``````
 
 
-## Branching and merging
-Software development is often not linear:
-
-- We typically need at least one version of the code to "work" (to compile, to give expected results, ...).
-- At the same time we work on new features, often several features concurrently.
-  Often they are unfinished.
-- We need to be able to separate different lines of work really well.
-
-```{figure} img/git-collaborative.svg
-:alt: Isolated tracks
-:width: 50%
-
-Isolated tracks of work.
-```
-
-The strength of version control is that it permits the researcher to **isolate
-different tracks of work**, which can later be merged to create a composite
-version that contains all changes.
-
-- We see branching points and merging points.
-- Main line development is often called `master` or `main`.
-- Other than this convention there is nothing special about `master` or `main`, it is just a branch.
-- Commits form a directed acyclic graph (we have left out the arrows to avoid confusion about the time arrow).
-
-A group of commits that create a single narrative are called a **branch**.
-There are different branching strategies, but it is useful to think that a branch
-tells the story of a feature, e.g. "fast sequence extraction" or "Python interface" or "fixing bug in
-matrix inversion algorithm".
-
-### Typical workflows
-
-One typical workflow:
-
-```console
-$ git checkout -b new-feature  # create branch, switch to it
-$ git commit                   # work, work, work, ..., and test
-$ git checkout master          # once feature is ready, switch to master
-$ git merge new-feature        # merge work to master
-$ git branch -d new-feature    # remove branch
-```
-
-```{note}
-[More about branches](https://coderefinery.github.io/git-intro/branches/)
-```
 
 ## Let's make our code modular (test in branch)
 
@@ -661,9 +630,9 @@ $ git graph
 - It turned out that our experiment with modularity was a good idea. 
 - Our goal now is to merge modularity into main.
  
-![Isolated tracks](img/git-collaborative.svg){width: 50%}
+![Isolated tracks](../img/git-collaborative.svg)
 
-!!! example !Merge into main
+!!! example "Merge into main"
 
     - once all features are ready, switch to main!
     ```console
