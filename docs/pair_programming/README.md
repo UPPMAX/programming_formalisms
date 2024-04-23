@@ -98,11 +98,12 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
     - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
     - [Martin Fowler's page on Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
     - (if with three: [Codecademy's page on Pair Programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/))
-- Together, set a timer for 10 minutes
+- Together, set a timer for 6 minutes
 - Individually, answer the questions within the time limit
 - Together, write down a shared answer on the GitHub project repository
   with path `learners/[a teammember's name]/pair_programming.md`
-- Upload the file to the GitHub repo
+- Upload the file to the GitHub repo. 
+  Use the GitHub web interface if pushing is a problem!
 
 Questions:
 
