@@ -54,6 +54,9 @@
 
 ## GitHub
 
+**Let's go back to GitHub and collaboration for now!*
+
+
 There are two more ways to create “copies” of repositories into your user space:
 
 - A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
@@ -79,8 +82,9 @@ There are two more ways to create “copies” of repositories into your user sp
     - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
+## Different workflows
 
-## Centralized workflow
+### Centralized workflow
 ![Centralized layout](../img/centralized.svg){width: 50%}
 
 **Centralized layout**
@@ -93,7 +97,7 @@ There are two more ways to create “copies” of repositories into your user sp
 - `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
 - These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
 
-## Distributed version control and Forking workflow
+### Distributed version control and Forking workflow
 
 ![Forking layout](../img/forking-overview.svg){width: 50%}
 
@@ -107,24 +111,14 @@ There are two more ways to create “copies” of repositories into your user sp
 In the forking layout described above we work with **multiple remotes**,
 in this case **two remotes**: One remote refers to the **"central"** repository, and the other remote refers to the **"fork"**.
 
-- Working with multiple remotes is not as scary as it might look.
-- `origin` is just an alias/placeholder.
-- We can add and remove remotes.
-- We can call these aliases/placeholders as we like.
-- We typically synchronize/updates remotes via the local clone.
-- To see all remotes use `git remote -v`.
-- If you are more than one person contributing to a project, consider using code review.
+## Contributing in a team
 
-
-
-
-## Contributing to existing repositories using pull requests
+### Contributing to existing repositories using pull requests
 Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
 
 - **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
-- Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll
-actually do it with review).
+- Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
 
 - From here on the collaborators can push changes in the same way as we have done in a
 single-person repository in the previous episodes.
@@ -132,7 +126,6 @@ single-person repository in the previous episodes.
 !!! Discussion
 
     - Discuss the advantages and possible disadvantages of this setup.
-
 
 
 - **Step 2: Submit a small change via the web interface as collaborator**
@@ -180,7 +173,6 @@ can push commits to it directly, it can be useful to "protect" branches.
 >   **We recommend this for group repositories**.
 >   Discuss the advantages/disadvantages of this.
 
-
 ---
 
 **Step 3: Submit a small change via the web interface as external contributor**
@@ -205,11 +197,10 @@ sharing screen:
 
 **FIX**
 
-```{instructor-note}
-- "Non-talking instructor" prepares a conflicting commit during session (check
-  what the first PR does).
-- Conflict can be shown as demo.
-```
+    ```{instructor-note}
+    - "Non-talking instructor" prepares a conflicting commit during session (check what the first PR does).
+    - Conflict can be shown as demo.
+    ```
 
 ### Exercise/demo: let us experience a conflict
 
@@ -233,18 +224,38 @@ We can practice how a conflict looks and how to resolve it:
 
 ![]("../img/contributing/conflict-resolution.png){width="800px" style="border:2px solid #000000;}
 
+
 > ## Discussion
 >
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
 
 
-
-
-
 ## How to contribute changes to somebody else’s project
 
 - Avoid frustration and surprises by first discussing and then coding.
+
+- We apply the Forking workflow
+
+  ![Forking layout](../img/forking-overview.svg){width: 50%}
+
+**Forking workflow**
+
+- **Red** is the central repository, where only owners have access.
+- **Green** are *forks* on GitHub (copy for a single user to work on).
+- **Blue** are local copies where contributors work on their own computer.
+
+
+In the forking layout described above we work with **multiple remotes**,
+in this case **two remotes**: One remote refers to the **"central"** repository, and the other remote refers to the **"fork"**.
+
+- Working with multiple remotes is not as scary as it might look.
+- `origin` is just an alias/placeholder.
+- We can add and remove remotes.
+- We can call these aliases/placeholders as we like.
+- We typically synchronize/updates remotes via the local clone.
+- To see all remotes use `git remote -v`.
+- If you are more than one person contributing to a project, consider using code review.
 
 ### Contributing very minor changes
 
@@ -253,15 +264,14 @@ We can practice how a conflict looks and how to resolve it:
 - Commit and push change
 - File a pull request or merge request
 
-
 ### If you observe an issue and have an idea how to fix it
 
-- Open an issue in the repository you wish to contribute to
+- Open an **issue** in the repository you wish to contribute to
 - Describe the problem
 - If you have a suggestion on how to fix it, describe your suggestion
 - Possibly **discuss and get feedback**
 - If you are working on the fix, indicate it in the issue so that others know that somebody is working on it and who is working on it
-- Submit your fix as pull request or merge request which references/closes the issue
+- Submit your fix as **pull request** or **merge request** which references/closes the issue
 
 !!!- example "(Optional demo) Add to someone else's project"
 
