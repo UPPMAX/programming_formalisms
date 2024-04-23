@@ -67,10 +67,10 @@ gitGraph
 
 ???- info "Answers"
 
-    - For our shared GitHub repository, create a branch with your first name that is
-      unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
-      You may branch of from `main` or `develop` (if it exists).
-      You may use the web interface (easiest!) or use the command line
+    > - For our shared GitHub repository, create a branch with your first name that is
+    >   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
+    >   You may branch of from `main` or `develop` (if it exists).
+    >   You may use the web interface (easiest!) or use the command line
 
     ![](github_create_branch_annotated.png)
 
@@ -78,7 +78,7 @@ gitGraph
     Done!
 
     > - On your local computer:
-    >   - update the repository
+    >    - update the repository
 
     On your local computer, navigate to the folder of the shared project 
     and update:
@@ -88,7 +88,7 @@ gitGraph
     ```
 
     > - On your local computer:
-    >    - switch to the new branch
+    >     - switch to the new branch
 
     Switch to the new branch, for example, `richel`, by doing:
 
@@ -97,8 +97,8 @@ gitGraph
     ```
 
     > - On your local computer:
-    >    - change the content of the repository, for example,
-    >      by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
+    >     - change the content of the repository, for example,
+    >       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
 
     This can be any change you'd like.
     To create a file under Linux (and maybe this works on other
@@ -116,7 +116,7 @@ gitGraph
     ```
 
     > - On your local computer:
-    >    - push your changes online. 
+    >     - push your changes online. 
 
     Do:
 
@@ -142,8 +142,8 @@ gitGraph
     Make sure you look at the correct branch, as displayed at 1.
     Then your commit message shows up at 2.
 
-    - On your local computer, switch to the main branch, 
-      as we'll delete the branch you are on now
+    > - On your local computer, switch to the main branch, 
+    >   as we'll delete the branch you are on now
 
     Switch to the main branch, for example, `main`, by doing:
 
