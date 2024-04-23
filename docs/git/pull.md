@@ -15,8 +15,6 @@
 
       - How to contribute
 
-
-
 ???- info "Learning objectives of 'Deployment'"
 
     - explain and evaluate the usefulness of git Pull Request with code review
@@ -46,15 +44,11 @@
 
 ???- question "Demo with Richel: Add to someone else's project (another planet)"
 
-???- question "discussion"
-
-???- question "quiz"
-
 
 
 ## GitHub
 
-**Let's go back to GitHub and collaboration for now!*
+**Let's go back to GitHub and collaboration for now!**
 
 
 There are two more ways to create “copies” of repositories into your user space:
@@ -130,11 +124,9 @@ single-person repository in the previous episodes.
 
 - **Step 2: Submit a small change via the web interface as collaborator**
 
-In the last episodes we learned how to directly commit changes either via web
-or via the desktop and you need to be a collaborator (have write permissions)
-to be able to do that.
+- We learned how to directly commit changes either via web or via the desktop and you need to be a collaborator (have write permissions) to be able to do that.
 
-In this exercise we will not change the `main` branch directly but
+- We will not change the `main` branch directly but
 we will submit a "pull request" (a **change proposal**) towards the `main` branch
 for **code review**.
 
@@ -160,8 +152,8 @@ for **code review**.
 
 ---
 
-To make sure that *all* changes of the `main` branch are reviewed and nobody
-can push commits to it directly, it can be useful to "protect" branches.
+- **To make sure that *all* changes of the `main` branch are reviewed and nobody
+can push commits to it directly, it can be useful to "protect" branches.**
 
 - "Settings", then "Branches", then "Add rule":
 
@@ -293,6 +285,8 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 
     - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
   
+???- question "quiz"
+
 
 
 !!! admonition "Parts to be covered!"
