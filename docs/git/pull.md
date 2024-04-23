@@ -7,7 +7,7 @@
 
 !!! info Content
 
-    - We will give an overview GitHub
+    - We will give an overview of
 
       - centralized collaboration
 
