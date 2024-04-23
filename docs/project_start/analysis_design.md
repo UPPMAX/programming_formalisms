@@ -36,9 +36,9 @@ The reason to chose an objectoriented aproach in this case is because of the sma
 
 ```mermaid
 classDiagram
-    Move *-- Set_speed
-    Move *-- Set_direction
-    Move *-- ChangePosition
+    Move *-- set_speed
+    Move *-- set_direction
+    Move *-- change_position
 ```
 
 
