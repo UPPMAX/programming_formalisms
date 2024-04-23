@@ -239,7 +239,7 @@ gitGraph
 
 ???- question "Enjoy a video?"
 
-    You can find a video [here](https://youtu.be/BSi9nFhlgwM)
+    You can find a video [here](https://youtu.be/2RTO8I9qdCk)
 
 ### Exercise 3: practice code review
 
