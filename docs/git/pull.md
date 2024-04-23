@@ -19,7 +19,7 @@
 
     - explain and evaluate the usefulness of git Pull Request with code review
 
-!!! note "Instructor notes"
+!!!- note "Instructor notes"
 
     Prerequisites are:
 
@@ -40,21 +40,17 @@
         - Contributing very minor changes
         - If you observe an issue and have an idea how to fix it
 
-## All Exercises
-
-???- question "Demo with Richel: Add to someone else's project (another planet)"
-
-
-
-## GitHub
+## GitHub and new repos
 
 **Let's go back to GitHub and collaboration for now!**
 
 
 There are two more ways to create “copies” of repositories into your user space:
 
-- A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
-- You can **import** a repository from another hosting service or web address. This will preserve the history of the imported project.
+- A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter.
+    - The newly created repository will start with a _new history_, only one commit, and not inherit the history of the template.
+- You can **import** a repository from another hosting service or web address.
+    - This will _preserve the history_ of the imported project.
 
 
 ## Different workflows
@@ -63,6 +59,7 @@ There are two more ways to create “copies” of repositories into your user sp
 ![Centralized layout](../img/centralized.svg)
 
 **Centralized layout**
+
 - **Red** is the repository on GitHub.
 - **Blue** is where all contributors work on their own computers.
 
@@ -74,6 +71,8 @@ There are two more ways to create “copies” of repositories into your user sp
 
 ### Distributed version control and Forking workflow
 
+**This is used when you are not a collaborator**
+
 ![Forking layout](../img/forking-overview.svg)
 
 **Forking workflow**
@@ -83,8 +82,9 @@ There are two more ways to create “copies” of repositories into your user sp
 - **Blue** are local copies where contributors work on their own computer.
 
 
-In the forking layout described above we work with **multiple remotes**,
-in this case **two remotes**: One remote refers to the **"central"** repository, and the other remote refers to the **"fork"**.
+
+
+
 
 ## Contributing in a team
 
@@ -98,36 +98,51 @@ Based on: <https://coderefinery.github.io/github-without-command-line/contributi
     - Not recommended for software.
 
 
-- **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
+**Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
 - Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
 
 - From here on the collaborators can push changes in the same way as we have done in a
 single-person repository in the previous episodes.
 
-!!! Discussion
+!!! warning
+
+    Check if co-teacher is collaborator!
+
+    - but skip do anything for now!
+
+
+???+ "Discussion"
 
     - Discuss the advantages and possible disadvantages of this setup.
 
 
-- **Step 2: Submit a small change via the web interface as collaborator**
+**Step 2: Submit a small change via the web interface as collaborator**
 
 - We learned how to directly commit changes either via web or via the desktop and you need to be a collaborator (have write permissions) to be able to do that.
 
-- We will not change the `main` branch directly but
-we will submit a "pull request" (a **change proposal**) towards the `main` branch
-for **code review**.
+- The tool here is [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
-![](../img/contributing/propose-file-change.png)
+!!! example "Example with a salad repo"
 
-- After we click "Propose file change" we are taken to this form:
-  
-![](../img/contributing/pull-request-form.png)
+    - In this example the contributor will not change the `main` branch directly but
+submit a "pull request" (a **change proposal**) towards the `main` branch
+for **code review**. 
+    - You do this by just **changing the file at GitHub**
+    - Before committing/proposing file change you may preview the changes.
 
-- In there we verify the **source and target branch**, verify the **file changes**,
-  can edit the **title** and **description** of the "pull request" (change proposal)
-- After we have submitted the "pull request", one of our collaborators can review it
-- We can discuss and ask for changes before merging the changes "Merge pull request"
+    ![](../img/contributing/propose-file-change.png)
+
+    - After we click "Commit / change proposal" we are taken to this form:
+     
+    ![](../img/contributing/pull-request-form.png)
+
+    - In there we 
+        - verify the **source and target branch**, 
+        - verify the **file changes**, 
+        - can edit the **title** and **description** of the "pull request" (change proposal)
+    - After we have submitted the "pull request", one of our collaborators can review it
+    - We can discuss and ask for changes before merging the changes "Merge pull request"
 
 
 !!! Discussion
@@ -155,25 +170,7 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 ---
 
-**Step 3: Submit a small change via the web interface as external contributor**
-
-Submitting a change proposal as external contributor (we assume you are not added
-as "collaborator" and thus have no write-permissions to a repository) looks very similar
-to submitting a "pull request" to a repository with a protected `main` branch.
-Only this time you have no other choice than "Propose file change".
-
-Let's try this with one participant who has not been added as collaborator
-sharing screen:
-
-- Edit a file with the "pen" button
-- Edit the commit message and click green button "Propose file change"
-- This creates a **fork** of the repository (GitHub makes a copy of the original repository to your user space)
-- You can now still review the change before submitting it, green button "Create pull request"
-- Later you can remove the fork if you like
-
----
-
-**Step 4: Resolving a conflict**
+### Resolving a conflict
 
 **FIX**
 
@@ -188,6 +185,7 @@ sharing screen:
 has been modified in two **different** ways on the two branches.
 
 We can practice how a conflict looks and how to resolve it:
+
 - Two participants should send two "pull requests" (change proposals)
   branching from `main` changing the same line in two different ways
 
@@ -200,7 +198,7 @@ We can practice how a conflict looks and how to resolve it:
 ![](../img/contributing/conflict-pull-request.png)
 
 - We try to resolve the conflict via web
-- Choose the version that you wish to keep, remove conflict markers, "Mark as resolved" and commit the change
+- **Choose the version that you wish to keep**, remove conflict markers, "Mark as resolved" and commit the change
 
 ![](../img/contributing/conflict-resolution.png)
 
@@ -209,6 +207,49 @@ We can practice how a conflict looks and how to resolve it:
 >
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
+
+!!!- example "(Optional demo) Add to someone else's project"
+
+    - Can we easily add one or more planets?
+
+    - The importance of each planet should be determined by the distance and the mass of it. 
+        - The acceleration effect should proportional with MASS/distance^2
+        - That means that we can ignore small planets and/or far away planets
+    - Below, see a first sorted out table of mass of the planets and their approximate shortest distance to Earth.
+
+    |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
+    |----|---|---|---|
+    Venus| 0.815 | 0.72 | 0.28
+    March| 0.107 | 1.52 | 0.52
+    Jupiter| 318 | 5.2 | 4.2
+    Saturn| 95.2 | 9.54 | 8.54
+
+    - Adding a planet should be pretty straight-forward in our modular code!
+
+
+### Summary
+
+![Centralized layout](../img/centralized.svg)
+
+**Centralized layout**
+
+- **Red** is the repository on GitHub.
+- **Blue** is where all contributors work on their own computers.
+
+
+- Centralized workflow is often used for **remote collaborative work**.
+- `origin` refers to where you cloned from (but you can relocate it).
+- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
+- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
+
+
+
+
+!!! info "See also"
+
+    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
+
+
 
 
 ## How to contribute changes to somebody else’s project
@@ -239,7 +280,7 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 
 !!! info "See also"
 
-    
+    [Code Refinery's course](https://coderefinery.github.io/git-collaborative/forking-workflow/)
 
 ### Contributing very minor changes
 
@@ -257,25 +298,26 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 - If you are working on the fix, indicate it in the issue so that others know that somebody is working on it and who is working on it
 - Submit your fix as **pull request** or **merge request** which references/closes the issue
 
-!!!- example "(Optional demo) Add to someone else's project"
+### Example with Pull request
 
-    - Can we easily add one or more planets?
+- Submitting a change proposal as external contributor  looks very similar to submitting a "pull request" to a repository with a protected `main` branch.
+    - (we assume you are not added as "collaborator" and thus have no write-permissions to a repository)    
+- Only this time you have no other choice than **"Propose file change"**.
 
-    - The importance of each planet should be determined by the distance and the mass of it. 
-        - The acceleration effect should proportional with MASS/distance^2
-        - That means that we can ignore small planets and/or far away planets
-    - Below, see a first sorted out table of mass of the planets and their approximate shortest distance to Earth.
 
-    |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
-    |----|---|---|---|
-    Venus| 0.815 | 0.72 | 0.28
-    March| 0.107 | 1.52 | 0.52
-    Jupiter| 318 | 5.2 | 4.2
-    Saturn| 95.2 | 9.54 | 8.54
+!!! example "Demo with student"
 
-    - Adding a planet should be pretty straight-forward in our modular code!
+    **Example: Submit a small change via the web interface as external contributor**
 
-    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
+
+Let's try this with one participant who has not been added as collaborator
+sharing screen:
+
+- Edit a file with the "pen" button
+- Edit the commit message and click green button "Propose file change"
+- This creates a **fork** of the repository (GitHub makes a copy of the original repository to your user space **automatically**)
+- You can now still review the change before submitting it, green button "Create pull request"
+- Later you can remove the fork if you like
 
 
 !!! admonition "Cheat-sheet"
@@ -300,6 +342,10 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
   
 ???- question "quiz"
 
+
+## Goals
+
+- [ ] explain and evaluate the usefulness of git Pull Request with code review
 
 
 !!! admonition "Parts to be covered!"
