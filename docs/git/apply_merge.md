@@ -56,8 +56,12 @@ gitGraph
   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
   You may branch of from `main` or `develop` (if it exists).
   You may use the web interface (easiest!) or use the command line
-- On your local computer, switch to that branch, change the repo 
-  and push your changes online. Verify the changes are online
+- On your local computer, 
+   - update your repository
+   - switch to that branch
+   - change the repo 
+   - push your changes online
+- Verify the changes are online
 - On your local computer, switch to the `main` branch
 - Merge your topic branch to `main`
 - Delete your topic branch (i.e. the one with the unique name).
