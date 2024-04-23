@@ -549,55 +549,53 @@ More info...
 
 
 ## Meanwhile...  
-  
-````{type-along}
 
 **Back in main branch**
 - We spotted some unnecessary ``print`` lines in the main branch code.
-- Go to the main branch:
-```git
-git checkout main
-```
+
+!!! example "Demo or type-along"
+
+    - Go to the main branch:
+    ```git
+    git checkout main
+    ```
  
-- Let's remove the two print lines around row 80 in the second for-loop.
-- add and commit
+    - Let's remove the two print lines around row 80 in the second for-loop.
+    - add and commit
 
-```git
-git add planet.py
-git commit -m "rm print"  
-```
-
-````  
+    ```git
+    git add planet.py
+    git commit -m "rm print"  
+    ```
   
-- We can now check the history with a command that graphically tries to show the log with branches
+    - We can now check the history with a command that graphically tries to show the log with branches
 
-````{tip}
+!!! tip
 
-**An important alias**
+    **An important alias**
 
-We will now define an *alias* in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
+    - We will now define an *alias* in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
 
-```console
-$ git config --global alias.graph "log --all --graph --decorate --oneline"
-``` 
+    ```console
+    $ git config --global alias.graph "log --all --graph --decorate --oneline"
+    ``` 
   
-This will enable you to use ``git graph`` for short
-````  
+    This will enable you to use ``git graph`` for short
 
-- It will give you something like this:
+
+    - It will give you something like this:
 
   
-```git 
+    ```git 
   
-$ git graph
-* 413d0e3 (HEAD -> master) rm printing output
-| * fc007d4 (modular) modular code
-|/
-* 5434395 add Jupiter
-* f3c1fb5 planet.py
-...
-```
-
+    $ git graph
+    * 413d0e3 (HEAD -> master) rm printing output
+    | * fc007d4 (modular) modular code
+    |/
+    * 5434395 add Jupiter
+    * f3c1fb5 planet.py
+    ...
+    ```
   
 ## Merging
 
