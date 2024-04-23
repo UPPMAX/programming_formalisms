@@ -91,7 +91,7 @@ Study                     | Extra time | Effect
 
     -   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
     -   Work on the main branch
-    -   Work in a file called `learners/[your_name]/is_zero.py`, where `[your_name]` is the person with first name first in alphabet
+    -   Work in a file called `learners/[your_name]/[class_name].py`, where `[your_name]` is the person with first name first in alphabet
     -   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
 !!! note "Social rules"
@@ -103,7 +103,7 @@ Study                     | Extra time | Effect
 
 ### Exercise 0: `is_zero`
 
-!!! note "Learning objectives"
+???- note "Learning objectives"
 
     - First practice of TDD by re-doing a function that has been developed
 
@@ -118,6 +118,34 @@ showed at 'Exercises'.
       - Returns `False` if the input is not zero
       - :warning: Gives an error when the input is not a number
 
+???- info "Answer"
+
+    Note that the practice of TDD is the goal of the exercise,
+    not the exact outcome. 
+
+    Here is a possible solution:
+
+    ```python
+    def is_zero(x):
+        """Determines if the input is one integer that is zero"""
+        if not isinstance(x, int):
+            raise TypeError("'x' must be of type int")
+        if x == 0:
+            return True
+        return False
+
+    assert is_zero.__doc__
+    assert is_zero(0)
+    assert not is_zero(1)
+
+    has_thrown = False
+    try:
+        is_zero("nonsense")
+    except TypeError:
+        has_thrown = True
+    assert has_thrown
+    ```
+
 ???- question "Need a video?"
 
     Here are two videos that show how to develop `is_zero` for Python and R:
@@ -128,11 +156,13 @@ showed at 'Exercises'.
 
 ### Exercise 1: `is_even`
 
--   Time: 30 mins
+???- note "Learning objectives"
+
+    - Practice of TDD by developing a slightly more complicated function
 
 Develop a function called `is_even`:
 
-!!! note "`is_even`"
+???- note "`is_even`"
 
     - Function name: `is_even`
     - Output:
@@ -140,13 +170,51 @@ Develop a function called `is_even`:
       - Returns `False` if the input is not even
       - :warning: Gives an error when the input is not a number
 
+???- info "Answer"
+
+    Note that the practice of TDD is the goal of the exercise,
+    not the exact outcome. 
+
+    Here is a possible solution:
+
+    ```python
+    def is_even(x):
+        if not isinstance(x, int):
+            raise TypeError("'x' must be of type int")
+        """Determine if the input is one integer that is even"""
+        return x % 2 == 0
+
+    assert is_even.__doc__
+    assert is_even(2)
+    assert not is_even(1)
+
+    # 'is_even("nonsense")' throws a TypeError 
+    # because of the modulo operator
+
+    has_thrown = False
+    try:
+        is_even(0.0)
+    except TypeError:
+        has_thrown = True
+    assert has_thrown
+    
+    ```
+
+???- question "Need a video?"
+
+    Here are a videos that show how to develop `is_even` for Python:
+
+    - [YouTube](https://youtu.be/ZcgJEdaRRpc)
+
 ### Exercise 2: `is_odd`
 
--   Time: 30 mins
+???- note "Learning objectives"
+
+    - Practice of TDD by developing a slightly more complicated function
 
 Develop a function called `is_odd`:
 
-!!! note "`is_odd`"
+???- note "`is_odd`"
 
     - Function name: `is_odd`
     -   Output:
@@ -156,19 +224,91 @@ Develop a function called `is_odd`:
 
 Consider using the `is_even` function.
 
+???- info "Answer"
+
+    Note that the practice of TDD is the goal of the exercise,
+    not the exact outcome. 
+
+    Here is a possible solution:
+
+    ```python
+    def is_even(x):
+        """Determine if the input is one integer that is even"""
+        if not isinstance(x, int):
+            raise TypeError("'x' must be of type int")
+        return x % 2 == 0
+
+    assert is_even.__doc__
+    assert is_even(2)
+    assert not is_even(1)
+
+    # 'is_even("nonsense")' throws a TypeError 
+    # because of the modulo operator
+
+    has_thrown = False
+    try:
+        is_even(0.0)
+    except TypeError:
+        has_thrown = True
+    assert has_thrown
+
+    def is_odd(x):
+        """Determine if the input is one integer that is odd"""
+        return not is_even(x)
+
+    assert is_odd.__doc__
+    assert is_odd(1)
+
+    # Already passes, consider not putting it in
+    # assert not is_odd(2)
+
+    # Already passes, consider not putting it in
+    # has_thrown = False
+    # try:
+    #     is_odd(0.0)
+    # except TypeError:
+    #     has_thrown = True
+    # assert has_thrown
+    ```
+
+???- question "Need a video?"
+
+    Here is a videos that show how to develop `is_odd` for Python:
+
+    - [YouTube](https://youtu.be/BxyIsJw3E14)
+
 ### Exercise 3: `is_probability`
 
--   Time: 30 mins
+???- note "Learning objectives"
 
-Develop a function called `is_probability`.
+    - Practice of TDD by developing a slightly more complicated function
 
-!!! note "`is_probability`"
+Develop a function called `is_prime`.
 
-    - Function name: `is_probability`
+!!! note "`is_prime`"
+
+    - Function name: `is_prime`
     - Output:
-      - Returns `True` if the input is in range `[0.0, 1.0]`
-      - Returns `False` if the input is outside that range
-      - :warning: Gives an error when the input is not a floating point number
+      - Returns `True` if the input is a prime`
+      - Returns `False` if the input is not a prime
+      - :warning: Gives an error when the input is not a number
+
+???- info "Answer"
+
+    Note that the practice of TDD is the goal of the exercise,
+    not the exact outcome. 
+
+    Here is a possible solution:
+
+    ```python
+    # Solution here
+    ```
+
+???- question "Need a video?"
+
+    Here is a videos that show how to develop `is_prime` for Python:
+
+    - [YouTube](https://youtu.be/qVtHieuwM1M)
 
 ## Conclusion
 
@@ -184,16 +324,10 @@ Develop a function called `is_probability`.
 -   We do not test the code for style
 -   We should consider using a testing framework
 
-## Course material
-
- * Lecture slides:
-   * [PDF](tdd_lecture.pdf) 
-   * [qmd](tdd_lecture/tdd_lecture.qmd)
-
 ## Videos
 
-Title                        |Length   |Download                                                                |YouTube
------------------------------|---------|---------------------------------------------------------
+Title                        |Length   | YouTube
+-----------------------------|---------|----------------------------------------
 TDD 1/3: TDD                 |  5 mins | [YouTube](https://youtu.be/gw_4jVrkDok)
 TDD 2/3: `is_zero`           | 16 mins | [YouTube](https://youtu.be/VddlrNOeodg)
 TDD 3/3: Introduce `is_even` |  3 mins | [YouTube](https://youtu.be/7V-zE__S6M8)
@@ -202,21 +336,6 @@ TDD 2: introduce `is_odd`    |  7 mins | [YouTube](https://youtu.be/f4MCy9f8oAM)
 Solution `is_odd`            |  7 mins | [YouTube](https://youtu.be/BxyIsJw3E14)
 TDD 3: TDD bottom line       |  4 mins | [YouTube](https://youtu.be/633qwj2DUNc)
 Solution `is_prime`          |  9 mins | [YouTube](https://youtu.be/qVtHieuwM1M)
-
-## Videos on GitHub workflows
-
-  1. [Modify README on main branch using GitHub web interface](https://youtu.be/xBH2xZoKof4?si=ohdG6-y8lzarSqIa)
-  2. [Modify README on topic branch using GitHub web interface](https://youtu.be/vPyHWsnbXw8?si=XjD6a3WDY44I97Se)
-  3. [Modify README on main branch using git](https://youtu.be/A85wZTiCMTc?si=oUyrg_53gVlqEanb)
-  4. [Modify README on topic branch using git](https://youtu.be/ZkfjAfu9Wo4?si=myBTkJ179n9fXHrS)
-  5. [Merge topic branch to develop yourself](https://youtu.be/1fKdU1m3Uug?si=qox0K-EdZ-tDpcRY)
-  6. [Merge topic branch to develop with a code review](https://youtu.be/VexyXysb-BM?si=uCOuqCVuZ_ylsUtI)
-
-## Links
-
- * [this workshop gives a general idea already](https://github.com/richelbilderbeek/nlseb_tdd_20210420)
- * `https://leetcode.com/problemset/all/`: many simple questions
- * [Project Euler](https://projecteuler.net/archives): plenty of programming problems
 
 ## References
 
