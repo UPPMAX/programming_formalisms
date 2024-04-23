@@ -1,4 +1,4 @@
-Understand git branches and merging
+## Understand git branches and merging
 
 !!! questions
 
