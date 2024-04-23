@@ -637,6 +637,13 @@ More info...
     - ``git push``
 
 
+### On GitHub
+
+- Let's view the branches on Github!
+- Go to _Insights_ in the top menu of the `planet-bjorn` repo and then go to _Network_ in side-bar
+
+
+
 ## Summary
 
 - Now we know how to save snapshots:
@@ -666,7 +673,6 @@ $ git merge
 ```
 
 **Overview workflow**
-
 
 ![](../img/git_branches.png)
 
