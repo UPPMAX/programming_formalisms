@@ -31,7 +31,6 @@
 
 See the exercise procedure [here](../misc/exercise_procedure.md).
 
-
 ### Exercise 1: create, switch and delete a `git` branch
 
 !!!- info "Learning objectives"
@@ -51,7 +50,7 @@ gitGraph
     commit id: "Another commit"
 ```
 
-- For our GitHub repo, create a branch with your first name that is
+- For our shared GitHub repository, create a branch with your first name that is
   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
   You may branch of from `main` or `develop` (if it exists).
   You may use the web interface (easiest!) or use the command line
@@ -65,5 +64,3 @@ gitGraph
 ## Links
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-
-
