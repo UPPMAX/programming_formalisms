@@ -50,13 +50,13 @@ Testing *helps* ensure the correctness of code.
 
 No testing framework:
 
-```{python}
+```python
 assert 1 + 1 == 2
 ```
 
 Using `unittest`:
 
-```{python}
+```python
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -70,13 +70,13 @@ class TestSmall(unittest.TestCase):
 
 No testing framework:
 
-```{python}
+```python
 assert 1 + 1 == 2
 ```
 
 Using `unittest`:
 
-```{python}
+```python
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -90,7 +90,7 @@ class TestSmall(unittest.TestCase):
 
 No testing framework:
 
-```{python}
+```python
 def raise_error():
     raise RunType("Raise an error!")
 
@@ -104,7 +104,7 @@ assert has_raised
 
 Using `unittest`:
 
-```{python}
+```python
 import unittest
 
 class TestSmall(unittest.TestCase):
@@ -113,6 +113,113 @@ class TestSmall(unittest.TestCase):
 ```
 
 :smile: here it pays off.
+
+## File setup
+
+A testing framework needs files to be in standarized places.
+
+One can search the web for this, 
+or [use an existing project](https://github.com/programming-formalisms/programming_formalisms_example_project)
+as reference.
+
+For the `unittest` framework, the actual functions are put in the
+`src/[package_name]` folder, for example `src/bacsim/richel_utils.py`.
+
+???- question "How does such a file look like?"
+
+    Here is how such a file could look like:
+
+    ```python
+    """Richel's utility functions"""
+
+    def is_zero(x):
+        """Determine if `x` is zero.
+
+        If `x` is not a number, a `TypeError` is raised.
+
+        Returns `True` if `x` is zero
+        """
+        if not isinstance(x, (int, float)):
+            msg = "'number' must be a number. "
+            raise TypeError(
+                msg,
+                "Actual type of 'number': ", type(x),
+            )
+        return x == 0
+    ```
+
+The testing functions are put in the
+`tests` folder and all files have `test_` added.
+For example, the file to test `src/bacsim/richel_utils.py`
+is called `tests/test_richel_utils.py`.
+
+???- question "How does such a file look like?"
+
+    Here is how such a file could look like:
+
+    ```python
+    """Tests all function in src.bacsim.richel_utils."""
+    import unittest
+
+    from src.bacsim.richel_utils import is_zero
+
+    class TestRichelUtils(unittest.TestCase):
+
+        """Class to test the functions in src.bacsim.richel_utils."""
+
+        def test_is_zero(self):
+            """Test 'is_zero'."""
+            self.assertIsNotNone(is_zero.__doc__)
+            self.assertTrue(is_zero(0))
+            self.assertTrue(is_zero(0.0))
+            self.assertFalse(is_zero(1))
+            self.assertRaises(TypeError, is_zero, {1, 2})
+            self.assertRaises(TypeError, is_zero, "I am a string")
+    ```
+
+## Running a test
+
+???- question "Get error `ModuleNotFoundError: No module named 'src'`?"
+
+    You will get the error `ModuleNotFoundError: No module named 'src'`
+    when you click 'Run' on your file with tests.
+
+    ![](running_a_test_script_normally_fails_annotated.png)
+
+    > Clicking on 'Run' (see the red rectangle at the top-left) for a file that has tests
+    > will give the error `ModuleNotFoundError: No module named 'src'`.
+    > Click the green 'Testing' tab at the right instead.
+
+    Instead, click on the green 'Testing' tab at the right.
+
+Click on the 'Testing' tab (with the erlenmeyer) at the right.
+
+If you do this for the first time, you will see this:
+
+![](testing_tab_first_click.png)
+
+Click on 'Configure tests'.
+
+![](testing_tab_select_framework.png)
+
+Select 'unittest Standard Python testing framework'
+
+![](testing_tab_select_test_folder.png)
+
+Select `tests` as the testing folder.
+
+![](testing_tab_select_test_file_pattern.png)
+
+Select `test_*.py` as the test file pattern.
+
+![](testing_tab_tests_present.png)
+
+Now the tests are present at the left side in a folded up state.
+Unfold these.
+
+![](testing_tab_tests_present_and_run.png)
+
+Clicking on the 'Run'/'Play' button to run the tests.
 
 ## Exercises
 
