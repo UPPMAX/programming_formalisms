@@ -1393,3 +1393,19 @@ pastable
 rebase
 
 acyclic
+Ablex
+Belliveau
+Bjarne
+CiteSeerX
+CppCoreGuidelines
+Flor
+Hutchins
+isocpp
+Jürgen
+Kessler
+Koenemann
+Moher
+Richèl's
+unstaged
+
+
