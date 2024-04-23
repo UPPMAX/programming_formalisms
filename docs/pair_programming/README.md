@@ -37,10 +37,11 @@
       axisFormat %s
       Introduction : intro, 0, 5s
       Theory 1: theory_1, after intro, 5s
-      Exercise 1: crit, exercise_1, after theory_1, 10s
+      Exercise 1: crit, exercise_1, after theory_1, 15s
       Feedback 1: feedback_1, after exercise_1, 5s
       Theory 2: theory_2, after feedback_1, 5s
-      Exercise 2: crit, exercise_2, after theory_2, 15s
+      Exercise 2: crit, exercise_2, after theory_2, 10s
+      Exercise 2 after the break: crit, after exercise_2, 5s
     ```
 
     ```mermaid
@@ -48,7 +49,8 @@
       title Lesson plan pair programming 2
       dateFormat X
       axisFormat %s
-      Feedback 2: feedback_2, 0, 10s
+      Exercise 2: exercise_2, 0, 5s
+      Feedback 2: feedback_2, after exercise_2, 10s
       Theory 3: theory_3, after feedback_2, 5s
       Exercise 3: crit, exercise_3, after theory_3, 10s
       Feedback 3: feedback_3, after exercise_3, 5s
@@ -98,7 +100,7 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
     - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
     - [Martin Fowler's page on Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
     - (if with three: [Codecademy's page on Pair Programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/))
-- Together, set a timer for 6 minutes
+- Together, set a timer for 10 minutes
 - Individually, answer the questions within the time limit
 - Together, write down a shared answer on the GitHub project repository
   with path `learners/[a teammember's name]/pair_programming.md`
