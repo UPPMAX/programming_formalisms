@@ -358,22 +358,24 @@ More info...
 
 ## Let's make our code modular (test in branch)
 
+- We condiser the Jupiter branch dead-end
+- Let's instead start from the main branch and create a "modularity" 
 
-???- question "Demo: git branch"
+???- example "Demo or Type-along: git branch 2"
 
-
-``````{challenge} Make four modules (10-15 minutes in BO)
-- First make a branch called ``modularity`` and go to that branch
-```console
-$ git checkout -b modularity    # create branch, switch to it
-$ git branch                    # check that we are on the new branch
-```
-- We can now do our changes
-- We will make four files
-  - ``planet_main.py``, containing an overview e.g. the main program
-  - ``planet_data.py``, containing general constants, and planetary parameters
-  - ``planet_iter.py``, containing the equation of motion for the planets
-  - ``planet_functions.py``, containing eccentricity calculations and a plot function
+     **Make four modules**
+     
+    - First make a branch called ``modularity`` and go to that branch
+    ```console
+    $ git checkout -b modularity    # create branch, switch to it
+    $ git branch                    # check that we are on the new branch
+    ```
+    - We can now do our changes
+    - We will make four files
+        - ``planet_main.py``, containing an overview e.g. the main program
+        - ``planet_data.py``, containing general constants, and planetary parameters
+        - ``planet_iter.py``, containing the equation of motion for the planets
+        - ``planet_functions.py``, containing eccentricity calculations and a plot function
   
 ````{solution} planet_main.py
 ```python
