@@ -309,7 +309,36 @@ If needed, one can find inspiration at the section [Other functions](#other-func
 
 Everyone is the owner of a class.
 
-In pairs, develop a function using TDD using the `unittest` framework.
+In pairs, develop functionality for your classes
+using TDD using the `unittest` framework.
+
+Use the same setup as exercise 2, except one uses 
+a branch called after the owner of each class.
+For example, Anna's class is developed on the `anna` branch
+and Sven's class on the `sven` branch.
+
+'develop functionality' is still hard, as we have not
+discussed function design, nor class design.
+
+However, we can:
+
+- ensure the class is in a file called `[class_name].py`,
+  e.g. `coordinat.py`
+- ensure the tests are in a file called `test_[class_name].py`,
+  e.g. `test_coordinat.py`, so that `unittest` can actually find it
+- write a minimal test is that one can create a class object:
+
+```python
+class TestCoordinat(unittest.TestCase):
+    def test_can_create(self):
+        Coordinat c
+```
+
+- write as much tests as the pair can come up with.
+  In case of conflict what is good architecture, 
+  the class owner decides. Again, this is hard, 
+  as we have not
+  discussed function design, nor class design.
 
 ## Other functions
 
