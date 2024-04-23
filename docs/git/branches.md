@@ -218,7 +218,7 @@ $ git branch -d new-feature    # remove branch
     - **Do not run because we changed from 2 years simulation time to 5000 years!**
     - The output should look like this at least.
 
-    ![](../img/planet_earthJupiter.png)
+    ![Earth Jupiter](../img/planet_earthJupiter.png)
 
     - Do **not** stage (add) yet!
 
