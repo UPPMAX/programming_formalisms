@@ -361,7 +361,7 @@ More info...
 - We condiser the Jupiter branch dead-end
 - Let's instead start from the main branch and create a "modularity" 
 
-???- example "Demo or Type-along: git branch 2"
+!!! example "Demo or Type-along: git branch 2"
 
      **Make four modules**
      
@@ -377,228 +377,227 @@ More info...
         - ``planet_iter.py``, containing the equation of motion for the planets
         - ``planet_functions.py``, containing eccentricity calculations and a plot function
   
-````{solution} planet_main.py
-```python
-#planet with Jupiter
-import numpy as np
-from  planet_functions import *
-from  planet_data import *
-from  planet_iter import *
-
-L=400 #number of years to simulate
-
-G,AU,M,day,year=general_constants()
-
-# Get the mass and the initial position of Earth
-x,y,u,v,mj=init_Earth(AU,year,L)
-
-# Get the mass and the initial position of Jupiter
-xJ,yJ,uJ,vJ,mJ=init_Jupiter(AU,year,L)
-
-for i in range(1,365*L):    
-    #Counter for each 100 years
-    if i % 36500==0:
-        print(i/365)
-        
-    # New positions of Earth
-    x[i]=x[i-1]+day*u;
-    y[i]=y[i-1]+day*v;
+    ???- "planet_main.py"
     
-    # New positions of Jupiter
-    xJ[i]=xJ[i-1]+day*uJ;
-    yJ[i]=yJ[i-1]+day*vJ;
+        ```python
+        #planet with Jupiter
+        import numpy as np
+        from  planet_functions import *
+        from  planet_data import *
+        from  planet_iter import *
+
+        L=400 #number of years to simulate
+
+        G,AU,M,day,year=general_constants()
+
+        # Get the mass and the initial position of Earth
+        x,y,u,v,mj=init_Earth(AU,year,L)
+
+        # Get the mass and the initial position of Jupiter
+        xJ,yJ,uJ,vJ,mJ=init_Jupiter(AU,year,L)
+
+        for i in range(1,365*L):    
+            #Counter for each 100 years
+            if i % 36500==0:
+                print(i/365)
+
+            # New positions of Earth
+            x[i]=x[i-1]+day*u;
+            y[i]=y[i-1]+day*v;
+
+            # New positions of Jupiter
+            xJ[i]=xJ[i-1]+day*uJ;
+            yJ[i]=yJ[i-1]+day*vJ;
+
+            # acceleration of Earth due to Sun
+            axS, ayS = acc_effect(G,M,x[i],y[i])    
+
+            # acceleration of Earth due to Jupiter
+            dxJ=x[i]-xJ[i];
+            dyJ=y[i]-yJ[i];
+            axEJ, ayEJ = acc_effect(G,mJ,dxJ,dyJ)  
+
+            # net effect on velocity of Earth
+            ax=axS+axEJ;
+            ay=ayS+ayEJ;
+            u=u+ax*day;
+            v=v+ay*day;
+
+            # new velocity of Jupiter
+            uJ,vJ = planet_motion(G,M,xJ[i],yJ[i],uJ,vJ,day)
+
+
+        l=100
+        e=eccentricity(x,y,L,l)
+
+        figure_orbit(x,y,xJ,yJ,e)
+
+        ```
     
-    # acceleration of Earth due to Sun
-    axS, ayS = acc_effect(G,M,x[i],y[i])    
-        
-    # acceleration of Earth due to Jupiter
-    dxJ=x[i]-xJ[i];
-    dyJ=y[i]-yJ[i];
-    axEJ, ayEJ = acc_effect(G,mJ,dxJ,dyJ)  
+    ???- "planet_data.py"
     
-    # net effect on velocity of Earth
-    ax=axS+axEJ;
-    ay=ayS+ayEJ;
-    u=u+ax*day;
-    v=v+ay*day;
+        ```python
+        import numpy as np
 
-    # new velocity of Jupiter
-    uJ,vJ = planet_motion(G,M,xJ[i],yJ[i],uJ,vJ,day)
+        def general_constants():
+        #  global G, M, AU, day, year
+          G=6.6743e-11
+          AU=149.597871e9
+          M=1.9891e30
+          day=86400;
+          year=31556926;
 
+          return G,AU,M,day,year
+
+        def init_Earth(AU,year,L):
+
+          mj=5.97219e24
+          AU1=150.8e9
+
+          x0=AU1;
+          v0=AU*2*np.pi/year;
+          y0=0;
+          u0=0;
+          x=np.zeros(365*L, dtype=float);
+          y=np.zeros(365*L, dtype=float);
+          x[0]=x0;
+          y[0]=y0;
+          u=u0;
+          v=v0;
+
+          return x,y,u,v,mj
+
+        def init_Jupiter(AU,year,L):
+          dJ=5.203*AU
+          mJ=1.899e27
+          v0J=dJ*2*np.pi/(11.86*year);
+
+          x0J=dJ;
+          y0J=0;
+          u0J=0;
+          xJ=np.zeros(365*L, dtype=float);
+          yJ=np.zeros(365*L, dtype=float);
+          xJ[0]=x0J;
+          yJ[0]=y0J;
+          uJ=u0J;
+          vJ=v0J;
+
+          return xJ,yJ,uJ,vJ,mJ
+
+        ```
+
+    ???- "planet_iter.py"
     
-l=100
-e=eccentricity(x,y,L,l)
+        ```python
+        import numpy as np
 
-figure_orbit(x,y,xJ,yJ,e)
+        def acc_effect(G,M,x,y):
 
-```
-```` 
+            ax=-G*M/(abs(x**2+y**2)**[3/2])*x;
+            ay=-G*M/(abs(x**2+y**2)**[3/2])*y;
 
-````{solution} planet_data.py
-```python
-import numpy as np
+            return ax, ay
 
-def general_constants():
-#  global G, M, AU, day, year
-  G=6.6743e-11
-  AU=149.597871e9
-  M=1.9891e30
-  day=86400;
-  year=31556926;
-  
-  return G,AU,M,day,year
+        def planet_motion(G,M,x,y,u,v,day):
 
-def init_Earth(AU,year,L):
+            ax=-G*M/(abs(x**2+y**2)**[3/2])*x;
+            ay=-G*M/(abs(x**2+y**2)**[3/2])*y;
+            u=u+ax*day;
+            v=v+ay*day;
 
-  mj=5.97219e24
-  AU1=150.8e9
+            return u, v
+
+        ```
+
+    ???- "planet_functions.py"
     
-  x0=AU1;
-  v0=AU*2*np.pi/year;
-  y0=0;
-  u0=0;
-  x=np.zeros(365*L, dtype=float);
-  y=np.zeros(365*L, dtype=float);
-  x[0]=x0;
-  y[0]=y0;
-  u=u0;
-  v=v0;
-  
-  return x,y,u,v,mj
+        ```python
+        import numpy as np
+        import matplotlib.pyplot as plt 
 
-def init_Jupiter(AU,year,L):
-  dJ=5.203*AU
-  mJ=1.899e27
-  v0J=dJ*2*np.pi/(11.86*year);
+        def eccentricity(x,y,L,l):
 
-  x0J=dJ;
-  y0J=0;
-  u0J=0;
-  xJ=np.zeros(365*L, dtype=float);
-  yJ=np.zeros(365*L, dtype=float);
-  xJ[0]=x0J;
-  yJ[0]=y0J;
-  uJ=u0J;
-  vJ=v0J;
-  
-  return xJ,yJ,uJ,vJ,mJ
+          rj=(x**2+y**2)**.5
+          e=np.zeros(int(L/l), dtype=float);
+          for i in range(0,int(L/l)):
+            win=range(i*l*365,(i+1)*l*365)
+            a=max(rj[win])
+            b=min(rj[win])
+            e[i]=1-2/(a/b+1)
+          return e
 
-```
-```` 
+        def figure_orbit(x,y,xJ,yJ,e):
 
-````{solution} planet_iter.py
-```python
-import numpy as np
+          fig=plt.figure(1,figsize=(12,5))
+          ax=fig.add_subplot(1,2,1)
+          ax.plot(x,y)
+          ax.plot(xJ,yJ)
+          ax.plot (0,0,'o')
+          ax.set_aspect('equal', 'box')
 
-def acc_effect(G,M,x,y):
+          ax=fig.add_subplot(1,2,2)
+          ax.plot(range(0,len(e)),e)
 
-    ax=-G*M/(abs(x**2+y**2)**[3/2])*x;
-    ay=-G*M/(abs(x**2+y**2)**[3/2])*y;
+          figname='../Figures/planet_earthJupiter2.png'
 
-    return ax, ay
+          plt.savefig(figname, dpi=100, bbox_inches='tight')
 
-def planet_motion(G,M,x,y,u,v,day):
-        
-    ax=-G*M/(abs(x**2+y**2)**[3/2])*x;
-    ay=-G*M/(abs(x**2+y**2)**[3/2])*y;
-    u=u+ax*day;
-    v=v+ay*day;
-    
-    return u, v
-    
-```
-````
+        ```
+ 
+    - add and commit, possibly several times
 
-````{solution} planet_functions.py
-```python
-import numpy as np
-import matplotlib.pyplot as plt 
-
-def eccentricity(x,y,L,l):
-
-  rj=(x**2+y**2)**.5
-  e=np.zeros(int(L/l), dtype=float);
-  for i in range(0,int(L/l)):
-    win=range(i*l*365,(i+1)*l*365)
-    a=max(rj[win])
-    b=min(rj[win])
-    e[i]=1-2/(a/b+1)
-  return e
-
-def figure_orbit(x,y,xJ,yJ,e):
-
-  fig=plt.figure(1,figsize=(12,5))
-  ax=fig.add_subplot(1,2,1)
-  ax.plot(x,y)
-  ax.plot(xJ,yJ)
-  ax.plot (0,0,'o')
-  ax.set_aspect('equal', 'box')
-
-  ax=fig.add_subplot(1,2,2)
-  ax.plot(range(0,len(e)),e)
-
-  figname='../Figures/planet_earthJupiter2.png'
-
-  plt.savefig(figname, dpi=100, bbox_inches='tight')
-
-```
-```` 
-  
-- add and commit, possibly several times
-
-``````
 
 
 ## Meanwhile...  
-  
-````{type-along}
 
 **Back in main branch**
 - We spotted some unnecessary ``print`` lines in the main branch code.
-- Go to the main branch:
-```git
-git checkout main
-```
+
+!!! example "Demo or type-along"
+
+    - Go to the main branch:
+    ```git
+    git checkout main
+    ```
  
-- Let's remove the two print lines around row 80 in the second for-loop.
-- add and commit
+    - Let's remove the two print lines around row 80 in the second for-loop.
+    - add and commit
 
-```git
-git add planet.py
-git commit -m "rm print"  
-```
-
-````  
+    ```git
+    git add planet.py
+    git commit -m "rm print"  
+    ```
   
-- We can now check the history with a command that graphically tries to show the log with branches
+    - We can now check the history with a command that graphically tries to show the log with branches
 
-````{tip}
+!!! tip
 
-**An important alias**
+    **An important alias**
 
-We will now define an *alias* in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
+    - We will now define an *alias* in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
 
-```console
-$ git config --global alias.graph "log --all --graph --decorate --oneline"
-``` 
+    ```console
+    $ git config --global alias.graph "log --all --graph --decorate --oneline"
+    ``` 
   
-This will enable you to use ``git graph`` for short
-````  
+    This will enable you to use ``git graph`` for short
 
-- It will give you something like this:
+
+    - It will give you something like this:
 
   
-```git 
+    ```git 
   
-$ git graph
-* 413d0e3 (HEAD -> master) rm printing output
-| * fc007d4 (modular) modular code
-|/
-* 5434395 add Jupiter
-* f3c1fb5 planet.py
-...
-```
+    $ git graph
+    * 413d0e3 (HEAD -> master) rm printing output
+    | * fc007d4 (modular) modular code
+    |/
+    * 5434395 add Jupiter
+    * f3c1fb5 planet.py
+    ...
+    ```
 
+**TODO** Make a git graph in mermaid
   
 ## Merging
 
@@ -610,20 +609,19 @@ $ git graph
 
 ???- question "Demo: git merge"
 
-???- question "quiz"
-
-
-
 !!! example "Merge into main"
 
     - once all features are ready, switch to main!
-    ```console
+    
+    ```git
     $ git checkout main    # switch to main branch
     $ git branch           # check that we are on main branch
     $ git merge  modularity          # merge modularity into main
     ```
     - let's now check the graphical view:
-  
+
+    **TODO** update git graph below!
+    
     ```git
     $ git graph
     *   dc3f83f (HEAD -> main) modular
@@ -633,8 +631,8 @@ $ git graph
     |/
     * 5434395 add Jupiter
     * f3c1fb5 planet.py
-     
     ```
+
     - push to GitHub
     - ``git push``
 
@@ -643,7 +641,7 @@ $ git graph
 
 - Now we know how to save snapshots:
 
-```console
+```git
 $ git add <file(s)>
 $ git commit
 ```
@@ -651,7 +649,7 @@ $ git commit
 - And that is what we do as we program.
 - Other very useful commands are these:
 
-```console
+```git
 $ git init    # initialize new repository
 $ git add     # add files or stage file(s)
 $ git commit  # commit staged file(s)
@@ -668,12 +666,12 @@ $ git merge
 ```
 
 **Overview workflow**
+
+
 ![](../img/git_branches.png)
 
 
 ???- question "quiz"
-
-
 
 !!! admonition "Parts to be covered!"
 
