@@ -186,7 +186,7 @@ gitGraph
     git pull
     ```
 
-???- question "Enjoy a video?"
+???- question "Prefer a video?"
 
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
 
@@ -205,18 +205,41 @@ gitGraph
     checkout anna
     commit id: "Modify the file"
     checkout main
-    branch sven
-    checkout sven
-    commit id: "Modify the file too"
     checkout main
-    commit id: "Another commit"
-    merge sven
+    commit id: "Modify the file too"
     checkout main
     merge anna
     commit id: "End"
 ```
 
-- Create a merge conflict
+> An example picture of how to create a merge conflict.
+
+- Create a merge conflict between two branches, e.g. a topic branch
+  and the main branch. You can do so by creating random commits
+  on both branches and merge. Alternatively, the figure above
+  shows the minimal git branching history to do so.
+
+???- info "Answers"
+
+    Here, I will replay the figure above
+
+    - in GitHub, create a branch called `anna`
+    - on your local computer, `git pull`, then `git checkout anna`
+    - on your local computer, modify a file, e.g. add the line `Anna was here`
+      at the bottom of `README.md`. Then do `git add .`, 
+      `git commit -m "Anna was here"` and `git push`.
+      Do not merge braches yet, else there will be no merge conflicts!
+    - on your local computer, `git checkout main`
+    - on your local computer, modify a file, e.g. add the line `main person was here`.
+      Then do `git add .`, `git commit -m "main person was here"` and `git push`.
+    - To generate the merge conflict, merge `anna` into `main`, using `git merge main`.
+      You will get a clear error :-)
+    - Modify the file to have the texts merged.
+      Then do `git add .`, `git commit -m "Fixed merge conflict"` and `git push`.
+
+???- question "Enjoy a video?"
+
+    You can find a video [here](https://youtu.be/BSi9nFhlgwM)
 
 ### Exercise 3: practice code review
 
