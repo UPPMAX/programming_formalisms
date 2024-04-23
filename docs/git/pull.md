@@ -15,8 +15,6 @@
 
       - How to contribute
 
-
-
 ???- info "Learning objectives of 'Deployment'"
 
     - explain and evaluate the usefulness of git Pull Request with code review
@@ -46,15 +44,11 @@
 
 ???- question "Demo with Richel: Add to someone else's project (another planet)"
 
-???- question "discussion"
-
-???- question "quiz"
-
 
 
 ## GitHub
 
-**Let's go back to GitHub and collaboration for now!*
+**Let's go back to GitHub and collaboration for now!**
 
 
 There are two more ways to create “copies” of repositories into your user space:
@@ -62,25 +56,6 @@ There are two more ways to create “copies” of repositories into your user sp
 - A repository can be marked as **template** and new repositories can be **generated** from it, like using a cookie-cutter. The newly created repository will start with a new history, only one commit, and not inherit the history of the template.
 - You can **import** a repository from another hosting service or web address. This will preserve the history of the imported project.
 
-!!! admonition "Cheat-sheet"
-
-    **Commits, branches, repositories, forks, clones**
-
-    - **repository**: The project, contains all data and history (commits, branches, tags).
-    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-    - **branch**: Independent development line, often we call the main development line `main` or `main`.
-    - **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque) that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
-    - **cloning**: Copying the whole repository to your laptop - the first time.
-        - It is not necessary to download each file one by one.
-        - good within a group  
-    - **forking**: Taking a copy of a repository (which is typically not yours)
-        - our copy (fork) stays on GitHub and you can make changes to your copy.
-        - better for contribution to other's project
-    - `git clone` copies everything: all commits and all branches.
-    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
-    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
-    - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
-    - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
 ## Different workflows
 
@@ -116,6 +91,13 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 ### Contributing to existing repositories using pull requests
 Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
 
+- License: Creative Commons Attribution 4.0 International
+    - Permits almost any use subject to providing credit and license notice.
+    - Frequently used for media assets and educational materials.
+    - The most common license for Open Access scientific publications.
+    - Not recommended for software.
+
+
 - **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
 - Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
@@ -130,11 +112,9 @@ single-person repository in the previous episodes.
 
 - **Step 2: Submit a small change via the web interface as collaborator**
 
-In the last episodes we learned how to directly commit changes either via web
-or via the desktop and you need to be a collaborator (have write permissions)
-to be able to do that.
+- We learned how to directly commit changes either via web or via the desktop and you need to be a collaborator (have write permissions) to be able to do that.
 
-In this exercise we will not change the `main` branch directly but
+- We will not change the `main` branch directly but
 we will submit a "pull request" (a **change proposal**) towards the `main` branch
 for **code review**.
 
@@ -160,15 +140,15 @@ for **code review**.
 
 ---
 
-To make sure that *all* changes of the `main` branch are reviewed and nobody
-can push commits to it directly, it can be useful to "protect" branches.
+- **To make sure that *all* changes of the `main` branch are reviewed and nobody
+can push commits to it directly, it can be useful to "protect" branches.**
 
 - "Settings", then "Branches", then "Add rule":
 
 ![](../img/contributing/branch-protection.png)
 
-> ## Discussion
->
+### Discussion
+
 > - Protecting the `main` branch "forces" all changes to it to be reviewed first.
 >   **We recommend this for group repositories**.
 >   Discuss the advantages/disadvantages of this.
@@ -225,7 +205,7 @@ We can practice how a conflict looks and how to resolve it:
 ![](../img/contributing/conflict-resolution.png)
 
 
-> ## Discussion
+### Discussion
 >
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
@@ -256,6 +236,10 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 - We typically synchronize/updates remotes via the local clone.
 - To see all remotes use `git remote -v`.
 - If you are more than one person contributing to a project, consider using code review.
+
+!!! info "See also"
+
+    
 
 ### Contributing very minor changes
 
@@ -292,7 +276,30 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
     - Adding a planet should be pretty straight-forward in our modular code!
 
     - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
+
+
+!!! admonition "Cheat-sheet"
+
+    **Commits, branches, repositories, forks, clones**
+
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - **branch**: Independent development line, often we call the main development line `main` or `main`.
+    - **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque) that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
+    - **cloning**: Copying the whole repository to your laptop - the first time.
+        - It is not necessary to download each file one by one.
+        - good within a group  
+    - **forking**: Taking a copy of a repository (which is typically not yours)
+        - our copy (fork) stays on GitHub and you can make changes to your copy.
+        - better for contribution to other's project
+    - `git clone` copies everything: all commits and all branches.
+    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
+    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
+    - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
+    - Repositories that are forked or cloned **do not automatically synchronize themselves**.
   
+???- question "quiz"
+
 
 
 !!! admonition "Parts to be covered!"
