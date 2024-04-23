@@ -1,4 +1,4 @@
-# The iterations and Git
+## Understand git branches and merging
 
 !!! questions
 
@@ -9,32 +9,25 @@
 !!! info "Content"
 
     - We will
-      - work with the basic commands in git
-      - go through branching and merging
+        - work with the basic commands in git
+        - go through branching and merging
 
 
 ???- info "Learning objectives of 'Branches'"
 
-    - learners can explain and evaluate the usefulness for branches
+    - learners can explain and evaluate the usefulness of branches
 
 !!! note "Instructor notes"
 
     Prerequisites are:
 
-    - ...
+    - git basics
 
     Lesson Plan: **FIX**
     
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
-!!! Discussion "Have you used Git (locally) in your own work?Answer in **Menti**"
-
-
-!!! note
-   
-    - We will cover the most basic things with Git such that you can use it this week.
-    - For deeper understanding and hands-on on branching etcetera, please confer the course material of [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/) and [CodeRefinery](https://coderefinery.github.io/git-intro/).
 
 
 !!! info "Table of content"
@@ -42,28 +35,17 @@
     - Branching
         - background
         - workflows
-        - in-code doc? where to put?
         - examples/demos
         - discussion
         - "quiz"
     - Merging
         - background
         - workflows
-        - conflicts
+        - conflicts?
         - examples/demos
         - discussion
         - "quiz"
 
-
-## All Exercises
-
-???- question "Demo: add Jupiter"
-
-???- question "Demo: modular code in branch"
-
-???- question "Demo: git merge"
-
-???- question "quiz"
 
 
 ## Branching and merging
@@ -109,298 +91,291 @@ $ git branch -d new-feature    # remove branch
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
 
-## Start with pushing your changes in the local Git to GitHub
-
-```console
-$ git push
-```
-
-You should now see something like:
-
-```text
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (7/7), done.
-Writing objects: 100% (7/7), 846 bytes | 846.00 KiB/s, done.
-Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), done.
-To github.com:bclaremar/Formalisms.git
- * [new branch]      main -> main
-branch 'main' set up to track 'origin/main'.
-
-```
 
 ## add Jupiter in a new branch
 
-!!! example "Type-along: Add Jupiter"
+
+More info...
+
+???- question "Demo: add Jupiter"
+
+
+!!! example "Demo or Type-along: Add Jupiter"
     - We will add some lines to count with the effects from the gravity of Jupiter on Earth
 
-````{solution} Code
-```python
 
-#planet with Jupiter
-import numpy as np
-import matplotlib.pyplot as plt 
+    ???- "Code"
+        ```python
 
-#constants
-G=6.6743e-11
-AU=149.597871e9 # 1 astronomical unit (AU) is the mean distance between sun and Earth
-AU1=150.8e9
-dJ=5.203*AU
-mj=5.97219e24
-mJ=1.899e27
-M=1.9891e30
-day=86400;
-year=31556926;
-v0=AU*2*np.pi/year;
+        #planet with Jupiter
+        import numpy as np
+        import matplotlib.pyplot as plt 
 
-#Jupiter
-v0J=dJ*2*np.pi/(11.86*year);
+        #constants
+        G=6.6743e-11
+        AU=149.597871e9 # 1 astronomical unit (AU) is the mean distance between sun and Earth
+        AU1=150.8e9
+        dJ=5.203*AU
+        mj=5.97219e24
+        mJ=1.899e27
+        M=1.9891e30
+        day=86400;
+        year=31556926;
+        v0=AU*2*np.pi/year;
 
-L=50000
+        #Jupiter
+        v0J=dJ*2*np.pi/(11.86*year);
 
-x0=AU1;
-y0=0;
-u0=0;
-x=np.zeros(365*L, dtype=float);
-y=np.zeros(365*L, dtype=float);
+        L=50000
+
+        x0=AU1;
+        y0=0;
+        u0=0;
+        x=np.zeros(365*L, dtype=float);
+        y=np.zeros(365*L, dtype=float);
 
 
-x[0]=x0;
-y[0]=y0;
-u=u0;
-v=v0;
+        x[0]=x0;
+        y[0]=y0;
+        u=u0;
+        v=v0;
 
-x0J=dJ;
-y0J=0;
-u0J=0;
-xJ=np.zeros(365*L, dtype=float);
-yJ=np.zeros(365*L, dtype=float);
-xJ[0]=x0J;
-yJ[0]=y0J;
-uJ=u0J;
-vJ=v0J;
+        x0J=dJ;
+        y0J=0;
+        u0J=0;
+        xJ=np.zeros(365*L, dtype=float);
+        yJ=np.zeros(365*L, dtype=float);
+        xJ[0]=x0J;
+        yJ[0]=y0J;
+        uJ=u0J;
+        vJ=v0J;
 
-for i in range(1,365*L):    
-    if i % 36500==0:
-        print(i/365)
+        for i in range(1,365*L):    
+            if i % 36500==0:
+                print(i/365)
 
-    x[i]=x[i-1]+day*u;
-    y[i]=y[i-1]+day*v;
-    xJ[i]=xJ[i-1]+day*uJ;
-    yJ[i]=yJ[i-1]+day*vJ;
+            x[i]=x[i-1]+day*u;
+            y[i]=y[i-1]+day*v;
+            xJ[i]=xJ[i-1]+day*uJ;
+            yJ[i]=yJ[i-1]+day*vJ;
+
+            axS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
+            ayS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
+            dxJ=x[i]-xJ[i];
+            dyJ=y[i]-yJ[i];
+            axEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dxJ;
+            ayEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dyJ;
+            ax=axS+axEJ;
+            ay=ayS+ayEJ;
+
+            u=u+ax*day;
+            v=v+ay*day;
+
+            axJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*xJ[i];
+            ayJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*yJ[i];
+            uJ=uJ+axJ*day;
+            vJ=vJ+ayJ*day;
+
+
+        rj=(x**2+y**2)**.5
+
+        l=1000;
+        e=np.zeros(int(L/l), dtype=float);
+        for i in range(0,int(L/l)):
+            win=range(i*l*365,(i+1)*l*365)
+            print((win))
+            a=max(rj[win])
+            b=min(rj[win])
+            print(a,b)
+            e[i]=1-2/(a/b+1)
+
+        fig=plt.figure(1,figsize=(12,5))
+        ax=fig.add_subplot(1,2,1)
+        ax.plot(x,y)
+        ax.plot(xJ,yJ)
+        ax.plot (0,0,'o')
+
+
+        ax=fig.add_subplot(1,2,2)
+        ax.plot(range(0,int(L/l)),e)
+
+        plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
+
+        ```
+
+    - **Do not run because we changed from 2 years simulation time to 5000 years!**
+    - The output should look like this at least.
+
+    ![Earth Jupiter](../img/planet_earthJupiter.png)
+
+    - Do **not** stage (add) yet!
+
+    **Discussion**
     
-    axS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
-    ayS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
-    dxJ=x[i]-xJ[i];
-    dyJ=y[i]-yJ[i];
-    axEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dxJ;
-    ayEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dyJ;
-    ax=axS+axEJ;
-    ay=ayS+ayEJ;
-
-    u=u+ax*day;
-    v=v+ay*day;
-
-    axJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*xJ[i];
-    ayJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*yJ[i];
-    uJ=uJ+axJ*day;
-    vJ=vJ+ayJ*day;
-
-
-rj=(x**2+y**2)**.5
-
-l=1000;
-e=np.zeros(int(L/l), dtype=float);
-for i in range(0,int(L/l)):
-    win=range(i*l*365,(i+1)*l*365)
-    print((win))
-    a=max(rj[win])
-    b=min(rj[win])
-    print(a,b)
-    e[i]=1-2/(a/b+1)
-
-fig=plt.figure(1,figsize=(12,5))
-ax=fig.add_subplot(1,2,1)
-ax.plot(x,y)
-ax.plot(xJ,yJ)
-ax.plot (0,0,'o')
-
-
-ax=fig.add_subplot(1,2,2)
-ax.plot(range(0,int(L/l)),e)
-
-plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
-```
-````
-- **Do not run because we changed from 2 years simulation time to 5000 years!**
-- The output should look like this at least.
-
-![](../img/planet_earthJupiter.png)
-
-
-
-- Do **not** stage (add) yet!
-
-**Discussion**
-- That's long code!
-- Perhaps make modular?
-- The orbits seems too elliptic in the plot. The axes should be equal!
-- Let's look at that in the next iteration!
-``````
+    - That's long code!
+    - Perhaps make modular?
+    - The orbits seems too elliptic in the plot. The axes should be equal!
+    - Let's look at that in the next iteration!
 
 ## git diff
 
-``````{type-along}
-
-- When you are done editing the files, try `git diff`:
-
-```console
-  $ git diff
-```
-- You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
-- You will see some thing like this.
-
-````{solution} Output from diff
-```diff
-diff --git a/planet.py b/planet.py
-index 60b8b20..8061461 100644
---- a/planet.py
-+++ b/planet.py
-@@ -1,23 +1,24 @@
--#planet
-+
-+#planet with Jupiter
- import numpy as np
- import matplotlib.pyplot as plt
-
- #constants
- G=6.6743e-11
- AU=149.597871e9 # 1 astronomical unit (AU) is the mean distance between sun and Earth
- AU1=150.8e9
-+dJ=5.203*AU
- mj=5.97219e24
- mJ=1.899e27
- M=1.9891e30
- day=86400;
- year=31556926;
- v0=AU*2*np.pi/year;
--Fg=G*M*mj/AU**2
--ag=Fg/mj
--Fc=mj*v0**2/AU
--ac=Fc/mj
-
--L=2
-+#Jupiter
-+v0J=dJ*2*np.pi/(11.86*year);
-+
-+L=50000
-
- x0=AU1;
- y0=0;
-@@ -25,34 +26,69 @@ u0=0;
- x=np.zeros(365*L, dtype=float);
- y=np.zeros(365*L, dtype=float);
-
-+
- x[0]=x0;
- y[0]=y0;
- u=u0;
- v=v0;
-
-+x0J=dJ;
-+y0J=0;
-+u0J=0;
-+xJ=np.zeros(365*L, dtype=float);
-+yJ=np.zeros(365*L, dtype=float);
-+xJ[0]=x0J;
-+yJ[0]=y0J;
-+uJ=u0J;
-+vJ=v0J;
-+
- for i in range(1,365*L):
--    print(i)
-+    if i % 36500==0:
-+        print(i/365)
-+
-     x[i]=x[i-1]+day*u;
-     y[i]=y[i-1]+day*v;
--    ax=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
--    ay=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
-+    xJ[i]=xJ[i-1]+day*uJ;
-+    yJ[i]=yJ[i-1]+day*vJ;
-+
-+    axS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
-+    ayS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
-+    dxJ=x[i]-xJ[i];
-+    dyJ=y[i]-yJ[i];
-+    axEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dxJ;
-+    ayEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dyJ;
-+    ax=axS+axEJ;
-+    ay=ayS+ayEJ;
-+
-     u=u+ax*day;
-     v=v+ay*day;
-
-+    axJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*xJ[i];
-+    ayJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*yJ[i];
-+    uJ=uJ+axJ*day;
-+    vJ=vJ+ayJ*day;
-+
-+
- rj=(x**2+y**2)**.5
--a=max(rj)
--b=min(rj)
--e=1-2/(a/b+1)
--rel=(a/b-1)
-
-+l=1000;
-+e=np.zeros(int(L/l), dtype=float);
-+for i in range(0,int(L/l)):
-+    win=range(i*l*365,(i+1)*l*365)
-+    print((win))
-+    a=max(rj[win])
-+    b=min(rj[win])
-+    print(a,b)
-+    e[i]=1-2/(a/b+1)
-
- fig=plt.figure(1,figsize=(12,5))
- ax=fig.add_subplot(1,2,1)
- ax.plot(x,y)
-+ax.plot(xJ,yJ)
- ax.plot (0,0,'o')
--#axis equal
-+
-
- ax=fig.add_subplot(1,2,2)
--ax.plot(range(0,365*2),rj)
-+ax.plot(range(0,int(L/l)),e)
-
--plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight')
-+plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
-(END)
-
-```
-````
-``````
+**show unstaged/uncommitted modifications**
 
 
+???- question "Demo: modular code in branch"
+
+!!! example "Demo or type-along"
+
+    - When you are done editing the files, try `git diff`:
+
+    ```console
+    $ git diff
+    ```
+
+    - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
+    - You will see some thing like this.
+
+    ???- "Output from 'diff'"
+        ```diff
+        diff --git a/planet.py b/planet.py
+        index 60b8b20..8061461 100644
+        --- a/planet.py
+        +++ b/planet.py
+        @@ -1,23 +1,24 @@
+        -#planet
+        +
+        +#planet with Jupiter
+         import numpy as np
+         import matplotlib.pyplot as plt
+
+         #constants
+         G=6.6743e-11
+         AU=149.597871e9 # 1 astronomical unit (AU) is the mean distance between sun and Earth
+         AU1=150.8e9
+        +dJ=5.203*AU
+         mj=5.97219e24
+         mJ=1.899e27
+         M=1.9891e30
+         day=86400;
+         year=31556926;
+         v0=AU*2*np.pi/year;
+        -Fg=G*M*mj/AU**2
+        -ag=Fg/mj
+        -Fc=mj*v0**2/AU
+        -ac=Fc/mj
+
+        -L=2
+        +#Jupiter
+        +v0J=dJ*2*np.pi/(11.86*year);
+        +
+        +L=50000
+
+         x0=AU1;
+         y0=0;
+        @@ -25,34 +26,69 @@ u0=0;
+         x=np.zeros(365*L, dtype=float);
+         y=np.zeros(365*L, dtype=float);
+
+        +
+         x[0]=x0;
+         y[0]=y0;
+         u=u0;
+         v=v0;
+
+        +x0J=dJ;
+        +y0J=0;
+        +u0J=0;
+        +xJ=np.zeros(365*L, dtype=float);
+        +yJ=np.zeros(365*L, dtype=float);
+        +xJ[0]=x0J;
+        +yJ[0]=y0J;
+        +uJ=u0J;
+        +vJ=v0J;
+        +
+         for i in range(1,365*L):
+        -    print(i)
+        +    if i % 36500==0:
+        +        print(i/365)
+        +
+             x[i]=x[i-1]+day*u;
+             y[i]=y[i-1]+day*v;
+        -    ax=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
+        -    ay=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
+        +    xJ[i]=xJ[i-1]+day*uJ;
+        +    yJ[i]=yJ[i-1]+day*vJ;
+        +
+        +    axS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
+        +    ayS=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*y[i];
+        +    dxJ=x[i]-xJ[i];
+        +    dyJ=y[i]-yJ[i];
+        +    axEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dxJ;
+        +    ayEJ=-G*mJ/(abs(dxJ**2+dyJ**2)**[3/2])*dyJ;
+        +    ax=axS+axEJ;
+        +    ay=ayS+ayEJ;
+        +
+             u=u+ax*day;
+             v=v+ay*day;
+
+        +    axJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*xJ[i];
+        +    ayJ=-G*M/(abs(xJ[i]**2+yJ[i]**2)**[3/2])*yJ[i];
+        +    uJ=uJ+axJ*day;
+        +    vJ=vJ+ayJ*day;
+        +
+        +
+         rj=(x**2+y**2)**.5
+        -a=max(rj)
+        -b=min(rj)
+        -e=1-2/(a/b+1)
+        -rel=(a/b-1)
+
+        +l=1000;
+        +e=np.zeros(int(L/l), dtype=float);
+        +for i in range(0,int(L/l)):
+        +    win=range(i*l*365,(i+1)*l*365)
+        +    print((win))
+        +    a=max(rj[win])
+        +    b=min(rj[win])
+        +    print(a,b)
+        +    e[i]=1-2/(a/b+1)
+
+         fig=plt.figure(1,figsize=(12,5))
+         ax=fig.add_subplot(1,2,1)
+         ax.plot(x,y)
+        +ax.plot(xJ,yJ)
+         ax.plot (0,0,'o')
+        -#axis equal
+        +
+
+         ax=fig.add_subplot(1,2,2)
+        -ax.plot(range(0,365*2),rj)
+        +ax.plot(range(0,int(L/l)),e)
+
+        -plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight')
+        +plt.savefig('../Figures/planet_earthJupiter.png', dpi=100, bbox_inches='tight')
+        (END)
+
+        ```
 
 ## Let's make our code modular (test in branch)
 
-``````{challenge} Make four modules (10-15 minutes in BO)
-- First make a branch called ``modularity`` and go to that branch
-```console
-$ git checkout -b modularity    # create branch, switch to it
-$ git branch                    # check that we are on the new branch
-```
-- We can now do our changes
-- We will make four files
-  - ``planet_main.py``, containing an overview e.g. the main program
-  - ``planet_data.py``, containing general constants, and planetary parameters
-  - ``planet_iter.py``, containing the equation of motion for the planets
-  - ``planet_functions.py``, containing eccentricity calculations and a plot function
+- We condiser the Jupiter branch dead-end
+- Let's instead start from the main branch and create a "modularity" 
+
+???- example "Demo or Type-along: git branch 2"
+
+     **Make four modules**
+     
+    - First make a branch called ``modularity`` and go to that branch
+    ```console
+    $ git checkout -b modularity    # create branch, switch to it
+    $ git branch                    # check that we are on the new branch
+    ```
+    - We can now do our changes
+    - We will make four files
+        - ``planet_main.py``, containing an overview e.g. the main program
+        - ``planet_data.py``, containing general constants, and planetary parameters
+        - ``planet_iter.py``, containing the equation of motion for the planets
+        - ``planet_functions.py``, containing eccentricity calculations and a plot function
   
 ````{solution} planet_main.py
 ```python
@@ -632,6 +607,13 @@ $ git graph
  
 ![Isolated tracks](../img/git-collaborative.svg)
 
+
+???- question "Demo: git merge"
+
+???- question "quiz"
+
+
+
 !!! example "Merge into main"
 
     - once all features are ready, switch to main!
@@ -688,7 +670,10 @@ $ git merge
 **Overview workflow**
 ![](../img/git_branches.png)
 
- 
+
+???- question "quiz"
+
+
 
 !!! admonition "Parts to be covered!"
 
