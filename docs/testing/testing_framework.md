@@ -269,17 +269,18 @@ The function is a function to determine if a number is prime.
 
     -   Ping-Pong Pair programming
     -   Discuss how and when to switch roles first!
-    -   Person with first name first in alphabet starts
+    -   Decide who is the first driver, e.g. the person with first name first in alphabet
     -   Try to be **an exemplary duo**
 
 !!! info "Technical"
 
+    -   Create a topic branch for your pair. Branch of from `develop`
     -   Work within scaffolding of the learners project
         -   Functions are in `src/[package_name]/`. 
             Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
         -   Tests are in `tests/`.
             Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
-    -   Work on the main branch only, share code using `git push` and `git pull`
+    -   When done, create a Pull Request to `develop`. Do not merge!
 
 ???- question "Need a video?"
 
@@ -299,6 +300,16 @@ However, decide upon an interesting function at your estimated level.
 When disagreeing: pick the easiest function.
 
 If needed, one can find inspiration at the section [Other functions](#other-functions) below.
+
+## Exercise 3: your classes
+
+???- info "Learning objectives"
+
+    - practice writing tests within a formal testing framework
+
+Everyone is the owner of a class.
+
+In pairs, develop a function using TDD using the `unittest` framework.
 
 ## Other functions
 
