@@ -194,30 +194,42 @@ is called `tests/test_richel_utils.py`.
 
 Click on the 'Testing' tab (with the erlenmeyer) at the right.
 
-If you do this for the first time, you will see this:
+If you do this for the first time, you get some blue buttons.
 
-![](testing_tab_first_click.png)
+???- question "How does that look like?"
 
-Click on 'Configure tests'.
+    ![](testing_tab_first_click.png)
 
-![](testing_tab_select_framework.png)
+Click on 'Configure Python Tests'.
 
-Select 'unittest Standard Python testing framework'
+???- question "How does that look like?"
 
-![](testing_tab_select_test_folder.png)
+  ![](testing_tab_select_framework.png)
+
+Select 'unittest Standard Python test framework'
+
+???- question "How does that look like?"
+
+    ![](testing_tab_select_test_folder.png)
 
 Select `tests` as the testing folder.
 
-![](testing_tab_select_test_file_pattern.png)
+???- question "How does that look like?"
+
+    ![](testing_tab_select_test_file_pattern.png)
 
 Select `test_*.py` as the test file pattern.
 
-![](testing_tab_tests_present.png)
+???- question "How does that look like?"
+
+    ![](testing_tab_tests_present.png)
 
 Now the tests are present at the left side in a folded up state.
-Unfold these.
+One can unfold these.
 
-![](testing_tab_tests_present_and_run.png)
+???- question "How does that look like?"
+
+    ![](testing_tab_tests_present_and_run.png)
 
 Clicking on the 'Run'/'Play' button to run the tests.
 
