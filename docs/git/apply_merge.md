@@ -254,6 +254,11 @@ For team member A:
 
 Now do the same for team member B.
 
+???- question "Enjoy a video?"
+
+    You can find a video [here](https://youtu.be/UXSKm_RvcLw)
+
+
 ## Links
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
