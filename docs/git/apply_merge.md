@@ -62,12 +62,13 @@ gitGraph
      - change the repo 
      - push your changes online
 - Verify the changes are online
-- On your local computer, switch to the `main` branch
-- Merge your topic branch to `main`
+- On your local computer
+     - switch to the `main` branch
+     - merge your topic branch to `main`
+     - upload your changes
 - Delete your topic branch (i.e. the one with the unique name).
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
-
 
 ### Exercise 2: practice merge conflicts between branches
 
