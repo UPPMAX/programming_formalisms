@@ -308,51 +308,51 @@ Below is a list of function description.
 
     Example implementations can be found [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
-!!! note `is_zero`
+!!! note "`is_zero`"
 
     - Returns `True` if the input is zero
     - Returns `False` if the input is not zero
     - If the input is not one number, a `TypeError` is raised.
 
-!!! note `is_even(x)`
+!!! note "`is_even(x)`"
 
     - Returns `True` if the input is even
     - Returns `False` if the input is not even
     - If the input is not one integer, a `TypeError` is raised.
 
-!!! note `is_odd(x)`
+!!! note "`is_odd(x)`"
 
     - Returns `True` if the input is odd
     - Returns `False` if the input is not odd
     - If the input is not one integer, a `TypeError` is raised.
 
-!!! note `is_probability(p)`
+!!! note "`is_probability(p)`"
 
     - Returns `True` if the input is in the range [0.0, 1.0],
       that is from and including zero to and including one
     - Returns `False` if the input is not in that range
     - If the input is not one floating point number, a `TypeError` is raised.
 
-!!! note `is_number(x)`
+!!! note "`is_number(x)`"
 
     - Returns `True` if the input is a number
     - Returns `False` if the input is not a number
     - If the input is not one element, a `TypeError` is raised.
 
-!!! note `are_numbers(x)`
+!!! note "`are_numbers(x)`"
 
     - Returns `True` if the input is a list of numbers number
     - Returns `False` if the input is not a list of numbers
     - If the input is an empty list, a `TypeError` is raised.
 
-!!! note `is_roman_numeral(x)`
+!!! note "`is_roman_numeral(x)`"
 
     - Returns `True` if the input is a roman numeral, 
       e.g. 'I', 'II', 'IV', 'XI', etc.
     - Returns `False` if the input is not a roman numeral
     - If the input is not one String, a `TypeError` is raised.
 
-!!! note `sum_divisors(x)`
+!!! note "`sum_divisors(x)`"
 
     - Returns the sum of [the proper divisors](https://en.wikipedia.org/wiki/Divisor#proper_divisor) 
       of the input. For example, the proper divisors of 4 are 1 and 2,
