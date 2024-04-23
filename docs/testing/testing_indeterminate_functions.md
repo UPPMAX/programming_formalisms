@@ -1,8 +1,8 @@
-# Continuous integration
+# Indeterminate functions
 
 !!!- info "Learning objectives"
 
-    - .
+    - practice writing tests for indeterminate functions within a formal testing framework
 
 ???- question "For teachers"
 
@@ -54,28 +54,66 @@ random.seed(2)
 assert not flip_coin()
 ```
 
-# Exercise 2: `flip_coin`
+## Exercises
 
--   Time: 45 minutes
+## Exercise 1: first attempt
 
-## Exercise 2: `flip_coin`
+???- info "Learning objectives"
 
--   Function name: `flip_coin_[name]`, for example, `flip_coin_richel`
--   Input: none
--   Output: Returns `True` in 50% of all cases, else returns `False`
--   **Get all CI scripts to pass**
+    - practice writing tests for indeterminate functions within a formal testing framework
 
-## Exercise 2: `flip_coin`, social
+In pairs, develop a function using TDD using the `unittest` framework.
 
--   Ping-Pong Pair programming
--   Discuss how and when to switch roles first!
--   Person with first name first in alphabet starts
--   Try to be **an exemplary duo**
+The function is a function which returns the result of a dice throw: 
+a random integer value from 1 to and including 6.
 
-## Exercise 2: `flip_coin`, technical
+!!! info "The function"
 
--   Work within scaffolding of the learners project
-    -   Functions are in `src/[package_name]/testing.py`
-    -   Tests are in `tests/test_testing.py`
--   Work on the main branch only, share code using `git push` and `git pull`
--   order the `flip_coin_[name]` functions and tests alphabetically, e.g. `flip_coin_lars` comes before `flip_coin_richel`
+    -   Function name: `get_dice_throw_value_[names]`, for example, `get_dice_throw_value_anna_and_sven`
+    -   Output:
+        - Returns a random integer value from 1 to and including 6.
+
+!!! info "Social"
+
+    -   Ping-Pong Pair programming
+    -   Discuss how and when to switch roles first!
+    -   Decide who is the first driver, e.g. the person with first name first in alphabet
+    -   Try to be **an exemplary duo**
+
+!!! info "Technical"
+
+    -   Create a topic branch for your pair. Branch of from `develop`
+    -   Work within scaffolding of the learners project
+        -   Functions are in `src/[package_name]/`. 
+            Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
+        -   Tests are in `tests/`.
+            Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
+    -   When done, create a Pull Request to `develop`. Do not merge!
+
+## Exercise 2: second attempt
+
+???- info "Learning objectives"
+
+    - practice writing tests for indeterminate functions within a formal testing framework
+
+In pairs, develop an indeterminate function using TDD using the `unittest` framework.
+
+Use the same setup as exercise 1.
+
+However, decide upon an interesting function at your estimated level.
+When disagreeing: pick the easiest function.
+
+If needed, this function is suggested:
+
+!!! info "The function"
+
+    - Function name: `get_lottery_values_[names]`, for example, `get_lottery_values_anna_and_sven`
+    - Input: the highest value that can be drawn, e.g. 45, which is common in [lottry games]()https://en.wikipedia.org/wiki/List_of_six-number_lottery_games
+    - Output: Returns a list of six random numbers, in range [1, `highest_value`] (i.e. including
+      one and the highest value that can be drawn). Each number must be unique.
+      The numbers need not to be sorted.
+      Assuming a highest value of 45, them:
+          - Valid examples: `[1, 2, 3, 4, 5, 6]`, `[6, 5, 4, 3, 2, 1]`
+          - Invalid examples: `[1, 1, 1, 1, 1, 1]` (due to duplicates), 
+            `[1, 2, 3, 4, 5, 46]` (last value is heigher than 45),
+    - If the input is not one integer that is at least 6, a `TypeError` is raised.
