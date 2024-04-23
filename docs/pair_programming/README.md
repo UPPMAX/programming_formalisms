@@ -69,8 +69,9 @@ We use it a lot in this course, because:
     alone [Williams & Kessler, 2000], however, 
     this is only 41 respondents
 - what is for sure: it works great with recommended teaching practices,
-  e.g. grouping up learners (with the optimal group size of 2)
-  is effective [Hattie, 2012][Schwartz & Gurung, 2012]
+  e.g. grouping up learners 
+  is effective [Hattie, 2012][Schwartz & Gurung, 2012, page 65]
+  (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it 
   [as they write in the retrospective](../../retrospectives/2023_autumn/retrospectives_result_day_5.md)
 
@@ -97,11 +98,12 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
     - [the Wikipedia page on Pair Programming](https://en.wikipedia.org/wiki/Pair_programming).
     - [Martin Fowler's page on Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)
     - (if with three: [Codecademy's page on Pair Programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/))
-- Together, set a timer for 10 minutes
+- Together, set a timer for 6 minutes
 - Individually, answer the questions within the time limit
 - Together, write down a shared answer on the GitHub project repository
   with path `learners/[a teammember's name]/pair_programming.md`
-- Upload the file to the GitHub repo
+- Upload the file to the GitHub repo. 
+  Use the GitHub web interface if pushing is a problem!
 
 Questions:
 
@@ -259,6 +261,8 @@ Reflect additionally:
 ![](martin_the_clean_coder.jpg)
 
 - [Martin, 2011] Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
+- [reference for best group size 2] The reference that a group size of 2
+  is best
 - [Schwartz & Gurung, 2012] Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012. TODO: check that this is a reference for optimal group size of 2
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)

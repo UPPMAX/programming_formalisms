@@ -51,7 +51,6 @@
       Retrospect: crit, 30, 15s
     ```
 
-
 ## Introduction
 
 Test-driven development (TDD) is a systematic way to grow code, 
@@ -74,7 +73,6 @@ Advantages of TDD are:
   -   There are plenty of costly programming mistakes documented!
 - TDD helps shape the project architecture [Mayr, 2005]
 - TDD helps better modularisation [Madeyski et al., 2010]
-- TDD works great with Xtreme programming and CI
 
 Developers do really do this [Beck, 2022][Langr, 2013], even
 though TDD takes longer (but note [study I cannot find]):
@@ -84,6 +82,10 @@ Study                     | Extra time | Effect
 [George & Williams, 2004] | 16%        | 18% more black-box tests pass 
 [Bhat & Nagappan, 2006]   | 15%        | 2x higher code quality
 [Nagappan et al., 2008]   | 15-35%     | 40%-90% less defects
+
+We will discuss formal testing later, but now note that 
+testing is not about finding bugs [Thomas & Hunt, 2019, tip 66],
+instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
 
 ## Exercises
 
@@ -362,13 +364,13 @@ Solution `is_prime`          |  9 mins | [YouTube](https://youtu.be/qVtHieuwM1M)
  * [Mayr, 2005] Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
  * [Nagappan et al., 2008] Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
  * [PEP 8] Van Rossum, Guido, Barry Warsaw, and Nick Coghlan. "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
-
-![](thomas_and_hunt_the_pragmatic_programmer.jpg)
-
  * [Stroustrup & Sutter, 2017] Stroustrup, Bjarne, and Herb Sutter. "C++ Core Guidelines (2017)." URL http://isocpp. github. io/CppCoreGuidelines/CppCoreGuidelines.(Cited on pages 100 and 103) (2015).
  * [study I cannot find] in one of the classics, there was a bar chart that
    showed developers write functions such as `is_prime` with and without TDD
    and showed that TDD was twice as fast. TODO: find this reference
+
+![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+
  * [Thomas & Hunt, 2019] Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
  * [Wickham, 2019] Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
