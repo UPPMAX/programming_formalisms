@@ -110,6 +110,13 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 ### Contributing to existing repositories using pull requests
 Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
 
+- License: Creative Commons Attribution 4.0 International
+    - Permits almost any use subject to providing credit and license notice.
+    - Frequently used for media assets and educational materials.
+    - The most common license for Open Access scientific publications.
+    - Not recommended for software.
+
+
 - **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
 - Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
