@@ -82,17 +82,17 @@ gitGraph
     commit id: "Branching version"
     branch anna
     checkout anna
-    commit id: "Modify Anna's file"
+    commit id: "Modify the file"
     checkout main
     branch sven
     checkout sven
-    commit id: "Modify Sven's file"
+    commit id: "Modify the file too"
     checkout main
     commit id: "Another commit"
     merge sven
     branch anders
     checkout anders
-    commit id: "Modify Anders' file"
+    commit id: "Modify the file too too"
     checkout main
     merge anna
     commit id: "After fixing many merge conflicts"
