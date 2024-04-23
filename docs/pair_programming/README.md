@@ -80,7 +80,7 @@ See the exercise procedure [here](../misc/exercise_procedure.md).
 
 ### Exercise 1: understand pair programming
 
-!!!- info "Learning objectives"
+???- info "Learning objectives"
 
     - Understand what pair programming is
     - First guess at understanding what **good** pair programming is
@@ -158,7 +158,7 @@ Questions:
 
 ### Exercise 2: practice pair programming
 
-!!!- info "Learning objectives"
+???- info "Learning objectives"
 
     - Practice pair programming
     - Practice to convert class diagrams to real code
@@ -237,7 +237,7 @@ Reflect:
 
 ### Exercise 3: practice pair programming again
 
-!!!- info "Learning objectives"
+???- info "Learning objectives"
 
     - Practice pair programming
     - Practice to convert class diagrams to real code
@@ -265,7 +265,3 @@ Reflect additionally:
 
 - [Thomas & Hunt, 2019] Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
 - [Williams & Kessler, 2000] Williams, Laurie; Kessler, Robert R.; Cunningham, Ward; Jeffries, Ron (2000). "Strengthening the case for pair programming" (PDF). IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248. doi:10.1109/52.854064.
-
-
-
-
