@@ -70,6 +70,126 @@ gitGraph
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
 
+???- info "Answers"
+
+    ![](github_create_branch_annotated.png)
+
+    Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
+    Done!
+
+    > - On your local computer:
+    >    - update the repository
+
+    On your local computer, navigate to the folder of the shared project 
+    and update:
+
+    ```
+    git pull
+    ```
+
+    > - On your local computer:
+    >     - switch to the new branch
+
+    Switch to the new branch, for example, `richel`, by doing:
+
+    ```
+    git checkout richel
+    ```
+
+    > - On your local computer:
+    >     - change the content of the repository, for example,
+    >       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
+
+    This can be any change you'd like.
+    To create a file under Linux (and maybe this works on other
+    operating systems too), one can do:
+
+    ```
+    touch learners/richel/richel_is_on_richel.txt
+    ```
+
+    After the change, commit these:
+
+    ```
+    git add .
+    git commit -m "Richel is on richel"
+    ```
+
+    > - On your local computer:
+    >     - push your changes online. 
+
+    Do:
+
+    ```
+    git push
+    ```
+
+    And your code may end up online.
+
+    If that does not work, do:
+
+    ```
+    git pull
+    ```
+
+    and try pushing again, maybe multiple times, as many people
+    are pushing to the shared repo.
+
+    > - On GitHub, verify that your changes on your branch can be found online
+
+    ![](github_pushed_to_branch.png)
+
+    Make sure you look at the correct branch, as displayed at 1.
+    Then your commit message shows up at 2.
+
+    > - On your local computer
+    >      - switch to the `main` branch
+
+    ```
+    git checkout main
+    ```
+
+    > - On your local computer
+    >      - merge your topic branch to `main`
+
+    ```
+    git merge richel
+    ```
+
+    > - On your local computer
+    >      - upload your changes
+
+    ```
+    git push
+    ```
+
+    > - Delete your branch (i.e. the one with the unique name).
+    >   You may use the web interface (easiest!) or use the command line
+
+    [](github_view_branches_annotated.png)
+
+    Click on 'Branches', as shown in the image above.
+
+    ![](github_view_all_branches_annotated.png)
+
+    Click on garbage bin, as shown in the image above.
+
+    ![](github_view_all_branches_just_deleted_annotated.png)
+
+    The branch will now be deleted, as shown in the image above.
+
+    > - On your local computer, update your code
+
+    Do:
+
+    ```
+    git pull
+    ```
+
+???- question "Enjoy a video?"
+
+    You can find a video [here](https://youtu.be/BSi9nFhlgwM)
+
 ### Exercise 2: practice merge conflicts between branches
 
 !!!- info "Learning objectives"
