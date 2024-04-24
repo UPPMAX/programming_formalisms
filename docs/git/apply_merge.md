@@ -42,6 +42,27 @@
     - Can a `git push` result in a merge conflict? Why?
     - Can a `git pull` result in a merge conflict? Why?
 
+# Branches, merging, code reviews
+
+Branches allow us to work independently.
+Here we use branches to do so.
+
+However, when we merge branches, it may result in a merge conflict.
+A merge conflict occurs when git is unsure how to merge branches
+and asks a human for help.
+Here we create merge conflicts on trivial code.
+
+One can suggest to merge branches on GitHub,
+where it is called a Pull Request.
+For a Pull Request, a team member can be asked for a code review.
+Code reviews are useful for many reasons, 
+among others the spread of knowledge.
+
+One can merge branches locally, using the command-line.
+This will bypass code review and that is OK.
+For example, merging develop to your topic branch 
+does not need a code review.
+
 ## Exercises
 
 Exercises 1 and 2 use the GitHub interface, 
