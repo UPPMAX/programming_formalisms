@@ -126,7 +126,7 @@ single-person repository in the previous episodes.
 !!! example "Example with a salad repo"
 
     - In this example the contributor will not change the `main` branch directly but
-submit a "pull request" (a **change proposal**) towards the `main` branch for **code review**. 
+      submit a "pull request" (a **change proposal**) towards the `main` branch for **code review**. 
     - You do this by just **changing the file at GitHub**
     - Before committing/proposing file change you may preview the changes.
 
