@@ -10,9 +10,18 @@
 
     - Learners have create, switch and delete a `git` branch
 
-    Lesson plan:
+    ```mermaid
+    gantt
+      title Lesson plan apply branches
+      dateFormat X
+      axisFormat %s
+      Introduction: intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 25s
+      Feedback 1: feedback_1, after exercise_1, 10s
+    ```
 
-    - 5 mins: prior knowledge
+    Prior questions:
       - What is a branch?
       - What is the problem that branches alleviate?
       - What is the name/names of the most important branch?
@@ -23,9 +32,6 @@
       - Does creating a branch create a new version? Why?
       - Does changing a branch change the content of your local computer? Why?
       - Does deleting a branch create a new version? Why?
-    - 5 mins: presentation
-    - 25 mins: challenge
-    - 10 mins: feedback
 
 ## Exercises
 

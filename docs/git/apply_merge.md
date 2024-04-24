@@ -2,7 +2,6 @@
 
 !!!- info "Learning objectives"
 
-    - practice merging `git` branches
     - practice fixing merge conflicts
     - practice doing a code review
 
@@ -10,27 +9,30 @@
 
     Teaching goals are:
 
-    - Learners have merged `git` branches
     - Learners have fixed merge conflicts
     - Learners have done a code review
 
-    Preparation:
 
-    - There must be a file called `fairytale.md` present in the learners' repo
+    ```mermaid
+    gantt
+      title Lesson plan apply merge
+      dateFormat X
+      axisFormat %s
+      Introduction: intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 25s
+      Feedback 1: feedback_1, after exercise_1, 10s
+    ```
 
-    Lesson plan:
+    Prior questions:
+    - What does a merge do?
+    - What does a merge do?
+    - Do we need merging? When? Why?
+    - When does a merge give a merge conflict?
+    - Can a `git commit` result in a merge conflict? Why?
+    - Can a `git push` result in a merge conflict? Why?
+    - Can a `git pull` result in a merge conflict? Why?
 
-    - 5 mins: prior knowledge
-      - What does a merge do?
-      - What does a merge do?
-      - Do we need merging? When? Why?
-      - When does a merge give a merge conflict?
-      - Can a `git commit` result in a merge conflict? Why?
-      - Can a `git push` result in a merge conflict? Why?
-      - Can a `git pull` result in a merge conflict? Why?
-    - 5 mins: presentation
-    - 25 mins: challenge
-    - 10 mins: feedback
 
 ## Exercises
 
