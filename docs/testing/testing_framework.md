@@ -9,28 +9,25 @@
 
     Prerequisites are:
 
-    - Learners have .
+    - Learners have some idea of the benefit of using a testing framework
+    - Learners have practiced writing tests within a formal testing framework
 
-    Teaching goals are:
+    ```mermaid
+    gantt
+      title Lesson plan using a testing framework
+      dateFormat X
+      axisFormat %s
+      Introduction: intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 25s
+      Feedback 1: feedback_1, after exercise_1, 10s
+    ```
 
-    - .
+    Prior questions:
 
-
-    Teaching form used:
-
-    - .
-
-    Lesson plan:
-
-    - 5 mins: prior knowledge
-      - When do you trust your code?
-      - When do you trust code written by others?
-      - How do you convince other developers of a bug?
-
-    - 5 mins: presentation
-    - 10 mins: demonstration `is_zero`
-    - 25 mins: challenge
-    - 10 mins: feedback
+    - When do you trust your code?
+    - When do you trust code written by others?
+    - How do you convince other developers of a bug?
 
 ## Testing
 
