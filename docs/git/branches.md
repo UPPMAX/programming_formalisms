@@ -92,11 +92,11 @@ $ git branch -d new-feature    # remove branch
 
 
 
-## add Jupiter in a new branch
+## Add Jupiter in a new branch
 
 - Let's make a new branch called ``jupiter``
 - Here we add some code taking care of the motion of Jupiter and interaction with Earth
-More info...
+
 
 !!! example "Demo or Type-along: Add Jupiter"
 
