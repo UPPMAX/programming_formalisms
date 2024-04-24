@@ -2,11 +2,22 @@
 
 !!! note "Learning objectives"
 
-    - Practice designing by dreaming 
+    - Understand dream design
+    - Understand why dream design
+    - Understand what a stub is
+    - Understand why to use stubs
+    - Apply dream design on own class
 
 ## Introduction
 
 To design your code, 'dream design' is a way to assure that you work top-down.
+
+!!! note "The term 'dream design' is no formal term."
+
+    'Writing stubs', which is what we are doing,
+    is closer to the more formal term,
+    but I, Richel, feel 'dream design', 
+    albeit no formal term, describes better what is going on.
 
 ### Step 0: an empty class
 
@@ -150,6 +161,17 @@ whatever type it may be.
     def run(experiment):
         return 42
     ```
+
+'results' sounds like an idea that can be put in a class.
+We update our class diagram:
+
+```mermaid
+classDiagram
+  class Experiment {
+  }
+  class Results {
+  }
+```
 
 We can also write a test:
 
@@ -347,6 +369,19 @@ save(results, "my_results.csv")
 ```
 This code is very good!
 
+Consider the class diagram we created:
+
+```mermaid
+classDiagram
+  class Experiment {
+    parameters
+  }
+  class Results {
+  }
+```
+
+This class diagram is very good!
+
 Consider the tests we dreamt of writing:
 
 ```
@@ -378,10 +413,98 @@ class TestExperiment(unittest.TestCase):
         read_parameters_from_file("parameters.txt")
 ```
 
-The tests ensure that our dream remains a reality.
+Our tests are good and ensure that our dream remains a reality.
+
+Doing TDD in these steps, may result in the implementation below.
+The formal term of each of these functions is called a **stub**.
+A 'stub' is 'the first beginning of something'.
+
+```python
+def create_parameters():
+    return []
+
+def read_parameters_from_file(filename):
+    return []
+
+def create_experiment(parameters = []):
+    return parameters
+
+def run(experiment):
+    return 42
+
+def save(results, filename):
+    pass
+```
+
+These stubs are already important:
+they are the infrastructure of your software.
+With the stubs in place, we have **sketched** the functions of our project. 
+
+From here, we can make these stubs actually do something useful, by adding
+tests that test actual behavior. For example, `save` should actually create
+a file.
 
 ## Exercise
 
 ### Exercise 1: dream-design
 
-### Exercise 1: dream-design your class
+???- note "Learning objectives"
+
+    - Understand dream design
+    - Understand why dream design
+    - Understand what a stub is
+    - Understand why to use stubs
+
+Do:
+
+- Read the text above from start to finish
+
+Answer:
+
+- Is dream design a actual formal term?
+- Why use dream design?
+- What is a stub?
+- Why are stubs important?
+
+???- question "Answers"
+
+    > - Is dream design a actual formal term?
+
+    No. It is an invented term that is felt to better describe what is going on.
+
+    > - Why use dream design?
+
+    To develop readable code in a top-down way,
+    as we purposefully ignore details.
+
+    - What is a stub?
+
+    A 'stub' is 'the first beginning of something'.
+
+    - Why are stubs important?
+
+    Stubs are the infrastructure of your software:
+    they define inputs and outputs of functions that have understandable names.
+
+Discuss:
+
+- At [conclusion](#conclusion), the dreamt code is given.
+  - Do you agree/disagree that the code is good?
+  - Can the code be improved? How?
+- At [conclusion](#conclusion), the dreamt class diagram is given.
+  - Do you agree/disagree that the class diagram is good?
+  - Can the class diagram be improved? How?
+- At [conclusion](#conclusion), the dreamt tests are given.
+  - Do you agree/disagree that the tests are good?
+  - Can the tests be improved? How?
+  - Should the tests be removed when the stubs have matured
+    into useful functions and are tested for real behavior?
+- At [conclusion](#conclusion), one example implementation is given.
+  - Do you agree/disagree that the example implementation is good?
+  - Can it be improved? How?
+
+### Exercise 2: dream-design your class
+
+???- note "Learning objectives"
+
+    - Apply dream design on own class
