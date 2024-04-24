@@ -40,6 +40,7 @@ Good (:innocent:) data structures:
 ## Class relations
 
 In this course, we use only two types of relations:
+
 - composition, a 'has-a' relationship
 - inheritance, a 'is-a-type-of' relationship
 
