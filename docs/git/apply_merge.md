@@ -28,8 +28,8 @@
       axisFormat %s
       Introduction: intro, 0, 5s
       Theory 1: theory_1, after intro, 10s
-      Exercise 1: crit, exercise_1, after theory_1, 30s
-      Feedback 1: feedback_1, after exercise_1, 15s
+      Exercise 1: crit, exercise_1, after theory_1, 35s
+      Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
     Prior questions:
