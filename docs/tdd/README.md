@@ -285,15 +285,16 @@ Consider using the `is_even` function.
 
     - Practice of TDD by developing a slightly more complicated function
 
-Develop a function called `is_prime`.
+Develop a function called `is_probability`.
 
-!!! note "`is_prime`"
+!!! note "`is_probability`"
 
-    - Function name: `is_prime`
+    - Function name: `is_probability`
     - Output:
-      - Returns `True` if the input is a prime`
-      - Returns `False` if the input is not a prime
-      - :warning: Gives an error when the input is not a number
+      - Returns `True` if the input is in the range [0.0, 1.0],
+        that is from (and including) zero to (and including) one.
+      - Returns `False` if the input is not a probability
+      - :warning: Gives an error when the input is not one number
 
 ???- info "Answer"
 
@@ -303,8 +304,41 @@ Develop a function called `is_prime`.
     Here is a possible solution:
 
     ```python
-    # Solution here
+    def is_probability(x):
+        """Determine if `x` is a probability.
+
+        Determine if `x` is a probability,
+        i.e. a value between 0.0 and 1.0, including both 0.0 and 1.0.
+        If `x` is not a floating point number, a `TypeError` is raised.
+
+        Returns `True` if `x` is a probability
+        """
+        if not isinstance(x, float):
+            msg = "'number' must be a floating point number. "
+            raise TypeError(
+                msg,
+                "Actual type of 'number': ", type(x),
+            )
+        min_probability = 0.0
+        max_probability = 1.0
+        return x >= min_probability and x <= max_probability
     ```
+
+### Exercise 4: `is_prime`
+
+???- note "Learning objectives"
+
+    - Practice of TDD by developing a slightly more complicated function
+
+Develop a function called `is_prime`.
+
+!!! note "`is_prime`"
+
+    - Function name: `is_prime`
+    - Output:
+      - Returns `True` if the input is a prime number.
+      - Returns `False` if the input is not a prime number.
+      - :warning: Gives an error when the input is not one number
 
 ???- question "Need a video?"
 
