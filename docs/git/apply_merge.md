@@ -25,6 +25,7 @@
     ```
 
     Prior questions:
+
     - What does a merge do?
     - What does a merge do?
     - Do we need merging? When? Why?
