@@ -625,8 +625,20 @@ $ git branch -d new-feature    # remove branch
 
     ```
 
+    ```mermaid
+    gitGraph
 
-    **TODO** Make a git graph in mermaid
+    commit id: "add planet.py"
+    branch jupiter
+    checkout jupiter
+    commit id: "add jupiter"
+    checkout main
+    branch modular
+    checkout modular
+    commit id: "4 modular files"
+
+    ```
+
 
 
 
@@ -664,9 +676,21 @@ $ git branch -d new-feature    # remove branch
     * 6a416b5 add folders and planet code
 
     ```
+    
+    ```mermaid
+    gitGraph
 
-
-**TODO** Make a git graph in mermaid
+    commit id: "add planet.py"
+    branch jupiter
+    checkout jupiter
+    commit id: "add jupiter"
+    checkout main
+    branch modular
+    checkout modular
+    commit id: "4 modular files"
+    checkout main
+    commit id:"rm print"
+    ```
 
 ### On GitHub
 
@@ -709,8 +733,7 @@ $ git branch -d new-feature    # remove branch
     ```
     - let's now check the graphical view:
 
-    **TODO** update git graph below!
-    
+   
     ```git
     $ git graph
     * 1b29a8f (HEAD -> main) Merge branch 'modularity'
@@ -722,6 +745,22 @@ $ git branch -d new-feature    # remove branch
     |/
     * b9465e4 (origin/main) planet.py documentation
     * 6a416b5 add folders and planet code    
+    ```
+
+    ```mermaid
+    gitGraph
+
+    commit id: "add planet.py"
+    branch jupiter
+    checkout jupiter
+    commit id: "add jupiter"
+    checkout main
+    branch modular
+    checkout modular
+    commit id: "4 modular files"
+    checkout main
+    commit id:"rm print"
+    merge modular
     ```
 
     - NOTE that (origin/main) planet.py documentation is not up-to-date
@@ -741,6 +780,8 @@ $ git branch -d new-feature    # remove branch
     * b9465e4 planet.py documentation
     * 6a416b5 add folders and planet code
     ```
+
+    - Now local Git and GitHub are in phase!
 
 ### On GitHub
 
