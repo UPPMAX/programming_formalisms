@@ -5,6 +5,11 @@ nav:
   - Home: index.md
   - Pre-requirements: prereqs.md
   - About the course: intro.md
+  - Project:
+    - Intro: project/README.md
+    - Create class list: project/create_class_list.md
+    - Create structs: project/create_struct.md
+    - Dream design: project/dream_design.md
   - Monday:
     - Intro: monday_intro.md
     - Introduction: introductions/intro.md
