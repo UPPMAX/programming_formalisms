@@ -58,7 +58,7 @@ There are two more ways to create “copies” of repositories into your user sp
     - This will _preserve the history_ of the imported project.
 
 
-## Different workflows
+## Different workflows for collaboration
 
 ### Centralized workflow
 ![Centralized layout](../img/centralized.svg)
@@ -85,11 +85,6 @@ There are two more ways to create “copies” of repositories into your user sp
 - **Red** is the central repository, where only owners have access.
 - **Green** are *forks* on GitHub (copy for a single user to work on).
 - **Blue** are local copies where contributors work on their own computer.
-
-
-
-
-
 
 ## Contributing in a team
 
