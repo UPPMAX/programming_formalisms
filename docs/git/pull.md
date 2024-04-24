@@ -15,11 +15,11 @@
 
       - How to contribute
 
-???- info "Learning objectives of 'Deployment'"
+???+ info "Learning objectives of 'Deployment'"
 
     - explain and evaluate the usefulness of git Pull Request with code review
 
-!!!- note "Instructor notes"
+???- note "Instructor notes"
 
     Prerequisites are:
 
@@ -31,7 +31,7 @@
     - Theory 20
     - Discussions 10 min
 
-!!! info "Table of content"
+???- info "Table of content"
 
     - GitHub
     - Centralized workflow
@@ -39,6 +39,11 @@
     - How to contribute changes to somebody else’s project
         - Contributing very minor changes
         - If you observe an issue and have an idea how to fix it
+
+## Review git graph in VS code
+
+- Björn shows
+
 
 ## GitHub and new repos
 
