@@ -19,7 +19,9 @@ How do I write functions [1] that are:
 
 References;
 
-- [1] For now, we use `algorithm == function`, as the definition of an algorithm is 'a step-by-step procedure for solving a problem or accomplishing some end' @dictionary_algorithm
+- [1] For now, we use `algorithm == function`, 
+  as the definition of an algorithm is 
+  'a step-by-step procedure for solving a problem or accomplishing some end' [dictionary definition]
 - [2] pick any vague definition
 
 ## What is a good function?
@@ -28,13 +30,16 @@ A good function ...
 
 . . .
 
--   Sometimes: is documented @ram2013ropensci @tidyverse_style_guide_functions
--   Is small @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
--   Has a good (:innocent:) name @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions @pep_20 @hitchhikers_guide_to_python_general_concepts
+
+
+
+-   Sometimes: is documented [Ram, 2013] [tidyverse style guideline of functions]
+-   Is small [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
+-   Has a good (:innocent:) name [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20 @hitchhikers_guide_to_python_general_concepts
 -   Is easy to use correctly and hard to use incorrectly @meyers2005effective @cpp_core_guidelines_functions @pep_20
--   Does one thing correctly @martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
--   Is tested @martin2011clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions
--   Raises helpful exceptions \@@martin2009clean @cpp_core_guidelines_functions @tidyverse_style_guide_functions @pep_20
+-   Does one thing correctly [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
+-   Is tested @martin2011clean @cpp_core_guidelines_functions [tidyverse style guideline of functions]
+-   Raises helpful exceptions [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20
 -   Fast iff needed @cpp_core_guidelines_functions
 
 ## Design by contract
@@ -85,7 +90,7 @@ A good function ...
     ```
 
 
-Mandatory in some contexts @ram2013ropensci @tidyverse_style_guide_functions
+Mandatory in some contexts [Ram, 2013] [tidyverse style guideline of functions]
 
 ## A good function has a good name
 
@@ -95,13 +100,13 @@ Mandatory in some contexts @ram2013ropensci @tidyverse_style_guide_functions
 
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
--   starts with a verb @tidyverse_style_guide_functions
+-   starts with a verb [tidyverse style guideline of functions]
 -   readable @pep_20
--   intention-revealing @martin2009clean
--   pronounceable @martin2009clean
--   searchable @martin2009clean
--   not cute @martin2009clean
--   no pun @martin2009clean
+-   intention-revealing [Martin, 2009]
+-   pronounceable [Martin, 2009]
+-   searchable [Martin, 2009]
+-   not cute [Martin, 2009]
+-   no pun [Martin, 2009]
 -   carefully @cpp_core_guidelines_functions
 
 ## Examples of bad function names?
@@ -399,3 +404,10 @@ A good function:
 -   Gives clear error messages
 -   Is documented
 -   Fast iff needed
+
+## References
+
+- [dictionary definition] https://www.merriam-webster.com/dictionary/algorithm
+- [Martin, 2009] Martin, Robert C. Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
+- [Ram, 2013] Ram, K. "rOpenSci-open tools for open science." AGU Fall Meeting Abstracts. Vol. 2013. 2013.
+- [tidyverse style guideline of functions] https://style.tidyverse.org/functions.html
