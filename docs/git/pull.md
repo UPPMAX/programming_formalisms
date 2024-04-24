@@ -172,12 +172,9 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 ### Resolving a conflict
 
-**FIX**
-
-    ```{instructor-note}
     - "Non-talking instructor" prepares a conflicting commit during session (check what the first PR does).
     - Conflict can be shown as demo.
-    ```
+
 
 ### Exercise/demo: let us experience a conflict
 
