@@ -37,9 +37,38 @@ Good (:innocent:) data structures:
 -   **Bundles data that belongs together**
 -   Ensures correct state of the program
 
+## Class relations
+
+In this course, we use only two types of relations:
+- composition, a 'has-a' relationship
+- inheritance, a 'is-a-type-of' relationship
+
+```
+classDiagram
+  Person
+  Name
+  Person *-- Name
+```
+
+> An example of composition
+
+In English this would be read as 'a person has a name'.
+
+```
+classDiagram
+  Animal
+  Duck
+  Animal <|-- Duck
+```
+
+> An example of inheritance
+
+In English this would be read as 'a duck is a type of animal'.
+
 ## A 'has-a' relationship
 
-When one data type has a 'has-a' relationship with another, this is called *composition*.
+When one data type has a 'has-a' relationship with another, 
+this is called *composition*.
 
 ```mermaid
 classDiagram
@@ -49,18 +78,19 @@ classDiagram
   }
 ```
 
-A `Coordinat` has an `x` and `y`
+A `Coordinat` has an `x` and `y`. 
+This is close to English, as it should be
 
 ## Composition versus aggregation
 
 A university has departments, where a department has professors.
 These are two different 'has-a' relationships.
 
-Has-a relationship                     |Composition                 |Aggregation
----------------------------------------|----------------------------|---------------------------
-Ownership of its elements              |Yes                         |No
-What happens to elements when destroyed|Destroyed                   |Left intact
-Example                                |A university has departments|A department has professors
+Has-a relationship                     |Composition                                               |Aggregation
+---------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------
+Example                                |A university has departments                              |A department has professors
+Ownership of its elements              |Yes, a university owns its departments                    |No, a department allows professors to group
+What happens to elements when destroyed|Destroyed: when a university closes, all departments close|Left intact: when a department closes, all professors live afterwards
 
 ## Composition of structs
 
@@ -83,6 +113,8 @@ classDiagram
 ```
 
 -   [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
+
+
 
 ## Exercise 1: design a struct (15 mins)
 
