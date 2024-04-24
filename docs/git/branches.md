@@ -17,7 +17,7 @@
 
     - learners can explain and evaluate the usefulness of branches
 
-!!! note "Instructor notes"
+???- note "Instructor notes"
 
     Prerequisites are:
 
@@ -30,21 +30,20 @@
     - Discussions 10 min
 
 
-!!! info "Table of content"
+!!!_ info "Table of content"
 
     - Branching
         - background
         - workflows
         - examples/demos
         - discussion
-        - "quiz"
     - Merging
         - background
         - workflows
         - conflicts?
         - examples/demos
         - discussion
-        - "quiz"
+
 
 
 
@@ -823,8 +822,6 @@ $ git merge
 
 ![](../img/git_branches.png)
 
-
-???- question "quiz"
 
 !!! admonition "Parts to be covered!"
 
