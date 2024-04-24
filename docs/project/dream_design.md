@@ -21,7 +21,7 @@ To design your code, 'dream design' is a way to assure that you work top-down.
     but I, Richel, feel 'dream design', 
     albeit no formal term, describes better what is going on.
 
-### Step 0: an empty class
+## Step 0: an empty class
 
 Here, we image a class that performs a computational experiment:
 
@@ -30,7 +30,7 @@ classDiagram
   class Experiment
 ```
 
-### Step 1: create an experiment
+## Step 1: create an experiment
 
 We do not need to use a formal class just yet, and maybe we never will.
 At this point in time, an empty `list` could be used too.
@@ -89,7 +89,7 @@ We can also write a test:
             create_experiment()
     ```
 
-### Step 2: run the experiment
+## Step 2: run the experiment
 
 Now, what do we want to do with it?
 
@@ -101,6 +101,21 @@ experiment = create_experiment()
 run(experiment)
 ```
 
+???- question "What about using `experiment.run()` instead?"
+
+    This is a worse option at this point in time.
+
+    Those with experience in object oriented programming
+    may imagine that `experiment` is a class, with a `run` member function.
+    However, [make a function a member only if it needs direct access to the representation of a class](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-member).
+
+    As we do not need direct access to the implementation of `experiment`,
+    we should already use a member function.
+
+    When using a member function becomes really necessary, 
+    one has no option but to use `experiment.run()`. 
+    However, this may never happen.
+    
 We can imagine that `run` can work on an experiment,
 whatever type `experiment` may be.
 
@@ -138,7 +153,7 @@ We can also write a test:
             run(experiment)
     ```
 
-### Step 3: run the experiment and get the results
+## Step 3: run the experiment and get the results
 
 However, running an experiment is not enough:
 we need the results of the run.
@@ -199,7 +214,7 @@ We can also write a test:
     ```
 
 
-### Step 4: save the results
+## Step 4: save the results
 
 However, getting the results in the memory of a computer is not enough:
 we need to save those results to file.
@@ -250,7 +265,7 @@ We can also write a test:
             save(results, "my_results.csv")
     ```
 
-### Step 5: a simulation has parameters
+## Step 5: a simulation has parameters
 
 Our simulation probably needs parameters.
 
@@ -313,7 +328,7 @@ We can also write a test:
             experiment = create_experiment(parameters)
     ```
 
-### Step 6: read parameters from file
+## Step 6: read parameters from file
 
 Our simulation probably needs to read parameters from a file:
 
@@ -361,7 +376,7 @@ We can also write a test:
             read_parameters_from_file("parameters.txt")
     ```
 
-### Conclusion
+## Conclusion
 
 Consider the code we just dreamt:
 
@@ -448,7 +463,7 @@ From here, we can make these stubs actually do something useful, by adding
 tests that test actual behavior. For example, `save` should actually create
 a file.
 
-## Exercise
+## Exercises
 
 ### Exercise 1: dream-design
 
