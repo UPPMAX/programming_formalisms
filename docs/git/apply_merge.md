@@ -2,15 +2,23 @@
 
 !!!- info "Learning objectives"
 
-    - practice fixing merge conflicts
+    - practice doing Pull Requests using the GitHub interface
     - practice doing a code review
+    - practice fixing merge conflicts on GitHub
+    - practice merging branches using the command-line interface
+    - practice fixing merge conflicts on local computer, 
+      using the command-line interface
 
 ???- question "For teachers"
 
     Teaching goals are:
 
-    - Learners have fixed merge conflicts
-    - Learners have done a code review
+    - Learners have practiced doing Pull Requests using the GitHub interface
+    - Learners have practiced doing a code review
+    - Learners have practiced fixing merge conflicts on GitHub
+    - Learners have practiced merging branches using the command-line interface
+    - Learners have practiced fixing merge conflicts on local computer, 
+      using the command-line interface
 
 
     ```mermaid
@@ -34,14 +42,111 @@
     - Can a `git push` result in a merge conflict? Why?
     - Can a `git pull` result in a merge conflict? Why?
 
-
 ## Exercises
 
-### Exercise 1: practice merging `git` branches
+Exercises 1 and 2 use the GitHub interface, 
+which is graphical and easy to use.
+It should help you get acquainted to branches, Pull Requests and code review.
+
+Exercises 3 and 4 use the command line instead to achieve similar goals.
+It should help you get acquainted to working with git on the command-line.
+
+Exercise 5 is a repeat of doing a code review.
+
+### Exercise 1: practice merging `git` branches using the GitHub interface
 
 !!!- info "Learning objectives"
 
     - practice merging git branches without a merge conflict
+
+```mermaid
+gitGraph
+    commit id: "Stuff on main"
+    branch develop
+    checkout develop
+    commit id: "Stuff on develop"
+    branch anna
+    checkout anna
+    commit id: "Some work"
+    commit id: "Branching version"
+    branch bertil
+    checkout bertil
+    commit id: "Modify my file"
+    checkout anna
+    merge bertil
+    commit id: "Another commit"
+    checkout develop
+    merge anna
+```
+
+- You work in a pair or trio
+- On GitHub, create a branch for person A, e.g. `anna` that branches off from `develop`
+- On GitHub, use the branch of person A and create a new commit.
+  Use the web interface or command-line.
+- On GitHub, create a branch for person B, e.g. `bertil` that branches off from `anna`
+- On GitHub, use the branch of person B and create a new commit.
+  Use the web interface or command-line.
+- On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
+  The person that does this requests a reviewer.
+- On GitHub, the other person approves the Pull Request and merges
+- On GitHub, use web interface to create a Pull Request from `anna` to `develop`.
+  The person that does this requests a reviewer.
+  If there is a merge conflict, either stop (you've done the exercise, well done!)
+  or fix the merge conflict
+- On GitHub, the other person approves the Pull Request and merges
+
+### Exercise 2: practice merging `git` branches using the GitHub interface
+
+!!!- info "Learning objectives"
+
+    - practice merging git branches with a merge conflict using the GitHub interface
+
+```mermaid
+gitGraph
+    commit id: "Stuff on main"
+    branch develop
+    checkout develop
+    commit id: "Stuff on develop"
+    branch anna
+    branch bertil
+    checkout anna
+    commit id: "Modify a file"
+    checkout bertil
+    commit id: "Modify the same file"
+    checkout anna
+    merge bertil
+    checkout develop
+    merge anna
+```
+
+- You work in a pair or trio
+- On GitHub, create a branch for person A, e.g. `anna` that branches off from `develop`
+- On GitHub, create a branch for person B, e.g. `bertil` that branches off from `anna`
+- On GitHub, use the branch of person A and create a new commit in a file
+  Use the web interface or command-line.
+- On GitHub, use the branch of person B and create a new commit 
+  **in the same place in the same (now outdated) file**
+  Use the web interface or command-line.
+- On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
+  The person that does this requests a reviewer.
+  There is a warning for a merge conflict!
+- On GitHub, the other person fixes the merge conflict, 
+  approves the Pull Request and merges
+- On GitHub, use web interface to create a Pull Request from `anna` to `develop`.
+  The person that does this requests a reviewer.
+- On GitHub, the other person approves the Pull Request and merges
+
+### Extra exercise 3: practice merging `git` branches using the command-line
+
+!!!- info "Learning objectives"
+
+    - practice merging git branches without a merge conflict
+
+!!!- caution "Here we use the `main` branch for now"
+
+    Instead of updating this exercise, its answer and video
+    to use a proper branching workflow, we branch from `main`
+    in this exercise
 
 ```mermaid
 gitGraph
@@ -193,12 +298,18 @@ gitGraph
 
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
 
-### Exercise 2: practice merge conflicts between branches
+### Extra exercise 4: practice merge conflicts between branches using the command line
 
 !!!- info "Learning objectives"
 
     - experience merge conflicts between branches
     - fix merge conflicts between branches
+
+!!!- caution "Here we use the `main` branch for now"
+
+    Instead of updating this exercise, its answer and video
+    to use a proper branching workflow, we branch from `main`
+    in this exercise
 
 ```mermaid
 gitGraph
@@ -244,7 +355,7 @@ gitGraph
 
     You can find a video [here](https://youtu.be/2RTO8I9qdCk)
 
-### Exercise 3: practice code review
+### Extra exercise 5: practice code review
 
 For team member A:
 
