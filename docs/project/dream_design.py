@@ -15,8 +15,6 @@ def save(results, filename):
     pass
 
 parameters = create_parameters()
-experiment = create_experiment()
 experiment = create_experiment(parameters)
-
 results = run(experiment)
 save(results, "my_results.csv")

@@ -7,6 +7,8 @@
     - Understand what a stub is
     - Understand why to use stubs
     - Apply dream design on own class
+    - Practice writing stubs for own class
+    - Rehearse TDD
 
 ## Introduction
 
@@ -286,6 +288,8 @@ classDiagram
   class Experiment {
     parameters
   }
+  class Results {
+  }
 ```
 
 We can also write a test:
@@ -508,3 +512,24 @@ Discuss:
 ???- note "Learning objectives"
 
     - Apply dream design on own class
+
+Everyone in this course is the owner of a class in the shared project.
+The current class design of the shared project can be found at `design/README.md`.
+
+In your group:
+
+- In isolation, for 10 minutes: 
+  - Dream the code how to use your class 
+    (this first block of code of 4 lines at [conclusion](#conclusion)).
+  - Write down this code somewhere, e.g. `learners/[your_name]/[class_name].md`
+- As a group, discuss each group members' result. Is the dreamt code good? 
+  Can it be improved? 
+  When the class owner can defend his/her ideas, it is good enough!
+
+### Exercise 3: write the stubs for your class
+
+???- note "Learning objectives"
+
+    - Write the stubs for your class
+    - Practice TDD
+
