@@ -15,14 +15,6 @@ Data structure are 'ways to organize your data'.
 
 Good (:innocent:) data structures:
 
--   Increase expressiveness
--   Bundles data that belongs together
--   Ensures correct state of the program
-
-## `struct` design
-
-Good (:innocent:) data structures:
-
 -   **Increase expressiveness**
 -   Bundles data that belongs together
 -   Ensures correct state of the program

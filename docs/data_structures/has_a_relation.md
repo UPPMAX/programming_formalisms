@@ -43,7 +43,7 @@ In this course, we use only two types of relations:
 - composition, a 'has-a' relationship
 - inheritance, a 'is-a-type-of' relationship
 
-```
+```mermaid
 classDiagram
   Person
   Name
@@ -54,7 +54,7 @@ classDiagram
 
 In English this would be read as 'a person has a name'.
 
-```
+```mermaid
 classDiagram
   Animal
   Duck
