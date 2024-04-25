@@ -57,6 +57,12 @@
     - Make your program or workflow work for others and yourself in the future.
     - Let people understand how to use your program/tool
 
+
+
+**TODOS**
+- add info about header in python
+- add info about runing in shared services like computer cluster / hpc
+
 ## Recording dependencies
 -	**Reproducibility**: We can control our code but how can we control dependencies?
 -	**10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
@@ -128,12 +134,12 @@
 
 ??? "Discuss: what format is suitable for our course project?"
 
-
+**FIX**
+README wih instructions
 
 ## Ignoring files and paths with .gitignore
 
-Compiled and generated files are not
-committed to version control. There are many reasons for this:
+Compiled and generated files are not committed to version control. There are many reasons for this:
 
 - Your code could be run on different platforms.
 - These files are automatically generated and thus do not contribute in any meaningful way.
