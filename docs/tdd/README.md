@@ -91,7 +91,7 @@ instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
 
 !!! note "Technical rules"
 
-    -   Use the GitHub repository for the learners of this course, <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023>
+    -   Use the GitHub repository for the learners of this course, 
     -   Work on the main branch
     -   Work in a file called `learners/[your_name]/[class_name].py`, where `[your_name]` is the person with first name first in alphabet
     -   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
@@ -154,7 +154,6 @@ showed at 'Exercises'.
 
     - [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
     - [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
-
 
 ### Exercise 1: `is_even`
 
@@ -345,6 +344,39 @@ Develop a function called `is_prime`.
     Here is a videos that show how to develop `is_prime` for Python:
 
     - [YouTube](https://youtu.be/qVtHieuwM1M)
+
+### Exercise 5: practice
+
+???- note "Learning objectives"
+
+    - Practice of TDD
+
+Go to [the Programming Formalisms page 'functions to practice TDD'](../misc/functions.md).
+Pick a function at your level.
+
+!!! note "Technical rules"
+
+    - Use the shared GitHub repository for the learners of this course
+    - Pick a branching model. When unsure, work on `main`
+    - Use no testing framework or `unittest`. When unsure, use no testing frameworks
+      - No testing framework: work in a file called `learners/[your_names]/[function_name].py`, e.g. `learners/anna_and_bertil/is_zero.py`
+      - `unittest` framework: work in a file in the `src` folder (e.g. `src/anna_and_bertil_utils.py`), write the tests in the `tests` folder, e.g. `tests/test_anna_and_bertil_utils.py` 
+
+!!! note "Social rules"
+
+    -   Ping-Pong Pair programming
+    -   Discuss how and when to switch roles first
+    -   Person with first name first in alphabet starts
+    -   Try to be **an exemplary duo**
+
+!!! note "Signs you are doing great"
+
+    In an online course:
+
+    - A good pair has the driver sharing his/her screen
+    - In a good pair, both people talk a lot
+    - A good pair switches roles regularly
+    - A good pair has a lot of commits
 
 ## Conclusion
 
