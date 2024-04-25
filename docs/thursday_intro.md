@@ -39,8 +39,8 @@ Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Thursday |09:00-10:00|Richel |TDD
 Thursday |10:15-11:00|Richel |Project design
-Thursday |11:15-12:00|Richel |Data structures
+Thursday |11:15-12:00|Richel |GitHub Issues and Project
 Thursday |13:00-14:00|Richel |Data structures
-Thursday |14:15-15:00|Richel |Algorithms
+Thursday |14:15-15:00|Richel |Continuous Integration
 Thursday |15:15-15:45|Richel |Optimization
 Thursday |15:45-16:00|Richel |Retrospect
