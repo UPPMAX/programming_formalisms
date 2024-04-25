@@ -480,6 +480,28 @@ From here, we can make these stubs actually do something useful, by adding
 tests that test actual behavior. For example, `save` should actually create
 a file.
 
+???- question "How would this blend when using classes?"?
+
+    Perfectly fine! Here we see how those functions 
+    forward their functionality to classes:
+
+    ```python
+    def create_parameters():
+        return Parameters()
+
+    def read_parameters_from_file(filename):
+        return Parameters(filename)
+
+    def create_experiment(parameters = []):
+        return Experiment(parameters)
+
+    def run(experiment):
+        return experiment.run()
+
+    def save(results, filename):
+        pass
+    ```
+
 ## Exercises
 
 ### Exercise 1: dream-design
