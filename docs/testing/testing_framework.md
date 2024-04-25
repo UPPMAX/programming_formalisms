@@ -252,7 +252,8 @@ The function is a function to determine if a number is prime.
     practice writing tests within a formal testing framework.
     Which function to implement is irrelevant,
     so feel free to pick a function that fits your level.
-    If needed, one can find inspiration at [these example functions](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py)
+    If needed, there are many worked-out functions 
+    [here](../misc/functions.md)
 
 !!! info "The function"
 
