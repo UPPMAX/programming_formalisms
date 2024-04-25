@@ -1,7 +1,7 @@
 # Modular programming
-!!! "Learning goals"
+## "Learning goals"
 
-    Todays Learning Goals are:
+Todays Learning Goals are:
     ???- info "Learning objectives of 'Modular programming'"
 
         - The student has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
