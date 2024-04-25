@@ -21,4 +21,9 @@ can be found [here](../misc/projects.md).
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
 - [Dream design](dream_design.md)
-
+- Add CI
+- Do a big-O analysis
+- Speed-optimize code
+- Refactor design
+- Refactor code
+- Bundle code in package
