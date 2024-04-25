@@ -1,23 +1,33 @@
 # Modular programming
 ## "Learning goals"
 
-Todays Learning Goals are:
+!!! info "Today we will"
+    - Check Prior knowledge 10 min
+    - Revisit Class Diagrams and interactions between classes 10 min
+    - Introduce Refactoring 10 min
+    - Exercise  Refactor design of project Class diagram 30 min
+    - Introduce Design Patterns 10 min + 10 min discussion
+    - Implement Factory Design pattern and Mediator Design pattern 40 min
+    - Introduce Modularity 10 min 
+    - Exercise 50 min produce logical modules that separates the behavior and structure in modules. 
 
-???- "Learning objectives of 'Modular programming'"
+???- "Learning objectives of Refactoring"
+    -
 
-    -The student has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
-    -The concepts of common interface and protocols are introduced
-    -The students are introduced the concept of coupling and how to find tight coupling
-    -Learns the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
-    -The students partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
+???- "Learning objectives of Design Patterns"
 
-???- "Learning objectives of 'Design Patterns'"
-
-    -The students know of the "zero line" code and how it relates to software design "Zero line" Design
-    - The students should be able to implement into their design the 
+    -The learners know of the "zero line" code and how it relates to software design "Zero line" Design
+    - The Learners should be able to implement into their design the 
     "Factory pattern"
-    -The students can describe the general parts of a design pattern and why we use them.
+    -The learners can describe the general parts of a design pattern and why we use them.
 
+???- info "Learning objectives of Modular programming"
+
+    -The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
+    -The concepts of common interface and protocols are introduced to the learners
+    -The learners are introduced the concept of coupling and how to find tight coupling
+    -learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
+    -The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
 ##Prior Knowledge:
 ???- "What is Modular Programming"
