@@ -12,7 +12,8 @@
     - Exercise 50 min produce logical modules that separates the behavior and structure in modules. 
 
 ???- "Learning objectives of Refactoring"
-    -
+    - Learners learns about code smells and design smells
+    
 
 ???- "Learning objectives of Design Patterns"
 
