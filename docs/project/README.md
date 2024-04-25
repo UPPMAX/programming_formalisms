@@ -26,4 +26,6 @@ can be found [here](../misc/projects.md).
 - Speed-optimize code
 - Refactor design
 - Refactor code
+- Code deployment
+- Add documentation
 - Bundle code in package
