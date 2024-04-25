@@ -9,7 +9,7 @@ Here are some roles we informally use in this project:
 Team members that just started.
 They need to be taught the workflow by junior developers.
 
-## Junior develop
+## Junior developer
 
 A junior developers:
 
