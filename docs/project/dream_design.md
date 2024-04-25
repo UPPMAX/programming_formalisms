@@ -495,9 +495,9 @@ Do:
 
 - Set a timer of 10 minutes
 - Individually, take those 10 minutes to:
-  - read the text above from start to finish.
-  - for yourself, answer the questions below
-  - for yourself, answer the discussion points below that
+   - read the text above from start to finish.
+   - for yourself, answer the questions below
+   - for yourself, answer the discussion points below that
 
 Answer:
 
@@ -529,19 +529,19 @@ Answer:
 Discuss:
 
 - At [conclusion](#conclusion), the dreamt code is given.
-  - Do you agree/disagree that the code is good?
-  - Can the code be improved? How?
+   - Do you agree/disagree that the code is good?
+   - Can the code be improved? How?
 - At [conclusion](#conclusion), the dreamt class diagram is given.
-  - Do you agree/disagree that the class diagram is good?
-  - Can the class diagram be improved? How?
+   - Do you agree/disagree that the class diagram is good?
+   - Can the class diagram be improved? How?
 - At [conclusion](#conclusion), the dreamt tests are given.
-  - Do you agree/disagree that the tests are good?
-  - Can the tests be improved? How?
-  - Should the tests be removed when the stubs have matured
-    into useful functions and are tested for real behavior?
+   - Do you agree/disagree that the tests are good?
+   - Can the tests be improved? How?
+   - Should the tests be removed when the stubs have matured
+     into useful functions and are tested for real behavior?
 - At [conclusion](#conclusion), one example implementation is given.
-  - Do you agree/disagree that the example implementation is good?
-  - Can it be improved? How?
+   - Do you agree/disagree that the example implementation is good?
+   - Can it be improved? How?
 
 ### Exercise 2: dream-design your class
 
@@ -555,12 +555,14 @@ The current class design of the shared project can be found at `design/README.md
 In your group:
 
 - In isolation, for 10 minutes: 
-  - Dream the code how to use your class 
-    (this first block of code of 4 lines at [conclusion](#conclusion)).
-  - Write down this code somewhere, e.g. `learners/[your_name]/[class_name].md`
-- As a group, discuss each group members' result. Is the dreamt code good? 
-  Can it be improved? 
-  When the class owner can defend his/her ideas, it is good enough!
+   - Dream the code how to use your class 
+     (this first block of code of 4 lines at [conclusion](#conclusion)).
+   - Write down this code somewhere, e.g. `learners/[your_name]/[class_name].md`
+- As a group, discuss each group members' result:
+   - Is the dreamt code good? 
+   - Can it be improved? 
+
+!!! note "When the class owner can defend his/her ideas, it is good enough :-)"
 
 ### Exercise 3: write the stubs for your class
 
