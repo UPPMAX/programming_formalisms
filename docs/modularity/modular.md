@@ -32,6 +32,15 @@
 ???- "What is a Design Pattern"
 
 ???- "Why do we use Design Patterns"
+
+???- "What is Refactoring"
+
+
 ## Theory
+???- Read https://refactoring.guru/refactoring and discuss how this can be implemented also in the design phase.(10 min)
+
+    - Consider is your class diagram reflecting your code.
 
 ## Exercise
+ Refactor your design document 
+ ???- How can we 
