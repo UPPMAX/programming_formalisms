@@ -19,7 +19,7 @@ number-sections: true
 
 ## Breaks
 
-Please take breaks: these are important for learning. 
+Please take breaks: these are important for learning.
 
 It can sometimes be painful/annoying when there is a break in the middle of the exercise.
 
