@@ -1,6 +1,5 @@
 # Deploy your code
 
-
 !!! questions
 
     - How to make your program work for others?
@@ -8,21 +7,19 @@
 !!! info "Content"
 
    - We will prepare for use of your code
-   - Revisit licence
    - But also...
      - some theory of packages
      - some theory of workflows
      - some theory of containers
-     - some info about Tutorials/Reference/HowTo guides
+     - get some hands on 
 
-???- info "Learning objectives of 'Deployment'"
+!!! info "Learning objectives of 'Deployment'"
 
     - learners can mentalize the installation needs from the users perspective
     - learners can evaluate different available tools for reproducibility and installations
     - learners can prepare for different users: local computer, Cluster
 
-!!! note "Instructor notes"
-
+???- note "Instructor notes"
     Prerequisites are:
 
     - ...
@@ -33,19 +30,13 @@
     - Theory 20
     - Discussions 10 min
 
-!!! info TOC
+??? info TOC
 
     - Overview
         - Recording dependencies
         - workflows
         - containers
     - Make a package    
-
-
-!!! note "Think about:"
-    
-    - structure of the files and folders for the project
-    - documentation already
 
 !!! note
    
@@ -55,12 +46,10 @@
 
 
 !!! Discussion "One-time usage towards distributed package"
-
     
     - Have others used your code?
     - Did you plan it from beginning?
     - Did you take actions somehow?
-
 
 
 !!! attention
@@ -133,7 +122,13 @@
 
 **TIP** Inform about this in the last exercise (updating the README file)
 
-``````
+### Demo with planet
+
+### Exercise with project 
+
+??? "Discuss: what format is suitable for our course project?"
+
+
 
 ## Ignoring files and paths with .gitignore
 
@@ -150,7 +145,8 @@ For this we use `.gitignore` files. Read more https://uppmax.github.io/programmi
 - Not important for our project right now.
 - **But**, we should had omitted the virtual environment, i.e. the directory ``planet-project``.
 
-
+**FIX**
+Give exammples
 
 ## Workflows
 
@@ -178,7 +174,7 @@ For this we use `.gitignore` files. Read more https://uppmax.github.io/programmi
 
     **Make sure it works for other or you in the future!**
 
-
+## Exercise with Course project
 
 !!! admonition "Parts to be covered!"
 
