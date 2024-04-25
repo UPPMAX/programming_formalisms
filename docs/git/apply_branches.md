@@ -1,5 +1,9 @@
 # Apply branches
 
+![](github_view_branches_summer_2024.png)
+
+> Branching structure of an earlier course iteration.
+
 !!!- info "Learning objectives"
 
     - create, switch and delete a `git` branch

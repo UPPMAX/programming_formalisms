@@ -10,6 +10,23 @@
     - Practice writing stubs for own class
     - Rehearse TDD
 
+???- question "For teachers"
+
+    Lesson plan:
+
+    ```mermaid
+    gantt
+      title Lesson plan dream programming
+      dateFormat X
+      axisFormat %s
+      Introduction : intro, 0, 5s
+      Pair up: pair_up, after intro, 5s
+      Read in silence: crit, read, after pair_up, 10s
+      Answer together: crit, answer, after read, 5s
+      Teacher may come in to discuss: discuss, after read, 10s
+      Continue: crit, exercise_2, after answer, 25s
+    ```
+
 ## Introduction
 
 To design your code, 'dream design' is a way to assure that you work top-down.
@@ -476,7 +493,11 @@ a file.
 
 Do:
 
-- Read the text above from start to finish
+- Set a timer of 10 minutes
+- Individually, take those 10 minutes to:
+  - read the text above from start to finish.
+  - for yourself, answer the questions below
+  - for yourself, answer the discussion points below that
 
 Answer:
 
