@@ -7,6 +7,7 @@ nav:
   - About the course: intro.md
   - Project:
     - Intro: project/README.md
+    - Using GitHub Issues and Project: project/github_issues_and_project.md
     - Create class list: project/create_class_list.md
     - Create structs: project/create_struct.md
     - Dream design: project/dream_design.md
