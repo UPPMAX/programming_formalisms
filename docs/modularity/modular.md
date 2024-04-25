@@ -8,7 +8,7 @@ Todays Learning Goals are:
     -The student has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
     -The concepts of common interface and protocols are introduced
     -The students are introduced the concept of coupling and how to find tight coupling
-    -Learns the importance of modularisation when collaborating on larger projects by example of the reduced number of conflicts of commits.
+    -Learns the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
     -The students partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
 ???- "Learning objectives of 'Design Patterns'"
