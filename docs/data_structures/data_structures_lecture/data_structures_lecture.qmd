@@ -221,7 +221,7 @@ Ah, it is a **coordinat**!
 ## structure versus class
 
 | Parameter               | structure                    | class                       |
-|----------------------|--------------------------|-------------------------|
+|-------------------------|------------------------------|-----------------------------|
 | Python keyword          | `class`                      | `class`                     |
 | R object type           | S3 class                     | S4, R5, R6                  |
 | All states are valid    | Yes                          | No                          |
