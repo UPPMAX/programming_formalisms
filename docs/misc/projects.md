@@ -1,3 +1,3 @@
 # Projects
 
-Moved to [here](../projects/README.md).
+Moved to [here](../project/README.md).
