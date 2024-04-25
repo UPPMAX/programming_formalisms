@@ -37,6 +37,27 @@ Todays Learning Goals are:
 
 
 ## Theory
+Revisiting class design
+
+The 4 most important relationship classes can have
+are association, composition and aggregation
+```mermaid
+classDiagram 
+    Owner-->PetsIOwn
+    Dog*--"1"Head
+    Dog*--"1"Body
+    Dog*--"0..1"Tail
+    PetsIOwn o--"0..*"Dog
+    PetsIOwn o--"0..*"Cat
+    PetsIOwn o--"0..*"GoldFish
+    Animal <|--Dog
+    Animal <|--Cat
+    Animal <|--Goldfish
+```
+Further reading:
+[Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+
+
 ???- Read https://refactoring.guru/refactoring and discuss how this can be implemented also in the design phase.(10 min)
 
     - Consider is your class diagram reflecting your code.
