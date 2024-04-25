@@ -64,4 +64,3 @@ Further reading:
 
 ## Exercise
  Refactor your design document 
- ???- How can we 
