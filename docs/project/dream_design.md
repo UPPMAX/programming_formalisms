@@ -571,3 +571,9 @@ In your group:
     - Write the stubs for your class
     - Practice TDD
 
+With the dreamt code in mind,
+(re)develop it using TDD:
+write that test first, then make it come true.
+
+Work on a branch of the owner of the class.
+Merge to `develop` when done.
