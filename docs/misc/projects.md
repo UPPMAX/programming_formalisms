@@ -10,7 +10,7 @@ using professional workflows is the reason of having one project.
 
 Team logo                                                                   |Link
 ----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------
-![](./img/programming_formalisms_student_team_summer_2024_logo_116x116.png)|[Summer 2024](https://github.com/programming-formalisms/programming_formalisms_project_summer_2024)
+![](./img/programming_formalisms_student_team_summer_2023_logo_116x116.png)|[Summer 2024](https://github.com/programming-formalisms/programming_formalisms_project_summer_2024)
 ![](./img/programming_formalisms_teacher_team_logo_116x116.png)            |[Example project](https://github.com/programming-formalisms/programming_formalisms_example_project)
 
 ## Former projects

@@ -37,7 +37,7 @@ We merge coding using Pull Requests with code reviews.
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Thursday |09:00-10:00|Richel |TDD
+Thursday |09:00-10:00|Richel |[TDD exercise 5: practice](https://uppmax.github.io/programming_formalisms/tdd/#exercise-5-practice)
 Thursday |10:15-11:00|Richel |[Project dream design](project/dream_design/README.md)
 Thursday |11:15-12:00|Richel |GitHub Issues and Project
 Thursday |13:00-14:00|Richel |Data structures
