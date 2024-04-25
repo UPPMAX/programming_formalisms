@@ -3,15 +3,15 @@
 
 Todays Learning Goals are:
 
-???- info "Learning objectives of 'Modular programming'"
+???- "Learning objectives of 'Modular programming'"
 
-    - The student has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
-    - The concepts of common interface and protocols are introduced
+    -The student has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
+    -The concepts of common interface and protocols are introduced
     -The students are introduced the concept of coupling and how to find tight coupling
-    - Learns the importance of modularisation when collaborating on larger projects by example of the reduced number of conflicts of commits.
-    - The students partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
+    -Learns the importance of modularisation when collaborating on larger projects by example of the reduced number of conflicts of commits.
+    -The students partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
-???- info "Learning objectives of 'Design Patterns'"
+???- "Learning objectives of 'Design Patterns'"
 
     -The students know of the "zero line" code and how it relates to software design "Zero line" Design
     - The students should be able to implement into their design the 
