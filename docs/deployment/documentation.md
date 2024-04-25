@@ -47,7 +47,7 @@
         - update citation
         - update index
         
-### Licencing       
+### Licensing       
         
 #### Copyright
 - Protects creative expression
@@ -60,43 +60,36 @@
 - Limited other cases (private use, fair use: context dependent)
 - In practice: people do many things, but then can't share their output if license does not allow it or is not clarified
 
-**Examples**
--  Custom/closed/proprietary
-    - Derivative work typically not possible
-    - Unusual in academics 
--  Permissive (**MIT**, BSD, Apache)
-    - Derivative work does not have to be shared    
--  Weak copyleft share-alike (LGPL, MPL)
-    - Derivative work is free software but is limited to the component    
--  Strong copyleft share-alike (**GPL**, AGPL)
-  - Derivative work is free software and derivative work extends to the combined project    
+!!! admonition "A little more about licensing"
+
+    - Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
+
+    1. Custom/closed/proprietary
+        - Derivative work typically not possible
+        - Unusual in academics 
+    2. Permissive (**MIT**, BSD, Apache)
+      - Derivative work does not have to be shared    
+    3. Weak copyleft share-alike (**LGPL**, MPL)
+      - Derivative work is free software but is limited to the component
+    4. Strong copyleft share-alike (**GPL**, AGPL)
+      - Derivative work is free software and derivative work extends to the combined project    
 
 [Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)      
 
 
 ### Software Citation
 
-!!! info "See also"
-
-    - We will talk about this the last day!
-
-
 - Think the same as for a scientific paper
 - [Software citation](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#software-citation)
 
-!!! note "See also"
-    - Parts of [sharing](https://github.com/UPPMAX/programming_formalisms/blob/main/common_practices/slides/notes_social_coding.pdf) will be covered on Tuesday afternoon.
+- !!! admonition "Citation bullets"
 
-
-!!! objectives
-
-    - [More about sharing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html) aims to:
-        - introduce reproducibility and sharing, licensing and citation
-        - get into thinking about dependencies and solutions
-        - get into choosing license, citation and DOI
-
-
-
+    - Creator
+    - Title
+    - Publication venue
+    - Date
+    - Version
+    - Type
 
 ## In-code documentation
 
@@ -146,7 +139,6 @@ There are many more ...
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
 - [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and CR use for some course material
-
 - [Bitbucket Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=bitbucket)
 - [GitLab Pages](https://pages.gitlab.io)
 - [Read the docs](http://readthedocs.org) ← this is what NBIS uses for some course material
@@ -176,30 +168,6 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 ## (Optional) Last hands on your documentation
 - Some inspiration [Beagle](https://github.com/yampelo/beagle)
 
-!!! admonition "A little more about licensing"
-
-    - Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
-
-    1. Custom/closed/proprietary
-        - Derivative work typically not possible
-        - Unusual in academics 
-    2. Permissive (**MIT**, BSD, Apache)
-      - Derivative work does not have to be shared    
-    3. Weak copyleft share-alike (**LGPL**, MPL)
-      - Derivative work is free software but is limited to the component
-    4. Strong copyleft share-alike (**GPL**, AGPL)
-      - Derivative work is free software and derivative work extends to the combined project    
-
-
-
-!!! admonition "Citation bullets"
-
-    - Creator
-    - Title
-    - Publication venue
-    - Date
-    - Version
-    - Type
 
 
 !!! admonition "Git/GitHub Repo "
