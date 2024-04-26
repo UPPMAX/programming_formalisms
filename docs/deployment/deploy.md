@@ -6,12 +6,12 @@
 
 !!! info "Content"
 
-   - We will prepare for use of your code
-   - But also...
-     - some theory of packages
-     - some theory of workflows
-     - some theory of containers
-     - get some hands on 
+    - We will prepare for use of your code
+    - But also...
+        - some theory of packages
+        - some theory of workflows
+        - some theory of containers
+        - get some hands on 
 
 !!! info "Learning objectives of 'Deployment'"
 
@@ -30,7 +30,7 @@
     - Theory 20
     - Discussions 10 min
 
-??? info TOC
+???- info "TOC"
 
     - Overview
         - Recording dependencies
@@ -38,11 +38,16 @@
         - containers
     - Make a package    
 
-!!! note
+
+## Introduction
+
+- Distribution!
+
+- !!! note
    
-   - Many projects/scripts start as something for personal use, but expands to be distributed.
-   - Let's start in that end and be prepared.
-   - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+    - Many projects/scripts start as something for personal use, but expands to be distributed.
+    - Let's start in that end and be prepared.
+    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
 !!! attention
@@ -50,9 +55,8 @@
     - Make your program or workflow work for others and yourself in the future.
     - Let people understand how to use your program/tool
 
-## Introduction
 
-## To make sure...
+### To make sure...
 
 - Start with empty environent
     - good to do this from beginning
@@ -67,7 +71,7 @@
 
     - From a terminal?
     - On different computers?
-   -  On a cluster?
+    -  On a cluster?
 
 !!! Discussion "One-time usage towards distributed package"
     
@@ -117,6 +121,7 @@
 ### Containers
 
 **Popular container implementations:**
+
 - Docker
 - Singularity (popular on high-performance computing systems)
 - Apptainer (popular on high-performance computing systems, fork of Singularity)
@@ -212,9 +217,8 @@ $ pip freeze > requirements.txt
 ```
 - Other users can then install the same packages with:
 
-   ```console
-   $ pip install -user -r requirements.txt
-   ```
+```console
+$ pip install -user -r requirements.txt
 deactivate # deactivate the venv!
 git add requirements.txt
 git commit -m "add requirements.txt"
@@ -222,8 +226,7 @@ git push
 git switch main
 git merge venv
 git push
-
-**TIP** Inform about this in the last exercise (updating the README file)
+```
 
 ### Demo with planet
 
