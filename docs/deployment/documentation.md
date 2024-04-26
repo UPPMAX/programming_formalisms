@@ -48,8 +48,7 @@
         - update index
         
 ## README example
-
-´´´
+```
 # Planets
 ## About
 
