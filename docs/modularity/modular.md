@@ -33,23 +33,23 @@
     ```
 
 ???- info "Learning objectives of Refactoring"
-    - Learners learns about code smells and design smells
 
+     - Learners learns about code smells and design smells
 
 ???- info "Learning objectives of Design Patterns"
 
-    -The learners know of the "zero line" code and how it relates to software design "Zero line" Design
-    - The Learners should be able to implement into their design the 
-    "Factory pattern"
-    -The learners can describe the general parts of a design pattern and why we use them.
+     - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
+     - The Learners should be able to implement into their design the 
+       "Factory pattern"
+     - The learners can describe the general parts of a design pattern and why we use them.
 
 ???- info "Learning objectives of Modular programming"
 
-    -The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
-    -The concepts of common interface and protocols are introduced to the learners
-    -The learners are introduced the concept of coupling and how to find tight coupling
-    -learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
-    -The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
+     - The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
+     - The concepts of common interface and protocols are introduced to the learners
+     - The learners are introduced the concept of coupling and how to find tight coupling
+     - The learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
+     - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
 ##Prior Knowledge:
 ???- "What is Modular Programming"
