@@ -2,6 +2,7 @@
 ## "Learning goals"
 
 !!! info "Today we will"
+    
     - Check Prior knowledge 10 min
     - Revisit Class Diagrams and interactions between classes 10 min
     - Introduce Refactoring 10 min
@@ -13,6 +14,23 @@
     - break 15 min
     - Implement Factory Design pattern 40 min
     - lunch
+    
+    ```mermaid
+        gantt
+        title Lesson plan Refactoring, Design Patterns and Modularization
+        dateFormat X
+        axisFormat %s
+        Godmorning and Prior knowledge : intro, 0, 10
+        Revist class Diagrams: theory_1, 10, 10s
+        Refactoring: refactoring, 20, 10s
+        Excersie Refactoring: Excersie_1, 30,30s
+        Break:break_1,60,15s
+        Modularity:Modularity_1,75, 10s
+        Excersie: Modules, 85,25s
+        Design Patterns:Design_Patterns, 110, 20s
+        Break:break_1,130,15s
+        Excersie: Excersie_2, 145,40s
+    ```
 
 ???- info "Learning objectives of Refactoring"
     - Learners learns about code smells and design smells
