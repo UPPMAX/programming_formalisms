@@ -97,7 +97,7 @@ Further reading:
 
 ## Exercises
 
-???-"Refactor your design document"
+???- "Refactor your design document"
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
 
