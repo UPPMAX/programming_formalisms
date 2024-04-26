@@ -1,5 +1,6 @@
 # Modular programming
-## "Learning goals"
+
+## Learning goals
 
 !!! info "Today we will"
     
@@ -51,7 +52,8 @@
      - The learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
      - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
-##Prior Knowledge:
+## Prior Knowledge
+
 ???- "What is Modular Programming"
 
     Modular programming as a term introduced by Larry Constantine et.al at the Symposium on Modular Programming, organized at the Information and Systems Institute in July 1968.
