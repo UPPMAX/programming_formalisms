@@ -41,9 +41,9 @@
 
 ## Introduction
 
-- Distribution!
+- It's about Distribution!
 
-- !!! note
+!!! note
    
     - Many projects/scripts start as something for personal use, but expands to be distributed.
     - Let's start in that end and be prepared.
@@ -67,13 +67,13 @@
         - and with as empty as possible environment
 - What about  Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
 
-!!! Discussion "Where do you run your program?"
+!!! Discussion "Discussion: Where do you run your program?"
 
     - From a terminal?
     - On different computers?
-    -  On a cluster?
+    - On a cluster?
 
-!!! Discussion "One-time usage towards distributed package"
+!!! Discussion "Discussion: One-time usage towards distributed package"
     
     - Have others used your code?
     - Did you plan it from beginning?
@@ -218,7 +218,7 @@ $ pip freeze > requirements.txt
 - Other users can then install the same packages with:
 
 ```console
-$ pip install -user -r requirements.txt
+pip install -user -r requirements.txt
 deactivate # deactivate the venv!
 git add requirements.txt
 git commit -m "add requirements.txt"
@@ -230,7 +230,6 @@ git push
 
 ### Demo with planet
 
-- branch venv
 
     git switch -c venv
     python -m venv venv
