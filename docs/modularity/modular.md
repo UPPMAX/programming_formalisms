@@ -14,11 +14,11 @@
     - Implement Factory Design pattern 40 min
     - lunch
 
-???- "Learning objectives of Refactoring"
+???- info "Learning objectives of Refactoring"
     - Learners learns about code smells and design smells
 
 
-???- "Learning objectives of Design Patterns"
+???- info "Learning objectives of Design Patterns"
 
     -The learners know of the "zero line" code and how it relates to software design "Zero line" Design
     - The Learners should be able to implement into their design the 
@@ -97,7 +97,7 @@ Further reading:
 
 ## Exercises
 
-???- "Refactor your design document"
+???-"Refactor your design document"
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
 
