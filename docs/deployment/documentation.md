@@ -47,6 +47,32 @@
         - update citation
         - update index
         
+## README example
+```
+# Planets
+## About
+
+This program ...
+
+## Installation
+
+- This tool has been successfully tested in python-3.11.5
+
+- Clone this repository
+
+    git clone ...
+
+- Install dependencies (``numpy`` and ``matplotlib``)
+
+
+    pip install --user -r requirements
+
+- run from code directory
+
+    ./planet_main.py
+
+```
+
 ### Licensing       
         
 #### Copyright
@@ -119,18 +145,16 @@
 
 There are many tools that can turn RST or Markdown into beautiful HTML pages:
 
-- [Sphinx](http://sphinx-doc.org) **← we will exercise this, this is how this lesson material is built**
+- [Sphinx](http://sphinx-doc.org) 
     - Generate HTML/PDF/LaTeX from RST and Markdown.
-    - Basically all Python projects use Sphinx but **Sphinx is not limited to Python**
-- [Read the docs](http://readthedocs.org)
-    hosts public Sphinx documentation for free!
-    - Also hostable anywhere else, like GitHub pages. **← this is what we use for this lesson 
-    - API documentation possible
+    - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
+    - [Earlier Intro day for this course]()
 - [Jekyll](https://jekyllrb.com)
     - Generates HTML from Markdown.
     - GitHub supports this without adding extra build steps.
-- [MkDocs](https://www.mkdocs.org/)
-    - Example: [Bianca course](https://uppmax.github.io/bianca_workshop/)
+- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
+    - Generates HTML from Markdown.
+    - Example: [Programming formalisms  course]([https://uppmax.github.io//](https://github.com/UPPMAX/programming_formalisms)) 
 
 There are many more ...
 
@@ -138,10 +162,11 @@ There are many more ...
                                         
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
-- [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and CR use for some course material
+- [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
 - [Bitbucket Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=bitbucket)
 - [GitLab Pages](https://pages.gitlab.io)
 - [Read the docs](http://readthedocs.org) ← this is what NBIS uses for some course material
+    - hosts public Sphinx documentation for free!
     - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
 
 #### GitHub pages
@@ -162,7 +187,7 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
  
 !!! info "See also"
 
-    [Documentaion by CodeRefinery](https://coderefinery.github.io/documentation/)
+    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
 
 
 ## (Optional) Last hands on your documentation
