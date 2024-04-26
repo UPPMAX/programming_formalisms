@@ -39,10 +39,11 @@ Good (:innocent:) data structures:
 
 ## Class relations
 
-In this course, we use only two types of relations:
+In this course, we use only these types of relations:
 
 - composition, a 'has-a' relationship
 - inheritance, a 'is-a-type-of' relationship
+- association, a 'uses' relationship
 
 ```mermaid
 classDiagram
@@ -65,6 +66,17 @@ classDiagram
 > An example of inheritance
 
 In English this would be read as 'a duck is a type of animal'.
+
+```mermaid
+classDiagram
+  Simulation
+  Results
+  Simulation --> "produces" Results
+```
+
+> An example of inheritance
+
+In English this would be read as 'simulation creates results'.
 
 ## A 'has-a' relationship
 
