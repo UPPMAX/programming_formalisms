@@ -259,9 +259,9 @@ git push
 
 ### Exercise with project 
 
-??? "Discuss: what format is suitable for our course project?"
+???- "Discuss: what format is suitable for our course project?"
 
-??? "Discuss: what are the steps need to make the program complete?"
+???- "Discuss: what are the steps need to make the program complete?"
 
 ## Ignoring files and paths with .gitignore
 
@@ -272,19 +272,20 @@ Compiled and generated files are not committed to version control. There are man
 - The number of changes to track per source code change can increase quickly.
 - When tracking generated files you could see differences in the code although you haven't touched the code.
 
-For this we use `.gitignore` files. Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
+For this we use `.gitignore` files. 
 
-!!! example from our project repo
+- Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
+
+!!! example "From our project repo"
 
     - https://github.com/programming-formalisms/programming_formalisms_project_summer_2024/blob/main/.gitignore
 
 
 
-!!! info "key points"
+!!! info "Key points"
 
     **Make sure it works for other or you in the future!**
 
-## Exercise with Course project
 
 !!! admonition "Parts to be covered!"
 
