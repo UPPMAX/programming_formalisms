@@ -222,9 +222,9 @@ pip install -user -r requirements.txt
 ```
 
 - Continue
-- 
-deactivate # deactivate the venv!
-```
+
+    deactivate # deactivate the venv!
+
 
 ### Demo with planet
 
@@ -270,11 +270,11 @@ Compiled and generated files are not committed to version control. There are man
 
 For this we use `.gitignore` files. 
 
-- Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
+- Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
 
 !!! example "From our project repo"
 
-    <programming_formalisms_project_summer_2024/blob/main/.gitignore>
+    programming_formalisms_project_summer_2024/blob/main/.gitignore>
 
 
 
