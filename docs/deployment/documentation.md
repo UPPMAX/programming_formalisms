@@ -47,6 +47,32 @@
         - update citation
         - update index
         
+## README example
+
+´´´markdown
+# Planets
+## About
+
+This program ...
+
+## Installation
+
+- This tool has been successfully tested in python-3.11.5
+
+- Clone this repository
+
+    git clone ...
+
+- Install dependencies (``numpy`` and ``matplotlib``)
+
+
+    pip install --user -r requirements
+
+- run from code directory
+
+    ./planet_main.py
+
+
 ### Licensing       
         
 #### Copyright
