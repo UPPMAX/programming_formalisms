@@ -63,8 +63,8 @@
 
 ???- "Why is Modular Programming something to strive for"
 
-    -Reusability 
-    -Working with others (encapsulation of work and function)
+     - Reusability 
+     - Working with others (encapsulation of work and function)
     
 ???- "What is a Design Pattern"
 
