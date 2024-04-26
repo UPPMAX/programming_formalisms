@@ -45,6 +45,30 @@
    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
+!!! attention
+
+    - Make your program or workflow work for others and yourself in the future.
+    - Let people understand how to use your program/tool
+
+## Introduction
+
+## To make sure...
+
+- Start with empty environent
+    - good to do this from beginning
+- Nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions 
+    - will your program require specific "system files"
+    - are these typically not installed already?
+    - in the best world test on Windows/Mac and Linux platforms
+        - and with as empty as possible environment
+- What about  Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
+
+!!! Discussion "Where do you run your program?"
+
+    - From a terminal?
+    - On different computers?
+   -  On a cluster?
+
 !!! Discussion "One-time usage towards distributed package"
     
     - Have others used your code?
@@ -52,34 +76,6 @@
     - Did you take actions somehow?
 
 
-!!! attention
-
-    - Make your program or workflow work for others and yourself in the future.
-    - Let people understand how to use your program/tool
-
-
-
-**TODOS**
-- add info about header in python
-- add info about running in shared services like computer cluster / hpc
-- link to packageing
-- cmake
-- make
-
-- start with empty environent
-    - good to do this from beginning
-- nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions 
-    - will your program require specific "system files"
-    - are these typically not installed already?
-    - in the best world test on Windows/Mac and Linux platforms
-        - and with as empty as possible environment
-- What about  Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
-
-
-Where do you run your program?
-From a terminal?
-On different computers?
-On a cluster?
 
 ## Recording dependencies
 -	**Reproducibility**: We can control our code but how can we control dependencies?
@@ -216,9 +212,16 @@ $ pip freeze > requirements.txt
 ```
 - Other users can then install the same packages with:
 
-```console
-$ pip install -user -r requirements.txt
-```
+   ```console
+   $ pip install -user -r requirements.txt
+   ```
+
+git add requirements.txt
+git commit -m "add requirements.txt"
+git push
+git switch main
+git merge venv
+git push
 
 **TIP** Inform about this in the last exercise (updating the README file)
 
@@ -241,8 +244,13 @@ $ pip install -user -r requirements.txt
   177  pip install numpy
   178  pip freeze
   179  history
-
-
+pip freeze > requirements.txt
+git add requirements.txt
+git commit -m "add requirements.txt"
+git push
+git switch main
+git merge venv
+git push
 
 import numpy as np
 ModuleNotFoundError: No module named 'numpy'
