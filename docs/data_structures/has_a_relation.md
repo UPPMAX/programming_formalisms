@@ -76,7 +76,7 @@ classDiagram
 
 > An example of inheritance
 
-In English this would be read as 'simulation creates results'.
+In English this would be read as 'a simulation creates results'.
 
 ## A 'has-a' relationship
 
@@ -92,7 +92,25 @@ classDiagram
 ```
 
 A `Coordinat` has an `x` and `y`. 
-This is close to English, as it should be
+This is close to English, as it should be.
+
+However, 'has a' is not always a literal translation.
+Below is an incorrect class diagram:
+
+```mermaid
+classDiagram
+  note "Incorrect class diagram!"
+  class Simulation {
+    - results
+  }
+  Results
+  
+  Simulation *-- Results
+```
+
+Although we could say 'a simulation has results', a simulation does
+not own these results. It does not manage the state of the results.
+Instead, a simulation has an association with the results it produces.
 
 ## Composition versus aggregation
 
