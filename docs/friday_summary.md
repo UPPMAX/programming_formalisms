@@ -2,8 +2,10 @@
 
 Today we:
 
+    [ ] can give a reason for refactoring of design
+    [ ] can give a reason for refactoring code
     [ ] can give a reason of the benefits of doing modular coding
-    [ ] can choose the better ones from the different ...
+    [ ] can give reason for the benifites of Design Patterns
     [ ] can identify common mistakes making our software work for others
     [ ] can find more information in how to package you software
     [ ] can identify the needs for different kinds of documentation
