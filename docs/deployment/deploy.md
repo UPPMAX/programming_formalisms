@@ -6,12 +6,12 @@
 
 !!! info "Content"
 
-   - We will prepare for use of your code
-   - But also...
-     - some theory of packages
-     - some theory of workflows
-     - some theory of containers
-     - get some hands on 
+    - We will prepare for use of your code
+    - But also...
+        - some theory of packages
+        - some theory of workflows
+        - some theory of containers
+        - get some hands on 
 
 !!! info "Learning objectives of 'Deployment'"
 
@@ -30,7 +30,7 @@
     - Theory 20
     - Discussions 10 min
 
-??? info TOC
+???- info "TOC"
 
     - Overview
         - Recording dependencies
@@ -38,18 +38,16 @@
         - containers
     - Make a package    
 
+
+## Introduction
+
+- It's about Distribution!
+
 !!! note
    
-   - Many projects/scripts start as something for personal use, but expands to be distributed.
-   - Let's start in that end and be prepared.
-   - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
-
-
-!!! Discussion "One-time usage towards distributed package"
-    
-    - Have others used your code?
-    - Did you plan it from beginning?
-    - Did you take actions somehow?
+    - Many projects/scripts start as something for personal use, but expands to be distributed.
+    - Let's start in that end and be prepared.
+    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
 !!! attention
@@ -58,28 +56,30 @@
     - Let people understand how to use your program/tool
 
 
+### To make sure...
 
-**TODOS**
-- add info about header in python
-- add info about running in shared services like computer cluster / hpc
-- link to packageing
-- cmake
-- make
-
-- start with empty environent
+- Start with empty environent
     - good to do this from beginning
-- nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions 
+- Nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions 
     - will your program require specific "system files"
     - are these typically not installed already?
     - in the best world test on Windows/Mac and Linux platforms
         - and with as empty as possible environment
 - What about  Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
 
+!!! Discussion "Discussion: Where do you run your program?"
 
-Where do you run your program?
-From a terminal?
-On different computers?
-On a cluster?
+    - From a terminal?
+    - On different computers?
+    - On a cluster?
+
+!!! Discussion "Discussion: One-time usage towards distributed package"
+    
+    - Have others used your code?
+    - Did you plan it from beginning?
+    - Did you take actions somehow?
+
+
 
 ## Recording dependencies
 -	**Reproducibility**: We can control our code but how can we control dependencies?
@@ -121,6 +121,7 @@ On a cluster?
 ### Containers
 
 **Popular container implementations:**
+
 - Docker
 - Singularity (popular on high-performance computing systems)
 - Apptainer (popular on high-performance computing systems, fork of Singularity)
@@ -149,7 +150,7 @@ On a cluster?
 - This line helps in the top of the main script:
 
 ```
-#!/bin/env
+#!/bin/env python
 ```
 
 
@@ -217,57 +218,47 @@ $ pip freeze > requirements.txt
 - Other users can then install the same packages with:
 
 ```console
-$ pip install -user -r requirements.txt
+pip install -user -r requirements.txt
 ```
 
-**TIP** Inform about this in the last exercise (updating the README file)
+- Continue
+
+```
+deactivate # deactivate the venv!
+```
 
 ### Demo with planet
 
-- branch venv
-- 
-  165  git switch -c venv
-  166  python -m venv venv
-  167  . venv/
-  168  . venv/Scripts/activate
-  169  pip freeze
-  170  ls
-  171  cd code
-  172  ls
-  173  python planet_main.py
-  174  pip install numpy
-  175  python planet_main.py
-  176  pip install matplotlib
-  177  pip install numpy
-  178  pip freeze
-  179  history
 
+    git switch -c venv
+    python -m venv venv
+    venv/Scripts/activate
+    pip freeze  #should be empty
+    ls
+    cd code
+    ls
+    python planet_main.py
+        import numpy as np
+        ModuleNotFoundError: No module named 'numpy'
 
-
-import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-ModuleNotFoundError: No module named 'matplotlib'
-
-
-$ pip freeze
-contourpy==1.2.1
-cycler==0.12.1
-fonttools==4.51.0
-kiwisolver==1.4.5
-matplotlib==3.8.4
-numpy==1.26.4
-packaging==24.0
-pillow==10.3.0
-pyparsing==3.1.2
-python-dateutil==2.9.0.post0
-six==1.16.0
+    pip install numpy
+    python planet_main.py
+        ModuleNotFoundError: No module named 'matplotlib'
+    pip install matplotlib
+    pip freeze
+    pip freeze > requirements.txt
+    git add requirements.txt
+    git commit -m "add requirements.txt"
+    git push
+    git switch main
+    git merge venv
+    git push
 
 ### Exercise with project 
 
-??? "Discuss: what format is suitable for our course project?"
+???- "Discuss: what format is suitable for our course project?"
 
-**FIX**
-README wih instructions
+???- "Discuss: what are the steps need to make the program complete?"
 
 ## Ignoring files and paths with .gitignore
 
@@ -278,19 +269,20 @@ Compiled and generated files are not committed to version control. There are man
 - The number of changes to track per source code change can increase quickly.
 - When tracking generated files you could see differences in the code although you haven't touched the code.
 
-For this we use `.gitignore` files. Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
+For this we use `.gitignore` files. 
 
-!!! example form our project repo
+- Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
 
-    https://github.com/programming-formalisms/programming_formalisms_project_summer_2024/blob/main/.gitignore
+!!! example "From our project repo"
+
+    programming_formalisms_project_summer_2024/blob/main/.gitignore>
 
 
 
-!!! info "key points"
+!!! info "Key points"
 
     **Make sure it works for other or you in the future!**
 
-## Exercise with Course project
 
 !!! admonition "Parts to be covered!"
 

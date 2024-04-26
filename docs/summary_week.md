@@ -20,7 +20,7 @@ In this week, we:
 - [ ] can describe what big-O is
 - [ ] can describe what a run-time profile is
 
-
+## Program ...
 - A program shall be or have content/components that is:
     - Correct
     - Efficient
@@ -34,3 +34,34 @@ In this week, we:
     4.	Test
     5.	Development and maintenance
 - ... and iteration of these
+
+??? "Did we miss anything on the list?"
+
+## Tools
+
+- !!! admonition "Tools to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+        - branches
+    - &#9745; Planning
+        - &#9745; Analysis
+        - &#9745; Design
+    - &#9745; Testing
+        - Different levels
+    - &#9745; Collaboration
+        - GitHub
+        - pull requests
+    - &#9745; Sharing
+        - &#9745; open science
+        - &#9745; citation
+        - &#9745; licensing  
+        - &#9745; deployment
+    - &#9745; Documentation
+        - &#9745; in-code documentation
+        - &#9745; How-to/ Tutorials
+
+
+??? "Did we miss anything on the list?"
