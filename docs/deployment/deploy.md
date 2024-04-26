@@ -219,13 +219,11 @@ $ pip freeze > requirements.txt
 
 ```console
 pip install -user -r requirements.txt
+```
+
+- Continue
+- 
 deactivate # deactivate the venv!
-git add requirements.txt
-git commit -m "add requirements.txt"
-git push
-git switch main
-git merge venv
-git push
 ```
 
 ### Demo with planet
@@ -255,7 +253,6 @@ git push
     git merge venv
     git push
 
-
 ### Exercise with project 
 
 ???- "Discuss: what format is suitable for our course project?"
@@ -277,7 +274,7 @@ For this we use `.gitignore` files.
 
 !!! example "From our project repo"
 
-    - https://github.com/programming-formalisms/programming_formalisms_project_summer_2024/blob/main/.gitignore
+    <programming_formalisms_project_summer_2024/blob/main/.gitignore>
 
 
 
