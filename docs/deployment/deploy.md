@@ -215,7 +215,7 @@ $ pip freeze > requirements.txt
    ```console
    $ pip install -user -r requirements.txt
    ```
-
+deactivate # deactivate the venv!
 git add requirements.txt
 git commit -m "add requirements.txt"
 git push
@@ -228,54 +228,37 @@ git push
 ### Demo with planet
 
 - branch venv
-- 
-  165  git switch -c venv
-  166  python -m venv venv
-  167  . venv/
-  168  . venv/Scripts/activate
-  169  pip freeze
-  170  ls
-  171  cd code
-  172  ls
-  173  python planet_main.py
-  174  pip install numpy
-  175  python planet_main.py
-  176  pip install matplotlib
-  177  pip install numpy
-  178  pip freeze
-  179  history
-pip freeze > requirements.txt
-git add requirements.txt
-git commit -m "add requirements.txt"
-git push
-git switch main
-git merge venv
-git push
 
-import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-ModuleNotFoundError: No module named 'matplotlib'
+    git switch -c venv
+    python -m venv venv
+    venv/Scripts/activate
+    pip freeze  #should be empty
+    ls
+    cd code
+    ls
+    python planet_main.py
+        import numpy as np
+        ModuleNotFoundError: No module named 'numpy'
 
+    pip install numpy
+    python planet_main.py
+        ModuleNotFoundError: No module named 'matplotlib'
+    pip install matplotlib
+    pip freeze
+    pip freeze > requirements.txt
+    git add requirements.txt
+    git commit -m "add requirements.txt"
+    git push
+    git switch main
+    git merge venv
+    git push
 
-$ pip freeze
-contourpy==1.2.1
-cycler==0.12.1
-fonttools==4.51.0
-kiwisolver==1.4.5
-matplotlib==3.8.4
-numpy==1.26.4
-packaging==24.0
-pillow==10.3.0
-pyparsing==3.1.2
-python-dateutil==2.9.0.post0
-six==1.16.0
 
 ### Exercise with project 
 
 ??? "Discuss: what format is suitable for our course project?"
 
-**FIX**
-README wih instructions
+??? "Discuss: what are the steps need to make the program complete?"
 
 ## Ignoring files and paths with .gitignore
 
@@ -288,9 +271,9 @@ Compiled and generated files are not committed to version control. There are man
 
 For this we use `.gitignore` files. Read more https://uppmax.github.io/programming_formalisms_intro/git_deeper.html
 
-!!! example form our project repo
+!!! example from our project repo
 
-    https://github.com/programming-formalisms/programming_formalisms_project_summer_2024/blob/main/.gitignore
+    - https://github.com/programming-formalisms/programming_formalisms_project_summer_2024/blob/main/.gitignore
 
 
 
