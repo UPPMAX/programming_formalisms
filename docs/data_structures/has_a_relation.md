@@ -123,6 +123,8 @@ Example                                |A university has departments            
 Ownership of its elements              |Yes, a university owns its departments                    |No, a department allows professors to group
 What happens to elements when destroyed|Destroyed: when a university closes, all departments close|Left intact: when a department closes, all professors live afterwards
 
+!!! note "In this course, we never use aggregation"
+
 ## Composition of structs
 
 ```mermaid
