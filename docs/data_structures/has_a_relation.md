@@ -74,7 +74,7 @@ classDiagram
   Simulation --> "produces" Results
 ```
 
-> An example of inheritance
+> An example of association
 
 In English this would be read as 'a simulation creates results'.
 
