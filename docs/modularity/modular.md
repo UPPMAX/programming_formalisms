@@ -6,14 +6,17 @@
     - Revisit Class Diagrams and interactions between classes 10 min
     - Introduce Refactoring 10 min
     - Exercise  Refactor design of project Class diagram 30 min
-    - Introduce Design Patterns 10 min + 10 min discussion
-    - Implement Factory Design pattern and Mediator Design pattern 40 min
+    - break 15 min
     - Introduce Modularity 10 min 
-    - Exercise 50 min produce logical modules that separates the behavior and structure in modules. 
+    - Exercise 25 min produce logical modules that separates the behavior and structure in modules. 
+    - Introduce Design Patterns 10 min + 10 min discussion
+    - break 15 min
+    - Implement Factory Design pattern 40 min
+    - lunch
 
 ???- "Learning objectives of Refactoring"
     - Learners learns about code smells and design smells
-    
+
 
 ???- "Learning objectives of Design Patterns"
 
@@ -36,6 +39,8 @@
     Modular programming as a term introduced by Larry Constantine et.al at the Symposium on Modular Programming, organized at the Information and Systems Institute in July 1968.
     
     Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality. 
+
+
 ???- "Why is Modular Programming something to strive for"
 
     -Reusability 
@@ -43,9 +48,25 @@
     
 ???- "What is a Design Pattern"
 
+    "Design patterns are typical solutions to common problems
+    in software design. Each pattern is like a blueprint
+    that you can customize to solve a particular
+    design problem in your code."
+    from [refactoring.guru](https://refactoring.guru/design-patterns) 
+
 ???- "Why do we use Design Patterns"
 
+    "The truth is that you might manage to work as a programmer for many years without knowing about a single pattern. A lot of people do just that. Even in that case, though, you might be implementing some patterns without even knowing it. So why would you spend time learning them?"
+
+    "Design patterns are a toolkit of tried and tested solutions to common problems in software design. Even if you never encounter these problems, knowing patterns is still useful because it teaches you how to solve all sorts of problems using principles of object-oriented design."
+
+    "Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name."
+    from [refactoring.guru](https://refactoring.guru/design-patterns)
+
 ???- "What is Refactoring"
+    
+    "Refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design."
+    [refactoring.guru](https://refactoring.guru/refactoring) 
 
 
 ## Theory
@@ -74,5 +95,15 @@ Further reading:
 
     - Consider is your class diagram reflecting your code.
 
-## Exercise
- Refactor your design document 
+## Exercises
+???- Refactor your design document 
+    Try to consider what in your code are or will require classes to know about each other (Association).
+    Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
+
+???- Modularization
+    Order your code in logical consistent modules that separates behavior that belongs together via interfaces.
+???- Design Patterns
+    Implement a Factory method for the creation of bacteria and one for nutrients
+
+???- Extra assignment 
+    Using refactoring.guru find an implement another pattern that is useful for your project.
