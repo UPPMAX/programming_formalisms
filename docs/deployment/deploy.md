@@ -150,7 +150,7 @@
 - This line helps in the top of the main script:
 
 ```
-#!/bin/env
+#!/bin/env python
 ```
 
 
@@ -223,8 +223,9 @@ pip install -user -r requirements.txt
 
 - Continue
 
-    deactivate # deactivate the venv!
-
+```
+deactivate # deactivate the venv!
+```
 
 ### Demo with planet
 
