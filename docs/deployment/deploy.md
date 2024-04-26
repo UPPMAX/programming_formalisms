@@ -138,10 +138,24 @@ On a cluster?
     [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
     [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
 
+## Misc
+
+- Make a file executable by its own
+
+### Example Python
+
+- make a header so that user can decide wich python to use
+- especially important on a shared system where python is not in the typical /usr/bin/python path.
+- This line helps in the top of the main script:
+
+```
+#!/bin/env
+```
+
 
 ## Record our environment for other users
 
-### Principle using python pip in a vitual environment
+### Principle using python pip in a virtual environment
 
 - We can make other users aware of the dependencies for our Python project.
 - One can state those specifically as a list in a README
@@ -168,6 +182,13 @@ $ python -m venv PATH/Example
 ```console
 $ source PATH/Example/bin/activate
 ```
+- In Windows you may have to instead do:
+
+```console
+$ source PATH/Example/Scripts/activate
+```
+
+
 - Note the (Example) in the begining of the prompt!
 - Do note the python version and you may inform users that you know that this version is known to work!
 
@@ -202,6 +223,44 @@ $ pip install -user -r requirements.txt
 **TIP** Inform about this in the last exercise (updating the README file)
 
 ### Demo with planet
+
+- branch venv
+- 
+  165  git switch -c venv
+  166  python -m venv venv
+  167  . venv/
+  168  . venv/Scripts/activate
+  169  pip freeze
+  170  ls
+  171  cd code
+  172  ls
+  173  python planet_main.py
+  174  pip install numpy
+  175  python planet_main.py
+  176  pip install matplotlib
+  177  pip install numpy
+  178  pip freeze
+  179  history
+
+
+
+import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+ModuleNotFoundError: No module named 'matplotlib'
+
+
+$ pip freeze
+contourpy==1.2.1
+cycler==0.12.1
+fonttools==4.51.0
+kiwisolver==1.4.5
+matplotlib==3.8.4
+numpy==1.26.4
+packaging==24.0
+pillow==10.3.0
+pyparsing==3.1.2
+python-dateutil==2.9.0.post0
+six==1.16.0
 
 ### Exercise with project 
 
