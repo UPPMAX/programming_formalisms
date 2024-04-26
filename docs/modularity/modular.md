@@ -105,13 +105,17 @@ classDiagram
     Animal <|--Cat
     Animal <|--Goldfish
 ```
+
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
 
 ???+ "Read and discuss" 
-    https://refactoring.guru/refactoring and discuss how this can be implemented also in the design phase.(10 min)
-    -Consider is your class diagram reflecting your code.
+
+     - Read [https://refactoring.guru/refactoring](https://refactoring.guru/refactoring)
+       and discuss how this can be implemented also in the design phase (10 min)
+
+     - Consider is your class diagram reflecting your code
 
 ## Exercises
 
