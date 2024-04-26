@@ -96,14 +96,16 @@ Further reading:
     -Consider is your class diagram reflecting your code.
 
 ## Exercises
-???- Refactor your design document 
+
+???- "Refactor your design document"
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
 
-???- Modularization
+???- "Modularization"
     Order your code in logical consistent modules that separates behavior that belongs together via interfaces.
-???- Design Patterns
+
+???- "Design Patterns"
     Implement a Factory method for the creation of bacteria and one for nutrients
 
-???- Extra assignment 
+???- "Extra assignment" 
     Using refactoring.guru find an implement another pattern that is useful for your project.
