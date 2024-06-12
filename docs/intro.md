@@ -101,6 +101,9 @@ This is a general course schedule, that intends to give a general overview
 of the course's teaching.
 For a detailed daily schedule, see the detailed schedule of that day.
 
+Next iteration of the the course will take place in week 47,
+i.e. Monday 18th November to and including Friday 22nd November 2024.
+
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
