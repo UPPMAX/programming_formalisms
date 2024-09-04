@@ -385,7 +385,7 @@ $ git branch -d new-feature    # remove branch
         nothing to commit, working tree clean
         ```
 
-## Let's make our code modular (test in another branchbranch)
+## Let's make our code modular (test in another branch)
 
 - We consider the Jupiter branch dead-end.
 - Let's instead start from the main branch and create a "modularity" 

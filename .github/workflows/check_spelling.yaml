@@ -27,5 +27,6 @@ jobs:
           rm -rf retrospectives
           rm -rf reflections
           rm -rf shared_documents
+          rm docs/project_start/analysis_design.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
