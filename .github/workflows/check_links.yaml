@@ -21,6 +21,7 @@ jobs:
       - name: Remove folders that do not care about broken links
         run: |
           rm -rf development_design
+          rm meeting_notes/older.md
 
       - uses: lycheeverse/lychee-action@v1.2.0
         with:
