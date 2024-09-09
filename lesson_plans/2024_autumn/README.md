@@ -4,86 +4,56 @@
 
 ## Suggested new schedule
 
-- #42: Change order: class list, then class diagram
 
 ### 2024-04-22
 
-- risk analysis: no exercise, not needed for shared project
-- use of ChatGPT to generate design documents: no exercise, 
-  not needed for shared project (as the learners create the
-  documents themselves)
-- object orientation on Monday and Tuesday:
-  no exercise, not needed for shared project,
-  maybe do this at the OOP lecture on Friday
-- inheritance on Monday and Tuesday:
-  no exercise, not needed for shared project,
-  maybe do this at the OOP lecture on Friday
-- creating an own local GitHub repo: not needed for shared project
-- markdown markup: no exercise, not needed for shared project,
-  maybe do this at the documentation lecture on Friday
-- mermaid markup on Monday: no exercise, 
-  but I think it is important for class design on Tuesday
-- putting Mermaid in a README on Tuesday during class design:
-  no exercise, maybe do this at earlier
-- optimization, not vital to the shared project
-- documentation on Monday: no exercise, 
-  instead do this at the documentation lecture on Friday
-- pseudocode: no exercise, not needed for shared project
-
-
-### 2024-04-23
-
-- [ ] Next course iteration, do TDD in isolation first for at least 3 cycles,
-      then start pair programming
-- [ ] Next course iteration, strongly encourage the git teacher to discuss
-      and cause merge conflicts, as they do happen in the basic
-      git workflow when duos work on one file
-- [ ] Next course iteration, encourage the git teacher to create
-      empty classes
-
-### 2024-04-24
-
-- `git init`: not needed for shared project, can be done on GitHub
-- `git branch -c`: can be done on GitHub
-- `git graph`: can be done on GitHub
-- `git diff`: can be done on GitHub
-- `git show`: no exercise
-- `git log`: no exercise, can be done on GitHub
-- `git mv`: no exercise
-- `git rm`: no exercise
-- big code examples: can be simplified to a 'Hello world' program
-- use multiple files: can be simplified to one file
-- use big files: can be simplified to short files
-- use complex commit graphs: can be simplified to simple commit graphs
-- using more repos: can be simplified to only use the shared repo
-- using git plugin: can be simplified by using GitHub view
-- using GitHub templates: not needed for shared project
-- using protected branches: not needed for shared project
-- add using Issues: we do use these in the shared project!
-- using command-line: if possible with GitHub
-- [x] Settle on `git switch` and `git checkout`: which one is better?
-  `git checkout` as there was one learner that could not use the
-  alternative, as he had an older git version
-- [ ] Next iteration: schedule 4 hours of TDD
-- [ ] Next iteration, schedule a helper to do code reviews.
-
-### 2024-04-25
-
-### 2024-04-26
-
-- Suggest: remove aggregation, as we don't use it in the project
-- Suggest: remove describing what one can do in `__init__.py`, 
-  as we only use it to fix linter errors.
-- Describe what containers are, do not compare the types
-- Remove build systems, not needed for the project
-- No virtual environments, not needed for the project
-- No venv comparisons usage for different OSes, not needed for project
-- No venv usage, not needed for project
-- In-code documentation: either earlier, else not: 
-  it is not needed for the project now, no formal terminology
-- Documenting outside code: not needed for the project, no formal terminology
-- Licensing: not needed for the project
-- Static HTML website generator: not needed for the project
-- I think making a package and using it is a good idea
-  and suggest to do it
-- No wiki: not needed for the project, no formal terminology
+Topic|Suggested time|Previous time|Remark
+---|---|---|---
+Risk analysis|-|Monday|not needed for shared project
+Use of ChatGPT to generate design documents|-|Monday|Not needed for shared project. No exercise
+Object orientated design|Consider Friday|Monday|No exercise. Project state on Friday gives more context
+Inheritance|Consider Friday|Monday|No exercise. Project state on Friday gives more context
+Creating a local GitHub repo|-|Monday|Not needed for shared project
+Markdown markup|Consider Friday|Monday|No exercise. Not needed for shared project
+mermaid markup|Consider for class design|Monday|No exercise yet
+put Mermaid in a README|Consider class design|Monday|No exercise yet
+optimization|-|Monday|not vital to the shared project
+documentation|Consider function design|Monday|No exercise yet
+pseudocode|Consider function design|Monday|No exercise yet. Not needed for shared project
+class list|Class design or `git` basics|?Monday|Do class list before class diagram
+class diagram|Class design|?Monday|Do class list before class diagram
+TDD|TDD|Tuesday|Before pair programming
+Pair programming|Pair programming|Tuesday|After TDD
+git merge conflics|Monday|-|Need exercise for this
+`git init`|-|Monday|Not needed for shared project, can be done on GitHub
+`git branch -c`|-|Monday|can be done on GitHub
+`git graph`|-|Monday|can be done on GitHub
+`git diff`|-|Monday|can be done on GitHub
+`git show`|-|Monday|no exercise
+`git log`|-|Monday|no exercise, can be done on GitHub
+`git mv`|-|Monday|no exercise
+`git rm`|-|Monday|no exercise
+big code examples|-|Monday|Simplify to a 'Hello world' program
+use multiple files|-|Monday|Simplify to one file
+use big files|-|Monday|Simplify to short files
+use complex commit graphs|-|Monday|Simplify to simple commit graphs
+using more repos|-|Monday|Simplify to only use the shared repo
+using git plugin|-|Monday}Simplify by using GitHub [network](https://github.com/UPPMAX/programming_formalisms/network)
+using GitHub templates|-|Monday|not needed for shared project
+using protected branches|-|Monday|not needed for shared project
+add using Issues|?|-|We do use these in the shared project!
+using command-line|-|Monday/Wednesday|Remove if can be done with GitHub
+use `git checkout`|Monday|Monday|`git checkout` works for older versions
+aggregation|-|Friday|We don't use it in the project
+remove deep `__init__.py`|-|Friday|Not needed in the project
+Give definition of containers|Friday|Friday|No exercise yet
+Compare the types of container|-|Fridays|We use one container max. No exercise yet
+build systems|-|Friday|not needed for the project
+virtual environments|-|Friday|not needed for the project
+venv comparisons usage for different OSes|-|Friday|not needed for project
+venv usage|-|Friday|not needed for project
+In-code documentation|Consider function design|Friday|No exercise yet.
+Licensing|-|Friday|not needed for the project: we give it a license
+Static HTML website generator|-|Friday|not needed for the project
+making a package and using it|Friday|-|Need to create exercise
+Wiki|-|Friday|not needed for the project, no formal terminology
