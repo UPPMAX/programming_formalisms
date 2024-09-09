@@ -7,10 +7,10 @@
 Day      |Hours|Topic                    |Remarks
 ---------|-----|-------------------------|---------------------------
 Monday   |1-3  |git basic workflow       |More exercises, less theory
-Monday   |4-6  |git professional workflow|More exercises, less theory
+Monday   |4-6  |git professional workflow|More exercises, less theory. Add 'Always work in an Issue'
 Tuesday  |1-3  |TDD                      |Not in pair yet, consider adding pseudocode and in-code documentation
 Tuesday  |4-6  |Pair programming         |In pairs from now on
-Wednesday|1-3  |Testing                  |Add using Issues
+Wednesday|1-3  |Testing                  |.
 Wednesday|4-6  |Code reviews             |Need a dedicated TA to review code
 Thursday |1-3  |Data structures          |.
 Thursday |4-6  |Function design          |Consider adding documentation
