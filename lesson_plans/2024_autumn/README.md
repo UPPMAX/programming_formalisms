@@ -38,7 +38,7 @@ use multiple files|-|Monday|Simplify to one file
 use big files|-|Monday|Simplify to short files
 use complex commit graphs|-|Monday|Simplify to simple commit graphs
 using more repos|-|Monday|Simplify to only use the shared repo
-using git plugin|-|Monday}Simplify by using GitHub [network](https://github.com/UPPMAX/programming_formalisms/network)
+using git plugin|-|Monday|Simplify by using GitHub [network](https://github.com/UPPMAX/programming_formalisms/network)
 using GitHub templates|-|Monday|not needed for shared project
 using protected branches|-|Monday|not needed for shared project
 add using Issues|?|-|We do use these in the shared project!
