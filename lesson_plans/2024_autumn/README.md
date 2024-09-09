@@ -4,6 +4,8 @@
 
 ## Suggested new schedule
 
+- #42: Change order: class list, then class diagram
+
 ### 2024-04-22
 
 - risk analysis: no exercise, not needed for shared project
