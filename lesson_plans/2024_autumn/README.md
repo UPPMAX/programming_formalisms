@@ -4,8 +4,20 @@
 
 ## Suggested new schedule
 
+Day      |Hours|Topic                    |Remarks
+---------|-----|-------------------------|---------------------------
+Monday   |1-3  |git basic workflow       |More exercises, less theory
+Monday   |4-6  |git professional workflow|More exercises, less theory
+Tuesday  |1-3  |TDD                      |In isolation
+Tuesday  |4-6  |Pair programming         |In pairs from now on
+Wednesday|1-3  |Testing                  |.
+Wednesday|4-6  |Code reviews             |.
+Thursday |1-3  |Data structures          |.
+Thursday |4-6  |Function design          |.
+Friday   |1-3  |Class design             |More exercises, less theory
+Friday   |4-6  |Modular programming      |More exercises, less theory
 
-### 2024-04-22
+## List of suggested changes
 
 Topic|Suggested time|Previous time|Remark
 ---|---|---|---
@@ -44,6 +56,9 @@ using protected branches|-|Monday|not needed for shared project
 add using Issues|?|-|We do use these in the shared project!
 using command-line|-|Monday/Wednesday|Remove if can be done with GitHub
 use `git checkout`|Monday|Monday|`git checkout` works for older versions
+Optimization: profiling|?|Thursday|No time
+Optimization: big-O profile|?|Thursday|No time
+
 aggregation|-|Friday|We don't use it in the project
 remove deep `__init__.py`|-|Friday|Not needed in the project
 Give definition of containers|Friday|Friday|No exercise yet
