@@ -9,6 +9,8 @@
 [![Check spelling](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml)
 [![Deploy GitHub Pages](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml)
 
+The goal of the course is [to give an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
+
  * [Shared documents](shared_documents/README.md)
  * [Projects](docs/misc/projects.md)
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)

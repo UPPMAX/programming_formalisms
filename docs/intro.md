@@ -9,9 +9,10 @@
 
 
 !!! info "Programming Formalisms goal"
-    
-    Give scientists with some experience in programming and scripting
-    an understanding of formal principles of software development.
+
+    The goal of the course is 
+    to give scientists with some experience in programming and scripting
+    [an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
     
     Teach evidence-based or expert-recommended best practices on how to:
      
