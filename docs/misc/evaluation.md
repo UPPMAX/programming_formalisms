@@ -136,10 +136,10 @@ in any way
 ```
 
 5. Have you used the tools/resource(s) covered in the course before? `have_used_resources_before`
-    i. Never - Unaware of them
-    ii. Never - Used other service
-    iii. Occasionally
-    iv. Frequently
+- i. Never - Unaware of them
+- ii. Never - Used other service
+- iii. Occasionally
+- iv. Frequently
 
 ```text
 [Richel] I don't see the use of question 6 below, 
@@ -147,22 +147,23 @@ as I feel question 7 gives me the similar info.
 ```
 
 6. Will you use the tools/resource(s) covered in the course again? `will_use_resources_future`
-    v. Yes
-    vi. No
-    vii. Maybe
+- v. Yes
+- vi. No
+- vii. Maybe
 
 
 7. Would you recommend the course? `would_recommend_course`
-    viii. Yes
-    ix. No 
-    x. Maybe 
+- viii. Yes
+- ix. No 
+- x. Maybe 
 
 8. What is your overall rating for the course*. `overall_satisfaction`
-    a. Poor (1)
-    b. Satisfactory (2)
-    c. Good (3)
-    d. Very Good (4)
-    e. Excellent (5)
+- a. Poor (1)
+- b. Satisfactory (2)
+- c. Good (3)
+- d. Very Good (4)
+- e. Excellent (5)
+
 (*please include both numeric and categorical scale for this question.)
 
 ```text
@@ -171,8 +172,8 @@ Instead, I suggest to link to a long-term feedback form at this page
 ```
 
 9. A. May we contact you by email in the future for more feedback? `contact_future`
-	i. Yes
-	ii. No
+- i. Yes
+- ii. No
 
 9 B**. If you answered ‘yes’ to the above question, please enter your email address, below. email
 (** Information for question 9B must be collected and stored by each Node/Institution, but should NOT be shared with the Q&I subtask or any other third party due to GDPR considerations.)
@@ -198,18 +199,18 @@ Richel: I don't see how question 1 below would change my teaching
 ```
 
 3. The balance of theoretical and practical content was `theoretical_practical`
-    a. Too practical
-    b. About right
-    c. Too theoretical
+- a. Too practical
+- b. About right
+- c. Too theoretical
 
 ```
 [Richel]: I don't feel it is worth to bother our learners with question 4 below
 ```
 
 4. How do you rate the pre-course information given? pre_course_information
-    Linear scale 1-5
-    1. (Very unsatisfactory/Not useful)
-    5. Very good/Very useful
+- Linear scale 1-5
+- 1. (Very unsatisfactory/Not useful)
+- 5. Very good/Very useful
 
 
 ```
@@ -225,12 +226,12 @@ Richel: I don't see how question 1 below would change my teaching
 ```
 
 7. PLEASE RATE EACH SESSION OF THE COURSE satisfaction_per_session_YYYY_MM_DD_am/pm
-    a. Did not attend
-    b. Poor (1)
-    c. Satisfactory (2)
-    d. Good (3)
-    e. Very Good (4)
-    f. Excellent (5)
+- a. Did not attend
+- b. Poor (1)
+- c. Satisfactory (2)
+- d. Good (3)
+- e. Very Good (4)
+- f. Excellent (5)
 
 ```text
 [Richel]: I don't feel it is worth to bother our learners with question 7
@@ -240,6 +241,11 @@ below, as we have question 5
 8. Comments on teaching staff `teaching_staff`
     Help our teaching staff to improve by providing constructive feedback
     Paragraph text answer
+
+```
+[Richel]: I don't feel it is worth to bother our learners with question 9 below
+```
+
 9. Was the course held at a teaching level matching your training? teaching_training_level
 
 ```text
@@ -264,22 +270,34 @@ below, as we have question 5
 
 ### Additional Questions - Training logistics
 
-```
-Richel: I suggest to remove this part, as it would not affect my reflection
-```
 
 These are suggested questions that may be of interest (not compulsory):
 
+```text
+[Richel]: I don't feel it is worth to bother our learners with question 1 below
+```
+
 1. What would be the preferred length of the course? `preferred_length`
-    Linear scale 1-5 Days
+- Linear scale 1-5 Days
+
+```text
+[Richel]: I don't feel it is worth to bother our learners with question 2 below
+```
+
 2. How did you like the facilities/localities of the course (rooms and surroundings)? `course_localities`
-    Linear scale 1-5
-    1. Not at all
-    5. Very much
+- Linear scale 1-5
+- 1. Not at all
+- 5. Very much
+
+```text
+[Richel]: I don't feel it is worth to bother our learners with question 3 below
+```
+
 3. How did you like the lunch(es) and “fika(s)”? lunch_fikas
-    Linear scale 1-5
-    1. Not at all
-    5. Very much
+- Linear scale 1-5
+- 1. Not at all
+- 5. Very much
+
 4. Any other comments? `Comments_2`
 
 It was a great experience and we are working hard to make it even better. Now go make something great!
