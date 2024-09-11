@@ -10,6 +10,10 @@
 [Richel] My comments can be found in code blocks like this :-)
 ```
 
+```text
+[Richel] What I don't like, is that the results are not public
+```
+
 ## NBIS Short Term Feedback (STF)
 
 ### Core question set information
