@@ -2,7 +2,14 @@
 
 - Author: Richel
 
-## Suggested new schedule
+
+## Week 37
+
+
+
+## Week 36
+
+### Suggested new schedule
 
 Day      |Hours|Topic                    |Remarks
 ---------|-----|-------------------------|---------------------------
@@ -17,7 +24,7 @@ Thursday |4-6  |Function design          |Consider adding documentation
 Friday   |1-3  |Class design             |More exercises, less theory
 Friday   |4-6  |Create a re-usable module|More exercises, less theory
 
-## List of suggested changes
+### List of suggested changes
 
 Topic|Suggested time|Previous time|Remark
 ---|---|---|---
