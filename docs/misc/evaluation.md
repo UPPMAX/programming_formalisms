@@ -229,7 +229,7 @@ Richel: I don't see how question 1 below would change my teaching
 [Richel]: I don't feel it is worth to bother our learners with question 7 below
 ```
 
-7. PLEASE RATE EACH SESSION OF THE COURSE satisfaction_per_session_YYYY_MM_DD_am/pm
+7. PLEASE RATE EACH SESSION OF THE COURSE `satisfaction_per_session_YYYY_MM_DD_am/pm`
 - a. Did not attend
 - b. Poor (1)
 - c. Satisfactory (2)

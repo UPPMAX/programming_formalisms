@@ -28,7 +28,7 @@ In the schedule to be discussed:
   - Lars: Define the project
   - Lars: Make formal requirements model
   - Lars: Make formal risk assessment
-- **Tuesday**: Git setup and version control, from a reproducible resarch and social coding/development perspective
+- **Tuesday**: Git setup and version control, from a reproducible research and social coding/development perspective
   - Organize the project
 - **Wednesday**:
   - Richel: Test-Driven Development (TDD) and function design
