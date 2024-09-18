@@ -13,7 +13,7 @@
 - CI is quite cool. HackMD is good for discussion
 - Testing proper git workflow +1
 - Practising with opening issues, assigning them, opening pull requests on GitHub, as well as dealing with merge conflicts
-- Interactive 
+- Interactive
 - enthusiastic teaching! +2
 - Nice practice time and pair coding
 - Going back to revise the pull requests. I learnt alot from that. +1
@@ -52,7 +52,7 @@
 
 Sharing my reflections with the students
 was appreciated. This was an experiment.
-Will keep doing so. 
+Will keep doing so.
 
 > - Found the pull request aspect of the practical useful +1
 > - The pull request part was really imprssive
@@ -62,7 +62,7 @@ Will keep doing so.
 
 During the day, I gradually made the
 team's workflow more formal.
-One can argue if this is part of a 
+One can argue if this is part of a
 Programming Formalisms course,
 as it does not involve technical terms.
 The students do think it useful :-)
@@ -75,7 +75,7 @@ have seen the light :-)
 
 > - enthusiastic teaching! +2
 
-I am happy this did not backfire in 
+I am happy this did not backfire in
 this course :-)
 
 > - Nice practice time
@@ -88,14 +88,14 @@ agree I do do more exercises. Again,
 it is the tension between practice and
 theory in the Programming Formalisms course :-)
 
-> - CI is quite cool. 
+> - CI is quite cool.
 
 Happy to see at least one learner seen this,
 even though the CI lecture felt weak
 and misplaced to me. But yes, they saw it in
 actions from PRs.
 
-> Interactive 
+> Interactive
 
 I did take the time for discussions.
 It did slow the day down!
@@ -121,11 +121,10 @@ did not always do so. Agreed!
 
 Again, indeed, show more books and go deeper.
 
-
 > - I couldn't start my own HackMD doc for live coding with[out] subscribing.
 
 Weird, AFAIR, with a GitHub account this
-works with a couple of clicks...? 
+works with a couple of clicks...?
 
 > - Made a mistake on a pull request and got time shortage for merge part
 > - PR opened when the develop branch failed seems not update automatically when develop was fixed
@@ -175,7 +174,7 @@ Agreed, I will try better!
 
 I will at the start
 
- * [ ] Explain how to setup CI locally:
+- [ ] Explain how to setup CI locally:
    AFAIK, one cannot try before pushing
    from a .yaml file yet. But `ruff .`
    works to lint :-)
@@ -187,13 +186,13 @@ share his/her screen. Due to the random
 assignment of people (priority is to
 be quick!), this is pushed to the background
 
- * [ ] Share 
+- [ ] Share
 
 > - write some light program that can actually do something, e.g., visualize the bacteria moving?
 
 Ha, will do so now! We need it for profiling :-)
 
-> - HackMD pages for shared coding? Maybe I missed it but I think it could be better than screensharing. 
+> - HackMD pages for shared coding? Maybe I missed it but I think it could be better than screensharing.
 
 This may show I did a bad job is checking
 that pair programming is used in all exercises!
@@ -201,14 +200,14 @@ On the other hand, I do agree with the idea
 and I will encourage pairs to do this if
 they feel this is better!
 
- * [ ] Address
+- [ ] Address
 
 > - Students get their own mini projects to go through all the practices. Rather than scattered exercises.
 
 We picked a shared project, for many reasons:
 (1) the bigger the team, the more formal
 procedures shine, (2) we should work on the
-same simple exercises tailored to 
+same simple exercises tailored to
 everyone (i.e. imagine a learner having a
 string-theory quantum-black hole project :-) ).
 The course -I agree- is getting more
@@ -217,4 +216,3 @@ scattered. We have never gotten this far
 with a group yet and still we need to
 go further: the dream is developing one
 project in a week that actually works!
-

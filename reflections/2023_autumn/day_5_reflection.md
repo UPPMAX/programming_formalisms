@@ -3,19 +3,18 @@
 Before the lesson, I was already
 regretting the fact that such a cool
 topic is given on the last day of the
-course: I was most tired that day 
+course: I was most tired that day
 for the regular preparation time (from
 5:00-9:00) and was least productive due
-to that. 
+to that.
 
 Additionally, I felt the need
-to spend one hour on the Retrospective by 
+to spend one hour on the Retrospective by
 the learners and adept. I did,
 at the cost of other things.
 
 I will use the Retrospect to guide
 the rest of my reflection.
-
 
 ## Only Day 5
 
@@ -46,16 +45,15 @@ Our two R users deserved some love :-)
 - Activity diagram +2
 - Once it worked, plantUML in VS code was very nice
 
-
 ## What held us back?
 
 - too little time for material and exercises of morning session
 - did not finish all of morning lecture +1
-- More info about use-cases/activity diagrams. Use, differences etc. 
+- More info about use-cases/activity diagrams. Use, differences etc.
 - morning exercises rushed
 - maybe somewhat unclear difference between use-case and activity diagrams +1
 - UML issues +3
-- Still material and exercise description 
+- Still material and exercise description
 
 I won't discuss the morning section,
 as it was not me that taught it.
@@ -66,7 +64,7 @@ Unsure if this was about my part.
 If it was about my part, unsure what
 it means.
 
-- Still material and exercise description 
+- Still material and exercise description
 
 This applies to both halves of the day.
 I added explicit goals more often,
@@ -89,13 +87,13 @@ This is a misconception and/or git feature.
 - provide the uml code for diagram examples in lecture
 - talk more about design patterns +1 or maybe share some nice tutorials
 - Written instructions for exercises
-- Be clearcut on what to do in the exercise. 
+- Be clearcut on what to do in the exercise.
 
 This is morning session, no comment. I copied
 the lines that can apply to both here below.
 
 - Written instructions for exercises
-- Be clearcut on what to do in the exercise. 
+- Be clearcut on what to do in the exercise.
 
 I agree, I chose not to have time to do
 this for all exercise.
