@@ -5,7 +5,18 @@
 
 ## Week 37
 
+### Suggested new schedule
 
+Day      |Hours|Topic                    |Remarks
+---------|-----|-------------------------|---------------------------
+Monday   |1-6  |Risk analysis, design    |More exercises, less theory
+Tuesday  |1-6  |git                      |More exercises, less theory. Add 'Always work in an Issue'
+Wednesday|1-3  |TDD                      |Not in pair yet, consider adding pseudocode and in-code documentation
+Wednesday|4-6  |Pair programming         |In pairs from now on
+Thursday |1-3  |Testing                  |.
+Thursday |4-6  |Code reviews             |Need a dedicated TA to review code
+Friday   |1-3  |Class design             |More exercises, less theory
+Friday   |4-6  |Create a re-usable module|More exercises, less theory
 
 ## Week 36
 
@@ -65,7 +76,6 @@ using command-line|-|Monday/Wednesday|Remove if can be done with GitHub
 use `git checkout`|Monday|Monday|`git checkout` works for older versions
 Optimization: profiling|?|Thursday|No time
 Optimization: big-O profile|?|Thursday|No time
-
 aggregation|-|Friday|We don't use it in the project
 remove deep `__init__.py`|-|Friday|Not needed in the project
 Give definition of containers|Friday|Friday|No exercise yet
