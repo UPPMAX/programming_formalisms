@@ -62,7 +62,7 @@ question set is compulsory, Course leader(s) are encouraged to ask any
 additional questions for their own collection and data analysis,
 should they wish.
 
-Data formatting: Prefered column headers for each core metric are in ‘red’.
+Data formatting: Preferred column headers for each core metric are in ‘red’.
 It would be very helpful for analysing the data if everyone used these column
 headings when exporting the results. Please note: these descriptors are case
 sensitive (e.g. use `advertised` not `Advertised`).
@@ -75,7 +75,7 @@ handling:
 
 ### Core Question Set
 
-### Section 1 - Template: NBIS Short Term Feedback (STF) survey `COURSE NAME", LOCATION, YYYY-MM-DD`
+### Section 1 - Template: NBIS Short Term Feedback (STF) survey `COURSE NAME, LOCATION, YYYY-MM-DD`
 
 Thank you for filling the questionnaire.
 It is really important to us in order to continually improve the course and the

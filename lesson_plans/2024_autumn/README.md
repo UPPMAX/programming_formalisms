@@ -73,7 +73,7 @@ class list|Class design or `git` basics|?Monday|Do class list before class diagr
 class diagram|Class design|?Monday|Do class list before class diagram
 TDD|TDD|Tuesday|Before pair programming
 Pair programming|Pair programming|Tuesday|After TDD
-git merge conflics|Monday|-|Need exercise for this
+git merge conflicts|Monday|-|Need exercise for this
 `git init`|-|Monday|Not needed for shared project, can be done on GitHub
 `git branch -c`|-|Monday|can be done on GitHub
 `git graph`|-|Monday|can be done on GitHub
