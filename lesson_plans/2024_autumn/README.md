@@ -7,6 +7,8 @@
 
 ### Suggested new schedule
 
+Mu suggestion:
+
 Day      |Hours|Topic                    |Remarks
 ---------|-----|-------------------------|---------------------------
 Monday   |1-6  |Risk analysis, design    |More exercises, less theory
@@ -17,6 +19,25 @@ Thursday |1-3  |Testing                  |.
 Thursday |4-6  |Code reviews             |Need a dedicated TA to review code
 Friday   |1-3  |Class design             |More exercises, less theory
 Friday   |4-6  |Create a re-usable module|More exercises, less theory
+
+In the schedule to be discussed:
+
+- **Monday morning**: 
+  - Björn: course overview
+  - Björn: basic git
+- **Monday afternoon**: Requirements modeling and risk assessment
+  - Lars: Define the project
+  - Lars: Make formal requirements model
+  - Lars: Make formal risk assessment
+- **Tuesday**: Git setup and version control, from a reproducible resarch and social coding/development perspective
+  - Organize the project 
+- **Wednesday**: 
+  - Richel: Test-Driven Development (TDD) and function design
+- **Thursday and Friday morning**: 
+  - Richel: Test-Driven Development and class design (TDD) 
+  - Richel: Implement the project as a package
+- **Friday afternoon**: Deployment and documentation
+
 
 ## Week 36
 
@@ -89,3 +110,30 @@ Licensing|-|Friday|not needed for the project: we give it a license
 Static HTML website generator|-|Friday|not needed for the project
 making a package and using it|Friday|-|Need to create exercise
 Wiki|-|Friday|not needed for the project, no formal terminology
+
+### Meeting 2024-09-11 evaluation
+
+I am happy we voted democratically on what the course goal is
+and what is yes/no course content.
+
+I do feel the course has been made worse by this. 
+These are my worries:
+
+- We voted for the coarse goal of 'to give an understanding of formal
+  principles of software development', instead of 'applying formal
+  principles of software development'. I worry that we have failed
+  to reduce lecturing and have failed to reduce lecturing useless content 
+  (there are many things I am not convinced of to be useful, even after have
+  seen some of these topic being discussed multiple times; if something is
+  said to be 'essential' does not convince me)
+- We voted for 'Only what is used by the student project is course content,
+  with alternatives relevant to academics provided in lecture (or extra
+  material) to what we do'. I suggested 'Only what is used by the student
+  project is course content' to reduce lecturing. Also here, I worry that we
+  have failed to reduce lecturing
+
+
+
+
+
+
