@@ -1,16 +1,16 @@
 # Day 4 part 2
 
- * 13:00-16:00
- * Richel
- * Goals: 
-   * Theory on data structures
-   * Students design a good classes
-   * Form: group size: 4, use topic branches, use CI scripts, use code review
+* 13:00-16:00
+* Richel
+* Goals:
+  * Theory on data structures
+  * Students design a good classes
+  * Form: group size: 4, use topic branches, use CI scripts, use code review
 
 ## 13:00-13:45 RB
 
- * Goals: 
-   * Students can write a good function
+* Goals:
+  * Students can write a good function
 
 When |What
 -----|-------------------------
@@ -20,8 +20,8 @@ When |What
 
 ## 14:00-14:45 RB
 
- * Goals: 
-   * Students write a function that uses local caching
+* Goals:
+  * Students write a function that uses local caching
 
 When |What
 -----|-------------------------
@@ -31,9 +31,9 @@ When |What
 
 ## 15:00-15:45 RB
 
- * Goals: 
-   * Recap
-   * Reflect
+* Goals:
+  * Recap
+  * Reflect
 
 When       |What
 -----------|-------------------------
@@ -43,4 +43,4 @@ When       |What
 
 ## Observables
 
- * `owner_name/programming_formalisms_medium_project` (in groups of four)
+* `owner_name/programming_formalisms_medium_project` (in groups of four)

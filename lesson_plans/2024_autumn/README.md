@@ -2,7 +2,6 @@
 
 - Author: Richel
 
-
 ## Week 37
 
 ### Suggested new schedule
@@ -22,7 +21,7 @@ Friday   |4-6  |Create a re-usable module|More exercises, less theory
 
 In the schedule to be discussed:
 
-- **Monday morning**: 
+- **Monday morning**:
   - Björn: course overview
   - Björn: basic git
 - **Monday afternoon**: Requirements modeling and risk assessment
@@ -30,14 +29,13 @@ In the schedule to be discussed:
   - Lars: Make formal requirements model
   - Lars: Make formal risk assessment
 - **Tuesday**: Git setup and version control, from a reproducible resarch and social coding/development perspective
-  - Organize the project 
-- **Wednesday**: 
+  - Organize the project
+- **Wednesday**:
   - Richel: Test-Driven Development (TDD) and function design
-- **Thursday and Friday morning**: 
-  - Richel: Test-Driven Development and class design (TDD) 
+- **Thursday and Friday morning**:
+  - Richel: Test-Driven Development and class design (TDD)
   - Richel: Implement the project as a package
 - **Friday afternoon**: Deployment and documentation
-
 
 ## Week 36
 
@@ -116,13 +114,13 @@ Wiki|-|Friday|not needed for the project, no formal terminology
 I am happy we voted democratically on what the course goal is
 and what is yes/no course content.
 
-I do feel the course has been made worse by this. 
+I do feel the course has been made worse by this.
 These are my worries:
 
 - We voted for the coarse goal of 'to give an understanding of formal
   principles of software development', instead of 'applying formal
   principles of software development'. I worry that we have failed
-  to reduce lecturing and have failed to reduce lecturing useless content 
+  to reduce lecturing and have failed to reduce lecturing useless content
   (there are many things I am not convinced of to be useful, even after have
   seen some of these topic being discussed multiple times; if something is
   said to be 'essential' does not convince me)
@@ -131,9 +129,3 @@ These are my worries:
   material) to what we do'. I suggested 'Only what is used by the student
   project is course content' to reduce lecturing. Also here, I worry that we
   have failed to reduce lecturing
-
-
-
-
-
-

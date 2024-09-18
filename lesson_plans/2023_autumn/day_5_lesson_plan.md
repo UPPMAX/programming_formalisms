@@ -2,5 +2,5 @@
 
 # Lesson plan
 
- * Read and respond to Retrospective
- * Do lectures with exercises
+* Read and respond to Retrospective
+* Do lectures with exercises

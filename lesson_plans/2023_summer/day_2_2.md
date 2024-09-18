@@ -1,17 +1,17 @@
 # Day 2 part 2
 
- * 13:00-16:00
- * Richel
- * Goals: 
-   * Theory: TDD
-   * Students can add, commit, push
-   * Students have done multiple TDD cycles
-   * Form: group size: 1, use `master`, no CI scripts, no code review
+* 13:00-16:00
+* Richel
+* Goals:
+  * Theory: TDD
+  * Students can add, commit, push
+  * Students have done multiple TDD cycles
+  * Form: group size: 1, use `master`, no CI scripts, no code review
 
 ## 13:00-13:45 RB
 
- * Goals: 
-   * Students can add, commit, push
+* Goals:
+  * Students can add, commit, push
 
 When |What
 -----|-------------------------
@@ -20,12 +20,12 @@ When |What
 13:10|Demo: `is_zero`, video 2/3, 16 mins: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_zero.ogv) [YouTube](https://youtu.be/VddlrNOeodg)
 13:26|Introduce exercise: `is_even`, video 3/3, 3 mins: [download (.ogv)](https://richelbilderbeek.nl/programming_formalisms_tdd_1_3.ogv) [YouTube](https://youtu.be/7V-zE__S6M8)
 13:29|Start exercise
-13:45|Break, have a break. Solution `is_even`: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_even.ogv) [YouTube](https://youtu.be/ZcgJEdaRRpc) 
+13:45|Break, have a break. Solution `is_even`: [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_even.ogv) [YouTube](https://youtu.be/ZcgJEdaRRpc)
 
 ## 14:00-14:45 RB
 
- * Goals: 
-   * Students can do a TDD cycle
+* Goals:
+  * Students can do a TDD cycle
 
 When |What
 -----|-------------------------
@@ -37,9 +37,9 @@ When |What
 
 ## 15:00-15:45 RB
 
- * Goals: 
-   * Recap: what is TDD? Why is it important?
-   * Reflect
+* Goals:
+  * Recap: what is TDD? Why is it important?
+  * Reflect
 
 When       |What
 -----------|-------------------------
@@ -50,12 +50,12 @@ When       |What
 
 ## Observables
 
- * `owner_name/is_zero`
- * `owner_name/is_even`
- * `owner_name/is_odd`
- * `owner_name/is_probability`
+* `owner_name/is_zero`
+* `owner_name/is_even`
+* `owner_name/is_odd`
+* `owner_name/is_probability`
 
 ## Links
 
- * Video 'TDD in Python 'is_zero'': [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_zero.ogv) [YouTube](https://youtu.be/VddlrNOeodg)
- * [Project Euler](https://projecteuler.net/)
+* Video 'TDD in Python 'is_zero'': [download (.ogv)](https://richelbilderbeek.nl/tdd_python_is_zero.ogv) [YouTube](https://youtu.be/VddlrNOeodg)
+* [Project Euler](https://projecteuler.net/)
