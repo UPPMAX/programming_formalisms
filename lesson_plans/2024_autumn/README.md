@@ -129,3 +129,7 @@ These are my worries:
   material) to what we do'. I suggested 'Only what is used by the student
   project is course content' to reduce lecturing. Also here, I worry that we
   have failed to reduce lecturing
+
+
+
+
