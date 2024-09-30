@@ -1,4 +1,8 @@
 #!/bin/env Rscript
+#
+# TODO: convert to lesson hour, e.g. 1-8 for day 1, 9-16 for day 2, etc
+#
+
 descriptions <- readr::read_csv("description.csv", show_col_types = FALSE)
 
 # Check all files exists
