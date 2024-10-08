@@ -15,6 +15,7 @@
     [an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
 
     [Only what is used by the student project is course content, with alternatives relevant to academics provided in lecture (or extra material) to what we do](https://github.com/UPPMAX/programming_formalisms/issues/52).
+    [As we need discuss alternatives besides the course content, by definition, all exercises cannot be part of the project](https://github.com/UPPMAX/programming_formalisms/issues/43).
     Whenever we give some advice, [we will try to supply a references to the literature](https://github.com/UPPMAX/programming_formalisms/issues/57).
     
     Teach evidence-based or expert-recommended best practices on how to:
