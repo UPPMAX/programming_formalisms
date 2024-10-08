@@ -192,7 +192,7 @@ Do you want to work in another environment you are used to, you can do some of t
  
 - You may want to check [VS Code installation](https://coderefinery.github.io/installation/vscode/) as well!
 
-- [Download](https://code.visualstudio.com/Download)
+- [Download](https://code.visualstudio.com/)
     - Note for Mac Users: If Safari does not let you download, try Chrome or other web browser.
 
 !!! info
