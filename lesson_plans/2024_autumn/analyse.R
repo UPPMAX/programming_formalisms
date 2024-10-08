@@ -56,6 +56,37 @@ testthat::expect_false(is_lunch(readr::parse_time("11:59")))
 testthat::expect_true(is_lunch(readr::parse_time("12:00")))
 testthat::expect_false(is_lunch(readr::parse_time("13:00")))
 
+extract_nth_hour <- function(date_time) {
+  date_time <- as.POSIXct(date_time)
+  starting_date_time <- as.POSIXct("2024-04-22 09:00:00")
+  starting_day <- lubridate::day(starting_date_time)
+  starting_time <- lubridate::hour(starting_date_time)
+  nth_hour_on_day <- lubridate::hour(date_time) - starting_time
+  if (nth_hour_on_day > 3) nth_hour_on_day <- nth_hour_on_day - 1 # Lunch
+  nth_day <- lubridate::day(date_time) - starting_day
+  f_minutes <- lubridate::minute(date_time) / 60.0
+  (nth_day * 6) + nth_hour_on_day + f_minutes
+}
+
+testthat::expect_equal(extract_nth_hour("2024-04-22 09:00:00"), 0)
+testthat::expect_equal(extract_nth_hour("2024-04-22 10:00:00"), 1)
+testthat::expect_equal(extract_nth_hour("2024-04-22 11:00:00"), 2)
+testthat::expect_equal(extract_nth_hour("2024-04-22 12:00:00"), 3)
+testthat::expect_equal(extract_nth_hour("2024-04-22 13:00:00"), 3)
+testthat::expect_equal(extract_nth_hour("2024-04-22 14:00:00"), 4)
+testthat::expect_equal(extract_nth_hour("2024-04-22 15:00:00"), 5)
+testthat::expect_equal(extract_nth_hour("2024-04-22 16:00:00"), 6)
+testthat::expect_equal(extract_nth_hour("2024-04-23 09:00:00"), 6)
+testthat::expect_equal(extract_nth_hour("2024-04-23 10:00:00"), 7)
+testthat::expect_equal(extract_nth_hour("2024-04-23 11:00:00"), 8)
+testthat::expect_equal(extract_nth_hour("2024-04-23 12:00:00"), 9)
+testthat::expect_equal(extract_nth_hour("2024-04-23 13:00:00"), 9)
+testthat::expect_equal(extract_nth_hour("2024-04-23 14:00:00"), 10)
+testthat::expect_equal(extract_nth_hour("2024-04-23 15:00:00"), 11)
+testthat::expect_equal(extract_nth_hour("2024-04-23 16:00:00"), 12)
+
+
+
 # Put all counts in one big table
 tables <- list()
 for (i in seq_along(descriptions$date)) {
@@ -85,6 +116,7 @@ counts$session[counts$f_time > 0.5] <- "afternoon"
 
 counts$date_time <- as.POSIXct(lubridate::ymd(counts$date) + lubridate::hms(counts$time))
 counts$day <- stringr::str_sub(counts$description, -1)
+counts$nth_hour <- Vectorize(extract_nth_hour)(counts$date_time)
 
 hist(counts$f_time, breaks = seq(0.0, 1.0, by = 0.01))
 
@@ -138,3 +170,50 @@ ggplot2::ggplot(counts, ggplot2::aes(x = date_time, y = n_total)) +
   )
 
 ggplot2::ggsave("n_learners_per_datetime.png", width = 7, height = 4)
+
+
+lesson_nth_hours <- tibble::tribble(
+  ~day, ~xmin, ~xmax,
+  1,  0, 6,
+  2,  6, 12,
+  3, 12, 18,
+  4, 18, 24,
+  5, 24, 30,
+)
+lesson_nth_hours$day <- as.factor(lesson_nth_hours$day)
+lesson_nth_hours$ymin <- 0
+lesson_nth_hours$ymax <- max(counts$n_total)
+
+ggplot2::ggplot(counts, ggplot2::aes(x = nth_hour, y = n_total)) + 
+  ggplot2::geom_point() + 
+  ggplot2::geom_smooth(color = "black") +
+  ggplot2::geom_line(
+    data = counts, 
+    mapping = ggplot2::aes(x = nth_hour, y = n_total, color = day),
+    inherit.aes = FALSE
+  ) + 
+  ggplot2::geom_point(
+    mapping = ggplot2::aes(x = nth_hour, y = n_total, color = day)
+  ) + 
+  ggplot2::geom_rect(
+    data = lesson_nth_hours, 
+    inherit.aes = FALSE,
+    ggplot2::aes(
+      xmin = xmin,
+      xmax = xmax,
+      ymin = ymin,
+      ymax = ymax,
+      fill = day
+    ),
+    alpha = 0.2
+  ) +
+  ggplot2::labs(
+    title = "Number of learners present in time under lesson time",
+    subtitle = "Per course",
+    caption = paste0(
+      "Data from spring 2024. ",
+      "Trendline is Loess smoothing of all data"
+    )
+  )
+
+ggplot2::ggsave("n_learners_per_nth_hour.png", width = 7, height = 4)
