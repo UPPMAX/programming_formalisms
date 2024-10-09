@@ -26,7 +26,7 @@
         - testing
         - source version control
         - collab
-        - reprod
+        - reproducibility
         - documentation
 
 - Demo/discussion/exercise former
@@ -41,7 +41,7 @@
         - outcome
         - example
         - SDLC
-    - SLDC tools
+    - SDLC tools
         - steps
         - planning
             - top-down vs bottom-up
