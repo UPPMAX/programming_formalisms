@@ -9,7 +9,51 @@
     - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.        
     - We will set the start in why a formalized development of software is needed.
 
-- Content
+- Content former
+    - what is software?
+        - --software concepts--
+        - types
+        - outcome
+        - oo vs functional + modular coding
+        - example (too long)
+        - SDLC
+    - SLDC tools
+        - steps
+        - planning
+            - top-down vs bottom-up
+            - UML
+            - --pseudocode--
+        - testing
+        - source version control
+        - collab
+        - reprod
+        - documentation
+
+- Demo/discussion/exercise former
+    - user input: what kind of development?
+    - --demo: wrf workflow--
+    - --code example: astro--   
+
+- Content suggestion
+    - what is software?
+        - --software concepts--
+        - types
+        - outcome
+        - example
+        - SDLC
+    - SLDC tools
+        - steps
+        - planning
+            - top-down vs bottom-up
+            - UML
+            - --pseudocode--
+        - testing
+        - source version control
+        - collab
+        - reprod
+        - documentation
+     
+- Exercise
 
 ### SDLC tools
 - LOs
