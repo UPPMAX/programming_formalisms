@@ -14,10 +14,10 @@
         - --software concepts--
         - types
         - outcome
-        - oo vs functional + modular coding
+        - object orientation vs functional + modular coding
         - example (too long)
         - SDLC
-    - SLDC tools
+    - SDLC tools
         - steps
         - planning
             - top-down vs bottom-up
@@ -32,7 +32,7 @@
 - Demo/discussion/exercise former
     - user input: what kind of development?
     - --demo: wrf workflow--
-    - --code example: astro--   
+    - --code example: planet--   
 
 - Content suggestion
     - what is software?
@@ -50,7 +50,7 @@
         - testing
         - source version control
         - collab
-        - reprod
+        - reproducibility
         - documentation
      
 - Exercise
@@ -62,7 +62,7 @@
 - Content
 
 ## Basic Git
-Command line with https: BC+L+R, uses command-line 
+Command line with https: BC+L+R, uses command line 
 
 ### LOs
 
