@@ -3,9 +3,32 @@
 ## Intro with course overview
 - no menti
 
+### Introduction
+- LOs
+    - Identify the main topics and objectives for the week's lessons.
+    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.        
+    - We will set the start in why a formalized development of software is needed.
+
+- Content
+
+### SDLC tools
+- LOs
+    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
+
+- Content
 
 ## Basic gitGit
 Commandline with https: BC+L+R, uses command-line 
+
+### LOs
+
+#### Get started with Git/GitHub
+
+    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+    - Content    
+        - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
+         - get started with planning the project 
 
 ### Literature on why
 Search through Google Scholar for 'git best practices' resulted among others:
