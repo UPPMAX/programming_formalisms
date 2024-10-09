@@ -1,7 +1,7 @@
 # Monday morning sessions by Björn
 
 ## Intro with course overview
-- no menti
+- no Menti
 
 ### Introduction
 - LOs
@@ -61,8 +61,8 @@
 
 - Content
 
-## Basic gitGit
-Commandline with https: BC+L+R, uses command-line 
+## Basic Git
+Command line with https: BC+L+R, uses command-line 
 
 ### LOs
 
