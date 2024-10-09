@@ -2,9 +2,20 @@
 
 The frequently asked questions, about:
 
+- [credits](#credits): can I get university credits for this course?
 - [eligibility](#eligibility), i.e. when to join the course
 - [preparation](#preparation)
 - [course teaching](#course-teaching), i.e. how the course is conducted and ideas behind it
+
+## Credits
+
+### Can I get University Credits for this course?
+
+No.
+
+We don't give formal credits for the course.
+That is up to your supervisor.
+You can ask for a certificate after the course that helps with the decisions.
 
 ## Eligibility
 
