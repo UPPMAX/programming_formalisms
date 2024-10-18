@@ -1,7 +1,7 @@
 # Monday morning sessions by Björn
 
 ## Intro with course overview
-- no Menti
+- no Menti?
 
 ### Introduction
 - LOs
