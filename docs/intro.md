@@ -109,6 +109,12 @@ For a detailed daily schedule, see the detailed schedule of that day.
 Next iteration of the the course will take place in week 47,
 i.e. Monday 18th November to and including Friday 22nd November 2024.
 
+???- info "And the course iteration after that ..."
+
+    The iteration after will take place in
+    [week 19](https://github.com/UPPMAX/programming_formalisms/issues/50#issuecomment-2376426778)
+    of 2025, which is Monday May 4th to and including Friday May 8th.
+
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
