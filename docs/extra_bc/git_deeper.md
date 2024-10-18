@@ -481,9 +481,9 @@ Isolated tracks of work.
 There are two typical workflows:
 
 ```console
-$ git checkout -b new-feature  # create branch, switch to it
+$ git switch -b new-feature  # create branch, switch to it
 $ git commit                   # work, work, work, ..., and test
-$ git checkout master          # once feature is ready, switch to master
+$ git switch master          # once feature is ready, switch to master
 $ git merge new-feature        # merge work to master
 $ git branch -d new-feature    # remove branch
 ```
@@ -492,8 +492,8 @@ Sometimes you have a wild idea which does not work.
 Or you want some throw-away branch for debugging:
 
 ```console
-$ git checkout -b wild-idea    # create branch, switch to it, work, work, work ...
-$ git checkout master          # realize it was a bad idea, back to master
+$ git switch -b wild-idea    # create branch, switch to it, work, work, work ...
+$ git switch master          # realize it was a bad idea, back to master
 $ git branch -D wild-idea      # it is gone, off to a new idea
 ```
 

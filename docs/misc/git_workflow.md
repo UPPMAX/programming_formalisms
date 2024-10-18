@@ -36,7 +36,7 @@ flowchart TD
   another_branch[Another branch]
   new_branch[A new branch]
   
-  your_branch --> |Switch branch\ngit checkout other_branch|another_branch
+  your_branch --> |Switch branch\ngit switch other_branch|another_branch
   another_branch --> |Merge\ngit merge other_branch| your_branch
   new_branch --> |Create on GitHub|another_branch
   your_branch --> |Update\ngit pull| your_branch

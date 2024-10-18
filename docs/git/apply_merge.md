@@ -222,7 +222,7 @@ gitGraph
     Switch to the new branch, for example, `richel`, by doing:
 
     ```
-    git checkout richel
+    git switch richel
     ```
 
     > - On your local computer:
@@ -275,7 +275,7 @@ gitGraph
     >      - switch to the `main` branch
 
     ```
-    git checkout main
+    git switch main
     ```
 
     > - On your local computer
@@ -359,12 +359,12 @@ gitGraph
     Here, I will replay the figure above
 
     - in GitHub, create a branch called `anna`
-    - on your local computer, `git pull`, then `git checkout anna`
+    - on your local computer, `git pull`, then `git switch anna`
     - on your local computer, modify a file, e.g. add the line `Anna was here`
       at the bottom of `README.md`. Then do `git add .`, 
       `git commit -m "Anna was here"` and `git push`.
       Do not merge braches yet, else there will be no merge conflicts!
-    - on your local computer, `git checkout main`
+    - on your local computer, `git switch main`
     - on your local computer, modify a file, e.g. add the line `main person was here`.
       Then do `git add .`, `git commit -m "main person was here"` and `git push`.
     - To generate the merge conflict, merge `anna` into `main`, using `git merge main`.

@@ -104,7 +104,7 @@ gitGraph
     Switch to the new branch, for example, `richel`, by doing:
 
     ```
-    git checkout richel
+    git switch richel
     ```
 
     > - On your local computer:
@@ -159,7 +159,7 @@ gitGraph
     Switch to the main branch, for example, `main`, by doing:
 
     ```
-    git checkout main
+    git switch main
     ```
 
     > - Delete your branch (i.e. the one with the unique name).

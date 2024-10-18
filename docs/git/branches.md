@@ -812,8 +812,8 @@ $ git diff    # show unstaged/uncommitted modifications
 $ git show    # show the change for a specific commit
 $ git mv      # move tracked files
 $ git rm      # remove tracked files
-$ git checkout -b wild-idea    # create branch, switch to it, work, work, work ...
-$ git checkout main          # realize it was a bad idea, back to main/master
+$ git switch -b wild-idea    # create branch, switch to it, work, work, work ...
+$ git switch main          # realize it was a bad idea, back to main/master
 $ git branch -D wild-idea      # it is gone, off to a new idea
 $ git merge 
 ```
