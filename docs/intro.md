@@ -119,19 +119,19 @@ Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
 Monday   |13:00-15:45|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
-Monday   |15:45-16:00|Richel |Retrospect
+Monday   |15:40-16:00|Lars   |Retrospect
 Tuesday  |09:00-12:00|Lars   |Create project's class diagram (using git)
 Tuesday  |13:00-15:45|Richel |pair programming + TDD
-Tuesday  |15:45-16:00|Richel |Retrospect
+Tuesday  |15:40-16:00|Lars   |Retrospect
 Wednesday|09:00-12:00|Björn  |Formal git workflow
 Wednesday|13:00-16:00|Richel |Formal GitHub and software development work
-Wednesday|15:45-16:00|Richel |Retrospect
+Wednesday|15:40-16:00|Lars   |Retrospect
 Thursday |09:00-12:00|Richel |Data structures (+ algorithms)
 Thursday |13:00-16:00|R (+M) |Algorithms + Optimisation
-Thursday |15:45-16:00|Richel |Retrospect
+Thursday |15:40-16:00|Lars   |Retrospect
 Friday   |09:00-12:00|Lars   |Modular programming deep
 Friday   |13:00-16:00|Björn  |Deployment
-Friday   |15:45-16:00|Richel |Evaluation
+Friday   |15:40-16:00|Richel |Evaluation
 
 
 ## Detailed overview
