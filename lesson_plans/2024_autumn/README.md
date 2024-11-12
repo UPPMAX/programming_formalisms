@@ -130,6 +130,11 @@ These are my worries:
   project is course content' to reduce lecturing. Also here, I worry that we
   have failed to reduce lecturing
 
+## Preparation
 
+I will have 4 days to prepare, all of these disturbed my meetings.
+
+- Tuesday: sketch all days
+ 
 
 

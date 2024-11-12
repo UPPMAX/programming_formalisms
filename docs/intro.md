@@ -111,10 +111,10 @@ i.e. Monday 18th November to and including Friday 22nd November 2024.
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Monday   |09:00-10:00|Björn   |Introduction
-Monday   |10:00-11:00|Björn   |Software development tools
-Monday   |11:00-12:00|Björn   |Git intro
-Monday   |13:00-15:40|Lars  |Define and plan project
+Monday   |09:00-10:00|Björn  |Introduction
+Monday   |10:00-11:00|Björn  |Software development tools
+Monday   |11:00-12:00|Björn  |Git intro
+Monday   |13:00-15:40|Lars   |Define and plan project
 Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |
 Tuesday  |09:00-10:00|Lars   |Software development life cycle
@@ -123,16 +123,16 @@ Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |
 Wednesday|09:00-12:00|Björn  |Formal git workflow, branches, social coding
-Wednesday|13:00-15:40|Richel |Function design
+Wednesday|13:00-15:40|Richel |[Function design](function_design.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |
-Thursday |09:00-10:00|Lars |Object-oriented design
-Thursday |10:00-12:00|Richel |Class design
-Thursday |13:00-14:00|Lars |Modular programming
-Thursday |14:00-15:40|Richel |Implement the project as a package
+Thursday |09:00-10:00|Lars   |Object-oriented design
+Thursday |10:00-12:00|Richel |[Class design](class_design.md)
+Thursday |13:00-14:00|Lars   |Modular programming
+Thursday |14:00-15:40|Richel |[Implement the project as a package](package/README.md)
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |
-Friday   |09:00-11:00|Lars   |Optimization
+Friday   |09:00-11:00|Richel |[Optimization](optimization/README.md)
 Friday   |11:00-12:00|Björn  |Deployment
 Friday   |13:00-15:00|Björn  |Deployment and documentation
 Friday   |15:00-15:40|Richel |Wrap-up
