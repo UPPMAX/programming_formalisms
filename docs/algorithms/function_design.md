@@ -54,7 +54,7 @@ A good function ...
 
 ## Design by contract
 
-![](design_by_contract.png)
+![Design by contract](design_by_contract.png)
 
 > [Source: Wikipedia](https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg)
 
@@ -146,13 +146,10 @@ Could you give examples of bad function names?
 
 Imagine two DNA sequences:
 
-```
-
+```text
 AAACCCGGGTTT
 ATACCCGGGTAT
-
--        x
-
+         x
 ```
 
 How would you call the algorithm that detects the location
@@ -171,13 +168,10 @@ of the `*` (but not of the `x`, as the `*` comes earlier)?
 
 Imagine two DNA sequences:
 
-```
-
+```text
 AAACCCGGGTTT
 ATACCCGGGTAT
-
--        *
-
+         *
 ```
 
 How would you call the algorithm that detects all the locations of the `*`s?
@@ -195,20 +189,16 @@ How would you call the algorithm that detects all the locations of the `*`s?
 
 Imagine two DNA sequences:
 
-```
-
+```text
 AAACCCGGGTTT
 ATACCGGGTTT
-
 ```
 
 How would you call the algorithm that makes the sequences have as much similarities as possible, by possibly inserting a `-`
 
-```
-
+```text
 AAACCCGGGTTT
 ATACC-GGGTTT
-
 ```
 
 ## Solutions 3
@@ -355,14 +345,14 @@ A good function:
 
 Imagine two DNA sequences:
 
-```
+```text
 AAACCCGGGTTT
 ATACCGGGTTT
 ```
 
 The function `align_dna_seqs` aligns two DNA sequences to this:
 
-```
+```text
 AAACCCGGGTTT
 ATACC-GGGTTT
 ```
@@ -434,7 +424,11 @@ A good function:
 
 ## References
 
-- `[dictionary definition]` <https://www.merriam-webster.com/dictionary/algorithm>
-- `[Martin, 2009]` Martin, Robert C. Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
-- `[Ram, 2013]` Ram, K. "rOpenSci-open tools for open science." AGU Fall Meeting Abstracts. Vol. 2013. 2013.
-- `[tidyverse style guideline of functions]` <https://style.tidyverse.org/functions.html>
+- `[dictionary definition]`
+  <https://www.merriam-webster.com/dictionary/algorithm>
+- `[Martin, 2009]` Martin, Robert C.
+  Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
+- `[Ram, 2013]` Ram, K. "rOpenSci-open tools for open science."
+  AGU Fall Meeting Abstracts. Vol. 2013. 2013.
+- `[tidyverse style guideline of functions]`
+  <https://style.tidyverse.org/functions.html>
