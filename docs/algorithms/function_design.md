@@ -25,7 +25,7 @@ References;
   end' `[dictionary definition]`
 - [2] pick any vague definition
 
-## What is a good function?
+## What is a good function? 1/3
 
 A good function ...
 
@@ -60,51 +60,48 @@ A good function ...
 
 ## A good function is documented
 
-=== "Python"
+```python
+def sort_1(x):
+  """Sort list `x` in-place.
 
- ```python
- def sort_1(x):
-   """Sort list `x` in-place. 
-   
-   Returns nothing
-   """
+  Returns nothing
+  """
 
- def sort_2(x):
-   """Sort list `x`.
-   
-   Returns the sorted list.
-   """
+def sort_2(x):
+  """Sort list `x`.
 
- assert sort_1.__doc__
- assert sort_2.__doc__
-    ```
+  Returns the sorted list.
+  """
 
-=== "R"
+assert sort_1.__doc__
+assert sort_2.__doc__
+```
 
- ```r
+???- question "Prefer R?"
+
+    ```r
     #' Sort list `x` in-place.
     #' @param x a list
     #' @return nothing
- sort_1 <- function(x) {
+    sort_1 <- function(x) {
       # ...
     }
-   
+
     #' Sort list `x`
     #' @param x a list
     #' @return the sorted list
- sort_2 <- function(x) {
+    sort_2 <- function(x) {
       # ...
- }
+    }
 
- # Check if functions have documentation here
+    # Check if functions have documentation here
     ```
-
 
 Mandatory in some contexts `[Ram, 2013]` `[tidyverse style guideline of functions]`
 
 ## A good function has a good name
 
-> There are only two hard things in Computer Science: 
+> There are only two hard things in Computer Science:
 > cache invalidation and naming things
 >
 > Phil Karlton
@@ -221,7 +218,7 @@ Comment on this [function from Pythonpool](https://www.pythonpool.com/check-if-n
 
 ```python
 i=2
- 
+
 def Prime(no, i):
     if no == i:
         return True
@@ -290,7 +287,7 @@ def is_prime_internal(no, i = 2):
     elif no % i == 0:
         return False
     return is_prime_internal(no, i + 1)
-  
+
 assert is_prime(2)
 assert is_prime(3)
 assert not is_prime(4)
@@ -325,7 +322,7 @@ do_y()
 You rarely need `and` in a function name. Possible exception:
 mean and standard deviation
 
-## What is a good function?
+## What is a good function? 2/3
 
 A good function:
 
@@ -361,57 +358,32 @@ Which tests would you write?
 
 ## Solutions 1
 
+```python
+assert align_dna_seqs(
+  "AAACCCGGGTTT", "ATACCCGGGTAT"
+  ) == {
+ "AAACCCGGGTTT", "ATACC-GGGTTT"
+  }
+assert align_dna_seqs(
+  { "AAACCCGGGTTT", "ATACCCGGGTAT" }
+) ==
+  { "AAACCCGGGTTT", "ATACC-GGGTTT" }
+```
 
-=== "Python"
+???- question "Prefer R?"
 
- ```python
- assert align_dna_seqs(
-   "AAACCCGGGTTT", 
-   "ATACCCGGGTAT"
-   ) == { 
-  "AAACCCGGGTTT", 
-  "ATACC-GGGTTT"
-   }
- assert align_dna_seqs( 
-   { 
-  "AAACCCGGGTTT", 
-  "ATACCCGGGTAT" 
-   } 
- ) == 
-   { 
-  "AAACCCGGGTTT", 
-  "ATACC-GGGTTT"
-   }
- ```
+    ```r
+    expect_equal(
+      align_dna_seqs("AAACCCGGGTTT", "ATACCCGGGTAT"),
+      c("AAACCCGGGTTT", "ATACC-GGGTTT")
+    )
+    expect_equal(
+      align_dna_seqs(c("AAACCCGGGTTT","ATACCCGGGTAT")),
+      c("AAACCCGGGTTT","ATACC-GGGTTT")
+    )
+    ```
 
-=== "R"
-
- ```r
- expect_equal(
-   align_dna_seqs(
-  "AAACCCGGGTTT", 
-  "ATACCCGGGTAT"
-   ), 
-   c(
-  "AAACCCGGGTTT", 
-  "ATACC-GGGTTT"
-   )
- )
- expect_equal(
-   align_dna_seqs(
-  c(
-    "AAACCCGGGTTT", 
-    "ATACCCGGGTAT"
-  )
-   ),
-   c(
-  "AAACCCGGGTTT", 
-  "ATACC-GGGTTT"
-   )
- )
- ```
-
-## What is a good function?
+## What is a good function? 3/3
 
 A good function:
 
