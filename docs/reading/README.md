@@ -11,6 +11,9 @@ Here are open-access paper that we cite in this course.
 - `[Chacon & Straub, 2014]` Chacon, Scott, and Ben Straub. Pro git. Springer Nature, 2014.
   [chacon_and_straub_2014.pdf](chacon_and_straub_2014.pdf)
 
+- `[Bertram, 2009]` Bertram, Dane. "The social nature of issue tracking in software engineering." University of Calgary (2009).
+- `[Gunderloy, 2007]` Gunderloy, Mike, ed. Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
+
 - [Perez-Riverol et al., 2016] Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
   [perez_riverol_et_al_2016.pdf](perez_riverol_et_al_2016.pdf)
 
