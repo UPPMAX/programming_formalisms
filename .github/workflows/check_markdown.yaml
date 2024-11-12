@@ -22,7 +22,7 @@ jobs:
 
       # We don't care about all files having valid markdown
       - name: Remove files to be ignored
-      - run: |
+        run: |
           rm -rf shared_documents
           rm -rf evaluations
 
