@@ -235,7 +235,7 @@ Discuss:
 
 - [Björn -> Richel] Can someone check the prereqs for Linux? Richel does that!
 - [Björn for Lars] Please check <https://uppmax.github.io/programming_formalisms/introductions/sdlc_tools/#software-citation>
-- [Richel, 5 mins] I am happy to see learning objectives on our pages, as this helps one focus on how/what to teach! Learning objectives, however, should be learner-centered, active, observable and specific ([an example article on this](https://ctl.wiley.com/learning-objectives-basics/)), e.g. 'learners are able to do a git push', instead of vague 'We will get some theory of X'. Could we try to make all teaching objectives learner-centered, active, observable and specific? I volunteer to do Pull Requests :-)
+- [Richel, 5 mins] I am happy to see learning objectives on our pages, as this helps one focus on how/what to teach! Learning objectives, however, should be learner-centered, active, observable and specific, e.g. 'learners are able to do a git push', instead of vague 'We will get some theory of X'. Could we try to make all teaching objectives learner-centered, active, observable and specific? I volunteer to do Pull Requests :-)
     - [VOTED] BLR: Yes
     - [other votes] : No
 - [Richel, 5 mins] I am happy to see the prereqs page and the obvious love put in it. I am unsure of the page's purpose. Could we come up with a purpose of the page and vote? As Björn will the one teaching the first sessions, however, I agree he is boss on this. Also, I volunteer to do the work. If we discuss: The goal of the prereqs page is ...
@@ -874,7 +874,7 @@ Day|Before lunch      |After lunch|Reflection
             Recommended knowledge of Git and programming in Python equivallent of either NBIS/ELIXIR-SE Tools for Reproducible research or
             https://coderefinery.github.io/2023-09-19-workshop/ (material still availible)
             We assume familiarity with python atleast equivallent of the python part of the UPPMAX indroductiory course or Python programming with applications to bioinformatics https://uppsala.instructure.com/courses/85913. 
-For more information and registration, please visit: https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/.
+For more information and registration, please visit: `[broken URL to UPPMAX Programming Formalisms announcement]`.
  
  
  * Date for precourse setup
@@ -1016,7 +1016,7 @@ https://uu-se.zoom.us/j/65052228138
 Meeting ID: 650 5222 8138
 Passcode: 595312
 ## QA hackmd
-https://hackmd.io/@LarsEklundScilifeLife/QAdayOneVT2023/edit
+`[Broken link to a HackMD document]`
 ## Current Teachers/TA
 - [name=Lars Eklund], lars.eklund@uppmax.uu.se
 - [name= Björn Claremar], bjorn.claremar@uppmax.uu.se
@@ -1237,9 +1237,9 @@ https://github.com/UPPMAX/programming_formalism/blob/main/setup.md
 - General
     - https://github.com/UPPMAX/programming_formalism
 - Intro
-    - https://uppmax.github.io/programming_formalism_intro/index.html
+    - https://uppmax.github.io/programming_formalisms/
 - Test driven design
-    - https://matpiq.github.io/PF-TDD/
+    - `Broken link to a TDD repo of https://github.com/MatPiq`
 - Link to the previous instance of the course
     - https://uppsala.instructure.com/courses/69215
 

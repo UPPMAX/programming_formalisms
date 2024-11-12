@@ -75,7 +75,7 @@ But is is thought of to be quite convenient :-)
 
 ### What is the goal of the shared project?
 
-See [Projects](projects.md) for the goal of the shared project.
+See [Projects](../project/README.md) for the goal of the shared project.
 
 ### How is the course prepared?
 

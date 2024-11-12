@@ -7,7 +7,6 @@
 [![Build PDFs](https://github.com/UPPMAX/programming_formalisms/actions/workflows/build_pdfs.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/build_pdfs.yaml)
 [![Check links](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_links.yaml)
 [![Check spelling](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_spelling.yaml)
-[![Deploy GitHub Pages](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/jekyll-gh-pages.yml)
 
 The goal of the course is [to give an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
 [Only what is used by the student project is course content, with alternatives relevant to academics provided in lecture (or extra material) to what we do](https://github.com/UPPMAX/programming_formalisms/issues/52).
