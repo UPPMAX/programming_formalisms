@@ -33,7 +33,7 @@
 
     - understand, use and create a UML class diagram
     - understand and use a formal git branching model
-    - understand and use a formal GitHub workflow
+    - understand and use a formal project workflow
     - understand and practice social coding, such as pair programming and code reviews
     - understand and use a run-time speed profiler
 
