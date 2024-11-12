@@ -16,7 +16,7 @@ See [Projects](projects.md).
 
 These exercises are about working on the shared project.
 The current project, as well as earlier shared projects,
-can be found [here](../misc/projects.md).
+can be found [here](projects.md).
 
 - [Issues](issues.md)
 - [Kanban board](kanban_board.md)

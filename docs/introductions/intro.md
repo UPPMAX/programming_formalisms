@@ -24,7 +24,8 @@
 
     Prerequisites are:
 
-    The [Pre-requirements](prereqs.md): 
+    The [pre-requirements](../prereqs.md): 
+
     - Learners know basic Git
     - Learners know basic Python
     - Learners have installed necessary tools
