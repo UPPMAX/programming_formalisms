@@ -87,7 +87,7 @@ See [Projects](projects.md) for the goal of the shared project.
 
 Retrospectives are:
 
-- published online in unedited form in [the 'retrospectives' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/retrospectives) of this GitHub repository
+- published online in unedited form in [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations) of this GitHub repository
 - discussed by the teachers after the lessons
 - reflected upon, where the reflections can be found in [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
 
