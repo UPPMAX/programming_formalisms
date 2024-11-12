@@ -117,21 +117,28 @@ i.e. Monday 18th November to and including Friday 22nd November 2024.
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Monday   |09:00-12:00|Lars   |Parts from Björn's intro and Class design (in groups, on repo, using web interface only)
-Monday   |13:00-15:45|Björn  |Start project git basic on documents (no coding?) (in groups, on repo)
-Monday   |15:40-16:00|Lars   |Retrospect
-Tuesday  |09:00-12:00|Lars   |Create project's class diagram (using git)
-Tuesday  |13:00-15:45|Richel |pair programming + TDD
-Tuesday  |15:40-16:00|Lars   |Retrospect
-Wednesday|09:00-12:00|Björn  |Formal git workflow
-Wednesday|13:00-16:00|Richel |Formal GitHub and software development work
-Wednesday|15:40-16:00|Lars   |Retrospect
-Thursday |09:00-12:00|Richel |Data structures (+ algorithms)
-Thursday |13:00-16:00|R (+M) |Algorithms + Optimisation
-Thursday |15:40-16:00|Lars   |Retrospect
-Friday   |09:00-12:00|Lars   |Modular programming deep
-Friday   |13:00-16:00|Björn  |Deployment
-Friday   |15:40-16:00|Richel |Evaluation
+Monday   |09:00-10:00|Björn   |Introduction
+Monday   |10:00-11:00|Björn   |Software development tools
+Monday   |10:00-11:00|Björn   |Git intro
+Monday   |13:00-15:40|Lars  |Define and plan project
+Monday   |15:40-16:00|Lars   |Confidence and retrospect
+Tuesday  |09:00-10:00|Lars   |Software development life cycle
+Tuesday  |10:00-11:00|Richel |Organize project, issues
+Tuesday  |11:00-15:40|Richel |TDD
+Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
+Wednesday|09:00-12:00|Björn  |Formal git workflow, branches, social coding
+Wednesday|13:00-15:40|Richel |Function design
+Wednesday|15:40-16:00|Lars   |Confidence and retrospect
+Thursday |09:00-10:00|Lars |Object-oriented design
+Thursday |10:00-12:00|Richel |Class design
+Thursday |13:00-14:00|Lars |Modular programming
+Thursday |14:00-15:40|Richel |Implement the project as a package
+Thursday |15:40-16:00|Lars   |Confidence and retrospect
+Friday   |09:00-11:00|Lars   |Optimization
+Friday   |11:00-12:00|Björn  |Deployment
+Friday   |13:00-15:00|Björn  |Deployment and documentation
+Friday   |15:00-15:40|Richel |Wrap-up
+Friday   |15:40-16:00|Richel |Confidence and retrospect
 
 
 ## Detailed overview
