@@ -1,38 +1,5 @@
 # Introduction to Tuesday
 
-Today we will create a class diagram of our project.
-
-???- info "Learning objectives of 'Design paradigms'"
-
-    - The student has an introductory level of understanding of design paradigms, especially with the objectoriented design prinicples
-    - The students can turn a short requirements document and feature list into objects and make an inital class diagram, for the student project.-
-
-[Design paradigms](design_develop/class_design.md)
-
-
-???- info "Learning objectives for pair programming"
-
-    - Understand why pair programming is important
-    - Understand how good pair programming looks like
-    - Practice pair programming
-
-After learning about [pair programming](pair_programming/README.md),
-we will adding stubs of these classes to our project.
-
-???- info "Learning objectives for TDD"
-
-    - Understand what TDD is
-    - Understand why TDD is important
-    - Practice TDD
-
-To be able new features, we will 
-[practice test-driven development](tdd/README.md)
-in pairs.
-
-We will be using our shared repository,
-[the Programming Formalisms project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2024),
-where we work on the main branch.
-
 ## Detailed schedule
 
 Day      |Time       |Teacher|Subject
