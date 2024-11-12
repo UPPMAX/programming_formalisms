@@ -5,14 +5,13 @@
 !!! note "What do you need to be prepared?" 
 
     - A good Zoom setup: microphone, camera and a place where you can talk
-    - A shell **terminal**
-        - Linux/Bash
-        - Mac terminal
-    - We recommend **VS Code** but other coding tools can work
-       - This also includes built-in terminals
-       - Good integrated system
-    - **Git/GitHub** account and local installation
-    - **Python** installation
+    - A **terminal**
+    - We use **VS Code** in our teaching
+       - VS Code has a built-in terminals and other useful integrated systems
+       - You can use another IDE if you are more comfortable with it
+    - A local installation of **`git`**
+    - A **GitHub** account
+    - A local **Python** installation
 
 !!! info
 
