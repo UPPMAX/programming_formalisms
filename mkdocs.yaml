@@ -60,17 +60,16 @@ nav:
     - Documentation: deployment/documentation.md
     - Summary of day: friday_summary.md
     - Summary of week: summary_week.md
-  - Reading material:
-    - Reading material: reading/README.md
   - More about:
     - Extra material (Earlier Intro day materials): extra.md
   - Misc:
+    - Projects: misc/projects.md
+    - Project workflow: misc/project_workflow.md
+    - git workflow: misc/git_workflow.md
+    - Reading material: reading/README.md
     - FAQ: misc/faq.md
     - Exercise procedure: misc/exercise_procedure.md
     - Functions to practice TDD: misc/functions.md
-    - git workflow: misc/git_workflow.md
-    - GitHub workflow: misc/github_workflow.md
-    - Projects: misc/projects.md
     - Retrospective: misc/retrospective.md
     - Richèl: misc/richel.md
 
