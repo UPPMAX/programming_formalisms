@@ -18,13 +18,14 @@ nav:
     - Introduction: introductions/intro.md
     - SDLC tools: introductions/sdlc_tools.md
     - Get started with a project: project_start/startup.md
-    - Software Development Lifecycle: introductions/sdlc.md
     - Project start with analysis and design: project_start/analysis_design.md
     - Summary of day: monday_summary.md
   - Tuesday:
     - Intro: tuesday_intro.md
-    - Class design: design_develop/class_design.md
-    - Pair programming: pair_programming/README.md
+    - Software Development Lifecycle: introductions/sdlc.md
+    - Testing overview: testing/README.md
+    - Using a formal testing framework: testing/testing_framework.md
+    - Testing indeterminate functions: testing/testing_indeterminate_functions.md
     - Test-driven development: tdd/README.md
     - Summary of day: tuesday_summary.md
   - Wednesday:
@@ -33,9 +34,11 @@ nav:
     - Branching in practice: git/apply_branches.md
     - Merging and git pull request with code review: git/pull.md
     - Merging in practice: git/apply_merge.md
-    - Testing overview: testing/README.md
-    - Using a formal testing framework: testing/testing_framework.md
-    - Testing indeterminate functions: testing/testing_indeterminate_functions.md
+    - Pair programming: pair_programming/README.md
+    - Algorithms: algorithms/README.md
+    - Algorithms, function design: algorithms/function_design.md
+    - Algorithms, assert: algorithms/assert.md
+    - Algorithms, recursive algorithms: algorithms/recursive_algorithms.md
     - Continuous integration: testing/continuous_integration.md
     - Testing in a team: testing/testing_in_a_team.md
     - Summary of day: wednesday_summary.md
@@ -45,18 +48,15 @@ nav:
     - Data structures, expressive data types: data_structures/expressive_data_type.md
     - Data structures, a 'has-a' relation: data_structures/has_a_relation.md
     - Data structures, class design: data_structures/class_design.md
-    - Algorithms: algorithms/README.md
-    - Algorithms, function design: algorithms/function_design.md
-    - Algorithms, assert: algorithms/assert.md
-    - Algorithms, recursive algorithms: algorithms/recursive_algorithms.md
+    - Class design: design_develop/class_design.md
+    - Modular programming: modularity/modular.md
+    - Summary of day: thursday_summary.md
+  - Friday:
+    - Intro: friday_intro.md
     - Optimisation: optimisation/README.md
     - Optimisation, misconceptions: optimisation/misconceptions.md
     - Optimisation, big-O: optimisation/big_o.md
     - Optimisation, runtime speed profiles: optimisation/runtime_speed_profiles.md
-    - Summary of day: thursday_summary.md
-  - Friday:
-    - Intro: friday_intro.md
-    - Modular programming: modularity/modular.md
     - Deploy: deployment/deploy.md
     - Documentation: deployment/documentation.md
     - Summary of day: friday_summary.md
