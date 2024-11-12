@@ -238,12 +238,12 @@ flowchart TB
   risk_analyis[Risk analysis]:::lars_node
   uml_class_diagram[UML Class diagram]:::lars_node
   minimal_classes[Minimal classes]:::richel_node
-  unit_tests[Unit tests\n+ automated]:::richel_node
-  style_tests[Style tests\ne.g. documentation\n+ automated]:::richel_node
+  unit_tests[Unit tests, automated]:::richel_node
+  style_tests[Style tests, e.g. documentation, automated]:::richel_node
   classes_with_elements[Classes with elements]:::richel_node
   classes_with_behavior[Classes with behavior]:::richel_node
-  runtime_speed_profile[Runtime-speed profile\n+ automated]:::richel_node
-  big_o[Big-O analysis\n+ automated]:::richel_node
+  runtime_speed_profile[Runtime-speed profile, automated]:::richel_node
+  big_o[Big-O analysis, automated]:::richel_node
   package[Package]:::bjorn_node
   module[Module]:::lars_node
   refactoring[Refactoring]:::lars_node

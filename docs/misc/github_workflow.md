@@ -2,14 +2,14 @@
 
 ```mermaid
 flowchart TD
-  main[main branch\nPurpose: always works]
-  develop[develop branch\nPurpose: merge passing builds]
-  topic[issue_x branch\nPurpose: develop in isolation]
-  issue[GitHub Issue x\nPurpose: describe a task]
+  main[main branch. Purpose: always works]
+  develop[develop branch. Purpose: merge passing builds]
+  topic[issue_x branch. Purpose: develop in isolation]
+  issue[GitHub Issue x. Purpose: describe a task]
 
   main --> |update| develop
   develop --> |builds cleanly| main
-  topic --> |builds cleanly\npassed review| develop
+  topic --> |builds cleanly, passed review| develop
   develop --> |update| topic
 
   issue --> topic

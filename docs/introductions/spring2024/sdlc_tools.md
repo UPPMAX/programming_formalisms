@@ -250,8 +250,8 @@ including an **algorithm**  or a business process.
 ```mermaid
 flowchart TD
   is_installed{Graphviz installed?}
-  is_installed --> |yes| process_all[process all\ndiagrams]
-  is_installed --> |no| process_sub[process only\nsequence and activity diagrams]
+  is_installed --> |yes| process_all[process all diagrams]
+  is_installed --> |no| process_sub[process only sequence and activity diagrams]
 ```
 
 Mermaid code
@@ -259,8 +259,8 @@ Mermaid code
 ```
 flowchart TD
   is_installed{Graphviz installed?}
-  is_installed --> |yes| process_all[process all\ndiagrams]
-  is_installed --> |no| process_sub[process only\nsequence and activity diagrams]
+  is_installed --> |yes| process_all[process all diagrams]
+  is_installed --> |no| process_sub[process only sequence and activity diagrams]
 ```
 
 #### Algorithm flowchart
