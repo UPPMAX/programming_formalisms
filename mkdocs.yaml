@@ -64,7 +64,6 @@ nav:
   - More about:
     - Extra material (Earlier Intro day materials): extra.md
   - Misc:
-    - Projects: misc/projects.md
     - Project workflows: misc/project_workflows.md
     - git workflow: misc/git_workflow.md
     - Reading material: reading/README.md
