@@ -118,8 +118,8 @@ Monday   |13:00-15:40|Lars  |Define and plan project
 Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |
 Tuesday  |09:00-10:00|Lars   |Software development life cycle
-Tuesday  |10:00-11:00|Richel |Organize project, issues
-Tuesday  |11:00-15:40|Richel |TDD
+Tuesday  |10:00-11:00|Richel |[Organize project, issues](project_organisation/README.md)
+Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |
 Wednesday|09:00-12:00|Björn  |Formal git workflow, branches, social coding
