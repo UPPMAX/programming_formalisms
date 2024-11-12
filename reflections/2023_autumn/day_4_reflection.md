@@ -120,7 +120,7 @@ HackMD has its place.
 
 I am happy people enjoy my breaks management.
 
-## What held us back?
+## Reflection on 'What held us back?'Reflection on '
 
 > - exercise goals not always clear
 
@@ -149,7 +149,7 @@ Good! Real-life experience with PRs :-)
 Yes, this really holds one back when
 pair programming :-/
 
-## What can we improve?
+## Reflection on 'What can we improve?'
 
 > - Speed a litte bit to make decrease in the lecture part
 

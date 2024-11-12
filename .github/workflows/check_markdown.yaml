@@ -26,6 +26,7 @@ jobs:
           rm -rf common_practices
           rm -rf development_design
           rm -rf evaluations
+          rm -rf lesson_plans
           rm -rf meeting_notes
           rm -rf shared_documents
           rm -rf docs/algorithms/algorithms_lecture

@@ -30,11 +30,12 @@ Other activities:
 
 > Evaluation: git history on students's repositories
 
-## Wednesday part 1: social coding, pair programming as a tool for rapid development
+## Wednesday part 1: social coding, pair programming
 
 ## Wednesday part 2: Testing
 
-> Goal: students have done multiple TDD cycles within a testing framework socially
+> Goal: students have done multiple TDD cycles
+> within a testing framework socially
 
 * [x] Add CI to TDD development
 * [x] Add build badge
@@ -54,14 +55,16 @@ Other activities:
 * Rotate pairs
 * Big project: shared repo with simple tests
 
-> Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
+> Evaluation: Code on multiple GitHub tested thoroughly by GHA,
+> developed by groups
 
 ## Thursday part 1: algorithms
 
 > Goal: students have created multiple different types of algorithms
 
 * [ ] Design by contract
-* [ ] The role of `assert`, <https://docs.python.org/3/reference/simple_stmts.html#assert>
+* [ ] The role of `assert`, 
+      <https://docs.python.org/3/reference/simple_stmts.html#assert>
 * [ ] What is a good algorithm
 * [ ] DRY
 * [ ] Dimensions of a algorithm: speed, memory, disc, network
@@ -75,11 +78,13 @@ Other activities:
 * [ ] Measuring speed to make rooftop plot
 * [ ] Caching results/LUTs
 * [ ] Do the bare minimum, e.g. `nth_element`
-* [ ] Using data structures to simplify algorithms, e.g. use an ordered set to sort
+* [ ] Using data structures to simplify algorithms,
+      e.g. use an ordered set to sort
 * [ ] Big O
 * [ ] Data structure: `dict`, for NW parameters
 
-> Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
+> Evaluation: Code on multiple GitHub tested thoroughly by GHA,
+> developed by groups
 
 ## Thursday part 2: data structures
 
@@ -90,7 +95,8 @@ Other activities:
 * [ ] Winnebago class
 * [ ] Design a simple class
 
-> Evaluation: Code on multiple GitHub tested by GHA, 100% codecov, developed by groups
+> Evaluation: Code on multiple GitHub tested by GHA, 100% codecov,
+> developed by groups
 
 ## Friday part 1: Modular programming
 
@@ -122,6 +128,9 @@ These are barely (sometimes purposefully vague!) suggestions:
 ### Easy
 
 * At day 'TDD'
+
+<!-- markdownlint-disable MD013 -->
+<!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -287,3 +296,4 @@ Day|Description    |Group size  |Branch model                |CI |Code review
 
 * [programming_formalisms_project_2023](https://github.com/programming-formalisms/programming_formalisms_project_2023): GitHub repo of 2023
 
+<!-- markdownlint-enable MD013 -->

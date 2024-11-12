@@ -1,8 +1,12 @@
 # Programming formalisms
 
-![](images/programming_formalism_logo.png)
+!['Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund](images/programming_formalism_logo.png)
 
 > 'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund
+
+<!-- markdownlint-disable MD013 -->
+<!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
+
 
 [![Build PDFs](https://github.com/UPPMAX/programming_formalisms/actions/workflows/build_pdfs.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/build_pdfs.yaml)
 [![Check links](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_links.yaml/badge.svg?branch=main)](https://github.com/UPPMAX/programming_formalisms/actions/workflows/check_links.yaml)
@@ -10,6 +14,8 @@
 
 The goal of the course is [to give an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
 [Only what is used by the student project is course content, with alternatives relevant to academics provided in lecture (or extra material) to what we do](https://github.com/UPPMAX/programming_formalisms/issues/52).
+
+<!-- markdownlint-enable MD013 -->
 
 * [Shared documents](shared_documents/README.md)
 * [Projects](docs/project/projects.md)

@@ -84,7 +84,7 @@ if Python syntax is in their way.
 I will screenshots for now. This will make
 me overlook items :-/ !]
 
-![](day_3_retrospective_1.png)
+![Day 3 retrospective](day_3_retrospective_1.png)
 
 I seems many thought the balance between
 exercises and theory was good.
@@ -92,7 +92,7 @@ And I enjoy to see that some learners
 find -to me!- details so fun.
 I should add those CI scripts live :-)
 
-![](day_3_retrospective_2.png)
+![Day 3 retrospective part 2](day_3_retrospective_2.png)
 
 I am happy to see the clearly seem
 to have the same pain points as I either
@@ -151,7 +151,7 @@ learners get VSCode to work.
 * [ ] Add to Day 1 goals: add all learners to the team
 * [ ] Think deeper about this later
 
-![](day_3_retrospective_3.png)
+![Day 3 retrospective part 3](day_3_retrospective_3.png)
 
 The learners agree with the thin unittest
 part and CI scripts part. I can do that
@@ -188,7 +188,7 @@ exercises
 
 Show how to do ruff from CLI (`pip install ruff; ruff .`)
 
-![](day_3_retrospective_4.png)
+![Day 3 retrospective part 4](day_3_retrospective_4.png)
 
 I should indeed add more book pictures to
 my lectures; references seem to feel
