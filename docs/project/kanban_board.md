@@ -6,7 +6,13 @@
     - Use a kanban board to get an overview of what is actively being worked on
     - Use a kanban board to communicate what you are working on now
 
-![](github_project_good_usage.png)
+![A well-used kanban board](kanban_board.png)
+
+A good team member communicates.
+Here we show how to communicate to the rest of the team with minimal overhead.
+
+- What needs to be done?
+- Who is doing what now?
 
 ## Exercises
 
