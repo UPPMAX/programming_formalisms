@@ -23,9 +23,11 @@ jobs:
       # We don't care about all files having valid markdown
       - name: Remove files to be ignored
         run: |
-          rm -rf shared_documents
+          rm -rf common_practices
+          rm -rf development_design
           rm -rf evaluations
           rm -rf meeting_notes
+          rm -rf shared_documents
 
       # Indented blocks are ignored, as the linter assumes it to be code.
       # In our case, it is not: for us, it is usually an admonition (i.e. a 'question' or 'info' block)
