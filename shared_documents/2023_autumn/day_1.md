@@ -115,7 +115,7 @@ for me, running in VS on windows, the default terminal was powershell which didn
 ### ROOM 4
 ### ROOM 5
 ## Version control
-https://uppmax.github.io/programming_formalism_intro/sourcecontrol.html
+[Broken link]
 
 
 ----------
@@ -152,7 +152,7 @@ https://uppmax.github.io/programming_formalism_intro/sourcecontrol.html
     - A [Richel]: Thanks for noticing, I created an Issue at https://github.com/UPPMAX/programming_formalisms/issues/19 :-)
 
 - Q: pipx vs venv,virtualenv
-    - A: Pipx is for enduser environmet rather than developing https://pypa.github.io/pipx/ 
+    - A: Pipx is for enduser environmet rather than developing `[Broken link]`
         while venv and virtualenv is focused on generating a shared coding environmet for you and your team. This is of course only applical to 
         python development. Other languages and environments are setup differently, but having a automated deployment and development environment
         is a recomended practice in all cases.

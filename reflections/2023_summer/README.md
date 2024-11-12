@@ -77,7 +77,7 @@ anonymous.
 ## Course as part of the curriculum
 
 I wonder if we reached our own goals.
-Here I evaluate, from [the course description](https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/):
+Here I evaluate, from the course description:
 
 > This course aims to give life scientists, bioinformaticians, and other scientists with some experience in programming and scripting
 

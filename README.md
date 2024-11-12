@@ -12,7 +12,7 @@ The goal of the course is [to give an understanding of formal principles of soft
 [Only what is used by the student project is course content, with alternatives relevant to academics provided in lecture (or extra material) to what we do](https://github.com/UPPMAX/programming_formalisms/issues/52).
 
  * [Shared documents](shared_documents/README.md)
- * [Projects](docs/misc/projects.md)
+ * [Projects](docs/project/projects.md)
  * [GitHub Pages of this repository](https://uppmax.github.io/programming_formalisms/)
  * [GitHub repository](https://github.com/UPPMAX/programming_formalisms)
 
@@ -20,8 +20,7 @@ The goal of the course is [to give an understanding of formal principles of soft
 
  * [Learning line](learning_line.md)
  * [Lesson plans](lesson_plans/README.md)
- * [Retrospectives](retrospectives/README.md)
- * [Evaluations](evaluations/README.md)
+ * [Evaluations](evaluations/README.md) (includes retrospectives)
  * [Reflections](reflections/README.md)
 
 ## Files used for continuous integration scripts

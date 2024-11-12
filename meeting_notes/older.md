@@ -337,7 +337,7 @@ Points:
   - Onboarding takes place Thursday 18th April 11:00-(max)12:00!
   - Lars and Björn and Richel show up
   - possibly individual help later on if huge problems
-- [Richel, discuss, 3 mins] Some courses schedule an hour to train the TAs. Do we have TAs? If yes, should we schedule this? FYI, I wrote down the breakout room policy at (where I describe my exercises' procedure)[https://uppmax.github.io/programming_formalisms/misc/exercise_procedure/]
+- [Richel, discuss, 3 mins] Some courses schedule an hour to train the TAs. Do we have TAs? If yes, should we schedule this? FYI, I wrote down the breakout room policy at where I describe my exercises' procedure
   - Lars: no TAs yet, we can ask NBIS if we discover we need some
 - [Richel, discuss, 3 mins] Discuss <https://github.com/UPPMAX/programming_formalisms/issues/23>
   - Björn does it
@@ -1069,7 +1069,7 @@ We will cover an introduction to Algorithms and Data structures, Programming Par
 
 We will cover theory with bridging practical examples and applications to enhance the theoretical understanding of the principles.
 
-For more information and registration, please visit: https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/.
+For more information and registration, please visit: `[broken link to Programming Formalisms course at UPPMAX website]`
 
 ## Meeting 10 (May 26 2023) 9.00
 ### Participaton List 
@@ -1478,7 +1478,7 @@ We will cover an introduction to Algorithms and Data structures, Programming Par
 
 We will cover theory with bridging practical examples and applications to enhance the theoretical understanding of the principles.
 
-For more information and registration, please visit: https://www.uppmax.uu.se/support/courses-and-workshops/programming-formalisms/.
+For more information and registration, please visit: `[broken link to Programming Formalisms course at UPPMAX website]`
 
 
 
@@ -1612,7 +1612,7 @@ Add theory to bolster already present practical skills
   - (sys Dev)
   - Peer programming (code review)
   - Checking others code, checking the module.
-  - 13:00-16:00 Afternoon session TDD in practice: https://matpiq.github.io/PF-TDD/
+  - 13:00-16:00 Afternoon session TDD in practice: `[Broken link to matpiq's PF-TDD GitHub repo]`
    
 | Time  | Topic   | 
 |-------------- | -------------- |
