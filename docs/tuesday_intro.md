@@ -2,6 +2,10 @@
 
 ## Detailed schedule
 
+!!! note "This schedule is outdated"
+
+    Use the schedule at [the introduction](intro.md) instead
+
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Tuesday  |09:00-10:00|Lars   |Create class diagram

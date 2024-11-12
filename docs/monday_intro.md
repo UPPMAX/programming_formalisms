@@ -2,6 +2,10 @@
 
 ## Detailed schedule
 
+!!! note "This schedule is outdated"
+
+    Use the schedule at [the introduction](intro.md) instead
+
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-10:00|Björn | Syllabus + Introduction 
