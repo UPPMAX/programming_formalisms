@@ -79,15 +79,18 @@ anonymous.
 I wonder if we reached our own goals.
 Here I evaluate, from the course description:
 
-> This course aims to give life scientists, bioinformaticians, and other scientists with some experience in programming and scripting
+> This course aims to give life scientists, bioinformaticians,
+> and other scientists with some experience in programming and scripting
 
 The audience is clear.
 
-> an understanding of the underlying principles of software development, design, and programming.
+> an understanding of the underlying principles
+> of software development, design, and programming.
 
 I think we did.
 
-> The course aims to strengthen the understanding of more advanced programming concepts,
+> The course aims to strengthen the understanding
+> of more advanced programming concepts,
 
 Did I?
 
@@ -95,7 +98,8 @@ Did I?
 
 Was that so?
 
-> and to enable a better understanding of how to evaluate a script or programs performance.
+> and to enable a better understanding of how to
+> evaluate a script or programs performance.
 
 This was done by me, in a meagre way.
 
@@ -126,12 +130,14 @@ This was done by me, in a mediocre way.
 
 > We will cover theory with bridging practical examples and applications
 
-I know the students wanted more practical examples in parts taught by other teachers.
+I know the students wanted more practical examples
+in parts taught by other teachers.
 
 > to enhance the theoretical understanding of the principles.
 
 Is this really the goal? Should it?
-Shouldn't is be: 'to be able to design, write, test and optimize a research project in a structured way'?
+Shouldn't is be: 'to be able to design, write, test and
+optimize a research project in a structured way'?
 
 ## Definition of quality
 
@@ -155,7 +161,8 @@ know we did a good job teaching?'.
 
 I contacted a student after the course and asked some questions.
 
-In front of each bullet point, it can be read: 'The student thinks/suggests/feels that ...'
+In front of each bullet point, it can be read:
+'The student thinks/suggests/feels that ...'
 
 * It was useful to hear the names of all the concepts
 * Day 1 was mostly git, which is so common that making this into a course

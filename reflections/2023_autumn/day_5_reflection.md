@@ -98,7 +98,8 @@ the lines that can apply to both here below.
 I agree, I chose not to have time to do
 this for all exercise.
 
-- Have a mini start-to-end exercise after the course where we can spend half the day running through a small piece of coding. Practise all of it.
+- Have a mini start-to-end exercise after the course where we can spend half
+  the day running through a small piece of coding. Practise all of it.
 
 I think this is an interesting idea. I do
 think building up a shared repo is more

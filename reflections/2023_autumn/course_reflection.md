@@ -72,7 +72,8 @@ Let's see what the learners thought ...
 ## What went well?
 
 * Pair programming +3
-* Provided an opportunity for more social programming, including working in a live github repository where other people are working +1
+* Provided an opportunity for more social programming, including working 
+  in a live github repository where other people are working +1
 * Good level of social interaction +1
 * chatting during breaks +1
 * Time for questions and answers
@@ -122,7 +123,8 @@ I feel this is not me: I feel that in my
 part the balance between lecturing
 and exercises is good. I will ignore.
 
-* Some exercises could be explained better. We spent a lot of time just discussing what we were supposed to do. +1
+* Some exercises could be explained better. We spent a lot of time just
+  discussing what we were supposed to do. +1
 * Unclear desciption and explanation of exercises +5
 
 I am one of the offenders here and I agree.
@@ -147,7 +149,8 @@ Agreed, I was focusing on exercises and
 catching up. More time with course materials
 will improve this next time.
 
-* Different levels of preparation, everyone does not fulfill course prerequisites or preparations from last friday
+* Different levels of preparation, everyone does not fulfill course
+  prerequisites or preparations from last friday
 
 I think working always in pairs from the
 first day will help everyone get to speed
@@ -160,11 +163,14 @@ Haha :-)
 
 ## What can we improve?
 
-* The coures was 'top-heavy'. The beginning (in my opinion) should be more interactive and with more utilities, like git, being taught. After the first day, then you can bring in more and more theory.
+* The coures was 'top-heavy'. The beginning (in my opinion) should be more
+  interactive and with more utilities, like git, being taught.
+  After the first day, then you can bring in more and more theory.
 
 Agreed.
 
-* More focus on a project to try out all the things taught in the course. Design -> Tests -> Implementation -> Iterations
+* More focus on a project to try out all the things taught in the course.
+  Design -> Tests -> Implementation -> Iterations
 
 This is very close The Dream!
 
@@ -173,14 +179,20 @@ This is very close The Dream!
 Unsure if this is on me: I do have links
 to the literature.
 
-* Personally, I felt that the course was held at too low level. I was expecting more details and technical discussion, especially in the algorithm and data structure sections and I was familiar with most of the course content. In the future I would suggest that you should make it more clear what level of material to expect. +1 (but in the opposite direction - found a lot was very technical)
+* Personally, I felt that the course was held at too low level.
+  I was expecting more details and technical discussion, especially
+  in the algorithm and data structure sections and I was familiar with most
+  of the course content. In the future I would suggest that you should make
+  it more clear what level of material to expect. +1 (but in the opposite
+  direction - found a lot was very technical)
 
 I'd agree we could have gone deeper. I have
 the idea it can be done, for example, would
 Day 3 not be a catching-up day, I would have
 gone deeper. OTOH, even then time was short.
 
-* If there is an opportunity giving small group project and make presentation at the final day
+* If there is an opportunity giving small group project and make presentation
+  at the final day
 
 I like this alternative idea, yet I do
 feel having a shared project helps
@@ -196,15 +208,21 @@ slides. Yes, we should provide these. I chose
 not to update these, as my lessons have
 exercises that practice the theory.
 
-* No need to attempt completeness, one week is not enough -- material on top of what is discussed in documentation on GitHub -- more exercises, less lectures
+* No need to attempt completeness, one week is not enough -- material on top
+  of what is discussed in documentation on GitHub -- more exercises,
+  less lectures
 
 Agreed!
 
-* I think when it is online, the course is limited in several certain ways. MAybe consider on-sote class?
+* I think when it is online, the course is limited in several certain ways.
+  MAybe consider on-site class?
 
 Impossible.
 
-* it would be nice to survey attendees beforehand for their favourite languages and experience with specific parts of the course - e.g some are gitmasters, some have never used git before and found it confusing af - and tailor classes appropriately
+* it would be nice to survey attendees beforehand for their favourite languages
+  and experience with specific parts of the course - e.g some are gitmasters, 
+  some have never used git before and found it confusing
+  af - and tailor classes appropriately
 
 More pairs would help this. AFAIK, we already
 survey skills of the learners...?
