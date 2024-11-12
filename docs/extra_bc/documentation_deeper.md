@@ -32,13 +32,15 @@ A list:                           A list:
 There is more: images,            There is more: images,
 tables, links, ...                tables, links, ...
 ```
-   
+
 Experiment with Markdown:
+
 - [Learn Markdown in 60 seconds](http://commonmark.org/help/)
 - [https://dillinger.io](http://dillinger.io)
 - [https://stackedit.io](https://stackedit.io)
 
 To convert between MD and RST (and many other formats):
+
 - [Pandoc](https://pandoc.org/)
 
 ## HTML static site generators
@@ -46,19 +48,19 @@ To convert between MD and RST (and many other formats):
    There are many tools that can turn RST or Markdown into beautiful HTML pages:
 
 - [Sphinx](http://sphinx-doc.org) **← we will exercise this, this is how this lesson material is built**
-  - Generate HTML/PDF/LaTeX from RST and Markdown.
-  - Basically all Python projects use Sphinx but **Sphinx is not limited to Python**
-  - [Read the docs](http://readthedocs.org)
+    - Generate HTML/PDF/LaTeX from RST and Markdown.
+    - Basically all Python projects use Sphinx but **Sphinx is not limited to Python**
+    - [Read the docs](http://readthedocs.org)
     hosts public Sphinx documentation for free!
-  - Also hostable anywhere else, like Github pages. **← this is what we use for this lesson 
-  - API documentation possible
+    - Also hostable anywhere else, like Github pages. **← this is what we use for this lesson
+    - API documentation possible
 
 - [Jekyll](https://jekyllrb.com)
-  - Generates HTML from Markdown.
-  - GitHub supports this without adding extra build steps.
+    - Generates HTML from Markdown.
+    - GitHub supports this without adding extra build steps.
 
 - [pkgdown](https://pkgdown.r-lib.org/)
-  - Popular in the R community
+    - Popular in the R community
 
 - [MkDocs](https://www.mkdocs.org/)
 - [GitBook](https://www.gitbook.com/)
@@ -69,8 +71,9 @@ To convert between MD and RST (and many other formats):
 There are many more ...
 
 ## Deployment
-                                        
+
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
+
 - [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and CR use for some course material
 
 - [Bitbucket Pages](https://appfire.atlassian.net/wiki/spaces/PAGE/overview?homepageId=151420930)
@@ -78,55 +81,64 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 - [Read the docs](http://readthedocs.org) ← this is what NBIS use for some course material
 
 ### Github pages
+
 - Easiest. everything is local to GitHub
 - This lesson material
 
 ### Read the Docs
+
 - Somewhat more possibilities, like having several versions of documentation to switch between.
 - Example
-                                      
+
 ## Wikis
 
 - Popular solutions (but many others exist):
-  - [MediaWiki](https://www.mediawiki.org)
-  - [Dokuwiki](https://www.dokuwiki.org)
+    - [MediaWiki](https://www.mediawiki.org)
+    - [Dokuwiki](https://www.dokuwiki.org)
 - Advantage
-  - Barrier to write and edit is low
+    - Barrier to write and edit is low
 - Disadvantages
-  - Typically disconnected from source code repository (**reproducibility**)
-  - Difficult to serve multiple versions
-  - Difficult to check out a specific old version
-  - Typically needs to be hosted and maintained
+    - Typically disconnected from source code repository (**reproducibility**)
+    - Difficult to serve multiple versions
+    - Difficult to check out a specific old version
+    - Typically needs to be hosted and maintained
 
 ---
 
 ## Other generators
+
 ### LaTeX/PDF
+
 - Advantage
-  - Popular and familiar in the physics and mathematics community
+    - Popular and familiar in the physics and mathematics community
 - Disadvantages
-  - PDF format is not ideal for copy-paste ability of examples
-  - Possible, but not trivial to automate rebuilding documentation after every Git push
+    - PDF format is not ideal for copy-paste ability of examples
+    - Possible, but not trivial to automate rebuilding documentation after every Git push
 
 ### Doxygen (C, C++, Java etc...)
+
 - Auto-generates API documentation
 - Documented directly in the source code
   see [Doxygen Github Repo](https://github.com/doxygen/doxygen)
 - Can be deployed to GiHub/GitLab/Bitbucket Pages
 
-### For Fortran 
+### For Fortran
+
 - [Fortran Documenter (FORD)](https://github.com/Fortran-FOSS-Programmers/ford)
 
 ### For Julia
+
 - [Franklin](https://franklinjl.org/): static site generator
 - [Documenter.jl](https://juliadocs.github.io/Documenter.jl/stable/)
 
 ### For Markdown
+
 - [Quarto](https://quarto.org/) converts markdown to websites, pdfs, eBooks and many other things
 
 ---
 
 ## Demo These pages
+
 ``````{challenge} Demo: Git repo -  Sphinx - GitHub - GitHub Actions - GH-pages
                                         
 - We will go behind the scenes of this documentation.
@@ -153,7 +165,7 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
    
 **Every time you commit the GH Actions will render your source code to html and deploy it to your new web page!**
 ``````
-   
+
 
 ````{Admonition} Read more
    [CodeRefinery](https://coderefinery.github.io/documentation/)
@@ -174,4 +186,4 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - Make use of Sphinx or MkDocs to render standard markup languages like markdown or reStructuredText to HTML.
   - Deploy wat GH-pages or ReadTheDocs or other.
     
-```` 
+````

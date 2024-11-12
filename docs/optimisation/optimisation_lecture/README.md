@@ -2,5 +2,5 @@
 
 ## To add
 
- * [ ] Speed profile and determining big-O
+* [ ] Speed profile and determining big-O
 

@@ -3,15 +3,15 @@
 * 13:00-16:00
 * Richel
 * Goals:
-  * Theory: TDD
-  * Students can add, commit, push
-  * Students have done multiple TDD cycles
-  * Form: group size: 1, use `master`, no CI scripts, no code review
+    * Theory: TDD
+    * Students can add, commit, push
+    * Students have done multiple TDD cycles
+    * Form: group size: 1, use `master`, no CI scripts, no code review
 
 ## 13:00-13:45 RB
 
 * Goals:
-  * Students can add, commit, push
+    * Students can add, commit, push
 
 When |What
 -----|-------------------------
@@ -25,7 +25,7 @@ When |What
 ## 14:00-14:45 RB
 
 * Goals:
-  * Students can do a TDD cycle
+    * Students can do a TDD cycle
 
 When |What
 -----|-------------------------
@@ -38,8 +38,8 @@ When |What
 ## 15:00-15:45 RB
 
 * Goals:
-  * Recap: what is TDD? Why is it important?
-  * Reflect
+    * Recap: what is TDD? Why is it important?
+    * Reflect
 
 When       |What
 -----------|-------------------------

@@ -1,9 +1,8 @@
 # More about collaboration
 
 
-
-
 Different types of remotes:
+
 - If you have a server you can ssh to, you can use that as a remote.
 - [GitHub](https://github.com) is a popular, closed-source commercial site.
 - [GitLab](https://about.gitlab.com) is a popular, open-core
@@ -14,6 +13,7 @@ Different types of remotes:
   
 
 ## Centralized workflow
+
 ```{figure} img/centralized.svg
 :alt: Centralized layout
 :width: 50%

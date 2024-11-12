@@ -13,7 +13,7 @@ Copied literally.
 - CI is quite cool. HackMD is good for discussion
 - Testing proper git workflow +1
 - Practising with opening issues, assigning them, opening pull requests on GitHub, as well as dealing with merge conflicts
-- Interactive 
+- Interactive
 - enthusiastic teaching! +2
 - Nice practice time and pair coding
 - Going back to revise the pull requests. I learnt alot from that. +1

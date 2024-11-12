@@ -3,7 +3,7 @@
 ## Learning goals
 
 !!! info "Today we will"
-    
+
     - Check Prior knowledge 10 min
     - Revisit Class Diagrams and interactions between classes 10 min
     - Introduce Refactoring 10 min
@@ -84,16 +84,18 @@
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
 ???- "What is Refactoring"
-    
+
     Refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
     [refactoring.guru](https://refactoring.guru/refactoring) 
 
 
 ## Theory
+
 Revisiting class design
 
 The 4 most important relationship classes can have
 are association, composition and aggregation
+
 ```mermaid
 classDiagram 
     Owner-->PetsIOwn
@@ -112,7 +114,7 @@ Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
 
-???+ "Read and discuss" 
+???+ "Read and discuss"
 
      - Read [https://refactoring.guru/refactoring](https://refactoring.guru/refactoring)
        and discuss how this can be implemented also in the design phase (10 min)
@@ -122,18 +124,18 @@ Further reading:
 ## Exercises
 
 ???- "Refactor your design document"
-    
+
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
 
 ???- "Modularization"
-    
+
     Order your code in logical consistent modules that separates behavior that belongs together via interfaces.
 
 ???- "Design Patterns"
-    
+
     Implement a Factory method for the creation of bacteria and one for nutrients
 
-???- "Extra assignment" 
-    
+???- "Extra assignment"
+
     Using refactoring.guru find an implement another pattern that is useful for your project.

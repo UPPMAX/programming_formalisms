@@ -37,15 +37,15 @@
 
 Testing *helps* ensure the correctness of code.
 
--   Coding errors are extremely common [Baggerly & Coombes, 2009]
--   Contribute to the reproducibility crisis in science [Vable et al., 2021], e.g. [Rahman & Farhana, 2020]
+- Coding errors are extremely common [Baggerly & Coombes, 2009]
+- Contribute to the reproducibility crisis in science [Vable et al., 2021], e.g. [Rahman & Farhana, 2020]
 
 ## Testing framework
 
--   **`unittest`**, `pytest`, `nose`, etc.
--   Makes it easier to write unit tests
--   Takes some scaffolding
--   Failed tests give a better error message
+- **`unittest`**, `pytest`, `nose`, etc.
+- Makes it easier to write unit tests
+- Takes some scaffolding
+- Failed tests give a better error message
 
 ### Test if something is true
 
@@ -119,7 +119,7 @@ class TestSmall(unittest.TestCase):
 
 A testing framework needs files to be in standarized places.
 
-One can search the web for this, 
+One can search the web for this,
 or [use an existing project](https://github.com/programming-formalisms/programming_formalisms_example_project)
 as reference.
 
@@ -310,7 +310,7 @@ Everyone is the owner of a class.
 In pairs, develop functionality for your classes
 using TDD using the `unittest` framework.
 
-Use the same setup as exercise 2, except one uses 
+Use the same setup as exercise 2, except one uses
 a branch called after the owner of each class.
 For example, Anna's class is developed on the `anna` branch
 and Sven's class on the `sven` branch.
@@ -333,13 +333,13 @@ class TestCoordinat(unittest.TestCase):
 ```
 
 - write as much tests as the pair can come up with.
-  In case of conflict what is good architecture, 
-  the class owner decides. Again, this is hard, 
+  In case of conflict what is good architecture,
+  the class owner decides. Again, this is hard,
   as we have not
   discussed function design, nor class design.
 
 ## References
 
- * [Baggerly & Coombes, 2009] Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
- * [Rahman & Farhana, 2020] Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in COVID-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
- * [Vable et al., 2021] Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour. "Code review as a simple trick to enhance reproducibility, accelerate learning, and improve the quality of your team’s research." American Journal of Epidemiology 190.10 (2021): 2172-2177.
+- [Baggerly & Coombes, 2009] Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
+- [Rahman & Farhana, 2020] Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in COVID-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
+- [Vable et al., 2021] Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour. "Code review as a simple trick to enhance reproducibility, accelerate learning, and improve the quality of your team’s research." American Journal of Epidemiology 190.10 (2021): 2172-2177.

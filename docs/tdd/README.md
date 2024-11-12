@@ -53,7 +53,7 @@
 
 ## Introduction
 
-Test-driven development (TDD) is a systematic way to grow code, 
+Test-driven development (TDD) is a systematic way to grow code,
 used in academia and industry. It works [Martin, 2011]!
 
 ![](tdd_hat_2.jpg)
@@ -70,7 +70,7 @@ Advantages of TDD are:
 
 - TDD makes developers more productive [Erdogmus & Morisio, 2005]
 - TDD increases quality of the code [Erdogmus & Morisio, 2005][Alkaoud & Walcott, 2018][Janzen & Saiedian, 2006]
-  -   There are plenty of costly programming mistakes documented!
+    - There are plenty of costly programming mistakes documented!
 - TDD helps shape the project architecture [Mayr, 2005]
 - TDD helps better modularisation [Madeyski et al., 2010]
 
@@ -79,11 +79,11 @@ though TDD takes longer (but note [study I cannot find]):
 
 Study                     | Extra time | Effect
 --------------------------|------------|-------------------------------
-[George & Williams, 2004] | 16%        | 18% more black-box tests pass 
+[George & Williams, 2004] | 16%        | 18% more black-box tests pass
 [Bhat & Nagappan, 2006]   | 15%        | 2x higher code quality
 [Nagappan et al., 2008]   | 15-35%     | 40%-90% less defects
 
-We will discuss formal testing later, but now note that 
+We will discuss formal testing later, but now note that
 testing is not about finding bugs [Thomas & Hunt, 2019, tip 66],
 instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
 
@@ -380,19 +380,19 @@ Pick a function at your level.
 
 ## Conclusion
 
--   This session, we wrote **unit tests**
--   It is only those your boss may read
--   The literature assumes a responsible programmer writes tests, 
-    in C++ [Stroustrup & Sutter, 2017], 
+- This session, we wrote **unit tests**
+- It is only those your boss may read
+- The literature assumes a responsible programmer writes tests,
+    in C++ [Stroustrup & Sutter, 2017],
     R [Wickham, 2019] and Python [PEP 8]
 
 ## Discussion
 
--   We only test manually
--   We only test on our own computer
--   We are not sure if our functions are tested completely
--   We do not test the code for style
--   We should consider using a testing framework
+- We only test manually
+- We only test on our own computer
+- We are not sure if our functions are tested completely
+- We do not test the code for style
+- We should consider using a testing framework
 
 ## Videos
 
@@ -401,7 +401,7 @@ Title                        |Length   | YouTube
 TDD 1/3: TDD                 |  5 mins | [YouTube](https://youtu.be/gw_4jVrkDok)
 TDD 2/3: `is_zero`           | 16 mins | [YouTube](https://youtu.be/VddlrNOeodg)
 TDD 3/3: Introduce `is_even` |  3 mins | [YouTube](https://youtu.be/7V-zE__S6M8)
-Solution `is_even`           | 12 mins | [YouTube](https://youtu.be/ZcgJEdaRRpc) 
+Solution `is_even`           | 12 mins | [YouTube](https://youtu.be/ZcgJEdaRRpc)
 TDD 2: introduce `is_odd`    |  7 mins | [YouTube](https://youtu.be/f4MCy9f8oAM)
 Solution `is_odd`            |  7 mins | [YouTube](https://youtu.be/BxyIsJw3E14)
 TDD 3: TDD bottom line       |  4 mins | [YouTube](https://youtu.be/633qwj2DUNc)
@@ -411,7 +411,7 @@ Solution `is_prime`          |  9 mins | [YouTube](https://youtu.be/qVtHieuwM1M)
 
 - [Alkaoud & Walcott, 2018] Alkaoud, Hessah, and Kristen R. Walcott. "Quality metrics of test suites in test-driven designed applications." International Journal of Software Engineering Applications (IJSEA) 2018 (2018).
 
-![](beck_tdd_by_example.jpg) 
+![](beck_tdd_by_example.jpg)
 
 - [Beck, 2022] Beck, Kent. Test driven development: By example. Addison-Wesley Professional, 2022.
 - [Bhat & Nagappan, 2006] Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.

@@ -30,7 +30,7 @@ Learners are expected to know basic programming
 concepts, such as variables and functions.
 
 In this course, you will work together a lot.
-It will be likely to be noticed that you do not have programming experience yet, 
+It will be likely to be noticed that you do not have programming experience yet,
 and you may feel bad about that.
 Take an introductory programming course first and then we hope to see you here again!
 

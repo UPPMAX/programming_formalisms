@@ -42,15 +42,15 @@
     - Collaboration
     - Reproducibility and sharing
     - Documentation
----    
+---
 
 ## The waterfall model
 
-1.	Requirements
-2.	Analysis and design
-3.	Development
-4.	Test
-5.	Deployment and maintenance
+1. Requirements
+2. Analysis and design
+3. Development
+4. Test
+5. Deployment and maintenance
 
 
 ``` mermaid
@@ -61,25 +61,25 @@ flowchart
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
 !!! warning
-    - Error is spreading 
-    - small mistakes in the beginning will have large impact on the end result. 
+    - Error is spreading
+    - small mistakes in the beginning will have large impact on the end result.
         - e.g. bugs, architecture limiting extensions
     - large costs economically and timely
 
 ## Other Models
 
-- Modern principles: 
+- Modern principles:
     - automated tests, continuous integration (CI)
 - Deliver as fast as possible:
     - small iterations are easier to manage
 - Extreme Programming
     - Pair programming
     - Test-driven development
-   
+
 !!! info "Conclusion"
     - Each team has unique requirements
     - Don’t be afraid of trial and error
-    - More info in [Software Development Lifecycle today](sldc.md) 
+    - More info in [Software Development Lifecycle today](sldc.md)
 
 
 ## The tools/concepts for Developing a programming project
@@ -138,6 +138,7 @@ flowchart
 
 
 ### Top-down
+
 1. Clearly state whole problem
 2. Define inputs and outputs
 3. Design the algorithm with `pseudocode`
@@ -146,9 +147,10 @@ flowchart
 
 
 ### Bottom-Up
+
 Start with parts first and develop a bigger organization with time.
 
-!!! discussion "Answer in HackMD: How do you program?" 
+!!! discussion "Answer in HackMD: How do you program?"
 
     - Top-down
     - Bottom-up
@@ -156,14 +158,15 @@ Start with parts first and develop a bigger organization with time.
 ### Flowcharts or Unified Modeling Language (UML)
 
 #### Tools
+
 - PlantUML
     - Open-source
-    -	Can be integrated with IDE:s, Java documentation, Word
-    -	Scripts rather than drawing tools
-    -	requires plug-in to render in browser
-    -	<http://www.plantuml.com/plantuml>
+    - Can be integrated with IDE:s, Java documentation, Word
+    - Scripts rather than drawing tools
+    - requires plug-in to render in browser
+    - <http://www.plantuml.com/plantuml>
 - Graphviz
-    - open source graph visualization software. 
+    - open source graph visualization software.
     - It has important applications in networking, bioinformatics, software engineering, database and web design, machine learning, and in visual interfaces for other technical domains.
     - <https://graphviz.org/>
 - **Mermaid** used in this course
@@ -244,7 +247,7 @@ classDiagram
 
 #### Activity
 
-A flowchart that shows the process and its correlating decisions, 
+A flowchart that shows the process and its correlating decisions,
 including an **algorithm**  or a business process.
 
 ```mermaid
@@ -313,11 +316,12 @@ flowchart TD
     
 
 ### Pseudocode
+
 - Pseudocode does not have syntax rules of any particular language
-    - no systematic standard form. 
+    - no systematic standard form.
 - Some borrow style and syntax from some conventional programming language
-    - like Fortran, Pascal, BASIC, C, C++, Java, Lisp, and ALGOL. 
-- Variable declarations are typically omitted. 
+    - like Fortran, Pascal, BASIC, C, C++, Java, Lisp, and ALGOL.
+- Variable declarations are typically omitted.
 - Function calls and blocks of code, such as code contained within a loop, are often replaced by a one-line natural language sentence.
 
 **Example**
@@ -345,12 +349,13 @@ flowchart TD
     return f
 ```
 
-- Depending on the writer, pseudocode may therefore vary widely in style, 
+- Depending on the writer, pseudocode may therefore vary widely in style,
     - from a near-exact imitation of a real programming language at one extreme
     - to a description approaching formatted prose at the other.
-    - 
+    -
 
 #### Mathematical style pseudocode
+
 - Used in numerical computation
 
 $$
@@ -372,7 +377,7 @@ $$
 
 Does it work for all legal input data sets??
 
-1. Unit testing 
+1. Unit testing
 2. Integration tests (test modules together as a whole)
 
 **Typical testing process**
@@ -400,7 +405,8 @@ flowchart TD
 
 ## Source/version control and collaboration
 
-###  The essence of version control
+### The essence of version control
+
 Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
 
 - System which records **snapshots** of a project
@@ -420,25 +426,25 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - Configuration files
 - **Website sources**
 
-###  Why version control
+### Why version control
 
 - **Roll-back functionality**
     - Mistakes happen - **go back to a working version**.
 - **Branching**
-   - Often you need to work on **several issues/features in one code** - without branching this can be messy and confusing.
+    - Often you need to work on **several issues/features in one code** - without branching this can be messy and confusing.
 - **Collaboration**
-   - With version control, none of these are needed anymore (or have much simpler answers):
-       - *"I will just finish my work and then you can start with your changes."*
-       - *"Can you please send me the latest version?"*
-       - *"You never got the code I send by email? Maybe the spam filter marked it as malicious?"*
-       - *"Where is the latest version?"*
-       - *"Which version are you using?"*
-       - *"Which version have the authors used in the paper I am trying to reproduce?"*
+    - With version control, none of these are needed anymore (or have much simpler answers):
+        - *"I will just finish my work and then you can start with your changes."*
+        - *"Can you please send me the latest version?"*
+        - *"You never got the code I send by email? Maybe the spam filter marked it as malicious?"*
+        - *"Where is the latest version?"*
+        - *"Which version are you using?"*
+        - *"Which version have the authors used in the paper I am trying to reproduce?"*
 - **Reproducibility**
     - How do you indicate which **version** of your code you have used in your paper?
     - When you find a bug, how do you know **when precisely** this bug was introduced
 - Compare with **Dropbox or Google Drive**
-    -  |:+1:| Document/code is in **one place**, no need to email snapshots.
+    - |:+1:| Document/code is in **one place**, no need to email snapshots.
     - |:-1:| How can you use an **old version**? Possible to get old versions but in a much less useful way .
     - |:-1:| What if you want to work on **multiple versions** at the same time? Do you make a copy? How do you merge copies?
     - |:-1:| What if you **don't have internet**?
@@ -468,12 +474,13 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 #### Remotes
 
-- To store your git data on another server, you use remotes. 
+- To store your git data on another server, you use remotes.
 - A remote is a repository on its own, with its own branches We can push changes to the remote and pull from the remote.
 
 You may use remotes to:
-   - Back up your own work.
-   - To collaborate with other people.
+
+- Back up your own work.
+- To collaborate with other people.
 
 There are different types of remotes:
 
@@ -484,7 +491,7 @@ There are different types of remotes:
 - Another option is [NotABug](https://notabug.org)
 
 !!! objectives
-   
+
     - [Get started with a project](../project_start/startup.md) aims to
         - Introduce git and GitHub
         - Get into working with git
@@ -494,16 +501,17 @@ There are different types of remotes:
 ## Collaboration
 
 ### Example
+
 - Someone has given you access to a repository online and **you want to contribute** to it.
 - Quite easy to make a **copy and send a change back**.
     1. get repository, make a change locally, and send the change directly back.
     2. make a "pull request" that allows a review.
 - Once we know how code review works:
-    -  we will be able to propose changes to repositories of others
-    -  review changes submitted by external contributors.
+    - we will be able to propose changes to repositories of others
+    - review changes submitted by external contributors.
 
 !!! objectives
-   
+
     - [Collaboration](../git/pull.md) aims to 
         - Get into working more with GitHub for collaboration
         - **Centralized** workflow (good within a group)
@@ -511,44 +519,44 @@ There are different types of remotes:
         - Contributing to other's projects
 
 
-
 ## Reproducibility and sharing
 
 ### Reproducible research
 
 - Have you ever spent days trying to repeat the results that took you hours to do the first time last week?  
-- Or you have to do paper revisions, but you just can’t get the results to match up? 
+- Or you have to do paper revisions, but you just can’t get the results to match up?
 - Nothing is a worse feeling - either for you or for science itself.
 
 - We will integrate this topic in the hands-on.
 - We will discuss different methods and tools for better reproducibility in research software and data.
     - Virtual environments with ``pip install`` (venv/virtualenv) will be covered in the hands-on.
-    - Conda environment is referred to in the extra material. 
+    - Conda environment is referred to in the extra material.
 - We will demonstrate how version control, workflows, containers, and package managers can be used to record reproducible environments and computational steps.
 - [Extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html)
 
 !!! objectives
-    - [More about reproducibility](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html) aims to 
+    - [More about reproducibility](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html) aims to
        - Get a short overview of recording dependencies
        - Get short intro to tools:
            - Pip and PyPI
            - Conda
            - Environments
            - Tools for other languages than Python
-   - We will develop our code in a virtual environment with the python tool ``venv ``   
+
+- We will develop our code in a virtual environment with the python tool ``venv``
   
 
-  
 ### Sharing and licensing and citations
- 
+
 !!! Discussion "One-time usage towards distributed package"
 
-    
+
     - Have others used your code?
     - Did you plan it from beginning?
     - Did you take actions somehow?
 
 #### Open science
+
 - The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
 - **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
 
@@ -578,7 +586,6 @@ There are different types of remotes:
 !!! info "See also"
 
     - We will talk about this the last day!
-
 
 
 ### Software Citation
@@ -651,20 +658,17 @@ There are different types of remotes:
 ???- "Why sharing?"
 
 
-
-
-
 ## Summary of SDLC tools
 
 
 !!! Keypoints
 
     - Software development is both series of steps: 
-        1.	Requirements
-        2.	Analysis and design
-        3.	Development
-        4.	Test
-        5.	Deployment and maintenance
+        1. Requirements
+        2. Analysis and design
+        3. Development
+        4. Test
+        5. Deployment and maintenance
     - ... and iteration of these
     - Planning for reproducibility, modularity and documentation should be started in the beginning
     - Tools for the developer
@@ -675,7 +679,6 @@ There are different types of remotes:
         - Sharing: GitHub, licenses, citation
         - Reproducibility
         - Documentation: In-code, READMEs, html
+
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
-
-
 

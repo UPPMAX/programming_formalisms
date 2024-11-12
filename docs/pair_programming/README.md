@@ -62,19 +62,19 @@
 Pair programming is a facet of developing code better.
 We use it a lot in this course, because:
 
-- it is recommended by influential software development 
+- it is recommended by influential software development
   classics [Martin, 2011][Thomas & Hunt, 2019]
 - scientific evidence is mixed, however, e.g.
     - a pair considers more alternative ways for a solution [Flor et al., 1991],
       however, this is only 2 programming teams
-    - 96% of developers prefer pair programming over developing 
-      alone [Williams & Kessler, 2000], however, 
+    - 96% of developers prefer pair programming over developing
+      alone [Williams & Kessler, 2000], however,
       this is only 41 respondents
 - what is for sure: it works great with recommended teaching practices,
-  e.g. grouping up learners 
+  e.g. grouping up learners
   is effective [Hattie, 2012][Schwartz & Gurung, 2012, page 65]
   (with the optimal group size of 2 [reference for best group size 2])
-  and indeed the Programming Formalisms learners like it 
+  and indeed the Programming Formalisms learners like it
   [as they write in the retrospective](https://github.com/UPPMAX/programming_formalisms/blob/main/evaluations/2023_autumn/retrospective_results_course.md)
 
 ## Exercises
@@ -95,14 +95,14 @@ We use it a lot in this course, because:
 - Individually, answer the questions within the time limit
 - Together, write down a shared answer on the GitHub project repository
   with path `learners/[a teammember's name]/pair_programming.md`
-- Upload the file to the GitHub repo. 
+- Upload the file to the GitHub repo.
   Use the GitHub web interface if pushing is a problem!
 
 Questions:
 
 - What is pair programming?
 - How does a good pair behave? Describe what can be observed when pairing online
-- When to switch roles? Give a procedure 
+- When to switch roles? Give a procedure
 - What effects does pair programming have?
 
 ???- question "Answers"
@@ -161,17 +161,17 @@ Questions:
 
 Before doing the exercises:
 
-- Reach an agreement on how to do pair programming: among others, 
+- Reach an agreement on how to do pair programming: among others,
   decide upon the first driver and when to switch roles.
 
 The exercise, to be done as a pair:
 
 - In the course's shared document, there is a list of classes
   extracted from the design document. Assign yourselves to write a class together
-- Find the GitHub repository of a Programming Formalism student project 
+- Find the GitHub repository of a Programming Formalism student project
   done in an earlier cohort. Find where the Python code for classes ended up.
   Look for the Python code of the most simple class.
-- Write the minimal code of your class together. 
+- Write the minimal code of your class together.
   Share code by `push`ing it to the `main` branch.
   'Minimal code' means only the name of the class, without any behavior!
 
@@ -229,7 +229,7 @@ Reflect:
 
     With this problem, maybe not everyone in the duo wrote the one line
     of actual code. This is OK.
-   
+
 
 ### Exercise 3: practice pair programming again
 

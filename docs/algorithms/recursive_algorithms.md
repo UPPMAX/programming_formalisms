@@ -8,8 +8,8 @@
 
 ## Recursive algorithms
 
--   Iterative: use a for-loop
--   Recursive: a function that calls itself
+- Iterative: use a for-loop
+- Recursive: a function that calls itself
 
 ## Example 1: factorial
 
@@ -25,9 +25,9 @@
 
 ## Exercise 1: factorial
 
--   Develop a function to get the factorial of a number
--   If the function used a for-loop, create another function that uses recursion, or the other way around
--   Write the code of the function as a pair and/or with help of an AI
+- Develop a function to get the factorial of a number
+- If the function used a for-loop, create another function that uses recursion, or the other way around
+- Write the code of the function as a pair and/or with help of an AI
 
 === "Python"
 
@@ -67,9 +67,9 @@ Fibonacci sequence:
 
 ## Exercise
 
--   Develop a function to get the nth value in the Fibonacci sequence
--   If the function used a for-loop, create another function that uses recursion, or vice versa
--   Write the code of the function as a pair and/or with help of an AI
+- Develop a function to get the nth value in the Fibonacci sequence
+- If the function used a for-loop, create another function that uses recursion, or vice versa
+- Write the code of the function as a pair and/or with help of an AI
 
 === "Python"
 

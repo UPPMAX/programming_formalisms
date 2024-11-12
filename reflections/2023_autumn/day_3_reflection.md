@@ -31,6 +31,7 @@ I'd really enjoyed that this would have been done
 on Monday with trivial text.
 
 * [ ] Do do the fairytale example on branches?
+
    ~~~Vote with learners~~~ Yes
 
 The CI part was disconnected from the exercises.

@@ -52,14 +52,16 @@
 ---
 
 ## What is software?
+
 *Wikipedia*
 
 - set of computer programs and associated documentation and data.
-- This is in contrast to hardware, from which the system is built and which actually performs the work. 
+- This is in contrast to hardware, from which the system is built and which actually performs the work.
 - **User-written software: End-user development**
-    - Users create this software themselves and _often overlook how important it may be to others_.
+    - Users create this software themselves and *often overlook how important it may be to others*.
 
 ### Some software concepts
+
 - program
 - script (directly interpreted at run time)
 - tool
@@ -67,10 +69,11 @@
 - application
 
 !!! info
-   
+
     We will not be very definite in the course in when to use scripting, program or tools. 
 
 ## Different types of Scientific software
+
 - analysis of data
     - statistics
     - figures
@@ -81,7 +84,7 @@
 - workflows
 - modelling (mimic the reality)
     - simulations time-varying behaviour of a system
-    - mathematical models of relationships among variables in a system 
+    - mathematical models of relationships among variables in a system
 - decision assistance
 - Other
 
@@ -92,29 +95,30 @@
 ## Outcome of a Program
 
 - **Correct**
-    - and _flawless_
+    - and *flawless*
 - **Efficient**
-    - _Utilize_ the computer system's resources
+    - *Utilize* the computer system's resources
 - **Reusable**
-    - Finished _components_
-    - Lower _development_ _costs_
-    - _Faster_
-    - Higher _quality_
-    - _packaging_ technology
+    - Finished *components*
+    - Lower *development* *costs*
+    - *Faster*
+    - Higher *quality*
+    - *packaging* technology
 - **Changeable**
-    - _Maintenance_ cost
+    - *Maintenance* cost
         - Fix errors, bugs
-        - Adapt to _new requirements_
-        - Independent _modules_
-        - Encapsulation/_information hiding_
-    
+        - Adapt to *new requirements*
+        - Independent *modules*
+        - Encapsulation/*information hiding*
+
 ## How to program?
 
 ### Object oriented programming
-- Object-oriented (OO) programming is 
+
+- Object-oriented (OO) programming is
     - a mindset of mimicking the real-world as:
-    - **entities (`objects`)** that are different 
-    - or **share attributes **with each-other (within a `**class**`)
+    - **entities (`objects`)** that are different
+    - or **share attributes**with each-other (within a `**class**`)
     - info-hiding mindset...
 
 
@@ -155,7 +159,7 @@ classDiagram
 
 - More classical as it is more focused on the algorithms
 - Functions
-- Modules: a way to _gather functions_ with similar functionality
+- Modules: a way to *gather functions* with similar functionality
 - Also to some extent info-hiding mindset
 
 !!! info "To sum up"
@@ -164,20 +168,21 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state. 
     - Both paradigms can be used to create elegant code.
 
-!!! info "See also" 
+!!! info "See also"
 
     - More on Tuesday: Object-orientation **FIXLINK**
     - More on Thursday: [Algorithms](../thursday_intro.md)
     - More on Friday: [Modular programming](../friday_intro.md)
 
-###  Modular coding
-- Modular coding breaks up the code in blocks that could be separate files. 
+### Modular coding
+
+- Modular coding breaks up the code in blocks that could be separate files.
 - Modularity could be within a program but also for a workflow.
 
 !!! example "Demo: WRF module and a workflow in 'runtime'"
-    
+
     - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
-   
+
 ## Code Example
 
 ???+ exercise "Exercise: Problems with this code? 7 min"
@@ -281,7 +286,7 @@ classDiagram
 
 - We need a workflow in our programming projects!
 
-### Some common steps 
+### Some common steps
 
 - **Planning**
     - Analysis and design
@@ -303,6 +308,7 @@ classDiagram
     - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
 
 ## Summary of Introduction
+
 - Now after the overview you are ready to dig deeper about the tools!
 
 !!! info "Keypoints"
@@ -314,10 +320,10 @@ classDiagram
         - Changeable
 
     - Software development is both series of steps: 
-        1.	Requirements
-        2.	Analysis and design
-        3.	Development
-        4.	Test
-        5.	Deployment and maintenance
+        1. Requirements
+        2. Analysis and design
+        3. Development
+        4. Test
+        5. Deployment and maintenance
     - ... and iteration of these
 

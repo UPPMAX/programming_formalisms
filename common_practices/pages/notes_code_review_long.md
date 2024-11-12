@@ -75,7 +75,7 @@ Asynchronous feedback removes the time pressure but can be easily forgotten!
 >
 > **[5 code review best practices. Work Life by Atlassian](https://www.atlassian.com/blog/add-ons/code-review-best-practices**), Usman Ghani\*\*
 
-## Multiple people can also review the code asynchronously.
+## Multiple people can also review the code asynchronously
 
 > [Turing Way: Recommendations for Code Reviewing](https://the-turing-way.netlify.app/reproducible-research/reviewing/reviewing-recommend.html)
 >
@@ -152,7 +152,7 @@ These are very common, everyone does this.
 - Tailor-made and manual steps
 - Only works with the given data
 
-*Modified from [*What to look for when code reviewing*](https://www.cs.swarthmore.edu/~alinen/cs71/labs/lab03.html)*
+_Modified from [_What to look for when code reviewing_](https://www.cs.swarthmore.edu/~alinen/cs71/labs/lab03.html)_
 
 ## Benefits of Code Review
 
@@ -165,7 +165,7 @@ These are very common, everyone does this.
 The main benefit is finding problems, and finding them early enough that there aren't frustrating consequences.
 The penalty for finding a bug once all the figures have been produced and conclusions drawn, or, worst-case scenario, after a publication, is much higher than the penalty for taking the time to review.
 
-> ## Writing code collaboratively also benefit directly your team members:
+> ## Writing code collaboratively also benefit directly your team members
 >
 > - Less time redoing work or refactoring
 > - Increased productivity
@@ -174,7 +174,7 @@ The penalty for finding a bug once all the figures have been produced and conclu
 > - Reduced time debugging alone
 > - Knowledge exchange and group cohesion
 
-> ## For a group leader, the benefits include:
+> ## For a group leader, the benefits include
 >
 > - Better understanding of the projects
 > - More maintainable and better-documented code that is easy to understand and modify
@@ -217,5 +217,5 @@ Group work shares the burden and allows knowledge exchange and support within th
 
 ## References
 
-- _The Turing Way_ Community. (2021). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.1). Zenodo. https://doi.org/10.5281/zenodo.5671094. [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) Chapter.
+- _The Turing Way_ Community. (2021). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.1). Zenodo. <https://doi.org/10.5281/zenodo.5671094>. [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) Chapter.
 - Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)

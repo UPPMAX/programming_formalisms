@@ -55,17 +55,17 @@ Here we create merge conflicts on trivial code.
 One can suggest to merge branches on GitHub,
 where it is called a Pull Request.
 For a Pull Request, a team member can be asked for a code review.
-Code reviews are useful for many reasons, 
+Code reviews are useful for many reasons,
 among others the spread of knowledge.
 
 One can merge branches locally, using the command-line.
 This will bypass code review and that is OK.
-For example, merging develop to your topic branch 
+For example, merging develop to your topic branch
 does not need a code review.
 
 ## Exercises
 
-Exercises 1 and 2 use the GitHub interface, 
+Exercises 1 and 2 use the GitHub interface,
 which is graphical and easy to use.
 It should help you get acquainted to branches, Pull Requests and code review.
 
@@ -145,13 +145,13 @@ gitGraph
 - On GitHub, create a branch for person B, e.g. `bertil` that branches off from `anna`
 - On GitHub, use the branch of person A and create a new commit in a file
   Use the web interface or command-line.
-- On GitHub, use the branch of person B and create a new commit 
+- On GitHub, use the branch of person B and create a new commit
   **in the same place in the same (now outdated) file**
   Use the web interface or command-line.
 - On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
   The person that does this requests a reviewer.
   There is a warning for a merge conflict!
-- On GitHub, the other person fixes the merge conflict, 
+- On GitHub, the other person fixes the merge conflict,
   approves the Pull Request and merges
 - On GitHub, use web interface to create a Pull Request from `anna` to `develop`.
   The person that does this requests a reviewer.
@@ -186,15 +186,15 @@ gitGraph
   You may branch of from `main` or `develop` (if it exists).
   You may use the web interface (easiest!) or use the command line
 - On your local computer:
-     - update your repository
-     - switch to that branch
-     - change the repo 
-     - push your changes online
+    - update your repository
+    - switch to that branch
+    - change the repo
+    - push your changes online
 - Verify the changes are online
 - On your local computer
-     - switch to the `main` branch
-     - merge your topic branch to `main`
-     - upload your changes
+    - switch to the `main` branch
+    - merge your topic branch to `main`
+    - upload your changes
 - Delete your topic branch (i.e. the one with the unique name).
   You may use the web interface (easiest!) or use the command line
 - On your local computer, update your code
@@ -380,7 +380,7 @@ gitGraph
 
 For team member A:
 
-- Create a topic branch (from `develop`) 
+- Create a topic branch (from `develop`)
 - Do something trivial on that topic branch
 - Submit a GitHub Pull Request to merge it to `develop`
 - Assign the other team member as the reviewer
@@ -397,5 +397,4 @@ Now do the same for team member B.
 ## Links
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-
 

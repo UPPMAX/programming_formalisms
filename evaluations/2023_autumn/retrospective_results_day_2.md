@@ -13,15 +13,14 @@ Copied literally.
 - Pair programming
 - Pair programming has a lot of fun!
 - I think it is nice to try out with people from different field. +1
-- More interactivity, less pure lecturing 
+- More interactivity, less pure lecturing
 - presentation slides available
 
 ## What held us back?
 
 
-
 - Some of the lectures were too long with little opportunity to discuss
-  - Thanks for the feed back, this is somthing we will be working on
+    - Thanks for the feed back, this is somthing we will be working on
 - Still a bit too little practice time +2
 - It was a bit difficult to follow the slides on pair programming
 - Technichal issues (sharing code, )
@@ -29,10 +28,9 @@ Copied literally.
 - First time forking repo during pair programming exercise +1
 - As a beginner, fixing the environmnt and knowlage gap for pair-programming.
 - No time for exercise 2 and 3 during the morning +1
-    - Thank you this is one of the main issues I will look into 
+    - Thank you this is one of the main issues I will look into
 - Less detailed documentation on GitHub than yesterday, though topics more complex
-- Pair-programming exercise could have been better guided (suggest platforms before sending to breakout rooms) 
-
+- Pair-programming exercise could have been better guided (suggest platforms before sending to breakout rooms)
 
 
 ## What can we improve?
@@ -42,7 +40,7 @@ Copied literally.
 - SSH stopped working for me :(
 - The content from the lectures this morning looked interesting but too dense for beginners. I think a reduced version would have been more effective.
 - Some of the 'handover' for the activities were unclear. We spent 5 minutes or so trying to figure what we were supposed to be doing. (+1)
-- Summary of content from slides, key takeaway points. 
+- Summary of content from slides, key takeaway points.
 - Have a summary session in the end of each day? I was absent for a session and would be good to know. (-1)
 - Would be good to have more bathroom breaks (+2)
 - If there is a an on and off suppervision, which can facilitate or enhance the coding in abetter way.

@@ -39,35 +39,35 @@
 
     - A test project: Type-along on starting a project
         - REASON: have tested this step
-	- test project (Planet)
-	    - code file
+ - test project (Planet)
+     - code file
             - git init
             - add and commit
-	    	- you can also start a directory and do git init 
+      - you can also start a directory and do git init 
     - Intro documentation 
         - order your files
-	   - README
+    - README
            - license
-	   - git diff
+    - git diff
     - Start with the steps related to the project (Type-along)
         - Git locally with config and cloning
-	- mkdir user
+ - mkdir user
         - work in user/
         
 
     
 
 !!! note "Think about:"
-    
+
     - structure of the files and folders for the project
     - documentation already
 
 
 !!! note
-   
-   - Many projects/scripts start as something for personal use, but expands to be distributed.
-   - Let's start in that end and be prepared.
-   - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+
+- Many projects/scripts start as something for personal use, but expands to be distributed.
+- Let's start in that end and be prepared.
+- The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 
 ## Before we continue we need to configure Git
@@ -119,7 +119,9 @@
 
 
 ## A test project started locally
+
 ### Initial code base
+
 - Let's say you have some code you have started to work with
 
 ???- question "Exercise: start the test project"
@@ -194,7 +196,7 @@
 
         ```
     - Make a folder with name `planets` 
-    	- BASH: ``mkdir planets``
+     - BASH: ``mkdir planets``
     - Create a folder in the ``planets/`` folder, called ``Figures/``
     - Also create a folder within ``planets/`` folder with the name ``code``
     - In the ``code`` folder, create a file.
@@ -261,6 +263,7 @@
 
 
 ### Commit
+
 - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
 - BUT only what we have added to the "staging" area!
 
@@ -288,15 +291,16 @@ Let us now commit the change to the repository:
 What does the `-m` flag mean? Let us check the help page for that command:
 
 ```console
-$ git help commit
+git help commit
 ```
 
 - You should see a very long help page as the tool is very versatile (press q to quit).
-	- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-	- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-	- Note that help pages also work when you don't have a network connection!
+   	- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+   	- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+   	- Note that help pages also work when you don't have a network connection!
 
 **Alternative commits**
+
 - You can also omit the ``-m`` option and a text editor will open.
 - The first line will be your commit message.
 - You can add other lines to add some more detailed info about your changes.
@@ -310,7 +314,7 @@ $ git help commit
 
 !!! example "Demo or Type-along"
 
-    
+
     - Make sure that you are **logged into GitHub**.
 
     <figure markdown="span">
@@ -358,12 +362,12 @@ $ git help commit
 
 ## Introduction to documentation
 
-### Order your files!
+### Order your files
 
 - Think that **everything is worth to be part of documentation** (like GitHub directory tree)
 - The parts from the software development cycle
     - The planning parts
-        - Requirements: 
+        - Requirements:
         - what should the program deliver
         - dependencies
         - OS platforms
@@ -381,11 +385,11 @@ $ git help commit
     - **Different projects should have separate folders**
 
     - ReadMe file
-    - Data		(version controlled)(.gitignore)
-    - Processed data	intermediate
-    - (Manuscript)	
-    - Results		data, tables, figures (version controlled, git tags for manuscript version)
-    - Src		version controlled code goes here
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript) 
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src  version controlled code goes here
         - License (here or in the 1st level)
         - Requirements.txt
     - Doc
@@ -407,7 +411,7 @@ $ git help commit
     - [Markdown](https://commonmark.org/help/)
 - A great guide to README files: [MakeaREADME](https://www.makeareadme.com/)
 
-   
+
 !!! info "A README file should include"
 
     - A descriptive project title
@@ -446,17 +450,18 @@ $ git help commit
 
 - Comments, function docstrings, ...
 - Advantages
-  - Good for programmers
-  - Version controlled alongside code
-  - Can be used to auto-generate documentation for functions/classes
+    - Good for programmers
+    - Version controlled alongside code
+    - Can be used to auto-generate documentation for functions/classes
 - Disadvantage
-  - Probably not enough for users
+    - Probably not enough for users
 
 **Comments examples**
 
 Let's take a look at two example comments (comments in python start with `#`):
 
 **Comment A**
+
 ```python
 # Now we check if temperature is larger then -50:
 if temperature > -50:
@@ -464,6 +469,7 @@ if temperature > -50:
 ```
 
 **Comment B**
+
 ```python
 # We regard temperatures below -50 degrees as measurement errors
 if temperature > -50:
@@ -473,10 +479,11 @@ if temperature > -50:
 - Comment A describes **what** happens in this piece of code, whereas comment B describes **why** this piece of code is there, i.e. its **purpose**.
 - Comments in the form of B are much more useful, comments of form A are redundant and we should avoid them.
 
- 
+
 **Why and not how**
 
 #### Function docstrings
+
 A docstring is a structured comment associated to a segment of code (i.e. function or class)
 
 Good docstrings describe:
@@ -525,15 +532,15 @@ def mean_temperature(data):
 ### Add in-code documentation on Github and pull from local git
 
 !!! example "Type-along: in-code docs"
-   
+
     - Use GitHub
     - Open ``planet.py``
     - Add some documentation (comments in python start with `#`)
     - Example:
-    	- Time iteration of the postion of Earth
-     	- Make subplots of Earth's revolution and the change of Sun–Earth distance
+     - Time iteration of the postion of Earth
+      - Make subplots of Earth's revolution and the change of Sun–Earth distance
     - Commit your changes
-    	- Note that there is no staging area on GitHub
+     - Note that there is no staging area on GitHub
     - Go to your local git folder in a terminal to get the GitHub changes locally.
     - Do ``git pull`` in the terminal 
     - Also try these commands!
@@ -593,7 +600,7 @@ R <--> Node5
 
 ### View the project
 
-- View the GitHub project at: https://github.com/programming-formalisms/programming_formalisms_project_summer_2024
+- View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
 
 - See the tree!
 
@@ -624,10 +631,10 @@ R <--> Node5
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
         - `git clone` copies everything: all commits and all branches.
-    - We synchronize commits between local and remote with 
-    	- **git fetch**/**pull** and **git push**.
+    - We synchronize commits between local and remote with
+     - **git fetch**/**pull** and **git push**.
 
-   
+
 ### Clone the course project
 
 ???+ question "Exercise: clone course project and create folders"
@@ -635,7 +642,7 @@ R <--> Node5
      **Now you and other people can clone this repository and contribute changes.**
 
     - You may want to create a directory on your computer for this course. 
-    	- You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
+     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
     - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
@@ -685,6 +692,7 @@ R <--> Node5
 
 
 **Centralized layout**
+
 - **Red** is the repository on GitHub.
 - **Blue** is where all contributors work on their own computers.
 
@@ -698,17 +706,16 @@ R <--> Node5
 ### Git Cheat sheet
 
 ```console
-$ git init    # initialize new repository
-$ git add     # add files or stage file(s)
-$ git commit  # commit staged file(s)
-$ git status  # see what is going on
-$ git log     # see history
-$ git diff    # show unstaged/uncommitted modifications
-$ git show    # show the change for a specific commit
-$ git mv      # move tracked files
-$ git rm      # remove tracked files  (from repository only)
+git init    # initialize new repository
+git add     # add files or stage file(s)
+git commit  # commit staged file(s)
+git status  # see what is going on
+git log     # see history
+git diff    # show unstaged/uncommitted modifications
+git show    # show the change for a specific commit
+git mv      # move tracked files
+git rm      # remove tracked files  (from repository only)
 ```
-
 
 
 !!! Goal
@@ -720,7 +727,6 @@ $ git rm      # remove tracked files  (from repository only)
     - A repository can have one or multiple remotes (we will revisit these later).
     - A remote (GitHub) in this case serves as a full backup of your work.
     - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
-
 
 
 !!! admonition "Parts to be covered!"
@@ -742,6 +748,4 @@ $ git rm      # remove tracked files  (from repository only)
         - &#9744; citation
         - &#9745; licensing  
     - &#9744; Documentation
-
-
 

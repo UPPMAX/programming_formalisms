@@ -22,19 +22,19 @@ Friday   |4-6  |Create a re-usable module|More exercises, less theory
 In the schedule to be discussed:
 
 - **Monday morning**:
-  - Björn: course overview
-  - Björn: basic git
+    - Björn: course overview
+    - Björn: basic git
 - **Monday afternoon**: Requirements modeling and risk assessment
-  - Lars: Define the project
-  - Lars: Make formal requirements model
-  - Lars: Make formal risk assessment
+    - Lars: Define the project
+    - Lars: Make formal requirements model
+    - Lars: Make formal risk assessment
 - **Tuesday**: Git setup and version control, from a reproducible research and social coding/development perspective
-  - Organize the project
+    - Organize the project
 - **Wednesday**:
-  - Richel: Test-Driven Development (TDD) and function design
+    - Richel: Test-Driven Development (TDD) and function design
 - **Thursday and Friday morning**:
-  - Richel: Test-Driven Development and class design (TDD)
-  - Richel: Implement the project as a package
+    - Richel: Test-Driven Development and class design (TDD)
+    - Richel: Implement the project as a package
 - **Friday afternoon**: Deployment and documentation
 
 ## Week 36
@@ -135,6 +135,4 @@ These are my worries:
 I will have 4 days to prepare, all of these disturbed my meetings.
 
 - Tuesday: sketch all days
- 
-
 

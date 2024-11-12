@@ -10,13 +10,13 @@
 
 Within functions, `assert` is used for:
 
--   as a stub
--   to do things in debug mode only
--   to document assumptions a developer makes
+- as a stub
+- to do things in debug mode only
+- to document assumptions a developer makes
 
 ## `assert` differs between debug and release
 
-```         
+```
 $ cat assert.py 
 assert 1 == 2
 

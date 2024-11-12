@@ -1,6 +1,6 @@
 # More about sharing
 
-## Open science 
+## Open science
 
 The Open Science movement encourages researchers
 to share research output beyond the contents of a
@@ -15,6 +15,7 @@ published academic article (and possibly supplementary information).
 
 
 Arguments in favor [(from Wikipedia)](https://en.wikipedia.org/wiki/Open_science):
+
 - Open access publication of research reports and data allows for rigorous peer-review
 - Science is publicly funded so all results of the research should be publicly available
 - Open Science will make science more reproducible and transparent
@@ -22,6 +23,7 @@ Arguments in favor [(from Wikipedia)](https://en.wikipedia.org/wiki/Open_science
 - Open Science will help answer uniquely complex questions
 
 Arguments against [(from Wikipedia)](https://en.wikipedia.org/wiki/Open_science):
+
 - Too much unsorted information overwhelms scientists
 - Potential misuse
 - The public will misunderstand science data
@@ -66,8 +68,9 @@ Arguments against [(from Wikipedia)](https://en.wikipedia.org/wiki/Open_science)
 ```{info}
 More on Wednesday!
 ```
-    
+
 ## Licensing
+
 [For more details](https://coderefinery.github.io/social-coding/software-licensing/)
 
 ### Copyright
@@ -78,6 +81,7 @@ More on Wednesday!
 - Time frame: essentially forever (lifetime + X years)
 
 When can you use:
+
 - When there is a **license** saying you can
 - Limited other cases (private use, fair use: context dependent)
 - In practice: people do many things, but then can't share their
@@ -110,28 +114,33 @@ Is this derivative work? ["Distillery District 26"](https://www.flickr.com/photo
 ### Licensing and ownership
 
 **Who can decide about or change a license?**
+
 - The copyright holder if a separate "Contributor License Agreement" is signed. Otherwise
   copyright holder provided they secure express consent from all the contributors.
 
 **Who owns the copyright for software you write?**
+
 - **Intellectual property depends on the country and the employer!**
 - So-called works made for hire.
 
 **If you own your software:**
+
 - You can change the license.
 - You can dual-license (e.g. GPL for anyone, but you can pay for commercial non-GPL).
 
 **If you do not own your software, you can:**
+
 - Request open-sourcing directly (preserves your rights!).
 - Request a transfer of ownership (check with your university).
 
 **If you accept contributions (pull requests), you may not be the only owner anymore!**
+
 - Clarify licensing strategy **before** - otherwise you won't have
   all rights to your code.
   
 ### What is free software?
 
-#### Software freedom is the freedom to ...
+#### Software freedom is the freedom to
 
 - ... run the software for **any purpose**: new applications
 - ... **study** how the software works and to adapt it to your needs: new applications, less reinventing wheels
@@ -148,7 +157,6 @@ Is this derivative work? ["Distillery District 26"](https://www.flickr.com/photo
 ### Taxonomy of software licenses
 
 - Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
-
 
 
 **1. Custom/closed/proprietary**
@@ -188,49 +196,49 @@ Example: Permissions, conditions, and limitations of the LGPL license. Unchanged
 Example: Permissions, conditions, and limitations of the GPL license. Unchanged from <https://choosealicense.com/>.
 ```
 
-### Creative Commons licenses 
+### Creative Commons licenses
 
 ```{image} ./img/Cc.logo.circle.svg.png
 :alt: Creative Commons
 :width: 100px
 :align: center
-``` 
+```
 
 
 - Creative Commons licenses give everyone a standardized way to grant the public permission to use their creative work under copyright law.
-- From the reuser’s perspective, the presence of a Creative Commons license on a copyrighted work answers the question, “What can I do with this work?” 
+- From the reuser’s perspective, the presence of a Creative Commons license on a copyrighted work answers the question, “What can I do with this work?”
 <https://creativecommons.org/about/cclicenses/>
 - More often used for images and text.
 - For software, Creative Commons includes three free licenses created by other institutions: the BSD License, the GNU LGPL, and the GNU GPL. See above.
 
-#### 4 rights:
+#### 4 rights
 
 ```{image} ./img/Cc-by_new.svg.png
 :alt: CC-BY
 :width: 50px
 :align: center
-``` 
+```
   
 - BY – Attribution - Credit must be given to the creator
-  - User may copy, distribute, display, perform and make derivative works and remixes based on it only if they give the author or licensor the credits  
-     
+    - User may copy, distribute, display, perform and make derivative works and remixes based on it only if they give the author or licensor the credits  
+
 ```{image} ./img/Cc-sa.svg.png
 :alt: CC-SA
 :width: 50px
 :align: center
-``` 
+```
   
-- SA - Share alike - Allows remix culture 
-  - distribute derivative works only under a license identical to ("not more restrictive than") the license that governs the original work.(Share alike)
+- SA - Share alike - Allows remix culture
+    - distribute derivative works only under a license identical to ("not more restrictive than") the license that governs the original work.(Share alike)
 
 ```{image} ./img/113px-Cc-nc.svg.png
 :alt: CC-NC
 :width: 50px
 :align: center
-``` 
+```
 
-- NC - Non-commercial 
-  - Licensees may copy, distribute, display, perform the work and make derivative works and remixes based on it only for non-commercial purposes. 
+- NC - Non-commercial
+    - Licensees may copy, distribute, display, perform the work and make derivative works and remixes based on it only for non-commercial purposes.
   
 ```{image} ./img/Cc-nd.svg.png
 :alt: CC-ND
@@ -238,8 +246,8 @@ Example: Permissions, conditions, and limitations of the GPL license. Unchanged 
 :align: center
 ```
 
-- ND - No derivative work 
-  - Licensees may copy, distribute, display and perform only verbatim copies of the work, not derivative works and remixes based on it. Since version 4.0, derivative works are allowed but must not be shared. 
+- ND - No derivative work
+    - Licensees may copy, distribute, display and perform only verbatim copies of the work, not derivative works and remixes based on it. Since version 4.0, derivative works are allowed but must not be shared.
   
 ```{image} ./img/225px-Cc-zero.svg.png
 :alt: CC0
@@ -263,6 +271,7 @@ Also covered on the third day
 - Think the same as for a scientific paper
 
 **Our practical recommendations**:
+
 - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
 - Open source license can't demand citation, but it is required by science ethics anyway.
 - Make it as easy as possible! Clearly say what you want cited.
@@ -270,6 +279,7 @@ Also covered on the third day
 - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
 This is an example of a simple `CITATION.cff` file:
+
 ```yaml
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
@@ -285,7 +295,8 @@ date-released: 2021-08-11
 
 Recommended format for software citation is to ensure the following information
 is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
-- Creator 
+
+- Creator
 - Title
 - Publication venue
 - Date
@@ -293,10 +304,9 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 - Version
 - Type
 
-    
-- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system. 
-- CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
 
+- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
+- CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
 
 
 ```{keypoints}

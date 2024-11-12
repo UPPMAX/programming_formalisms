@@ -25,14 +25,14 @@ We discuss:
 
 ## Case study
 
--   [ ] Show ProjectRampal
+- [ ] Show ProjectRampal
 
 ## Discussion
 
--   Be critical on speed optimization solutions
--   Tested and clean code always comes first
--   Measure correctly, at the right complexity, before and after
--   Prefer changing big-O over micro-optimizations (but see first point!)
+- Be critical on speed optimization solutions
+- Tested and clean code always comes first
+- Measure correctly, at the right complexity, before and after
+- Prefer changing big-O over micro-optimizations (but see first point!)
 
 Agree yes/no?
 
@@ -44,5 +44,5 @@ Description                                                 |PDF                
 
 ## Links
 
- * [Project Euler](https://projecteuler.net/archives): plenty of programming problems
- * Lecture of 2022: [here](https://uppsala.instructure.com/courses/69215/pages/optimisation-when-and-how?module_item_id=503139):
+- [Project Euler](https://projecteuler.net/archives): plenty of programming problems
+- Lecture of 2022: [here](https://uppsala.instructure.com/courses/69215/pages/optimisation-when-and-how?module_item_id=503139):

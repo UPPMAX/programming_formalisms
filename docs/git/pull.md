@@ -61,6 +61,7 @@ There are two more ways to create “copies” of repositories into your user sp
 ## Different workflows for collaboration
 
 ### Centralized workflow
+
 ![Centralized layout](../img/centralized.svg)
 
 **Centralized layout**
@@ -83,12 +84,13 @@ There are two more ways to create “copies” of repositories into your user sp
 **Forking workflow**
 
 - **Red** is the central repository, where only owners have access.
-- **Green** are *forks* on GitHub (copy for a single user to work on).
+- **Green** are _forks_ on GitHub (copy for a single user to work on).
 - **Blue** are local copies where contributors work on their own computer.
 
 ## Contributing in a team
 
 ### Contributing to existing repositories using pull requests
+
 Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
 
 - License: Creative Commons Attribution 4.0 International
@@ -153,7 +155,7 @@ single-person repository in the previous episodes.
 
 ---
 
-- **To make sure that *all* changes of the `main` branch are reviewed and nobody
+- **To make sure that _all_ changes of the `main` branch are reviewed and nobody
 can push commits to it directly, it can be useful to "protect" branches.**
 
 - "Settings", then "Branches", then "Add rule":
@@ -236,8 +238,6 @@ We can practice how a conflict looks and how to resolve it:
 - These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
 
 
-
-
 !!! info "See also"
 
     - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
@@ -254,7 +254,7 @@ We can practice how a conflict looks and how to resolve it:
 **Forking workflow**
 
 - **Red** is the central repository, where only owners have access.
-- **Green** are *forks* on GitHub (copy for a single user to work on).
+- **Green** are _forks_ on GitHub (copy for a single user to work on).
 - **Blue** are local copies where contributors work on their own computer.
 
 
@@ -292,7 +292,7 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 ### Example with Pull request
 
 - Submitting a change proposal as external contributor  looks very similar to submitting a "pull request" to a repository with a protected `main` branch.
-    - (we assume you are not added as "collaborator" and thus have no write-permissions to a repository)    
+    - (we assume you are not added as "collaborator" and thus have no write-permissions to a repository)
 - Only this time you have no other choice than **"Propose file change"**.
 
 
@@ -361,4 +361,3 @@ sharing screen:
     - &#9744; Documentation
         - &#9745; in-code documentation
   
-

@@ -60,7 +60,6 @@ communicate what is _actively_ being worked on.
 For that, a [kanban board](kanban_board.md) is used instead.
 
 
-
 ## References
 
 - `[Bertram, 2009]` Bertram, Dane. "The social nature of issue tracking in software engineering." University of Calgary (2009).

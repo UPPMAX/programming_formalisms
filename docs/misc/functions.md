@@ -291,9 +291,6 @@ practicing TDD.
     a question at [Project Euler](https://projecteuler.net/archives).
 
 
-
-
-
 ## Other example implementations
 
 !!! note "TODO: merge"
@@ -479,8 +476,6 @@ practicing TDD.
             )
         return x % 3 == 0
     ```
-
-
 
 
 ???- question "`is_string` example implementation"

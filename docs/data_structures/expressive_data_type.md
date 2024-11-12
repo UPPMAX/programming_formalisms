@@ -11,13 +11,13 @@
 
 Data structure are 'ways to organize your data'.
 
--   Bad way: put all in one `list`
+- Bad way: put all in one `list`
 
 Good (:innocent:) data structures:
 
--   **Increase expressiveness**
--   Bundles data that belongs together
--   Ensures correct state of the program
+- **Increase expressiveness**
+- Bundles data that belongs together
+- Ensures correct state of the program
 
 ## Increase expressiveness, in design
 
@@ -90,8 +90,8 @@ classDiagram
 
 Ah, it is a **coordinat**!
 
--   [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
--   [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
+- [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
+- [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
 ## Exercise 1: design a struct (15 mins)
 
@@ -103,9 +103,8 @@ Ah, it is a **coordinat**!
 
 What are their elements? Which do you guess are structures? Were they?
 
--   A coordinate in 3 dimensions :innocent:
--   A velocity in two dimensions
--   A circle
--   A square
-
+- A coordinate in 3 dimensions :innocent:
+- A velocity in two dimensions
+- A circle
+- A square
 

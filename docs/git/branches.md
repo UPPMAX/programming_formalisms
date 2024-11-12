@@ -45,9 +45,8 @@
         - discussion
 
 
-
-
 ## Branching and merging
+
 Software development is often not linear:
 
 - We typically need at least one version of the code to "work" (to compile, to give expected results, ...).
@@ -78,17 +77,16 @@ matrix inversion algorithm".
 One typical workflow:
 
 ```console
-$ git switch -c new-feature  # create branch, switch to it
-$ git commit                   # work, work, work, ..., and test
-$ git switch master          # once feature is ready, switch to master
-$ git merge new-feature        # merge work to present branch
-$ git branch -d new-feature    # remove branch
+git switch -c new-feature  # create branch, switch to it
+git commit                   # work, work, work, ..., and test
+git switch master          # once feature is ready, switch to master
+git merge new-feature        # merge work to present branch
+git branch -d new-feature    # remove branch
 ```
 
 !!! info "Sea also"
 
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
-
 
 
 ## Add Jupiter in a new branch
@@ -388,7 +386,7 @@ $ git branch -d new-feature    # remove branch
 ## Let's make our code modular (test in another branch)
 
 - We consider the Jupiter branch dead-end.
-- Let's instead start from the main branch and create a "modularity" 
+- Let's instead start from the main branch and create a "modularity"
 
 !!! example "Demo or Type-along: git branch 2"
 
@@ -639,11 +637,10 @@ $ git branch -d new-feature    # remove branch
     ```
 
 
-
-
-## Meanwhile...  
+## Meanwhile  
 
 **Back in main branch**
+
 - We spotted an unnecessary ``print`` line in the main branch code.
 - Perhaps we're not finished with the modular branch, so let's fix this in the main branch.
 
@@ -698,12 +695,11 @@ $ git branch -d new-feature    # remove branch
 - If we do this after the merging the branches do not show up.
 
 
-  
 ## Merging
 
-- It turned out that our experiment with modularity was a good idea. 
+- It turned out that our experiment with modularity was a good idea.
 - Our goal now is to merge modularity into main.
- 
+
 ![Isolated tracks](../img/git-collaborative.svg)
 
 
@@ -789,33 +785,32 @@ $ git branch -d new-feature    # remove branch
 - If we did this after the merging the branches do not show up.
 
 
-
 ## Summary
 
 - Now we know how to save snapshots:
 
 ```git
-$ git add <file(s)>
-$ git commit
+git add <file(s)>
+git commit
 ```
 
 - And that is what we do as we program.
 - Other very useful commands are these:
 
 ```git
-$ git init    # initialize new repository
-$ git add     # add files or stage file(s)
-$ git commit  # commit staged file(s)
-$ git status  # see what is going on
-$ git log     # see history
-$ git diff    # show unstaged/uncommitted modifications
-$ git show    # show the change for a specific commit
-$ git mv      # move tracked files
-$ git rm      # remove tracked files
-$ git switch -b wild-idea    # create branch, switch to it, work, work, work ...
-$ git switch main          # realize it was a bad idea, back to main/master
-$ git branch -D wild-idea      # it is gone, off to a new idea
-$ git merge 
+git init    # initialize new repository
+git add     # add files or stage file(s)
+git commit  # commit staged file(s)
+git status  # see what is going on
+git log     # see history
+git diff    # show unstaged/uncommitted modifications
+git show    # show the change for a specific commit
+git mv      # move tracked files
+git rm      # remove tracked files
+git switch -b wild-idea    # create branch, switch to it, work, work, work ...
+git switch main          # realize it was a bad idea, back to main/master
+git branch -D wild-idea      # it is gone, off to a new idea
+git merge 
 ```
 
 **Overview workflow**

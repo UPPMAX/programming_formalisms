@@ -2,7 +2,7 @@
 
 <base target="_blank">
 
-!!! note "What do you need to be prepared?" 
+!!! note "What do you need to be prepared?"
 
     - A good Zoom setup: microphone, camera and a place where you can talk
     - A **terminal**
@@ -18,7 +18,7 @@
     If you have not set up Git/GitHub and have not installed Git, Python and VS code.
   
     - **Count with ~1 hour of preparations**, depending on choices you make (Anaconda takes time to install).
- 
+
 ## Checkpoints
 
 ### A good Zoom setup
@@ -26,7 +26,7 @@
 You have a Zoom good setup, if:
 
 - :black_square_button: you can talk freely. If not, find a room/place where you can
-- :black_square_button: others in the Zoom room can clearly hear what you say. 
+- :black_square_button: others in the Zoom room can clearly hear what you say.
       If not, use a microphone
 - :black_square_button: you can clearly hear what others in the Zoom room say.
       If not, use a headset
@@ -84,7 +84,7 @@ You have installed `git`, if:
     git config --global user.email "sven@svensson.se"
     ```
 
-- :black_square_button: In a terminal, `git config --global pull.rebase` shows something, 
+- :black_square_button: In a terminal, `git config --global pull.rebase` shows something,
 
       e.g. the text `false`
 
@@ -122,9 +122,9 @@ You have good enough knowledge of `git`, if:
 - :black_square_button: You know what pushing is
 - :black_square_button: You know what pulling is
 - :black_square_button: You know how to see the status of your `git` repository
-- :black_square_button: You can do a basic `git` workflow, 
+- :black_square_button: You can do a basic `git` workflow,
       as described [here](https://uppmax.github.io/programming_formalisms/misc/git_workflow/)
-      in 5 minutes. 
+      in 5 minutes.
 
 ???- question "Do you know basic git?"
 
@@ -188,7 +188,7 @@ Do you want to work in another environment you are used to, you can do some of t
     - integrate you terminal and Git work with **code development**
     - graphical user interface
     - available in **all platforms**
- 
+
 - You may want to check [VS Code installation](https://coderefinery.github.io/installation/vscode/) as well!
 
 - [Download](https://code.visualstudio.com/)
@@ -269,6 +269,7 @@ Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en
 
 
 ### GitHub
+
 Sign up for GitHub account:
 [https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
 
@@ -277,27 +278,28 @@ Sign up for GitHub account:
     Go back to [checkpoints](prereqs.md#checkpoints)
 
 
-### Git–GitHub connection through ssh keys 
+### Git–GitHub connection through ssh keys
+
 (This may take a while to get working, but is worth it)
 [https://coderefinery.github.io/installation/ssh/](https://coderefinery.github.io/installation/ssh/)
 
 - Test: `ssh -T git@github.com`
-  - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
+    - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
 - If not working, these are the approximate steps to be done in your terminal. It can vary between systems, so link above is more certain.
 
 ```console
-$ ssh-keygen -t ed25519 -C "<email address for your GitHub account>"
-$ eval "$(ssh-agent -s)"
-$ ssh-add ~/.ssh/id_ed25519
-$ # Copy the SSH public key to your clipboard. For WINDOWS:
-$ clip < ~/.ssh/id_ed25519.pub
+ssh-keygen -t ed25519 -C "<email address for your GitHub account>"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+# Copy the SSH public key to your clipboard. For WINDOWS:
+clip < ~/.ssh/id_ed25519.pub
 ```
 
 - On Mac, use ``pbcopy`` instead, like:
 
 ```console
-$ # Copy the SSH public key to your clipboard. For MAC:
-$ pbcopy < ~/.ssh/id_ed25519.pub
+# Copy the SSH public key to your clipboard. For MAC:
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
 
@@ -312,7 +314,7 @@ $ pbcopy < ~/.ssh/id_ed25519.pub
     8. If prompted, confirm access to your account on GitHub.
 
 - Now test again in your terminal: `ssh -T git@github.com`
-  - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
+    - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
 
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
@@ -327,11 +329,11 @@ $ pbcopy < ~/.ssh/id_ed25519.pub
 - Choose one or several of these!
 
 - Git courses
-    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/) 
+    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
     - [Git by CodeRefinery](https://coderefinery.github.io/git-intro/)
     - [GitHub by CodeRefinery](https://coderefinery.github.io/git-collaborative/)
     - [NAISS](https://www.hpc2n.umu.se/node/982)
- 
+
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
 !!! info
@@ -340,14 +342,15 @@ $ pbcopy < ~/.ssh/id_ed25519.pub
 
 
 ## Python
+
 - Use what you already have
 - If you don't have Python there are different ways to go. We won't use Conda during the lessons, for instance.
     - Bare python (recommended for the **"bare metal" user**)
         - You may need to install other packages (pip)
         - [install python](https://www.python.org/downloads/)
         - **note macOS**: the system install of Python on macOS is not supported, instead:
-            - ``brew install python3`` 
-   - Anaconda (recommended for **python/R developers liking GUI:s**)
+            - ``brew install python3``
+    - Anaconda (recommended for **python/R developers liking GUI:s**)
         - **Count with 15-20 minutes**  
         - includes
             - many many packages
@@ -375,8 +378,8 @@ $ pbcopy < ~/.ssh/id_ed25519.pub
 - Step 1. Install a supported version of Python on your system, see above
 - Step 2. Install the Python extension for Visual Studio Code from the left menu bar.
 - Step 3. Open or create a Python file and start coding.
-    -  Example: make a hello.py script and run it with the "play" button.
-    -  Choose which Python interpreter to use. 
+    - Example: make a hello.py script and run it with the "play" button.
+    - Choose which Python interpreter to use.
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
 
 !!! info
@@ -391,7 +394,6 @@ $ pbcopy < ~/.ssh/id_ed25519.pub
 
     - [Python part](https://uppmax.github.io/uppmax_intro_python/) of the UPPMAX introductory course
     - [Python programming with applications to bioinformatics](https://uppsala.instructure.com/courses/85913).
-
 
 
 ## Other solutions
@@ -433,19 +435,19 @@ There are some other solutions for installations but they are probably not suppo
     - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
 
 ### Python from In Git-bash (Windows)
-- Get it working from **Git Bash**
-  - if the command ``type python`` gives you a path, then proceed
-    - otherwise you may have to do a new installation
-    - or find the path
-    - if anaconda installation you may add something like this:
-    - ``echo 'export PATH="<path/to/Anaconda/root>:<path/to/anaconda/root>/Scripts:$PATH:' >> .bashrc``
-      - example:  ``/c/Users/bjcar425/AppData/Local/anaconda3:/c/Users/bjcar425/AppData/Local/anaconda3/Scripts``
-  - ``$ alias python='winpty python.exe'``
-  - ``$ python -V``
-    - does it give you the python version 3-something?
- - Make it permanent
- -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
 
+- Get it working from **Git Bash**
+    - if the command ``type python`` gives you a path, then proceed
+        - otherwise you may have to do a new installation
+        - or find the path
+        - if anaconda installation you may add something like this:
+        - ``echo 'export PATH="<path/to/Anaconda/root>:<path/to/anaconda/root>/Scripts:$PATH:' >> .bashrc``
+            - example:  ``/c/Users/bjcar425/AppData/Local/anaconda3:/c/Users/bjcar425/AppData/Local/anaconda3/Scripts``
+    - ``$ alias python='winpty python.exe'``
+    - ``$ python -V``
+        - does it give you the python version 3-something?
+- Make it permanent
+ -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
 
 
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)

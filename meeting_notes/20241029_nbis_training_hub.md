@@ -13,12 +13,8 @@ Advice:
 - All team members should try to do a reflection
 - Try to build in peer observation within team
 - Contact former students informally to see which part of the curriculum was most important to them
-  - R: Why, besides being interesting?
-    - Because it may help shape the course curriculum
-    - R: Unsure about that: we pick what we need to discuss.
+    - R: Why, besides being interesting?
+        - Because it may help shape the course curriculum
+        - R: Unsure about that: we pick what we need to discuss.
 - Individually schedule a meeting with the NBIS Training Hub
 
-
-
-
- 

@@ -68,9 +68,9 @@ gitGraph
     - switch to the new branch
     - change the content of the repository, for example,
       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
-    - push your changes online. 
+    - push your changes online.
 - On GitHub, verify that your changes on your branch can be found online
-- On your local computer, switch to the main branch, 
+- On your local computer, switch to the main branch,
   as we'll delete the branch you are on now
 - Delete your branch (i.e. the one with the unique name).
   You may use the web interface (easiest!) or use the command line

@@ -6,15 +6,15 @@
 
 !!! info "Content"
 
-   - We will prepare for use of your code
-   - Update the README
-   - Update a Doc Index
-   - Revisit licence
-   - But also...
-     - some theory of packages
-     - some theory of workflows
-     - some theory of containers
-     - some info about Tutorials/Reference/HowTo guides
+- We will prepare for use of your code
+- Update the README
+- Update a Doc Index
+- Revisit licence
+- But also...
+    - some theory of packages
+    - some theory of workflows
+    - some theory of containers
+    - some info about Tutorials/Reference/HowTo guides
 
 ???- info "Learning objectives of 'Documentation'"
 
@@ -32,7 +32,7 @@
     - Theory 20
     - Discussions 10 min
 
-!!! info "TOC" 
+!!! info "TOC"
 
     - In-code documentation review
     - Documentation 
@@ -48,6 +48,7 @@
         - update index
         
 ## README example
+
 ```
 # Planets
 ## About
@@ -73,15 +74,17 @@ This program ...
 
 ```
 
-### Licensing       
-        
+### Licensing
+
 #### Copyright
+
 - Protects creative expression
 - Automatically created
 - **Derivative works** usually inherit copyright of the thing derived
 - Time frame: essentially forever (lifetime + X years)
 
 **When can you use?**
+
 - When there is a **license** saying you can
 - Limited other cases (private use, fair use: context dependent)
 - In practice: people do many things, but then can't share their output if license does not allow it or is not clarified
@@ -100,7 +103,7 @@ This program ...
     4. Strong copyleft share-alike (**GPL**, AGPL)
       - Derivative work is free software and derivative work extends to the combined project    
 
-[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)      
+[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)
 
 
 ### Software Citation
@@ -145,7 +148,7 @@ This program ...
 
 There are many tools that can turn RST or Markdown into beautiful HTML pages:
 
-- [Sphinx](http://sphinx-doc.org) 
+- [Sphinx](http://sphinx-doc.org)
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
     - [Earlier Intro day for this course]()
@@ -159,7 +162,7 @@ There are many tools that can turn RST or Markdown into beautiful HTML pages:
 There are many more ...
 
 ### Deployment on servers
-                                        
+
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
 - [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
@@ -170,13 +173,16 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
 
 #### GitHub pages
+
 - Easiest. Everything is local to GitHub
 - This lesson material
 
 #### Read the Docs
+
 - Somewhat more possibilities, like having several versions of documentation to switch between.
-                                      
+
 ### Wikis
+
 - Popular solutions (but many others exist):
     - [MediaWiki](https://www.mediawiki.org)
     - [Dokuwiki](https://www.dokuwiki.org)
@@ -184,15 +190,15 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - Typically needs to be hosted and maintained
 
 - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
- 
+
 !!! info "See also"
 
     [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
 
 
 ## (Optional) Last hands on your documentation
-- Some inspiration [Beagle](https://github.com/yampelo/beagle)
 
+- Some inspiration [Beagle](https://github.com/yampelo/beagle)
 
 
 !!! admonition "Git/GitHub Repo "
@@ -210,8 +216,6 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
         - index
         - planning documents
         
-
-
 
 
 ???+ Question "(Optional) Update your documentation"
@@ -251,6 +255,4 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - &#9745; Documentation
         - &#9745; in-code documentation
         - &#9745; finish documentation
-
-
 

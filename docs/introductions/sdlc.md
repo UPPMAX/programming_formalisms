@@ -1,15 +1,15 @@
 # Software Development Lifecycle
 
 !!! info "Overview of Software Development Lifecycle (SDLC)"
-    
+
     - This is a brief intro to the concept of SDLC further reading can be found in the reading material
     - __All software have a life cycle__
     - Whether you control that through formalism or if it is chaos is up to you.
     
 
 ## The SDLC is usually broken down into phases
-    
-![Software Development Life Cycle showing the iterative nature of SDLC](../img/development_design/SDLC.png)   
+
+![Software Development Life Cycle showing the iterative nature of SDLC](../img/development_design/SDLC.png)
 
 - This is formalised in the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
 
@@ -22,7 +22,7 @@
 ![The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license](../img/development_design/helix_legend-01.png)
 
 !!! info "Planning or needs determination"
-    
+
     - In the first phase one needs to determine what Trauth et.al call Perception of need, Feasibility and Analysis 
     - The ISO/IEC standard 12207 calls this Needs Determination after the needs, the initial requirements, have been determined through the above mentions process they are then fleshed out in the Concept and Exploration according to the SDLC_ISO_IEC_12207 
     - This is the time to make a risk analysis of your development strategy, and then adopt that strategy, such as a once through(waterfall), iterative(such as RUP) or evolutionary software model (Living Software Development Process) 
@@ -36,7 +36,7 @@
     This means first finding the needs of your project then analysing those needs for risk which may then lead to further analysis
 
 ???- "What is risk?"
-    
+
     ISO 31000 defines risk as "The effect of uncertainty on objectives"
 
 ???- "What is risk Management?"
@@ -62,5 +62,3 @@ graph TD;
     class D,G green;
 ```
 
-
-    

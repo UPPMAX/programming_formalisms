@@ -26,9 +26,9 @@
 
 ## Exercise
 
--   Read project description
--   Which classes does the project need?
--   Together, in a shared document:
-    -   make an alphabetic list of structures in the shared document
-    -   add exactly 1 maintainer to each struct
--   Put it on the GitHub repository
+- Read project description
+- Which classes does the project need?
+- Together, in a shared document:
+    - make an alphabetic list of structures in the shared document
+    - add exactly 1 maintainer to each struct
+- Put it on the GitHub repository

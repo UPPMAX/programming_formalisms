@@ -23,5 +23,5 @@
 
 ## Exercise 3: create structs (30 mins)
 
--   Per struct maintainer, create one group
--   Add the struct to the GitHub project repository
+- Per struct maintainer, create one group
+- Add the struct to the GitHub project repository

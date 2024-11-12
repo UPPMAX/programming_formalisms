@@ -10,17 +10,17 @@
 
 # Run-time speed profile
 
--   See which code is spent most time in
--   :monocle_face: Use an input of suitable complexity
-    -   Note to self: next example should take at least 10 seconds!
--   :sunglasses: Consider using CI to obtain a speed profile every push!
+- See which code is spent most time in
+- :monocle_face: Use an input of suitable complexity
+    - Note to self: next example should take at least 10 seconds!
+- :sunglasses: Consider using CI to obtain a speed profile every push!
 
 ## Run-time speed profile: code
 
--   [ ] Show R code in repo
--   [ ] Run R code from RStudio
--   [ ] Show Python code in repo
--   [ ] Run Python code from command line
+- [ ] Show R code in repo
+- [ ] Run R code from RStudio
+- [ ] Show Python code in repo
+- [ ] Run Python code from command line
 
 ## Myth 1
 
@@ -38,18 +38,18 @@ def superfast_xor_swap(x, y):
     return x, y
 ```
 
--   [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
--   [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
+- [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
+- [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
 
 ## Exercise 1 \[30 mins\]
 
 Create speed profile of any function you like.
 
--   [ ] Remind Python and R code on learner's repo
+- [ ] Remind Python and R code on learner's repo
 
 ## Exercise 2 \[SKIP\]
 
-Create speed profile of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+Create speed profile of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
 ## Exercise 3 \[SKIP\]
 
@@ -57,15 +57,15 @@ Create speed profile of DNA alignment
 
 # Step 3: Think
 
--   How to achieve the same with less calculations?
-    -   Aim to change big-O, not some micro-optimization
-    -   For example, store earlier results in a sorted look-up table
+- How to achieve the same with less calculations?
+    - Aim to change big-O, not some micro-optimization
+    - For example, store earlier results in a sorted look-up table
 
 > Feynman Problem Solving Algorithm:
 >
-> 1.  Write down the problem.
-> 2.  Think very hard.
-> 3.  Write down the answer
+> 1. Write down the problem.
+> 2. Think very hard.
+> 3. Write down the answer
 
 # Step 4: Measure again
 
@@ -77,7 +77,7 @@ assert 10.0 * get_t_runtime_b() < get_t_runtime_a()
 
 Adapt the constant to reality.
 
--   [C++ Core Guidelines: Per.6: Don't make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)
+- [C++ Core Guidelines: Per.6: Don't make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)
 
 ## Recap quote
 
@@ -91,5 +91,5 @@ Adapt the constant to reality.
 
 ## Case study
 
--   [ ] Show ProjectRampal
+- [ ] Show ProjectRampal
 

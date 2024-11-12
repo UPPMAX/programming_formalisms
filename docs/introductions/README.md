@@ -22,7 +22,7 @@ social
 
 :construction: the `code layout`-ed items will become links in the future :construction:
 
- * GitHub repository with exercises: 
+* GitHub repository with exercises:
 
 ## Links
 

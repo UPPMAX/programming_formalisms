@@ -4,6 +4,7 @@
 <https://coderefinery.github.io/reproducible-research/workflow-management/>
 <https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/>
 ```
+
 ## Containers
 
 Popular container implementations:
@@ -24,13 +25,14 @@ They are to some extent inter-operable:
 
 - Singularity Python can convert Docker files to Singularity definition files
 
-https://coderefinery.github.io/reproducible-research/environments
+<https://coderefinery.github.io/reproducible-research/environments>
 
 ### Singularity course
 
 October?
 
 ## Reproducible publications
+
 - Git (overleaf, authorea), HackMD, manuscripts.io, google docs
 - Scholarly output reproducible: rrtools, jupyter, binder, research compendia
 - Reprohack

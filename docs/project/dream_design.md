@@ -110,7 +110,7 @@ We can also write a test:
 
 Now, what do we want to do with it?
 
-Well, we probably want to run it, 
+Well, we probably want to run it,
 so we can dream of writing a function that runs the experiment:
 
 ```python
@@ -358,7 +358,7 @@ results = run(experiment)
 save(results, "my_results.csv")
 ```
 
-We can imagine that `read_parameters_from_file` 
+We can imagine that `read_parameters_from_file`
 reads parameters from a file.
 
 === "Implementation is irrelevant"
@@ -403,6 +403,7 @@ experiment = create_experiment(parameters)
 results = run(experiment)
 save(results, "my_results.csv")
 ```
+
 This code is very good!
 
 Consider the class diagram we created:
@@ -474,7 +475,7 @@ def save(results, filename):
 
 These stubs are already important:
 they are the infrastructure of your software.
-With the stubs in place, we have **sketched** the functions of our project. 
+With the stubs in place, we have **sketched** the functions of our project.
 
 From here, we can make these stubs actually do something useful, by adding
 tests that test actual behavior. For example, `save` should actually create
@@ -517,9 +518,9 @@ Do:
 
 - Set a timer of 10 minutes
 - Individually, take those 10 minutes to:
-   - read the text above from start to finish.
-   - for yourself, answer the questions below
-   - for yourself, answer the discussion points below that
+    - read the text above from start to finish.
+    - for yourself, answer the questions below
+    - for yourself, answer the discussion points below that
 
 Answer:
 
@@ -551,19 +552,19 @@ Answer:
 Discuss:
 
 - At [conclusion](#conclusion), the dreamt code is given.
-   - Do you agree/disagree that the code is good?
-   - Can the code be improved? How?
+    - Do you agree/disagree that the code is good?
+    - Can the code be improved? How?
 - At [conclusion](#conclusion), the dreamt class diagram is given.
-   - Do you agree/disagree that the class diagram is good?
-   - Can the class diagram be improved? How?
+    - Do you agree/disagree that the class diagram is good?
+    - Can the class diagram be improved? How?
 - At [conclusion](#conclusion), the dreamt tests are given.
-   - Do you agree/disagree that the tests are good?
-   - Can the tests be improved? How?
-   - Should the tests be removed when the stubs have matured
+    - Do you agree/disagree that the tests are good?
+    - Can the tests be improved? How?
+    - Should the tests be removed when the stubs have matured
      into useful functions and are tested for real behavior?
 - At [conclusion](#conclusion), one example implementation is given.
-   - Do you agree/disagree that the example implementation is good?
-   - Can it be improved? How?
+    - Do you agree/disagree that the example implementation is good?
+    - Can it be improved? How?
 
 ### Exercise 2: dream-design your class
 
@@ -576,13 +577,13 @@ The current class design of the shared project can be found at `design/README.md
 
 In your group:
 
-- In isolation, for 10 minutes: 
-   - Dream the code how to use your class 
+- In isolation, for 10 minutes:
+    - Dream the code how to use your class
      (this first block of code of 4 lines at [conclusion](#conclusion)).
-   - Write down this code somewhere, e.g. `learners/[your_name]/[class_name].md`
+    - Write down this code somewhere, e.g. `learners/[your_name]/[class_name].md`
 - As a group, discuss each group members' result:
-   - Is the dreamt code good? 
-   - Can it be improved? 
+    - Is the dreamt code good?
+    - Can it be improved?
 
 !!! note "When the class owner can defend his/her ideas, it is good enough :-)"
 

@@ -64,7 +64,7 @@ assert not flip_coin()
 
 In pairs, develop a function using TDD using the `unittest` framework.
 
-The function is a function which returns the result of a dice throw: 
+The function is a function which returns the result of a dice throw:
 a random integer value from 1 to and including 6.
 
 !!! info "The function"

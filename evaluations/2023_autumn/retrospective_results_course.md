@@ -31,7 +31,7 @@ Please, no pointing fingers (I am sure Jon would want me to say that :-) )
 - (Still) too many lectures -- Zoom fatigue
 - Some parts of the pair programming seems not needed
 - Presentations
-- Balance between lectures and exercises. 
+- Balance between lectures and exercises.
 - Skipping over content throughout the course; it gets confusing
 - might be helfpul to do the git stuff all together
 - too often told to not point fingers :finger_gun:
@@ -42,7 +42,7 @@ Please, no pointing fingers (I am sure Jon would want me to say that :-) )
 
 ## What can we improve?
 
-- If exercises or examples are related with published papers 
+- If exercises or examples are related with published papers
 - Personally, I felt that the course was held at too low level. I was expecting more details and technical discussion, especially in the algorithm and data structure sections and I was familiar with most of the course content. In the future I would suggest that you should make it more clear what level of material to expect. +1 (but in the opposite direction - found a lot was very technical)
 - More focus on a project to try out all the things taught in the course. Design -> Tests -> Implementation -> Iterations
 - If there is an opportunity giving small group project and make presentation at the final day
@@ -56,10 +56,9 @@ Please, no pointing fingers (I am sure Jon would want me to say that :-) )
 - 🐱🐱🐱 more cats 🐱🐱🐱 +2
 - additional animals +3
 - Additional materials
-- more dogs :dog2: 
+- more dogs :dog2:
 - more on design of larger program projects
 - More examples of how these things are practiced in an academic setting
 
 - if possible, work only on example project (no planets,no bacteria)
-
 

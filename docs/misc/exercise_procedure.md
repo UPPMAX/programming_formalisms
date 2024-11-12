@@ -119,8 +119,8 @@
 - There is no silent room.
 - Ideally, all do the exercises on their own computer, yet derive at a shared answer
 - One should commonly share screens
-- Stuck? You can (1) wait for a teacher to come by, 
-  (2) click on the Zoom option 'Ask for help', or 
+- Stuck? You can (1) wait for a teacher to come by,
+  (2) click on the Zoom option 'Ask for help', or
   (3) go to the main room
 - When done with the exercises, go back to the main room
 - Learners that are done will be asked to try to help the remaining working learners,
@@ -172,7 +172,7 @@ flowchart TD
 
 ## Questions
 
-- You are in a breakout room with someone else. 
+- You are in a breakout room with someone else.
   You both do not know what to do.
   What went wrong?
 
@@ -186,8 +186,8 @@ flowchart TD
     next time.
 
 
-- You are in a breakout room with someone else. 
-  You need to install a piece of software, 
+- You are in a breakout room with someone else.
+  You need to install a piece of software,
   which takes a couple of minutes of time.
   Will you still have enough time for the exercises?
 

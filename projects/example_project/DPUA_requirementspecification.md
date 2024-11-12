@@ -9,7 +9,7 @@
 | R7             | Maximum Particle Limit  | The simulation should handle a maximum number of particles set in the runtime settings| - Test the simulation with varying numbers of particles up to the maximum limit and verify that it remains stable. |
 | R8             | Acceptable Framerate    | The simulation should maintain an acceptable framerate even at maximum number of particles| - Measure and verify that the framerate remains above a defined threshold with the maximum number of particles. |
 | R9             | Stop Simulation         | Ability to stop the simulation through interuption of the current main loop  | - Implement a user interface or mechanism to stop the simulation.  and check that the simulation ends when such mechanisms are invoked|
-| R10           | Restart simulation| A simulation should be able to restart without restarting the interface| Test that the implementation of the restart function can activate after the simulation has ended 
+| R10           | Restart simulation| A simulation should be able to restart without restarting the interface| Test that the implementation of the restart function can activate after the simulation has ended
 | R11            | Test-Driven Development | Develop the project using TDD | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code.
 
 ```mermaid

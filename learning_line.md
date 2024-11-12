@@ -8,25 +8,25 @@
 
 > Goal: students have done multiple TDD cycles individually
 
- * [x] Why is TDD important?
- * [x] What is TDD?
- * [x] What is the TDD cycle?
- * [x] How the git history of TDD cycle looks like
- * [x] Why TDD gives better software architecture
- * [x] Why helpful error messages are important
- * [x] Different types of tests: unit tests, etc.
- * [x] Test for documentation
- * [x] Why tests are valuable: they are what you discuss with your boss
- * [x] Encourage to get sloppier in the end: there will be unexpected
+* [x] Why is TDD important?
+* [x] What is TDD?
+* [x] What is the TDD cycle?
+* [x] How the git history of TDD cycle looks like
+* [x] Why TDD gives better software architecture
+* [x] Why helpful error messages are important
+* [x] Different types of tests: unit tests, etc.
+* [x] Test for documentation
+* [x] Why tests are valuable: they are what you discuss with your boss
+* [x] Encourage to get sloppier in the end: there will be unexpected
        errors :-)
- * [x] There is at least 1 easy function description that
+* [x] There is at least 1 easy function description that
        makes no sense when writing tests. Change the description
- * [x] Can miss code to be tested, will measure codecov in TDD2
- * [x] Can test for style, will lint codecov in TDD2
+* [x] Can miss code to be tested, will measure codecov in TDD2
+* [x] Can test for style, will lint codecov in TDD2
 
 Other activities:
 
- * Collect GitHub usernames
+* Collect GitHub usernames
 
 > Evaluation: git history on students's repositories
 
@@ -36,23 +36,23 @@ Other activities:
 
 > Goal: students have done multiple TDD cycles within a testing framework socially
 
- * [x] Add CI to TDD development
- * [x] Add build badge
- * [ ] Add linter CI script
- * [ ] Add Markdown spellcheck
- * [ ] Add broken links checker
- * [ ] Measure codecov
- * [ ] Do PR to demonstrate a bug
- * [ ] [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
- * [ ] Writing functions for tests
- * [ ] Testing frameworks
- * [ ] Beyoncé principle
- * [ ] Recursive tests
+* [x] Add CI to TDD development
+* [x] Add build badge
+* [ ] Add linter CI script
+* [ ] Add Markdown spellcheck
+* [ ] Add broken links checker
+* [ ] Measure codecov
+* [ ] Do PR to demonstrate a bug
+* [ ] [Hamcrest notation](https://en.wikipedia.org/wiki/Hamcrest)
+* [ ] Writing functions for tests
+* [ ] Testing frameworks
+* [ ] Beyoncé principle
+* [ ] Recursive tests
 
 Other activities:
 
- * Rotate pairs
- * Big project: shared repo with simple tests
+* Rotate pairs
+* Big project: shared repo with simple tests
 
 > Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
 
@@ -60,24 +60,24 @@ Other activities:
 
 > Goal: students have created multiple different types of algorithms
 
- * [ ] Design by contract
- * [ ] The role of `assert`, https://docs.python.org/3/reference/simple_stmts.html#assert
- * [ ] What is a good algorithm
- * [ ] DRY
- * [ ] Dimensions of a algorithm: speed, memory, disc, network
- * [ ] Type of algorithms overview
- * [ ] Iterative versus recursive
- * [ ] Exact or approximate
- * [ ] Deterministic or non-deterministic
- * [ ] Digital or quantum
- * [ ] Single-thread, multi-thread, distributed
- * [ ] Divide and conquer: qsort
- * [ ] Measuring speed to make rooftop plot
- * [ ] Caching results/LUTs
- * [ ] Do the bare minimum, e.g. `nth_element`
- * [ ] Using data structures to simplify algorithms, e.g. use an ordered set to sort
- * [ ] Big O
- * [ ] Data structure: `dict`, for NW parameters
+* [ ] Design by contract
+* [ ] The role of `assert`, <https://docs.python.org/3/reference/simple_stmts.html#assert>
+* [ ] What is a good algorithm
+* [ ] DRY
+* [ ] Dimensions of a algorithm: speed, memory, disc, network
+* [ ] Type of algorithms overview
+* [ ] Iterative versus recursive
+* [ ] Exact or approximate
+* [ ] Deterministic or non-deterministic
+* [ ] Digital or quantum
+* [ ] Single-thread, multi-thread, distributed
+* [ ] Divide and conquer: qsort
+* [ ] Measuring speed to make rooftop plot
+* [ ] Caching results/LUTs
+* [ ] Do the bare minimum, e.g. `nth_element`
+* [ ] Using data structures to simplify algorithms, e.g. use an ordered set to sort
+* [ ] Big O
+* [ ] Data structure: `dict`, for NW parameters
 
 > Evaluation: Code on multiple GitHub tested thoroughly by GHA, developed by groups
 
@@ -85,10 +85,10 @@ Other activities:
 
 > Goal: students have develop tested code together
 
- * [ ] Essential Python classes
- * [ ] YAGNI
- * [ ] Winnebago class
- * [ ] Design a simple class
+* [ ] Essential Python classes
+* [ ] YAGNI
+* [ ] Winnebago class
+* [ ] Design a simple class
 
 > Evaluation: Code on multiple GitHub tested by GHA, 100% codecov, developed by groups
 
@@ -98,17 +98,17 @@ Other activities:
 
 > Goal: students have attempted to optimize code together
 
- * [ ] Problem: code is slow. How to make it fast?
- * [ ] Use [code from here](https://johnlekberg.com/blog/2020-10-25-seq-align.html)
- * [ ] Profiling
- * [ ] Need to have small functions
- * [ ] Only useful in release mode on big problems!
- * [ ] Bottlenecks: CPU versus file IO versus web IO
- * [ ] Techniques: sorting, storing
- * [ ] Other language: only if able
- * [ ] Multiple threads: not yet
- * [ ] Myths: experienced devs know where the bottleneck is
- * [ ] Myths: for loops are always evil, always use assembly/C/C++/Rust
+* [ ] Problem: code is slow. How to make it fast?
+* [ ] Use [code from here](https://johnlekberg.com/blog/2020-10-25-seq-align.html)
+* [ ] Profiling
+* [ ] Need to have small functions
+* [ ] Only useful in release mode on big problems!
+* [ ] Bottlenecks: CPU versus file IO versus web IO
+* [ ] Techniques: sorting, storing
+* [ ] Other language: only if able
+* [ ] Multiple threads: not yet
+* [ ] Myths: experienced devs know where the bottleneck is
+* [ ] Myths: for loops are always evil, always use assembly/C/C++/Rust
 
 > Evaluation: Code on one GitHub tested and profiled by GHA, developed by all
 
@@ -116,12 +116,12 @@ Other activities:
 
 These are barely (sometimes purposefully vague!) suggestions:
 
- * if you do not need all, that is OK
- * if you know better, that is OK
+* if you do not need all, that is OK
+* if you know better, that is OK
 
 ### Easy
 
- * At day 'TDD'
+* At day 'TDD'
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -140,13 +140,13 @@ Name                          |Purpose
 `is_number(x)`                |Returns `True` if `x` is a number
 `is_string(x)`                |Returns `True` if `s` is a string
 
-  * roman_str_to_number
-  * is_perfect
-  * [calc_n_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
+* roman_str_to_number
+* is_perfect
+* [calc_n_ways_to_climb_stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ### Prime, easy
 
- * At day 'Testing', `medium_questions.py`
+* At day 'Testing', `medium_questions.py`
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -177,7 +177,7 @@ Name                          |Purpose
 
 ### Prime, advanced
 
- * At day 'Testing' and 'Optimisation'
+* At day 'Testing' and 'Optimisation'
 
 Name                          |Purpose
 ------------------------------|-----------------------------------------------------------------------
@@ -203,12 +203,12 @@ Name                          |Purpose
 
 ## Functions to be developed for The Medium Project
 
- * At day 'Algorithms' and 'Optimisation'
+* At day 'Algorithms' and 'Optimisation'
 
 These are barely (sometimes purposefully vague!) suggestions:
 
- * if you do not need all, that is OK
- * if you know better, that is OK
+* if you do not need all, that is OK
+* if you know better, that is OK
 
 Name                          |Purpose
 ------------------------------|--------------------------------------------------------
@@ -242,12 +242,12 @@ Name                          |Purpose
 
 ## Functions to be developed for The Big Project
 
- * At days 'Data structures' and 'Optimisation'
+* At days 'Data structures' and 'Optimisation'
 
 These are barely (sometimes purposefully vague!) suggestions:
 
- * if you do not need all, that is OK
- * if you know better, that is OK
+* if you do not need all, that is OK
+* if you know better, that is OK
 
 Name                          |Purpose
 ------------------------------|--------------------------------------------------------
@@ -276,14 +276,14 @@ Name                          |Purpose
 
 ## Projects overview
 
-Day|Description    |Group size  |Branch model                |CI |Code review 
+Day|Description    |Group size  |Branch model                |CI |Code review
 ---|---------------|------------|----------------------------|---|------------
-1  |Introduction   |            | `master`                   |No |No          
-2  |TDD            |1           | `master`                   |No |No          
-3  |Testing        |2           | `master`, `develop`        |Yes|No          
-4-1|Algorithms     |4           | `master`, `develop`, topic |Yes|No          
+1  |Introduction   |            | `master`                   |No |No
+2  |TDD            |1           | `master`                   |No |No
+3  |Testing        |2           | `master`, `develop`        |Yes|No
+4-1|Algorithms     |4           | `master`, `develop`, topic |Yes|No
 4-2|Data structures|all         | `master`, `develop`, topic |Yes|Pull Request
 5  |Optimisation   |all         | `master`, `develop`, topic |Yes|Pull Request
 
- * [programming_formalisms_project_2023](https://github.com/programming-formalisms/programming_formalisms_project_2023): GitHub repo of 2023
+* [programming_formalisms_project_2023](https://github.com/programming-formalisms/programming_formalisms_project_2023): GitHub repo of 2023
 

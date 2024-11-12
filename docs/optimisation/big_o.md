@@ -15,9 +15,9 @@ Q: When to optimize for speed?
 
 A:
 
--   [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
--   [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
--   [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+- [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+- [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
+- [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
 
 ## Problem
 
@@ -31,10 +31,10 @@ Q: How to improve the run-time speed of an algorithm?
 
 A (simplified):
 
-1.  Measure (hard to do @bartz2020benchmarking)
-2.  Think
-3.  Change code
-4.  Measure again
+1. Measure (hard to do @bartz2020benchmarking)
+2. Think
+3. Change code
+4. Measure again
 
 ## Problem
 
@@ -42,18 +42,18 @@ Q: How to improve the run-time speed of an algorithm?
 
 A (simplified):
 
-1.  Measure big-O
-2.  Measure speed profile
-3.  Think
-4.  Change code
-5.  Measure again
+1. Measure big-O
+2. Measure speed profile
+3. Think
+4. Change code
+5. Measure again
 
 ## Measurement 1: big-O
 
 How your (combination of) algorithms scales with more complex input.
 
--   Counting the words in a book: O(n)
--   Looking up a word in a dictionary: O(log2(n))
+- Counting the words in a book: O(n)
+- Looking up a word in a dictionary: O(log2(n))
 
 :warning: Do measure big-O in release mode!
 
@@ -81,14 +81,14 @@ How your (combination of) algorithms scales with more complex input.
 
 Big-O helps to:
 
--   find algorithm to profile
--   make predictions
+- find algorithm to profile
+- make predictions
 
 Agree yes/no
 
 ## Exercise 1 \[SKIP\]
 
--   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+- Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
 ```python
 def isprime(num):
@@ -113,7 +113,7 @@ def isprime(num):
 
 ## Exercise 1 [SKIP]
 
--   Measure big-O complexity of https://www.pythonpool.com/check-if-number-is-prime-in-python/
+- Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
 
 ```python
@@ -137,14 +137,14 @@ def Prime(no, i = 2):
 
 ## Exercise 2 [SKIP]
 
--   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
+- Measure big-O complexity of DNA alignment at <https://johnlekberg.com/blog/2020-10-25-seq-align.html>
 
-```         
+```
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTCGTACGTACGT
 ```
 
-```         
+```
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGT-CGTACGTACGT
 ```

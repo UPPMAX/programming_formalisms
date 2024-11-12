@@ -49,7 +49,7 @@
 
 - [HackMD](https://hackmd.io/yNiCUuPsReuu1m1FQbC_qA)
 
-## Schedule   
+## Schedule
 
 This is a general course schedule, that intends to give a general overview
 of the course's teaching.

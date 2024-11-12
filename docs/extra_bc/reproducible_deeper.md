@@ -1,13 +1,15 @@
 # More about reproducibility
 
 
-## Versioning systems 
+## Versioning systems
 
 ### Semantic (SemVer)
+
 Given a version number MAJOR.MINOR.PATCH, increment the:
-1.	MAJOR version when you make incompatible API changes
-2.	MINOR version when you add functionality in a backwards compatible manner
-3.	PATCH version when you make backwards compatible bug fixes
+
+1. MAJOR version when you make incompatible API changes
+2. MINOR version when you add functionality in a backwards compatible manner
+3. PATCH version when you make backwards compatible bug fixes
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
 ```{figure} img/SemVer.jpg
@@ -29,48 +31,52 @@ Additional labels for pre-release and build metadata are available as extensions
 ```
 
 ## Recording dependencies
--	**Reproducibility**: We can control our code but how can we control dependencies?
--	**10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
--	**Dependency hell**: Different codes on the same environment can have conflicting dependencies.
+
+- **Reproducibility**: We can control our code but how can we control dependencies?
+- **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
+- **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
 
 ### Conda, Anaconda, pip, Virtualenv, Pipenv, pyenv, Poetry, requirements.txt …
 
 **These tools try to solve the following problems:**
--	**Defining a specific set of dependencies**, possibly with well defined versions
--	**Installing those dependencies** mostly automatically
--	**Recording the versions** for all dependencies
--	**Isolated environments**
-   -	On your computer for projects so they can use different software.
-   -	Isolate environments on computers with many users (and allow self-installations)
-   -	Using **different Python/R versions** per project??
-   -    Provide tools and services to **share packages**
+
+- **Defining a specific set of dependencies**, possibly with well defined versions
+- **Installing those dependencies** mostly automatically
+- **Recording the versions** for all dependencies
+- **Isolated environments**
+- On your computer for projects so they can use different software.
+- Isolate environments on computers with many users (and allow self-installations)
+- Using **different Python/R versions** per project??
+- Provide tools and services to **share packages**
 
 ### The tools
+
 - Python
-  -	PyPI
+    - PyPI
     -pip freeze > requirements.txt
-  -	Conda: any language, also compiled code and libraries.
-    -	conda-forge is a GitHub organization containing repositories of conda recipes.
-	  - Export the requirements into requirements.txt with conda list --export > requirements.txt.
-	  - Export the full environment using conda env export > environment.yml, and compare the .yml file format to the .txt file format.
-  -	Virtualenv
-	- Pipenv
-	- Poetry
-	- Pyenv
-	- Mamba (faster conda)
--	R
-  - Packrat, jetpack, rsuite, renv, automagic, deplearning, devtools
--	C/C+
-	- CMake
-	- Conan
-	- Conda
--	Fortran
-  - Fortran package manager
+    - Conda: any language, also compiled code and libraries.
+        - conda-forge is a GitHub organization containing repositories of conda recipes.
+     	  - Export the requirements into requirements.txt with conda list --export > requirements.txt.
+     	  - Export the full environment using conda env export > environment.yml, and compare the .yml file format to the .txt file format.
+    - Virtualenv
+       	- Pipenv
+       	- Poetry
+       	- Pyenv
+       	- Mamba (faster conda)
+- R
+- Packrat, jetpack, rsuite, renv, automagic, deplearning, devtools
+- C/C+
+   	- CMake
+   	- Conan
+   	- Conda
+- Fortran
+- Fortran package manager
 - Julia
-  - Pkg.jl
-    -	designed around using isolated environments with independent sets of packages. Environments can either be local to a particular project or shared and selected by name.
+    - Pkg.jl
+        - designed around using isolated environments with independent sets of packages. Environments can either be local to a particular project or shared and selected by name.
 
 ### Course advertisement
+
 [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
 
 
@@ -88,7 +94,9 @@ Additional labels for pre-release and build metadata are available as extensions
 **4 ways (from CodeRefinery)**
 
 ### Graphical user interface (GUI)
+
 Imagine we have programmed a GUI with a nice interface with icons where you can select scripts and input files by clicking:
+
 1. Click on counting script
 1. Select book txt file
 1. Give a name for the dat file
@@ -107,8 +115,11 @@ Disclaimer: not all GUIs behave this way - there exist very good GUI solutions w
 reproducibility and automation.
 
 ---
+
 ### Solution 2: Manual steps
+
 It is not too much work for four files:
+
 ```{code-block} console
 ---
 emphasize-lines: 1-2, 13
@@ -132,8 +143,11 @@ $ python source/zipf_test.py processed_data/abyss.dat processed_data/isles.dat p
 This is **imperative style**: first do this, then to that, then do that, finally do ...
 
 ---
+
 ### Solution 3: Script
+
 Let’s express it more compactly with a shell script (Bash). Let’s call it script.sh:
+
 ```shell
 #!/usr/bin/env bash
 
@@ -146,10 +160,13 @@ done
 # this could be done using variables but nevermind
 python source/zipf_test.py processed_data/abyss.dat processed_data/isles.dat processed_data/last.dat processed_data/sierra.dat
 ```
+
 We can run it with:
+
 ```console
 bash script.sh
 ```
+
 ### Solution 4: Using [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html) or other workflow manager
 
 ```{figure} img/snakemake_dag.png
@@ -179,6 +196,7 @@ Discuss the pros and cons of these different approaches. Which are reproducible?
 <https://coderefinery.github.io/reproducible-research/workflow-management/>
 <https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/>
 ```
+
 ## Containers
 
 Popular container implementations:
@@ -199,9 +217,10 @@ They are to some extent interoperable:
 
 - Singularity Python can convert Dockerfiles to Singularity definition files
 
-https://coderefinery.github.io/reproducible-research/environments
+<https://coderefinery.github.io/reproducible-research/environments>
 
 ## Reproducible publications
+
 - Git (overleaf, authorea), hackmd, manuscripts.io, google docs
 - Scholarly output reproducible: rrtools, jupyter, binder, research compendia
 - Reprohack

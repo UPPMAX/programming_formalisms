@@ -2,8 +2,8 @@
 
 <!--- I remind you that these documents will be uploaded to the repository branch that will be created and that the NBIS training code of conduct should be followed. Be respectfull to eachother so you do not edit others posts. Hack md alows for simultaions editing. -->
 <!--- Reminder do not edit anothers post, please use a fresh paragraph when typing hack md is a simultations editing tool-->
-- Zoom: https://uu-se.zoom.us/j/66409709879
-Passcode: 583470 
+- Zoom: <https://uu-se.zoom.us/j/66409709879>
+Passcode: 583470
 - Material:
 
 
@@ -23,20 +23,19 @@ What are their elements?
 - x,y,z
 - [x,y,z]
 - Urs: x, y, z (struct)
-- 
+-
 - RJD : [x,y,z]
-- 
+-
 - bz: x, y, z
-- 
+-
 - ah: x, y, z
-
 
 
 ## A speed in two dimensions
 
 - Jesper: x,y; like a vector from origo (struct)
-- Pontus: x, y. ~~Class (x > 0, y > 0) ~~ 
-- RJD: direction, velocity, acceleration; 
+- Pontus: x, y. ~~Class (x > 0, y > 0) ~~
+- RJD: direction, velocity, acceleration;
 - direction, dx\/dt, dy\/dt
 - Urs: v (> 0, class)
 - Harald: v_x, v_y / angle, amplitude
@@ -45,10 +44,9 @@ What are their elements?
 - ah: x, y, speed/velocity
 -
 -
-- 
 -
 -
-
+-
 
 
 ## A circle
@@ -56,7 +54,7 @@ What are their elements?
 - RJD: radius (non-negative, class); coord of centre (structure)
 - Camille: coordinates of the center (reusing the first class of the exercise?), radius > 0 --> class
 - Jesper: radius (>0), position of center (x,y) (class)
-- Pontus: radius > 0. Class 
+- Pontus: radius > 0. Class
 - Urs: radius (> 0, class) + center coordinates x, y (struct)
 - Radius & center, class due to non-negative radius
 - Harald: center coordinate, radius (class) / list of coordinates (class?)
@@ -74,7 +72,7 @@ What are their elements?
 - length, center
 - Pontus: width, height > 0. Class
 - corner point (x,y), length, width
- 
+
 
 ## Class design?
 
@@ -82,11 +80,12 @@ Which classes does the project need?
 Together:
 
 - make an alphabetic list of structures in the shared document
- - add exactly 1 maintainer to each struct
+- add exactly 1 maintainer to each struct
 
 Put the list on the GitHub project repository
 
 Form:
+
 - Bacteria (Bacterium): Camille - it looks like there is a duplicate below, isn't it? +1
 - BactParam: bacterial characteristics - in case of different species e.g no of flagella, wall thickness, sugar preference (alex)
 - Bacterium (class): Pontus
@@ -116,7 +115,7 @@ Form:
 - CI is quite cool. HackMD is good for discussion
 - Testing proper git workflow +1
 - Practising with opening issues, assigning them, opening pull requests on GitHub, as well as dealing with merge conflicts
-- Interactive 
+- Interactive
 - enthusiastic teaching! +2
 - Nice practice time and pair coding
 - Going back to revise the pull requests. I learnt alot from that. +1

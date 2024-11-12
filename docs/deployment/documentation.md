@@ -6,15 +6,15 @@
 
 !!! info "Content"
 
-   - We will prepare for use of your code
-   - Update the README
-   - Update a Doc Index
-   - Revisit licence
-   - But also...
-     - some theory of packages
-     - some theory of workflows
-     - some theory of containers
-     - some info about Tutorials/Reference/HowTo guides
+- We will prepare for use of your code
+- Update the README
+- Update a Doc Index
+- Revisit licence
+- But also...
+    - some theory of packages
+    - some theory of workflows
+    - some theory of containers
+    - some info about Tutorials/Reference/HowTo guides
 
 ???- info "Learning objectives of 'Documentation'"
 
@@ -32,7 +32,7 @@
     - Theory 20
     - Discussions 10 min
 
-!!! info "TOC" 
+!!! info "TOC"
 
     - In-code documentation review
     - Documentation 

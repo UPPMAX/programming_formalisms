@@ -96,9 +96,9 @@ def get_hello_world_text():
 
 Q: How to test this function thoroughly:
 
--   Plot looks pretty
--   Colors are correct
--   Trend line is drawn
+- Plot looks pretty
+- Colors are correct
+- Trend line is drawn
 
 ```python
 def save_plot(filename, x_y_data):

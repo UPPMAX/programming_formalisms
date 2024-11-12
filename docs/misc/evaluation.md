@@ -22,7 +22,7 @@ The intention of the STF survey is to find out how participants have used the
 skills and knowledge they gained through participating in the NBIS course.
 The STF survey aims to provide data back to NBIS from course participants.
 The survey should preferably be given by the course leader to the participants
-on the last day of the course. 
+on the last day of the course.
 Some of the questions below are CORE Questions and needs to always be included
 in the survey. There are also room for ADDITIONAL questions that can be
 modified for respective course.
@@ -45,7 +45,7 @@ from the ELIXIR and ELIXIR-EXCELERATE courses. Additional questions are free to
 be modified to suit the course needs. The format for collecting the data is up
 to each training provider, although results should be exportable to Excel
 format. The core questions may be divided into two categories and will by and
-large be analysed separately - both categories are required to be captured: 
+large be analysed separately - both categories are required to be captured:
 
 - Demographic information
 - Quality metrics
@@ -84,7 +84,7 @@ your comments - which are not mandatory - are especially precious.
 We may share anonymised information with course presenters and developers as
 well as for wider quality/impact analyses.
 
-* Required
+- Required
 
 ### Section 2 - Demographic Information
 
@@ -93,6 +93,7 @@ well as for wider quality/impact analyses.
 ```
 
 1. Where did you see the course advertised? `advertised`
+
 - a. NBIS website
 - b. SciLifeLab website
 - c. Social Media (e.g. NBIS twitter)
@@ -108,6 +109,7 @@ well as for wider quality/impact analyses.
 ```
 
 2. What is your career stage? `career_stage`
+
 - a. PhD candidate
 - b. Postdoctoral researcher
 - c. Senior researcher/Principal investigator
@@ -126,6 +128,7 @@ well as for wider quality/impact analyses.
 ```
 
 4. Gender `gender`
+
 - a. Male
 - b. Female
 - c. Prefer not to say
@@ -140,6 +143,7 @@ in any way
 ```
 
 5. Have you used the tools/resource(s) covered in the course before? `have_used_resources_before`
+
 - i. Never - Unaware of them
 - ii. Never - Used other service
 - iii. Occasionally
@@ -151,17 +155,20 @@ as I feel question 7 gives me the similar info.
 ```
 
 6. Will you use the tools/resource(s) covered in the course again? `will_use_resources_future`
+
 - v. Yes
 - vi. No
 - vii. Maybe
 
 
 7. Would you recommend the course? `would_recommend_course`
+
 - viii. Yes
-- ix. No 
-- x. Maybe 
+- ix. No
+- x. Maybe
 
 8. What is your overall rating for the course*. `overall_satisfaction`
+
 - a. Poor (1)
 - b. Satisfactory (2)
 - c. Good (3)
@@ -176,6 +183,7 @@ Instead, I suggest to link to a long-term feedback form at this page
 ```
 
 9. A. May we contact you by email in the future for more feedback? `contact_future`
+
 - i. Yes
 - ii. No
 
@@ -203,6 +211,7 @@ Richel: I don't see how question 1 below would change my teaching
 ```
 
 3. The balance of theoretical and practical content was `theoretical_practical`
+
 - a. Too practical
 - b. About right
 - c. Too theoretical
@@ -212,6 +221,7 @@ Richel: I don't see how question 1 below would change my teaching
 ```
 
 4. How do you rate the pre-course information given? pre_course_information
+
 - Linear scale 1-5
 - 1. (Very unsatisfactory/Not useful)
 - 5. Very good/Very useful
@@ -230,6 +240,7 @@ Richel: I don't see how question 1 below would change my teaching
 ```
 
 7. PLEASE RATE EACH SESSION OF THE COURSE `satisfaction_per_session_YYYY_MM_DD_am/pm`
+
 - a. Did not attend
 - b. Poor (1)
 - c. Satisfactory (2)
@@ -282,6 +293,7 @@ These are suggested questions that may be of interest (not compulsory):
 ```
 
 1. What would be the preferred length of the course? `preferred_length`
+
 - Linear scale 1-5 Days
 
 ```text
@@ -289,6 +301,7 @@ These are suggested questions that may be of interest (not compulsory):
 ```
 
 2. How did you like the facilities/localities of the course (rooms and surroundings)? `course_localities`
+
 - Linear scale 1-5
 - 1. Not at all
 - 5. Very much
@@ -298,6 +311,7 @@ These are suggested questions that may be of interest (not compulsory):
 ```
 
 3. How did you like the lunch(es) and “fika(s)”? lunch_fikas
+
 - Linear scale 1-5
 - 1. Not at all
 - 5. Very much

@@ -44,7 +44,7 @@
 - It's about Distribution!
 
 !!! note
-   
+
     - Many projects/scripts start as something for personal use, but expands to be distributed.
     - Let's start in that end and be prepared.
     - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
@@ -56,11 +56,11 @@
     - Let people understand how to use your program/tool
 
 
-### To make sure...
+### To make sure
 
 - Start with empty environment
     - good to do this from beginning
-- Nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions 
+- Nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions
     - will your program require specific "system files"
     - are these typically not installed already?
     - in the best world test on Windows/Mac and Linux platforms
@@ -74,32 +74,33 @@
     - On a cluster?
 
 !!! Discussion "Discussion: One-time usage towards distributed package"
-    
+
     - Have others used your code?
     - Did you plan it from beginning?
     - Did you take actions somehow?
 
 
-
 ## Recording dependencies
--	**Reproducibility**: We can control our code but how can we control dependencies?
--	**10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
--	**Dependency hell**: Different codes on the same environment can have conflicting dependencies.
+
+- **Reproducibility**: We can control our code but how can we control dependencies?
+- **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
+- **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
 
 ### Conda, Anaconda, pip, Virtualenv, Pipenv, pyenv, Poetry, requirements.txt …
 
 **These _Python-related_ tools try to solve the following problems:**
 
--	**Defining a specific set of dependencies**, possibly with well-defined versions
--	**Installing those dependencies** mostly automatically
--	**Recording the versions** for all dependencies
--	**Isolated environments**
-    -	On your computer for projects so they can use different software.
-    -	Isolate environments on computers with many users (and allow self-installations)
-    -	Using **different Python/R versions** per project??
-    -    Provide tools and services to **share packages**
+- **Defining a specific set of dependencies**, possibly with well-defined versions
+- **Installing those dependencies** mostly automatically
+- **Recording the versions** for all dependencies
+- **Isolated environments**
+    - On your computer for projects so they can use different software.
+    - Isolate environments on computers with many users (and allow self-installations)
+    - Using **different Python/R versions** per project??
+    - Provide tools and services to **share packages**
 
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
+
 - Make Python packages of your code.
   
 - **Possibilities for other languages can be**
@@ -160,9 +161,9 @@
 
 - We can make other users aware of the dependencies for our Python project.
 - One can state those specifically as a list in a README
-- Or, we can make a ready file (in python) 
+- Or, we can make a ready file (in python)
 
-**Save your requirements as a file** 
+**Save your requirements as a file**
 
 - You may have developed your Python program with your existing python modules environment. You may have installed some new packages during the development but did not track it in a good way.
 - We need to identify what python packages a user (or you on another computer) will need, to make the program work!
@@ -174,19 +175,20 @@
     - you can do this outside the git repo to not pollute it
 
 ```console
-$ python -m venv PATH/Example 
+python -m venv PATH/Example 
 ```
 
 - This creates an empty virtual environment located in PATH/Example directory
 - Activate
 
 ```console
-$ source PATH/Example/bin/activate
+source PATH/Example/bin/activate
 ```
+
 - In Windows you may have to instead do:
 
 ```console
-$ source PATH/Example/Scripts/activate
+source PATH/Example/Scripts/activate
 ```
 
 
@@ -194,8 +196,8 @@ $ source PATH/Example/Scripts/activate
 - Do note the python version and you may inform users that you know that this version is known to work!
 
 ```
-$ which python        #should point to the python belonging to the virtual environment
-$ python -V            # note this version
+which python        #should point to the python belonging to the virtual environment
+python -V            # note this version
 ```
 
 - You can switch to the directory where you have your code and test to run it
@@ -205,7 +207,7 @@ $ python -V            # note this version
 - Check what is installed by:
   
 ```console
-$ pip freeze        #pip list works as well
+pip freeze        #pip list works as well
 ```
 
 - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
@@ -213,8 +215,9 @@ $ pip freeze        #pip list works as well
 - Save your requirements as a file that user can run to get the same dependencies as you
 
 ```console
-$ pip freeze > requirements.txt
+pip freeze > requirements.txt
 ```
+
 - Other users can then install the same packages with:
 
 ```console
@@ -254,7 +257,7 @@ deactivate # deactivate the venv!
     git merge venv
     git push
 
-### Exercise with project 
+### Exercise with project
 
 ???- "Discuss: what format is suitable for our course project?"
 
@@ -269,14 +272,13 @@ Compiled and generated files are not committed to version control. There are man
 - The number of changes to track per source code change can increase quickly.
 - When tracking generated files you could see differences in the code although you haven't touched the code.
 
-For this we use `.gitignore` files. 
+For this we use `.gitignore` files.
 
 - Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
 
 !!! example "From our project repo"
 
     programming_formalisms_project_summer_2024/blob/main/.gitignore>
-
 
 
 !!! info "Key points"
@@ -307,5 +309,4 @@ For this we use `.gitignore` files.
     - &#9744; Documentation
         - &#9745; in-code documentation
         - &#9744; finish documentation
-
 

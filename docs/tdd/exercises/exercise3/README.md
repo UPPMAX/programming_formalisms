@@ -2,8 +2,8 @@
 
 Exercises taken from the now removed website 'the TDD Community of Practice
 
-Let's pretend that you work with a word editor and there is need for a function which wraps lines which does 
-not fit the screen horizontally into several shorter lines. Your task is to use implement this function using TDD. 
+Let's pretend that you work with a word editor and there is need for a function which wraps lines which does
+not fit the screen horizontally into several shorter lines. Your task is to use implement this function using TDD.
 
 In the `word_wrapper.py` file there is a stub implementation `wrap_words(s, row_length)` you can call in your first
 unit test.

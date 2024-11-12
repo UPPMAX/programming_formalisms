@@ -19,8 +19,8 @@ How do I write functions [1] that are:
 
 References;
 
-- [1] For now, we use `algorithm == function`, 
-  as the definition of an algorithm is 
+- [1] For now, we use `algorithm == function`,
+  as the definition of an algorithm is
   'a step-by-step procedure for solving a problem or accomplishing some end' [dictionary definition]
 - [2] pick any vague definition
 
@@ -31,16 +31,14 @@ A good function ...
 . . .
 
 
-
-
--   Sometimes: is documented [Ram, 2013] [tidyverse style guideline of functions]
--   Is small [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
--   Has a good (:innocent:) name [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20 @hitchhikers_guide_to_python_general_concepts
--   Is easy to use correctly and hard to use incorrectly @meyers2005effective @cpp_core_guidelines_functions @pep_20
--   Does one thing correctly [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
--   Is tested @martin2011clean @cpp_core_guidelines_functions [tidyverse style guideline of functions]
--   Raises helpful exceptions [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20
--   Fast iff needed @cpp_core_guidelines_functions
+- Sometimes: is documented [Ram, 2013] [tidyverse style guideline of functions]
+- Is small [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
+- Has a good (:innocent:) name [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20 @hitchhikers_guide_to_python_general_concepts
+- Is easy to use correctly and hard to use incorrectly @meyers2005effective @cpp_core_guidelines_functions @pep_20
+- Does one thing correctly [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
+- Is tested @martin2011clean @cpp_core_guidelines_functions [tidyverse style guideline of functions]
+- Raises helpful exceptions [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20
+- Fast iff needed @cpp_core_guidelines_functions
 
 ## Design by contract
 
@@ -52,41 +50,41 @@ A good function ...
 
 === "Python"
 
-	```python
-	def sort_1(x):
-	  """Sort list `x` in-place. 
-	  
-	  Returns nothing
-	  """
+ ```python
+ def sort_1(x):
+   """Sort list `x` in-place. 
+   
+   Returns nothing
+   """
 
-	def sort_2(x):
-	  """Sort list `x`.
-	  
-	  Returns the sorted list.
-	  """
+ def sort_2(x):
+   """Sort list `x`.
+   
+   Returns the sorted list.
+   """
 
-	assert sort_1.__doc__
-	assert sort_2.__doc__
+ assert sort_1.__doc__
+ assert sort_2.__doc__
     ```
 
 === "R"
 
-	```r
+ ```r
     #' Sort list `x` in-place.
     #' @param x a list
     #' @return nothing
-	sort_1 <- function(x) {
+ sort_1 <- function(x) {
       # ...
     }
-	  
+   
     #' Sort list `x`
     #' @param x a list
     #' @return the sorted list
-	sort_2 <- function(x) {
+ sort_2 <- function(x) {
       # ...
-	}
+ }
 
-	# Check if functions have documentation here
+ # Check if functions have documentation here
     ```
 
 
@@ -100,14 +98,14 @@ Mandatory in some contexts [Ram, 2013] [tidyverse style guideline of functions]
 
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
--   starts with a verb [tidyverse style guideline of functions]
--   readable @pep_20
--   intention-revealing [Martin, 2009]
--   pronounceable [Martin, 2009]
--   searchable [Martin, 2009]
--   not cute [Martin, 2009]
--   no pun [Martin, 2009]
--   carefully @cpp_core_guidelines_functions
+- starts with a verb [tidyverse style guideline of functions]
+- readable @pep_20
+- intention-revealing [Martin, 2009]
+- pronounceable [Martin, 2009]
+- searchable [Martin, 2009]
+- not cute [Martin, 2009]
+- no pun [Martin, 2009]
+- carefully @cpp_core_guidelines_functions
 
 ## Examples of bad function names?
 
@@ -115,19 +113,19 @@ Could you give examples of bad function names?
 
 . . .
 
--   `calculate`: calculates what?
+- `calculate`: calculates what?
 
 . . .
 
--   `calc_bfgt`: calculates what??
+- `calc_bfgt`: calculates what??
 
 . . .
 
--   `prime`: a prime number is a data type. What does this function do?
+- `prime`: a prime number is a data type. What does this function do?
 
 . . .
 
--   `needleman_wunch`: this is a technique to get a DNA alignment.
+- `needleman_wunch`: this is a technique to get a DNA alignment.
 
 . . .
 
@@ -135,7 +133,7 @@ Could you give examples of bad function names?
 
 Imagine two DNA sequences:
 
-```         
+```
 AAACCCGGGTTT
 ATACCCGGGTAT
  *        x
@@ -145,17 +143,17 @@ How would you call the algorithm that detects the location of the `*` (but not o
 
 ## Solutions 1
 
--   `get_first_mismatch_pos`, `get_first_mismatch_locus`, `find_first_mismatch_pos`, `find_first_mismatch_locus`
--   you answer that ...
-    1.  starts with a verb
-    2.  is as English as possible
-    3.  only uses common abbreviations
+- `get_first_mismatch_pos`, `get_first_mismatch_locus`, `find_first_mismatch_pos`, `find_first_mismatch_locus`
+- you answer that ...
+    1. starts with a verb
+    2. is as English as possible
+    3. only uses common abbreviations
 
 ## Example 2
 
 Imagine two DNA sequences:
 
-```         
+```
 AAACCCGGGTTT
 ATACCCGGGTAT
  *        *
@@ -165,40 +163,40 @@ How would you call the algorithm that detects all the locations of the `*`s?
 
 ## Solutions 2
 
--   `find_mismatch_positions`, `find_mismatch_loci`, `get_mismatch_positions`, `get_mismatch_loci`
--   you answer that ...
-    1.  starts with a verb
-    2.  is as English as possible
-    3.  only uses common abbreviations
+- `find_mismatch_positions`, `find_mismatch_loci`, `get_mismatch_positions`, `get_mismatch_loci`
+- you answer that ...
+    1. starts with a verb
+    2. is as English as possible
+    3. only uses common abbreviations
 
 ## Example 3
 
 Imagine two DNA sequences:
 
-```         
+```
 AAACCCGGGTTT
 ATACCGGGTTT
 ```
 
 How would you call the algorithm that makes the sequences have as much similarities as possible, by possibly inserting a `-`
 
-```         
+```
 AAACCCGGGTTT
 ATACC-GGGTTT
 ```
 
 ## Solutions 3
 
--   `align_seqs`, `align_sequences`, `align_dna_sequences`, `align_dna_seqs`, `calc_aligned_seqs`, `get_aligned_seqs`
--   you answer that ...
-    1.  starts with a verb
-    2.  is as English as possible
-    3.  only uses common abbreviations
+- `align_seqs`, `align_sequences`, `align_dna_sequences`, `align_dna_seqs`, `calc_aligned_seqs`, `get_aligned_seqs`
+- you answer that ...
+    1. starts with a verb
+    2. is as English as possible
+    3. only uses common abbreviations
 
 ## A good function has a clear name
 
--   [F.1: "Package" meaningful operations as carefully named functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-package)
--   [Use verbs, strive for names that are concise and meaningful](https://style.tidyverse.org/functions.html#naming)
+- [F.1: "Package" meaningful operations as carefully named functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-package)
+- [Use verbs, strive for names that are concise and meaningful](https://style.tidyverse.org/functions.html#naming)
 
 ## A function has a clear interface 1/3
 
@@ -246,7 +244,7 @@ def is_prime(no, i = 2):
 
 . . .
 
--   Clumsy interface:
+- Clumsy interface:
 
 ```python
 assert is_prime(2)
@@ -312,30 +310,30 @@ You rarely need `and` in a function name. Possible exception: mean and standard 
 
 A good function:
 
--   **Has a clear name**
--   **Does one thing correctly**
--   Is tested
--   Gives clear error messages
--   Is documented
--   Fast iff needed
+- **Has a clear name**
+- **Does one thing correctly**
+- Is tested
+- Gives clear error messages
+- Is documented
+- Fast iff needed
 
 ## A good function is tested
 
--   [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical): A function that performs a single operation is simpler to understand, test, and reuse.
--   [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf): Testability: Source code should be written to facilitate testability
+- [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical): A function that performs a single operation is simpler to understand, test, and reuse.
+- [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf): Testability: Source code should be written to facilitate testability
 
 ## Example 1
 
 Imagine two DNA sequences:
 
-```         
+```
 AAACCCGGGTTT
 ATACCGGGTTT
 ```
 
 The function `align_dna_seqs` aligns two DNA sequences to this:
 
-```         
+```
 AAACCCGGGTTT
 ATACC-GGGTTT
 ```
@@ -347,67 +345,67 @@ Which tests would you write?
 
 === "Python"
 
-	```python
-	assert align_dna_seqs(
-	  "AAACCCGGGTTT", 
-	  "ATACCCGGGTAT"
-	  ) == { 
-		"AAACCCGGGTTT", 
-		"ATACC-GGGTTT"
-	  }
-	assert align_dna_seqs( 
-	  { 
-		"AAACCCGGGTTT", 
-		"ATACCCGGGTAT" 
-	  } 
-	) == 
-	  { 
-		"AAACCCGGGTTT", 
-		"ATACC-GGGTTT"
-	  }
-	```
+ ```python
+ assert align_dna_seqs(
+   "AAACCCGGGTTT", 
+   "ATACCCGGGTAT"
+   ) == { 
+  "AAACCCGGGTTT", 
+  "ATACC-GGGTTT"
+   }
+ assert align_dna_seqs( 
+   { 
+  "AAACCCGGGTTT", 
+  "ATACCCGGGTAT" 
+   } 
+ ) == 
+   { 
+  "AAACCCGGGTTT", 
+  "ATACC-GGGTTT"
+   }
+ ```
 
 === "R"
 
-	```r
-	expect_equal(
-	  align_dna_seqs(
-		"AAACCCGGGTTT", 
-		"ATACCCGGGTAT"
-	  ), 
-	  c(
-		"AAACCCGGGTTT", 
-		"ATACC-GGGTTT"
-	  )
-	)
-	expect_equal(
-	  align_dna_seqs(
-		c(
-		  "AAACCCGGGTTT", 
-		  "ATACCCGGGTAT"
-		)
-	  ),
-	  c(
-		"AAACCCGGGTTT", 
-		"ATACC-GGGTTT"
-	  )
-	)
-	```
+ ```r
+ expect_equal(
+   align_dna_seqs(
+  "AAACCCGGGTTT", 
+  "ATACCCGGGTAT"
+   ), 
+   c(
+  "AAACCCGGGTTT", 
+  "ATACC-GGGTTT"
+   )
+ )
+ expect_equal(
+   align_dna_seqs(
+  c(
+    "AAACCCGGGTTT", 
+    "ATACCCGGGTAT"
+  )
+   ),
+   c(
+  "AAACCCGGGTTT", 
+  "ATACC-GGGTTT"
+   )
+ )
+ ```
 
 ## What is a good function?
 
 A good function:
 
--   **Has a clear name**
--   **Does one thing correctly**
--   **Is tested**
--   Gives clear error messages
--   Is documented
--   Fast iff needed
+- **Has a clear name**
+- **Does one thing correctly**
+- **Is tested**
+- Gives clear error messages
+- Is documented
+- Fast iff needed
 
 ## References
 
-- [dictionary definition] https://www.merriam-webster.com/dictionary/algorithm
+- [dictionary definition] <https://www.merriam-webster.com/dictionary/algorithm>
 - [Martin, 2009] Martin, Robert C. Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
 - [Ram, 2013] Ram, K. "rOpenSci-open tools for open science." AGU Fall Meeting Abstracts. Vol. 2013. 2013.
-- [tidyverse style guideline of functions] https://style.tidyverse.org/functions.html
+- [tidyverse style guideline of functions] <https://style.tidyverse.org/functions.html>

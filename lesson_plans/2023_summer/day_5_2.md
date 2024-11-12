@@ -3,15 +3,15 @@
 * 13:00-16:00
 * Richel
 * Goals:
-  * Theory on optimization: big-O, run-time profile
-  * Students have an idea what not to optimize
-  * Students have an idea what not to optimize
-  * Form: group size: Inf, use topic branches, use CI scripts, use code review
+    * Theory on optimization: big-O, run-time profile
+    * Students have an idea what not to optimize
+    * Students have an idea what not to optimize
+    * Form: group size: Inf, use topic branches, use CI scripts, use code review
 
 ## 13:00-13:45 RB
 
 * Goals:
-  * Measure Big-O
+    * Measure Big-O
 
 When |What
 -----|-------------------------
@@ -22,7 +22,7 @@ When |What
 ## 14:00-14:45 RB
 
 * Goals:
-  * Obtain a speed profile
+    * Obtain a speed profile
 
 When |What
 -----|-------------------------
@@ -33,8 +33,8 @@ When |What
 ## 15:00-15:45 RB
 
 * Goals:
-  * Recap
-  * Reflect
+    * Recap
+    * Reflect
 
 When       |What
 -----------|-------------------------

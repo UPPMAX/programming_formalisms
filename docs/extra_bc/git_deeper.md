@@ -14,7 +14,7 @@ This material is based on or inspired by the material from [NBIS](https://nbis-r
 - We will start with our own repository.
 - branching and merging (locally)
 - and a brief introduction to pushing to remotes.
-- In the separate collaborative Git lesson, we teach more use of remote repositories and good collaborative workflows. 
+- In the separate collaborative Git lesson, we teach more use of remote repositories and good collaborative workflows.
 
 
 ```{prereq}
@@ -28,7 +28,6 @@ This material is based on or inspired by the material from [NBIS](https://nbis-r
       them but Nano or Notepad on Windows are sufficient.
       
 ```
-
 
 
 ### What is Git, and what is a Git repository?
@@ -48,11 +47,11 @@ This material is based on or inspired by the material from [NBIS](https://nbis-r
 - Example (we don't need to type yet):
 
   ```console
-  $ git add somefile.txt
-  $ git commit
+  git add somefile.txt
+  git commit
 
-  $ git add file.txt anotherfile.txt
-  $ git commit
+  git add file.txt anotherfile.txt
+  git commit
   ```
 
 - We first focus (`git add`, we "stage" the change), then shoot (`git commit`):
@@ -75,29 +74,32 @@ If you haven't already configured Git, please follow the instructions in the
 [installation instructions](https://coderefinery.github.io/installation/shell-and-git/#configuration).
 
 ```console
-$ git config --global user.name "Your Name"
-$ git config --global user.email yourname@example.com
-$ git config --global core.editor nano
+git config --global user.name "Your Name"
+git config --global user.email yourname@example.com
+git config --global core.editor nano
 ```
 
 Verify with:
+
 ```console
-$ git config --list
+git config --list
 ```
 
 
 ## Type-along
 
-### Create repository 
+### Create repository
+
 We will create a repository (repo) called `Diagrams`.
 
 Be sure you are in a directory like "Programming_Formalisms" or similar (to have track of your work)
 
 One of the basic principles of Git is that it is **easy to create repositories**:
+
 ```console
-$ mkdir Diagrams
-$ cd Diagrams
-$ git init
+mkdir Diagrams
+cd Diagrams
+git init
 ```
 
 That's it! With `git init` have now created an empty Git repository.
@@ -242,7 +244,7 @@ nothing to commit, working tree clean
 What does the `-m` flag mean? Let us check the help page for that command:
 
 ```console
-$ git help commit
+git help commit
 ```
 
 You should see a very long help page as the tool is very versatile (press q to quit).
@@ -253,6 +255,7 @@ online threads may be confusing.
 Note that help pages also work when you don't have a network connection!
 
 #### Exercise-optional
+
 ``````{challenge} Make changes (10 min)
   Add the follwing lines before the line "@enduml" to `class.puml`:
   
@@ -349,6 +352,7 @@ Date:   Fri Oct 21 23:37:31 2022 +0200
 Using `git log --oneline` we understand that the first line of the commit message is very important.
 
 Good example:
+
 ```text
 increase threshold alpha to 2.0
 
@@ -481,20 +485,20 @@ Isolated tracks of work.
 There are two typical workflows:
 
 ```console
-$ git switch -b new-feature  # create branch, switch to it
-$ git commit                   # work, work, work, ..., and test
-$ git switch master          # once feature is ready, switch to master
-$ git merge new-feature        # merge work to master
-$ git branch -d new-feature    # remove branch
+git switch -b new-feature  # create branch, switch to it
+git commit                   # work, work, work, ..., and test
+git switch master          # once feature is ready, switch to master
+git merge new-feature        # merge work to master
+git branch -d new-feature    # remove branch
 ```
 
 Sometimes you have a wild idea which does not work.
 Or you want some throw-away branch for debugging:
 
 ```console
-$ git switch -b wild-idea    # create branch, switch to it, work, work, work ...
-$ git switch master          # realize it was a bad idea, back to master
-$ git branch -D wild-idea      # it is gone, off to a new idea
+git switch -b wild-idea    # create branch, switch to it, work, work, work ...
+git switch master          # realize it was a bad idea, back to master
+git branch -D wild-idea      # it is gone, off to a new idea
 ```
 
 No problem: we worked on a branch, branch is deleted, `master` is clean.
@@ -512,10 +516,12 @@ No problem: we worked on a branch, branch is deleted, `master` is clean.
 ```
 
 You might use remotes to:
+
 - Back up your own work.
 - To collaborate with other people.
 
 There are different types of remotes:
+
 - If you have a server you can ssh to, you can use that as a remote.
 - [GitHub](https://github.com) is a popular, closed-source commercial site.
 - [GitLab](https://about.gitlab.com) is a popular, open-core
@@ -530,6 +536,7 @@ There are different types of remotes:
   cross-university sharing.
 
 ### Type-along: Create a new repository on GitHub
+
 For the rest of this page, we will make a new repository for our
 guacamole recipe on GitHub ({ref}`here <index>` we motivate why we demonstrate this
 with GitHub),
@@ -557,12 +564,14 @@ Or if you see your profile page, there is a "+" menu (top right corner).
 On this page choose a project name.
 For the sake of this exercise **do not select**
 "Initialize this repository with a README" (what will happen if you do?):
+
 ```{figure} img/New_repo_formalisms.png
 :width: 100%
 :class: with-border
 ```
 
 Once you click the green "Create repository", you will see a page similar to:
+
 ```{figure} img/push_existing.png
 :width: 100%
 :class: with-border
@@ -571,7 +580,7 @@ Once you click the green "Create repository", you will see a page similar to:
 **Don't do anything yet**
 
 What this means is that we have now an empty project with either an HTTPS or an
-SSH address: click on the HTTPS and SSH buttons to see what happens. 
+SSH address: click on the HTTPS and SSH buttons to see what happens.
 
 ---
 
@@ -591,12 +600,13 @@ We now want to try the second option that GitHub suggests:
   need to replace the "user" part and possibly also the repository name**):
 
   ```console
-  $ git remote add origin git@github.com:<user>/Formalisms.git
-  $ git branch -M main
-  $ git push -u origin main
+  git remote add origin git@github.com:<user>/Formalisms.git
+  git branch -M main
+  git push -u origin main
   ```
 
 The meaning of the above lines:
+
 - Add a remote reference with the name "origin"
 - Rename current branch to "main"
 - Push branch "main" to "origin"
@@ -653,20 +663,20 @@ What just happened? **Think of publishing a repository as uploading the `.git` p
 
 ## Cloning a repository
 
-Now other people can clone this repository and contribute changes. 
+Now other people can clone this repository and contribute changes.
 
 At this point only a brief demo - if you copy the SSH or HTTPS address, you can clone repositories like this
 (again adapt the "namespace/repository.git" part):
 
 ```console
-$ git clone git@github.com:<user>/project.git
+git clone git@github.com:<user>/project.git
 ```
 
 This creates a directory called "project" unless it already exists. You can also specify the target directory
 on your computer:
 
 ```console
-$ git clone git@github.com:<user>/project.git myproject
+git clone git@github.com:<user>/project.git myproject
 ```
 
 What just happened? **Think of cloning as downloading the `.git` part to your
@@ -678,23 +688,24 @@ automatically checked out.
 - Local branches often track remote branches.
 - A remote serves as a full backup of your work.
 ```
+
 ## Working on GitHub
 
 - You can do basically the same work at GitHub as in your local git repo
 - The graphical view makes it easier to work with in everyday editing work at least.
-  - Depends on your own preferences of course.
+    - Depends on your own preferences of course.
 - Here your commit each file at a time with the "commit button". No staging that is.
 - GitHub Actions are workflows defined by you, like:
-  - for automatic testing after each commit (Used on Thursday)
-  - for GitHub Pages, briefly covered in last session today.
+    - for automatic testing after each commit (Used on Thursday)
+    - for GitHub Pages, briefly covered in last session today.
 
 ## Summary
 
 Now we know how to save snapshots:
 
 ```console
-$ git add <file(s)>
-$ git commit
+git add <file(s)>
+git commit
 ```
 
 And this is what we do as we program.
@@ -703,21 +714,19 @@ Every state is then saved and later we will learn how to go back to these "check
 and how to undo things.
 
 ```console
-$ git init    # initialize new repository
-$ git add     # add files or stage file(s)
-$ git commit  # commit staged file(s)
-$ git status  # see what is going on
-$ git log     # see history
-$ git diff    # show unstaged/uncommitted modifications
-$ git show    # show the change for a specific commit
-$ git mv      # move tracked files
-$ git rm      # remove tracked files
+git init    # initialize new repository
+git add     # add files or stage file(s)
+git commit  # commit staged file(s)
+git status  # see what is going on
+git log     # see history
+git diff    # show unstaged/uncommitted modifications
+git show    # show the change for a specific commit
+git mv      # move tracked files
+git rm      # remove tracked files
 ```
 
 Git is not ideal for large binary files
 (for this consider [http://git-annex.branchable.com](http://git-annex.branchable.com)).
-
-
 
 
 ```{Keypoints}

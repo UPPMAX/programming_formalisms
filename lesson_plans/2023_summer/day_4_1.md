@@ -3,14 +3,14 @@
 * 9:00-12:00
 * Richel
 * Goals:
-  * Theory: good algorithms
-  * Students develop together on big project
-  * Form: use feature branches, use CI scripts, use code review
+    * Theory: good algorithms
+    * Students develop together on big project
+    * Form: use feature branches, use CI scripts, use code review
 
 ## 9:00-9:45 RB
 
 * Goals:
-  * Theory: algorithms
+    * Theory: algorithms
 
 When|What
 ----|-------------------------
@@ -21,7 +21,7 @@ When|What
 ## 10:00-10:45 RB
 
 * Goals:
-  * Start big project
+    * Start big project
 
 When |What
 -----|-------------------------
@@ -32,7 +32,7 @@ When |What
 ## 11:00-11:45 RB
 
 * Goals:
-  * Theory: Combining functions, `is_prime`, `is_prime_recursion`, `is_prime_for_loop`, `is_prime_special`
+    * Theory: Combining functions, `is_prime`, `is_prime_recursion`, `is_prime_for_loop`, `is_prime_special`
 
 When       |What
 -----------|-------------------------

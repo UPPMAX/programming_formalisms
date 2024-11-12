@@ -1,6 +1,6 @@
 # Extra reading
 
-!!! info 
+!!! info
 
     - Here Björn has collected extra material from earlier instances of the courses.
     - That means that the material is located in another GitHub repo with another look.

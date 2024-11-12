@@ -410,12 +410,12 @@ rectangle TDD {
 In this diagram, a relatively detailed representation of the TDD process has been rendered:
 
 * Write Test: The developer goes through three sub-steps:
-  * Analyze Requirements: The developer analyzes the requirements or user stories to understand the desired behavior.
-  * Design Test: The developer designs the test case(s) based on the requirements, ensuring complete coverage.
-  * Implement Test: The developer writes the test code without implementing the corresponding functionality in the system.
+    * Analyze Requirements: The developer analyzes the requirements or user stories to understand the desired behavior.
+    * Design Test: The developer designs the test case(s) based on the requirements, ensuring complete coverage.
+    * Implement Test: The developer writes the test code without implementing the corresponding functionality in the system.
 * Run Test: The developer proceeds with two sub-steps:
-  * Execute Test: The developer runs the test case(s) against the system or the code being developed.
-  * Evaluate Test Results: The developer evaluates the test results to determine if the test case(s) passed or failed.
+    * Execute Test: The developer runs the test case(s) against the system or the code being developed.
+    * Evaluate Test Results: The developer evaluates the test results to determine if the test case(s) passed or failed.
 
 Test Failed or Test Passed: Based on the evaluation, the test can either fail or pass.
 If the test failed, the developer goes back to "Write Test" to create a new or modified test case that will capture the desired behavior. This iteration ensures that the system is designed to pass the new test case.
@@ -707,10 +707,10 @@ Unified modeling language is defined and managed by the OMG(object management gr
 
   Package diagram, a kind of structural diagram, shows the arrangement and organization of model elements in the project. Package diagram can show both structure and dependencies between sub-systems or modules, showing different views of a system, for example, as multi-layered or multi-tiered application
   The purpose of these diagrams are to:
-  * Simplify complex class diagrams
-  * collect and organise diagrams and documents and key deliverables into a collection.
-  * A package is a collection of logically related UML elements
-  * Packages are depicted as file folders.
+    * Simplify complex class diagrams
+    * collect and organise diagrams and documents and key deliverables into a collection.
+    * A package is a collection of logically related UML elements
+    * Packages are depicted as file folders.
 
 * **Note**  − If the above descriptions and usages are observed carefully then it is very clear that all the diagrams have some relationship with one another. Component diagrams are dependent upon the classes, interfaces, etc. which are part of class/object diagram. Again, the deployment diagram is dependent upon the components, which are used to make component diagrams.
 
@@ -733,19 +733,19 @@ Activity diagrams are also excellent to describe Algorithms, in conjunction with
 Statechart diagram is used to represent the event driven state change of a system. It basically describes the state change of a class, interface, etc.
 State chart diagram is used to visualize the reaction of a system by internal/external factors
 * *Interaction diagrams*
-  * Sequence diagram
+    * Sequence diagram
      A sequence diagram is an interaction diagram. From the name, it is clear that the diagram deals with some sequences, which are the sequence of messages flowing from one object to another.
       Interaction among the components of a system is very important from implementation and execution perspective. Sequence diagram is used to visualize the sequence of calls in a system to perform a specific functionality.
-  * Communication diagram or collaboration diagram
+    * Communication diagram or collaboration diagram
     It represents the structural organization of a system and the messages sent/received. Structural organization consists of objects and links.
     The purpose of collaboration diagram is similar to sequence diagram. However, the specific purpose of collaboration diagram is to visualize the organization of objects and their interaction.
     <image src="./img/Communication-Diagram-Financial-Analysis.webp"><span style="font-size:10px"> [A MVC model describing a financial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
-  * **Note** Plant UML can not do Communication diagram/collaboration diagrams
+    * **Note** Plant UML can not do Communication diagram/collaboration diagrams
 
-  * Interaction overview diagram
+    * Interaction overview diagram
      UML Interaction Overview Diagrams provide a high level of abstraction an interaction model. It is a variant of the Activity Diagram where the nodes are the interactions or interaction occurrences.
 
-  * Timing Diagram
+    * Timing Diagram
      Timing diagrams are UML interaction diagrams used to show interactions when a primary purpose of the diagram is to reason about time.
 
    ```plantuml

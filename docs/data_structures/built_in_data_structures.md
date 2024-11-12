@@ -12,11 +12,11 @@ Are there classes that can help me solve problems more elegantly?
 
 ## Python classes
 
--   `list`: heterogeneous container
--   `tuple`: immutable `list`
--   `set`: sets
--   `dict`: dictionary
--   Regular expressions: text patterns
+- `list`: heterogeneous container
+- `tuple`: immutable `list`
+- `set`: sets
+- `dict`: dictionary
+- Regular expressions: text patterns
 
 From [Python 'Data Structures' documentation](https://docs.python.org/3/tutorial/datastructures.html)
 
@@ -31,7 +31,7 @@ assert 3 in s
 assert list(s) == [1, 3, 4, 5]
 ```
 
--   No need to check for elements existing twice
+- No need to check for elements existing twice
 
 ## `dict`
 
@@ -43,8 +43,8 @@ periodic_table[2] = "helium"
 assert periodic_table[2] == "helium"
 ```
 
--   Commonly uses as a look-up table
--   A look-up table can store the results of earlier calculations
+- Commonly uses as a look-up table
+- A look-up table can store the results of earlier calculations
 
 ## Regular expressions
 
@@ -61,5 +61,6 @@ assert dna_regex.match("TGCA")
 assert dna_regex.match("TGCAAAAAA")
 assert not dna_regex.match("nonsense")
 ```
--   <https://docs.python.org/3/library/re.html>
+
+- <https://docs.python.org/3/library/re.html>
 

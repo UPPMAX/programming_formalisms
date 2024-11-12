@@ -39,33 +39,33 @@
 
     - A test project: Type-along on starting a project
         - REASON: have tested this step
-	- test project (Planet)
-	    - code file
+ - test project (Planet)
+     - code file
             - git init
             - add and commit
-	    	- you can also start a directory and do git init 
+      - you can also start a directory and do git init 
     - Intro documentation 
         - order your files
-	   - README
+    - README
            - license
-	   - git diff
+    - git diff
     - Start with the steps related to the project (Type-along)
         - Git locally with config and cloning
-	- mkdir user
+ - mkdir user
         - work in user/
         
 
     
 
 !!! note "Think about:"
-    
+
     - structure of the files and folders for the project
     - documentation already
 
 
 !!! note
-   
-   - Many projects/scripts start as something for personal use, but expands to be distributed.
-   - Let's start in that end and be prepared.
-   - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+
+- Many projects/scripts start as something for personal use, but expands to be distributed.
+- Let's start in that end and be prepared.
+- The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 

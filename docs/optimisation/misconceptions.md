@@ -43,9 +43,9 @@ Premature optimization is the root of all evil. It likely has no measurable effe
 
 'Always parallelize'
 
--   Maximum gain depends on proportion spent in the parallelized part @rodgers1985improvements
--   Overhead is underestimated
--   Hard to debug
+- Maximum gain depends on proportion spent in the parallelized part @rodgers1985improvements
+- Overhead is underestimated
+- Hard to debug
 
 ## Bad advice 3
 
@@ -59,13 +59,13 @@ Developers -also very experienced developers- are known to have a bad intuition 
 
 Instead, from @chellappa2008write:
 
-1.  finding code program spends most time in
-2.  measure timing of that code
-3.  analyze the measured runtimes
+1. finding code program spends most time in
+2. measure timing of that code
+3. analyze the measured runtimes
 
 ## Bad advice 5
 
 'Optimize each function'
 
--   The 90-10 rule: 90% of all time, the program spends in 10% of the code.
--   Your working hours can be spent once
+- The 90-10 rule: 90% of all time, the program spends in 10% of the code.
+- Your working hours can be spent once

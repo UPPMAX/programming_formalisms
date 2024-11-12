@@ -3,14 +3,14 @@
 * 13:00-16:00
 * Richel
 * Goals:
-  * Theory: testing
-  * Form: group size: 2, use `develop`, use CI scripts, no code review
+    * Theory: testing
+    * Form: group size: 2, use `develop`, use CI scripts, no code review
 
 ## 13:00-13:45 RB
 
 * Goals:
-  * Students can create a repo, use `master` and `develop`
-  * Practice pair programming
+    * Students can create a repo, use `master` and `develop`
+    * Practice pair programming
 
 When |What
 -----|-------------------------
@@ -24,8 +24,8 @@ When |What
 ## 14:00-14:45 RB
 
 * Goals:
-  * Students can create a repo, use `master` and `develop`
-  * Practice pair programming
+    * Students can create a repo, use `master` and `develop`
+    * Practice pair programming
 
 When |What
 -----|-------------------------
@@ -38,8 +38,8 @@ When |What
 ## 15:00-15:45 RB
 
 * Goals:
-  * Recap
-  * Reflect
+    * Recap
+    * Reflect
 
 When       |What
 -----------|-------------------------

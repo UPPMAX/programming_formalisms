@@ -14,7 +14,7 @@ They need to be taught the workflow by junior developers.
 A junior developers:
 
 - fixes the tests written by mediors
-- teaches the workflow to newbies 
+- teaches the workflow to newbies
 
 ## Medior developer
 

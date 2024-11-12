@@ -3,7 +3,7 @@
 So how do we identify the needs of our system
 
 ???- "Where do you start?"
-        
+
     - project brief, if you are given a project breif or write one your self the project breif should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
 
 !!! info "Finding the needs!"
@@ -11,15 +11,15 @@ So how do we identify the needs of our system
     Is a process of finding the subjects and verbs of the project brief and formalise them as testable statements, once that is done we do our firast iteration of risk analysis on those sets.
 
 ???+ exercise "Needs determination"
-    
+
     We now look at the Course project and start setting upp our first development diagrams and design documents for the course project.
 
-???- info "Hint!" 
+???- info "Hint!"
 
     Start by looking at the example design document ![Design Process Document](../../projects/example_project/DPD_unassisted.md) How we design
     ![Requirement document](../../projects/example_project/DPUA_requirementspecification.md)
 
-???- info "Hint!" 
+???- info "Hint!"
 
     Analyse the project breif and make 5 short statements about the software
 
@@ -54,7 +54,7 @@ classDiagram
     Interaction through behaviour
 
 ???+ info "Exercise Model the Features of the projects as objects"
-    
+
     using the graph feature of mermaid graph TD model objects that will be translated into the classes we will implement
 
 ???- info "Hint!"
@@ -82,7 +82,7 @@ classDiagram
     ```
 
 !!! info "Class diagrams"
-    A good way to show your design is through class diagrams which shows the relationships and the class definitions 
+    A good way to show your design is through class diagrams which shows the relationships and the class definitions
     A class is and abstraction of an object where its Data is abstracted as attributes and its behaviour as methods
 
 ???+ question "Exercise"
