@@ -154,7 +154,7 @@ There are many tools that can turn RST or Markdown into beautiful HTML pages:
     - GitHub supports this without adding extra build steps.
 - [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
     - Generates HTML from Markdown.
-    - Example: [Programming formalisms  course]([https://uppmax.github.io//](https://github.com/UPPMAX/programming_formalisms)) 
+    - Example: [Programming formalisms course](https://uppmax.github.io/programming_formalisms)
 
 There are many more ...
 

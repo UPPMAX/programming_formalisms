@@ -415,7 +415,7 @@ There are some other solutions for installations but they are probably not suppo
     **Other possibilities**
     - Use the **Windows 10 PowerShell**
 
-        - [install git](https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell)
+        - [install git](https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-PowerShell)
         
     - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
     
