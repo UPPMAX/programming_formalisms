@@ -72,7 +72,7 @@ Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |
 Wednesday|09:00-12:00|Björn  |Formal git workflow, branches, social coding
-Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md) and [function design](function_design/README.md)
+Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md) and [function design](algorithms/function_design.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |
 Thursday |09:00-10:00|Lars   |Object-oriented design
