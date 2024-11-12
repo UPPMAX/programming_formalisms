@@ -2,10 +2,6 @@
 
 ## Detailed schedule
 
-!!! note "This schedule is outdated"
-
-    Use the schedule at [the introduction](intro.md) instead
-
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Wednesday|09:00-12:00|Björn  |Formal git workflow, branches, social coding
