@@ -118,7 +118,7 @@ Monday   |13:00-15:40|Lars   |Define and plan project
 Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |
 Tuesday  |09:00-10:00|Lars   |Software development life cycle
-Tuesday  |10:00-11:00|Richel |[Project workflow](project/project_workflow.md): issues and kanban board
+Tuesday  |10:00-11:00|Richel |[Issues](project/issues.md) and [kanban board](project/kanban_board.md)
 Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |
