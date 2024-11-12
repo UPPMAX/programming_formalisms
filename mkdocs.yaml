@@ -7,7 +7,7 @@ nav:
   - About the course: intro.md
   - Project:
     - Intro: project/README.md
-    - Using GitHub Issues and Project: project/github_issues_and_project.md
+    - Using GitHub Issues and Project: project/project_workflow.md
     - Team roles: project/team_roles.md
     - Create class list: project/create_class_list.md
     - Create structs: project/create_struct.md
@@ -64,7 +64,7 @@ nav:
     - Extra material (Earlier Intro day materials): extra.md
   - Misc:
     - Projects: misc/projects.md
-    - Project workflow: misc/project_workflow.md
+    - Project workflows: misc/project_workflows.md
     - git workflow: misc/git_workflow.md
     - Reading material: reading/README.md
     - FAQ: misc/faq.md

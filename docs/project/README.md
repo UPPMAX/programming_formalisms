@@ -18,7 +18,7 @@ These exercises are about working on the shared project.
 The current project, as well as earlier shared projects,
 can be found [here](../misc/projects.md).
 
-- [Use GitHub Issues and Project](github_issues_and_project.md)
+- [Project workflow](project_workflow.md)
 - [Team roles](team_roles.md)
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
