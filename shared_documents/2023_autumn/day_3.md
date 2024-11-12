@@ -14,8 +14,8 @@ Shared document (HackMD) for today (this doc):
 
 Link to lecture:
 
-- PDF: <https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture.pdf>
-- QMD: <https://github.com/UPPMAX/programming_formalisms/blob/main/testing/testing_lecture/testing_lecture.qmd>
+- PDF: `[Broken link]`
+- QMD: `[Broken link]`
 
 Join the team of the Student project:
 <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/issues/3>
