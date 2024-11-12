@@ -41,12 +41,28 @@ In our project we use the following rule:
 
 > Always work on an Issue
 
-## Kanban board
-
-
 ## Exercises
 
-- Create an issue. Assign yourself to the issue. Close the issue
+### Exercise 1: a typical issue lifecycle
+
+- Create an issue. In the text, write why you create that issue and what needs
+  to be done
+- Assign yourself to the issue
+- Close the issue. In the text, write why you close that issue
+
+## Discussion
+
+Issues are useful to communicate:
+
+- what needs to be done
+- who is planning to do what
+- what is already done
+
+However, an issue tracker is not designed to
+communicate what is _actively_ being worked on.
+For that, a [kanban board](kanban_board.md) is used instead.
+
+
 
 ## References
 
