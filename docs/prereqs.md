@@ -7,8 +7,8 @@
     - A good Zoom setup: microphone, camera and a place where you can talk
     - A **terminal**
     - We use **VS Code** in our teaching
-       - VS Code has a built-in terminals and other useful integrated systems
-       - You can use another IDE if you are more comfortable with it
+         - VS Code has a built-in terminals and other useful integrated systems
+         - You can use another IDE if you are more comfortable with it
     - A local installation of **`git`**
     - A **GitHub** account
     - A local **Python** installation
