@@ -184,7 +184,7 @@ relevant goals in mind.
 
 Agreed, I will try better!
 
-> - explain how to setup CI locally? 
+> - explain how to setup CI locally?
 >   so it automatically check the automation before push
 
 I will at the start

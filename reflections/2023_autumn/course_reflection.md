@@ -72,7 +72,7 @@ Let's see what the learners thought ...
 ## What went well?
 
 * Pair programming +3
-* Provided an opportunity for more social programming, including working 
+* Provided an opportunity for more social programming, including working
   in a live github repository where other people are working +1
 * Good level of social interaction +1
 * chatting during breaks +1
@@ -220,7 +220,7 @@ Agreed!
 Impossible.
 
 * it would be nice to survey attendees beforehand for their favourite languages
-  and experience with specific parts of the course - e.g some are gitmasters, 
+  and experience with specific parts of the course - e.g some are gitmasters,
   some have never used git before and found it confusing
   af - and tailor classes appropriately
 

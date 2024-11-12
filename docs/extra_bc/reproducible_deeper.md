@@ -56,19 +56,19 @@ Additional labels for pre-release and build metadata are available as extensions
     -pip freeze > requirements.txt
     - Conda: any language, also compiled code and libraries.
         - conda-forge is a GitHub organization containing repositories of conda recipes.
-     	  - Export the requirements into requirements.txt with conda list --export > requirements.txt.
-     	  - Export the full environment using conda env export > environment.yml, and compare the .yml file format to the .txt file format.
+            - Export the requirements into requirements.txt with conda list --export > requirements.txt.
+            - Export the full environment using conda env export > environment.yml, and compare the .yml file format to the .txt file format.
     - Virtualenv
-       	- Pipenv
-       	- Poetry
-       	- Pyenv
-       	- Mamba (faster conda)
+        - Pipenv
+        - Poetry
+        - Pyenv
+        - Mamba (faster conda)
 - R
 - Packrat, jetpack, rsuite, renv, automagic, deplearning, devtools
 - C/C+
-   	- CMake
-   	- Conan
-   	- Conda
+    - CMake
+    - Conan
+    - Conda
 - Fortran
 - Fortran package manager
 - Julia

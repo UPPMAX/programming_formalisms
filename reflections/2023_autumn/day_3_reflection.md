@@ -19,9 +19,9 @@ Before the lecture I felt the need to prepare
 some git exercises, so the learners could
 catch up from Monday:
 
-* git basic workflow: exercise fairytale basic, 
+* git basic workflow: exercise fairytale basic,
   [#4](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/issues/4)
-* git with branches: exercise fairytale on branches, 
+* git with branches: exercise fairytale on branches,
   [#5](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/issues/5)
 During the lesson, I felt doing this would not
 pay off enough. It followed that the team would

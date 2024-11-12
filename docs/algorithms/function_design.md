@@ -134,9 +134,12 @@ Could you give examples of bad function names?
 Imagine two DNA sequences:
 
 ```
+
 AAACCCGGGTTT
 ATACCCGGGTAT
- *        x
+
+-        x
+
 ```
 
 How would you call the algorithm that detects the location of the `*` (but not of the `x`, as the `*` comes earlier)?
@@ -154,9 +157,12 @@ How would you call the algorithm that detects the location of the `*` (but not o
 Imagine two DNA sequences:
 
 ```
+
 AAACCCGGGTTT
 ATACCCGGGTAT
- *        *
+
+-        *
+
 ```
 
 How would you call the algorithm that detects all the locations of the `*`s?
@@ -174,15 +180,19 @@ How would you call the algorithm that detects all the locations of the `*`s?
 Imagine two DNA sequences:
 
 ```
+
 AAACCCGGGTTT
 ATACCGGGTTT
+
 ```
 
 How would you call the algorithm that makes the sequences have as much similarities as possible, by possibly inserting a `-`
 
 ```
+
 AAACCCGGGTTT
 ATACC-GGGTTT
+
 ```
 
 ## Solutions 3

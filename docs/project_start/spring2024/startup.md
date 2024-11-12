@@ -39,23 +39,22 @@
 
     - A test project: Type-along on starting a project
         - REASON: have tested this step
- - test project (Planet)
-     - code file
+
+- test project (Planet)
+    - code file
             - git init
             - add and commit
-      - you can also start a directory and do git init 
-    - Intro documentation 
+    - you can also start a directory and do git init
+    - Intro documentation
         - order your files
     - README
            - license
     - git diff
     - Start with the steps related to the project (Type-along)
         - Git locally with config and cloning
- - mkdir user
+- mkdir user
         - work in user/
-        
 
-    
 
 !!! note "Think about:"
 
@@ -295,9 +294,9 @@ git help commit
 ```
 
 - You should see a very long help page as the tool is very versatile (press q to quit).
-   	- Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-   	- Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-   	- Note that help pages also work when you don't have a network connection!
+    - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+    - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+    - Note that help pages also work when you don't have a network connection!
 
 **Alternative commits**
 

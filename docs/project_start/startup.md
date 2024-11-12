@@ -39,23 +39,22 @@
 
     - A test project: Type-along on starting a project
         - REASON: have tested this step
- - test project (Planet)
-     - code file
+
+- test project (Planet)
+    - code file
             - git init
             - add and commit
-      - you can also start a directory and do git init 
-    - Intro documentation 
+    - you can also start a directory and do git init
+    - Intro documentation
         - order your files
     - README
            - license
     - git diff
     - Start with the steps related to the project (Type-along)
         - Git locally with config and cloning
- - mkdir user
+- mkdir user
         - work in user/
-        
 
-    
 
 !!! note "Think about:"
 
