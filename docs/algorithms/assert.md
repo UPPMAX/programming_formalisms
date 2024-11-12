@@ -16,7 +16,7 @@ Within functions, `assert` is used for:
 
 ## `assert` differs between debug and release
 
-```
+```bash
 $ cat assert.py 
 assert 1 == 2
 
@@ -48,7 +48,9 @@ def align_two_dna_sequences(dna_sequences):
 
 Superior to documentation, as it cannot be ignored.
 
-'Assert liberally to document internal assumptions and invariants' @sutter2004cpp chapter 68.
+> Assert liberally to document internal assumptions and invariants
+>
+> @sutter2004cpp chapter 68.
 
 ## `assert` to document assumptions a developer makes
 

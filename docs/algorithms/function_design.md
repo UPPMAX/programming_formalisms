@@ -21,7 +21,8 @@ References;
 
 - [1] For now, we use `algorithm == function`,
   as the definition of an algorithm is
-  'a step-by-step procedure for solving a problem or accomplishing some end' [dictionary definition]
+  'a step-by-step procedure for solving a problem or accomplishing some
+  end' `[dictionary definition]`
 - [2] pick any vague definition
 
 ## What is a good function?
@@ -31,13 +32,24 @@ A good function ...
 . . .
 
 
-- Sometimes: is documented [Ram, 2013] [tidyverse style guideline of functions]
-- Is small [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
-- Has a good (:innocent:) name [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20 @hitchhikers_guide_to_python_general_concepts
-- Is easy to use correctly and hard to use incorrectly @meyers2005effective @cpp_core_guidelines_functions @pep_20
-- Does one thing correctly [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions]
-- Is tested @martin2011clean @cpp_core_guidelines_functions [tidyverse style guideline of functions]
-- Raises helpful exceptions [Martin, 2009] @cpp_core_guidelines_functions [tidyverse style guideline of functions] @pep_20
+- Sometimes: is documented `[Ram, 2013]` `[tidyverse style guideline of functions]`
+- Is small `[Martin, 2009]`
+  @cpp_core_guidelines_functions
+  `[tidyverse style guideline of functions]`
+- Has a good (:innocent:) name `[Martin, 2009]`
+  @cpp_core_guidelines_functions `[tidyverse style guideline of functions]`
+  @pep_20 @hitchhikers_guide_to_python_general_concepts
+- Is easy to use correctly and hard to use incorrectly
+  @meyers2005effective
+  @cpp_core_guidelines_functions @pep_20
+- Does one thing correctly `[Martin, 2009]`
+  @cpp_core_guidelines_functions
+  `[tidyverse style guideline of functions]`
+- Is tested @martin2011clean @cpp_core_guidelines_functions
+  `[tidyverse style guideline of functions]`
+- Raises helpful exceptions `[Martin, 2009]`
+  @cpp_core_guidelines_functions
+  `[tidyverse style guideline of functions]` @pep_20
 - Fast iff needed @cpp_core_guidelines_functions
 
 ## Design by contract
@@ -88,23 +100,24 @@ A good function ...
     ```
 
 
-Mandatory in some contexts [Ram, 2013] [tidyverse style guideline of functions]
+Mandatory in some contexts `[Ram, 2013]` `[tidyverse style guideline of functions]`
 
 ## A good function has a good name
 
-> There are only two hard things in Computer Science: cache invalidation and naming things
+> There are only two hard things in Computer Science: 
+> cache invalidation and naming things
 >
 > Phil Karlton
 
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
-- starts with a verb [tidyverse style guideline of functions]
+- starts with a verb `[tidyverse style guideline of functions]`
 - readable @pep_20
-- intention-revealing [Martin, 2009]
-- pronounceable [Martin, 2009]
-- searchable [Martin, 2009]
-- not cute [Martin, 2009]
-- no pun [Martin, 2009]
+- intention-revealing `[Martin, 2009]`
+- pronounceable `[Martin, 2009]`
+- searchable `[Martin, 2009]`
+- not cute `[Martin, 2009]`
+- no pun `[Martin, 2009]`
 - carefully @cpp_core_guidelines_functions
 
 ## Examples of bad function names?
@@ -142,11 +155,13 @@ ATACCCGGGTAT
 
 ```
 
-How would you call the algorithm that detects the location of the `*` (but not of the `x`, as the `*` comes earlier)?
+How would you call the algorithm that detects the location
+of the `*` (but not of the `x`, as the `*` comes earlier)?
 
 ## Solutions 1
 
-- `get_first_mismatch_pos`, `get_first_mismatch_locus`, `find_first_mismatch_pos`, `find_first_mismatch_locus`
+- `get_first_mismatch_pos`, `get_first_mismatch_locus`,
+  `find_first_mismatch_pos`, `find_first_mismatch_locus`
 - you answer that ...
     1. starts with a verb
     2. is as English as possible
@@ -169,7 +184,8 @@ How would you call the algorithm that detects all the locations of the `*`s?
 
 ## Solutions 2
 
-- `find_mismatch_positions`, `find_mismatch_loci`, `get_mismatch_positions`, `get_mismatch_loci`
+- `find_mismatch_positions`, `find_mismatch_loci`,
+  `get_mismatch_positions`, `get_mismatch_loci`
 - you answer that ...
     1. starts with a verb
     2. is as English as possible
@@ -197,7 +213,8 @@ ATACC-GGGTTT
 
 ## Solutions 3
 
-- `align_seqs`, `align_sequences`, `align_dna_sequences`, `align_dna_seqs`, `calc_aligned_seqs`, `get_aligned_seqs`
+- `align_seqs`, `align_sequences`, `align_dna_sequences`, `align_dna_seqs`,
+  `calc_aligned_seqs`, `get_aligned_seqs`
 - you answer that ...
     1. starts with a verb
     2. is as English as possible
@@ -225,7 +242,8 @@ def Prime(no, i):
 
 . . .
 
-Function names start with lowercase character, name does not start with a verb, input is not checked, clumsy interface:
+Function names start with lowercase character, name does not start with a
+verb, input is not checked, clumsy interface:
 
 ```python
 assert Prime(2, 2)
@@ -314,7 +332,8 @@ do_x()
 do_y()
 ```
 
-You rarely need `and` in a function name. Possible exception: mean and standard deviation
+You rarely need `and` in a function name. Possible exception:
+mean and standard deviation
 
 ## What is a good function?
 
@@ -415,7 +434,7 @@ A good function:
 
 ## References
 
-- [dictionary definition] <https://www.merriam-webster.com/dictionary/algorithm>
-- [Martin, 2009] Martin, Robert C. Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
-- [Ram, 2013] Ram, K. "rOpenSci-open tools for open science." AGU Fall Meeting Abstracts. Vol. 2013. 2013.
-- [tidyverse style guideline of functions] <https://style.tidyverse.org/functions.html>
+- `[dictionary definition]` <https://www.merriam-webster.com/dictionary/algorithm>
+- `[Martin, 2009]` Martin, Robert C. Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
+- `[Ram, 2013]` Ram, K. "rOpenSci-open tools for open science." AGU Fall Meeting Abstracts. Vol. 2013. 2013.
+- `[tidyverse style guideline of functions]` <https://style.tidyverse.org/functions.html>
