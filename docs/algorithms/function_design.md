@@ -158,8 +158,8 @@ of the `*` (but not of the `x`, as the `*` comes earlier)?
   `find_first_mismatch_pos`, `find_first_mismatch_locus`
 - you answer that ...
     1. starts with a verb
-    2. is as English as possible
-    3. only uses common abbreviations
+    1. is as English as possible
+    1. only uses common abbreviations
 
 ## Example 2
 
@@ -179,8 +179,8 @@ How would you call the algorithm that detects all the locations of the `*`s?
   `get_mismatch_positions`, `get_mismatch_loci`
 - you answer that ...
     1. starts with a verb
-    2. is as English as possible
-    3. only uses common abbreviations
+    1. is as English as possible
+    1. only uses common abbreviations
 
 ## Example 3
 
@@ -191,7 +191,8 @@ AAACCCGGGTTT
 ATACCGGGTTT
 ```
 
-How would you call the algorithm that makes the sequences have as much similarities as possible, by possibly inserting a `-`
+How would you call the algorithm that makes the sequences
+have as much similarities as possible, by possibly inserting a `-`
 
 ```text
 AAACCCGGGTTT
@@ -204,8 +205,8 @@ ATACC-GGGTTT
   `calc_aligned_seqs`, `get_aligned_seqs`
 - you answer that ...
     1. starts with a verb
-    2. is as English as possible
-    3. only uses common abbreviations
+    1. is as English as possible
+    1. only uses common abbreviations
 
 ## A good function has a clear name
 
@@ -300,7 +301,8 @@ I think it is OK, please correct me :-)
 
 ## A function does one thing correctly
 
-[F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical), hence don't:
+[F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical), 
+hence don't:
 
 ```python
 def do_x_and_y(): pass
@@ -335,8 +337,10 @@ A good function:
 
 ## A good function is tested
 
-- [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical): A function that performs a single operation is simpler to understand, test, and reuse.
-- [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf): Testability: Source code should be written to facilitate testability
+- [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical): 
+  A function that performs a single operation is simpler to understand, test, and reuse.
+- [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf): 
+  Testability: Source code should be written to facilitate testability
 
 ## Example 1
 
