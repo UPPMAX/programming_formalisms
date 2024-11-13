@@ -1644,8 +1644,8 @@ Add theory to bolster already present practical skills
     - Big(O)
 - Development  paradigms([name=Lars]) 1d
 - 2h, Menti topics
-  - - SDLC,RAD,RUP, Spiral model,(Funnel visualisation) [name=Lars]
-        - Extreme Programming and Prototype driven development
+      - - SDLC,RAD,RUP, Spiral model,(Funnel visualisation) [name=Lars]
+            - Extreme Programming and Prototype driven development
        short historical overview.
      -MENTI FOR INTRaction
      development strategies and design strategies  

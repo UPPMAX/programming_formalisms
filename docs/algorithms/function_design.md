@@ -301,7 +301,7 @@ I think it is OK, please correct me :-)
 
 ## A function does one thing correctly
 
-[F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical), 
+[F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical),
 hence don't:
 
 ```python
@@ -337,9 +337,9 @@ A good function:
 
 ## A good function is tested
 
-- [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical): 
+- [F.2: A function should perform a single logical operation](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical):
   A function that performs a single operation is simpler to understand, test, and reuse.
-- [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf): 
+- [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf):
   Testability: Source code should be written to facilitate testability
 
 ## Example 1

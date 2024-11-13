@@ -63,7 +63,7 @@ Other activities:
 > Goal: students have created multiple different types of algorithms
 
 * [ ] Design by contract
-* [ ] The role of `assert`, 
+* [ ] The role of `assert`,
       <https://docs.python.org/3/reference/simple_stmts.html#assert>
 * [ ] What is a good algorithm
 * [ ] DRY
