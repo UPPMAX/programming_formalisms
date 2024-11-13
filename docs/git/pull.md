@@ -240,7 +240,7 @@ We can practice how a conflict looks and how to resolve it:
 
 !!! info "See also"
 
-    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/centralized/)
+    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/same-repository/)
 
 
 ## How to contribute changes to somebody else’s project
