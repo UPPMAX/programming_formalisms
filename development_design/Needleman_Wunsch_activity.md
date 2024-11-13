@@ -1,6 +1,6 @@
 BLAST: A real-world example
 
-"In bioinformatics, BLAST [basic local alignment search tool](2)
+"In bioinformatics, BLAST [basic local alignment search tool](https://en.wikipedia.org/wiki/BLAST_(biotechnology))
 Links to an external site. is an algorithm and program for comparing primary biological sequence information,
 such as the amino-acid sequences of proteins or the nucleotides of DNA and/or RNA sequences." (<https://en.wikipedia.org/wiki/BLAST_(biotechnology)#cite_note-KarlinObit.NYT-2>)
 
