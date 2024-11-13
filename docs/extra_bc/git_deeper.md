@@ -71,7 +71,7 @@ This material is based on or inspired by the material from [NBIS](https://nbis-r
 ```
 
 If you haven't already configured Git, please follow the instructions in the
-[installation instructions](https://coderefinery.github.io/installation/shell-and-git/#configuration).
+[installation instructions](https://coderefinery.github.io/installation/git-in-terminal/#configuration).
 
 ```console
 git config --global user.name "Your Name"
