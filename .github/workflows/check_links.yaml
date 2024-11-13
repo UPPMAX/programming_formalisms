@@ -23,6 +23,7 @@ jobs:
         run: |
           rm meeting_notes/older.md
           rm -rf docs/introductions/spring2024/
+          rm -rf docs/project_start/spring2024/
 
       # The link checker will only work if mlc_config.json is a valid JSON
       - name: Validate JSON
