@@ -70,7 +70,7 @@ Tuesday  |10:00-11:00|Richel |[Issues](project/issues.md) and [kanban board](pro
 Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||
-Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md),[github branches/merge](./git/pull.md) & [contribute, social coding](./social_coding/notes_social_coding_long.md)
+Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md) & [github branches/merge](./git/pull.md) & [contribute, social coding](./social_coding/notes_social_coding_long.md)
 Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md) and [function design](algorithms/function_design.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||
