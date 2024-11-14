@@ -38,11 +38,11 @@
 
 ## The project
 
-!!! note "Help us add you to the project repository"
+!!! note "Become a Programming Formalisms team member"
 
-    - <https://github.com/UPPMAX/programming_formalisms/issues/37>
-    - Add your GitHub name!
-    - The project will be located here: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
+    - Share your GitHub name [at this issue](https://github.com/UPPMAX/programming_formalisms/issues/37)
+    - The project can be found 
+      [here](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024)
 
 ## Shared document
 
