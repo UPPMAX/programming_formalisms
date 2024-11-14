@@ -1,8 +1,8 @@
-> This material is based on the Social Coding lecture by Code Refinery:
+# Social coding
 
+> This material is based on the Social Coding lecture by Code Refinery:
 > [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
 
-# Social coding
 
 !!! info "Learning objectives of 'Social coding'"
 
