@@ -138,7 +138,7 @@ I will have 4 days to prepare, all of these disturbed by meetings.
 
 Day      |Time       |Teacher|State
 ---------|-----------|-------|-----------------------------------------------------------
-Tuesday  |10:00-11:00|Richel |Issues 
+Tuesday  |10:00-11:00|Richel |Issues 6/10
 Tuesday  |10:00-11:00|Richel |Kanban board
 Tuesday  |10:00-11:00|Richel |Team roles
 Tuesday  |11:00-15:40|Richel |TDD
@@ -149,4 +149,7 @@ Thursday |14:00-15:40|Richel |Implement the project as a package
 Friday   |09:00-11:00|Richel |Optimisation
 Friday   |15:00-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
+.        |.          |.      |Project 2/10
+
+
 

@@ -8,7 +8,7 @@ nav:
   - Project:
     - Intro: project/README.md
     - Issues: project/issues.md
-    - kanban board: project/kanban_board.md
+    - Kanban board: project/kanban_board.md
     - Team roles: project/team_roles.md
     - Create class list: project/create_class_list.md
     - Create structs: project/create_struct.md
