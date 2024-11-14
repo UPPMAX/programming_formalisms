@@ -21,9 +21,9 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-      - When do you trust your code?
-      - When do you trust code written by others?
-      - How do you convince other developers of a bug?
+        - When do you trust your code?
+        - When do you trust code written by others?
+        - How do you convince other developers of a bug?
 
     - 5 mins: presentation
     - 10 mins: demonstration `is_zero`
@@ -91,5 +91,3 @@ You will need to defend this in a code review.
 - `[Horgan et al., 1994]` Horgan, Joseph R., Saul London, and Michael R. Lyu. "Achieving software quality with testing coverage measures." Computer 27.9 (1994): 60-69.
 - `[Vasilescu et al., 2015]` Vasilescu, Bogdan, et al. "Quality and productivity outcomes relating to continuous integration in GitHub." Proceedings of the 2015 10th joint meeting on foundations of software engineering. 2015.
 - `[Wickham, 2019]` Wickham, Hadley. Advanced r. chapman and hall/CRC, 2019.
-
-

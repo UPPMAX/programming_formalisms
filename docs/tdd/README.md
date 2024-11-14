@@ -356,16 +356,22 @@ Develop a function called `is_prime`.
 
     - Practice of TDD
 
-Go to [the Programming Formalisms page 'functions to practice TDD'](../misc/functions.md).
-Pick a function at your level.
+Go to [the Programming Formalisms page 'functions to practice TDD'](../misc/functions.md)
+and pick a function at your level.
 
 !!! note "Technical rules"
 
     - Use the shared GitHub repository for the learners of this course
     - Pick a branching model. When unsure, work on `main`
-    - Use no testing framework or `unittest`. When unsure, use no testing frameworks
-      - No testing framework: work in a file called `learners/[your_names]/[function_name].py`, e.g. `learners/anna_and_bertil/is_zero.py`
-      - `unittest` framework: work in a file in the `src` folder (e.g. `src/anna_and_bertil_utils.py`), write the tests in the `tests` folder, e.g. `tests/test_anna_and_bertil_utils.py`
+    - Use no testing framework or `unittest`.
+      When unsure, use no testing frameworks
+        - No testing framework: work in a file called
+         `learners/[your_names]/[function_name].py`,
+          e.g. `learners/anna_and_bertil/is_zero.py`
+        - `unittest` framework: work in a file in the `src` folder
+          (e.g. `src/anna_and_bertil_utils.py`),
+          write the tests in the `tests` folder,
+          e.g. `tests/test_anna_and_bertil_utils.py`
 
 !!! note "Social rules"
 
@@ -417,38 +423,70 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 
 ## References
 
-- `[Alkaoud & Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott. "Quality metrics of test suites in test-driven designed applications." International Journal of Software Engineering Applications (IJSEA) 2018 (2018).
+- `[Alkaoud & Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
+  "Quality metrics of test suites in test-driven designed applications."
+  International Journal of Software Engineering Applications (IJSEA)
+  2018 (2018).
 
 ![](beck_tdd_by_example.jpg)
 
-- `[Beck, 2022]` Beck, Kent. Test driven development: By example. Addison-Wesley Professional, 2022.
-- `[Bhat & Nagappan, 2006]` Bhat, Thirumalesh, and Nachiappan Nagappan. "Evaluating the efficacy of test-driven development: industrial case studies." Proceedings of the 2006 ACM/IEEE international symposium on Empirical software engineering. 2006.
-- `[Erdogmus & Morisio, 2005]` Erdogmus, Hakan, Maurizio Morisio, and Marco Torchiano. "On the effectiveness of the test-first approach to programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
-- `[George & Williams, 2004]` George, Boby, and Laurie Williams. "A structured experiment of test-driven development." Information and software Technology 46.5 (2004): 337-342.
-- `[Janzen & Saiedian, 2006]` Janzen, David S., and Hossein Saiedian. "Test-driven learning: intrinsic integration of testing into the CS/SE curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
+- `[Beck, 2022]` Beck, Kent. Test driven development: By example.
+  Addison-Wesley Professional, 2022.
+- `[Bhat & Nagappan, 2006]` Bhat, Thirumalesh, and Nachiappan Nagappan.
+  "Evaluating the efficacy of test-driven development: industrial case
+  studies." Proceedings of the 2006 ACM/IEEE international symposium on
+  Empirical software engineering. 2006.
+- `[Erdogmus & Morisio, 2005]` Erdogmus, Hakan, Maurizio Morisio, and
+  Marco Torchiano. "On the effectiveness of the test-first approach to
+  programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
+- `[George & Williams, 2004]` George, Boby, and Laurie Williams.
+  "A structured experiment of test-driven development."
+  Information and software Technology 46.5 (2004): 337-342.
+- `[Janzen & Saiedian, 2006]` Janzen, David S., and Hossein Saiedian.
+  "Test-driven learning: intrinsic integration of testing into the CS/SE
+  curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
 
 ![](book_langr.jpg)
 
-- `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better. "Modern C++ Programming with Test-Driven Development." (2013).
-- `[Madeyski et al., 2010]` Madeyski, Lech, and Gestión de sistemas de información. Test-driven development: An empirical evaluation of agile practice. Heidelberg: Springer, 2010.
+- `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better.
+  "Modern C++ Programming with Test-Driven Development." (2013).
+- `[Madeyski et al., 2010]` Madeyski, Lech, and
+  Gestión de sistemas de información.
+  Test-driven development: An empirical evaluation of agile practice.
+  Heidelberg: Springer, 2010.
 
 ![](martin_the_clean_coder.jpg)
 
-- `[Martin, 2011]` Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
-- `[Mayr, 2005]` Mayr, Herwig. Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen. Hanser Verlag, 2005.
-- `[Nagappan et al., 2008]` Nagappan, Nachiappan, et al. "Realizing quality improvement through test driven development: results and experiences of four industrial teams." Empirical Software Engineering 13 (2008): 289-302.
-- `[PEP 8]` Van Rossum, Guido, Barry Warsaw, and Nick Coghlan. "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
-- `[Stroustrup & Sutter, 2017]` Stroustrup, Bjarne, and Herb Sutter. "C++ Core Guidelines (2017)." [http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). (Cited on pages 100 and 103) (2015).
+- `[Martin, 2011]` Martin, Robert C.
+  The clean coder: a code of conduct for professional programmers.
+  Pearson Education, 2011.
+- `[Mayr, 2005]` Mayr, Herwig.
+  Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen.
+  Hanser Verlag, 2005.
+- `[Nagappan et al., 2008]` Nagappan, Nachiappan, et al.
+  "Realizing quality improvement through test driven development:
+  results and experiences of four industrial teams."
+  Empirical Software Engineering 13 (2008): 289-302.
+- `[PEP 8]` Van Rossum, Guido, Barry Warsaw, and Nick Coghlan.
+  "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
+- `[Stroustrup & Sutter, 2017]`
+  Stroustrup, Bjarne, and Herb Sutter.
+  "C++ Core Guidelines (2017)."
+  [here](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+  (Cited on pages 100 and 103) (2015).
 - `[study I cannot find]` in one of the classics, there was a bar chart that
   showed developers write functions such as `is_prime` with and without TDD
   and showed that TDD was twice as fast. TODO: find this reference
 
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
-- `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
-- ``[Wickham, 2019]`` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
+- `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt.
+  The Pragmatic Programmer: your journey to mastery.
+  Addison-Wesley Professional, 2019.
+- `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
 ![](python_logo.png)
 
-- `[Zen of Python]` [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+- `[Zen of Python]`
+  [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 

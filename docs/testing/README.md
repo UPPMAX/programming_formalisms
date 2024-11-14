@@ -28,7 +28,7 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-       - When do you trust your code?
+        - When do you trust your code?
         - When do you trust code written by others?
         - How do you convince other developers of a bug?
 

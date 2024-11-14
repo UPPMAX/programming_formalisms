@@ -66,7 +66,7 @@ experiment = create_experiment()
 
 === "Implementation with an empty list"
 
-    ```
+    ```python
     def create_experiment():
         return []
 
@@ -75,7 +75,7 @@ experiment = create_experiment()
 
 === "Implementation with an empty class"
 
-    ```
+    ```python
     class Experiment:
         """An experiment class"""
 
@@ -96,7 +96,7 @@ We can also write a test:
 
 === "Using the `unittest` framework"
 
-    ```
+    ```python
     class TestExperiment(unittest.TestCase):
 
         """Class to test the code in src.bacsim.particle."""
@@ -142,7 +142,7 @@ whatever type `experiment` may be.
 
 === "Implementation"
 
-    ```
+    ```python
     def run(experiment):
         pass
     ```
@@ -159,7 +159,7 @@ We can also write a test:
 
 === "Using the `unittest` framework"
 
-    ```
+    ```python
     class TestExperiment(unittest.TestCase):
 
         """Class to test the code in src.bacsim.particle."""
@@ -191,7 +191,7 @@ whatever type it may be.
 
 === "Implementation"
 
-    ```
+    ```python
     def run(experiment):
         return 42
     ```
@@ -219,7 +219,7 @@ We can also write a test:
 
 === "Using the `unittest` framework"
 
-    ```
+    ```python
     class TestExperiment(unittest.TestCase):
 
         """Class to test the code in src.bacsim.particle."""
@@ -253,7 +253,7 @@ to a file called `my_results.csv`, whatever type `results` may be.
 
 === "Implementation"
 
-    ```
+    ```python
     def save(results, filename):
         pass
     ```
@@ -270,7 +270,7 @@ We can also write a test:
 
 === "Using the `unittest` framework"
 
-    ```
+    ```python
     class TestExperiment(unittest.TestCase):
 
         """Class to test the code in src.bacsim.particle."""
@@ -304,7 +304,7 @@ that are used to initialize an experiment.
 
 === "Implementation"
 
-    ```
+    ```python
     def create_parameters():
         return []
 
@@ -335,7 +335,7 @@ We can also write a test:
 
 === "Using the `unittest` framework"
 
-    ```
+    ```python
     class TestExperiment(unittest.TestCase):
 
         """Class to test the code in src.bacsim.particle."""
@@ -367,7 +367,7 @@ reads parameters from a file.
 
 === "Implementation"
 
-    ```
+    ```python
     def read_parameters_from_file(filename):
         return []
     ```
@@ -383,7 +383,7 @@ We can also write a test:
 
 === "Using the `unittest` framework"
 
-    ```
+    ```python
     class TestExperiment(unittest.TestCase):
 
         """Class to test the code in src.bacsim.particle."""
@@ -421,7 +421,7 @@ This class diagram is very good!
 
 Consider the tests we dreamt of writing:
 
-```
+```python
 class TestExperiment(unittest.TestCase):
 
     """Class to test the code in src.bacsim.particle."""
