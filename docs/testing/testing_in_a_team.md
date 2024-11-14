@@ -21,8 +21,8 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-      - When one works in a team, how to make sure my code keeps doing the same?
-      - Test everything? If no, what to test?
+        - When one works in a team, how to make sure my code keeps doing the same?
+        - Test everything? If no, what to test?
 
     - 5 mins: presentation
     - 10 mins: demonstration `is_zero`

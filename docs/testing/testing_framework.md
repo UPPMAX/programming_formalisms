@@ -37,8 +37,9 @@
 
 Testing *helps* ensure the correctness of code.
 
-- Coding errors are extremely common [Baggerly & Coombes, 2009]
-- Contribute to the reproducibility crisis in science [Vable et al., 2021], e.g. [Rahman & Farhana, 2020]
+- Coding errors are extremely common `[Baggerly & Coombes, 2009]`
+- Contribute to the reproducibility crisis in science `[Vable et al., 2021]`,
+  e.g. `[Rahman & Farhana, 2020]`
 
 ## Testing framework
 
@@ -265,20 +266,20 @@ The function is a function to determine if a number is prime.
 
 !!! info "Social"
 
-    -   Ping-Pong Pair programming
-    -   Discuss how and when to switch roles first!
-    -   Decide who is the first driver, e.g. the person with first name first in alphabet
-    -   Try to be **an exemplary duo**
+    - Ping-Pong Pair programming
+    - Discuss how and when to switch roles first!
+    - Decide who is the first driver, e.g. the person with first name first in alphabet
+    - Try to be **an exemplary duo**
 
 !!! info "Technical"
 
-    -   Create a topic branch for your pair. Branch of from `develop`
-    -   Work within scaffolding of the learners project
-        -   Functions are in `src/[package_name]/`. 
-            Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
-        -   Tests are in `tests/`.
-            Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
-    -   When done, create a Pull Request to `develop`. Do not merge!
+    - Create a topic branch for your pair. Branch of from `develop`
+    - Work within scaffolding of the learners project
+        - Functions are in `src/[package_name]/`. 
+          Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
+        - Tests are in `tests/`.
+          Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
+    - When done, create a Pull Request to `develop`. Do not merge!
 
 ???- question "Need a video?"
 
@@ -340,6 +341,6 @@ class TestCoordinat(unittest.TestCase):
 
 ## References
 
-- [Baggerly & Coombes, 2009] Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
-- [Rahman & Farhana, 2020] Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in COVID-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
-- [Vable et al., 2021] Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour. "Code review as a simple trick to enhance reproducibility, accelerate learning, and improve the quality of your team’s research." American Journal of Epidemiology 190.10 (2021): 2172-2177.
+- `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
+- `[Rahman & Farhana, 2020]` Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in COVID-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
+- `[Vable et al., 2021]` Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour. "Code review as a simple trick to enhance reproducibility, accelerate learning, and improve the quality of your team’s research." American Journal of Epidemiology 190.10 (2021): 2172-2177.

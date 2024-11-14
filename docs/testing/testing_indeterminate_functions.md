@@ -21,10 +21,9 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-      - When do you trust your code?
-      - When do you trust code written by others?
-      - How do you convince other developers of a bug?
-
+        - When do you trust your code?
+        - When do you trust code written by others?
+        - How do you convince other developers of a bug?
     - 5 mins: presentation
     - 10 mins: demonstration `is_zero`
     - 25 mins: challenge
@@ -70,26 +69,26 @@ a random integer value from 1 to and including 6.
 
 !!! info "The function"
 
-    -   Function name: `get_dice_throw_value_[names]`, for example, `get_dice_throw_value_anna_and_sven`
-    -   Output:
+    - Function name: `get_dice_throw_value_[names]`, for example, `get_dice_throw_value_anna_and_sven`
+    - Output:
         - Returns a random integer value from 1 to and including 6.
 
 !!! info "Social"
 
-    -   Ping-Pong Pair programming
-    -   Discuss how and when to switch roles first!
-    -   Decide who is the first driver, e.g. the person with first name first in alphabet
-    -   Try to be **an exemplary duo**
+    - Ping-Pong Pair programming
+    - Discuss how and when to switch roles first!
+    - Decide who is the first driver, e.g. the person with first name first in alphabet
+    - Try to be **an exemplary duo**
 
 !!! info "Technical"
 
-    -   Create a topic branch for your pair. Branch of from `develop`
-    -   Work within scaffolding of the learners project
-        -   Functions are in `src/[package_name]/`. 
-            Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
-        -   Tests are in `tests/`.
-            Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
-    -   When done, create a Pull Request to `develop`. Do not merge!
+    - Create a topic branch for your pair. Branch of from `develop`
+    - Work within scaffolding of the learners project
+        - Functions are in `src/[package_name]/`. 
+          Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
+        - Tests are in `tests/`.
+          Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
+    - When done, create a Pull Request to `develop`. Do not merge!
 
 ## Exercise 2: second attempt
 
