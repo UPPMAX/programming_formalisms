@@ -1,4 +1,4 @@
-## Understand git branches and merging
+# Git branches and merging
 
 !!! questions
 
@@ -63,7 +63,7 @@
 
     VScode sync: skip because of generality
     
-    ``git config --global credential.helper cache`` 
+    ``git config --global credential.helper cache``
     ``git config --global credential.helper 'cache --timeout=36000'``
 
 ## Branching and merging
@@ -115,7 +115,6 @@ git branch -d new-feature    # remove branch
 - Let's make a new branch called ``jupiter``
 - Here we add some code taking care of the motion of Jupiter and interaction with Earth
 
-
 !!! example "Demo or Type-along: Add Jupiter"
 
     - Make sure we are in phase with our GitHub remote!
@@ -123,10 +122,11 @@ git branch -d new-feature    # remove branch
     ```git
     git pull
     ```
+    
     - Let's make a new branch called ``jupiter``
 
     ```git
-    $ git switch -c jupiter
+    git switch -c jupiter
     ```
 
     - Check that we are in that branch!
@@ -145,6 +145,7 @@ git branch -d new-feature    # remove branch
 
 
     ???- "Code"
+    
         ```python
 
         #planet with Jupiter
@@ -268,13 +269,14 @@ git branch -d new-feature    # remove branch
     - When you are done editing the files, try `git diff`:
 
     ```console
-    $ git diff
+    git diff
     ```
 
     - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
     - You will see some thing like this.
 
     ???- "Output from 'diff'"
+    
         ```diff
         diff --git a/planet.py b/planet.py
         index 60b8b20..8061461 100644
@@ -412,6 +414,7 @@ git branch -d new-feature    # remove branch
 !!! example "Demo or Type-along: git branch 2"
 
      **Make four modules/files**
+     
     - Make sure you get back to the main branch
 
     ```git
@@ -609,25 +612,23 @@ git branch -d new-feature    # remove branch
     - add and commit
 
     ```git
-    $ git add .
-    $ git commit -m '4 modular files'
+    git add .
+    git commit -m '4 modular files'
     ```
 
     - We can now check the history with a command that graphically tries to show the log with branches
-
 
 !!! tip
 
     **An important alias**
 
-    - We will now define an *alias* in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
+    - We will now define an _alias_ in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
 
     ```console
-    $ git config --global alias.graph "log --all --graph --decorate --oneline"
+    git config --global alias.graph "log --all --graph --decorate --oneline"
     ```
 
     This will enable you to use ``git graph`` for short
-
 
     - It will now give you something like this:
 
@@ -668,9 +669,11 @@ git branch -d new-feature    # remove branch
 !!! example "Demo or type-along"
 
     - Go to the main branch:
+    
     ```git
     git switch main
     ```
+    
     - Note that we now just find the ``planet.py`` file!
     - Let's remove the print line around row 35 in the for-loop.
     - Save, add and commit
@@ -691,7 +694,6 @@ git branch -d new-feature    # remove branch
     |/
     * b9465e4 (origin/main) planet.py documentation
     * 6a416b5 add folders and planet code
-
     ```
 
     ```mermaid
@@ -747,8 +749,8 @@ git branch -d new-feature    # remove branch
      create mode 100644 code/planet_main.py
 
     ```
+    
     - let's now check the graphical view:
-
 
     ```git
     $ git graph
