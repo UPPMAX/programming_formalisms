@@ -17,12 +17,12 @@ Within functions, `assert` is used for:
 ## `assert` differs between debug and release
 
 ```bash
-$ cat assert.py 
+$ cat assert.py
 assert 1 == 2
 
-$ python -O assert.py 
+$ python -O assert.py
 
-$ python assert.py 
+$ python assert.py
 Traceback (most recent call last):
   File "/home/richel/assert.py", line 1, in <module>
     assert 1 == 2

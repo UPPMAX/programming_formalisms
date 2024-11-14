@@ -140,12 +140,12 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 ## Demo These pages
 
 ``````{challenge} Demo: Git repo -  Sphinx - GitHub - GitHub Actions - GH-pages
-                                        
+
 - We will go behind the scenes of this documentation.
 - You can do this checkout whenever you want.
 
 **The basic steps are:**
-(also presented [here](https://coderefinery.github.io/documentation/sphinx/)               
+(also presented [here](https://coderefinery.github.io/documentation/sphinx/)
 - Start locally in repo with name describing the project
 - You can generate Sphinx documentation in an existing code project (may be a git repo)
 - Install python package: `sphinx`
@@ -160,9 +160,9 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 - Create a new file at `.github/workflows/documentation.yaml`
 - Enable GitHub Pages:
   - Go to ``https://github.com/<username>/<repo>/settings/pages``
-  - In the “Source” section, choose “gh-pages” in the dropdown menu and click save 
+  - In the “Source” section, choose “gh-pages” in the dropdown menu and click save
 - That’s it! Your site should now be live on [https://uppmax.github.io/programming_formalisms_intro/index.html](https://uppmax.github.io/programming_formalisms_intro/index.html).
-   
+
 **Every time you commit the GH Actions will render your source code to html and deploy it to your new web page!**
 ``````
 
@@ -185,5 +185,5 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
   - Full documentation or tutorial
     - Make use of Sphinx or MkDocs to render standard markup languages like markdown or reStructuredText to HTML.
   - Deploy wat GH-pages or ReadTheDocs or other.
-    
+
 ````

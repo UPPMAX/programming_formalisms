@@ -72,9 +72,9 @@ Or:
 - Just In Time design
 
 ```{admonition} Branching and merging is not listed as a core XP practice
-- is generally not a favorable practice in Agile approaches. 
-- Branching has the potential for creating technical debt if changes are not merged frequently. 
-- The risks an be somewhat mitigated by merging frequently. 
+- is generally not a favorable practice in Agile approaches.
+- Branching has the potential for creating technical debt if changes are not merged frequently.
+- The risks an be somewhat mitigated by merging frequently.
 - In any case, branching and merging .
 ```
 

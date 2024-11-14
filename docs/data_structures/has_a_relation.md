@@ -116,7 +116,7 @@ classDiagram
     - results
   }
   Results
-  
+
   Simulation *-- Results
 ```
 

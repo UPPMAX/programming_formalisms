@@ -24,7 +24,7 @@
 
     Prerequisites are:
 
-    The [Pre-requirements](prereqs.md): 
+    The [Pre-requirements](prereqs.md):
     - Learners know basic Git
     - Learners know basic Python
     - Learners have installed necessary tools
@@ -33,8 +33,8 @@
 
     - Learners can can understand why a formalized development of software is important.
 
-    Lesson Plan: 
-    
+    Lesson Plan:
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -47,7 +47,7 @@
         - outcome
             - correct, reusable, efficient, changable
     - Example
-    - SLDC   
+    - SLDC
 
 ---
 
@@ -70,7 +70,7 @@
 
 !!! info
 
-    We will not be very definite in the course in when to use scripting, program or tools. 
+    We will not be very definite in the course in when to use scripting, program or tools.
 
 ## Different types of Scientific software
 
@@ -132,8 +132,8 @@
 classDiagram
   class Elevator{
     +string direction
-    +int floor 
-  
+    +int floor
+
     +goto_floor()
     +stop()
     + which_floor()
@@ -164,8 +164,8 @@ classDiagram
 
 !!! info "To sum up"
 
-    - At its simplest, functional programming uses immutable data to tell the program exactly what to do. 
-    - Object-oriented programming tells the program how to achieve results through objects altering the program's state. 
+    - At its simplest, functional programming uses immutable data to tell the program exactly what to do.
+    - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
 !!! info "See also"
@@ -188,13 +188,13 @@ classDiagram
 ???+ exercise "Exercise: Problems with this code? 7 min"
 
     **Breakout room, 3-4 people, 7 minutes**
-   
+
     **Planet application**
-    
+
     - Review this code that simulates the Earth's change of orbit due to the interaction with other planets
     - This was done in Python with no thought of best practices, just trying to solve the problem!
     ---
-    
+
     - Discuss the needs below
     - What are the problems?
     - What can be improved
@@ -222,7 +222,7 @@ classDiagram
         ```python
         #planet
         import numpy as np
-        import matplotlib.pyplot as plt 
+        import matplotlib.pyplot as plt
 
         #constants
         G=6.6743e-11
@@ -252,7 +252,7 @@ classDiagram
         u=u0;
         v=v0;
 
-        for i in range(1,365*L):    
+        for i in range(1,365*L):
             print(i)
             x[i]=x[i-1]+day*u;
             y[i]=y[i-1]+day*v;
@@ -277,11 +277,11 @@ classDiagram
         ax=fig.add_subplot(1,2,2)
         ax.plot(range(0,365*2),rj)
 
-        plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight') 
+        plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight')
 
         ```
 
-      
+
 ## Software Development Life Cycle (SDLC)
 
 - We need a workflow in our programming projects!
@@ -300,7 +300,7 @@ classDiagram
 - **Deployment** and **maintenance**
     - Documentation
     - Reproducibility and sharing
-        - Packaging and dependencies  
+        - Packaging and dependencies
 
 - ... and **Iterations**
 
@@ -319,7 +319,7 @@ classDiagram
         - Reusable
         - Changeable
 
-    - Software development is both series of steps: 
+    - Software development is both series of steps:
         1. Requirements
         2. Analysis and design
         3. Development

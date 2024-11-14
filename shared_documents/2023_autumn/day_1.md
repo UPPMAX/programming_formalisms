@@ -99,8 +99,8 @@ for me, running in VS on windows, the default terminal was powershell which didn
 
 
 - Q: Which of these documentations is about input/output descriptions?
-  
-**Note:** UML diagrams can be used to descibe all UML diagrams, the top of introduction diagrams made with Graphviz program, can be viewd as a USECASE diagram with interacting usecases.  
+
+**Note:** UML diagrams can be used to descibe all UML diagrams, the top of introduction diagrams made with Graphviz program, can be viewd as a USECASE diagram with interacting usecases.
 
 
 -------------------
@@ -147,7 +147,7 @@ for me, running in VS on windows, the default terminal was powershell which didn
 
     ```plantuml
     @startumlbob->Alice:Hello
-    start 
+    start
     :some action;
     stop
 

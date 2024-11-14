@@ -338,7 +338,7 @@ expect_true(is_zero(0))
 
 ```{python}
 #| echo: true
-def is_zero(number): 
+def is_zero(number):
   return True
 
 assert is_zero(0)
@@ -363,7 +363,7 @@ expect_true(is_zero(0))
 
 ## Cycle 1, blue: refactor and commit
 
-```         
+```
 git add .
 git commit -m "Add stub of 'is_zero'"
 git push
@@ -434,7 +434,7 @@ expect_false(is_zero(42))
 
 ## Cycle 2, blue: refactor and commit
 
-```         
+```
 git add .
 git commit -m "'is_zero' responds correctly to numbers"
 git push

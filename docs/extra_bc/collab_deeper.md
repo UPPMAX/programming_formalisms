@@ -10,7 +10,7 @@ Different types of remotes:
   set up.
 - [Bitbucket](https://bitbucket.org) is yet another popular commercial site.
 - Another option is [NotABug](https://notabug.org)
-  
+
 
 ## Centralized workflow
 

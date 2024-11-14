@@ -69,7 +69,7 @@ The TDD cycles end when you cannot break your function anymore `[Beck, 2022][Lan
 Advantages of TDD are:
 
 - TDD makes developers more productive `[Erdogmus & Morisio, 2005]`
-- TDD increases quality of the code 
+- TDD increases quality of the code
   `[Erdogmus & Morisio, 2005][Alkaoud & Walcott, 2018][Janzen & Saiedian, 2006]`
     - There are plenty of costly programming mistakes documented!
 - TDD helps shape the project architecture `[Mayr, 2005]`
@@ -92,7 +92,7 @@ instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
 
 !!! note "Technical rules"
 
-    - Use the GitHub repository for the learners of this course, 
+    - Use the GitHub repository for the learners of this course,
     - Work on the main branch
     - Work in a file called `learners/[your_name]/[class_name].py`,
         where `[your_name]` is the person with first name first in alphabet
@@ -125,7 +125,7 @@ showed at 'Exercises'.
 ???- info "Answer"
 
     Note that the practice of TDD is the goal of the exercise,
-    not the exact outcome. 
+    not the exact outcome.
 
     Here is a possible solution:
 
@@ -176,7 +176,7 @@ Develop a function called `is_even`:
 ???- info "Answer"
 
     Note that the practice of TDD is the goal of the exercise,
-    not the exact outcome. 
+    not the exact outcome.
 
     Here is a possible solution:
 
@@ -191,7 +191,7 @@ Develop a function called `is_even`:
     assert is_even(2)
     assert not is_even(1)
 
-    # 'is_even("nonsense")' throws a TypeError 
+    # 'is_even("nonsense")' throws a TypeError
     # because of the modulo operator
 
     has_thrown = False
@@ -200,7 +200,7 @@ Develop a function called `is_even`:
     except TypeError:
         has_thrown = True
     assert has_thrown
-    
+
     ```
 
 ???- question "Need a video?"
@@ -231,7 +231,7 @@ Consider using the `is_even` function.
 ???- info "Answer"
 
     Note that the practice of TDD is the goal of the exercise,
-    not the exact outcome. 
+    not the exact outcome.
 
     Here is a possible solution:
 
@@ -246,7 +246,7 @@ Consider using the `is_even` function.
     assert is_even(2)
     assert not is_even(1)
 
-    # 'is_even("nonsense")' throws a TypeError 
+    # 'is_even("nonsense")' throws a TypeError
     # because of the modulo operator
 
     has_thrown = False
@@ -302,7 +302,7 @@ Develop a function called `is_probability`.
 ???- info "Answer"
 
     Note that the practice of TDD is the goal of the exercise,
-    not the exact outcome. 
+    not the exact outcome.
 
     Here is a possible solution:
 
@@ -365,7 +365,7 @@ Pick a function at your level.
     - Pick a branching model. When unsure, work on `main`
     - Use no testing framework or `unittest`. When unsure, use no testing frameworks
       - No testing framework: work in a file called `learners/[your_names]/[function_name].py`, e.g. `learners/anna_and_bertil/is_zero.py`
-      - `unittest` framework: work in a file in the `src` folder (e.g. `src/anna_and_bertil_utils.py`), write the tests in the `tests` folder, e.g. `tests/test_anna_and_bertil_utils.py` 
+      - `unittest` framework: work in a file in the `src` folder (e.g. `src/anna_and_bertil_utils.py`), write the tests in the `tests` folder, e.g. `tests/test_anna_and_bertil_utils.py`
 
 !!! note "Social rules"
 

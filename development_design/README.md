@@ -184,7 +184,7 @@ Rational Unified Process is a software development method based on iterative obj
 
 ```plantuml
 @startuml
- !theme blueprint 
+ !theme blueprint
 
 skinparam packageStyle rectangle
 skinparam packageTitleFontColor #ffffff
@@ -387,7 +387,7 @@ rectangle TDD {
   Dev -- (Write Code)
   Dev -- (Refactor Code)
   Dev -- (Repeat)
-  
+
   (Write Test) --> (Analyze Requirements)
   (Write Test) --> (Design Test)
   (Write Test) --> (Implement Test)
@@ -492,11 +492,11 @@ The DevOps methodology comprises four key principles that guide the effectivenes
 
 By adopting these principles, organizations can improve code quality, achieve a faster time to market, and engage in better application planning.
 
-### Tools and methodologies  
+### Tools and methodologies
 
 The tools and methodologies are too numerous to describe in any complete way, and they are always evolving as developers find issues with the models and methodologies they are currently using. The trends in software development is to find the "latest and greatest" method a silver bullet of development, this is of course not a reachable goal. It is better to find a method that is good enough for the task you need to achieve.
 First we need to define,
-A system can be defined as any structure of concepts that helps categorize a concept. This definition is quite broad and not very helpful the definitions of systems but they get more useful as we lower the degree of abstraction, for example when we talk about a biological system or a information system. An information system is a system consisting of organisation, hardware and software that help convey information between a sender and receiver. Further refined we can talk about a software system as the delimiter between components that make up some software. As our scope narrows the concept of system goes from the abstract to the concrete.  
+A system can be defined as any structure of concepts that helps categorize a concept. This definition is quite broad and not very helpful the definitions of systems but they get more useful as we lower the degree of abstraction, for example when we talk about a biological system or a information system. An information system is a system consisting of organisation, hardware and software that help convey information between a sender and receiver. Further refined we can talk about a software system as the delimiter between components that make up some software. As our scope narrows the concept of system goes from the abstract to the concrete.
 The best way to approach which methodology one should use is to look at the development requirements of the system that you wish to create and choose the one that lets you do the least amount of work for the highest value.
 
 In this course we will present a few methodologies which are in no way or form the best or only methods out there but is a start.
@@ -652,12 +652,12 @@ Participant-d->(learn UML from SLIDES)
 
 ```plantuml
 @startuml
-!theme amiga 
+!theme amiga
 (*)--> activity1
-if "stuff?" then 
+if "stuff?" then
 -->[true] "action2"
 -r->(*)
-else 
+else
 --> [false](*)
 @enduml
 ```
@@ -670,7 +670,7 @@ else
 start
 :activity 1;
 -> data;
-if (stuff?) then (true) 
+if (stuff?) then (true)
    :action 2;
 else(false)
 endif

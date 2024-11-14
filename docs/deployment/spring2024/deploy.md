@@ -11,7 +11,7 @@
         - some theory of packages
         - some theory of workflows
         - some theory of containers
-        - get some hands on 
+        - get some hands on
 
 !!! info "Learning objectives of 'Deployment'"
 
@@ -25,7 +25,7 @@
     - ...
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -36,7 +36,7 @@
         - Recording dependencies
         - workflows
         - containers
-    - Make a package    
+    - Make a package
 
 
 ## Introduction
@@ -102,7 +102,7 @@
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 
 - Make Python packages of your code.
-  
+
 - **Possibilities for other languages can be**
     - C/C+
         - CMake
@@ -169,13 +169,13 @@
 - We need to identify what python packages a user (or you on another computer) will need, to make the program work!
     - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
     - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
-- So here are some steps:  
+- So here are some steps:
 
 - Start a python virtual environment.
     - you can do this outside the git repo to not pollute it
 
 ```console
-python -m venv PATH/Example 
+python -m venv PATH/Example
 ```
 
 - This creates an empty virtual environment located in PATH/Example directory
@@ -205,7 +205,7 @@ python -V            # note this version
 - Install them with ``pip install <package name>``. No need to use ´´--user``, since it will be installed in the virtual environment only.
 - Do this until your program works
 - Check what is installed by:
-  
+
 ```console
 pip freeze        #pip list works as well
 ```

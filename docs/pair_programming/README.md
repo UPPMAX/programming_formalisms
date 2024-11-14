@@ -131,7 +131,7 @@ Questions:
       such as 'Add documentation', 'Add test', 'Pass test'
     - each time a timer goes off, e.g. after 5 minutes
 
-    The first procedure sometimes fails when a driver (thinks he/she) 
+    The first procedure sometimes fails when a driver (thinks he/she)
     has much more knowledge than the navigator on the subject
     and is (apparently) inexperienced in good pair programming.
     In such cases, the second procedure work better.
@@ -146,7 +146,7 @@ Questions:
      * 96% of developers prefer pair programming over developing alone [Williams & Kessler, 2000]
 
     However, the first study uses only 2 programming teams,
-    the second study 41 self-selected respondents. 
+    the second study 41 self-selected respondents.
     One can/should be critical on these studies.
 
     Yet, for teaching, working is groups has a high effect size [Hattie, 2012],
@@ -187,8 +187,8 @@ Reflect:
 
     The hardest part will be to understand how little needs to be done here.
 
-    A file needs to be created at  `src/bacsim/[class_name].py`. 
-    For example, for a coordinate, 
+    A file needs to be created at  `src/bacsim/[class_name].py`.
+    For example, for a coordinate,
     this file will be called `src/bacsim/coordinate.py`
 
     The contents of the file is -maybe unexpectedly- minimal.

@@ -8,7 +8,7 @@
 
 - If you want PlantUML to render directly from a file on GitHub please install the **extension PlantUML viewer to your web browser**.
 - works for multiple browsers [https://github.com/marcozaccari/markdown-diagrams-browser-extension](https://github.com/marcozaccari/markdown-diagrams-browser-extension)
-    - Restart browser after installation!  
+    - Restart browser after installation!
 - if the above does not work try
     - Firefox: PlantUML visualizer (is not compatible with !theme _none_ tag)
     - Chrome: Pegmatite,PlantUML viewer

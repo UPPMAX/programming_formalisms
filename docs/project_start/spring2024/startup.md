@@ -30,7 +30,7 @@
     - Learners can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -82,7 +82,7 @@
     - Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
     - Students should be familiar with using a **text editor** on their system.
     - We hope also that you have already done these steps:
-    
+
     ```console
     $ git config --global user.name "<Your Name>"
     $ git config --global user.email <your GitHub-connected email address>
@@ -105,7 +105,7 @@
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
-  
+
 !!! admonition "Concepts in Git"
 
     - **repository**: The project, contains all data and history (commits, branches, tags).
@@ -128,7 +128,7 @@
 !!! example "Type-along or Demo"
 
     **You can also listen and try this out yourself when you have time**
-    
+
     - Example code, `planets.py`
 
     !!!- Code
@@ -136,7 +136,7 @@
         ```python
         #planet
         import numpy as np
-        import matplotlib.pyplot as plt 
+        import matplotlib.pyplot as plt
 
         #constants
         G=6.6743e-11
@@ -166,7 +166,7 @@
         u=u0;
         v=v0;
 
-        for i in range(1,365*L):    
+        for i in range(1,365*L):
             print(i)
             x[i]=x[i-1]+day*u;
             y[i]=y[i-1]+day*v;
@@ -191,10 +191,10 @@
         ax=fig.add_subplot(1,2,2)
         ax.plot(range(0,365*2),rj)
 
-        plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight') 
+        plt.savefig('../Figures/planet_earth.png', dpi=100, bbox_inches='tight')
 
         ```
-    - Make a folder with name `planets` 
+    - Make a folder with name `planets`
      - BASH: ``mkdir planets``
     - Create a folder in the ``planets/`` folder, called ``Figures/``
     - Also create a folder within ``planets/`` folder with the name ``code``
@@ -224,7 +224,7 @@
 
     ```console
     $ git status
-    
+
     On branch main
 
     No commits yet
@@ -235,8 +235,8 @@
             code/
     nothing added to commit but untracked files present (use "git add" to track)
 
-    ```   
-    
+    ```
+
 - The two files are untracked in the repository (directory).
 - You want to **add the files** (focus the camera) to the list of files tracked by Git.
 - Git does not track any files automatically and you need make a conscious decision to add a file.
@@ -286,7 +286,7 @@ Let us now commit the change to the repository:
     On branch master
     nothing to commit, working tree clean
     ```
-    
+
 What does the `-m` flag mean? Let us check the help page for that command:
 
 ```console
@@ -308,7 +308,7 @@ git help commit
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-    
+
 ### Upload to GitHub
 
 !!! example "Demo or Type-along"
@@ -327,11 +327,11 @@ git help commit
 
 
     ![New top-right](../img/new-top-right.png){ width=60% }
-    
+
     ---
 
     - On this page choose a project name, e.g. ``planets-<username>``
-    
+
         - Add your name there so there are no clashes when/if you collaborate and fork other repositories
         - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
 
@@ -342,7 +342,7 @@ git help commit
 
     - Press "**Create repository**"
 
-    ![Create and push](../img/created_push.PNG)     
+    ![Create and push](../img/created_push.PNG)
 
     - Choose **SSH**
     - Copy-paste the code for "**…or push an existing repository from the command line**"
@@ -351,7 +351,7 @@ git help commit
 
     - Did it work??
     - Reload the GitHub page and see the fiels present locally is also present there.
-    
+
     **Done!**
 
 - **Let's view the license!**
@@ -386,7 +386,7 @@ git help commit
     - ReadMe file
     - Data  (version controlled)(.gitignore)
     - Processed data intermediate
-    - (Manuscript) 
+    - (Manuscript)
     - Results  data, tables, figures (version controlled, git tags for manuscript version)
     - Src  version controlled code goes here
         - License (here or in the 1st level)
@@ -423,22 +423,22 @@ git help commit
 
 ```markdown
     **Cheat sheet**
-    # This is a section in Markdown   
+    # This is a section in Markdown
 
-    ## This is a subsection           
+    ## This is a subsection
 
-    Nothing special needed for        
-    a normal paragraph.               
+    Nothing special needed for
+    a normal paragraph.
 
-        This is a code block          
+        This is a code block
 
 
-    **Bold** and *emphasized*.       
+    **Bold** and *emphasized*.
 
-    A list:                           
-    - this is an item                 
-    - another item                   
-               
+    A list:
+    - this is an item
+    - another item
+
 ```
 
 !!! info "See also"
@@ -491,9 +491,9 @@ Good docstrings describe:
     What goes in (including the type of the input variables)
     What goes out (including the return type)
     Python example: ``help()``
-    
+
 **Example**
-  
+
 ```python
 
 def mean_temperature(data):
@@ -507,8 +507,8 @@ def mean_temperature(data):
         The mean air temperature (float)
     """
     temperatures = data['Air temperature (degC)']
-    return float(sum(temperatures)/len(temperatures))  
-  
+    return float(sum(temperatures)/len(temperatures))
+
 ```
 
 !!! info "Working on GitHub"
@@ -516,7 +516,7 @@ def mean_temperature(data):
     - You can do basically the **same work at GitHub as in your local git repo**
     - The **graphical view** makes it easier to work with in everyday editing work at least.
         - Depends on your own preferences of course.
-    - Here your commit each file at a time with the "commit button". 
+    - Here your commit each file at a time with the "commit button".
         - **No staging** that is.
         - Be aware of that feature!
     - **GitHub Actions** are workflows defined by you, like:
@@ -541,9 +541,9 @@ def mean_temperature(data):
     - Commit your changes
      - Note that there is no staging area on GitHub
     - Go to your local git folder in a terminal to get the GitHub changes locally.
-    - Do ``git pull`` in the terminal 
+    - Do ``git pull`` in the terminal
     - Also try these commands!
-    
+
     ```console
     $ git log
     $ git log --stat
@@ -572,13 +572,13 @@ C[Uncommited changed planet.py] -->|commit button| R
 Node5 --> |"git pull (from local git)"| Node2
 R --> |"git pull (from local git)"| Node1
 R <--> Node5
-      
+
         subgraph "Local Git"
         Node2[project]
-        Node1[planet.py] 
+        Node1[planet.py]
         Node1 <--> Node2
-        
-        end 
+
+        end
 
         subgraph "staging area"
         Node4[planet.py]
@@ -623,7 +623,7 @@ R <--> Node5
 
 - View README.md
 - View License
-  
+
 !!! admonition "Concepts in Git"
     - **repository**: The project, contains all data and history (commits, branches, tags).
     - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
@@ -640,7 +640,7 @@ R <--> Node5
 
      **Now you and other people can clone this repository and contribute changes.**
 
-    - You may want to create a directory on your computer for this course. 
+    - You may want to create a directory on your computer for this course.
      - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
@@ -651,33 +651,33 @@ R <--> Node5
      ```console
      $ git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
      ```
-    
-    !!! tip 
-        - Using the SSH makes it very straight-forward to upload your local changes back to GitHub. 
+
+    !!! tip
+        - Using the SSH makes it very straight-forward to upload your local changes back to GitHub.
         - Use HTTP if you clone repos that do not belong to you or your group.
 
     **What just happened?**
-    
+
     - `cd` the new directory that was created
     - list the files with `ls`
-    
+
     **Create a folder with your name**
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
 
     - Git needs files to be able to commit.
-    
-    - Therefore **create an empty README file in the created folder** 
+
+    - Therefore **create an empty README file in the created folder**
 
     - ``touch README.md``
-    
+
     - git add/commit this file
 
     **Push your changes to the GitHub repo**
 
     - ``git push``
-    
+
     **When everyone are done pull the latest changes to the local git repo**
 
     - ``git pull``
@@ -745,6 +745,6 @@ git rm      # remove tracked files  (from repository only)
     - &#9745; Sharing
         - &#9745; open science
         - &#9744; citation
-        - &#9745; licensing  
+        - &#9745; licensing
     - &#9744; Documentation
 

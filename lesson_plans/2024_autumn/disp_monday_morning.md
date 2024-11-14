@@ -74,9 +74,9 @@ Command line with https: BC+L+R, uses command line
 
     - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
 
-    - Content    
+    - Content
         - Execute basic Git commands to perform version control tasks and manage project repositories effectively.
-         - get started with planning the project 
+         - get started with planning the project
 
 ### Literature on why
 

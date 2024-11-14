@@ -102,9 +102,9 @@ def isprime(num):
 
 ```python
 def isprime(num):
-    if num> 1:  
-        for n in range(2,num):  
-            if (num % n) == 0:  
+    if num> 1:
+        for n in range(2,num):
+            if (num % n) == 0:
                 return False
         return True
     else:

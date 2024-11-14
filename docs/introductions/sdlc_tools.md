@@ -24,7 +24,7 @@
 
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min

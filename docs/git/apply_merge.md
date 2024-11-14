@@ -6,7 +6,7 @@
     - practice doing a code review
     - practice fixing merge conflicts on GitHub
     - practice merging branches using the command-line interface
-    - practice fixing merge conflicts on local computer, 
+    - practice fixing merge conflicts on local computer,
       using the command-line interface
 
 ???- question "For teachers"
@@ -17,7 +17,7 @@
     - Learners have practiced doing a code review
     - Learners have practiced fixing merge conflicts on GitHub
     - Learners have practiced merging branches using the command-line interface
-    - Learners have practiced fixing merge conflicts on local computer, 
+    - Learners have practiced fixing merge conflicts on local computer,
       using the command-line interface
 
 
@@ -209,7 +209,7 @@ gitGraph
     > - On your local computer:
     >    - update the repository
 
-    On your local computer, navigate to the folder of the shared project 
+    On your local computer, navigate to the folder of the shared project
     and update:
 
     ```
@@ -245,7 +245,7 @@ gitGraph
     ```
 
     > - On your local computer:
-    >     - push your changes online. 
+    >     - push your changes online.
 
     Do:
 
@@ -361,7 +361,7 @@ gitGraph
     - in GitHub, create a branch called `anna`
     - on your local computer, `git pull`, then `git switch anna`
     - on your local computer, modify a file, e.g. add the line `Anna was here`
-      at the bottom of `README.md`. Then do `git add .`, 
+      at the bottom of `README.md`. Then do `git add .`,
       `git commit -m "Anna was here"` and `git push`.
       Do not merge braches yet, else there will be no merge conflicts!
     - on your local computer, `git switch main`

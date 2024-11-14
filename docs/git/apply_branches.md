@@ -91,7 +91,7 @@ gitGraph
     > - On your local computer:
     >    - update the repository
 
-    On your local computer, navigate to the folder of the shared project 
+    On your local computer, navigate to the folder of the shared project
     and update:
 
     ```
@@ -127,7 +127,7 @@ gitGraph
     ```
 
     > - On your local computer:
-    >     - push your changes online. 
+    >     - push your changes online.
 
     Do:
 
@@ -153,7 +153,7 @@ gitGraph
     Make sure you look at the correct branch, as displayed at 1.
     Then your commit message shows up at 2.
 
-    > - On your local computer, switch to the main branch, 
+    > - On your local computer, switch to the main branch,
     >   as we'll delete the branch you are on now
 
     Switch to the main branch, for example, `main`, by doing:

@@ -217,14 +217,14 @@ practicing TDD.
 
 !!! note "`is_roman_numeral(x)`"
 
-    - Returns `True` if the input is a roman numeral, 
+    - Returns `True` if the input is a roman numeral,
       e.g. 'I', 'II', 'IV', 'XI', etc.
     - Returns `False` if the input is not a roman numeral
     - If the input is not one String, a `TypeError` is raised.
 
 !!! note "`sum_divisors(x)`"
 
-    - Returns the sum of [the proper divisors](https://en.wikipedia.org/wiki/Divisor#proper_divisor) 
+    - Returns the sum of [the proper divisors](https://en.wikipedia.org/wiki/Divisor#proper_divisor)
       of the input. For example, the proper divisors of 4 are 1 and 2,
       as 4 can be divided by both 1 and 2.
 
@@ -270,7 +270,7 @@ practicing TDD.
 
 !!! note "`roman_to_int(x)`"
 
-    - Input: [a Roman numeral](https://en.wikipedia.org/wiki/Roman_numerals), e.g. 'IV', 
+    - Input: [a Roman numeral](https://en.wikipedia.org/wiki/Roman_numerals), e.g. 'IV',
     - Returns The integer value of this Roman numeral
 
       Input|Expected output

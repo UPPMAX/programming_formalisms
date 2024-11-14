@@ -31,7 +31,7 @@
     - ...
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -142,19 +142,19 @@ single-person repository in the previous episodes.
 
 !!! example "Example with a salad repo"
 
-    - In this example the contributor will not change the `main` branch directly but submit a "pull request" (a **change proposal**) towards the `main` branch for **code review**. 
+    - In this example the contributor will not change the `main` branch directly but submit a "pull request" (a **change proposal**) towards the `main` branch for **code review**.
     - You do this by just **changing the file at GitHub**
     - Before committing/proposing file change you may preview the changes.
 
     ![](../img/contributing/propose-file-change.png)
 
     - After we click "Commit / change proposal" we are taken to this form:
-     
+
     ![](../img/contributing/pull-request-form.png)
 
-    - In there we 
-        - verify the **source and target branch**, 
-        - verify the **file changes**, 
+    - In there we
+        - verify the **source and target branch**,
+        - verify the **file changes**,
         - can edit the **title** and **description** of the "pull request" (change proposal)
     - After we have submitted the "pull request", one of our collaborators can review it
     - We can discuss and ask for changes before merging the changes "Merge pull request"
@@ -229,12 +229,12 @@ We can practice how a conflict looks and how to resolve it:
     Saturn| 95.2 | 9.54 | 8.54
 
     - Co-teacher adds info about Saturn
-    - Update the files below in ``code/`` by just replacing the existing code with this: 
-    
+    - Update the files below in ``code/`` by just replacing the existing code with this:
+
         ???- "planet_main.py"`
 
-             
-        
+
+
         ???- "planet_data.py
 
 ### Summary
@@ -336,7 +336,7 @@ sharing screen:
     - **tag**: A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque) that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
     - **cloning**: Copying the whole repository to your laptop - the first time.
         - It is not necessary to download each file one by one.
-        - good within a group  
+        - good within a group
     - **forking**: Taking a copy of a repository (which is typically not yours)
         - our copy (fork) stays on GitHub and you can make changes to your copy.
         - better for contribution to other's project
@@ -345,7 +345,7 @@ sharing screen:
     - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
     - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
-  
+
 ???- question "quiz"
 
 
@@ -372,7 +372,7 @@ sharing screen:
     - &#9744; Sharing
         - &#9745; open science
         - &#9744; citation
-        - &#9745; licensing  
+        - &#9745; licensing
     - &#9744; Documentation
         - &#9745; in-code documentation
-  
+

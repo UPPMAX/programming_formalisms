@@ -123,7 +123,7 @@ def raise_error():
 
 has_raised = False
 try:
-    raise_error() 
+    raise_error()
 except:
     has_raised = True
 assert has_raised

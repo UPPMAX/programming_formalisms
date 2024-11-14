@@ -27,7 +27,7 @@
     - ...
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -35,7 +35,7 @@
 !!! info "TOC"
 
     - In-code documentation review
-    - Documentation 
+    - Documentation
         - tutorials/howto/reference
         - project doc
         - html site generators
@@ -46,7 +46,7 @@
         - update license
         - update citation
         - update index
-        
+
 ## README example
 
 ```
@@ -95,13 +95,13 @@ This program ...
 
     1. Custom/closed/proprietary
         - Derivative work typically not possible
-        - Unusual in academics 
+        - Unusual in academics
     2. Permissive (**MIT**, BSD, Apache)
-      - Derivative work does not have to be shared    
+      - Derivative work does not have to be shared
     3. Weak copyleft share-alike (**LGPL**, MPL)
       - Derivative work is free software but is limited to the component
     4. Strong copyleft share-alike (**GPL**, AGPL)
-      - Derivative work is free software and derivative work extends to the combined project    
+      - Derivative work is free software and derivative work extends to the combined project
 
 [Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)
 
@@ -208,14 +208,14 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - License
     - Figures
         - figure outputs
-    - Src 
+    - Src
         - License (here or in the 1st level)
         - Requirements.txt
         - python files
     - Doc
         - index
         - planning documents
-        
+
 
 
 ???+ Question "(Optional) Update your documentation"

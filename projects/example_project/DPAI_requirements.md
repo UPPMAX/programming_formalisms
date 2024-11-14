@@ -116,7 +116,7 @@ graph TD;
     Particle(Particle)
     Gravity(Gravitational Interaction)
     Boundary(Boundary Condition)
-    
+
     User --> StartSimulation
     User --> StopSimulation
     User --> PauseSimulation

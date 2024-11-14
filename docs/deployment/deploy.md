@@ -11,7 +11,7 @@
         - some theory of packages
         - some theory of workflows
         - some theory of containers
-        - get some hands on 
+        - get some hands on
 
 !!! info "Learning objectives of 'Deployment'"
 
@@ -25,7 +25,7 @@
     - ...
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -36,4 +36,4 @@
         - Recording dependencies
         - workflows
         - containers
-    - Make a package    
+    - Make a package

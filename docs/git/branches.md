@@ -16,10 +16,10 @@
 ???- info "Learning objectives of 'Branches'"
 
     - learners can locally
-       
+
         - explain and evaluate the usefulness of branches
         - create, switch and delete a `git` branch
-        - merge 
+        - merge
 
 
 ???- note "Instructor notes"
@@ -29,7 +29,7 @@
     - git basics
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -128,14 +128,14 @@ git branch -d new-feature    # remove branch
 
     ```git
     $ git branch
-    
+
     * jupiter
     main
 
     ```
-    
+
     - Note that we have the same working tree right now as before (code/ and Figures/ folders and the planet.py file).
-    - Let's open the 
+    - Let's open the
     - We will add some lines to count with the effects from the gravity of Jupiter on Earth
 
 
@@ -144,7 +144,7 @@ git branch -d new-feature    # remove branch
 
         #planet with Jupiter
         import numpy as np
-        import matplotlib.pyplot as plt 
+        import matplotlib.pyplot as plt
 
         #constants
         G=6.6743e-11
@@ -185,7 +185,7 @@ git branch -d new-feature    # remove branch
         uJ=u0J;
         vJ=v0J;
 
-        for i in range(1,365*L):    
+        for i in range(1,365*L):
             if i % 36500==0:
                 print(i/365)
 
@@ -246,7 +246,7 @@ git branch -d new-feature    # remove branch
     - Do **not** stage (add) yet!
 
     **Discussion**
-    
+
     - That's long code!
     - Perhaps make modular?
     - The orbits seems too elliptic in the plot. The axes should be equal!
@@ -411,31 +411,31 @@ git branch -d new-feature    # remove branch
 
     ```git
     $ git switch main
-    
+
     Switched to branch 'main'
     Your branch is up to date with 'origin/main'.
     ```
-    
+
     - Make a branch called ``modularity`` and go to that branch
-    
+
     ```console
     $ git switch -c modularity    # create branch, switch to it
     $ git branch                    # check that we are on the new branch
-    
+
       jupiter
       main
     * modularity
     ```
-    
+
     - We can now do our changes
     - We will make four files
         - ``planet_main.py``, containing an overview e.g. the main program
         - ``planet_data.py``, containing general constants, and planetary parameters
         - ``planet_iter.py``, containing the equation of motion for the planets
         - ``planet_functions.py``, containing eccentricity calculations and a plot function
-  
+
     ???- "planet_main.py"
-    
+
         ```python
         #planet with Jupiter
         import numpy as np
@@ -453,7 +453,7 @@ git branch -d new-feature    # remove branch
         # Get the mass and the initial position of Jupiter
         xJ,yJ,uJ,vJ,mJ=init_Jupiter(AU,year,L)
 
-        for i in range(1,365*L):    
+        for i in range(1,365*L):
             #Counter for each 100 years
             if i % 36500==0:
                 print(i/365)
@@ -467,12 +467,12 @@ git branch -d new-feature    # remove branch
             yJ[i]=yJ[i-1]+day*vJ;
 
             # acceleration of Earth due to Sun
-            axS, ayS = acc_effect(G,M,x[i],y[i])    
+            axS, ayS = acc_effect(G,M,x[i],y[i])
 
             # acceleration of Earth due to Jupiter
             dxJ=x[i]-xJ[i];
             dyJ=y[i]-yJ[i];
-            axEJ, ayEJ = acc_effect(G,mJ,dxJ,dyJ)  
+            axEJ, ayEJ = acc_effect(G,mJ,dxJ,dyJ)
 
             # net effect on velocity of Earth
             ax=axS+axEJ;
@@ -490,9 +490,9 @@ git branch -d new-feature    # remove branch
         figure_orbit(x,y,xJ,yJ,e)
 
         ```
-    
+
     ???- "planet_data.py"
-    
+
         ```python
         import numpy as np
 
@@ -544,7 +544,7 @@ git branch -d new-feature    # remove branch
         ```
 
     ???- "planet_iter.py"
-    
+
         ```python
         import numpy as np
 
@@ -567,10 +567,10 @@ git branch -d new-feature    # remove branch
         ```
 
     ???- "planet_functions.py"
-    
+
         ```python
         import numpy as np
-        import matplotlib.pyplot as plt 
+        import matplotlib.pyplot as plt
 
         def eccentricity(x,y,L,l):
 
@@ -600,7 +600,7 @@ git branch -d new-feature    # remove branch
           plt.savefig(figname, dpi=100, bbox_inches='tight')
 
         ```
- 
+
     - add and commit
 
     ```git
@@ -619,16 +619,16 @@ git branch -d new-feature    # remove branch
 
     ```console
     $ git config --global alias.graph "log --all --graph --decorate --oneline"
-    ``` 
-  
+    ```
+
     This will enable you to use ``git graph`` for short
 
 
     - It will now give you something like this:
 
-  
-    ```git 
-  
+
+    ```git
+
     $ git graph
     * 4d4acaf (HEAD -> modularity) 4 modular files
     | * 2d4e252 (jupiter) add jupiter
@@ -653,7 +653,7 @@ git branch -d new-feature    # remove branch
     ```
 
 
-## Meanwhile  
+## Meanwhile
 
 **Back in main branch**
 
@@ -672,7 +672,7 @@ git branch -d new-feature    # remove branch
 
     ```git
     git add planet.py
-    git commit -m "rm print"  
+    git commit -m "rm print"
     ```
 
     - And do the graph!
@@ -688,7 +688,7 @@ git branch -d new-feature    # remove branch
     * 6a416b5 add folders and planet code
 
     ```
-    
+
     ```mermaid
     gitGraph
 
@@ -724,7 +724,7 @@ git branch -d new-feature    # remove branch
 !!! example "Merge into main"
 
     - once all features are ready, switch to main!
-    
+
     ```git
     $ git switch main    # switch to main branch
     $ git branch           # check that we are on main branch
@@ -734,7 +734,7 @@ git branch -d new-feature    # remove branch
      code/planet_data.py      | 46 +++++++++++++++++++++++++++++++++++++++++++
      code/planet_functions.py | 29 +++++++++++++++++++++++++++
      code/planet_iter.py      | 17 ++++++++++++++++
-     code/planet_main.py      | 51 ++++++++++++++++++++++++++++++++++++++++++++++++       
+     code/planet_main.py      | 51 ++++++++++++++++++++++++++++++++++++++++++++++++
      4 files changed, 143 insertions(+)
      create mode 100644 code/planet_data.py
      create mode 100644 code/planet_functions.py
@@ -744,18 +744,18 @@ git branch -d new-feature    # remove branch
     ```
     - let's now check the graphical view:
 
-   
+
     ```git
     $ git graph
     * 1b29a8f (HEAD -> main) Merge branch 'modularity'
     |\
     | * 4d4acaf (modularity) 4 modular files
     * | 000b440 rm print
-    |/  
+    |/
     | * 2d4e252 (jupiter) add jupiter
     |/
     * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code    
+    * 6a416b5 add folders and planet code
     ```
 
     ```mermaid
@@ -840,7 +840,7 @@ git rm      # remove tracked files
 git switch -b wild-idea    # create branch, switch to it, work, work, work ...
 git switch main          # realize it was a bad idea, back to main/master
 git branch -D wild-idea      # it is gone, off to a new idea
-git merge 
+git merge
 ```
 
 **Overview workflow**
@@ -866,19 +866,19 @@ git merge
     - &#9744; Sharing
         - &#9745; open science
         - &#9744; citation
-        - &#9745; licensing  
+        - &#9745; licensing
     - &#9744; Documentation
         - &#9745; in-code documentation
-  
+
 !!! Keypoints
 
     - Initializing a Git repository is simple: ``git init``.
     - Commits should be used to tell a story.
     - Git uses the .git folder to store the snapshots.
     - Don’t be afraid to stage and commit often. Better too o
-    - A branch is a division unit of work, to be merged with 
+    - A branch is a division unit of work, to be merged with
     - A tag is a pointer to a moment in the history of a proj
-    - A repository can have one or multiple remotes (we will 
+    - A repository can have one or multiple remotes (we will
     - Local branches often track remote branches.
     - A remote serves as a full backup of your work.
 

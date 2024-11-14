@@ -194,8 +194,8 @@ create_big_o_example <- function(n = seq(0, 100)) {
   t
 }
 t <- create_big_o_example(n = seq(0, 100))
-ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
-  ggplot2::geom_line(size = 4) + 
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
+  ggplot2::geom_line(size = 4) +
   ggplot2::theme(text = ggplot2::element_text(size = 20))
 ```
 
@@ -205,8 +205,8 @@ ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
 
 ```{r}
 t <- create_big_o_example(n = seq(0, 500))
-ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
-  ggplot2::geom_line(size = 4) + 
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
+  ggplot2::geom_line(size = 4) +
   ggplot2::theme(text = ggplot2::element_text(size = 20))
 ```
 
@@ -214,8 +214,8 @@ ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
 
 ```{r}
 t <- create_big_o_example(n = seq(0, 2000))
-ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) + 
-  ggplot2::geom_line(size = 4) + 
+ggplot2::ggplot(t, ggplot2::aes(x = n, y = t, color = sub)) +
+  ggplot2::geom_line(size = 4) +
   ggplot2::theme(text = ggplot2::element_text(size = 20))
 ```
 
@@ -258,9 +258,9 @@ def isprime(num):
 #| echo: true
 #| eval: false
 def isprime(num):
-    if num> 1:  
-        for n in range(2,num):  
-            if (num % n) == 0:  
+    if num> 1:
+        for n in range(2,num):
+            if (num % n) == 0:
                 return False
         return True
     else:
@@ -310,12 +310,12 @@ def Prime(no, i = 2):
 
 -   Measure big-O complexity of DNA alignment at https://johnlekberg.com/blog/2020-10-25-seq-align.html
 
-```         
+```
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGTCGTACGTACGT
 ```
 
-```         
+```
 ACGTACGTACGTACGTACGTACGT
 ACGTACGTACGT-CGTACGTACGT
 ```

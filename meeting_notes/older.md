@@ -910,7 +910,7 @@ Suggested agenda points:
 - We work together on a example project, so the students have one good example how it should be done.
 - [R, 17 mins total] R: suggest one/two project topics (1 for students, maybe 1 for teachers)
     - [10 mins, collect] All suggest the topics for a general project individually, in silence [R asked in Slack to do this before meeting]
-        - [0 votes] R: beat all <https://projecteuler.net/> problems  
+        - [0 votes] R: beat all <https://projecteuler.net/> problems
         - [4 votes][students] R: simulating bacterial movement in 2D space +:t-rex::t-rex: x
         - [1 votes] R: a chess game :t-rex:
         - [2 votes] R: a tic-tac-toe game :t-rex: +
@@ -1307,7 +1307,7 @@ We need someone each day to administer and answer questions on HackMd. Please fi
 ```flow
 st=>start: HAS AN
 OWNER AND
-IS OPEN!  
+IS OPEN!
 e=>end: RESOLVE
 op=>operation: ASSIGN
 AGAIN
@@ -1319,7 +1319,7 @@ AWARE
 op4=>operation: WAIT
 op5=>operation: STALL
 AND
-COMMENT 
+COMMENT
 op6=>operation: RESOLVE
 BUT
 COMMENT
@@ -1337,8 +1337,8 @@ EXTERNAL
 INPUT?
 cond4=>condition: REQUEST
 SOLVED?
-cond5=>condition: WORK 
-NEEDED 
+cond5=>condition: WORK
+NEEDED
 INTERNALLY?
 
 st->cond->cond2
@@ -1384,7 +1384,7 @@ stop
 ##
 
 ```plantuml
-Actor -->(test) 
+Actor -->(test)
 ```
 
 ```plantuml
@@ -1648,7 +1648,7 @@ Add theory to bolster already present practical skills
             - Extreme Programming and Prototype driven development
        short historical overview.
      -MENTI FOR INTRaction
-     development strategies and design strategies  
+     development strategies and design strategies
 - -UML Digagrams -20 min
 - -UML exersise 10 min
     - functional programming(short intro to concepts)
@@ -1656,7 +1656,7 @@ Add theory to bolster already present practical skills
     - object-oriented [as intro to modular](Lars)
     - concept of classifiaction and classes as a means of compartimalisation
         - Concept of inheretance as a mean of propagating comonallity
------LUNCH----  
+-----LUNCH----
 - Common development practices[name=Jon]
     - Choosing a software development methodology[name=Lars]
     - Social coding (<https://coderefinery.github.io/social-coding/social-coding/>)
@@ -1673,7 +1673,7 @@ Add theory to bolster already present practical skills
         - Why are modules so important when working collaborativly
         - *One asset one file* , How to create an environment that promotes easy sharing of work.
 
-- 1h  
+- 1h
 - Design Patterns([name=Lars]) 1h DAY 4
     - What is  a design pattern
     - Common design patterns and there applications       -

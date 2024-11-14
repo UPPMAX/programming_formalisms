@@ -96,7 +96,7 @@ When can you use:
 :alt: Images of Bob Marley and Mona Lisa made out of Rubik cubes
 :width: 60%
 
-Images of Bob Marley and Mona Lisa made out of Rubik cubes. 
+Images of Bob Marley and Mona Lisa made out of Rubik cubes.
 Is this derivative work? ["Distillery District 26"](https://www.flickr.com/photos/dgriebeling/3851273590) CC-BY.
 ```
 
@@ -137,7 +137,7 @@ Is this derivative work? ["Distillery District 26"](https://www.flickr.com/photo
 
 - Clarify licensing strategy **before** - otherwise you won't have
   all rights to your code.
-  
+
 ### What is free software?
 
 #### Software freedom is the freedom to
@@ -218,16 +218,16 @@ Example: Permissions, conditions, and limitations of the GPL license. Unchanged 
 :width: 50px
 :align: center
 ```
-  
+
 - BY – Attribution - Credit must be given to the creator
-    - User may copy, distribute, display, perform and make derivative works and remixes based on it only if they give the author or licensor the credits  
+    - User may copy, distribute, display, perform and make derivative works and remixes based on it only if they give the author or licensor the credits
 
 ```{image} ./img/Cc-sa.svg.png
 :alt: CC-SA
 :width: 50px
 :align: center
 ```
-  
+
 - SA - Share alike - Allows remix culture
     - distribute derivative works only under a license identical to ("not more restrictive than") the license that governs the original work.(Share alike)
 
@@ -239,7 +239,7 @@ Example: Permissions, conditions, and limitations of the GPL license. Unchanged 
 
 - NC - Non-commercial
     - Licensees may copy, distribute, display, perform the work and make derivative works and remixes based on it only for non-commercial purposes.
-  
+
 ```{image} ./img/Cc-nd.svg.png
 :alt: CC-ND
 :width: 50px
@@ -248,13 +248,13 @@ Example: Permissions, conditions, and limitations of the GPL license. Unchanged 
 
 - ND - No derivative work
     - Licensees may copy, distribute, display and perform only verbatim copies of the work, not derivative works and remixes based on it. Since version 4.0, derivative works are allowed but must not be shared.
-  
+
 ```{image} ./img/225px-Cc-zero.svg.png
 :alt: CC0
 :width: 50px
 :align: center
 ```
-  
+
 - CC0 (aka CC Zero) - No attribution required
     - not recommended to release software into the public domain because it lacks a patent grant.
 

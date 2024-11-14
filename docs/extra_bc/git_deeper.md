@@ -26,7 +26,7 @@ This material is based on or inspired by the material from [NBIS](https://nbis-r
    -  Students should be familiar with using a **text editor** on their
       system. Emacs and Vim are excellent choices if you know how to use
       them but Nano or Notepad on Windows are sufficient.
-      
+
 ```
 
 
@@ -60,12 +60,12 @@ This material is based on or inspired by the material from [NBIS](https://nbis-r
 
 ```{Attention}
 - Start your terminal of choice
-   - MAC terminal 
+   - MAC terminal
    - iTerm
    - WSL environment in
      - MobaxTerm
      - Visual Studio Code
-   - Git BASH  
+   - Git BASH
    - PowerShell
 
 ```
@@ -258,7 +258,7 @@ Note that help pages also work when you don't have a network connection!
 
 ``````{challenge} Make changes (10 min)
   Add the follwing lines before the line "@enduml" to `class.puml`:
-  
+
  ```shell
  class class02 {
     -var02 : Float
@@ -631,7 +631,7 @@ branch 'main' set up to track 'origin/main'.
 ---
 class: warning, dropdown
 ---
-If you instead get something like the below, your SSH keys are not correctly configured. 
+If you instead get something like the below, your SSH keys are not correctly configured.
 ```text
 git@github.com: Permission denied (publickey).
 fatal: Could not read from remote repository.

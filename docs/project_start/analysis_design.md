@@ -69,12 +69,12 @@ classDiagram
     C--> |consumes| D
     A-->|updates|A
     E(Graphical User Interface)-->|Displays|A
-    
+
     classDef red fill:#f9cccc,stroke:#333,stroke-width:2px;
     classDef orange fill:#ffe6cc,stroke:#333,stroke-width:2px;
     classDef green fill:#ccffcc,stroke:#333,stroke-width:2px;
     classDef blue fill:#00aaff,stroke:#333,stroke-width:2px;
-    
+
     class A red;
     class B, orange;
     class C,D,G green;
@@ -92,4 +92,4 @@ classDiagram
 
 
 
-     
+

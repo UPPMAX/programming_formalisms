@@ -137,7 +137,7 @@ well as for wider quality/impact analyses.
 ### Section 3 - Quality Metrics
 
 ```text
-[Richel] I don't see the use of question 5 below, 
+[Richel] I don't see the use of question 5 below,
 I see no reason why this would change the course, nor my teaching
 in any way
 ```
@@ -150,8 +150,8 @@ in any way
 - iv. Frequently
 
 ```text
-[Richel] I don't see the use of question 6 below, 
-as I feel question 7 gives me the similar info.  
+[Richel] I don't see the use of question 6 below,
+as I feel question 7 gives me the similar info.
 ```
 
 6. Will you use the tools/resource(s) covered in the course again? `will_use_resources_future`
@@ -178,7 +178,7 @@ as I feel question 7 gives me the similar info.
 (*please include both numeric and categorical scale for this question.)
 
 ```text
-[Richel] I don't like to bother our learners with this. 
+[Richel] I don't like to bother our learners with this.
 Instead, I suggest to link to a long-term feedback form at this page
 ```
 

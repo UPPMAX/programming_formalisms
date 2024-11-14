@@ -35,7 +35,7 @@ To design your code, 'dream design' is a way to assure that you work top-down.
 
     'Writing stubs', which is what we are doing,
     is closer to the more formal term,
-    but I, Richel, feel 'dream design', 
+    but I, Richel, feel 'dream design',
     albeit no formal term, describes better what is going on.
 
 ## Step 0: an empty class
@@ -91,7 +91,7 @@ We can also write a test:
 
     ```python
     # Should pass without error
-    create_experiment() 
+    create_experiment()
     ```
 
 === "Using the `unittest` framework"
@@ -129,10 +129,10 @@ run(experiment)
     As we do not need direct access to the implementation of `experiment`,
     we should already use a member function.
 
-    When using a member function becomes really necessary, 
-    one has no option but to use `experiment.run()`. 
+    When using a member function becomes really necessary,
+    one has no option but to use `experiment.run()`.
     However, this may never happen.
-    
+
 We can imagine that `run` can work on an experiment,
 whatever type `experiment` may be.
 
@@ -483,7 +483,7 @@ a file.
 
 ???- question "How would this blend when using classes?"?
 
-    Perfectly fine! Here we see how those functions 
+    Perfectly fine! Here we see how those functions
     forward their functionality to classes:
 
     ```python

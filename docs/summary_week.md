@@ -58,7 +58,7 @@ In this week, we:
     - &#9745; Sharing
         - &#9745; open science
         - &#9745; citation
-        - &#9745; licensing  
+        - &#9745; licensing
         - &#9745; deployment
     - &#9745; Documentation
         - &#9745; in-code documentation

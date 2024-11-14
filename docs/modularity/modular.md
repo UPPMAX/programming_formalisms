@@ -9,13 +9,13 @@
     - Introduce Refactoring 10 min
     - Exercise  Refactor design of project Class diagram 30 min
     - break 15 min
-    - Introduce Modularity 10 min 
-    - Exercise 25 min produce logical modules that separates the behavior and structure in modules. 
+    - Introduce Modularity 10 min
+    - Exercise 25 min produce logical modules that separates the behavior and structure in modules.
     - Introduce Design Patterns 10 min + 10 min discussion
     - break 15 min
     - Implement Factory Design pattern 40 min
     - lunch
-    
+
     ```mermaid
         gantt
         title Lesson plan Refactoring, Design Patterns and Modularization
@@ -40,13 +40,13 @@
 ???- info "Learning objectives of Design Patterns"
 
      - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
-     - The Learners should be able to implement into their design the 
+     - The Learners should be able to implement into their design the
        "Factory pattern"
      - The learners can describe the general parts of a design pattern and why we use them.
 
 ???- info "Learning objectives of Modular programming"
 
-     - The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code. 
+     - The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code.
      - The concepts of common interface and protocols are introduced to the learners
      - The learners are introduced the concept of coupling and how to find tight coupling
      - The learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
@@ -57,22 +57,22 @@
 ???- "What is Modular Programming"
 
     Modular programming as a term introduced by Larry Constantine et.al at the Symposium on Modular Programming, organized at the Information and Systems Institute in July 1968.
-    
-    Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality. 
+
+    Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
 
 
 ???- "Why is Modular Programming something to strive for"
 
-     - Reusability 
+     - Reusability
      - Working with others (encapsulation of work and function)
-    
+
 ???- "What is a Design Pattern"
 
     Design patterns are typical solutions to common problems
     in software design. Each pattern is like a blueprint
     that you can customize to solve a particular
     design problem in your code.
-    from [refactoring.guru](https://refactoring.guru/design-patterns) 
+    from [refactoring.guru](https://refactoring.guru/design-patterns)
 
 ???- "Why do we use Design Patterns"
 
@@ -86,7 +86,7 @@
 ???- "What is Refactoring"
 
     Refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
-    [refactoring.guru](https://refactoring.guru/refactoring) 
+    [refactoring.guru](https://refactoring.guru/refactoring)
 
 
 ## Theory
@@ -97,7 +97,7 @@ The 4 most important relationship classes can have
 are association, composition and aggregation
 
 ```mermaid
-classDiagram 
+classDiagram
     Owner-->PetsIOwn
     Dog*--"1"Head
     Dog*--"1"Body

@@ -15,7 +15,7 @@ template: home.html
 <br/>
 
 # Welcome to the Programming Formalisms course!
-    
+
 !!! note "Course mottos"
 
     - Turning scripters into computer scientists

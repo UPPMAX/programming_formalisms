@@ -403,7 +403,7 @@ class DnaSequence:
     def __init__(self, sequence):
         assert is_dna_string(sequence)
         self._sequence = sequence # convention
-    
+
     def get_str(self):
         return self._sequence
 
@@ -415,7 +415,7 @@ assert a.get_str() == "ACGT"
 
 Use of `_` before the name of a private variable is a social convention!
 
-```         
+```
 self._sequence = sequence # convention
 ```
 

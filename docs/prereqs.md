@@ -16,7 +16,7 @@
 !!! info
 
     If you have not set up Git/GitHub and have not installed Git, Python and VS code.
-  
+
     - **Count with ~1 hour of preparations**, depending on choices you make (Anaconda takes time to install).
 
 ## Checkpoints
@@ -109,11 +109,11 @@ You have installed `git`, if:
 ???- question "Have you set up a git ssh-keys?"
 
      - Test: `ssh -T git@github.com`
-         - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.`` 
+         - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
      - Yes!
-     
-     - If not working, go to [to here](prereqs.md#gitgithub-connection-through-ssh-keys) 
-     
+
+     - If not working, go to [to here](prereqs.md#gitgithub-connection-through-ssh-keys)
+
 You have good enough knowledge of `git`, if:
 
 - :black_square_button: You know what cloning is
@@ -128,9 +128,9 @@ You have good enough knowledge of `git`, if:
 
 ???- question "Do you know basic git?"
 
-     - I am familiar with basic git commands like 
+     - I am familiar with basic git commands like
          - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
-     
+
      - No, go to [Git courses](prereqs.md#git-courses)
 
 ### GitHub
@@ -169,7 +169,7 @@ You know enough basic Python, if:
 ???- question "Do you know basic Python?"
 
      - Yes!
-     - Even though it is not part of the course we will use Python in the exercises. 
+     - Even though it is not part of the course we will use Python in the exercises.
          - With other programming languages you can get far, but you may want to learn the basic syntax used in Python!
      - To learn more, go to [Python courses](prereqs.md#python-courses)
 
@@ -212,7 +212,7 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
     **Git-windows with a command line and Git integrated**
 
     - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
-      
+
         - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
 
@@ -220,10 +220,10 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 
     - We will use terminal to some extent.
     - Choose one of your choice, the built-in or another!
-    - Chances are big that you already have **git installed on your computer**.     
-    - You can check by running e.g. `git --version`. 
+    - Chances are big that you already have **git installed on your computer**.
+    - You can check by running e.g. `git --version`.
         -  and if it reports 2.28 or higher, then you are good.
-    - If you have a very old version of git or you don't have it, install it following the instructions [here](https://git-scm.com/download/mac)     
+    - If you have a very old version of git or you don't have it, install it following the instructions [here](https://git-scm.com/download/mac)
         - You may have to do ``xcode select --install`` from the Mac terminal.
 
 === "Linux"
@@ -239,10 +239,10 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 
 - When Git is installed you may need to restart a shell in VS code before it works.
 
-<!-- 
+<!--
 ### Using VS Code as a git editor
 
-- This will set VS Code as the editor that Git starts. 
+- This will set VS Code as the editor that Git starts.
 - It will start a new tab, and Git will wait until you save and close that tab.
 - Git for Windows on Windows may automatically set this if you select it as an editor.
 - Otherwise:
@@ -351,7 +351,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
         - **note macOS**: the system install of Python on macOS is not supported, instead:
             - ``brew install python3``
     - Anaconda (recommended for **python/R developers liking GUI:s**)
-        - **Count with 15-20 minutes**  
+        - **Count with 15-20 minutes**
         - includes
             - many many packages
             - conda packager
@@ -409,7 +409,7 @@ There are some other solutions for installations but they are probably not suppo
     **Git-windows with a command line and Git integrated**
 
     - Install Git Windows: [https://gitforwindows.org/](https://gitforwindows.org/?to=/placeholder.com) (**easiest if you want to start fast and plan to work in windows environment**)
-      
+
         - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
 
@@ -417,10 +417,10 @@ There are some other solutions for installations but they are probably not suppo
     - Use the **Windows 10 PowerShell**
 
         - [install git](https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-PowerShell)
-        
+
     - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
-    
-        - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC. 
+
+        - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC.
         - instructions below
         - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
 

@@ -27,7 +27,7 @@
     - ...
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -35,7 +35,7 @@
 !!! info "TOC"
 
     - In-code documentation review
-    - Documentation 
+    - Documentation
         - tutorials/howto/reference
         - project doc
         - html site generators

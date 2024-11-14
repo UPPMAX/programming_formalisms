@@ -67,7 +67,7 @@ Passcode: 583470
 - Q: What is the assertion statement ``` assert sum() == 3 ```
     - A: [Lars]: Assertion is a conditional statement that raises an AssertionError. An unhandeld Assertion will generate a system exit
         Assertion should always end the program but preferably in a ordered manner
-        <https://www.w3schools.com/python/ref_keyword_assert.asp>  
+        <https://www.w3schools.com/python/ref_keyword_assert.asp>
         <https://documentation.help/Python-PEP/assert.html>
     - A: [Richel] `assert` is used for debugging. `assert sum() == 3` is the same as
 

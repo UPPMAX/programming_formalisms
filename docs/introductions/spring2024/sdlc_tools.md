@@ -24,7 +24,7 @@
 
 
     Lesson Plan: **FIX**
-    
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -54,7 +54,7 @@
 
 
 ``` mermaid
-flowchart 
+flowchart
     Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] --> Requirements
 ```
 
@@ -102,19 +102,19 @@ flowchart
     - &#9745; Sharing
         - open science
         - citation
-        - licensing  
+        - licensing
     - &#9745; Documentation
         - Tutorials
         - How-to guides
         - Explanation
-        - Reference 
+        - Reference
 
 ## Planning: Analysis and design
 
 !!! note
 
     - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
-    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements. 
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
     - It prepares you to build the real thing to reduce any potential risk of failure. "
 
 
@@ -134,7 +134,7 @@ flowchart
             - if object-oriented programming: **classes**
             - if functional programming: **functions/modules**
 
-    - More in afternoon!    
+    - More in afternoon!
 
 
 ### Top-down
@@ -309,11 +309,11 @@ flowchart TD
     1. We have a problem
     1. Let's program
     1. Choose format among
-        - object-orientation (which gives the choices Python or C++) 
+        - object-orientation (which gives the choices Python or C++)
         - and functional (choices Python or Fortran)
-    
+
     - Syntax cheat sheet [here](https://mermaid.js.org/syntax/flowchart.html)
-    
+
 
 ### Pseudocode
 
@@ -328,8 +328,8 @@ flowchart TD
 
 ```code
   algorithm ford-fulkerson is
-    input: Graph G with flow capacity c, 
-           source node s, 
+    input: Graph G with flow capacity c,
+           source node s,
            sink node t
     output: Flow f such that f is maximal from s to t
 
@@ -452,7 +452,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 !!! info "Why Git?"
 
     We will use [Git](https://git-scm.com) to record snapshots of our work:
-    
+
     - **Easy to set up**: no server needed.
     - **Very popular**: chances are high you will need to contribute to somebody else's code which is tracked with Git.
     - **Distributed**: good backup, no single point of failure, you can track and clean-up changes offline, simplifies collaboration model for open-source projects.
@@ -461,7 +461,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     However, any version control is better than no version control and it is OK to prefer a different tool than Git.
 
     - Other tools:
-    
+
         - [Subversion](https://subversion.apache.org)
         - [Mercurial](https://www.mercurial-scm.org)
         - [Pijul](https://pijul.org/)
@@ -512,7 +512,7 @@ There are different types of remotes:
 
 !!! objectives
 
-    - [Collaboration](../git/pull.md) aims to 
+    - [Collaboration](../git/pull.md) aims to
         - Get into working more with GitHub for collaboration
         - **Centralized** workflow (good within a group)
         - **Forking** (better for contribution to other's project)
@@ -523,7 +523,7 @@ There are different types of remotes:
 
 ### Reproducible research
 
-- Have you ever spent days trying to repeat the results that took you hours to do the first time last week?  
+- Have you ever spent days trying to repeat the results that took you hours to do the first time last week?
 - Or you have to do paper revisions, but you just can’t get the results to match up?
 - Nothing is a worse feeling - either for you or for science itself.
 
@@ -544,7 +544,7 @@ There are different types of remotes:
            - Tools for other languages than Python
 
 - We will develop our code in a virtual environment with the python tool ``venv``
-  
+
 
 ### Sharing and licensing and citations
 
@@ -618,7 +618,7 @@ There are different types of remotes:
         - **How-to guides**: goal-oriented, shows how to solve a specific problem
         - **Explanation**: understanding-oriented, explains a concept
         - **Reference**: information-oriented, describes the machinery
-        - **In-code documentaion — docstrings** 
+        - **In-code documentaion — docstrings**
         **Not to forget**
         - Project documentation:
             - requirements: what is the goal of the software, risks, platforms
@@ -663,7 +663,7 @@ There are different types of remotes:
 
 !!! Keypoints
 
-    - Software development is both series of steps: 
+    - Software development is both series of steps:
         1. Requirements
         2. Analysis and design
         3. Development

@@ -50,7 +50,7 @@ url_exists <- function(x, non_2xx_return_value = FALSE, quiet = FALSE,...) {
   # Try HEAD first since it's lightweight
   res <- sHEAD(x, ...)
 
-  if (is.null(res$result) || 
+  if (is.null(res$result) ||
       ((httr::status_code(res$result) %/% 200) != 1)) {
 
     res <- sGET(x, ...)
@@ -73,7 +73,7 @@ url_exists <- function(x, non_2xx_return_value = FALSE, quiet = FALSE,...) {
 
 is_present <- function(owner_name = "richelbilderbeek", repo_name = "conquer_chess") {
   url <- paste0("https://github.com/", owner_name, "/", repo_name)
-  url_exists(url)  
+  url_exists(url)
 }
 
 testthat::expect_true(is_present(owner_name = "richelbilderbeek", repo_name = "conquer_chess"))
@@ -83,7 +83,7 @@ testthat::expect_false(is_present(owner_name = "richelbilderbeek", repo_name = "
 Make the table:
 
 ```{r}
-#' Create a table in Tidyverse format: 
+#' Create a table in Tidyverse format:
 create_table <- function(owner_names, repo_names) {
   t <- tidyr::expand_grid(repo_name = repo_names, owner_name = owner_names, present = NA)
   for (i in seq_len(nrow(t))) {
@@ -125,12 +125,12 @@ Now the participants:
 owner_names <- c(
   # Michael Konopik
   "acorbat", # Agustin Corbat
-  "DanielRiepl", 
+  "DanielRiepl",
   # Johanna von Seth
   "RenateWilcke ", # Renate Wilcke
-  # Romanos Siaperas 
+  # Romanos Siaperas
   "semccomas", # Sarah McComas
-  # Thomas Frank [can be many] 
+  # Thomas Frank [can be many]
   "TinclG", # Tina Gorsek
   "richelbilderbeek"
 )

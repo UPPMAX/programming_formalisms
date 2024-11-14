@@ -27,15 +27,15 @@ repeat: i in length(A);
 repeat while
 repeat: j in length(B);
    -F(0,j) = p * j
-repeat while 
+repeat while
 repeat: i in length(A);
     repeat: j in length(B);
         -match = F(i-1, j-1) + S(A(i), B(j))
         -delete = F(i-1, j) + p
         -insert = F(i, j-1) + p
         - F(i,j) = max(match, delete, insert)
-    repeat while 
-repeat while (i < length(A)) is (true) not(F(i,j)) 
+    repeat while
+repeat while (i < length(A)) is (true) not(F(i,j))
 stop
 @enduml
 ```
