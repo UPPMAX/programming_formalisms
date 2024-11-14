@@ -74,21 +74,21 @@
 
 There are many tools that can turn RST or Markdown into beautiful HTML pages:
 
-- [Sphinx](http://sphinx-doc.org) 
+- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
+    - Generates HTML from Markdown.
+    - Example: [Programming formalisms course](https://github.com/UPPMAX/programming_formalisms)
+- [Sphinx](http://sphinx-doc.org)
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
-    - [Earlier Intro day for this course]()
+    - [HPC-Python course](https://uppmax.github.io/HPC-python/index.html)
 - [Jekyll](https://jekyllrb.com)
     - Generates HTML from Markdown.
     - GitHub supports this without adding extra build steps.
-- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
-    - Generates HTML from Markdown.
-    - Example: [Programming formalisms  course]([https://uppmax.github.io//](https://github.com/UPPMAX/programming_formalisms)) 
 
 There are many more ...
 
 ### Deployment on servers
-                                        
+
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
 - [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
@@ -99,13 +99,16 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
 
 #### GitHub pages
+
 - Easiest. Everything is local to GitHub
 - This lesson material
 
 #### Read the Docs
+
 - Somewhat more possibilities, like having several versions of documentation to switch between.
-                                      
+
 ### Wikis
+
 - Popular solutions (but many others exist):
     - [MediaWiki](https://www.mediawiki.org)
     - [Dokuwiki](https://www.dokuwiki.org)
@@ -118,12 +121,11 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
     [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
 
-License
-
 ## (Optional) Last hands on your documentation
+
 - Some inspiration [Beagle](https://github.com/yampelo/beagle)
 
-## README example
+### README example
 
 ```text
 # Planets
@@ -152,12 +154,14 @@ This program ...
 ### Licensing       
         
 #### Copyright
+
 - Protects creative expression
 - Automatically created
 - **Derivative works** usually inherit copyright of the thing derived
 - Time frame: essentially forever (lifetime + X years)
 
 **When can you use?**
+
 - When there is a **license** saying you can
 - Limited other cases (private use, fair use: context dependent)
 - In practice: people do many things, but then can't share their output if license does not allow it or is not clarified
@@ -167,16 +171,23 @@ This program ...
     - Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
 
     1. Custom/closed/proprietary
+    
         - Derivative work typically not possible
         - Unusual in academics 
+        
     2. Permissive (**MIT**, BSD, Apache)
-      - Derivative work does not have to be shared    
+    
+        - Derivative work does not have to be shared  
+        
     3. Weak copyleft share-alike (**LGPL**, MPL)
+    
       - Derivative work is free software but is limited to the component
+      
     4. Strong copyleft share-alike (**GPL**, AGPL)
-      - Derivative work is free software and derivative work extends to the combined project    
+    
+      - Derivative work is free software and derivative work extends to the combined project
 
-[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)      
+[Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)
 
 
 ### Software Citation
@@ -192,8 +203,6 @@ This program ...
     - Date
     - Version
     - Type
-
-
 
 ??+ Question "Update your documentation (in groups)"
 
