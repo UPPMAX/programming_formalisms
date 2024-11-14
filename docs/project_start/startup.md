@@ -48,7 +48,7 @@
     - Intro documentation
         - order your files
     - README
-           - license
+        - license
     - git diff
     - Start with the steps related to the project (Type-along)
         - Git locally with config and cloning
