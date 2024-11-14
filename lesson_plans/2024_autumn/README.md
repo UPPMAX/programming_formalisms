@@ -140,8 +140,8 @@ Day      |Time       |Teacher|State
 ---------|-----------|-------|-----------------------------------------------------------
 Tuesday  |10:00-11:00|Richel |Issues 6/10
 Tuesday  |10:00-11:00|Richel |Kanban board 6/10
-Tuesday  |10:00-11:00|Richel |Team roles
-Tuesday  |11:00-15:40|Richel |TDD
+Tuesday  |10:00-11:00|Richel |Team roles 6/10
+Tuesday  |11:00-15:40|Richel |TDD 6/10
 Wednesday|13:00-15:40|Richel |Pair programming
 Wednesday|13:00-15:40|Richel |function design
 Thursday |10:00-12:00|Richel |Class design
