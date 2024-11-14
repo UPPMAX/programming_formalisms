@@ -34,13 +34,21 @@ You are best to do this!|Assign someone else to an issue|Why you think the other
 Done!                   |Closing an issue               |Why it is done
 Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
+![The life cycle of a issue, from Bugzilla, 2009](issue_lifecycle.png)
+
+> The life cycle of a issue, from `[Bugzilla, 2009]`
+
+## Our project
+
 In our project we use the following rule:
 
-> Always work on an Issue
+> Always work on an issue, create an issue if needed
 
 ## Exercises
 
 ### Exercise 1: a typical issue lifecycle
+
+Do the following in our student project:
 
 - Create an issue. In the text, write why you create that issue and what needs
   to be done
@@ -59,8 +67,10 @@ However, an issue tracker is not designed to
 communicate what is _actively_ being worked on.
 For that, a [kanban board](kanban_board.md) is used instead.
 
-
 ## References
 
 - `[Bertram, 2009]` Bertram, Dane. "The social nature of issue tracking in software engineering." University of Calgary (2009).
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed. Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
+
+- `[Bugzilla, 2009]` Bugzilla (2009). Life Cycle of a Bug.
+  Retrieved October 30, 2009 from https://www.bugzilla.org/docs/2.18/html/lifecycle.html

@@ -132,7 +132,21 @@ These are my worries:
 
 ## Preparation
 
-I will have 4 days to prepare, all of these disturbed my meetings.
+I will have 4 days to prepare, all of these disturbed by meetings.
 
-- Tuesday: sketch all days
+- Thursday:
+
+Day      |Time       |Teacher|State
+---------|-----------|-------|-----------------------------------------------------------
+Tuesday  |10:00-11:00|Richel |Issues 
+Tuesday  |10:00-11:00|Richel |Kanban board
+Tuesday  |10:00-11:00|Richel |Team roles
+Tuesday  |11:00-15:40|Richel |TDD
+Wednesday|13:00-15:40|Richel |Pair programming
+Wednesday|13:00-15:40|Richel |function design
+Thursday |10:00-12:00|Richel |Class design
+Thursday |14:00-15:40|Richel |Implement the project as a package
+Friday   |09:00-11:00|Richel |Optimisation
+Friday   |15:00-15:40|Richel |Wrap-up
+Friday   |15:40-16:00|Richel |Confidence and retrospect
 
