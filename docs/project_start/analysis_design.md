@@ -89,7 +89,3 @@ classDiagram
 
     Taking our feature list of requirments and object modeling now we try and find the classes and  model a class diagram that implements those features.
     ![mermaid class diagrams](http://mermaid.js.org/syntax/classDiagram.html)
-
-
-
-
