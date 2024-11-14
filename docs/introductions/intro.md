@@ -11,20 +11,22 @@
 
 !!! info "Content"
 
-    We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
+    We start with a more **theoretical introduction** covering
+    the software and tools and mindsets for software development.
 
 
 !!! info "Learning objectives of 'SDLC tools'"
 
     - Identify the main topics and objectives for the week's lessons.
-    - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.
+    - Evaluate the importance of engaging with course content and identify
+      strategies to maintain interest and motivation throughout the week.
     - We will set the start in why a formalized development of software is needed.
 
 !!! note "Instructor notes"
 
     Prerequisites are:
 
-    The [pre-requirements](../prereqs.md): 
+    The [pre-requirements](../prereqs.md):
 
     - Learners know basic Git
     - Learners know basic Python
@@ -32,10 +34,11 @@
 
     Teaching goals are:
 
-    - Learners can can understand why a formalized development of software is important.
+    - Learners can can understand why a formalized development of software
+      is important.
 
-    Lesson Plan: 
-    
+    Lesson Plan:
+
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
@@ -48,4 +51,4 @@
         - outcome
             - correct, reusable, efficient, changable
     - Example
-    - SLDC   
+    - SLDC

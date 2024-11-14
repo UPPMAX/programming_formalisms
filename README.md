@@ -31,8 +31,7 @@ The goal of the course is [to give an understanding of formal principles of soft
 
 ## Files used for continuous integration scripts
 
-<!-- markdownlint-disable MD013 -->
-<!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
 Filename                                  |Descriptions
 ------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------

@@ -5,7 +5,8 @@ The frequently asked questions, about:
 - [credits](#credits): can I get university credits for this course?
 - [eligibility](#eligibility), i.e. when to join the course
 - [preparation](#preparation)
-- [course teaching](#course-teaching), i.e. how the course is conducted and ideas behind it
+- [course teaching](#course-teaching),
+  i.e. how the course is conducted and ideas behind it
 
 ## Credits
 
@@ -30,9 +31,11 @@ Learners are expected to know basic programming
 concepts, such as variables and functions.
 
 In this course, you will work together a lot.
-It will be likely to be noticed that you do not have programming experience yet,
+It will be likely to be noticed that
+you do not have programming experience yet,
 and you may feel bad about that.
-Take an introductory programming course first and then we hope to see you here again!
+Take an introductory programming course first
+and then we hope to see you here again!
 
 ### I am a non-Python programmer. Am I eligible?
 
@@ -45,7 +48,8 @@ You will write code in Python in exercises.
 To make that possible for non-Python programmers:
 
 - code will be simple and/or copy-pasted
-- learners are usually paired up, so that usually one of the learners knows Python.
+- learners are usually paired up,
+  so that usually one of the learners knows Python.
 
 ## Preparation
 
@@ -81,15 +85,20 @@ See [Projects](../project/README.md) for the goal of the shared project.
 
 - meetings
 - lesson plans in the course material
-- general lesson plans, which can be found in [the 'lesson_plans' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/lesson_plans) of this GitHub repository
+- general lesson plans, which can be found in
+  [the 'lesson_plans' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/lesson_plans)
+  of this GitHub repository
 
 ### What happens to the retrospectives?
 
 Retrospectives are:
 
-- published online in unedited form in [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations) of this GitHub repository
+- published online in unedited form in
+  [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations)
+  of this GitHub repository
 - discussed by the teachers after the lessons
-- reflected upon, where the reflections can be found in [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
+- reflected upon, where the reflections can be found in
+  [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
 
 ### Why do you publish your retrospectives?
 
@@ -99,9 +108,12 @@ Because we like to be transparent.
 
 Evaluations are:
 
-- published online in unedited form in [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations) of this GitHub repository.
+- published online in unedited form in
+ [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations)
+  of this GitHub repository.
 - discussed by the teachers after the course
-- reflected upon, where the reflections can be found in [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
+- reflected upon, where the reflections can be found in
+  [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
 
 ### Why do you publish your evaluations?
 

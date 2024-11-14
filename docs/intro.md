@@ -9,16 +9,23 @@
 
 !!! info "Programming Formalisms goal"
 
-    The goal of the course is 
+    The goal of the course is
     to give scientists with some experience in programming and scripting
     [an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
 
-    [Only what is used by the student project is course content, with alternatives relevant to academics provided in lecture (or extra material) to what we do](https://github.com/UPPMAX/programming_formalisms/issues/52).
-    [As we need discuss alternatives besides the course content, by definition, all exercises cannot be part of the project](https://github.com/UPPMAX/programming_formalisms/issues/43).
-    Whenever we give some advice, [we will try to supply a references to the literature](https://github.com/UPPMAX/programming_formalisms/issues/57).
-    
+    Only what is used by the student project is course content, 
+    with alternatives relevant to academics provided in lecture
+    (or extra material) to what we do
+    [#52](https://github.com/UPPMAX/programming_formalisms/issues/52).
+    As we need discuss alternatives besides the course content, by definition,
+    all exercises cannot be part of the project 
+    [#43](https://github.com/UPPMAX/programming_formalisms/issues/43).
+    Whenever we give some advice,
+    we will try to supply a references to the literature
+    [#57](https://github.com/UPPMAX/programming_formalisms/issues/57).
+
     Teach evidence-based or expert-recommended best practices on how to:
-     
+
     - write design documents for a project
     - work as a team
     - share code
@@ -33,7 +40,8 @@
     - understand, use and create a UML class diagram
     - understand and use a formal git branching model
     - understand and use a formal project workflow
-    - understand and practice social coding, such as pair programming and code reviews
+    - understand and practice social coding,
+      such as pair programming and code reviews
     - understand and use a run-time speed profiler
 
 ## The project
@@ -41,7 +49,7 @@
 !!! note "Become a Programming Formalisms team member"
 
     - Share your GitHub name [at this issue](https://github.com/UPPMAX/programming_formalisms/issues/37)
-    - The project can be found 
+    - The project can be found
       [here](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024)
 
 ## Shared document
@@ -56,6 +64,10 @@ For a detailed daily schedule, see the detailed schedule of that day.
 
 Next iteration of the the course will take place in week 47,
 i.e. Monday 18th November to and including Friday 22nd November 2024.
+
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+<!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
+
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
@@ -85,3 +97,6 @@ Friday   |11:00-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
 Friday   |15:00-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
+
+<!-- markdownlint-enable MD013 -->
+<!-- markdownlint-enable MD055 -->

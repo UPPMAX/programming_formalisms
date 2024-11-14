@@ -7,7 +7,7 @@
     - Understand difference between composition and aggregation
     - Practice to use composition for a 'has-a' relationship
 
-# Why?
+## Why?
 
 You want to model the real world.
 The real world consists out of things.
