@@ -55,8 +55,7 @@ Time|Position A|Position B
 The Doob-Gillespie algorithm allows one to simulate
 per event.
 
-
-# References
+## References
 
 - [Wang et al., 2011]Wang, Charles CN, et al.
   "Simulation of bacterial chemotaxis by the random run and tumble model."
