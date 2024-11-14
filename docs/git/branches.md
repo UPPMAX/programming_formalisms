@@ -15,7 +15,12 @@
 
 ???- info "Learning objectives of 'Branches'"
 
-    - learners can explain and evaluate the usefulness of branches
+    - learners can locally
+       
+        - explain and evaluate the usefulness of branches
+        - create, switch and delete a `git` branch
+        - merge 
+
 
 ???- note "Instructor notes"
 
@@ -777,6 +782,20 @@ git branch -d new-feature    # remove branch
     ```
 
     - Now local Git and GitHub are in phase!
+
+## Test!
+
+    - What is a branch?
+    - What is the problem that branches alleviate?
+    - What is the name/names of the most important branch?
+    - What is our git branching setup?
+    - What is the goal of that setup?
+    - Why do we use that setup instead of a different one?
+    - What is the purpose of each of those branches?
+    - Does creating a branch create a new version? Why?
+    - Does changing a branch change the content of your local computer? Why?
+    - Does deleting a branch create a new version? Why?
+
 
 ### On GitHub
 
