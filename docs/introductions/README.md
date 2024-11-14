@@ -18,15 +18,15 @@
 
 Description                                                 |PDF                              |HTML                              |QMD
 ------------------------------------------------------------|---------------------------------|----------------------------------|------------------------------------
-Intro
-git
-social
+Intro|||
+git|||
+social|||
 
 <!-- markdownlint-enable MD013 -->
 
 :construction: the `code layout`-ed items will become links in the future :construction:
 
-* GitHub repository with exercises:
+- GitHub repository with exercises:
 
 ## Links
 
