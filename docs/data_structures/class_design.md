@@ -22,7 +22,7 @@ classDiagram
   }
 ```
 
-- Use class if the class has an invariant; 
+- Use class if the class has an invariant;
   use struct if the data members can vary independently `[CppCore C.2]`
 - Use class rather than struct if any member is non-public `[CppCore C.8]`
 
@@ -34,7 +34,7 @@ Q: What is a good class?
 
 A:
 
-- guarantees its stored data is valid, 
+- guarantees its stored data is valid,
   e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
 - the quality requirements for a function, among others a good interface
 - writing a design, documentation and tests all help
@@ -58,7 +58,7 @@ class DnaSequence:
     def __init__(self, sequence):
         assert is_dna_string(sequence)
         self._sequence = sequence # convention
-    
+
     def get_str(self):
         return self._sequence
 
@@ -70,7 +70,7 @@ assert a.get_str() == "ACGT"
 
 Use of `_` before the name of a private variable is a social convention!
 
-```
+```python
 self._sequence = sequence # convention
 ```
 
@@ -86,7 +86,7 @@ Some other programming languages offer stronger guarantees.
 ## Inheritance and polymorphism
 
 > C++ is a horrible language.
-> It's made more horrible by the fact 
+> It's made more horrible by the fact
 > that a lot of substandard programmers use it,
 > to the point where it's much much easier
 > to generate total and utter crap with it.
@@ -109,7 +109,7 @@ Some other programming languages offer stronger guarantees.
 - [Python classes](https://docs.python.org/3/tutorial/classes.html)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
 - `[CppCore C.2]` C.2: Use class if the class has an invariant; use struct
-  if the data members can vary independently 
+  if the data members can vary independently
   [https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
 - `[CppCore C.8]` C.8: Use class rather than struct if any member is non-public
   [https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c8-use-class-rather-than-struct-if-any-member-is-non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c8-use-class-rather-than-struct-if-any-member-is-non-public)

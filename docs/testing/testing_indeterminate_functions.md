@@ -44,7 +44,8 @@ How to test these?
 
 ## Randomness
 
-A Random Number Generator ('RNG') produces the same random values after setting the same RNG seed.
+A Random Number Generator ('RNG') produces the same random values
+after setting the same RNG seed.
 
 ```python
 import random

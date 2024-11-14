@@ -94,9 +94,9 @@ Ah, it is a **coordinat**!
 
 ???- info "Learning objectives"
 
-     - to convince design is trickier than one thinks
-     - to convince design has implications
-     - to grow appreciation of classes
+    - to convince design is trickier than one thinks
+    - to convince design has implications
+    - to grow appreciation of classes
 
 What are their elements? Which do you guess are structures? Were they?
 
