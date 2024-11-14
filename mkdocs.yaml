@@ -30,10 +30,9 @@ nav:
     - Summary of day: tuesday_summary.md
   - Wednesday:
     - Intro: wednesday_intro.md
-    - Branching and local merging: git/branches.md
-    - Branching in practice: git/apply_branches.md
-    - Merging and git pull request with code review: git/pull.md
-    - Merging in practice: git/apply_merge.md
+    - Formal git workflow, branches/merge: git/branches.md
+    - Merging and contributing with code review: git/contribute.md
+    - Sharing and social coding: social_coding/social_coding.md
     - Pair programming: pair_programming/README.md
     - Algorithms: algorithms/README.md
     - Algorithms, function design: algorithms/function_design.md
