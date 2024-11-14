@@ -20,6 +20,13 @@
     - Did you plan it from beginning?
     - Did you take actions somehow?
 
+!!! note "The Turing way"    
+
+    - The Turing Way is an open science, open collaboration, and community-driven project. 
+    - We involve and support a diverse community of contributors to make data science accessible, comprehensible and effective for everyone. 
+    - Our goal is to provide all the information that researchers, data scientists, software engineers, policymakers, and other practitioners in academia, industry, government and the public sector need to ensure that the projects they work on are easy to reproduce and reuse.
+    - https://book.the-turing-way.org/index.html
+
 - The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
 - **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
 
