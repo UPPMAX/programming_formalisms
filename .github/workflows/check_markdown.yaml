@@ -43,7 +43,7 @@ jobs:
 
       - uses: articulate/actions-markdownlint@v1
         with:
-          config: .markdownlint.jsonc
+          config: .markdownlint.json
           ignore: .markdownlintignore
 
       # There are many linters with the same name,
