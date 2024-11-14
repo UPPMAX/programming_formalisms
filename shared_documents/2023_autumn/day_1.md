@@ -6,9 +6,6 @@
 Passcode: 583470
 - Material: <https://uppmax.github.io/programming_formalisms_intro/index.html>
 
-- Menti results:
-    - <https://www.mentimeter.com/app/presentation/alepdj7fe96n79hom2jfsfa4i75vunfa/embed>
-
 
 ## Icebreaker questions
 
