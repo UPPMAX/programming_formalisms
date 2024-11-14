@@ -7,8 +7,8 @@
     - A good Zoom setup: microphone, camera and a place where you can talk
     - A **terminal**
     - We use **VS Code** in our teaching
-         - VS Code has a built-in terminals and other useful integrated systems
-         - You can use another IDE if you are more comfortable with it
+        - VS Code has a built-in terminals and other useful integrated systems
+        - You can use another IDE if you are more comfortable with it
     - A local installation of **`git`**
     - A **GitHub** account
     - A local **Python** installation
@@ -25,11 +25,11 @@
 
 You have a Zoom good setup, if:
 
-- :black_square_button: you can talk freely. If not, find a room/place where you can
+- :black_square_button: you can talk freely. If not, find a room/place where you can.
 - :black_square_button: others in the Zoom room can clearly hear what you say.
-      If not, use a microphone
+      If not, use a microphone.
 - :black_square_button: you can clearly hear what others in the Zoom room say.
-      If not, use a headset
+      If not, use a headset.
 
 ### Visual Studio
 
@@ -39,8 +39,8 @@ You have installed Visual Studio, if:
 
 ???- question "Do you have Visual Studio Code installed?"
 
-     - Yes!
-     - No, go to [Visual studio](prereqs.md#visual-studio)
+    - Yes!
+    - No, go to [Visual studio](prereqs.md#visual-studio)
 
 ### Git
 
@@ -58,13 +58,13 @@ You have installed `git`, if:
 
     In a terminal, type:
 
-    ```
+    ```console
     git config --global user.name "[your regular name]"
     ```
 
     where `[your regular name]` is your regular name, for example:
 
-    ```
+    ```console
     git config --global user.name "Sven Svensson"
     ```
 
@@ -74,13 +74,13 @@ You have installed `git`, if:
 
     In a terminal, type:
 
-    ```
+    ```console
     git config --global user.email "[your email]"
     ```
 
     where `[your email]` is your email address, for example:
 
-    ```
+    ```console
     git config --global user.email "sven@svensson.se"
     ```
 
@@ -92,27 +92,26 @@ You have installed `git`, if:
 
     In a terminal, to change this to the default, type:
 
-    ```
+    ```console
     git config --global pull.rebase false
     ```
 
 ???- question "Can you run Git from VS code?"
 
-     - Yes!
-     - No go to [Using git in VS code](prereqs.md#using-git-in-VS-code)
+    - Yes!
+    - No go to [Using git in VS code](prereqs.md#using-git-in-VS-code)
 
 ???- question "Have you configured a Git (local) account?"
 
-     - Yes!
-     - No, go to [Configure Git](prereqs.md#configure-git)
+    - Yes!
+    - No, go to [Configure Git](prereqs.md#configure-git)
 
 ???- question "Have you set up a git ssh-keys?"
 
-     - Test: `ssh -T git@github.com`
-         - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
-     - Yes!
-
-     - If not working, go to [to here](prereqs.md#gitgithub-connection-through-ssh-keys)
+    - Test: `ssh -T git@github.com`
+        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+    - Yes!
+    - If not working, go to [to here](prereqs.md#gitgithub-connection-through-ssh-keys)
 
 You have good enough knowledge of `git`, if:
 
@@ -128,10 +127,9 @@ You have good enough knowledge of `git`, if:
 
 ???- question "Do you know basic git?"
 
-     - I am familiar with basic git commands like
-         - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
-
-     - No, go to [Git courses](prereqs.md#git-courses)
+    - I am familiar with basic git commands like
+        - ``clone``, ``pull``, ``push``, ``add``, ``commit``, ``status``, ``log``
+    - No, go to [Git courses](prereqs.md#git-courses)
 
 ### GitHub
 
@@ -141,8 +139,8 @@ You have set up a GitHub account, if:
 
 ???- question "Have you set up a GitHub account?"
 
-     - Yes!
-     - No, go to [Github](prereqs.md#github)
+    - Yes!
+    - No, go to [Github](prereqs.md#github)
 
 ### Python
 
@@ -152,13 +150,13 @@ You have installed Python, if:
 
 ???- question "Have you installed Python?"
 
-     - Yes!
-     - No, go to [Python](prereqs.md#python)
+    - Yes!
+    - No, go to [Python](prereqs.md#python)
 
 ???- question "Can you run Python from VS Code?"
 
-     - Yes!
-     - No, go to [Python in VS Code](prereqs.md#python-in-vs-code)
+    - Yes!
+    - No, go to [Python in VS Code](prereqs.md#python-in-vs-code)
 
 You know enough basic Python, if:
 
@@ -168,10 +166,10 @@ You know enough basic Python, if:
 
 ???- question "Do you know basic Python?"
 
-     - Yes!
-     - Even though it is not part of the course we will use Python in the exercises.
-         - With other programming languages you can get far, but you may want to learn the basic syntax used in Python!
-     - To learn more, go to [Python courses](prereqs.md#python-courses)
+    - Yes!
+    - Even though it is not part of the course we will use Python in the exercises.
+        - With other programming languages you can get far, but you may want to learn the basic syntax used in Python!
+    - To learn more, go to [Python courses](prereqs.md#python-courses)
 
 ### Some other solutions
 
@@ -222,7 +220,7 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
     - Choose one of your choice, the built-in or another!
     - Chances are big that you already have **git installed on your computer**.
     - You can check by running e.g. `git --version`.
-        -  and if it reports 2.28 or higher, then you are good.
+        - and if it reports 2.28 or higher, then you are good.
     - If you have a very old version of git or you don't have it, install it following the instructions [here](https://git-scm.com/download/mac)
         - You may have to do ``xcode select --install`` from the Mac terminal.
 
@@ -267,16 +265,13 @@ Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en
 
     Go back to [checkpoints](prereqs.md#checkpoints)
 
-
 ### GitHub
 
-Sign up for GitHub account:
-[https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
+Sign up for GitHub account: [https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
 
 !!! info
 
     Go back to [checkpoints](prereqs.md#checkpoints)
-
 
 ### Git–GitHub connection through ssh keys
 
@@ -304,6 +299,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 
 - Then go to your GitHub account on the web.
+
     1. In the upper-right corner of any page, click your profile photo, then click Settings.
     2. In the "Access" section of the sidebar, click SSH and GPG keys.
     3. Click New SSH key or Add SSH key.
@@ -340,7 +336,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
     Go back to [checkpoints](prereqs.md#checkpoints)
 
-
 ## Python
 
 - Use what you already have
@@ -375,7 +370,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ## Python in VS Code
 
-- Step 1. Install a supported version of Python on your system, see above
+- Step 1. Install a supported version of Python on your system, see above.
 - Step 2. Install the Python extension for Visual Studio Code from the left menu bar.
 - Step 3. Open or create a Python file and start coding.
     - Example: make a hello.py script and run it with the "play" button.
@@ -386,7 +381,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
     Go back to [checkpoints](prereqs.md#checkpoints)
 
-
 ## Python courses
 
 - We assume familiarity with python at least equivalent
@@ -394,7 +388,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
     - [Python part](https://uppmax.github.io/uppmax_intro_python/) of the UPPMAX introductory course
     - [Python programming with applications to bioinformatics](https://uppsala.instructure.com/courses/85913).
-
 
 ## Other solutions
 
@@ -414,21 +407,17 @@ There are some other solutions for installations but they are probably not suppo
         - Included will be the **Git Bash**
 
     **Other possibilities**
+
     - Use the **Windows 10 PowerShell**
-
         - [install git](https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Git-in-PowerShell)
-
     - Use the Linux Bash Shell (**WSL**) on Windows 10/11 (**perhaps best practice if you plan to run Linux as well**)
-
         - This will give you access to a full command-line bash shell based on Linux on your Windows 10/11 PC.
         - instructions below
         - For the difference between the Linux Bash Shell and the PowerShell on Windows 10, see *e.g.* [this article](https://searchitoperations.techtarget.com/tip/On-Windows-PowerShell-vs-Bash-comparison-gets-interesting).
-
     - Run as Linux through a **virtual machine** (and see the Linux setup above)
         - not shown
 
     **Install Bash on Windows 10/11 (WSL)**, following the instructions at *e.g.* **1** of these resources:
-
 
     - [Installing the Windows Subsystem and the Linux Bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
     - [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
@@ -449,6 +438,4 @@ There are some other solutions for installations but they are probably not suppo
 - Make it permanent
  -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
 
-
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
-
