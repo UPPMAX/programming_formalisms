@@ -1,10 +1,16 @@
-# Data structures
+# Class design
 
 !!!- info "Learning objectives"
 
     - .
 
-# `class` design
+## Why?
+
+You are modeling something in the real world as code.
+You want to use the same world in your code as in the real world
+and you want it to be natural to use in your code.
+
+This is a goal of class design.
 
 ## An invariant
 
@@ -20,7 +26,7 @@ classDiagram
   use struct if the data members can vary independently `[CppCore C.2]`
 - Use class rather than struct if any member is non-public `[CppCore C.8]`
 
-# Writing a good class
+## Writing a good class
 
 Q: What is a good class?
 
@@ -80,8 +86,10 @@ Some other programming languages offer stronger guarantees.
 ## Inheritance and polymorphism
 
 > C++ is a horrible language.
-> It's made more horrible by the fact that a lot of substandard programmers use it,
-> to the point where it's much much easier to generate total and utter crap with it.
+> It's made more horrible by the fact 
+> that a lot of substandard programmers use it,
+> to the point where it's much much easier
+> to generate total and utter crap with it.
 >
 > Linus Torvalds, 2007-09-06
 
@@ -92,11 +100,18 @@ Some other programming languages offer stronger guarantees.
 - Easy to abuse, hard to use correctly
 - Design Patterns are known to work well
 
-![@gamma1995elements](design_patterns_book.jpg)
+![Gamma et al., 1995](design_patterns_book.jpg)
+
+> `[Gamma et al., 1995]`
 
 ## Class design
 
 - [Python classes](https://docs.python.org/3/tutorial/classes.html)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
-- `[CppCore C.2]` [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
-- `[CppCore C.8]` [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)
+- `[CppCore C.2]` C.2: Use class if the class has an invariant; use struct
+  if the data members can vary independently 
+  <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct>
+- `[CppCore C.8]` C.8: Use class rather than struct if any member is non-public
+  <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class>
+- `[Gamma et al., 1995]` Gamma, Erich, et al.
+  "Elements of reusable object-oriented software." Design Patterns (1995).

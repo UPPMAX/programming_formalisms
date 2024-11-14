@@ -31,7 +31,7 @@
 - Write the code of the function as a pair and/or with help of an AI
 
 ```python
-assert calc_factorial_iterative(13) == 
+assert calc_factorial_iterative(13) ==
     calc_factorial_recursive(13)
 ```
 
@@ -64,17 +64,17 @@ Fibonacci sequence:
 | 3   | `Fn(1) + Fn(2)`         |
 | `n` | `Fn(n - 2) + Fn(n - 1)` |
 
-## Exercise 2: 
+## Exercise 2: get the nth value in the Fibonacci sequence
 
 - Develop a function to get the nth value in the Fibonacci sequence
-- If the function used a for-loop, create another function that uses recursion, 
+- If the function used a for-loop, create another function that uses recursion,
   or vice versa
 - Write the code of the function as a pair and/or with help of an AI
 
 ???- question "Answer in Python"
 
     ```python
-    assert get_nth_fibonacci_iterative(13) == 
+    assert get_nth_fibonacci_iterative(13) ==
       get_nth_fibonacci_recursive(13)
     ```
 

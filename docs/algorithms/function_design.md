@@ -344,7 +344,7 @@ A good function:
 - [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf):
   Testability: Source code should be written to facilitate testability
 
-## Example 3
+## Example 4
 
 Imagine two DNA sequences:
 
@@ -362,7 +362,7 @@ ATACC-GGGTTT
 
 Which tests would you write?
 
-## Solutions 3
+## Solutions 4
 
 ```python
 assert align_dna_seqs(
