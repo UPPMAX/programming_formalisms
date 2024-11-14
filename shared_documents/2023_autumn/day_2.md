@@ -6,8 +6,6 @@
 Passcode: 583470
 - Material: <https://uppmax.github.io/programming_formalisms/index.html>
 
-- Menti: <https://www.menti.com/alracrkfgsi8>
-<img src="https://hackmd.io/_uploads/r1qQoZmBa.png" alt="mentimeter_qr_code" width="200"/>
 
 ## General and technical questions
 
