@@ -73,4 +73,4 @@ For that, a [kanban board](kanban_board.md) is used instead.
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed. Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
 
 - `[Bugzilla, 2009]` Bugzilla (2009). Life Cycle of a Bug.
-  Retrieved October 30, 2009 from https://www.bugzilla.org/docs/2.18/html/lifecycle.html
+  Retrieved October 30, 2009 from <https://www.bugzilla.org/docs/2.18/html/lifecycle.html>
