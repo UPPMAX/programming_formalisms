@@ -8,12 +8,9 @@
 !!! info Content
 
     - We will give an overview of
-
-      - centralized collaboration
-
-      - Forked collaboration
-
-      - How to contribute
+        - centralized collaboration
+        - Forked collaboration
+        - How to contribute
 
 ???+ info "Learning objectives of 'Deployment'"
 
@@ -146,11 +143,11 @@ single-person repository in the previous episodes.
     - You do this by just **changing the file at GitHub**
     - Before committing/proposing file change you may preview the changes.
 
-    ![](../img/contributing/propose-file-change.png)
+    ![Propose file change](../img/contributing/propose-file-change.png)
 
     - After we click "Commit / change proposal" we are taken to this form:
 
-    ![](../img/contributing/pull-request-form.png)
+    ![Contribute form](../img/contributing/pull-request-form.png)
 
     - In there we
         - verify the **source and target branch**,
@@ -167,7 +164,6 @@ single-person repository in the previous episodes.
     - You can modify an open "pull request" by committing new changes to the branch
     - Review is not only to assure quality but also to enhance learning and **knowledge transfer** within the group
 
-
 ---
 
 - **To make sure that _all_ changes of the `main` branch are reviewed and nobody
@@ -175,7 +171,7 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 - "Settings", then "Branches", then "Add rule":
 
-![](../img/contributing/branch-protection.png)
+![Branch protection](../img/contributing/branch-protection.png)
 
 ### Discussion
 
@@ -200,22 +196,21 @@ We can practice how a conflict looks and how to resolve it:
 - Two participants should send two "pull requests" (change proposals)
   branching from `main` changing the same line in two different ways
 
-![](../img/contributing/conflict-edit-1.png)
-![](../img/contributing/conflict-edit-2.png)
+![conflict-edit-1](../img/contributing/conflict-edit-1.png)
+![conflict-edit-2](../img/contributing/conflict-edit-2.png)
 
 - We merge together one of the pull requests (this will work)
 - Then we try to merge the other and we see a conflict:
 
-![](../img/contributing/conflict-pull-request.png)
+![conflict-pull-request](../img/contributing/conflict-pull-request.png)
 
 - We try to resolve the conflict via web
 - **Choose the version that you wish to keep**, remove conflict markers, "Mark as resolved" and commit the change
 
-![](../img/contributing/conflict-resolution.png)
-
+![conflict-resolution](../img/contributing/conflict-resolution.png)
 
 ### Discussion
->
+
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
 
@@ -225,17 +220,13 @@ We can practice how a conflict looks and how to resolve it:
 
     |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
     |----|---|---|---|
-    Jupiter| 318 | 5.2 | 4.2
-    Saturn| 95.2 | 9.54 | 8.54
+    |Jupiter| 318 | 5.2 | 4.2|
+    |Saturn| 95.2 | 9.54 | 8.54|
 
     - Co-teacher adds info about Saturn
     - Update the files below in ``code/`` by just replacing the existing code with this:
 
-        ???- "planet_main.py"`
-
-
-
-        ???- "planet_data.py
+        ???- "planet_main.py"
 
 ### Summary
 
