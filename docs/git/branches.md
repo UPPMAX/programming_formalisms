@@ -59,7 +59,12 @@
         - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
         - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
 
+!!! warning
 
+    VScode sync: skip because of generality
+    
+    ``git config --global credential.helper cache`` 
+    ``git config --global credential.helper 'cache --timeout=36000'``
 
 ## Branching and merging
 
@@ -794,7 +799,7 @@ git branch -d new-feature    # remove branch
 
     - Now local Git and GitHub are in phase!
 
-## Test!
+## Test
 
     - What is a branch?
     - What is the problem that branches alleviate?
@@ -845,7 +850,7 @@ git merge
 
 **Overview workflow**
 
-![](../img/git_branches.png)
+![git branches](../img/git_branches.png)
 
 
 !!! admonition "Parts to be covered!"
