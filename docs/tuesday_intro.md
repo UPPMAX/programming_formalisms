@@ -4,8 +4,8 @@
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Tuesday  |09:00-10:00|Lars   |Software development life cycle
-Tuesday  |10:15-11:00|Richel   |Issues and kanban board and team roles
+Tuesday  |09:00-10:00|Lars   |[Software development life cycle](./introductions/sdlc.md)
+Tuesday  |10:15-11:00|Richel   |[Issues](project/issues.md) and [kanban board](project/kanban_board.md) and [team roles](project/team_roles.md)
 Tuesday  |11:15-12:00|Richel   |TDD
 Tuesday  |13:00-14:00|Richel |TDD
 Tuesday  |14:15-15:00|Richel |TDD
