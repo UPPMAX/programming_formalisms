@@ -39,7 +39,12 @@
   //
   // MD046/code-block-style : Code block style : https://github.com/DavidAnson/markdownlint/blob/v0.34.0/doc/md046.md
   "MD046": false,
+  // MD013/line-length
   "MD013": false,
-  "MD036": false
-
+  // MD036/no-emphasis-as-heading 
+  "MD036": false,
+  // MD033/no-inline-html
+  "MD033": false,
+  // MD024/no-duplicate-heading
+  "MD024": false
 }
