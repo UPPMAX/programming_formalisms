@@ -151,7 +151,7 @@ This program ...
 
 ```
 
-### Licensing       
+### Licensing
         
 #### Copyright
 
