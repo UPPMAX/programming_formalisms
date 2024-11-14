@@ -95,7 +95,7 @@ instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
     - Use the GitHub repository for the learners of this course,
     - Work on the main branch
     - Work in a file called `learners/[your_name]/[class_name].py`,
-        where `[your_name]` is the person with first name first in alphabet
+      where `[your_name]` is the person with first name first in alphabet
     - Errors should never pass silently `[Zen Of Python]`
 
 !!! note "Social rules"
@@ -118,9 +118,9 @@ showed at 'Exercises'.
 
     - Function name: `is_zero`
     - Output:
-      - Returns `True` if the input is zero
-      - Returns `False` if the input is not zero
-      - :warning: Gives an error when the input is not a number
+        - Returns `True` if the input is zero
+        - Returns `False` if the input is not zero
+        - :warning: Gives an error when the input is not a number
 
 ???- info "Answer"
 
@@ -169,9 +169,9 @@ Develop a function called `is_even`:
 
     - Function name: `is_even`
     - Output:
-      - Returns `True` if the input is even
-      - Returns `False` if the input is not even
-      - :warning: Gives an error when the input is not a number
+        - Returns `True` if the input is even
+        - Returns `False` if the input is not even
+        - :warning: Gives an error when the input is not a number
 
 ???- info "Answer"
 
@@ -222,9 +222,9 @@ Develop a function called `is_odd`:
 
     - Function name: `is_odd`
     - Output:
-      - Returns `True` if the input is odd
-      - Returns `False` if the input is not odd
-      - :warning: Gives an error when the input is not a number
+        - Returns `True` if the input is odd
+        - Returns `False` if the input is not odd
+        - :warning: Gives an error when the input is not a number
 
 Consider using the `is_even` function.
 
@@ -294,10 +294,10 @@ Develop a function called `is_probability`.
 
     - Function name: `is_probability`
     - Output:
-      - Returns `True` if the input is in the range [0.0, 1.0],
+        - Returns `True` if the input is in the range [0.0, 1.0],
         that is from (and including) zero to (and including) one.
-      - Returns `False` if the input is not a probability
-      - :warning: Gives an error when the input is not one number
+        - Returns `False` if the input is not a probability
+        - :warning: Gives an error when the input is not one number
 
 ???- info "Answer"
 
@@ -339,9 +339,9 @@ Develop a function called `is_prime`.
 
     - Function name: `is_prime`
     - Output:
-      - Returns `True` if the input is a prime number.
-      - Returns `False` if the input is not a prime number.
-      - :warning: Gives an error when the input is not one number
+        - Returns `True` if the input is a prime number.
+        - Returns `False` if the input is not a prime number.
+        - :warning: Gives an error when the input is not one number
 
 ???- question "Need a video?"
 
@@ -428,7 +428,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   International Journal of Software Engineering Applications (IJSEA)
   2018 (2018).
 
-![](beck_tdd_by_example.jpg)
+![Beck, 2022](beck_tdd_by_example.jpg)
 
 - `[Beck, 2022]` Beck, Kent. Test driven development: By example.
   Addison-Wesley Professional, 2022.
@@ -446,7 +446,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   "Test-driven learning: intrinsic integration of testing into the CS/SE
   curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
 
-![](book_langr.jpg)
+![Langr, 2013](book_langr.jpg)
 
 - `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better.
   "Modern C++ Programming with Test-Driven Development." (2013).
@@ -455,7 +455,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   Test-driven development: An empirical evaluation of agile practice.
   Heidelberg: Springer, 2010.
 
-![](martin_the_clean_coder.jpg)
+![Martin, 2011](martin_the_clean_coder.jpg)
 
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
@@ -478,14 +478,14 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   showed developers write functions such as `is_prime` with and without TDD
   and showed that TDD was twice as fast. TODO: find this reference
 
-![](thomas_and_hunt_the_pragmatic_programmer.jpg)
+![Thomas & Hunt, 2019](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 - `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt.
   The Pragmatic Programmer: your journey to mastery.
   Addison-Wesley Professional, 2019.
 - `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
-![](python_logo.png)
+![Python logo](python_logo.png)
 
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
