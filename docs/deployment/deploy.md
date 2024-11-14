@@ -57,7 +57,7 @@
 
 ### To make sure...
 
-- Start with empty environent
+- Start with empty environment
     - good to do this from beginning
 - Nowadays platforms are less important, still "system files" may be differ among OS platforms and Linux distributions 
     - will your program require specific "system files"
@@ -142,7 +142,7 @@
 
 ### Example Python
 
-- make a header so that user can decide wich python to use
+- make a header so that user can decide which python to use
 - especially important on a shared system where python is not in the typical /usr/bin/python path.
 - This line helps in the top of the main script:
 
@@ -160,7 +160,7 @@
 
 **Save your requirements as a file** 
 
-- You may have developed your Python program with your existing python modules environent. You may have installed some new packages during the development but did not track it in a good way.
+- You may have developed your Python program with your existing python modules environment. You may have installed some new packages during the development but did not track it in a good way.
 - We need to identify what python packages a user (or you on another computer) will need, to make the program work!
     - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
     - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
