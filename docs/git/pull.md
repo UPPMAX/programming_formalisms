@@ -18,6 +18,11 @@
 ???+ info "Learning objectives of 'Deployment'"
 
     - explain and evaluate the usefulness of git Pull Request with code review
+    - practice doing Pull Requests using the GitHub interface
+    - practice doing a code review
+    - practice fixing merge conflicts on GitHub
+    - practice merging branches using the command-line interface
+    - practice fixing merge conflicts on local computer, using the command-line interface
 
 ???- note "Instructor notes"
 
