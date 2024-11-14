@@ -173,7 +173,7 @@ This program ...
     1. Custom/closed/proprietary
     
         - Derivative work typically not possible
-        - Unusual in academics 
+        - Unusual in academics
         
     2. Permissive (**MIT**, BSD, Apache)
     
@@ -181,11 +181,11 @@ This program ...
         
     3. Weak copyleft share-alike (**LGPL**, MPL)
     
-      - Derivative work is free software but is limited to the component
+        - Derivative work is free software but is limited to the component
       
     4. Strong copyleft share-alike (**GPL**, AGPL)
     
-      - Derivative work is free software and derivative work extends to the combined project
+        - Derivative work is free software and derivative work extends to the combined project
 
 [Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)
 
