@@ -16,8 +16,9 @@ classDiagram
   }
 ```
 
-- [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
-- [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)
+- Use class if the class has an invariant; 
+  use struct if the data members can vary independently `[CppCore C.2]`
+- Use class rather than struct if any member is non-public `[CppCore C.8]`
 
 # Writing a good class
 
@@ -27,7 +28,8 @@ Q: What is a good class?
 
 A:
 
-- guarantees its stored data is valid, e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
+- guarantees its stored data is valid, 
+  e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
 - the quality requirements for a function, among others a good interface
 - writing a design, documentation and tests all help
 
@@ -96,3 +98,5 @@ Some other programming languages offer stronger guarantees.
 
 - [Python classes](https://docs.python.org/3/tutorial/classes.html)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
+- `[CppCore C.2]` [C.2: Use class if the class has an invariant; use struct if the data members can vary independently](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-struct)
+- `[CppCore C.8]` [C.8: Use class rather than struct if any member is non-public](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-class)

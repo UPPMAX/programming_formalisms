@@ -4,8 +4,6 @@
 
     - .
 
-# Built-in data structures
-
 ## Problem
 
 Are there classes that can help me solve problems more elegantly?

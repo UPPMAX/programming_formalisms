@@ -36,15 +36,13 @@ classDiagram
 
 ## Increase expressiveness, in code
 
-=== "Python"
+```python
+a = get_a()
+print(a)
+print(type(a))
+```
 
-    ```python
-    a = get_a()
-    print(a)
-    print(type(a))
-    ```
-
-=== "R"
+???- question "Prefer R?"
 
     ```r
     a <- get_a()
@@ -52,32 +50,31 @@ classDiagram
     class(a)
     ```
 
-## Increase expressiveness, in code
+## Increase expressiveness, in code again
 
-=== "Python"
+```python
+class Coordinat:
+    def __init__(self, any_x, any_y):
+      self.x = any_x
+      self.y = any_y
+    def __repr__(self):
+        return "Coordinat"
+    def __str__(self):
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
+def get_a():
+    return Coordinat(3.14, 2.72)
+```
 
-    ```python
-    class Coordinat:
-        def __init__(self, any_x, any_y):
-          self.x = any_x
-          self.y = any_y
-        def __repr__(self):
-            return "Coordinat"
-        def __str__(self):
-            return "(" + str(self.x) + ", " + str(self.y) + ")"
-    def get_a():
-        return Coordinat(3.14, 2.72)
-    ```
+```python
+a = get_a()
+print(a)
+```
 
-    ```python
-    a = get_a()
-    print(a)
-    ```
+```python
+print(type(a))
+```
 
-    ```python
-    print(type(a))
-    ```
-=== "R"
+???- question "Prefer R?"
 
     ```r
     a <- get_a()
@@ -90,8 +87,8 @@ classDiagram
 
 Ah, it is a **coordinat**!
 
-- [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
-- [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
+- Express ideas directly in code `[CppCore P.1]`
+- Explicit is better than implicit `[PEP 20]`
 
 ## Exercise 1: design a struct (15 mins)
 
@@ -107,4 +104,9 @@ What are their elements? Which do you guess are structures? Were they?
 - A velocity in two dimensions
 - A circle
 - A square
+
+## References
+
+- `[CppCore P.1]` [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
+- `[PEP 20]` [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)
 

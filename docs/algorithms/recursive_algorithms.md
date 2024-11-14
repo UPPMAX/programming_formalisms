@@ -6,7 +6,7 @@
     - Understand algorithm names increase expressiveness of code
     - Understand difference between `if` and `assert` in function writing
 
-## Recursive algorithms
+## Types of recursive algorithms
 
 - Iterative: use a for-loop
 - Recursive: a function that calls itself
@@ -26,17 +26,16 @@
 ## Exercise 1: factorial
 
 - Develop a function to get the factorial of a number
-- If the function used a for-loop, create another function that uses recursion, or the other way around
+- If the function used a for-loop, create another function that uses recursion,
+  or the other way around
 - Write the code of the function as a pair and/or with help of an AI
 
-=== "Python"
+```python
+assert calc_factorial_iterative(13) == 
+    calc_factorial_recursive(13)
+```
 
-    ```python
-    assert calc_factorial_iterative(13) == 
-      calc_factorial_recursive(13)
-    ```
-
-=== "R"
+???- question "Prefer R?"
 
     ```r
     expect_equal(
@@ -55,7 +54,7 @@ Fibonacci sequence:
 
 ![https://en.wikipedia.org/wiki/File:Fibonacci_Squares.svg](fibonacci_squares.png)
 
-## Example 2
+## Example 2: get Fibonacci number
 
 | N   | `Fn`                    |
 |-----|-------------------------|
@@ -65,20 +64,21 @@ Fibonacci sequence:
 | 3   | `Fn(1) + Fn(2)`         |
 | `n` | `Fn(n - 2) + Fn(n - 1)` |
 
-## Exercise
+## Exercise 2: 
 
 - Develop a function to get the nth value in the Fibonacci sequence
-- If the function used a for-loop, create another function that uses recursion, or vice versa
+- If the function used a for-loop, create another function that uses recursion, 
+  or vice versa
 - Write the code of the function as a pair and/or with help of an AI
 
-=== "Python"
+???- question "Answer in Python"
 
     ```python
     assert get_nth_fibonacci_iterative(13) == 
       get_nth_fibonacci_recursive(13)
     ```
 
-=== "R"
+???- question "Answer in R"
 
     ```r
     expect_equal(

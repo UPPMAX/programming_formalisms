@@ -339,11 +339,12 @@ A good function:
 ## A good function is tested
 
 - F.2: A function should perform a single logical operation [CppCore F.2]
-  A function that performs a single operation is simpler to understand, test, and reuse.
+  A function that performs a single operation
+  is simpler to understand, test, and reuse.
 - [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf):
   Testability: Source code should be written to facilitate testability
 
-## Example 2
+## Example 3
 
 Imagine two DNA sequences:
 
@@ -361,7 +362,7 @@ ATACC-GGGTTT
 
 Which tests would you write?
 
-## Solutions 2
+## Solutions 3
 
 ```python
 assert align_dna_seqs(

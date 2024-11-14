@@ -22,8 +22,11 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-      - Imagine a university, departments, professors, the department of biology, the department of physics. Which relationships are there?
-      - A university has departments. Departments have professors. Is this the same type of relationship? Hint: what happens if the bigger one ends existing?
+        - Imagine a university, departments, professors,
+          the department of biology, the department of physics. Which relationships are there?
+        - A university has departments. Departments have professors.
+          Is this the same type of relationship?
+          Hint: what happens if the bigger one ends existing?
     - 5 mins: presentation
     - 10 mins: demonstration `is_zero`
     - 25 mins: challenge
@@ -117,11 +120,16 @@ Instead, a simulation has an association with the results it produces.
 A university has departments, where a department has professors.
 These are two different 'has-a' relationships.
 
+<!-- markdownlint-disable MD013 -->
+<!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
 Has-a relationship                     |Composition                                               |Aggregation
 ---------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------
 Example                                |A university has departments                              |A department has professors
 Ownership of its elements              |Yes, a university owns its departments                    |No, a department allows professors to group
 What happens to elements when destroyed|Destroyed: when a university closes, all departments close|Left intact: when a department closes, all professors live afterwards
+
+<!-- markdownlint-enable MD013 -->
 
 !!! note "In this course, we never use aggregation"
 
@@ -145,7 +153,7 @@ classDiagram
   Particle *-- Position
 ```
 
-- [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
+- Organize related data into structures (structs or classes) `[CppCore C.1]`
 
 
 ## Exercise 1: design a struct (15 mins)
@@ -197,3 +205,6 @@ A square has
     - maybe an angle (:monocle_face:)
 - a two opposing coordinats: struct?
 
+## References
+
+- `[CppCore C.1]` [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)
