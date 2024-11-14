@@ -87,8 +87,7 @@ Agree yes/no
 
 ## Exercise 1
 
-- Measure big-O complexity of 
-  <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
+- Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
 ```python
 def isprime(num):
