@@ -1,5 +1,8 @@
 # Evaluation
 
+<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header x -->
+<!-- markdownlint-disable MD029 --><!-- Accept that survey uses non-standard indentation values -->
+
 !!! note "For teachers only"
 
     Below is the text of the NBIS Short Term Feedback questions for reference.
@@ -75,11 +78,7 @@ handling:
 
 ### Core Question Set
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 ### Section 1 - Template: NBIS Short Term Feedback (STF) survey `COURSE NAME, LOCATION, YYYY-MM-DD`
-
-<!-- markdownlint-enable MD013 -->
 
 Thank you for filling the questionnaire.
 It is really important to us in order to continually improve the course and the
@@ -146,11 +145,7 @@ I see no reason why this would change the course, nor my teaching
 in any way
 ```
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 5. Have you used the tools/resource(s) covered in the course before? `have_used_resources_before`
-
-<!-- markdownlint-enable MD013 -->
 
 - i. Never - Unaware of them
 - ii. Never - Used other service
@@ -162,8 +157,6 @@ in any way
 as I feel question 7 gives me the similar info.
 ```
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 6. Will you use the tools/resource(s) covered in the course again? `will_use_resources_future`
 
 <!-- markdownlint-ensable MD013 -->
@@ -171,7 +164,6 @@ as I feel question 7 gives me the similar info.
 - v. Yes
 - vi. No
 - vii. Maybe
-
 
 7. Would you recommend the course? `would_recommend_course`
 
@@ -194,21 +186,13 @@ as I feel question 7 gives me the similar info.
 Instead, I suggest to link to a long-term feedback form at this page
 ```
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 9. A. May we contact you by email in the future for more feedback? `contact_future`
-
-<!-- markdownlint-enable MD013 -->
 
 - i. Yes
 - ii. No
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 9 B**. If you answered ‘yes’ to the above question, please enter your email address, below. email
 (** Information for question 9B must be collected and stored by each Node/Institution, but should NOT be shared with the Q&I subtask or any other third party due to GDPR considerations.)
-
-<!-- markdownlint-enable MD013 -->
 
 ### Additional Questions - Training content/information
 
@@ -246,7 +230,6 @@ Richel: I don't see how question 1 below would change my teaching
 - 1. (Very unsatisfactory/Not useful)
 - 5. Very good/Very useful
 
-
 ```
 [Richel]: I don't feel it is worth to bother our learners with question 5 below
 ```
@@ -259,11 +242,7 @@ Richel: I don't see how question 1 below would change my teaching
 [Richel]: I don't feel it is worth to bother our learners with question 7 below
 ```
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 7. PLEASE RATE EACH SESSION OF THE COURSE `satisfaction_per_session_YYYY_MM_DD_am/pm`
-
-<!-- markdownlint-enable MD013 -->
 
 - a. Did not attend
 - b. Poor (1)
@@ -291,17 +270,11 @@ below, as we have question 5
 [Richel]: I don't feel it is worth to bother our learners with question 10 below
 ```
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 10. STATEMENTS REGARDING WHAT PARTICIPANTS COULD DO before TRAINING (customised to a specific training) skills_before
-
-<!-- markdownlint-enable MD013 -->
 
 ```text
 [Richel]: I don't feel it is worth to bother our learners with question 11 below
 ```
-
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
 
 11. STATEMENTS REGARDING WHAT PARTICIPANTS CAN DO after TRAINING (customised to a specific training) skills_after
 
@@ -317,7 +290,6 @@ below, as we have question 5
 
 ### Additional Questions - Training logistics
 
-
 These are suggested questions that may be of interest (not compulsory):
 
 ```text
@@ -332,11 +304,7 @@ These are suggested questions that may be of interest (not compulsory):
 [Richel]: I don't feel it is worth to bother our learners with question 2 below
 ```
 
-<!-- markdownlint-disable MD013 --><!-- Accept that survey has a long header -->
-
 2. How did you like the facilities/localities of the course (rooms and surroundings)? `course_localities`
-
-<!-- markdownlint-enable MD013 -->
 
 - Linear scale 1-5
 - 1. Not at all
@@ -357,3 +325,6 @@ These are suggested questions that may be of interest (not compulsory):
 It was a great experience and we are working hard to make it even better.
 Now go make something great!
 
+
+<!-- markdownlint-enable MD013 -->
+<!-- markdownlint-enable MD029 -->

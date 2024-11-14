@@ -20,8 +20,6 @@ You can ask for a certificate after the course that helps with the decisions.
 
 ## Eligibility
 
-![](./img/eligibility.jpg)
-
 ### I have never programmed before. Am I eligible?
 
 Not yet (for your own good)!
@@ -53,8 +51,6 @@ To make that possible for non-Python programmers:
 
 ## Preparation
 
-![](./img/preparation.jpg)
-
 ### How do I prepare?
 
 See [prerequisites](../prereqs.md) for how to prepare.
@@ -74,8 +70,6 @@ No.
 But is is thought of to be quite convenient :-)
 
 ## Course teaching
-
-![](./img/course_teaching.jpg)
 
 ### What is the goal of the shared project?
 

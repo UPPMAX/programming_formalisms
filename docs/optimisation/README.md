@@ -7,9 +7,7 @@
     - Practice to determine the big-O profile of a function
     - Practice to get a run-time speed profile
 
-## QMD
-
-# Why optimization?
+## Why?
 
 To improve the runtime speed (or memory use) of a program
 

@@ -8,7 +8,7 @@
     - Practice to get a run-time speed profile
 
 
-# Run-time speed profile
+## Why?
 
 - See which code is spent most time in
 - :monocle_face: Use an input of suitable complexity
@@ -55,7 +55,7 @@ Create speed profile of <https://www.pythonpool.com/check-if-number-is-prime-in-
 
 Create speed profile of DNA alignment
 
-# Step 3: Think
+## Step 3: Think
 
 - How to achieve the same with less calculations?
     - Aim to change big-O, not some micro-optimization
@@ -67,7 +67,7 @@ Create speed profile of DNA alignment
 > 2. Think very hard.
 > 3. Write down the answer
 
-# Step 4: Measure again
+## Step 4: Measure again
 
 In TDD, this test would have been present already:
 

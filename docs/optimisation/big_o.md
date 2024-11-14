@@ -7,8 +7,6 @@
     - Practice to determine the big-O profile of a function
     - Practice to get a run-time speed profile
 
-## QMD
-
 ## Problem
 
 Q: When to optimize for speed?
