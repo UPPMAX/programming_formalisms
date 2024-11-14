@@ -1,4 +1,4 @@
-# Merging and git pull request with code review
+# Merging and contributing with code review
 
 !!! questions
 
