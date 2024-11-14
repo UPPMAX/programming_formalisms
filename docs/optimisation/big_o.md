@@ -58,21 +58,21 @@ How your (combination of) algorithms scales with more complex input.
 
 ## Your algorithm
 
-![](many_scatter_plots.png)
+![Many scatter plots](many_scatter_plots.png)
 
 ## Example
 
-![](big_o_100.png)
+![Big O plot for 100](big_o_100.png)
 
 :monocle_face: Work on B?
 
 ## Example
 
-![](big_o_500.png)
+![Big O plot for 500](big_o_500.png)
 
 ## Example
 
-![](big_o_2000.png)
+![Big O plot for 2000](big_o_2000.png)
 
 :sunglasses: No, work on C instead
 
