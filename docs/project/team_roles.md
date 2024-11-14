@@ -66,7 +66,7 @@ A senior developer:
 
 ### Exercise 1: signal a role you want to practice
 
-There are many roles in a team and you may fulfil multiple.
+There are many roles in a team and you may fulfill multiple.
 
 If you are interested in being any of these below, let the teachers
 know and you'll be assigned the role if (still) vacant.
