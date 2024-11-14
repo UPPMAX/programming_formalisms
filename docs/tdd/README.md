@@ -389,7 +389,7 @@ Pick a function at your level.
 - It is only those your boss may read
 - The literature assumes a responsible programmer writes tests,
     in C++ `[Stroustrup & Sutter, 2017]`,
-    R `[Wickham, 2019]` and Python `[PEP 8]`
+    R ``[Wickham, 2019]`` and Python `[PEP 8]`
 
 ## Discussion
 
@@ -446,7 +446,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 ![](thomas_and_hunt_the_pragmatic_programmer.jpg)
 
 - `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
-- `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
+- ``[Wickham, 2019]`` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
 ![](python_logo.png)
 
