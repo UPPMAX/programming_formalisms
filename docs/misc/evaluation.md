@@ -120,7 +120,7 @@ well as for wider quality/impact analyses.
 - e. Industry scientist
 - f. Other (comments)
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 3 below
 ```
 
