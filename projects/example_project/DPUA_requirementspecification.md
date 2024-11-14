@@ -1,3 +1,5 @@
+# DPUA requirement specification
+
 | Requirement ID | Requirement Description | Acceptance Criteria | Test Cases |
 |----------------|-------------------------|---------------------|------------|
 | R1             | Visual Display         | The program must display a field with particles and a visual cue to runtime settings | - Verify that the program opens a graphical window or interface for displaying particles. |
