@@ -799,7 +799,7 @@ git branch -d new-feature    # remove branch
 
     - Now local Git and GitHub are in phase!
 
-## Test!
+## Test
 
     - What is a branch?
     - What is the problem that branches alleviate?
@@ -850,7 +850,7 @@ git merge
 
 **Overview workflow**
 
-![](../img/git_branches.png)
+![git branches](../img/git_branches.png)
 
 
 !!! admonition "Parts to be covered!"
