@@ -186,7 +186,7 @@ is called `tests/test_richel_utils.py`.
     You will get the error `ModuleNotFoundError: No module named 'src'`
     when you click 'Run' on your file with tests.
 
-    ![](running_a_test_script_normally_fails_annotated.png)
+    ![The error you get from running this script](running_a_test_script_normally_fails_annotated.png)
 
     > Clicking on 'Run' (see the red rectangle at the top-left)
     > for a file that has tests
@@ -201,38 +201,38 @@ If you do this for the first time, you get some blue buttons.
 
 ???- question "How does that look like?"
 
-    ![](testing_tab_first_click.png)
+    ![Click 'First'](testing_tab_first_click.png)
 
 Click on 'Configure Python Tests'.
 
 ???- question "How does that look like?"
 
-    ![](testing_tab_select_framework.png)
+    ![Select the framework](testing_tab_select_framework.png)
 
 Select 'unittest Standard Python test framework'
 
 ???- question "How does that look like?"
 
-    ![](testing_tab_select_test_folder.png)
+    ![Select 'test' folder](testing_tab_select_test_folder.png)
 
 Select `tests` as the testing folder.
 
 ???- question "How does that look like?"
 
-    ![](testing_tab_select_test_file_pattern.png)
+    ![Select the test file pattern](testing_tab_select_test_file_pattern.png)
 
 Select `test_*.py` as the test file pattern.
 
 ???- question "How does that look like?"
 
-    ![](testing_tab_tests_present.png)
+    ![The 'Tests' tab](testing_tab_tests_present.png)
 
 Now the tests are present at the left side in a folded up state.
 One can unfold these.
 
 ???- question "How does that look like?"
 
-    ![](testing_tab_tests_present_and_run.png)
+    ![The unfolded 'Tests' tab](testing_tab_tests_present_and_run.png)
 
 Clicking on the 'Run'/'Play' button to run the tests.
 
@@ -259,11 +259,11 @@ The function is a function to determine if a number is prime.
 
 !!! info "The function"
 
-    -   Function name: `is_prime_[names]`, for example, `is_prime_anna_and_sven`
-    -   Output:
-        -   Returns `True` if the input is prime
-        -   Returns `False` if the input is not prime
-        -   Gives an error when the input is not one integer
+    - Function name: `is_prime_[names]`, for example, `is_prime_anna_and_sven`
+    - Output:
+        - Returns `True` if the input is prime
+        - Returns `False` if the input is not prime
+        - Gives an error when the input is not one integer
 
 !!! info "Social"
 
@@ -300,9 +300,6 @@ Use the same setup as exercise 1.
 
 However, decide upon an interesting function at your estimated level.
 When disagreeing: pick the easiest function.
-
-If needed, one can find inspiration at the section
-[Other functions](#other-functions) below.
 
 ## Exercise 3: your classes
 

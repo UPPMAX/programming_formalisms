@@ -123,8 +123,8 @@ If needed, this function is suggested:
       one and the highest value that can be drawn). Each number must be unique.
       The numbers need not to be sorted.
       Assuming a highest value of 45, them:
-          - Valid examples: `[1, 2, 3, 4, 5, 6]`, `[6, 5, 4, 3, 2, 1]`
-          - Invalid examples: `[1, 1, 1, 1, 1, 1]` (due to duplicates),
-            `[1, 2, 3, 4, 5, 46]` (last value is heigher than 45),
+        - Valid examples: `[1, 2, 3, 4, 5, 6]`, `[6, 5, 4, 3, 2, 1]`
+        - Invalid examples: `[1, 1, 1, 1, 1, 1]` (due to duplicates),
+          `[1, 2, 3, 4, 5, 46]` (last value is heigher than 45),
     - If the input is not one integer that is at least 6,
       a `TypeError` is raised.

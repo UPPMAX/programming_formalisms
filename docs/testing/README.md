@@ -47,10 +47,10 @@
 ## Recap
 
 - Testing helps code correctness
-      - Use the Beyoncé Rule on precious behavior
+    - Use the Beyoncé Rule on precious behavior
 - Testing + CI:
-      - Helps teaching
-      - Helps bug reporting
+    - Helps teaching
+    - Helps bug reporting
 
 ## Weaknesses
 
