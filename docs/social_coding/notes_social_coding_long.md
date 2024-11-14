@@ -4,6 +4,47 @@ This material is based on the Social Coding lecture by Code Refinery:
 
 # Social coding
 
+## input
+
+!!! Discussion "One-time usage towards distributed package"
+
+
+    - Have others used your code?
+    - Did you plan it from beginning?
+    - Did you take actions somehow?
+
+- The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
+- **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
+
+!!! admonition "FAIR"
+
+    **The current buzzword for data management**
+    - You may be asked about it in, for example, making data management plans for grants:
+
+    - **F**indable
+        - Will anyone else know that your data exists?
+        - Solutions: put it in a standard repository, or at least a description of the data. Get a digital object identifier (DOI).
+    - **A**ccessible
+         - Once someone knows that the data exists, can they get it?
+         - Usually solved by being in a repository, but for non-open data, may require more procedures.
+    - **I**nter-operable
+         - Is your data in a format that can be used by others, like csv instead of PDF?
+         - Or better than csv. Example: 5-star open data
+    - **R**eusable
+         - Is there a license allowing others to re-use?
+
+!!! info "See also"
+
+    - We will talk about this the last day!
+
+### Licensing
+
+!!! info "See also"
+
+    - We will talk about this the last day!
+
+
+
 ## Discussion/questions/poll: basics of sharing
 
 ```{discussion} Social-1: Think about if and how you share
@@ -216,3 +257,7 @@ This can be now reconnected to question 4 (above).
 - A repository that is private today might become public one day.
 - Sometimes "OTHERS" are you yourself in the future in a different group/job.
 - **Software licenses** matter. And this is what we will discuss in the next episode.
+
+## New: Sharing data??
+
+https://coderefinery.github.io/social-coding/sharing-data/
