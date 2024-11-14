@@ -15,9 +15,10 @@ Q: When to optimize for speed?
 
 A:
 
-- [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
-- [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
-- [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+- Don't optimize without reason `[CppCore Per.1]`
+- Don't optimize prematurely `[CppCore Per.2]`
+- Don't optimize something
+  that's not performance critical `[CppCore Per.3]`
 
 ## Problem
 
@@ -86,9 +87,10 @@ Big-O helps to:
 
 Agree yes/no
 
-## Exercise 1 \[SKIP\]
+## Exercise 1
 
-- Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
+- Measure big-O complexity of 
+  <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
 ```python
 def isprime(num):
@@ -111,40 +113,17 @@ def isprime(num):
         return False
 ```
 
-## Exercise 1 [SKIP]
+## Exercise 2
 
-- Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
+- Measure big-O complexity of DNA alignment algorithm
+  at <https://johnlekberg.com/blog/2020-10-25-seq-align.html>
 
+## References
 
-```python
-def isprime(num):
-  for n in range(
-    2, int(num**0.5)+1
-  ):
-    if num%n==0:
-      return False
-  return True
-```
-
-```python
-def Prime(no, i = 2):
-    if no == i:
-        return True
-    elif no % i == 0:
-        return False
-    return Prime(no, i + 1)
-```
-
-## Exercise 2 [SKIP]
-
-- Measure big-O complexity of DNA alignment at <https://johnlekberg.com/blog/2020-10-25-seq-align.html>
-
-```
-ACGTACGTACGTACGTACGTACGT
-ACGTACGTACGTCGTACGTACGT
-```
-
-```
-ACGTACGTACGTACGTACGTACGT
-ACGTACGTACGT-CGTACGTACGT
-```
+- `[CppCore Per.1]` C++ Core Guidelines: Per.1: Don't optimize without reason
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+- `[CppCore Per.2]` C++ Core Guidelines: Per.2: Don't optimize prematurely
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
+- `[CppCore Per.3]` C++ Core Guidelines: Per.3:
+  Don't optimize something that's not performance critical
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)

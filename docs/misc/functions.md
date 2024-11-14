@@ -245,9 +245,9 @@ practicing TDD.
 
     - Function name: `is_prime`
     - Output:
-      - Returns `True` if the input is a prime number.
-      - Returns `False` if the input is not a prime number.
-      - :warning: Gives an error when the input is not one number
+        - Returns `True` if the input is a prime number.
+        - Returns `False` if the input is not a prime number.
+        - :warning: Gives an error when the input is not one number
 
 !!! note "`int_to_roman(x)`"
 
@@ -270,8 +270,9 @@ practicing TDD.
 
 !!! note "`roman_to_int(x)`"
 
-    - Input: [a Roman numeral](https://en.wikipedia.org/wiki/Roman_numerals), e.g. 'IV',
-    - Returns The integer value of this Roman numeral
+    - Input: [a Roman numeral](https://en.wikipedia.org/wiki/Roman_numerals),
+      e.g. `IV`
+    - Returns: the integer value of this Roman numeral
 
       Input|Expected output
       -----|---------------

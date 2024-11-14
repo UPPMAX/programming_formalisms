@@ -2,12 +2,16 @@
 
 There are many project workflows. Here are some:
 
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
 `git` model                      |Code review|Features
 ---------------------------------|-----------|--------------------------------------------------------------------
 `main`                           |No         |if `main` can be broken, also called 'trunk based development'
 `main`, `develop`                |No         |if `main` needs not to be broken
 `main`, `develop`, topic branches|No         |if `main` needs not to be broken and there are multiple contributors
 `main`, `develop`, topic branches|Yes        |if `main` needs not to be broken and there are multiple team members
+
+<!-- markdownlint-enable MD013 -->
 
 In this course, we will scale up from the first to the last project workflow.
 
