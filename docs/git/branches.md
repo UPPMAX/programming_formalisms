@@ -35,7 +35,7 @@
     - Discussions 10 min
 
 
-!!!_ info "Table of content"
+!!! info "Table of content"
 
     - Branching
         - background
@@ -48,6 +48,17 @@
         - conflicts?
         - examples/demos
         - discussion
+
+
+!!! info "References"
+
+    - The [main git book](https://git-scm.com/book/en/v2)
+
+    - 'git best practices'
+
+        - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
+        - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
+
 
 
 ## Branching and merging
