@@ -2,7 +2,7 @@
 
 These are the questions posed at a Retrospective:
 
-```
+```text
 ## Retrospective
 
 Teachers are learners too. Please help us improve by sharing your opinion.
