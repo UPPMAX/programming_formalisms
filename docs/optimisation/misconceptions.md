@@ -81,7 +81,7 @@ Instead (from `[Chellappa et al., 2008]`):
 - `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of c, c++, java, perl, python, rexx and tcl." IEEE Computer 33.10 (2000): 23-29.
 - `[Rodgers, 1985]` Rodgers, David P. "Improvements in multiprocessor system design." ACM SIGARCH Computer Architecture News 13.3 (1985): 225-231.
 - `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.
-- `[Chellappa et al., 2008]` 
+- `[Chellappa et al., 2008]`
   Chellappa, Srinivas, Franz Franchetti, and Markus Püschel.
   "How to write fast numerical code: A small introduction."
   Generative and Transformational Techniques in Software Engineering II:
