@@ -42,7 +42,7 @@
         - deployment on servers
     - Hands-on
         - update README
-          - installation procedure
+            - installation procedure
         - update license
         - update citation
         - update index
