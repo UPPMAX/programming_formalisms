@@ -62,6 +62,9 @@
 !!! warning
 
     VScode sync: skip because of generality
+    
+    ``git config --global credential.helper cache`` 
+    ``git config --global credential.helper 'cache --timeout=36000'``
 
 ## Branching and merging
 
