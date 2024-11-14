@@ -37,6 +37,7 @@
 
 !!! info "Table of content"
 
+    **FIX**
     - Branching
         - background
         - workflows
@@ -48,7 +49,6 @@
         - conflicts?
         - examples/demos
         - discussion
-
 
 !!! info "References"
 
@@ -110,10 +110,10 @@ git branch -d new-feature    # remove branch
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
 
-## Add Jupiter in a new branch
+## Add ~~Jupiter~~ in a new branch
 
-- Let's make a new branch called ``jupiter``
-- Here we add some code taking care of the motion of Jupiter and interaction with Earth
+- Let's make a new branch called ``FIX``
+- Here we add some code taking care of the motion of ~~Jupiter~~  and interaction with Earth
 
 !!! example "Demo or Type-along: Add Jupiter"
 
@@ -413,8 +413,8 @@ git branch -d new-feature    # remove branch
 
 !!! example "Demo or Type-along: git branch 2"
 
-     **Make four modules/files**
-     
+    **Make four modules/files**
+
     - Make sure you get back to the main branch
 
     ```git
