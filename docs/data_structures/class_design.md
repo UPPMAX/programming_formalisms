@@ -83,7 +83,7 @@ assert a.get_str() == "XXX"
 
 Some other programming languages offer stronger guarantees.
 
-## Inheritance and polymorphism
+## Inheritance and polymorphism quote
 
 > C++ is a horrible language.
 > It's made more horrible by the fact

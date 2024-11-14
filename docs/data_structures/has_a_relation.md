@@ -32,7 +32,16 @@
     - 25 mins: challenge
     - 10 mins: feedback
 
-# `struct` relations
+
+## Why?
+
+You want to model your classes after the real world.
+Your classes work together and you do not feel sure how to
+put these together in code.
+
+You want to know the most important relation between classes there is.
+
+## Good data structures
 
 Good (:innocent:) data structures:
 

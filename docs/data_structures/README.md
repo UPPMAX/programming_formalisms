@@ -26,6 +26,8 @@ Good example data structures are [built-in data structures](built_in_data_struct
 
 ## structure versus class
 
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
 Parameter               | structure                    | class
 ------------------------|------------------------------|--------------------------------------------
 Python keyword          | `class`                      | `class`
@@ -34,4 +36,6 @@ All states are valid    | Yes                          | No
 Maintains a valid state | No                           | Yes
 Example                 | A number for an x coordinate | A string for a DNA sequence
 Invalid when            | Never                        | Sequence holds an invalid nucleotide letter
+
+<!-- markdownlint-ensable MD013 -->
 
