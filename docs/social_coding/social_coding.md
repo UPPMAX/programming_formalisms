@@ -4,9 +4,13 @@ This material is based on the Social Coding lecture by Code Refinery:
 
 # Social coding
 
-!!! info "Learning objectives of ''"
+!!! info "Learning objectives of 'Social coding'"
 
-    - 
+    Learners 
+
+    - have an overview of motivations, benefits, but also risks of sharing and reusing code.
+    - know how to identify whether one can use other peoples software.
+    - have a basic understanding of licenses
 
 ## input
 
