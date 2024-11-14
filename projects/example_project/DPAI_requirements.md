@@ -19,55 +19,54 @@
 
 From this matrix we build derived requirements using the following promt: generate derived requirements from the requirment matrix
 
-#### Derived Requirement 1: Particle Visualization (Derived from R1)
+### Derived Requirement 1: Particle Visualization (Derived from R1)
 
 The program must display particles as small, colored circles on the field.
 Particles should be visually distinguishable from the field background.
 Particle colors must represent their properties or states (e.g., speed, type, status).
 
-#### Derived Requirement 2: Particle Initialization (Derived from R2)
+### Derived Requirement 2: Particle Initialization (Derived from R2)
 
 Particles should be initialized within a specified area of the field.
 Initial positions and speeds of particles should be random or configurable.
 Ensure that particles are evenly distributed across the field to avoid clumping.
 
-#### Derived Requirement 3: Interaction Mechanism (Derived from R3)
+### Derived Requirement 3: Interaction Mechanism (Derived from R3)
 
 Implement multiple interaction mechanisms that can be selected or combined (e.g., gravitational attraction, Lennard-Jones potential, and direction alignment).
 Parameters for each interaction mechanism (e.g., gravitational constant, interaction radius) should be adjustable.
 
-#### Derived Requirement 4: Boundary Conditions (Derived from R4)
+### Derived Requirement 4: Boundary Conditions (Derived from R4)
 
 Allow users to choose from multiple boundary conditions, including bounce, wrap, or elimination.
 Boundary conditions should be easily configurable and switchable during the simulation.
 
-#### Derived Requirement 5: Simulation Control (Derived from R5)
+### Derived Requirement 5: Simulation Control (Derived from R5)
 
 Provide simulation control options such as play, pause, step, and reset.
 Allow users to specify the simulation step size (e.g., time step).
 Ensure the simulation is responsive to user input for real-time adjustments.
 
-#### Derived Requirement 6: Performance Optimization (Derived from R7 and R8)
+### Derived Requirement 6: Performance Optimization (Derived from R7 and R8)
 
 Implement performance optimization techniques to handle a maximum number of particles while maintaining an acceptable framerate.
 Define a clear threshold for an "acceptable framerate" and ensure that the simulation meets or exceeds it with the maximum number of particles.
 
-#### Derived Requirement 7: User Interface (Derived from R9)
+### Derived Requirement 7: User Interface (Derived from R9)
 
 Design an intuitive user interface (UI) for starting and stopping the simulation.
 Include options for adjusting simulation parameters and visual settings.
 Provide clear feedback to users on the status of the simulation.
 
-#### Derived Requirement 8: Version Control and Collaboration (Derived from R10)
+### Derived Requirement 8: Version Control and Collaboration (Derived from R10)
 
 Use version control systems (e.g., Git) to manage the project's source code.
 Collaborate effectively among team members using tools like issue tracking systems and code review processes.
 Ensure that test cases and documentation are kept up to date as the project evolves.
 
-
 USECASE MODEL:
 
-```
+```text
 @startuml UserSimulation
 
 !define PARTICLE_FIELD class :Particle Field;
