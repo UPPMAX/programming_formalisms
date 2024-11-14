@@ -35,7 +35,7 @@ In this week, we:
     3. Development
     4. Test
     5. Development and maintenance
- 
+
 - ... and iteration of these
 
 ??? "Did we miss anything on the list?"
