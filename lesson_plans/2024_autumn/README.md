@@ -139,7 +139,7 @@ I will have 4 days to prepare, all of these disturbed by meetings.
 Day      |Time       |Teacher|State
 ---------|-----------|-------|-----------------------------------------------------------
 Tuesday  |10:00-11:00|Richel |Issues 6/10
-Tuesday  |10:00-11:00|Richel |Kanban board
+Tuesday  |10:00-11:00|Richel |Kanban board 6/10
 Tuesday  |10:00-11:00|Richel |Team roles
 Tuesday  |11:00-15:40|Richel |TDD
 Wednesday|13:00-15:40|Richel |Pair programming
