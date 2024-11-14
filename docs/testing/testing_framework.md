@@ -98,7 +98,7 @@ def raise_error():
 
 has_raised = False
 try:
-    raise_error() 
+    raise_error()
 except:
     has_raised = True
 assert has_raised
@@ -188,7 +188,8 @@ is called `tests/test_richel_utils.py`.
 
     ![](running_a_test_script_normally_fails_annotated.png)
 
-    > Clicking on 'Run' (see the red rectangle at the top-left) for a file that has tests
+    > Clicking on 'Run' (see the red rectangle at the top-left)
+    > for a file that has tests
     > will give the error `ModuleNotFoundError: No module named 'src'`.
     > Click the green 'Testing' tab at the right instead.
 
@@ -249,11 +250,11 @@ The function is a function to determine if a number is prime.
 
 ???- question "Too easy or too hard?"
 
-    The learning objective of this exercise is to 
+    The learning objective of this exercise is to
     practice writing tests within a formal testing framework.
     Which function to implement is irrelevant,
     so feel free to pick a function that fits your level.
-    If needed, there are many worked-out functions 
+    If needed, there are many worked-out functions
     [here](../misc/functions.md)
 
 !!! info "The function"
@@ -268,22 +269,24 @@ The function is a function to determine if a number is prime.
 
     - Ping-Pong Pair programming
     - Discuss how and when to switch roles first!
-    - Decide who is the first driver, e.g. the person with first name first in alphabet
+    - Decide who is the first driver, e.g. the person with first name
+      first in alphabet
     - Try to be **an exemplary duo**
 
 !!! info "Technical"
 
     - Create a topic branch for your pair. Branch of from `develop`
     - Work within scaffolding of the learners project
-        - Functions are in `src/[package_name]/`. 
+        - Functions are in `src/[package_name]/`.
           Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
         - Tests are in `tests/`.
-          Call the file `test_utils_[names].py`, e.g. `test_utils_anna_and_sven.py`
+          Call the file `test_utils_[names].py`,
+          e.g. `test_utils_anna_and_sven.py`
     - When done, create a Pull Request to `develop`. Do not merge!
 
 ???- question "Need a video?"
 
-    See [this YouTube video](https://youtu.be/jwAyMlaODfo) 
+    See [this YouTube video](https://youtu.be/jwAyMlaODfo)
 
 ## Exercise 2: second attempt
 
@@ -298,7 +301,8 @@ Use the same setup as exercise 1.
 However, decide upon an interesting function at your estimated level.
 When disagreeing: pick the easiest function.
 
-If needed, one can find inspiration at the section [Other functions](#other-functions) below.
+If needed, one can find inspiration at the section
+[Other functions](#other-functions) below.
 
 ## Exercise 3: your classes
 
@@ -341,6 +345,14 @@ class TestCoordinat(unittest.TestCase):
 
 ## References
 
-- `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes. "Deriving chemosensitivity from cell lines: forensic bioinformatics and reproducible research in high-throughput biology." The Annals of Applied Statistics (2009): 1309-1334.
-- `[Rahman & Farhana, 2020]` Rahman, Akond, and Effat Farhana. "An exploratory characterization of bugs in COVID-19 software projects." arXiv preprint arXiv:2006.00586 (2020).
-- `[Vable et al., 2021]` Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour. "Code review as a simple trick to enhance reproducibility, accelerate learning, and improve the quality of your team’s research." American Journal of Epidemiology 190.10 (2021): 2172-2177.
+- `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes.
+  "Deriving chemosensitivity from cell lines: forensic bioinformatics and
+  reproducible research in high-throughput biology."
+  The Annals of Applied Statistics (2009): 1309-1334.
+- `[Rahman & Farhana, 2020]` Rahman, Akond, and Effat Farhana.
+  "An exploratory characterization of bugs in COVID-19 software projects."
+  arXiv preprint arXiv:2006.00586 (2020).
+- `[Vable et al., 2021]` Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour.
+  "Code review as a simple trick to enhance reproducibility, accelerate
+  learning, and improve the quality of your team’s research."
+  American Journal of Epidemiology 190.10 (2021): 2172-2177.

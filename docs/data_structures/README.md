@@ -7,7 +7,15 @@
     - Understand difference between composition and aggregation
     - Practice to use composition for a 'has-a' relationship
 
-# Data structures
+# Why?
+
+You want to model the real world.
+The real world consists out of things.
+You need to convert those things into code.
+
+You want to use data structures.
+
+## Good data structures
 
 Good data structures:
 

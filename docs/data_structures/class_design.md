@@ -104,7 +104,7 @@ Some other programming languages offer stronger guarantees.
 
 > `[Gamma et al., 1995]`
 
-## Class design
+## References
 
 - [Python classes](https://docs.python.org/3/tutorial/classes.html)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)

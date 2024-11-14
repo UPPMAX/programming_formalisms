@@ -28,9 +28,9 @@
     Lesson plan:
 
     - 5 mins: prior knowledge
-      - When do you trust your code?
-      - When do you trust code written by others?
-      - How do you convince other developers of a bug?
+       - When do you trust your code?
+        - When do you trust code written by others?
+        - How do you convince other developers of a bug?
 
     - 5 mins: presentation
     - 10 mins: demonstration `is_zero`
@@ -47,10 +47,10 @@
 ## Recap
 
 - Testing helps code correctness
-    - Use the Beyoncé Rule on precious behavior
+      - Use the Beyoncé Rule on precious behavior
 - Testing + CI:
-    - Helps teaching
-    - Helps bug reporting
+      - Helps teaching
+      - Helps bug reporting
 
 ## Weaknesses
 
