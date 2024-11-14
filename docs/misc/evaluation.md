@@ -91,7 +91,7 @@ well as for wider quality/impact analyses.
 
 ### Section 2 - Demographic Information
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 1 below
 ```
 
@@ -107,7 +107,7 @@ well as for wider quality/impact analyses.
 - h. Internet search
 - i. Other (comments)
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 2 below
 ```
 
@@ -126,7 +126,7 @@ well as for wider quality/impact analyses.
 
 3. What is your host university? `host_university`
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 4 below
 ```
 
@@ -198,19 +198,19 @@ Instead, I suggest to link to a long-term feedback form at this page
 
 These are suggested questions that may be of interest (not compulsory):
 
-```
+```text
 Richel: I don't see how question 1 below would change my teaching
 ```
 
 1. What part of the training did you enjoy the most? `enjoy`
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 2 below
 ```
 
 2. What part of the training did you enjoy the least? `to_improve`
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 3 below
 ```
 
@@ -220,7 +220,7 @@ Richel: I don't see how question 1 below would change my teaching
 - b. About right
 - c. Too theoretical
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 4 below
 ```
 
@@ -230,7 +230,7 @@ Richel: I don't see how question 1 below would change my teaching
 - 1. (Very unsatisfactory/Not useful)
 - 5. Very good/Very useful
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 5 below
 ```
 
@@ -238,7 +238,7 @@ Richel: I don't see how question 1 below would change my teaching
 
 6. Any other comments? Comments
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 7 below
 ```
 
@@ -260,7 +260,7 @@ below, as we have question 5
     Help our teaching staff to improve by providing constructive feedback
     Paragraph text answer
 
-```
+```text
 [Richel]: I don't feel it is worth to bother our learners with question 9 below
 ```
 
