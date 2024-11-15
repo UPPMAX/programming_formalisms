@@ -1,6 +1,6 @@
 site_name: Programming Formalisms
 repo_url: https://github.com/UPPMAX/programming_formalisms
-edit_uri: blob/main/docs/
+edit_uri: https://github.com/UPPMAX/programming_formalisms/blob/main/docs/
 
 nav:
   - Home: index.md
