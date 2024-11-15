@@ -76,7 +76,7 @@ flowchart
 !!! info "Conclusion"
     - Each team has unique requirements
     - Don’t be afraid of trial and error
-    - More info in [Software Development Lifecycle tomorrow](sldc.md)
+    - More info in [Software Development Lifecycle tomorrow](sdlc.md)
 
 ## The tools/concepts for Developing a programming project
 
@@ -318,9 +318,9 @@ flowchart TD
 
 !!! note "See also"
 
-    - Diagrams will be cover on
-        - Monday and Tuesday during part of the [Project start with analysis and design](project_start/analysis_design/) and [Design paradigms](design_develop/class_design/)
-        - Friday during [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)
+    - Diagrams will be covered on
+        - Monday and Tuesday during part of the [Project start with analysis and design](project_start/analysis_design.md) and [Design paradigms](design_develop/class_design.md)
+        - Thursday during [Modular programming](modularity/modular.md)
 
 # Testing
 
