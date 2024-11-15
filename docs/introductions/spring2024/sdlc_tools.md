@@ -369,8 +369,8 @@ $$
 !!! note "See also"
 
     - Diagrams will be cover on
-        - Monday and Tuesday during part of the [Project start with analysis and design](project_start/analysis_design/) and [Design paradigms](design_develop/class_design/)
-        - Friday during [Modular programming](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/Modular_Programming.pdf)
+        - Monday and Tuesday during part of the [Project start with analysis and design](../project_start/analysis_design.md) and [Design paradigms](../design_develop/class_design.md)
+        - Friday during [Modular programming](../modularity/modular.md)
 
 
 ## Testing
@@ -637,7 +637,6 @@ There are different types of remotes:
      - [Documentation part 2](../deployment/documentation.md) aims to:
          - get tips for README files
          - get tips for full documentation and tutorials
-
 
 !!! Goal
 
