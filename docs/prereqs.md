@@ -5,10 +5,10 @@
 !!! note "What do you need to be prepared?"
 
     - A good Zoom setup: microphone, camera and a place where you can talk
-    - A **terminal**
     - We use **VS Code** in our teaching
         - VS Code has a built-in terminals and other useful integrated systems
         - You can use another IDE if you are more comfortable with it
+    - A **terminal**. Thus can be the VS Code built-in terminal
     - A local installation of **`git`**
     - A **GitHub** account
     - A local **Python** installation
@@ -17,7 +17,8 @@
 
     If you have not set up Git/GitHub and have not installed Git, Python and VS code.
 
-    - **Count with ~1 hour of preparations**, depending on choices you make (Anaconda takes time to install).
+    **Count with ~1 hour of preparations**, depending on choices you make 
+    (for example, Anaconda takes some time to install).
 
 ## Checkpoints
 
