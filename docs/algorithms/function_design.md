@@ -6,8 +6,13 @@
     - Understand algorithm names increase expressiveness of code
     - Understand difference between `if` and `assert` in function writing
 
-## Intro
+## Why?
 
+You want your program to do many things, like
+reading files, doing an analysis and saving the
+results to files. You want it to be correct.
+
+You needs to convert your ideas to functions.
 
 ## Problem
 
@@ -16,8 +21,6 @@ How do I write functions [1] that are:
 - easy to use
 - correct
 - fast [2]
-
-References;
 
 - [1] For now, we use `algorithm == function`,
   as the definition of an algorithm is
@@ -29,28 +32,23 @@ References;
 
 A good function ...
 
-. . .
-
-
-- Sometimes: is documented `[Ram, 2013]` `[tidyverse style guideline of functions]`
+- Sometimes: is documented 
+  `[Ram, 2013][tidyverse style guideline of functions]`
 - Is small `[Martin, 2009]`
-  @cpp_core_guidelines_functions
-  `[tidyverse style guideline of functions]`
-- Has a good (:innocent:) name `[Martin, 2009]`
-  @cpp_core_guidelines_functions `[tidyverse style guideline of functions]`
-  @pep_20 @hitchhikers_guide_to_python_general_concepts
+  `[CppCore functions][tidyverse style guideline of functions]`
+- Has a good name `[Martin, 2009]`
+  `[CppCore functions][tidyverse style guideline of functions]`
+  `[PEP 20a][Reitz et al., 2016]`
 - Is easy to use correctly and hard to use incorrectly
-  @meyers2005effective
-  @cpp_core_guidelines_functions @pep_20
+  `[Meyers, 2005][CppCore functions][PEP 20c][PEP 20d]`
 - Does one thing correctly `[Martin, 2009]`
-  @cpp_core_guidelines_functions
+  `[CppCore functions]`
   `[tidyverse style guideline of functions]`
-- Is tested @martin2011clean @cpp_core_guidelines_functions
+- Is tested `[Martin, 2011][CppCore functions]`
   `[tidyverse style guideline of functions]`
 - Raises helpful exceptions `[Martin, 2009]`
-  @cpp_core_guidelines_functions
-  `[tidyverse style guideline of functions]` @pep_20
-- Fast iff needed @cpp_core_guidelines_functions
+  `[CppCore functions][tidyverse style guideline of functions][PEP 20b]`
+- Fast iff needed `[CppCore functions]`
 
 ## Design by contract
 
@@ -110,104 +108,14 @@ Mandatory in some contexts `[Ram, 2013]`
 ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
 - starts with a verb `[tidyverse style guideline of functions]`
-- readable @pep_20
+- readable `[PEP 20a]`
 - intention-revealing `[Martin, 2009]`
 - pronounceable `[Martin, 2009]`
 - searchable `[Martin, 2009]`
 - not cute `[Martin, 2009]`
 - no pun `[Martin, 2009]`
-- carefully @cpp_core_guidelines_functions
+- carefully `[CppCore functions]`
 
-## Examples of bad function names?
-
-Could you give examples of bad function names?
-
-. . .
-
-- `calculate`: calculates what?
-
-. . .
-
-- `calc_bfgt`: calculates what??
-
-. . .
-
-- `prime`: a prime number is a data type. What does this function do?
-
-. . .
-
-- `needleman_wunch`: this is a technique to get a DNA alignment.
-
-. . .
-
-## Example 1
-
-Imagine two DNA sequences:
-
-```text
-AAACCCGGGTTT
-ATACCCGGGTAT
-         x
-```
-
-How would you call the algorithm that detects the location
-of the `*` (but not of the `x`, as the `*` comes earlier)?
-
-## Solutions 1
-
-- `get_first_mismatch_pos`, `get_first_mismatch_locus`,
-  `find_first_mismatch_pos`, `find_first_mismatch_locus`
-- your answer that ...
-    - starts with a verb
-    - is as English as possible
-    - only uses common abbreviations
-
-## Example 2
-
-Imagine two DNA sequences:
-
-```text
-AAACCCGGGTTT
-ATACCCGGGTAT
-         *
-```
-
-How would you call the algorithm that detects all the locations of the `*`s?
-
-## Solutions 2
-
-- `find_mismatch_positions`, `find_mismatch_loci`,
-  `get_mismatch_positions`, `get_mismatch_loci`
-- your answer that ...
-    - starts with a verb
-    - is as English as possible
-    - only uses common abbreviations
-
-## Example 3
-
-Imagine two DNA sequences:
-
-```text
-AAACCCGGGTTT
-ATACCGGGTTT
-```
-
-How would you call the algorithm that makes the sequences
-have as much similarities as possible, by possibly inserting a `-`
-
-```text
-AAACCCGGGTTT
-ATACC-GGGTTT
-```
-
-## Solutions 3
-
-- `align_seqs`, `align_sequences`, `align_dna_sequences`, `align_dna_seqs`,
-  `calc_aligned_seqs`, `get_aligned_seqs`
-- your answer that
-    - starts with a verb
-    - is as English as possible
-    - only uses common abbreviations
 
 ## A good function has a clear name
 
@@ -242,7 +150,7 @@ assert not Prime(4, 2)
 assert Prime(5, 2)
 ```
 
-*The* classic on refactoring is @fowler2018refactoring.
+*The* classic on refactoring is `[Fowler, 2018]`.
 
 ## A function has a clear interface 2/3
 
@@ -400,15 +308,218 @@ A good function:
 - Is documented
 - Fast iff needed
 
+## Exercises
+
+### Exercise 1: bad function names
+
+Could you give examples of bad function names? Why are these names bad?
+
+???- question "Answers"
+
+    There are many, here are some:
+
+    - `calculate`: calculates what?
+    - `calc_bfgt`: calculates _what_?
+    - `prime`: a prime number is a data type. What does this function do?
+    - `needleman_wunch`: this is a technique to get a DNA alignment.
+
+
+### Exercise 2: name the function
+
+Imagine two DNA sequences:
+
+```text
+AAACCCGGGTTT
+ATACCCGGGTAT
+```
+
+How would you call the algorithm that returns the number (i.e. a number
+to indicate the second character) of which the characters
+in the two DNA sequences mismatch
+(it is `A` in the top one, `T` in the bottom one)?
+
+???- question "Answer"
+
+    There are many, here a table of combinations:
+
+    1     |2          |3           |4
+    ------|-----------|------------|-------
+    `find`|`first`    |`difference`|`index`
+    `get` |`[nothing]`|`mismatch`  |`locus`
+    .     |.          |.           |`pos`
+
+    These are up for debate and 'the best name' is determined by the 
+    project, progamming language and social rules, such as:
+
+    Column 1: `find` versus `get`:
+    - `get` is better: 
+      in some languages (e.g. C++) `find` is used in the standard libary
+      for functions that return an iterator (whatever that is),
+      hence `find` is confusing
+    - `find` is better:
+      We are looking for a difference, i.e. we are _finding_ something
+      and our function name should reflect that
+
+    Column 2: `first` versus `[nothing]`:
+    - `first` is better:
+      in some languages (e.g. C++) `first` is used in the standard library
+      to indicate only the first match is returned,
+      hence not using that would confuse
+    - `nothing` is better:
+      this is shorter
+
+    Column 3: `difference` versus `mismatch`:
+    - `mismatch` is better:
+      in some languages (e.g. C++) the term 'mismatch' is used in the
+      standard library for things that have different content
+      (such as characters in a string), 
+      hence 'difference' would be the unexpected noun
+    - `difference` is better: 
+      we are looking for a difference
+      and our function name should reflect that
+
+    Column 4: `index` versus `locus` versus `pos`:
+    - `index` is better:
+      if the function returns an index
+      (i.e. the first position has index zero),
+      `index` is the only correct description
+    - `locus` is better:
+      a position on a DNA sequence is called a 'locus',
+      which is a more precise naming. Loci start counting at 1 (unlike
+      Python indices, which start counting at 0), so the function is expected
+      to do so too
+    - `pos` is better:
+      a position in a string is commonly abbreviated to `pos`
+      and is broadly understood, also by non-biologists.
+
+    Other good answers are those that:
+    - starts with a verb
+    - is as English as possible
+    - only uses common abbreviations
+
+## Example 2
+
+Imagine two DNA sequences:
+
+```text
+AAACCCGGGTTT
+ATACCCGGGTAT
+```
+
+How would you call the algorithm that detects all the locations of
+where the DNA sequences are different?
+
+???- question "Answer"
+
+    There are many, here are two tables of combinations:
+
+    1     |2          |3           
+    ------|-----------|-------------
+    `find`|`all`      |`differences`
+    `get` |`[nothing]`|`mismatches` 
+
+
+    1     |2          |3            |4
+    ------|-----------|-------------|------
+    `find`|`all`      |`difference` |`indices`
+    `get` |`[nothing]`|`mismatch`   |`loci`
+    .     |.          |.            |`pos`
+    .     |.          |.            |`poss`
+    .     |.          |.            |`posses`
+    .     |.          |.            |`positions`
+
+    Most of the reasoning is the same as in the previous answer,
+    with the addition of:
+
+    - `pos` is best: when it is common that `pos` can be a plural
+      and/or in combination with `all` to signal so
+    - `poss` is best: when this `+s` to signal a plural is
+      already widespread in your project
+      (note from Richel: I've never seen this in practice!)
+    - `posses` is best: when the uses of a reduplicated plural
+      (or: 'Gollumese', after the character in Lord of the Ring)
+      to signal a plural is already widespread in your project
+    - `positions` is best: when the project discourages these computer-y
+      abbreviations
+
+    Other good answers are those that:
+    - starts with a verb
+    - is as English as possible
+    - only uses common abbreviations
+
+## Example 3
+
+Imagine two DNA sequences:
+
+```text
+AAACCCGGGTTT
+ATACCGGGTTT
+```
+
+How would you call the algorithm that makes the sequences
+have as much similarities as possible, by possibly inserting a `-`,
+resulting in:
+
+```text
+AAACCCGGGTTT
+ATACC-GGGTTT
+```
+
+???- question "Answer"
+
+    1      |2          |3          |4
+    -------|-----------|-----------|------
+    `align`|`aligned`  |`dna`      |`seqs`
+    `calc` |`[nothing]`|`[nothing]`|`sequences`
+    `get`  |.          |.          |.
+
+    Most of the reasoning is the same as in the previous answer, 
+    with the addition of:
+    - `seqs` is a common abbreviation
+    - `dna` signals that the function expects DNA sequences
+      and will fail upon other sequences
+
+    Other good answers are those that:
+    - starts with a verb
+    - is as English as possible
+    - only uses common abbreviations
+
 ## References
 
-- `[dictionary definition]`
-  <https://www.merriam-webster.com/dictionary/algorithm>
+- `[CppCore functions]` C++ Core Guidelines.
+  <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-functions>
+- `[CppCore F.2]` C++ Core Guidelines.
+   F.2: A function should perform a single logical operation,
+   <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical>
+- `[Fowler, 2018]` 
+  Fowler, Martin.
+  Refactoring: improving the design of existing code.
+  Addison-Wesley Professional, 2018.
 - `[Martin, 2009]` Martin, Robert C.
   Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
+- `[Martin, 2011]` Martin, Robert C.
+  The clean coder: a code of conduct for professional programmers.
+  Pearson Education, 2011.
+
+- `[Meyers, 2005]` Meyers, Scott.
+  Effective C++: 55 specific ways to improve your programs and designs.
+  Pearson Education, 2005.
+- `[PEP 20a]` PEP 20, 'Readability counts',
+  [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
+- `[PEP 20b]` PEP 20, 'Errors should never pass silently',
+  [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
+- `[PEP 20c]` PEP 20, 
+  'If the implementation is hard to explain, it's a bad idea.',
+  [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
+- `[PEP 20d]` PEP 20, 
+  'If the implementation is easy to explain, it may be a good idea.',
+  [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
 - `[Ram, 2013]` Ram, K. "rOpenSci-open tools for open science."
   AGU Fall Meeting Abstracts. Vol. 2013. 2013.
 - `[tidyverse style guideline of functions]`
   <https://style.tidyverse.org/functions.html>
-- `[CppCore F.2]` F.2: A function should perform a single logical operation,
-   <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical>
+- `[Reitz et al., 2016]` Reitz, Kenneth, and Tanya Schlusser.
+  The Hitchhiker's guide to Python: best practices for development.
+  "O'Reilly Media, Inc.", 2016.
+  Chapter 'General concepts'
+

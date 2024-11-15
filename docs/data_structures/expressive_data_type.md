@@ -13,7 +13,7 @@ Data structure are 'ways to organize your data'.
 
 - Bad way: put all in one `list`
 
-Good (:innocent:) data structures:
+Good  data structures:
 
 - **Increase expressiveness**
 - Bundles data that belongs together
