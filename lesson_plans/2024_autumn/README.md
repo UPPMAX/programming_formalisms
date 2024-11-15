@@ -150,6 +150,9 @@ Friday   |09:00-11:00|Richel |Optimisation
 Friday   |15:00-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
 .        |.          |.      |Project 2/10
+.        |.          |.      |Testing ?
+.        |.          |.      |Continuous integration ?
+
 
 
 
