@@ -238,7 +238,7 @@ Consider the following scenario:
 
 This material is based on the Code Review lecture by The Carpentries.
 
-> - [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
+> - [Code Review](https://carpentries-incubator.github.io/managing-computational-projects/13-codereview.html) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
 > - *The Turing Way* Community. (2021). The Turing Way: A handbook for reproducible, ethical and collaborative research (1.0.1). Zenodo. <https://doi.org/10.5281/zenodo.5671094>. [Code Reviewing Process](https://the-turing-way.netlify.app/reproducible-research/reviewing.html) Chapter.
 > - Fernando Perez, [Code reviews: the lab meeting for code](http://fperez.org/py4science/code_reviews.html)
 > - Martin Fowler, [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)

@@ -1,6 +1,6 @@
 This material is based on the Code Review lecture by The Carpentries:
 
-> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
+> [Code Review](https://carpentries-incubator.github.io/managing-computational-projects/13-codereview.html) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
 
 # Code Review
 
@@ -14,10 +14,6 @@ As a group leader, you can also make sure code is functional and literate as ear
 
 Code review is often done in pairs, with each reviewer also having some of their code reviewed by their partner.
 Doing this can help programmers to see and discuss issues and alternative approaches to tasks, and to learn new tips and tricks.
-
-![Garden of code](https://zenodo.org/api/iiif/v2/5c8c70c9-4119-4917-91d1-bc955943f586:328322b3-ab2f-43c8-a4ba-eb6e11d48ac0:reusable-code-garden-with-text.jpg/full/750,/0/default.jpg)
-
-_The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807._
 
 There are different methods for code review.
 
