@@ -72,7 +72,7 @@ We use it a lot in this course, because:
       this is only 41 respondents
 - what is for sure: it works great with recommended teaching practices,
   e.g. grouping up learners
-  is effective `[Hattie, 2012]`[Schwartz & Gurung, 2012, page 65]
+  is effective `[Hattie, 2012][Schwartz & Gurung, 2012, page 65]`
   (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it
   [as they write in the retrospective](https://github.com/UPPMAX/programming_formalisms/blob/main/evaluations/2023_autumn/retrospective_results_course.md)
@@ -256,7 +256,7 @@ Reflect additionally:
 
 - `[Martin, 2011]` Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
 - [reference for best group size 2] The reference that a group size of 2
-  is best
+  is best [#71](https://github.com/UPPMAX/programming_formalisms/issues/71)
 - `[Schwartz & Gurung, 2012]` Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012. TODO: check that this is a reference for optimal group size of 2
 
 ![Thomas & Hunt, 2019](thomas_and_hunt_the_pragmatic_programmer.jpg)
