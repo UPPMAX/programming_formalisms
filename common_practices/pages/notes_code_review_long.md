@@ -1,6 +1,6 @@
 This material is based on the Code Review lecture by The Carpentries:
 
-> [Code Review](https://github.com/carpentries-incubator/managing-computational-projects/blob/gh-pages/_episodes/09-codereview.md) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
+> [Code Review](https://carpentries-incubator.github.io/managing-computational-projects/13-codereview.html) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
 
 # Code Review
 
