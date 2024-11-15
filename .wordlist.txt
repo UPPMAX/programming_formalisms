@@ -1484,6 +1484,12 @@ chapman
 O'Reilly
 Reitz
 Schlusser
-
+cppbestpractices
+Lakos
+postconditions
+Sams
+signalling
+specifify
+xkcd
 
 
