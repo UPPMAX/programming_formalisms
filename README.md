@@ -12,7 +12,7 @@
 
 <!-- markdownlint-enable MD013 -->
 
-[Go to the nicely-rendered version of the course](https://uppmax.github.io/programming_formalisms/)
+## [Go to the nicely-rendered version of the course](https://uppmax.github.io/programming_formalisms/)
 
 ## Files used for continuous integration scripts
 
