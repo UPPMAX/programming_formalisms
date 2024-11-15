@@ -81,13 +81,33 @@ You will need to defend this in a code review.
 
 ## References
 
-- `[Abd Jader et al., 2018]` Abd Jader, Marwa Najm, and Riyadh Zaghlool Mahmood. "Calculating McCabe's cyclomatic complexity metric and its effect on the quality aspects of software."
-- `[Chen, 2019]` Chen, Changqi. "An Empirical Investigation of Correlation between Code Complexity and Bugs." arXiv preprint arXiv:1912.01142 (2019).
-- `[Del Frate et al., 1995]` Del Frate, Fabio, et al. "On the correlation between code coverage and software reliability." Proceedings of Sixth International Symposium on Software Reliability Engineering. ISSRE'95. IEEE, 1995.
-- `[Fang, 2001]` Fang, Xuefen. "Using a coding standard to improve program quality." Proceedings Second Asia-Pacific Conference on Quality Software. IEEE, 2001.
-- `[Hart et al., 2013]` Hart, Edmumd, et al. "rOpenSci-a collaborative effort to develop R-based tools for facilitating Open Science." figshare (2013): 791569.
-- `[Mens et al., 2008]` Mens, Tom, et al. "Empirical studies of open source evolution." Software evolution (2008): 263-288.
-- `[PEP 8]` Van Rossum, Guido, Barry Warsaw, and Nick Coghlan. "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
-- `[Horgan et al., 1994]` Horgan, Joseph R., Saul London, and Michael R. Lyu. "Achieving software quality with testing coverage measures." Computer 27.9 (1994): 60-69.
-- `[Vasilescu et al., 2015]` Vasilescu, Bogdan, et al. "Quality and productivity outcomes relating to continuous integration in GitHub." Proceedings of the 2015 10th joint meeting on foundations of software engineering. 2015.
-- `[Wickham, 2019]` Wickham, Hadley. Advanced r. chapman and hall/CRC, 2019.
+- `[Abd Jader et al., 2018]` Abd Jader, Marwa Najm, and Riyadh Zaghlool Mahmood.
+  "Calculating McCabe's cyclomatic complexity metric and its effect on the
+  quality aspects of software."
+- `[Chen, 2019]` Chen, Changqi.
+  "An Empirical Investigation of Correlation between Code Complexity and Bugs."
+  arXiv preprint arXiv:1912.01142 (2019).
+- `[Del Frate et al., 1995]` Del Frate, Fabio, et al.
+  "On the correlation between code coverage and software reliability."
+  Proceedings of Sixth International Symposium on Software Reliability
+  Engineering. ISSRE'95. IEEE, 1995.
+- `[Fang, 2001]` Fang, Xuefen.
+  "Using a coding standard to improve program quality." Proceedings Second
+  Asia-Pacific Conference on Quality Software. IEEE, 2001.
+- `[Hart et al., 2013]` Hart, Edmumd, et al.
+  "rOpenSci-a collaborative effort to develop R-based tools for facilitating
+  Open Science." figshare (2013): 791569.
+- `[Mens et al., 2008]` Mens, Tom, et al.
+  "Empirical studies of open source evolution."
+  Software evolution (2008): 263-288.
+- `[PEP 8]` Van Rossum, Guido, Barry Warsaw, and Nick Coghlan.
+  "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
+- `[Horgan et al., 1994]` Horgan, Joseph R., Saul London, and Michael R. Lyu.
+  "Achieving software quality with testing coverage measures."
+  Computer 27.9 (1994): 60-69.
+- `[Vasilescu et al., 2015]` Vasilescu, Bogdan, et al.
+  "Quality and productivity outcomes relating to continuous integration in
+  GitHub." Proceedings of the 2015 10th joint meeting on foundations of
+  software engineering. 2015.
+- `[Wickham, 2019]` Wickham, Hadley. 
+  Advanced R. chapman and hall/CRC, 2019.

@@ -143,8 +143,10 @@ Tuesday  |10:00-11:00|Richel |Kanban board 6/10
 Tuesday  |10:00-11:00|Richel |Team roles 6/10
 Tuesday  |11:00-15:40|Richel |TDD 6/10
 Wednesday|13:00-15:40|Richel |Pair programming 6/10
-Wednesday|13:00-15:40|Richel |function design 6/10
+.        |.          |.      |function design 6/10
 .        |.          |.      |assert 6/10
+.        |.          |.      |Testing ?
+.        |.          |.      |Continuous integration ?
 .        |.          |.      |recursive algorithms 6/10
 Thursday |10:00-12:00|Richel |Class design
 Thursday |14:00-15:40|Richel |Implement the project as a package
@@ -152,6 +154,4 @@ Friday   |09:00-11:00|Richel |Optimisation
 Friday   |15:00-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
 .        |.          |.      |Project 2/10
-.        |.          |.      |Testing ?
-.        |.          |.      |Continuous integration ?
 

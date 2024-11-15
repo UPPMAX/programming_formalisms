@@ -137,8 +137,6 @@ def Prime(no, i):
     return Prime(no, i + 1)
 ```
 
-. . .
-
 Function names start with lowercase character, name does not start with a
 verb, input is not checked, clumsy interface:
 
@@ -233,20 +231,9 @@ do_y()
 You rarely need `and` in a function name. Possible exception:
 mean and standard deviation
 
-## What is a good function? 2/3
-
-A good function:
-
-- **Has a clear name**
-- **Does one thing correctly**
-- Is tested
-- Gives clear error messages
-- Is documented
-- Fast iff needed
-
 ## A good function is tested
 
-- F.2: A function should perform a single logical operation [CppCore F.2]
+- A function should perform a single logical operation `[CppCore F.2]`.
   A function that performs a single operation
   is simpler to understand, test, and reuse.
 - [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf):
@@ -296,17 +283,6 @@ assert align_dna_seqs(
       c("AAACCCGGGTTT","ATACC-GGGTTT")
     )
     ```
-
-## What is a good function? 3/3
-
-A good function:
-
-- **Has a clear name**
-- **Does one thing correctly**
-- **Is tested**
-- Gives clear error messages
-- Is documented
-- Fast iff needed
 
 ## Exercises
 
