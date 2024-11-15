@@ -319,7 +319,7 @@ Could you give examples of bad function names? Why are these names bad?
     There are many, here are some:
 
     - `calculate`: calculates what?
-    - `calc_bfgt`: calculates _what_?
+    - `calc_bfgt`: calculates *what*?
     - `prime`: a prime number is a data type. What does this function do?
     - `needleman_wunch`: this is a technique to get a DNA alignment.
 
@@ -352,6 +352,7 @@ in the two DNA sequences mismatch
     project, progamming language and social rules, such as:
 
     Column 1: `find` versus `get`:
+
     - `get` is better:
       in some languages (e.g. C++) `find` is used in the standard libary
       for functions that return an iterator (whatever that is),
@@ -361,6 +362,7 @@ in the two DNA sequences mismatch
       and our function name should reflect that
 
     Column 2: `first` versus `[nothing]`:
+
     - `first` is better:
       in some languages (e.g. C++) `first` is used in the standard library
       to indicate only the first match is returned,
@@ -369,6 +371,7 @@ in the two DNA sequences mismatch
       this is shorter
 
     Column 3: `difference` versus `mismatch`:
+
     - `mismatch` is better:
       in some languages (e.g. C++) the term 'mismatch' is used in the
       standard library for things that have different content
@@ -393,6 +396,7 @@ in the two DNA sequences mismatch
       and is broadly understood, also by non-biologists.
 
     Other good answers are those that:
+
     - starts with a verb
     - is as English as possible
     - only uses common abbreviations
@@ -443,6 +447,7 @@ where the DNA sequences are different?
       abbreviations
 
     Other good answers are those that:
+
     - starts with a verb
     - is as English as possible
     - only uses common abbreviations
@@ -475,11 +480,13 @@ ATACC-GGGTTT
 
     Most of the reasoning is the same as in the previous answer,
     with the addition of:
+
     - `seqs` is a common abbreviation
     - `dna` signals that the function expects DNA sequences
       and will fail upon other sequences
 
     Other good answers are those that:
+
     - starts with a verb
     - is as English as possible
     - only uses common abbreviations
@@ -500,7 +507,6 @@ ATACC-GGGTTT
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
-
 - `[Meyers, 2005]` Meyers, Scott.
   Effective C++: 55 specific ways to improve your programs and designs.
   Pearson Education, 2005.
