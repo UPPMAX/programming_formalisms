@@ -21,6 +21,7 @@ I predict 1 teacher is enough. Let's see...
 9:21|0  |.
 9:22|1  |D comes in, leaves
 9:23|0  |.
+9:28|0  |.
 
 
 - Names of learners are pseudonimized to A, B, C, etc.
@@ -29,6 +30,13 @@ I predict 1 teacher is enough. Let's see...
 - `n`: number of learners
 - max amount of learners: 2
 - amount of teachers that would have sufficed: 1
+- Use `r` as number of registrations where `R` is 20
+- Prediction that would be correct:
+    - Amount of learners to expect: `r / 5`
+    - Amount of learners to have questions: `r / 10`
+    - Amount of learners to pop in and out: `r / 10`
+    - Amount of teachers needed: `r / 20`
+
 
 
 
