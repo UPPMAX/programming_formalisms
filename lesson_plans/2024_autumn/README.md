@@ -144,7 +144,7 @@ Tuesday  |10:00-11:00|Richel |Team roles 6/10
 Tuesday  |11:00-15:40|Richel |TDD 6/10
 Wednesday|13:00-15:40|Richel |Pair programming 6/10
 Wednesday|13:00-15:40|Richel |function design 6/10
-.        |.          |.      |assert
+.        |.          |.      |assert 6/10
 .        |.          |.      |recursive algorithms
 Thursday |10:00-12:00|Richel |Class design
 Thursday |14:00-15:40|Richel |Implement the project as a package
