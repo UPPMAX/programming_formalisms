@@ -14,6 +14,11 @@ I predict 1 teacher is enough. Let's see...
 9:05|1  |B left to work in silence and will come back with questions
 9:06|1  |C in breakout room with BC
 9:07|1  |.
+9:15|1  |B back for a question
+9:16|1  |C done and left
+9:17|1  |B leaves room to work in silence
+9:19|0  |.
+
 
 - Names of learners are pseudonimized to A, B, C, etc.
 - Names of teachers are the standard abbreviations: BC, LE, RB
