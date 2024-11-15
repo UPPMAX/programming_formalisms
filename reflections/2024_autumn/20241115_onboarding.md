@@ -38,7 +38,5 @@ I predict 1 teacher is enough. Let's see...
     - Amount of teachers needed: `r / 20`
 
 
-
-
 -
 

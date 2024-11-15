@@ -155,6 +155,3 @@ Friday   |15:40-16:00|Richel |Confidence and retrospect
 .        |.          |.      |Testing ?
 .        |.          |.      |Continuous integration ?
 
-
-
-

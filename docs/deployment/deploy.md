@@ -73,7 +73,7 @@
     - On a cluster?
 
 !!! Discussion "Discussion: One-time usage towards distributed package"
-    
+
     - Have others used your code?
     - Did you plan it from beginning?
     - Did you take actions somehow?

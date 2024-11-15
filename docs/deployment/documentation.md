@@ -152,7 +152,7 @@ This program ...
 ```
 
 ### Licensing
-        
+
 #### Copyright
 
 - Protects creative expression

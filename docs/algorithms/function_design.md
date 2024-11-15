@@ -32,7 +32,7 @@ How do I write functions [1] that are:
 
 A good function ...
 
-- Sometimes: is documented 
+- Sometimes: is documented
   `[Ram, 2013][tidyverse style guideline of functions]`
 - Is small `[Martin, 2009]`
   `[CppCore functions][tidyverse style guideline of functions]`
@@ -491,7 +491,7 @@ ATACC-GGGTTT
 - `[CppCore F.2]` C++ Core Guidelines.
    F.2: A function should perform a single logical operation,
    <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical>
-- `[Fowler, 2018]` 
+- `[Fowler, 2018]`
   Fowler, Martin.
   Refactoring: improving the design of existing code.
   Addison-Wesley Professional, 2018.
@@ -508,10 +508,10 @@ ATACC-GGGTTT
   [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
 - `[PEP 20b]` PEP 20, 'Errors should never pass silently',
   [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
-- `[PEP 20c]` PEP 20, 
+- `[PEP 20c]` PEP 20,
   'If the implementation is hard to explain, it's a bad idea.',
   [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
-- `[PEP 20d]` PEP 20, 
+- `[PEP 20d]` PEP 20,
   'If the implementation is easy to explain, it may be a good idea.',
   [The Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
 - `[Ram, 2013]` Ram, K. "rOpenSci-open tools for open science."

@@ -217,7 +217,6 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
         - planning documents
 
 
-
 ???+ Question "(Optional) Update your documentation"
 
     - You can now work in GitHub directly

@@ -44,7 +44,6 @@ This material is based on the Social Coding lecture by Code Refinery:
     - We will talk about this the last day!
 
 
-
 ## Discussion/questions/poll: basics of sharing
 
 ```{discussion} Social-1: Think about if and how you share
@@ -260,4 +259,4 @@ This can be now reconnected to question 4 (above).
 
 ## New: Sharing data??
 
-https://coderefinery.github.io/social-coding/sharing-data/
+<https://coderefinery.github.io/social-coding/sharing-data/>
