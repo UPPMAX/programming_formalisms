@@ -12,6 +12,16 @@ and you want it to be natural to use in your code.
 
 This is a goal of class design.
 
+## Benefits from object-oriented development
+
+Benefits from object-oriented development (from `[Booch, 2008]`):
+
+- Appeals to the working of human cognition
+- Leads to systems that are more resilient to change
+- Encourages the reuse of software components
+- Reduces development risk
+- Exploits the expressive power of object-oriented programming languages
+
 ## An invariant
 
 ```mermaid
@@ -106,6 +116,7 @@ Some other programming languages offer stronger guarantees.
 
 ## References
 
+- `[Booch, 2008]` Booch, Grady, et al. "Object-oriented analysis and design with applications." ACM SIGSOFT software engineering notes 33.5 (2008): 29-29.
 - [Python classes](https://docs.python.org/3/tutorial/classes.html)
 - [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-class)
 - `[CppCore C.2]` C.2: Use class if the class has an invariant; use struct

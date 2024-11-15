@@ -2,7 +2,7 @@
 
 !!!- info "Learning objectives"
 
-    - .
+    - Understand what continuous integration is
 
 ???- question "For teachers"
 
@@ -30,7 +30,53 @@
     - 25 mins: challenge
     - 10 mins: feedback
 
-## Continuous Integration
+## Why?
+
+You want things to happen upon a `git push` or a `git merge`.
+Continuous integration scripts let you do just that!
+
+### Use case 1: test the build in a clean/independent environment
+
+You push/merge new code to `main` and you don't realize is that
+the project does not work anymore, as it depended
+on a file or operating system that only you have.
+Wouldn't it be great
+if code could be tested automatically in a clean/independent environment?
+
+### Use case 2: measure code coverage
+
+You wonder how much of your code is tested.
+Wouldn't it be great
+if code coverage could be measured automatically after a push?
+
+### Use case 3: enforce coding standard
+
+A team member (or external contributor)
+is a sloppy code. You told him/her to follow the coding standards
+multiple times and now have grown tired of doing so.
+Wouldn't it be great
+if code could be tested to follow a coding standard automatically
+before merging?
+
+### Use case 4: measure run-time speed
+
+You want to measure the run-time speed of your project
+in a clean/independent environment.
+Wouldn't it be great
+if code could be tested for run-time speed automatically after a push?
+
+## How Continuous Integration looks like
+
+'Continuous Integration' is to continuously integrate new
+code with existing code (i.e. without human formal approval steps).
+This is quite an obvious definition, more interesting is
+to read how CI looks like (from `[Beck, 1999]`):
+Continuous integration [is that new] code is
+integrated with the current system
+after no more than a few hours.
+When integrating, the system is built
+from scratch and all tests must pass
+or the changes are discarded.
 
 Scripts that are triggered when `push`ing code.
 
@@ -84,6 +130,10 @@ You will need to defend this in a code review.
 - `[Abd Jader et al., 2018]` Abd Jader, Marwa Najm, and Riyadh Zaghlool Mahmood.
   "Calculating McCabe's cyclomatic complexity metric and its effect on the
   quality aspects of software."
+- `[Beck, 1999]` Beck, Kent. 
+  "Embracing change with extreme programming." Computer 32.10 (1999): 70-77.
+- `[Booch, 1990]` Booch, Grady. Object oriented design with applications.
+  Benjamin-Cummings Publishing Co., Inc., 1990.
 - `[Chen, 2019]` Chen, Changqi.
   "An Empirical Investigation of Correlation between Code Complexity and Bugs."
   arXiv preprint arXiv:1912.01142 (2019).
@@ -111,3 +161,4 @@ You will need to defend this in a code review.
   software engineering. 2015.
 - `[Wickham, 2019]` Wickham, Hadley. 
   Advanced R. chapman and hall/CRC, 2019.
+
