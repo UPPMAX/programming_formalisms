@@ -171,20 +171,20 @@ This program ...
     - Copyleft is the legal technique of granting certain freedoms over copies of copyrighted works with the requirement that the same rights be preserved in derivative works.
 
     1. Custom/closed/proprietary
-    
+
         - Derivative work typically not possible
         - Unusual in academics
-        
+
     2. Permissive (**MIT**, BSD, Apache)
-    
-        - Derivative work does not have to be shared  
-        
+
+        - Derivative work does not have to be shared
+
     3. Weak copyleft share-alike (**LGPL**, MPL)
-    
+
         - Derivative work is free software but is limited to the component
-      
+
     4. Strong copyleft share-alike (**GPL**, AGPL)
-    
+
         - Derivative work is free software and derivative work extends to the combined project
 
 [Read more](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing#)

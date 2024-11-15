@@ -38,7 +38,7 @@
 !!! info "Table of content"
 
     **FIX**
-    
+
     - Branching
         - background
         - workflows
@@ -63,7 +63,7 @@
 !!! warning
 
     VScode sync: skip because of generality
-    
+
     ``git config --global credential.helper cache``
     ``git config --global credential.helper 'cache --timeout=36000'``
 
@@ -123,7 +123,7 @@ git branch -d new-feature    # remove branch
     ```git
     git pull
     ```
-    
+
     - Let's make a new branch called ``jupiter``
 
     ```git
@@ -146,7 +146,7 @@ git branch -d new-feature    # remove branch
 
 
     ???- "Code"
-    
+
         ```python
 
         #planet with Jupiter
@@ -277,7 +277,7 @@ git branch -d new-feature    # remove branch
     - You will see some thing like this.
 
     ???- "Output from 'diff'"
-    
+
         ```diff
         diff --git a/planet.py b/planet.py
         index 60b8b20..8061461 100644
@@ -670,11 +670,11 @@ git branch -d new-feature    # remove branch
 !!! example "Demo or type-along"
 
     - Go to the main branch:
-    
+
     ```git
     git switch main
     ```
-    
+
     - Note that we now just find the ``planet.py`` file!
     - Let's remove the print line around row 35 in the for-loop.
     - Save, add and commit
@@ -750,7 +750,7 @@ git branch -d new-feature    # remove branch
      create mode 100644 code/planet_main.py
 
     ```
-    
+
     - let's now check the graphical view:
 
     ```git

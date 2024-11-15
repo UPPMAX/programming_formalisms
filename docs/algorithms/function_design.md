@@ -348,11 +348,11 @@ in the two DNA sequences mismatch
     `get` |`[nothing]`|`mismatch`  |`locus`
     .     |.          |.           |`pos`
 
-    These are up for debate and 'the best name' is determined by the 
+    These are up for debate and 'the best name' is determined by the
     project, progamming language and social rules, such as:
 
     Column 1: `find` versus `get`:
-    - `get` is better: 
+    - `get` is better:
       in some languages (e.g. C++) `find` is used in the standard libary
       for functions that return an iterator (whatever that is),
       hence `find` is confusing
@@ -372,9 +372,9 @@ in the two DNA sequences mismatch
     - `mismatch` is better:
       in some languages (e.g. C++) the term 'mismatch' is used in the
       standard library for things that have different content
-      (such as characters in a string), 
+      (such as characters in a string),
       hence 'difference' would be the unexpected noun
-    - `difference` is better: 
+    - `difference` is better:
       we are looking for a difference
       and our function name should reflect that
 
@@ -413,10 +413,10 @@ where the DNA sequences are different?
 
     There are many, here are two tables of combinations:
 
-    1     |2          |3           
+    1     |2          |3
     ------|-----------|-------------
     `find`|`all`      |`differences`
-    `get` |`[nothing]`|`mismatches` 
+    `get` |`[nothing]`|`mismatches`
 
 
     1     |2          |3            |4
@@ -473,7 +473,7 @@ ATACC-GGGTTT
     `calc` |`[nothing]`|`[nothing]`|`sequences`
     `get`  |.          |.          |.
 
-    Most of the reasoning is the same as in the previous answer, 
+    Most of the reasoning is the same as in the previous answer,
     with the addition of:
     - `seqs` is a common abbreviation
     - `dna` signals that the function expects DNA sequences

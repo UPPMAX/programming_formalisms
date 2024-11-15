@@ -99,7 +99,7 @@
 
 - [Python packaging lesson](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
     - Make Python packages of your code. **FIX**
-  
+
 - **Possibilities for other languages can be**
     - C/C+
         - CMake
