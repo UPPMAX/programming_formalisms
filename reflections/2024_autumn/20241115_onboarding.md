@@ -18,6 +18,9 @@ I predict 1 teacher is enough. Let's see...
 9:16|1  |C done and left
 9:17|1  |B leaves room to work in silence
 9:19|0  |.
+9:21|0  |.
+9:22|1  |D comes in, leaves
+9:23|0  |.
 
 
 - Names of learners are pseudonimized to A, B, C, etc.

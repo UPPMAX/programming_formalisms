@@ -12,11 +12,7 @@
 
 <!-- markdownlint-enable MD013 -->
 
-The goal of the course is [to give an understanding of formal principles of software development](https://github.com/UPPMAX/programming_formalisms/issues/54).
-[Only what is used by the student project is course content, with alternatives relevant to academics provided in lecture (or extra material) to what we do](https://github.com/UPPMAX/programming_formalisms/issues/52).
-
 [Go to the nicely-rendered version of the course](https://uppmax.github.io/programming_formalisms/)
-
 
 ## Files used for continuous integration scripts
 
