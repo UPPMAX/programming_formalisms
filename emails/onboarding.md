@@ -1,20 +1,28 @@
-Welcome, we are so happy that you have chosen to participate
-in this fall edition of the Course Programming formalisms.
+# Onboarding
 
-We hope to provide an good introduction to Programming formalisms and
-current practical software development methods
+- Email title: Programming Formalisms: preparation and start
 
-Our course motto is turning scripters into computer scientists
-and to add theory to bolster already present practical skills
+Welcome!
 
-This means that we will try to give some idea of why we develop the way
-we develop as we show you one practical way
-of making a software project from requirments gathering to deployment methods.
+We are happy that you have chosen to participate
+in the Programming Formalisms course,
+where we turn scripters into computer scientists.
 
-We will start November 18–22, 9:00-16:00 with
-Online on-boarding: Friday Nov 15 9:00–10:00, drop-in. 
-Get help with setups.
+Prepare yourself by going through the
+pre-requirements at
+[https://uppmax.github.io/programming_formalisms/prereqs/](https://uppmax.github.io/programming_formalisms/prereqs/):
+there is a checklist there. If you struggle or are uncertain
+with a pre-requirement: the onboarding session is there to help you out!
 
-We will use the same zoom metting and password through out the course
+Minimal schedule (with full schedule at
+[https://uppmax.github.io/programming_formalisms/intro/#schedule](https://uppmax.github.io/programming_formalisms/intro/#schedule)):
+
+- `[date][day][time]` (optional) Onboarding
+- `[date]` Monday 9:00 (sharp!): start of lessons
+
+See you at the optional onboarding or Monday 9:00 (sharp!)
+at the Programming Formalisms course, in the Zoom room below.
+
+Cheers, the Programming Formalisms team
 
 [Zoom invite here]
