@@ -19,6 +19,6 @@ if [[ "$PWD" =~ scripts$ ]]; then
     exit 42
 fi
 
-markdownlint --fix "**/*.md"
+markdownlint --fix "docs/**/*.md"
 git status
 
