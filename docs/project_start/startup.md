@@ -171,13 +171,14 @@ git pull
 - View License
 
 !!! admonition "Concepts in Git"
+
     - **repository**: The project, contains all data and history (commits, branches, tags).
     - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
     - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
         - `git clone` copies everything: all commits and all branches.
     - We synchronize commits between local and remote with
-     - **git fetch**/**pull** and **git push**.
+    - **git fetch**/**pull** and **git push**.
 
 ### Clone the course project
 
@@ -186,7 +187,7 @@ git pull
      **Now you and other people can clone this repository and contribute changes.**
 
     - You may want to create a directory on your computer for this course.
-     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
+    - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
     - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
@@ -194,12 +195,8 @@ git pull
     - The result shall look something like this:
 
      ```console
-     $ git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
+     git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
      ```
-
-    !!! tip
-        - Using the SSH makes it very straight-forward to upload your local changes back to GitHub.
-        - Use HTTP if you clone repos that do not belong to you or your group.
 
     **What just happened?**
 
@@ -259,10 +256,7 @@ git pull
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
-
-    
-
-## Start a Git/GitHub repo from exisiting project
+## Start a Git/GitHub repo from existing project
 
 !!! info "Principle"
 
@@ -276,5 +270,10 @@ git pull
 
 ## Summary
 
-!!! 
+!!! info "Learning objectives of 'Get started with Git/GitHub'"
 
+    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+
+
+
+   
