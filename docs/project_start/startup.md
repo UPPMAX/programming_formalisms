@@ -119,17 +119,6 @@
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
-
-!!! admonition "Concepts in Git"
-
-    - **repository**: The project, contains all data and history (commits, branches, tags).
-    - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
-    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-        - `git clone` copies everything: all commits and all branches.
-    - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
-    - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
-
 ### Git Cheat sheet
 
 ```console
@@ -224,22 +213,6 @@ git pull
 
     - ``git pull``
 
-!!! admonition "Directory structure"
-
-    - **Different projects should have separate folders**
-
-    - ReadMe file
-    - Data  (version controlled)(.gitignore)
-    - Processed data intermediate
-    - (Manuscript)
-    - Results  data, tables, figures (version controlled, git tags for manuscript version)
-    - Src  version controlled code goes here
-        - License (here or in the 1st level)
-        - Requirements.txt
-    - Doc
-    - index
-    - .gitignore file
-
 !!! info "Working on GitHub"
 
     - You can do basically the **same work at GitHub as in your local git repo**
@@ -256,6 +229,53 @@ git pull
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
+### Concluding remarks
+
+- We will work more with the project repo after lunch and the rest of the week
+    - Code
+    - Documentation
+    - Releases
+    
+- Before that we will cover starting git project from existing project with no version control.
+- Get a personal github project
+- Get started with documentation
+
+## Intro to documentation
+
+### Order your files
+
+- Think that **everything is worth to be part of documentation** (like GitHub directory tree)
+- The parts from the software development cycle
+    - The planning parts
+        - Requirements:
+        - what should the program deliver
+        - dependencies
+        - OS platforms
+        - Risk analysis
+    - Design documentation
+        - Analysis: pseudo code and UML
+    - Source code
+        - with in-code documentation
+    - README
+    - (Full documentation)
+    - (Tutorial)
+
+!!! admonition "Directory structure"
+
+    - **Different projects should have separate folders**
+
+    - ReadMe file
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript)
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src  version controlled code goes here
+        - License (here or in the 1st level)
+        - Requirements.txt
+    - Doc
+    - index
+    - .gitignore file
+
 ## Start a Git/GitHub repo from existing project
 
 !!! info "Principle"
@@ -270,10 +290,15 @@ git pull
 
 ## Summary
 
-!!! info "Learning objectives of 'Get started with Git/GitHub'"
+!!! Goal
 
-    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+    - [ ] Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
 
+!!! keypoints
+
+    - A repository can have one or multiple remotes (we will revisit these later).
+    - A remote (GitHub) in this case serves as a full backup of your work.
+    - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
 
 
    
