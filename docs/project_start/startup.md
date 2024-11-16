@@ -130,125 +130,151 @@
     - Branches on the remote appear as (read-only) local branches with a prefix, e.g. `origin/main`.
     - We synchronize commits between local and remote with `git fetch`/`git pull` and `git push`.
 
-## A test project started locally
-
-### Initial code base
-
-- Let's say you have some code you have started to work with
-
-**Hello world or similar**
-
-    - Make a folder with name `<>`
-     - BASH: ``mkdir <>``
-    - Create a folder in the ``<>/`` folder, called ``Figures/``
-    - Also create a folder within ``planets/`` folder with the name ``code``
-    - In the ``code`` folder, create a file.
-    - Copy paste the python code above into it and save as ``<>.py``.
-
-### Initiate a project
-
-Exercise
-
-!!! example "Type-along or demo **FIX**"
-
-    - Be in a terminal and go to the ``planets`` folder, which will be the project repository (**repo**)
-    - run ``git init``
-    - make sure that there is a ``.git`` directory created
-    
-    - Now you have a git repo called planets
-    - check with the command: ``git status``
-    - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
-
-    - So far, there is no content. We have to manually add the content to the repo.
-
-    - This is done with the commands ``add`` and ``commit``
-
-### Staging files
-
-!!! example "Demo or type-along"
-
-    ```console
-    $ git status
-
-    On branch main
-
-    No commits yet
-
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-            Figures/
-            code/
-    nothing added to commit but untracked files present (use "git add" to track)
-
-    ```
-
-- The two files are untracked in the repository (directory).
-- You want to **add the files** (focus the camera) to the list of files tracked by Git.
-- Git does not track any files automatically and you need make a conscious decision to add a file.
-- Let's do what Git hints at and add the files:
-
-!!! example "Type-along or demo"
-
-    ```console
-    $ git add .    # < -- "." means all files
-    $ git status
-
-    On branch main
-
-    No commits yet
-
-    Changes to be committed:
-      (use "git rm --cached <file>..." to unstage)
-            new file:   Figures/planet_earth.png
-            new file:   code/planet.py
-    ```
-
-    Now this change is *staged* and ready to be committed.
-
-### Commit
-
-- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
-- BUT only what we have added to the "staging" area!
-
-Let us now commit the change to the repository:
-
-!!! example "Demo or Type-along"
-    ```console
-    $ git commit -m "add folders and planet code"
-
-    [main (root-commit) 6a416b5] add folders and planet code
-     2 files changed, 58 insertions(+)
-     create mode 100644 Figures/planet_earth.png
-     create mode 100644 code/planet.py
-    ```
-
-    Right after we query the status to get this useful command into our muscle memory:
-
-    ```console
-    $ git status
-
-    On branch master
-    nothing to commit, working tree clean
-    ```
-
-What does the `-m` flag mean? Let us check the help page for that command:
+### Git Cheat sheet
 
 ```console
-git help commit
+git add     # add files or stage file(s)
+git commit  # commit staged file(s)
+git status  # see what is going on
+git log     # see history
+git push
+git pull
 ```
 
-- You should see a very long help page as the tool is very versatile (press q to quit).
-    - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-    - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-    - Note that help pages also work when you don't have a network connection!
+## Start with course project
 
-**Alternative commits**
+### View the project
 
-- You can also omit the ``-m`` option and a text editor will open.
-- The first line will be your commit message.
-- You can add other lines to add some more detailed info about your changes.
+- View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
 
-!!! tip "Writing useful commit messages"
+- See the tree!
 
-    [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
+```bash
+├── CODE_OF_CONDUCT.md
+├── design
+│   └── README.md
+├── fairytale.md
+├── learners
+│   ├── README.md
+│   └── richel
+│       └── README.md
+├── LICENSE
+├── programming_formalisms_student_team_summer_2024_logo_50.png
+├── README.md
+├── run_and_tumble.jpg
+└── src
+    └── bacsim
+        └── README.md
+```
+
+- View README.md
+- View License
+
+!!! admonition "Concepts in Git"
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+    - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
+    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
+        - `git clone` copies everything: all commits and all branches.
+    - We synchronize commits between local and remote with
+     - **git fetch**/**pull** and **git push**.
+
+### Clone the course project
+
+???+ question "Exercise: clone course project and create folders"
+
+     **Now you and other people can clone this repository and contribute changes.**
+
+    - You may want to create a directory on your computer for this course.
+     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
+    - ``mkdir Programming_formalisms``
+    - ``cd Programming_formalisms``
+    - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
+    - Back in your terminal type ``git clone`` followed by pasting the copied text.
+    - The result shall look something like this:
+
+     ```console
+     $ git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
+     ```
+
+    !!! tip
+        - Using the SSH makes it very straight-forward to upload your local changes back to GitHub.
+        - Use HTTP if you clone repos that do not belong to you or your group.
+
+    **What just happened?**
+
+    - `cd` the new directory that was created
+    - list the files with `ls`
+
+    **Create a folder with your name**
+
+    - step into (``cd``) the ``learners/`` directory
+    - ``mkdir <your-name>``
+
+    - Git needs files to be able to commit.
+
+    - Therefore **create an empty README file in the created folder**
+
+    - ``touch README.md``
+
+    - git add/commit this file
+
+    **Push your changes to the GitHub repo**
+
+    - ``git push``
+
+    **When everyone are done pull the latest changes to the local git repo**
+
+    - ``git pull``
+
+!!! admonition "Directory structure"
+
+    - **Different projects should have separate folders**
+
+    - ReadMe file
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript)
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src  version controlled code goes here
+        - License (here or in the 1st level)
+        - Requirements.txt
+    - Doc
+    - index
+    - .gitignore file
+
+!!! info "Working on GitHub"
+
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button".
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+
+
+    
+
+## Start a Git/GitHub repo from exisiting project
+
+!!! info "Principle"
+
+    - Let's say you have some code you have started to work with
+    - Initiate git project
+        - Be in a terminal and go to the ``planets`` folder, which will be the project repository (**repo**)
+        - run ``git init``
+        - make sure that there is a ``.git`` directory created
+    - stage and commit
+    - upload to github
+
+## Summary
+
+!!! 
 
