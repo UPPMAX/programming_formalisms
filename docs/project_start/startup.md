@@ -35,38 +35,7 @@
     - Theory 20
     - Discussions 10 min
 
-!!! note "TOC"
 
-    - A test project: Type-along on starting a project
-        - REASON: have tested this step
-
-    - test project ()
-        - code file
-            - git init
-            - add and commit
-        - you can also start a directory and do git init
-        - Intro documentation
-            - order your files
-        - README
-            - license
-        - git diff
-        - Start with the steps related to the project (Type-along)
-            - Git locally with config and cloning
-    - mkdir user
-        - work in user/
-
-
-!!! note "Think about:"
-
-    - structure of the files and folders for the project
-    - documentation already
-
-
-!!! note
-
-- Many projects/scripts start as something for personal use, but expands to be distributed.
-- Let's start in that end and be prepared.
-- The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 ## Before we continue we need to configure Git
 
@@ -298,56 +267,20 @@ Let us now commit the change to the repository:
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-
 ### Upload to GitHub
 
-!!! example "Demo or Type-along"
+- In previous path we got:
 
+```console
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+   (use "git push" to publish your local commits)
 
-    - Make sure that you are **logged into GitHub**.
+nothing to commit, working tree clean
+```
 
-    <figure markdown="span">
-    ![New repo](../img/New_repo.png){ width="500" }
-    </figure>
-
-
-    - To create a repository we either click the green button "New" (top right corner).
-
-    - Or if you see your profile page, there is a "+" menu (top right corner).
-
-
-    ![New top-right](../img/new-top-right.png){ width=60% }
-
-    ---
-
-    - On this page choose a project name, e.g. ``planets-<username>``
-
-        - Add your name there so there are no clashes when/if you collaborate and fork other repositories
-        - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
-
-    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
-    - and **NO Licence**
-
-    ![New repo ](../img/New_repo_formalisms.png)
-
-    - Press "**Create repository**"
-
-    ![Create and push](../img/created_push.PNG)
-
-    - Choose **SSH**
-    - Copy-paste the code for "**…or push an existing repository from the command line**"
-    - Go to **local git terminal** and go to the **git project you started above**
-    - Paste the code
-
-    - Did it work??
-    - Reload the GitHub page and see the fiels present locally is also present there.
-
-    **Done!**
-
-- **Let's view the license!**
-- There is pre-written text for the different types.
-- More info at [Licensing](../extra_bc/sharing_deeper.md#licensing)
-
+- Let's push back to GitHub
 
 !!! info "Working on GitHub"
 
@@ -372,9 +305,9 @@ Let us now commit the change to the repository:
     - Documentation
     - Releases
     
+- Get started with documentation
 - Before that we will cover starting git project from existing project with no version control.
 - Get a personal github project
-- Get started with documentation
 
 ## Intro to documentation
 
@@ -414,6 +347,13 @@ Let us now commit the change to the repository:
 
 ## Start a Git/GitHub repo from existing project
 
+!!! note
+
+    - Many projects/scripts start as something for personal use, but expands to be distributed.
+    - Let's start in that end and be prepared.
+    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+
+
 !!! info "Principle"
 
     - Let's say you have some code you have started to work with
@@ -428,8 +368,23 @@ Let us now commit the change to the repository:
 
 - Let's say you have some code you have started to work with
 
-???- question "Exercise: start the test project"
+- Choose one of the following
 
+???- question "Exercise A: Start project from one of your existing projects"
+
+    - Just use an existing programming project you have today
+    - use it in the follwong steps.
+    
+???- question "Exercise B: Start the test project"
+
+    - Make a ``test_project`` directory in a good place (like a ``Programming formalisms`` course folder)
+    - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
+
+    ```python
+    # We just want some output from a simple program
+    print('Hello world!')
+    ```
+    
 ### Initiate a project
 
 !!! example "Type-along or demo"
@@ -437,18 +392,29 @@ Let us now commit the change to the repository:
     - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
     - run ``git init``
     - make sure that there is a ``.git`` directory created
+        - you have to show hidden files, in bash terminal with ``ls -a``
 
-    - Now you have a git repo called XXX
+    - Now you have a git repo called ``test_project``
     - check with the command: ``git status``
     - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
 
 ### Add/Commit
 
-    - So far, there is no content. We have to manually add the content to the repo.
-    - This is done with the commands ``add`` and ``commit``
+- So far, there is no content. We have to manually add the content to the repo.
+
+!!!- exercise "Add and commit the content"
+
     - Add and Commit your changes
+    
+    ```console
+    git add
+    git commit -m 'first commit'
+    ```
+    
+    - Look and understand at the output of the following commands
 
     ```console
+    git status
     git log
     git log --stat
     git log --oneline
@@ -456,8 +422,7 @@ Let us now commit the change to the repository:
 
 ### Upload to GitHub
 
-!!! example "Demo or Type-along"
-
+???- Exercise "Follow the steps below"
 
     - Make sure that you are **logged into GitHub**.
 
@@ -470,26 +435,25 @@ Let us now commit the change to the repository:
 
     - Or if you see your profile page, there is a "+" menu (top right corner).
 
-
     ![New top-right](../img/new-top-right.png){ width=60% }
 
     ---
 
-    - On this page choose a project name, e.g. ``planets-<username>``
+    - On this page choose a project name, e.g. ``test_project``
 
-        - Add your name there so there are no clashes when/if you collaborate and fork other repositories
-        - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
+    - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
 
     - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
     - and **NO Licence**
 
-    ![New repo ](../img/New_repo_formalisms.png)
-
+    ![New repo](../img/New_repo_formalisms.png)
+    > Example project
+    
     - Press "**Create repository**"
 
     ![Create and push](../img/created_push.PNG)
 
-    - Choose **SSH**
+    - Choose **html**
     - Copy-paste the code for "**…or push an existing repository from the command line**"
     - Go to **local git terminal** and go to the **git project you started above**
     - Paste the code
@@ -499,38 +463,34 @@ Let us now commit the change to the repository:
 
     **Done!**
 
-- **Let's view the license!**
-- There is pre-written text for the different types.
-- More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
-
-### What have we done?
+### What we did
 
 ```mermaid
 graph TB
 
 P["Project idea"] -->|git init| Node2
-P["Project idea"] --> planet.py -->|git add| Node4
+P["Project idea"] --> hello.py -->|git add| Node4
 Node4 --> |git commit| Node1
 Node2 --> |git push| Node5
 
-C[Uncommited changed planet.py] -->|commit button| R
+C[Uncommited changed hello.py] -->|commit button| R
 Node5 --> |"git pull (from local git)"| Node2
 R --> |"git pull (from local git)"| Node1
 R <--> Node5
        subgraph "Local Git"
         Node2[project]
-        Node1[planet.py]
+        Node1[hello.py]
         Node1 <--> Node2
 
         end
 
         subgraph "staging area"
-        Node4[planet.py]
+        Node4[hello.py]
         end
 
         subgraph "GitHub"
         Node5[project]
-        R[planet.py]
+        R[hello.py]
         end
 
 ```
