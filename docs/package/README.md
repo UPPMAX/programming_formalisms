@@ -1,3 +1,10 @@
+---
+tags:
+  - package
+  - packaging
+  - PyPI
+---
+
 # Package
 
 !!!- info "Learning objectives"

@@ -1,3 +1,14 @@
+---
+tags:
+  - pair
+  - programming
+  - duo
+  - duos
+  - together
+  - collaborative
+  - team
+---
+
 # Pair programming
 
 !!!- info "Learning objectives"

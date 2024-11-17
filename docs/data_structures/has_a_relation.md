@@ -1,3 +1,11 @@
+---
+tags:
+  - relationship
+  - has-a
+  - has a
+  - composition
+---
+
 # Has-a relationships
 
 !!!- info "Learning objectives"

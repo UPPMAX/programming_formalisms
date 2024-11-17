@@ -1,3 +1,9 @@
+---
+tags:
+  - Dream
+  - Design
+---
+
 # Dream design
 
 !!! note "Learning objectives"

@@ -1,3 +1,10 @@
+---
+tags:
+  - struct
+  - structures
+  - create
+---
+
 # Create structs
 
 !!! note "Learning objectives"

@@ -1,3 +1,9 @@
+---
+tags:
+  - class design
+  - architecture
+---
+
 # Class design
 
 !!!- info "Learning objectives"

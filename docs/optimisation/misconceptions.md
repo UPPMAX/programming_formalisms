@@ -1,3 +1,13 @@
+---
+tags:
+  - optimization
+  - optimisation
+  - misconceptions
+  - myths
+  - illusions
+  - delusions
+---
+
 # Optimisation misconceptions
 
 !!!- info "Learning objectives"

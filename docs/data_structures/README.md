@@ -1,3 +1,11 @@
+---
+tags:
+  - data structures
+  - class
+  - classes 
+  - composition
+---
+
 # Data structures
 
 !!!- info "Learning objectives"

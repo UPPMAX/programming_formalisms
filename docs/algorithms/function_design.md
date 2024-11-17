@@ -1,3 +1,10 @@
+---
+tags:
+  - algorithm design
+  - function design
+  - design
+---
+
 # Function design
 
 !!!- info "Learning objectives"

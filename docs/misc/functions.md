@@ -1,3 +1,10 @@
+---
+tags:
+  - example functions
+  - functions
+  - examples
+---
+
 # Functions
 
 Here are function descriptions, from simple to more complex, to be used in

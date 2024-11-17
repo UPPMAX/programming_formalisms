@@ -1,3 +1,9 @@
+---
+tags:
+  - FAQ
+  - Frequently asked questions
+---
+
 # FAQ
 
 The frequently asked questions, about:

@@ -1,3 +1,9 @@
+---
+tags:
+  - testing
+  - tests
+---
+
 # Testing
 
 !!!- info "Learning objectives"

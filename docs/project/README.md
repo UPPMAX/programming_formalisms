@@ -1,3 +1,8 @@
+---
+tags:
+  - project
+---
+
 # Project
 
 In this course, we work together on a project.

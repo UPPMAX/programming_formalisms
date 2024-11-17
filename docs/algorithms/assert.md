@@ -1,3 +1,17 @@
+---
+tags:
+  - assert
+  - debug
+  - test
+  - check
+  - programmer
+  - develop
+  - dev
+  - self
+  - yourself
+  - documentation
+---
+
 # `assert`
 
 !!!- info "Learning objectives"

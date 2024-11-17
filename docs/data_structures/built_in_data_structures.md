@@ -1,3 +1,11 @@
+---
+tags:
+  - data structures
+  - built-in
+  - data types
+  - standard
+---
+
 # Built-in data structures
 
 !!!- info "Learning objectives"

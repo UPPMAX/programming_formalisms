@@ -1,3 +1,18 @@
+---
+tags:
+  - Team
+  - Role
+  - Roles
+  - Junior
+  - Medior
+  - Senior
+  - Lead
+  - Dev
+  - Developer
+  - Software architect
+  - Data manager
+---
+
 # Team roles
 
 There are multiple team roles and people can have multiple

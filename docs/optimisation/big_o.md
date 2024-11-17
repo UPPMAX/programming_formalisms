@@ -1,3 +1,10 @@
+---
+tags:
+  - Big-O
+  - Big O
+  - scalabality
+---
+
 # Big-O
 
 !!!- info "Learning objectives"

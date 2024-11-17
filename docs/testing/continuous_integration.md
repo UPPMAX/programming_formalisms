@@ -1,3 +1,9 @@
+---
+tags:
+  - CI
+  - Continuous integration
+---
+
 # Continuous integration
 
 !!!- info "Learning objectives"

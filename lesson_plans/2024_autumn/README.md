@@ -176,9 +176,9 @@ so the learners can feel what it does.
 - [x] TDD
 - [x] Put TDD example code in project
 - [x] Use testing framework in code
-- [ ] Testing framework
-- [ ] Testing in a team ?
-- [ ] Testing indeterminate functions
+- [x] Testing framework
+- [SKIP] Testing in a team ?
+- [SKIP] Testing indeterminate functions
 - [ ] Class design ?
 - [ ] Has-a relationship ?
 - [ ] Built-in data structures

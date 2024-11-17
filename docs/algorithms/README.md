@@ -1,3 +1,9 @@
+---
+tags:
+  - algorithms
+  - functions
+---
+
 # Algorithms
 
 !!!- info "Learning objectives"

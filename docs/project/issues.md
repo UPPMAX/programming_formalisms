@@ -1,3 +1,14 @@
+---
+tags:
+  - Issue
+  - Issues
+  - Tasks
+  - Issue tracker
+  - Bug tracker
+  - Todo
+  - Todo list
+---
+
 # Issues
 
 !!!- info "Learning objectives"

@@ -1,3 +1,9 @@
+---
+tags:
+  - optimization
+  - optimisation
+---
+
 # Optimisation
 
 !!!- info "Learning objectives"

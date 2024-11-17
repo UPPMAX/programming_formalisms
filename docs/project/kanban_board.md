@@ -1,3 +1,14 @@
+---
+tags:
+  - Kanban
+  - Kanban board
+  - Project
+  - Project page
+  - In progress
+  - To do
+  - Done
+---
+
 # Kanban board
 
 !!!- info "Learning objectives"

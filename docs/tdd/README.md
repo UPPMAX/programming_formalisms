@@ -2,6 +2,10 @@
 tags:
   - TDD
   - Test-driven development
+  - is_zero
+  - is_even
+  - is_odd
+  - is_probability
 ---
 
 # TDD

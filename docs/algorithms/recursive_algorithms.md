@@ -1,3 +1,10 @@
+---
+tags:
+  - recursive
+  - function
+  - algorithm
+---
+
 # Recursive algorithms
 
 !!!- info "Learning objectives"
