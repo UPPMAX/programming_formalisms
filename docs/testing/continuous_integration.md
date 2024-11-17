@@ -94,12 +94,10 @@ Assures quality:
 - Spelling is correct
 - [your check here]
 
-## Continuous Integration
+## Features of Continuous Integration
 
 - CI significantly increase the number of bugs exposed `[Vasilescu et al., 2015]`
 - CI increases the speed at which new features are added `[Vasilescu et al., 2015]`
-
-Course repo has CI :-)
 
 ## Code coverage
 
@@ -133,14 +131,24 @@ You will need to defend this in a code review.
 
 ## Exercises
 
-### Exercise 1: improve our project
+### Exercise 1: improve the learners' project
 
 - Go to the learners' project
 - Click on the 'Actions' tab
-- Look for an Action that fails
-- Look where that action indicates what is is failing on
-- Fix it
-- Repeat
+- Look for an Action that fails. Pick your favorite:
+    - 'Check code style': checks for Python style, will improve your
+      Python grammar
+    - 'Check package': checks if the repo can be built into a package,
+      has the hardest Python problems
+    - 'Check links': checks for links, straightforward
+    - 'Check markdown': checks for markdown style, will improve
+      your markdown grammar
+    - 'Check spelling': spellcheck, straightforward
+    - 'Measure codecov' and the code coverage:
+      checks if all code in the repo is tested,
+      needs to be 100%, practice writing tests
+- Of your favorite action, look what the problem is
+- Fix/improve it
 
 ## References
 
