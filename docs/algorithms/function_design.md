@@ -14,6 +14,25 @@ results to files. You want it to be correct.
 
 You needs to convert your ideas to functions.
 
+## Terminology
+
+Term                 |Description
+---------------------|---------------
+Function arguments   |The values that go into a function
+Function body        |Everything the function does with its arguments
+Function declaration |The function name and arguments
+Function definition  |The complete function
+Function name        |The name of the function
+Function return type |The data type the function returns
+Function signature   |The function name and arguments
+Procedure            |A function that has no return type
+
+```python
+def my_function(my_arguments):
+    # ...
+    return my_return_type
+```
+
 ## Problem
 
 How do I write functions [1] that are:
@@ -339,12 +358,11 @@ in the two DNA sequences mismatch
 
     Column 2: `first` versus `[nothing]`:
 
-    - `first` is better:
-      in some languages (e.g. C++) `first` is used in the standard library
+    - `first` is better: in some languages (e.g. C++) `first`
+      is used in the standard library
       to indicate only the first match is returned,
       hence not using that would confuse
-    - `nothing` is better:
-      this is shorter
+    - `nothing` is better: this is shorter
 
     Column 3: `difference` versus `mismatch`:
 

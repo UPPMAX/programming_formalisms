@@ -45,14 +45,15 @@ average = sum_of_elements / n_elements
 
 This `assert` will terminate the program if the assertion is false.
 Assert liberally to document assumptions
-`[Sutter & Alexandrescu, 2004]``[Stroustrup, 1997]``[McConnell, 2004a]`[Liberty, 2001][Lakos, 1996][Stroustrup, 2013a],
+`[Sutter & Alexandrescu, 2004][Stroustrup, 1997][McConnell, 2004a]`
+`[Liberty, 2001][Lakos, 1996][Stroustrup, 2013a]`,
 even if you think something should never occur `[McConnell, 2004b]`.
 
 Python scripts can be run in debug mode or release mode:
 
 ```bash
-$ python my_script.py # debug mode
-$ python -O my_script.py # release mode
+python my_script.py # debug mode
+python -O my_script.py # release mode
 ```
 
 Do not assume that `assert` is always evaluated `[Stroustrup, 2013b]`:
@@ -92,7 +93,7 @@ The developer (you!) has indicated clearly that the function,
 for now, expects to take two DNA sequences.
 The `# TODO` is signalling clearly that this will be changed in the
 future.
-Use `assert` to specifify assumption on the input of a function [Stroustrup, 1997]``[McConnell, 2004a]`.
+Use `assert` to specifify assumption on the input of a function [Stroustrup, 1997][McConnell, 2004a]`.
 
 !!! note
 
@@ -116,7 +117,7 @@ as they should. The resulting DNA sequences may have incorrect content,
 which likely is to be checked someplace else. But checking for the
 sequences to be of equal length may help as a first quick
 test to find bugs.
-Use `assert` to specifify assumption on the output of a function [Stroustrup, 1997]``[McConnell, 2004a]`.
+Use `assert` to specifify assumption on the output of a function [Stroustrup, 1997][McConnell, 2004a]`.
 
 
 Superior to documentation, as it cannot be ignored.

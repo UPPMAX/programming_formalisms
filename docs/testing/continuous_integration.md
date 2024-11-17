@@ -130,7 +130,7 @@ You will need to defend this in a code review.
 - `[Abd Jader et al., 2018]` Abd Jader, Marwa Najm, and Riyadh Zaghlool Mahmood.
   "Calculating McCabe's cyclomatic complexity metric and its effect on the
   quality aspects of software."
-- `[Beck, 1999]` Beck, Kent. 
+- `[Beck, 1999]` Beck, Kent.
   "Embracing change with extreme programming." Computer 32.10 (1999): 70-77.
 - `[Booch, 1990]` Booch, Grady. Object oriented design with applications.
   Benjamin-Cummings Publishing Co., Inc., 1990.
@@ -159,6 +159,6 @@ You will need to defend this in a code review.
   "Quality and productivity outcomes relating to continuous integration in
   GitHub." Proceedings of the 2015 10th joint meeting on foundations of
   software engineering. 2015.
-- `[Wickham, 2019]` Wickham, Hadley. 
+- `[Wickham, 2019]` Wickham, Hadley.
   Advanced R. chapman and hall/CRC, 2019.
 
