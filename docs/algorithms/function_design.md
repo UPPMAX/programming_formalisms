@@ -358,12 +358,11 @@ in the two DNA sequences mismatch
 
     Column 2: `first` versus `[nothing]`:
 
-    - `first` is better:
-      in some languages (e.g. C++) `first` is used in the standard library
+    - `first` is better: in some languages (e.g. C++) `first`
+      is used in the standard library
       to indicate only the first match is returned,
       hence not using that would confuse
-    - `nothing` is better:
-      this is shorter
+    - `nothing` is better: this is shorter
 
     Column 3: `difference` versus `mismatch`:
 
