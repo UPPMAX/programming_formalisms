@@ -103,8 +103,18 @@ instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
 
 Below are some TDD exercise,
 with the goal of practicing TDD.
+
+If you use R and it would help, at [the 'Videos' subsection](#videos),
+you can find videos of doing the same in R. After seeeing
+such a video, try to write the Python code (i.e. do not stick with
+writing R, how annoying this may feel).
+
 If you feel comfortable enough with TDD,
-you are encouraged to develop code for the learners' project.
+you are encouraged to develop code for the learners' project instead.
+However, the learners' project uses a formal testing framework,
+so read up about it at
+[the session on using a formal testing framework](../testing/testing_framework.md)
+first.
 
 ### Exercise 1: `is_zero`
 
@@ -212,10 +222,6 @@ Develop a function called `is_even`:
 
 ### Exercise 2: `is_odd`
 
-???- note "Learning objectives"
-
-    - Practice of TDD by developing a slightly more complicated function
-
 Develop a function called `is_odd`:
 
 ???- note "`is_odd`"
@@ -284,10 +290,6 @@ Consider using the `is_even` function.
 
 ### Exercise 3: `is_probability`
 
-???- note "Learning objectives"
-
-    - Practice of TDD by developing a slightly more complicated function
-
 Develop a function called `is_probability`.
 
 !!! note "`is_probability`"
@@ -329,10 +331,6 @@ Develop a function called `is_probability`.
 
 ### Exercise 4: `is_prime`
 
-???- note "Learning objectives"
-
-    - Practice of TDD by developing a slightly more complicated function
-
 Develop a function called `is_prime`.
 
 !!! note "`is_prime`"
@@ -356,7 +354,7 @@ Develop a function called `is_prime`.
 - It is only those your boss may read
 - The literature assumes a responsible programmer writes tests,
     in C++ `[Stroustrup & Sutter, 2017]`,
-    R ``[Wickham, 2019]`` and Python `[PEP 8]`
+    R `[Wickham, 2019]` and Python `[PEP 8]`
 
 ## Discussion
 

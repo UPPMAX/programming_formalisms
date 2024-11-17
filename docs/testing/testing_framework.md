@@ -40,6 +40,13 @@ tags:
     - When do you trust code written by others?
     - How do you convince other developers of a bug?
 
+## Why?
+
+You want to write tests in the recommended way
+and put their files in a recommended place.
+You want your tests to be found by most of the tools
+in the Python ecosystem.
+
 ## Testing
 
 ???- question "Prefer this lecture as a video?"
@@ -54,12 +61,28 @@ Testing *helps* ensure the correctness of code.
 
 ## Testing framework
 
-- **`unittest`**, `pytest`, `nose`, etc.
-- Makes it easier to write unit tests
-- Takes some scaffolding
-- Failed tests give a better error message
+There are multiple testing frameworks:
 
-### Test if something is true
+- **`unittest`**
+- `pytest`
+- `nose`
+- more
+
+In this project, we use
+[the official Python `unittest` package](https://docs.python.org/3/library/unittest.html),
+because:
+
+- It is [an official Python package](https://docs.python.org/3/library/unittest.html)
+- It is heavily used
+- Tools (among other, VS Code) can find it
+- Standard way to write tests
+- Failed tests give better error messages
+
+Drawback of `unittest` (and many other testing frameworks):
+
+- Takes some scaffolding
+
+## Example test: test if something is true
 
 No testing framework:
 
@@ -77,9 +100,9 @@ class TestSmall(unittest.TestCase):
         self.assertIsTrue(1 + 1 == 2)
 ```
 
-:neutral_face: Mostly scaffolding here
+Mostly scaffolding here...
 
-### Test if something is equal
+## Example test: test if something is equal
 
 No testing framework:
 
@@ -99,7 +122,7 @@ class TestSmall(unittest.TestCase):
 
 Hamcrest notation can give better error message.
 
-### Test if something raises an exception
+## Example test: test if something raises an exception
 
 No testing framework:
 
@@ -125,7 +148,7 @@ class TestSmall(unittest.TestCase):
         self.assertRaises(RunTimeError, raise_error)
 ```
 
-:smile: here it pays off.
+Here using a formal testing framework saves typing.
 
 ## File setup
 
@@ -136,14 +159,14 @@ or [use an existing project](https://github.com/programming-formalisms/programmi
 as reference.
 
 For the `unittest` framework, the actual functions are put in the
-`src/[package_name]` folder, for example `src/bacsim/richel_utils.py`.
+`src/[package_name]` folder, for example `src/bacsim/sven_utils.py`.
 
 ???- question "How does such a file look like?"
 
     Here is how such a file could look like:
 
     ```python
-    """Richel's utility functions"""
+    """Sven's utility functions"""
 
     def is_zero(x):
         """Determine if `x` is zero.
@@ -249,24 +272,22 @@ Clicking on the 'Run'/'Play' button to run the tests.
 
 ## Exercises
 
-## Exercise 1: first attempt
+The learning objective of this exercise is to
+practice writing tests within a formal testing framework.
+Which function to implement is irrelevant,
+so feel free to pick a function that fits your level.
+
+If you feel comfortable enough with using `unittest`,
+you are encouraged to develop code for the learners' project
+instead.
+
+## Exercise 1: a guided example
 
 ???- info "Learning objectives"
 
     - practice writing tests within a formal testing framework
 
-In pairs, develop a function using TDD using the `unittest` framework.
-
-The function is a function to determine if a number is prime.
-
-???- question "Too easy or too hard?"
-
-    The learning objective of this exercise is to
-    practice writing tests within a formal testing framework.
-    Which function to implement is irrelevant,
-    so feel free to pick a function that fits your level.
-    If needed, there are many worked-out functions
-    [here](../misc/functions.md)
+The goal is to write a function to determine if a number is prime.
 
 !!! info "The function"
 
@@ -276,64 +297,38 @@ The function is a function to determine if a number is prime.
         - Returns `False` if the input is not prime
         - Gives an error when the input is not one integer
 
-!!! info "Social"
-
-    - Ping-Pong Pair programming
-    - Discuss how and when to switch roles first!
-    - Decide who is the first driver, e.g. the person with first name
-      first in alphabet
-    - Try to be **an exemplary duo**
-
 !!! info "Technical"
 
-    - Create a topic branch for your pair. Branch of from `develop`
-    - Work within scaffolding of the learners project
-        - Functions are in `src/[package_name]/`.
-          Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
-        - Tests are in `tests/`.
-          Call the file `test_utils_[names].py`,
-          e.g. `test_utils_anna_and_sven.py`
-    - When done, create a Pull Request to `develop`. Do not merge!
+    Work within scaffolding of the learners project
+    - Learner code is in `src/learners/`.
+      Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
+    - Tests are in `tests/`.
+      Call the file `test_utils_[names].py`,
+      e.g. `test_utils_anna_and_sven.py`
 
 ???- question "Need a video?"
 
     See [this YouTube video](https://youtu.be/jwAyMlaODfo)
 
-## Exercise 2: second attempt
+## Exercise 2: your function
 
-???- info "Learning objectives"
-
-    - practice writing tests within a formal testing framework
-
-In pairs, develop a function using TDD using the `unittest` framework.
-
-Use the same setup as exercise 1.
-
-However, decide upon an interesting function at your estimated level.
-When disagreeing: pick the easiest function.
-
-## Exercise 3: your classes
-
-???- info "Learning objectives"
-
-    - practice writing tests within a formal testing framework
-
-Everyone is the owner of a class.
-
-In pairs, develop functionality for your classes
+Develop a function at your skill level
 using TDD using the `unittest` framework.
 
-Use the same setup as exercise 2, except one uses
-a branch called after the owner of each class.
-For example, Anna's class is developed on the `anna` branch
-and Sven's class on the `sven` branch.
+Put the code in the `src/learners` folder.
+
+## Exercise 3: learners project
+
+Develop a function at your skill level
+using TDD using the `unittest` framework
+in the learners' project.
 
 'develop functionality' is still hard, as we have not
 discussed function design, nor class design.
 
 However, we can:
 
-- ensure the class is in a file called `[class_name].py`,
+- ensure that a class we (may) need is in a file called `[class_name].py`,
   e.g. `coordinat.py`
 - ensure the tests are in a file called `test_[class_name].py`,
   e.g. `test_coordinat.py`, so that `unittest` can actually find it
@@ -345,12 +340,9 @@ class TestCoordinat(unittest.TestCase):
         Coordinat c
 ```
 
-- write as much tests as the pair can come up with.
-  In case of conflict what is good architecture,
-  the class owner decides. Again, this is hard,
-  as we have not
-  discussed function design, nor class design.
+Write as much tests (and their fixes) as you can come up with.
 
+  
 ## References
 
 - `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes.

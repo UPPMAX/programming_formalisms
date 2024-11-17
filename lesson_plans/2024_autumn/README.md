@@ -173,6 +173,7 @@ Instead of discussing CI, I will put it on the project itself,
 so the learners can feel what it does.
 
 - [x] Put CI in project
+- [x] TDD
 - [x] Put TDD example code in project
 - [x] Use testing framework in code
 - [ ] Testing framework
