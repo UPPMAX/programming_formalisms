@@ -114,8 +114,6 @@ shell access.``
     
 ### Clone the course project
 
-**Now you and other people can clone this repository and contribute changes.**
-
 ???- question "Exercise: clone course project and create folders (3 min)"
 
     - You may want to create a directory on your computer for this course.
@@ -148,7 +146,7 @@ shell access.``
         - changes on GitHub are synced to you existinglocal git
         - good procedure to do this step before you start changes
 
-???- exercise "Create a folder with your name (locally)"
+???- question "Exercise: Create a folder with your name (locally)"
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
@@ -179,7 +177,7 @@ shell access.``
     git pull
     ```
 
-???- exercise "Add/stage file"
+???- question "Exercise: "Add/stage file"
 
     - First check the status!
 
@@ -222,7 +220,7 @@ shell access.``
 
 Let us now commit the change to the repository:
 
-???- exercise "Commit"
+???- question "Exercise: Commit"
 
     ```console
     $ git commit -m "add personal folder"
@@ -277,7 +275,11 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-- Let's push back to GitHub
+???- question "Exercise: Let's push back to GitHub
+
+     ```git
+     git push
+     ```
 
 !!! info "Working on GitHub"
 
@@ -300,7 +302,6 @@ nothing to commit, working tree clean
 - We will work more with the project repo after lunch and the rest of the week
     - Code
     - Documentation
-    - Releases
 
 - Get started with documentation
 - Before that we will cover starting git project from existing project with no version control.
@@ -383,7 +384,7 @@ nothing to commit, working tree clean
     
 ### Initiate a project
 
-!!! example "Type-along or demo"
+???- question "Exercise: Inititate the project"
 
     - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
     - run ``git init``
@@ -398,7 +399,7 @@ nothing to commit, working tree clean
 
 - So far, there is no content. We have to manually add the content to the repo.
 
-!!!- exercise "Add and commit the content"
+???- question "Exercise: Add and commit the content"
 
     - Add and Commit your changes
     
@@ -418,7 +419,7 @@ nothing to commit, working tree clean
 
 ### Upload to GitHub
 
-???- Exercise "Follow the steps below"
+???- question "Exercise: Follow the steps below"
 
     - Make sure that you are **logged into GitHub**.
 
