@@ -145,12 +145,19 @@ Tuesday  |11:00-15:40|Richel |TDD 6/10
 Wednesday|13:00-15:40|Richel |Pair programming 6/10
 .        |.          |.      |function design 6/10
 .        |.          |.      |assert 6/10
-.        |.          |.      |Testing ?
+.        |.          |.      |Testing framework ?
+.        |.          |.      |Testing in a team ?
 .        |.          |.      |Continuous integration ?
-.        |.          |.      |recursive algorithms 6/10
-Thursday |10:00-12:00|Richel |Class design
+.        |.          |.      |Testing indeterminate functions
+.        |.          |.      |Skip: recursive algorithms 6/10
+Thursday |10:00-12:00|Richel |Class design ?
+.        |.          |.      |Has-a relationship ?
+.        |.          |.      |Built-in data structures
+.        |.          |.      |Expressive data types
 Thursday |14:00-15:40|Richel |Implement the project as a package
-Friday   |09:00-11:00|Richel |Optimisation
+Friday   |09:00-11:00|Richel |optimisation misconceptions ?
+.        |.          |.      |big-O ?
+.        |.          |.      |run-time speed profile ?
 Friday   |15:00-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
 .        |.          |.      |Project 2/10
@@ -161,5 +168,21 @@ I feel that there is too little time for the shared project,
 due to more time for theoretical things. On the other hand,
 as this is a given, I should be able to make my exercises
 use the project more...
+
+Instead of dicussing CI, I will put it on the project itself,
+so the learners can feel what it does.
+
+- [ ] Put CI in project
+- [ ] Testing framework
+- [ ] Testing in a team ?
+- [ ] Testing indeterminate functions
+- [ ] Class design ?
+- [ ] Has-a relationship ?
+- [ ] Built-in data structures
+- [ ] Expressive data types
+- [ ] Implement the project as a package
+- [ ] optimisation misconceptions ?
+- [ ] big-O ?
+- [ ] run-time speed profile ?
 
 
