@@ -1,3 +1,11 @@
+---
+tags:
+  - Test
+  - Testing
+  - Indeterminate
+  - Random
+---
+
 # Indeterminate functions
 
 !!!- info "Learning objectives"

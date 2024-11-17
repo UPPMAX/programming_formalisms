@@ -183,10 +183,12 @@ so the learners can feel what it does.
 - [ ] Built-in data structures
 - [ ] Expressive data types
 - [x] Create package in CI script
-- [ ] Implement the project as a package
+- [x] Implement the project as a package
 - [ ] optimisation misconceptions ?
 - [ ] big-O ?
 - [ ] run-time speed profile ?
+
+Shall I directly use a testing framework in TDD?
 
 
 

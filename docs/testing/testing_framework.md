@@ -1,3 +1,14 @@
+---
+tags:
+  - Test
+  - Testing
+  - Testing framework
+  - unittest
+  - Unit test
+  - Unit tests
+  - Unit testing
+---
+
 # Using a formal testing framework
 
 !!!- info "Learning objectives"
