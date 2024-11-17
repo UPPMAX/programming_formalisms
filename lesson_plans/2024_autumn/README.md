@@ -130,7 +130,7 @@ These are my worries:
   project is course content' to reduce lecturing. Also here, I worry that we
   have failed to reduce lecturing
 
-## Preparation
+## 2024-11-09 Preparation
 
 I will have 4 days to prepare, all of these disturbed by meetings.
 
@@ -154,4 +154,12 @@ Friday   |09:00-11:00|Richel |Optimisation
 Friday   |15:00-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
 .        |.          |.      |Project 2/10
+
+## 2024-11-17
+
+I feel that there is too little time for the shared project,
+due to more time for theoretical things. On the other hand,
+as this is a given, I should be able to make my exercises
+use the project more...
+
 
