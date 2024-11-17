@@ -7,19 +7,21 @@
     
 !!! info "Content"
 
-    - We will have an introduction to some SDLC key features
-    - We will get some theory of project tools and thinking.
+    - Introduction to some SDLC key features
+    - Theory of project tools and thinking.
 
 !!! info "Learning objectives of 'SDLC tools'"
 
-    - Compare and contrast various software development tools and justify their relevance to specific development tasks.
+    Learners can
+
+    - compare and contrast various software development tools.
+    - justify their relevance to specific development tasks.
 
 !!!- note "Instructor notes"
 
     Prerequisites are:
 
     - Understanding the Software development Life Cycle
-
 
     Lesson Plan:
 
@@ -316,7 +318,6 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 - Have you ever spent days trying to repeat the results that took you hours to do the first time last week?
 - Or you have to do paper revisions, but you just can’t get the results to match up?
-- Nothing is a worse feeling - either for you or for science itself.
 
 - We will integrate this topic in the hands-on.
 - We will discuss different methods and tools for better reproducibility in research software and data.
@@ -335,13 +336,9 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
             - Environments
             - Tools for other languages than Python
 
-- We will develop our code in a virtual environment with the python tool ``venv``
-
-
 ### Sharing and licensing and citations
 
 !!! Discussion "One-time usage towards distributed package"
-
 
     - Have others used your code?
     - Did you plan it from beginning?
@@ -351,24 +348,6 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 - The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
 - **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
-
-!!! admonition "FAIR"
-
-    **The current buzzword for data management**
-    
-    - You may be asked about it in, for example, making data management plans for grants:
-
-    - **F**indable
-        - Will anyone else know that your data exists?
-        - Solutions: put it in a standard repository, or at least a description of the data. Get a digital object identifier (DOI).
-    - **A**ccessible
-        - Once someone knows that the data exists, can they get it?
-        - Usually solved by being in a repository, but for non-open data, may require more procedures.
-    - **I**nter-operable
-        - Is your data in a format that can be used by others, like csv instead of PDF?
-        - Or better than csv. Example: 5-star open data
-    - **R**eusable
-        - Is there a license allowing others to re-use?
 
 !!! info "See also"
 
@@ -386,13 +365,6 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 !!! info "See also"
 
     - We will talk about this the last day!
-
-!!! keypoints
-
-    - Share your code! Eventually others will probably use it anyway.
-    - Licence your software and do it early. **Default is “no one can make copies or derivative works”**.
-    - Get DOI or at least state how to cite your software
-
 
 !!! objectives
 
@@ -430,11 +402,41 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - get tips for README files
     - get tips for full documentation and tutorials
 
-!!! Goal
-
-    - [ ] Compare and contrast various software development tools and justify their relevance to specific development tasks.
-
 ## Do you remember?
+
+!!! info "Learning objectives of 'SDLC tools'"
+
+    Learners can
+
+    - compare and contrast various software development tools.
+    - justify their relevance to specific development tasks.
+
+!!! admonition "Parts to be covered"
+
+    - &#9744; Planning
+        - Pseudocode
+        - Unified Modelling Language (UML)
+    - &#9744; Testing
+        - Different levels
+    - &#9744; Source/version control
+        - Git etc
+    - &#9744; Collaboration
+        - GitHub
+    - &#9744; Reproducibility (for you and others)
+        - Deployment
+        - Dependencies
+        - (Workflows)
+    - &#9744; Sharing
+        - open science
+        - citation
+        - licensing
+    - &#9744; Documentation
+        - Tutorials
+        - How-to guides
+        - Explanation
+        - Reference
+
+### Think about
 
 ???- "Why do we want to work with the mentioned tools?"
 
@@ -447,7 +449,6 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 ???- "What does reproducibility mean?"
 
 ???- "Why sharing?"
-
 
 ## Summary of SDLC tools
 
@@ -464,7 +465,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - ... and iteration of these
     - Planning for reproducibility, modularity and documentation should be started in the beginning
     - Tools for the developer
-        - Planning: UML and pseudocode
+        - Planning: UML (graphs)
         - Development iteration: git
         - Testing: test functions (Covered later)
         - Collaboration: GitHub
@@ -472,4 +473,8 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - Reproducibility
         - Documentation: In-code, READMEs, html
 
+
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+
+
+
