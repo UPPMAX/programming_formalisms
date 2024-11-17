@@ -19,15 +19,20 @@ arc applicable and meaningful"* [1]
 What guidance can we then gleen in what a Requirement is the above mentioned paper asses that 
  *"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"*
 
+According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
+**Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
+evolve before arriving as valid stakeholder requirements.**
+
+!!! info "Finding the needs!"
+
+    Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
+
 ???- "Where do you start?"
 
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
 
 
-!!! info "Finding the needs!"
-
-    Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
 
 ???+ exercise "Needs determination"
 
