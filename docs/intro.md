@@ -78,7 +78,7 @@ Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Tuesday  |09:00-10:00|Lars   |[Software development life cycle](./introductions/sdlc.md)
 Tuesday  |10:00-11:00|Richel |[Issues](project/issues.md) and [kanban board](project/kanban_board.md) and [team roles](project/team_roles.md)
-Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md), [formal testing framework](testing/testing_framework.md), [CI](testing/continuous_integration.md)
+Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md), [assert](algorithms/assert.md), [formal testing framework](testing/testing_framework.md), [CI](testing/continuous_integration.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md) & [github branches/merge](./git/contribute.md) & [contribute, social coding](./social_coding/social_coding.md)
@@ -86,12 +86,12 @@ Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md), [f
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |Object-oriented design
-Thursday |10:00-12:00|Richel |[Class design](data_structures/class_design.md)
+Thursday |10:00-12:00|Richel |[Class design](data_structures/class_design.md), [has-a relation](data_structures/has_a_relation.md), [expressive data type](data_structures/expressive_data_type.md)
 Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
 Thursday |14:00-15:40|Richel |[Implement the project as a package](package/README.md)
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
-Friday   |09:00-11:00|Richel |[Optimisation](optimisation/README.md)
+Friday   |09:00-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
 Friday   |11:00-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
 Friday   |15:00-15:40|Richel |Wrap-up

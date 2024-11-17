@@ -7,7 +7,7 @@ tags:
   - profiling
 ---
 
-# Runtime speed profile
+# Runtime speed profiles
 
 !!!- info "Learning objectives"
 
