@@ -2,7 +2,7 @@
 tags:
   - Big-O
   - Big O
-  - scalabality
+  - scalability
 ---
 
 # Big-O

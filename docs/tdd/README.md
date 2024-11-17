@@ -109,7 +109,7 @@ Below are some TDD exercise,
 with the goal of practicing TDD.
 
 If you use R and it would help, at [the 'Videos' subsection](#videos),
-you can find videos of doing the same in R. After seeeing
+you can find videos of doing the same in R. After seeing
 such a video, try to write the Python code (i.e. do not stick with
 writing R, how annoying this may feel).
 
