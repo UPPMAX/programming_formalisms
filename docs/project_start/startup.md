@@ -449,9 +449,9 @@ Let us now commit the change to the repository:
     - Add and Commit your changes
 
     ```console
-    $ git log
-    $ git log --stat
-    $ git log --oneline
+    git log
+    git log --stat
+    git log --oneline
     ```
 
 ### Upload to GitHub
@@ -505,6 +505,20 @@ Let us now commit the change to the repository:
 
  
 ### What have we done?
+
+
+```mermaid
+graph TB
+
+P["Project idea"] -->|git init| Node2
+P["Project idea"] --> planet.py -->|git add| Node4
+Node4 --> |git commit| Node1
+Node2 --> |git push| Node5
+
+C[Uncommited changed planet.py] -->|commit button| R
+Node5 --> |"git pull (from local git)"| Node2
+R --> |"git pull (from local git)"| Node1
+R <--> Node5
        subgraph "Local Git"
         Node2[project]
         Node1[planet.py]
@@ -521,13 +535,31 @@ Let us now commit the change to the repository:
         R[planet.py]
         end
 
-
 ```
 
-
-
-
 ## Summary
+
+
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+    - &#9744; Planning
+        - UML
+        - Pseudocode
+    - &#9744; Testing
+        - Different levels
+        - We don't do this today!
+    - &#9744; Collaboration
+        - GitHub
+    - &#9745; Sharing
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing
+    - &#9744; Documentation
+
 
 !!! Goal
 
