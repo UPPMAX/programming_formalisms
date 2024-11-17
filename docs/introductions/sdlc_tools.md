@@ -433,7 +433,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - &#9744; Documentation
         - Tutorials
         - How-to guides
-        - Explanation
+        - Explanation (in-code)
         - Reference
 
 ### Think about
