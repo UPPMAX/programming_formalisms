@@ -43,7 +43,7 @@
     - Theory 10
     - Discussions 10 min
 
-!!!- info "TOC"
+???- info "TOC"
 
     - What is software?
         - software concepts
@@ -188,7 +188,7 @@ classDiagram
 
     - Do you want to add something?
 
-??? question "How can we make it easier to get good software and usefulness?
+??? question "How can we make it easier to get good software and usefulness?"
 
 ## Software Development Life Cycle (SDLC)
 
