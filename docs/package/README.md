@@ -102,7 +102,7 @@ in the regular way.
 
     If you see this error message, the answer is 'no':
 
-    ```
+    ```bash
     Traceback (most recent call last):
       File "/home/richel/GitHubs/programming_formalisms_project_autumn_2024/main.py", line 10, in <module>
         from bacsimx.experiment import (
