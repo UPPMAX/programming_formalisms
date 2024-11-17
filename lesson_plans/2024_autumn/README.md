@@ -169,7 +169,7 @@ due to more time for theoretical things. On the other hand,
 as this is a given, I should be able to make my exercises
 use the project more...
 
-Instead of dicussing CI, I will put it on the project itself,
+Instead of discussing CI, I will put it on the project itself,
 so the learners can feel what it does.
 
 - [x] Put CI in project

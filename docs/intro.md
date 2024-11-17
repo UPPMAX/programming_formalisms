@@ -54,7 +54,7 @@
 
 ## Shared document
 
-- [HackMD](https://hackmd.io/yNiCUuPsReuu1m1FQbC_qA)
+- [HackMD](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig)
 
 ## Schedule
 

@@ -198,9 +198,11 @@ classDiagram
         - Changeable
 
     - Software development is both series of steps:
+    
         1. Requirements
         2. Analysis and design
         3. Development
         4. Test
         5. Deployment and maintenance
+        
     - ... and iteration of these
