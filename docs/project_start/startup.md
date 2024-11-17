@@ -346,7 +346,7 @@ Let us now commit the change to the repository:
 
 - **Let's view the license!**
 - There is pre-written text for the different types.
-- More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
+- More info at [Licensing](extra_bc/sharing_deeper.md#licensing)
 
 
 !!! info "Working on GitHub"
