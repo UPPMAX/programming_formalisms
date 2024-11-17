@@ -1,12 +1,8 @@
 # Project start with analysis 
 
 ## Requirements
-Why do we need to specify requirements 
-according to Merlin Dorfman (article reproduced in chap 1 requirements engineering) the results from the software crisis in the 1960s
-gave rise to the following problem *"In nearly every software project
-which fails to meet performance and cost goals,
-requirements inadequacies play a major and expensive
-role in project failure"* 
+!!! info "Why do we need to specify requirements?"
+    According to Merlin Dorfman (article reproduced in chap 1 requirements engineering) the results from the software crisis in the 1960s gave rise to the following problem *"In nearly every software project which fails to meet performance and cost goals,requirements inadequacies play a major and expensive role in project failure"* 
 
 This is very much still the effect today in the production of scientific software (My personal opinion)
 
