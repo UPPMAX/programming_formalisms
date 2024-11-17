@@ -310,7 +310,7 @@ nothing to commit, working tree clean
 
 !!! admonition "Documentation comes in different forms"
 
-    - What *is* documentation?
+    - What _is_ documentation?
         - **Tutorials**: learning-oriented, allows the newcomer to get started
         - **How-to guides**: goal-oriented, shows how to solve a specific problem
         - **Explanation**: understanding-oriented, explains a concept
