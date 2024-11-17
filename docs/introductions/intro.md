@@ -11,18 +11,18 @@
 
 !!! info "Content"
 
-    We start with a more **theoretical introduction** covering
-    the software and tools and mindsets for software development.
+    We start with a more **theoretical introduction** covering software and mindsets for software development.
 
 
 !!! info "Learning objectives of 'Introduction'"
 
+    Learners can
+    
     - Identify the main topics and objectives for the week's lessons.
     - Evaluate the importance of engaging with course content and identify
       strategies to maintain interest and motivation throughout the week.
-    - We will set the start in why a formalized development of software is needed.
 
-!!! note "Instructor notes"
+!!!- note "Instructor notes"
 
     Prerequisites are:
 
@@ -39,11 +39,11 @@
 
     Lesson Plan:
 
-    - **Total** 30 min
-    - Theory 20
+    - **Total** 20 min
+    - Theory 10
     - Discussions 10 min
 
-!!! info "TOC"
+!!!- info "TOC"
 
     - What is software?
         - software concepts
@@ -51,7 +51,7 @@
         - outcome
             - correct, reusable, efficient, changable
     - Example
-    - SLDC
+    - Software Development Life Cycle
 
 ## Different types of Scientific software
 
@@ -102,7 +102,6 @@
     - or **share attributes**with each-other (within a `**class**`)
     - info-hiding mindset...
 
-
 **Objects**
 
 ![Elevator objects](../img/elevators.png)
@@ -149,16 +148,47 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
-!!! info "See also"
-
-    - More on Tuesday: Object-orientation **FIXLINK**
-    - More on Thursday: [Algorithms](../thursday_intro.md)
-    - More on Friday: [Modular programming](../friday_intro.md)
-
 ### Modular coding
 
 - Modular coding breaks up the code in blocks that could be separate files.
-- Modularity could be within a program but also for a workflow.
+- Modularity could be within a program
+- ... but also for a workflow.
+    - script describing order of runs with different programs
+    - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
+
+!!! example "Demo: WRF module and a workflow in 'runtime'"
+
+    - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
+
+!!! info "See also"
+
+    - More on Thursday: Object-orientation **FIXLINK**
+    - More on Thursday: [Algorithms](../thursday_intro.md)
+    - More on Thursday: [Modular programming](../thursday_intro.md)
+
+## Common problems
+
+!!! quote "We want"
+
+    - **Readability**
+    - **Correct**
+    - **Efficient**
+    - **Reusable**
+    - **Changeable**
+
+- Can other people **use** your code?
+- Do you or anyone else **understand** your code at a later moment?
+- Does it work for **all cases**?
+- Is is easy to **find** when and where the **code broke**?
+- Is it easy to **make changes** in one part without ruin the rest of the program?
+- Does is use the resources **efficiently**?
+- Is is easy to use a part of the program in another program?
+
+!!! example "Discuss"
+
+    - Do you want to add something?
+
+??? question "How can we make it easier to get good software and usefulness?
 
 ## Software Development Life Cycle (SDLC)
 
@@ -178,7 +208,7 @@ classDiagram
 - **Deployment** and **maintenance**
     - Documentation
     - Reproducibility and sharing
-        - Packaging and dependencies
+    - Packaging and dependencies
 
 - ... and **Iterations**
 
@@ -189,7 +219,7 @@ classDiagram
 
 - Now after the overview you are ready to dig deeper about the tools!
 
-!!! info "Keypoints"
+!!! abstract "Keypoints"
 
     - A program shall be or have content/components that is:
         - Correct
@@ -206,3 +236,12 @@ classDiagram
         5. Deployment and maintenance
         
     - ... and iteration of these
+
+!!! info "Learning objectives of 'Introduction'"
+
+    Learners can
+    
+    - Identify the main topics and objectives for the week's lessons.
+    - Evaluate the importance of engaging with course content and identify
+      strategies to maintain interest and motivation throughout the week.
+
