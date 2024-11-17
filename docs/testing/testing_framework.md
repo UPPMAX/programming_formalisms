@@ -316,30 +316,32 @@ Put the code in the `src/learners` folder.
 
 ## Exercise 3: learners project
 
-Develop a function at your skill level
-using TDD using the `unittest` framework
-in the learners' project.
+- Look for an issue that requests to add a feature to the
+  learners' project at your skill level (see notes below).
+  If there is none, create one :-)
+- Assign yourself to that issue and develop this feature
+  using TDD using the `unittest` framework
+- Write as much tests (and their fixes) as you can come up with
 
-'develop functionality' is still hard, as we have not
-discussed function design, nor class design.
+!!! note "What feature to add?"
 
-However, we can:
+    Adding features is still hard, as we have not
+    discussed function design, nor class design.
 
-- ensure that a class we (may) need is in a file called `[class_name].py`,
-  e.g. `coordinat.py`
-- ensure the tests are in a file called `test_[class_name].py`,
-  e.g. `test_coordinat.py`, so that `unittest` can actually find it
-- write a minimal test is that one can create a class object:
+    However, we can:
 
-```python
-class TestCoordinat(unittest.TestCase):
-    def test_can_create(self):
-        Coordinat c
-```
+    - ensure that a class we (may) need is in a file called `[class_name].py`,
+      e.g. `coordinat.py`
+    - ensure the tests are in a file called `test_[class_name].py`,
+      e.g. `test_coordinat.py`, so that `unittest` can actually find it
+    - write a minimal test is that one can create a class object:
 
-Write as much tests (and their fixes) as you can come up with.
+    ```python
+    class TestCoordinat(unittest.TestCase):
+        def test_can_create(self):
+            Coordinat c
+    ```
 
-  
 ## References
 
 - `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes.
