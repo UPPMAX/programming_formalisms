@@ -131,6 +131,17 @@ i = random.randint(0, 1) # noqa: S311
 
 You will need to defend this in a code review.
 
+## Exercises
+
+### Exercise 1: improve our project
+
+- Go to the learners' project
+- Click on the 'Actions' tab
+- Look for an Action that fails
+- Look where that action indicates what is is failing on
+- Fix it
+- Repeat
+
 ## References
 
 - `[Abd Jader et al., 2018]` Abd Jader, Marwa Najm, and Riyadh Zaghlool Mahmood.
