@@ -29,8 +29,8 @@ can be found [here](projects.md).
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
 - [Add Continuous integration](../testing/continuous_integration.md)
-- [Do a big-O analysis](../optimization/big_o.md)
-- [Get a runtime speed profile](../optimization/runtime_speed_profiles.md)
+- [Do a big-O analysis](../optimisation/big_o.md)
+- [Get a runtime speed profile](../optimisation/runtime_speed_profiles.md)
 - Refactor design
 - Refactor code
 - Code deployment
