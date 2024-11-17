@@ -151,7 +151,10 @@ classDiagram
 ### Modular coding
 
 - Modular coding breaks up the code in blocks that could be separate files.
-- Modularity could be within a program but also for a workflow.
+- Modularity could be within a program
+- ... but also for a workflow.
+    - script describing order of runs with different programs
+    - Ex. bash script for preparing input data, running fortran programs and analysing output with python program.
 
 !!! example "Demo: WRF module and a workflow in 'runtime'"
 
@@ -167,11 +170,11 @@ classDiagram
 
 !!! quote "We want"
 
-    - **Readability?**
-    - **Correct**?
-    - **Efficient**?
-    - **Reusable**?
-    - **Changeable**?
+    - **Readability**
+    - **Correct**
+    - **Efficient**
+    - **Reusable**
+    - **Changeable**
 
 - Can other people **use** your code?
 - Do you or anyone else **understand** your code at a later moment?
