@@ -99,7 +99,17 @@ A senior developer:
 ### Exercise 1: signal your experience
 
 We all have different skill levels.
+In a normal setting, we would have had time to
+find out everyone's skill level.
+In this course, however, we take a ruthless shortcut.
+We do so, so that the more experienced developers
+are likelier to get tasks that suit their level.
 
+Do so by modifying the README file in the course project,
+assign yourself a skill level, by adding your name in the right row
+of the table with experience levels.
+
+When unsure, pick 'junior'.
 
 ### Exercise 2: signal a role you want to practice
 
@@ -114,3 +124,7 @@ know and you'll be assigned the role if (still) vacant.
 - Data manager
 - Lead developer
 
+Do so by modifying the README file in the course project,
+by adding your name in the right row of the table with roles.
+
+When unsure, do not fill in your name and be 'just' a developer :-)
