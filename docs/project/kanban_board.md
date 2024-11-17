@@ -16,6 +16,7 @@ tags:
     - To be a good team member within a project
     - Use a kanban board to get an overview of what is actively being worked on
     - Use a kanban board to communicate what you are working on now
+    - Put your issue(s) in the kanban board, in the right column(s)
 
 ![A well-used kanban board](kanban_board.png)
 
@@ -39,3 +40,13 @@ Do the following in our student project:
 - Move the issue to the 'In progress page'. There are multiple ways to do so.
 - Close the issue. In the text, write why you close that issue
 - If needed, move the issue to the 'Done' column.
+
+### Exercise 2: learners' project
+
+For the learners' project:
+
+- For the issue(s) you are assigned to, add these to the kanban board.
+  Put these in the right column. You should (probably)
+  maximally put one issue in the 'In progress' column, as one can only
+  actively work on one issue at a time
+

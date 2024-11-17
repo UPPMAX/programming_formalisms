@@ -48,7 +48,7 @@
 
 !!! note "Become a Programming Formalisms team member"
 
-    - Share your GitHub name [at this issue](https://github.com/UPPMAX/programming_formalisms/issues/37)
+    - Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/issues/1)
     - The project can be found
       [here](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024)
 
