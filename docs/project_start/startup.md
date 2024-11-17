@@ -154,7 +154,7 @@
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
-    - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
+    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
     - Back in your terminal type ``git clone`` followed by pasting the copied text.
     - The result shall look something like this:
 
@@ -246,7 +246,7 @@
             new file:   learners/bclaremar/README.md
     ```
 
-    Now this change is *staged* and ready to be committed.
+    - Now this change is _staged_ and ready to be committed.
 
 
 ### Commit
@@ -364,10 +364,6 @@ Let us now commit the change to the repository:
 !!! note "See also"
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
-
-
-
-
 
 ### Concluding remarks
 
