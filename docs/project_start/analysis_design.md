@@ -24,6 +24,14 @@ According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life 
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
 evolve before arriving as valid stakeholder requirements.**
 
+!!!- "info What is a well formed Requirement" (ISO/IEC/IEEE 29148:2018)
+    A well-formed specified requirement contains one or more of the following:
+        — it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
+        — it is qualified by measurable conditions;
+        — it is bounded by constraints;
+        — it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
+        — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
+
 !!! info "Finding the needs!"
 
     Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
