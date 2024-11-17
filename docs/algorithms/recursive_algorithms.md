@@ -31,15 +31,15 @@ Or a Sierpiński triangle, which repeats itself in itself:
 
 The simplest example in mathematics is a factorial:
 
- `n` | `n!`                  
+ `n` | `n!`
 -----|-----------------------
- 0   | 1                     
- 1   | 1                     
- 2   | 2 \* 1 = 2            
- 3   | 3 \* 2 \* 1 = 6       
- 4   | 4 \* 3 \* 2 \* 1 = 24 
- 5   | 5 \* `4!`             
- `n` | `n` \* `(n-1)!`       
+ 0   | 1
+ 1   | 1
+ 2   | 2 \* 1 = 2
+ 3   | 3 \* 2 \* 1 = 6
+ 4   | 4 \* 3 \* 2 \* 1 = 24
+ 5   | 5 \* `4!`
+ `n` | `n` \* `(n-1)!`
 
 To calculate the factorial of `n` (for `n` bigger than 1),
 you need the factorial of `n-1`.

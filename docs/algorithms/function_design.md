@@ -360,7 +360,7 @@ in the two DNA sequences mismatch
       for functions that return an iterator (whatever that is),
       hence `find` is confusing
     - `find` is better:
-      We are looking for a difference, i.e. we are _finding_ something
+      We are looking for a difference, i.e. we are **finding** something
       and our function name should reflect that
 
     Column 2: `first` versus `[nothing]`:
@@ -383,6 +383,7 @@ in the two DNA sequences mismatch
       and our function name should reflect that
 
     Column 4: `index` versus `locus` versus `pos`:
+
     - `index` is better:
       if the function returns an index
       (i.e. the first position has index zero),
