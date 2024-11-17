@@ -393,7 +393,7 @@ nothing to commit, working tree clean
 ???- question "Exercise A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
-    - use it in the follwong steps.
+    - use it in the following steps.
     
 ???- question "Exercise B: Start the test project"
 
