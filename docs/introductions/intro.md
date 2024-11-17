@@ -22,7 +22,7 @@
     - Evaluate the importance of engaging with course content and identify
       strategies to maintain interest and motivation throughout the week.
 
-!!!- note "Instructor notes"
+???- note "Instructor notes"
 
     Prerequisites are:
 
