@@ -100,8 +100,8 @@ Study                       | Extra time | Effect
 `[Nagappan et al., 2008]`   | 15-35%     | 40%-90% less defects
 
 We will discuss formal testing later, but now note that
-testing is not about finding bugs [Thomas & Hunt, 2019, tip 66],
-instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
+testing is not about finding bugs `[Thomas & Hunt, 2019, tip 66]`,
+instead a test is the first user of your code `[Thomas & Hunt, 2019, tip 67]`.
 
 ## Exercises
 
