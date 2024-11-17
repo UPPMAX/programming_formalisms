@@ -1,6 +1,9 @@
 # Feedback
 
-- Any feedback during the day
+You can share any feedback anonymously
+during the day [here](https://docs.google.com/forms/d/e/1FAIpQLSckkNLWF9nNpS7ZJiPqXlJRRPWmBR5tfJrjwJrDj0fhs3Y_Gg/viewform?usp=sf_link).
+
+Thanks!
 
 ???- question "For teachers: what is in that form?"
 
