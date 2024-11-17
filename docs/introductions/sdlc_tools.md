@@ -267,7 +267,7 @@ flowchart TD
  
 !!! note "See also"
 
-    - Example of [pseudocode](../extra/pseudocode.md)
+    - Example of [pseudocode](../extra_bc/pseudocode.md)
 
 
 
