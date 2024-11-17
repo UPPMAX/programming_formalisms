@@ -1,6 +1,6 @@
-### Flowcharts or Unified Modeling Language (UML)
+# Flowcharts or Unified Modeling Language (UML)
 
-#### Tools
+## Tools
 
 - PlantUML
     - Open-source
@@ -50,7 +50,7 @@ flowchart TD
     - Activity/algorithm flowchart
     - Class diagrams
 
-#### Sequence
+## Sequence
 
 ```mermaid
 sequenceDiagram
@@ -70,7 +70,7 @@ sequenceDiagram
     Bob-->>-Alice: Another authentication Response
 ```
 
-#### Class
+## Class
 
  A diagram that shows the system classes and relationships between them.
 
@@ -89,7 +89,7 @@ classDiagram
 ```
 
 
-#### Activity
+## Activity
 
 A flowchart that shows the process and its correlating decisions,
 including an **algorithm**  or a business process.
@@ -110,7 +110,7 @@ flowchart TD
   is_installed --> |no| process_sub[process only sequence and activity diagrams]
 ```
 
-#### Algorithm flowchart
+## Algorithm flowchart
 
 ```mermaid
 flowchart TD
