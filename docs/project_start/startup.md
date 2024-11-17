@@ -279,7 +279,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-???- question "Exercise: Let's push back to GitHub
+???- question "Exercise: Let's push back to GitHub"
 
      ```git
      git push
