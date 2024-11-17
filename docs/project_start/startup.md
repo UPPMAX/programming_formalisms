@@ -71,6 +71,7 @@
 ## Before we continue we need to configure Git
 
 !!! Attention
+
     - Start your terminal of choice
 
 !!! note "Pre-requirements"
@@ -83,17 +84,17 @@
     - We hope also that you have already done these steps:
 
     ```console
-    $ git config --global user.name "<Your Name>"
-    $ git config --global user.email <your GitHub-connected email address>
-    $ git config --global init.defaultBranch "main"
-    $ git config --global core.editor nano
+    git config --global user.name "<Your Name>"
+    git config --global user.email <your GitHub-connected email address>
+    git config --global init.defaultBranch "main"
+    git config --global core.editor nano
     ```
     
     or replace nano with another editor, like in Windows: ``notepad``
     Verify with:
     
     ```console
-    git config --list
+    config --list
     ```
 
 !!! note "Add also this!"
@@ -299,6 +300,3 @@ git pull
     - A repository can have one or multiple remotes (we will revisit these later).
     - A remote (GitHub) in this case serves as a full backup of your work.
     - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
-
-
-   
