@@ -473,8 +473,4 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - Reproducibility
         - Documentation: In-code, READMEs, html
 
-
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
-
-
-
