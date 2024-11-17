@@ -37,15 +37,14 @@
 
 ## Before we continue we need to configure Git
 
-!!! Attention
+!!! attention
 
     - Start your terminal of choice
 
-!!! note "Pre-requirements"
+!!!- note "Did you set up git and GitHub?"
 
     - **Git and GitHub should be configured prior to the course**
-        - Test: ``ssh -T git@github.com``
-        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+shell access.``
     - Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
     - Students should be familiar with using a **text editor** on their system.
     - We hope also that you have already done these steps:
@@ -99,13 +98,15 @@
 
 ## Start with course project
 
-- We heave already prepared a bit
+- We have already prepared a bit.
 
 ### View the project we will work with
 
 ???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
 
-    - Look at the file tree!
+    - Click on a folder or file in the file explorer.
+    - This enables the file "Expand file tree" button to the left of the repo name. 
+    - Click on that and look at the file tree!
     - View README.md
     - View Code of conduct
     - View License
@@ -115,7 +116,7 @@
 
 **Now you and other people can clone this repository and contribute changes.**
 
-???+ question "Exercise: clone course project and create folders (3 min)"
+???- question "Exercise: clone course project and create folders (3 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
@@ -158,7 +159,7 @@
     - go back to the root of the repo (not necessary)
     - cd ../..
 
-#### Staging files (in git)
+### Stage files (in git)
 
 !!! info "track the changes"
 
@@ -329,7 +330,7 @@ nothing to commit, working tree clean
 
     - **Different projects should have separate folders**
 
-    - ReadMe file
+    - README file
     - Data  (version controlled)(.gitignore)
     - Processed data intermediate
     - (Manuscript)
@@ -348,7 +349,6 @@ nothing to commit, working tree clean
     - Many projects/scripts start as something for personal use, but expands to be distributed.
     - Let's start in that end and be prepared.
     - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
-
 
 !!! info "Principle"
 
