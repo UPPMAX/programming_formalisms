@@ -8,7 +8,7 @@ which fails to meet performance and cost goals,
 requirements inadequacies play a major and expensive
 role in project failure"* 
 
-This is very much still the effect today in the production of scientific software (My personal oppinion)
+This is very much still the effect today in the production of scientific software (My personal opinion)
 
 Richard Harwell et. al states
 *"Each contract specialist, lawyer, engineer,
