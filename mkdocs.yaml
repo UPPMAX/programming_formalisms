@@ -66,7 +66,7 @@ nav:
   - Misc:
     - Feedback: misc/feedback.md
     - Project workflows: misc/project_workflows.md
-    - Learn UML with mermaid: misc/uml_with_mermaid.md)
+    - Learn UML with mermaid: misc/uml_with_mermaid.md
     - git workflow: misc/git_workflow.md
     - Reading material: reading/README.md
     - FAQ: misc/faq.md
