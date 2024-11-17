@@ -154,7 +154,7 @@ classDiagram
 - Modularity could be within a program
 - ... but also for a workflow.
     - script describing order of runs with different programs
-    - Ex. bash script for preparing input data, running fortran programs and analysing output with python program.
+    - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
 
 !!! example "Demo: WRF module and a workflow in 'runtime'"
 
@@ -182,7 +182,7 @@ classDiagram
 - Is is easy to **find** when and where the **code broke**?
 - Is it easy to **make changes** in one part without ruin the rest of the program?
 - Does is use the resources **efficiently**?
-- Is is easye to use a part of the program in another program?
+- Is is easy to use a part of the program in another program?
 
 !!! example "Discuss"
 
