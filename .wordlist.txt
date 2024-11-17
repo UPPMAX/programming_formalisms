@@ -1489,7 +1489,7 @@ Lakos
 postconditions
 Sams
 signalling
-
+specifify
 xkcd
 SIGSOFT
 
