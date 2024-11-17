@@ -1,10 +1,15 @@
+---
+tags:
+  - TDD
+  - Test-driven development
+---
+
 # TDD
 
 !!!- info "Learning objectives"
 
     - Understand what TDD is
-    - Understand why TDD is important
-    - Practice TDD
+    - Be able to do TDD
 
 ???- question "For teachers"
 
@@ -51,6 +56,12 @@
       Retrospect: crit, 30, 15s
     ```
 
+## Why?
+
+The code of a project changes.
+You want to change code methodically
+in a time efficient way.
+
 ## Introduction
 
 Test-driven development (TDD) is a systematic way to grow code,
@@ -78,8 +89,8 @@ Advantages of TDD are:
 Developers do really do this `[Beck, 2022][Langr, 2013]`, even
 though TDD takes longer (but note `[study I cannot find]`):
 
-Study                     | Extra time | Effect
---------------------------|------------|-------------------------------
+Study                       | Extra time | Effect
+----------------------------|------------|-------------------------------
 `[George & Williams, 2004]` | 16%        | 18% more black-box tests pass
 `[Bhat & Nagappan, 2006]`   | 15%        | 2x higher code quality
 `[Nagappan et al., 2008]`   | 15-35%     | 40%-90% less defects
@@ -90,29 +101,18 @@ instead a test is the first user of your code [Thomas & Hunt, 2019, tip 67].
 
 ## Exercises
 
-!!! note "Technical rules"
+Below are some TDD exercise,
+with the goal of practicing TDD.
+If you feel comfortable enough with TDD,
+you are encouraged to develop code for the learners' project.
 
-    - Use the GitHub repository for the learners of this course,
-    - Work on the main branch
-    - Work in a file called `learners/[your_name]/[class_name].py`,
-      where `[your_name]` is the person with first name first in alphabet
-    - Errors should never pass silently `[Zen Of Python]`
-
-!!! note "Social rules"
-
-    - Ping-Pong Pair programming
-    - Discuss how and when to switch roles first!
-    - Person with first name first in alphabet starts
-    - Try to be **an exemplary duo**
-
-### Exercise 0: `is_zero`
+### Exercise 1: `is_zero`
 
 ???- note "Learning objectives"
 
     - First practice of TDD by re-doing a function that has been developed
 
-Develop the function `is_zero` with the technical and social rules
-showed at 'Exercises'.
+Develop the function `is_zero`:
 
 !!! note "`is_zero`"
 
@@ -157,7 +157,7 @@ showed at 'Exercises'.
     - [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
     - [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
 
-### Exercise 1: `is_even`
+### Exercise 2: `is_even`
 
 ???- note "Learning objectives"
 
@@ -349,45 +349,6 @@ Develop a function called `is_prime`.
 
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
-
-### Exercise 5: practice
-
-???- note "Learning objectives"
-
-    - Practice of TDD
-
-Go to [the Programming Formalisms page 'functions to practice TDD'](../misc/functions.md)
-and pick a function at your level.
-
-!!! note "Technical rules"
-
-    - Use the shared GitHub repository for the learners of this course
-    - Pick a branching model. When unsure, work on `main`
-    - Use no testing framework or `unittest`.
-      When unsure, use no testing frameworks
-        - No testing framework: work in a file called
-         `learners/[your_names]/[function_name].py`,
-          e.g. `learners/anna_and_bertil/is_zero.py`
-        - `unittest` framework: work in a file in the `src` folder
-          (e.g. `src/anna_and_bertil_utils.py`),
-          write the tests in the `tests` folder,
-          e.g. `tests/test_anna_and_bertil_utils.py`
-
-!!! note "Social rules"
-
-    - Ping-Pong Pair programming
-    - Discuss how and when to switch roles first
-    - Person with first name first in alphabet starts
-    - Try to be **an exemplary duo**
-
-!!! note "Signs you are doing great"
-
-    In an online course:
-
-    - A good pair has the driver sharing his/her screen
-    - In a good pair, both people talk a lot
-    - A good pair switches roles regularly
-    - A good pair has a lot of commits
 
 ## Conclusion
 
