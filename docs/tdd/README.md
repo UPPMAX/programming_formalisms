@@ -134,7 +134,7 @@ first.
   [the session about 'assert'](../algorithms/assert.md)
 - Develop the function `is_zero` (see specifications below)
   yourself, using TDD
-  To prove you've done so in an examplary way,
+  To prove you've done so in an exemplary way,
   do a `git push` at each blue/refactor phase.
 
 !!! note "`is_zero`"
