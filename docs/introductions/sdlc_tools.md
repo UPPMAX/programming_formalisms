@@ -4,40 +4,28 @@
 
     - What are the key concepts and steps in the SDLC
     - What are the tools for a project?
-
-
+    
 !!! info "Content"
 
     - We will have an introduction to some SDLC key features
     - We will get some theory of project tools and thinking.
 
-
 !!! info "Learning objectives of 'SDLC tools'"
 
     - Compare and contrast various software development tools and justify their relevance to specific development tasks.
 
-!!! note "Instructor notes"
+!!!- note "Instructor notes"
 
     Prerequisites are:
 
     - Understanding the Software development Life Cycle
 
 
-    Lesson Plan: **FIX**
+    Lesson Plan:
 
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
-
-!!! info "TOC"
-
-    - Review SDLC steps
-    - Planning: Analysis and design
-    - Testing
-    - Source/version control
-    - Collaboration
-    - Reproducibility and sharing
-    - Documentation
 
 ---
 
@@ -60,9 +48,9 @@ flowchart
 !!! warning
 
     - Error is spreading
-    - small mistakes in the beginning will have large impact on the end result.
+    - Small mistakes in the beginning will have large impact on the end result.
         - e.g. bugs, architecture limiting extensions
-    - large costs economically and timely
+    - Large costs economically and timely
 
 ## Other Models
 
@@ -115,7 +103,6 @@ flowchart
     - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
     - It prepares you to build the real thing to reduce any potential risk of failure. "
 
-
 !!! note
 
     - Planning step is to ...
@@ -124,12 +111,12 @@ flowchart
         - identify parts needed
         - (risk analysis)
     - Can be divided into analysis and design
-        - **Analysis** part is to state the problem and define inputs and outputs
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
             - graphical tools like UML
             - text
             - if object-oriented programming: **objects**
-        - **Design** phase to find out the specific algorithms needed
-            - pseudocode+UML
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or pseudocode
             - if object-oriented programming: **classes**
             - if functional programming: **functions/modules**
 
@@ -211,7 +198,7 @@ classDiagram
     Car *-- Wheel : have 4
 ```
 
-#### Activity
+#### Activity/algorithm
 
 A flowchart that shows the process and its correlating decisions,
 including an **algorithm**  or a business process.
@@ -222,32 +209,6 @@ flowchart TD
   is_installed --> |yes| process_all[process all diagrams]
   is_installed --> |no| process_sub[process only sequence and activity diagrams]
 ```
-
-#### Algorithm flowchart
-
-```mermaid
-flowchart TD
-  condition{Is something true?}
-  condition --> |yes| is_true[Do action 1]
-  condition --> |no| is_false[Do action 2]
-```
-
-!!! info "shape of boxes etc in flowchart and state diagrams "
-
-    - initial state (small circle)
-        - ``[*]``
-    - end state (small solid-filled circle)
-        - ``[*]``
-    - state (rectangle)
-        - ``A["text"]``
-    - activity (rounded recatngle)
-        - ``A("text")``
-    - choice (diamond)
-        - ``A{"text"}``
-    - arrow
-        - ``-->``
-
-    - Other syntax: <https://mermaid.js.org/ecosystem/tutorials.html>
 
 !!! note "See also"
 
@@ -292,7 +253,7 @@ flowchart TD
 
 !!! note "See also"
 
-    - More about testing day 3.
+    - More about testing day 2.
     - [Test-driven development(TDD)](../tdd/README.md)
     - [Testing lecture](../testing/README.md)
 

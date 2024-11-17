@@ -37,15 +37,14 @@
 
 ## Before we continue we need to configure Git
 
-!!! Attention
+!!! attention
 
     - Start your terminal of choice
 
-!!! note "Pre-requirements"
+!!!- note "Did you set up git and GitHub?"
 
     - **Git and GitHub should be configured prior to the course**
-        - Test: ``ssh -T git@github.com``
-        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+shell access.``
     - Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
     - Students should be familiar with using a **text editor** on their system.
     - We hope also that you have already done these steps:
@@ -99,13 +98,15 @@
 
 ## Start with course project
 
-- We heave already prepared a bit
+- We have already prepared a bit.
 
 ### View the project we will work with
 
 ???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
 
-    - Look at the file tree!
+    - Click on a folder or file in the file explorer.
+    - This enables the file "Expand file tree" button to the left of the repo name.
+    - Click on that and look at the file tree!
     - View README.md
     - View Code of conduct
     - View License
@@ -113,9 +114,7 @@
     
 ### Clone the course project
 
-**Now you and other people can clone this repository and contribute changes.**
-
-???+ question "Exercise: clone course project and create folders (3 min)"
+???- question "Exercise: clone course project and create folders (3 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
@@ -147,7 +146,7 @@
         - changes on GitHub are synced to you existinglocal git
         - good procedure to do this step before you start changes
 
-???- exercise "Create a folder with your name (locally)"
+???- question "Exercise: Create a folder with your name (locally)"
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
@@ -158,7 +157,7 @@
     - go back to the root of the repo (not necessary)
     - cd ../..
 
-#### Staging files (in git)
+### Stage files (in git)
 
 !!! info "track the changes"
 
@@ -178,7 +177,7 @@
     git pull
     ```
 
-???- exercise "Add/stage file"
+???- question "Exercise: "Add/stage file"
 
     - First check the status!
 
@@ -221,7 +220,7 @@
 
 Let us now commit the change to the repository:
 
-???- exercise "Commit"
+???- question "Exercise: Commit"
 
     ```console
     $ git commit -m "add personal folder"
@@ -276,7 +275,11 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-- Let's push back to GitHub
+???- question "Exercise: Let's push back to GitHub
+
+     ```git
+     git push
+     ```
 
 !!! info "Working on GitHub"
 
@@ -299,7 +302,6 @@ nothing to commit, working tree clean
 - We will work more with the project repo after lunch and the rest of the week
     - Code
     - Documentation
-    - Releases
 
 - Get started with documentation
 - Before that we will cover starting git project from existing project with no version control.
@@ -329,7 +331,7 @@ nothing to commit, working tree clean
 
     - **Different projects should have separate folders**
 
-    - ReadMe file
+    - README file
     - Data  (version controlled)(.gitignore)
     - Processed data intermediate
     - (Manuscript)
@@ -348,7 +350,6 @@ nothing to commit, working tree clean
     - Many projects/scripts start as something for personal use, but expands to be distributed.
     - Let's start in that end and be prepared.
     - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
-
 
 !!! info "Principle"
 
@@ -383,7 +384,7 @@ nothing to commit, working tree clean
     
 ### Initiate a project
 
-!!! example "Type-along or demo"
+???- question "Exercise: Initiate the project"
 
     - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
     - run ``git init``
@@ -398,7 +399,7 @@ nothing to commit, working tree clean
 
 - So far, there is no content. We have to manually add the content to the repo.
 
-!!!- exercise "Add and commit the content"
+???- question "Exercise: Add and commit the content"
 
     - Add and Commit your changes
     
@@ -418,7 +419,7 @@ nothing to commit, working tree clean
 
 ### Upload to GitHub
 
-???- Exercise "Follow the steps below"
+???- question "Exercise: Follow the steps below"
 
     - Make sure that you are **logged into GitHub**.
 
