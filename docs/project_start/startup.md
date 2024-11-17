@@ -14,9 +14,13 @@
 
 !!! info "Learning objectives of 'Get started with Git/GitHub'"
 
-    - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+    Learners
+    
+    - can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+    - are connected to the course repo
+    - know how to do in-code documentation
 
-!!! note "Instructor notes"
+!!!- note "Instructor notes"
 
     Prerequisites are:
 
@@ -30,8 +34,9 @@
 
     Lesson Plan: **FIX**
 
-    - **Total** 30 min
+    - **Total** 60 min
     - Theory 20
+    - Exercise 300
     - Discussions 10 min
 
 ## Before we continue we need to configure Git
@@ -393,7 +398,7 @@ nothing to commit, working tree clean
 ???- question "Exercise A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
-    - use it in the following steps.
+    - use it in the follwong steps.
     
 ???- question "Exercise B: Start the test project"
 
@@ -539,9 +544,13 @@ R <--> Node5
     - &#9745; Documentation
         - Explanation (in code)
 
-!!! Goal
+!!! info "Learning objectives of 'Get started with Git/GitHub'"
 
-    - [ ] Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+    Learners
+    
+    - can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
+    - are connected to the course repo
+    - know how to do in-code documentation
 
 !!! keypoints
 
