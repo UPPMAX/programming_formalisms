@@ -283,10 +283,6 @@ instead.
 
 ## Exercise 1: a guided example
 
-???- info "Learning objectives"
-
-    - practice writing tests within a formal testing framework
-
 The goal is to write a function to determine if a number is prime.
 
 !!! info "The function"

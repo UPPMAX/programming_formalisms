@@ -181,6 +181,18 @@ assert 1 == 2
     There is no error message, as the Python script was run in
     release mode: in release mode, all `assert`s are removed
 
+### Exercise 2: use `assert` in the learners' project
+
+There is likely to be some code in the learners project
+that assumptions that are either invisible
+or written down as comments.
+
+Search for one accasion where this happens
+and put an `assert` statements there.
+
+If you find a bug that way, create an issue to have someone
+fix that bug.
+
 ## References
 
 - `[Sutter & Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
