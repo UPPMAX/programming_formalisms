@@ -105,7 +105,7 @@ shell access.``
 ???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
 
     - Click on a folder or file in the file explorer.
-    - This enables the file "Expand file tree" button to the left of the repo name. 
+    - This enables the file "Expand file tree" button to the left of the repo name.
     - Click on that and look at the file tree!
     - View README.md
     - View Code of conduct
@@ -384,7 +384,7 @@ nothing to commit, working tree clean
     
 ### Initiate a project
 
-???- question "Exercise: Inititate the project"
+???- question "Exercise: Initiate the project"
 
     - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
     - run ``git init``
