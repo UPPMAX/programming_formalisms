@@ -1494,3 +1494,5 @@ xkcd
 SIGSOFT
 Todo
 scalability
+amd
+intel
