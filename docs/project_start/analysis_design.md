@@ -1,12 +1,8 @@
 # Project start with analysis 
 
 ## Requirements
-Why do we need to specify requirements 
-according to Merlin Dorfman (article reproduced in chap 1 requirements engineering) the results from the software crisis in the 1960s
-gave rise to the following problem *"In nearly every software project
-which fails to meet performance and cost goals,
-requirements inadequacies play a major and expensive
-role in project failure"* 
+!!! info "Why do we need to specify requirements?"
+    According to Merlin Dorfman (article reproduced in chap 1 requirements engineering) the results from the software crisis in the 1960s gave rise to the following problem *"In nearly every software project which fails to meet performance and cost goals,requirements inadequacies play a major and expensive role in project failure"* 
 
 This is very much still the effect today in the production of scientific software (My personal opinion)
 
@@ -23,15 +19,20 @@ arc applicable and meaningful"* [1]
 What guidance can we then gleen in what a Requirement is the above mentioned paper asses that 
  *"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"*
 
+According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
+**Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
+evolve before arriving as valid stakeholder requirements.**
+
+!!! info "Finding the needs!"
+
+    Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
+
 ???- "Where do you start?"
 
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
 
 
-!!! info "Finding the needs!"
-
-    Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
 
 ???+ exercise "Needs determination"
 
