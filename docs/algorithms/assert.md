@@ -94,6 +94,10 @@ The `# TODO` is signalling clearly that this will be changed in the
 future.
 Use `assert` to specifify assumption on the input of a function [Stroustrup, 1997]``[McConnell, 2004a]`.
 
+!!! note
+
+    [Specifify](https://www.urbandictionary.com/define.php?term=specifify): When you have to further define what you are talking about to further explain yourself.
+
 Lastly, `assert` can be used to check if a function was correct
 to some extent.
 For example, here is a function that aligns two DNA sequences:
