@@ -137,7 +137,7 @@
 ### View the project we will work with
 
 ???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
-    
+
     - Look at the file tree!
     - View README.md
     - View Code of conduct
@@ -371,7 +371,7 @@ Let us now commit the change to the repository:
     - Code
     - Documentation
     - Releases
-    
+
 - Before that we will cover starting git project from existing project with no version control.
 - Get a personal github project
 - Get started with documentation

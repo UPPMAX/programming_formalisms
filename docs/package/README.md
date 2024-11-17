@@ -22,7 +22,7 @@ in the regular way.
 
 ### Exercise 1: Install and use a Python package
 
-- Scan the 
+- Scan the
   ['Python Packaging User Guide' section on 'Packaging Python Projects'](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
   until (and excluding) 'Generating distribution archives'
 - Does the learners' project follow all of these guidelines?

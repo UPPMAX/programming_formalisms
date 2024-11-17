@@ -262,7 +262,7 @@ flowchart TD
 - Depending on the writer, pseudocode may therefore vary widely in style,
     - from a near-exact imitation of a real programming language at one extreme
     - to a description approaching formatted prose at the other.
- 
+
 !!! note "See also"
 
     - Example of [pseudocode](../extra_bc/pseudocode.md)
