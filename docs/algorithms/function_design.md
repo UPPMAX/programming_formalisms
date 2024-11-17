@@ -74,7 +74,7 @@ A good function ...
   `[tidyverse style guideline of functions]`
 - Raises helpful exceptions `[Martin, 2009]`
   `[CppCore functions][tidyverse style guideline of functions][PEP 20b]`
-- Fast iff needed `[CppCore functions]`
+- Fast if needed `[CppCore functions]`
 
 ## Design by contract
 
@@ -325,7 +325,6 @@ Could you give examples of bad function names? Why are these names bad?
     - `prime`: a prime number is a data type. What does this function do?
     - `needleman_wunch`: this is a technique to get a DNA alignment.
 
-
 ### Exercise 2: name the function
 
 Imagine two DNA sequences:
@@ -339,6 +338,15 @@ How would you call the algorithm that returns the number (i.e. a number
 to indicate the second character) of which the characters
 in the two DNA sequences mismatch
 (it is `A` in the top one, `T` in the bottom one)?
+
+???- info "Why is this useful?"
+
+    DNA changes over time. These changes are called mutations.
+    On such mutation is a point mutation, which is when one letter changes.
+
+    This point mutations will be carried over to offspring
+    and are use to create pedigries (e.g. in humans)
+    or phylogenies (e.g. between species).
 
 ???- question "Answer"
 
@@ -471,6 +479,20 @@ resulting in:
 AAACCCGGGTTT
 ATACC-GGGTTT
 ```
+
+???- info "Why is this useful?"
+
+    DNA changes over time. These changes are called mutations.
+    On such mutation is a deletion, which is when one letter disappears.
+
+    Taking a look at the DNA sequences, there must have been a deletion
+    somewhere. We can visualize a deletion by a dash (`-`), resulting
+    again in two DNA sequences of equal length.
+
+    Doing so, i.e. making two DNA sequences of equal length,
+    is called 'aligning'. It allows us to clearly see where a deletion
+    has taken place.
+
 
 ???- question "Answer"
 
