@@ -5,7 +5,6 @@
     - How to get started?
     - How can I use Git/GitHub?
 
-
 !!! info "Content"
 
     - Get started with a git/github project
@@ -309,6 +308,30 @@ nothing to commit, working tree clean
 
 ## Intro to documentation
 
+!!! admonition "Documentation comes in different forms"
+
+    - What *is* documentation?
+        - **Tutorials**: learning-oriented, allows the newcomer to get started
+        - **How-to guides**: goal-oriented, shows how to solve a specific problem
+        - **Explanation**: understanding-oriented, explains a concept
+        - **Reference**: information-oriented, describes the machinery
+        - **In-code documentaion — docstrings**
+        **Not to forget**
+        - Project documentation:
+            - requirements: what is the goal of the software, risks, platforms
+            - the analysis: pseudocode and UML
+            - risk analysis
+
+### In-code documentation
+
+- Comments, function docstrings, ...
+- Advantages
+    - Good for programmers
+    - Version controlled alongside code
+    - Can be used to auto-generate documentation for functions/classes
+- Disadvantage
+    - Probably not enough for users
+
 ### Order your files
 
 - Think that **everything is worth to be part of documentation** (like GitHub directory tree)
@@ -494,26 +517,27 @@ R <--> Node5
 
 ## Summary
 
-!!! admonition "Parts to be covered!"
+!!! admonition "Parts to be covered"
 
-    - &#9745; Source/version control
-        - Git
-        - We have a starting point!
-        - GitHub as remote backup
     - &#9744; Planning
-        - UML
         - Pseudocode
+        - Unified Modelling Language (UML)
     - &#9744; Testing
         - Different levels
-        - We don't do this today!
+    - &#9745; Source/version control
+        - Git intro
     - &#9744; Collaboration
         - GitHub
-    - &#9745; Sharing
-        - &#9745; open science
-        - &#9744; citation
-        - &#9745; licensing
-    - &#9744; Documentation
-
+    - &#9744; Reproducibility (for you and others)
+        - Deployment
+        - Dependencies
+        - (Workflows)
+    - &#9744; Sharing
+        - open science
+        - citation
+        - licensing
+    - &#9745; Documentation
+        - Explanation (in code)
 
 !!! Goal
 
