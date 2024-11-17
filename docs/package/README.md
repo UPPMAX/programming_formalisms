@@ -67,7 +67,7 @@ in the regular way.
     However, variations to get this to work on your computer are:
 
     - use `python` instead of `python3`
-    - add `--break-system-packages` at the end, 
+    - add `--break-system-packages` at the end,
       i.e. run `python3 -m pip install . --break-system-packages`
 
 - Scan the file `main.py` in the root folder of the learners' project.
@@ -100,7 +100,7 @@ in the regular way.
 
 ???- question "Answer"
 
-    If you see this error message, the answer is 'no':  
+    If you see this error message, the answer is 'no':
 
     ```
     Traceback (most recent call last):

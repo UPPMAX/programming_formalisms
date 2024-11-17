@@ -299,7 +299,8 @@ The goal is to write a function to determine if a number is prime.
 
 !!! info "Technical"
 
-    Work within scaffolding of the learners project
+    Work within scaffolding of the learners project:
+
     - Learner code is in `src/learners/`.
       Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
     - Tests are in `tests/`.
