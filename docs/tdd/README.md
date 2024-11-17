@@ -70,7 +70,7 @@ The code of a project changes.
 You want to change code methodically
 in a time efficient way.
 
-## Introduction
+## What is TDD?
 
 Test-driven development (TDD) is a systematic way to grow code,
 used in academia and industry. It works `[Martin, 2011]`!
@@ -79,11 +79,28 @@ used in academia and industry. It works `[Martin, 2011]`!
 
 > A TDD developer
 
+When doing TDD, you do TDD cycles:
+
 ![The TDD cycle](tdd_cycle_2.jpg)
 
 > The TDD cycle
 
+The cycle has three phases:
+
+- Red: you write a test that fails
+- Green: you make the test pass
+- Blue/refactor: you refactor the code, you clean up the code,
+  you push the code
+
+Every cycle adds a (facet of) a new feature,
+so it is a way to add features.
+Alternatively, the test that fails can be an exposed bug.
+In this case, there is no feature added,
+but a bug is removed permanently instead.
+
 The TDD cycles end when you cannot break your function anymore `[Beck, 2022][Langr, 2013]`.
+
+## Features of TDD
 
 Advantages of TDD are:
 
