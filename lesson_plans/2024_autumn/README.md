@@ -172,7 +172,9 @@ use the project more...
 Instead of dicussing CI, I will put it on the project itself,
 so the learners can feel what it does.
 
-- [ ] Put CI in project
+- [x] Put CI in project
+- [x] Put TDD example code in project
+- [x] Use testing framework in code
 - [ ] Testing framework
 - [ ] Testing in a team ?
 - [ ] Testing indeterminate functions
@@ -180,9 +182,11 @@ so the learners can feel what it does.
 - [ ] Has-a relationship ?
 - [ ] Built-in data structures
 - [ ] Expressive data types
+- [x] Create package in CI script
 - [ ] Implement the project as a package
 - [ ] optimisation misconceptions ?
 - [ ] big-O ?
 - [ ] run-time speed profile ?
+
 
 
