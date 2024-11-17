@@ -135,26 +135,39 @@ git pull
 
 ### View the project
 
-- View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
+- View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>
 
 - See the tree!
 
 ```bash
 ├── CODE_OF_CONDUCT.md
-├── design
-│   └── README.md
-├── fairytale.md
-├── learners
-│   ├── README.md
-│   └── richel
-│       └── README.md
 ├── LICENSE
-├── programming_formalisms_student_team_summer_2024_logo_50.png
 ├── README.md
+├── codecov.yml
+├── design
+│   └── README.md
+├── learners
+│   ├── README.md
+│   └── richel
+│       └── README.md
+├── main.py
+├── mlc_config.json
+├── pyproject.toml
+├── requirements.txt
 ├── run_and_tumble.jpg
-└── src
-    └── bacsim
-        └── README.md
+├── scripts
+│   ├── install_this_package.sh
+│   ├── run_console.sh
+│   ├── run_tests.sh
+│   └── unindent_text.sh
+├── src
+│   ├── __init__.py
+│   └── bacsim
+│       ├── __init__.py
+│       └── experiment.py
+└── tests
+    ├── __init__.py
+    └── test_experiment.py
 ```
 
 - View README.md
