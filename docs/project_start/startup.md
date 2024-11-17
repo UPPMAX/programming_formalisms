@@ -424,7 +424,140 @@ Let us now commit the change to the repository:
     - stage and commit
     - upload to github
 
+### Initial code base
+
+- Let's say you have some code you have started to work with
+
+???- question "Exercise: start the test project"
+
+### Initiate a project
+
+!!! example "Type-along or demo"
+
+    - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
+    - run ``git init``
+    - make sure that there is a ``.git`` directory created
+
+    - Now you have a git repo called XXX
+    - check with the command: ``git status``
+    - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
+
+### Add/Commit
+
+    - So far, there is no content. We have to manually add the content to the repo.
+    - This is done with the commands ``add`` and ``commit``
+    - Add and Commit your changes
+
+    ```console
+    git log
+    git log --stat
+    git log --oneline
+    ```
+
+### Upload to GitHub
+
+!!! example "Demo or Type-along"
+
+
+    - Make sure that you are **logged into GitHub**.
+
+    <figure markdown="span">
+    ![New repo](../img/New_repo.png){ width="500" }
+    </figure>
+
+
+    - To create a repository we either click the green button "New" (top right corner).
+
+    - Or if you see your profile page, there is a "+" menu (top right corner).
+
+
+    ![New top-right](../img/new-top-right.png){ width=60% }
+
+    ---
+
+    - On this page choose a project name, e.g. ``planets-<username>``
+
+        - Add your name there so there are no clashes when/if you collaborate and fork other repositories
+        - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
+
+    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
+    - and **NO Licence**
+
+    ![New repo ](../img/New_repo_formalisms.png)
+
+    - Press "**Create repository**"
+
+    ![Create and push](../img/created_push.PNG)
+
+    - Choose **SSH**
+    - Copy-paste the code for "**…or push an existing repository from the command line**"
+    - Go to **local git terminal** and go to the **git project you started above**
+    - Paste the code
+
+    - Did it work??
+    - Reload the GitHub page and see the fiels present locally is also present there.
+
+    **Done!**
+
+- **Let's view the license!**
+- There is pre-written text for the different types.
+- More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
+
+### What have we done?
+
+```mermaid
+graph TB
+
+P["Project idea"] -->|git init| Node2
+P["Project idea"] --> planet.py -->|git add| Node4
+Node4 --> |git commit| Node1
+Node2 --> |git push| Node5
+
+C[Uncommited changed planet.py] -->|commit button| R
+Node5 --> |"git pull (from local git)"| Node2
+R --> |"git pull (from local git)"| Node1
+R <--> Node5
+       subgraph "Local Git"
+        Node2[project]
+        Node1[planet.py]
+        Node1 <--> Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[planet.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[planet.py]
+        end
+
+```
+
 ## Summary
+
+
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+    - &#9744; Planning
+        - UML
+        - Pseudocode
+    - &#9744; Testing
+        - Different levels
+        - We don't do this today!
+    - &#9744; Collaboration
+        - GitHub
+    - &#9745; Sharing
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing
+    - &#9744; Documentation
+
 
 !!! Goal
 

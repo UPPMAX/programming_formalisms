@@ -255,8 +255,6 @@ flowchart TD
         - Monday and Tuesday during part of the [Project start with analysis and design](../project_start/analysis_design.md) and [Design paradigms](../design_develop/class_design.md)
         - Thursday during [Modular programming](../modularity/modular.md)
 
-
-
 ### Pseudocode
 
 - Pseudocode does not have syntax rules of any particular language
@@ -268,8 +266,6 @@ flowchart TD
 !!! note "See also"
 
     - Example of [pseudocode](../extra_bc/pseudocode.md)
-
-
 
 ## Testing
 
