@@ -62,6 +62,10 @@ tags:
 
 ## Why?
 
+???- question "Prefer this lecture as video?"
+
+    See it [on YouTube](https://youtu.be/gw_4jVrkDok?si=PU74XKfw9xQGwHn_).
+
 The code of a project changes.
 You want to change code methodically
 in a time efficient way.
@@ -122,11 +126,16 @@ first.
 
 ### Exercise 1: `is_zero`
 
-???- note "Learning objectives"
-
-    - First practice of TDD by re-doing a function that has been developed
-
-Develop the function `is_zero`:
+- If you are more used to R than Python,
+  consider watching [this video, 'R and TDD: is_one'](https://youtu.be/IPGfW4lrxOc)
+- Watch [this video called 'TDD in Python 'is_zero' and upload to GitHub'](https://youtu.be/VddlrNOeodg?si=Zwt7En_CQMjsMYOy&t=184)
+  (only the TDD part) until you understand the thought process of TDD
+- If you want to know more about `assert`, you can peek at
+  [the session about 'assert'](../algorithms/assert.md)
+- Develop the function `is_zero` (see specifications below)
+  yourself, using TDD
+  To prove you've done so in an examplary way,
+  do a `git push` at each blue/refactor phase.
 
 !!! note "`is_zero`"
 
@@ -164,18 +173,8 @@ Develop the function `is_zero`:
     assert has_thrown
     ```
 
-???- question "Need a video?"
-
-    Here are two videos that show how to develop `is_zero` for Python and R:
-
-    - [**Python video for 'is_zero'**](https://youtu.be/VddlrNOeodg), from 3:02
-    - [R video for 'is_one'](https://youtu.be/IPGfW4lrxOc)
 
 ### Exercise 2: `is_even`
-
-???- note "Learning objectives"
-
-    - Practice of TDD by developing a slightly more complicated function
 
 Develop a function called `is_even`:
 
@@ -224,7 +223,7 @@ Develop a function called `is_even`:
     - [Python](https://youtu.be/ZcgJEdaRRpc)
     - [R](https://youtu.be/4NBsCis584U?si=A7k5w9fLAwAJc3ta)
 
-### Exercise 2: `is_odd`
+### Exercise 3: `is_odd`
 
 Develop a function called `is_odd`:
 
@@ -292,7 +291,7 @@ Consider using the `is_even` function.
     - [Python](https://youtu.be/BxyIsJw3E14)
     - [R](https://youtu.be/Lah3fm3lUiA?si=40JdVJAO3oBcjrkH)
 
-### Exercise 3: `is_probability`
+### Exercise 4: `is_probability`
 
 Develop a function called `is_probability`.
 
@@ -333,7 +332,7 @@ Develop a function called `is_probability`.
         return x >= min_probability and x <= max_probability
     ```
 
-### Exercise 4: `is_prime`
+### Exercise 5: `is_prime`
 
 Develop a function called `is_prime`.
 
