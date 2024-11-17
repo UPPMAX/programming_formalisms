@@ -187,19 +187,13 @@ flowchart TD
     - Activity/algorithm flowchart
     - Class diagrams
 
+!!! note "See also"
+
+    - [Learn UML with mermaid](../misc/uml_with_mermaid.md)
+
 #### Sequence
 
 ```mermaid
-sequenceDiagram
-    Alice ->>+Bob: Authentication Request
-    Bob-->>-Alice: Authentication Response
-    Alice->>+Bob: Another authentication Request
-    Bob-->>-Alice: Another authentication Response
-```
-
-Mermaid code
-
-```text
 sequenceDiagram
     Alice ->>+Bob: Authentication Request
     Bob-->>-Alice: Authentication Response
@@ -217,15 +211,6 @@ classDiagram
     Car *-- Wheel : have 4
 ```
 
-Mermaid code
-
-```text
-classDiagram
-    Driver o-- Car : owns
-    Car *-- Wheel : have 4
-```
-
-
 #### Activity
 
 A flowchart that shows the process and its correlating decisions,
@@ -238,27 +223,9 @@ flowchart TD
   is_installed --> |no| process_sub[process only sequence and activity diagrams]
 ```
 
-Mermaid code
-
-```text
-flowchart TD
-  is_installed{Graphviz installed?}
-  is_installed --> |yes| process_all[process all diagrams]
-  is_installed --> |no| process_sub[process only sequence and activity diagrams]
-```
-
 #### Algorithm flowchart
 
 ```mermaid
-flowchart TD
-  condition{Is something true?}
-  condition --> |yes| is_true[Do action 1]
-  condition --> |no| is_false[Do action 2]
-```
-
-Mermaid code
-
-```text
 flowchart TD
   condition{Is something true?}
   condition --> |yes| is_true[Do action 1]
@@ -282,49 +249,27 @@ flowchart TD
 
     - Other syntax: <https://mermaid.js.org/ecosystem/tutorials.html>
 
-### Pseudocode
-
-- Pseudocode does not have syntax rules of any particular language
-    - no systematic standard form.
-- Some borrow style and syntax from some conventional programming language
-    - like Fortran, Pascal, BASIC, C, C++, Java, Lisp, and ALGOL.
-- Variable declarations are typically omitted.
-- Function calls and blocks of code, such as code contained within a loop, are often replaced by a one-line natural language sentence.
-
-**Example**
-
-```code
-  algorithm ford-fulkerson is
-    input: Graph G with flow capacity c,
-           source node s,
-           sink node t
-    output: Flow f such that f is maximal from s to t
-
-    (Note that f(u,v) is the flow from node u to node v, and c(u,v) is the flow capacity from node u to node v)
-
-    for each edge (u, v) in GE do
-        f(u, v) ← 0
-        f(v, u) ← 0
-
-    while there exists a path p from s to t in the residual network Gf do
-        let cf be the flow capacity of the residual network Gf
-        cf(p) ← min{cf(u, v) | (u, v) in p}
-        for each edge (u, v) in p do
-            f(u, v) ←  f(u, v) + cf(p)
-            f(v, u) ← −f(u, v)
-
-    return f
-```
-
-- Depending on the writer, pseudocode may therefore vary widely in style,
-    - from a near-exact imitation of a real programming language at one extreme
-    - to a description approaching formatted prose at the other.
-
 !!! note "See also"
 
     - Diagrams will be covered on
         - Monday and Tuesday during part of the [Project start with analysis and design](../project_start/analysis_design.md) and [Design paradigms](../design_develop/class_design.md)
         - Thursday during [Modular programming](../modularity/modular.md)
+
+
+
+### Pseudocode
+
+- Pseudocode does not have syntax rules of any particular language
+    - no systematic standard form.
+- Depending on the writer, pseudocode may therefore vary widely in style,
+    - from a near-exact imitation of a real programming language at one extreme
+    - to a description approaching formatted prose at the other.
+ 
+!!! note "See also"
+
+    - Example of [pseudocode](../extra_bc/pseudocode.md)
+
+
 
 ## Testing
 
