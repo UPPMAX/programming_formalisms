@@ -240,7 +240,7 @@ flowchart TD
 
 Mermaid code
 
-```
+```text
 flowchart TD
   is_installed{Graphviz installed?}
   is_installed --> |yes| process_all[process all diagrams]
@@ -395,7 +395,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
     1. get repository, make a change locally, and send the change directly back.
     2. make a "pull request" that allows a review.
-       
+
 - Once we know how code review works:
     - we will be able to propose changes to repositories of others
     - review changes submitted by external contributors.
@@ -526,7 +526,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - get tips for README files
     - [Documentation part 2](../deployment/documentation.md) aims to:
         - get tips for README files
-     - get tips for full documentation and tutorials
+    - get tips for full documentation and tutorials
 
 !!! Goal
 
