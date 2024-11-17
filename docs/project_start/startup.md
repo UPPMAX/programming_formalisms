@@ -71,6 +71,7 @@
 ## Before we continue we need to configure Git
 
 !!! Attention
+
     - Start your terminal of choice
 
 !!! note "Pre-requirements"
@@ -83,17 +84,17 @@
     - We hope also that you have already done these steps:
 
     ```console
-    $ git config --global user.name "<Your Name>"
-    $ git config --global user.email <your GitHub-connected email address>
-    $ git config --global init.defaultBranch "main"
-    $ git config --global core.editor nano
+    git config --global user.name "<Your Name>"
+    git config --global user.email <your GitHub-connected email address>
+    git config --global init.defaultBranch "main"
+    git config --global core.editor nano
     ```
     
     or replace nano with another editor, like in Windows: ``notepad``
     Verify with:
     
     ```console
-    git config --list
+    config --list
     ```
 
 !!! note "Add also this!"
@@ -103,7 +104,7 @@
     git config --global credential.helper 'cache --timeout=36000'
     ```
     
-    - With this we don't need to use ssh and the configuration with ``ssh-keys``, like below:
+    - With this we _don't need_ to use ssh and the configuration with ``ssh-keys``, like below:
 
         - **Git and GitHub should be configured prior to the course**
         - Test: ``ssh -T git@github.com``
@@ -119,46 +120,6 @@
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
-### Git Cheat sheet
-
-```console
-git add     # add files or stage file(s)
-git commit  # commit staged file(s)
-git status  # see what is going on
-git log     # see history
-git push
-git pull
-```
-
-## Start with course project
-
-### View the project
-
-- View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2024>
-
-- See the tree!
-
-```bash
-├── CODE_OF_CONDUCT.md
-├── design
-│   └── README.md
-├── fairytale.md
-├── learners
-│   ├── README.md
-│   └── richel
-│       └── README.md
-├── LICENSE
-├── programming_formalisms_student_team_summer_2024_logo_50.png
-├── README.md
-├── run_and_tumble.jpg
-└── src
-    └── bacsim
-        └── README.md
-```
-
-- View README.md
-- View License
-
 !!! admonition "Concepts in Git"
 
     - **repository**: The project, contains all data and history (commits, branches, tags).
@@ -169,11 +130,25 @@ git pull
     - We synchronize commits between local and remote with
     - **git fetch**/**pull** and **git push**.
 
+## Start with course project
+
+- We heave already prepared a bit
+
+### View the project we will work with
+
+???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
+    
+    - Look at the file tree!
+    - View README.md
+    - View Code of conduct
+    - View License
+    - Look at the history ("Commits" button just above the file explorer)
+    
 ### Clone the course project
 
-???+ question "Exercise: clone course project and create folders"
+**Now you and other people can clone this repository and contribute changes.**
 
-     **Now you and other people can clone this repository and contribute changes.**
+???+ question "Exercise: clone course project and create folders (3 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
@@ -184,7 +159,7 @@ git pull
     - The result shall look something like this:
 
      ```console
-     git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
+     git clone https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024.git
      ```
 
     **What just happened?**
@@ -192,26 +167,187 @@ git pull
     - `cd` the new directory that was created
     - list the files with `ls`
 
-    **Create a folder with your name**
+### Make changes locally
+
+!!! admonition "Steps add changes to the git history"
+
+    - make changes locally
+    - add and commit to the git version control
+        - your changes become part of the git history
+    - git push
+        - your changes are synced to GitHub
+    - git pull
+        - changes on GitHub are synced to you existinglocal git
+        - good procedure to do this step before you start changes
+
+???- exercise "Create a folder with your name (locally)"
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
-
-    - Git needs files to be able to commit.
-
+    - git cannot use emptly directories
     - Therefore **create an empty README file in the created folder**
-
+    - ``cd <your-name>``
     - ``touch README.md``
+    - go back to the root of the repo (not necessary)
+    - cd ../..
 
-    - git add/commit this file
+#### Staging files (in git)
 
-    **Push your changes to the GitHub repo**
+!!! info "track the changes"
 
-    - ``git push``
+    - On GitHub:
+        - Commit every file individually
+    - In local git:
+        - Stage one or more (related) files and commit them together
+    
 
-    **When everyone are done pull the latest changes to the local git repo**
+!!! info "Git Cheat sheet"
 
-    - ``git pull``
+    ```console
+    git add     # add/stage file(s)
+    git commit  # commit staged file(s)
+    git status  # see what is going on
+    git log     # see history
+    git push
+    git pull
+    ```
+
+???- exercise "Add/stage file"
+
+    - First check the status!
+
+    ```console
+    $ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+    
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            learners/bclaremar/
+    
+    nothing added to commit but untracked files present (use "git add" to track)
+    
+    ```
+
+    - There are untracked in the repository (directory).
+    - You want to **add the files** (focus the camera) to the list of files tracked by Git.
+    - Git does not track any files automatically and you need make a conscious decision to add a file.
+    - Let's do what Git hints at and add the files:
+
+    ```console
+    $ git add .    # < -- "." means all files
+    $ git status
+
+    On branch master
+    Your branch is up to date with 'origin/master'.
+    
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            new file:   learners/bclaremar/README.md
+    ```
+
+    Now this change is *staged* and ready to be committed.
+
+
+### Commit
+
+- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
+- BUT only what we have added to the "staging" area!
+
+Let us now commit the change to the repository:
+
+???- exercise "Commit"
+
+    ```console
+    $ git commit -m "add personal folder"
+
+    [master 5914ad7] add personal folders
+     1 file changed, 0 insertions(+), 0 deletions(-)
+     create mode 100644 learners/bclaremar/README.md
+    ```
+
+    - Right after we query the status to get this useful command into our muscle memory:
+
+    ```console
+    $ git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 1 commit.
+      (use "git push" to publish your local commits)
+    
+    nothing to commit, working tree clean
+    ```
+
+    What does the `-m` flag mean? Let us check the help page for that command:
+
+    ```console
+    git help commit
+    ```
+
+    - You should see a very long help page as the tool is very versatile (press q to quit).
+        - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+        - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+        - Note that help pages also work when you don't have a network connection!
+
+**Alternative commits**
+
+- You can also omit the ``-m`` option and a text editor will open.
+- The first line will be your commit message.
+- You can add other lines to add some more detailed info about your changes.
+
+!!! tip "Writing useful commit messages"
+
+    [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
+
+
+### Upload to GitHub
+
+!!! example "Demo or Type-along"
+
+
+    - Make sure that you are **logged into GitHub**.
+
+    <figure markdown="span">
+    ![New repo](../img/New_repo.png){ width="500" }
+    </figure>
+
+
+    - To create a repository we either click the green button "New" (top right corner).
+
+    - Or if you see your profile page, there is a "+" menu (top right corner).
+
+
+    ![New top-right](../img/new-top-right.png){ width=60% }
+
+    ---
+
+    - On this page choose a project name, e.g. ``planets-<username>``
+
+        - Add your name there so there are no clashes when/if you collaborate and fork other repositories
+        - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
+
+    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
+    - and **NO Licence**
+
+    ![New repo ](../img/New_repo_formalisms.png)
+
+    - Press "**Create repository**"
+
+    ![Create and push](../img/created_push.PNG)
+
+    - Choose **SSH**
+    - Copy-paste the code for "**…or push an existing repository from the command line**"
+    - Go to **local git terminal** and go to the **git project you started above**
+    - Paste the code
+
+    - Did it work??
+    - Reload the GitHub page and see the fiels present locally is also present there.
+
+    **Done!**
+
+- **Let's view the license!**
+- There is pre-written text for the different types.
+- More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
+
 
 !!! info "Working on GitHub"
 
@@ -228,6 +364,10 @@ git pull
 !!! note "See also"
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+
+
+
+
 
 ### Concluding remarks
 
@@ -299,6 +439,3 @@ git pull
     - A repository can have one or multiple remotes (we will revisit these later).
     - A remote (GitHub) in this case serves as a full backup of your work.
     - Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.
-
-
-   
