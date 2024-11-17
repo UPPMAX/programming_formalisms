@@ -617,7 +617,7 @@ A brief history of the development of UML and other modeling languages which pri
 
 plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its cross-platform integration and its integration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use some sort of modeling software, a complete modeling software allows for at least forward engineering from models to code. There are of course great commercial versions but also some decent free ones.
 draw.io
-[Papyrus](https://www.eclipse.org/papyrus/)
+[Papyrus](https://eclipse.dev/papyrus/)
 
 [*Markdown Diagrams*](https://github.com/marcozaccari/markdown-diagrams-browser-extension) is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
 

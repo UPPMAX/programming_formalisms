@@ -169,20 +169,27 @@ due to more time for theoretical things. On the other hand,
 as this is a given, I should be able to make my exercises
 use the project more...
 
-Instead of dicussing CI, I will put it on the project itself,
+Instead of discussing CI, I will put it on the project itself,
 so the learners can feel what it does.
 
-- [ ] Put CI in project
-- [ ] Testing framework
-- [ ] Testing in a team ?
-- [ ] Testing indeterminate functions
+- [x] Put CI in project
+- [x] TDD
+- [x] Put TDD example code in project
+- [x] Use testing framework in code
+- [x] Testing framework
+- [SKIP] Testing in a team ?
+- [SKIP] Testing indeterminate functions
 - [ ] Class design ?
 - [ ] Has-a relationship ?
 - [ ] Built-in data structures
 - [ ] Expressive data types
-- [ ] Implement the project as a package
+- [x] Create package in CI script
+- [x] Implement the project as a package
 - [ ] optimisation misconceptions ?
 - [ ] big-O ?
 - [ ] run-time speed profile ?
+
+Shall I directly use a testing framework in TDD?
+
 
 

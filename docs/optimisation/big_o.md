@@ -1,3 +1,10 @@
+---
+tags:
+  - Big-O
+  - Big O
+  - scalability
+---
+
 # Big-O
 
 !!!- info "Learning objectives"

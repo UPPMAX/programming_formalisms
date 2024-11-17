@@ -1,3 +1,10 @@
+---
+tags:
+  - git
+  - basic workflow
+  - workflow with branches
+---
+
 # git
 
 ## git basic workflow

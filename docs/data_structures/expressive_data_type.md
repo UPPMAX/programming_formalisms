@@ -1,3 +1,9 @@
+---
+tags:
+  - data type
+  - expressive
+---
+
 # Expressive data types
 
 !!!- info "Learning objectives"

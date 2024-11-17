@@ -1,4 +1,13 @@
-# Runtime speed profile
+---
+tags:
+  - speed
+  - runtime
+  - run-time
+  - profile
+  - profiling
+---
+
+# Runtime speed profiles
 
 !!!- info "Learning objectives"
 

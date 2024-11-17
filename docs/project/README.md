@@ -1,3 +1,8 @@
+---
+tags:
+  - project
+---
+
 # Project
 
 In this course, we work together on a project.
@@ -23,12 +28,11 @@ can be found [here](projects.md).
 - [Team roles](team_roles.md)
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
-- [Dream design](dream_design.md)
-- Add CI
-- Do a big-O analysis
-- Speed-optimize code
+- [Add Continuous integration](../testing/continuous_integration.md)
+- [Do a big-O analysis](../optimization/big_o.md)
+- [Get a runtime speed profile](../optimization/runtime_speed_profiles.md)
 - Refactor design
 - Refactor code
 - Code deployment
 - Add documentation
-- Bundle code in package
+- [Bundle code in package](../package/README.md)

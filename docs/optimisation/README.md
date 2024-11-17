@@ -1,3 +1,9 @@
+---
+tags:
+  - optimization
+  - optimisation
+---
+
 # Optimisation
 
 !!!- info "Learning objectives"
@@ -33,16 +39,6 @@ We discuss:
 - Prefer changing big-O over micro-optimizations (but see first point!)
 
 Agree yes/no?
-
-## Course material
-
-<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
-
-Description                                                 |PDF                              |QMD
-------------------------------------------------------------|---------------------------------|------------------------------------
-[Optimisation lecture](optimisation_lecture/README.md)      |[here](optimisation_lecture.pdf) |[here](optimisation_lecture/optimisation_lecture.qmd)
-
-<!-- markdownlint-enable MD013 -->
 
 ## Links
 

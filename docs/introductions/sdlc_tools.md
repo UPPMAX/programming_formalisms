@@ -4,40 +4,28 @@
 
     - What are the key concepts and steps in the SDLC
     - What are the tools for a project?
-
-
+    
 !!! info "Content"
 
     - We will have an introduction to some SDLC key features
     - We will get some theory of project tools and thinking.
 
-
 !!! info "Learning objectives of 'SDLC tools'"
 
     - Compare and contrast various software development tools and justify their relevance to specific development tasks.
 
-!!! note "Instructor notes"
+!!!- note "Instructor notes"
 
     Prerequisites are:
 
     - Understanding the Software development Life Cycle
 
 
-    Lesson Plan: **FIX**
+    Lesson Plan:
 
     - **Total** 30 min
     - Theory 20
     - Discussions 10 min
-
-!!! info "TOC"
-
-    - Review SDLC steps
-    - Planning: Analysis and design
-    - Testing
-    - Source/version control
-    - Collaboration
-    - Reproducibility and sharing
-    - Documentation
 
 ---
 
@@ -58,10 +46,11 @@ flowchart
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
 !!! warning
+
     - Error is spreading
-    - small mistakes in the beginning will have large impact on the end result.
+    - Small mistakes in the beginning will have large impact on the end result.
         - e.g. bugs, architecture limiting extensions
-    - large costs economically and timely
+    - Large costs economically and timely
 
 ## Other Models
 
@@ -74,6 +63,7 @@ flowchart
     - Test-driven development
 
 !!! info "Conclusion"
+
     - Each team has unique requirements
     - Don’t be afraid of trial and error
     - More info in [Software Development Lifecycle tomorrow](sdlc.md)
@@ -113,20 +103,20 @@ flowchart
     - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
     - It prepares you to build the real thing to reduce any potential risk of failure. "
 
-
 !!! note
+
     - Planning step is to ...
         - get an overview of the project/program.
         - help planning writing the code
         - identify parts needed
         - (risk analysis)
     - Can be divided into analysis and design
-        - **Analysis** part is to state the problem and define inputs and outputs
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
             - graphical tools like UML
             - text
             - if object-oriented programming: **objects**
-        - **Design** phase to find out the specific algorithms needed
-            - pseudocode+UML
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or pseudocode
             - if object-oriented programming: **classes**
             - if functional programming: **functions/modules**
 
@@ -179,23 +169,18 @@ flowchart TD
 ```
 
 !!! admonition "We will in the course use"
+
     - Sequence
     - Activity/algorithm flowchart
     - Class diagrams
 
+!!! note "See also"
+
+    - [Learn UML with mermaid](../misc/uml_with_mermaid.md)
+
 #### Sequence
 
 ```mermaid
-sequenceDiagram
-    Alice ->>+Bob: Authentication Request
-    Bob-->>-Alice: Authentication Response
-    Alice->>+Bob: Another authentication Request
-    Bob-->>-Alice: Another authentication Response
-```
-
-Mermaid code
-
-```
 sequenceDiagram
     Alice ->>+Bob: Authentication Request
     Bob-->>-Alice: Authentication Response
@@ -213,16 +198,7 @@ classDiagram
     Car *-- Wheel : have 4
 ```
 
-Mermaid code
-
-```
-classDiagram
-    Driver o-- Car : owns
-    Car *-- Wheel : have 4
-```
-
-
-#### Activity
+#### Activity/algorithm
 
 A flowchart that shows the process and its correlating decisions,
 including an **algorithm**  or a business process.
@@ -234,95 +210,25 @@ flowchart TD
   is_installed --> |no| process_sub[process only sequence and activity diagrams]
 ```
 
-Mermaid code
-
-```
-flowchart TD
-  is_installed{Graphviz installed?}
-  is_installed --> |yes| process_all[process all diagrams]
-  is_installed --> |no| process_sub[process only sequence and activity diagrams]
-```
-
-#### Algorithm flowchart
-
-```mermaid
-flowchart TD
-  condition{Is something true?}
-  condition --> |yes| is_true[Do action 1]
-  condition --> |no| is_false[Do action 2]
-```
-
-Mermaid code
-
-```
-flowchart TD
-  condition{Is something true?}
-  condition --> |yes| is_true[Do action 1]
-  condition --> |no| is_false[Do action 2]
-```
-
-!!! info "shape of boxes etc in flowchart and state diagrams "
-
-    - initial state (small circle)
-        - ``[*]``
-    - end state (small solid-filled circle)
-        - ``[*]``
-    - state (rectangle)
-        - ``A["text"]``
-    - activity (rounded recatngle)
-        - ``A("text")``
-    - choice (diamond)
-        - ``A{"text"}``
-    - arrow
-        - ``-->``
-
-    - Other syntax: <https://mermaid.js.org/ecosystem/tutorials.html>
-
-### Pseudocode
-
-- Pseudocode does not have syntax rules of any particular language
-    - no systematic standard form.
-- Some borrow style and syntax from some conventional programming language
-    - like Fortran, Pascal, BASIC, C, C++, Java, Lisp, and ALGOL.
-- Variable declarations are typically omitted.
-- Function calls and blocks of code, such as code contained within a loop, are often replaced by a one-line natural language sentence.
-
-**Example**
-
-```code
-  algorithm ford-fulkerson is
-    input: Graph G with flow capacity c,
-           source node s,
-           sink node t
-    output: Flow f such that f is maximal from s to t
-
-    (Note that f(u,v) is the flow from node u to node v, and c(u,v) is the flow capacity from node u to node v)
-
-    for each edge (u, v) in GE do
-        f(u, v) ← 0
-        f(v, u) ← 0
-
-    while there exists a path p from s to t in the residual network Gf do
-        let cf be the flow capacity of the residual network Gf
-        cf(p) ← min{cf(u, v) | (u, v) in p}
-        for each edge (u, v) in p do
-            f(u, v) ←  f(u, v) + cf(p)
-            f(v, u) ← −f(u, v)
-
-    return f
-```
-
-- Depending on the writer, pseudocode may therefore vary widely in style,
-    - from a near-exact imitation of a real programming language at one extreme
-    - to a description approaching formatted prose at the other.
-
 !!! note "See also"
 
     - Diagrams will be covered on
         - Monday and Tuesday during part of the [Project start with analysis and design](../project_start/analysis_design.md) and [Design paradigms](../design_develop/class_design.md)
         - Thursday during [Modular programming](../modularity/modular.md)
 
-# Testing
+### Pseudocode
+
+- Pseudocode does not have syntax rules of any particular language
+    - no systematic standard form.
+- Depending on the writer, pseudocode may therefore vary widely in style,
+    - from a near-exact imitation of a real programming language at one extreme
+    - to a description approaching formatted prose at the other.
+
+!!! note "See also"
+
+    - Example of [pseudocode](../extra_bc/pseudocode.md)
+
+## Testing
 
 Does it work for all legal input data sets??
 
@@ -347,7 +253,7 @@ flowchart TD
 
 !!! note "See also"
 
-    - More about testing day 3.
+    - More about testing day 2.
     - [Test-driven development(TDD)](../tdd/README.md)
     - [Testing lecture](../testing/README.md)
 
@@ -388,8 +294,10 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 - Someone has given you access to a repository online and **you want to contribute** to it.
 - Quite easy to make a **copy and send a change back**.
+
     1. get repository, make a change locally, and send the change directly back.
     2. make a "pull request" that allows a review.
+
 - Once we know how code review works:
     - we will be able to propose changes to repositories of others
     - review changes submitted by external contributors.
@@ -418,13 +326,14 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 - [Extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html)
 
 !!! objectives
+
     - [More about reproducibility](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html) aims to
-       - Get a short overview of recording dependencies
-       - Get short intro to tools:
-           - Pip and PyPI
-           - Conda
-           - Environments
-           - Tools for other languages than Python
+        - Get a short overview of recording dependencies
+        - Get short intro to tools:
+            - Pip and PyPI
+            - Conda
+            - Environments
+            - Tools for other languages than Python
 
 - We will develop our code in a virtual environment with the python tool ``venv``
 
@@ -446,19 +355,20 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 !!! admonition "FAIR"
 
     **The current buzzword for data management**
+    
     - You may be asked about it in, for example, making data management plans for grants:
 
     - **F**indable
         - Will anyone else know that your data exists?
         - Solutions: put it in a standard repository, or at least a description of the data. Get a digital object identifier (DOI).
     - **A**ccessible
-         - Once someone knows that the data exists, can they get it?
-         - Usually solved by being in a repository, but for non-open data, may require more procedures.
+        - Once someone knows that the data exists, can they get it?
+        - Usually solved by being in a repository, but for non-open data, may require more procedures.
     - **I**nter-operable
-         - Is your data in a format that can be used by others, like csv instead of PDF?
-         - Or better than csv. Example: 5-star open data
+        - Is your data in a format that can be used by others, like csv instead of PDF?
+        - Or better than csv. Example: 5-star open data
     - **R**eusable
-         - Is there a license allowing others to re-use?
+        - Is there a license allowing others to re-use?
 
 !!! info "See also"
 
@@ -491,7 +401,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - get into thinking about dependencies and solutions
         - get into choosing license, citation and DOI
 
-# Documentation
+## Documentation
 
 !!! admonition "Documentation comes in different forms"
 
@@ -510,16 +420,15 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 **There is no one size fits all**: often for small projects a `README.md` or
 `README.rst` can be enough (more about these formats later).
 
-
 !!! objectives
-     - [Documentation part 1](../project_start/startup.md#introduction-to-documentation) aims to:
-         - introduce motivation for documentation
-         - get tips for in-code documentation
-         - get tips for README files
-     - [Documentation part 2](../deployment/documentation.md) aims to:
-         - get tips for README files
-         - get tips for full documentation and tutorials
 
+    - [Documentation part 1](../project_start/startup.md#introduction-to-documentation) aims to:
+        - introduce motivation for documentation
+        - get tips for in-code documentation
+        - get tips for README files
+    - [Documentation part 2](../deployment/documentation.md) aims to:
+        - get tips for README files
+    - get tips for full documentation and tutorials
 
 !!! Goal
 
@@ -542,15 +451,16 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ## Summary of SDLC tools
 
-
 !!! Keypoints
 
     - Software development is both series of steps:
+    
         1. Requirements
         2. Analysis and design
         3. Development
         4. Test
         5. Deployment and maintenance
+        
     - ... and iteration of these
     - Planning for reproducibility, modularity and documentation should be started in the beginning
     - Tools for the developer

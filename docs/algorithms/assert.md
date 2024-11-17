@@ -1,3 +1,17 @@
+---
+tags:
+  - assert
+  - debug
+  - test
+  - check
+  - programmer
+  - develop
+  - dev
+  - self
+  - yourself
+  - documentation
+---
+
 # `assert`
 
 !!!- info "Learning objectives"
@@ -93,7 +107,8 @@ The developer (you!) has indicated clearly that the function,
 for now, expects to take two DNA sequences.
 The `# TODO` is signalling clearly that this will be changed in the
 future.
-Use `assert` to specifify assumption on the input of a function [Stroustrup, 1997][McConnell, 2004a]`.
+Use `assert` to specifify assumption on the input of a function
+`[Stroustrup, 1997][McConnell, 2004a]`.
 
 !!! note
 
@@ -117,8 +132,8 @@ as they should. The resulting DNA sequences may have incorrect content,
 which likely is to be checked someplace else. But checking for the
 sequences to be of equal length may help as a first quick
 test to find bugs.
-Use `assert` to specifify assumption on the output of a function [Stroustrup, 1997][McConnell, 2004a]`.
-
+Use `assert` to specifify assumption on the output of a function
+`[Stroustrup, 1997][McConnell, 2004a]`.
 
 Superior to documentation, as it cannot be ignored.
 

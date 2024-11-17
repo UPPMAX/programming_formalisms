@@ -35,50 +35,16 @@
     - Theory 20
     - Discussions 10 min
 
-!!! note "TOC"
-
-    - A test project: Type-along on starting a project
-        - REASON: have tested this step
-
-    - test project ()
-        - code file
-            - git init
-            - add and commit
-        - you can also start a directory and do git init
-        - Intro documentation
-            - order your files
-        - README
-            - license
-        - git diff
-        - Start with the steps related to the project (Type-along)
-            - Git locally with config and cloning
-    - mkdir user
-        - work in user/
-
-
-!!! note "Think about:"
-
-    - structure of the files and folders for the project
-    - documentation already
-
-
-!!! note
-
-- Many projects/scripts start as something for personal use, but expands to be distributed.
-- Let's start in that end and be prepared.
-- The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
-
 ## Before we continue we need to configure Git
 
-!!! Attention
+!!! attention
 
     - Start your terminal of choice
 
-!!! note "Pre-requirements"
+!!!- note "Did you set up git and GitHub?"
 
     - **Git and GitHub should be configured prior to the course**
-        - Test: ``ssh -T git@github.com``
-        - Output should be something like this: ``Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.``
+shell access.``
     - Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
     - Students should be familiar with using a **text editor** on their system.
     - We hope also that you have already done these steps:
@@ -132,13 +98,15 @@
 
 ## Start with course project
 
-- We heave already prepared a bit
+- We have already prepared a bit.
 
 ### View the project we will work with
 
 ???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
-    
-    - Look at the file tree!
+
+    - Click on a folder or file in the file explorer.
+    - This enables the file "Expand file tree" button to the left of the repo name.
+    - Click on that and look at the file tree!
     - View README.md
     - View Code of conduct
     - View License
@@ -146,15 +114,13 @@
     
 ### Clone the course project
 
-**Now you and other people can clone this repository and contribute changes.**
-
-???+ question "Exercise: clone course project and create folders (3 min)"
+???- question "Exercise: clone course project and create folders (3 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
     - ``mkdir Programming_formalisms``
     - ``cd Programming_formalisms``
-    - In GitHub, locate the **Code** button, select **SSH** and click the *copy* symbol to the right
+    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
     - Back in your terminal type ``git clone`` followed by pasting the copied text.
     - The result shall look something like this:
 
@@ -180,7 +146,7 @@
         - changes on GitHub are synced to you existinglocal git
         - good procedure to do this step before you start changes
 
-???- exercise "Create a folder with your name (locally)"
+???- question "Exercise: Create a folder with your name (locally)"
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
@@ -191,7 +157,7 @@
     - go back to the root of the repo (not necessary)
     - cd ../..
 
-#### Staging files (in git)
+### Stage files (in git)
 
 !!! info "track the changes"
 
@@ -200,7 +166,6 @@
     - In local git:
         - Stage one or more (related) files and commit them together
     
-
 !!! info "Git Cheat sheet"
 
     ```console
@@ -212,7 +177,7 @@
     git pull
     ```
 
-???- exercise "Add/stage file"
+???- question "Exercise: "Add/stage file"
 
     - First check the status!
 
@@ -246,8 +211,7 @@
             new file:   learners/bclaremar/README.md
     ```
 
-    Now this change is *staged* and ready to be committed.
-
+    - Now this change is _staged_ and ready to be committed.
 
 ### Commit
 
@@ -256,7 +220,7 @@
 
 Let us now commit the change to the repository:
 
-???- exercise "Commit"
+???- question "Exercise: Commit"
 
     ```console
     $ git commit -m "add personal folder"
@@ -298,56 +262,24 @@ Let us now commit the change to the repository:
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-
 ### Upload to GitHub
 
-!!! example "Demo or Type-along"
+- In previous path we got:
 
+```console
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+   (use "git push" to publish your local commits)
 
-    - Make sure that you are **logged into GitHub**.
+nothing to commit, working tree clean
+```
 
-    <figure markdown="span">
-    ![New repo](../img/New_repo.png){ width="500" }
-    </figure>
+???- question "Exercise: Let's push back to GitHub
 
-
-    - To create a repository we either click the green button "New" (top right corner).
-
-    - Or if you see your profile page, there is a "+" menu (top right corner).
-
-
-    ![New top-right](../img/new-top-right.png){ width=60% }
-
-    ---
-
-    - On this page choose a project name, e.g. ``planets-<username>``
-
-        - Add your name there so there are no clashes when/if you collaborate and fork other repositories
-        - Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"
-
-    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
-    - and **NO Licence**
-
-    ![New repo ](../img/New_repo_formalisms.png)
-
-    - Press "**Create repository**"
-
-    ![Create and push](../img/created_push.PNG)
-
-    - Choose **SSH**
-    - Copy-paste the code for "**…or push an existing repository from the command line**"
-    - Go to **local git terminal** and go to the **git project you started above**
-    - Paste the code
-
-    - Did it work??
-    - Reload the GitHub page and see the fiels present locally is also present there.
-
-    **Done!**
-
-- **Let's view the license!**
-- There is pre-written text for the different types.
-- More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
-
+     ```git
+     git push
+     ```
 
 !!! info "Working on GitHub"
 
@@ -365,20 +297,15 @@ Let us now commit the change to the repository:
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
-
-
-
-
 ### Concluding remarks
 
 - We will work more with the project repo after lunch and the rest of the week
     - Code
     - Documentation
-    - Releases
-    
+
+- Get started with documentation
 - Before that we will cover starting git project from existing project with no version control.
 - Get a personal github project
-- Get started with documentation
 
 ## Intro to documentation
 
@@ -404,7 +331,7 @@ Let us now commit the change to the repository:
 
     - **Different projects should have separate folders**
 
-    - ReadMe file
+    - README file
     - Data  (version controlled)(.gitignore)
     - Processed data intermediate
     - (Manuscript)
@@ -418,6 +345,12 @@ Let us now commit the change to the repository:
 
 ## Start a Git/GitHub repo from existing project
 
+!!! note
+
+    - Many projects/scripts start as something for personal use, but expands to be distributed.
+    - Let's start in that end and be prepared.
+    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+
 !!! info "Principle"
 
     - Let's say you have some code you have started to work with
@@ -428,7 +361,159 @@ Let us now commit the change to the repository:
     - stage and commit
     - upload to github
 
+### Initial code base
+
+- Let's say you have some code you have started to work with
+
+- Choose one of the following
+
+???- question "Exercise A: Start project from one of your existing projects"
+
+    - Just use an existing programming project you have today
+    - use it in the follwong steps.
+    
+???- question "Exercise B: Start the test project"
+
+    - Make a ``test_project`` directory in a good place (like a ``Programming formalisms`` course folder)
+    - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
+
+    ```python
+    # We just want some output from a simple program
+    print('Hello world!')
+    ```
+    
+### Initiate a project
+
+???- question "Exercise: Initiate the project"
+
+    - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
+    - run ``git init``
+    - make sure that there is a ``.git`` directory created
+        - you have to show hidden files, in bash terminal with ``ls -a``
+
+    - Now you have a git repo called ``test_project``
+    - check with the command: ``git status``
+    - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
+
+### Add/Commit
+
+- So far, there is no content. We have to manually add the content to the repo.
+
+???- question "Exercise: Add and commit the content"
+
+    - Add and Commit your changes
+    
+    ```console
+    git add
+    git commit -m 'first commit'
+    ```
+    
+    - Look and understand at the output of the following commands
+
+    ```console
+    git status
+    git log
+    git log --stat
+    git log --oneline
+    ```
+
+### Upload to GitHub
+
+???- question "Exercise: Follow the steps below"
+
+    - Make sure that you are **logged into GitHub**.
+
+    <figure markdown="span">
+    ![New repo](../i/New_repo.png){ width="500" }
+    </figure>
+
+
+    - To create a repository we either click the green button "New" (top right corner).
+
+    - Or if you see your profile page, there is a "+" menu (top right corner).
+
+    ![New top-right](../img/new-top-right.png){ width=60% }
+
+    ---
+
+    - On this page choose a project name, e.g. ``test_project``
+
+    - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
+
+    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
+    - and **NO Licence**
+
+    ![New repo](../img/New_repo_formalisms.png)
+    > Example project
+    
+    - Press "**Create repository**"
+
+    ![Create and push](../img/created_push.PNG)
+
+    - Choose **html**
+    - Copy-paste the code for "**…or push an existing repository from the command line**"
+    - Go to **local git terminal** and go to the **git project you started above**
+    - Paste the code
+
+    - Did it work??
+    - Reload the GitHub page and see the fiels present locally is also present there.
+
+    **Done!**
+
+### What we did
+
+```mermaid
+graph TB
+
+P["Project idea"] -->|git init| Node2
+P["Project idea"] --> hello.py -->|git add| Node4
+Node4 --> |git commit| Node1
+Node2 --> |git push| Node5
+
+C[Uncommited changed hello.py] -->|commit button| R
+Node5 --> |"git pull (from local git)"| Node2
+R --> |"git pull (from local git)"| Node1
+R <--> Node5
+       subgraph "Local Git"
+        Node2[project]
+        Node1[hello.py]
+        Node1 <--> Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[hello.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[hello.py]
+        end
+
+```
+
 ## Summary
+
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+    - &#9744; Planning
+        - UML
+        - Pseudocode
+    - &#9744; Testing
+        - Different levels
+        - We don't do this today!
+    - &#9744; Collaboration
+        - GitHub
+    - &#9745; Sharing
+        - &#9745; open science
+        - &#9744; citation
+        - &#9745; licensing
+    - &#9744; Documentation
+
 
 !!! Goal
 

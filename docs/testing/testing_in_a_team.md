@@ -1,3 +1,11 @@
+---
+tags:
+  - Test
+  - Testing
+  - Team
+  - Collaborative
+---
+
 # Testing in a team
 
 !!!- info "Learning objectives"

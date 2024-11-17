@@ -1,3 +1,9 @@
+---
+tags:
+  - class design
+  - architecture
+---
+
 # Class design
 
 !!!- info "Learning objectives"
@@ -38,14 +44,10 @@ classDiagram
 
 ## Writing a good class
 
-Q: What is a good class?
+A good class guarantees that its stored data is valid.
+For example, the class `DnaSequence`
+is probably a string of one or more A, C, G and T
 
-. . .
-
-A:
-
-- guarantees its stored data is valid,
-  e.g the class `DnaSequence` is probably a string of one or more A, C, G and T
 - the quality requirements for a function, among others a good interface
 - writing a design, documentation and tests all help
 

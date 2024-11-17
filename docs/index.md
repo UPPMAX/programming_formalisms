@@ -2,8 +2,6 @@
 template: home.html
 ---
 
-
-
 <br/>
 
 <figure markdown="span">
@@ -25,6 +23,7 @@ template: home.html
 <center>
 
 [Pre-requirements](prereqs.md){ .md-button .md-button--primary }
-[Intro ](intro.md){ .md-button .md-button--primary }
+[Intro](intro.md){ .md-button .md-button--primary }
+[Feedback](misc/feedback.md){ .md-button .md-button--primary }
 
 </center>

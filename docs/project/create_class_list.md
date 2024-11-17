@@ -1,3 +1,9 @@
+---
+tags:
+  - class
+  - class list
+---
+
 # Create a class list
 
 !!! note "Learning objectives"
