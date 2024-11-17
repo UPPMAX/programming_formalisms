@@ -503,9 +503,7 @@ Let us now commit the change to the repository:
 - There is pre-written text for the different types.
 - More info at [Licensing](extra_bc/sharing_deeper.mg#licensing)
 
- 
 ### What have we done?
-
 
 ```mermaid
 graph TB
