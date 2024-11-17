@@ -183,6 +183,9 @@ classDiagram
 - Is it easy to **make changes** in one part without ruin the rest of the program?
 - Does is use the resources **efficiently**?
 - Is is easy to use a part of the program in another program?
+- Can the program be run on different platforms
+    - like Linux/Max/Windows,
+    - like different hardware architectures (intel, amd, arm)
 
 !!! example "Discuss"
 
