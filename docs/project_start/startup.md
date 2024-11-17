@@ -35,8 +35,6 @@
     - Theory 20
     - Discussions 10 min
 
-
-
 ## Before we continue we need to configure Git
 
 !!! Attention
@@ -425,7 +423,7 @@ nothing to commit, working tree clean
     - Make sure that you are **logged into GitHub**.
 
     <figure markdown="span">
-    ![New repo](../img/New_repo.png){ width="500" }
+    ![New repo](../i/New_repo.png){ width="500" }
     </figure>
 
 
