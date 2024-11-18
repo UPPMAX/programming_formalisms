@@ -155,6 +155,7 @@ know and you'll be assigned the role if (still) vacant.
 
 - Issue manager
 - Product owner
+- Requirements engineer
 - Software architect
 - Data manager
 - Lead developer

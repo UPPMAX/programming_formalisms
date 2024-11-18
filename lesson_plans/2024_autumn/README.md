@@ -227,7 +227,7 @@ This means I cannot help them.
   - [x] Add hint: How to test a function returns a value?
   - [x] Add hint: How to test a function does not return a value?
   - [x] Add hint: How to test if an exception is raised?
-- [ ] Check layout of pages
+- [x] Check layout of pages
 - [ ] Practice TDD
 - [ ] Make video?
 - [ ] Write evaluation questions

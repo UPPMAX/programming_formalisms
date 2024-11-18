@@ -187,17 +187,16 @@ def my_function(x):
 Below are some TDD exercise,
 with the goal of practicing TDD.
 
+Work in the `src/learners` folder and create a file named
+after you, e.g. `sven.py`.
+
 If you use R and it would help, at [the 'Videos' subsection](#videos),
 you can find videos of doing the same in R. After seeing
 such a video, try to write the Python code (i.e. do not stick with
 writing R, how annoying this may feel).
 
 If you feel comfortable enough with TDD,
-you are encouraged to develop code for the learners' project instead.
-However, the learners' project uses a formal testing framework,
-so read up about it at
-[the session on using a formal testing framework](../testing/testing_framework.md)
-first.
+move to the next session.
 
 ### Exercise 1: `is_zero`
 

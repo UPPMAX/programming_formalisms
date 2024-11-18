@@ -63,6 +63,10 @@ the time you spend debugging.
 
 ## About assumptions
 
+> Assert liberally to document internal assumptions and invariants
+>
+> `[Sutter & Alexandrescu, 2004]`, chapter 68.
+
 While coding, we have assumptions.
 Take, for example, this code:
 
@@ -89,6 +93,8 @@ Assert liberally to document assumptions
 `[Sutter & Alexandrescu, 2004][Stroustrup, 1997][McConnell, 2004a]`
 `[Liberty, 2001][Lakos, 1996][Stroustrup, 2013a]`,
 even if you think something should never occur `[McConnell, 2004b]`.
+
+### Assertions in debug and release mode
 
 Python scripts can be run in debug mode or release mode:
 
@@ -119,8 +125,10 @@ How to run script   |`python my_script.py`|`python -O my_script.py`
 Behavior of `assert`|Active               |Ignored
 Runtime speed       |Lower                |Unaffected
 
-Also, `assert` can be used as a stub,
-to signal work that needs to be done.
+### Using assertions as a stub
+
+`assert` can be used as a stub,
+to signal that work that needs to be done.
 For example, here is a function that aligns any amount of DNA sequences:
 
 ```python
@@ -141,8 +149,11 @@ Use `assert` to specifify assumption on the input of a function
 
     [Specifify](https://www.urbandictionary.com/define.php?term=specifify): When you have to further define what you are talking about to further explain yourself.
 
-Lastly, `assert` can be used to check if a function was correct
-to some extent.
+### Using assertions to check a function's return value
+
+Lastly, `assert` can be used to quick check
+to check if a function return a not-too-crazy value.
+
 For example, here is a function that aligns two DNA sequences:
 
 ```python
@@ -161,15 +172,6 @@ sequences to be of equal length may help as a first quick
 test to find bugs.
 Use `assert` to specifify assumption on the output of a function
 `[Stroustrup, 1997][McConnell, 2004a]`.
-
-Superior to documentation, as it cannot be ignored.
-
-> Assert liberally to document internal assumptions and invariants
->
-> @sutter2004cpp chapter 68.
-
-## `assert` to document assumptions a developer makes
-
 
 ## Exercises
 
