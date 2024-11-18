@@ -45,7 +45,7 @@ evolve before arriving as valid stakeholder requirements.**
 
 !!!+ info "Commonly used categories of requirements"
 
-    | Requirement ID | Requirement Description | Risk type | Risk | Risk probability | Risk severity | Risk value(Probaility x Severity) | Acceptance Criteria|	Test Cases |
+    | Requirement ID | Requirement Description | Risk type | Risk | Risk probability | Risk severity | Risk value(Probaility x Severity) | Acceptance Criteria| Test Cases |
 
 ???+ exercise "Needs determination"
 
@@ -61,7 +61,8 @@ evolve before arriving as valid stakeholder requirements.**
     Analyze the project brief and make 5 short statements about the software
 
 ## Risk analysis
-Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements. 
+
+Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements.
 One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
 
 !!! hint It is common is to dived it in 5 severity categories and 5 probability levels then establishing a table as below to asses which needs are the most important to address.
@@ -174,5 +175,4 @@ One type of risk assessment is the FMEA Failure modes and effects analysis which
 ???- info "Requirements matrix to Feature list"
 
     Using the Requirements and risk matrix we can design a feature list these can be tracked using issues or project tab in Git or in a separate document the feature list describes how to solve a requirement in plain text english and with flowcharts
-
 

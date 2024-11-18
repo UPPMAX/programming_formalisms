@@ -177,7 +177,7 @@ Before doing the exercises:
 The exercise, to be done as a pair:
 
 - Of the learners' project, pick/create an issue as simple as possible,
-  e.g. writing the minimal code for a class in the design document 
+  e.g. writing the minimal code for a class in the design document
 - Write the minimal code of your class together.
   Share code by `push`ing it.
 
