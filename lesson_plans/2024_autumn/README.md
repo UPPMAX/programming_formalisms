@@ -209,7 +209,12 @@ make those statements sound useful.
 
 I have no idea what learners are expected to do.
 This means I cannot help them.
-Maybe 
 
+## Prepera for 2024-10-19
 
+- [x] Reflect on learners' Retrospect
+- [ ] Check if schedules match  
+  - [x] Fixed
+- [ ] Check on learners' Retrospect
+- 
 
