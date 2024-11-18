@@ -45,12 +45,9 @@
 
     - Start your terminal of choice
 
-!!!- note "Did you set up git and GitHub?"
+???- note "Did you set up git and GitHub?"
 
     - **Git and GitHub should be configured prior to the course**
-shell access.``
-    - Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.
-    - Students should be familiar with using a **text editor** on their system.
     - We hope also that you have already done these steps:
 
     ```console
