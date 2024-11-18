@@ -22,7 +22,7 @@
     - Evaluate the importance of engaging with course content and identify
       strategies to maintain interest and motivation throughout the week.
 
-!!!- note "Instructor notes"
+???- note "Instructor notes"
 
     Prerequisites are:
 
@@ -43,7 +43,7 @@
     - Theory 10
     - Discussions 10 min
 
-!!!- info "TOC"
+???- info "TOC"
 
     - What is software?
         - software concepts
@@ -183,12 +183,15 @@ classDiagram
 - Is it easy to **make changes** in one part without ruin the rest of the program?
 - Does is use the resources **efficiently**?
 - Is is easy to use a part of the program in another program?
+- Can the program be run on different platforms
+    - like Linux/Max/Windows,
+    - like different hardware architectures (intel, amd, arm)
 
 !!! example "Discuss"
 
     - Do you want to add something?
 
-??? question "How can we make it easier to get good software and usefulness?
+??? question "How can we make it easier to get good software and usefulness?"
 
 ## Software Development Life Cycle (SDLC)
 

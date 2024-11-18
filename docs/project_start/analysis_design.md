@@ -41,6 +41,11 @@ evolve before arriving as valid stakeholder requirements.**
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
 
+!!! hint A typical requirements document can be made in a spreadsheet program of your choice
+
+!!!+ info "Commonly used categories of requirements"
+
+    | Requirement ID | Requirement Description | Risk type | Risk | Risk probability | Risk severity | Risk value(Probaility x Severity) | Acceptance Criteria|	Test Cases |
 
 ???+ exercise "Needs determination"
 
@@ -55,9 +60,119 @@ evolve before arriving as valid stakeholder requirements.**
 
     Analyze the project brief and make 5 short statements about the software
 
-### Risk analysis
+## Risk analysis
+Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements. 
+One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
 
-!!! info "Requirements matrix to Feature list"
+!!! hint It is common is to dived it in 5 severity categories and 5 probability levels then establishing a table as below to asses which needs are the most important to address.
 
-    Using the Requirements and risk matrix we can design a feature list these can be tracked using issues in Git or in a separate document the feature list describes how to solve a requirement in plain text english and with flowcharts
+<table>
+ <tr>
+    <th>Probability/Severity</th>
+    <th>S1</th>
+    <th>S2</th>
+    <th>S3</th>
+    <th>S4</th>
+    <th>S5</th>
+  </tr>
+  <tr>
+    <td>P5</td>
+    <td style="background-color: DARKGOLDENROD">
+      <p align=center>5</p>Supplementary issue
+    </td>
+    <td style="background-color: ORANGE">
+      <p align=center>10</p>Issue
+    </td>
+    <td style="background-color: RED">
+      <p align=center>15</p>Unacceptable
+    </td>
+    <td style="background-color: RED">
+      <p align=center>20</p>Unacceptable
+    </td>
+    <td style="background-color: RED">
+      <p align=center>25</p>Unacceptable
+    </td>
+
+  </tr>
+  <tr>
+    <td>P4</td>
+    <td style="background-color: GREEN">
+     <p align=center>4</p>Acceptable
+    </td>
+    <td style="background-color: DARKGOLDENROD">
+      <p align=center>8</p>Supplementary issue
+    </td>
+    <td style="background-color: ORANGE">
+      <p align=center>12</p>Issue
+    </td>
+    <td style="background-color: RED">
+    <p align=center>16</p>Unacceptable
+    </td>
+    <td style="background-color: RED">
+    <p align=center>20</p>Unacceptable
+    </td>
+
+  </tr>
+  <tr>
+    <td>P3</td>
+   <td style="background-color: GREEN">
+   <p align=center>3</p>Acceptable
+   </td>
+    <td style="background-color: DARKGOLDENROD">
+    <p align=center>6</p>Supplementary issue
+    </td>
+    <td style="background-color: DARKGOLDENROD">
+      <p align=center>9</p>Supplementary issue
+    </td>
+    <td style="background-color: ORANGE">
+      <p align=center>12</p>Issue
+    </td>
+    <td style="background-color: RED">
+    <p align=center>15</p>Unacceptable
+    </td>
+  </tr>
+  <tr>
+    <td>P2</td>
+    <td style="background-color: GREEN">
+    <p align=center>2</p>Acceptable
+    </td>
+    <td style="background-color: GREEN">
+    <p align=center>4</p>Acceptable
+    </td>
+    <td style="background-color: DARKGOLDENROD">
+    <p align=center>6</p>Supplementary issue
+    </td>
+    <td style="background-color: DARKGOLDENROD">
+    <p align=center>8</p>Supplementary issue
+    </td>
+    <td style="background-color: ORANGE">
+    <p align=center>10</p>issue
+    </td>
+  </tr>
+  <tr>
+    <td>P1</td>
+    <td style="background-color: GREEN">
+    <p align=center>1</p>Acceptable
+    </td>
+    <td style="background-color: GREEN">
+    <p align=center>2</p>Acceptable
+    </td>
+    <td style="background-color: GREEN">
+    <p align=center>3</p>Acceptable
+    </td>
+    <td style="background-color: GREEN">
+    <p align=center>4</p>Acceptable
+    </td>
+    <td style="background-color: DARKGOLDENROD">
+    <p align=center>5</p>Supplementary issue
+    </td>
+  </tr>
+</table>
+
+!!! hint focus on the risks  that are issues or unacceptable first. Then develop towards risks that are acceptable
+
+???- info "Requirements matrix to Feature list"
+
+    Using the Requirements and risk matrix we can design a feature list these can be tracked using issues or project tab in Git or in a separate document the feature list describes how to solve a requirement in plain text english and with flowcharts
+
 

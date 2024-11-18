@@ -17,7 +17,7 @@
     - compare and contrast various software development tools.
     - justify their relevance to specific development tasks.
 
-!!!- note "Instructor notes"
+???- note "Instructor notes"
 
     Prerequisites are:
 

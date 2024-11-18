@@ -187,7 +187,7 @@ There is likely to be some code in the learners project
 that assumptions that are either invisible
 or written down as comments.
 
-Search for one accasion where this happens
+Search for one occasion where this happens
 and put an `assert` statements there.
 
 If you find a bug that way, create an issue to have someone
