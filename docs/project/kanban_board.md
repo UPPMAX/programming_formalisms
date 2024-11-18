@@ -18,6 +18,36 @@ tags:
     - Use a kanban board to communicate what you are working on now
     - Put your issue(s) in the kanban board, in the right column(s)
 
+???- question "For teachers"
+
+    Prerequisites are:
+
+    - .
+
+    Teaching goals are:
+
+    - .
+
+    Prior:
+
+    - .
+
+    Lesson plans:
+
+    ```mermaid
+    gantt
+      title Lesson plan pair programming 1
+      dateFormat X
+      axisFormat %s
+      Introduction : intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 15s
+      Feedback 1: feedback_1, after exercise_1, 5s
+      Theory 2: theory_2, after feedback_1, 5s
+      Exercise 2: crit, exercise_2, after theory_2, 10s
+      Exercise 2 after the break: crit, after exercise_2, 5s
+    ```
+
 ![A well-used kanban board](kanban_board.png)
 
 A good team member communicates.
