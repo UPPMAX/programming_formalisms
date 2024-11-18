@@ -207,7 +207,9 @@ These statements are debatable.
 Only references to the literature will
 make those statements sound useful.
 
-
+I have no idea what learners are expected to do.
+This means I cannot help them.
+Maybe 
 
 
 
