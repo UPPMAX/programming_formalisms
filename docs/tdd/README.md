@@ -38,6 +38,7 @@ tags:
     - How do you grow/develop your code?
     - How do others grow/develop their code?
     - Why would it be important to have a formal way to grow/develop your code?
+    - When have you tested your code enough? Is it ever enough?
 
     Lesson plan:
 
@@ -124,6 +125,63 @@ We will discuss formal testing later, but now note that
 testing is not about finding bugs `[Thomas & Hunt, 2019, tip 66]`,
 instead a test is the first user of your code `[Thomas & Hunt, 2019, tip 67]`.
 
+## Express yourself in Python
+
+This course does not teach Python.
+To save time, here are English statements and their
+Python (more-or-less) equivalent.
+
+### I assume `my_function` to have documentation
+
+```python
+assert my_function.__doc__
+```
+
+### My function has documentation
+
+```python
+def my_function():
+    """This is documentation"""
+```
+
+### I assume `my_function` to return a value, e.g. `42`
+
+```python
+assert my_function() == 42
+```
+
+### My function returns a number, e.g. `42:
+
+```python
+def my_function():
+    return 42
+```
+
+### My function returns not a number, e.g. not `42:
+
+```python
+assert not my_function() == 42
+```
+
+### I assume `my_function` raises an exception when given nonsense input
+
+```python
+has_thrown = False
+try:
+    my_function("nonsense")
+except:
+    has_thrown = True
+assert has_thrown
+```
+
+### My function raises an exception when the input `x` is not integer
+
+```python
+def my_function(x):
+    if not isinstance(x, int):
+        raise TypeError("'x' must be of type int")
+```
+
 ## Exercises
 
 Below are some TDD exercise,
@@ -146,7 +204,8 @@ first.
 - If you are more used to R than Python,
   consider watching [this video, 'R and TDD: is_one'](https://youtu.be/IPGfW4lrxOc)
 - Watch [this video called 'TDD in Python 'is_zero' and upload to GitHub'](https://youtu.be/VddlrNOeodg?si=Zwt7En_CQMjsMYOy&t=184)
-  (only the TDD part) until you understand the thought process of TDD
+  (only the TDD part, from 3:04-13:44)
+  until you understand the thought process of TDD
 - If you want to know more about `assert`, you can peek at
   [the session about 'assert'](../algorithms/assert.md)
 - Develop the function `is_zero` (see specifications below)
@@ -195,7 +254,7 @@ first.
 
 Develop a function called `is_even`:
 
-???- note "`is_even`"
+???+ note "`is_even`"
 
     - Function name: `is_even`
     - Output:
@@ -244,7 +303,7 @@ Develop a function called `is_even`:
 
 Develop a function called `is_odd`:
 
-???- note "`is_odd`"
+???+ note "`is_odd`"
 
     - Function name: `is_odd`
     - Output:

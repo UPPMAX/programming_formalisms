@@ -213,8 +213,21 @@ This means I cannot help them.
 ## Prepera for 2024-10-19
 
 - [x] Reflect on learners' Retrospect
-- [ ] Check if schedules match  
+- [x] Check if schedules match
+  - [They differ](https://github.com/UPPMAX/programming_formalisms/issues/85)!
   - [x] Fixed
-- [ ] Check on learners' Retrospect
-- 
-
+- [x] Check Lars' lesson
+  - There is no class list being made!
+- [x] Prepare Priors
+- [x] Schedule time
+- [x] Check earlier reflection
+- [x] Check with learners' Retrospect again
+- [x] TDD: add:
+  - [x] Add hint: How to test if there is documentation?
+  - [x] Add hint: How to test a function returns a value?
+  - [x] Add hint: How to test a function does not return a value?
+  - [x] Add hint: How to test if an exception is raised?
+- [ ] Check layout of pages
+- [ ] Practice TDD
+- [ ] Make video?
+- [ ] Write evaluation questions

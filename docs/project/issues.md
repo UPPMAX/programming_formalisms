@@ -19,17 +19,14 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
+    - How to keep track of what needs to be done in a project?
+    - How to signal to the team what needs to be done?
+    - How to prevent team members from working on the same thing?
+    - How would you define what an issue is?
+    - How do you call the webpage where a list of issues can be seen?
+
 
     Lesson plans:
 

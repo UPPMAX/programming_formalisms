@@ -23,17 +23,11 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
+    - How to divide up the labor in a project?
+    - How does the ultimate team look like?
+    - What roles does a team have?
 
     Lesson plans:
 

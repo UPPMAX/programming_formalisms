@@ -27,17 +27,14 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
+    - Somewhere in you code, you know something, e.g. `x` is positive,
+      and the rest of the code needs that to be true to be able to function.
+      Should, and if yes, how, this knowledge be written down?
+    - What synonymn does 'to assert' have in English?
+    - Have you ever used asserts? In R, the equivalent is `testthat::expect_`
+      
 
     Lesson plans:
 
