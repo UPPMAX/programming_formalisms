@@ -80,9 +80,14 @@ Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
 ## Our project
 
-In our project we use the following rule:
+In our project we use the following rules:
 
-> Always work on an issue, create an issue if needed
+- Always work on an issue, create an issue if needed
+- Issues are always based on the requirements document
+- First part of an issue can be to add it to the
+  requirements document. 
+  Sure, the product owner is usually is charge of this, but in this
+  project, everyone is a bit of a product owner :-)
 
 ## Exercises
 

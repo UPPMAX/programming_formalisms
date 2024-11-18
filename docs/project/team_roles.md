@@ -69,6 +69,9 @@ He/she cares about correctness, but not about the actual implementation.
 
 - refines the requirements document
 
+In this project, everyone is a bit of a project owner:
+we have no time to follow all procedures strictly.
+
 ## Issue manager
 
 An issue manager:
