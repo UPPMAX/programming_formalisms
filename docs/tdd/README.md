@@ -20,7 +20,7 @@ tags:
     Video durations:
 
     - Lecture: 4:48
-    - `is_zero`: 10:44
+    - `is_zero`: 8:19
 
     Prerequisites are:
 
@@ -207,8 +207,8 @@ move to the next session.
 
 - If you are more used to R than Python,
   consider watching [this video, 'R and TDD: is_one'](https://youtu.be/IPGfW4lrxOc)
-- Watch [this video called 'TDD in Python 'is_zero' and upload to GitHub'](https://youtu.be/VddlrNOeodg?si=Zwt7En_CQMjsMYOy&t=184)
-  (only the TDD part, from 3:04-13:44)
+- Watch [this video called 
+  'Programming Formalisms, session TDD, exercise 1: `is_zero`'](https://youtu.be/RGJpzMXDi6Q)
   until you understand the thought process of TDD
 - If you want to know more about `assert`, you can peek at
   [the session about 'assert'](../algorithms/assert.md)
