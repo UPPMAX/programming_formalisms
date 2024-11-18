@@ -3,7 +3,11 @@
 ## Requirements
 
 !!! info "Why do we need to specify requirements?"
-    According to Merlin Dorfman (article reproduced in chap 1 requirements engineering) the results from the software crisis in the 1960s gave rise to the following problem *"In nearly every software project which fails to meet performance and cost goals,requirements inadequacies play a major and expensive role in project failure"*
+
+    According to Merlin Dorfman (article reproduced in chapter 1 requirements
+    engineering) the results from the software crisis in the 1960s gave rise
+    to the following problem *"In nearly every software project which fails
+    to meet performance and cost goals,requirements inadequacies play a major and expensive role in project failure"*
 
 This is very much still the effect today in the production of scientific software (My personal opinion)
 
@@ -12,19 +16,20 @@ Richard Harwell et. al states
 systems engineer, manager, or anyone else involved in
 the transition Division into product, bas his or her own
 definition of a requirement, With the rare exception, all
-arc applicable and meaningful"* [1]
+are applicable and meaningful"*
 
 -- "What is a Requirement?" by R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp. Nat'I Council Systems Eng.,
 1993, pp. 17-24.
 
 What guidance can we then gleen in what a Requirement is the above mentioned paper asses that
- *"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"*
+*"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"*
 
 According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
 evolve before arriving as valid stakeholder requirements.**
 
-!!!- "info What is a well formed Requirement" (ISO/IEC/IEEE 29148:2018)
+!!!- info "What is a well formed Requirement" (ISO/IEC/IEEE 29148:2018)?"
+
     A well-formed specified requirement contains one or more of the following:
         — it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
         — it is qualified by measurable conditions;
@@ -41,7 +46,9 @@ evolve before arriving as valid stakeholder requirements.**
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
 
-!!! hint A typical requirements document can be made in a spreadsheet program of your choice
+!!! hint "How does a typical requirements document look like?"
+
+    A typical requirements document can be made in a spreadsheet program of your choice
 
 !!!+ info "Commonly used categories of requirements"
 
@@ -49,7 +56,8 @@ evolve before arriving as valid stakeholder requirements.**
 
 ???+ exercise "Needs determination"
 
-    We now look at the Course project and start setting upp our first development diagrams and design documents for the course project.
+    We now look at the Course project and start setting upp our first
+    development diagrams and design documents for the course project.
 
 ???- info "Hint!"
 
@@ -62,10 +70,18 @@ evolve before arriving as valid stakeholder requirements.**
 
 ## Risk analysis
 
-Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements.
-One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
+Risk analysis is central in some systems like RDD(Risk Driven Development),
+FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk.
+Where Business risk relates to direct requirements while technical risks
+are from derived requirements.
+One type of risk assessment is the FMEA Failure modes and effects analysis
+which calculate the risk in Probability of occurrence x severity of risk.
 
-!!! hint It is common is to dived it in 5 severity categories and 5 probability levels then establishing a table as below to asses which needs are the most important to address.
+!!! hint "How big should the risk analysis matrix be?"
+
+    It is common is to divide it in 5 severity categories and 5 probability
+    levels then establishing a table as below to asses which needs are the
+    most important to address.
 
 <table>
  <tr>
@@ -170,9 +186,15 @@ One type of risk assessment is the FMEA Failure modes and effects analysis which
   </tr>
 </table>
 
-!!! hint focus on the risks  that are issues or unacceptable first. Then develop towards risks that are acceptable
+!!! hint "Where to focus?"
+
+    Focus on the risks  that are issues or unacceptable first.
+    Then develop towards risks that are acceptable
 
 ???- info "Requirements matrix to Feature list"
 
-    Using the Requirements and risk matrix we can design a feature list these can be tracked using issues or project tab in Git or in a separate document the feature list describes how to solve a requirement in plain text english and with flowcharts
+    Using the Requirements and risk matrix we can design a feature list these
+    can be tracked using issues or project tab in Git or in a separate
+    document the feature list describes how to solve a requirement in plain
+    text english and with flowcharts
 
