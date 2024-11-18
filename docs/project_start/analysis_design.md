@@ -69,8 +69,10 @@ evolve before arriving as valid stakeholder requirements.**
 
 ???- info "Hint!"
 
-    Start by looking at the example design document ![Design Process Document](../../projects/example_project/DPD_unassisted.md) How we design
-    ![Requirement document](../../projects/example_project/DPUA_requirementspecification.md)
+    Start by looking at the example design document
+    at [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/design/DPD_unassisted.md).
+    how to design design
+    [Requirement document](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/design/DPUA_requirementspecification.md)
 
 ???- info "Hint!"
 
