@@ -17,6 +17,11 @@ tags:
 
 ???- question "For teachers"
 
+    Video durations:
+
+    - Lecture: 4:48
+    - `is_zero`: 10:44
+
     Prerequisites are:
 
     - Learners have practiced pair programming
