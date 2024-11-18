@@ -59,7 +59,7 @@ evolve before arriving as valid stakeholder requirements.**
 Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements. 
 One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
 
-!!! hint A common is to dived it in 5 severity categories and 5 probability levels
+!!! hint A common is to dived it in 5 severity categories and 5 probability levels then establishing a table as below to asses which needs are the most important to adress.
 
 <table>
  <tr>
