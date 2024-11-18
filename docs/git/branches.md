@@ -289,8 +289,6 @@ gitGraph
     - We will add some lines to count with the effects from the gravity of Jupiter on Earth
 
 
-
-
 **show unstaged/uncommitted modifications**
 
 ???- question "Demo: modular code in branch"

@@ -150,14 +150,14 @@ def my_function():
 assert my_function() == 42
 ```
 
-### My function returns a number, e.g. `42:
+### My function returns a number, e.g. `42
 
 ```python
 def my_function():
     return 42
 ```
 
-### My function returns not a number, e.g. not `42:
+### My function returns not a number, e.g. not `42
 
 ```python
 assert not my_function() == 42
