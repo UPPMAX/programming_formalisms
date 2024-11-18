@@ -85,7 +85,7 @@ Tuesday  |11:00-15:40|Richel |[TDD](tdd/README.md), [assert](algorithms/assert.m
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md) & [github branches/merge](./git/contribute.md) & [contribute, social coding](./social_coding/social_coding.md)
-Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md), [function design](algorithms/function_design.md), [assert](algorithms/assert.md), [recursive functions](algorithms/recursive_algorithms.md)
+Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md), [function design](algorithms/function_design.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |Object-oriented design

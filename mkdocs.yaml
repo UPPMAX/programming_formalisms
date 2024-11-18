@@ -24,10 +24,13 @@ nav:
   - Tuesday:
     - Intro: tuesday_intro.md
     - Software Development Lifecycle: introductions/sdlc.md
-    - Testing overview: testing/README.md
-    - Using a formal testing framework: testing/testing_framework.md
-    - Testing indeterminate functions: testing/testing_indeterminate_functions.md
+    - Issues: project/issues.md
+    - Kanban board: project/kanban_board.md
+    - Team roles: project/team_roles.md
     - Test-driven development: tdd/README.md
+    - assert: algorithms/assert.md
+    - Using a formal testing framework: testing/testing_framework.md
+    - Continuous integration: testing/continuous_integration.md
     - Summary of day: tuesday_summary.md
   - Wednesday:
     - Intro: wednesday_intro.md
@@ -35,28 +38,21 @@ nav:
     - Merging and contributing with code review: git/contribute.md
     - Sharing and social coding: social_coding/social_coding.md
     - Pair programming: pair_programming/README.md
-    - Algorithms: algorithms/README.md
-    - Algorithms, function design: algorithms/function_design.md
-    - Algorithms, assert: algorithms/assert.md
-    - Algorithms, recursive algorithms: algorithms/recursive_algorithms.md
-    - Continuous integration: testing/continuous_integration.md
-    - Testing in a team: testing/testing_in_a_team.md
+    - Function design: algorithms/function_design.md
     - Summary of day: wednesday_summary.md
   - Thursday:
     - Intro: thursday_intro.md
-    - Data structures: data_structures/README.md
-    - Data structures, expressive data types: data_structures/expressive_data_type.md
-    - Data structures, a 'has-a' relation: data_structures/has_a_relation.md
-    - Data structures, class design: data_structures/class_design.md
-    - Class design: design_develop/class_design.md
+    - Class design: data_structures/class_design.md
+    - A 'has-a' relation: data_structures/has_a_relation.md
+    - Expressive data types: data_structures/expressive_data_type.md
     - Modular programming: modularity/modular.md
+    - Implement the project as a package: package/README.md
     - Summary of day: thursday_summary.md
   - Friday:
     - Intro: friday_intro.md
-    - Optimisation: optimisation/README.md
-    - Optimisation, misconceptions: optimisation/misconceptions.md
-    - Optimisation, big-O: optimisation/big_o.md
-    - Optimisation, runtime speed profiles: optimisation/runtime_speed_profiles.md
+    - Optimisation misconceptions: optimisation/misconceptions.md
+    - Big-O: optimisation/big_o.md
+    - Runtime speed profiles: optimisation/runtime_speed_profiles.md
     - Deploy: deployment/deploy.md
     - Documentation: deployment/documentation.md
     - Summary of day: friday_summary.md
