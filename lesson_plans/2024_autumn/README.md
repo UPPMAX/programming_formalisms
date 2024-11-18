@@ -228,6 +228,6 @@ This means I cannot help them.
   - [x] Add hint: How to test a function does not return a value?
   - [x] Add hint: How to test if an exception is raised?
 - [x] Check layout of pages
-- [ ] Practice TDD
-- [ ] Make video?
+- [x] Practice TDD
+- [x] Make video
 - [ ] Write evaluation questions
