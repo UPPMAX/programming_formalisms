@@ -107,7 +107,6 @@ We use it a lot in this course, because:
 - Together, write down a shared answer on the GitHub project repository
   with path `learners/[a teammember's name]/pair_programming.md`
 - Upload the file to the GitHub repo.
-  Use the GitHub web interface if pushing is a problem!
 
 Questions:
 
@@ -163,7 +162,7 @@ Questions:
     Yet, for teaching, working is groups has a high effect size `[Hattie, 2012]`,
     where the optimal group size is two `[Schwartz & Gurung, 2012]`.
 
-### Exercise 2: practice pair programming
+### Exercise 2: create a minimal class in the learners' project
 
 ???- info "Learning objectives"
 
@@ -177,14 +176,10 @@ Before doing the exercises:
 
 The exercise, to be done as a pair:
 
-- In the course's shared document, there is a list of classes
-  extracted from the design document. Assign yourselves to write a class together
-- Find the GitHub repository of a Programming Formalism student project
-  done in an earlier cohort. Find where the Python code for classes ended up.
-  Look for the Python code of the most simple class.
+- Of the learners' project, pick/create an issue as simple as possible,
+  e.g. writing the minimal code for a class in the design document 
 - Write the minimal code of your class together.
-  Share code by `push`ing it to the `main` branch.
-  'Minimal code' means only the name of the class, without any behavior!
+  Share code by `push`ing it.
 
 Reflect:
 
@@ -242,14 +237,15 @@ Reflect:
     of actual code. This is OK.
 
 
-### Exercise 3: practice pair programming again
+### Exercise 3: do an issue in the learners' project
 
 ???- info "Learning objectives"
 
     - Practice pair programming
     - Practice to convert class diagrams to real code
 
-- Do the previous exercise for another class, including the reflection
+- Do the previous exercise for an issue at the right skill level.
+  If there is no such issue, create one.
 
 Reflect additionally:
 
