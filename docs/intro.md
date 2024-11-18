@@ -84,7 +84,7 @@ Tuesday  |10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](pro
 Tuesday  |11:15-12:00|Richel |[TDD](tdd/README.md) (alone)
 Tuesday  |13:00-14:00|Richel |[TDD](tdd/README.md) (in pairs)
 Tuesday  |14:15-15:00|Richel |[assert](algorithms/assert.md), [formal testing framework](testing/testing_framework.md)
-Tuesday  |15:00-15:40|Richel |[CI](testing/continuous_integration.md)
+Tuesday  |15:00-15:40|Richel |[Continuous integration](testing/continuous_integration.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md) & [github branches/merge](./git/contribute.md) & [contribute, social coding](./social_coding/social_coding.md)

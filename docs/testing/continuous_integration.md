@@ -9,6 +9,7 @@ tags:
 !!!- info "Learning objectives"
 
     - Understand what continuous integration is
+    - I can fix an error given by at least one Continuous Integration script
 
 ???- question "For teachers"
 

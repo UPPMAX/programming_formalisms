@@ -230,4 +230,24 @@ This means I cannot help them.
 - [x] Check layout of pages
 - [x] Practice TDD
 - [x] Make video
-- [ ] Write evaluation questions
+- [x] Write evaluation questions
+
+Give you confidence levels of the following statements below:
+
+- I understand why issues are important
+- I can create, assign and close an issue
+- I understand why a kanban board is important
+- I can use a kanban board
+- I can name at least three roles that are present in a team
+- I understand why TDD is important
+- I can use TDD to develop functions
+- I understand why `assert` is important
+- I can debunk people saying that `assert` slows down code
+- I understand why `assert` statements must have no side effects
+- I understand that assert can be used to signal stubs
+- I understand the benefit of using a testing framework
+- I have written a test within a formal testing framework
+- I understand why continuous integration is important
+- I can fix an error given by at least one Continuous Integration script
+
+- [x] Share with Lars
