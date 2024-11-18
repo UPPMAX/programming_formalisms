@@ -50,9 +50,17 @@ evolve before arriving as valid stakeholder requirements.**
 
     A typical requirements document can be made in a spreadsheet program of your choice
 
-!!!+ info "Commonly used categories of requirements"
+!!! info "Commonly used categories of requirements"
 
-    | Requirement ID | Requirement Description | Risk type | Risk | Risk probability | Risk severity | Risk value(Probaility x Severity) | Acceptance Criteria| Test Cases |
+    - Requirement ID
+    - Requirement Description
+    - Risk type
+    - Risk
+    - Risk probability
+    - Risk severity
+    - Risk value(Probaility x Severity)
+    - Acceptance Criteria
+    - Test Cases
 
 ???+ exercise "Needs determination"
 
