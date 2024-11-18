@@ -80,9 +80,14 @@ Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
 ## Our project
 
-In our project we use the following rule:
+In our project we use the following rules:
 
-> Always work on an issue, create an issue if needed
+- Always work on an issue, create an issue if needed
+- Issues are always based on the requirements document
+- First part of an issue can be to add it to the
+  requirements document. 
+  Sure, the product owner is usually is charge of this, but in this
+  project, everyone is a bit of a product owner :-)
 
 ## Exercises
 
@@ -90,7 +95,8 @@ In our project we use the following rule:
 
 Do the following in our student project:
 
-- Create an issue. In the text, write why you create that issue and what needs
+- Create a test issue.
+  In the text, write why you create that issue and what needs
   to be done
 - Assign yourself to the issue
 - Close the issue. In the text, write why you close that issue
@@ -100,8 +106,8 @@ Do the following in our student project:
 For the learners' project:
 
 - create at least one issue for things that
-  you think need to be done. Assign yourself to one
-  issue
+  you think need to be done, based on the design document.
+  Assign yourself to one issue
 
 !!! note "Duplicates"
 

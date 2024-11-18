@@ -67,6 +67,16 @@ in writing a research paper.
 The product owner is the person that needs to be made happy.
 He/she cares about correctness, but not about the actual implementation.
 
+In this project, everyone is a bit of a project owner:
+we have no time to follow all procedures strictly.
+
+## Requirements engineer
+
+- refines the requirements document
+
+In this project, everyone is a bit of a requirements engineer:
+we have no time to follow all procedures strictly.
+
 ## Issue manager
 
 An issue manager:
@@ -92,6 +102,7 @@ A data manager:
 
 A lead developer:
 
+- makes the requirements document come true
 - end responsible for the whole team
 - likely to discuss progress with the product owner
 
