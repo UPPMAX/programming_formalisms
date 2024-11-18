@@ -191,5 +191,23 @@ so the learners can feel what it does.
 
 Shall I directly use a testing framework in TDD?
 
+## 2024-10-18
+
+Before teaching, my course material seems on schedule to me.
+
+At the teacher's coffee meeting, 
+I suggested to the relevant teacher to split up the group
+when teaching git, so that the git experts can do something at
+their skill level. We decided to see what happens.
+
+I wonder if we have an 'Open Door Syndrome': 'planning is good',
+'thinking is good, of course', 'you want reproducibility',
+'documentation is an important thing'.
+These statements are debatable.
+Only references to the literature will
+make those statements sound useful.
+
+
+
 
 
