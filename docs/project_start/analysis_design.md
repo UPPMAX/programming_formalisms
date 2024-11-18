@@ -60,7 +60,7 @@ evolve before arriving as valid stakeholder requirements.**
 
     Analyze the project brief and make 5 short statements about the software
 
-### Risk analysis
+## Risk analysis
 Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements. 
 One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
 
