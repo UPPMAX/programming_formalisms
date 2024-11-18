@@ -95,7 +95,8 @@ In our project we use the following rules:
 
 Do the following in our student project:
 
-- Create an issue. In the text, write why you create that issue and what needs
+- Create a test issue.
+  In the text, write why you create that issue and what needs
   to be done
 - Assign yourself to the issue
 - Close the issue. In the text, write why you close that issue
@@ -105,8 +106,8 @@ Do the following in our student project:
 For the learners' project:
 
 - create at least one issue for things that
-  you think need to be done. Assign yourself to one
-  issue
+  you think need to be done, based on the design document.
+  Assign yourself to one issue
 
 !!! note "Duplicates"
 
