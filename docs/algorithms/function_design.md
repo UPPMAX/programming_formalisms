@@ -37,7 +37,7 @@ Procedure            |A function that has no return type
 ```python
 def my_function(my_arguments):
     # ...
-    return my_return_type
+    return my_return_value
 ```
 
 ## Problem
