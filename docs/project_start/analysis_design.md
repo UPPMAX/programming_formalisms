@@ -56,7 +56,10 @@ evolve before arriving as valid stakeholder requirements.**
     Analyze the project brief and make 5 short statements about the software
 
 ### Risk analysis
-Risk analysis is central in some systems 
+Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements. 
+One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
+
+!!! hint A common is to dived it in 5 severity categories and 5 probability levels
 
 <table>
  <tr>
@@ -161,7 +164,9 @@ Risk analysis is central in some systems
   </tr>
 </table>
 
-!!! info "Requirements matrix to Feature list"
+!!! hint focus on the risks  that are issues or unacceptable first. Then develop towards risks that are acceptable
+
+???- info "Requirements matrix to Feature list"
 
     Using the Requirements and risk matrix we can design a feature list these can be tracked using issues or project tab in Git or in a separate document the feature list describes how to solve a requirement in plain text english and with flowcharts
 
