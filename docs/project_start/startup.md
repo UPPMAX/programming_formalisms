@@ -126,7 +126,7 @@
     - The result shall look something like this:
 
      ```console
-     git clone https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024.git
+     git clone git@github.com:programming-formalisms/programming_formalisms_project_autumn_2024.git
      ```
 
     **What just happened?**
