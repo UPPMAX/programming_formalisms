@@ -339,7 +339,7 @@ to indicate the second character) of which the characters
 in the two DNA sequences mismatch
 (it is `A` in the top one, `T` in the bottom one)?
 
-???- info "Why is this useful?"
+???- info "Why is this scientifically useful?"
 
     DNA changes over time. These changes are called mutations.
     On such mutation is a point mutation, which is when one letter changes.
@@ -480,7 +480,7 @@ AAACCCGGGTTT
 ATACC-GGGTTT
 ```
 
-???- info "Why is this useful?"
+???- info "Why is this scientifically useful?"
 
     DNA changes over time. These changes are called mutations.
     On such mutation is a deletion, which is when one letter disappears.
