@@ -41,6 +41,11 @@ evolve before arriving as valid stakeholder requirements.**
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
 
+!!! hint A typical requirements document can be made in a spreadsheet program of your choice
+
+!!!+ info "Commonly used categories of requirements"
+
+    | Requirement ID | Requirement Description | Risk type | Risk | Risk probability | Risk severity | Risk value(Probaility x Severity) | Acceptance Criteria|	Test Cases |
 
 ???+ exercise "Needs determination"
 
@@ -59,7 +64,7 @@ evolve before arriving as valid stakeholder requirements.**
 Risk analysis is central in some systems like RDD(Risk Driven Development), FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk. Where Business risk relates to direct requirements while technical risks are from derived requirements. 
 One type of risk assessment is the FMEA Failure modes and effects analysis which calculate the risk in Probability of occurrence x severity of risk
 
-!!! hint A common is to dived it in 5 severity categories and 5 probability levels then establishing a table as below to asses which needs are the most important to adress.
+!!! hint It is common is to dived it in 5 severity categories and 5 probability levels then establishing a table as below to asses which needs are the most important to address.
 
 <table>
  <tr>
