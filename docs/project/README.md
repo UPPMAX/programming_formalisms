@@ -15,7 +15,7 @@ some troubles. Later in the course, we learn how to avoid these troubles.
 Making the learners experience which problems are solved by
 using professional workflows is the reason of having one project.
 
-A worked-out example project can be found 
+A worked-out example project can be found
 [here](https://github.com/programming-formalisms/programming_formalisms_example_project).
 
 ## Exercises

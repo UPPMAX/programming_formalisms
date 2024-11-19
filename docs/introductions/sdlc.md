@@ -23,9 +23,9 @@
 ![The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license](../img/development_design/helix_legend-01.png)
 
 !!! info " In ISO 12207:2017 the following models are defined:"
-    > The “incremental development” model includes initial > planning, initial requirements analysis, initial 
+    > The “incremental development” model includes initial > planning, initial requirements analysis, initial
     architectural
-    definition, and initial validation, but allocates 
+    definition, and initial validation, but allocates
     design, implementation, verification (and sometimes delivery)
     activities to a series of stages, each of which provides a portion of the intended functionality. The approach
     provides for some flexibility to respond to inaccurate cost or schedule estimates by moving functionality to later
@@ -44,7 +44,7 @@
     “Agile” methods actually can be applied within a variety of models. While Agile methods are common in executing
     an evolutionary lifecycle model, they can be used in other lifecycle models at various stages. What the methods
     have in common is an emphasis on continuous inspection and collaboration in the rapid production of working
-    software in an environment where changes, including changes to requirements, are expected. 
+    software in an environment where changes, including changes to requirements, are expected.
     `[ISO 12207:2017]`
 
 !!! info "Planning or needs determination"
@@ -87,28 +87,31 @@ graph TD;
     class C,E,F,I orange;
     class D,G green;
 ```
+
 !!! info "Sneek peak at roles"
     - Project Manager
     - Requirements Engineer : A requirments enginer is responsilble for gathering and fromalising requirments and establishing and maintaining the Requirments Document
-    - Lead programmer 
+    - Lead programmer
 
 ## Exercises
+
  Further requirements analysis Risk assessment
  each group will work with about 7 requirements in the requirements document
  Each group will Make a copy of the document and work with it in their folder
  They will label it Requirements_BR_x.md
  so that the requirements engineer can collate the documents
- 
+
  For the fall 2024
- - Breakout room 1
+
+- Breakout room 1
     - R1.1 - R1.5
- - Breakout room 2
-    - R1.6 - R1.8.1 
- - Breakout room 3
+- Breakout room 2
+    - R1.6 - R1.8.1
+- Breakout room 3
     - R1.9 -R2
- - Breakout room 4
+- Breakout room 4
     -R2.1-R5
- - Breakout room 5
+- Breakout room 5
     - R6-R11  
 
 ???+ "Exercise 30 min"
@@ -122,25 +125,26 @@ graph TD;
 !!! info "Task for the Requirements engineer"
      collate the document into one document
 
-### Design    
-Once we know what we want we can start thinking on how. 
-in the design phase we commonly use Modeling Languages to illustrate concepts and architecture together with 
+### Design
+
+Once we know what we want we can start thinking on how.
+in the design phase we commonly use Modeling Languages to illustrate concepts and architecture together with
 pseudo code to describe algorithms in much the  
 same way as we use programming languages  
-during development . 
+during development .
 Unified Modeling Language UML, is one such modeling  
 language [UML web page](https://www.uml.org/)  
-here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU) 
-UML was generated to unify the big pobular object oriented modeling aproches of Booch (Booch Method superseeded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]` 
+here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
+UML was generated to unify the big pobular object oriented modeling aproches of Booch (Booch Method superseeded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
 
 When we design Object oriented our goal is to mimic the object of the real world which we the abstract into Classes
 
 
-### Development 
+### Development
 
- During Development we implement the design using programming languages and tequiches 
+ During Development we implement the design using programming languages and tequiches
 
-### Deployment 
+### Deployment
 
 This is when you package and publish your software, this can be as simple as making your Github repository open an public, here we need to think on which license to publish under etc.
 
@@ -153,6 +157,7 @@ Updates and revisions bug testing etc. Maintaining persistent links and download
 Often does not happen but the software is gradually left to die, esp for scientific software where a retierment plan is seldom established esp if the software is developed by a phd student or post-doc or other short term person part of the research group.
 
 ## Paradigms of Design
+
 ### Modular development/programming
 
 A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the concept of modules in a language that have support for objects but not for modules.
@@ -161,10 +166,10 @@ The principles of modular programming was introduced in the 1960s by Larry LeRoy
 [Code labs introduction to modular programming](https://codelabs.rocks/blog/detailed-guide-for-modular-programming-concept) state the following principles regarding modular programming:
 There are two types of module, *program control modules* which are purposely and only designed for controlling the flow of the program. This is usually where the main functionality of a program is defined. *Specific task modules* A module that carries the data transfer amid the initial module and other modules. Specific task modules carries the functionality of the program and have a set of predefined data transmission options:
 
-* no communication in with no communication out
-* no communication in with some communication out
-* some communication in with some communication out
-* some communication in with no communication out
+- no communication in with no communication out
+- no communication in with some communication out
+- some communication in with some communication out
+- some communication in with no communication out
 
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangeability over the design space.
 `[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software it has a good practice described.
@@ -180,7 +185,8 @@ An object is characterised by a number of operations and a state which remembers
 An object oriented model is comprised of a number of objects which are clearly delimited parts of the system.
 Objects also carry any association to other objects in their states. These relationships are categorised as either static or dynamic. Two objects with static relationships are associated but have no direct communication that is they know of each other but to not pass messages between each other.
 A dynamic object relationship on the other hand implies two or more objects that actually communicate with each other
-`[Stroustrup B. 1998]` 
+`[Stroustrup B. 1998]`
+
 ## Paradigms of Programming
 
 ### Structural programming
@@ -220,10 +226,10 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 ## References
 
-- `[Church 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941 
+- `[Church 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941
 - `[Edsger W. Dijkstra 1970]` Notes On Structured Programming ,T.H. - Report 70-WSK-03,Second edition April 1970
 - `[ISO 12207:2017]`
 - `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
 - `[Jones et.al 2001]`Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
-- `[Rumbaugh 1991]`, Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991 
+- `[Rumbaugh 1991]`, Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991
 -`[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
