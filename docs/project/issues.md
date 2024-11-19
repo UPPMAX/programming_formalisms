@@ -79,6 +79,33 @@ Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
 > The life cycle of a issue, from `[Bugzilla, 2009]`
 
+## Duplicates
+
+Sometimes, two issues describe the same problem.
+This is called a duplicate.
+Because duplicates are not uncommon,
+there is an issue label called `duplicate`.
+
+## Managing issues
+
+For a fresh project, there are many things to do.
+It is not uncommon to have an 'issue manager'
+that keeps an overview of all issues.
+
+## Issues with dependencies
+
+Sometimes issues depend on other issues.
+This is typically indicated with a `depends` issue label.
+The learners' project has it too.
+
+In the text write something like:
+
+```
+This issue dependends on #42
+```
+
+The hashtag (`#`) turns the `#42` into a link to issue 42.
+
 ## Issues based on requirements
 
 Some issues originate from the requirements documents, as shown below.
@@ -210,19 +237,6 @@ For the learners' project:
 - create at least one issue for things that
   you think need to be done, based on the design document.
   Assign yourself to one issue
-
-!!! note "Duplicates"
-
-    Sometimes, two issues describe the same problem.
-    This is called a duplicate.
-    Because duplicates are not uncommon,
-    there is an issue label called `duplicate`.
-
-!!! note "Managing issues"
-
-    For a fresh project, there are many things to do.
-    It is not uncommon to have an 'issue manager'
-    that keeps an overview of all issues.
 
 ## Discussion
 
