@@ -29,7 +29,7 @@
 
     - git basics
 
-    Lesson Plan: 
+    Lesson Plan:
 
     - **Total** 50 min
     - Theory 20
@@ -137,7 +137,7 @@ gitGraph
     Done!
 
     > - On your local computer:
-    >    - update the repository
+    >     - update the repository
 
     On your local computer, navigate to the folder of the shared project
     and update:
