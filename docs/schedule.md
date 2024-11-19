@@ -20,14 +20,16 @@ Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Tuesday  |09:00-10:00|Lars   |[Software development life cycle](./introductions/sdlc.md)
 Tuesday  |10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](project/kanban_board.md) and [team roles](project/team_roles.md)
-Tuesday  |11:15-12:00|Richel |[TDD](tdd/README.md) (alone)
-Tuesday  |13:00-14:00|Richel |[TDD](tdd/README.md) (in pairs)
-Tuesday  |14:15-15:00|Richel |[assert](algorithms/assert.md), [formal testing framework](testing/testing_framework.md)
-Tuesday  |15:00-15:40|Richel |[Continuous integration](testing/continuous_integration.md)
+Tuesday  |11:15-12:00|Richel |[assert](algorithms/assert.md), [TDD](tdd/README.md)
+Tuesday  |13:00-14:00|Richel |[TDD](tdd/README.md)
+Tuesday  |14:15-15:00|Richel |[TDD](tdd/README.md) 
+Tuesday  |15:00-15:40|Richel |[formal testing framework](testing/testing_framework.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md) & [github branches/merge](./git/contribute.md) & [contribute, social coding](./social_coding/social_coding.md)
-Wednesday|13:00-15:40|Richel |[Pair programming](pair_programming/README.md), [function design](algorithms/function_design.md)
+Wednesday|13:00-14:00|Richel |[Pair programming](pair_programming/README.md), [formal testing framework](testing/testing_framework.md)
+Wednesday|14:15-15:00|Richel |[Continuous integration](testing/continuous_integration.md)
+Wednesday|15:14-15:40|Richel |[Function design](algorithms/function_design.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |Object-oriented design
