@@ -36,21 +36,6 @@
     - Exercise 20
     - Discussions 10 min
 
-
-???- info "Table of content"
-
-    - Branching
-        - background
-        - workflows
-        - examples/demos
-        - discussion
-    - Merging
-        - background
-        - workflows
-        - conflicts?
-        - examples/demos
-        - discussion
-
 !!! info "References"
 
     - The [main git book](https://git-scm.com/book/en/v2)
@@ -146,7 +131,7 @@ gitGraph
     >   You may branch of from `main` or `develop` (if it exists).
     >   You may use the web interface (easiest!) or use the command line
 
-    ![](github_create_branch_annotated.png)
+    ![github_create_branch_annotated](github_create_branch_annotated.png)
 
     Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     Done!
@@ -157,7 +142,7 @@ gitGraph
     On your local computer, navigate to the folder of the shared project
     and update:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -166,7 +151,7 @@ gitGraph
 
     Switch to the new branch, for example, `richel`, by doing:
 
-    ```
+    ```git
     git switch richel
     ```
 
@@ -178,13 +163,13 @@ gitGraph
     To create a file under Linux (and maybe this works on other
     operating systems too), one can do:
 
-    ```
+    ```git
     touch learners/richel/richel_is_on_richel.txt
     ```
 
     After the change, commit these:
 
-    ```
+    ```git
     git add .
     git commit -m "Richel is on richel"
     ```
@@ -194,7 +179,7 @@ gitGraph
 
     Do:
 
-    ```
+    ```git
     git push
     ```
 
@@ -202,7 +187,7 @@ gitGraph
 
     If that does not work, do:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -211,7 +196,7 @@ gitGraph
 
     > - On GitHub, verify that your changes on your branch can be found online
 
-    ![](github_pushed_to_branch.png)
+    ![github_pushed_to_branch](github_pushed_to_branch.png)
 
     Make sure you look at the correct branch, as displayed at 1.
     Then your commit message shows up at 2.
@@ -221,22 +206,22 @@ gitGraph
 
     Switch to the main branch, for example, `main`, by doing:
 
-    ```
+    ```git
     git switch main
     ```
 
     > - Delete your branch (i.e. the one with the unique name).
     >   You may use the web interface (easiest!) or use the command line
 
-    [](github_view_branches_annotated.png)
+    ![github_view_branches_annotated](github_view_branches_annotated.png)
 
     Click on 'Branches', as shown in the image above.
 
-    ![](github_view_all_branches_annotated.png)
+    ![github_view_all_branches_annotated](github_view_all_branches_annotated.png)
 
     Click on garbage bin, as shown in the image above.
 
-    ![](github_view_all_branches_just_deleted_annotated.png)
+    ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
 
     The branch will now be deleted, as shown in the image above.
 
@@ -244,7 +229,7 @@ gitGraph
 
     Do:
 
-    ```
+    ```git
     git pull
     ```
 
