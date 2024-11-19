@@ -95,7 +95,7 @@ graph TD;
     class D,G green;
 ```
 
-!!! info "Sneek peak at roles"
+!!! info "Sneak peak at roles"
 
     - Project Manager
     - Requirements Engineer : A requirements engineer is responsible for 
@@ -152,13 +152,13 @@ during development .
 Unified Modeling Language UML, is one such modeling  
 language [UML web page](https://www.uml.org/)  
 here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
-UML was generated to unify the big pobular object oriented modeling aproches of Booch (Booch Method superseeded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
+UML was generated to unify the big popular object oriented modeling approaches of Booch (Booch Method superseded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
 
 When we design Object oriented our goal is to mimic the object of the real world which we the abstract into Classes
 
 ### Development
 
- During Development we implement the design using programming languages and tequiches
+ During Development we implement the design using programming languages and techniques.
 
 ### Deployment
 
@@ -168,9 +168,9 @@ This is when you package and publish your software, this can be as simple as mak
 
 Updates and revisions bug testing etc. Maintaining persistent links and download locations
 
-### Retiere
+### Retire
 
-Often does not happen but the software is gradually left to die, esp for scientific software where a retierment plan is seldom established esp if the software is developed by a phd student or post-doc or other short term person part of the research group.
+Often does not happen but the software is gradually left to die, esp for scientific software where a retirement plan is seldom established esp if the software is developed by a PhD student or post-doc or other short term person part of the research group.
 
 ## Paradigms of Design
 
@@ -188,7 +188,7 @@ There are two types of module, *program control modules* which are purposely and
 - some communication in with no communication out
 
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangeability over the design space.
-`[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software it has a good practice described.
+`[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software (agricultural sector) it has a good practice described.
 
 ### Object Orientation
 

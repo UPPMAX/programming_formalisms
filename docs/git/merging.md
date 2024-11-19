@@ -1,5 +1,61 @@
+# Merging
 
-## Merging
+!!!- info "Learning objectives"
+
+    - practice doing Pull Requests using the GitHub interface
+    - practice doing a code review
+    - practice fixing merge conflicts on GitHub
+    - practice merging branches using the command-line interface
+    - practice fixing merge conflicts on local computer,
+      using the command-line interface
+
+???- question "For teachers"
+
+    Teaching goals are:
+
+    - Learners have practiced doing Pull Requests using the GitHub interface
+    - Learners have practiced doing a code review
+    - Learners have practiced fixing merge conflicts on GitHub
+    - Learners have practiced merging branches using the command-line interface
+    - Learners have practiced fixing merge conflicts on local computer,
+      using the command-line interface
+
+
+    ```mermaid
+    gantt
+      title Lesson plan apply merge
+      dateFormat X
+      axisFormat %s
+      Introduction: intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 40s
+      Feedback 1: feedback_1, after exercise_1, 10s
+    ```
+
+    Prior questions:
+
+    - What does a merge do?
+    - What does a merge do?
+    - Do we need merging? When? Why?
+    - When does a merge give a merge conflict?
+    - Can a `git commit` result in a merge conflict? Why?
+    - Can a `git push` result in a merge conflict? Why?
+    - Can a `git pull` result in a merge conflict? Why?
+
+
+
+
+**We continue from last lesson**
+
+- Branches allow us to work independently.
+- Here we use branches to do so.
+
+- However, when we merge branches, it may result in a merge conflict.
+- A merge conflict occurs when ``git`` is unsure how to merge branches
+and asks a human for help.
+- Here we create merge conflicts on trivial code.
+
+## Example
 
 - It turned out that our experiment with XX was a good idea.
 - Our goal now is to merge modularity into main.
@@ -74,11 +130,14 @@
 
     - Now local Git and GitHub are in phase!
 
+
+
+
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
 !!!- info "Learning objectives"
 
-    - practice merging git branches without a merge conflict
+    - practice merging git branches **without** a merge conflict
 
 ```mermaid
 gitGraph
@@ -116,11 +175,11 @@ gitGraph
   or fix the merge conflict
 - On GitHub, the other person approves the Pull Request and merges
 
-### Extra exercise 3: practice merging `git` branches using the command-line
+### Extra exercise 2: practice merging `git` branches using the command-line
 
 !!!- info "Learning objectives"
 
-    - practice merging git branches without a merge conflict
+    - practice merging git branches **without** a merge conflict
 
 !!!- caution "Here we use the `main` branch for now"
 
@@ -278,7 +337,20 @@ gitGraph
 
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
 
-### Extra exercise 4: practice merge conflicts between branches using the command line
+## Example
+Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
+
+- License: Creative Commons Attribution 4.0 International
+    - Permits almost any use subject to providing credit and license notice.
+    - Frequently used for media assets and educational materials.
+    - The most common license for Open Access scientific publications.
+    - Not recommended for software.
+
+
+!!!- example "(Optional demo) Add to someone else's project"
+
+
+### Extra exercise 3: practice merge conflicts between branches using the command line
 
 !!!- info "Learning objectives"
 
