@@ -9,20 +9,21 @@ tags:
 !!!- info "Learning objectives"
 
     - Understand what continuous integration is
+    - I can fix an error given by at least one Continuous Integration script
 
 ???- question "For teachers"
 
-    Prerequisites are:
+    Priors:
 
-    - Learners have .
-
-    Teaching goals are:
-
-    - Learners .
-
-    Teaching form used:
-
-    - .
+    - Someone pushes code to `main` and the project breaks.
+      How can this be prevent?
+    - Someone pushes code to `main` that has a spelling mistake.
+      How can this be prevent?
+    - Someone pushes code to `main` that has untested code.
+      How can this be prevent?
+    - You want to measure the runtime speed of the project
+      in time, to see which changes cause a dip in performance.
+      How would you do this?
 
     Lesson plan:
 

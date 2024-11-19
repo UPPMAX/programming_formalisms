@@ -23,17 +23,11 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
+    - How to divide up the labor in a project?
+    - How does the ultimate team look like?
+    - What roles does a team have?
 
     Lesson plans:
 
@@ -161,6 +155,7 @@ know and you'll be assigned the role if (still) vacant.
 
 - Issue manager
 - Product owner
+- Requirements engineer
 - Software architect
 - Data manager
 - Lead developer

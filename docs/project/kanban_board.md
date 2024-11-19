@@ -20,17 +20,11 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
+    - How to signal what you are working on now?
+    - How would you define what a kanban board is?
+    - How does one use a kanban board?
 
     Lesson plans:
 

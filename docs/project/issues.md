@@ -19,17 +19,14 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
+    - How to keep track of what needs to be done in a project?
+    - How to signal to the team what needs to be done?
+    - How to prevent team members from working on the same thing?
+    - How would you define what an issue is?
+    - How do you call the webpage where a list of issues can be seen?
+
 
     Lesson plans:
 
@@ -85,7 +82,7 @@ In our project we use the following rules:
 - Always work on an issue, create an issue if needed
 - Issues are always based on the requirements document
 - First part of an issue can be to add it to the
-  requirements document. 
+  requirements document.
   Sure, the product owner is usually is charge of this, but in this
   project, everyone is a bit of a product owner :-)
 
