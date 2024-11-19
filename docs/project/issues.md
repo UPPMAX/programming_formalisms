@@ -75,6 +75,101 @@ Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
 > The life cycle of a issue, from `[Bugzilla, 2009]`
 
+## Issues based on requirements
+
+Some issues originate from the requirements documents.
+Some examples:
+
+!!! note "R1: Create testing parameter set"
+
+    The requirements documentation states:
+
+    Requirement ID | Requirement Description   | Acceptance Criteria                                  | Test Cases
+    ---------------|---------------------------|------------------------------------------------------|----------------------------------------------
+    R2             | Create testing parameters | A parameter set can be created to be used in testing |The test parameter set must be a parameter set
+
+    To do so, create a function called `create_test_parameters` in a file called `parameters.py`
+
+    The function needs no input arguments.
+
+    The function creates a parameter set with reasonably normal default settings.
+
+    The data type of the parameter set must be a class called `Parameters`, 
+    but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
+    of strings if this is not specified yet.
+
+    Note the related requirent R2: 'check that parameters are well-formed'
+
+!!! note "R2: check that parameters are well-formed"
+
+    The requirements documentation states:
+
+    Requirement ID | Requirement Description        | Acceptance Criteria                     | Test Cases
+    ---------------|--------------------------------|-----------------------------------------|----------------------------------------------
+    R2             | Can recognize valid parameters | A valid parameter set can be recognized |Parameters (such as R1) must be recognized as valid, others as invalid
+
+    To do so, create a function called `are_parameters` in a file called `parameters.py`
+
+    The function needs one argument, which is the value to determine
+    if it is a parameter set.
+
+    The function returns `True` if the value is indeed a
+    valid/well-formed/correct parameter set and returns `False` otherwise.
+
+    Note the related requirent R1: 'Create testing parameter set'
+
+!!! note "R3: Read parameters from file"
+
+    The requirements documentation states:
+
+    Requirement ID | Requirement Description                  | Acceptance Criteria                                        | Test Cases
+    ---------------|------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------
+    R3             | Read parameters from file                |Parameters can be supplied as a file                        |The simulation uses the same parameters as specified in a parameters file
+
+    To do so, create a function called `read_parameters` in a file called `parameters.py`
+
+    The function needs a filename as input and creates a [dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+    of parameter name to parameter values, such as `{'initial_number_of_bacteria': '1000', 'duration': '1000 timesteps'}`.
+
+    Create a test parameters file, e.g. `test_parameters.csv` to test that
+    the values read by `read_parameters` match those in the file.
+
+!!! note "R4: Create a test bacterium"
+
+    The requirements documentation states:
+
+    Requirement ID | Requirement Description                  | Acceptance Criteria                                        | Test Cases
+    ---------------|------------------------------------------|------------------------------------------------------------|--------------------------------------
+    R4             | Create a test bacterium                  | A bacterium can be created to be used in testing           |The test bacterium must be a bacterium
+
+    To do so, create a function called `create_test_bacterium` in a file called `bacterium.py`
+
+    The function needs no input arguments.
+
+    The function creates a bacterium with reasonably normal default settings.
+
+    The data type of the bacterium must be a class called `Bacterium`, 
+    but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
+    of strings if this is not specified yet.
+
+!!! note "R5: check that a bacteria is well-formed"
+
+    The requirements documentation states:
+
+    Requirement ID | Requirement Description        | Acceptance Criteria                            | Test Cases
+    ---------------|--------------------------------|------------------------------------------------|----------------------------------------------
+    R5             | Can recognize a bacterium      | A valid (in-memory) bacterium can be recognized|A bacterius (such as R4) must be recognized as valid, others as invalid
+
+    To do so, create a function called `is_bacterium` in a file called `bacterium.py`
+
+    The function needs one argument, which is the value to determine
+    if it is a bacterium.
+
+    The function returns `True` if the value is indeed a
+    valid/well-formed/correct bacterium and returns `False` otherwise.
+
+    Note the related requirent R4: 'Create a test bacterium'
+
 ## Our project
 
 In our project we use the following rules:
@@ -98,7 +193,7 @@ Do the following in our student project:
 - Assign yourself to the issue
 - Close the issue. In the text, write why you close that issue
 
-### Exercise 2: learners' project
+### Exercise 2: learners' project: create an issue
 
 For the learners' project:
 
