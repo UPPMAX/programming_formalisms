@@ -77,8 +77,14 @@ Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
 ## Issues based on requirements
 
-Some issues originate from the requirements documents.
-Some examples:
+Some issues originate from the requirements documents, as shown below.
+
+!!! note "In academia"
+
+    In academia, instead of using a formal requirements document,
+    you can use sentences from the 'Methods' section too.
+
+    Writing the 'Methods' section and issues goes hand-in-hand.
 
 !!! note "R1: Create testing parameter set"
 
