@@ -38,23 +38,28 @@
 - Can a `git pull` result in a merge conflict? Why?
 
 
-**We continue from last lesson**
+- ![Isolated tracks](../img/git-collaborative.svg)
 
-- Branches allow us to work independently.
-- Here we use branches to do so.
+
+
+## Workflow of merge
+
+- Once a feature is ready, switch to main!
+    - This is the **Branch** we want to **merge to**
+- you may want to double check with git branch 
+
+```git
+$ git switch main    # switch to main branch
+$ git branch           # check that we are on main branch
+$ git merge <feature branch>
+```
+
+## Merge conflicts
 
 - However, when we merge branches, it may result in a merge conflict.
 - A merge conflict occurs when ``git`` is unsure how to merge branches
 and asks a human for help.
 - Here we create merge conflicts on trivial code.
-
-## Example
-
-- It turned out that our experiment with XX was a good idea.
-- Our goal now is to merge modularity into main.
-
-![Isolated tracks](../img/git-collaborative.svg)
-
 
 !!! example "**Two** branches to be merged"
 
