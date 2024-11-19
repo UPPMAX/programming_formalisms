@@ -1,2 +1,2 @@
-# Introduction to Tuesday
+# Tuesday
 
