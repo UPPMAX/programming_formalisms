@@ -51,16 +51,76 @@
         - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
         - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
 
+**MERGE these with abve**
 
-## Review git graph in VS code
+!!!- info "Learning objectives"
 
-- Björn shows
+    - practice doing Pull Requests using the GitHub interface
+    - practice doing a code review
+    - practice fixing merge conflicts on GitHub
+    - practice merging branches using the command-line interface
+    - practice fixing merge conflicts on local computer,
+      using the command-line interface
 
+???- question "For teachers"
+
+    Teaching goals are:
+
+    - Learners have practiced doing Pull Requests using the GitHub interface
+    - Learners have practiced doing a code review
+    - Learners have practiced fixing merge conflicts on GitHub
+    - Learners have practiced merging branches using the command-line interface
+    - Learners have practiced fixing merge conflicts on local computer,
+      using the command-line interface
+
+
+    ```mermaid
+    gantt
+      title Lesson plan apply merge
+      dateFormat X
+      axisFormat %s
+      Introduction: intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 40s
+      Feedback 1: feedback_1, after exercise_1, 10s
+    ```
+
+    Prior questions:
+
+    - What does a merge do?
+    - What does a merge do?
+    - Do we need merging? When? Why?
+    - When does a merge give a merge conflict?
+    - Can a `git commit` result in a merge conflict? Why?
+    - Can a `git push` result in a merge conflict? Why?
+    - Can a `git pull` result in a merge conflict? Why?
+
+
+
+## Branches, merging, code reviews
+
+Branches allow us to work independently.
+Here we use branches to do so.
+
+However, when we merge branches, it may result in a merge conflict.
+A merge conflict occurs when git is unsure how to merge branches
+and asks a human for help.
+Here we create merge conflicts on trivial code.
+
+One can suggest to merge branches on GitHub,
+where it is called a Pull Request.
+For a Pull Request, a team member can be asked for a code review.
+Code reviews are useful for many reasons,
+among others the spread of knowledge.
+
+One can merge branches locally, using the command-line.
+This will bypass code review and that is OK.
+For example, merging develop to your topic branch
+does not need a code review.
 
 ## GitHub and new repos
 
 **Let's go back to GitHub and collaboration for now!**
-
 
 There are two more ways to create “copies” of repositories into your user space:
 
@@ -326,75 +386,7 @@ sharing screen:
     - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
-???- question "quiz"
 
-
-## Exercises
-
-# Apply merge
-
-!!!- info "Learning objectives"
-
-    - practice doing Pull Requests using the GitHub interface
-    - practice doing a code review
-    - practice fixing merge conflicts on GitHub
-    - practice merging branches using the command-line interface
-    - practice fixing merge conflicts on local computer,
-      using the command-line interface
-
-???- question "For teachers"
-
-    Teaching goals are:
-
-    - Learners have practiced doing Pull Requests using the GitHub interface
-    - Learners have practiced doing a code review
-    - Learners have practiced fixing merge conflicts on GitHub
-    - Learners have practiced merging branches using the command-line interface
-    - Learners have practiced fixing merge conflicts on local computer,
-      using the command-line interface
-
-
-    ```mermaid
-    gantt
-      title Lesson plan apply merge
-      dateFormat X
-      axisFormat %s
-      Introduction: intro, 0, 5s
-      Theory 1: theory_1, after intro, 5s
-      Exercise 1: crit, exercise_1, after theory_1, 40s
-      Feedback 1: feedback_1, after exercise_1, 10s
-    ```
-
-    Prior questions:
-
-    - What does a merge do?
-    - What does a merge do?
-    - Do we need merging? When? Why?
-    - When does a merge give a merge conflict?
-    - Can a `git commit` result in a merge conflict? Why?
-    - Can a `git push` result in a merge conflict? Why?
-    - Can a `git pull` result in a merge conflict? Why?
-
-# Branches, merging, code reviews
-
-Branches allow us to work independently.
-Here we use branches to do so.
-
-However, when we merge branches, it may result in a merge conflict.
-A merge conflict occurs when git is unsure how to merge branches
-and asks a human for help.
-Here we create merge conflicts on trivial code.
-
-One can suggest to merge branches on GitHub,
-where it is called a Pull Request.
-For a Pull Request, a team member can be asked for a code review.
-Code reviews are useful for many reasons,
-among others the spread of knowledge.
-
-One can merge branches locally, using the command-line.
-This will bypass code review and that is OK.
-For example, merging develop to your topic branch
-does not need a code review.
 
 ## Exercises
 
@@ -417,12 +409,6 @@ Now do the same for team member B.
 ???- question "Enjoy a video?"
 
     You can find a video [here](https://youtu.be/UXSKm_RvcLw)
-
-
-## Links
-
-- [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-
 
 ## Links
 
