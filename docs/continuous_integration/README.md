@@ -142,7 +142,7 @@ i = random.randint(0, 1)
 
 The linter gives [a S311 error](https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage/)),
 which means that the `random.randint` is too quick-and-dirty to its taste.
-However, if you need exacty
+However, if you need exactly
 that (e.g. in a test), you can disable the linter for in that line like this:
 
 ```python
