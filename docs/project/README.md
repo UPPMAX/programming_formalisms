@@ -29,7 +29,7 @@ can be found [here](projects.md).
 - [Team roles](team_roles.md)
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
-- [Add Continuous integration](../testing/continuous_integration.md)
+- [Add Continuous integration](../continuous_integration/README.md)
 - [Do a big-O analysis](../optimisation/big_o.md)
 - [Get a runtime speed profile](../optimisation/runtime_speed_profiles.md)
 - Refactor design
