@@ -2,8 +2,6 @@
 
 !!!- info "Learning objectives"
 
-    - practice doing Pull Requests using the GitHub interface
-    - practice doing a code review
     - practice fixing merge conflicts on GitHub
     - practice merging branches using the command-line interface
     - practice fixing merge conflicts on local computer,
@@ -13,8 +11,6 @@
 
     Teaching goals are:
 
-    - Learners have practiced doing Pull Requests using the GitHub interface
-    - Learners have practiced doing a code review
     - Learners have practiced fixing merge conflicts on GitHub
     - Learners have practiced merging branches using the command-line interface
     - Learners have practiced fixing merge conflicts on local computer,
@@ -32,17 +28,15 @@
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
-    Prior questions:
+## Prior questions:
 
-    - What does a merge do?
-    - What does a merge do?
-    - Do we need merging? When? Why?
-    - When does a merge give a merge conflict?
-    - Can a `git commit` result in a merge conflict? Why?
-    - Can a `git push` result in a merge conflict? Why?
-    - Can a `git pull` result in a merge conflict? Why?
-
-
+- What does a merge do?
+- What does a merge do?
+- Do we need merging? When? Why?
+- When does a merge give a merge conflict?
+- Can a `git commit` result in a merge conflict? Why?
+- Can a `git push` result in a merge conflict? Why?
+- Can a `git pull` result in a merge conflict? Why?
 
 
 **We continue from last lesson**
