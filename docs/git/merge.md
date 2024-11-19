@@ -31,7 +31,6 @@
 ## Prior questions
 
 - What does a merge do?
-- What does a merge do?
 - Do we need merging? When? Why?
 - When does a merge give a merge conflict?
 - Can a `git commit` result in a merge conflict? Why?
@@ -57,57 +56,82 @@ and asks a human for help.
 ![Isolated tracks](../img/git-collaborative.svg)
 
 
-???- question "Demo: git merge"
+!!! example "**Two** branches to be merged"
 
-!!! example "Merge into main"
+    This example is take from [Code Refineries workshop](https://coderefinery.github.io/git-intro/conflicts/)
 
-    - once all features are ready, switch to main!
+    - Once all features are ready, switch to main!
+    - This is the **Branch** we want to **merge to**
+
+    The first merge will work
 
     ```git
     $ git switch main    # switch to main branch
     $ git branch           # check that we are on main branch
-    $ git merge  XXXX          # merge modularity into main
+    $ git merge like-cilantro
 
-    Merge made by the 'ort' strategy.
-     output
-
+    Updating 4e03d4b..3caa632
+    Fast-forward
+     ingredients.txt | 2 +-
+     1 file changed, 1 insertion(+), 1 deletion(-)
     ```
-
-    - let's now check the graphical view:
+    
+    - But the second will fail:
 
     ```git
-    $ git graph
-    * 1b29a8f (HEAD -> main) Merge branch 'modularity'
-    |\
-    | * 4d4acaf (modularity) 4 modular files
-    * | 000b440 rm print
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code
+    $ git merge dislike-cilantro
+
+    Auto-merging ingredients.txt
+    CONFLICT (content): Merge conflict in ingredients.txt
+    Automatic merge failed; fix conflicts and then commit the result.
     ```
 
-    ```mermaid
-    gitGraph
+    - Without conflict Git would have automatically created a merge commit, but since there is a conflict, Git did not commit:
 
-    commit id: "add planet.py"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-    checkout main
-    commit id:"rm print"
-    merge modular
+    ```git
+    $ git status
+
+    You have unmerged paths.
+      (fix conflicts and run "git commit")
+      (use "git merge --abort" to abort the merge)
+
+    Unmerged paths:
+      (use "git add <file>..." to mark resolution)
+	    both modified:   ingredients.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
     ```
 
-    - NOTE that (origin/main) planet.py documentation is not up-to-date
-        - In other words: GitHub has an old version of the project
-    - push to GitHub
-    - ``git push``
+    - Git won’t decide which to take and we need to decide. Observe how Git gives us clear instructions on how to move forward.
+
+    ```console
+    $ git diff
+
+    diff --cc ingredients.txt
+    index 6cacd50,6484462..0000000
+    --- a/ingredients.txt
+    +++ b/ingredients.txt
+    @@@ -1,4 -1,4 +1,10 @@@
+    ++<<<<<<< HEAD
+     +* 2 tbsp cilantro
+    ++=======
+    + * 1/2 tbsp cilantro
+    ++>>>>>>> dislike-cilantro
+      * 2 avocados
+      * 1 chili
+      * 1 lime
+    ```
+
+    - Check status with git status and git diff.
+    - Decide what you keep (the one, the other, or both or something else). Edit the file to do this.
+        - Remove the resolution markers, if not already done.
+        - The file(s) should now look exactly how you want them.
+    - Check status with git status and git diff.
+    - Tell Git that you have resolved the conflict with git add ingredients.txt (if you use the Emacs editor with a certain plugin the editor may stage the change for you after you have removed the conflict markers).
+    - Verify the result with git status.
+    - Finally commit the merge with only git commit. Everything is pre-filled.
+
+!!! example "Another example of merged branches
 
     ```git
     $ git graph
@@ -122,7 +146,13 @@ and asks a human for help.
     * 6a416b5 add folders and planet code
     ```
 
-    - Now local Git and GitHub are in phase!
+### On GitHub
+
+- Let's view the branches on Github!
+- Go to _Insights_ in the top menu and then go to _Network_ in side-bar
+- If we did this after the merging the branches do not show up.
+
+
 
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
