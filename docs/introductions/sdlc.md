@@ -107,21 +107,16 @@ graph TD;
  - Breakout room 5
     - R6-R11  
 
-???+ "Exercise"
+???+ "Exercise 30 min"
     For each requirement type(business or technical risk)
     Asses the major risk associated with the requirement it should be
-    specified in one sentence. Asses the probability that the 
-    specified risk will happen during a run on a scale of 1-5 
-    where 1 is a rare occurrence and 5 happens every time you run.
+    specified in one sentence. Asses the probability that the specified risk will happen during a run on a scale of 1-5 where 1 is a rare occurrence and 5 happens every time you run.
     And the same for severity S1 is a minor inconvenience to the stakeholder
     or the running of the program. S5 means a major injury or damage to stakeholder
-    or catastrophic failure of the software. Then multiply P and S and set 
-    that as the value
+    or catastrophic failure of the software. Then multiply P and S and set that as the value
 
 !!! info "Task for the Requirments engineer"
      collate the document into one document
-
-
 
 ## References
 
