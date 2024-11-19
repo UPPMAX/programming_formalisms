@@ -110,7 +110,7 @@ Based on: <https://coderefinery.github.io/github-without-command-line/contributi
         - The most common license for Open Access scientific publications.
         - Not recommended for software.
 
-!!! info 
+!!! info
 
     - This was done the first day!
 
