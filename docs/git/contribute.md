@@ -21,38 +21,6 @@
     - practice merging branches using the command-line interface
     - practice fixing merge conflicts on local computer, using the command-line interface
 
-???- note "Instructor notes"
-
-    Prerequisites are:
-
-    - ...
-
-    Lesson Plan: **FIX**
-
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
-
-???- info "Table of content"
-
-    - GitHub
-    - Centralized workflow
-    - Distributed version control and Forking workflow
-    - How to contribute changes to somebody else’s project
-        - Contributing very minor changes
-        - If you observe an issue and have an idea how to fix it
-
-!!! info "References"
-
-    - The [main git book](https://git-scm.com/book/en/v2)
-
-    - 'git best practices'
-
-        - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
-        - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
-
-**MERGE these with abve**
-
 !!!- info "Learning objectives"
 
     - practice doing Pull Requests using the GitHub interface
@@ -75,18 +43,6 @@
       Exercise 1: crit, exercise_1, after theory_1, 40s
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
-
-    Prior questions:
-
-    - What does a merge do?
-    - What does a merge do?
-    - Do we need merging? When? Why?
-    - When does a merge give a merge conflict?
-    - Can a `git commit` result in a merge conflict? Why?
-    - Can a `git push` result in a merge conflict? Why?
-    - Can a `git pull` result in a merge conflict? Why?
-
-
 
 ## Branches, merging, code reviews
 
@@ -150,6 +106,110 @@ There are two more ways to create “copies” of repositories into your user sp
 ## Contributing in a team
 
 ### Contributing to existing repositories using pull requests 
+
+**Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
+
+- Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
+
+- From here on the collaborators can push changes in the same way as we have done in a
+single-person repository in the previous episodes.
+
+!!! warning
+
+    Check if co-teacher is collaborator!
+
+    - but skip do anything for now!
+
+
+???+ "Discussion"
+
+    - Discuss the advantages and possible disadvantages of this setup.
+
+
+**Step 2: Submit a small change via the web interface as collaborator**
+
+- We learned how to directly commit changes either via web or via the desktop and you need to be a collaborator (have write permissions) to be able to do that.
+
+- The tool here is [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+
+!!! example "Example with a salad repo"
+
+    - In this example the contributor will not change the `main` branch directly but submit a "pull request" (a **change proposal**) towards the `main` branch for **code review**.
+    - You do this by just **changing the file at GitHub**
+    - Before committing/proposing file change you may preview the changes.
+
+    ![Propose file change](../img/contributing/propose-file-change.png)
+
+    - After we click "Commit / change proposal" we are taken to this form:
+
+    ![Contribute form](../img/contributing/pull-request-form.png)
+
+    - In there we
+        - verify the **source and target branch**,
+        - verify the **file changes**,
+        - can edit the **title** and **description** of the "pull request" (change proposal)
+    - After we have submitted the "pull request", one of our collaborators can review it
+    - We can discuss and ask for changes before merging the changes "Merge pull request"
+
+
+!!! Discussion
+
+    - Ideally submitter and reviewer should be two different persons.
+        - When is this best? When not?
+    - You can modify an open "pull request" by committing new changes to the branch
+    - Review is not only to assure quality but also to enhance learning and **knowledge transfer** within the group
+
+---
+
+- **To make sure that _all_ changes of the `main` branch are reviewed and nobody
+can push commits to it directly, it can be useful to "protect" branches.**
+
+- "Settings", then "Branches", then "Add rule":
+
+![Branch protection](../img/contributing/branch-protection.png)
+
+### Discussion
+
+> - Protecting the `main` branch "forces" all changes to it to be reviewed first.
+>   **We recommend this for group repositories**.
+>   Discuss the advantages/disadvantages of this.
+
+---
+
+### Resolving a conflict
+
+- "Non-talking instructor" prepares a conflicting commit during session (check what the first PR does).
+- Conflict can be shown as demo.
+
+### Exercise/demo: let us experience a conflict
+
+**When merging** two branches a conflict can arise when the same file **portion**
+has been modified in two **different** ways on the two branches.
+
+We can practice how a conflict looks and how to resolve it:
+
+- Two participants should send two "pull requests" (change proposals)
+  branching from `main` changing the same line in two different ways
+
+![conflict-edit-1](../img/contributing/conflict-edit-1.png)
+![conflict-edit-2](../img/contributing/conflict-edit-2.png)
+
+- We merge together one of the pull requests (this will work)
+- Then we try to merge the other and we see a conflict:
+
+![conflict-pull-request](../img/contributing/conflict-pull-request.png)
+
+- We try to resolve the conflict via web
+- **Choose the version that you wish to keep**, remove conflict markers, "Mark as resolved" and commit the change
+
+![conflict-resolution](../img/contributing/conflict-resolution.png)
+
+### Discussion
+
+> - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
+> - What can we do to avoid conflicts?
+
+
 
 ### Summary
 
