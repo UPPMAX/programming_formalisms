@@ -1,4 +1,4 @@
-# Git branches and merging
+# Git branches, working locally
 
 !!! questions
 
@@ -8,10 +8,11 @@
 
 !!! info "Content"
 
-    - We will
-        - work with the basic commands in git
-        - go through branching and merging
-
+    - First we cover a possible workflow
+        - branching
+        - diff
+        - merging
+    - Then exercise!
 
 ???- info "Learning objectives of 'Branches'"
 
@@ -28,16 +29,15 @@
 
     - git basics
 
-    Lesson Plan: **FIX**
+    Lesson Plan: 
 
-    - **Total** 30 min
+    - **Total** 50 min
     - Theory 20
+    - Exercise 20
     - Discussions 10 min
 
 
-!!! info "Table of content"
-
-    **FIX**
+???- info "Table of content"
 
     - Branching
         - background
@@ -60,12 +60,6 @@
         - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
         - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
 
-!!! warning
-
-    VScode sync: skip because of generality
-
-    - ``git config --global credential.helper cache``
-    - ``git config --global credential.helper 'cache --timeout=36000'``
 
 ## Branching and merging
 
@@ -78,7 +72,6 @@ Software development is often not linear:
 
 ![Isolated tracks](../img/git-collaborative.svg){width: 50%}
 _Isolated tracks of work._
-
 
 The strength of version control is that it permits the researcher to **isolate
 different tracks of work**, which can later be merged to create a composite
@@ -100,7 +93,7 @@ One typical workflow:
 
 ```console
 git switch -c new-feature  # create branch, switch to it
-git commit                   # work, work, work, ..., and test
+git add/commit                   # work, work, work, ..., and test
 git switch master          # once feature is ready, switch to master
 git merge new-feature        # merge work to present branch
 git branch -d new-feature    # remove branch
@@ -112,7 +105,7 @@ git branch -d new-feature    # remove branch
 
 ### Exercise 1: create, switch and delete a `git` branch
 
-!!!- info "Learning objectives"
+???- info "Learning objectives"
 
     - Create, switch and delete a `git` branch
     - Build up experience using git without troubleshooting
@@ -255,45 +248,12 @@ gitGraph
     git pull
     ```
 
-## Add ~~Jupiter~~ in a new branch
+???- question "Need a video?"
 
-- Let's make a new branch called ``FIX``
-- Here we add some code taking care of the motion of ~~Jupiter~~  and interaction with Earth
-
-!!! example "Demo or Type-along: Add Jupiter"
-
-    - Make sure we are in phase with our GitHub remote!
-
-    ```git
-    git pull
-    ```
-
-    - Let's make a new branch called ``jupiter``
-
-    ```git
-    git switch -c jupiter
-    ```
-
-    - Check that we are in that branch!
-
-    ```git
-    $ git branch
-
-    * jupiter
-    main
-
-    ```
-
-    - Note that we have the same working tree right now as before (code/ and Figures/ folders and the planet.py file).
-    - Let's open the
-    - We will add some lines to count with the effects from the gravity of Jupiter on Earth
+    See a video [here](https://youtu.be/Ewewytijw1g)
 
 
 **show unstaged/uncommitted modifications**
-
-???- question "Demo: modular code in branch"
-
-!!! example "Demo or type-along"
 
     - When you are done editing the files, try `git diff`:
 
@@ -425,81 +385,6 @@ gitGraph
 - Go to _Insights_ in the top menu of the `XXX` repo and then go to _Network_ in side-bar
 - If we do this after the merging the branches do not show up.
 
-
-## Merging
-
-- It turned out that our experiment with XX was a good idea.
-- Our goal now is to merge modularity into main.
-
-![Isolated tracks](../img/git-collaborative.svg)
-
-
-???- question "Demo: git merge"
-
-!!! example "Merge into main"
-
-    - once all features are ready, switch to main!
-
-    ```git
-    $ git switch main    # switch to main branch
-    $ git branch           # check that we are on main branch
-    $ git merge  XXXX          # merge modularity into main
-
-    Merge made by the 'ort' strategy.
-     output
-
-    ```
-
-    - let's now check the graphical view:
-
-    ```git
-    $ git graph
-    * 1b29a8f (HEAD -> main) Merge branch 'modularity'
-    |\
-    | * 4d4acaf (modularity) 4 modular files
-    * | 000b440 rm print
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code
-    ```
-
-    ```mermaid
-    gitGraph
-
-    commit id: "add planet.py"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-    checkout main
-    commit id:"rm print"
-    merge modular
-    ```
-
-    - NOTE that (origin/main) planet.py documentation is not up-to-date
-        - In other words: GitHub has an old version of the project
-    - push to GitHub
-    - ``git push``
-
-    ```git
-    $ git graph
-    *   1b29a8f (HEAD -> main, origin/main) Merge branch 'modularity'
-    |\
-    | * 4d4acaf (modularity) 4 modular files
-    * | 000b440 rm print
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 planet.py documentation
-    * 6a416b5 add folders and planet code
-    ```
-
-    - Now local Git and GitHub are in phase!
 
 ## Test
 
