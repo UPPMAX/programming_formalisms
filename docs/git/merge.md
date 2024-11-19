@@ -40,18 +40,16 @@
 
 - ![Isolated tracks](../img/git-collaborative.svg)
 
-
-
 ## Workflow of merge
 
 - Once a feature is ready, switch to main!
     - This is the **Branch** we want to **merge to**
-- you may want to double check with git branch 
+- You may want to double check with git branch
 
 ```git
-$ git switch main    # switch to main branch
-$ git branch           # check that we are on main branch
-$ git merge <feature branch>
+git switch main    # switch to main branch
+git branch           # check that we are on main branch
+git merge <feature branch>
 ```
 
 ## Merge conflicts
@@ -102,7 +100,7 @@ and asks a human for help.
 
     Unmerged paths:
       (use "git add <file>..." to mark resolution)
-	    both modified:   ingredients.txt
+        both modified:   ingredients.txt
 
     no changes added to commit (use "git add" and/or "git commit -a")
     ```
