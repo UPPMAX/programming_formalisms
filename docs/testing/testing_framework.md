@@ -280,80 +280,172 @@ Clicking on the 'Run'/'Play' button to run the tests.
 
 ## Exercises
 
-The learning objective of this exercise is to
-practice writing tests within a formal testing framework.
-Which function to implement is irrelevant,
-so feel free to pick a function that fits your level.
+### Exercise 1: get the existing tests to work
 
-If you feel comfortable enough with using `unittest`,
-you are encouraged to develop code for the learners' project
-instead.
+In this exercise, we get the tests to work within our IDE.
 
-## Exercise 1: a guided example
+???- question "Don't use VS Code?"
 
-The goal is to write a function to determine if a number is prime.
+    If you do not use VS Code, try to get it to run on your IDE.
+    The steps for VS Code may be simular to those in your IDE.
 
-!!! info "The function"
+- Follow the steps at [running a test](#running-a-test)
+- Run all the tests of the package
 
-    - Function name: `is_prime_[names]`, for example, `is_prime_anna_and_sven`
-    - Output:
-        - Returns `True` if the input is prime
-        - Returns `False` if the input is not prime
-        - Gives an error when the input is not one integer
+### Exercise 2: put example code to fit the testing framework
 
-!!! info "Technical"
+In this exercise, we will put worked-out code at the right spots.
+This code is known to work, so our package will keep working.
 
-    Work within scaffolding of the learners project:
+- Create a file for the actual code, called, e.g. `src/bacsim/[name]_utils.py`,
+  e.g. `src/bacsim/sven_utils.py`
+- Copy-paste the following (familiar) code in that file:
 
-    - Learner code is in `src/learners/`.
-      Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
-    - Tests are in `tests/`.
-      Call the file `test_utils_[names].py`,
-      e.g. `test_utils_anna_and_sven.py`
+```python
+def is_zero(number):
+    """Testing if the number is zero."""
+    if not isinstance(number, int):
+        raise TypeError("'number' must be of type int.")
+    if number == 0:
+        return True
+    return False
+```
 
-???- question "Need a video?"
+- Create a file for the tests of that code, called, 
+  e.g. `tests/test_[name]_utils.py`, e.g. `tests/test_sven_utils.py`
+- Copy-paste the following (familiar) code in that file:
 
-    See [this YouTube video](https://youtu.be/jwAyMlaODfo)
+```python
+"""Tests all code in src.bacsim.sven_utils."""
+import unittest
 
-## Exercise 2: your function
+from src.bacsim.sven_utils import is_zero
 
-Develop a function at your skill level
-using TDD using the `unittest` framework.
+class TestSvenUtils(unittest.TestCase):
 
-Put the code in the `src/learners` folder.
+    """Class to test the code in src.bacsim.sven_utils."""
 
-## Exercise 3: learners project
+    def test_is_zero_has_documentation(self):
+        """The function 'is_zero' has documentation."""
+        self.assertTrue(is_zero.__doc__)
+        self.assertIsNotNone(is_zero.__doc__)
 
-- Look for an issue that requests to add a feature to the
-  learners' project at your skill level (see notes below).
-  If there is none, create one :-)
-- Assign yourself to that issue and develop this feature
-  using TDD using the `unittest` framework
-- Put your new code in the `src/bacsim` folder.
-  This is the folder of our Python package's code.
-- Put the tests in the `tests` (no `test/bacsim`) folder.
-  These are the test our Python package's code.
+    def test_is_zero_responds_correctly_to_ints(self):
+        """The function 'is_zero' responds correctly to integers."""
+        self.assertTrue(is_zero(0))
+        self.assertFalse(is_zero(1))
 
-- Write as much tests (and their fixes) as you can come up with
+    def test_is_zero_raises_an_exception_upon_non_ints(self):
+        """The function 'is_zero' raises an exception upon non-ints."""
+        self.assertRaises(TypeError, is_zero, {1, 2})
+        self.assertRaises(TypeError, is_zero, "I am a string")
+```
 
-!!! note "What feature to add?"
+- In that code, replace `sven` and `Sven` by your name
+- Refresh the tests
+- Run all tests
+- Confirm that your new tests show up
+- Confirm that your new tests passes
+- If your tests pass, push it to the GitHub repo
 
-    Adding features is still hard, as we have not
-    discussed function design, nor class design.
+### Exercise 2: put example code to fit the testing framework
 
-    However, we can:
+In this exercise, we convert some pre-programmed code to fit the
+testing framework.
 
-    - ensure that a thing we (may) need is in a file called `[thing_name].py`,
-      e.g. `coordinat.py`
-    - ensure the tests are in a file called `test_[class_name].py`,
-      e.g. `test_coordinat.py`, so that `unittest` can actually find it
-    - write a minimal test is that one can create a class object:
+We use this code (from [pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/)):
+
+```python
+def isprime(num):
+    for n in range(2,int(num**0.5)+1):
+        if num%n==0:
+            return False
+    return True
+print(isprime(7))
+print(isprime(8))
+```
+
+- Copy paste the function and put it in your file called,
+  e.g. `src/bacsim/[name]_utils.py`, e.g. `src/bacsim/sven_utils.py`
+
+???- question "Answer"
+
+    Copy-paste the following text to your file, 
+    e.g. `src/bacsim/[name]_utils.py`, e.g. `src/bacsim/sven_utils.py`:
 
     ```python
-    class TestCoordinat(unittest.TestCase):
-        def test_can_create_test_coordinat(self):
-            create_test_coordinat()
+    def isprime(num):
+        for n in range(2,int(num**0.5)+1):
+            if num%n==0:
+                return False
+        return True
     ```
+
+- The example code has two wannabe tests. How would you convert these
+  to asserts?
+
+???- question "Answer"
+
+    These would be reasonable asserts:
+
+    ```python
+    assert isprime(7) == True
+    assert isprime(8) == False
+    ```
+
+- Use the file for the tests of that code, 
+  e.g. `tests/test_[name]_utils.py`, e.g. `tests/test_sven_utils.py`.
+  Add tests using the testing framework.
+
+???- question "Answer"
+
+    This is how the file should look like:
+
+    ```python
+    """Tests all code in src.bacsim.sven_utils."""
+    import unittest
+
+    # Other imports
+    from src.bacsim.sven_utils import isprime
+
+    class TestSvenUtils(unittest.TestCase):
+
+        # Other tests
+
+        def test_isprime(self):
+            """The function 'isprime' is correct."""
+            self.assertTrue(isprime(7))
+            self.assertFalse(isprime(8))
+    ```
+
+- Can you break the `isprime` function?
+
+???- question "Answer"
+
+    There are multiple ways.
+
+    You may reasonably assume that the function is documented:
+
+    ```python
+    self.assertTrue(is_zero.__doc__)
+    ```
+
+    But this seems like a test that should work:
+
+    ```python
+    self.assertFalse(isprime(-1))
+    ```
+    
+    Both tests fail. 
+
+It is beyond the scope of this exercise to fix this function :-)
+
+### Exercise 3: convert your code to fit the testing framework
+
+In this course, you've written some functions yourself.
+
+- Pick the favorite function you've written
+- Add it to the package, in the same files
 
 ## References
 
