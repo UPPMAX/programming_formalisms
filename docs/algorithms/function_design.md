@@ -519,9 +519,9 @@ ATACC-GGGTTT
 
 ## Exercises
 
-### Exercise 1: 
+### Exercise 1
 
-Take a look at the function 
+Take a look at the function
 below ([from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/)):
 
 ```python
@@ -543,13 +543,13 @@ def Prime(no, i):
 
     - By convention, function names start with lowercase character,
       where this functions' name that starts with an uppercase first
-      character is normally suggesting that this is a class 
+      character is normally suggesting that this is a class
       name (instead of a function name).
       A better name would be `is_prime`
     - A function should start with a verb, this function does not.
       A better name would be `is_prime`
 HIERO
-    - The function's input is not checked for 
+    - The function's input is not checked for
     - clumsy interface:
 
 ```python
