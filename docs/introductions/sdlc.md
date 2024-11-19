@@ -122,19 +122,39 @@ graph TD;
 !!! info "Task for the Requirements engineer"
      collate the document into one document
 
-## Design
+## Design    
+Once we know what we want we can start thinking on how. 
+in the design phase we commonly use Modeling Languages to illustrate concepts and architecture together with 
+pseudo code to describe algorithms in much the  
+same way as we use programming languages  
+during development . 
+Unified Modeling Language UML, is one such modeling  
+language [UML web page](https://www.uml.org/)  
+here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU) 
+UML was generated to unify the big pobular object oriented modeling aproches of Booch (Booch Method superseeded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]` 
+
 
 ## Development 
 
+ During Development we implement the design using programming languages and tequiches 
+
 ## Deployment 
+
+This is when you package and publish your software, this can be as simple as making your Github repository open an public, here we need to think on which license to publish under etc.
 
 ## Maintain
 
-## Retiere
-often does not happen but the software is gradually left to die, esp for scientific software where a retierment plan is seldom established esp if the software is developed by a phd student or post-doc or other short term person part of the research group.
+Updates and revisions bug testing etc. Maintaining persistent links and download locations
 
-## Further reading
+## Retiere
+
+Often does not happen but the software is gradually left to die, esp for scientific software where a retierment plan is seldom established esp if the software is developed by a phd student or post-doc or other short term person part of the research group.
+
+A short note on Paradigms:
+
 
 ## References
 
 - `[ISO 12207:2017]`
+- `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
+- `[Rumbaugh 1991]`, Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991 
