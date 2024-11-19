@@ -1,5 +1,17 @@
 # Merging
 
+**We continue from last lesson**
+
+- Branches allow us to work independently.
+- Here we use branches to do so.
+
+- However, when we merge branches, it may result in a merge conflict.
+- A merge conflict occurs when ``git`` is unsure how to merge branches
+and asks a human for help.
+- Here we create merge conflicts on trivial code.
+
+## Example
+
 - It turned out that our experiment with XX was a good idea.
 - Our goal now is to merge modularity into main.
 
