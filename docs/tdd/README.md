@@ -179,6 +179,72 @@ except:
 assert has_thrown
 ```
 
+???- question "What is all this code?"
+
+    We call this code 'scaffolding'.
+    Like when repairing a building, there are scaffolds being
+    built, it is about the building and not the scaffolding.
+
+    In our case, the scaffolding is built around this line:
+
+    ```python
+    my_function("nonsense")
+    ```
+
+    This function should raise an exception.
+    Raising an exception causes our tests to crash,
+    so we need to 'catch' (this is a formal Python term!) 
+    the exception. This would change our code to:
+
+    ```python
+    try:
+        my_function("nonsense")
+    except:
+        # Do nothing
+    ```
+
+    Now the function `my_function` may or may not raise an exception.
+    We want the test the function to raise an exception.
+    The next step would be to store that is did:
+
+    ```python
+    try:
+        my_function("nonsense")
+    except:
+        has_raised = True # Yay!
+    ```
+
+    And we want to test that indeed the exception is raised:
+
+    ```python
+    try:
+        my_function("nonsense")
+    except:
+        has_raised = True # Yay!
+
+    assert has_raised == True
+    ```
+
+    This would not compile, as `has_raised` has not been declared before
+    the `try-except` block, so we make it into:
+
+    ```python
+    has_raised = False
+    try:
+        my_function("nonsense")
+    except:
+        has_raised = True # Yay!
+
+    assert has_raised == True
+    ```
+
+    We initialize `has_raised` with `False`, as, well,
+    no exception has been raised yet.
+
+    If no exceptions is raised, `has_raised` will remain `False`
+    and our test fails.
+
+
 ### My function raises an exception when the input `x` is not integer
 
 ```python
