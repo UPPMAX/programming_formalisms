@@ -100,7 +100,7 @@ The learners' project has it too.
 
 In the text write something like:
 
-```
+```text
 This issue dependends on #42
 ```
 
@@ -131,7 +131,7 @@ Some issues originate from the requirements documents, as shown below.
 
     The function creates a parameter set with reasonably normal default settings.
 
-    The data type of the parameter set must be a class called `Parameters`, 
+    The data type of the parameter set must be a class called `Parameters`,
     but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
     of strings if this is not specified yet.
 
@@ -185,7 +185,7 @@ Some issues originate from the requirements documents, as shown below.
 
     The function creates a bacterium with reasonably normal default settings.
 
-    The data type of the bacterium must be a class called `Bacterium`, 
+    The data type of the bacterium must be a class called `Bacterium`,
     but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
     of strings if this is not specified yet.
 
