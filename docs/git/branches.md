@@ -170,14 +170,6 @@ git branch -d new-feature    # remove branch
     - Does changing a branch change the content of your local computer? Why?
     - Does deleting a branch create a new version? Why?
 
-
-### On GitHub
-
-- Let's view the branches on Github!
-- Go to _Insights_ in the top menu of the `planet-bjorn` repo and then go to _Network_ in side-bar
-- If we did this after the merging the branches do not show up.
-
-
 ## Exercises
 
 ### Exercise 1: create, switch and delete a `git` branch
