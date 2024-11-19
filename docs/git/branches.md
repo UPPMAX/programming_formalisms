@@ -6,21 +6,12 @@
     - How to work on parallel tracks (many developers, versions)?
     - How to fix mistakes?
 
-!!! info "Content"
-
-    - First we cover a possible workflow
-        - branching
-        - diff
-        - merging
-    - Then exercise!
-
 ???- info "Learning objectives of 'Branches'"
 
-    - learners can locally
+    - learners can
 
         - explain and evaluate the usefulness of branches
-        - create, switch and delete a `git` branch
-        - merge
+        - create, switch and delete a `git` branch locally
 
 
 ???- note "Instructor notes"
@@ -87,6 +78,168 @@ git branch -d new-feature    # remove branch
 !!! info "Sea also"
 
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
+
+## Example
+
+
+
+
+
+
+!!! tip
+
+    **An important alias**
+
+    - We will now define an _alias_ in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
+
+    ```console
+    git config --global alias.graph "log --all --graph --decorate --oneline"
+    ```
+
+    This will enable you to use ``git graph`` for short
+
+    - It will now give you something like this:
+
+
+    ```git
+
+    $ git graph
+    * 4d4acaf (HEAD -> modularity) 4 modular files
+    | * 2d4e252 (jupiter) add jupiter
+    |/
+    * b9465e4 (origin/main, main) planet.py documentation
+    * 6a416b5 add folders and planet code
+
+    ```
+
+    ```mermaid
+    gitGraph
+
+    commit id: "add planet.py"
+    branch jupiter
+    checkout jupiter
+    commit id: "add jupiter"
+    checkout main
+    branch modular
+    checkout modular
+    commit id: "4 modular files"
+
+    ```
+
+
+
+
+!!! tip "Show unstaged/uncommitted modifications"
+
+    - When you are done editing the files, try `git diff`:
+
+    ```console
+    git diff
+    ```
+
+    - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
+    - You will see some thing like this.
+
+    ???- "Output from 'diff'"
+
+        ```diff
+        some output
+        ```
+
+## Let's make our code XXX (test in another branch)
+
+- We consider the XX branch dead-end.
+- Let's instead start from the main branch and create a "modularity"
+
+!!! example "Demo or Type-along: git branch 2"
+
+    - add and commit
+
+    ```git
+    git add .
+    git commit -m 'XXX'
+    ```
+
+    - We can now check the history with a command that graphically tries to show the log with branches
+
+
+
+## Meanwhile
+
+**Back in main branch**
+
+- We spotted an unnecessary ``print`` line in the main branch code.
+- Perhaps we're not finished with the modular branch, so let's fix this in the main branch.
+
+!!! example "Demo or type-along"
+
+    - Go to the main branch:
+
+    ```git
+    git switch main
+    ```
+
+    - Note that we now just find the ``planet.py`` file!
+    - Let's remove the print line around row 35 in the for-loop.
+    - Save, add and commit
+
+    ```git
+    git add planet.py
+    git commit -m "rm print"
+    ```
+
+    - And do the graph!
+
+    ```git
+    $ git graph
+    * 000b440 (HEAD -> main) rm print
+    | * 4d4acaf (modularity) 4 modular files
+    |/
+    | * 2d4e252 (jupiter) add jupiter
+    |/
+    * b9465e4 (origin/main) planet.py documentation
+    * 6a416b5 add folders and planet code
+    ```
+
+    ```mermaid
+    gitGraph
+
+    commit id: "add planet.py"
+    branch jupiter
+    checkout jupiter
+    commit id: "add jupiter"
+    checkout main
+    branch modular
+    checkout modular
+    commit id: "4 modular files"
+    checkout main
+    commit id:"rm print"
+    ```
+
+
+
+## Test
+
+    - What is a branch?
+    - What is the problem that branches alleviate?
+    - What is the name/names of the most important branch?
+    - What is our git branching setup?
+    - What is the goal of that setup?
+    - Why do we use that setup instead of a different one?
+    - What is the purpose of each of those branches?
+    - Does creating a branch create a new version? Why?
+    - Does changing a branch change the content of your local computer? Why?
+    - Does deleting a branch create a new version? Why?
+
+
+### On GitHub
+
+- Let's view the branches on Github!
+- Go to _Insights_ in the top menu of the `planet-bjorn` repo and then go to _Network_ in side-bar
+- If we did this after the merging the branches do not show up.
+
+
+## Exercises
 
 ### Exercise 1: create, switch and delete a `git` branch
 
@@ -238,158 +391,7 @@ gitGraph
     See a video [here](https://youtu.be/Ewewytijw1g)
 
 
-**show unstaged/uncommitted modifications**
 
-    - When you are done editing the files, try `git diff`:
-
-    ```console
-    git diff
-    ```
-
-    - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
-    - You will see some thing like this.
-
-    ???- "Output from 'diff'"
-
-        ```diff
-        some output
-        ```
-
-## Let's make our code XXX (test in another branch)
-
-- We consider the XX branch dead-end.
-- Let's instead start from the main branch and create a "modularity"
-
-!!! example "Demo or Type-along: git branch 2"
-
-    - add and commit
-
-    ```git
-    git add .
-    git commit -m 'XXX'
-    ```
-
-    - We can now check the history with a command that graphically tries to show the log with branches
-
-!!! tip
-
-    **An important alias**
-
-    - We will now define an _alias_ in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
-
-    ```console
-    git config --global alias.graph "log --all --graph --decorate --oneline"
-    ```
-
-    This will enable you to use ``git graph`` for short
-
-    - It will now give you something like this:
-
-
-    ```git
-
-    $ git graph
-    * 4d4acaf (HEAD -> modularity) 4 modular files
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main, main) planet.py documentation
-    * 6a416b5 add folders and planet code
-
-    ```
-
-    ```mermaid
-    gitGraph
-
-    commit id: "add planet.py"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-
-    ```
-
-
-## Meanwhile
-
-**Back in main branch**
-
-- We spotted an unnecessary ``print`` line in the main branch code.
-- Perhaps we're not finished with the modular branch, so let's fix this in the main branch.
-
-!!! example "Demo or type-along"
-
-    - Go to the main branch:
-
-    ```git
-    git switch main
-    ```
-
-    - Note that we now just find the ``planet.py`` file!
-    - Let's remove the print line around row 35 in the for-loop.
-    - Save, add and commit
-
-    ```git
-    git add planet.py
-    git commit -m "rm print"
-    ```
-
-    - And do the graph!
-
-    ```git
-    $ git graph
-    * 000b440 (HEAD -> main) rm print
-    | * 4d4acaf (modularity) 4 modular files
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code
-    ```
-
-    ```mermaid
-    gitGraph
-
-    commit id: "add planet.py"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-    checkout main
-    commit id:"rm print"
-    ```
-
-### On GitHub
-
-- Let's view the branches on Github!
-- Go to _Insights_ in the top menu of the `XXX` repo and then go to _Network_ in side-bar
-- If we do this after the merging the branches do not show up.
-
-
-## Test
-
-    - What is a branch?
-    - What is the problem that branches alleviate?
-    - What is the name/names of the most important branch?
-    - What is our git branching setup?
-    - What is the goal of that setup?
-    - Why do we use that setup instead of a different one?
-    - What is the purpose of each of those branches?
-    - Does creating a branch create a new version? Why?
-    - Does changing a branch change the content of your local computer? Why?
-    - Does deleting a branch create a new version? Why?
-
-
-### On GitHub
-
-- Let's view the branches on Github!
-- Go to _Insights_ in the top menu of the `planet-bjorn` repo and then go to _Network_ in side-bar
-- If we did this after the merging the branches do not show up.
 
 
 ## Summary
