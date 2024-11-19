@@ -56,21 +56,19 @@ version that contains all changes.
 - We see branching points and merging points.
 - Main line development is often called `master` or `main`.
 - Other than this convention there is nothing special about `master` or `main`, it is just a branch.
-- Commits form a directed acyclic graph (we have left out the arrows to avoid confusion about the time arrow).
 
-A group of commits that create a single narrative are called a **branch**.
-There are different branching strategies, but it is useful to think that a branch
-tells the story of a feature, e.g. "fast sequence extraction" or "Python interface" or "fixing bug in
-matrix inversion algorithm".
+- A group of commits that create a single narrative are called a **branch**.
+- There are different branching **strategies**, but it is useful to think that a branch tells the **story of a feature**, e.g. "fast sequence extraction" or "Python interface" or "fixing bug in matrix inversion algorithm".
 
 ### Typical workflows
 
 One typical workflow:
 
 ```console
-git switch -c new-feature  # create branch, switch to it
+git branch new-feature  # create branch, switch to it
 git add/commit                   # work, work, work, ..., and test
-git switch master          # once feature is ready, switch to master
+git switch master          # once feature is ready, switch back to master
+git branch                   # make clear which branch you are in
 git merge new-feature        # merge work to present branch
 git branch -d new-feature    # remove branch
 ```
@@ -78,13 +76,6 @@ git branch -d new-feature    # remove branch
 !!! seealso
 
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
-
-## Example
-
-
-
-
-
 
 !!! tip
 
@@ -115,7 +106,8 @@ git branch -d new-feature    # remove branch
     ```mermaid
     gitGraph
 
-    commit id: "add planet.py"
+    commit id: "add folders and planet code"
+    commit id: "add planet.py documentation"
     branch jupiter
     checkout jupiter
     commit id: "add jupiter"
@@ -123,11 +115,7 @@ git branch -d new-feature    # remove branch
     branch modular
     checkout modular
     commit id: "4 modular files"
-
     ```
-
-
-
 
 !!! tip "Show unstaged/uncommitted modifications"
 
@@ -138,56 +126,31 @@ git branch -d new-feature    # remove branch
     ```
 
     - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
-    - You will see some thing like this.
+    - You will see some things like this.
 
     ???- "Output from 'diff'"
 
         ```diff
-        some output
+        diff --git a/ingredients.txt b/ingredients.txt
+        index 4422a31..ba8854f 100644
+        --- a/ingredients.txt
+        +++ b/ingredients.txt
+        @@ -2,3 +2,4 @@
+         * 1 chili
+         * 1 lime
+         * 2 tsp salt
+        +* 1/2 onion
+        diff --git a/instructions.txt b/instructions.txt
+        index 7811273..2b11074 100644
+        --- a/instructions.txt
+        +++ b/instructions.txt
+        @@ -4,3 +4,4 @@
+         * squeeze lime
+         * add salt
+         * and mix well
+        +* enjoy!
+
         ```
-
-## Let's make our code XXX (test in another branch)
-
-- We consider the XX branch dead-end.
-- Let's instead start from the main branch and create a "modularity"
-
-!!! example "git branch 2"
-
-    - add and commit
-
-    ```git
-    git add .
-    git commit -m 'XXX'
-    ```
-
-    - We can now check the history with a command that graphically tries to show the log with branches
-
-    ```git
-    $ git graph
-    * 000b440 (HEAD -> main) rm print
-    | * 4d4acaf (modularity) 4 modular files
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code
-    ```
-
-    ```mermaid
-    gitGraph
-
-    commit id: "add folders and planet code"
-    commit id: "add planet.py documentation"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-    checkout main
-    commit id:"rm print"
-    ```
 
 ## Test
 
