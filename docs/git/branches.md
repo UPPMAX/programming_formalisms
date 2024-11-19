@@ -117,6 +117,9 @@ git branch -d new-feature    # remove branch
     branch modular
     checkout modular
     commit id: "4 modular files"
+    checkout main
+    commit id: "rm print"
+
     ```
 
 !!! tip "Show unstaged/uncommitted modifications"
@@ -325,10 +328,6 @@ gitGraph
 ???- question "Need a video?"
 
     See a video [here](https://youtu.be/Ewewytijw1g)
-
-
-
-
 
 ## Summary
 
