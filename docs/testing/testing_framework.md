@@ -161,6 +161,10 @@ as reference.
 For the `unittest` framework, the actual functions are put in the
 `src/[package_name]` folder, for example `src/bacsim/sven_utils.py`.
 
+???- question "How does this look like in VSCode?"
+
+    ![VSCode shows the location of the package's regular code](unittest_code_location.png)
+
 ???- question "How does such a file look like?"
 
     Here is how such a file could look like:
@@ -188,6 +192,10 @@ The testing functions are put in the
 `tests` folder and all files have `test_` added.
 For example, the file to test `src/bacsim/richel_utils.py`
 is called `tests/test_richel_utils.py`.
+
+???- question "How does this look like in VSCode?"
+
+    ![VSCode shows the location of the package's tests](unittest_tests_location.png)
 
 ???- question "How does such a file look like?"
 
