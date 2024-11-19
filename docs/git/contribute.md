@@ -12,19 +12,11 @@
         - Forked collaboration
         - How to contribute
 
-???+ info "Learning objectives of 'Contributing'"
+???+ info "Learning objectives"
 
+    - practice doing Pull Requests using the GitHub interface
+    - practice doing a code review
     - explain and evaluate the usefulness of git Pull Request with code review
-    - practice doing Pull Requests using the GitHub interface
-    - practice doing a code review
-    - practice fixing merge conflicts on GitHub
-    - practice merging branches using the command-line interface
-    - practice fixing merge conflicts on local computer, using the command-line interface
-
-!!!- info "Learning objectives"
-
-    - practice doing Pull Requests using the GitHub interface
-    - practice doing a code review
 
 ???- question "For teachers"
 
@@ -109,22 +101,23 @@ There are two more ways to create “copies” of repositories into your user sp
 
 **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
+Based on: <https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository>
+
+???- note "License: Creative Commons Attribution 4.0 International"
+    
+        - Permits almost any use subject to providing credit and license notice.
+        - Frequently used for media assets and educational materials.
+        - The most common license for Open Access scientific publications.
+        - Not recommended for software.
+
+!!! info 
+
+    - This was done the first day!
+
 - Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
 
 - From here on the collaborators can push changes in the same way as we have done in a
 single-person repository in the previous episodes.
-
-!!! warning
-
-    Check if co-teacher is collaborator!
-
-    - but skip do anything for now!
-
-
-???+ "Discussion"
-
-    - Discuss the advantages and possible disadvantages of this setup.
-
 
 **Step 2: Submit a small change via the web interface as collaborator**
 
