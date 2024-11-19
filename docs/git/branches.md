@@ -1,4 +1,4 @@
-# Git branches, working locally
+# Git branches
 
 !!! questions
 
