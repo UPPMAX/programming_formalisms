@@ -73,11 +73,11 @@ git merge new-feature        # merge work to present branch
 git branch -d new-feature    # remove branch
 ```
 
-!!! seealso
+!!! note "See also"
 
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
-!!! tip
+!!! tip "Graph alias"
 
     **An important alias**
 
@@ -95,10 +95,12 @@ git branch -d new-feature    # remove branch
     ```git
 
     $ git graph
-    * 4d4acaf (HEAD -> modularity) 4 modular files
+    * 000b440 (HEAD -> main) rm print
+    | * 4d4acaf (modularity) 4 modular files
+    |/
     | * 2d4e252 (jupiter) add jupiter
     |/
-    * b9465e4 (origin/main, main) planet.py documentation
+    * b9465e4 (origin/main) planet.py documentation
     * 6a416b5 add folders and planet code
 
     ```
