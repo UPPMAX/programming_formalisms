@@ -178,34 +178,6 @@ Mandatory in some contexts `[Ram, 2013]`
 - [F.1: "Package" meaningful operations as carefully named functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-package)
 - [Use verbs, strive for names that are concise and meaningful](https://style.tidyverse.org/functions.html#naming)
 
-## A function has a clear interface 1/3
-
-Comment on this [function from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/):
-
-```python
-i=2
-
-def Prime(no, i):
-    if no == i:
-        return True
-    elif no % i == 0:
-        return False
-    return Prime(no, i + 1)
-```
-
-Function names start with lowercase character, name does not start with a
-verb, input is not checked, clumsy interface:
-
-```python
-assert Prime(2, 2)
-assert Prime(3, 2)
-assert Prime(3, 3) # Nothing stops me!
-assert not Prime(4, 2)
-assert Prime(5, 2)
-```
-
-*The* classic on refactoring is `[Fowler, 2018]`.
-
 ## A function has a clear interface 2/3
 
 Comment on this function again:
@@ -546,6 +518,50 @@ ATACC-GGGTTT
     - only uses common abbreviations
 
 ## Exercises
+
+### Exercise 1: 
+
+Take a look at the function 
+below ([from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/)):
+
+```python
+i=2
+
+def Prime(no, i):
+    if no == i:
+        return True
+    elif no % i == 0:
+        return False
+    return Prime(no, i + 1)
+```
+
+- Does it follow a good function design? Why?
+
+???- question "Answers"
+
+    These are some elements of good function design that are breached:
+
+    - By convention, function names start with lowercase character,
+      where this functions' name that starts with an uppercase first
+      character is normally suggesting that this is a class 
+      name (instead of a function name).
+      A better name would be `is_prime`
+    - A function should start with a verb, this function does not.
+      A better name would be `is_prime`
+HIERO
+    - The function's input is not checked for 
+    - clumsy interface:
+
+```python
+assert Prime(2, 2)
+assert Prime(3, 2)
+assert Prime(3, 3) # Nothing stops me!
+assert not Prime(4, 2)
+assert Prime(5, 2)
+```
+
+*The* classic on refactoring is `[Fowler, 2018]`.
+
 
 ### Exercise 1: misnomers in learners' project?
 
