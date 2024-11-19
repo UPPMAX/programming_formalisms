@@ -46,7 +46,7 @@
 
 ## Branches, merging, code reviews
 
-!!! note 
+!!! note
 
     - The earlier '(Make a) Pull Request' has changed name into 'Contribute`
     - Still `Pull requests` is the name in the menu!
@@ -105,7 +105,7 @@ There are two more ways to create “copies” of repositories into your user sp
 
 ## Contributing in a team
 
-### Contributing to existing repositories using pull requests 
+### Contributing to existing repositories using pull requests
 
 **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
 
@@ -208,8 +208,6 @@ We can practice how a conflict looks and how to resolve it:
 
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
-
-
 
 ### Summary
 
@@ -320,12 +318,9 @@ sharing screen:
     - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
-
-
 ## Exercises
 
 Exercise 5 is a repeat of doing a code review.
-
 
 ### Extra exercise 5: practice code review
 
