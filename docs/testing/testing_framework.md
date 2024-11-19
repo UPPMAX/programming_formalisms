@@ -335,7 +335,7 @@ Put the code in the `src/learners` folder.
 
     However, we can:
 
-    - ensure that a class we (may) need is in a file called `[class_name].py`,
+    - ensure that a thing we (may) need is in a file called `[thing_name].py`,
       e.g. `coordinat.py`
     - ensure the tests are in a file called `test_[class_name].py`,
       e.g. `test_coordinat.py`, so that `unittest` can actually find it
@@ -343,8 +343,8 @@ Put the code in the `src/learners` folder.
 
     ```python
     class TestCoordinat(unittest.TestCase):
-        def test_can_create(self):
-            Coordinat c
+        def test_can_create_test_coordinat(self):
+            create_test_coordinat()
     ```
 
 ## References
