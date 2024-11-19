@@ -321,6 +321,11 @@ Put the code in the `src/learners` folder.
   If there is none, create one :-)
 - Assign yourself to that issue and develop this feature
   using TDD using the `unittest` framework
+- Put your new code in the `src/bacsim` folder.
+  This is the folder of our Python package's code.
+- Put the tests in the `tests` (no `test/bacsim`) folder.
+  These are the test our Python package's code.
+
 - Write as much tests (and their fixes) as you can come up with
 
 !!! note "What feature to add?"
