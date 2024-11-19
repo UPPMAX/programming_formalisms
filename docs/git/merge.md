@@ -61,7 +61,14 @@ and asks a human for help.
 
 !!! example "**Two** branches to be merged"
 
-    This example is take from [Code Refineries workshop](https://coderefinery.github.io/git-intro/conflicts/)
+    Based on: <https://coderefinery.github.io/git-intro/conflicts/>
+
+    ???- note "License: Creative Commons Attribution 4.0 International"
+    
+        - Permits almost any use subject to providing credit and license notice.
+        - Frequently used for media assets and educational materials.
+        - The most common license for Open Access scientific publications.
+        - Not recommended for software.
 
     - Once all features are ready, switch to main!
     - This is the **Branch** we want to **merge to**
@@ -134,7 +141,7 @@ and asks a human for help.
     - Verify the result with git status.
     - Finally commit the merge with only git commit. Everything is pre-filled.
 
-!!! example "Another example of merged branches
+!!! example "Another example of merged branches"
 
     ```git
     $ git graph
@@ -358,18 +365,6 @@ gitGraph
 ???- question "Prefer a video?"
 
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
-
-## Example
-
-Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
-
-- License: Creative Commons Attribution 4.0 International
-    - Permits almost any use subject to providing credit and license notice.
-    - Frequently used for media assets and educational materials.
-    - The most common license for Open Access scientific publications.
-    - Not recommended for software.
-
-!!!- example "(Optional demo) Add to someone else's project"
 
 
 ### Extra exercise 3: practice merge conflicts between branches using the command line
