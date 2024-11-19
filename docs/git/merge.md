@@ -157,8 +157,6 @@ and asks a human for help.
 - Go to _Insights_ in the top menu and then go to _Network_ in side-bar
 - If we did this after the merging the branches do not show up.
 
-
-
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
 !!!- info "Learning objectives"
