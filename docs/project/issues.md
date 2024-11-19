@@ -14,10 +14,15 @@ tags:
 !!!- info "Learning objectives"
 
     - To be a good team member within a project
-    - Use Issues to communicate what needs to be done
-    - Assign yourself to Issues to communicate what you are working on
+    - Use issues to communicate what needs to be done
+    - Assign yourself to issues to communicate what you are working on
+    - Convert requirements to issues
 
 ???- question "For teachers"
+
+    Teaching goals:
+
+    - Find out which learners are comfortable with functions
 
     Prior:
 
@@ -26,7 +31,6 @@ tags:
     - How to prevent team members from working on the same thing?
     - How would you define what an issue is?
     - How do you call the webpage where a list of issues can be seen?
-
 
     Lesson plans:
 
