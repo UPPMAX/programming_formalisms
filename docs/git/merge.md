@@ -28,7 +28,7 @@
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
-## Prior questions:
+## Prior questions
 
 - What does a merge do?
 - What does a merge do?
@@ -124,9 +124,6 @@ and asks a human for help.
 
     - Now local Git and GitHub are in phase!
 
-
-
-
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
 !!!- info "Learning objectives"
@@ -213,18 +210,18 @@ gitGraph
 
 ???- info "Answers"
 
-    ![](github_create_branch_annotated.png)
+    ![github_create_branch_annotated](github_create_branch_annotated.png)
 
     Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     Done!
 
     > - On your local computer:
-    >    - update the repository
+    >     - update the repository
 
     On your local computer, navigate to the folder of the shared project
     and update:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -233,7 +230,7 @@ gitGraph
 
     Switch to the new branch, for example, `richel`, by doing:
 
-    ```
+    ```git
     git switch richel
     ```
 
@@ -245,13 +242,13 @@ gitGraph
     To create a file under Linux (and maybe this works on other
     operating systems too), one can do:
 
-    ```
+    ```git
     touch learners/richel/richel_is_on_richel.txt
     ```
 
     After the change, commit these:
 
-    ```
+    ```git
     git add .
     git commit -m "Richel is on richel"
     ```
@@ -261,7 +258,7 @@ gitGraph
 
     Do:
 
-    ```
+    ```git
     git push
     ```
 
@@ -269,7 +266,7 @@ gitGraph
 
     If that does not work, do:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -278,44 +275,44 @@ gitGraph
 
     > - On GitHub, verify that your changes on your branch can be found online
 
-    ![](github_pushed_to_branch.png)
+    ![github_pushed_to_branch](github_pushed_to_branch.png)
 
     Make sure you look at the correct branch, as displayed at 1.
     Then your commit message shows up at 2.
 
     > - On your local computer
-    >      - switch to the `main` branch
+    >     - switch to the `main` branch
 
-    ```
+    ```git
     git switch main
     ```
 
     > - On your local computer
-    >      - merge your topic branch to `main`
+    >     - merge your topic branch to `main`
 
-    ```
+    ```git
     git merge richel
     ```
 
     > - On your local computer
-    >      - upload your changes
+    >     - upload your changes
 
-    ```
+    ```git
     git push
     ```
 
     > - Delete your branch (i.e. the one with the unique name).
     >   You may use the web interface (easiest!) or use the command line
 
-    [](github_view_branches_annotated.png)
+    [github_view_branches_annotated](github_view_branches_annotated.png)
 
     Click on 'Branches', as shown in the image above.
 
-    ![](github_view_all_branches_annotated.png)
+    ![github_view_all_branches_annotated](github_view_all_branches_annotated.png)
 
     Click on garbage bin, as shown in the image above.
 
-    ![](github_view_all_branches_just_deleted_annotated.png)
+    ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
 
     The branch will now be deleted, as shown in the image above.
 
@@ -323,7 +320,7 @@ gitGraph
 
     Do:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -332,6 +329,7 @@ gitGraph
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
 
 ## Example
+
 Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
 
 - License: Creative Commons Attribution 4.0 International
@@ -339,7 +337,6 @@ Based on: <https://coderefinery.github.io/github-without-command-line/contributi
     - Frequently used for media assets and educational materials.
     - The most common license for Open Access scientific publications.
     - Not recommended for software.
-
 
 !!!- example "(Optional demo) Add to someone else's project"
 
