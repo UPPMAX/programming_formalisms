@@ -11,13 +11,14 @@
 
 ![Software Development Life Cycle showing the iterative nature of SDLC](../img/development_design/SDLC.png)
 
-- This is formalized in the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
+- This is formalized in the ISO/IEC 12207 model described in [ISO/IEC TR 24748-1:2010]
 
 ![ISO/IEC TR 24748-1:2010](../img/development_design/SDLC_ISO_IEC_12207.png)
 
-- When developing a software the cumulative cost of the development increases with each iteration which means that bugs or forgotten features increase in cost when discovered later.
-- There is a point in the life cycle of software where the software is retired when cost of maintaining the software is higher than the benefit for the developer - Most retirement does not mean the complete stop of the software existing.
-- This can be illustrated using a helical spiral of SDLC
+!!! Info "the cycle is degenerative as cost increases
+    - When developing a software the cumulative cost of the development increases with each iteration which means that bugs or forgotten features increase in cost when discovered later.
+    - There is a point in the life cycle of software where the software is retired when cost of maintaining the software is higher than the benefit for the developer - Most retirement does not mean the complete stop of the software existing.
+    - This can be illustrated using a helical spiral to illustrate that each iteration does not end up att the same place in a SDLC
 
 ![The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license](../img/development_design/helix_legend-01.png)
 
@@ -86,7 +87,10 @@ graph TD;
     class C,E,F,I orange;
     class D,G green;
 ```
-## Sneek peak at roles
+!!! info "Sneek peak at roles"
+    - Project Manager
+    - Requirements Engineer : A requirments enginer is responsilble for gathering and fromalising requirments and establishing and maintaining the Requirments Document
+    - Lead programmer 
 
 ## Exercises
  Further requirements analysis Risk assessment
@@ -115,8 +119,21 @@ graph TD;
     or the running of the program. S5 means a major injury or damage to stakeholder
     or catastrophic failure of the software. Then multiply P and S and set that as the value
 
-!!! info "Task for the Requirments engineer"
+!!! info "Task for the Requirements engineer"
      collate the document into one document
+
+## Design
+
+## Development 
+
+## Deployment 
+
+## Maintain
+
+## Retiere
+often does not happen but the software is gradually left to die, esp for scientific software where a retierment plan is seldom established esp if the software is developed by a phd student or post-doc or other short term person part of the research group.
+
+## Further reading
 
 ## References
 
