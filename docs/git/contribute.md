@@ -340,6 +340,161 @@ sharing screen:
 ???- question "quiz"
 
 
+## Exercises
+
+### Exercise 1: create, switch and delete a `git` branch
+
+!!!- info "Learning objectives"
+
+    - Create, switch and delete a `git` branch
+    - Build up experience using git without troubleshooting
+
+```mermaid
+gitGraph
+    commit id: "Before start"
+    commit id: "Branching version"
+    branch sven
+    checkout sven
+    commit id: "Modify my file"
+    commit id: "Delete branch" type: HIGHLIGHT
+    checkout main
+    commit id: "Another commit"
+```
+
+- For our shared GitHub repository, create a branch with your first name that is
+  unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
+  You may branch of from `main` or `develop` (if it exists).
+  You may use the web interface (easiest!) or use the command line
+- On your local computer:
+    - update the repository
+    - switch to the new branch
+    - change the content of the repository, for example,
+      by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
+    - push your changes online.
+- On GitHub, verify that your changes on your branch can be found online
+- On your local computer, switch to the main branch,
+  as we'll delete the branch you are on now
+- Delete your branch (i.e. the one with the unique name).
+  You may use the web interface (easiest!) or use the command line
+- On your local computer, update your code
+
+???- info "Answers"
+
+    > - For our shared GitHub repository, create a branch with your first name that is
+    >   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
+    >   You may branch of from `main` or `develop` (if it exists).
+    >   You may use the web interface (easiest!) or use the command line
+
+    ![](github_create_branch_annotated.png)
+
+    Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
+    Done!
+
+    > - On your local computer:
+    >    - update the repository
+
+    On your local computer, navigate to the folder of the shared project
+    and update:
+
+    ```
+    git pull
+    ```
+
+    > - On your local computer:
+    >     - switch to the new branch
+
+    Switch to the new branch, for example, `richel`, by doing:
+
+    ```
+    git switch richel
+    ```
+
+    > - On your local computer:
+    >     - change the content of the repository, for example,
+    >       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
+
+    This can be any change you'd like.
+    To create a file under Linux (and maybe this works on other
+    operating systems too), one can do:
+
+    ```
+    touch learners/richel/richel_is_on_richel.txt
+    ```
+
+    After the change, commit these:
+
+    ```
+    git add .
+    git commit -m "Richel is on richel"
+    ```
+
+    > - On your local computer:
+    >     - push your changes online.
+
+    Do:
+
+    ```
+    git push
+    ```
+
+    And your code may end up online.
+
+    If that does not work, do:
+
+    ```
+    git pull
+    ```
+
+    and try pushing again, maybe multiple times, as many people
+    are pushing to the shared repo.
+
+    > - On GitHub, verify that your changes on your branch can be found online
+
+    ![](github_pushed_to_branch.png)
+
+    Make sure you look at the correct branch, as displayed at 1.
+    Then your commit message shows up at 2.
+
+    > - On your local computer, switch to the main branch,
+    >   as we'll delete the branch you are on now
+
+    Switch to the main branch, for example, `main`, by doing:
+
+    ```
+    git switch main
+    ```
+
+    > - Delete your branch (i.e. the one with the unique name).
+    >   You may use the web interface (easiest!) or use the command line
+
+    [](github_view_branches_annotated.png)
+
+    Click on 'Branches', as shown in the image above.
+
+    ![](github_view_all_branches_annotated.png)
+
+    Click on garbage bin, as shown in the image above.
+
+    ![](github_view_all_branches_just_deleted_annotated.png)
+
+    The branch will now be deleted, as shown in the image above.
+
+    > - On your local computer, update your code
+
+    Do:
+
+    ```
+    git pull
+    ```
+
+???- question "Need a video?"
+
+    See a video [here](https://youtu.be/Ewewytijw1g)
+
+## Links
+
+- [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+
 ## Goals
 
 - [ ] explain and evaluate the usefulness of git Pull Request with code review
