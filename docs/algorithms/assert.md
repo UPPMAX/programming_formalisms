@@ -216,6 +216,12 @@ There is likely to be some code in the learners project
 that assumptions that are either invisible
 or written down as comments.
 
+???- question "What if not?"
+
+    Then it is time to develop new code :-) .
+    Assign yourself an issue and write it.
+    Put `assert` whenever you assume something to be true 
+
 Search for one occasion where this happens
 and put an `assert` statements there.
 
