@@ -1,5 +1,4 @@
-
-## Merging
+# Merging
 
 - It turned out that our experiment with XX was a good idea.
 - Our goal now is to merge modularity into main.
@@ -78,7 +77,7 @@
 
 !!!- info "Learning objectives"
 
-    - practice merging git branches without a merge conflict
+    - practice merging git branches **without** a merge conflict
 
 ```mermaid
 gitGraph
@@ -116,11 +115,11 @@ gitGraph
   or fix the merge conflict
 - On GitHub, the other person approves the Pull Request and merges
 
-### Extra exercise 3: practice merging `git` branches using the command-line
+### Extra exercise 2: practice merging `git` branches using the command-line
 
 !!!- info "Learning objectives"
 
-    - practice merging git branches without a merge conflict
+    - practice merging git branches **without** a merge conflict
 
 !!!- caution "Here we use the `main` branch for now"
 
@@ -278,7 +277,7 @@ gitGraph
 
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
 
-### Extra exercise 4: practice merge conflicts between branches using the command line
+### Extra exercise 3: practice merge conflicts between branches using the command line
 
 !!!- info "Learning objectives"
 
