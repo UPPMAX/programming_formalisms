@@ -32,7 +32,7 @@ nav:
     - Test-driven development: tdd/README.md
     - assert: algorithms/assert.md
     - Using a formal testing framework: testing/testing_framework.md
-    - Continuous integration: testing/continuous_integration.md
+    - Continuous integration: continuous_integration/README.md
     - Summary of day: tuesday_summary.md
   - Wednesday:
     - Intro: wednesday_intro.md
