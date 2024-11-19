@@ -216,17 +216,6 @@ We can practice how a conflict looks and how to resolve it:
 
 !!!- example "(Optional demo) Add to someone else's project"
 
-    - Adding a planet should be pretty straight-forward in our modular code!
-
-    |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
-    |----|---|---|---|
-    |Jupiter| 318 | 5.2 | 4.2|
-    |Saturn| 95.2 | 9.54 | 8.54|
-
-    - Co-teacher adds info about Saturn
-    - Update the files below in ``code/`` by just replacing the existing code with this:
-
-        ???- "planet_main.py"
 
 ### Summary
 
