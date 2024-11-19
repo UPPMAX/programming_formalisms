@@ -75,7 +75,7 @@ git merge new-feature        # merge work to present branch
 git branch -d new-feature    # remove branch
 ```
 
-!!! info "Sea also"
+!!! seealso
 
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
@@ -151,7 +151,7 @@ git branch -d new-feature    # remove branch
 - We consider the XX branch dead-end.
 - Let's instead start from the main branch and create a "modularity"
 
-!!! example "Demo or Type-along: git branch 2"
+!!! example "git branch 2"
 
     - add and commit
 
@@ -161,34 +161,6 @@ git branch -d new-feature    # remove branch
     ```
 
     - We can now check the history with a command that graphically tries to show the log with branches
-
-
-
-## Meanwhile
-
-**Back in main branch**
-
-- We spotted an unnecessary ``print`` line in the main branch code.
-- Perhaps we're not finished with the modular branch, so let's fix this in the main branch.
-
-!!! example "Demo or type-along"
-
-    - Go to the main branch:
-
-    ```git
-    git switch main
-    ```
-
-    - Note that we now just find the ``planet.py`` file!
-    - Let's remove the print line around row 35 in the for-loop.
-    - Save, add and commit
-
-    ```git
-    git add planet.py
-    git commit -m "rm print"
-    ```
-
-    - And do the graph!
 
     ```git
     $ git graph
@@ -204,7 +176,8 @@ git branch -d new-feature    # remove branch
     ```mermaid
     gitGraph
 
-    commit id: "add planet.py"
+    commit id: "add folders and planet code"
+    commit id: "add planet.py documentation"
     branch jupiter
     checkout jupiter
     commit id: "add jupiter"
@@ -215,8 +188,6 @@ git branch -d new-feature    # remove branch
     checkout main
     commit id:"rm print"
     ```
-
-
 
 ## Test
 
