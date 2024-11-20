@@ -42,7 +42,7 @@
 
     - We will talk about this the last day!
 
-### Licensing
+## Licensing
 
 !!! info "See also"
 
@@ -193,11 +193,9 @@ What contributes to you being able to reuse stuff that others make, and others
 you would like to reuse, you may look at the following things to determine its
 reusability:
 
-!!! note 
+!!! note
     
     This can be now reconnected to question 4 (above).
-
-
 
 - Date of last code change
   > ... is the project abandoned?
