@@ -46,7 +46,7 @@ nav:
     - Summary of day: wednesday_summary.md
   - Thursday:
     - Intro: thursday_intro.md
-    - Object Oriented development: design_develop/OO_development.md 
+    - Object Oriented development: design_develop/OO_development.md
     - Class design: data_structures/class_design.md
     - A 'has-a' relation: data_structures/has_a_relation.md
     - Expressive data types: data_structures/expressive_data_type.md
