@@ -161,6 +161,24 @@ and asks a human for help.
 - Let's view the branches on Github!
 - Go to _Insights_ in the top menu and then go to _Network_ in side-bar
 - If we did this after the merging the branches do not show up.
+- 
+
+- Conflicts may show up like this:
+
+![conflict-edit-2](../img/contributing/conflict-edit-2.png)
+
+- We merge together one of the pull requests (this will work)
+- Then we try to merge the other and we see a conflict:
+
+![conflict-pull-request](../img/contributing/conflict-pull-request.png)
+
+- We try to resolve the conflict via web
+- **Choose the version that you wish to keep**, remove conflict markers, "Mark as resolved" and commit the change
+
+![conflict-resolution](../img/contributing/conflict-resolution.png)
+
+
+## Exercises
 
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
