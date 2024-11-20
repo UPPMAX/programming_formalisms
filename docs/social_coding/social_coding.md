@@ -9,16 +9,6 @@
     Learners
 
     - have an overview of motivations, benefits, but also risks of sharing and reusing code.
-    - know how to identify whether one can use other peoples software.
-    - have a basic understanding of licenses
-
-## input
-
-!!! Discussion "One-time usage towards distributed package"
-
-    - Have others used your code?
-    - Did you plan it from beginning?
-    - Did you take actions somehow?
 
 !!! note "The Turing Way"
 
@@ -52,19 +42,11 @@
 
     - We will talk about this the last day!
 
-### Licensing
+## Licensing
 
 !!! info "See also"
 
     - We will talk about this the last day!
-
-## Discussion/questions/poll: basics of sharing
-
-```{discussion} Social-1: Think about if and how you share
-- Did you ever share your code? If yes, what motivated you? Come up with
-  **reasons for sharing** your scripts/code/data.
-- Also think about **reasons for not sharing**.
-```
 
 ## Question 1: Why would I want to share my scripts/code/data?
 
@@ -84,7 +66,6 @@
 - J: You can reuse your own code later after change of job or affiliation
 - K: It encourages me to code properly from the start
 
-**Choose many**. Vote on Menti.com (code: XYZ)
 
 ## Quesion 2: The most concerning thing for me, If I share my software now
 
@@ -98,15 +79,10 @@
 - H: It is too early, I am just prototyping, I will write version to distribute later
 - I: Worried about licensing and legal matters, as they are very complicated
 
-**Choose many**. Vote on Menti.com (code: XYZ)
-
 ## Question 3: Why is software often treated differently from papers?
 
-**Free-form answers**. Vote on Menti.com (code: XYZ)
 
 ## Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?
-
-**Free-form answers**. Vote on Menti.com (code: XYZ)
 
 ## Comparing sharing papers and sharing code
 
@@ -162,9 +138,8 @@ includes samples of charming author responses such as:
 
 ## Benefits of sharing software
 
-```{instructor-note}
 We revisit answers to question 1 (above).
-```
+
 
 ## Motivation for open source software
 
@@ -196,19 +171,6 @@ We revisit answers to question 1 (above).
 - **"Bad" derivative projects may appear**
   > It will be clear which is the official version.
 
-```{discussion} Social-2: Discussion about "You aren't required to support anyone"
-- Have you experienced an implicit expectation of support?
-- Supporting all requests can lead to overworking and mental health issues.
-- Not supporting requests can also induce guilt.
-- Most projects are maintained by 1 or 2 persons.
-- Most projects cannot retain contributors for a longer time. Interests change.
-  "Casual contributors are like tourists visiting NYC for a weekend" (Nadia
-  Asparouhova, book below).
-- If you maintain all projects that you start forever, at some point it may be difficult to start new projects.
-- What are your experiences? Do you agree with the above thoughts?
-- Book recommendation: Nadia Asparouhova (formerly Nadia Eghbal): "Working in
-  Public: The Making and Maintenance of Open Source Software (Stripe Press)"
-```
 
 ## Code reusability
 
@@ -231,9 +193,9 @@ What contributes to you being able to reuse stuff that others make, and others
 you would like to reuse, you may look at the following things to determine its
 reusability:
 
-```{instructor-note}
-This can be now reconnected to question 4 (above).
-```
+!!! note
+    
+    This can be now reconnected to question 4 (above).
 
 - Date of last code change
   > ... is the project abandoned?
@@ -271,6 +233,6 @@ This can be now reconnected to question 4 (above).
 - Sometimes "OTHERS" are you yourself in the future in a different group/job.
 - **Software licenses** matter. And this is what we will discuss in the next episode.
 
-## New: Sharing data??
+## Sharing data
 
 <https://coderefinery.github.io/social-coding/sharing-data/>
