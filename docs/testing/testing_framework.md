@@ -294,6 +294,9 @@ In this exercise, we get the tests to work within our IDE.
 
 - Follow the steps at [running a test](#running-a-test)
 - Run all the tests of the package
+- Are all tests passing? If not, can you see the error message?
+
+Fixing the failing tests is beyond the scope of this exercise.
 
 ### Exercise 2: put example code to fit the testing framework
 
