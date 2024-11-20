@@ -59,7 +59,7 @@
         - update index
     - Discussion how you thoght about things
 
-## Exercise    
+## Exercise
 
 !!! info "Intro"
 
@@ -81,7 +81,6 @@
     ???- question "Group 2: Work together and formulate 'Getting started' section"
     
     ???- question "Group 3: Work together and formulate 'License' section"
-
 
 
 ## Discussion
