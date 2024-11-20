@@ -41,7 +41,7 @@ nav:
     - Contributing with code review: git/contribute.md
     - Sharing and social coding: social_coding/social_coding.md
     - Pair programming: pair_programming/README.md
-    - Function design: algorithms/function_design.md
+    - Function design: function_design/README.md
     - Summary of day: wednesday_summary.md
   - Thursday:
     - Intro: thursday_intro.md
