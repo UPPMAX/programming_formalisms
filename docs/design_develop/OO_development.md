@@ -11,10 +11,22 @@ gives two major benefits
         The model tends to be local resulting from a individual item. Each of these are represented by a single object.
 
 
+### Objects
+!!! info What is and object
+    An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
+
+
+???+ Exercise
+
+!!! hint
+    UNDF 
+
 !!! info **Object Orientation is a Paradigm not a language feature**
     - Mariam-webster defines a Paradigm as:
     philosophical and theoretical framework of a scientific school or discipline within which theories, laws, and generalizations and the experiments performed in support of them are formulated
     - Stanford Encyclopedia of Philosophy cites the work of Thomas Kuhn The Structure of Scientific Revolutions in where a work of Paradigm is not only the key theories and laws, but also—and this is what makes them paradigms—the applications of those theories in the solution of important problems
+
+
 
 Developing object orientated is following these principles
 
@@ -25,4 +37,5 @@ Developing object orientated is following these principles
 3: The concept of message passing
 
 ## References 
-
+- `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
+-`[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
