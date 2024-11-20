@@ -26,7 +26,9 @@ Tuesday  |14:15-15:00|Richel |[TDD](tdd/README.md)
 Tuesday  |15:00-15:40|Richel |[formal testing framework](testing/testing_framework.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
-Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches/merge](./git/branches.md) & [github branches/merge](./git/contribute.md) & [contribute, social coding](./social_coding/social_coding.md)
+Wednesday|09:00-12:00|Björn  |[Formal git workflow, branches](./git/branches.md)
+Wednesday|09:00-12:00|Björn  |[Formal git workflow, merge](./git/merge.md)
+Wednesday|09:00-12:00|Björn  |[Formal git workflow, Contribute](./git/contribute.md) & [Social coding and sharing](./social_coding/social_coding.md)
 Wednesday|13:00-14:00|Richel |[Pair programming](pair_programming/README.md), [formal testing framework](testing/testing_framework.md)
 Wednesday|14:15-15:00|Richel |[Pair programming](pair_programming/README.md), [formal testing framework](testing/testing_framework.md), [continuous integration](continuous_integration/README.md)
 Wednesday|15:15-15:40|Richel |[formal testing framework](testing/testing_framework.md), [continuous integration](continuous_integration/README.md), [Function design](function_design/README.md)
