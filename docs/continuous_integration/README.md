@@ -211,7 +211,6 @@ You will need to defend this in a code review :-)
 
 Fixing this is beyond this exercise.
 
-
 ### Exercise 2: improve the learners' project
 
 Now we try to improve the learners' project by fixing one
@@ -219,7 +218,20 @@ of the errors.
 
 - Go to the learners' project
 - Click on the 'Actions' tab
-- Look for an Action that fails. Pick your favorite:
+- Look for an Action that fails. Which actions do you see?
+
+???- question "Answer"
+
+    - 'Check code style'
+    - 'Check package'
+    - 'Check links'
+    - 'Check spelling'
+    - 'Measure codecov'
+
+- What would you guess that these do?
+
+???- question "Answer"
+
     - 'Check code style': checks for Python style, will improve your
       Python grammar
     - 'Check package': checks if the repo can be built into a package,
@@ -231,8 +243,25 @@ of the errors.
     - 'Measure codecov' and the code coverage:
       checks if all code in the repo is tested,
       needs to be 100%, practice writing tests
-- Of your favorite action, look what the problem is
-- Try to fix 1 error, see below for hints
+
+- What is the most important action?
+
+???- question "Answer"
+
+    'Check package' is the most important action:
+    if the package cannot be created,
+    the code is broken.
+
+- Pick your favorite action and try to fix 1 error, see below for hints
+
+!!! note "Pick your favorite action"
+
+    - 'Check code style': will improve your Python grammar
+    - 'Check package': has the hardest Python problems
+    - 'Check links': straightforward
+    - 'Check markdown': will improve your markdown grammar
+    - 'Check spelling': straightforward
+    - 'Measure codecov': practice writing tests
 
 ???- question "How to fix 'Check code style'?"
 
@@ -349,7 +378,37 @@ of the errors.
     <!-- markdownlint-enable MD013 -->
     ```
 
-???- question "How to fix check spelling?"
+???- question "How to fix 'Check package'?"
+
+    This is the most important test:
+    if this fails, it means the code of our project is broken.
+    You will see a Python error that needs fixing, for example:
+
+    ```text
+    ImportError: Failed to import test module: tests.test_sven
+    Traceback (most recent call last):
+      File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+        module = self._get_module_from_name(name)
+      File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+        __import__(name)
+      File "/home/runner/work/programming_formalisms_project_autumn_2024/programming_formalisms_project_autumn_2024/
+      tests/test_sven.py", line 23
+        def test_prime_numbers(self)
+                                    ^
+    SyntaxError: expected ':'
+
+
+    ----------------------------------------------------------------------
+    Ran 7 tests in 0.001s
+
+    FAILED (errors=2)
+    ```
+
+    This error occurs in file `tests/test_sven.py` at line 23.
+    It is a syntax error that can be fixed by fixing the Python code in that
+    file.
+
+???- question "How to fix 'Check spelling'?"
 
     Take a look at the words that triggered the spellcheck,
     for example:
@@ -379,36 +438,16 @@ of the errors.
     In such a case, add the offending word to the whitelist that is in file
     `.wordlist.txt` at the root folder of our repo.
 
-???- question "How to fix the codecov?"
+???- question "How to fix the code coverage?"
 
-    Sometimes, the code coverage cannot be measured,
-    because the code itself is broken:
+    One can only improve the code coverage if 'Check package'
+    passes: if our package is broken, we cannot measure code
+    coverage.
 
-    ```text
-    ImportError: Failed to import test module: tests.test_gustav
-    Traceback (most recent call last):
-      File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
-        module = self._get_module_from_name(name)
-      File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
-        __import__(name)
-      File "/home/runner/work/programming_formalisms_project_autumn_2024/programming_formalisms_project_autumn_2024/
-      tests/test_sven.py", line 23
-        def test_prime_numbers(self)
-                                    ^
-    SyntaxError: expected ':'
+    See 'How to fix 'Check package'' on how to do that.
 
-
-    ----------------------------------------------------------------------
-    Ran 7 tests in 0.001s
-
-    FAILED (errors=2)
-    ```
-
-    This error occurs in file `tests/test_sven.py` at line 23.
-    It is a syntax error that can be fixed by fixing the Python code in that
-    file.
-
-    If codecov itself works, click on the codecov badge at the front page
+    If the package can be built successfully,
+    click on the codecov badge at the front page
     of the learners' project:
 
     ![Click on the codecov badge](click_codecov_badge.png)
