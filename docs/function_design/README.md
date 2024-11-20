@@ -9,9 +9,10 @@ tags:
 
 !!!- info "Learning objectives"
 
-    - Understand design by contract
-    - Understand algorithm names increase expressiveness of code
-    - Understand difference between `if` and `assert` in function writing
+    - Understand why function design is important
+    - Can give some features of good function design
+    - Give a function a proper name
+    - Criticise functions
 
 ???- question "For teachers"
 
@@ -56,6 +57,11 @@ reading files, doing an analysis and saving the
 results to files. You want it to be correct.
 
 You needs to convert your ideas to functions.
+
+## Big picture
+
+You should decompose programs into functions `[Wilson et al, 2017]`,
+to make the problem simpler.
 
 ## Terminology
 
@@ -150,7 +156,7 @@ A good function ...
   `[CppCore functions][tidyverse style guideline of functions]`
 - Has a good name `[Martin, 2009]`
   `[CppCore functions][tidyverse style guideline of functions]`
-  `[PEP 20a][Reitz et al., 2016]`:
+  `[PEP 20a][Reitz et al., 2016][Wilson et al, 2017]`:
     - starts with a verb `[tidyverse style guideline of functions]`
     - readable `[PEP 20a]`
     - intention-revealing `[Martin, 2009]`
@@ -475,71 +481,7 @@ def Prime(no, i):
         assert isinstance(x, int)
         return Prime(x, 2)
 
-
-### Exercise 4
-
-Imagine two DNA sequences:
-
-```text
-AAACCCGGGTTT
-ATACCGGGTTT
-```
-
-The function `align_dna_seqs` should align two DNA sequences to this:
-
-```text
-AAACCCGGGTTT
-ATACC-GGGTTT
-```
-
-
-How would you write the test assure the alignment worked correctly?
-There are multiple ways to write this test.
-
-???- question "Answer"
-
-    Here is one way to do it:
-
-    ```python
-    assert align_dna_seqs(
-      "AAACCCGGGTTT", "ATACCCGGGTAT"
-      ) == {
-     "AAACCCGGGTTT", "ATACC-GGGTTT"
-      }
-    assert align_dna_seqs(
-      { "AAACCCGGGTTT", "ATACCCGGGTAT" }
-    ) ==
-      { "AAACCCGGGTTT", "ATACC-GGGTTT" }
-    ```
-
-    ???- question "Prefer R?"
-
-        ```r
-        expect_equal(
-          align_dna_seqs("AAACCCGGGTTT", "ATACCCGGGTAT"),
-          c("AAACCCGGGTTT", "ATACC-GGGTTT")
-        )
-        expect_equal(
-          align_dna_seqs(c("AAACCCGGGTTT","ATACCCGGGTAT")),
-          c("AAACCCGGGTTT","ATACC-GGGTTT")
-        )
-        ```
-
-    Here is another way to do it:
-
-    ```python
-    dna_1 =        "AAACCCGGGTTT"
-    dna_2_before = "ATACCGGGTTT"
-    dna_2_after =  "ATACC-GGGTTT"
-    expect_equal(
-      align_dna_seqs(c(dna_1, dna_2_before)),
-      c(dna_1, dna_2_after)
-    )
-
-    Pick your favorite of these.
-
-
-### Exercise 5: misnomers in learners' project?
+### Exercise 4: misnomers in learners' project?
 
 Look at the code of the learners' project.
 Do you think there is a function that has a bad name?
@@ -586,4 +528,7 @@ which should include your reasoning.
   The Hitchhiker's guide to Python: best practices for development.
   "O'Reilly Media, Inc.", 2016.
   Chapter 'General concepts'
-
+- `[Wilson et al, 2017]` Wilson, Greg, et al.
+  "Good enough practices in scientific computing." 
+  PLoS computational biology 13.6 (2017): e1005510. 
+  [here](https://doi.org/10.1371/journal.pcbi.1005510)

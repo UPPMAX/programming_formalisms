@@ -16,7 +16,6 @@ tags:
     - Understand why pair programming is important
     - Understand what good pair programming looks like
     - Practice pair programming
-    - Practice to convert class diagrams to real code
 
 ???- question "For teachers"
 
@@ -29,7 +28,6 @@ tags:
     - Learners can tell why pair programming is important
     - Learners can tell how good pair programming looks like
     - Learners have practiced pair programming
-    - Learners have converted class diagrams to real code
 
     Preparation:
 

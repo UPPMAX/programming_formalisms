@@ -9,7 +9,9 @@ tags:
 !!!- info "Learning objectives"
 
     - Understand what continuous integration is
-    - I can fix an error given by at least one Continuous Integration script
+    - Understand why continuous integration is important
+    - I can find the continuous integration errors
+    - I can fix an error given by a CI script
 
 ???- question "For teachers"
 

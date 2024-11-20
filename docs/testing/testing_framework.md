@@ -14,7 +14,8 @@ tags:
 !!!- info "Learning objectives"
 
     - understand the benefit of using a testing framework
-    - practice writing tests within a formal testing framework
+    - put the files of my code in the right locations
+    - write tests using a formal testing framework
 
 ???- question "For teachers"
 
@@ -160,6 +161,8 @@ as reference.
 
 For the `unittest` framework, the actual functions are put in the
 `src/[package_name]` folder, for example `src/bacsim/sven_utils.py`.
+With or without a testing framework, source code should be put in the `src`
+folder `[Wilson et al, 2017]`.
 
 ???- question "How does this look like in VSCode?"
 
@@ -460,3 +463,7 @@ In this course, you've written some functions yourself.
   "Code review as a simple trick to enhance reproducibility, accelerate
   learning, and improve the quality of your team’s research."
   American Journal of Epidemiology 190.10 (2021): 2172-2177.
+- `[Wilson et al, 2017]` Wilson, Greg, et al.
+  "Good enough practices in scientific computing." 
+  PLoS computational biology 13.6 (2017): e1005510. 
+  [here](https://doi.org/10.1371/journal.pcbi.1005510)
