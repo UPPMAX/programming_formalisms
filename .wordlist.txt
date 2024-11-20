@@ -18,7 +18,7 @@ techtarget
 whatis
 DSL
 OOSE
-hierarchie
+
 omg
 organisations
 visualizing
@@ -1496,3 +1496,15 @@ Todo
 scalability
 amd
 intel
+Seidewitz
+Agri
+Londos
+Ivar
+usecase
+pii
+WSK
+VSCode
+linters
+Appveyor
+criticise
+

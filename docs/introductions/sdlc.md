@@ -11,7 +11,7 @@
 
 ![Software Development Life Cycle showing the iterative nature of SDLC](../img/development_design/SDLC.png)
 
-- This is formalized in the ISO/IEC 12207 model described in 
+- This is formalized in the ISO/IEC 12207 model described in
   [ISO/IEC TR 24748-1:2010]
 
 ![ISO/IEC TR 24748-1:2010](../img/development_design/SDLC_ISO_IEC_12207.png)
@@ -72,7 +72,7 @@
 
 ???- "What is risk management?"
 
-    Risk management is "coordinated activities to direct and control and 
+    Risk management is "coordinated activities to direct and control and
     organization with regard to risk"
 
 ```mermaid
@@ -95,11 +95,11 @@ graph TD;
     class D,G green;
 ```
 
-!!! info "Sneek peak at roles"
+!!! info "Sneak peak at roles"
 
     - Project Manager
-    - Requirements Engineer : A requirements engineer is responsible for 
-      gathering and formalising requirements and establishing and 
+    - Requirements Engineer : A requirements engineer is responsible for
+      gathering and formalising requirements and establishing and
       maintaining the requirements document
     - Lead programmer
 
@@ -128,12 +128,12 @@ For the fall 2024:
 ???+ note "Exercise 30 min"
 
     For each requirement type(business or technical risk),
-    asses the major risk associated with the requirement. 
+    asses the major risk associated with the requirement.
     It should be specified in one sentence.
     Asses the probability that the specified risk will happen during a run,
-    on a scale of 1-5 
+    on a scale of 1-5
     (where 1 is a rare occurrence and 5 happens every time you run).
-    And do the same for severities (where S1 is a minor inconvenience to 
+    And do the same for severities (where S1 is a minor inconvenience to
     the stakeholder or the software, and S5 means a major injury or damage to
     stakeholder or catastrophic failure of the software).
     Then multiply P and S and set that as the risk value.
@@ -152,13 +152,13 @@ during development .
 Unified Modeling Language UML, is one such modeling  
 language [UML web page](https://www.uml.org/)  
 here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
-UML was generated to unify the big pobular object oriented modeling aproches of Booch (Booch Method superseeded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
+UML was generated to unify the big popular object oriented modeling approaches of Booch (Booch Method superseded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
 
 When we design Object oriented our goal is to mimic the object of the real world which we the abstract into Classes
 
 ### Development
 
- During Development we implement the design using programming languages and tequiches
+ During Development we implement the design using programming languages and techniques.
 
 ### Deployment
 
@@ -168,9 +168,9 @@ This is when you package and publish your software, this can be as simple as mak
 
 Updates and revisions bug testing etc. Maintaining persistent links and download locations
 
-### Retiere
+### Retire
 
-Often does not happen but the software is gradually left to die, esp for scientific software where a retierment plan is seldom established esp if the software is developed by a phd student or post-doc or other short term person part of the research group.
+Often does not happen but the software is gradually left to die, esp for scientific software where a retirement plan is seldom established esp if the software is developed by a PhD student or post-doc or other short term person part of the research group.
 
 ## Paradigms of Design
 
@@ -188,7 +188,7 @@ There are two types of module, *program control modules* which are purposely and
 - some communication in with no communication out
 
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangeability over the design space.
-`[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software it has a good practice described.
+`[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software (agricultural sector) it has a good practice described.
 
 ### Object Orientation
 

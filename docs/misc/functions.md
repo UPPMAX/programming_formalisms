@@ -13,6 +13,7 @@ practicing TDD.
 
 !!! note "`is_zero`"
 
+    - Input: the value to be investigated
     - Returns `True` if the input is zero
     - Returns `False` if the input is not zero
     - If the input is not one number, a `TypeError` is raised.
@@ -38,8 +39,9 @@ practicing TDD.
         return x == 0
     ```
 
-!!! note "`is_even(x)`"
+!!! note "`is_even`"
 
+    - Input: the value to be investigated
     - Returns `True` if the input is even
     - Returns `False` if the input is not even
     - If the input is not one integer, a `TypeError` is raised.
@@ -64,8 +66,9 @@ practicing TDD.
         return x % 2 == 0
     ```
 
-!!! note "`is_odd(x)`"
+!!! note "`is_odd`"
 
+    - Input: the value to be investigated
     - Returns `True` if the input is odd
     - Returns `False` if the input is not odd
     - If the input is not one integer, a `TypeError` is raised.
@@ -105,6 +108,7 @@ practicing TDD.
 
 !!! note "`is_probability(p)`"
 
+    - Input: the value to be investigated
     - Returns `True` if the input is in the range [0.0, 1.0],
       that is from and including zero to and including one
     - Returns `False` if the input is not in that range
@@ -135,8 +139,9 @@ practicing TDD.
         return x >= min_probability and x <= max_probability
     ```
 
-!!! note "`is_number(x)`"
+!!! note "`is_number`"
 
+    - Input: the value to be investigated
     - Returns `True` if the input is a number
     - Returns `False` if the input is not a number
     - If the input is not one element, a `TypeError` is raised.
@@ -159,6 +164,7 @@ practicing TDD.
 
 !!! note "`are_numbers(x)`"
 
+    - Input: one value (e.g. a list) to be investigated
     - Returns `True` if the input is a list of numbers number
     - Returns `False` if the input is not a list of numbers
     - If the input is an empty list, a `TypeError` is raised.
@@ -182,8 +188,9 @@ practicing TDD.
         return all(is_number(e) for e in x)
     ```
 
-!!! note "`get_digits(x)`"
+!!! note "`get_digits`"
 
+    - Input: one number to be split in digits
     - Returns the number split into a list of digits, e.g. `314` become `[3, 1, 4]`
     - If the input is not one integer, or is negative, a `TypeError` is raised.
 
@@ -222,8 +229,9 @@ practicing TDD.
 
     - [YouTube video showing how to develop `get_digits` using TDD](https://youtu.be/vmRuSWhdA7c)
 
-!!! note "`is_roman_numeral(x)`"
+!!! note "`is_roman_numeral`"
 
+    - Input: one string to be checked if it is a roman numeral
     - Returns `True` if the input is a roman numeral,
       e.g. 'I', 'II', 'IV', 'XI', etc.
     - Returns `False` if the input is not a roman numeral
@@ -293,7 +301,7 @@ practicing TDD.
 
     - If the input is not one valid roman numeral, a `TypeError` is raised.
 
-???- question "Too easy?"
+???- question "Too easy? Try Project Euler"
 
     Go ahead and write a function to solve
     a question at [Project Euler](https://projecteuler.net/archives).
@@ -301,7 +309,12 @@ practicing TDD.
 
 ## Other example implementations
 
-!!! note "TODO: merge"
+!!! note "`are_strings`"
+
+    - Function name: `are_strings`
+    - Output:
+        - Returns `True` if the input is one or more strings.
+        - Returns `False` otherwise.
 
 ???- question "`are_strings` example implementation"
 
@@ -320,26 +333,41 @@ practicing TDD.
         return all(is_string(e) for e in x)
     ```
 
+!!! note "`check_are_strings`"
+
+    - Function name: `check_are_strings`
+    - Input: the value to be checked
+    - Output:
+        - Returns nothing
+        - Raises an exception when the input is not one or more strings
+
 ???- question "`check_are_strings` example implementation"
 
     Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
-    def check_are_numbers(x):
-        """Determine if `x` is one or more numbers.
+    def check_are_strings(x):
+        """Determine if `x` is one or more strings.
 
-        If `x` is not one or more numbers, a `RuntimeError` is raised.
+        If `x` is not one or more strings, a `RuntimeError` is raised.
 
         Returns nothing.
         """
-        if not are_numbers(x):
-            msg = "'x' must be numbers. "
+        if not are_strings(x):
+            msg = "'x' must be strings. "
             raise RuntimeError(
                 msg,
                 "Actual value of 'x': ", x,
             )
     ```
 
+!!! note "`check_different`"
+
+    - Function name: `check_different`
+    - Input: the two values to be compared
+    - Output:
+        - Returns nothing
+        - Raises an exception when the two input values are different
 
 ???- question "`check_different` example implementation"
 

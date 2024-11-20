@@ -66,6 +66,10 @@ An issue is a unit of work, or something that needs to be done.
 All issues are stored in an issue tracker.
 The issue tracker is a fundamental communication tool in
 teams `[Bertram, 2009]`
+In any project, you should create a shared "to-do" list,
+such as an issue tracker `[Wilson et al, 2017]`.
+
+
 
 English                 |Issue                          |Describe
 ------------------------|-------------------------------|----------------------------------------
@@ -100,7 +104,7 @@ The learners' project has it too.
 
 In the text write something like:
 
-```
+```text
 This issue dependends on #42
 ```
 
@@ -131,7 +135,7 @@ Some issues originate from the requirements documents, as shown below.
 
     The function creates a parameter set with reasonably normal default settings.
 
-    The data type of the parameter set must be a class called `Parameters`, 
+    The data type of the parameter set must be a class called `Parameters`,
     but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
     of strings if this is not specified yet.
 
@@ -185,7 +189,7 @@ Some issues originate from the requirements documents, as shown below.
 
     The function creates a bacterium with reasonably normal default settings.
 
-    The data type of the bacterium must be a class called `Bacterium`, 
+    The data type of the bacterium must be a class called `Bacterium`,
     but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
     of strings if this is not specified yet.
 
@@ -252,8 +256,15 @@ For that, a [kanban board](kanban_board.md) is used instead.
 
 ## References
 
-- `[Bertram, 2009]` Bertram, Dane. "The social nature of issue tracking in software engineering." University of Calgary (2009).
-- `[Gunderloy, 2007]` Gunderloy, Mike, ed. Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
-
+- `[Bertram, 2009]` Bertram, Dane.
+  "The social nature of issue tracking in software engineering."
+  University of Calgary (2009).
 - `[Bugzilla, 2009]` Bugzilla (2009). Life Cycle of a Bug.
-  Retrieved October 30, 2009 from <https://www.bugzilla.org/docs/2.18/html/lifecycle.html>
+  Retrieved October 30, 2009 from 
+  <https://www.bugzilla.org/docs/2.18/html/lifecycle.html>
+- `[Gunderloy, 2007]` Gunderloy, Mike, ed.
+  Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
+- `[Wilson et al, 2017]` Wilson, Greg, et al.
+  "Good enough practices in scientific computing." 
+  PLoS computational biology 13.6 (2017): e1005510. 
+  [here](https://doi.org/10.1371/journal.pcbi.1005510)

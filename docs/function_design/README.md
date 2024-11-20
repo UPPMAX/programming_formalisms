@@ -9,9 +9,10 @@ tags:
 
 !!!- info "Learning objectives"
 
-    - Understand design by contract
-    - Understand algorithm names increase expressiveness of code
-    - Understand difference between `if` and `assert` in function writing
+    - Understand why function design is important
+    - Can give some features of good function design
+    - Give a function a proper name
+    - Criticise functions
 
 ???- question "For teachers"
 
@@ -25,7 +26,13 @@ tags:
 
     Prior:
 
-    - .
+    - What makes a well-written function?
+    - What is more important: that a function is correct or that
+      it is easy to use?
+    - What is more important: that a function is correct or that
+      it is fast?
+    - What is more important: that a function is easy to use or that
+      it is fast?
 
     Lesson plans:
 
@@ -51,6 +58,11 @@ results to files. You want it to be correct.
 
 You needs to convert your ideas to functions.
 
+## Big picture
+
+You should decompose programs into functions `[Wilson et al, 2017]`,
+to make the problem simpler.
+
 ## Terminology
 
 Term                 |Description
@@ -70,275 +82,139 @@ def my_function(my_arguments):
     return my_return_value
 ```
 
-## Problem
+## Functions design: design by contract
 
-How do I write functions [1] that are:
-
-- easy to use
-- correct
-- fast [2]
-
-- [1] For now, we use `algorithm == function`,
-  as the definition of an algorithm is
-  'a step-by-step procedure for solving a problem or accomplishing some
-  end' `[dictionary definition]`
-- [2] pick any vague definition
-
-## What is a good function? 1/3
-
-A good function ...
-
-- Sometimes: is documented
-  `[Ram, 2013][tidyverse style guideline of functions]`
-- Is small `[Martin, 2009]`
-  `[CppCore functions][tidyverse style guideline of functions]`
-- Has a good name `[Martin, 2009]`
-  `[CppCore functions][tidyverse style guideline of functions]`
-  `[PEP 20a][Reitz et al., 2016]`
-- Is easy to use correctly and hard to use incorrectly
-  `[Meyers, 2005][CppCore functions][PEP 20c][PEP 20d]`
-- Does one thing correctly `[Martin, 2009]`
-  `[CppCore functions]`
-  `[tidyverse style guideline of functions]`
-- Is tested `[Martin, 2011][CppCore functions]`
-  `[tidyverse style guideline of functions]`
-- Raises helpful exceptions `[Martin, 2009]`
-  `[CppCore functions][tidyverse style guideline of functions][PEP 20b]`
-- Fast if needed `[CppCore functions]`
-
-## Design by contract
+A common design of functions is that they follow
+design-by-contract programming (term by `[Meyer, 1992]`),
+where 'contract' is a metaphor for 'agreement'.
 
 ![Design by contract](design_by_contract.png)
 
 > [Source: Wikipedia](https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg)
 
-## A good function is documented
+- Input (plural) are called 'the preconditions'
+- Within a function,
+  if the preconditions are invalid, an error or exception is raised
+- Within a function,
+  if the preconditions are valid, a valid output is created
+  and/or there will be side effects, such as creating a file
 
-```python
-def sort_1(x):
-  """Sort list `x` in-place.
+In this course, we've been using design by contract.
 
-  Returns nothing
-  """
+## Features of a good function
 
-def sort_2(x):
-  """Sort list `x`.
+A good function ...
 
-  Returns the sorted list.
-  """
+- Sometimes: is documented
+  `[Ram, 2013][tidyverse style guideline of functions]`.
+  In some contexts, documentation is mandatory `[Ram, 2013]`
+  `[tidyverse style guideline of functions]`.
 
-assert sort_1.__doc__
-assert sort_2.__doc__
-```
+???- question "Example"
 
-???- question "Prefer R?"
+    Here is an example of a function with an unclear name.
+    The documentation is used to clarify:
 
-    ```r
-    #' Sort list `x` in-place.
-    #' @param x a list
-    #' @return nothing
-    sort_1 <- function(x) {
-      # ...
-    }
+    ```python
+    def sort_1(x):
+      """Sort list `x` in-place.
 
-    #' Sort list `x`
-    #' @param x a list
-    #' @return the sorted list
-    sort_2 <- function(x) {
-      # ...
-    }
+      Returns nothing
+      """
 
-    # Check if functions have documentation here
+    def sort_2(x):
+      """Sort list `x`.
+
+      Returns the sorted list.
+      """
+
+    assert sort_1.__doc__
+    assert sort_2.__doc__
     ```
 
-Mandatory in some contexts `[Ram, 2013]`
-`[tidyverse style guideline of functions]`.
+    ???- question "Prefer R?"
 
-## A good function has a good name
+        ```r
+        #' Sort list `x` in-place.
+        #' @param x a list
+        #' @return nothing
+        sort_1 <- function(x) {
+          # ...
+        }
 
-> There are only two hard things in Computer Science:
-> cache invalidation and naming things
->
-> Phil Karlton
+        #' Sort list `x`
+        #' @param x a list
+        #' @return the sorted list
+        sort_2 <- function(x) {
+          # ...
+        }
 
-![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
+        # Check if functions have documentation here
+        ```
 
-- starts with a verb `[tidyverse style guideline of functions]`
-- readable `[PEP 20a]`
-- intention-revealing `[Martin, 2009]`
-- pronounceable `[Martin, 2009]`
-- searchable `[Martin, 2009]`
-- not cute `[Martin, 2009]`
-- no pun `[Martin, 2009]`
-- carefully `[CppCore functions]`
+- Is small `[Martin, 2009]`
+  `[CppCore functions][tidyverse style guideline of functions]`
+- Has a good name `[Martin, 2009]`
+  `[CppCore functions][tidyverse style guideline of functions]`
+  `[PEP 20a][Reitz et al., 2016][Wilson et al, 2017]`:
+    - starts with a verb `[tidyverse style guideline of functions]`
+    - readable `[PEP 20a]`
+    - intention-revealing `[Martin, 2009]`
+    - pronounceable `[Martin, 2009]`
+    - searchable `[Martin, 2009]`
+    - not cute `[Martin, 2009]`
+    - no pun `[Martin, 2009]`
+    - carefully `[CppCore functions]`
 
+???- question "Famous quote on naming functions"
 
-## A good function has a clear name
+    > There are only two hard things in Computer Science:
+    > cache invalidation and naming things
+    >
+    > Phil Karlton
 
-- [F.1: "Package" meaningful operations as carefully named functions](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-package)
-- [Use verbs, strive for names that are concise and meaningful](https://style.tidyverse.org/functions.html#naming)
+    ![https://www.karlton.org/karlton/images/with-fish.jpg](phil_karlton_with_fish.jpg)
 
-## A function has a clear interface 1/3
+- Is easy to use correctly and hard to use incorrectly
+  `[Meyers, 2005][CppCore functions][PEP 20c][PEP 20d]`
+- Does one thing correctly `[Martin, 2009]`
+  `[CppCore functions]`
+  `[tidyverse style guideline of functions]`
 
-Comment on this [function from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/):
+???- question "Example"
 
-```python
-i=2
+    A function should perform a single logical operation `[CppCore F.2]`,
+    hence don't:
 
-def Prime(no, i):
-    if no == i:
-        return True
-    elif no % i == 0:
-        return False
-    return Prime(no, i + 1)
-```
+    ```python
+    def do_x_and_y(): pass
 
-Function names start with lowercase character, name does not start with a
-verb, input is not checked, clumsy interface:
+    do_x_and_y()
+    ```
 
-```python
-assert Prime(2, 2)
-assert Prime(3, 2)
-assert Prime(3, 3) # Nothing stops me!
-assert not Prime(4, 2)
-assert Prime(5, 2)
-```
+    Instead, do:
 
-*The* classic on refactoring is `[Fowler, 2018]`.
+    ```python
+    def do_x(): pass
 
-## A function has a clear interface 2/3
+    def do_y(): pass
 
-Comment on this function again:
+    do_x()
+    do_y()
+    ```
 
-```python
-def is_prime(no, i = 2):
-    assert isinstance(no, int)
-    assert isinstance(i, int)
-    if no == i:
-        return True
-    elif no % i == 0:
-        return False
-    return is_prime(no, i + 1)
-```
+    You rarely need `and` in a function name. An accepted exception
+    is a function to calculate the mean and standard deviation,
+    because this is a faster calculation.
 
-. . .
-
-- Clumsy interface:
-
-```python
-assert is_prime(2)
-assert is_prime(2, 2) # Nothing stops me!
-assert is_prime(3)
-assert not is_prime(4)
-assert is_prime(5)
-```
-
-## A function has a clear interface 3/3
-
-Comment on this function again:
-
-```python
-def is_prime(no):
-    if not isinstance(no, int):
-        raise TypeError("'no' must be integer")
-    return is_prime_internal(no)
-
-def is_prime_internal(no, i = 2):
-    assert isinstance(no, int)
-    assert isinstance(i, int)
-    if no == i:
-        return True
-    elif no % i == 0:
-        return False
-    return is_prime_internal(no, i + 1)
-
-assert is_prime(2)
-assert is_prime(3)
-assert not is_prime(4)
-assert is_prime(5)
-```
-
-. . .
-
-I think it is OK, please correct me :-)
-
-## A function does one thing correctly
-
-A function should perform a single logical operation [CppCore F.2],
-hence don't:
-
-```python
-def do_x_and_y(): pass
-
-do_x_and_y()
-```
-
-Do:
-
-```python
-def do_x(): pass
-
-def do_y(): pass
-
-do_x()
-do_y()
-```
-
-You rarely need `and` in a function name. Possible exception:
-mean and standard deviation
-
-## A good function is tested
-
+- Is tested `[Martin, 2011][CppCore functions]`
+  `[tidyverse style guideline of functions]`
+    - [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf):
+      Testability: Source code should be written to facilitate testability
 - A function should perform a single logical operation `[CppCore F.2]`.
-  A function that performs a single operation
-  is simpler to understand, test, and reuse.
-- [Joint Strike Fighter Coding Standards, section 3](http://www.stroustrup.com/JSF-AV-rules.pdf):
-  Testability: Source code should be written to facilitate testability
-
-## Example 4
-
-Imagine two DNA sequences:
-
-```text
-AAACCCGGGTTT
-ATACCGGGTTT
-```
-
-The function `align_dna_seqs` aligns two DNA sequences to this:
-
-```text
-AAACCCGGGTTT
-ATACC-GGGTTT
-```
-
-Which tests would you write?
-
-## Solutions 4
-
-```python
-assert align_dna_seqs(
-  "AAACCCGGGTTT", "ATACCCGGGTAT"
-  ) == {
- "AAACCCGGGTTT", "ATACC-GGGTTT"
-  }
-assert align_dna_seqs(
-  { "AAACCCGGGTTT", "ATACCCGGGTAT" }
-) ==
-  { "AAACCCGGGTTT", "ATACC-GGGTTT" }
-```
-
-???- question "Prefer R?"
-
-    ```r
-    expect_equal(
-      align_dna_seqs("AAACCCGGGTTT", "ATACCCGGGTAT"),
-      c("AAACCCGGGTTT", "ATACC-GGGTTT")
-    )
-    expect_equal(
-      align_dna_seqs(c("AAACCCGGGTTT","ATACCCGGGTAT")),
-      c("AAACCCGGGTTT","ATACC-GGGTTT")
-    )
-    ```
+- Raises helpful exceptions `[Martin, 2009]`
+  `[CppCore functions][tidyverse style guideline of functions][PEP 20b]`
+- Fast if needed `[CppCore functions]`
 
 ## Exercises
 
@@ -356,6 +232,8 @@ Could you give examples of bad function names? Why are these names bad?
     - `needleman_wunch`: this is a technique to get a DNA alignment.
 
 ### Exercise 2: name the function
+
+#### Exercise 2.1: name the function
 
 Imagine two DNA sequences:
 
@@ -441,7 +319,7 @@ in the two DNA sequences mismatch
     - is as English as possible
     - only uses common abbreviations
 
-## Example 2
+#### Exercise 2.2: name the function
 
 Imagine two DNA sequences:
 
@@ -492,7 +370,7 @@ where the DNA sequences are different?
     - is as English as possible
     - only uses common abbreviations
 
-## Example 3
+#### Exercise 2.3: name the function
 
 Imagine two DNA sequences:
 
@@ -545,9 +423,65 @@ ATACC-GGGTTT
     - is as English as possible
     - only uses common abbreviations
 
-## Exercises
+### Exercise 3
 
-### Exercise 1: misnomers in learners' project?
+Take a look at the function
+below ([from Pythonpool](https://www.pythonpool.com/check-if-number-is-prime-in-python/)):
+
+```python
+i=2
+
+def Prime(no, i):
+    if no == i:
+        return True
+    elif no % i == 0:
+        return False
+    return Prime(no, i + 1)
+```
+
+- Does it follow a good function design? Why?
+
+???- question "Answers"
+
+    These are some elements of good function design that are breached:
+
+    - By convention, function names start with lowercase character,
+      where this functions' name that starts with an uppercase first
+      character is normally suggesting that this is a class
+      name (instead of a function name).
+      A better name would be `is_prime`
+    - A function should start with a verb, this function does not.
+      A better name would be `is_prime`
+    - The function's input is not checked for its data type.
+      For example, this test will pass:
+
+    ```python
+    assert Prime("nonsense", "nonsense")
+    ```
+
+    - The function is easy to use incorrectly; the second element
+      must be a two for this to function.
+
+    ```python
+    assert Prime(2, 2)
+    assert Prime(3, 2)
+    assert Prime(3, 3) # Nothing stops me!
+    assert not Prime(4, 2)
+    assert Prime(5, 2)
+    ```
+
+    In this case, the function should be refactored,
+    so that a user cannot misuse the function.
+    Here is an example how to keep `Prime` as it is,
+    and fix most of its problems:
+
+    ```python
+    fun is_prime(x):
+        """Determine if a number is prime."""
+        assert isinstance(x, int)
+        return Prime(x, 2)
+
+### Exercise 4: misnomers in learners' project?
 
 Look at the code of the learners' project.
 Do you think there is a function that has a bad name?
@@ -566,10 +500,13 @@ which should include your reasoning.
   Refactoring: improving the design of existing code.
   Addison-Wesley Professional, 2018.
 - `[Martin, 2009]` Martin, Robert C.
-  Clean code: a handbook of agile software craftsmanship. Pearson Education, 2009.
+  Clean code: a handbook of agile software craftsmanship.
+  Pearson Education, 2009.
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
+- `[Meyer, 1992]` Meyer, Bertrand. "Applying 'design by contract'."
+  Computer 25.10 (1992): 40-51.
 - `[Meyers, 2005]` Meyers, Scott.
   Effective C++: 55 specific ways to improve your programs and designs.
   Pearson Education, 2005.
@@ -591,4 +528,7 @@ which should include your reasoning.
   The Hitchhiker's guide to Python: best practices for development.
   "O'Reilly Media, Inc.", 2016.
   Chapter 'General concepts'
-
+- `[Wilson et al, 2017]` Wilson, Greg, et al.
+  "Good enough practices in scientific computing." 
+  PLoS computational biology 13.6 (2017): e1005510. 
+  [here](https://doi.org/10.1371/journal.pcbi.1005510)

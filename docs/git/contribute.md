@@ -12,55 +12,51 @@
         - Forked collaboration
         - How to contribute
 
-???+ info "Learning objectives of 'Deployment'"
+???+ info "Learning objectives"
 
-    - explain and evaluate the usefulness of git Pull Request with code review
     - practice doing Pull Requests using the GitHub interface
     - practice doing a code review
-    - practice fixing merge conflicts on GitHub
-    - practice merging branches using the command-line interface
-    - practice fixing merge conflicts on local computer, using the command-line interface
+    - explain and evaluate the usefulness of git Pull Request with code review
 
-???- note "Instructor notes"
+???- question "For teachers"
 
-    Prerequisites are:
+    Teaching goals are:
 
-    - ...
+    - Learners have practiced doing Pull Requests using the GitHub interface
+    - Learners have practiced doing a code review
 
-    Lesson Plan: **FIX**
+    ```mermaid
+    gantt
+      title Lesson plan apply merge
+      dateFormat X
+      axisFormat %s
+      Introduction: intro, 0, 5s
+      Theory 1: theory_1, after intro, 5s
+      Exercise 1: crit, exercise_1, after theory_1, 40s
+      Feedback 1: feedback_1, after exercise_1, 10s
+    ```
 
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
+## Branches, merging, code reviews
 
-???- info "Table of content"
+!!! note
 
-    - GitHub
-    - Centralized workflow
-    - Distributed version control and Forking workflow
-    - How to contribute changes to somebody else’s project
-        - Contributing very minor changes
-        - If you observe an issue and have an idea how to fix it
+    - The earlier '(Make a) Pull Request' has changed name into 'Contribute`
+    - Still `Pull requests` is the name in the menu!
 
-!!! info "References"
+One can suggest to merge branches on GitHub,
+where it is called a Pull Request.
+For a Pull Request, a team member can be asked for a code review.
+Code reviews are useful for many reasons,
+among others the spread of knowledge.
 
-    - The [main git book](https://git-scm.com/book/en/v2)
-
-    - 'git best practices'
-
-        - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
-        - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
-
-
-## Review git graph in VS code
-
-- Björn shows
-
+One can merge branches locally, using the command-line.
+This will bypass code review and that is OK.
+For example, merging develop to your topic branch
+does not need a code review.
 
 ## GitHub and new repos
 
 **Let's go back to GitHub and collaboration for now!**
-
 
 There are two more ways to create “copies” of repositories into your user space:
 
@@ -103,33 +99,25 @@ There are two more ways to create “copies” of repositories into your user sp
 
 ### Contributing to existing repositories using pull requests
 
-Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
-
-- License: Creative Commons Attribution 4.0 International
-    - Permits almost any use subject to providing credit and license notice.
-    - Frequently used for media assets and educational materials.
-    - The most common license for Open Access scientific publications.
-    - Not recommended for software.
-
-
 **Step 1. [Add collaborators to your repository](https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository)**
+
+Based on: <https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository>
+
+???- note "License: Creative Commons Attribution 4.0 International"
+
+        - Permits almost any use subject to providing credit and license notice.
+        - Frequently used for media assets and educational materials.
+        - The most common license for Open Access scientific publications.
+        - Not recommended for software.
+
+!!! info
+
+    - This was done the first day!
 
 - Add your group members or collaborators as "collaborators" under GitHub.  This allows them to change things directly (but we'll actually do it with review).
 
 - From here on the collaborators can push changes in the same way as we have done in a
 single-person repository in the previous episodes.
-
-!!! warning
-
-    Check if co-teacher is collaborator!
-
-    - but skip do anything for now!
-
-
-???+ "Discussion"
-
-    - Discuss the advantages and possible disadvantages of this setup.
-
 
 **Step 2: Submit a small change via the web interface as collaborator**
 
@@ -183,17 +171,12 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 ### Resolving a conflict
 
-- "Non-talking instructor" prepares a conflicting commit during session (check what the first PR does).
-- Conflict can be shown as demo.
-
-### Exercise/demo: let us experience a conflict
-
 **When merging** two branches a conflict can arise when the same file **portion**
 has been modified in two **different** ways on the two branches.
 
 We can practice how a conflict looks and how to resolve it:
 
-- Two participants should send two "pull requests" (change proposals)
+- Two participants send two "pull requests" (change proposals)
   branching from `main` changing the same line in two different ways
 
 ![conflict-edit-1](../img/contributing/conflict-edit-1.png)
@@ -213,20 +196,6 @@ We can practice how a conflict looks and how to resolve it:
 
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
-
-!!!- example "(Optional demo) Add to someone else's project"
-
-    - Adding a planet should be pretty straight-forward in our modular code!
-
-    |Planet|Mass (relative to Earth) |Mean distance to sun (AU)| Shortest distance to earth (AU)|
-    |----|---|---|---|
-    |Jupiter| 318 | 5.2 | 4.2|
-    |Saturn| 95.2 | 9.54 | 8.54|
-
-    - Co-teacher adds info about Saturn
-    - Update the files below in ``code/`` by just replacing the existing code with this:
-
-        ???- "planet_main.py"
 
 ### Summary
 
@@ -301,22 +270,6 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
     - (we assume you are not added as "collaborator" and thus have no write-permissions to a repository)
 - Only this time you have no other choice than **"Propose file change"**.
 
-
-!!! example "Demo with student"
-
-    **Example: Submit a small change via the web interface as external contributor**
-
-
-Let's try this with one participant who has not been added as collaborator
-sharing screen:
-
-- Edit a file with the "pen" button
-- Edit the commit message and click green button "Propose file change"
-- This creates a **fork** of the repository (GitHub makes a copy of the original repository to your user space **automatically**)
-- You can now still review the change before submitting it, green button "Create pull request"
-- Later you can remove the fork if you like
-
-
 !!! admonition "Cheat-sheet"
 
     **Commits, branches, repositories, forks, clones**
@@ -337,8 +290,30 @@ sharing screen:
     - Repositories that are shared online often synchronize via **pull requests** or **merge requests**.
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
-???- question "quiz"
+## Exercises
 
+Exercise 5 is a repeat of doing a code review.
+
+### Extra exercise 5: practice code review
+
+For team member A:
+
+- Create a topic branch (from `develop`)
+- Do something trivial on that topic branch
+- Submit a GitHub Pull Request to merge it to `develop`
+- Assign the other team member as the reviewer
+- Do a pretend code review until the Pull Request is accepted
+- The reviewer merges the code to `develop`
+
+Now do the same for team member B.
+
+???- question "Enjoy a video?"
+
+    You can find a video [here](https://youtu.be/UXSKm_RvcLw)
+
+## Links
+
+- [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 ## Goals
 

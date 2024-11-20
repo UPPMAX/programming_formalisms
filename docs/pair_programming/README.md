@@ -16,7 +16,6 @@ tags:
     - Understand why pair programming is important
     - Understand what good pair programming looks like
     - Practice pair programming
-    - Practice to convert class diagrams to real code
 
 ???- question "For teachers"
 
@@ -29,7 +28,6 @@ tags:
     - Learners can tell why pair programming is important
     - Learners can tell how good pair programming looks like
     - Learners have practiced pair programming
-    - Learners have converted class diagrams to real code
 
     Preparation:
 
@@ -111,20 +109,17 @@ We use it a lot in this course, because:
 Questions:
 
 - What is pair programming?
-- How does a good pair behave? Describe what can be observed when pairing online
-- When to switch roles? Give a procedure
-- What effects does pair programming have?
 
 ???- question "Answers"
-
-    > - What is pair programming?
 
     Pair programming is a software development practice
     in which two developers work on the same computer.
     The person with the keyboard ('the driver') develops new code.
     The person without the keyboard ('the navigator') reviews the code.
 
-    > - How does a good pair behave? Describe what can be observed when pairing online
+- How does a good pair behave? Describe what can be observed when pairing online
+
+???- question "Answers"
 
     In an online course:
 
@@ -133,7 +128,9 @@ Questions:
     - A good pair switches roles regularly
     - A good pair has a lot of commits
 
-    > - When to switch roles? Give a procedure
+- When to switch roles? Give a procedure
+
+???- question "Answers"
 
     Any procedure to achieve the goal of regularly switching roles:
 
@@ -146,7 +143,9 @@ Questions:
     and is (apparently) inexperienced in good pair programming.
     In such cases, the second procedure work better.
 
-    > - What effects does pair programming have?
+- What effects does pair programming have?
+
+???- question "Answers"
 
     All material for this exercise show references to studies that
     show advantages of pair programming,
@@ -162,96 +161,69 @@ Questions:
     Yet, for teaching, working is groups has a high effect size `[Hattie, 2012]`,
     where the optimal group size is two `[Schwartz & Gurung, 2012]`.
 
-### Exercise 2: create a minimal class in the learners' project
-
-???- info "Learning objectives"
-
-    - Practice pair programming
-    - Practice to convert class diagrams to real code
+### Exercise 2: practice pair programming
 
 Before doing the exercises:
 
 - Reach an agreement on how to do pair programming: among others,
   decide upon the first driver and when to switch roles.
+- Decide upon a function to write together.
+  Use either the testing framework setup, or use the more informal
+  one with assert.
+  The course has many example functions [here](https://uppmax.github.io/programming_formalisms/misc/functions/).
 
 The exercise, to be done as a pair:
 
-- Of the learners' project, pick/create an issue as simple as possible,
-  e.g. writing the minimal code for a class in the design document
-- Write the minimal code of your class together.
-  Share code by `push`ing it.
+- Develop the function together
+- Share code by `push`ing it
+- Agree upon when the code is done
 
 Reflect:
 
 - Were roles swapped often enough?
-- Did you solve unexpected problems well?
-- Did the driver always share his/her screen?
-- Did each team member contribute?
-- Did each team member contribute to the code in the Python class?
-
-???- question "Answers to what needs to be done"
-
-    The hardest part will be to understand how little needs to be done here.
-
-    A file needs to be created at  `src/bacsim/[class_name].py`.
-    For example, for a coordinate,
-    this file will be called `src/bacsim/coordinate.py`
-
-    The contents of the file is -maybe unexpectedly- minimal.
-    Here I show a good example from [an earlier Programming Formalisms cohort](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2023/blob/main/src/pfpa2023/coordinate.py):
-
-    ```python
-    """A coordinate somewhere in space."""
-
-    class Coordinate:
-
-        """Where am I?."""
-    ```
 
 ???- question "Answers to reflection"
-
-    > - Were roles swapped often enough?
 
     Ideally, each learner was the driver at least twice.
     However, the task may have been finished before that happened
     and if that is the case, that is OK.
 
-    > - Did you solve unexpected problems well?
+- Did you solve unexpected problems well?
+
+???- question "Answers to reflection"
 
     One can expected some unexpected problems.
     It can be that one person struggled with `git`
     and he/she should have been given the proper time to fix this
     **and** work on the problem.
 
-    > - Did the driver always share his/her screen?
+- Did the driver always share his/her screen?
+
+???- question "Answers to reflection"
+
+    Ideally, this is a yes.
 
     Sure, one can stop sharing when opening an email client for a GitHub message :-)
 
-    > - Did each team member contribute?
+- Did each team member contribute?
 
-    This does not need to be code!
+???- question "Answers to reflection"
 
-    > - Did each team member contribute to the code in the Python class?
+    Ideally, this is a yes.
 
-    With this problem, maybe not everyone in the duo wrote the one line
-    of actual code. This is OK.
+    'Contributing' can be more than just writing code!
 
+- Did each team member contribute to the code?
 
-### Exercise 3: do an issue in the learners' project
+???- question "Answers to reflection"
 
-???- info "Learning objectives"
-
-    - Practice pair programming
-    - Practice to convert class diagrams to real code
-
-- Do the previous exercise for an issue at the right skill level.
-  If there is no such issue, create one.
-
-Reflect additionally:
-
-- As a pair, how did you improve?
-- As a pair, how could you have done better?
-- As an individual, how could you have done better?
+    Ideally, this is a yes.
+    
+    Sure, people have different skill levels and
+    one member wrote the more complex parts;
+    this is part of being in a team:
+    pair programming is one of the best ways to transfer
+    knowledge!
 
 ## References
 
