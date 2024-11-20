@@ -6,10 +6,15 @@
 This leads to a smaller semantic gap which
 gives two major benefits
     -Understanding
+        the semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
     - Modification
+        The model tends to be local resulting from a individual item. Each of these are represented by a single object.
+
 
 !!! info **Object Orientation is a Paradigm not a language feature**
-    - A paradigm is a set of rules that informs your thinking while
+    - Mariam-webster defines a Paradigm as:
+    philosophical and theoretical framework of a scientific school or discipline within which theories, laws, and generalizations and the experiments performed in support of them are formulated
+    - Stanford Encyclopedia of Philosophy cites the work of Thomas Kuhn The Structure of Scientific Revolutions in where a work of Paradigm is not only the key theories and laws, but also—and this is what makes them paradigms—the applications of those theories in the solution of important problems
 
 Developing object orientated is following these principles
 
@@ -20,3 +25,4 @@ Developing object orientated is following these principles
 3: The concept of message passing
 
 ## References 
+
