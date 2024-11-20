@@ -281,6 +281,11 @@ One can unfold these.
 
 Clicking on the 'Run'/'Play' button to run the tests.
 
+???- question "Something went wrong?"
+
+    An easy fix is to delete the file `.vscode/setting.json`
+    and restart VS Code
+
 ## Exercises
 
 ### Exercise 1: get the existing tests to work
