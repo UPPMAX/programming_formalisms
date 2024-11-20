@@ -215,7 +215,7 @@ flowchart TD
 !!! note "See also"
 
     - Diagrams will be covered on
-        - Monday and Tuesday during part of the [Project start with analysis and design](../project_start/analysis_design.md) and [Design paradigms](../design_develop/class_design.md)
+        - Monday and Tuesday during part of the [Project start with analysis and design](../project_start/analysis_design.md) and [Design paradigms](../data_structures/class_design.md)
         - Thursday during [Modular programming](../modularity/modular.md)
 
 ### Pseudocode
