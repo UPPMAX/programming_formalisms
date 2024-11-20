@@ -1,6 +1,6 @@
 # Object Oriented development
 
->People regard their environment in >terms of objects"
+>People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
 This leads to a smaller semantic gap which
