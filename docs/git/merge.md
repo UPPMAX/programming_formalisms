@@ -161,7 +161,6 @@ and asks a human for help.
 - Let's view the branches on Github!
 - Go to _Insights_ in the top menu and then go to _Network_ in side-bar
 - If we did this after the merging the branches do not show up.
-- 
 
 - Conflicts may show up like this:
 

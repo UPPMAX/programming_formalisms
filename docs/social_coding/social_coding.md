@@ -67,7 +67,7 @@
 - K: It encourages me to code properly from the start
 
 
-## Quesion 2: The most concerning thing for me, If I share my software now
+## Question 2: The most concerning thing for me, If I share my software now
 
 - A: It will be scooped (stolen) by someone else
 - B: It will expose my "ugly code"

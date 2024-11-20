@@ -170,6 +170,21 @@ git branch -d new-feature    # remove branch
     - Does changing a branch change the content of your local computer? Why?
     - Does deleting a branch create a new version? Why?
 
+
+!!! tip "git push doesn't work with new branch"
+
+    - you always have to pull before a push:
+    
+    ```git
+    git pull #
+    ```
+
+    - You may need to be more detailed:
+
+    ```git
+    git push --set-upstream origin new-branch
+    ```
+
 ## Exercises
 
 ### Exercise 1: create, switch and delete a `git` branch
