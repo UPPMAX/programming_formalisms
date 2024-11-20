@@ -60,6 +60,12 @@ version that contains all changes.
 - A group of commits that create a single narrative are called a **branch**.
 - There are different branching **strategies**, but it is useful to think that a branch tells the **story of a feature**, e.g. "fast sequence extraction" or "Python interface" or "fixing bug in matrix inversion algorithm".
 
+!!! note "Three ways to name a branch"
+
+    - Issues
+    - Features
+    - Personal
+
 ### Typical workflows
 
 One typical workflow:

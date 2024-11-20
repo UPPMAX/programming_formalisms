@@ -59,19 +59,33 @@
         - update index
     - Discussion how you thoght about things
 
-??+ Question "Update your documentation in groups"
+## Exercise
 
-    - You can now work in GitHub directly
-    - Do ``git push`` first from local command-line!
+!!! info "Intro"
+
     - Revisit your README and update it with info after all our commits
         - About
-        - Installation
-    - Users should be able to install the required python packages with:
-        ``pip install -r requirements.txt`` (depending on system ``--user`` may be added)
     - Citing
     - License
     - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
     - Do a ``git pull`` to have the same version of your project repo locally!
+
+
+???+ question "Update your documentation in groups"
+
+    - You can now work in GitHub directly
+    - Do ``git push`` first from local command-line!
+
+    ???- question "Group 1: Work together and formulate an 'About' section
+
+    ???- question "Group 2: Work together and formulate 'Getting started' section"
+    
+    ???- question "Group 3: Work together and formulate 'License' section"
+
+
+## Discussion
+
+???- Describe what you've done and why?
 
 !!! admonition "Parts to be covered!"
 
