@@ -171,17 +171,12 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 ### Resolving a conflict
 
-- "Non-talking instructor" prepares a conflicting commit during session (check what the first PR does).
-- Conflict can be shown as demo.
-
-### Exercise/demo: let us experience a conflict
-
 **When merging** two branches a conflict can arise when the same file **portion**
 has been modified in two **different** ways on the two branches.
 
 We can practice how a conflict looks and how to resolve it:
 
-- Two participants should send two "pull requests" (change proposals)
+- Two participants send two "pull requests" (change proposals)
   branching from `main` changing the same line in two different ways
 
 ![conflict-edit-1](../img/contributing/conflict-edit-1.png)
@@ -274,22 +269,6 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 - Submitting a change proposal as external contributor  looks very similar to submitting a "pull request" to a repository with a protected `main` branch.
     - (we assume you are not added as "collaborator" and thus have no write-permissions to a repository)
 - Only this time you have no other choice than **"Propose file change"**.
-
-
-!!! example "Demo with student"
-
-    **Example: Submit a small change via the web interface as external contributor**
-
-
-Let's try this with one participant who has not been added as collaborator
-sharing screen:
-
-- Edit a file with the "pen" button
-- Edit the commit message and click green button "Propose file change"
-- This creates a **fork** of the repository (GitHub makes a copy of the original repository to your user space **automatically**)
-- You can now still review the change before submitting it, green button "Create pull request"
-- Later you can remove the fork if you like
-
 
 !!! admonition "Cheat-sheet"
 
