@@ -142,7 +142,7 @@ i = random.randint(0, 1)
 
 The linter gives [a S311 error](https://docs.astral.sh/ruff/rules/suspicious-non-cryptographic-random-usage/)),
 which means that the `random.randint` is too quick-and-dirty to its taste.
-However, if you need exacty
+However, if you need exactly
 that (e.g. in a test), you can disable the linter for in that line like this:
 
 ```python
@@ -165,7 +165,7 @@ You will need to defend this in a code review :-)
     ![The Actions tab](actions_tab.png)
 
 - You now see all the Actions. 'Actions' are the names of the
-  continuous integration scripts. 
+  continuous integration scripts.
 
 ???- question "How does that look like?"
 
@@ -326,7 +326,7 @@ of the errors.
 
     For example, take this error:
 
-    ```
+    ```text
     Error: requirements.md:29:81 MD013/line-length Line length [Expected: 80; Actual: 209]
     ```
 
@@ -384,14 +384,15 @@ of the errors.
     Sometimes, the code coverage cannot be measured,
     because the code itself is broken:
 
-    ```
+    ```text
     ImportError: Failed to import test module: tests.test_gustav
     Traceback (most recent call last):
       File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
         module = self._get_module_from_name(name)
       File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
         __import__(name)
-      File "/home/runner/work/programming_formalisms_project_autumn_2024/programming_formalisms_project_autumn_2024/tests/test_sven.py", line 23
+      File "/home/runner/work/programming_formalisms_project_autumn_2024/programming_formalisms_project_autumn_2024/
+      tests/test_sven.py", line 23
         def test_prime_numbers(self)
                                     ^
     SyntaxError: expected ':'
@@ -412,7 +413,7 @@ of the errors.
 
     ![Click on the codecov badge](click_codecov_badge.png)
 
-    This will take you to a 
+    This will take you to a
     [https://about.codecov.io/](https://about.codecov.io/)
     site. Look for functions that are not tested 100% and click on those.
     You will then see in red which lines are not tested.
@@ -421,8 +422,6 @@ of the errors.
 
     - Write tests to trigger those lines
     - Remove the lines that are not triggered
- 
-
 
 ## References
 

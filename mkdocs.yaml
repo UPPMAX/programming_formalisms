@@ -8,6 +8,7 @@ nav:
     - Pre-requirements: prereqs.md
     - Introduction: intro.md
     - Schedule: schedule.md
+  - Schedule: schedule.md
   - Project:
     - Intro: project/README.md
     - Issues: project/issues.md

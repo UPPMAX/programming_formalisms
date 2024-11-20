@@ -220,7 +220,7 @@ or written down as comments.
 
     Then it is time to develop new code :-) .
     Assign yourself an issue and write it.
-    Put `assert` whenever you assume something to be true 
+    Put `assert` whenever you assume something to be true
 
 Search for one occasion where this happens
 and put an `assert` statements there.

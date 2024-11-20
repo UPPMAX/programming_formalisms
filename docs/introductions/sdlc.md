@@ -11,7 +11,7 @@
 
 ![Software Development Life Cycle showing the iterative nature of SDLC](../img/development_design/SDLC.png)
 
-- This is formalized in the ISO/IEC 12207 model described in 
+- This is formalized in the ISO/IEC 12207 model described in
   [ISO/IEC TR 24748-1:2010]
 
 ![ISO/IEC TR 24748-1:2010](../img/development_design/SDLC_ISO_IEC_12207.png)
@@ -72,7 +72,7 @@
 
 ???- "What is risk management?"
 
-    Risk management is "coordinated activities to direct and control and 
+    Risk management is "coordinated activities to direct and control and
     organization with regard to risk"
 
 ```mermaid
@@ -98,8 +98,8 @@ graph TD;
 !!! info "Sneak peak at roles"
 
     - Project Manager
-    - Requirements Engineer : A requirements engineer is responsible for 
-      gathering and formalising requirements and establishing and 
+    - Requirements Engineer : A requirements engineer is responsible for
+      gathering and formalising requirements and establishing and
       maintaining the requirements document
     - Lead programmer
 
@@ -128,12 +128,12 @@ For the fall 2024:
 ???+ note "Exercise 30 min"
 
     For each requirement type(business or technical risk),
-    asses the major risk associated with the requirement. 
+    asses the major risk associated with the requirement.
     It should be specified in one sentence.
     Asses the probability that the specified risk will happen during a run,
-    on a scale of 1-5 
+    on a scale of 1-5
     (where 1 is a rare occurrence and 5 happens every time you run).
-    And do the same for severities (where S1 is a minor inconvenience to 
+    And do the same for severities (where S1 is a minor inconvenience to
     the stakeholder or the software, and S5 means a major injury or damage to
     stakeholder or catastrophic failure of the software).
     Then multiply P and S and set that as the risk value.

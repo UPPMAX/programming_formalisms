@@ -260,7 +260,7 @@ Example: Permissions, conditions, and limitations of the GPL license. Unchanged 
 
 If you would like to learn more about licenses, check out our slide deck ["Software licensing
 and open source explained with
-cakes"](https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/).
+cakes"](https://github.com/coderefinery/social-coding/blob/main/licensing-and-cakes.md).
 
 ```{note}
 Also covered on the third day

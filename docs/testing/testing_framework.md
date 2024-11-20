@@ -311,7 +311,7 @@ def is_zero(number):
     return False
 ```
 
-- Create a file for the tests of that code, called, 
+- Create a file for the tests of that code, called,
   e.g. `tests/test_[name]_utils.py`, e.g. `tests/test_sven_utils.py`
 - Copy-paste the following (familiar) code in that file:
 
@@ -370,7 +370,7 @@ print(isprime(8))
 
 ???- question "Answer"
 
-    Copy-paste the following text to your file, 
+    Copy-paste the following text to your file,
     e.g. `src/bacsim/[name]_utils.py`, e.g. `src/bacsim/sven_utils.py`:
 
     ```python
@@ -393,7 +393,7 @@ print(isprime(8))
     assert isprime(8) == False
     ```
 
-- Use the file for the tests of that code, 
+- Use the file for the tests of that code,
   e.g. `tests/test_[name]_utils.py`, e.g. `tests/test_sven_utils.py`.
   Add tests using the testing framework.
 
@@ -436,7 +436,7 @@ print(isprime(8))
     self.assertFalse(isprime(-1))
     ```
     
-    Both tests fail. 
+    Both tests fail.
 
 It is beyond the scope of this exercise to fix this function :-)
 

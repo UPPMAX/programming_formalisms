@@ -28,9 +28,8 @@
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
-## Prior questions:
+## Prior questions
 
-- What does a merge do?
 - What does a merge do?
 - Do we need merging? When? Why?
 - When does a merge give a merge conflict?
@@ -39,75 +38,110 @@
 - Can a `git pull` result in a merge conflict? Why?
 
 
-**We continue from last lesson**
+- ![Isolated tracks](../img/git-collaborative.svg)
 
-- Branches allow us to work independently.
-- Here we use branches to do so.
+## Workflow of merge
+
+- Once a feature is ready, switch to main!
+    - This is the **Branch** we want to **merge to**
+- You may want to double check with git branch
+
+```git
+git switch main    # switch to main branch
+git branch           # check that we are on main branch
+git merge <feature branch>
+```
+
+## Merge conflicts
 
 - However, when we merge branches, it may result in a merge conflict.
 - A merge conflict occurs when ``git`` is unsure how to merge branches
 and asks a human for help.
 - Here we create merge conflicts on trivial code.
 
-## Example
+!!! example "**Two** branches to be merged"
 
-- It turned out that our experiment with XX was a good idea.
-- Our goal now is to merge modularity into main.
+    Based on: <https://coderefinery.github.io/git-intro/conflicts/>
 
-![Isolated tracks](../img/git-collaborative.svg)
+    ???- note "License: Creative Commons Attribution 4.0 International"
+    
+        - Permits almost any use subject to providing credit and license notice.
+        - Frequently used for media assets and educational materials.
+        - The most common license for Open Access scientific publications.
+        - Not recommended for software.
 
+    - Once all features are ready, switch to main!
+    - This is the **Branch** we want to **merge to**
 
-???- question "Demo: git merge"
-
-!!! example "Merge into main"
-
-    - once all features are ready, switch to main!
+    The first merge will work
 
     ```git
     $ git switch main    # switch to main branch
     $ git branch           # check that we are on main branch
-    $ git merge  XXXX          # merge modularity into main
+    $ git merge like-cilantro
 
-    Merge made by the 'ort' strategy.
-     output
-
+    Updating 4e03d4b..3caa632
+    Fast-forward
+     ingredients.txt | 2 +-
+     1 file changed, 1 insertion(+), 1 deletion(-)
     ```
-
-    - let's now check the graphical view:
+    
+    - But the second will fail:
 
     ```git
-    $ git graph
-    * 1b29a8f (HEAD -> main) Merge branch 'modularity'
-    |\
-    | * 4d4acaf (modularity) 4 modular files
-    * | 000b440 rm print
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code
+    $ git merge dislike-cilantro
+
+    Auto-merging ingredients.txt
+    CONFLICT (content): Merge conflict in ingredients.txt
+    Automatic merge failed; fix conflicts and then commit the result.
     ```
 
-    ```mermaid
-    gitGraph
+    - Without conflict Git would have automatically created a merge commit, but since there is a conflict, Git did not commit:
 
-    commit id: "add planet.py"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-    checkout main
-    commit id:"rm print"
-    merge modular
+    ```git
+    $ git status
+
+    You have unmerged paths.
+      (fix conflicts and run "git commit")
+      (use "git merge --abort" to abort the merge)
+
+    Unmerged paths:
+      (use "git add <file>..." to mark resolution)
+        both modified:   ingredients.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
     ```
 
-    - NOTE that (origin/main) planet.py documentation is not up-to-date
-        - In other words: GitHub has an old version of the project
-    - push to GitHub
-    - ``git push``
+    - Git won’t decide which to take and we need to decide. Observe how Git gives us clear instructions on how to move forward.
+
+    ```console
+    $ git diff
+
+    diff --cc ingredients.txt
+    index 6cacd50,6484462..0000000
+    --- a/ingredients.txt
+    +++ b/ingredients.txt
+    @@@ -1,4 -1,4 +1,10 @@@
+    ++<<<<<<< HEAD
+     +* 2 tbsp cilantro
+    ++=======
+    + * 1/2 tbsp cilantro
+    ++>>>>>>> dislike-cilantro
+      * 2 avocados
+      * 1 chili
+      * 1 lime
+    ```
+
+    - Check status with git status and git diff.
+    - Decide what you keep (the one, the other, or both or something else). Edit the file to do this.
+        - Remove the resolution markers, if not already done.
+        - The file(s) should now look exactly how you want them.
+    - Check status with git status and git diff.
+    - Tell Git that you have resolved the conflict with git add ingredients.txt (if you use the Emacs editor with a certain plugin the editor may stage the change for you after you have removed the conflict markers).
+    - Verify the result with git status.
+    - Finally commit the merge with only git commit. Everything is pre-filled.
+
+!!! example "Another example of merged branches"
 
     ```git
     $ git graph
@@ -122,10 +156,11 @@ and asks a human for help.
     * 6a416b5 add folders and planet code
     ```
 
-    - Now local Git and GitHub are in phase!
+### On GitHub
 
-
-
+- Let's view the branches on Github!
+- Go to _Insights_ in the top menu and then go to _Network_ in side-bar
+- If we did this after the merging the branches do not show up.
 
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
@@ -213,18 +248,18 @@ gitGraph
 
 ???- info "Answers"
 
-    ![](github_create_branch_annotated.png)
+    ![github_create_branch_annotated](github_create_branch_annotated.png)
 
     Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     Done!
 
     > - On your local computer:
-    >    - update the repository
+    >     - update the repository
 
     On your local computer, navigate to the folder of the shared project
     and update:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -233,7 +268,7 @@ gitGraph
 
     Switch to the new branch, for example, `richel`, by doing:
 
-    ```
+    ```git
     git switch richel
     ```
 
@@ -245,13 +280,13 @@ gitGraph
     To create a file under Linux (and maybe this works on other
     operating systems too), one can do:
 
-    ```
+    ```git
     touch learners/richel/richel_is_on_richel.txt
     ```
 
     After the change, commit these:
 
-    ```
+    ```git
     git add .
     git commit -m "Richel is on richel"
     ```
@@ -261,7 +296,7 @@ gitGraph
 
     Do:
 
-    ```
+    ```git
     git push
     ```
 
@@ -269,7 +304,7 @@ gitGraph
 
     If that does not work, do:
 
-    ```
+    ```git
     git pull
     ```
 
@@ -278,44 +313,44 @@ gitGraph
 
     > - On GitHub, verify that your changes on your branch can be found online
 
-    ![](github_pushed_to_branch.png)
+    ![github_pushed_to_branch](github_pushed_to_branch.png)
 
     Make sure you look at the correct branch, as displayed at 1.
     Then your commit message shows up at 2.
 
     > - On your local computer
-    >      - switch to the `main` branch
+    >     - switch to the `main` branch
 
-    ```
+    ```git
     git switch main
     ```
 
     > - On your local computer
-    >      - merge your topic branch to `main`
+    >     - merge your topic branch to `main`
 
-    ```
+    ```git
     git merge richel
     ```
 
     > - On your local computer
-    >      - upload your changes
+    >     - upload your changes
 
-    ```
+    ```git
     git push
     ```
 
     > - Delete your branch (i.e. the one with the unique name).
     >   You may use the web interface (easiest!) or use the command line
 
-    [](github_view_branches_annotated.png)
+    [github_view_branches_annotated](github_view_branches_annotated.png)
 
     Click on 'Branches', as shown in the image above.
 
-    ![](github_view_all_branches_annotated.png)
+    ![github_view_all_branches_annotated](github_view_all_branches_annotated.png)
 
     Click on garbage bin, as shown in the image above.
 
-    ![](github_view_all_branches_just_deleted_annotated.png)
+    ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
 
     The branch will now be deleted, as shown in the image above.
 
@@ -323,25 +358,13 @@ gitGraph
 
     Do:
 
-    ```
+    ```git
     git pull
     ```
 
 ???- question "Prefer a video?"
 
     You can find a video [here](https://youtu.be/BSi9nFhlgwM)
-
-## Example
-Based on: <https://coderefinery.github.io/github-without-command-line/contributing/>
-
-- License: Creative Commons Attribution 4.0 International
-    - Permits almost any use subject to providing credit and license notice.
-    - Frequently used for media assets and educational materials.
-    - The most common license for Open Access scientific publications.
-    - Not recommended for software.
-
-
-!!!- example "(Optional demo) Add to someone else's project"
 
 
 ### Extra exercise 3: practice merge conflicts between branches using the command line

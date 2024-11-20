@@ -193,7 +193,7 @@ assert has_thrown
 
     This function should raise an exception.
     Raising an exception causes our tests to crash,
-    so we need to 'catch' (this is a formal Python term!) 
+    so we need to 'catch' (this is a formal Python term!)
     the exception. This would change our code to:
 
     ```python
