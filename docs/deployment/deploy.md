@@ -65,13 +65,13 @@
 
 ???+ question "Make a 'requirements' file in groups"
 
-     - each group in different branches
-     - then merge and teacher does code review
+    - each group in different branches
+    - then merge and teacher does code review
 
 ???+ question "Update the "installation instruction' in groups"
 
-     - each group in different branches
-     - then merge and teacher does code review
+    - each group in different branches
+    - then merge and teacher does code review
 
 ## Summary
 
