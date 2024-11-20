@@ -87,9 +87,9 @@ where 'contract' is a metaphor for 'agreement'.
 > [Source: Wikipedia](https://en.wikipedia.org/wiki/Design_by_contract#/media/File:Design_by_contract.svg)
 
 - Input (plural) are called 'the preconditions'
-- Within a function, 
+- Within a function,
   if the preconditions are invalid, an error or exception is raised
-- Within a function, 
+- Within a function,
   if the preconditions are valid, a valid output is created
   and/or there will be side effects, such as creating a file
 
@@ -558,7 +558,7 @@ which should include your reasoning.
   Refactoring: improving the design of existing code.
   Addison-Wesley Professional, 2018.
 - `[Martin, 2009]` Martin, Robert C.
-  Clean code: a handbook of agile software craftsmanship. 
+  Clean code: a handbook of agile software craftsmanship.
   Pearson Education, 2009.
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
