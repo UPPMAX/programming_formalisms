@@ -1505,3 +1505,6 @@ pii
 WSK
 VSCode
 linters
+Appveyor
+criticise
+
