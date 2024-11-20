@@ -104,7 +104,7 @@ There are two more ways to create “copies” of repositories into your user sp
 Based on: <https://coderefinery.github.io/github-without-command-line/contributing/#step-1-learn-how-to-add-collaborators-to-your-repository>
 
 ???- note "License: Creative Commons Attribution 4.0 International"
-    
+
         - Permits almost any use subject to providing credit and license notice.
         - Frequently used for media assets and educational materials.
         - The most common license for Open Access scientific publications.
