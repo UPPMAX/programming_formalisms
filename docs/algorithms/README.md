@@ -28,7 +28,7 @@ References;
   accomplishing some end' @dictionary_algorithm
 - [2] pick any vague definition
 
-- [Function design](function_design.md)
+- [Function design](../function_design/README.md)
 - [assert](assert.md)
 - [Recursive algorithms](recursive_algorithms.md)
 
