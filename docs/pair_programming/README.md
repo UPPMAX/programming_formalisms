@@ -66,7 +66,7 @@ tags:
       Start TDD: done, extra, after feedback_3, 45
     ```
 
-## Introduction
+## Why?
 
 Pair programming is a facet of developing code better.
 We use it a lot in this course, because:
