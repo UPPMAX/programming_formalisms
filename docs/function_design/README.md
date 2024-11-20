@@ -80,7 +80,7 @@ def my_function(my_arguments):
 
 A common design of functions is that they follow
 design-by-contract programming (term by `[Meyer, 1992]`),
-where 'contract' is a methaphor for 'agreement'.
+where 'contract' is a metaphor for 'agreement'.
 
 ![Design by contract](design_by_contract.png)
 
@@ -563,7 +563,7 @@ which should include your reasoning.
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
-- `[Meyer, 1992]` Meyer, Bertrand. "Applying'design by contract'."
+- `[Meyer, 1992]` Meyer, Bertrand. "Applying 'design by contract'."
   Computer 25.10 (1992): 40-51.
 - `[Meyers, 2005]` Meyers, Scott.
   Effective C++: 55 specific ways to improve your programs and designs.
