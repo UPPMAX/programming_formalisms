@@ -106,12 +106,70 @@
 
     ???- question "Group 2: Work together and formulate 'Getting started' section"
     
-    ???- question "Group 3: Work together and formulate 'License' section"
+    ???- question "Group 3: Work together and formulate 'Citation' section"
 
 
 ## Discussion
 
 ???- Describe what you've done and why?
+
+## Going further with documentation
+
+!!! info "See also"
+
+    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
+
+### Wikis
+
+- Popular solutions (but many others exist):
+    - [MediaWiki](https://www.mediawiki.org)
+    - [Dokuwiki](https://www.dokuwiki.org)
+    - Also on GitHub!
+    - Typically needs to be hosted and maintained
+
+- Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
+
+### HTML static site generators
+
+There are many tools that can turn RST or Markdown into beautiful HTML pages:
+
+- [Sphinx](http://sphinx-doc.org)
+    - Generate HTML/PDF/LaTeX from RST and Markdown.
+    - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
+    - [Earlier Intro day for this course]()
+- [Jekyll](https://jekyllrb.com)
+    - Generates HTML from Markdown.
+    - GitHub supports this without adding extra build steps.
+- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
+    - Generates HTML from Markdown.
+    - Example: [Programming formalisms course](https://uppmax.github.io/programming_formalisms)
+
+There are many more ...
+
+### Deployment on servers
+
+GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
+
+- [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
+- [Bitbucket Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=bitbucket)
+- [GitLab Pages](https://pages.gitlab.io)
+- [Read the docs](http://readthedocs.org) ← this is what NBIS uses for some course material
+    - hosts public Sphinx documentation for free!
+    - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
+
+#### GitHub pages
+
+- Easiest. Everything is local to GitHub
+- This lesson material
+
+#### Read the Docs
+
+- Somewhat more possibilities, like having several versions of documentation to switch between.
+
+
+
+
+
 
 !!! admonition "Parts to be covered!"
 
