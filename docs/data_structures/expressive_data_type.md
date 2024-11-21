@@ -26,15 +26,15 @@ For simple data structures, using a `list` can be considered 'good enough':
 
 ```python
 position = [1.2, 3.4]
-def get_x(coordinat): return coordinat[0]
-def get_y(coordinat): return coordinat[1]
+def get_x(position): return position[0]
+def get_y(position): return position[1]
 ```
 
 ???- question "Is it indeed 'good enough'? Why?"
 
     A reason that this is 'good enough' is because it is hard
-    to confusion people. Most people expect a 2D coordinat to
-    have an x and y coordinat. Storing the x and y coordinat in a `list`
+    to confusion people. Most people expect a 2D coordinate to
+    have an x and y coordinat. Storing the x and y in a `list`
     with two elements in that order will be something close to what
     most people expect.
 
@@ -72,7 +72,7 @@ parameters = {
 def get_n_bacteria(parameters): 
     return parameters['n_bacteria']
 def get_n_timesteps(parameters): 
-    return parameters['n_timestep']
+    return parameters['n_timesteps']
 def get_gradient_type(parameters): 
     return parameters['gradient_type']
 def get_bacteria_initialization(parameters): 
@@ -120,10 +120,20 @@ We cannot read what `a` is exactly.
 We cannot express this as a `list` or a `dict`.
 Instead, we can express this is a `class`.
 
-Here we put our 'something' into a class:
+Here we put our 'something' into a class. Here is the design:
+
+```mermaid
+classDiagram
+  class Coordinate{
+    +x
+    +y
+  }
+```
+
+Here is the code:
 
 ```python
-class Coordinat:
+class Coordinate:
     def __init__(self, any_x, any_y):
       self.x = any_x
       self.y = any_y
@@ -137,10 +147,10 @@ class Coordinat:
 
 
     ```python
-    class Coordinat:
+    class Coordinate:
     ```
 
-    > now I am going to define a class called `Coordinat`
+    > now I am going to define a class called `Coordinate`.
 
     ```python
     def __init__(self, any_x, any_y):
@@ -148,16 +158,16 @@ class Coordinat:
       self.y = any_y
     ```
 
-    > To create a `Coordinat`, the use need to give two things,
+    > To create a `Coordinate`, the use need to give two things,
     > called `any_x` and `any_y`. These are stored inside of the
     > class as `x` and `y`.
 
     ```python
     def __repr__(self):
-        return 'Coordinat'
+        return 'Coordinate'
     ```
 
-    > When asked for its data type, return the word 'Coordinat'
+    > When asked for its data type, return the word 'Coordinate'.
 
     ```python
     def __str__(self):
@@ -165,13 +175,13 @@ class Coordinat:
     ```
 
     > When asked for its value, return the `x` and `y` between braces
-    > seperated by a comman
+    > seperated by a comma.
 
 Using the implementation of `get_a` like this:
 
 ```python
 def get_a():
-    return Coordinat(3.14, 2.72)
+    return Coordinate(3.14, 2.72)
 ```
 
 Then running the same code again:
@@ -186,7 +196,7 @@ Now results in
 
 ```text
 (3.14, 2.72)
-<class '__main__.Coordinat'>
+<class '__main__.Coordinate'>
 ```
 
 Aha, `a` is a **coordinat**!
@@ -194,13 +204,14 @@ Aha, `a` is a **coordinat**!
 We can even test that:
 
 ```python
-assert str(type(a)) == "<class '__main__.Coordinat'>"
+assert str(type(a)) == "<class '__main__.Coordinate'>"
 ```
 
 ## Exercise 1: use your own class
 
 - Pick a class to design at your skill level:
-    - Easiest: the worked-out particle class, work in `src/learners`
+    - Easiest: the worked-out coordinate class, work in `src/learners`
+    - Medium: the parameters class as shown above, work in `src/learners`
     - Hardest: one in the learners' project, work in `src/bacsim`
 
 - Write the definition of the classes
@@ -210,7 +221,7 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
     This is the code of the class:
 
     ```python
-    class Coordinat:
+    class Coordinate:
         def __init__(self, any_x, any_y):
           self.x = any_x
           self.y = any_y
@@ -222,8 +233,7 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
 
 ???- question "Answer for the parameters class"
 
-    Modify the `Coordinat` class :-)
-
+    Modify the `Coordinate` class :-)
 
 - Use the class in a function, e.g. `create_test_x`
 
@@ -232,17 +242,17 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
     This is the code:
 
     ```python
-    def create_test_coordinat():
-        return Coordinat(3.14, 2.72)
+    def create_test_coordinate():
+        return Coordinate(3.14, 2.72)
 
-    a = create_test_coordinat()
+    a = create_test_coordinate()
     print(a)
     print(type(a))
     ```
 
 ???- question "Answer for the parameters class"
 
-    Modify the answer for the `Coordinat` class :-)
+    Modify the answer for the `Coordinate` class :-)
 
 ## References
 

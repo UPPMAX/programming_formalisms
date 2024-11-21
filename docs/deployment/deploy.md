@@ -4,20 +4,21 @@
 
     - How to make your program work for others?
 
+!!! info "Learning objectives of 'Deployment'"
+
+    - learners can mentalize the installation needs from the users perspective
+    - learners can evaluate different available tools for reproducibility and installations
+    - learners can prepare for different users: local computer, Cluster
+
 !!! info "Content"
 
-    - We will prepare for use of your code
+    - We will prepare for installation of your code
     - But also...
         - some theory of packages
         - some theory of workflows
         - some theory of containers
         - get some hands on
 
-!!! info "Learning objectives of 'Deployment'"
-
-    - learners can mentalize the installation needs from the users perspective
-    - learners can evaluate different available tools for reproducibility and installations
-    - learners can prepare for different users: local computer, Cluster
 
 ???- note "Instructor notes"
     Prerequisites are:
@@ -36,7 +37,6 @@
         - Recording dependencies
         - workflows
         - containers
-    - Make a package
 
 ## Introduction
 

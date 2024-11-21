@@ -4,7 +4,7 @@
 
     - How can the user understand how to run your program and what it does?
 
-???- info "Learning objectives of 'Documentation'"
+???+ info "Learning objectives of 'Documentation'"
 
     learners  
     
@@ -15,7 +15,6 @@
 
 !!! info "Content"
 
-    - We will prepare for use of your code
     - content of readme
         - installation
         - get started
@@ -44,20 +43,52 @@
 
 !!! info "TOC"
 
-    - In-code documentation review
-    - Documentation
-        - tutorials/howto/reference
-        - project doc
-        - html site generators
-        - deployment on servers
-    - Hands-on in groups
-        - update README
-            - installation procedure
-            - how to run... 
-        - update license
-        - update citation
-        - update index
-    - Discussion how you thoght about things
+
+
+
+## Revisiting documentation
+
+!!! admonition "Documentation comes in different forms"
+
+    - What *is* documentation?
+        - **Tutorials**: learning-oriented, allows the newcomer to get started
+        - **How-to guides**: goal-oriented, shows how to solve a specific problem
+        - **Explanation**: understanding-oriented, explains a concept
+        - **Reference**: information-oriented, describes the machinery
+        - **In-code documentaion — docstrings**
+        **Not to forget**
+        - Project documentation:
+            - requirements: what is the goal of the software, risks, platforms
+            - the analysis: pseudocode and UML
+            - risk analysis
+
+**There is no one size fits all**: often for small projects a `README.md` or
+`README.rst` can be enough (more about these formats later).
+
+### Where are we?
+
+**DONE** 
+
+- &#9745; in-code documentation
+- &#9745; Project documentation:
+     - requirements: what is the goal of the software, risks, platforms
+     - the analysis: pseudocode and UML
+     - risk analysis
+ 
+**Finalize today**
+
+- &#9744; README
+    - &#9745; installation instruction
+    - &#9744; Tutorial: get started
+    - &#9744; citation
+ 
+**Further documentation for future projects**
+
+- &#9744; **License**
+- &#9744; **Tutorials**: learning-oriented, allows the newcomer to get started
+- &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
+- &#9744; **Explanation**: understanding-oriented, explains a concept
+- &#9744; **Reference**: information-oriented, describes the machinery
 
 ## Exercise
 
@@ -80,12 +111,70 @@
 
     ???- question "Group 2: Work together and formulate 'Getting started' section"
     
-    ???- question "Group 3: Work together and formulate 'License' section"
+    ???- question "Group 3: Work together and formulate 'Citation' section"
 
 
 ## Discussion
 
 ???- Describe what you've done and why?
+
+## Going further with documentation
+
+!!! info "See also"
+
+    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
+
+### Wikis
+
+- Popular solutions (but many others exist):
+    - [MediaWiki](https://www.mediawiki.org)
+    - [Dokuwiki](https://www.dokuwiki.org)
+    - Also on GitHub!
+    - Typically needs to be hosted and maintained
+
+- Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
+
+### HTML static site generators
+
+There are many tools that can turn RST or Markdown into beautiful HTML pages:
+
+- [Sphinx](http://sphinx-doc.org)
+    - Generate HTML/PDF/LaTeX from RST and Markdown.
+    - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
+    - [Earlier Intro day for this course]()
+- [Jekyll](https://jekyllrb.com)
+    - Generates HTML from Markdown.
+    - GitHub supports this without adding extra build steps.
+- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
+    - Generates HTML from Markdown.
+    - Example: [Programming formalisms course](https://uppmax.github.io/programming_formalisms)
+
+There are many more ...
+
+### Deployment on servers
+
+GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
+
+- [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
+- [Bitbucket Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=bitbucket)
+- [GitLab Pages](https://pages.gitlab.io)
+- [Read the docs](http://readthedocs.org) ← this is what NBIS uses for some course material
+    - hosts public Sphinx documentation for free!
+    - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
+
+#### GitHub pages
+
+- Easiest. Everything is local to GitHub
+- This lesson material
+
+#### Read the Docs
+
+- Somewhat more possibilities, like having several versions of documentation to switch between.
+
+
+
+
+
 
 !!! admonition "Parts to be covered!"
 

@@ -42,7 +42,7 @@
 
 ``` mermaid
 flowchart
-    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] --> Requirements
+    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] -.-> Requirements
 ```
 
 - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
