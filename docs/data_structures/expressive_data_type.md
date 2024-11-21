@@ -72,7 +72,7 @@ parameters = {
 def get_n_bacteria(parameters): 
     return parameters['n_bacteria']
 def get_n_timesteps(parameters): 
-    return parameters['n_timestep']
+    return parameters['n_timesteps']
 def get_gradient_type(parameters): 
     return parameters['gradient_type']
 def get_bacteria_initialization(parameters): 
