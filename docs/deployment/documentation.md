@@ -92,7 +92,62 @@
 
 ## The README
 
-Example 
+### Example content
+
+- About
+- Installation (with dependencies and testing)
+- Get started
+- Use cases
+- Citation
+
+### About
+
+### Install
+
+- We covered this in last session
+
+### Get started
+
+- This session can be runnning some test data to get an overview of what the program can perform.
+- It may describe how to get test data
+- Example: https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data
+
+### Use cases
+
+- This may sometimes be merged with the previous section
+
+- **How-to guide**: goal-oriented, shows how to solve a specific problem
+- May be a sub-set of the most important commands, depending on how wide the program is.
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
+
+???- discussion "would it be needed for your project?
+
+### Contributions
+
+- How to contribute?
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
+
+
+### Acknowledgements
+
+- Add references that inspired or added algorithms to your code
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements>
+
+### References/Citation
+
+[Software citation by Code Refinery](https://coderefinery.github.io/social-coding/software-citation/)
+
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
+
+!!! example
+
+    - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
+    - Conda: <https://github.com/biobakery/MetaPhlAn>
+    - pip: <https://github.com/deeptools/HiCExplorer>
+    - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
+    - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
+
+
 
 
 ## Exercise
@@ -102,7 +157,6 @@ Example
     - Revisit README-ext and update it with info after all our commits
         - About
     - Citing
-    - License
     - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
     - Do a ``git pull`` to have the same version of your project repo locally!
 
