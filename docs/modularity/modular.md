@@ -1,48 +1,29 @@
 # Modular programming
 
-## Learning goals
-
-!!! info "Today we will"
-
-    - Check Prior knowledge 10 min
-    - Revisit Class Diagrams and interactions between classes 10 min
-    - Introduce Refactoring 10 min
-    - Exercise  Refactor design of project Class diagram 30 min
-    - break 15 min
-    - Introduce Modularity 10 min
-    - Exercise 25 min produce logical modules that separates the behavior and structure in modules.
-    - Introduce Design Patterns 10 min + 10 min discussion
-    - break 15 min
-    - Implement Factory Design pattern 40 min
-    - lunch
+???- info "Learning objectives"
+    - Understand the concept of code smells and design smells.
+    - Grasp the idea of the "zero line" in software design and its relevance.
+    - Gain an introductory understanding of modular programming and iterative refactoring.
+    - Learn about common interfaces, protocols, and their role in modular programming.
+    - Recognize and address tight coupling in code to improve modularity.
+    - Appreciate the importance of modularization in collaborative projects, especially for reducing conflicts in version control.
 
     ```mermaid
         gantt
-        title Lesson plan Refactoring, Design Patterns and Modularization
+        title Lesson plan Refactoring, and modularization
         dateFormat X
         axisFormat %s
-        Godmorning and Prior knowledge : intro, 0, 10
-        Revist class Diagrams: theory_1, 10, 10s
-        Refactoring: refactoring, 20, 10s
-        Excersie Refactoring: Excersie_1, 30,30s
-        Break:break_1,60,15s
-        Modularity:Modularity_1,75, 10s
-        Excersie: Modules, 85,25s
-        Design Patterns:Design_Patterns, 110, 20s
-        Break:break_1,130,15s
-        Excersie: Excersie_2, 145,40s
+        Revisit class Diagrams: theory_1, 0, 10
+        Refactoring: refactoring, 10, 10s
+        Exercise Refactoring: Exercise_1, 20, 20s
+        Modularity:Modularity_1,40, 10s
+        Exercise: Modules, 50,10s
     ```
 
 ???- info "Learning objectives of Refactoring"
 
     - Learners learns about code smells and design smells
 
-???- info "Learning objectives of Design Patterns"
-
-    - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
-    - The Learners should be able to implement into their design the
-       "Factory pattern"
-    - The learners can describe the general parts of a design pattern and why we use them.
 
 ???- info "Learning objectives of Modular programming"
 
@@ -66,22 +47,7 @@
     - Reusability
     - Working with others (encapsulation of work and function)
 
-???- "What is a Design Pattern"
 
-    Design patterns are typical solutions to common problems
-    in software design. Each pattern is like a blueprint
-    that you can customize to solve a particular
-    design problem in your code.
-    from [refactoring.guru](https://refactoring.guru/design-patterns)
-
-???- "Why do we use Design Patterns"
-
-    The truth is that you might manage to work as a programmer for many years without knowing about a single pattern. A lot of people do just that. Even in that case, though, you might be implementing some patterns without even knowing it. So why would you spend time learning them?
-
-    Design patterns are a toolkit of tried and tested solutions to common problems in software design. Even if you never encounter these problems, knowing patterns is still useful because it teaches you how to solve all sorts of problems using principles of object-oriented design.
-
-    Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
-    from [refactoring.guru](https://refactoring.guru/design-patterns)
 
 ???- "What is Refactoring"
 
@@ -130,12 +96,4 @@ Further reading:
 
 ???- "Modularization"
 
-    Order your code in logical consistent modules that separates behavior that belongs together via interfaces.
-
-???- "Design Patterns"
-
-    Implement a Factory method for the creation of bacteria and one for nutrients
-
-???- "Extra assignment"
-
-    Using refactoring.guru find an implement another pattern that is useful for your project.
+     Order your design in logical consistent modules that separates behavior that belongs together via interfaces.
