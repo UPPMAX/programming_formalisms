@@ -26,6 +26,8 @@ tags:
 
     Prior:
 
+    - What is a function?
+    - Why are functions important?
     - What makes a well-written function?
     - What is more important: that a function is correct or that
       it is easy to use?

@@ -8,7 +8,8 @@ tags:
 
 !!!- info "Learning objectives"
 
-    - .
+    - Understand what an invariant is
+    - Write a class that protects an invariant
 
 ???- question "For teachers"
 

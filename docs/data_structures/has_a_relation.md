@@ -10,8 +10,9 @@ tags:
 
 !!!- info "Learning objectives"
 
-    - Understand the two types of 'has-a' relationships
-    - Practice to use composition
+    - Understand the type of relation 'composition' is
+    - Understand the type of relation 'inheritance' is
+    - Write a class that is composed of another one
 
 ???- question "For teachers"
 
