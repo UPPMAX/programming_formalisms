@@ -91,7 +91,7 @@ As discussed in the lesson
 The 4 most important relationship classes can have
 are association, composition and aggregation
 
-#### Bad structure ####
+#### Bad structure
 
     - `PetsIOwn` is a relation DB table not an object as it has
     - no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
