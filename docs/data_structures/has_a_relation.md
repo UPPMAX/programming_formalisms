@@ -52,7 +52,7 @@ You want to know the most important relation between classes there is.
 
 ## Use case
 
-Here we have a `class` called `Particle`:
+Here we have a class called `Particle`:
 
 ```mermaid
 classDiagram
