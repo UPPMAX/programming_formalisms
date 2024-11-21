@@ -9,7 +9,7 @@
     - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
     - The learners can describe the general parts of a design pattern and why we use them.
     - The Learners should be able to understand the "Factory pattern" and what problem it solves
-    
+
 
 >People regard their environment in terms of objects"
 `[Jacobson 1992]`
@@ -48,6 +48,31 @@ The semantic gap(The distance form input to understanding) between reality and m
 
 ???- question "What is a Class"
 
+    >A class is a set of objects that share a common structure, common behavior, and common semantics.
+    `[Booch 2007]`
+
+
+The 4 most important relationship classes can have
+are association, composition and aggregation
+
+```mermaid
+classDiagram
+    Owner-->PetsIOwn
+    Dog*--"1"Head
+    Dog*--"1"Body
+    Dog*--"0..1"Tail
+    PetsIOwn o--"0..*"Dog
+    PetsIOwn o--"0..*"Cat
+    PetsIOwn o--"0..*"GoldFish
+    Animal <|--Dog
+    Animal <|--Cat
+    Animal <|--Goldfish
+```
+
+Further reading:
+[Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+
+
 ???- question  "What is a Design Pattern"
 
     Design patterns are typical solutions to common problems
@@ -69,7 +94,7 @@ The semantic gap(The distance form input to understanding) between reality and m
 
 ???- "Design Patterns"
 
-    Design a Factory method for the creation of bacteria 
+    Design a Factory method for the creation of bacteria
 
 ???- "Extra assignment"
 
@@ -78,6 +103,7 @@ The semantic gap(The distance form input to understanding) between reality and m
 
 ## References
 
-- `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
+- `[Ivar Jacobson 1992] Ivar Jacobson et al., Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992.
+- `[Booch 2007]` Grady Booch et al.,Object-oriented analysis and design with applications -3rd ed,Addison-wesley 2007.
 - `[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
 
