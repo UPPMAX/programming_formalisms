@@ -91,7 +91,7 @@ In English this would be read as 'a duck is a type of animal'.
 classDiagram
   Simulation
   Results
-  Simulation --> "produces" Results
+  Simulation --- "produces" Results
 ```
 
 > An example of association
