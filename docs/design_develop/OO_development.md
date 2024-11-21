@@ -63,7 +63,7 @@ are association, composition and aggregation
 
 ```mermaid
 classDiagram
-    Owner-->Animal
+    Owner-->Animal: cares for
     Dog*--"1"Head
     Dog*--"1"Body
     Dog*--"0..1"Tail
