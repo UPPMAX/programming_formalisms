@@ -58,7 +58,6 @@
     - Working with others (encapsulation of work and function)
 
 
-
 ???- "What is Refactoring"
 
     Refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
