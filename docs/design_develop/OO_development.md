@@ -78,24 +78,31 @@ classDiagram
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
-???- question "Is a programming language Object Oriented"
-    Object-oriented programming is a technique for programming – a paradigm for writing ‘‘good’’ programs for a set of problems. If the term ‘‘object-oriented programming language’’ means anything it must mean a programming language that provides mechanisms that support the object-oriented style of programming well.
-    `[Stroustrup B. 1988]`
+???- question "Is a programming language object oriented?"
+
+    Object-oriented programming is a technique for programming – a paradigm
+    for writing 'good' programs for a set of problems. 
+    If the term 'object-oriented programming language' means anything it must
+    mean 'a programming language that provides mechanisms that support 
+    the object-oriented style of programming well'.
+    `[Stroustrup B. 1998]`
 
 !!! info "Techniques for Object oriented programming"
+
     Decide which classes you want;
     provide a full set of operations for each class;
     make commonality explicit by using inheritance.
     `[Stroustrup B. 1988]`
 
-!!! hint "Why do we Break the rule"
+!!! hint "Why do we Break the rule?"
+
     In this course we do not go into the concept of
     inheritance in implementation as this is makes for a
     more complicated structure. We only concern our selfs
     with the "has a" relation ship rather than "is a" relation ship.
     we work with the composite and the aggregate relationships
 
-???- question  "What is a Design Pattern"
+???- question  "What is a Design Pattern?"
 
     Design patterns are typical solutions to common problems
     in software design. Each pattern is like a blueprint
@@ -103,7 +110,7 @@ Further reading:
     design problem in your code.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-???- question  "Why do we use Design Patterns"
+???- question  "Why do we use Design Patterns?"
 
     The truth is that you might manage to work as a programmer for many years without knowing about a single pattern. A lot of people do just that. Even in that case, though, you might be implementing some patterns without even knowing it. So why would you spend time learning them?
 
