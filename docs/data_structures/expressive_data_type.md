@@ -120,7 +120,17 @@ We cannot read what `a` is exactly.
 We cannot express this as a `list` or a `dict`.
 Instead, we can express this is a `class`.
 
-Here we put our 'something' into a class:
+Here we put our 'something' into a class. Here is the design:
+
+```mermaid
+classDiagram
+  class Coordinate{
+    +x
+    +y
+  }
+```
+
+Here is the code:
 
 ```python
 class Coordinat:
@@ -223,7 +233,6 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
 ???- question "Answer for the parameters class"
 
     Modify the `Coordinat` class :-)
-
 
 - Use the class in a function, e.g. `create_test_x`
 
