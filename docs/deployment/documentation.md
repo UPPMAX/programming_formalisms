@@ -200,7 +200,7 @@ There are many tools that can turn RST or Markdown into beautiful HTML pages:
 - [Sphinx](http://sphinx-doc.org)
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
-    - [HICexporer documentation](https://hicexplorer.readthedocs.io/en/latest/)
+    - [HICexplorer documentation](https://hicexplorer.readthedocs.io/en/latest/)
 - [Jekyll](https://jekyllrb.com)
     - Generates HTML from Markdown.
     - GitHub supports this without adding extra build steps.
