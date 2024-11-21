@@ -1,11 +1,17 @@
 # Modular programming
 
 ???- info "Learning objectives"
+
     - Understand the concept of code smells and design smells.
+
     - Grasp the idea of the "zero line" in software design and its relevance.
+
     - Gain an introductory understanding of modular programming and iterative refactoring.
+
     - Learn about common interfaces, protocols, and their role in modular programming.
+
     - Recognize and address tight coupling in code to improve modularity.
+
     - Appreciate the importance of modularization in collaborative projects, especially for reducing conflicts in version control.
 
     ```mermaid
@@ -28,9 +34,13 @@
 ???- info "Learning objectives of Modular programming"
 
     - The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code.
+
     - The concepts of common interface and protocols are introduced to the learners
+
     - The learners are introduced the concept of coupling and how to find tight coupling
+
     - The learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
+
     - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
 ## Prior Knowledge
