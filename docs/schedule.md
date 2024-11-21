@@ -36,16 +36,17 @@ Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |[Object-oriented design](design_develop/OO_development.md)
 Thursday |10:15-11:00|Richel |[Function design](function_design/README.md)
-Thursday |11:15-12:00|Richel |[Class design](data_structures/class_design.md), [has-a relation](data_structures/has_a_relation.md), [expressive data type](data_structures/expressive_data_type.md)
+Thursday |11:15-12:00|Richel |[Expressive data type](data_structures/expressive_data_type.md), [has-a relation](data_structures/has_a_relation.md)
 Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
-Thursday |14:15-15:00|Richel |[continuous integration](continuous_integration/README.md)
-Thursday |15:15-16:00|Richel |[Implement the project as a package](package/README.md)
+Thursday |14:15-15:00|Richel |[class design](data_structures/class_design.md), 
+Thursday |15:15-16:00|Richel |[continuous integration](continuous_integration/README.md)
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
-Friday   |09:00-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
+Friday   |09:00-10:00|Richel |[Implement the project as a package](package/README.md), [Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
+Friday   |10:15-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
 Friday   |11:00-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
-Friday   |15:00-15:40|Richel |Wrap-up
+Friday   |15:15-15:40|Richel |Wrap-up
 Friday   |15:40-16:00|Richel |Confidence and retrospect
 
 <!-- markdownlint-enable MD013 -->
