@@ -167,9 +167,23 @@ classDiagram
 
 Although we could say 'a simulation has results', a simulation does
 not own these results. It does not manage the state of the results.
-Instead, a simulation has an association with the results it produces.
+Instead, a simulation has an association with the results it produces
+and the class design diagram should look like this:
 
-## Composition versus aggregation
+```mermaid
+classDiagram
+  class Simulation{
+    +run() Results
+  }
+
+  Simulation --> "run" Results
+
+  class Results{
+    - values
+  }
+```
+
+## (optional) Composition versus aggregation
 
 A university has departments, where a department has professors.
 These are two different 'has-a' relationships.
