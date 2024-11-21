@@ -4,7 +4,7 @@
 
     - How can the user understand how to run your program and what it does?
 
-???- info "Learning objectives of 'Documentation'"
+???+ info "Learning objectives of 'Documentation'"
 
     learners  
     
@@ -15,7 +15,6 @@
 
 !!! info "Content"
 
-    - We will prepare for use of your code
     - content of readme
         - installation
         - get started
@@ -44,20 +43,47 @@
 
 !!! info "TOC"
 
-    - In-code documentation review
-    - Documentation
-        - tutorials/howto/reference
-        - project doc
-        - html site generators
-        - deployment on servers
-    - Hands-on in groups
-        - update README
-            - installation procedure
-            - how to run... 
-        - update license
-        - update citation
-        - update index
-    - Discussion how you thoght about things
+
+
+
+## Revisiting documentation
+
+!!! admonition "Documentation comes in different forms"
+
+    - What *is* documentation?
+        - **Tutorials**: learning-oriented, allows the newcomer to get started
+        - **How-to guides**: goal-oriented, shows how to solve a specific problem
+        - **Explanation**: understanding-oriented, explains a concept
+        - **Reference**: information-oriented, describes the machinery
+        - **In-code documentaion — docstrings**
+        **Not to forget**
+        - Project documentation:
+            - requirements: what is the goal of the software, risks, platforms
+            - the analysis: pseudocode and UML
+            - risk analysis
+
+**There is no one size fits all**: often for small projects a `README.md` or
+`README.rst` can be enough (more about these formats later).
+
+### Where are we?
+ 
+- [X] in-code documentation
+- [ } README
+    - [x] installation instruction
+    - [] Tutorial: get started
+    - [] citation
+- [] Review License
+- [] **Tutorials**: learning-oriented, allows the newcomer to get started
+- [] **How-to guides**: goal-oriented, shows how to solve a specific problem
+- [] **Explanation**: understanding-oriented, explains a concept
+- [] **Reference**: information-oriented, describes the machinery
+- [x] Project documentation:
+     - requirements: what is the goal of the software, risks, platforms
+     - the analysis: pseudocode and UML
+     - risk analysis
+
+
+
 
 ## Exercise
 
