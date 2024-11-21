@@ -229,7 +229,7 @@ well `[Gamma et al., 1995]`
             return self._lowest
         def get_highest(self):
             return self._highest
-        ```
+    ```
 
 ## References
 
