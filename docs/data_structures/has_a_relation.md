@@ -95,6 +95,9 @@ In this course, we use only these types of relations:
 - inheritance, a 'is-a-type-of' relationship
 - association, a 'uses' relationship
 
+### Composition
+
+
 ```mermaid
 classDiagram
   Person
@@ -106,6 +109,8 @@ classDiagram
 
 In English this would be read as 'a person has a name'.
 
+### Inheritance
+
 ```mermaid
 classDiagram
   Animal
@@ -116,6 +121,8 @@ classDiagram
 > An example of inheritance
 
 In English this would be read as 'a duck is a type of animal'.
+
+### Association
 
 ```mermaid
 classDiagram
