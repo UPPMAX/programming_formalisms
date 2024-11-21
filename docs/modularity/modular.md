@@ -94,6 +94,7 @@ are association, composition and aggregation
 **Bad structure**
     - Pets i Own is a relation DB table not an object as it has
     no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
+
 ```mermaid
 classDiagram
     Owner-->PetsIOwn
