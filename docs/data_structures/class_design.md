@@ -168,7 +168,7 @@ well `[Gamma et al., 1995]`
 
 ## Exercise
 
-### Exercise: write a class with an invariant.
+### Exercise: write a class with an invariant
 
 - Pick a class at your skill level:
 
