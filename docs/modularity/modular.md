@@ -101,4 +101,4 @@ Further reading:
 
 ???- "Modularization"
 
-    Order your code in logical consistent modules that separates behavior that belongs together via interfaces.
+     Order your design in logical consistent modules that separates behavior that belongs together via interfaces.
