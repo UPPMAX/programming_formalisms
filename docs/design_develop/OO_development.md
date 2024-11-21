@@ -30,17 +30,20 @@ The semantic gap(The distance form input to understanding) between reality and m
     An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
 
 !!! info **Object Orientation is a Paradigm not a language feature**
+
     - Mariam-webster defines a Paradigm as:
     philosophical and theoretical framework of a scientific school or discipline within which theories, laws, and generalizations and the experiments performed in support of them are formulated
+
     - Stanford Encyclopedia of Philosophy cites the work of Thomas Kuhn The Structure of Scientific Revolutions in where a work of Paradigm is not only the key theories and laws, but also—and this is what makes them paradigms—the applications of those theories in the solution of important problems
 
-Developing object orientated is following these principles
+!!! info "Principles of object orientated development"
 
-1: Information Hiding
-    No unit outside of the object shall know the internal workings of the object
-2: The concept of Encapsulation
+    1: **Information Hiding**
+        No unit outside of the object shall know the internal workings of the object
 
-3: The concept of message passing
+    2: **The concept of Encapsulation**
+
+    3: **The concept of message passing**
 
 ???- "What is a Class"
 
