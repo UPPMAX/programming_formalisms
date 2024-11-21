@@ -29,15 +29,17 @@ Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 Wednesday|09:00-10:00|Björn  |[Formal git workflow, branches](./git/branches.md)
 Wednesday|10:15-11:00|Björn  |[Formal git workflow, merge](./git/merge.md)
 Wednesday|11:15-12:00|Björn  |[Formal git workflow, contribute](./git/contribute.md) & [Social coding and sharing](./social_coding/social_coding.md)
-Wednesday|13:00-14:00|Richel |[Pair programming](pair_programming/README.md), [formal testing framework](testing/testing_framework.md)
-Wednesday|14:15-15:00|Richel |[Pair programming](pair_programming/README.md), [formal testing framework](testing/testing_framework.md), [continuous integration](continuous_integration/README.md)
-Wednesday|15:15-15:40|Richel |[formal testing framework](testing/testing_framework.md), [continuous integration](continuous_integration/README.md), [Function design](function_design/README.md)
+Wednesday|13:00-14:00|Richel |[Pair programming](pair_programming/README.md)
+Wednesday|14:15-15:00|Richel |[Pair programming](pair_programming/README.md)
+Wednesday|15:15-15:40|Richel |[formal testing framework](testing/testing_framework.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |[Object-oriented design](design_develop/OO_development.md)
-Thursday |10:00-12:00|Richel |[Class design](data_structures/class_design.md), [has-a relation](data_structures/has_a_relation.md), [expressive data type](data_structures/expressive_data_type.md)
+Thursday |10:15-11:00|Richel |[Function design](function_design/README.md)
+Thursday |11:15-12:00|Richel |[Class design](data_structures/class_design.md), [has-a relation](data_structures/has_a_relation.md), [expressive data type](data_structures/expressive_data_type.md)
 Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
-Thursday |14:00-15:40|Richel |[Implement the project as a package](package/README.md)
+Thursday |14:15-15:00|Richel |[continuous integration](continuous_integration/README.md)
+Thursday |15:15-16:00|Richel |[Implement the project as a package](package/README.md)
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Friday   |09:00-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
