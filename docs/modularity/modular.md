@@ -120,7 +120,7 @@ classDiagram
     Dog *-- "0..1"Tail
     Animal <|-- Dog
     Animal <|-- Cat
-    Animal <|-- Goldfish
+    Animal <|-- GoldFish
 ```
 
 What was this ann effect of a phenomenon known as Design Smell.
