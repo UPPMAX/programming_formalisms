@@ -38,11 +38,11 @@ Thursday |09:00-10:00|Lars   |[Object-oriented design](design_develop/OO_develop
 Thursday |10:15-11:00|Richel |[Function design](function_design/README.md)
 Thursday |11:15-12:00|Richel |[Expressive data type](data_structures/expressive_data_type.md)
 Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
-Thursday |14:15-15:00|Richel |[Has-a relation](data_structures/has_a_relation.md)
-Thursday |15:15-15:40|Richel |[Class design](data_structures/class_design.md)
+Thursday |14:15-15:00|Richel |[Has-a relation](data_structures/has_a_relation.md), [class design](data_structures/class_design.md)
+Thursday |15:15-15:40|Richel |[Continuous integration](continuous_integration/README.md)
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
-Friday   |09:00-10:00|Richel |[Implement the project as a package](package/README.md), [Continuous integration](continuous_integration/README.md)
+Friday   |09:00-10:00|Richel |[Implement the project as a package](package/README.md)
 Friday   |10:15-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
 Friday   |11:15-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
