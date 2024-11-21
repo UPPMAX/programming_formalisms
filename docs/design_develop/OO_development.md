@@ -72,7 +72,7 @@ classDiagram
     PetsIOwn o--"0..*"GoldFish
     Animal <|--Dog
     Animal <|--Cat
-    Animal <|--Goldfish
+    Animal <|--GoldFish
 ```
 
 Further reading:
