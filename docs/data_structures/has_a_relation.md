@@ -232,7 +232,7 @@ classDiagram
 
 ???- question "Answer for the particle"
 
-    ```
+    ```text
     class Position:
         def __init__(self, any_x, any_y):
           self.x = any_x
