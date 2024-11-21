@@ -44,8 +44,6 @@
 !!! info "TOC"
 
 
-
-
 ## Revisiting documentation
 
 !!! admonition "Documentation comes in different forms"
@@ -67,13 +65,13 @@
 
 ### Where are we?
 
-**DONE** 
+**DONE**
 
 - &#9745; in-code documentation
 - &#9745; Project documentation:
-     - requirements: what is the goal of the software, risks, platforms
-     - the analysis: pseudocode and UML
-     - risk analysis
+    - requirements: what is the goal of the software, risks, platforms
+    - the analysis: pseudocode and UML
+    - risk analysis
  
 **Finalize today**
 
@@ -81,7 +79,7 @@
     - &#9745; installation instruction
     - &#9744; Tutorial: get started
     - &#9744; citation
- 
+
 **Further documentation for future projects**
 
 - &#9744; **License**
@@ -108,9 +106,9 @@
 
 ### Get started
 
-- This session can be runnning some test data to get an overview of what the program can perform.
+- This session can be "running some test data" to get an overview of what the program can perform.
 - It may describe how to get test data
-- Example: https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
 
 ### Use cases
 
@@ -146,9 +144,6 @@
     - pip: <https://github.com/deeptools/HiCExplorer>
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
-
-
-
 
 ## Exercise
 
@@ -270,11 +265,6 @@ reusability:
 
 ... most of which you have or will learn during this
 [CodeRefinery](https://coderefinery.org) workshop!
-
-
-
-
-
 
 
 !!! admonition "Parts to be covered!"
