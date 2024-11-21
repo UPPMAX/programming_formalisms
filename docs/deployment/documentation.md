@@ -68,6 +68,7 @@
 ### Where are we?
 
 **DONE** 
+
 - &#9745; in-code documentation
 - &#9745; Project documentation:
      - requirements: what is the goal of the software, risks, platforms
@@ -75,12 +76,14 @@
      - risk analysis
  
 **Finalize today**
+
 - &#9744; README
     - &#9745; installation instruction
     - &#9744; Tutorial: get started
     - &#9744; citation
  
 **Further documentation for future projects**
+
 - &#9744; **License**
 - &#9744; **Tutorials**: learning-oriented, allows the newcomer to get started
 - &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
