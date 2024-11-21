@@ -176,7 +176,7 @@ pip freeze > requirements.txt
 - Other users can then install the same packages with:
 
 ```console
-pip install -user -r requirements.txt
+pip install --user -r requirements.txt
 ```
 
 - Continue
