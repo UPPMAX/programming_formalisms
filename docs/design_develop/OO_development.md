@@ -78,4 +78,5 @@ The semantic gap(The distance form input to understanding) between reality and m
 ## References
 
 - `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
--`[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
+- `[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
+
