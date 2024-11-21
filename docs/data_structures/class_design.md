@@ -60,6 +60,17 @@ Benefits from object-oriented development (from `[Booch, 2008]`):
 
 ## An invariant
 
+An invariant is something that must always be.
+Some examples:
+
+- a persons' age must always be positive
+- a persons' total height must be longer than a persons' arms' length
+
+Use a class if the class has an invariant `[CppCore C.2]`.
+
+For example, here we have a class with an invariant:
+
+
 ```mermaid
 classDiagram
   class Range{
@@ -68,9 +79,10 @@ classDiagram
   }
 ```
 
-- Use class if the class has an invariant;
-  use struct if the data members can vary independently `[CppCore C.2]`
-- Use class rather than struct if any member is non-public `[CppCore C.8]`
+???- question "What is the invariant in the `Range` class?"
+
+    The invariant is that `highest~ must be bigger or equal to
+    `lowest`.
 
 ## Writing a good class
 
@@ -87,19 +99,23 @@ is probably a string of one or more A, C, G and T
 - Private member variables
 - Public member functions
 
-## Class anatomy in R
+???- question "Prefer R?"
 
-- R has four class types (S3, S4, R5, R6)
-- S3 classes are closest to structures
-- R6 classes are real classes
+    Class anatomy in R:
 
-## Class anatomy in Python
+    - R has four class types (S3, S4, R5, R6)
+    - S3 classes are closest to structures
+    - R6 classes are real classes
+
+## A `DnaSequence` class
+
+Here is how to implement a class for a DNA sequence:
 
 ```python
 class DnaSequence:
     def __init__(self, sequence):
         assert is_dna_string(sequence)
-        self._sequence = sequence # convention
+        self._sequence = sequence
 
     def get_str(self):
         return self._sequence
@@ -108,22 +124,26 @@ a = DnaSequence("ACGT")
 assert a.get_str() == "ACGT"
 ```
 
-## Private variables are a social convention
+The `init` method (also known as a constructor) checks if the
+input is indeed a valid DNA string, using an `assert`.
+After that, the sequences is stored inside of the class,
+in a member variable called `_sequence`.
+The underscore signals (by social convention) that the value must
+be treated as 'do not touch' and that the only
+class itself will keep it valid.
 
-Use of `_` before the name of a private variable is a social convention!
+However, nothing stops you from doing this:
 
 ```python
-self._sequence = sequence # convention
-```
-
-Nothing stops you from:
-
-```python
-a._sequence = "XXX"
+a._sequence = "XXX" # No! Breaks the invariant!
 assert a.get_str() == "XXX"
 ```
 
-Some other programming languages offer stronger guarantees.
+On the other hand, a Python developer can at least see that this convention
+was broken.
+
+Note that some other programming languages completely disallows
+you from modifying a so-called 'private' member variabel.
 
 ## Inheritance and polymorphism quote
 
@@ -135,16 +155,80 @@ Some other programming languages offer stronger guarantees.
 >
 > Linus Torvalds, 2007-09-06
 
-## Inheritance and polymorphism
-
-- Can create class hierarchies
-    - 'All Animal objects can make a sounds'
-- Easy to abuse, hard to use correctly
-- Design Patterns are known to work well
+Inheritance and polymorphism are easy to abuse and hard to use
+correctly `[Gamma et al., 1995]`.
+However, tried and known-to work combinations of classes
+called 'Design Patterns' do use inheritance and are known to work
+well `[Gamma et al., 1995]`
 
 ![Gamma et al., 1995](design_patterns_book.jpg)
 
 > `[Gamma et al., 1995]`
+
+## Exercise
+
+### Exercise: write a class with an invariant.
+
+- Pick a class at your skill level:
+
+???- note "Easiest: a class for a positive number"
+
+    Here is an example how to use it:
+
+    ```python
+    x = PositiveNumber(3)
+    assert x.get_value() == 3
+    PositiveNumber(-1) # Must raise an exception
+    ```
+
+    Work in `src/learners`.
+
+???- note "Medium: a class for a range, e.g 'a range from 3 to 10'"
+
+
+    Here is an example how to use it:
+
+    ```python
+    x = Range(3, 10)
+    assert x.get_lowest() == 3
+    assert x.get_highest() == 10
+    Range(100, 10) # Must raise an exception
+    ```
+
+    Work in `src/learners`
+
+???- note "Hard: a class in the learners' project"
+
+    Work in `src/bacsim`
+
+    Don't break the main branch :-)
+
+- Write the class that protects its invariant
+
+???- question "Answer for a positive number"
+
+    ```python
+    class PositiveNumber:
+        def __init__(self, any_positive_number):
+            assert any_positive_number >= 0
+            self._value = any_positive_number
+        def get_value(self):
+            return self._value
+    ```
+
+???- question "Answer for range"
+
+    ```python
+class Range:
+    def __init__(self, any_lowest, any_highest):
+        assert any_lowest <= any_highest
+        self._lowest = any_lowest
+        self._highest = any_highest
+    def get_lowest(self):
+        return self._lowest
+    def get_highest(self):
+        return self._highest
+    ```
 
 ## References
 
