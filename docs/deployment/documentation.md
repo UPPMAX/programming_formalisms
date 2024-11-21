@@ -151,7 +151,7 @@ There are many tools that can turn RST or Markdown into beautiful HTML pages:
 - [Sphinx](http://sphinx-doc.org)
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
-    - [Earlier Intro day for this course]()
+    - [HICexporer documentation](https://hicexplorer.readthedocs.io/en/latest/)
 - [Jekyll](https://jekyllrb.com)
     - Generates HTML from Markdown.
     - GitHub supports this without adding extra build steps.
@@ -180,6 +180,43 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 #### Read the Docs
 
 - Somewhat more possibilities, like having several versions of documentation to switch between.
+
+
+### What contributes to reusability?
+
+What contributes to you being able to reuse stuff that others make, and others
+(or you) being able to reuse your stuff? When you find a repository with code
+you would like to reuse, you may look at the following things to determine its
+reusability:
+
+!!! note
+    
+    This can be now reconnected to question 4 (above).
+
+- Date of last code change
+  > ... is the project abandoned?
+- Release history
+  > ... how about stability and backwards-compatibility?
+- Versioning
+  > ... will it be painful to upgrade?
+- Number of open pull requests and issues
+  > ... are they followed-up?
+- Installation instructions
+  > ... will it be difficult to get it running?
+- Example
+  > ... will it be difficult to get started?
+- License
+  > ... am I allowed to use it?
+- Contribution guide
+  > ... how to contribute and decision process?
+- Code of conduct
+  > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
+- Trust and community
+  > ... somebody you trust recommended it?
+
+... most of which you have or will learn during this
+[CodeRefinery](https://coderefinery.org) workshop!
+
 
 
 
