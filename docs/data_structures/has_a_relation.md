@@ -237,8 +237,6 @@ classDiagram
         def __init__(self, any_x, any_y):
           self.x = any_x
           self.y = any_y
-        def __repr__(self):
-            return "Position"
         def __str__(self):
             return "(" + str(self.x) + ", " + str(self.y) + ")"
 
@@ -246,8 +244,6 @@ classDiagram
         def __init__(self, any_x, any_y):
           self.x = any_x
           self.y = any_y
-        def __repr__(self):
-            return "Velocity"
         def __str__(self):
             return "(" + str(self.x) + ", " + str(self.y) + ")"
 
@@ -255,8 +251,6 @@ classDiagram
         def __init__(self, any_position, any_velocity):
           self.position = any_position
           self.velocity = any_velocity
-        def __repr__(self):
-            return "Particle"
         def __str__(self):
             return (
                 "Position: " + str(self.position)  + ", " 
