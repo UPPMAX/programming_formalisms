@@ -34,7 +34,7 @@ Wednesday|14:15-15:00|Richel |[Pair programming](pair_programming/README.md), [f
 Wednesday|15:15-15:40|Richel |[formal testing framework](testing/testing_framework.md), [continuous integration](continuous_integration/README.md), [Function design](function_design/README.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
-Thursday |09:00-10:00|Lars   |Object-oriented design
+Thursday |09:00-10:00|Lars   |[Object-oriented design](design_develop/OO_development.md)
 Thursday |10:00-12:00|Richel |[Class design](data_structures/class_design.md), [has-a relation](data_structures/has_a_relation.md), [expressive data type](data_structures/expressive_data_type.md)
 Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
 Thursday |14:00-15:40|Richel |[Implement the project as a package](package/README.md)
