@@ -134,7 +134,8 @@
 
 - Think the same as for a scientific paper
 
-**Our practical recommendations**:
+**Practical recommendations**:
+
 - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
 - Open source license can't demand citation, but it is required by science ethics anyway.
 - Make it as easy as possible! Clearly say what you want cited.
@@ -142,6 +143,7 @@
 - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
 This is an example of a simple `CITATION.cff` file:
+
 ```yaml
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
@@ -157,6 +159,7 @@ date-released: 2021-08-11
 
 Recommended format for software citation is to ensure the following information
 is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
+
 - Creator 
 - Title
 - Publication venue
@@ -165,7 +168,6 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 - Version
 - Type
 
-    
 - Digital object identifiers (DOI) are the backbone of the academic reference and metrics system. 
 - CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
 
@@ -212,9 +214,6 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 ???- question "Discussion: Describe what you've done and why?"
 
 ## Licensing
-
-
-
 
 !!! info "See also"
 
