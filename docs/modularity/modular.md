@@ -107,7 +107,7 @@ classDiagram
     PetsIOwn o--"0..*"GoldFish
     Animal <|--Dog
     Animal <|--Cat
-    Animal <|--Goldfish
+    Animal <|--GoldFish
 ```
 
 Refactored design, the Refactoring is done already in design space as a iteration of your design
