@@ -8,10 +8,9 @@
 
     learners  
     
-    - can make a full README
-    - can make a suitable choice of License
-    - can make citation info
-    - know how to find instruction of going more sophisticated
+    - I know the most important sections for a full public README
+    - I can make citation info
+    - I know how to find instruction of going to more sophisticated documentation
 
 !!! info "Content"
 
