@@ -58,7 +58,7 @@
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
 - **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
 
- ### To make sure about needed dependencies
+### To make sure about needed dependencies
 
 - Start with empty environment
 - Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
@@ -73,21 +73,21 @@
     - From a terminal?
     - On different computers?
     - On a cluster?
-   
+
 - We need to either inform what is needed to run the software in the README file
 - Or provide them with everything needed
     - hopefully not interfering with other software they are using
 
 !!! note "Ways to distribute"
 
-    - Python packages: 
+    - Python packages:
         - pip (PyPI)
         - conda
-    - R: 
+    - R:
         - R repos like CRAN and GitHub (devtools)
         - conda
-    - Compiled languages: 
-        - built binaries (platform specific)      
+    - Compiled languages:
+        - built binaries (platform specific)
         - install from source
             - manual
             - make
@@ -100,7 +100,7 @@
 **These _Python-related_ tools try to solve the following problems:**
 
 - **Defining a specific set of dependencies**, possibly with well-defined versions
-    - requirements.txt... 
+    - requirements.txt...
 - **Installing those dependencies** mostly automatically
 - **Recording the versions** for all dependencies
 - **Isolated environments** (venv, virtualenv)
@@ -109,7 +109,7 @@
     - Using **different Python/R versions** per project??
     - Provide tools and services to **share packages**
 
-- Let's focus here on PyPI! 
+- Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll cover the other tools after the exercise!
 
@@ -181,10 +181,9 @@ pip install -user -r requirements.txt
 
 - Continue
 
-```
+```console
 deactivate # deactivate the venv!
 ```
-
 
 ### README: installation section
 
