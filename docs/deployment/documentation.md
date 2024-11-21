@@ -160,7 +160,7 @@ date-released: 2021-08-11
 Recommended format for software citation is to ensure the following information
 is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
 
-- Creator 
+- Creator
 - Title
 - Publication venue
 - Date
@@ -168,7 +168,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 - Version
 - Type
 
-- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system. 
+- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
 - CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
 
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
