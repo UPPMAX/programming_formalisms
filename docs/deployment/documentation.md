@@ -188,10 +188,11 @@
 - Popular solutions (but many others exist):
     - [MediaWiki](https://www.mediawiki.org)
     - [Dokuwiki](https://www.dokuwiki.org)
-    - Also on GitHub!
-    - Typically needs to be hosted and maintained
-
-- Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
+    - These typically needs to be hosted and maintained
+- Also on GitHub!
+    - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+    - [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)
+    - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
 
 ### HTML static site generators
 
@@ -230,7 +231,6 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
 - Somewhat more possibilities, like having several versions of documentation to switch between.
 
-
 ### What contributes to reusability?
 
 What contributes to you being able to reuse stuff that others make, and others
@@ -240,33 +240,27 @@ reusability:
 
 !!! note
     
-    This can be now reconnected to question 4 (above).
-
-- Date of last code change
-  > ... is the project abandoned?
-- Release history
-  > ... how about stability and backwards-compatibility?
-- Versioning
-  > ... will it be painful to upgrade?
-- Number of open pull requests and issues
-  > ... are they followed-up?
-- Installation instructions
-  > ... will it be difficult to get it running?
-- Example
-  > ... will it be difficult to get started?
-- License
-  > ... am I allowed to use it?
-- Contribution guide
-  > ... how to contribute and decision process?
-- Code of conduct
-  > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
-- Trust and community
-  > ... somebody you trust recommended it?
-
-... most of which you have or will learn during this
-[CodeRefinery](https://coderefinery.org) workshop!
-
-
+    - Date of last code change
+      > ... is the project abandoned?
+    - Release history
+      > ... how about stability and backwards-compatibility?
+    - Versioning
+      > ... will it be painful to upgrade?
+    - Number of open pull requests and issues
+      > ... are they followed-up?
+    - Installation instructions
+      > ... will it be difficult to get it running?
+    - Example
+      > ... will it be difficult to get started?
+    - License
+      > ... am I allowed to use it?
+    - Contribution guide
+      > ... how to contribute and decision process?
+    - Code of conduct
+      > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
+    - Trust and community
+      > ... somebody you trust recommended it?
+    
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
