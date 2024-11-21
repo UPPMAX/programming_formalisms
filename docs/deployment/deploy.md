@@ -6,9 +6,9 @@
 
 !!! info "Learning objectives of 'Deployment'"
 
-    - learners can mentalize the installation needs from the users perspective
-    - learners can evaluate different available tools for reproducibility and installations
-    - learners can prepare for different users: local computer, Cluster
+    - I can mentalize the installation needs from the users' perspective
+    - I can evaluate different available tools for reproducibility and installations
+    - I can make an installation instruction for potential users
 
 !!! info "Content"
 
