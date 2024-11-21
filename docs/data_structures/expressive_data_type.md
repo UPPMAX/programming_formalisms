@@ -133,7 +133,7 @@ classDiagram
 Here is the code:
 
 ```python
-class Coordinat:
+class Coordinate:
     def __init__(self, any_x, any_y):
       self.x = any_x
       self.y = any_y
@@ -147,10 +147,10 @@ class Coordinat:
 
 
     ```python
-    class Coordinat:
+    class Coordinate:
     ```
 
-    > now I am going to define a class called `Coordinat`
+    > now I am going to define a class called `Coordinate`
 
     ```python
     def __init__(self, any_x, any_y):
@@ -221,7 +221,7 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
     This is the code of the class:
 
     ```python
-    class Coordinat:
+    class Coordinate:
         def __init__(self, any_x, any_y):
           self.x = any_x
           self.y = any_y
