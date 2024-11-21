@@ -33,8 +33,8 @@ def get_y(coordinat): return coordinat[1]
 ???- question "Is it indeed 'good enough'? Why?"
 
     A reason that this is 'good enough' is because it is hard
-    to confusion people. Most people expect a 2D coordinat to
-    have an x and y coordinat. Storing the x and y coordinat in a `list`
+    to confusion people. Most people expect a 2D coordinate to
+    have an x and y coordinat. Storing the x and y in a `list`
     with two elements in that order will be something close to what
     most people expect.
 
@@ -210,7 +210,8 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
 ## Exercise 1: use your own class
 
 - Pick a class to design at your skill level:
-    - Easiest: the worked-out particle class, work in `src/learners`
+    - Easiest: the worked-out coordinate class, work in `src/learners`
+    - Medium: the parameters class as shown above, work in `src/learners`
     - Hardest: one in the learners' project, work in `src/bacsim`
 
 - Write the definition of the classes
@@ -232,7 +233,7 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
 
 ???- question "Answer for the parameters class"
 
-    Modify the `Coordinat` class :-)
+    Modify the `Coordinate` class :-)
 
 - Use the class in a function, e.g. `create_test_x`
 
@@ -241,10 +242,10 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
     This is the code:
 
     ```python
-    def create_test_coordinat():
-        return Coordinat(3.14, 2.72)
+    def create_test_coordinate():
+        return Coordinate(3.14, 2.72)
 
-    a = create_test_coordinat()
+    a = create_test_coordinate()
     print(a)
     print(type(a))
     ```
