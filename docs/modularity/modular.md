@@ -43,7 +43,7 @@
 
     - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
-## Prior Knowledge
+## Modular Programming
 
 ???- "What is Modular Programming"
 
@@ -51,12 +51,34 @@
 
     Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
 
+!!! info "Lets listen to a good lesson on modular programming."
+    A good [lesson](https://www.youtube.com/watch?v=MYDAAhB1QIo) on Modularity by Huw Collingbourne
+
+??? question "Lets Discuss"
+
+From this these for principles are generally considered a requirement for modularity
+
+- no communication in with no communication out
+- no communication in with some communication out
+- some communication in with some communication out
+- some communication in with no communication out
+
+!!! info "What does it mean in practice"
+
+- That what you must clearly define for any function or object is a Common Interface that is static
+- That there are no side effect from your implementation
+- That you do not do message passing by reference.
+- That you program blackbox methods and classes.
+
+
+As discussed in the lesson
 
 ???- "Why is Modular Programming something to strive for"
 
     - Reusability
     - Working with others (encapsulation of work and function)
 
+## Refactoring
 
 ???- "What is Refactoring"
 
@@ -64,13 +86,14 @@
     [refactoring.guru](https://refactoring.guru/refactoring)
 
 
-## Theory
-
-Revisiting class design
+### Revisiting class design
 
 The 4 most important relationship classes can have
 are association, composition and aggregation
 
+**Bad structure**
+    - Pets i Own is a relation DB table not an object as it has
+    no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
 ```mermaid
 classDiagram
     Owner-->PetsIOwn
@@ -85,9 +108,21 @@ classDiagram
     Animal <|--Goldfish
 ```
 
-Further reading:
-[Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+Refactored design, the Refactoring is done already in design space as a iteration of your design
 
+```mermaid
+classDiagram
+    Owner --> Animal: cares for
+    Owner o-- Animal: owns
+    Dog *-- "1"Head
+    Dog *-- "1"Body
+    Dog *-- "0..1"Tail
+    Animal <|-- Dog
+    Animal <|-- Cat
+    Animal <|-- Goldfish
+```
+
+## Exercises
 
 ???+ "Read and discuss"
 
@@ -96,13 +131,10 @@ Further reading:
 
     - Consider is your class diagram reflecting your code
 
-## Exercises
-
 ???- "Refactor your design document"
 
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
 
-???- "Modularization"
-
-     Order your design in logical consistent modules that separates behavior that belongs together via interfaces.
+???- "Refactor your code"
+    Chose an Issue that you are responsible for go through the code and refactor the code.
