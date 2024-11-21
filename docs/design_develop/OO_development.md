@@ -45,11 +45,14 @@ The semantic gap(The distance form input to understanding) between reality and m
 !!! info "Principles of object orientated development"
 
     1: **Information Hiding**
-        No unit outside of the object shall know the internal workings of the object
+        No unit outside of the object shall know the internal workings of the object;
+        Or as Jacobson states "they hide their internal structure from their surroundings"`[Ivar Jacobson 1992]`
 
     2: **The concept of Encapsulation**
+        The behavior and information are encapsulated in the object
+        `[Ivar Jacobson 1992]`
 
-    3: **The concept of message passing**
+
 
 ???- question "What is a Class"
 
