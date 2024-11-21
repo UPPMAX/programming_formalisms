@@ -220,16 +220,16 @@ well `[Gamma et al., 1995]`
 ???- question "Answer for range"
 
     ```python
-class Range:
-    def __init__(self, any_lowest, any_highest):
-        assert any_lowest <= any_highest
-        self._lowest = any_lowest
-        self._highest = any_highest
-    def get_lowest(self):
-        return self._lowest
-    def get_highest(self):
-        return self._highest
-    ```
+    class Range:
+        def __init__(self, any_lowest, any_highest):
+            assert any_lowest <= any_highest
+            self._lowest = any_lowest
+            self._highest = any_highest
+        def get_lowest(self):
+            return self._lowest
+        def get_highest(self):
+            return self._highest
+        ```
 
 ## References
 
