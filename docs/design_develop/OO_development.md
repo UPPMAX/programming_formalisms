@@ -52,8 +52,6 @@ The semantic gap(The distance form input to understanding) between reality and m
         The behavior and information are encapsulated in the object
         `[Ivar Jacobson 1992]`
 
-
-
 ???- question "What is a Class"
 
     >A class is a set of objects that share a common structure, common behavior, and common semantics.
