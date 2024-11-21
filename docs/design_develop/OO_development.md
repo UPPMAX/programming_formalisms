@@ -26,11 +26,11 @@ The semantic gap(The distance form input to understanding) between reality and m
 
 ## Objects
 
-!!! info What is and object
+!!! info "What is an object?"
 
     An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
 
-!!! info **Object Orientation is a Paradigm not a language feature**
+!!! info "Object Orientation is a paradigm, not a language feature"
 
     - Mariam-webster defines a Paradigm as:
     philosophical and theoretical framework of a scientific school or discipline within which theories, laws, and generalizations and the experiments performed in support of them are formulated
