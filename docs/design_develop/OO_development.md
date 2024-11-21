@@ -113,6 +113,7 @@ Further reading:
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
 ### Exercise
+
 ???- "Objects"
     Write a object description for Parameters and Bacterium Parameters then translate this into a class make a markdown document in your learners folder
 
@@ -134,7 +135,7 @@ Further reading:
 
 ## References
 
-- `[Ivar Jacobson 1992] Ivar Jacobson et al., Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992.
+- `[Ivar Jacobson 1992]` Ivar Jacobson et al., Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992.
 - `[Booch 2007]` Grady Booch et al.,Object-oriented analysis and design with applications -3rd ed,Addison-wesley 2007.
 - `[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
 
