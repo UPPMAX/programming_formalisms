@@ -132,7 +132,42 @@
 
 ### References/Citation
 
-[Software citation by Code Refinery](https://coderefinery.github.io/social-coding/software-citation/)
+- Think the same as for a scientific paper
+
+**Our practical recommendations**:
+- Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
+- Open source license can't demand citation, but it is required by science ethics anyway.
+- Make it as easy as possible! Clearly say what you want cited.
+- Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
+- [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
+
+This is an example of a simple `CITATION.cff` file:
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Druskat
+    given-names: Stephan
+    orcid: https://orcid.org/0000-0003-4925-7248
+title: "My Research Software"
+version: 2.0.4
+doi: 10.5281/zenodo.1234
+date-released: 2021-08-11
+```
+
+Recommended format for software citation is to ensure the following information
+is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
+- Creator 
+- Title
+- Publication venue
+- Date
+- Identifier
+- Version
+- Type
+
+    
+- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system. 
+- CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
 
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
 
@@ -148,7 +183,7 @@
 
 !!! info "Intro"
 
-    - Revisit README-ext and update it with info after all our commits
+    - Revisit ``README-ext.md`` and update it with info after all our commits
         - About
     - Citing
     - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
@@ -176,6 +211,16 @@
 
 ???- question "Discussion: Describe what you've done and why?"
 
+## Licensing
+
+
+
+
+!!! info "See also"
+
+    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+    
+    
 ## Going further with documentation
 
 !!! info "See also"
