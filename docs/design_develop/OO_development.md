@@ -27,6 +27,7 @@ The semantic gap(The distance form input to understanding) between reality and m
 ## Objects
 
 !!! info What is and object
+
     An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
 
 !!! info **Object Orientation is a Paradigm not a language feature**
