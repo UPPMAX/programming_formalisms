@@ -17,7 +17,7 @@
 This leads to a smaller semantic gap which
 gives two major benefits
 
--**Understanding**
+- **Understanding**
 The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
 
 - **Modification**
