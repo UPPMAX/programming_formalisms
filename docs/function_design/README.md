@@ -335,13 +335,7 @@ where the DNA sequences are different?
 
 ???- question "Answer"
 
-    There are many, here are two tables of combinations:
-
-    1     |2          |3
-    ------|-----------|-------------
-    `find`|`all`      |`differences`
-    `get` |`[nothing]`|`mismatches`
-
+    There are many, here a table of combinations:
 
     1     |2          |3            |4
     ------|-----------|-------------|------
@@ -482,6 +476,7 @@ def Prime(no, i):
         """Determine if a number is prime."""
         assert isinstance(x, int)
         return Prime(x, 2)
+    ```
 
 ### Exercise 4: misnomers in learners' project?
 
