@@ -232,7 +232,7 @@ deactivate # deactivate the venv!
         ```
 
 
-## Going further with deploymenmt
+## Going further with deployment
 
 
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
