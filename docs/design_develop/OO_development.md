@@ -1,8 +1,13 @@
 # Object Oriented development
 
 ???- info "Learning objectives"
-    - Understand what a Design Pattern is
-    - Describe the general components of design patterns and their significance.
+    - Understand the benefits of object-oriented development, including smaller semantic gaps for improved understanding and easier modification of models.
+    - Learn the definition and characteristics of an object, including its ability to save state and perform operations.
+    - Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.
+    - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
+    - Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.
+    - Explore the concept of design patterns as blueprints for solving common software design problems.
+    - Develop a practical understanding of the Factory Method design pattern
 
 ???- info "Learning objectives of Design Patterns"
 
