@@ -10,19 +10,14 @@
 
     ```mermaid
         gantt
-        title Lesson plan Refactoring, Design Patterns and Modularization
+        title Lesson plan Refactoring, and modularization
         dateFormat X
         axisFormat %s
-        Godmorning and Prior knowledge : intro, 0, 10
-        Revist class Diagrams: theory_1, 10, 10s
-        Refactoring: refactoring, 20, 10s
-        Excersie Refactoring: Excersie_1, 30,30s
-        Break:break_1,60,15s
-        Modularity:Modularity_1,75, 10s
-        Excersie: Modules, 85,25s
-        Design Patterns:Design_Patterns, 110, 20s
-        Break:break_1,130,15s
-        Excersie: Excersie_2, 145,40s
+        Revisit class Diagrams: theory_1, 0, 10
+        Refactoring: refactoring, 10, 10s
+        Exercise Refactoring: Exercise_1, 20, 20s
+        Modularity:Modularity_1,40, 10s
+        Exercise: Modules, 50,10s
     ```
 
 ???- info "Learning objectives of Refactoring"
