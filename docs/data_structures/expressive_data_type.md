@@ -150,7 +150,7 @@ class Coordinate:
     class Coordinate:
     ```
 
-    > now I am going to define a class called `Coordinate`
+    > now I am going to define a class called `Coordinate`.
 
     ```python
     def __init__(self, any_x, any_y):
@@ -167,7 +167,7 @@ class Coordinate:
         return 'Coordinate'
     ```
 
-    > When asked for its data type, return the word 'Coordinate'
+    > When asked for its data type, return the word 'Coordinate'.
 
     ```python
     def __str__(self):
@@ -175,7 +175,7 @@ class Coordinate:
     ```
 
     > When asked for its value, return the `x` and `y` between braces
-    > seperated by a comman
+    > seperated by a comma.
 
 Using the implementation of `get_a` like this:
 
