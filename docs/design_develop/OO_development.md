@@ -63,17 +63,17 @@ are association, composition and aggregation
 
 ```mermaid
 classDiagram
-    Owner-->PetsIOwn
+    Owner-->Animal: cares for
     Dog*--"1"Head
     Dog*--"1"Body
     Dog*--"0..1"Tail
-    PetsIOwn o--"0..*"Dog
-    PetsIOwn o--"0..*"Cat
-    PetsIOwn o--"0..*"GoldFish
+    Owner o--"0..*"Animal
     Animal <|--Dog
     Animal <|--Cat
     Animal <|--GoldFish
 ```
+
+
 
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
