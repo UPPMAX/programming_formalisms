@@ -1,7 +1,7 @@
 # Object Oriented development
 
 ???- info "Learning objectives"
-    - Understand what a Design Pattern is 
+    - Understand what a Design Pattern is
     - Describe the general components of design patterns and their significance.
 
 ???- info "Learning objectives of Design Patterns"
@@ -24,7 +24,7 @@ The semantic gap(The distance form input to understanding) between reality and m
     The model tends to be local resulting from a individual item. Each of these are represented by a single object.
 
 
-### Objects
+## Objects
 
 !!! info What is and object
     An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
@@ -75,6 +75,7 @@ The semantic gap(The distance form input to understanding) between reality and m
     Using refactoring.guru find an design Describe in a design document another pattern that is useful for your project.
 
 
-## References 
+## References
+
 - `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
 -`[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
