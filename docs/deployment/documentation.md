@@ -66,24 +66,26 @@
 `README.rst` can be enough (more about these formats later).
 
 ### Where are we?
- 
-- [X] in-code documentation
-- [ ] README
-    - [x] installation instruction
-    - [] Tutorial: get started
-    - [] citation
-- [] Review License
-- [] **Tutorials**: learning-oriented, allows the newcomer to get started
-- [] **How-to guides**: goal-oriented, shows how to solve a specific problem
-- [] **Explanation**: understanding-oriented, explains a concept
-- [] **Reference**: information-oriented, describes the machinery
-- [x] Project documentation:
+
+**DONE** 
+- &#9745; in-code documentation
+- &#9745; Project documentation:
      - requirements: what is the goal of the software, risks, platforms
      - the analysis: pseudocode and UML
      - risk analysis
-
-
-
+ 
+**Finalize today**
+- &#9744; README
+    - &#9745; installation instruction
+    - &#9744; Tutorial: get started
+    - &#9744; citation
+ 
+**Further documentation for future projects**
+- &#9744; **License**
+- &#9744; **Tutorials**: learning-oriented, allows the newcomer to get started
+- &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
+- &#9744; **Explanation**: understanding-oriented, explains a concept
+- &#9744; **Reference**: information-oriented, describes the machinery
 
 ## Exercise
 
