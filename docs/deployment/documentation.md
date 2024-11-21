@@ -72,7 +72,7 @@
     - requirements: what is the goal of the software, risks, platforms
     - the analysis: pseudocode and UML
     - risk analysis
- 
+
 **Finalize today**
 
 - &#9744; README
