@@ -322,7 +322,7 @@ deactivate # deactivate the venv!
 - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
 
-## Ignoring files and paths with .gitignore
+### Ignoring files and paths with .gitignore
 
 Compiled and generated files are not committed to version control. There are many reasons for this:
 
@@ -338,7 +338,6 @@ For this we use `.gitignore` files.
 !!! example "From our project repo"
 
     programming_formalisms_project_autumn_2024/blob/main/.gitignore>
-
 
 ## Summary
 
