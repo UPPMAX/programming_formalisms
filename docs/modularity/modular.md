@@ -1,4 +1,4 @@
-# Modular programming
+# Modular programming and Refactoring
 
 ???- info "Learning objectives"
 
