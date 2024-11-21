@@ -123,6 +123,21 @@ classDiagram
     Animal <|-- Goldfish
 ```
 
+What was this ann effect of a phenomenon known as Design Smell.
+
+Code smell and design smell are two very good reason to do refactoring
+— What? How can code "smell"??
+— Well it doesn't have a nose... but it definitely can stink!
+*refactoring.guru*
+
+Some examples of code smell
+
+- Bloaters
+- Object-Orientation Abusers
+- Change Preventers
+- Dispensables
+- Couplers
+
 ## Exercises
 
 ???+ "Read and discuss"
