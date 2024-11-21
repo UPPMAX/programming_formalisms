@@ -21,7 +21,7 @@
         axisFormat %s
         Revisit class Diagrams: theory_1, 0, 10
         Refactoring: refactoring, 10, 10s
-        Exercise Refactoring: Exercise_1, 20, 20s
+        Exercise: Exercise_1, 20, 20s
         Modularity:Modularity_1,40, 10s
         Exercise: Modules, 50,10s
     ```
@@ -56,7 +56,6 @@
 
     - Reusability
     - Working with others (encapsulation of work and function)
-
 
 
 ???- "What is Refactoring"
