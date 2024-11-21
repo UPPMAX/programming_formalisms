@@ -26,8 +26,8 @@ For simple data structures, using a `list` can be considered 'good enough':
 
 ```python
 position = [1.2, 3.4]
-def get_x(coordinat): return coordinat[0]
-def get_y(coordinat): return coordinat[1]
+def get_x(position): return position[0]
+def get_y(position): return position[1]
 ```
 
 ???- question "Is it indeed 'good enough'? Why?"
