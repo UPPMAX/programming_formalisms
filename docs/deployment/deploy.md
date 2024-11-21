@@ -200,8 +200,6 @@ deactivate # deactivate the venv!
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
-
-
 ## Exercises
 
 - We already have a file called ``README.md``, that is used for information for the course participants.
@@ -263,7 +261,7 @@ deactivate # deactivate the venv!
     - operative system
     - dependencies (libraries and other programs) with correct versions
 
-![Containerization](img/Containerization_nextlabs.png)
+![Containerization](./img/Containerization_nextlabs.png)
 
 > From [Nextlabs](https://www.nextlabs.com/what-is-containerization/)
 
