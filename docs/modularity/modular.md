@@ -94,6 +94,7 @@ are association, composition and aggregation
 **Bad structure**
     - Pets i Own is a relation DB table not an object as it has
     no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
+
 ```mermaid
 classDiagram
     Owner-->PetsIOwn
@@ -121,6 +122,21 @@ classDiagram
     Animal <|-- Cat
     Animal <|-- Goldfish
 ```
+
+What was this ann effect of a phenomenon known as Design Smell.
+
+Code smell and design smell are two very good reason to do refactoring
+— What? How can code "smell"??
+— Well it doesn't have a nose... but it definitely can stink!
+*refactoring.guru*
+
+Some examples of code smell
+
+- Bloaters
+- Object-Orientation Abusers
+- Change Preventers
+- Dispensables
+- Couplers
 
 ## Exercises
 
