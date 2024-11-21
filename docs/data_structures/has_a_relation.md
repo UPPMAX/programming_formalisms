@@ -49,13 +49,42 @@ put these together in code.
 
 You want to know the most important relation between classes there is.
 
-## Good data structures
+## Use case
 
-Good (:innocent:) data structures:
+Here we have a `class` called `Particle`:
 
-- Increase expressiveness
-- **Bundles data that belongs together**
-- Ensures correct state of the program
+```mermaid
+classDiagram
+  class Particle{
+    -position_x
+    -position_y
+    -velocity_x
+    -velocity_y
+  }
+```
+
+It has both a 2D position and a 2D velocity.
+This setup will work and maybe is 'good enough'
+before one learns about a 'has-a relation'.
+
+???- question "What is the problem with this class?"
+
+    In English, this class would read as:
+
+    > A particle has an x-position and y-position and x-velocity
+    > any y-velocity.
+
+    Note how unrelated the four elements are to each other.
+    One could just as well have said:
+
+    > A particle has an x-position and y-velocity and x-velocity
+    > any y-position.
+
+    What one wants to say instead is:
+
+    > A particle has a position and a velocity.
+    > A position has an x and a y.
+    > A velocity has an x and a y.
 
 ## Class relations
 
@@ -172,55 +201,47 @@ classDiagram
 
 - Organize related data into structures (structs or classes) `[CppCore C.1]`
 
+## Exercise 1: write two classes with a has-a relation
 
-## Exercise 1: design a struct (15 mins)
+- Pick a class to design at your skill level:
+    - Easiest: the particle class, work in `src/learners`
+    - Medium: the parameters as shown as a list, work in `src/learners`
+    - Hardest: one in the learners' project, work in `src/bacsim`
+- Write the definition of the classes
 
-Goal:
+???- question "Answer for the particle"
 
-- to convince design is trickier than one thinks
-- to convince design has implications
-- to grow appreciation of classes
+    ```
+    class Position:
+        def __init__(self, any_x, any_y):
+          self.x = any_x
+          self.y = any_y
+        def __repr__(self):
+            return "Position"
+        def __str__(self):
+            return "(" + str(self.x) + ", " + str(self.y) + ")"
 
-What are their elements? Which do you guess are structures? Were they?
+    class Velocity:
+        def __init__(self, any_x, any_y):
+          self.x = any_x
+          self.y = any_y
+        def __repr__(self):
+            return "Velocity"
+        def __str__(self):
+            return "(" + str(self.x) + ", " + str(self.y) + ")"
 
-- A coordinate in 3 dimensions :innocent:
-- A velocity in two dimensions
-- A circle
-- A square
-
-## Exercise 2: a coordinate in 3 dimensions
-
-- consists out of an `x`, `y` and `z` coordinate
-- `struct`: all combinations valid
-
-But:
-
-- Spherical coordinate: radial distance, polar angle, azimuthal angle
-- distance must be positive, hence `class`
-
-## Exercise 3: a velocity in two dimensions
-
-- consists out of a `delta_x`, `delta_y`: `struct`
-- consists out of a `angle`, `speed` (:monocle_face:): maybe `class`
-
-## Exercise 4: a circle
-
-A circle has:
-
-- a center coordinat and ...
-    - a diameter (:monocle_face:): maybe `struct`
-    - a radius (:monocle_face:): maybe `struct`
-- three coordinats: class, must avoid colinearity
-
-## Exercise 5: a square
-
-A square has
-
-- a center coordinat and size (:monocle_face:) and ...
-    - maybe an angle (:monocle_face:)
-- a top-left coordinat and size (:monocle_face:) and ...
-    - maybe an angle (:monocle_face:)
-- a two opposing coordinats: struct?
+    class Particle:
+        def __init__(self, any_position, any_velocity):
+          self.position = any_position
+          self.velocity = any_velocity
+        def __repr__(self):
+            return "Particle"
+        def __str__(self):
+            return (
+                "Position: " + str(self.position)  + ", " 
+                + "velocity" + str(self.velocity)
+            )
+    ```
 
 ## References
 

@@ -200,10 +200,10 @@ assert str(type(a)) == "<class '__main__.Coordinat'>"
 ## Exercise 1: use your own class
 
 - Pick a class to design at your skill level:
-    - Easiest: the worked-out coordinate class, work in `src/learners`
-    - Medium: the parameters as shown as a list, work in `src/learners`
+    - Easiest: the worked-out particle class, work in `src/learners`
     - Hardest: one in the learners' project, work in `src/bacsim`
-- Write the definition of the class
+
+- Write the definition of the classes
 
 ???- question "Answer for the coordinate class"
 
