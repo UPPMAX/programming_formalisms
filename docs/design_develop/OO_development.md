@@ -45,11 +45,12 @@ The semantic gap(The distance form input to understanding) between reality and m
 !!! info "Principles of object orientated development"
 
     1: **Information Hiding**
-        No unit outside of the object shall know the internal workings of the object
+        No unit outside of the object shall know the internal workings of the object;
+        Or as Jacobson states "they hide their internal structure from their surroundings"`[Ivar Jacobson 1992]`
 
     2: **The concept of Encapsulation**
-
-    3: **The concept of message passing**
+        The behavior and information are encapsulated in the object
+        `[Ivar Jacobson 1992]`
 
 ???- question "What is a Class"
 
@@ -77,6 +78,22 @@ classDiagram
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
+???- question "Is a programming language Object Oriented"
+    Object-oriented programming is a technique for programming – a paradigm for writing ‘‘good’’ programs for a set of problems. If the term ‘‘object-oriented programming language’’ means anything it must mean a programming language that provides mechanisms that support the object-oriented style of programming well.
+    `[Stroustrup B. 1988]`
+
+!!! info "Techniques for Object oriented programming"
+    Decide which classes you want;
+    provide a full set of operations for each class;
+    make commonality explicit by using inheritance.
+    `[Stroustrup B. 1988]`
+
+!!! hint "Why do we Break the rule"
+    In this course we do not go into the concept of
+    inheritance in implementation as this is makes for a
+    more complicated structure. We only concern our selfs
+    with the "has a" relation ship rather than "is a" relation ship.
+    we work with the composite and the aggregate relationships
 
 ???- question  "What is a Design Pattern"
 
@@ -96,6 +113,15 @@ Further reading:
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
 ### Exercise
+???- "Objects"
+    Write a object description for Parameters and Bacterium Parameters then translate this into a class make a markdown document in your learners folder
+
+???- "Class Diagram"
+    Construct a class diagram for the classes
+    try to model the relationships ass associations, aggregations
+    and compositions
+    use [this link](https://mermaid.js.org/syntax/classDiagram.html)
+   and the [playground or live editor](https://www.mermaidchart.com/play#pako:eNpdjbEOgjAURX_lpZMO_QEGEynKQqIDW2F4wdY2Sl9TmhBD-XfByKB3PefeO7GOboplTD9p7AyGCHXRhMbBkqMUJtgh9ji0wPkhlSpCT069EuS7kmAw5L119_3WyFcNxFStooJorHvMGxSfjYtTCQpZoY_k219Wj5TgJO3VLCf_zAS1NM9SY6aRdxhAYPhKbH4Dm8NAOg)
 
 ???- "Design Patterns"
 
