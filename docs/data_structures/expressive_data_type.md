@@ -58,7 +58,7 @@ def get_bacteria_initialization(parameters): return parameters[3]
     Also, reading such a list is too uninformative: which `uniform`
     belong to which parameter?
 
-Using [a dictionary (`dict`)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) 
+Using [a dictionary (`dict`)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 can be considered good enough,
 until you've read up about classes:
 
@@ -81,7 +81,7 @@ def get_bacteria_initialization(parameters):
 
 When having read up on classes,
 one understands these are dictionaries
-with extra properties, such 
+with extra properties, such
 as **a name**.
 
 ## Good data structures increase expressiveness
