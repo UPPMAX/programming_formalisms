@@ -118,7 +118,7 @@
 - May be a sub-set of the most important commands, depending on how wide the program is.
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
 
-???- discussion "would it be needed for your project?
+???- discussion "would it be needed for your project?"
 
 ### Contributions
 
@@ -175,7 +175,7 @@
 
 ## Discussion
 
-???- Describe what you've done and why?
+???- question "Discussion: Describe what you've done and why?"
 
 ## Going further with documentation
 
