@@ -68,7 +68,7 @@
 ### Where are we?
  
 - [X] in-code documentation
-- [ } README
+- [ ] README
     - [x] installation instruction
     - [] Tutorial: get started
     - [] citation
