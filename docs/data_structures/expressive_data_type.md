@@ -158,7 +158,7 @@ class Coordinate:
       self.y = any_y
     ```
 
-    > To create a `Coordinat`, the use need to give two things,
+    > To create a `Coordinate`, the use need to give two things,
     > called `any_x` and `any_y`. These are stored inside of the
     > class as `x` and `y`.
 
@@ -252,7 +252,7 @@ assert str(type(a)) == "<class '__main__.Coordinate'>"
 
 ???- question "Answer for the parameters class"
 
-    Modify the answer for the `Coordinat` class :-)
+    Modify the answer for the `Coordinate` class :-)
 
 ## References
 
