@@ -4,7 +4,7 @@ This is a general course schedule, that intends to give a general overview
 of the course's teaching.
 For a detailed daily schedule, see the detailed schedule of that day.
 
-Next iteration of the the course will take place in week 47,
+Next iteration of the the course will take place in week 47
 i.e. Monday 18th November to and including Friday 22nd November 2024.
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
@@ -36,7 +36,7 @@ Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |[Object-oriented design](design_develop/OO_development.md)
 Thursday |10:15-11:00|Richel |[Function design](function_design/README.md)
-Thursday |11:15-12:00|Richel |[Expressive data type](data_structures/expressive_data_type.md), 
+Thursday |11:15-12:00|Richel |[Expressive data type](data_structures/expressive_data_type.md)
 Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
 Thursday |14:15-15:00|Richel |[Has-a relation](data_structures/has_a_relation.md)
 Thursday |15:15-15:40|Richel |[Class design](data_structures/class_design.md)
