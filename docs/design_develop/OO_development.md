@@ -81,9 +81,9 @@ Further reading:
 ???- question "Is a programming language object oriented?"
 
     Object-oriented programming is a technique for programming – a paradigm
-    for writing 'good' programs for a set of problems. 
+    for writing 'good' programs for a set of problems.
     If the term 'object-oriented programming language' means anything it must
-    mean 'a programming language that provides mechanisms that support 
+    mean 'a programming language that provides mechanisms that support
     the object-oriented style of programming well'.
     `[Stroustrup B. 1998]`
 
