@@ -16,10 +16,12 @@
 
 This leads to a smaller semantic gap which
 gives two major benefits
-    -Understanding
-        the semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
-    - Modification
-        The model tends to be local resulting from a individual item. Each of these are represented by a single object.
+
+-**Understanding**
+The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
+
+- **Modification**
+    The model tends to be local resulting from a individual item. Each of these are represented by a single object.
 
 
 ### Objects
