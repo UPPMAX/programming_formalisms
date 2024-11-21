@@ -43,7 +43,15 @@ gives two major benefits
     Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-???+ Exercise
+### Exercise
+
+???- "Design Patterns"
+
+    Implement a Factory method for the creation of bacteria and one for nutrients
+
+???- "Extra assignment"
+
+    Using refactoring.guru find an implement another pattern that is useful for your project.
 
 !!! hint
     UNDF 

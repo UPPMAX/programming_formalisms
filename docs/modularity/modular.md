@@ -102,11 +102,3 @@ Further reading:
 ???- "Modularization"
 
     Order your code in logical consistent modules that separates behavior that belongs together via interfaces.
-
-???- "Design Patterns"
-
-    Implement a Factory method for the creation of bacteria and one for nutrients
-
-???- "Extra assignment"
-
-    Using refactoring.guru find an implement another pattern that is useful for your project.
