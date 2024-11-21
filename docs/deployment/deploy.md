@@ -58,13 +58,33 @@
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
 - **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
 
-!!! note "ways to distribute"
+ ### To make sure about needed dependencies
+
+- Start with empty environment
+- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
+    - will your program require specific "system files"
+    - are these typically not installed already?
+    - in the **best world test on Windows/Mac and Linux platforms**
+        - and with as empty as possible environment
+- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
+
+!!! discussion "Discussion: Where do you run your program?"
+
+    - From a terminal?
+    - On different computers?
+    - On a cluster?
+   
+- We need to either inform what is needed to run the software in the README file
+- Or provide them with everything needed
+    - hopefully not interfering with other software they are using
+
+!!! note "Ways to distribute"
 
     - Python packages: 
         - pip (PyPI)
         - conda
     - R: 
-        - pip (PyPI)
+        - R repos like CRAN and GitHub (devtools)
         - conda
     - Compiled languages: 
         - built binaries (platform specific)      
@@ -75,42 +95,23 @@
     - General tools
         - Containers
 
-### Conda, Anaconda, pip, Virtualenv, Pipenv, pyenv, Poetry, requirements.txt …
+### Conda, pip
 
 **These _Python-related_ tools try to solve the following problems:**
 
 - **Defining a specific set of dependencies**, possibly with well-defined versions
+    - requirements.txt... 
 - **Installing those dependencies** mostly automatically
 - **Recording the versions** for all dependencies
-- **Isolated environments**
+- **Isolated environments** (venv, virtualenv)
     - On your computer for projects so they can use different software.
     - Isolate environments on computers with many users (and allow self-installations)
     - Using **different Python/R versions** per project??
     - Provide tools and services to **share packages**
 
-- Let's focus here on PyPI!
+- Let's focus here on PyPI! 
+    - Remember we made a package this morning!
 - We'll cover the other tools after the exercise!
-
- ### To make sure
-
-- Start with empty environment
-    - good to do this from beginning
-- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
-    - will your program require specific "system files"
-    - are these typically not installed already?
-    - in the best world test on Windows/Mac and Linux platforms
-        - and with as empty as possible environment
-- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
-
-- 
-
-!!! Discussion "Discussion: Where do you run your program?"
-
-    - From a terminal?
-    - On different computers?
-    - On a cluster?
-   
-## Record our environment for other users
 
 ### Principle using python pip in a virtual environment
 
@@ -146,11 +147,10 @@ source PATH/Example/bin/activate
 source PATH/Example/Scripts/activate
 ```
 
-
 - Note the (Example) in the beginning of the prompt!
 - Do note the python version and you may inform users that you know that this version is known to work!
 
-```
+```console
 which python        #should point to the python belonging to the virtual environment
 python -V            # note this version
 ```
@@ -185,10 +185,19 @@ pip install -user -r requirements.txt
 deactivate # deactivate the venv!
 ```
 
+### Installing main software
 
+- Since it is a python package, we can install it in a terminal with
+
+```console
+python[3] -m pip install . [--break-system-packages]
+```
 
 
 ## Exercises
+
+- We already have a file called ``README.md``, that is used for information for the course participants.
+- Let's work with a README file for potential users. We can call it ``REAME-EXT.md``
 
 !!! info "Intro"
 
