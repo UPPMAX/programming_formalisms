@@ -91,9 +91,10 @@ As discussed in the lesson
 The 4 most important relationship classes can have
 are association, composition and aggregation
 
-**Bad structure**
-    - Pets i Own is a relation DB table not an object as it has
-    no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
+#### Bad structure ####
+
+    - `PetsIOwn` is a relation DB table not an object as it has
+    - no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
 
 ```mermaid
 classDiagram
@@ -126,9 +127,11 @@ classDiagram
 What was this ann effect of a phenomenon known as Design Smell.
 
 Code smell and design smell are two very good reason to do refactoring
-— What? How can code "smell"??
-— Well it doesn't have a nose... but it definitely can stink!
-*refactoring.guru*
+
+- What? How can code "smell"??
+- Well it doesn't have a nose... but it definitely can stink!
+
+From [https://refactoring.guru/](https://refactoring.guru/).
 
 Some examples of code smell
 
