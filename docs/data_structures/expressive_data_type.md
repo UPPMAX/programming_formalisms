@@ -33,7 +33,7 @@ def get_y(position): return position[1]
 ???- question "Is it indeed 'good enough'? Why?"
 
     A reason that this is 'good enough' is because it is hard
-    to confusion people. Most people expect a 2D coordinate to
+    to confusion people. Most people expect a 2D position to
     have an x and y coordinat. Storing the x and y in a `list`
     with two elements in that order will be something close to what
     most people expect.
@@ -124,7 +124,7 @@ Here we put our 'something' into a class. Here is the design:
 
 ```mermaid
 classDiagram
-  class Coordinate{
+  class Position{
     +x
     +y
   }
@@ -133,7 +133,7 @@ classDiagram
 Here is the code:
 
 ```python
-class Coordinate:
+class Position:
     def __init__(self, any_x, any_y):
       self.x = any_x
       self.y = any_y
@@ -147,10 +147,10 @@ class Coordinate:
 
 
     ```python
-    class Coordinate:
+    class Position:
     ```
 
-    > now I am going to define a class called `Coordinate`.
+    > now I am going to define a class called `Position`.
 
     ```python
     def __init__(self, any_x, any_y):
@@ -158,16 +158,16 @@ class Coordinate:
       self.y = any_y
     ```
 
-    > To create a `Coordinate`, the use need to give two things,
+    > To create a `Position`, the use need to give two things,
     > called `any_x` and `any_y`. These are stored inside of the
     > class as `x` and `y`.
 
     ```python
     def __repr__(self):
-        return 'Coordinate'
+        return 'Position'
     ```
 
-    > When asked for its data type, return the word 'Coordinate'.
+    > When asked for its data type, return the word 'Position'.
 
     ```python
     def __str__(self):
@@ -181,7 +181,7 @@ Using the implementation of `get_a` like this:
 
 ```python
 def get_a():
-    return Coordinate(3.14, 2.72)
+    return Position(3.14, 2.72)
 ```
 
 Then running the same code again:
@@ -196,7 +196,7 @@ Now results in
 
 ```text
 (3.14, 2.72)
-<class '__main__.Coordinate'>
+<class '__main__.Position'>
 ```
 
 Aha, `a` is a **coordinat**!
@@ -204,24 +204,24 @@ Aha, `a` is a **coordinat**!
 We can even test that:
 
 ```python
-assert str(type(a)) == "<class '__main__.Coordinate'>"
+assert str(type(a)) == "<class '__main__.Position'>"
 ```
 
 ## Exercise 1: use your own class
 
 - Pick a class to design at your skill level:
-    - Easiest: the worked-out coordinate class, work in `src/learners`
+    - Easiest: the worked-out position class, work in `src/learners`
     - Medium: the parameters class as shown above, work in `src/learners`
     - Hardest: one in the learners' project, work in `src/bacsim`
 
 - Write the definition of the classes
 
-???- question "Answer for the coordinate class"
+???- question "Answer for the position class"
 
     This is the code of the class:
 
     ```python
-    class Coordinate:
+    class Position:
         def __init__(self, any_x, any_y):
           self.x = any_x
           self.y = any_y
@@ -233,26 +233,26 @@ assert str(type(a)) == "<class '__main__.Coordinate'>"
 
 ???- question "Answer for the parameters class"
 
-    Modify the `Coordinate` class :-)
+    Modify the `Position` class :-)
 
 - Use the class in a function, e.g. `create_test_x`
 
-???- question "Answer for the coordinate class"
+???- question "Answer for the position class"
 
     This is the code:
 
     ```python
-    def create_test_coordinate():
-        return Coordinate(3.14, 2.72)
+    def create_test_position():
+        return Position(3.14, 2.72)
 
-    a = create_test_coordinate()
+    a = create_test_position()
     print(a)
     print(type(a))
     ```
 
 ???- question "Answer for the parameters class"
 
-    Modify the answer for the `Coordinate` class :-)
+    Modify the answer for the `Position` class :-)
 
 ## References
 
