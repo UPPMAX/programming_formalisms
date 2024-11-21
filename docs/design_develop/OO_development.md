@@ -3,6 +3,17 @@
 >People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
+???- info "Learning objectives"
+    - Understand what a Design Pattern is 
+    - Describe the general components of design patterns and their significance.
+
+???- info "Learning objectives of Design Patterns"
+
+    - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
+    - The learners can describe the general parts of a design pattern and why we use them.
+    - The Learners should be able to understand the "Factory pattern" and what problem it solves
+    
+
 This leads to a smaller semantic gap which
 gives two major benefits
     -Understanding

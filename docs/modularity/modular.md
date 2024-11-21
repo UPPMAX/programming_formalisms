@@ -1,20 +1,12 @@
 # Modular programming
 
-## Learning goals
-
-!!! info "Today we will"
-
-    - Check Prior knowledge 10 min
-    - Revisit Class Diagrams and interactions between classes 10 min
-    - Introduce Refactoring 10 min
-    - Exercise  Refactor design of project Class diagram 30 min
-    - break 15 min
-    - Introduce Modularity 10 min
-    - Exercise 25 min produce logical modules that separates the behavior and structure in modules.
-    - Introduce Design Patterns 10 min + 10 min discussion
-    - break 15 min
-    - Implement Factory Design pattern 40 min
-    - lunch
+???- info "Learning objectives"
+    - Understand the concept of code smells and design smells.
+    - Grasp the idea of the "zero line" in software design and its relevance.
+    - Gain an introductory understanding of modular programming and iterative refactoring.
+    - Learn about common interfaces, protocols, and their role in modular programming.
+    - Recognize and address tight coupling in code to improve modularity.
+    - Appreciate the importance of modularization in collaborative projects, especially for reducing conflicts in version control.
 
     ```mermaid
         gantt
@@ -37,12 +29,6 @@
 
     - Learners learns about code smells and design smells
 
-???- info "Learning objectives of Design Patterns"
-
-    - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
-    - The Learners should be able to implement into their design the
-       "Factory pattern"
-    - The learners can describe the general parts of a design pattern and why we use them.
 
 ???- info "Learning objectives of Modular programming"
 
