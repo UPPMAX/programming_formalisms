@@ -34,7 +34,7 @@ def get_y(position): return position[1]
 
     A reason that this is 'good enough' is because it is hard
     to confusion people. Most people expect a 2D position to
-    have an x and y coordinat. Storing the x and y in a `list`
+    have an x and y position. Storing the x and y in a `list`
     with two elements in that order will be something close to what
     most people expect.
 
@@ -135,10 +135,8 @@ Here is the code:
 ```python
 class Position:
     def __init__(self, any_x, any_y):
-      self.x = any_x
-      self.y = any_y
-    def __repr__(self):
-        return "Coordinat"
+        self.x = any_x
+        self.y = any_y
     def __str__(self):
         return "(" + str(self.x) + ", " + str(self.y) + ")"
 ```
@@ -154,20 +152,13 @@ class Position:
 
     ```python
     def __init__(self, any_x, any_y):
-      self.x = any_x
-      self.y = any_y
+        self.x = any_x
+        self.y = any_y
     ```
 
     > To create a `Position`, the use need to give two things,
     > called `any_x` and `any_y`. These are stored inside of the
     > class as `x` and `y`.
-
-    ```python
-    def __repr__(self):
-        return 'Position'
-    ```
-
-    > When asked for its data type, return the word 'Position'.
 
     ```python
     def __str__(self):
@@ -199,7 +190,31 @@ Now results in
 <class '__main__.Position'>
 ```
 
-Aha, `a` is a **coordinat**!
+???- question "This does not show the word 'Position'?"
+
+Then add this to the class:
+
+    ```python
+    def __repr__(self):
+        return "Position"
+    ```
+
+    Resulting in the complete class:
+
+    ```python
+    class Position:
+        def __init__(self, any_x, any_y):
+            self.x = any_x
+            self.y = any_y
+        def __str__(self):
+            return "(" + str(self.x) + ", " + str(self.y) + ")"
+        def __repr__(self):
+            return 'Position'
+    ```
+
+    > When asked for its data type, return the word 'Position'.
+
+Aha, `a` is a **position**!
 
 We can even test that:
 
@@ -226,7 +241,7 @@ assert str(type(a)) == "<class '__main__.Position'>"
           self.x = any_x
           self.y = any_y
         def __repr__(self):
-            return "Coordinat"
+            return "Position"
         def __str__(self):
             return "(" + str(self.x) + ", " + str(self.y) + ")"
     ```
