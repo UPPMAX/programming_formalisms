@@ -13,34 +13,87 @@ tags:
     - Understand difference between composition and aggregation
     - Practice to use composition for a 'has-a' relationship
 
-## What and why?
+## Why?
+
+You want to combine your variables into bigger things.
+You want those 'bigger things' to work well with the rest of your code.
+
+## When a `list` is not good enough anymore
 
 Data structure are 'ways to organize your data'.
 
-- Bad way: put all in one `list`
+For simple data structures, using a `list` can be considered 'good enough':
 
-Good  data structures:
-
-- **Increase expressiveness**
-- Bundles data that belongs together
-- Ensures correct state of the program
-
-## Increase expressiveness, in design
-
-"A two-dimensional coordinate **has a** x and a y component"
-
-```mermaid
-classDiagram
-  class Particle{
-    -position
-    -velocity
-  }
+```python
+position = [1.2, 3.4]
+def get_x(coordinat): return coordinat[0]
+def get_y(coordinat): return coordinat[1]
 ```
 
+???- question "Is it indeed 'good enough'? Why?"
 
-> Class diagram of a two-dimensional coordinate
+    A reason that this is 'good enough' is because it is hard
+    to confusion people. Most people expect a 2D coordinat to
+    have an x and y coordinat. Storing the x and y coordinat in a `list`
+    with two elements in that order will be something close to what
+    most people expect.
 
-## Increase expressiveness, in code
+However, storing parameters as a `list` is not 'good enough' anymore:
+
+```python
+parameters = [42, 1000, 'uniform', 'uniform']
+def get_n_bacteria(parameters): return parameters[0]
+def get_n_timesteps(parameters): return parameters[1]
+def get_gradient_type(parameters): return parameters[2]
+def get_bacteria_initialization(parameters): return parameters[3]
+```
+
+???- question "Why is this no longer 'good enough'?"
+
+    There is no logical order to expect the parameters to be in:
+
+    - Why would the first value be the number of bacteria, instead
+      of the number of timesteps the simulation will take?
+
+    Also, reading such a list is too uninformative: which `uniform`
+    belong to which parameter?
+
+Using [a dictionary (`dict`)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) 
+can be considered good enough,
+until you've read up about classes:
+
+```python
+parameters = { 
+    'n_bacteria': 42, 
+    'n_timesteps': 1000,
+    'gradient_type': 'uniform',
+    'bacteria_initialization': 'uniform'
+}
+def get_n_bacteria(parameters): 
+    return parameters['n_bacteria']
+def get_n_timesteps(parameters): 
+    return parameters['n_timestep']
+def get_gradient_type(parameters): 
+    return parameters['gradient_type']
+def get_bacteria_initialization(parameters): 
+    return parameters['bacteria_initialization']
+```
+
+When having read up on classes,
+one understands these are dictionaries
+with extra properties, such 
+as **a name**.
+
+## Good data structures increase expressiveness
+
+This is what (part of) the literature states:
+
+- Express ideas directly in code `[CppCore P.1]`
+- Explicit is better than implicit `[PEP 20]`
+
+
+Here is the code to create a 'something',
+print it and print its data type:
 
 ```python
 a = get_a()
@@ -56,7 +109,18 @@ print(type(a))
     class(a)
     ```
 
-## Increase expressiveness, in code again
+The output looks like:
+
+```console
+[3.14, 2.72]
+<class 'list'>
+```
+
+We cannot read what `a` is exactly.
+We cannot express this as a `list` or a `dict`.
+Instead, we can express this is a `class`.
+
+Here we put our 'something' into a class:
 
 ```python
 class Coordinat:
@@ -67,49 +131,118 @@ class Coordinat:
         return "Coordinat"
     def __str__(self):
         return "(" + str(self.x) + ", " + str(self.y) + ")"
+```
+
+???- question "What does this code all mean again?"
+
+
+    ```python
+    class Coordinat:
+    ```
+
+    > now I am going to define a class called `Coordinat`
+
+    ```python
+    def __init__(self, any_x, any_y):
+      self.x = any_x
+      self.y = any_y
+    ```
+
+    > To create a `Coordinat`, the use need to give two things,
+    > called `any_x` and `any_y`. These are stored inside of the
+    > class as `x` and `y`.
+
+    ```python
+    def __repr__(self):
+        return 'Coordinat'
+    ```
+
+    > When asked for its data type, return the word 'Coordinat'
+
+    ```python
+    def __str__(self):
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
+    ```
+
+    > When asked for its value, return the `x` and `y` between braces
+    > seperated by a comman
+
+Using the implementation of `get_a` like this:
+
+```python
 def get_a():
     return Coordinat(3.14, 2.72)
 ```
 
+Then running the same code again:
+
 ```python
 a = get_a()
 print(a)
-```
-
-```python
 print(type(a))
 ```
 
-???- question "Prefer R?"
+Now results in
 
-    ```r
-    a <- get_a()
-    a
+```text
+(3.14, 2.72)
+<class '__main__.Coordinat'>
+```
+
+Aha, `a` is a **coordinat**!
+
+We can even test that:
+
+```python
+assert str(type(a)) == "<class '__main__.Coordinat'>"
+```
+
+## Exercise 1: use your own class
+
+- Pick a class to design at your skill level:
+    - Easiest: the worked-out coordinate class, work in `src/learners`
+    - Medium: the parameters as shown as a list, work in `src/learners`
+    - Hardest: one in the learners' project, work in `src/bacsim`
+- Write the definition of the class
+
+???- question "Answer for the coordinate class"
+
+    This is the code of the class:
+
+    ```python
+    class Coordinat:
+        def __init__(self, any_x, any_y):
+          self.x = any_x
+          self.y = any_y
+        def __repr__(self):
+            return "Coordinat"
+        def __str__(self):
+            return "(" + str(self.x) + ", " + str(self.y) + ")"
     ```
 
-    ```r
-    class(a)
+???- question "Answer for the parameters class"
+
+    Modify the `Coordinat` class :-)
+
+
+- Use the class in a function, e.g. `create_test_x`
+
+???- question "Answer for the coordinate class"
+
+    This is the code:
+
+    ```python
+    def create_test_coordinat():
+        return Coordinat(3.14, 2.72)
+
+    a = create_test_coordinat()
+    print(a)
+    print(type(a))
     ```
 
-Ah, it is a **coordinat**!
+???- question "Answer for the parameters class"
 
-- Express ideas directly in code `[CppCore P.1]`
-- Explicit is better than implicit `[PEP 20]`
-
-## Exercise 1: design a struct (15 mins)
-
-???- info "Learning objectives"
-
-    - to convince design is trickier than one thinks
-    - to convince design has implications
-    - to grow appreciation of classes
-
-What are their elements? Which do you guess are structures? Were they?
-
-- A coordinate in 3 dimensions :innocent:
-- A velocity in two dimensions
-- A circle
-- A square
+    Modify the answer for the `Coordinat` class :-)
 
 ## References
 
