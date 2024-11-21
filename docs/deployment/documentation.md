@@ -90,11 +90,16 @@
 - &#9744; **Explanation**: understanding-oriented, explains a concept
 - &#9744; **Reference**: information-oriented, describes the machinery
 
+## The README
+
+Example 
+
+
 ## Exercise
 
 !!! info "Intro"
 
-    - Revisit your README and update it with info after all our commits
+    - Revisit README-ext and update it with info after all our commits
         - About
     - Citing
     - License
@@ -106,6 +111,11 @@
 
     - You can now work in GitHub directly
     - Do ``git push`` first from local command-line!
+
+    
+    - We already have a file called ``README.md``, that is used for information for the course participants.
+    - Let's continue to work with the ``README-EXT.md`` we used in last session.
+
 
     ???- question "Group 1: Work together and formulate an 'About' section
 
