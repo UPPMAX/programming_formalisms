@@ -1,8 +1,5 @@
 # Object Oriented development
 
->People regard their environment in terms of objects"
-`[Jacobson 1992]`
-
 ???- info "Learning objectives"
     - Understand what a Design Pattern is 
     - Describe the general components of design patterns and their significance.
@@ -14,6 +11,9 @@
     - The Learners should be able to understand the "Factory pattern" and what problem it solves
     
 
+>People regard their environment in terms of objects"
+`[Jacobson 1992]`
+
 This leads to a smaller semantic gap which
 gives two major benefits
     -Understanding
@@ -23,6 +23,7 @@ gives two major benefits
 
 
 ### Objects
+
 !!! info What is and object
     An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
 
@@ -39,6 +40,7 @@ Developing object orientated is following these principles
 
 3: The concept of message passing
 
+???- "What is a Class"
 
 ???- "What is a Design Pattern"
 
@@ -61,11 +63,11 @@ Developing object orientated is following these principles
 
 ???- "Design Patterns"
 
-    Implement a Factory method for the creation of bacteria and one for nutrients
+    Design a Factory method for the creation of bacteria 
 
 ???- "Extra assignment"
 
-    Using refactoring.guru find an implement another pattern that is useful for your project.
+    Using refactoring.guru find an design Describe in a design document another pattern that is useful for your project.
 
 
 ## References 
