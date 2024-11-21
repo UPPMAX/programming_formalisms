@@ -164,10 +164,10 @@ class Coordinate:
 
     ```python
     def __repr__(self):
-        return 'Coordinat'
+        return 'Coordinate'
     ```
 
-    > When asked for its data type, return the word 'Coordinat'
+    > When asked for its data type, return the word 'Coordinate'
 
     ```python
     def __str__(self):
@@ -181,7 +181,7 @@ Using the implementation of `get_a` like this:
 
 ```python
 def get_a():
-    return Coordinat(3.14, 2.72)
+    return Coordinate(3.14, 2.72)
 ```
 
 Then running the same code again:
@@ -196,7 +196,7 @@ Now results in
 
 ```text
 (3.14, 2.72)
-<class '__main__.Coordinat'>
+<class '__main__.Coordinate'>
 ```
 
 Aha, `a` is a **coordinat**!
@@ -204,7 +204,7 @@ Aha, `a` is a **coordinat**!
 We can even test that:
 
 ```python
-assert str(type(a)) == "<class '__main__.Coordinat'>"
+assert str(type(a)) == "<class '__main__.Coordinate'>"
 ```
 
 ## Exercise 1: use your own class
