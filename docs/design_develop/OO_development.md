@@ -33,7 +33,7 @@ The semantic gap(The distance form input to understanding) between reality and m
 !!! info "Object Orientation is a paradigm, not a language feature"
 
     - Mariam-webster defines a Paradigm as:
-    philosophical and theoretical framework of a scientific school or discipline within which theories, laws, and generalizations and the experiments performed in support of them are formulated
+      philosophical and theoretical framework of a scientific school or discipline within which theories, laws, and generalizations and the experiments performed in support of them are formulated
 
     - Stanford Encyclopedia of Philosophy cites the work of Thomas Kuhn The Structure of Scientific Revolutions in where a work of Paradigm is not only the key theories and laws, but also—and this is what makes them paradigms—the applications of those theories in the solution of important problems
 
@@ -46,9 +46,9 @@ The semantic gap(The distance form input to understanding) between reality and m
 
     3: **The concept of message passing**
 
-???- "What is a Class"
+???- question "What is a Class"
 
-???- "What is a Design Pattern"
+???- question  "What is a Design Pattern"
 
     Design patterns are typical solutions to common problems
     in software design. Each pattern is like a blueprint
@@ -56,7 +56,7 @@ The semantic gap(The distance form input to understanding) between reality and m
     design problem in your code.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-???- "Why do we use Design Patterns"
+???- question  "Why do we use Design Patterns"
 
     The truth is that you might manage to work as a programmer for many years without knowing about a single pattern. A lot of people do just that. Even in that case, though, you might be implementing some patterns without even knowing it. So why would you spend time learning them?
 
