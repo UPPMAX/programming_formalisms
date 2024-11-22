@@ -32,6 +32,9 @@ flowchart TD
   classDef lars_node fill:#dfd,color:#000,stroke:#0f0
   classDef richel_node fill:#fdd,color:#000,stroke:#f00
 
+    sdlc[Software development lifecycle]:::lars_node
+    devtools[Software development tools]:::bjorn_node
+
     requirements[Requirements]:::lars_node
     risk_analysis[Risk analysis]:::lars_node
 
@@ -53,7 +56,6 @@ flowchart TD
 
     class_design[Class design]:::lars_node
 
-    class_diagram[Create class diagrams]:::lars_node
     pair_programming[Pair programming]:::richel_node
     tdd[TDD]:::richel_node
 
@@ -70,14 +72,17 @@ flowchart TD
     documentation[Documentation]:::bjorn_node
 
 
+  sdlc --> requirements
+  sdlc --> risk_analysis
+  devtools --> version_control_1
+
   requirements --> class_design
   version_control_1 --> requirements
   version_control_1 --> risk_analysis
   pair_programming --> tdd
   pair_programming --> code_reviews
   version_control_many --> code_reviews
-  class_design --> class_diagram
-  class_diagram --> tdd
+  class_design --> data_structures
   version_control_1 --> tdd
   tdd --> testing
   issues --> testing
