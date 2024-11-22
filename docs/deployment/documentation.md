@@ -181,6 +181,11 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
+!!! info "See also"
+
+    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
+    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
+
 ## Exercise
 
 !!! info "Intro"
