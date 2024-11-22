@@ -9,10 +9,7 @@ tags:
 
 !!!- info "Learning objectives"
 
-    - Understand misconceptions on optimisation
-    - Understand Amdahl's law
     - Practice to determine the big-O profile of a function
-    - Practice to get a run-time speed profile
 
 ???- question "For teachers"
 
