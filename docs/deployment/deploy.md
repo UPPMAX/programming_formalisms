@@ -186,11 +186,16 @@ pip freeze > requirements.txt
 pip install --user -r requirements.txt
 ```
 
-- Continue
+- End the isolated environment and work with other things!
 
 ```console
 deactivate # deactivate the venv!
 ```
+
+!!! example
+
+    - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
+    - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
 
 ### README: installation section
 
@@ -226,7 +231,7 @@ deactivate # deactivate the venv!
         - ``bacsim`` is a python package needed by ``main.py``
         - available here: <https://test.pypi.org/project/bacsim/1.0.1/ >
 
-???+ question "(In groups) Will people need any additional packages for this tool?
+???+ question "(In groups) Will people need any additional packages for this tool?"
 
     - Test in isolated environment (``venv``) on local computer if there are errors
     - That is, are there any more packages needed
@@ -345,7 +350,7 @@ For this we use `.gitignore` files.
 
 !!! example "From our project repo"
 
-    programming_formalisms_project_autumn_2024/blob/main/.gitignore>
+    <programming_formalisms_project_autumn_2024/blob/main/.gitignore>
 
 ## Summary
 
