@@ -29,10 +29,9 @@ nav:
     - Issues: project/issues.md
     - Kanban board: project/kanban_board.md
     - Team roles: project/team_roles.md
-    - Test-driven development: tdd/README.md
     - assert: algorithms/assert.md
+    - Test-driven development: tdd/README.md
     - Using a formal testing framework: testing/testing_framework.md
-    - Continuous integration: continuous_integration/README.md
     - Summary of day: tuesday_summary.md
   - Wednesday:
     - Intro: wednesday_intro.md
@@ -41,19 +40,21 @@ nav:
     - Contributing with code review: git/contribute.md
     - Sharing and social coding: social_coding/social_coding.md
     - Pair programming: pair_programming/README.md
-    - Function design: function_design/README.md
+    - Using a formal testing framework: testing/testing_framework.md
     - Summary of day: wednesday_summary.md
   - Thursday:
     - Intro: thursday_intro.md
     - Object Oriented development: design_develop/OO_development.md
-    - Class design: data_structures/class_design.md
-    - A 'has-a' relation: data_structures/has_a_relation.md
+    - Function design: function_design/README.md
     - Expressive data types: data_structures/expressive_data_type.md
     - Modular programming: modularity/modular.md
-    - Implement the project as a package: package/README.md
+    - A 'has-a' relation: data_structures/has_a_relation.md
+    - Class design: data_structures/class_design.md
+    - Continuous integration: continuous_integration/README.md
     - Summary of day: thursday_summary.md
   - Friday:
     - Intro: friday_intro.md
+    - Implement the project as a package: package/README.md
     - Optimisation misconceptions: optimisation/misconceptions.md
     - Big-O: optimisation/big_o.md
     - Runtime speed profiles: optimisation/runtime_speed_profiles.md

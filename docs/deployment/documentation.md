@@ -28,20 +28,6 @@
         - GitHub pages/ReadTheDocs
         - MkDocs/sphinx
   
-!!! note "Instructor notes"
-
-    Prerequisites are:
-
-    - ...
-
-    Lesson Plan: **FIX**
-
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
-
-!!! info "TOC"
-
 
 ## Revisiting documentation
 
@@ -99,6 +85,12 @@
 
 ### About
 
+- About the software
+- What does it do?
+- One (Punch-)line decribing what it does.
+  - Also in GitHub in upper right corner!
+- More information below below the first description
+
 ### Install
 
 - We covered this in last session
@@ -123,7 +115,6 @@
 
 - How to contribute?
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
-
 
 ### Acknowledgements
 
@@ -181,16 +172,20 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
+!!! info "See also"
+
+    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
+    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
+
 ## Exercise
 
 !!! info "Intro"
 
     - Revisit ``README-ext.md`` and update it with info after all our commits
         - About
-    - Citing
+        - Citing
     - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
     - Do a ``git pull`` to have the same version of your project repo locally!
-
 
 ???+ question "Update your documentation in groups"
 
@@ -202,7 +197,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - Let's continue to work with the ``README-EXT.md`` we used in last session.
 
 
-    ???- question "Group 1: Work together and formulate an 'About' section
+    ???- question "Group 1: Work together and formulate an 'About' section"
 
     ???- question "Group 2: Work together and formulate 'Getting started' section"
     

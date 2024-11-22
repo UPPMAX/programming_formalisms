@@ -1527,3 +1527,6 @@ readme
 runing
 sacharomyces
 smudgeplot
+READMEs
+pypi
+bacsim
