@@ -60,6 +60,7 @@ nav:
     - Runtime speed profiles: optimisation/runtime_speed_profiles.md
     - Deploy: deployment/deploy.md
     - Documentation: deployment/documentation.md
+    - Wrap-up: misc/wrap_up.md
     - Summary of day: friday_summary.md
     - Summary of week: summary_week.md
   - Misc:
