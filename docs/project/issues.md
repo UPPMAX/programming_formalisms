@@ -70,7 +70,6 @@ In any project, you should create a shared "to-do" list,
 such as an issue tracker `[Wilson et al, 2017]`.
 
 
-
 English                 |Issue                          |Describe
 ------------------------|-------------------------------|----------------------------------------
 This needs to be done!  |Create an issue                |Why and what needs to be done
@@ -260,11 +259,11 @@ For that, a [kanban board](kanban_board.md) is used instead.
   "The social nature of issue tracking in software engineering."
   University of Calgary (2009).
 - `[Bugzilla, 2009]` Bugzilla (2009). Life Cycle of a Bug.
-  Retrieved October 30, 2009 from 
+  Retrieved October 30, 2009 from
   <https://www.bugzilla.org/docs/2.18/html/lifecycle.html>
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed.
   Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
 - `[Wilson et al, 2017]` Wilson, Greg, et al.
-  "Good enough practices in scientific computing." 
-  PLoS computational biology 13.6 (2017): e1005510. 
+  "Good enough practices in scientific computing."
+  PLoS computational biology 13.6 (2017): e1005510.
   [here](https://doi.org/10.1371/journal.pcbi.1005510)

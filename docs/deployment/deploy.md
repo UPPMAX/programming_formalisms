@@ -6,9 +6,9 @@
 
 !!! info "Learning objectives of 'Deployment'"
 
-    - learners can mentalize the installation needs from the users perspective
-    - learners can evaluate different available tools for reproducibility and installations
-    - learners can prepare for different users: local computer, Cluster
+    - I can mentalize the installation needs from the users' perspective
+    - I can evaluate different available tools for reproducibility and installations
+    - I can make an installation instruction for potential users
 
 !!! info "Content"
 
@@ -58,7 +58,7 @@
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
 - **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
 
- ### To make sure about needed dependencies
+### To make sure about needed dependencies
 
 - Start with empty environment
 - Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
@@ -73,21 +73,21 @@
     - From a terminal?
     - On different computers?
     - On a cluster?
-   
+
 - We need to either inform what is needed to run the software in the README file
 - Or provide them with everything needed
     - hopefully not interfering with other software they are using
 
 !!! note "Ways to distribute"
 
-    - Python packages: 
+    - Python packages:
         - pip (PyPI)
         - conda
-    - R: 
+    - R:
         - R repos like CRAN and GitHub (devtools)
         - conda
-    - Compiled languages: 
-        - built binaries (platform specific)      
+    - Compiled languages:
+        - built binaries (platform specific)
         - install from source
             - manual
             - make
@@ -100,7 +100,7 @@
 **These _Python-related_ tools try to solve the following problems:**
 
 - **Defining a specific set of dependencies**, possibly with well-defined versions
-    - requirements.txt... 
+    - requirements.txt...
 - **Installing those dependencies** mostly automatically
 - **Recording the versions** for all dependencies
 - **Isolated environments** (venv, virtualenv)
@@ -109,7 +109,7 @@
     - Using **different Python/R versions** per project??
     - Provide tools and services to **share packages**
 
-- Let's focus here on PyPI! 
+- Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll cover the other tools after the exercise!
 
@@ -176,28 +176,33 @@ pip freeze > requirements.txt
 - Other users can then install the same packages with:
 
 ```console
-pip install -user -r requirements.txt
+pip install --user -r requirements.txt
 ```
 
 - Continue
 
-```
+```console
 deactivate # deactivate the venv!
 ```
 
-### Installing main software
+### README: installation section
 
-- Since it is a python package, we can install it in a terminal with
+**Let's take a look at different Readmes**
 
-```console
-python[3] -m pip install . [--break-system-packages]
-```
+- Also interesting: Is there any tests that it is correctly installed?
 
+!!! example
+
+    - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
+    - Conda: <https://github.com/biobakery/MetaPhlAn>
+    - pip: <https://github.com/deeptools/HiCExplorer>
+    - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
+    - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
 ## Exercises
 
 - We already have a file called ``README.md``, that is used for information for the course participants.
-- Let's work with a README file for potential users. We can call it ``REAME-EXT.md``
+- Let's work with a README file for potential users. We can call it ``README-EXT.md``
 
 !!! info "Intro"
 
@@ -217,30 +222,19 @@ python[3] -m pip install . [--break-system-packages]
     - each group in different branches
     - then merge and teacher does code review
 
-## Going further with deploymenmt
+    ???- info "Answer"
 
-## Recording dependencies
+        - Since it is a python package, we can install it in a terminal with something like
 
-- **Reproducibility**: We can control our code but how can we control dependencies?
-- **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
-- **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
+        ```console
+        python[3] -m pip install .
+        ```
 
-### Conda, Anaconda, pip, Virtualenv, Pipenv, pyenv, Poetry, requirements.txt …
 
-**These _Python-related_ tools try to solve the following problems:**
+## Going further with deployment
 
-- **Defining a specific set of dependencies**, possibly with well-defined versions
-- **Installing those dependencies** mostly automatically
-- **Recording the versions** for all dependencies
-- **Isolated environments**
-    - On your computer for projects so they can use different software.
-    - Isolate environments on computers with many users (and allow self-installations)
-    - Using **different Python/R versions** per project??
-    - Provide tools and services to **share packages**
 
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
-
-- Make Python packages of your code.
 
 - **Possibilities for other languages can be**
     - C/C+
@@ -250,6 +244,7 @@ python[3] -m pip install . [--break-system-packages]
         - Fortran package manager
     - Julia
         - Pkg.jl
+        
 - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
 
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
@@ -260,16 +255,42 @@ python[3] -m pip install . [--break-system-packages]
 
 ### Containers
 
-**Popular container implementations:**
+- Containers let you install programs without needing to think about the computer environment, like
 
-- Docker
-- Singularity (popular on high-performance computing systems)
-- Apptainer (popular on high-performance computing systems, fork of Singularity)
-- Docker images can be converted to Singularity/Apptainer images
-- Singularity Python can convert Docker files to Singularity definition files
+    - operative system
+    - dependencies (libraries and other programs) with correct versions
 
-- [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
-- [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
+![Containerization](./img/Containerization_nextlabs.png)
+
+> From [Nextlabs](https://www.nextlabs.com/what-is-containerization/)
+
+!!! info
+
+    - 2(3) types
+
+        1. Singularity/Apptainer perfect for HPC systems
+        2. Docker that does not work on HPC-systems
+
+            - But docker images can be used by Singularity and Apptainer
+
+    - Everything is included
+    - Workflow:
+
+        - Download on Rackham or local computer
+        - Transfer to Bianca
+        - Move to from wharf to any place in your working folders on Bianca
+
+    - Draw-backs
+
+        - you install also things that may be already installed
+        - therefore, probably more disk space is needed
+
+!!! info "More info"
+
+    - [Singularity course](https://www.uu.se/centrum/uppmax/utbildning/kurser-och-workshops/basic-singularity){:target="_blank"}
+    - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
+    - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
+
 
 ### Workflows
 
@@ -279,23 +300,21 @@ python[3] -m pip install . [--break-system-packages]
     [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
     [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
 
-### Misc
+### Make a file executable by its own
 
-- Make a file executable by its own
+- Run a python script without the ``python`` before!
 
-### Example Python
-
-- make a header so that user can decide which python to use
-- especially important on a shared system where python is not in the typical /usr/bin/python path.
 - This line helps in the top of the main script:
 
-```
+```bash
 #!/bin/env python
 ```
 
+- Then the python active in "PATH" will automatically be used
+    - especially important on a shared system where python is not in the typical "/usr/bin/python" path.
 
 
-### Compiling languages
+### Compiled languages
 
 - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
@@ -316,8 +335,6 @@ For this we use `.gitignore` files.
 !!! example "From our project repo"
 
     programming_formalisms_project_autumn_2024/blob/main/.gitignore>
-
-    
 
 ## Summary
 

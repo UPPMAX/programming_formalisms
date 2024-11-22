@@ -144,7 +144,7 @@ On the other hand, a Python developer can at least see that this convention
 was broken.
 
 Note that some other programming languages completely disallows
-you from modifying a so-called 'private' member variabel.
+you from modifying a so-called 'private' member variable.
 
 ## Inheritance and polymorphism quote
 
@@ -168,7 +168,7 @@ well `[Gamma et al., 1995]`
 
 ## Exercise
 
-### Exercise: write a class with an invariant.
+### Exercise: write a class with an invariant
 
 - Pick a class at your skill level:
 
