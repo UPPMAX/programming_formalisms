@@ -74,6 +74,7 @@ nav:
     - Functions to practice TDD: misc/functions.md
     - Retrospective: misc/retrospective.md
     - Richèl: misc/richel.md
+    - Wrap-up: misc/wrap_up.md
 
 theme:
   name: material
