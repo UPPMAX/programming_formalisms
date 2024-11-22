@@ -164,7 +164,7 @@ which pip        #must point to the pip belonging to the virtual environment
 pip install <package name>
 ```
 
- No need to use ´´--user``, since it will be installed in the virtual environment only.
+- No need to use ´´--user``, since it will be installed in the virtual environment only.
 - Do this until your program works
 - Check what is installed by:
 
@@ -229,7 +229,7 @@ deactivate # deactivate the venv!
 
         - The main program ``main.py`` is in the repo.
         - ``bacsim`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/bacsim/1.0.1/ >
+        - available here: <https://test.pypi.org/project/bacsim/1.0.1/>
 
 ???+ question "(In groups) Will people need any additional packages for this tool?"
 
