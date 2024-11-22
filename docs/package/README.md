@@ -11,7 +11,7 @@ tags:
 
     - Understand how to package a Python project
     - Package our Python project locally
-    - Run a script with out Python project
+    - Run a script with our Python project
     - Upload our package to PyPI
 
 ???- question "For teachers"
