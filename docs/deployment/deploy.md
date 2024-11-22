@@ -377,7 +377,7 @@ For this we use `.gitignore` files.
     - &#9744; Sharing
         - &#9745; open science
         - &#9744; citation
-        - &#9745; licensing
+        - &#9744; licensing
         - &#9745; deploying
     - &#9744; Documentation
         - &#9745; in-code documentation
