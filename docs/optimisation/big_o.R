@@ -4,8 +4,12 @@ create_big_o_example <- function(n = seq(0, 100)) {
   t_wide$a <- 10 + log10(t_wide$n + 0.1)
   t_wide$b <- t_wide$n
   t_wide$c <- 0.001 * (t_wide$n ^ 2)
-  t_wide$total <- t_wide$a + t_wide$b + t_wide$c
-  t <- tidyr::pivot_longer(t_wide, cols = c("a", "b", "c", "total"))
+  if ("use_total" == "true") {
+    t_wide$total <- t_wide$a + t_wide$b + t_wide$c
+    t <- tidyr::pivot_longer(t_wide, cols = c("a", "b", "c", "total"))
+  } else {
+    t <- tidyr::pivot_longer(t_wide, cols = c("a", "b", "c"))
+  }
   colnames(t) <- c("n", "sub", "t")
   t
 }

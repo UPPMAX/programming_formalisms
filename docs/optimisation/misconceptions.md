@@ -124,8 +124,14 @@ You may prefer correct advice regarding this.
 
     > Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
 
+    - Don't optimize without reason `[CppCore Per.1]`
+    - Don't optimize prematurely `[CppCore Per.2]`
+    - Don't optimize something
+      that's not performance critical `[CppCore Per.3]`
+
     It likely has no measurable effect in the context of a complete program:
     the chance that this was the speed bottleneck is low.
+
 
 ## Bad advice 3
 
@@ -195,17 +201,28 @@ You may prefer correct advice regarding this.
 
 ???- question "Why is this bad advice?"
 
+    - Don't optimize without reason `[CppCore Per.1]`
+    - Don't optimize prematurely `[CppCore Per.2]`
+    - Don't optimize something
+      that's not performance critical `[CppCore Per.3]`
     - The 90-10 rule: 90% of all time, the program spends in 10% of the code.
     - Your working hours can be spent once
 
 ## References
 
-- `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of c, c++, java, perl, python, rexx and tcl." IEEE Computer 33.10 (2000): 23-29.
-- `[Rodgers, 1985]` Rodgers, David P. "Improvements in multiprocessor system design." ACM SIGARCH Computer Architecture News 13.3 (1985): 225-231.
-- `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.
 - `[Chellappa et al., 2008]`
   Chellappa, Srinivas, Franz Franchetti, and Markus Püschel.
   "How to write fast numerical code: A small introduction."
   Generative and Transformational Techniques in Software Engineering II:
   International Summer School, GTTSE 2007, Braga, Portugal,
   July 2-7, 2007. Revised Papers (2008): 196-259.
+- `[CppCore Per.1]` C++ Core Guidelines: Per.1: Don't optimize without reason
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+- `[CppCore Per.2]` C++ Core Guidelines: Per.2: Don't optimize prematurely
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
+- `[CppCore Per.3]` C++ Core Guidelines: Per.3:
+  Don't optimize something that's not performance critical
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+- `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of c, c++, java, perl, python, rexx and tcl." IEEE Computer 33.10 (2000): 23-29.
+- `[Rodgers, 1985]` Rodgers, David P. "Improvements in multiprocessor system design." ACM SIGARCH Computer Architecture News 13.3 (1985): 225-231.
+- `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.
