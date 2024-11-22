@@ -86,7 +86,7 @@ You may prefer correct advice regarding this.
     - Do not use for-loops!
     - Unroll your for-loops!
 
-    Or in code, this is bad:
+    Or in code, this is 'bad':
 
     ```python
     my_values = get_values()
