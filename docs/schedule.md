@@ -47,7 +47,7 @@ Friday   |10:15-11:00|Richel |[Optimisation misconceptions](optimisation/misconc
 Friday   |11:15-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
 Friday   |15:15-15:40|Richel |Wrap-up
-Friday   |15:40-16:00|Richel |Confidence and retrospect
+Friday   |15:40-16:00|Lars   |Confidence and retrospect
 
 <!-- markdownlint-enable MD013 -->
 <!-- markdownlint-enable MD055 -->
