@@ -111,7 +111,7 @@
 
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
-- We'll cover the other tools after the exercise!
+- We'll cover the other tools after the exercise.
 
 ### Principle using python pip in a virtual environment
 
@@ -131,33 +131,40 @@
     - you can do this outside the git repo to not pollute it
 
 ```console
-python -m venv PATH/Example
+python -m venv <path>/usertest
 ```
 
-- This creates an empty virtual environment located in PATH/Example directory
+- This creates an empty virtual environment located in <path>/Usertest directory
 - Activate
 
 ```console
-source PATH/Example/bin/activate
+source <PATH>/usertest/bin/activate
 ```
 
 - In Windows you may have to instead do:
 
 ```console
-source PATH/Example/Scripts/activate
+source <PATH>/usertest/Scripts/activate
 ```
 
-- Note the (Example) in the beginning of the prompt!
+- Note the ``(usertest)`` in the beginning of the prompt!
 - Do note the python version and you may inform users that you know that this version is known to work!
 
 ```console
-which python        #should point to the python belonging to the virtual environment
+which python        #must point to the python belonging to the virtual environment
 python -V            # note this version
+which pip        #must point to the pip belonging to the virtual environment
 ```
 
 - You can switch to the directory where you have your code and test to run it
-- It will give you errors of missing packages
-- Install them with ``pip install <package name>``. No need to use ´´--user``, since it will be installed in the virtual environment only.
+- It may give you errors of missing packages, like ``numpy``
+- Install them with
+
+```console
+pip install <package name>
+```
+
+ No need to use ´´--user``, since it will be installed in the virtual environment only.
 - Do this until your program works
 - Check what is installed by:
 
@@ -167,7 +174,7 @@ pip freeze        #pip list works as well
 
 - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
 
-- Save your requirements as a file that user can run to get the same dependencies as you
+- Save your requirements as a file that user can run to get the needed dependencies
 
 ```console
 pip freeze > requirements.txt
@@ -187,9 +194,9 @@ deactivate # deactivate the venv!
 
 ### README: installation section
 
-**Let's take a look at different Readmes**
+**Let's take a look at different READMEs**
 
-- Also interesting: Is there any tests that it is correctly installed?
+- Also interesting: Is there any test that makes sure it is correctly installed?
 
 !!! example
 
@@ -199,37 +206,41 @@ deactivate # deactivate the venv!
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
-## Exercises
+## Exercises 20-30 min
 
 - We already have a file called ``README.md``, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
 
 !!! info "Intro"
 
-    - Users should be able to install the required python packages with ``pip``:
-        ``pip install -r requirements.txt`` (depending on system ``--user`` may be added)
-    - Revisit your README and update it with info after all our commits
-        - Installation
-    - Do a ``git pull`` to have the same version of your project repo locally!
+    - (External) Users should be able to install the the complete tool, including dependencies:
+    . Repo work
+        - work on GitHub!
+        - When modifying repo, use a group specific branch
+        - When done, merge
+    - In the end we do code review together of the merging conflicts
 
-???+ question "Make a 'requirements' file in groups"
+    ???- info "Hints"
+
+        - The main program ``main.py`` is in the repo.
+        - ``bacsim`` is a python package needed by ``main.py``
+        - available here: <https://test.pypi.org/project/bacsim/1.0.1/ >
+
+???+ question "(In groups) Will people need any additional packages for this tool?
+
+    - Test in isolated environment (``venv``) on local computer if there are errors
+    - That is, are there any more packages needed
+    - follow the example above
+    
+???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
 
     - each group in different branches
     - then merge and teacher does code review
 
-???+ question "Update the "installation instruction' in groups"
+???+ question "(In groups) Make 'installation instruction' in groups"
 
     - each group in different branches
     - then merge and teacher does code review
-
-    ???- info "Answer"
-
-        - Since it is a python package, we can install it in a terminal with something like
-
-        ```console
-        python[3] -m pip install .
-        ```
-
 
 ## Going further with deployment
 
