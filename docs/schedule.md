@@ -23,7 +23,7 @@ Tuesday  |10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](pro
 Tuesday  |11:15-12:00|Richel |[assert](algorithms/assert.md), [TDD](tdd/README.md)
 Tuesday  |13:00-14:00|Richel |[TDD](tdd/README.md)
 Tuesday  |14:15-15:00|Richel |[TDD](tdd/README.md)
-Tuesday  |15:00-15:40|Richel |[formal testing framework](testing/testing_framework.md)
+Tuesday  |15:00-15:40|Richel |[Formal testing framework](testing/testing_framework.md)
 Tuesday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Wednesday|09:00-10:00|Björn  |[Formal git workflow, branches](./git/branches.md)
@@ -31,7 +31,7 @@ Wednesday|10:15-11:00|Björn  |[Formal git workflow, merge](./git/merge.md)
 Wednesday|11:15-12:00|Björn  |[Formal git workflow, contribute](./git/contribute.md) & [Social coding and sharing](./social_coding/social_coding.md)
 Wednesday|13:00-14:00|Richel |[Pair programming](pair_programming/README.md)
 Wednesday|14:15-15:00|Richel |[Pair programming](pair_programming/README.md)
-Wednesday|15:15-15:40|Richel |[formal testing framework](testing/testing_framework.md)
+Wednesday|15:15-15:40|Richel |[Formal testing framework](testing/testing_framework.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Thursday |09:00-10:00|Lars   |[Object-oriented design](design_develop/OO_development.md)
