@@ -117,7 +117,7 @@ $ /bin/python3 /home/sven/programming_formalisms_project/main.py
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 ```
 
-This is what the columns mean (simplied from [the Python profiling manual](https://docs.python.org/3/library/profile.html)):
+This is what the columns mean (simplified from [the Python profiling manual](https://docs.python.org/3/library/profile.html)):
 
 Parameter|Description
 ---------|---------------------------

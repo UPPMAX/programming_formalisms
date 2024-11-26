@@ -1530,3 +1530,9 @@ smudgeplot
 READMEs
 pypi
 bacsim
+PyPi
+testPyPI
+Beielstein
+subfunctions
+
+

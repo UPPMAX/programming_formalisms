@@ -87,7 +87,7 @@
 
 - About the software
 - What does it do?
-- One (Punch-)line decribing what it does.
+- One (Punch-)line describing what it does.
     - Also in GitHub in upper right corner!
 - More information below below the first description
 

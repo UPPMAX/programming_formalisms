@@ -134,7 +134,7 @@
 python -m venv <path>/usertest
 ```
 
-- This creates an empty virtual environment located in <path>/usertest directory
+- This creates an empty virtual environment located in `<path>/usertest` directory
 - Activate
 
 ```console
