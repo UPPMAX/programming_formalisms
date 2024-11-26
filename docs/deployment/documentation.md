@@ -88,7 +88,7 @@
 - About the software
 - What does it do?
 - One (Punch-)line decribing what it does.
-  - Also in GitHub in upper right corner!
+    - Also in GitHub in upper right corner!
 - More information below below the first description
 
 ### Install
@@ -277,7 +277,7 @@ you would like to reuse, you may look at the following things to determine its
 reusability:
 
 !!! note
-    
+
     - Date of last code change
       > ... is the project abandoned?
     - Release history

@@ -22,7 +22,6 @@ tags:
 To determine if the course mottos have held.
 
 
-
 ## Course overview
 
 ```mermaid

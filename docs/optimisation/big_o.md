@@ -108,7 +108,7 @@ Your program runs three functions after each other: A, B and C.
 All use the same input.
 
 You've measured how each of these functions take per input:
- 
+
 ![Big O plot for 100](big_o_100.png)
 
 You want your benchmark to be short:
@@ -141,7 +141,7 @@ Big-O helps to:
 A benchmark done in debug mode is useless:
 you care about your code doing actual work.
 
-A short benchmark time is useless: 
+A short benchmark time is useless:
 you care more about complex input than simple input.
 Using a continuous integration script to run a (max) two hour
 benchmark is a convenient solution.

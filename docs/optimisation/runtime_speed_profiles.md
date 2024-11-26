@@ -214,4 +214,3 @@ Take a look at this speed profile:
 Follow the steps at 'Create a run-time speed profile'
 in your own code, to obtain your own run-time speed profile
 
-

@@ -260,7 +260,7 @@ deactivate # deactivate the venv!
         - Fortran package manager
     - Julia
         - Pkg.jl
-        
+
 - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
 
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)

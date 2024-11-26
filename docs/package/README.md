@@ -207,7 +207,7 @@ Install `twine`:
 python3 -m pip install --upgrade twine --break-system-packages
 ```
 
-After registering to [ https://test.pypi.org]( https://test.pypi.org), you
+After registering to [https://test.pypi.org]( https://test.pypi.org), you
 have the API token be allowed to upload to testPyPI. Upload:
 
 ```bash
