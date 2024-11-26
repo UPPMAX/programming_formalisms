@@ -10,3 +10,7 @@ keeping learners in an online course.
 `time`                   |Time
 `n_cam_on`               |Number of learners with the camera on. This excludes teacher(s) and assistants
 `n_cam_off`              |Number of learners with the camera on. This excludes teacher(s) and assistants
+
+## Other data
+
+- Number of registrations: 23
