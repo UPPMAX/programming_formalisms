@@ -14,7 +14,7 @@
 ```
 
 ```text
-[Richel] What I don't like, is that the results are not public
+> [Richel] What I don't like, is that the results are not public
 ```
 
 ## NBIS Short Term Feedback (STF)
@@ -23,12 +23,30 @@
 
 The intention of the STF survey is to find out how participants have used the
 skills and knowledge they gained through participating in the NBIS course.
+
+> [Richel] This seems false to me. Could this be a copy-paste mistake
+> from the Long Term Feedback survey?
+>
+> A goal I suggest: The intention of the STF survey is to find out
+> how the course can be improved.
+
 The STF survey aims to provide data back to NBIS from course participants.
+
+> [Richel] Suggest: 'The results of this survey are used by NBIS'.
+>
+> I wish it would say:
+>
+> The results of this survey will be published online,
+> to make sure each voice is heard.
+
 The survey should preferably be given by the course leader to the participants
 on the last day of the course.
 Some of the questions below are CORE Questions and needs to always be included
 in the survey. There are also room for ADDITIONAL questions that can be
 modified for respective course.
+
+> [Richel] Sounds like the core questions are the only ones bothering
+> learners with. The additional questions already feel too much 'nice to have'.
 
 - Contents
 - Important Information
@@ -59,6 +77,9 @@ be administered as close as possible to the end of the training event,
 preferably on the last day of the course. Please add the result of the survey
 to the course folder in Google Drive (NBIS Course Catalogue).
 
+> [Richel] In teaching, I don't care about where the learners come from.
+> I guess this is just to make pretty pictures?
+
 The core question set is followed by a set of Additional (suggested) questions
 that training organisers might also like to ask. Please note: while the core
 question set is compulsory, Course leader(s) are encouraged to ask any
@@ -87,13 +108,17 @@ your comments - which are not mandatory - are especially precious.
 We may share anonymised information with course presenters and developers as
 well as for wider quality/impact analyses.
 
+> [Richel] Suggest to use 'The results will be posted online as-is, to make
+> sure all voices get heard'
+
 - Required
 
 ### Section 2 - Demographic Information
 
-```text
-[Richel]: I don't feel it is worth to bother our learners with question 1 below
-```
+> [Richel]: I don't feel it is worth to bother our learners with question 1
+> below: I don't care.
+> I do see its use in an intake form, but even there, I feel
+> we should respect our learners' time.
 
 1. Where did you see the course advertised? `advertised`
 
@@ -107,9 +132,8 @@ well as for wider quality/impact analyses.
 - h. Internet search
 - i. Other (comments)
 
-```text
-[Richel]: I don't feel it is worth to bother our learners with question 2 below
-```
+> [Richel]: I don't feel it is worth to bother our learners with question 2 below
+> it will have no effect on my preparation
 
 2. What is your career stage? `career_stage`
 
@@ -120,15 +144,14 @@ well as for wider quality/impact analyses.
 - e. Industry scientist
 - f. Other (comments)
 
-```text
-[Richel]: I don't feel it is worth to bother our learners with question 3 below
-```
+> [Richel]: I don't feel it is worth to bother our learners with question 3 
+> below:
+> it will have zero effect on my preparation
 
 3. What is your host university? `host_university`
 
-```text
-[Richel]: I don't feel it is worth to bother our learners with question 4 below
-```
+> [Richel]: I don't feel it is worth to bother our learners with question 4 below:
+> it will have zero effect on my preparation
 
 4. Gender `gender`
 
@@ -238,9 +261,17 @@ Richel: I don't see how question 1 below would change my teaching
 
 6. Any other comments? Comments
 
-```text
-[Richel]: I don't feel it is worth to bother our learners with question 7 below
-```
+> [Richel]: I don't feel it is worth to bother our learners with question 7 below,
+> for these reasons:
+> 
+> - SETs ('Student Evaluations of Teaching') encourage poor 
+>   teaching `[Stroebe, 2020]`
+> - I do not care about 'satisfaction', instead I care about the learning
+>   outcomes. Sure, they may correlate, but I prefer to ask the thing I care for
+> - Asking for satisfaction needlessly hurts teachers' feelings, as it allows
+>   bullying. I've seen two reasonable teachers (one of these me) get a '1'
+>   here. I hypothesize for both that this was because the learners simply
+>   did not like the teacher. We don't need to take such crap
 
 7. PLEASE RATE EACH SESSION OF THE COURSE `satisfaction_per_session_YYYY_MM_DD_am/pm`
 
@@ -252,7 +283,7 @@ Richel: I don't see how question 1 below would change my teaching
 - f. Excellent (5)
 
 ```text
-[Richel]: I don't feel it is worth to bother our learners with question 7
+[Richel]: I don't feel it is worth to bother our learners with question 8
 below, as we have question 5
 ```
 
@@ -328,3 +359,12 @@ Now go make something great!
 
 <!-- markdownlint-enable MD013 -->
 <!-- markdownlint-enable MD029 -->
+
+## References
+
+- `[Stroebe, 2020]` Stroebe, W. (2020). Student Evaluations of Teaching
+  Encourages Poor Teaching and Contributes to Grade Inflation: A Theoretical
+  and Empirical Analysis. Basic and Applied Social Psychology,
+  42(4), 276–294. https://doi.org/10.1080/01973533.2020.1756817
+- `[Sitzmann & Johnson, 2014]` Traci Sitzmann and Stefanie Johnson.
+  "**The paradox of seduction by irrelevant details: How irrelevant information helps and hinders self-regulated learning**." Learning and Individual Differences (2014): 1-11. [Download page](https://doi.org/10.1016/j.lindif.2014.05.009)
