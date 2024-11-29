@@ -57,33 +57,35 @@ header_to_names <- function(header) {
     "I feel confident that :: ",
     "Confidence level: ",
     "confidence level: ",
+    "What are my confidence level in my...: ",
+    "^    - ",
     "^- " # Must be last
   )
   for (remove_str in remove_strs) {
     header_strs <- stringr::str_remove(header_strs, remove_str)
+    header_strs <- stringr::str_trim(header_strs)
   }
   header_strs
 }
 
 testthat::expect_equal(c("A", "B"), header_to_names(header = "A,B"))
-
 testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_monday()), "I feel")))
-
-header_to_names(get_example_header_monday())
+# header_to_names(get_example_header_monday())
 
 testthat::expect_equal(0, sum(stringr::str_count(header_to_names(header = get_example_header_tuesday()), "How comfortable")))
-testthat::expect_equal(0, sum(stringr::str_count(header_to_names(header = get_example_header_tuesday()), "confident")))
-
-header_to_names(get_example_header_tuesday())
+testthat::expect_equal(0, sum(stringr::str_count(header_to_names(header = get_example_header_tuesday()), "confident am I")))
+# header_to_names(get_example_header_tuesday())
 
 testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_wednesday()), "confident")))
-testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_wednesday()), "confident")))
-header_to_names(get_example_header_wednesday())
+# header_to_names(get_example_header_wednesday())
 
+testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_thursday()), "What are my confidence level")))
+# header_to_names(get_example_header_thursday())
 
 testthat::expect_equal(18, length(header_to_names(get_example_header_friday())))
+# header_to_names(get_example_header_friday())
 
-# Convert a confidences file to a table
+# Convert a confidences file to a table, with all columns
 file_to_table <- function(filename) {
   testthat::expect_true(file.exists(filename))
   lines_with_header <- readr::read_lines(filename)
@@ -96,68 +98,81 @@ file_to_table <- function(filename) {
   table_names <- header_to_names(header)
   testthat::expect_equal(ncol(t), length(table_names))
   names(t) <- table_names
+  
   t
 }
 
+for (day in get_all_days()) {
+  testthat::expect_no_error(
+    file_to_table(filename = day_to_filename(day))
+  )
+}
 
-t <- readr::read_csv("20240925_fixed.csv")
-t$Timestamp <- NULL
-t$`Any feedback?` <- NULL
-# tail(names(t))
-questions <- stringr::str_remove(
-  stringr::str_remove(
-    names(t), 
-    "Give you confidence levels of the following statements: \\["),
-  "\\]"
-)
-#new_names <- c(
-#  paste0("q0", seq(1, 9)),
-#  paste0("q", seq(10, 16))
-#)
-new_names <- questions
-names(t) <- new_names
+file_to_confidences <- function(filename) {
+  t <- file_to_table(filename)
+  testthat::expect_true(stringr::str_detect(names(t)[4], "[cC]onf"))
+  t[, 4] <- NULL
+  testthat::expect_true(stringr::str_detect(names(t)[3], "[vV]oter"))
+  t[, 3] <- NULL
+  testthat::expect_true(stringr::str_detect(names(t)[2], "[sS]ession"))
+  t[, 2] <- NULL
+  testthat::expect_true(stringr::str_detect(names(t)[1], "[dD]ate"))
+  t[, 1] <- NULL
+  t
+}
 
-t$i <- seq(1, nrow(t))
+  
+testthat::expect_no_error(file_to_confidences(filename = day_to_filename("wednesday")))
 
-names(t)
-t_tidy <- tidyr::pivot_longer(t, cols = starts_with("I", ignore.case = FALSE))
-names(t_tidy)
-# No idea why 'starts_with("I", ignore.case = FALSE)' does not work today
-t_tidy$`Any other feedback?` <- NULL
-names(t_tidy) <- c("i", "question", "answer")
-t_tidy
+for (day in get_all_days()) {
+  filename <- day_to_filename(day)
+  testthat::expect_no_error(file_to_confidences(filename))
+}
 
-n_individuals <- length(unique(t_tidy$i))
-n_ratings <- length(t_tidy$answer[!is.na(t_tidy$answer)])
 
-mean_confidence <- mean(t_tidy$answer[!is.na(t_tidy$answer)])
+for (day in get_all_days()) {
+  filename <- day_to_filename(day)
+  testthat::expect_true(file.exists(filename))
+  t <- file_to_confidences(filename)
+  t$i <- seq(1, nrow(t))
+  t_tidy <- tidyr::pivot_longer(t, cols = !tidyr::last_col())
+  names(t_tidy) <- c("i", "question", "answer")
+  t_tidy$answer <- as.numeric(t_tidy$answer)
+  
+  n_individuals <- length(unique(t_tidy$i))
+  n_ratings <- length(t_tidy$answer[!is.na(t_tidy$answer)])
+  mean_confidence <- mean(t_tidy$answer[!is.na(t_tidy$answer)])
 
-ggplot2::ggplot(t_tidy, ggplot2::aes(x = answer)) +
-  ggplot2::geom_histogram() + 
-  ggplot2::labs(
-    title = "All confidences",
-    caption = paste0(
-      "#individuals: ", n_individuals, ". ",
-      "#ratings: ", n_ratings, ". ",
-      "Mean confidence: ", round(mean_confidence, digits = 2)
+  all_confidences_filename <- paste0(day, "_all_confidences.png")
+
+  ggplot2::ggplot(t_tidy, ggplot2::aes(x = answer)) +
+    ggplot2::geom_histogram(binwidth = 1) + 
+    ggplot2::labs(
+      title = "All confidences",
+      caption = paste0(
+        "#individuals: ", n_individuals, ". ",
+        "#ratings: ", n_ratings, ". ",
+        "Mean confidence: ", round(mean_confidence, digits = 2)
+      )
     )
-  )
+  ggplot2::ggsave(filename = all_confidences_filename, width = 4, height = 2)
 
-ggplot2::ggsave(filename = "all_confidences.png", width = 4, height = 2)
+  
+  ggplot2::ggplot(t_tidy, ggplot2::aes(x = answer)) +
+    ggplot2::geom_histogram(binwidth = 1) + 
+    ggplot2::facet_grid(rows = "question", scales = "free_y") +
+    ggplot2::theme(
+      strip.text.y = ggplot2::element_text(angle = 0),
+      legend.position = "none"
+    ) +
+    ggplot2::labs(
+      title = "Confidences per question"
+    )
 
-ggplot2::ggplot(t_tidy, ggplot2::aes(x = answer)) +
-  ggplot2::geom_histogram() + 
-  ggplot2::facet_grid(rows = "question", scales = "free_y") +
-  ggplot2::theme(
-    strip.text.y = ggplot2::element_text(angle = 0),
-    legend.position = "none"
-  ) +
-  ggplot2::labs(
-    title = "Confidences per question"
-  )
+  confidences_per_question_filename <- paste0(day, "_confidences_per_question.png")
+  ggplot2::ggsave(filename = confidences_per_question_filename, width = 6, height = 7)
 
-ggplot2::ggsave(filename = "confidences_per_question.png", width = 6, height = 7)
-
-names(t_tidy)
-
-readr::write_csv(x = dplyr::tally(dplyr::group_by(t_tidy, question, answer)), file = "tally.csv")
+  tally <- dplyr::tally(dplyr::group_by(t_tidy, question, answer))
+  tally_filename <- paste0(day, "_tally.csv")
+  readr::write_csv(x = tally, file = tally_filename)
+}
