@@ -1,8 +1,8 @@
 question,answer,n
-"Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.",6,2
-"Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.",8,1
-"Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.",9,1
-"Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.",10,1
+"Comprehend the principles of object-oriented development, such as information hiding, encapsulation,",6,2
+"Comprehend the principles of object-oriented development, such as information hiding, encapsulation,",8,1
+"Comprehend the principles of object-oriented development, such as information hiding, encapsulation,",9,1
+"Comprehend the principles of object-oriented development, such as information hiding, encapsulation,",10,1
 Gain an introductory understanding of modular programming,7,2
 Gain an introductory understanding of modular programming,8,3
 I can criticise functions,7,1
@@ -39,23 +39,23 @@ Iterative refactoring.,7,1
 "Learn about common interfaces, protocols, and their role in modular programming.",3,1
 "Learn about common interfaces, protocols, and their role in modular programming.",5,3
 "Learn about common interfaces, protocols, and their role in modular programming.",6,1
-"Learn the definition and characteristics of an object, including its ability to save state and perform operations.",6,1
-"Learn the definition and characteristics of an object, including its ability to save state and perform operations.",7,1
-"Learn the definition and characteristics of an object, including its ability to save state and perform operations.",8,1
-"Learn the definition and characteristics of an object, including its ability to save state and perform operations.",9,2
+"Learn the definition and characteristics of an object, including its ability to save state and perfo",6,1
+"Learn the definition and characteristics of an object, including its ability to save state and perfo",7,1
+"Learn the definition and characteristics of an object, including its ability to save state and perfo",8,1
+"Learn the definition and characteristics of an object, including its ability to save state and perfo",9,2
 Recognize and address tight coupling in code to improve modularity.,1,2
 Recognize and address tight coupling in code to improve modularity.,2,1
 Recognize and address tight coupling in code to improve modularity.,3,1
 Recognize and address tight coupling in code to improve modularity.,7,1
-"Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.",4,1
-"Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.",6,1
-"Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.",8,2
-"Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.",10,1
+"Recognize the importance of relationships between classes, including association, composition, and a",4,1
+"Recognize the importance of relationships between classes, including association, composition, and a",6,1
+"Recognize the importance of relationships between classes, including association, composition, and a",8,2
+"Recognize the importance of relationships between classes, including association, composition, and a",10,1
 Understand the benefits of object-oriented development,8,3
 Understand the benefits of object-oriented development,9,2
 Understand the concept of code smells and design smells.,4,2
 Understand the concept of code smells and design smells.,5,1
 Understand the concept of code smells and design smells.,8,1
 Understand the concept of code smells and design smells.,9,1
-Understand the definition and structure of a class as a collection of objects with common traits and behaviors.,8,2
-Understand the definition and structure of a class as a collection of objects with common traits and behaviors.,9,3
+Understand the definition and structure of a class as a collection of objects with common traits and,8,2
+Understand the definition and structure of a class as a collection of objects with common traits and,9,3
