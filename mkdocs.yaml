@@ -29,7 +29,7 @@ nav:
     - Issues: project/issues.md
     - Kanban board: project/kanban_board.md
     - Team roles: project/team_roles.md
-    - assert: algorithms/assert.md
+    - assert: assert/README.md
     - Test-driven development: tdd/README.md
     - Using a formal testing framework: testing/testing_framework.md
     - Summary of day: tuesday_summary.md
