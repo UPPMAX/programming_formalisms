@@ -144,7 +144,7 @@ well as for wider quality/impact analyses.
 - e. Industry scientist
 - f. Other (comments)
 
-> [Richel]: I don't feel it is worth to bother our learners with question 3 
+> [Richel]: I don't feel it is worth to bother our learners with question 3
 > below:
 > it will have zero effect on my preparation
 
@@ -263,8 +263,8 @@ Richel: I don't see how question 1 below would change my teaching
 
 > [Richel]: I don't feel it is worth to bother our learners with question 7 below,
 > for these reasons:
-> 
-> - SETs ('Student Evaluations of Teaching') encourage poor 
+>
+> - SETs ('Student Evaluations of Teaching') encourage poor
 >   teaching `[Stroebe, 2020]`
 > - I do not care about 'satisfaction', instead I care about the learning
 >   outcomes. Sure, they may correlate, but I prefer to ask the thing I care for
@@ -365,6 +365,6 @@ Now go make something great!
 - `[Stroebe, 2020]` Stroebe, W. (2020). Student Evaluations of Teaching
   Encourages Poor Teaching and Contributes to Grade Inflation: A Theoretical
   and Empirical Analysis. Basic and Applied Social Psychology,
-  42(4), 276–294. https://doi.org/10.1080/01973533.2020.1756817
+  42(4), 276–294. <https://doi.org/10.1080/01973533.2020.1756817>
 - `[Sitzmann & Johnson, 2014]` Traci Sitzmann and Stefanie Johnson.
   "**The paradox of seduction by irrelevant details: How irrelevant information helps and hinders self-regulated learning**." Learning and Individual Differences (2014): 1-11. [Download page](https://doi.org/10.1016/j.lindif.2014.05.009)
