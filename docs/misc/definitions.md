@@ -11,7 +11,7 @@ tags:
 
 Term                   |Definition
 -----------------------|----------------------------------------------------------------------------------------
-Aggregration           |A has-a relation between two objects, where the smaller object is not owned, e.g. a university has professors
+Aggregation            |A has-a relation between two objects, where the smaller object is not owned, e.g. a university has professors
 `assert`               |A function to test one's own assumptions or indicate a stub
 Composition            |A has-a relation between two objects, e.g. a car has an engine
 Function               |Isolated piece of code with a name, input arguments and output value
