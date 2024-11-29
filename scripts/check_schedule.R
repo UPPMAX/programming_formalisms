@@ -59,9 +59,12 @@ read_schedule_from_file <- function() {
 create_constraints <- function() {
   tibble::tribble(
     ~topic, ~prerequisite,
-    "TDD", "assert"
+    "TDD", "assert",
+    "Big O", "runtime speed profiles"
   )
 }
+
+
 
 # Will stop with an error if not
 check_constraints <- function() {
@@ -91,4 +94,11 @@ check_constraints <- function() {
   }
 }
 
+message("Checking schedule:")
+read_schedule_from_file()
+
+message("Checking for these constraints:")
+create_constraints()
+
 check_constraints()
+

@@ -43,7 +43,7 @@ Thursday |15:15-15:40|Richel |[Continuous integration](continuous_integration/RE
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Friday   |09:00-10:00|Richel |[Implement the project as a package](package/README.md)
-Friday   |10:15-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [Big O](optimisation/big_o.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md)
+Friday   |10:15-11:00|Richel |[Optimisation misconceptions](optimisation/misconceptions.md), [runtime speed profiles](optimisation/runtime_speed_profiles.md), [Big O](optimisation/big_o.md)
 Friday   |11:15-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
 Friday   |15:15-15:40|Richel |[Wrap-up](misc/wrap_up.md)
