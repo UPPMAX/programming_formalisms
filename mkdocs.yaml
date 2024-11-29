@@ -65,16 +65,15 @@ nav:
     - Summary of week: summary_week.md
   - Misc:
     - Feedback: misc/feedback.md
+    - Definitions: misc/definitions.md
     - Extra material (Earlier Intro day materials): extra.md
     - Project workflows: misc/project_workflows.md
     - Learn UML with mermaid: misc/uml_with_mermaid.md
     - git workflow: misc/git_workflow.md
     - Reading material: reading/README.md
     - FAQ: misc/faq.md
-    - Exercise procedure: misc/exercise_procedure.md
     - Functions to practice TDD: misc/functions.md
     - Retrospective: misc/retrospective.md
-    - Richèl: misc/richel.md
     - Wrap-up: misc/wrap_up.md
 
 theme:
