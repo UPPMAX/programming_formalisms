@@ -2,95 +2,79 @@ question,answer,n
 I can connect to the course repo,8,1
 I can connect to the course repo,9,2
 I can connect to the course repo,10,6
-I can connect to the course repo,NA,1
 I can do a simple FMEA,1,1
 I can do a simple FMEA,4,2
 I can do a simple FMEA,6,1
 I can do a simple FMEA,7,2
 I can do a simple FMEA,8,2
 I can do a simple FMEA,9,1
-I can do a simple FMEA,NA,1
 I can find the needs/buissnes requirments,5,4
 I can find the needs/buissnes requirments,6,2
 I can find the needs/buissnes requirments,9,3
-I can find the needs/buissnes requirments,NA,1
 I can make an issue in the project,1,1
 I can make an issue in the project,5,3
 I can make an issue in the project,6,1
 I can make an issue in the project,7,1
 I can make an issue in the project,8,3
-I can make an issue in the project,NA,1
 I know basic Git,5,1
 I know basic Git,8,3
 I know basic Git,9,3
 I know basic Git,10,2
-I know basic Git,NA,1
 I know ehat a Requirment is,5,1
 I know ehat a Requirment is,6,1
 I know ehat a Requirment is,7,1
 I know ehat a Requirment is,8,2
 I know ehat a Requirment is,9,4
-I know ehat a Requirment is,NA,1
 I know how to write a formal requiremnts documentation,4,1
 I know how to write a formal requiremnts documentation,5,1
 I know how to write a formal requiremnts documentation,6,1
 I know how to write a formal requiremnts documentation,7,3
 I know how to write a formal requiremnts documentation,8,2
 I know how to write a formal requiremnts documentation,9,1
-I know how to write a formal requiremnts documentation,NA,1
 I know the difference between a requirment and an Feature,3,3
 I know the difference between a requirment and an Feature,5,3
 I know the difference between a requirment and an Feature,7,2
 I know the difference between a requirment and an Feature,8,1
-I know the difference between a requirment and an Feature,NA,1
 I know what a derived requirement,1,1
 I know what a derived requirement,4,1
 I know what a derived requirement,5,3
 I know what a derived requirement,7,1
 I know what a derived requirement,8,1
 I know what a derived requirement,9,2
-I know what a derived requirement,NA,1
 I kow how a remote repo works,5,1
 I kow how a remote repo works,7,1
 I kow how a remote repo works,8,3
 I kow how a remote repo works,9,3
 I kow how a remote repo works,10,1
-I kow how a remote repo works,NA,1
 I kow why we specify requirments,5,2
 I kow why we specify requirments,7,2
 I kow why we specify requirments,8,2
 I kow why we specify requirments,9,3
-I kow why we specify requirments,NA,1
 The purpouse of formalism in Computer Science,3,1
 The purpouse of formalism in Computer Science,6,2
 The purpouse of formalism in Computer Science,7,2
 The purpouse of formalism in Computer Science,8,3
 The purpouse of formalism in Computer Science,9,1
-The purpouse of formalism in Computer Science,NA,1
 What are the outcomes of a Program,3,1
 What are the outcomes of a Program,5,1
 What are the outcomes of a Program,7,1
 What are the outcomes of a Program,8,1
 What are the outcomes of a Program,9,4
 What are the outcomes of a Program,10,1
-What are the outcomes of a Program,NA,1
 What are the steps of development,5,1
 What are the steps of development,6,2
 What are the steps of development,7,3
 What are the steps of development,8,2
 What are the steps of development,9,1
-What are the steps of development,NA,1
 What is UML,3,1
 What is UML,5,1
 What is UML,7,2
 What is UML,8,3
 What is UML,9,1
 What is UML,10,1
-What is UML,NA,1
 What is the Software development life cycle,3,1
 What is the Software development life cycle,4,1
 What is the Software development life cycle,5,2
 What is the Software development life cycle,6,1
 What is the Software development life cycle,7,2
 What is the Software development life cycle,8,2
-What is the Software development life cycle,NA,1

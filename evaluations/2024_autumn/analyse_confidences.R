@@ -143,6 +143,9 @@ for (day in get_all_days()) {
   names(t_tidy) <- c("i", "question", "answer")
   t_tidy$answer <- as.numeric(t_tidy$answer)
   
+  t_tidy <- t_tidy[which(!is.na(t_tidy$answer)), ]
+  testthat::expect_equal(0, sum(is.na(t_tidy$answer)))
+  
   n_individuals <- length(unique(t_tidy$i))
   n_ratings <- length(t_tidy$answer[!is.na(t_tidy$answer)])
   mean_confidence <- mean(t_tidy$answer[!is.na(t_tidy$answer)])
