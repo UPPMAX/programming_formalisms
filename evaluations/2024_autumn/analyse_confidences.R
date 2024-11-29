@@ -179,4 +179,8 @@ for (day in get_all_days()) {
   tally <- dplyr::tally(dplyr::group_by(t_tidy, question, answer))
   tally_filename <- paste0(day, "_tally.csv")
   readr::write_csv(x = tally, file = tally_filename)
+
+  average_tally <- dplyr::summarise(dplyr::group_by(t_tidy, question), mean = mean(answer))
+  average_tally_filename <- paste0(day, "_averages.csv")
+  readr::write_csv(x = average_tally, file = average_tally_filename)
 }
