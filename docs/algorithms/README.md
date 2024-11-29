@@ -29,8 +29,8 @@ References;
 - [2] pick any vague definition
 
 - [Function design](../function_design/README.md)
-- [assert](assert.md)
-- [Recursive algorithms](recursive_algorithms.md)
+- [assert](../assert/README.md)
+- [Recursive algorithms](../recursive_algorithms/README.md)
 
 ## Discuss
 
