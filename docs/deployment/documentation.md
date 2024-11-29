@@ -8,10 +8,9 @@
 
     learners  
     
-    - can make a full README
-    - can make a suitable choice of License
-    - can make citation info
-    - know how to find instruction of going more sophisticated
+    - I know the most important sections for a full public README
+    - I can make citation info
+    - I know how to find instruction of going to more sophisticated documentation
 
 !!! info "Content"
 
@@ -29,22 +28,6 @@
         - GitHub pages/ReadTheDocs
         - MkDocs/sphinx
   
-!!! note "Instructor notes"
-
-    Prerequisites are:
-
-    - ...
-
-    Lesson Plan: **FIX**
-
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
-
-!!! info "TOC"
-
-
-
 
 ## Revisiting documentation
 
@@ -67,21 +50,21 @@
 
 ### Where are we?
 
-**DONE** 
+**DONE**
 
 - &#9745; in-code documentation
 - &#9745; Project documentation:
-     - requirements: what is the goal of the software, risks, platforms
-     - the analysis: pseudocode and UML
-     - risk analysis
- 
+    - requirements: what is the goal of the software, risks, platforms
+    - the analysis: pseudocode and UML
+    - risk analysis
+
 **Finalize today**
 
 - &#9744; README
     - &#9745; installation instruction
     - &#9744; Tutorial: get started
     - &#9744; citation
- 
+
 **Further documentation for future projects**
 
 - &#9744; **License**
@@ -90,24 +73,131 @@
 - &#9744; **Explanation**: understanding-oriented, explains a concept
 - &#9744; **Reference**: information-oriented, describes the machinery
 
+## The README
+
+### Example content
+
+- About
+- Installation (with dependencies and testing)
+- Get started
+- Use cases
+- Citation
+
+### About
+
+- About the software
+- What does it do?
+- One (Punch-)line describing what it does.
+    - Also in GitHub in upper right corner!
+- More information below below the first description
+
+### Install
+
+- We covered this in last session
+
+### Get started
+
+- This session can be "running some test data" to get an overview of what the program can perform.
+- It may describe how to get test data
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
+
+### Use cases
+
+- This may sometimes be merged with the previous section
+
+- **How-to guide**: goal-oriented, shows how to solve a specific problem
+- May be a sub-set of the most important commands, depending on how wide the program is.
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
+
+???- discussion "would it be needed for your project?"
+
+### Contributions
+
+- How to contribute?
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
+
+### Acknowledgements
+
+- Add references that inspired or added algorithms to your code
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements>
+
+### References/Citation
+
+- Think the same as for a scientific paper
+
+**Practical recommendations**:
+
+- Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
+- Open source license can't demand citation, but it is required by science ethics anyway.
+- Make it as easy as possible! Clearly say what you want cited.
+- Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
+- [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
+
+This is an example of a simple `CITATION.cff` file:
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Druskat
+    given-names: Stephan
+    orcid: https://orcid.org/0000-0003-4925-7248
+title: "My Research Software"
+version: 2.0.4
+doi: 10.5281/zenodo.1234
+date-released: 2021-08-11
+```
+
+Recommended format for software citation is to ensure the following information
+is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
+
+- Creator
+- Title
+- Publication venue
+- Date
+- Identifier
+- Version
+- Type
+
+- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
+- CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
+
+- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
+
+!!! example
+
+    - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
+    - Conda: <https://github.com/biobakery/MetaPhlAn>
+    - pip: <https://github.com/deeptools/HiCExplorer>
+    - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
+    - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
+
+!!! info "See also"
+
+    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
+    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
+
 ## Exercise
 
 !!! info "Intro"
 
-    - Revisit your README and update it with info after all our commits
+    - Revisit ``README-ext.md`` and update it with info after all our commits
         - About
-    - Citing
-    - License
+        - Citing
     - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
     - Do a ``git pull`` to have the same version of your project repo locally!
-
 
 ???+ question "Update your documentation in groups"
 
     - You can now work in GitHub directly
     - Do ``git push`` first from local command-line!
 
-    ???- question "Group 1: Work together and formulate an 'About' section
+    
+    - We already have a file called ``README.md``, that is used for information for the course participants.
+    - Let's continue to work with the ``README-EXT.md`` we used in last session.
+
+
+    ???- question "Group 1: Work together and formulate an 'About' section"
 
     ???- question "Group 2: Work together and formulate 'Getting started' section"
     
@@ -116,8 +206,15 @@
 
 ## Discussion
 
-???- Describe what you've done and why?
+???- question "Discussion: Describe what you've done and why?"
 
+## Licensing
+
+!!! info "See also"
+
+    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+    
+    
 ## Going further with documentation
 
 !!! info "See also"
@@ -129,10 +226,11 @@
 - Popular solutions (but many others exist):
     - [MediaWiki](https://www.mediawiki.org)
     - [Dokuwiki](https://www.dokuwiki.org)
-    - Also on GitHub!
-    - Typically needs to be hosted and maintained
-
-- Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
+    - These typically needs to be hosted and maintained
+- Also on GitHub!
+    - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+    - [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)
+    - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
 
 ### HTML static site generators
 
@@ -141,7 +239,7 @@ There are many tools that can turn RST or Markdown into beautiful HTML pages:
 - [Sphinx](http://sphinx-doc.org)
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
-    - [Earlier Intro day for this course]()
+    - [HICexplorer documentation](https://hicexplorer.readthedocs.io/en/latest/)
 - [Jekyll](https://jekyllrb.com)
     - Generates HTML from Markdown.
     - GitHub supports this without adding extra build steps.
@@ -171,11 +269,36 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
 - Somewhat more possibilities, like having several versions of documentation to switch between.
 
+### What contributes to reusability?
 
+What contributes to you being able to reuse stuff that others make, and others
+(or you) being able to reuse your stuff? When you find a repository with code
+you would like to reuse, you may look at the following things to determine its
+reusability:
 
+!!! note
 
-
-
+    - Date of last code change
+      > ... is the project abandoned?
+    - Release history
+      > ... how about stability and backwards-compatibility?
+    - Versioning
+      > ... will it be painful to upgrade?
+    - Number of open pull requests and issues
+      > ... are they followed-up?
+    - Installation instructions
+      > ... will it be difficult to get it running?
+    - Example
+      > ... will it be difficult to get started?
+    - License
+      > ... am I allowed to use it?
+    - Contribution guide
+      > ... how to contribute and decision process?
+    - Code of conduct
+      > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
+    - Trust and community
+      > ... somebody you trust recommended it?
+    
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control

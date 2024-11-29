@@ -194,7 +194,7 @@ you would like to reuse, you may look at the following things to determine its
 reusability:
 
 !!! note
-    
+
     This can be now reconnected to question 4 (above).
 
 - Date of last code change

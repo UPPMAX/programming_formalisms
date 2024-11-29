@@ -9,10 +9,7 @@ tags:
 
 !!!- info "Learning objectives"
 
-    - Understand misconceptions on optimisation
-    - Understand Amdahl's law
     - Practice to determine the big-O profile of a function
-    - Practice to get a run-time speed profile
 
 ???- question "For teachers"
 
@@ -44,85 +41,114 @@ tags:
       Exercise 2 after the break: crit, after exercise_2, 5s
     ```
 
-## Problem
+## Why?
 
-Q: When to optimize for speed?
+You've added a continuous integration script to measure which code
+is spent most time in. You've made the program 10x as fast:
+from 1 second, to 0.1 second.
 
-A:
+Likely, you've wasted your time.
+
+Instead, you want to optimize your code in a way that is useful.
+
+## Big O
 
 - Don't optimize without reason `[CppCore Per.1]`
 - Don't optimize prematurely `[CppCore Per.2]`
 - Don't optimize something
   that's not performance critical `[CppCore Per.3]`
 
-## Problem
-
-Q: How to improve the run-time speed of an algorithm?
-
-. . .
+## How to improve the run-time speed of an algorithm?
 
 > Make it work, make it right, make it fast.
 >
 > Kent Beck
 
-A (simplified):
+A simplified workflow is this:
 
-1. Measure (hard to do @bartz2020benchmarking)
+1. Measure (hard to do `[Bartz-Beielstein et al., 2020]`)
 2. Think
 3. Change code
 4. Measure again
 
-## Problem
+???- question "What to measure?"
 
-Q: How to improve the run-time speed of an algorithm?
+    There are two things one can measure:
 
-A (simplified):
+    - Where the code spends its time
+    - How speed scales to increasingly complex input
 
-1. Measure big-O
-2. Measure speed profile
-3. Think
-4. Change code
-5. Measure again
 
-## Measurement 1: big-O
+## Big-O
 
 How your (combination of) algorithms scales with more complex input.
 
 - Counting the words in a book: O(n)
 - Looking up a word in a dictionary: O(log2(n))
 
-:warning: Do measure big-O in release mode!
+!!! warning "Do measure big-O in release mode"
 
-## Your algorithm
+    Do measure big-O in release mode!
 
-![Many scatter plots](many_scatter_plots.png)
+    See the lesson on `assert` how to do so.
 
-## Example
+???- question "Why?"
+
+    Debug mode -by definition- has more tests:
+    in our code, in the code used from other packages,
+    in the code produced by our compiler (if any).
+    When all tests pass, our program does not need these anymore.
+
+    In debug mode, our speed measurements would take us
+    to the functions that test themselves most :-)
+
+## Example 1
+
+Your program runs three functions after each other: A, B and C.
+All use the same input.
+
+You've measured how each of these functions take per input:
 
 ![Big O plot for 100](big_o_100.png)
 
-:monocle_face: Work on B?
+You want your benchmark to be short:
+this full benchmark takes 1 second to run.
 
-## Example
+???- question "Which function would you improve?"
 
-![Big O plot for 500](big_o_500.png)
+    B takes most time, so B
 
-## Example
+## Example 2
+
+Out of curiosity, you've increased the complexities of
+the benchmarking inputs. Now the picture looks like this:
 
 ![Big O plot for 2000](big_o_2000.png)
 
-:sunglasses: No, work on C instead
+The full benchmark now takes 100 second to run.
 
-## Discussion
+???- question "Which function would you improve?"
+
+    C takes most time, so C
+
+## Conclusion
 
 Big-O helps to:
 
 - find algorithm to profile
 - make predictions
 
-Agree yes/no
+A benchmark done in debug mode is useless:
+you care about your code doing actual work.
 
-## Exercise 1
+A short benchmark time is useless:
+you care more about complex input than simple input.
+Using a continuous integration script to run a (max) two hour
+benchmark is a convenient solution.
+
+## Exercises
+
+### Exercise 1
 
 - Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
@@ -147,7 +173,7 @@ def isprime(num):
         return False
 ```
 
-## Exercise 2
+### Exercise 2
 
 - Measure big-O complexity of DNA alignment algorithm
   at <https://johnlekberg.com/blog/2020-10-25-seq-align.html>
@@ -161,3 +187,4 @@ def isprime(num):
 - `[CppCore Per.3]` C++ Core Guidelines: Per.3:
   Don't optimize something that's not performance critical
   [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+- `[Bartz-Beielstein et al., 2020]` Bartz-Beielstein, Thomas, et al. "Benchmarking in optimization: Best practice and open issues." arXiv preprint arXiv:2007.03488 (2020).
