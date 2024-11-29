@@ -48,7 +48,7 @@ nav:
     - Function design: function_design/README.md
     - Expressive data types: expressive_data_type/README.md
     - Modular programming: modularity/modular.md
-    - A 'has-a' relation: data_structures/has_a_relation.md
+    - A 'has-a' relation: has_a_relation/README.md
     - Class design: data_structures/class_design.md
     - Continuous integration: continuous_integration/README.md
     - Summary of day: thursday_summary.md
