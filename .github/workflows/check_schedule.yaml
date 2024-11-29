@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "testthat", "readr", "tibble"))
+          install.packages(c("remotes", "testthat", "readr", "stringr", "tibble"))
         shell: Rscript {0}
 
       - name: Run script
