@@ -108,7 +108,7 @@ for (day in get_all_days()) {
   )
 }
 
-file_to_confidences <- function(filename) {
+file_to_confidences <- function(filename, max_n_chars = 100) {
   t <- file_to_table(filename)
   testthat::expect_true(stringr::str_detect(names(t)[4], "[cC]onf"))
   t[, 4] <- NULL
@@ -118,11 +118,15 @@ file_to_confidences <- function(filename) {
   t[, 2] <- NULL
   testthat::expect_true(stringr::str_detect(names(t)[1], "[dD]ate"))
   t[, 1] <- NULL
+  names(t) <- stringr::str_sub(names(t), 1, max_n_chars)
   t
 }
 
   
 testthat::expect_no_error(file_to_confidences(filename = day_to_filename("wednesday")))
+
+# Will not fit otherwise
+testthat::expect_true(max(nchar(names(file_to_confidences(filename = day_to_filename("thursday"))))) < 101)
 
 for (day in get_all_days()) {
   filename <- day_to_filename(day)
