@@ -108,7 +108,7 @@ for (day in get_all_days()) {
   )
 }
 
-file_to_confidences <- function(filename, max_n_chars = 100) {
+file_to_confidences <- function(filename, max_n_chars = 80) {
   t <- file_to_table(filename)
   testthat::expect_true(stringr::str_detect(names(t)[4], "[cC]onf"))
   t[, 4] <- NULL
