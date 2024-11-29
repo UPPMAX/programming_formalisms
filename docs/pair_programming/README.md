@@ -161,7 +161,21 @@ Questions:
     Yet, for teaching, working is groups has a high effect size `[Hattie, 2012]`,
     where the optimal group size is two `[Schwartz & Gurung, 2012]`.
 
-### Exercise 2: practice pair programming
+### Exercise 2: criticise teachers pair programming
+
+This exercise is two teacher demonstrating
+pair programming as good as possible.
+
+- Watch them do it
+- Discuss as a group
+  - Were roles swapped often enough?
+  - Did they solve unexpected problems well?
+  - Did the driver always share his/her screen?
+  - Did each team member contribute?
+  - Did each team member contribute to the code?
+  - How can they improve?
+
+### Exercise 3: practice pair programming
 
 Before doing the exercises:
 
