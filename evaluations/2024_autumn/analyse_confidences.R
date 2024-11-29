@@ -170,7 +170,7 @@ for (day in get_all_days()) {
     )
 
   confidences_per_question_filename <- paste0(day, "_confidences_per_question.png")
-  ggplot2::ggsave(filename = confidences_per_question_filename, width = 6, height = 7)
+  ggplot2::ggsave(filename = confidences_per_question_filename, width = 7, height = 7)
 
   tally <- dplyr::tally(dplyr::group_by(t_tidy, question, answer))
   tally_filename <- paste0(day, "_tally.csv")
