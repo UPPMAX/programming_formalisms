@@ -22,8 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages("remotes")
-          remotes::install_cran("tidyverse")
+          install.packages(c("remotes", "testthat", "readr", "tibble"))
         shell: Rscript {0}
 
       - name: Run script
