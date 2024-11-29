@@ -26,5 +26,5 @@ jobs:
         shell: Rscript {0}
 
       - name: Run script
-        run: ./script/check_schedule.R
+        run: ./scripts/check_schedule.R
 
