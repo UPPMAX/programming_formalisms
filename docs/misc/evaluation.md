@@ -367,4 +367,7 @@ Now go make something great!
   and Empirical Analysis. Basic and Applied Social Psychology,
   42(4), 276–294. <https://doi.org/10.1080/01973533.2020.1756817>
 - `[Sitzmann & Johnson, 2014]` Traci Sitzmann and Stefanie Johnson.
-  "**The paradox of seduction by irrelevant details: How irrelevant information helps and hinders self-regulated learning**." Learning and Individual Differences (2014): 1-11. [Download page](https://doi.org/10.1016/j.lindif.2014.05.009)
+  "The paradox of seduction by irrelevant details: How irrelevant information
+  helps and hinders self-regulated learning."
+  Learning and Individual Differences (2014): 1-11.
+  [Download page](https://doi.org/10.1016/j.lindif.2014.05.009)

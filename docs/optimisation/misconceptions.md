@@ -160,7 +160,7 @@ You may prefer correct advice regarding this.
 
     ![https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg#file](amdahls_law.png)
 
-    The figure above shows the best possible speed increase. 
+    The figure above shows the best possible speed increase.
     However, there is overhead in parallalized code, as the
     processes need to communicate with each other.
 
