@@ -46,7 +46,7 @@ nav:
     - Intro: thursday_intro.md
     - Object Oriented development: design_develop/OO_development.md
     - Function design: function_design/README.md
-    - Expressive data types: data_structures/expressive_data_type.md
+    - Expressive data types: expressive_data_type/README.md
     - Modular programming: modularity/modular.md
     - A 'has-a' relation: data_structures/has_a_relation.md
     - Class design: data_structures/class_design.md
