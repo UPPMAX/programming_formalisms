@@ -39,14 +39,21 @@ get_example_header_friday <- function() {
 
 # Take the raw string from a CSV file and convert it tp clean header names
 header_to_names <- function(header) {
+  temp_filename <- tempfile()
+  readr::write_lines(x = header, file = temp_filename)
+  t <- readr::read_csv(file = temp_filename, show_col_types = FALSE)
+  header_strs <- names(t)
   
-  header_strs_as_table <- read.csv(textConnection(header), header = FALSE)
-  header_strs <- as.character(header_strs_as_table[1, ])
-  # testthat::expect_equal(stringr::str_count(header_strs, "\""), 0)
+  header_strs <- stringr::str_replace(header_strs, "\"latest\"", "'latest'")
+  
+  #header_strs_as_table <- read.csv(textConnection(header), header = FALSE)
+  #header_strs <- as.character(header_strs_as_table[1, ])
+  testthat::expect_equal(sum(stringr::str_count(header_strs, "\"")), 0)
   remove_strs <- c(
     "I am confidant that...: ", 
     "I feel confident I can: ", 
     "How comfortable am I with\\?: ",
+    "How confident am I\\?: ",
     "I feel confident that :: ",
     "Confidence level: ",
     "confidence level: ",
@@ -61,7 +68,14 @@ header_to_names <- function(header) {
 testthat::expect_equal(c("A", "B"), header_to_names(header = "A,B"))
 
 testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_monday()), "I feel")))
-testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_tuesday()), "How comfortable")))
+
+header_to_names(get_example_header_monday())
+
+testthat::expect_equal(0, sum(stringr::str_count(header_to_names(header = get_example_header_tuesday()), "How comfortable")))
+testthat::expect_equal(0, sum(stringr::str_count(header_to_names(header = get_example_header_tuesday()), "confident")))
+
+header_to_names(get_example_header_tuesday())
+
 testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_wednesday()), "confident")))
 testthat::expect_equal(0, sum(stringr::str_count(header_to_names(get_example_header_wednesday()), "confident")))
 header_to_names(get_example_header_wednesday())
