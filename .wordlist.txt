@@ -1540,4 +1540,17 @@ autoflake
 isort
 pydocstyle
 pyupgrade
+CLI
+faiytale
+focussed
+friday
+gitmasters
+IDEs
+Pingpong
+pycharm
+subteam
+VScode
+XP
+
+
 
