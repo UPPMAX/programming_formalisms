@@ -277,7 +277,7 @@ move to the next session.
   'Programming Formalisms, session TDD, exercise 1: `is_zero`'](https://youtu.be/RGJpzMXDi6Q)
   until you understand the thought process of TDD
 - If you want to know more about `assert`, you can peek at
-  [the session about 'assert'](../algorithms/assert.md)
+  [the session about 'assert'](../assert/README.md)
 - Develop the function `is_zero` (see specifications below)
   yourself, using TDD
   To prove you've done so in an exemplary way,
