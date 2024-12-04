@@ -26,7 +26,7 @@ jobs:
           rm -rf projects
           rm -rf feedback
           rm -rf retrospectives
-          rm -rf reflections
+          rm -rf docs/reflections
           rm -rf shared_documents
           rm docs/project_start/analysis_design.md
 
