@@ -168,12 +168,12 @@ pair programming as good as possible.
 
 - Watch them do it
 - Discuss as a group
-  - Were roles swapped often enough?
-  - Did they solve unexpected problems well?
-  - Did the driver always share his/her screen?
-  - Did each team member contribute?
-  - Did each team member contribute to the code?
-  - How can they improve?
+    - Were roles swapped often enough?
+    - Did they solve unexpected problems well?
+    - Did the driver always share his/her screen?
+    - Did each team member contribute?
+    - Did each team member contribute to the code?
+    - How can they improve?
 
 ### Exercise 3: practice pair programming
 
