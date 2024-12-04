@@ -120,17 +120,14 @@ A 'linter' is program that tests code for style.
 
 Some Python linters:
 
-- `ruff`
-- Sonar
-- `pytype`
-- Black
-- Codacy
-- Pylint
-- Flake8
-- `autopep8`
-- Pychecker
-- Pylama
-
+Name                                              |VSCode plugin?|Features
+--------------------------------------------------|--------------|--------
+[`ruff`](https://github.com/astral-sh/ruff)       |Yes           |Fastest, active development, can replace Flake8, Black, isort, pydocstyle, pyupgrade, autoflake, and more
+[`mypy`](https://www.mypy-lang.org/)              |Yes           |Only checks on data type hints
+Black                                             |No            |Many checks
+[Pylint](https://pylint.readthedocs.io/en/stable/)|Yes           |Slow, checks on data type
+[Flake8](https://flake8.pycqa.org/en/latest/)     |Yes           |Many checks
+`autopep8`                                        |No            |Named after PEP8
 
 Sometimes, you will disagree with a linter.
 All linters allow you to turn it off temporarily.
