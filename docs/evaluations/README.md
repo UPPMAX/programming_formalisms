@@ -4,6 +4,13 @@ These are our unedited evaluation results.
 We use multiple types of evaluations, such as Retrospects
 or anonymous forms.
 
+!!! note "No checks here"
+
+    We choose only to edit evaluations when we have to (i.e.
+    privacy regulation).
+
+    This means these evaluations will not be checked for correct spelling.
+
 Index|Course
 -----|------------------------------------
 6    |2025 autumn
