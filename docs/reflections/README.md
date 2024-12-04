@@ -2,6 +2,11 @@
 
 Reflections are the thoughts of teachers looking back.
 
+!!! note "No checks here"
+
+    These reflections copy evaluation results literally.
+    Spelling is hence not corrected on purpose.
+
 Index|Course
 -----|------------------------------------
 6    |2025 autumn
