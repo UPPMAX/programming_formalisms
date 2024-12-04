@@ -1536,4 +1536,8 @@ Beielstein
 subfunctions
 Stroebe
 Sitzmann
+autoflake
+isort
+pydocstyle
+pyupgrade
 
