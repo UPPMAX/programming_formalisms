@@ -84,7 +84,7 @@ We use it a lot in this course, because:
   is effective `[Hattie, 2012][Schwartz & Gurung, 2012, page 65]`
   (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it
-  [as they write in the retrospective](https://github.com/UPPMAX/programming_formalisms/blob/main/evaluations/2023_autumn/retrospective_results_course.md)
+  [as they write in the retrospective](../evaluations/2023_autumn/retrospective_results_course.md)
 
 ## Exercises
 
