@@ -960,7 +960,7 @@ Suggested agenda points:
 - **Where?**
 - Online or in uppsala
    (contact NGI, om på plats om hela gänget kommer)
-- Current learnings and experieces from last course.
+- Current insights and experieces from last course.
     - Reflections and learning from last course
 - **How?**
 - larger more fully scoped excerise do we want and in which areas does that need to expand and be worked at

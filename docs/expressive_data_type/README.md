@@ -166,7 +166,7 @@ class Position:
     ```
 
     > When asked for its value, return the `x` and `y` between braces
-    > seperated by a comma.
+    > separated by a comma.
 
 Using the implementation of `get_a` like this:
 
