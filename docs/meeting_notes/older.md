@@ -1,5 +1,14 @@
 # Programming formalisms for life scientists and bioinformaticians
 
+!!! note "No checks here"
+
+    This document is here for historical purposes.
+
+    It was never set up with a spellcheck in mind.
+
+    Spelling will not be fixed.
+
+
 Main page: <https://github.com/UPPMAX/programming_formalisms>
 Rendered page: <https://uppmax.github.io/programming_formalisms/>
 
