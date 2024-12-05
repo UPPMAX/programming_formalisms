@@ -365,7 +365,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
             - conda packager
             - pip installer
             - etc...
-        - [install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
+        - [install Miniconda](https://docs.anaconda.com/miniconda/install/)
 
 - In Linux and Bash, Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 
