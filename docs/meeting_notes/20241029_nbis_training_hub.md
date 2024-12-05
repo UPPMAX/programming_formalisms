@@ -6,7 +6,7 @@ Recommendations, first follow ([link](https://training.scilifelab.se/our_resourc
 
 - Train the Trainer
 - Organisational learning course
-- The Swedish context of Open Sciece
+- The Swedish context of Open Science
 
 Advice:
 
