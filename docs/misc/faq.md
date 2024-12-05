@@ -94,7 +94,7 @@ See [Projects](../project/README.md) for the goal of the shared project.
 Retrospectives are:
 
 - published online in unedited form at
-  [the 'Misc | evaluations' section](evaluations.md)
+  [the 'Misc | evaluations' section](../evaluations/README.md)
   of this GitHub repository
 - discussed by the teachers after the lessons
 - reflected upon, where the reflections can be found in
