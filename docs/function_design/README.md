@@ -155,7 +155,8 @@ A good function ...
         ```
 
 - Is small `[Martin, 2009]`
-  `[CppCore functions][tidyverse style guideline of functions]`
+  `[CppCore functions][tidyverse style guideline of functions][Uncle Bob, 2024]`
+- Is even smaller than that `[Uncle Bob, 2024]`
 - Has a good name `[Martin, 2009]`
   `[CppCore functions][tidyverse style guideline of functions]`
   `[PEP 20a][Reitz et al., 2016][Wilson et al, 2017]`:
@@ -525,6 +526,8 @@ which should include your reasoning.
   The Hitchhiker's guide to Python: best practices for development.
   "O'Reilly Media, Inc.", 2016.
   Chapter 'General concepts'
+- `[Uncle Bob, 2024]` YouTube video
+  ['How small should a function be?' by Robert C. Martin (Uncle Bob)](https://youtu.be/rXjf8eiGsSI?si=8LVdL6k1lLie7BqM)
 - `[Wilson et al, 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
