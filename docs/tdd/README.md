@@ -118,7 +118,8 @@ Advantages of TDD are:
 - TDD helps better modularisation `[Madeyski et al., 2010]`
 
 Developers do really do this `[Beck, 2022][Langr, 2013]`, even
-though TDD takes longer (but note `[study I cannot find]`):
+though TDD takes longer (but note `[Uncle Bob, 2024]` for an example that
+it is faster, but feels slower):
 
 Study                       | Extra time | Effect
 ----------------------------|------------|-------------------------------
@@ -598,3 +599,4 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
+- `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)
