@@ -118,8 +118,8 @@ Advantages of TDD are:
 - TDD helps better modularisation `[Madeyski et al., 2010]`
 
 Developers do really do this `[Beck, 2022][Langr, 2013]`, even
-though TDD takes longer (but note `[Uncle Bob, 2024]` for an example that
-it is faster, but feels slower):
+though TDD takes longer (but note `[Martin, 2017][Uncle Bob, 2024]`
+for the same example that it is faster, but feels slower):
 
 Study                       | Extra time | Effect
 ----------------------------|------------|-------------------------------
@@ -569,6 +569,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
+- `[Martin, 2017]` Martin, Robert C. "Clean architecture." 12 Sep. 2017,
 - `[Mayr, 2005]` Mayr, Herwig.
   Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen.
   Hanser Verlag, 2005.
