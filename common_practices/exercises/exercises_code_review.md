@@ -31,7 +31,8 @@ Now think about how you typically develop code, and how you might institute code
 > - Who would ideally be involved?
 > - Any particular practices you would use?
 
-> [The Code review exercise](https://carpentries-incubator.github.io/python-intermediate-development/41-code-review/index.html) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made to simplify contents.
+> The Code review exercise (from broken URL `https://carpentries-incubator.github.io/python-intermediate-development/41-code-review/index.html`)
+> by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made to simplify contents.
 
 ## Exercise 3: writing a Code Review
 
