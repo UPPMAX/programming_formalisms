@@ -2,6 +2,9 @@
 tags:
   - meeting
   - notes
+  - NBIS
+  - training
+  - hub
 ---
 
 # 2024-10-29 with NBIS Training Hub
