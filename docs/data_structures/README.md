@@ -12,7 +12,6 @@ tags:
 
     - Practice to use classes for expression
     - Practice to use classes for type safety
-    - Understand difference between composition and aggregation
     - Practice to use composition for a 'has-a' relationship
 
 ## Why?
