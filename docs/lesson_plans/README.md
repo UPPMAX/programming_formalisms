@@ -11,4 +11,3 @@ Index|Course
 2    |[2023 autumn](2023_autumn/README.md)
 1    |[2023 summer](2023_summer/README.md)
 
-
