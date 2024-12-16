@@ -1,3 +1,9 @@
+---
+tags:
+  - intro
+  - introduction
+---
+
 # Introduction of the week
 
 !!! note "Course mottos"
