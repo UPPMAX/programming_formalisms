@@ -528,6 +528,9 @@ which should include your reasoning.
   Chapter 'General concepts'
 - `[Uncle Bob, 2024]` YouTube video
   ['How small should a function be?' by Robert C. Martin (Uncle Bob)](https://youtu.be/rXjf8eiGsSI?si=8LVdL6k1lLie7BqM)
+- `[Wilson et al, 2014]`
+  Wilson, Greg, et al. "Best practices for scientific computing."
+  PLoS biology 12.1 (2014): e1001745.
 - `[Wilson et al, 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
