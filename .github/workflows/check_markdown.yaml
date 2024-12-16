@@ -28,7 +28,7 @@ jobs:
           rm -rf docs/evaluations
           rm -rf docs/lesson_plans
           rm -rf docs/meeting_notes
-          rm -rf shared_documents
+          rm -rf docs/shared_documents
           rm -rf docs/algorithms/algorithms_lecture
           rm -rf docs/*/spring2024
           rm -rf docs/*/not_used
