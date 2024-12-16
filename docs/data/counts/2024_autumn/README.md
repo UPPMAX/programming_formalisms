@@ -19,5 +19,5 @@ keeping learners in an online course.
 
 The amount of learners present throughout the course was around 8 (mostly
 9, but 7 on Friday). Hence, we should expect `n_registrations / 3`
-active particpants.
+active participants.
 

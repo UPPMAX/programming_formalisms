@@ -20,5 +20,5 @@ We will start at
   help you get ready for the course
 - `[course start data]` the course starts at 9:00 sharp
 
-We will use the same zoom metting and password through out the course
+We will use the same Zoom room and password through out the course
 
