@@ -1,3 +1,9 @@
+---
+tags:
+  - meeting
+  - notes
+---
+
 # Programming formalisms for life scientists and bioinformaticians
 
 !!! note "No checks here"

@@ -1,3 +1,9 @@
+---
+tags:
+  - meeting
+  - notes
+---
+
 # Meeting notes
 
 The meeting notes.
