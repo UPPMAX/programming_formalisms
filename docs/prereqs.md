@@ -7,9 +7,9 @@
     - A good Zoom setup: microphone, camera and a place where you can talk
     - We use **VS Code** in our teaching
         - [VS Code has built-in terminal](https://github.com/UPPMAX/programming_formalisms/issues/83)
+        - [VS Code has built-in `git` version control](https://github.com/UPPMAX/programming_formalisms/issues/82)
         - VS Code has other useful integrated systems
         - You can use another IDE if you are more comfortable with it
-    - A local installation of **`git`**
     - A **GitHub** account
     - A local **Python** installation
 
@@ -44,6 +44,8 @@ You have installed Visual Studio, if:
     - No, go to [Visual studio](prereqs.md#visual-studio)
 
 ### Git
+
+We will be using [VS Code's built-in `git` version control](https://github.com/UPPMAX/programming_formalisms/issues/82).
 
 You have installed `git`, if:
 
