@@ -6,9 +6,9 @@
 
     - A good Zoom setup: microphone, camera and a place where you can talk
     - We use **VS Code** in our teaching
-        - VS Code has a built-in terminals and other useful integrated systems
+        - [VS Code has built-in terminal](https://github.com/UPPMAX/programming_formalisms/issues/83)
+        - VS Code has other useful integrated systems
         - You can use another IDE if you are more comfortable with it
-    - A **terminal**. Thus can be the VS Code built-in terminal
     - A local installation of **`git`**
     - A **GitHub** account
     - A local **Python** installation
@@ -217,7 +217,7 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 
 === "Mac"
 
-    - We will use terminal to some extent.
+    - We use [the VSCode built-in terminal](https://github.com/UPPMAX/programming_formalisms/issues/83) to some extent
     - Choose one of your choice, the built-in or another!
     - Chances are big that you already have **git installed on your computer**.
     - You can check by running e.g. `git --version`.
