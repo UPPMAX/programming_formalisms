@@ -21,6 +21,6 @@ The meeting notes.
 - <20241108.md>
 - <20241115.md>
 - <20241129.md>
-- <20241216.md>
+- <20241217.md>
 
 `next.md` (if present) are the notes for a yet-to-be-scheduled meeting.
