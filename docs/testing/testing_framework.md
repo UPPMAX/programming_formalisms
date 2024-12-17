@@ -62,21 +62,17 @@ Testing *helps* ensure the correctness of code.
 
 ## Testing framework
 
-There are multiple testing frameworks:
+There are multiple testing frameworks, here is an incomplete overview:
 
-- **`unittest`**
-- `pytest`
-- `nose`
-- more
+Testing framework                                            |Features
+-------------------------------------------------------------|----
+[`unittest`](https://docs.python.org/3/library/unittest.html)|Part of Python standard library, heavily used, VSCode can find it, allows Hamcrest notation, needs scaffolding
+[`pytest`](https://docs.pytest.org/en/stable/)               |Uses `assert`, minimal scaffolding
+[`nose`](https://pypi.org/project/nose/)                     |Extends `unittest`
 
-In this project, we use
-[the official Python `unittest` package](https://docs.python.org/3/library/unittest.html),
-because:
+In this project, we use a testing framework, because:
 
-- It is [an official Python package](https://docs.python.org/3/library/unittest.html)
-- It is heavily used
-- Tools (among other, VS Code) can find it
-- Standard way to write tests
+- A formal way to write tests
 - Failed tests give better error messages
 
 Drawback of `unittest` (and many other testing frameworks):

@@ -29,7 +29,7 @@ nav:
     - Issues: project/issues.md
     - Kanban board: project/kanban_board.md
     - Team roles: project/team_roles.md
-    - assert: algorithms/assert.md
+    - assert: assert/README.md
     - Test-driven development: tdd/README.md
     - Using a formal testing framework: testing/testing_framework.md
     - Summary of day: tuesday_summary.md
@@ -46,9 +46,9 @@ nav:
     - Intro: thursday_intro.md
     - Object Oriented development: design_develop/OO_development.md
     - Function design: function_design/README.md
-    - Expressive data types: data_structures/expressive_data_type.md
+    - Expressive data types: expressive_data_type/README.md
     - Modular programming: modularity/modular.md
-    - A 'has-a' relation: data_structures/has_a_relation.md
+    - A 'has-a' relation: has_a_relation/README.md
     - Class design: data_structures/class_design.md
     - Continuous integration: continuous_integration/README.md
     - Summary of day: thursday_summary.md
@@ -65,6 +65,13 @@ nav:
     - Summary of week: summary_week.md
   - Misc:
     - Feedback: misc/feedback.md
+    - Evaluations: evaluations/README.md
+    - Reflections: reflections/README.md
+    - Data: data/README.md
+    - Emails: emails/README.md
+    - Shared documents: shared_documents/README.md
+    - Lesson plans: lesson_plans/README.md
+    - Meeting notes: meeting_notes/README.md
     - Definitions: misc/definitions.md
     - Extra material (Earlier Intro day materials): extra.md
     - Project workflows: misc/project_workflows.md

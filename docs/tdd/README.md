@@ -118,7 +118,8 @@ Advantages of TDD are:
 - TDD helps better modularisation `[Madeyski et al., 2010]`
 
 Developers do really do this `[Beck, 2022][Langr, 2013]`, even
-though TDD takes longer (but note `[study I cannot find]`):
+though TDD takes longer (but note `[Martin, 2017][Uncle Bob, 2024]`
+for the same example that it is faster, but feels slower):
 
 Study                       | Extra time | Effect
 ----------------------------|------------|-------------------------------
@@ -277,7 +278,7 @@ move to the next session.
   'Programming Formalisms, session TDD, exercise 1: `is_zero`'](https://youtu.be/RGJpzMXDi6Q)
   until you understand the thought process of TDD
 - If you want to know more about `assert`, you can peek at
-  [the session about 'assert'](../algorithms/assert.md)
+  [the session about 'assert'](../assert/README.md)
 - Develop the function `is_zero` (see specifications below)
   yourself, using TDD
   To prove you've done so in an exemplary way,
@@ -568,6 +569,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
+- `[Martin, 2017]` Martin, Robert C. "Clean architecture." 12 Sep. 2017,
 - `[Mayr, 2005]` Mayr, Herwig.
   Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen.
   Hanser Verlag, 2005.
@@ -598,3 +600,4 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
+- `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)

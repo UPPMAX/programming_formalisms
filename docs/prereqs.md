@@ -6,10 +6,10 @@
 
     - A good Zoom setup: microphone, camera and a place where you can talk
     - We use **VS Code** in our teaching
-        - VS Code has a built-in terminals and other useful integrated systems
+        - [VS Code has built-in terminal](https://github.com/UPPMAX/programming_formalisms/issues/83)
+        - [VS Code has built-in `git` version control](https://github.com/UPPMAX/programming_formalisms/issues/82)
+        - VS Code has other useful integrated systems
         - You can use another IDE if you are more comfortable with it
-    - A **terminal**. Thus can be the VS Code built-in terminal
-    - A local installation of **`git`**
     - A **GitHub** account
     - A local **Python** installation
 
@@ -44,6 +44,8 @@ You have installed Visual Studio, if:
     - No, go to [Visual studio](prereqs.md#visual-studio)
 
 ### Git
+
+We will be using [VS Code's built-in `git` version control](https://github.com/UPPMAX/programming_formalisms/issues/82).
 
 You have installed `git`, if:
 
@@ -217,7 +219,7 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 
 === "Mac"
 
-    - We will use terminal to some extent.
+    - We use [the VSCode built-in terminal](https://github.com/UPPMAX/programming_formalisms/issues/83) to some extent
     - Choose one of your choice, the built-in or another!
     - Chances are big that you already have **git installed on your computer**.
     - You can check by running e.g. `git --version`.
@@ -365,7 +367,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
             - conda packager
             - pip installer
             - etc...
-        - [install Miniconda](https://docs.conda.io/projects/miniconda/en/latest/)
+        - [install Miniconda](https://docs.anaconda.com/miniconda/install/)
 
 - In Linux and Bash, Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 

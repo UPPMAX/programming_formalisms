@@ -1,0 +1,19 @@
+"@context": https://schema.org/
+"@type": LearningResource
+"@id": https://github.com/UPPMAX/programming_formalisms/
+description: Programming Formalisms course
+keywords: FAIR, OPEN, Bioinformatics, Teaching, Informatics, Course, Best practices, formal practices
+name: Programming Formalisms course
+license: CC-BY-4.0
+author:
+- "@type": Person
+  name: Lars Urban Eklund
+  email: lars.eklund@it.uu.se
+  orcid: 0000-0002-0572-9410
+- "@type": Person
+  name: Björn Claremar
+  email: bjorn.claremar@uppmax.uu.se
+- "@type": Person
+  - name: Richèl Bilderbeek
+    email: richel.bilderbeek@icm.uu.se
+    orcid: 0000-0003-1107-7049

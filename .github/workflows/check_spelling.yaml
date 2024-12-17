@@ -21,12 +21,14 @@ jobs:
 
       - name: Remove folders that must not be spellchecked
         run: |
+          rm -rf docs/evaluations
+          rm docs/meeting_notes/older.md
           rm -rf development_design
           rm -rf projects
-          rm -rf feedback
-          rm -rf retrospectives
-          rm -rf reflections
-          rm -rf shared_documents
+          rm -rf docs/feedback
+          rm -rf docs/retrospectives
+          rm -rf docs/reflections
+          rm -rf docs/shared_documents
           rm docs/project_start/analysis_design.md
 
       - uses: igsekor/pyspelling-any@v0.0.2

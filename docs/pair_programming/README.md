@@ -84,7 +84,7 @@ We use it a lot in this course, because:
   is effective `[Hattie, 2012][Schwartz & Gurung, 2012, page 65]`
   (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it
-  [as they write in the retrospective](https://github.com/UPPMAX/programming_formalisms/blob/main/evaluations/2023_autumn/retrospective_results_course.md)
+  [as they write in the retrospective](../evaluations/2023_autumn/retrospective_results_course.md)
 
 ## Exercises
 
@@ -161,7 +161,21 @@ Questions:
     Yet, for teaching, working is groups has a high effect size `[Hattie, 2012]`,
     where the optimal group size is two `[Schwartz & Gurung, 2012]`.
 
-### Exercise 2: practice pair programming
+### Exercise 2: criticise teachers pair programming
+
+This exercise is two teacher demonstrating
+pair programming as good as possible.
+
+- Watch them do it
+- Discuss as a group
+    - Were roles swapped often enough?
+    - Did they solve unexpected problems well?
+    - Did the driver always share his/her screen?
+    - Did each team member contribute?
+    - Did each team member contribute to the code?
+    - How can they improve?
+
+### Exercise 3: practice pair programming
 
 Before doing the exercises:
 

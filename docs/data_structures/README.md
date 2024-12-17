@@ -12,7 +12,6 @@ tags:
 
     - Practice to use classes for expression
     - Practice to use classes for type safety
-    - Understand difference between composition and aggregation
     - Practice to use composition for a 'has-a' relationship
 
 ## Why?
@@ -27,8 +26,8 @@ You want to use data structures.
 
 Good data structures:
 
-- [Increase expressiveness](expressive_data_type.md)
-- [Bundles data that belongs together](has_a_relation.md)
+- [Increase expressiveness](../expressive_data_type/README.md)
+- [Bundles data that belongs together](../has_a_relation/README.md)
 - [Ensures correct state of the program](class_design.md)
 
 Good example data structures are [built-in data structures](built_in_data_structures.md).

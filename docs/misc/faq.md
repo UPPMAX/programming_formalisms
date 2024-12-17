@@ -85,20 +85,20 @@ See [Projects](../project/README.md) for the goal of the shared project.
 
 - meetings
 - lesson plans in the course material
-- general lesson plans, which can be found in
-  [the 'lesson_plans' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/lesson_plans)
+- general lesson plans, which can be found at
+  ['Misc } lesson_plans'](../lesson_plans/README.md)
   of this GitHub repository
 
 ### What happens to the retrospectives?
 
 Retrospectives are:
 
-- published online in unedited form in
-  [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations)
+- published online in unedited form at
+  [the 'Misc | evaluations' section](../evaluations/README.md)
   of this GitHub repository
 - discussed by the teachers after the lessons
 - reflected upon, where the reflections can be found in
-  [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
+  [at 'Misc | Reflections'](../reflections/README.md)
 
 ### Why do you publish your retrospectives?
 
@@ -108,12 +108,12 @@ Because we like to be transparent.
 
 Evaluations are:
 
-- published online in unedited form in
- [the 'evaluations' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/evaluations)
+- published online in unedited form at
+  ['Misc | Evaluations'](../evaluations/README.md)
   of this GitHub repository.
 - discussed by the teachers after the course
 - reflected upon, where the reflections can be found in
-  [the 'reflections' folder](https://github.com/UPPMAX/programming_formalisms/tree/main/reflections)
+  ['Misc | Reflections'](../reflections/README.md)
 
 ### Why do you publish your evaluations?
 
