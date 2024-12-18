@@ -1,0 +1,4902 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Programming formalisms for life scientists and bioinformaticians - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#programming-formalisms-for-life-scientists-and-bioinformaticians" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Programming formalisms for life scientists and bioinformaticians
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prereqs/" class="md-tabs__link">
+          
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../schedule/" class="md-tabs__link">
+        
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/" class="md-tabs__link">
+          
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../monday_intro/" class="md-tabs__link">
+          
+  
+  Monday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tuesday_intro/" class="md-tabs__link">
+          
+  
+  Tuesday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../wednesday_intro/" class="md-tabs__link">
+          
+  
+  Wednesday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../thursday_intro/" class="md-tabs__link">
+          
+  
+  Thursday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../friday_intro/" class="md-tabs__link">
+          
+  
+  Friday
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../misc/feedback/" class="md-tabs__link">
+          
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About the course
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About the course
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prereqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Project
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kanban board
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team roles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_class_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create class list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_struct.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create structs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/dream_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dream design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Monday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Monday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SDLC tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/startup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get started with a project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/analysis_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project start with analysis and design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../monday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tuesday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tuesday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tuesday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Development Lifecycle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kanban board
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team roles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    assert
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test-driven development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing_framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using a formal testing framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tuesday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wednesday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Wednesday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wednesday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/branches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git workflow, branches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/merge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git(-Hub) workflow, branches/merging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing with code review
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social_coding/social_coding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sharing and social coding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pair_programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pair programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing_framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using a formal testing framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wednesday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Thursday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Thursday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thursday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design_develop/OO_development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Oriented development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../function_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../expressive_data_type/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Expressive data types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modularity/modular/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modular programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../has_a_relation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A 'has-a' relation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_structures/class_design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../continuous_integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thursday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Friday
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Friday
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../friday_intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implement the project as a package
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/misconceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimisation misconceptions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/big_o/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Big-O
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Runtime speed profiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/deploy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wrap-up
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../friday_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of day
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../summary_week/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary of week
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evaluations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reflections
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emails/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emails
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_documents/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shared documents
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson_plans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lesson plans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meeting notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definitions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extra material (Earlier Intro day materials)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/project_workflows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learn UML with mermaid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/git_workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    git workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions to practice TDD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/retrospective/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Retrospective
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wrap-up
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/meeting_notes/older.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/meeting_notes/older.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="programming-formalisms-for-life-scientists-and-bioinformaticians">Programming formalisms for life scientists and bioinformaticians<a class="headerlink" href="#programming-formalisms-for-life-scientists-and-bioinformaticians" title="Anchor link to this section for reference">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">No checks here</p>
+<p>This document is here for historical purposes.</p>
+<p>It was never set up with a spellcheck in mind.</p>
+<p>Spelling will not be fixed.</p>
+</div>
+<p>Main page: <a href="https://github.com/UPPMAX/programming_formalisms">https://github.com/UPPMAX/programming_formalisms</a>
+Rendered page: <a href="https://uppmax.github.io/programming_formalisms/">https://uppmax.github.io/programming_formalisms/</a></p>
+<h2 id="zoom-meetings-will-be-called-when-needed-most-issues-shall-be-resolved-through-github-issues-if-meeting-is-requested-i-will-be-posted-in-the-slack-chanell-and-the-below-meeting-id-will-be-used">Zoom meetings will be called when needed most issues shall be resolved through github issues if meeting is requested i will be posted in the slack chanell and the below meeting id will be used<a class="headerlink" href="#zoom-meetings-will-be-called-when-needed-most-issues-shall-be-resolved-through-github-issues-if-meeting-is-requested-i-will-be-posted-in-the-slack-chanell-and-the-below-meeting-id-will-be-used" title="Anchor link to this section for reference">&para;</a></h2>
+<p><a href="https://uu-se.zoom.us/j/63272190301">https://uu-se.zoom.us/j/63272190301</a> (Passcode: 880630)</p>
+<h2 id="course-certificates">Course certificates<a class="headerlink" href="#course-certificates" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="course-certificates-fall-2023">Course certificates fall 2023<a class="headerlink" href="#course-certificates-fall-2023" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="certificates">Certificates<a class="headerlink" href="#certificates" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Text for course certificate
+use <a href="https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/">https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/</a>
+to create certificate
+change the dates in brackets</p>
+<hr />
+<p>&lt;<name>&gt;</p>
+<p>has participated in the NBIS workshop Programming Formalisms
+held in Online during [[April 22 – 26 2024]]
+The workshop consisted of 40 hours of lectures and computer exercises.
+This full 5-day workshop aims to g
+an understanding of the underlying principles of software development,
+design, and programming.</p>
+<p>This included the following topics:</p>
+<div class="highlight"><pre><span></span><code>Introduction to programming formalism
+Source control and GitHub
+Introduction to UML using plantUML
+Introduction to Algorithms
+Data types and data structures
+Introduction to Software Development Lifecycle
+common models
+planning
+source/version control
+documentation
+reproducibility and sharing
+collaboration
+testing
+Introduction to Modular programming and the modular programming paradigm
+Introduction to Social Coding
+Pair Programming
+Introduction to Object orientation and Object oriented design
+Introduction to Test Driven Design and Testing (TDD)
+including to GitHub Actions
+automated testing
+Introduction Software re-usability through component based and Modular programming
+Optimization, measuring and common pitfalls
+</code></pre></div>
+<p>Course Leader | Lars Eklund, PhD
+Applications Expert UPPMAX/NBIS
+NBIS | Uppsala University</p>
+<h2 id="course-spring-2024">Course spring 2024<a class="headerlink" href="#course-spring-2024" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="dates-and-info">Dates and info<a class="headerlink" href="#dates-and-info" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Onboarding takes place Thursday 18th April 11:00-(max)12:00<ul>
+<li>[Lars, Richel] Available 11:00-11:20</li>
+<li>[Lars] Write welcome letter to participants today must be done 14:30<ul>
+<li>Encourage strongly to have <a href="https://uppmax.github.io/programming_formalisms/prereqs/#a-good-zoom-setup">a good Zoom setup</a> :-)</li>
+<li>Monday April 22nd to and including Friday  April 26th</li>
+<li>Each day from 9:00-16:00</li>
+<li>R volunteers to (help) write the letter if needed!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-after-course">Meeting after course<a class="headerlink" href="#meeting-after-course" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>[Richel, discuss] How many things at the same time should our learners do?<ul>
+<li>B: ceil(\pi - e)</li>
+<li>L:</li>
+<li>R: 1</li>
+</ul>
+</li>
+<li>[Richel, discuss] What should the learners do in the break?<ul>
+<li>B: break or technical issues if OK with them</li>
+<li>L:</li>
+<li>R: do nothing, take a break</li>
+</ul>
+</li>
+<li>[Richel, discuss] How long should a monologue be? What should happen when this duration has been  crossed?<ul>
+<li>B: aim to 10 minutes<ul>
+<li>is a demo where they can choose to do a type-along a monologue?</li>
+<li>with demo it can be up to 20 I guess</li>
+</ul>
+</li>
+<li>L:</li>
+<li>R: 20 minutes max, a helper should remind the teacher by voice</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-april-17th-wednesday-1100-1200">Meeting April 17th Wednesday 11:00-12:00<a class="headerlink" href="#meeting-april-17th-wednesday-1100-1200" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Attendees:</p>
+<ul>
+<li>[x] Björn</li>
+<li>[x] Lars</li>
+<li>[x] Richel, only on HackMD due to eduroam connection problems</li>
+</ul>
+<p>Progress:</p>
+<ul>
+<li>Week 13: learning objectives on pages: ...<ul>
+<li>B: ?done!</li>
+<li>L: ?Monday done, need to do Tuesday and Friday</li>
+<li>R: draft, need revision</li>
+</ul>
+</li>
+<li>Week 14: start of draft of exercises in place: &lt;--<ul>
+<li>B: added most of them (needs some updates)</li>
+<li>L: started</li>
+<li>R: done</li>
+</ul>
+</li>
+<li>Week 15: draft of material in place: ...<ul>
+<li>B: most is there but need to be restructed and shortened</li>
+<li>L: started</li>
+<li>R: done</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Open Issue</th>
+<th>Assigned</th>
+<th>Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/30">https://github.com/UPPMAX/programming_formalisms/issues/30</a></td>
+<td>BLR</td>
+<td>B done (minor revisions?) Mon, Wed, Fri. R will revise ASAP</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/31">https://github.com/UPPMAX/programming_formalisms/issues/31</a></td>
+<td>BLR</td>
+<td>R done, need to discuss</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/33">https://github.com/UPPMAX/programming_formalisms/issues/33</a></td>
+<td>.</td>
+<td>B done (copy-paste error) yay!</td>
+</tr>
+</tbody>
+</table>
+<p>Discuss:</p>
+<ul>
+<li>[L] Helpers <strong>from Sysdev</strong> (sorry for the confusion! eduroam is bad, so tethering and HackMD-only for me now):<ul>
+<li>R enjoys Sysdev helpers during any hour of teaching, any amount of people.</li>
+</ul>
+</li>
+<li>Helpers that are us (usually 1 extra teacher avail)<ul>
+<li>BC: Mon, Tue morning, Wed, Fri morning</li>
+<li>R: can be there always, only need 1 helper from the teaching team</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>morning</th>
+<th>afternoon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mon</td>
+<td>R</td>
+<td>R B</td>
+</tr>
+<tr>
+<td>Tue</td>
+<td>R</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Wed</td>
+<td>(B),(R ), L</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Thu</td>
+<td>L</td>
+<td>B</td>
+</tr>
+<tr>
+<td>Fri</td>
+<td>R</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<p><em><code>()</code> means teaching parts oneself</em></p>
+<ul>
+<li>[R] Dream evaluation: use yes/no <a href="https://github.com/UPPMAX/programming_formalisms/issues/31">https://github.com/UPPMAX/programming_formalisms/issues/31</a></li>
+<li>[B] Can I get a co-teacher do demo pull request?<ul>
+<li>Richel volunteers! We can practice/coordinate beforehand or do so wih coffee at 8:00? You pick!</li>
+<li>Thanx!</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-april-10th-wednesday-1100-1200">Meeting April 10th Wednesday 11:00-12:00<a class="headerlink" href="#meeting-april-10th-wednesday-1100-1200" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Attendees:</p>
+<ul>
+<li>[X] Björn</li>
+<li>[x] Lars</li>
+<li>[x] Richel</li>
+</ul>
+<p>Progress:</p>
+<ul>
+<li>Week 13: learning objectives on pages: ...<ul>
+<li>B: ?done!</li>
+<li>L: ?Monday done, need to do Tuesday and Friday</li>
+<li>R: draft, need revision</li>
+</ul>
+</li>
+<li>Week 14: start of draft of exercises in place: &lt;--<ul>
+<li>B: added most of them (needs some updates)</li>
+<li>L:</li>
+<li>R: done</li>
+</ul>
+</li>
+<li>Week 15: draft of material in place: ...<ul>
+<li>B: most is there but need to be restructured and shortened</li>
+<li>L:</li>
+<li>R: done</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Open Issue</th>
+<th>Assigned</th>
+<th>Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/29">https://github.com/UPPMAX/programming_formalisms/issues/29</a></td>
+<td>R</td>
+<td>None</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/30">https://github.com/UPPMAX/programming_formalisms/issues/30</a></td>
+<td>BLR</td>
+<td>B done Mo</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/31">https://github.com/UPPMAX/programming_formalisms/issues/31</a></td>
+<td>BLR</td>
+<td>R done</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/33">https://github.com/UPPMAX/programming_formalisms/issues/33</a></td>
+<td>.</td>
+<td>Discuss next meeting</td>
+</tr>
+</tbody>
+</table>
+<p>Discuss:</p>
+<ul>
+<li>
+<p>[LR, FYI, 3 mins] L wants to have some people from other departments to help as a TA,
+  with the goal of getting to know each other.</p>
+<ul>
+<li>R will happily set them work, especially in the pair programming! R will contact L</li>
+</ul>
+</li>
+<li>
+<p>[R] The goal of the prereqs page is that our learners can verify that they have installed the minimum requirements for the course. Achieved? If not, what is next plan?</p>
+<ul>
+<li>BC makes a review again.</li>
+</ul>
+</li>
+<li>[R, FYI, 3 mins] R made a more detailed overview at <a href="https://uppmax.github.io/programming_formalisms/intro/">https://uppmax.github.io/programming_formalisms/intro/</a> , with project exercises at the bottom. Maybe you find it helpful too?</li>
+<li>[B] Demos and examples fro BC's theory part<ul>
+<li>Use parts of planet project!!</li>
+</ul>
+</li>
+<li>[R] L seems to be lagging behind. How can we help?<ul>
+<li>L will report his progress on the Slack, so others an jump in</li>
+</ul>
+</li>
+<li>[R] Remember to remind learners to have a proper place to talk,
+      with proper equipment</li>
+<li>[B] Use HackMD as a shared document? B+L+R: yes!</li>
+</ul>
+<h2 id="meeting-april-3rd-wednesday-1100-1200">Meeting April 3rd Wednesday 11:00-12:00<a class="headerlink" href="#meeting-april-3rd-wednesday-1100-1200" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Attendees:</p>
+<ul>
+<li>[HOLIDAY] No Björn</li>
+<li>[CANCELLED] No Lars</li>
+<li>Richel</li>
+</ul>
+<p>Progress:</p>
+<p>Closed two Issues</p>
+<table>
+<thead>
+<tr>
+<th>Open Issue</th>
+<th>Assigned</th>
+<th>Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/29">https://github.com/UPPMAX/programming_formalisms/issues/29</a></td>
+<td>R</td>
+<td>?</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/30">https://github.com/UPPMAX/programming_formalisms/issues/30</a></td>
+<td>BLR</td>
+<td>?</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/31">https://github.com/UPPMAX/programming_formalisms/issues/31</a></td>
+<td>BLR</td>
+<td>R done</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/33">https://github.com/UPPMAX/programming_formalisms/issues/33</a></td>
+<td>.</td>
+<td>Discuss next meeting</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Week 13: learning objectives on pages: R done for shared days</li>
+<li>Week 14: start of draft of exercises in place: R done for shared days</li>
+<li>Week 15: draft of material in place: R done for shared days</li>
+</ul>
+<h2 id="meeting-wednesday-27-march-1100-1200">Meeting Wednesday 27 March 11:00-12:00<a class="headerlink" href="#meeting-wednesday-27-march-1100-1200" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Attendees:</p>
+<ul>
+<li>Björn</li>
+<li>Lars</li>
+<li>Richel</li>
+</ul>
+<p>Progress [5 mins]:</p>
+<table>
+<thead>
+<tr>
+<th>Open Issue</th>
+<th>Assigned</th>
+<th>Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/16">https://github.com/UPPMAX/programming_formalisms/issues/16</a></td>
+<td>L</td>
+<td>WIP</td>
+</tr>
+</tbody>
+</table>
+<p>5 Issues were closed.</p>
+<ul>
+<li>Björn:<ul>
+<li>Made all required installations on Windows and Mac and rewrote prerequirements (took whole day last Friday)</li>
+<li>started with some goals and planning for which files to start from</li>
+</ul>
+</li>
+<li>Richel:<ul>
+<li>add all learning objectives to my pages</li>
+<li>convert some Quarto lecture slides to markdown</li>
+</ul>
+</li>
+</ul>
+<p>Discuss:</p>
+<ul>
+<li>[Björn -&gt; Richel] Can someone check the prereqs for Linux? Richel does that!</li>
+<li>[Björn for Lars] Please check <a href="https://uppmax.github.io/programming_formalisms/introductions/sdlc_tools/#software-citation">https://uppmax.github.io/programming_formalisms/introductions/sdlc_tools/#software-citation</a></li>
+<li>[Richel, 5 mins] I am happy to see learning objectives on our pages, as this helps one focus on how/what to teach! Learning objectives, however, should be learner-centered, active, observable and specific, e.g. 'learners are able to do a git push', instead of vague 'We will get some theory of X'. Could we try to make all teaching objectives learner-centered, active, observable and specific? I volunteer to do Pull Requests :-)<ul>
+<li>[VOTED] BLR: Yes</li>
+<li><a href="No">other votes</a> : No</li>
+</ul>
+</li>
+<li>[Richel, 5 mins] I am happy to see the prereqs page and the obvious love put in it. I am unsure of the page's purpose. Could we come up with a purpose of the page and vote? As Björn will the one teaching the first sessions, however, I agree he is boss on this. Also, I volunteer to do the work. If we discuss: The goal of the prereqs page is ...<ul>
+<li>[VOTED] BLR: that our learners can verify that they have installed the minimum requirements for the course</li>
+<li><a href="No">other votes</a>: [other suggestions]</li>
+</ul>
+</li>
+<li>[Richel, 5 mins] I think it is useful that we do anonymous evaluations. However, when analyzing the evaluations, most questions are useless to me. Which questions are useful to the others? Below is my dream evaluation:<ul>
+<li>Lars: we <strong>must</strong> follow the NBIS parts.</li>
+<li>[TODO] Next next meeting: we all put our dream evaluation here before next meeting</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>- What should we keep doing?
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>- What should we improve?
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>- Other comments?
+</code></pre></div>
+<ul>
+<li>[Richel, 5 mins] I enjoy how we all try to improve on the course. However, having too few time for exercises seems to be a running theme, although we seem to have the will to improve this. Here I suggest something to help us commit: making it an explicit retrospect and evaluation question. Dare we commit to this?<ul>
+<li>[VOTED] BLR: Yes</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p>Retrospect example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>## Which section(s) scheduled enough time for exercises? &lt;--- SUGGESTED
+</code></pre></div>
+<p>Evaluation example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>- Which section(s) scheduled enough time for exercises? &lt;--- SUGGESTED
+</code></pre></div>
+<p>Future schedule:</p>
+<ul>
+<li>Week 13: learning objectives on pages [will rework a bit]</li>
+<li>Week 14: start of draft of exercises in place [Björn away]</li>
+<li>Week 15: draft of material in place</li>
+<li>Week 16: improve</li>
+<li>Week 17: teaching</li>
+</ul>
+<h2 id="meeting-wednesday-20-march-1100-1200">Meeting Wednesday 20 March 11:00-12:00<a class="headerlink" href="#meeting-wednesday-20-march-1100-1200" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>
+<p>Attendees: everyone</p>
+</li>
+<li>
+<p>Progress:</p>
+<ul>
+<li>L is still working on getting a functional email</li>
+<li>15 learners have registered</li>
+<li>Application form stays in place for this iteration of the course</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Assigned</th>
+<th>Progress</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/16">https://github.com/UPPMAX/programming_formalisms/issues/16</a></td>
+<td>L</td>
+<td>Forgot, will do</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/21">https://github.com/UPPMAX/programming_formalisms/issues/21</a></td>
+<td>B</td>
+<td>Done</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/issues/23">https://github.com/UPPMAX/programming_formalisms/issues/23</a></td>
+<td>B</td>
+<td>Done</td>
+</tr>
+<tr>
+<td><a href="https://github.com/UPPMAX/programming_formalisms/pull/26">https://github.com/UPPMAX/programming_formalisms/pull/26</a></td>
+<td>R</td>
+<td>Approved, R will merge</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>[Richel, FYI] I put an overview of the course in graph at <a href="https://uppmax.github.io/programming_formalisms/intro/">https://uppmax.github.io/programming_formalisms/intro/</a> . I like it! <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>[Richel, FYI] Project repo is ready at <a href="https://github.com/programming-formalisms/programming_formalisms_project_summer_2024">https://github.com/programming-formalisms/programming_formalisms_project_summer_2024</a> <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>[Richel, vote] move all schedules from HackMD to website. To see how that looks like, I put a copy at <a href="https://uppmax.github.io/programming_formalisms/intro/">the course website</a><ul>
+<li>[VOTED!] pro: proper version control, no duplicates that can differ</li>
+<li>con: ?</li>
+<li>votes: pro: BLR, con: .</li>
+</ul>
+</li>
+<li>[Richel, vote] suggest to keep the general schedule general, e.g. Wednesday is 'git branches, code reviews and TD', with a detailed schedule at the course's day<ul>
+<li>[VOTED!] pro: right level of detail at each page</li>
+<li>con: can mismatch</li>
+<li>votes: pro: BLR, con: .</li>
+</ul>
+</li>
+<li>[Richel, discuss] I'd enjoy a long-term schedule for preparation:, e.g.<ul>
+<li>Week 13: learning objectives on pages, e.g &lt;<a href="https://uppmax.github.io/programming_formalisms/pair_programming/">Learning objectives</a>&gt;</li>
+<li>Week 14: draft of exercises in place [Björn away]</li>
+<li>Week 15: draft of material in place</li>
+<li>Week 16: improve</li>
+<li>Week 17: teaching</li>
+</ul>
+</li>
+</ul>
+<p>Next meeting: Wednesday 27 March 11:00-12:00 at <a href="https://uu-se.zoom.us/j/63272190301">https://uu-se.zoom.us/j/63272190301</a> (Passcode: 880630) <img alt="🙂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f642.svg" title=":slightly_smiling_face:" /></p>
+<h2 id="meeting-2024-03-06-1100">Meeting 2024-03-06 11.00<a class="headerlink" href="#meeting-2024-03-06-1100" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Attendees: everyone</li>
+<li>Estimated time before meeting: 33 mins</li>
+<li>Actual time: 38 mins</li>
+</ul>
+<p>Points:</p>
+<ul>
+<li>[Richel, FYI, 1 min] I enjoy <a href="https://uppmax.github.io/programming_formalisms/">the new course website</a>. Thanks Björn!</li>
+<li>[Richel, FYI, 1 min] The mermaid <code>git</code> graphs are great, e.g. <a href="https://uppmax.github.io/programming_formalisms/git/apply_merge/#exercise-2-practice-merge-conflicts-between-branches">https://uppmax.github.io/programming_formalisms/git/apply_merge/#exercise-2-practice-merge-conflicts-between-branches</a>!</li>
+<li>[Richel, FYI, 1 min] git exercises are ready, including teaching goals</li>
+<li>[Richel, vote, 5 mins] Agree on <a href="https://github.com/UPPMAX/programming_formalisms/issues/20">https://github.com/UPPMAX/programming_formalisms/issues/20</a> yes/no? Richel: Yes, Björn: yes. Lars: yes.<ul>
+<li>Björn: We should mention PlantUML in the tools session but point to the ReadExtra section. Lars: I will do that!</li>
+</ul>
+</li>
+<li>[Richel, discuss, 5 mins] Discuss <a href="https://github.com/UPPMAX/programming_formalisms/issues/21">https://github.com/UPPMAX/programming_formalisms/issues/21</a>.<ul>
+<li>Bjorn wiloblemsl do this</li>
+</ul>
+</li>
+<li>[Richel, discuss, 5 mins] Discuss <a href="https://github.com/UPPMAX/programming_formalisms/issues/22">https://github.com/UPPMAX/programming_formalisms/issues/22</a><ul>
+<li>Richel will do this</li>
+</ul>
+</li>
+<li>[Richel, discuss with Björn, 3 mins] I'd like to link to a git book, over writing own content. <a href="https://git-scm.com/book/en/v2">Pro Git</a> is an authority. What about using it? If not, which book?<ul>
+<li>Björn will check the book and picks a book, Richel will follow</li>
+<li>Lars: Book should be in the reading materials. Richel: it is already there <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+</ul>
+</li>
+<li>[Richel, discuss, 3 mins] Is there a moment learners can get help with setting up? If yes, when?<ul>
+<li>Onboarding takes place Thursday 18th April 11:00-(max)12:00!</li>
+<li>Lars and Björn and Richel show up</li>
+<li>possibly individual help later on if huge problems</li>
+</ul>
+</li>
+<li>[Richel, discuss, 3 mins] Some courses schedule an hour to train the TAs. Do we have TAs? If yes, should we schedule this? FYI, I wrote down the breakout room policy at where I describe my exercises' procedure<ul>
+<li>Lars: no TAs yet, we can ask NBIS if we discover we need some</li>
+</ul>
+</li>
+<li>[Richel, discuss, 3 mins] Discuss <a href="https://github.com/UPPMAX/programming_formalisms/issues/23">https://github.com/UPPMAX/programming_formalisms/issues/23</a><ul>
+<li>Björn does it</li>
+</ul>
+</li>
+<li>[Richel, discuss, 3 mins] Discuss moving schedule from this doc to course website, under 'About the course -&gt; Schedule'<ul>
+<li>Björn does it</li>
+</ul>
+</li>
+<li>[Lars, FYI] Lars prepares the NBIS course landing pages tomorrow/Thursday 7th March<ul>
+<li>Björn: link to NBIS Anmälan in InfoGlue? Lars: when ready, I will contact you</li>
+</ul>
+</li>
+<li>Björn: How many applications? Lars: a few already</li>
+<li>[Lars, FYI] We now have a formal NBIS email address for the course.
+  Lars will fix getting access to that email address</li>
+<li>[Lars, FYI] We need a Canvas page, I will make it link to the course pages</li>
+<li>Björn: need Richel and Lars coordinate? Nope, they work quite isolated :-)</li>
+<li>Lars: need Richel and Marcus coordinate? Richel will coordinate :-)<ul>
+<li>[ ] TODO: Richel updates Marcus :-)</li>
+</ul>
+</li>
+<li>Next meeting: Wednesday 20 March 11:00-12:00 (next week is teaching week)</li>
+<li>Lars allows everyone to fix his spelling errors</li>
+</ul>
+<h2 id="meeting-2024-03-04-1300">Meeting 2024-03-04 13.00<a class="headerlink" href="#meeting-2024-03-04-1300" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>
+<p>Attendees: Björn + Lars</p>
+</li>
+<li>
+<p>Status</p>
+<ul>
+<li>more structure now<ul>
+<li>days in menu<ul>
+<li>intro files to anounce the content/schedule of the day</li>
+</ul>
+</li>
+<li>some files and folders</li>
+</ul>
+</li>
+<li>Björn has migrated some of his material</li>
+</ul>
+</li>
+<li>
+<p>To discuss</p>
+<ul>
+<li>
+<p>Tree</p>
+<ul>
+<li>[x] intro [name=bjorn]</li>
+<li>[x] project_overview</li>
+<li>[x] project start</li>
+<li>[x] design_development</li>
+<li>[x] git [name=bjorn]</li>
+<li>[x] test_TDD [name=Richel]</li>
+<li>[x] data_structures [name=Richel]</li>
+<li>[x] modularity [name=Lars]</li>
+<li>[x] algorithms [name=Richel + Lars?]</li>
+<li>[x] optimisation [name=Richel]</li>
+<li>[x] deployment [name=bjorn]</li>
+<li>[x] extra_BC [name=bjorn]</li>
+<li>[x] reading [name=Lars]</li>
+</ul>
+</li>
+<li>
+<p>Code editor</p>
+<ul>
+<li>VS code but own choice</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-2024-02-28-1300">Meeting 2024-02-28 13.00<a class="headerlink" href="#meeting-2024-02-28-1300" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>
+<p>Björn + Richèl</p>
+</li>
+<li>
+<p>Richel is happy with Björns ideas and the initial mkdocs setup and agrees to the voted stuff!</p>
+</li>
+<li>We need to discuss Wednesday:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Teacher</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wednesday</td>
+<td>09:00-10:00</td>
+<td>Björn</td>
+<td>understand git branches, git merge</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10:15-11:00</td>
+<td>Richel</td>
+<td>apply git branches</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>11:15-12:00</td>
+<td>Björn</td>
+<td>understand git pull request with code review</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>13:00-14:00</td>
+<td>Richel</td>
+<td>apply code review</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>14:15-15:00</td>
+<td>Richel</td>
+<td>understand TDD (+data structures)</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>15:15-15:45</td>
+<td>Richel</td>
+<td>apply TDD (+data structures)</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>15:45-16:00</td>
+<td>Richel</td>
+<td>retrospect</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>[VOTED yes] no dependencies until Friday, which has deployment</li>
+<li>
+<p>which Python graphics framework: Richel and Lars decide, Björn does not vote on that</p>
+</li>
+<li>
+<p>Wednesday (Richèl and Björn together)</p>
+<ul>
+<li>git branches (merging, issues, pull requests)<ul>
+<li>activities<ul>
+<li>features?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>More TDD (??) + code reviews (issues/pull requests)</li>
+<li>These can be more or less merged?</li>
+<li>Q: How much time is required here?<ul>
+<li>Can we move something from the last days here?</li>
+<li>(Data structures)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-2024-02-28-1100">Meeting 2024-02-28 11.00<a class="headerlink" href="#meeting-2024-02-28-1100" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>
+<p>Discuss</p>
+<ul>
+<li>
+<p>structure of mkdocs <strong>web</strong> tree</p>
+<ol>
+<li>daily in upper menus <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /><img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /><ul>
+<li>pro: very clear for students during course</li>
+</ul>
+</li>
+<li>topics in upper menu<ul>
+<li>pro: clear after course</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>structure in mkdocs <strong>file</strong> tree</p>
+<ol>
+<li>daily directories<ul>
+<li>pro: simple</li>
+</ul>
+</li>
+<li>topic directories <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /><ul>
+<li>pros:<ul>
+<li>easier to rearrange later</li>
+<li>just move existing directories, almost...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>reading with topics in sub menus <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /><img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>extra reading with topics in sub menus <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /><img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+</ul>
+</li>
+<li>
+<p>Teaching</p>
+<ul>
+<li><strong>mkdocs website with lesson structure</strong> which is very easy to follow for students that are missing parts.</li>
+<li>slides and movies:<ul>
+<li><strong>if teacher wants to use them</strong>, but has to be linked to from the md lesson material</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Responsibilites</p>
+<ul>
+<li>all are responsible in populating the docs with their md material</li>
+<li>Björn starts to make some more structure of <a href="https://uppmax.github.io/programming_formalisms/">https://uppmax.github.io/programming_formalisms/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-2024-02-21">Meeting 2024-02-21<a class="headerlink" href="#meeting-2024-02-21" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>[Richel, 5 mins] Discuss the word 'theoretical':<ul>
+<li>the content of the course can be as practical or theoretical as Lars wants it to be. I have no problem with content being about theory.</li>
+<li>teaching time consists out of lecturing and exercises. Here I misused the terms 'theoretical' for 'lecturing' and 'practical' for 'exercises'. Here we know that whatever the content is, there must be exercises, see among others [Bell, 2020] for an evidence-based 5 step model (1. Prior knowledge, 2. Present, 3. Challenge, 4. Feedback, 5. Repeat), that overlaps with [Hattie, 2008].<ul>
+<li>We agree :-)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>[Richel, 5 mins] The course goals use 'understand' a lot. This is commonly mapped to the one-but-lowest level in Bloom's taxonomy (Wikipedia: <a href="https://en.wikipedia.org/wiki/Bloom%27s_taxonomy#Cognitive_domain_(knowledge-based)">https://en.wikipedia.org/wiki/Bloom%27s_taxonomy#Cognitive_domain_(knowledge-based)</a>, see 'Comprehension')(pretty picture: <a href="https://www.alfaandfriends.com/wp-content/uploads/2020/10/revised-blooms-taxonomy.jpg">https://www.alfaandfriends.com/wp-content/uploads/2020/10/revised-blooms-taxonomy.jpg</a>). Is this word really properly chosen? If not, could we use the right verbs? I feel we do aim at higher levels, but maybe I should change my teaching. In any case: how do we test for this level being achieved (spoiler: exercises)?<ul>
+<li>We tend to drift to the Apply level, yet also sometimes to Design. Some of us try to be more precise in writing down teaching goals.</li>
+<li>We (intend to) teach at the Apply level and if there is more time, we go up higher</li>
+</ul>
+</li>
+<li>[VOTED] Vote for using MkDocs</li>
+<li>
+<p>[Björn, 20m] Discuss schedule below</p>
+<ul>
+<li>Examples:<ul>
+<li>If two teacher on one day, we all agree to mix up the day itself</li>
+<li>Merging Wed somehow: yes, will work!</li>
+<li>shortening Thu if possible?: done!</li>
+<li>shortening Fri if possible: done!</li>
+<li>this is to fit with wrapping-up of project: done!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>ToDos:</p>
+<ul>
+<li>We are basically two teachers per day. Let's plan for 2-person meetings!</li>
+<li>Björn</li>
+<li>Lars</li>
+<li>Richèl</li>
+</ul>
+</li>
+</ul>
+<h3 id="schedule">Schedule<a class="headerlink" href="#schedule" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>
+<p>Remember: The initial aims for the course</p>
+<ul>
+<li>give scientists with some experience in programming and scripting:<ul>
+<li>an <strong>understanding</strong> of the <strong>underlying principles</strong> of software development, design, and programming.</li>
+</ul>
+</li>
+<li>strengthen the <strong>understanding</strong> of:<ul>
+<li>more <strong>advanced programming concept</strong>s</li>
+<li><strong>ability to produce</strong> more reusable scripts through modular programming</li>
+<li>enable a better <strong>understanding</strong> of how to evaluate a script or programs <strong>performance</strong>.</li>
+</ul>
+</li>
+<li>encourage the <strong>use of software development tools</strong>, like:<ul>
+<li>Unified Model Language</li>
+<li>Git and Github</li>
+</ul>
+</li>
+<li>convince the benefits of <strong>sharing and social coding</strong></li>
+</ul>
+</li>
+<li>
+<p>So... practicals are very important but also the theory of whats and whys</p>
+</li>
+</ul>
+<h3 id="proposed-schedule-bjorn-modified-from-richels-see-below">Proposed schedule Björn modified from Richèl's, see below<a class="headerlink" href="#proposed-schedule-bjorn-modified-from-richels-see-below" title="Anchor link to this section for reference">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Teacher</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>09:00-12:00</td>
+<td>Lars</td>
+<td>Parts from Björn's intro and Class design (in groups, on repo, using web interface only)</td>
+</tr>
+<tr>
+<td>Monday</td>
+<td>13:00-16:00</td>
+<td>Björn</td>
+<td>Start project git basic on documents (no coding?) (in groups, on repo)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>09:00-12:00</td>
+<td>Lars</td>
+<td>Create project's class diagram (using git)</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>13:00-16:00</td>
+<td>Richel</td>
+<td>pair programming + TDD</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>09:00-10:00</td>
+<td>Björn</td>
+<td>understand git branches, git merge</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>10:15-11:00</td>
+<td>Richel</td>
+<td>apply git branches</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>11:15-12:00</td>
+<td>Björn</td>
+<td>understand git pull request with code review</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>13:00-14:00</td>
+<td>Richel</td>
+<td>apply code review</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>14:15-15:00</td>
+<td>Richel</td>
+<td>understand TDD (+data structures)</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>15:15-15:45</td>
+<td>Richel</td>
+<td>apply TDD (+data structures)</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>15:45-16:00</td>
+<td>Richel</td>
+<td>retrospect</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>09:00-12:00</td>
+<td>Richel</td>
+<td>Data structures (+ algorithms)</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>13:00-16:00</td>
+<td>R (+M)</td>
+<td>Algorithms + Optimisation</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>09:00-12:00</td>
+<td>Lars</td>
+<td>Modular programming deep</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>13:00-16:00</td>
+<td>Björn</td>
+<td>Deployment</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Monday (Björn and Lars together)<ul>
+<li>overview<ul>
+<li>Lessons<ul>
+<li>Less "what is programming/scripting"</li>
+<li>SDLCs</li>
+<li>risk analys</li>
+<li>modules intro</li>
+<li>oo intro (students ready for Tue morning)</li>
+<li>(paradigms/formalised devel)</li>
+<li>tools (all presented) [name=Björn]</li>
+</ul>
+</li>
+<li>Activities<ul>
+<li>discussions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Start project with planning<ul>
+<li>Week Project with interspersed theory<ul>
+<li>initiate git/github [name=Björn]</li>
+<li>UML, (pseudocode), design</li>
+<li>object (early process)</li>
+<li>initial documentation (how) [name=Björn]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tuesday (Lars and Richèl together) (+ Björn?)</p>
+<ul>
+<li>Class diagrams (45 theory)</li>
+<li>reproducibility (part of everything) ([name=Lars] and all)<ul>
+<li>sharing etc</li>
+</ul>
+</li>
+<li>Pair programming</li>
+<li>TDD (also overview of testing?)<ul>
+<li>Activities<ul>
+<li>coding</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Wednesday (Richèl and Björn together)</p>
+<ul>
+<li>git branches (merging, issues, pull requests)<ul>
+<li>activities<ul>
+<li>features?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>More TDD (??) + code reviews (issues/pull requests)</li>
+<li>These can be more or less merged?</li>
+<li>Q: How much time is required here?<ul>
+<li>Can we move something from the last days here?</li>
+<li>(Data structures)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Thursday (Richèl alone?)<ul>
+<li>(Data structures)</li>
+<li>Algorithms</li>
+<li>Optimisation</li>
+<li>(Modular programming)</li>
+</ul>
+</li>
+<li>Friday (Lars and Richèl) (+ Björn?)<ul>
+<li>(Modular programming)<ul>
+<li>Packaging, virtualenv (do it!)</li>
+</ul>
+</li>
+<li>Deployment<ul>
+<li>Packaging, virtualenv (do it!)</li>
+</ul>
+</li>
+<li>(Wrap up with documentation and package)</li>
+</ul>
+</li>
+</ul>
+<h3 id="proposed-schedule-richel">Proposed schedule Richèl<a class="headerlink" href="#proposed-schedule-richel" title="Anchor link to this section for reference">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Time</th>
+<th>Teacher</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>09:00-12:00</td>
+<td>Lars</td>
+<td>Class design (in groups, on repo, using web interface only)</td>
+</tr>
+<tr>
+<td>Monday</td>
+<td>13:00-16:00</td>
+<td>Björn</td>
+<td>git basic (in groups, on repo)</td>
+</tr>
+<tr>
+<td>Tueday</td>
+<td>09:00-12:00</td>
+<td>Lars</td>
+<td>Create project's class diagram (using git)</td>
+</tr>
+<tr>
+<td>Tueday</td>
+<td>13:00-16:00</td>
+<td>Richel</td>
+<td>pair programming + TDD</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>09:00-12:00</td>
+<td>Björn</td>
+<td>git branches</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>13:00-16:00</td>
+<td>Richel</td>
+<td>TDD + Code reviews</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>09:00-12:00</td>
+<td>Richel</td>
+<td>Data structures</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>13:00-16:00</td>
+<td>Richel</td>
+<td>Algorithms</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>09:00-12:00</td>
+<td>Lars</td>
+<td>Modular programming</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>13:00-16:00</td>
+<td>R (M)</td>
+<td>Optimisation</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Abbreviations: algos = algorithms, DP = Design patterns, DS = data structures, optimi = optimization, social = social coding, TDD = Test Driven Development<ul>
+<li>[name=Lars]:DP should mention refinment optimization of design through DP</li>
+</ul>
+</li>
+</ul>
+<h3 id="meeting-7-feb-11-12">Meeting 7 Feb 11-12<a class="headerlink" href="#meeting-7-feb-11-12" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Teachers: Björn, Lars, Richel (Marcus)</li>
+<li>Date:<ul>
+<li>Monday April 22nd to and including Friday April 26th</li>
+<li>NOT Monday May 6th ..., because 3 days</li>
+<li>NOT Monday May 13nd because conference Lars</li>
+<li>NOT Monday May 20nd because conference Lars</li>
+<li>NOT Monday May 27th to and including Friday May 31st, due to some reason</li>
+<li>NOT Monday June 3rd - Friday ..., due to Nationaldagen</li>
+<li>NOT Monday June 10th ..., due to summer holiday</li>
+<li>[x] Björn and Lars will double-check if that works</li>
+<li>[ ] Lars will advertise this</li>
+<li>[ ] Richel will notify Marucus</li>
+</ul>
+</li>
+<li>Format:<ul>
+<li>Fully virtual</li>
+</ul>
+</li>
+<li>Do we need more helpers?<ul>
+<li>Yes/No</li>
+</ul>
+</li>
+<li>Social coding, as taught by Jon goes to Richel, if noone else wants it</li>
+<li>Next iteration dreams:<ul>
+<li>Richel: start with social coding</li>
+<li>Lars: Start introducing project from Day 1</li>
+</ul>
+</li>
+<li>TODO for next meeting:<ul>
+<li>Suggest a course schedule<ul>
+<li>ALL OF US</li>
+</ul>
+</li>
+<li>Lars: Vote between mermaid and PlantUML<ul>
+<li>Pro mermaid: works out of the box</li>
+<li>Con mermaid: does not do all types of diagrams: maybe Lars needs one!</li>
+<li>Pro PlantUML: has all types of diagrams</li>
+<li>Con PlantUML: learners need to install things</li>
+<li>VOTE NEXT WEEK</li>
+</ul>
+</li>
+<li>Björn: Think about how to do the git section.<ul>
+<li>Lars idea:<ul>
+<li>as long as they use the course repo with the folder structure, I am happy</li>
+<li>Björn is boss!</li>
+</ul>
+</li>
+<li>Richel:<ul>
+<li>as long as I've seen all learners have made a commit on the course repo, I am happy</li>
+<li>Björn is boss!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Lars: Think about how to do the design document<ul>
+<li>Richel:<ul>
+<li>as long as a class diagram ended up in the repo, I am happy</li>
+<li>Lars is boss!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sections">Sections<a class="headerlink" href="#sections" title="Anchor link to this section for reference">&para;</a></h3>
+<h2 id="course-certificates-fall-2023_1">Course certificates fall 2023<a class="headerlink" href="#course-certificates-fall-2023_1" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="certificates_1">Certificates<a class="headerlink" href="#certificates_1" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Text for course certificate
+use <a href="https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/">https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/</a>
+to create certificate</p>
+<hr />
+<p><strong>&lt;<name>&gt;</strong></p>
+<p>has participated in the NBIS workshop <strong>Programming Formalisms</strong>
+held in <strong>Online</strong> during <strong>27 November -- 1 December  2023</strong>.
+The workshop consisted of 40 hours of lectures and computer exercises.
+This full 5-day workshop aims to give scientists, bioinformaticians and other research engineers with some experience in programming and scripting an understanding of the underlying principles of software development, design, and programming. The workshop aims to strengthen the understanding of more advanced programming concepts, ability to produce more reusable scripts through modular programming and to enable a better understanding of how to evaluate a script or programs performance.
+This included the following topics:</p>
+<ul>
+<li>Introduction to programming formalism</li>
+<li>Source control and GitHub</li>
+<li>Introduction to UML using plantUML</li>
+<li>Introduction to Algorithms</li>
+<li>Data types and data structures</li>
+<li>Introduction to Software Development Lifecycle</li>
+<li>common models</li>
+<li>planning</li>
+<li>source/version control</li>
+<li>documentation</li>
+<li>reproducibility and sharing</li>
+<li>collaboration</li>
+<li>testing</li>
+<li>Introduction to Modular programming and the modular programming paradigm</li>
+<li>Introduction to Social Coding</li>
+<li>Pair Programming</li>
+<li>Introduction to Object orientation and Object oriented design</li>
+<li>Introduction to Test Driven Design and Testing (TDD)</li>
+<li>including to GitHub Actions</li>
+<li>automated testing</li>
+<li>Introduction  Software re-usability through component based and Modular programming</li>
+<li>Optimization, measuring and common pitfalls</li>
+</ul>
+<p>Course Leader | <strong>Lars Eklund, PhD</strong>
+Applications Expert UPPMAX/NBIS
+NBIS | Uppsala University</p>
+<hr />
+<h2 id="november-course-zoom">November course zoom<a class="headerlink" href="#november-course-zoom" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Lars Eklund is inviting you to a scheduled Zoom meeting.</p>
+<p>Topic: Programming Formalism Course Meeting
+Time: Nov 24, 2023 08:30 AM Stockholm
+        Every day, until Dec 1, 2023, 8 occurrence(s)
+        Nov 24, 2023 08:30 AM
+        Nov 25, 2023 08:30 AM
+        Nov 26, 2023 08:30 AM
+        Nov 27, 2023 08:30 AM
+        Nov 28, 2023 08:30 AM
+        Nov 29, 2023 08:30 AM
+        Nov 30, 2023 08:30 AM
+        Dec 1, 2023 08:30 AM
+Please download and import the following iCalendar (.ics) files to your calendar system.
+Daily: <a href="https://uu-se.zoom.us/meeting/u5Ipd-CvrjIiHd0mA7LZEoc8tehKfAe9R5oi/ics?icsToken=98tyKu-uqjsjHdScuB6OR_MABoigXe3ziFhHgqcNkT6yLxp2bQCuIudKGbReFYHi">https://uu-se.zoom.us/meeting/u5Ipd-CvrjIiHd0mA7LZEoc8tehKfAe9R5oi/ics?icsToken=98tyKu-uqjsjHdScuB6OR_MABoigXe3ziFhHgqcNkT6yLxp2bQCuIudKGbReFYHi</a></p>
+<p>Join Zoom Meeting
+<a href="https://uu-se.zoom.us/j/66409709879">https://uu-se.zoom.us/j/66409709879</a></p>
+<p>Meeting ID: 664 0970 9879
+Passcode: 583470
+One tap mobile
++46850539728,,66409709879# Sweden
++46844682488,,66409709879# Sweden</p>
+<p>Dial by your location
+        +46 850 539 728 Sweden
+        +46 8 4468 2488 Sweden
+        +45 89 88 37 88 Denmark
+        +45 47 37 25 75 Denmark
+        +49 69 7104 9922 Germany
+        +49 695 050 2596 Germany
+        +33 1 8699 5831 France
+        +33 1 7095 0350 France
+        +44 131 460 1196 United Kingdom
+Meeting ID: 664 0970 9879
+Find your local number: <a href="https://uu-se.zoom.us/u/cb33F9G1YH">https://uu-se.zoom.us/u/cb33F9G1YH</a></p>
+<p>Join by SIP
+66409709879@109.105.112.236
+66409709879@109.105.112.235</p>
+<p>Join by H.323
+109.105.112.236
+109.105.112.235
+Meeting ID: 664 0970 9879
+Passcode: 583470</p>
+<h2 id="meeting-notes">Meeting Notes<a class="headerlink" href="#meeting-notes" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="current-teachersta">Current Teachers/TA<a class="headerlink" href="#current-teachersta" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>[name=Lars Eklund], course coordinator, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Björn Claremar], teacher, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Marcus Lundberg], teacher, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Matias Piqueras], ?teacher/?TA, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Richèl Bilderbeek], teacher, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Jon Ander Novella], ?teacher, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;</a></li>
+</ul>
+<h3 id="assistants">Assistants<a class="headerlink" href="#assistants" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>[See schedule at https://github.com/UPPMAX/programming_formalisms#schedule]</li>
+</ul>
+<h3 id="next-course-date-nov-27-1-dec-2023">NEXT COURSE DATE Nov 27-1 Dec 2023<a class="headerlink" href="#next-course-date-nov-27-1-dec-2023" title="Anchor link to this section for reference">&para;</a></h3>
+<h3 id="online-onboarding-session-friday-nov-24-1000-1100">Online ONBOARDING Session Friday Nov 24 10:00-11:00<a class="headerlink" href="#online-onboarding-session-friday-nov-24-1000-1100" title="Anchor link to this section for reference">&para;</a></h3>
+<p>make deadline Oct 31 ~~Dec~~</p>
+<h2 id="course-project">Course project<a class="headerlink" href="#course-project" title="Anchor link to this section for reference">&para;</a></h2>
+<p>[students] R: simulating bacterial movement in 2D space
+[selves!]  M: N-body simulation, e.g. galaxy sim or predator-prey
+Marcus and Richel will write a project breef that Lars Formalises.
+The [selves!] project has a Requierments modeleling and a first usecasemodel done, Next step is to create modules and classes to solve the structure problem. as well as describing the testcases in more detail for each use case-requierment.</p>
+<h3 id="meeting-on-2023-11-15">Meeting on 2023-11-15<a class="headerlink" href="#meeting-on-2023-11-15" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Agenda:</p>
+<ul>
+<li>Round Robin -&gt; How is everyone coming along with their parts<ul>
+<li>RB:<ul>
+<li>example project has standard structure and CI checks work</li>
+<li>needs design document for example project</li>
+<li>see also <a href="https://github.com/UPPMAX/programming_formalisms/issues">PF Open Issues</a></li>
+</ul>
+</li>
+<li>BC:<ul>
+<li>spell checking of <a href="https://github.com/UPPMAX/programming_formalisms_intro">Intro Day</a></li>
+<li>word list</li>
+<li>restructure</li>
+<li>refine the planet project</li>
+</ul>
+</li>
+<li>LE:<ul>
+<li>Continued working on the DPD</li>
+<li>Continued writing on the Design material</li>
+<li>TODO: Transfer the new AI part to The lecture</li>
+<li>TODO: Expand the Design Pattern lecture and restructure the OO lecture</li>
+</ul>
+</li>
+<li>Status report<ul>
+<li>RB: Course website is ready</li>
+<li>RB: Example project needs completed design documents</li>
+</ul>
+</li>
+<li>Work in full team or split into Pairs for Pair programming and development<ul>
+<li>RB: Depends on what we are going to do :-)</li>
+</ul>
+</li>
+<li>Merge the branches<ul>
+<li>RB: Course website: done :-)</li>
+<li>RB: Example project: done :-) (it had no branches)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Wrap up and schedule next meeting.</li>
+</ul>
+<h3 id="meeting-on-2023-11-10">Meeting on 2023-11-10<a class="headerlink" href="#meeting-on-2023-11-10" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Suggested schedule:</p>
+<ul>
+<li>[R, 10 mins] Finalize course schedule: who teaches what when?</li>
+</ul>
+<p>Current schedule (see below), each session summarized in one word or abbreviation:</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Before lunch</th>
+<th>After lunch</th>
+<th>Reflection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Björn, git</td>
+<td>Björn, git</td>
+<td>Jon</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Lars, design</td>
+<td>Jon, social</td>
+<td>Richel</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Richel, TDD</td>
+<td>Richel, TDD</td>
+<td>Jon</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Richel, algos</td>
+<td>Richel, DS</td>
+<td>Jon</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Lars, DP</td>
+<td>R+M, optimi</td>
+<td>Jon</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Abbreviations: algos = algorithms, DP = Design patterns, DS = data structures, optimi = optimization, social = social coding, TDD = Test Driven Development</p>
+<ul>
+<li>[name=Lars]:DP should mention refinment optimization of design through DP</li>
+</ul>
+</li>
+<li>
+<p>[R, 1 mins, FYI] <a href="https://github.com/UPPMAX/programming_formalisms#projects">Overview of projects with beautiful team logos</a></p>
+</li>
+<li>[R, 1 mins, FYI] Videos with git workflows and branching models already at <a href="https://github.com/programming-formalisms/programming_formalisms_example_project">the PF example project</a><ul>
+<li>[name=Björn]: add link also from 1 day extra reading</li>
+</ul>
+</li>
+<li>[R, 3 mins, inventorize] Interested in pair programming sessions to feel the workflow yes/no?<ul>
+<li>L: try next week, also with J</li>
+</ul>
+</li>
+<li>[R, 5 mins, discuss and vote] In the example project we use the MVC architecture. Should it be (<img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> for each suggestion you like):<ol>
+<li>a console application, human only <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>a GUI application, human only <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>both console application (written by humans) and a GUI application (written by AI) <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>both console application (written by AI) and a GUI application (written by human)</li>
+<li>a console application, AI-assisted only</li>
+<li>a GUI application, AI only</li>
+</ol>
+</li>
+<li>We picked 3 :-)</li>
+<li>[R, 8 mins, discuss and vote] If GUI, which package?<ul>
+<li>Round 1: collect the recommended GUI packages<ul>
+<li>Kivy</li>
+<li>PyQT5</li>
+<li>PySide 2</li>
+<li>Tkinter <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+<li>wxPython</li>
+<li>PyGame <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /></li>
+</ul>
+</li>
+<li>Round 2: discuss the collect GUI packages</li>
+<li>Round 3: <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" />s per packages</li>
+<li>We picked PyGame!</li>
+</ul>
+</li>
+<li>
+<p>L will put in more class design documents</p>
+<ul>
+<li>Base class design and CI
+-L will put in citing clause and cite references for all teaches.</li>
+</ul>
+</li>
+<li>
+<p>Setup:</p>
+<ul>
+<li>link in setup.md</li>
+<li>to html documentation (RTD)</li>
+</ul>
+</li>
+</ul>
+<h3 id="meeting-on-2023-10-20">Meeting on 2023-10-20<a class="headerlink" href="#meeting-on-2023-10-20" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Björn includerar förberdelser i sin första dags dokumentation.</li>
+<li>Lars kontaktar Diana om training letter under mötet</li>
+<li>[x] Björn updaterar Hemsidan</li>
+<li>Marcus och Richel ska mötas och hjälpa Richel utveckla ~~Algorithmer och~~ Optimisation</li>
+<li>
+<h2 id="marcus-funderar-pa-om-omstructureringen-hinner-itid">Marcus funderar på om omstructureringen hinner itid<a class="headerlink" href="#marcus-funderar-pa-om-omstructureringen-hinner-itid" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+<h3 id="next-meeting-at-2023-09-27-900">Next meeting at 2023-09-27 9:00<a class="headerlink" href="#next-meeting-at-2023-09-27-900" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>L and J wants to add more AI in teaching :-)</li>
+<li>Course schedule<ul>
+<li>R: who does when? From last year's schedule at <a href="https://github.com/UPPMAX/programming_formalisms/tree/richel#schedule">https://github.com/UPPMAX/programming_formalisms/tree/richel#schedule</a> :<ul>
+<li>Day 1: Björn, Björn, Jon</li>
+<li>Day 2: Lars, Jon, Richel</li>
+<li>Day 3: Richel, Richel, Jon</li>
+<li>Day 4: Richel, Richel, Jon</li>
+<li>Day 5: Lars (design patterns), Richel (prep with Marcus), Anon (ask Nina, R will recruit!) feedback like Python</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Design documents: L plans to be done Friday 23:59</li>
+<li>Retrospectives</li>
+<li>Changes to schedule</li>
+<li>Lesson preparation:<ul>
+<li>Talk max 20 mins, then monitor students</li>
+</ul>
+</li>
+<li>
+<p>Advertise (NAISS newsletter next Thurs)</p>
+<ul>
+<li>update present</li>
+<li>material is language agnostic, we do use git and Python for exercises (done in pairs)</li>
+<li>prepare:<ul>
+<li>git+little python</li>
+<li>Refer to the UPPMAX git course, last years' website: <a href="https://www.hpc2n.umu.se/events/courses/2022/introduction-to-git">https://www.hpc2n.umu.se/events/courses/2022/introduction-to-git</a></li>
+<li>Refer to the NBIS Python course, <a href="https://github.com/nbisweden/workshop-python/tree/ht23">https://github.com/nbisweden/workshop-python/tree/ht23</a></li>
+<li>
+<p><strong>Advertising</strong>,
+     Advertising text for the SNIC training newsletter Course 3</p>
+<p>Programming Formalisms Course - Nov 27- Dec 1 (online)</p>
+<p>This full 5-day course aims to give scientists, bioinformaticians and other research engineers  with some experience in programming and scripting an understanding of the underlying principles of software development, design, and programming. The course aims to strengthen the understanding of more advanced programming concepts, ability to produce more reusable scripts through modular programming and to enable a better understanding of how to evaluate a script or programs performance.</p>
+<p>We will cover an introduction to Algorithms and Data structures, Programming Paradigms especially structured and object oriented programming, and to give an overview of other paradigms like functional programming. Modular development and (code) reusability, testing and optimisation.</p>
+<p>We will cover theory with bridging practical examples and applications to enhance the theoretical understanding of the principles. The material is language agnostic, we do use git and Python for exercises</p>
+<p>Recommended knowledge of Git and programming in Python equivallent of either NBIS/ELIXIR-SE Tools for Reproducible research or
+<a href="https://coderefinery.github.io/2023-09-19-workshop/">https://coderefinery.github.io/2023-09-19-workshop/</a> (material still availible)
+We assume familiarity with python atleast equivallent of the python part of the UPPMAX indroductiory course or Python programming with applications to bioinformatics <a href="https://uppsala.instructure.com/courses/85913">https://uppsala.instructure.com/courses/85913</a>.
+For more information and registration, please visit: <code>[broken URL to UPPMAX Programming Formalisms announcement]</code>.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Date for precourse setup</p>
+<ul>
+<li>Friday Nov 24 10:00-11:00 Programming Formalism Drop-in: B, L, R will be there (learners in Tools for Reproducible Research already use git and Python)</li>
+</ul>
+</li>
+</ul>
+<h4 id="todos">TODOs<a class="headerlink" href="#todos" title="Anchor link to this section for reference">&para;</a></h4>
+<ul>
+<li>[X] R: inform NBIS Training Steering group of our planned course</li>
+</ul>
+<h3 id="meeting-at-2023-09-25-1100">Meeting at 2023-09-25 11:00<a class="headerlink" href="#meeting-at-2023-09-25-1100" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Suggested agenda points:</p>
+<ul>
+<li>Next course date is at Monday Nov 27 to and including Friday 1 Dec (+5)</li>
+<li>[R, 0 mins, L needs to fill in :-) ] Who intends to teach/assist in the next course? Björn, Jon, Lars, Marcus, Richel</li>
+<li>[R, 2 mins, vote] R: I suggest to work on a non-biological project. Vote yes/no<ul>
+<li>Jon suggests to move the November 1st</li>
+<li>[R, 2 mins, vote] R: if we have a biological project, I suggest to schedule the time to explain the problem properly. Vote yes/no</li>
+</ul>
+</li>
+<li>Course is a NBIS hosted course with UPPMAX being main contributor for teaching<ul>
+<li>Should be on the certificate</li>
+</ul>
+</li>
+<li>R: suggest to make 'Planning' session shorter, more tuned to scientists, e.g. 'Write down what you want to do in English first' or writing a draft of a paper/preregistration. R feels that current ISO things are overkill for this course. No vote</li>
+<li>We work together on a example project, so the students have one good example how it should be done.</li>
+<li>[R, 17 mins total] R: suggest one/two project topics (1 for students, maybe 1 for teachers)<ul>
+<li>[10 mins, collect] All suggest the topics for a general project individually, in silence [R asked in Slack to do this before meeting]<ul>
+<li>[0 votes] R: beat all <a href="https://projecteuler.net/">https://projecteuler.net/</a> problems</li>
+<li>[4 votes][students] R: simulating bacterial movement in 2D space +:t-rex::t-rex: x</li>
+<li>[1 votes] R: a chess game :t-rex:</li>
+<li>[2 votes] R: a tic-tac-toe game :t-rex: +</li>
+<li>[0 votes] R: a chat-bot without memory of earlier questions</li>
+<li>[2 votes] R: a maze creator and solver +:t-rex:</li>
+<li>[1 votes] J: Morse Code Translator: Build a program that can translate text to Morse code and vice versa. This can be a fun and educational project. :t-rex:</li>
+<li>[3 votes] J: Simple Web Scraper: Develop a web scraper that extracts specific information from a website and displays it in the console. You can use libraries like requests and BeautifulSoup. +:t-rex:x</li>
+<li>[5 votes][selves!] M: N-body simulation, e.g. galaxy sim or predator-prey + :t-rex:+:t-rex:x</li>
+<li>[2 votes] M: crystal growing simulation: generate snowflakes :t-rex:x</li>
+<li>[1 votes] L: 2D brownian motion :t-rex:project /can be branded as bacterial movemnt x</li>
+<li>[3 votes] L: Trait selection simulation <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" />:t-rex:x</li>
+</ul>
+</li>
+<li>[5 mins, present] Each presents his/her suggested topics</li>
+<li>[2 mins, vote] Each does <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" /> per topic. Two topics with most <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":+1:" />s wins</li>
+<li>Result, obtained by vote:<ul>
+<li>For us: N-body simulation, e.g. galaxy sim or predator-prey</li>
+<li>For students: simulating bacterial movement in 2D space</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="todos_1">TODOs<a class="headerlink" href="#todos_1" title="Anchor link to this section for reference">&para;</a></h4>
+<ul>
+<li>[x] M and R will down more detailed exact description about their projects and send to L<ul>
+<li>[x] M: The program should visually display a number of particles on a field. Particles are initialised with a certain position and speed. Each particle interacts with all the other particles in a simple way, e.g. gravitational attraction, Lennard-Jones potential, direction alignment (implementing a flocking behaviour), or something else, the group chooses which. Decide on a boundary condition (e.g. bounce or wrap or eliminate the particle). The simulation is then stepped forward, drawing each step, until stopped. The goal is to create a stable simulation capable of the maximum number of particles at an acceptable framerate.</li>
+<li>[x] R: <a href="https://github.com/UPPMAX/programming_formalisms/blob/richel/projects/student_project.md">https://github.com/UPPMAX/programming_formalisms/blob/richel/projects/student_project.md</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="meeting-209">Meeting 20/9<a class="headerlink" href="#meeting-209" title="Anchor link to this section for reference">&para;</a></h3>
+<h4 id="agenda">Agenda<a class="headerlink" href="#agenda" title="Anchor link to this section for reference">&para;</a></h4>
+<p><strong>When?</strong></p>
+<ul>
+<li>suggested time Nov 20-24 (+2) Marcus can't</li>
+<li>new suggestion is  Nov 27-1 (+3)</li>
+<li>
+<p>or having two weeks???</p>
+</li>
+<li>
+<p>Pre-session week before</p>
+</li>
+</ul>
+<p>-</p>
+<ul>
+<li><strong>Where?</strong></li>
+<li>Online or in uppsala
+   (contact NGI, om på plats om hela gänget kommer)</li>
+<li>Current insights and experieces from last course.<ul>
+<li>Reflections and learning from last course</li>
+</ul>
+</li>
+<li><strong>How?</strong></li>
+<li>larger more fully scoped excerise do we want and in which areas does that need to expand and be worked at</li>
+</ul>
+<h3 id="meeting-139">Meeting 13/9<a class="headerlink" href="#meeting-139" title="Anchor link to this section for reference">&para;</a></h3>
+<h4 id="agenda_1">Agenda<a class="headerlink" href="#agenda_1" title="Anchor link to this section for reference">&para;</a></h4>
+<p><strong>When?</strong></p>
+<ul>
+<li>suggested time Nov 20-24 (+2) Marcus can't</li>
+</ul>
+<p>(contact NGI, om på plats)
+   Where?</p>
+<ul>
+<li>Online or in uppsala</li>
+</ul>
+<p>Current learnings and experieces from last course.</p>
+<p>How?</p>
+<ul>
+<li>
+<p>larger more fully scoped excerise do we want and in which areas does that need to expand and be worked at</p>
+</li>
+<li>
+<p>Under vilken verksamhet ska vi hålla kursen Uppmax eller NBIS</p>
+</li>
+<li>Hur många studenter kommer från NBIS sidan UPPMAX profiling på kursen/certifikat</li>
+<li>
+<h2 id="contact-jonas-soderberg-for-design-of-common-course-certificate-and-also-nina-and-the-other-nbis-training-contact-roy-about-the-rshiny-thingiy">Contact Jonas Söderberg for design of common course certificate. And also Nina and the other NBIS training, contact Roy about the RShiny thingiy.<a class="headerlink" href="#contact-jonas-soderberg-for-design-of-common-course-certificate-and-also-nina-and-the-other-nbis-training-contact-roy-about-the-rshiny-thingiy" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+<li>Reflections and learning from last course</li>
+</ul>
+<h2 id="certificates_2">Certificates<a class="headerlink" href="#certificates_2" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Text for course certificate
+use <a href="https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/">https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/</a>
+to create certificate</p>
+<hr />
+<p><strong>&lt;<name>&gt;</strong>
+has participated in the NBIS workshop <strong>Programming Formalisms</strong>
+held in <strong>Online</strong> during <strong>29 May -- 2 June 2023</strong>.
+The workshop consisted of 40 hours of lectures and computer exercises.
+This full 5-day workshop aims to give scientists, bioinformaticians and other research engineers with some experience in programming and scripting an understanding of the underlying principles of software development, design, and programming. The workshop aims to strengthen the understanding of more advanced programming concepts, ability to produce more reusable scripts through modular programming and to enable a better understanding of how to evaluate a script or programs performance.
+This included the following topics:</p>
+<ul>
+<li>Introduction to programming formalism</li>
+<li>Source control and GitHub</li>
+<li>Introduction to UML using plantUML</li>
+<li>Introduction to Algorithms</li>
+<li>Datatypes and data structures</li>
+<li>Introduction to Software Development Lifecycle</li>
+<li>common models</li>
+<li>planning</li>
+<li>source/version control</li>
+<li>documentation</li>
+<li>reproducibility and sharing</li>
+<li>collaboration</li>
+<li>testing</li>
+<li>Introduction to Modular programming and the modular programming paradigm</li>
+<li>Introduction to Social Coding and Pair Programming</li>
+<li>Introduction to Object orientation and Object oriented design</li>
+<li>Introduction to Test Driven Design and Testing (TDD)</li>
+<li>including to GitHub Actions</li>
+<li>automated testing</li>
+<li>Introduction to Design Patterns and Software reusability</li>
+</ul>
+<p>Course Leader | <strong>Lars Eklund, PhD</strong>
+Applications Expert UPPMAX/NBIS
+NBIS | Uppsala University</p>
+<hr />
+<h2 id="fall-course-in-december">Fall course in December<a class="headerlink" href="#fall-course-in-december" title="Anchor link to this section for reference">&para;</a></h2>
+<p>we will start the first course meeting in August wednesday last week in august with resrvation for UPPMAX intro course.</p>
+<h2 id="weekly-zoom-meeting-wednesdays-1100">Weekly Zoom meeting Wednesdays 11.00<a class="headerlink" href="#weekly-zoom-meeting-wednesdays-1100" title="Anchor link to this section for reference">&para;</a></h2>
+<p><a href="https://uu-se.zoom.us/j/63272190301">https://uu-se.zoom.us/j/63272190301</a> (Passcode: 880630)</p>
+<h2 id="course-zoom">course Zoom<a class="headerlink" href="#course-zoom" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Topic: Programming Formalisms
+Time: May 29, 2023 8:30 AM Stockholm</p>
+<p>Join Zoom Meeting
+<a href="https://uu-se.zoom.us/j/65052228138">https://uu-se.zoom.us/j/65052228138</a></p>
+<p>Meeting ID: 650 5222 8138
+Passcode: 595312</p>
+<h2 id="qa-hackmd">QA hackmd<a class="headerlink" href="#qa-hackmd" title="Anchor link to this section for reference">&para;</a></h2>
+<p><code>[Broken link to a HackMD document]</code></p>
+<h2 id="current-teachersta_1">Current Teachers/TA<a class="headerlink" href="#current-teachersta_1" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>[name=Lars Eklund], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name= Björn Claremar], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Marcus Lundberg],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a> (Can't give the current course)</li>
+<li>[name= Matias Piqueras],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Richèl Biderbeek],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>[name=Jon Ander Novella],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;</a></li>
+</ul>
+<h2 id="assistants_1">Assistants<a class="headerlink" href="#assistants_1" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>[See schedule at https://github.com/UPPMAX/programming_formalisms#schedule]</li>
+</ul>
+<h2 id="participation-list">Participation List<a class="headerlink" href="#participation-list" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="-diana-iusan-dianaiusanuppmaxuuse">- Diana Iusan, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#97;&#110;&#97;&#46;&#105;&#117;&#115;&#97;&#110;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#100;&#105;&#97;&#110;&#97;&#46;&#105;&#117;&#115;&#97;&#110;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a><a class="headerlink" href="#-diana-iusan-dianaiusanuppmaxuuse" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="course-two">Course two<a class="headerlink" href="#course-two" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Course time?<ul>
+<li>9.00-16.00?</li>
+</ul>
+</li>
+<li>Course Date?<ul>
+<li>29 May -- 2 June</li>
+</ul>
+</li>
+<li>Course Projects<ul>
+<li>first day: planetary app (broader audience than life scientists!)</li>
+<li>
+<h2 id="second-fifth-day-easyblast-yes-that-is-the-plan-the-reason-is-that-the-easyblast-or-reduced-blast-is-complicated-enough-to-make-a-good-project-but-easy-enough-to-finish-somthing-in-4-days">second-fifth day EasyBlast? Yes that is the plan, the reason is that the EasyBlast or Reduced blast is complicated enough to make a good project but easy enough to finish somthing in 4 days.<a class="headerlink" href="#second-fifth-day-easyblast-yes-that-is-the-plan-the-reason-is-that-the-easyblast-or-reduced-blast-is-complicated-enough-to-make-a-good-project-but-easy-enough-to-finish-somthing-in-4-days" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+</li>
+</ul>
+<p>At the end of day use (Scrum/Sprint)reflections as a feedback method for each day.
+First day may need to use other ways of gathering feedback.
+<a href="https://hackmd.io/hh9xENMvRrWWm-STsNCeJQ">https://hackmd.io/hh9xENMvRrWWm-STsNCeJQ</a>
+<a href="https://hackmd.io/YX32lWjSS5qu1r29zrbyig">https://hackmd.io/YX32lWjSS5qu1r29zrbyig</a>
+<a href="https://hackmd.io/--Qgp344TdOxC5uX-UWNQA">https://hackmd.io/--Qgp344TdOxC5uX-UWNQA</a>
+<a href="https://hackmd.io/EUQ5PY10SeWj_JR5kTUNTA">https://hackmd.io/EUQ5PY10SeWj_JR5kTUNTA</a>
+<a href="https://hackmd.io/naC4mOulSOSWv74YYf7xRg">https://hackmd.io/naC4mOulSOSWv74YYf7xRg</a></p>
+<p>The registration link works but the landing page needs to be changed.
+I have downloaded the old responses and cleared the respones for new participants</p>
+<h2 id="advertising-text-for-the-snic-training-newsletter-course-2">Advertising text for the SNIC training newsletter Course 2<a class="headerlink" href="#advertising-text-for-the-snic-training-newsletter-course-2" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Programming Formalisms Course - May 29- june 2 (online)</p>
+<p>This full 5-day course aims to give scientists, bioinformaticians and other research engineers  with some experience in programming and scripting an understanding of the underlying principles of software development, design, and programming. The course aims to strengthen the understanding of more advanced programming concepts, ability to produce more reusable scripts through modular programming and to enable a better understanding of how to evaluate a script or programs performance.</p>
+<p>We will cover an introduction to Algorithms and Data structures, Programming Paradigms especially structured and object oriented programming, and to give an overview of other paradigms like functional programming. Modular development and (code) reusability, testing and optimisation.</p>
+<p>We will cover theory with bridging practical examples and applications to enhance the theoretical understanding of the principles.</p>
+<p>For more information and registration, please visit: <code>[broken link to Programming Formalisms course at UPPMAX website]</code></p>
+<h2 id="meeting-10-may-26-2023-900">Meeting 10 (May 26 2023) 9.00<a class="headerlink" href="#meeting-10-may-26-2023-900" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="participaton-list">Participaton List<a class="headerlink" href="#participaton-list" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Observers<ul>
+<li>Richel will not observe all, but will try to do:<ul>
+<li>Monday 11:00-12:00 @ Björn</li>
+<li>Tuesday 11:00-12:00 @ Lars</li>
+<li>Wednesday 11:00-12:00 @ Jon</li>
+<li>Thursday 11:00-12:00 @ Lars
+Björn
+-</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-9-may-24-2023">Meeting 9 (May 24 2023)<a class="headerlink" href="#meeting-9-may-24-2023" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="participaton-list_1">Participaton List<a class="headerlink" href="#participaton-list_1" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Lars</li>
+<li>Björn</li>
+<li>Richèl</li>
+<li>Jon</li>
+</ul>
+<h3 id="agenda_2">Agenda<a class="headerlink" href="#agenda_2" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>status 5 min each</li>
+<li>There will be c. 1-2 hrs OO</li>
+<li>Question to each:<ul>
+<li>which Python testing framework, according to you, is best practice to use today?</li>
+<li>[x] unittest</li>
+<li>[ ] PyTest (CodeRefinery has material already)</li>
+<li>[ ] nose (Links)</li>
+<li>Bonus points if you have a reference to the literature</li>
+</ul>
+</li>
+</ul>
+<h3 id="intro-day">Intro day<a class="headerlink" href="#intro-day" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Restructure again</li>
+<li>Idea<ul>
+<li>Intro to programming and state problem<ul>
+<li>example matlab script without modularity</li>
+</ul>
+</li>
+<li>Intro to SDLC and the tools (theory)<ul>
+<li>models</li>
+<li>planning</li>
+<li>source/version control</li>
+<li>documentation</li>
+<li>reproducibility and sharing</li>
+<li>collaboration</li>
+<li>testing</li>
+</ul>
+</li>
+<li>Hands-on<ul>
+<li>planning<ul>
+<li>pseudocode of example matlab script</li>
+<li>uml of modular</li>
+</ul>
+</li>
+<li>startup of coding (first iteration)<ul>
+<li>coding (python) (copy-paste)</li>
+<li>in-code documentation</li>
+<li>isolated environment (python)</li>
+<li>working dir</li>
+<li>license</li>
+</ul>
+</li>
+<li>git and iterations<ul>
+<li>git init</li>
+<li>branching</li>
+<li>modular</li>
+<li>no testing</li>
+<li>"backup on github"</li>
+</ul>
+</li>
+<li>collaboration<ul>
+<li>centralized</li>
+</ul>
+</li>
+<li>deploy<ul>
+<li>short</li>
+</ul>
+</li>
+<li>documentation part 2<ul>
+<li>wiki</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Extra-reading<h2 id="-rather-important-stuff-but-due-to-time-limitations">- Rather important stuff but due to time limitations...<a class="headerlink" href="#-rather-important-stuff-but-due-to-time-limitations" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="meeting-8-may-10-2023">Meeting 8 (May 10 2023)<a class="headerlink" href="#meeting-8-may-10-2023" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="participaton-list_2">Participaton List<a class="headerlink" href="#participaton-list_2" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Lars</li>
+<li>Björn</li>
+<li>Richèl</li>
+<li>Jon</li>
+</ul>
+<h2 id="meeting-7-april-26-2023">Meeting 7 (April 26 2023)<a class="headerlink" href="#meeting-7-april-26-2023" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="participaton-list_3">Participaton List<a class="headerlink" href="#participaton-list_3" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Lars</li>
+<li>Björn</li>
+<li>Richèl</li>
+</ul>
+<h3 id="things-to-check">Things to check<a class="headerlink" href="#things-to-check" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>PlantUML vs mermaid<ul>
+<li>[name=Lars]</li>
+<li>[name=Björn]</li>
+</ul>
+</li>
+</ul>
+<h2 id="-change-formalism-to-formalisms-everywhere">- Change formalism to formalisms everywhere<a class="headerlink" href="#-change-formalism-to-formalisms-everywhere" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="meeting-6-april-19-2023">Meeting 6 (April 19 2023)<a class="headerlink" href="#meeting-6-april-19-2023" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="participaton-list_4">Participaton List<a class="headerlink" href="#participaton-list_4" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Lars</li>
+<li>Björn</li>
+<li>Richèl</li>
+<li>Marcus</li>
+<li>Diana</li>
+</ul>
+<h3 id="tentative-schedule">Tentative schedule<a class="headerlink" href="#tentative-schedule" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Monday: Intro<ul>
+<li>Björn?</li>
+</ul>
+</li>
+<li>Tuesday: SDLC + social coding<ul>
+<li>Lars</li>
+<li>Jon? (social and pair)</li>
+</ul>
+</li>
+<li>Wednesday: Modular programming + TDD (etc)<ul>
+<li>Lars</li>
+<li>Richél?</li>
+<li>Matias?</li>
+</ul>
+</li>
+<li>Thursday: Algorithms<ul>
+<li>Marcus</li>
+</ul>
+</li>
+<li>Friday: Optimization<ul>
+<li>Marcus</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="autumn-course-2022">Autumn course 2022<a class="headerlink" href="#autumn-course-2022" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="current-teachersta_2">Current Teachers/TA<a class="headerlink" href="#current-teachersta_2" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>[name=Lars Eklund], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(Software development and modular programming)</li>
+<li>[name= Björn Claremar], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(Introduction and Git)</li>
+<li>[name=Marcus Lundberg],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(Algorithms and Datastructures)</li>
+<li>[name= Matias Piqueras],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(TDD examples and github actions)</li>
+<li>[name=Richèl Biderbeek], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a> (TDD)</li>
+<li>[name=Jon Ander Novella],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;</a> (Social coding)</li>
+</ul>
+<h2 id="participation-list_1">Participation List<a class="headerlink" href="#participation-list_1" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>Björn Claremar, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>Jonas Söderberg, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#97;&#115;&#46;&#115;&#111;&#100;&#101;&#114;&#98;&#101;&#114;&#103;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;">&#106;&#111;&#110;&#97;&#115;&#46;&#115;&#111;&#100;&#101;&#114;&#98;&#101;&#114;&#103;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;</a>(as student)</li>
+<li>Diana Iusan, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#97;&#110;&#97;&#46;&#105;&#117;&#115;&#97;&#110;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#100;&#105;&#97;&#110;&#97;&#46;&#105;&#117;&#115;&#97;&#110;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>Pavlin Mitev, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#97;&#118;&#108;&#105;&#110;&#46;&#109;&#105;&#116;&#101;&#118;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#112;&#97;&#118;&#108;&#105;&#110;&#46;&#109;&#105;&#116;&#101;&#118;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a> (as student)</li>
+<li>Jon Ander Novella, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;</a></li>
+<li>Douglas Scofield</li>
+<li>Marcus Lundberg</li>
+<li>Martin</li>
+<li>Per</li>
+</ul>
+<h2 id="helper-schedule">Helper schedule<a class="headerlink" href="#helper-schedule" title="Anchor link to this section for reference">&para;</a></h2>
+<p>We need someone each day to administer and answer questions on HackMd. Please fill in your name for the days where you can help</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Topic</th>
+<th>Helpers morning</th>
+<th>Helpers afternoon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>Intro</td>
+<td>Lars</td>
+<td>Lars</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>Algorithms and data structures</td>
+<td>Matias, Lars</td>
+<td>Lars, Björn</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>Paradigms</td>
+<td>Lars, Björn</td>
+<td>Lars</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>Testing</td>
+<td>Lars, Matias, Björn</td>
+<td>Lars</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>Optimization</td>
+<td>Lars, Björn</td>
+<td>Lars</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this section for reference">&para;</a></h2>
+<p><a href="https://github.com/UPPMAX/programming_formalism/blob/main/setup.md">https://github.com/UPPMAX/programming_formalism/blob/main/setup.md</a></p>
+<h2 id="participaton-list-meeting-5-13-oct">Participaton List meeting 5 (13 Oct)<a class="headerlink" href="#participaton-list-meeting-5-13-oct" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Björn</li>
+<li>Lars</li>
+<li>
+<h2 id="matias">Matias<a class="headerlink" href="#matias" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+<h3 id="links">Links<a class="headerlink" href="#links" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>General<ul>
+<li><a href="https://github.com/UPPMAX/programming_formalism">https://github.com/UPPMAX/programming_formalism</a></li>
+</ul>
+</li>
+<li>Intro<ul>
+<li><a href="https://uppmax.github.io/programming_formalisms/">https://uppmax.github.io/programming_formalisms/</a></li>
+</ul>
+</li>
+<li>Test driven design<ul>
+<li><code>Broken link to a TDD repo of https://github.com/MatPiq</code></li>
+</ul>
+</li>
+<li>Link to the previous instance of the course<ul>
+<li><a href="https://uppsala.instructure.com/courses/69215">https://uppsala.instructure.com/courses/69215</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="bjorns-questions-for-intro-day">Björn's questions for Intro day<a class="headerlink" href="#bjorns-questions-for-intro-day" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>UML seems to require that I talk about Object orientation as well<ul>
+<li>How much?</li>
+<li>I will cover it in detail during the Paradigm as it is very important to understand the concepts of object orientation inorder to grasp modern modularisation in my oppinion.</li>
+<li>What do you cover in your lesson, Lars?
+  [x] class+sequence+ aktivitetsdiagram
+  [x] plantUML
+  [ ] Flow (aktivitetsdiagram men lite annorlunda pilar och hörn etc...)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>st=&gt;start: HAS AN
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>OWNER AND
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>IS OPEN!
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>e=&gt;end: RESOLVE
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>op=&gt;operation: ASSIGN
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>AGAIN
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>op3=&gt;operation: SET
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>&quot;NOBODY&quot;,
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>MAKE
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>MARCUS
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>AWARE
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>op4=&gt;operation: WAIT
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>op5=&gt;operation: STALL
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>AND
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>COMMENT
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>op6=&gt;operation: RESOLVE
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>BUT
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>COMMENT
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>op7=&gt;end: DONE
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>op8=&gt;operation: NEW TICKET OR JIRA
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>cond=&gt;condition: CAN
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>I
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>RESOLVE?
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>cond2=&gt;condition: AWAITING
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>USER
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>INPUT?
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>cond3=&gt;condition: AWAITING
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>EXTERNAL
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>INPUT?
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>cond4=&gt;condition: REQUEST
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>SOLVED?
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>cond5=&gt;condition: WORK
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>NEEDED
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>INTERNALLY?
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>st-&gt;cond-&gt;cond2
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>op3-&gt;op
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>op4-&gt;cond
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>op6-&gt;cond5
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>cond(yes)-&gt;cond2
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>cond(no)-&gt;op3
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>cond2(yes)-&gt;cond4
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>cond2(no)-&gt;cond3
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>cond3(yes)-&gt;op5
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>cond3(no)-&gt;e
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>cond4(yes)-&gt;op6
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a>cond4(no)-&gt;op4
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>cond5(yes)-&gt;op8
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>cond5(no)-&gt;op7
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">digraph</span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">&quot;Enterprise&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">Kirk</span><span class="p">,</span><span class="w"> </span><span class="nt">Picard</span><span class="p">,</span><span class="w"> </span><span class="nt">Archer</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">Enterprise</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Kirk</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nt">Enterprise</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Original</span><span class="p">,</span><span class="w"> </span><span class="nt">A</span><span class="p">,</span><span class="w"> </span><span class="nt">B</span><span class="p">,</span><span class="w"> </span><span class="nt">C</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>start
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>if( HAS AN
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>OWNER AND IS OPEN) then(yes)
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a> if (CAN I RESOLVE) then
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a> if (waiting user input) then
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a> elseif (condition D) then (yes)
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  :Text 4;
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>else ()
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  :Text else;
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>endif
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>stop
+</code></pre></div>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Actor --&gt;(test)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>User -&gt; Authenticator : request
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>Authenticator -&gt; User : respond &lt;token&gt;
+</code></pre></div>
+<h2 id="participation-list-meeting-4">Participation List meeting 4<a class="headerlink" href="#participation-list-meeting-4" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund</li>
+<li>Matias (TDD)</li>
+<li>Björn (intro)</li>
+<li>Per Johansson (TDD)</li>
+<li>Jon Ander Novella ()</li>
+</ul>
+<h3 id="schedule_1">Schedule<a class="headerlink" href="#schedule_1" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>
+<p>Day1 Intro</p>
+<ul>
+<li>SDLC<ul>
+<li>waterfall</li>
+<li>cont I and D:s</li>
+</ul>
+</li>
+<li>version control</li>
+<li>reproducibility<ul>
+<li>personal use to general use</li>
+<li>dependencies</li>
+<li>platforms</li>
+</ul>
+</li>
+<li>planning: UML</li>
+<li>
+<h2 id="documentation">documentation<a class="headerlink" href="#documentation" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+</li>
+<li>
+<p>Day2 Algorithms+data structures</p>
+<ul>
+<li>intro</li>
+<li>storing</li>
+<li>searching for things</li>
+<li>sorting</li>
+<li>BLAST</li>
+<li>exercises</li>
+</ul>
+</li>
+<li>Day3-4 Paradigms: design patterns, modular code<ul>
+<li>How?</li>
+<li>Programming paradigms<ul>
+<li>SDLC and the models for the development process</li>
+<li>overview</li>
+</ul>
+</li>
+<li>Modular programming<ul>
+<li>design patterns introduction to element of reusable software modules</li>
+<li>what is module</li>
+<li>common interface design</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Day4 TDD, testing<ul>
+<li>first look</li>
+<li>types of tests</li>
+<li>TDD in practice (afternoon 13:00-16:00)<ul>
+<li>Testing in Python with pytest</li>
+<li>Automating testing with Github Actions</li>
+<li>Putting it all together</li>
+<li>"Advanced" topics</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Day5 Optimization: halvdag...?</li>
+</ul>
+<h2 id="participaton-list-meeting-3">Participaton List meeting 3<a class="headerlink" href="#participaton-list-meeting-3" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund</li>
+<li>Matias</li>
+<li>Björn</li>
+<li>Marcus</li>
+</ul>
+<h3 id="status-intro-by-bjorn">Status Intro by Björn<a class="headerlink" href="#status-intro-by-bjorn" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>
+<p>Different types of Scientific software:</p>
+<ul>
+<li>Your analysis of data<ul>
+<li>statistics</li>
+<li>figures</li>
+<li>visualization</li>
+</ul>
+</li>
+<li>tools for process data<ul>
+<li>many bioinformatics tools</li>
+</ul>
+</li>
+<li>workflows</li>
+<li>modelling (3D or mimic of nature)</li>
+<li>Web-service e.g. "decision assistant"</li>
+<li>Distributed package vs. one-time usage</li>
+</ul>
+</li>
+<li>
+<p>I'm learning about SDLC</p>
+<ul>
+<li>I'll arrange for 15 min summary</li>
+<li>
+<p>Partly applicable on data (standards, versioning, technical)</p>
+</li>
+<li>
+<p>intro like history, take aways from:</p>
+<ul>
+<li><strong>OK korta ned...</strong></li>
+<li><strong>waterfall</strong></li>
+<li><strong>spiral model</strong></li>
+<li>RUP (Lars har erfarenhet)</li>
+<li>DSDM (dynamic system development method)</li>
+<li>FDD (feature-driven development)</li>
+<li>Crystal method</li>
+<li>Scrum</li>
+<li>Lean</li>
+<li>Kanban</li>
+<li>Extreme Programming<ul>
+<li>pair programming</li>
+<li>TDD</li>
+</ul>
+</li>
+<li>Spotify</li>
+<li>DevOps<ul>
+<li>continous Integration, development and deployment</li>
+</ul>
+</li>
+<li>CMMI (Capability maturity model integration)</li>
+<li>
+<h2 id="six-sigma">Six Sigma<a class="headerlink" href="#six-sigma" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+</li>
+<li>Input from CR course</li>
+<li>dokumentation<ul>
+<li>in-code (less needed if good functions names)</li>
+<li>readme</li>
+<li>kort om sphinx</li>
+</ul>
+</li>
+<li>git/github (exercise)</li>
+<li>recording dependencies/packages<ul>
+<li>NOT computational steps</li>
+<li>Reproducibility: We can control our code but how can we control dependencies?</li>
+<li>10-year challenge: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?</li>
+<li>Dependency hell</li>
+</ul>
+</li>
+<li>briefly about social coding<ul>
+<li>NOT licensing?</li>
+</ul>
+</li>
+<li>testing<ul>
+<li>intro (how much?)<ul>
+<li>defensive programming?</li>
+<li>unit tests?</li>
+<li>integration</li>
+<li>regression</li>
+<li>TDD</li>
+<li>continuous integration</li>
+</ul>
+</li>
+<li>github actions</li>
+</ul>
+</li>
+<li>modular code<ul>
+<li>intro</li>
+</ul>
+</li>
+<li>UML</li>
+<li>pseudokod</li>
+<li>Concepts are included in each subsession<ul>
+<li>but can be summarised in a summary session first day</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="participaton-list-meeting-2">Participaton List meeting 2<a class="headerlink" href="#participaton-list-meeting-2" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="teachers">Teachers<a class="headerlink" href="#teachers" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund</li>
+<li>Marcus Lundberg</li>
+<li>Björn</li>
+<li>Diana</li>
+</ul>
+<h2 id="advertising-text-for-the-snic-training-newsletter">Advertising text for the SNIC training newsletter<a class="headerlink" href="#advertising-text-for-the-snic-training-newsletter" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Programming Formalism Course - October 24-28 (online)</p>
+<p>This full 5-day course aims to give life scientists, bioinformaticians, and other scientists with some experience in programming and scripting an understanding of the underlying principles of software development, design, and programming. The course aims to strengthen the understanding of more advanced programming concepts, ability to produce more reusable scripts through modular programming and to enable a better understanding of how to evaluate a script or programs performance.</p>
+<p>We will cover an introduction to Algorithms and Data structures, Programming Paradigms especially structured and object oriented programming, and to give an overview of other paradigms like functional programming. Modular development and (code) reusability, testing and optimisation.</p>
+<p>We will cover theory with bridging practical examples and applications to enhance the theoretical understanding of the principles.</p>
+<p>For more information and registration, please visit: <code>[broken link to Programming Formalisms course at UPPMAX website]</code></p>
+<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Anchor link to this section for reference">&para;</a></h2>
+<p>/<em>any one interested in helping out. Please add name and email</em>/</p>
+<ul>
+<li>Tomas Reed (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#111;&#109;&#97;&#115;&#46;&#114;&#101;&#101;&#100;&#64;&#108;&#105;&#117;&#46;&#115;&#101;">&#116;&#111;&#109;&#97;&#115;&#46;&#114;&#101;&#101;&#100;&#64;&#108;&#105;&#117;&#46;&#115;&#101;</a>)</li>
+<li>Jon Ander Novella (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;</a>)</li>
+</ul>
+<h2 id="format-and-length">Format and length<a class="headerlink" href="#format-and-length" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Full days, online 9-16</li>
+<li>Lectures/seminars and "homework" exercises</li>
+<li>Morning recap+semin</li>
+<li>Afternoon exercise</li>
+<li>pair teaching</li>
+<li>single for more theoretical parts</li>
+<li>Toy project that is built-upon thought the course, possibly as examination too</li>
+<li>Breakout rooms</li>
+<li>assignments and quizzes</li>
+<li>Menti for interaction</li>
+</ul>
+<h2 id="when-month-at-least">When? (month at least!)<a class="headerlink" href="#when-month-at-least" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>late October, week 43 oct 24-28</li>
+</ul>
+<h2 id="goal">Goal<a class="headerlink" href="#goal" title="Anchor link to this section for reference">&para;</a></h2>
+<p>"Turning scripters into computer scientists"
+Add theory to bolster already present practical skills</p>
+<h2 id="expectations">Expectations<a class="headerlink" href="#expectations" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Code efficiency, speed</li>
+<li>Code accuracy, correctness of results</li>
+<li>Availability and sharability</li>
+<li>understanding of development concepts</li>
+</ul>
+<h2 id="prerequisites_1">Prerequisites<a class="headerlink" href="#prerequisites_1" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Decent scripting skills</li>
+<li>What is a skilled scripter.. coder</li>
+</ul>
+<h2 id="material">Material<a class="headerlink" href="#material" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li><a href="https://uppsala.instructure.com/courses/69215">https://uppsala.instructure.com/courses/69215</a></li>
+</ul>
+<h2 id="topics">Topics<a class="headerlink" href="#topics" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>other languages and ways of understanding which is usefull</li>
+<li>Documentation<ul>
+<li>part of all modules?</li>
+</ul>
+</li>
+<li>"Project" in pseudocode over all week<ul>
+<li>updated with new parts every day under source control</li>
+</ul>
+</li>
+<li>Formalism of breaking down the problem</li>
+<li>Use Practical problems as introducing the complexities</li>
+</ul>
+<h3 id="which-modules">Which modules<a class="headerlink" href="#which-modules" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Setup meeting before course start<ul>
+<li>reminders of deadlines</li>
+</ul>
+</li>
+<li>Introduction (including source control) [name=Björn] 1d<ul>
+<li>focus on the <strong>concepts</strong><ul>
+<li>parts already in other courses, so just recap of this</li>
+<li>like: <a href="https://nbis-reproducible-research.readthedocs.io/en/course_1911/">https://nbis-reproducible-research.readthedocs.io/en/course_1911/</a></li>
+</ul>
+</li>
+<li>SDLC intro software development lifecycle 15 min</li>
+<li>waterfall, spiral</li>
+<li>source control<ul>
+<li>git as example</li>
+<li>collaborative sharing (github)</li>
+<li>(peer programming:  non-real-time co-operation)</li>
+</ul>
+</li>
+<li>reproducible research? (canvas course)<ul>
+<li>recording dependencies etc...</li>
+<li>"social coding"</li>
+</ul>
+</li>
+<li>development cycle?<ul>
+<li>ex. maintenance</li>
+<li>code management plan!</li>
+<li>for project applications?</li>
+</ul>
+</li>
+<li>Exercises for this part?<ul>
+<li>sketching the project flow.</li>
+<li>adding source control?</li>
+</ul>
+</li>
+<li>Introduction to UML:<ul>
+<li>introduction to flowcharts</li>
+</ul>
+</li>
+<li>Educational outcome course</li>
+<li>sorting out the concepts<ul>
+<li>Peer programming is QC/QA collab sharing</li>
+<li>Pair programming is real-time development teqch to increase  algorithm implementation, pass off, introduction</li>
+<li>Agile development, the Agile manifest (Not a full process)</li>
+<li>OOSE-like Rational Unifed Proces</li>
+<li>TDD</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>First day exercises:
+    <strong>(a short paragraph or two)</strong></p>
+<ul>
+<li>What do you mean with:<ul>
+<li>scripts?</li>
+<li>programming?</li>
+<li>software development?</li>
+<li>algorithm?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Algorithms and datastructures ([name=Marcus]) 1d</p>
+<ul>
+<li>aspect of complexity of algorithms</li>
+<li>common algorithms</li>
+<li>Big(O)</li>
+</ul>
+</li>
+<li>Development  paradigms([name=Lars]) 1d</li>
+<li>2h, Menti topics<ul>
+<li>
+<ul>
+<li>SDLC,RAD,RUP, Spiral model,(Funnel visualisation) [name=Lars]
+        - Extreme Programming and Prototype driven development
+   short historical overview.
+ -MENTI FOR INTRaction
+ development strategies and design strategies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>-UML Digagrams -20 min</li>
+<li>-UML exersise 10 min<ul>
+<li>functional programming(short intro to concepts)</li>
+<li>Iterative/Declarative programming</li>
+<li>object-oriented <a href="Lars">as intro to modular</a></li>
+<li>concept of classifiaction and classes as a means of compartimalisation<ul>
+<li>Concept of inheretance as a mean of propagating comonallity
+-----LUNCH----</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Common development practices[name=Jon]<ul>
+<li>Choosing a software development methodology[name=Lars]</li>
+<li>Social coding (<a href="https://coderefinery.github.io/social-coding/social-coding/">https://coderefinery.github.io/social-coding/social-coding/</a>)</li>
+<li>Code reviews<ul>
+<li>Pair programming -two devlopers <em>driver and navigator</em></li>
+<li>Exercise: pair develop two of your algorithms from yesterday coding. Switching roles.</li>
+<li>Present NBIS code development guidelines (<a href="https://github.com/NBISweden/development-guidelines">https://github.com/NBISweden/development-guidelines</a>)</li>
+<li>Exercise: How to do code reviews?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modular programming and Design Patterns([name=Lars])2h Day 4</p>
+<ul>
+<li>Comon interface<ul>
+<li>Objects as means to information hiding</li>
+<li>Collections and Modules</li>
+</ul>
+</li>
+<li>collabortative development<ul>
+<li>Why are modules so important when working collaborativly</li>
+<li><em>One asset one file</em> , How to create an environment that promotes easy sharing of work.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>1h</p>
+</li>
+<li>Design Patterns([name=Lars]) 1h DAY 4<ul>
+<li>What is  a design pattern</li>
+<li>Common design patterns and there applications       -</li>
+</ul>
+</li>
+<li>Testing and TDD (Test Driven Design)([name=Per],[name=Matias] Practicals) 1d?<ul>
+<li>(sys Dev)</li>
+<li>Peer programming (code review)</li>
+<li>Checking others code, checking the module.</li>
+<li>13:00-16:00 Afternoon session TDD in practice: <code>[Broken link to matpiq's PF-TDD GitHub repo]</code></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13:00-13:30</td>
+<td>Introduction to testing in Python</td>
+</tr>
+<tr>
+<td>13:30-14:00</td>
+<td>Automated testing using Github actions</td>
+</tr>
+<tr>
+<td>14:00-14:15</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>14:15-15:00</td>
+<td>Putting it all together - code along</td>
+</tr>
+<tr>
+<td>15:00-15:30</td>
+<td>Exercises</td>
+</tr>
+<tr>
+<td>15:30-16:00</td>
+<td>Advanced Topics</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Optimisation([name=Marcus])<ul>
+<li>right tool for the job</li>
+<li>how formal should I be?</li>
+<li>code optimisation</li>
+<li>Benchmarking Profiler, timing</li>
+</ul>
+</li>
+</ul>
+<h2 id="complementary-course-suggestions">Complementary course suggestions<a class="headerlink" href="#complementary-course-suggestions" title="Anchor link to this section for reference">&para;</a></h2>
+<p>// Courses that are useful in conjuction with this course</p>
+<ul>
+<li>Hackmd</li>
+<li>UML</li>
+<li>reproducable research</li>
+</ul>
+<h2 id="covered-by-other-courses">Covered by other courses<a class="headerlink" href="#covered-by-other-courses" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="next-meeting">Next meeting<a class="headerlink" href="#next-meeting" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Weekly teachers meetings of Programming formalisms for life scientists and bioinformaticians course is on Thursdays 11-12  on zoom,<a href="https://uu-se.zoom.us/j/67602711000">https://uu-se.zoom.us/j/67602711000</a></li>
+<li>Passcode: 880630</li>
+</ul>
+<h2 id="questions-for-the-admissions-form">Questions for the admissions form<a class="headerlink" href="#questions-for-the-admissions-form" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Registration form: <a href="https://docs.google.com/forms/d/1VpzwuZXEawPTtEjEUhY33a_afpBs4ioZulX9UqhdzSo/edit?usp=sharing">https://docs.google.com/forms/d/1VpzwuZXEawPTtEjEUhY33a_afpBs4ioZulX9UqhdzSo/edit?usp=sharing</a></p>
+<ul>
+<li>Name*?<ul>
+<li>short answer</li>
+</ul>
+</li>
+<li>Email*?<ul>
+<li>short answer</li>
+</ul>
+</li>
+<li>Affiliation?<ul>
+<li>short answer</li>
+</ul>
+</li>
+<li>
+<p>Briefly describe your background and experience in programming:</p>
+<ul>
+<li>long answer</li>
+</ul>
+</li>
+<li>
+<p>Do you plan to follow the whole course</p>
+<ul>
+<li>Yes/No</li>
+</ul>
+</li>
+<li>What do you expect to learn in this course?<ul>
+<li>short answer / free form</li>
+</ul>
+</li>
+<li>How did you learn about this course?<ul>
+<li>SNIC training newsletter</li>
+<li>NBIS ...</li>
+<li>UPPMAX website</li>
+<li>colleague</li>
+<li>other (free form)</li>
+</ul>
+</li>
+</ul>
+<h2 id="participation-emails">Participation emails<a class="headerlink" href="#participation-emails" title="Anchor link to this section for reference">&para;</a></h2>
+<p>LE Paradigms, Introduction to formalised development</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Anchor link to this section for reference">&para;</a></h2>
+<p>[Bell, 2020] Bell, Mike. The fundamentals of teaching: A five-step model to put the research evidence into practice. Routledge, 2020.
+[Hattie, 2008] Hattie, John. Visible learning: A synthesis of over 800 meta-analyses relating to achievement. routledge, 2008.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
