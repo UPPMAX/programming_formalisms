@@ -23,6 +23,10 @@ jobs:
         run: |
           rm -rf docs/evaluations
           rm docs/meeting_notes/older.md
+          rm docs/meeting_notes/20230913.md
+          rm docs/meeting_notes/20231020.md
+          rm docs/meeting_notes/20230920.md
+          rm docs/meeting_notes/2022_autumn.md
           rm -rf development_design
           rm -rf projects
           rm -rf docs/feedback
