@@ -21,7 +21,6 @@ jobs:
       # We don't care about all files having valid links
       - name: Remove files to be ignored
         run: |
-          rm docs/meeting_notes/older.md
           rm -rf docs/*/spring2024
           rm -rf docs/*/not_used
 
