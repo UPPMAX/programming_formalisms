@@ -259,7 +259,7 @@ releaseSoftware --> performLessonsLearned
 @enduml
 ```
 
-What follows next is an emphasis diagram which describes where the focus of the work should be put in at which time of the project. It is common to have a signof at the end of each phase before starting the next one.
+What follows next is an emphasis diagram which describes where the focus of the work should be put in at which time of the project. It is common to have a signoff at the end of each phase before starting the next one.
 
 <p>
  <p>
@@ -571,7 +571,7 @@ This is accomplished through the use of *access qualifier* of the parameter/prop
 private, protected and public in increasing accessibility to the inheritance structure and other classes or objects. A private property is only accessible to the object itself, the protected are accessible to objects and classes in the same inheritance structure and public are accessible to any class or object in the software
 <br>
 <br>
-Aditonal material (From one of the Icons in OO):
+Additonal material (From one of the Icons in OO):
 <br>
 Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
 
