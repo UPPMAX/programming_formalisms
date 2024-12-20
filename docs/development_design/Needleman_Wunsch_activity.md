@@ -1,4 +1,4 @@
-BLAST: A real-world example
+# BLAST: A real-world example
 
 "In bioinformatics, BLAST [basic local alignment search tool](https://en.wikipedia.org/wiki/BLAST_(biotechnology))
 Links to an external site. is an algorithm and program for comparing primary biological sequence information,
@@ -6,7 +6,7 @@ such as the amino-acid sequences of proteins or the nucleotides of DNA and/or RN
 
 First copy the pseudo code into the markdown code ticks
 
-```
+```text
 for i in length(A):
    F(i,0) = p * i
 for j in length(B):

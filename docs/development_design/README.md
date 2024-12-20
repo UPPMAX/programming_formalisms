@@ -748,20 +748,20 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
     * Timing Diagram
      Timing diagrams are UML interaction diagrams used to show interactions when a primary purpose of the diagram is to reason about time.
 
-   ```plantuml
-      @startuml
-         robust "Web Browser" as WB
-         concise "Web User" as WU
-         @0
-         WU is Idle
-         WB is Idle
-      @100
-      WU is Waiting
-      WB is Processing
-      @300
-      WB is Waiting
-      @enduml
-   ```
+    ```plantuml
+    @startuml
+       robust "Web Browser" as WB
+       concise "Web User" as WU
+       @0
+       WU is Idle
+       WB is Idle
+    @100
+    WU is Waiting
+    WB is Processing
+    @300
+    WB is Waiting
+    @enduml
+    ```
 
 ### Pair Programming
 
