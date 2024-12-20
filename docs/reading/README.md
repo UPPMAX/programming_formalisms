@@ -1,11 +1,5 @@
 # Reading material
 
-## Course content
-
-- `SDLC Analysis and Design`:[Introduction to software development](https://github.com/UPPMAX/programming_formalisms/blob/main/development_design/README.md)
-
-## Literature
-
 Here are open-access paper that we cite in this course.
 
 - `[Chacon & Straub, 2014]` Chacon, Scott, and Ben Straub. Pro git. Springer Nature, 2014.
