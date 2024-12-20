@@ -17,6 +17,8 @@ style: |
   }
 ---
 
+# Notes code review
+
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 <style scoped>
@@ -29,7 +31,7 @@ p {
 
 ---
 
-# Making code understandable
+## Making code understandable
 
 > The most difficult part of writing code is always to make it understandable to other people, including yourself a few months down the track. There’s certainly no shame in finding out that your code wasn’t as easy to understand or use as you’d hoped, so don’t take it personally when it happens (which it always does, at least in my experience), but treat it as an opportunity to improve.
 >
@@ -37,7 +39,7 @@ p {
 
 ---
 
-# Synchronous - Pair Programming
+## Synchronous - Pair Programming
 
 Consider the following scenario:
 
@@ -49,7 +51,7 @@ Consider the following scenario:
 
 ---
 
-# Pair Programming - Driver and Navigator
+## Pair Programming - Driver and Navigator
 
 <img src="https://martinfowler.com/articles/on-pair-programming/driver_navigator.png" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
 
@@ -57,7 +59,7 @@ Consider the following scenario:
 
 ---
 
-# Pair Programming - Ping Pong
+## Pair Programming - Ping Pong
 
 <img src="https://martinfowler.com/articles/on-pair-programming/ping_pong.png" alt="drawing" height="70%" width="70%" style="display: block; margin: 0 auto">
 
@@ -65,7 +67,7 @@ Consider the following scenario:
 
 ---
 
-# Pair Programming - Strong-Style Pairing
+## Pair Programming - Strong-Style Pairing
 
 <img src="https://www.thekguy.com/wp-content/uploads/2017/06/StrongStylePairing-1-1024x324.png" alt="drawing" height="75%" width="90%" style="display: block; margin: 0 auto">
 
@@ -73,9 +75,9 @@ Consider the following scenario:
 
 ---
 
-# Pair Programming - Benefits and challenges
+## Pair Programming - Benefits and challenges
 
-## Benefits
+### Benefits
 
 - We can produce better code working together
 - We will ship fast for a longer time
@@ -83,13 +85,13 @@ Consider the following scenario:
 - Less interruptions and happier people
 - Recovering the flow becomes easier
 
-## Challenges
+### Challenges
 
 - ??
 
 ---
 
-# Pair Programming - The Pomodoro technique
+## Pair Programming - The Pomodoro technique
 
 <img src="https://martinfowler.com/articles/on-pair-programming/pomodoro.png" alt="drawing" height="75%" width="50%" style="display: block; margin: 0 auto">
 
@@ -97,7 +99,7 @@ Consider the following scenario:
 
 ---
 
-# Synchronous - Group Code Tour
+## Synchronous - Group Code Tour
 
 Consider the following scenario:
 
@@ -107,7 +109,7 @@ Consider the following scenario:
 
 ---
 
-# Suggestions for the meeting leader
+## Suggestions for the meeting leader
 
 - Keep it a safe environment
 - Facilitate participation in the session
@@ -116,7 +118,7 @@ Consider the following scenario:
 
 ---
 
-# Asynchronous - I'll get back to you on that
+## Asynchronous - I'll get back to you on that
 
 Consider the following scenario:
 
@@ -127,7 +129,7 @@ Consider the following scenario:
 
 ---
 
-# Branching
+## Branching
 
 > **Branching**: keep a version of the code separate while making experimental changes or keeping track of collaborative work.
 
@@ -135,7 +137,7 @@ Consider the following scenario:
 
 ---
 
-# Pull Requests
+## Pull Requests
 
 > **Pull Request**: a code review request prior to merging the changes made on a branch over to the main branch.
 
@@ -143,7 +145,7 @@ Consider the following scenario:
 
 ---
 
-# Reviewing is not about creating more work
+## Reviewing is not about creating more work
 
 - Part of the scientific process
 - An opportunity for everyone to learn better practices
@@ -152,7 +154,7 @@ Consider the following scenario:
 
 ---
 
-# Where to put the focus? (I)
+## Where to put the focus? (I)
 
 - Repetitive code
 - Code saying one thing, documentation saying another
@@ -163,7 +165,7 @@ Consider the following scenario:
 
 ---
 
-# Where to put the focus? (II)
+## Where to put the focus? (II)
 
 - Bad variable/method names
 - Inconsistent indentation
@@ -176,7 +178,7 @@ Consider the following scenario:
 
 ---
 
-# Who should do it?
+## Who should do it?
 
 > "Anyone" should be able to perform code reviews.
 
@@ -184,7 +186,7 @@ Consider the following scenario:
 
 ---
 
-# Benefits - a case study
+## Benefits - a case study
 
 > - In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews.
 > - The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code.
@@ -194,7 +196,7 @@ Consider the following scenario:
 
 ---
 
-# Benefits - software developers
+## Benefits - software developers
 
 - Less time redoing work or refactoring
 - Increased productivity
@@ -205,7 +207,7 @@ Consider the following scenario:
 
 ---
 
-# Benefits - team leaders
+## Benefits - team leaders
 
 - Better understanding of the projects
 - Maintainable and better-documented code
@@ -216,7 +218,7 @@ Consider the following scenario:
 
 ---
 
-# To bear in mind
+## To bear in mind
 
 - Should not be used to evaluate individuals
 - Revealing mistakes should not come with penalties or shame.
@@ -224,7 +226,7 @@ Consider the following scenario:
 
 ---
 
-# Potential obstacles
+## Potential obstacles
 
 - Conflicts of interest
 - Strong personal views about non crucial matters
@@ -234,7 +236,7 @@ Consider the following scenario:
 
 ---
 
-# References
+## References
 
 This material is based on the Code Review lecture by The Carpentries.
 
