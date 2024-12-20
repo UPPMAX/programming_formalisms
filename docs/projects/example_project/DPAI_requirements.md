@@ -17,7 +17,7 @@
 | R9             | Stop Simulation         | Ability to stop the simulation | - Implement a user interface or mechanism to stop the simulation. |
 | R10            | Test-Driven Development | Develop the project using TDD | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code. |
 
-From this matrix we build derived requirements using the following promt: generate derived requirements from the requirment matrix
+From this matrix we build derived requirements using the following prompt: generate derived requirements from the requirement matrix
 
 ### Derived Requirement 1: Particle Visualization (Derived from R1)
 
