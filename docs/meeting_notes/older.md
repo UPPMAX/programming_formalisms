@@ -342,7 +342,7 @@ Next meeting: Wednesday 27 March 11:00-12:00 at <https://uu-se.zoom.us/j/6327219
 Points:
 
 - [Richel, FYI, 1 min] I enjoy [the new course website](https://uppmax.github.io/programming_formalisms/). Thanks Björn!
-- [Richel, FYI, 1 min] The mermaid `git` graphs are great, e.g. <https://uppmax.github.io/programming_formalisms/git/apply_merge/#exercise-2-practice-merge-conflicts-between-branches>!
+- [Richel, FYI, 1 min] The mermaid `git` graphs are great, e.g. `https://uppmax.github.io/programming_formalisms/git/apply_merge/#exercise-2-practice-merge-conflicts-between-branches`!
 - [Richel, FYI, 1 min] git exercises are ready, including teaching goals
 - [Richel, vote, 5 mins] Agree on <https://github.com/UPPMAX/programming_formalisms/issues/20> yes/no? Richel: Yes, Björn: yes. Lars: yes.
     - Björn: We should mention PlantUML in the tools session but point to the ReadExtra section. Lars: I will do that!
@@ -868,7 +868,7 @@ Day|Before lunch      |After lunch|Reflection
 
 - L and J wants to add more AI in teaching :-)
 - Course schedule
-    - R: who does when? From last year's schedule at <https://github.com/UPPMAX/programming_formalisms/tree/richel#schedule> :
+    - R: who does when? From last year's schedule at `https://github.com/UPPMAX/programming_formalisms/tree/richel#schedule` :
         - Day 1: Björn, Björn, Jon
         - Day 2: Lars, Jon, Richel
         - Day 3: Richel, Richel, Jon
@@ -947,7 +947,7 @@ Suggested agenda points:
 
 - [x] M and R will down more detailed exact description about their projects and send to L
     - [x] M: The program should visually display a number of particles on a field. Particles are initialised with a certain position and speed. Each particle interacts with all the other particles in a simple way, e.g. gravitational attraction, Lennard-Jones potential, direction alignment (implementing a flocking behaviour), or something else, the group chooses which. Decide on a boundary condition (e.g. bounce or wrap or eliminate the particle). The simulation is then stepped forward, drawing each step, until stopped. The goal is to create a stable simulation capable of the maximum number of particles at an acceptable framerate.
-    - [x] R: <https://github.com/UPPMAX/programming_formalisms/blob/richel/projects/student_project.md>
+    - [x] R: `https://github.com/UPPMAX/programming_formalisms/blob/richel/projects/student_project.md`
 
 ### Meeting 20/9
 
@@ -1287,7 +1287,7 @@ We need someone each day to administer and answer questions on HackMd. Please fi
 
 ## Prerequisites
 
-<https://github.com/UPPMAX/programming_formalism/blob/main/setup.md>
+`https://github.com/UPPMAX/programming_formalism/blob/main/setup.md`
 
 
 ## Participaton List meeting 5 (13 Oct)
