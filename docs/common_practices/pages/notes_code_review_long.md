@@ -1,3 +1,5 @@
+# Notes on code review
+
 This material is based on the Code Review lecture by The Carpentries:
 
 > [Code Review](https://carpentries-incubator.github.io/managing-computational-projects/13-codereview.html) by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made in several chapters.
@@ -77,7 +79,7 @@ Asynchronous feedback removes the time pressure but can be easily forgotten!
 >
 > Unlike traditional, “academic-style” peer review, most code review systems have several advantages: they’re rarely anonymous, they’re public-facing, and without the broker of an editor, contact between reviewer and reviewee can be direct and rapid.
 > This means code review is typically a fast, flexible, and interactive process.
-
+>
 > ## Github features to help with code review (Click to see)
 >
 > **Commit changes**: uploading snapshots when the code changes. The history of all changes are therefore saved and can be reverted.
@@ -169,7 +171,7 @@ The penalty for finding a bug once all the figures have been produced and conclu
 > - Learning better techniques
 > - Reduced time debugging alone
 > - Knowledge exchange and group cohesion
-
+>
 > ## For a group leader, the benefits include
 >
 > - Better understanding of the projects

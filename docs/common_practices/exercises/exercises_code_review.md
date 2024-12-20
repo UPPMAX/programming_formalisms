@@ -1,3 +1,5 @@
+# Code review exercises
+
 ## Exercise 1: pair programming
 
 In this exercise you will try out pair programming using the driver-navigator technique.
@@ -5,7 +7,7 @@ In this exercise you will try out pair programming using the driver-navigator te
 Remember that:
 
 > The Driver is the person coding. She is focussed on completing the tiny goal at hand, ignoring larger issues for the moment. A driver should always talk through what she is doing while doing it.
-
+>
 > The Navigator is in the observer position, while the driver is typing. She reviews the code on-the-go, gives directions and shares thoughts. The navigator also has an eye on the larger issues, bugs, and makes notes of potential next steps or obstacles.
 
 > **Martin Fowler, [On Pair Programming](https://martinfowler.com/articles/on-pair-programming.html)**
@@ -15,7 +17,8 @@ In this task you will have to:
 1. Work in pairs and try to code the [Fibonacci function](https://en.wikipedia.org/wiki/Fibonacci_number) or other function suggested by an instructor.
 2. Switch navigator/driver roles.
 3. Work in pairs and try to code the [Tribonacci function](https://en.wikipedia.org/wiki/Generalizations_of_Fibonacci_numbers#Tribonacci_numbers) or other function suggested by an instructor.
-   > The tribonacci numbers are like the Fibonacci numbers, but instead of starting with two predetermined terms, the sequence starts with three predetermined terms and each term afterwards is the sum of the preceding three terms.
+ 
+  > The tribonacci numbers are like the Fibonacci numbers, but instead of starting with two predetermined terms, the sequence starts with three predetermined terms and each term afterwards is the sum of the preceding three terms.
 
 ## Exercise 2: when may I use Code Reviews?
 
@@ -30,7 +33,7 @@ Now think about how you typically develop code, and how you might institute code
 > - How long would the activity take?
 > - Who would ideally be involved?
 > - Any particular practices you would use?
-
+>
 > The Code review exercise (from broken URL `https://carpentries-incubator.github.io/python-intermediate-development/41-code-review/index.html`)
 > by [The Carpentries](https://carpentries.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/). Modifications were made to simplify contents.
 
