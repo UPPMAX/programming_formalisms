@@ -18,6 +18,7 @@ Composition            |A has-a relation between two objects, e.g. a car has an 
 Function               |Isolated piece of code with a name, input arguments and output value
 Function arguments     |The values that a function needs to do its work, e.g. a number to determine if it is prime
 Function return value  |The value produced by a function, e.g. a `TRUE` or `FALSE` for a function that determines if a number is prime
+Hardcoding             |The of a value that is fixed and unchangable in the code, for example the name of an input file.
 Inheritance            |An is-a-type-of relation between two objects, e.g. a duck is a type of animal
 Integration test       |Test of multiple classes working together
 OOP                    |Abbreviation of 'object oriented programming', which is a type of programming that uses classes
