@@ -11,8 +11,8 @@ The meeting notes.
 <!-- Putting the links between less-then and greater-than signs does not work here :-/ -->
 
 - [2022 autumn](2022_autumn.md)
-- [20230419](20240419.md)
-- [20230426](20240426.md)
+- [20230419](20230419.md)
+- [20230426](20230426.md)
 - [20230510](20230510.md)
 - [20230524](20230524.md)
 - [20230526](20230526.md)

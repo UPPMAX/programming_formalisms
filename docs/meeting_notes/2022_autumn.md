@@ -424,7 +424,7 @@ Add theory to bolster already present practical skills
 - -UML exersise 10 min
     - functional programming(short intro to concepts)
     - Iterative/Declarative programming
-    - object-oriented [as intro to modular](Lars)
+    - object-oriented `[as intro to modular]` (Lars)
     - concept of classifiaction and classes as a means of compartimalisation
         - Concept of inheretance as a mean of propagating comonallity
 -----LUNCH----
