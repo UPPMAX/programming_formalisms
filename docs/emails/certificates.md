@@ -1,11 +1,11 @@
 # Certificates
 
-Text for course certificate
-use <https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/>
-to create certificate
-change the dates in brackets
--------
+Text for course certificate.
+Use <https://rshiny.nbis.se/shiny-server-apps/shiny-certificate/>
+to create certificate,
+then change the dates in brackets
 
+```text
 <<name>>
 
 has participated in the NBIS workshop Programming Formalisms
@@ -43,3 +43,4 @@ This included the following topics:
 Course Leader | Lars Eklund, PhD
 Applications Expert UPPMAX/NBIS
 NBIS | Uppsala University
+```
