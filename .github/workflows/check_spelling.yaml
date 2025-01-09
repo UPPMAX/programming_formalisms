@@ -22,13 +22,16 @@ jobs:
       - name: Remove folders that must not be spellchecked
         run: |
           rm -rf docs/evaluations
-          rm docs/meeting_notes
+          rm -rf docs/meeting_notes
           rm -rf development_design
           rm -rf projects
           rm -rf docs/feedback
           rm -rf docs/retrospectives
           rm -rf docs/reflections
           rm -rf docs/shared_documents
+
+      - name: Remove files that are ignored by its author for style
+        run: |
           rm docs/project_start/analysis_design.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
