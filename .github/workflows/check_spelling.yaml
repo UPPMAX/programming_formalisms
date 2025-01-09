@@ -22,7 +22,6 @@ jobs:
       - name: Remove folders that must not be spellchecked
         run: |
           rm -rf docs/evaluations
-          rm docs/meeting_notes/older.md
           rm docs/meeting_notes/20230913.md
           rm docs/meeting_notes/20231020.md
           rm docs/meeting_notes/20230920.md
