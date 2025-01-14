@@ -4,8 +4,9 @@ This is a general course schedule, that intends to give a general overview
 of the course's teaching.
 For a detailed daily schedule, see the detailed schedule of that day.
 
-Next iteration of the the course will take place in week 19 of 2025,
-i.e. Monday 5th of May to and including Friday 9th of May 2025.
+???- question "What are the course dates?"
+
+    See [the course dates](course_dates.md).
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 <!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
