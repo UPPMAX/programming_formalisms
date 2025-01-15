@@ -11,7 +11,7 @@
         - use of objecto orinet design and development
 
 
-Discuss Risks and Requirements (A short Needs Analysis) for a program that visualize and does simple curve fitting for temperature data from uppsala
+???+ Discuss Risks and Requirements (A short Needs Analysis) for a program that visualize and does simple curve fitting for temperature data from uppsala
 
 - Think about what the user needs from your application
 - Think about how the user interacts
