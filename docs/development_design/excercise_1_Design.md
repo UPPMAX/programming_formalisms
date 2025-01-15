@@ -49,25 +49,43 @@
 
 ???- question "One answer"
 
-    First we look at the user needs.
+    Start with a look at the user needs. and Risk involved in the project
+
+    Summary of the brief:
     The Brief specify that the users want to look at daily temperature data
     from uppsala from when it was started to be recorded to current day.
     They want to have the average curve be displayed to reduce noise of visualization.
-    !**Answer** First! we ask ourself what is the scope and magnitude of this project
+
+    !**Answer**
+        First! we ask ourself what is the scope and magnitude of this project
         - This is a small project expected for the team to finish in about one week
         - The project will be driven and implemented by a small team of distributed developers.
         - the aim of the project is to teach the team the SDLC process
 
-        conclusion- The project needs and goes through more formalized steps than a regular project of similar size.
+        **conclusion**- The project needs and goes through more formalized steps than a regular project of similar size.
         The projects needs a minimal risk assessment and and needs determination
-        Second ! Determination of business and legal space.
+
+        Second! Determination of business and legal space.
             The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
             This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
-        With that out of the way(Usally not conducted for small project but included here for compleatness)
-        We start looking at the Risk involed in the software project.
+        With that out of the way(Usually not conducted for small project but included here for completeness)
+
+        Third! first iteration of Needs gathering
+
+        forth! Risks
+        Remember to think of both primary and secondary/derived risks
+        We start looking at the Risk involved in the software project.
             -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
+            -risk of
+
+        Fifth! second iteration of needs analyzis
+
+
 
 [References]
+ISO 12207:2018
+ISO 73:2009
+ISO 15271:1998
 
-[Aditiona refrences]
+[Aditional literature suggestions]
     - Effective Methods for Software Testing: Includes Complete Guidelines, Checklists, and Templates 3rd Edition
