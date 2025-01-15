@@ -13,24 +13,29 @@
 
 ???+ question Discuss Risks and Requirements (A short Needs Analysis) for a program that visualize and does simple curve fitting for temperature data from uppsala
 
-- Think about what the user needs from your application
-- Think about how the user interacts
-- Think about what the risks are in terms of access, legality
-- Think about risks of data loss etc.
-- Think about requirements on users system
+!!!- hint "Needs"
+    - Think about what the user needs from your application
+    - Think about how the user interacts
 
-A short checklist of categories
 
-- Uncontrolled System Access
-- Ineffective Security Practices
-- Data loss
-- Program Errors
-    - such as yielding the wrong result
-    - Causing unintended system behavior
+!!!- hint "Risks"
+    Risk is defined in ISO Guide 73:2009 as “The effect of uncertainty on objectives”. This has an attached Note 1,
+    “An effect is a deviation from the expected — positive and/or negative”. A positive risk is commonly known as an opportunity,
+    and can be addressed within the Risk Management process.
 
-another good source
+    - Think about what the risks are in terms of access, legality
+    - Think about risks of data loss etc.
+    - Think about requirements on users system
 
-- Effective Methods for Software Testing: Includes Complete Guidelines, Checklists, and Templates 3rd Edition
+    A short checklist of categories
+
+    - Uncontrolled System Access
+    - Ineffective Security Practices
+    - Data loss
+    - Program Errors
+        - such as yielding the wrong result
+        - Causing unintended system behavior
+
 
 ???- question "One answer"
 
@@ -52,3 +57,7 @@ another good source
         We start looking at the Risk involed in the software project.
             -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
 
+[References]
+
+[Aditiona refrences]
+    - Effective Methods for Software Testing: Includes Complete Guidelines, Checklists, and Templates 3rd Edition
