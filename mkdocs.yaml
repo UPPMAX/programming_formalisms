@@ -17,51 +17,47 @@ nav:
     - Create class list: project/create_class_list.md
     - Create structs: project/create_struct.md
     - Dream design: project/dream_design.md
-  - Monday:
-    - Intro: monday_intro.md
+  - Intro:
     - Introduction: introductions/intro.md
     - SDLC tools: introductions/sdlc_tools.md
+  - Planning:
     - Get started with a project: project_start/startup.md
     - Project start with analysis and design: project_start/analysis_design.md
-    - Summary of day: monday_summary.md
-  - Tuesday:
-    - Intro: tuesday_intro.md
+  - Design:
     - Software Development Lifecycle: introductions/sdlc.md
-    - Issues: project/issues.md
-    - Kanban board: project/kanban_board.md
-    - Team roles: project/team_roles.md
-    - assert: assert/README.md
-    - Test-driven development: tdd/README.md
-    - Using a formal testing framework: testing/testing_framework.md
-    - Summary of day: tuesday_summary.md
-  - Wednesday:
-    - Intro: wednesday_intro.md
-    - Git workflow, branches: git/branches.md
-    - Git(-Hub) workflow, branches/merging: git/merge.md
-    - Contributing with code review: git/contribute.md
-    - Sharing and social coding: social_coding/social_coding.md
-    - Pair programming: pair_programming/README.md
-    - Using a formal testing framework: testing/testing_framework.md
-    - Summary of day: wednesday_summary.md
-  - Thursday:
-    - Intro: thursday_intro.md
     - Object Oriented development: design_develop/OO_development.md
     - Function design: function_design/README.md
     - Expressive data types: expressive_data_type/README.md
     - Modular programming: modularity/modular.md
     - A 'has-a' relation: has_a_relation/README.md
     - Class design: data_structures/class_design.md
-    - Continuous integration: continuous_integration/README.md
-    - Summary of day: thursday_summary.md
-  - Friday:
-    - Intro: friday_intro.md
-    - Implement the project as a package: package/README.md
     - Optimisation misconceptions: optimisation/misconceptions.md
     - Big-O: optimisation/big_o.md
     - Runtime speed profiles: optimisation/runtime_speed_profiles.md
+  - Development:
+    - Issues: project/issues.md
+    - Kanban board: project/kanban_board.md
+    - Team roles: project/team_roles.md
+    - Git workflow, branches: git/branches.md
+    - Git(-Hub) workflow, branches/merging: git/merge.md
+    - Contributing with code review: git/contribute.md
+    - Sharing and social coding: social_coding/social_coding.md
+    - Pair programming: pair_programming/README.md
+    - Continuous integration: continuous_integration/README.md
+  - Testing:
+    - assert: assert/README.md
+    - Test-driven development: tdd/README.md
+    - Using a formal testing framework: testing/testing_framework.md
+  - Deployment:
+    - Implement the project as a package: package/README.md
     - Deploy: deployment/deploy.md
     - Documentation: deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
+  - Summary of days:
+    - Summary of day: monday_summary.md
+    - Summary of day: tuesday_summary.md
+    - Summary of day: wednesday_summary.md
+    - Summary of day: thursday_summary.md
     - Summary of day: friday_summary.md
     - Summary of week: summary_week.md
   - Misc:
