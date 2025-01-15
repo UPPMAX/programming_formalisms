@@ -22,6 +22,7 @@ nav:
     - SDLC tools: introductions/sdlc_tools.md
   - Planning:
     - Get started with a project: project_start/startup.md
+    - Get started with git: project_start/startup_git.md
     - Project start with analysis and design: project_start/analysis_design.md
   - Design:
     - Software Development Lifecycle: introductions/sdlc.md
@@ -103,7 +104,6 @@ theme:
     - content.tabs.link
     - content.action.edit
     - content.action.view
-  custom_dir: mkdocs_uppmax/
     
 extra_css:
   - stylesheets/extra.css

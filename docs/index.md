@@ -1,7 +1,3 @@
----
-template: home.html
----
-
 <br/>
 
 <figure markdown="span">

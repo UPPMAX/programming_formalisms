@@ -24,6 +24,7 @@ These exercises are about working on the shared project.
 The current project, as well as earlier shared projects,
 can be found [here](projects.md).
 
+- [Dataset](uppsala_tm_1722-2022.zip)
 - [Watching](../watching/README.md)
 - [Issues](issues.md)
 - [Kanban board](kanban_board.md)
