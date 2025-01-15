@@ -39,11 +39,11 @@ another good source
     from uppsala from when it was started to be recorded to current day.
     They want to have the average curve be displayed to reduce noise of visualization.
     !**Answer** First! we ask ourself what is the scope and magnitude of this project
-        - This is a small project excpected for the team to finish in about one week
-        - The project will be driven and implemented by a small team of distrubuted developers.
+        - This is a small project expected for the team to finish in about one week
+        - The project will be driven and implemented by a small team of distributed developers.
         - the aim of the project is to teach the team the SDLC process
 
-        conclusion- The project needs and goes through more formailsed steps than a regular project of similar size.
-        The projects needs a minimal risk assesment and and needs determination
-        Second ! Determination of buissness and legal space.
-            The project operates inside an open non-profit open source scope, The Data Protection Impact assesment is not needed for this data set since it is open and readialy availible , it non sensitive non personal data with minimal economic impact.
+        conclusion- The project needs and goes through more formalized steps than a regular project of similar size.
+        The projects needs a minimal risk assessment and and needs determination
+        Second ! Determination of business and legal space.
+            The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
