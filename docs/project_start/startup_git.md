@@ -38,23 +38,32 @@
 
 ### Exercise x: merge conflicts
 
-- Create a new file with a unique name for your group
+- Create a new file with a unique name for your group,
+  for example `group_anna_and_sven.txt`
 - All members of the team: get it on your local harddisc
-- One member add the line below at the end of the file and push
+
+???- question "How to get it on my local computer?"
+
+    ```text
+    Screenshots of VSCode (if not in course material)
+    ```
+
+- One member add the line below at the end of that file
+  and does a `git push`:
 
 ```text
 This is the last line by me, Sven
 ```
 
 - After this, **without doing a git pull**,
-  the other group members add a last line at the end
-  (for example, the line shown below) and push
+  the other group member(s) add a last line at the end
+  (for example, the line shown below) and does a `git push`:
 
 ```text
 This is the last line by me, Anna
 ```
 
-- You will get a merge conflict. Fix it and commit again.
+- This person will get a merge conflict. How does the file look like?
 
 ???- question "Answer"
 
@@ -68,9 +77,17 @@ This is the last line by me, Anna
     >>>>>> 123456789abcdef
     ```
 
+
+- How would you resolve this merge conflict?
+
+???- question "Answering"
+
     Combining these two lines of text is up to taste.
     The text could be replaced by, for example:
 
     ```text
     This is the last line by us, Anna and Sven
     ```
+
+- Resolve the merge conflict and do a `git push`
+
