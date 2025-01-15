@@ -1,7 +1,17 @@
 # Discuss Risks and Requirements
 
 !!! info "The brief"
-    We want to look at daily temperature data from uppsala from when it was started to be recorded to current day.  They want to have the average curve be displayed to reduce noise of visualization.
+
+    We want to see (an approximation and cleanly looking)
+    hourly daily temperature data from Uppsala,
+    using a long-lasting dataset that recorded the temparature
+    a couple of times per day.
+
+    It needs to be approximate, as there are only few recordings
+    per day.
+    It needs to be cleanly looking as [Björn takes over here!]
+    We want to have the average curve be displayed to reduce noise of visualization.
+
 ???- "for the teachers"
     This project is based of the works of Bergström and Moberg[Bergström and Moberg 2002](https://www.smhi.se/polopoly_fs/1.175744!/Bergstr%C3%B6m_Moberg_Uppsala.pdf), using the [Uppsala "dygsvärdes" temperature data](https://www.smhi.se/data/meteorologi/temperatur/uppsalas-temperaturserie-1.2855) [link](https://www.smhi.se/polopoly_fs/1.2866!/uppsala_tm_1722-2022.zip) to the data set. The outline of the project
         - Needs analysis and risk assesment
