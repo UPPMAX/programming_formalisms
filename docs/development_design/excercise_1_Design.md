@@ -47,3 +47,8 @@ another good source
         The projects needs a minimal risk assessment and and needs determination
         Second ! Determination of business and legal space.
             The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
+            This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
+        With that out of the way(Usally not conducted for small project but included here for compleatness)
+        We start looking at the Risk involed in the software project.
+            -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
+
