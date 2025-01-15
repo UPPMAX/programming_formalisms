@@ -145,56 +145,56 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
       
 validation:
-  nav:
-    omitted_files:
-      data/counts/2023_autumn/README.md
-      data/counts/2023_summer/README.md
-      data/counts/2024_autumn/README.md
-      data/counts/2024_summer/README.md
-      emails/certificates.md
-      emails/intake_form.md
-      emails/onboarding.md
-      emails/welcome_email.md
-      evaluations/2023_autumn/README.md
-      evaluations/2023_autumn/retrospective_results_course.md
-      evaluations/2023_autumn/retrospective_results_day_2.md
-      evaluations/2023_autumn/retrospective_results_day_3.md
-      evaluations/2023_autumn/retrospective_results_day_4.md
-      evaluations/2023_autumn/retrospective_results_day_5.md
-      evaluations/2023_summer/README.md
-      evaluations/2024_autumn/README.md
-      evaluations/2024_autumn/20241118.md
-      evaluations/2024_autumn/20241119.md
-      evaluations/2024_autumn/20241120.md
-      reflections/2023_autumn/day_4_reflection.md
-      reflections/2023_autumn/day_5_reflection.md
-      reflections/2023_summer/README.md
-      reflections/2024_autumn/README.md
-      reflections/2024_autumn/20241115_onboarding_richel.md
-      reflections/2024_autumn/20241118_richel.md
-      reflections/2024_autumn/20241119_richel.md
-      reflections/2024_autumn/20241120_richel.md
-      reflections/2024_autumn/20241121_richel.md
-      reflections/2024_autumn/20241122_richel.md
-      reflections/2024_summer/README.md
-      reflections/2024_summer/20240422_richel.md
-      reflections/2024_summer/20240423_richel.md
-      reflections/2024_summer/20240424_richel.md
-      reflections/2024_summer/20240425_richel.md
-      reflections/2024_summer/20240426_richel.md
-      shared_documents/2023_autumn/README.md
-      shared_documents/2023_autumn/day_1.md
-      shared_documents/2023_autumn/day_2.md
-      shared_documents/2023_autumn/day_3.md
-      shared_documents/2023_autumn/day_4.md
-      shared_documents/2023_autumn/day_5.md
-      shared_documents/2024_autumn/20241118.md
-      shared_documents/2024_autumn/20241119.md
-      shared_documents/2024_autumn/20241120.md
-      shared_documents/2024_autumn/20241121.md
-      shared_documents/2024_autumn/20241122.md
-      shared_documents/2024_summer/20240422.md
-      shared_documents/2024_summer/20240423.md
-      shared_documents/2024_summer/20240424.md
-      shared_documents/2024_summer/20240425.md
-      shared_documents/2024_summer/20240426.md
+  - nav:
+    - omitted_files:
+      - data/counts/2023_autumn/README.md
+      - data/counts/2023_summer/README.md
+      - data/counts/2024_autumn/README.md
+      - data/counts/2024_summer/README.md
+      - emails/certificates.md
+      - emails/intake_form.md
+      - emails/onboarding.md
+      - emails/welcome_email.md
+      - evaluations/2023_autumn/README.md
+      - evaluations/2023_autumn/retrospective_results_course.md
+      - evaluations/2023_autumn/retrospective_results_day_2.md
+      - evaluations/2023_autumn/retrospective_results_day_3.md
+      - evaluations/2023_autumn/retrospective_results_day_4.md
+      - evaluations/2023_autumn/retrospective_results_day_5.md
+      - evaluations/2023_summer/README.md
+      - evaluations/2024_autumn/README.md
+      - evaluations/2024_autumn/20241118.md
+      - evaluations/2024_autumn/20241119.md
+      - evaluations/2024_autumn/20241120.md
+      - reflections/2023_autumn/day_4_reflection.md
+      - reflections/2023_autumn/day_5_reflection.md
+      - reflections/2023_summer/README.md
+      - reflections/2024_autumn/README.md
+      - reflections/2024_autumn/20241115_onboarding_richel.md
+      - reflections/2024_autumn/20241118_richel.md
+      - reflections/2024_autumn/20241119_richel.md
+      - reflections/2024_autumn/20241120_richel.md
+      - reflections/2024_autumn/20241121_richel.md
+      - reflections/2024_autumn/20241122_richel.md
+      - reflections/2024_summer/README.md
+      - reflections/2024_summer/20240422_richel.md
+      - reflections/2024_summer/20240423_richel.md
+      - reflections/2024_summer/20240424_richel.md
+      - reflections/2024_summer/20240425_richel.md
+      - reflections/2024_summer/20240426_richel.md
+      - shared_documents/2023_autumn/README.md
+      - shared_documents/2023_autumn/day_1.md
+      - shared_documents/2023_autumn/day_2.md
+      - shared_documents/2023_autumn/day_3.md
+      - shared_documents/2023_autumn/day_4.md
+      - shared_documents/2023_autumn/day_5.md
+      - shared_documents/2024_autumn/20241118.md
+      - shared_documents/2024_autumn/20241119.md
+      - shared_documents/2024_autumn/20241120.md
+      - shared_documents/2024_autumn/20241121.md
+      - shared_documents/2024_autumn/20241122.md
+      - shared_documents/2024_summer/20240422.md
+      - shared_documents/2024_summer/20240423.md
+      - shared_documents/2024_summer/20240424.md
+      - shared_documents/2024_summer/20240425.md
+      - shared_documents/2024_summer/20240426.md
