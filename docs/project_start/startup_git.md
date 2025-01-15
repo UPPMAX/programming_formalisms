@@ -35,6 +35,15 @@
 
 ### New ones to address
 
-Question: Project related?
 
-- within group make and solve conflict at pull (work with same file)
+### Exercise x: merge conflicts
+
+- Create a new file with a unique name for your group
+- All members of the team: get it on your local harddisc
+- One member add a line at the end of the file and push
+- After this, the other group members add a last line at the end
+  of the file and try to push
+
+Each of them will get a merge conflict.
+
+- Fix the merge conflict and push again.
