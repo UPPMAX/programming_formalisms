@@ -1,8 +1,10 @@
 # Course dates
 
-???- question "How was this decided?"
 
-    - Iteration 6: [meeting notes with decision](https://uppmax.github.io/programming_formalisms/meeting_notes/20241217/)
+???- question "For teachers"
+
+    - How was this decided? For iteration 6: [meeting notes with decision](https://uppmax.github.io/programming_formalisms/meeting_notes/20241217/)
+    - [Shared document for teaching dates](https://hackmd.io/@UPPMAX/uppmax-training-events)
 
 Iteration|Week|Days
 ---------|----|-----------------------------------------------------
