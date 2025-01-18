@@ -597,6 +597,12 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 
 ![Python logo](python_logo.png)
 
+- `[Yuan et al., 2014]`
+  Yuan, Ding, et al.
+  "Simple testing can prevent most critical failures:
+  An analysis of production failures in distributed data-intensive systems."
+  11th USENIX Symposium on Operating Systems Design and Implementation
+  (OSDI 14). 2014.
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 

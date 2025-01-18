@@ -45,6 +45,8 @@ tags:
 
 ## Testing
 
+Simple testing can prevent most critical failures `[Yuan et al., 2014]`
+
 - [Using a formal testing framework](testing_framework.md)
 - [Testing indeterminate functions](testing_indeterminate_functions.md)
 - [Testing in a team and project](testing_in_a_team.md)
@@ -74,3 +76,14 @@ In duos, `owner_name` is the GitHub username first in the alphabet.
 - 2: `owner_name/get_digits(x)`
 - 3: `owner_name/flip_coin(x)`
 - 4: `owner_name/roll_dice(x)`
+
+## References
+
+- `[Yuan et al., 2014]`
+  Yuan, Ding, et al.
+  "Simple testing can prevent most critical failures:
+  An analysis of production failures in distributed data-intensive systems."
+  11th USENIX Symposium on Operating Systems Design and Implementation
+  (OSDI 14). 2014.
+- `[Zen of Python]`
+  [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
