@@ -30,8 +30,9 @@ jobs:
           rm -rf docs/reflections
           rm -rf docs/shared_documents
 
-      - name: Remove files that are ignored by its author for style
+      - name: Remove files that are not to be spellchecked yet
         run: |
           rm docs/project_start/analysis_design.md
+          rm docs/development_design/excercise_1_Design.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
