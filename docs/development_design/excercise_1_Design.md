@@ -81,7 +81,6 @@
         Fifth! second iteration of needs analyzis
 
 
-
 [References]
 ISO 12207:2018
 ISO 73:2009
