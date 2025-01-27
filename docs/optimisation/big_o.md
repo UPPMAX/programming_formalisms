@@ -7,7 +7,7 @@ tags:
 
 # Big-O
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Practice to determine the big-O profile of a function
 

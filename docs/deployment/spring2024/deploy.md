@@ -13,7 +13,7 @@
         - some theory of containers
         - get some hands on
 
-!!! info "Learning objectives of 'Deployment'"
+!!! info "Learning outcomes of 'Deployment'"
 
     - learners can mentalize the installation needs from the users perspective
     - learners can evaluate different available tools for reproducibility and installations

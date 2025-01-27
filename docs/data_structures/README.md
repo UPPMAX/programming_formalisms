@@ -8,7 +8,7 @@ tags:
 
 # Data structures
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Practice to use classes for expression
     - Practice to use classes for type safety

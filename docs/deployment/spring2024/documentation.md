@@ -16,7 +16,7 @@
     - some theory of containers
     - some info about Tutorials/Reference/HowTo guides
 
-???- info "Learning objectives of 'Documentation'"
+???- info "Learning outcomes of 'Documentation'"
 
     - learners can finalize the documentation of the project
 

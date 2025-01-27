@@ -10,7 +10,7 @@
     - Introduction to some SDLC key features
     - Theory of project tools and thinking.
 
-!!! info "Learning objectives of 'SDLC tools'"
+!!! info "Learning outcomes of 'SDLC tools'"
 
     Learners can
 
@@ -404,7 +404,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ## Do you remember?
 
-!!! info "Learning objectives of 'SDLC tools'"
+!!! info "Learning outcomes of 'SDLC tools'"
 
     Learners can
 

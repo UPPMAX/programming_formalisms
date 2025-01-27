@@ -8,7 +8,7 @@ tags:
 
 # Indeterminate functions
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice writing tests for indeterminate functions
       within a formal testing framework
@@ -67,7 +67,7 @@ assert not flip_coin()
 
 ## Exercise 1: first attempt
 
-???- info "Learning objectives"
+???- info "Learning outcomes"
 
     - practice writing tests for indeterminate functions
       within a formal testing framework
@@ -105,7 +105,7 @@ a random integer value from 1 to and including 6.
 
 ## Exercise 2: second attempt
 
-???- info "Learning objectives"
+???- info "Learning outcomes"
 
     - practice writing tests for indeterminate functions
       within a formal testing framework

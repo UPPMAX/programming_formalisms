@@ -6,7 +6,7 @@ tags:
 
 # Class design
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand what an invariant is
     - Write a class that protects an invariant

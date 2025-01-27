@@ -1,6 +1,6 @@
 # Apply merge
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice doing Pull Requests using the GitHub interface
     - practice doing a code review
@@ -76,7 +76,7 @@ Exercise 5 is a repeat of doing a code review.
 
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice merging git branches without a merge conflict
 
@@ -118,7 +118,7 @@ gitGraph
 
 ### Exercise 2: practice merging `git` branches using the GitHub interface
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice merging git branches with a merge conflict using the GitHub interface
 
@@ -159,7 +159,7 @@ gitGraph
 
 ### Extra exercise 3: practice merging `git` branches using the command-line
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice merging git branches without a merge conflict
 
@@ -321,7 +321,7 @@ gitGraph
 
 ### Extra exercise 4: practice merge conflicts between branches using the command line
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - experience merge conflicts between branches
     - fix merge conflicts between branches

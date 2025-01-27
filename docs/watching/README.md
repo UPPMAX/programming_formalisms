@@ -7,7 +7,7 @@ tags:
 
 # Watching
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand why watching a repository is useful
     - Be able to unwatch a repository

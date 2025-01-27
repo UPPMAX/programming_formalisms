@@ -4,7 +4,7 @@
 
     - How can the user understand how to run your program and what it does?
 
-???+ info "Learning objectives of 'Documentation'"
+???+ info "Learning outcomes of 'Documentation'"
 
     learners  
     

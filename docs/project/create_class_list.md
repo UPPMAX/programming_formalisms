@@ -6,7 +6,7 @@ tags:
 
 # Create a class list
 
-!!! note "Learning objectives"
+!!! note "Learning outcomes"
 
     - Create a first list of classes that *may* be needed
     - Experience first step in design

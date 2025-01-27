@@ -7,7 +7,7 @@ tags:
 
 # Recursive algorithms
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand that functions can be recursive
     - Understand that recursive functions can usually be implemented

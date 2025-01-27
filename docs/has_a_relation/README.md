@@ -8,7 +8,7 @@ tags:
 
 # Has-a relationships
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand the type of relation 'composition' is
     - Understand the type of relation 'inheritance' is

@@ -1,6 +1,6 @@
 # Object Oriented development
 
-???- info "Learning objectives"
+???- info "Learning outcomes"
 
     - Understand the benefits of object-oriented development, including smaller semantic gaps for improved understanding and easier modification of models.
     - Learn the definition and characteristics of an object, including its ability to save state and perform operations.
@@ -10,7 +10,7 @@
     - Explore the concept of design patterns as blueprints for solving common software design problems.
     - Develop a practical understanding of the Factory Method design pattern
 
-???- info "Learning objectives of Design Patterns"
+???- info "Learning outcomes of Design Patterns"
 
     - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
     - The learners can describe the general parts of a design pattern and why we use them.

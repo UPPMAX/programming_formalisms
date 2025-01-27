@@ -6,7 +6,7 @@ tags:
 
 # Dream design
 
-!!! note "Learning objectives"
+!!! note "Learning outcomes"
 
     - Understand dream design
     - Understand why dream design
@@ -513,7 +513,7 @@ a file.
 
 ### Exercise 1: dream-design
 
-???- note "Learning objectives"
+???- note "Learning outcomes"
 
     - Understand dream design
     - Understand why dream design
@@ -574,7 +574,7 @@ Discuss:
 
 ### Exercise 2: dream-design your class
 
-???- note "Learning objectives"
+???- note "Learning outcomes"
 
     - Apply dream design on own class
 
@@ -595,7 +595,7 @@ In your group:
 
 ### Exercise 3: write the stubs for your class
 
-???- note "Learning objectives"
+???- note "Learning outcomes"
 
     - Write the stubs for your class
     - Practice TDD

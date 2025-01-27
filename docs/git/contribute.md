@@ -12,7 +12,7 @@
         - Forked collaboration
         - How to contribute
 
-???+ info "Learning objectives"
+???+ info "Learning outcomes"
 
     - practice doing Pull Requests using the GitHub interface
     - practice doing a code review

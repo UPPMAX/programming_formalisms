@@ -14,7 +14,7 @@
     We start with a more **theoretical introduction** covering software and mindsets for software development.
 
 
-!!! info "Learning objectives of 'Introduction'"
+!!! info "Learning outcomes of 'Introduction'"
 
     Learners can
     
@@ -240,7 +240,7 @@ classDiagram
         
     - ... and iteration of these
 
-!!! info "Learning objectives of 'Introduction'"
+!!! info "Learning outcomes of 'Introduction'"
 
     Learners can
     

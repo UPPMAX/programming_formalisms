@@ -7,7 +7,7 @@ tags:
 
 # Create structs
 
-!!! note "Learning objectives"
+!!! note "Learning outcomes"
 
     - Convert a class name to code
 

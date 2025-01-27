@@ -1,6 +1,6 @@
 # Merging
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice fixing merge conflicts on GitHub
     - practice merging branches using the command-line interface
@@ -181,7 +181,7 @@ and asks a human for help.
 
 ### Exercise 1: practice merging `git` branches using the GitHub interface
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice merging git branches **without** a merge conflict
 
@@ -223,7 +223,7 @@ gitGraph
 
 ### Extra exercise 2: practice merging `git` branches using the command-line
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - practice merging git branches **without** a merge conflict
 
@@ -386,7 +386,7 @@ gitGraph
 
 ### Extra exercise 3: practice merge conflicts between branches using the command line
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - experience merge conflicts between branches
     - fix merge conflicts between branches

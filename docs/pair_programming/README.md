@@ -11,7 +11,7 @@ tags:
 
 # Pair programming
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand why pair programming is important
     - Understand what good pair programming looks like
@@ -90,7 +90,7 @@ We use it a lot in this course, because:
 
 ### Exercise 1: understand pair programming
 
-???- info "Learning objectives"
+???- info "Learning outcomes"
 
     - Understand what pair programming is
     - First guess at understanding what **good** pair programming is

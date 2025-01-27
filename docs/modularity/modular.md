@@ -1,6 +1,6 @@
 # Modular programming and Refactoring
 
-???- info "Learning objectives"
+???- info "Learning outcomes"
 
     - Understand the concept of code smells and design smells.
 
@@ -26,12 +26,12 @@
         Exercise: Modules, 50,10s
     ```
 
-???- info "Learning objectives of Refactoring"
+???- info "Learning outcomes of Refactoring"
 
     - Learners learns about code smells and design smells
 
 
-???- info "Learning objectives of Modular programming"
+???- info "Learning outcomes of Modular programming"
 
     - The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code.
 

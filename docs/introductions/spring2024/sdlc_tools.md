@@ -12,7 +12,7 @@
     - We will get some theory of project tools and thinking.
 
 
-!!! info "Learning objectives of 'SDLC tools'"
+!!! info "Learning outcomes of 'SDLC tools'"
 
     - Compare and contrast various software development tools and justify their relevance to specific development tasks.
 

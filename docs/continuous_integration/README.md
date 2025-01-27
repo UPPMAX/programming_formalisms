@@ -6,7 +6,7 @@ tags:
 
 # Continuous integration
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand what continuous integration is
     - Understand why continuous integration is important

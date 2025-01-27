@@ -6,7 +6,7 @@ tags:
 
 # Algorithms
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand design by contract
     - Understand algorithm names increase expressiveness of code

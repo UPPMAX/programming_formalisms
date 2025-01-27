@@ -6,7 +6,7 @@ tags:
 
 # Optimisation
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand misconceptions on optimisation
     - Understand Amdahl's law

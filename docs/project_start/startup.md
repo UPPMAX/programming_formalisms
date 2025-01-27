@@ -12,7 +12,7 @@
         - create documents
         - initial documentation
 
-!!! info "Learning objectives of 'Get started with Git/GitHub'"
+!!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
     
@@ -541,7 +541,7 @@ R <--> Node5
     - &#9745; Documentation
         - Explanation (in code)
 
-!!! info "Learning objectives of 'Get started with Git/GitHub'"
+!!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
     

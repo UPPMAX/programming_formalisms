@@ -8,7 +8,7 @@ tags:
 
 # Built-in data structures
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - .
 

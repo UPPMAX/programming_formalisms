@@ -4,7 +4,7 @@
 
 > Branching structure of an earlier course iteration.
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - create, switch and delete a `git` branch
 
@@ -42,7 +42,7 @@
 
 ### Exercise 1: create, switch and delete a `git` branch
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Create, switch and delete a `git` branch
     - Build up experience using git without troubleshooting

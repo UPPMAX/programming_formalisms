@@ -13,7 +13,7 @@
         - create documents
         - initial documentation
 
-!!! info "Learning objectives of 'Get started with Git/GitHub'"
+!!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     - Demonstrate the ability to initiate and manage a software development project using Git and GitHub.
 

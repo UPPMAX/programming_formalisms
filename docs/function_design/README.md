@@ -7,7 +7,7 @@ tags:
 
 # Function design
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand why function design is important
     - Can give some features of good function design

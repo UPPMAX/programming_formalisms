@@ -8,7 +8,7 @@ tags:
 
 # Wrap-up
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Remember what the course was about
 

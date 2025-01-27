@@ -8,7 +8,7 @@ tags:
 
 # Testing in a team
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - understand .
 

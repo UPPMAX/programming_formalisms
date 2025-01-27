@@ -4,7 +4,7 @@
 > [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
 
 
-!!! info "Learning objectives of 'Social coding'"
+!!! info "Learning outcomes of 'Social coding'"
 
     Learners
 

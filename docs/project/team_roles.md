@@ -16,7 +16,7 @@ tags:
 
 # Team roles
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand there are different roles in a team
     - Signal our interest in a role

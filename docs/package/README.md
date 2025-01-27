@@ -7,7 +7,7 @@ tags:
 
 # Package
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand how to package a Python project
     - Package our Python project locally

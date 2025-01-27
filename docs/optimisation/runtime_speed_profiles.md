@@ -9,7 +9,7 @@ tags:
 
 # Runtime speed profiles
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Practice to get a run-time speed profile
 

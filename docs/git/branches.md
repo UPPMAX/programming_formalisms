@@ -6,7 +6,7 @@
     - How to work on parallel tracks (many developers, versions)?
     - How to fix mistakes?
 
-???- info "Learning objectives of 'Branches'"
+???- info "Learning outcomes of 'Branches'"
 
     - learners can
 
@@ -195,7 +195,7 @@ git branch -d new-feature    # remove branch
 
 ### Exercise 1: create, switch and delete a `git` branch
 
-???- info "Learning objectives"
+???- info "Learning outcomes"
 
     - Create, switch and delete a `git` branch
     - Build up experience using git without troubleshooting

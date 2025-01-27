@@ -14,7 +14,7 @@
     We start with a more **theoretical introduction** covering the software and tools and mindsets for software development.
 
 
-!!! info "Learning objectives of 'SDLC tools'"
+!!! info "Learning outcomes of 'SDLC tools'"
 
     - Identify the main topics and objectives for the week's lessons.
     - Evaluate the importance of engaging with course content and identify strategies to maintain interest and motivation throughout the week.

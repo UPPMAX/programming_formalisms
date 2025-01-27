@@ -1,6 +1,6 @@
 # Introductions
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - give an **introduction** to the week
     - give some introduction to **concepts** used in the course

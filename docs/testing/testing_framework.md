@@ -11,7 +11,7 @@ tags:
 
 # Using a formal testing framework
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - understand the benefit of using a testing framework
     - put the files of my code in the right locations

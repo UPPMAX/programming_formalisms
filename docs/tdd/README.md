@@ -10,7 +10,7 @@ tags:
 
 # TDD
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand what TDD is
     - Be able to do TDD

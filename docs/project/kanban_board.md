@@ -11,7 +11,7 @@ tags:
 
 # Kanban board
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - To be a good team member within a project
     - Use a kanban board to get an overview of what is actively being worked on

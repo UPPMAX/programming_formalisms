@@ -6,7 +6,7 @@ tags:
 
 # Testing
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - understand the benefit of using a testing framework
     - practice writing tests within a formal testing framework

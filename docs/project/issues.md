@@ -11,7 +11,7 @@ tags:
 
 # Issues
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - To be a good team member within a project
     - Use issues to communicate what needs to be done

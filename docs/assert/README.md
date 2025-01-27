@@ -14,7 +14,7 @@ tags:
 
 # `assert`
 
-!!!- info "Learning objectives"
+!!!- info "Learning outcomes"
 
     - Understand the purpose of `assert`
     - Understand that Python has a debug and release mode

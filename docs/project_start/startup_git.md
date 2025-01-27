@@ -1,6 +1,6 @@
 # Get started with a project
 
-!!! info "Learning objectives of 'Get started with Git/GitHub'"
+!!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
     

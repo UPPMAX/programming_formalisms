@@ -4,7 +4,7 @@
 
     - How to make your program work for others?
 
-!!! info "Learning objectives of 'Deployment'"
+!!! info "Learning outcomes of 'Deployment'"
 
     - I can mentalize the installation needs from the users' perspective
     - I can evaluate different available tools for reproducibility and installations
