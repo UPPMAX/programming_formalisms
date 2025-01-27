@@ -13,31 +13,47 @@
     We want to have the average curve be displayed to reduce noise of visualization.
 
 ???- "for the teachers"
-    This project is based of the works of Bergström and Moberg[Bergström and Moberg 2002](https://www.smhi.se/polopoly_fs/1.175744!/Bergstr%C3%B6m_Moberg_Uppsala.pdf), using the [Uppsala "dygsvärdes" temperature data](https://www.smhi.se/data/meteorologi/temperatur/uppsalas-temperaturserie-1.2855) [link](https://www.smhi.se/polopoly_fs/1.2866!/uppsala_tm_1722-2022.zip) to the data set. The outline of the project
-        - Needs analysis and risk assesment
-        - Using Python and matplotlib plot the data
-        - Using Scipy and numpy alternativly scratch wrighting the functions depending on the needs in Algorithms and TDD sections.
-        - Use modular design to be able to swap out the prediction functions.
-        - use of objecto orinet design and development
+
+    This project is based of the works of Bergström and Moberg 
+    [Bergström and Moberg 2002](https://www.smhi.se/polopoly_fs/1.175744!/Bergstr%C3%B6m_Moberg_Uppsala.pdf),
+    using the [Uppsala "dygsvärdes" temperature data](https://www.smhi.se/data/meteorologi/temperatur/uppsalas-temperaturserie-1.2855)
+    [link](https://www.smhi.se/polopoly_fs/1.2866!/uppsala_tm_1722-2022.zip)
+    to the data set. 
+
+    The outline of the project ...
+
+    - needs analysis and risk assesment
+    - uses Python and matplotlib plot the data
+    - uses `scipi` and `numpy` alternatively writing the functions from
+      scratch, depending on the needs in Algorithms and TDD sections.
+    - uses modular design to be able to swap out the prediction functions.
+    - uses object oriented design and development
 
 
-???+ question Discuss Risks and Requirements (A short Needs Analysis) for a program that visualize and does simple curve fitting for temperature data from uppsala
+???+ question "Discuss"
+
+    Discuss risks and requirements (A short Needs Analysis) for a program that
+    visualizes and does simple curve fitting for temperature data from uppsala
 
 !!!- hint "Needs"
+
     - Think about what the user needs from your application
     - Think about how the user interacts
 
 
 !!!- hint "Risks"
-    Risk is defined in ISO Guide 73:2009 as “The effect of uncertainty on objectives”. This has an attached Note 1,
-    “An effect is a deviation from the expected — positive and/or negative”. A positive risk is commonly known as an opportunity,
+
+    Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on
+    objectives'. This has an attached Note 1: 'An effect is a deviation from
+    the expected — positive and/or negative'.
+    A positive risk is commonly known as an opportunity,
     and can be addressed within the Risk Management process.
 
     - Think about what the risks are in terms of access, legality
     - Think about risks of data loss etc.
     - Think about requirements on users system
 
-    A short checklist of categories
+    A short checklist of categories:
 
     - Uncontrolled System Access
     - Ineffective Security Practices
@@ -57,6 +73,7 @@
     They want to have the average curve be displayed to reduce noise of visualization.
 
     !**Answer**
+
         First! we ask ourself what is the scope and magnitude of this project
         - This is a small project expected for the team to finish in about one week
         - The project will be driven and implemented by a small team of distributed developers.
@@ -81,10 +98,10 @@
         Fifth! second iteration of needs analyzis
 
 
-[References]
-ISO 12207:2018
-ISO 73:2009
-ISO 15271:1998
+## References
 
-[Aditional literature suggestions]
-    - Effective Methods for Software Testing: Includes Complete Guidelines, Checklists, and Templates 3rd Edition
+- `ISO 12207:2018`
+- `ISO 73:2009`
+- `ISO 15271:1998`
+- Effective Methods for Software Testing: Includes Complete Guidelines,
+  Checklists, and Templates 3rd Edition
