@@ -303,7 +303,7 @@ deactivate # deactivate the venv!
 
 !!! info "More info"
 
-    - [Singularity course](https://www.uu.se/centrum/uppmax/utbildning/kurser-och-workshops/basic-singularity){:target="_blank"}
+    - [Singularity course](https://pmitev.github.io/UPPMAX-Singularity-workshop/)
     - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
     - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
 
