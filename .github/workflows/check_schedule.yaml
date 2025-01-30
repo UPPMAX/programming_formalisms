@@ -5,7 +5,15 @@ name: Check schedule
 # 21st as the first letter of this repo is the 21st letter in the alphabet.
 on:
   push:
+    paths:
+      - .github/workflows/check_schedule.yaml
+      - scripts/check_schedule.R
+      - docs/schedule.md
   pull_request:
+    paths:
+      - .github/workflows/check_schedule.yaml
+      - scripts/check_schedule.R
+      - docs/schedule.md
   schedule:
   - cron: "0 0 21 * *"
 
