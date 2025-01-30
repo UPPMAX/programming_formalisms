@@ -143,10 +143,47 @@ classDiagram
 
 ### Functional programming
 
-- More classical as it is more focused on the algorithms
-- Functions
-- Modules: a way to *gather functions* with similar functionality
-- Also to some extent info-hiding mindset
+- Close to mathematics
+- Programmer defines information and relations
+  and the program concludes answers from that
+- Data is immutable, which removes some types of programming errors
+
+???- question "How does that look like?"
+
+    Here we define some functions:
+
+    ```text
+    grandparent(X) := parent(parent(X)).
+    parent(X) := mother(X).
+    parent(X) := father(X).
+    ```
+
+    Here we add information:
+
+    ```text
+    mother(charles) := elizabeth.
+    father(charles) := phillip.
+    mother(harry) := diana.
+    father(harry) := charles.
+    ```
+
+    Now we can ask who is a grandparent to whom:
+
+    ```text
+    ?- grandparent(X,Y).
+    ````
+
+    Results are:
+
+    ```text
+    X = harry, Y = elizabeth.
+    X = harry, Y = phillip.
+    ```
+
+    The defining feature here is that the program itself concluded
+    how to arrive at a conclusion from the given information,
+    where in produral languages you'll need to define that search
+    strategy yourself
 
 !!! info "To sum up"
 
