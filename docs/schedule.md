@@ -14,8 +14,9 @@ For a detailed daily schedule, see the detailed schedule of that day.
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Monday   |09:00-10:00|Björn  |[Syllabus](./intro.md) + [Introduction](./introductions/intro.md)
+
 Monday   |10:00-11:00|Björn  |[Software development tools](introductions/sdlc_tools.md)
-Monday   |11:00-12:00|Björn  |[Git/GitHub basics and start project](./project_start/startup.md)
+Monday   |11:00-12:00|Björn  |[Git/GitHub basics and start project](./project_start/startup.md) <!-- intro modularity -->
 Monday   |?          |Björn  |Merge conflicts ([vote](https://github.com/UPPMAX/programming_formalisms/issues/93))
 Monday   |13:00-15:40|Lars   |[Define and plan project](./project_start/analysis_design.md)
 Monday   |15:40-16:00|Lars   |Confidence and retrospect
