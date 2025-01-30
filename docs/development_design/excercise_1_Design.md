@@ -1,9 +1,3 @@
----
-tags:
-  - risks
-  - requirements
----
-
 # Discuss Risks and Requirements
 
 !!! info "The brief"
@@ -20,11 +14,11 @@ tags:
 
 ???- "for the teachers"
 
-    This project is based of the works of Bergström and Moberg 
+    This project is based of the works of Bergström and Moberg
     [Bergström and Moberg 2002](https://www.smhi.se/polopoly_fs/1.175744!/Bergstr%C3%B6m_Moberg_Uppsala.pdf),
     using the [Uppsala "dygsvärdes" temperature data](https://www.smhi.se/data/meteorologi/temperatur/uppsalas-temperaturserie-1.2855)
     [link](https://www.smhi.se/polopoly_fs/1.2866!/uppsala_tm_1722-2022.zip)
-    to the data set. 
+    to the data set.
 
     The outline of the project ...
 
@@ -94,7 +88,14 @@ tags:
         With that out of the way(Usually not conducted for small project but included here for completeness)
 
         Third! first iteration of Needs gathering
+             Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
 
+             Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
+             ---------------|-------------------------|---------------------|-----------------------
+             R1|Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
+             R2|program that performs and presents some analysis related to temperature|||
+             R3| The software should be able to read and parse the data in the SMHI station data csv files||
+             R4| A gliding aveage daily temperature should be analysed and displayed to the user in diagram format|
         forth! Risks
         Remember to think of both primary and secondary/derived risks
         We start looking at the Risk involved in the software project.
