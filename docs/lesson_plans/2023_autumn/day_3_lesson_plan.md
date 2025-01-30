@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plan
+  - preparation
+---
+
 # Lesson plan Day 3 autumn 2023
 
 Goals:

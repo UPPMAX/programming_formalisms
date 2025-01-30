@@ -1,3 +1,8 @@
+---
+tags:
+  - reflection
+---
+
 # Course reflection autumn 2023
 
 Here I reflect on the course as a whole,

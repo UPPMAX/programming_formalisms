@@ -1,3 +1,9 @@
+---
+tags:
+  - feedback
+  - anonymous
+---
+
 # Feedback
 
 You can share any feedback anonymously

@@ -1,3 +1,11 @@
+---
+tags:
+  - SDLC
+  - software
+  - development
+  - processes
+---
+
 # Software development processes
 
 ## SDLC

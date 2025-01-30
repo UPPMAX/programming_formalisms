@@ -1,3 +1,10 @@
+---
+tags:
+  - git
+  - merge
+  - apply
+---
+
 # Apply merge
 
 !!!- info "Learning outcomes"

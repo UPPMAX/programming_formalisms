@@ -1,3 +1,12 @@
+---
+tags:
+  - prereqs
+  - prerequirements
+  - preparation
+  - prep
+  - do before
+---
+
 # Pre-requirements
 
 <base target="_blank">

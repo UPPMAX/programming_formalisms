@@ -1,3 +1,9 @@
+---
+tags:
+  - git
+  - branch
+---
+
 # Git branches
 
 !!! questions

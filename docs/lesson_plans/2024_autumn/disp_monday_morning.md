@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plan
+  - preparation
+---
+
 # Monday morning sessions by Björn
 
 ## Intro with course overview

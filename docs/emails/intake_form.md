@@ -1,3 +1,11 @@
+---
+tags:
+  - email
+  - first contact
+  - intake
+  - communication
+---
+
 # Intake form
 
 This is the intake form

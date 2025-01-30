@@ -1,3 +1,8 @@
+---
+tags:
+  - retrospective
+---
+
 # Retrospective course
 
 Here we have a Retrospective on the course as a whole.

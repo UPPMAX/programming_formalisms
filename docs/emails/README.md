@@ -1,3 +1,9 @@
+---
+tags:
+  - emails
+  - communication
+---
+
 # Emails
 
 These are the emails sent out by this course

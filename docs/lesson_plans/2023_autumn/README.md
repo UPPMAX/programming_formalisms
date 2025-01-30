@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plans
+  - preparation
+---
+
 # Lesson plans autumn 2023
 
 * [Day 3 lesson plan](day_3_lesson_plan.md)

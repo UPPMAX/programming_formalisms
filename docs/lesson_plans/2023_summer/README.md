@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plans
+  - preparation
+---
+
 # Lesson plans
 
 * [Day 2, part 2](day_2_2.md)

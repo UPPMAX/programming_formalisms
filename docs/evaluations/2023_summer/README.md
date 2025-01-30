@@ -1,3 +1,8 @@
+---
+tags:
+  - retrospectives
+---
+
 # Retrospectives of 2023-05-29
 
 Link                                                                               | Result

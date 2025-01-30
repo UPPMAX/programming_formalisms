@@ -1,3 +1,8 @@
+---
+tags:
+  - reflection
+---
+
 # Onboarding
 
 I predict few learners, max 5 in total, with most arriving before 9:30.

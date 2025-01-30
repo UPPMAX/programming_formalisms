@@ -1,3 +1,10 @@
+---
+tags:
+  - shared
+  - documents
+  - HackMDs
+---
+
 # Shared documents 2023 autumn
 
 ## HackMD

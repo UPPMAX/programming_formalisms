@@ -1,3 +1,12 @@
+---
+tags:
+  - projects
+  - former
+  - earlier
+  - learners' project
+  - students' project
+---
+
 # Projects
 
 ## Active projects

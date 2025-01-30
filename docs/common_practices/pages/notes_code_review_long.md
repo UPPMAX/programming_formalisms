@@ -1,3 +1,10 @@
+---
+tags:
+  - notes
+  - code
+  - review
+---
+
 # Notes on code review
 
 This material is based on the Code Review lecture by The Carpentries:

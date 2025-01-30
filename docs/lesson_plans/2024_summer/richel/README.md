@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plans
+  - preparation
+---
+
 # Lesson plans
 
 * Autumn 2024, around April

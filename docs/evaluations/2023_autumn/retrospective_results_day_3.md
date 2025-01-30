@@ -1,3 +1,8 @@
+---
+tags:
+  - retrospective
+---
+
 # Retrospective day 3
 
 ![Day 3 retrospactive section 1](day_3_retrospective_1.png)

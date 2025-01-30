@@ -1,3 +1,9 @@
+---
+tags:
+  - project
+  - getting started
+---
+
 # Get started with a project
 
 !!! questions

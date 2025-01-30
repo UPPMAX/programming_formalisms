@@ -1,3 +1,12 @@
+---
+tags:
+  - data
+  - counts
+  - count
+  - experiment
+  - camera usage
+---
+
 # Counts
 
 Goal of this experiment is to see how important camera usage is for

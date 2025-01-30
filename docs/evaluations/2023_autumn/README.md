@@ -1,3 +1,8 @@
+---
+tags:
+  - retrospectives
+---
+
 # Retrospectives autumn 2023
 
 * [Retrospective day 2](retrospective_results_day_2.md)

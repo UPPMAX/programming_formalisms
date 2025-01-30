@@ -1,3 +1,9 @@
+---
+tags:
+  - social
+  - coding
+---
+
 # Social coding
 
 > This material is based on the Social Coding lecture by Code Refinery:

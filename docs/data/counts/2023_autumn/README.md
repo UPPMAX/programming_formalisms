@@ -1,3 +1,11 @@
+---
+tags:
+  - data
+  - counts
+  - count
+  - experiment
+---
+
 # Counts
 
 ## Other data

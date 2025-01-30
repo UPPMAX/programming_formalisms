@@ -1,3 +1,8 @@
+---
+tags:
+  - certificates
+---
+
 # Certificates
 
 Text for course certificate.

@@ -1,3 +1,11 @@
+---
+tags:
+  - git
+  - branch
+  - branches
+  - apply
+---
+
 # Apply branches
 
 ![](github_view_branches_summer_2024.png)

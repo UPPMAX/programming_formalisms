@@ -1,3 +1,10 @@
+---
+tags:
+  - merging
+  - merge
+  - git
+---
+
 # Merging
 
 !!!- info "Learning outcomes"

@@ -1,3 +1,9 @@
+---
+tags:
+  - risks
+  - requirements
+---
+
 # Discuss Risks and Requirements
 
 !!! info "The brief"

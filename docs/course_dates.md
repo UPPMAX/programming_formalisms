@@ -1,3 +1,11 @@
+---
+tags:
+  - course
+  - dates
+  - timetable
+  - schedule
+---
+
 # Course dates
 
 

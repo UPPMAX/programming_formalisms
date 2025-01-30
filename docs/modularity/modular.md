@@ -1,3 +1,9 @@
+---
+tags:
+  - modular programming
+  - refactoring
+---
+
 # Modular programming and Refactoring
 
 ???- info "Learning outcomes"

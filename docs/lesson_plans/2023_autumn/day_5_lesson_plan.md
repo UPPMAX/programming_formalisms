@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plan
+  - preparation
+---
+
 # Lesson plan Day 5 autumn 2023
 
 ## Lesson plan

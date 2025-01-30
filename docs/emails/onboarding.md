@@ -1,3 +1,14 @@
+---
+tags:
+  - email
+  - onboarding
+  - first contact
+  - welcome
+  - letter
+  - communication
+  - newsletter
+---
+
 # Onboarding
 
 - Email title: Programming Formalisms: preparation and start

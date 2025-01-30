@@ -1,3 +1,10 @@
+---
+tags:
+  - lesson
+  - plan
+  - preparation
+---
+
 # Day 2 part 2
 
 * 13:00-16:00

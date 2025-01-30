@@ -1,3 +1,14 @@
+---
+tags:
+  - email
+  - onboarding
+  - first contact
+  - welcome
+  - letter
+  - communication
+  - newsletter
+---
+
 # Welcome email
 
 Welcome, we are so happy that you have chosen to participate

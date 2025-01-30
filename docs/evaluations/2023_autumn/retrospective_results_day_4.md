@@ -1,3 +1,8 @@
+---
+tags:
+  - retrospective
+---
+
 # Retrospective day 4
 
 Copied literally.

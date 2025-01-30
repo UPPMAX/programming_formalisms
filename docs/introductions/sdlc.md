@@ -1,3 +1,11 @@
+---
+tags:
+  - SDLC
+  - software development
+  - lifecycle
+  - life cycle
+---
+
 # Software Development Lifecycle
 
 !!! info "Overview of Software Development Lifecycle (SDLC)"

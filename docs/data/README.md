@@ -1,3 +1,9 @@
+---
+tags:
+  - data
+  - collected
+---
+
 # Data
 
 Data being collected during the course.

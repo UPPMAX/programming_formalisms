@@ -1,3 +1,10 @@
+---
+tags:
+  - deployment
+  - deploy
+  - code
+---
+
 # Deploy your code
 
 !!! questions

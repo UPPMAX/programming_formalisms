@@ -1,3 +1,10 @@
+---
+tags:
+  - code
+  - review
+  - exercises
+---
+
 # Code review exercises
 
 ## Exercise 1: pair programming

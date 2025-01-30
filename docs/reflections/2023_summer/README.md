@@ -1,3 +1,8 @@
+---
+tags:
+  - reflection
+---
+
 # Reflection Richel, 2023-06-02
 
 (note that below there is an interview with a student)

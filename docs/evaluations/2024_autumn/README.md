@@ -1,3 +1,8 @@
+---
+tags:
+  - evaluation
+---
+
 # Evaluation autumn 2024
 
 ## Monday

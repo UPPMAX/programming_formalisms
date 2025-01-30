@@ -1,3 +1,11 @@
+---
+tags:
+  - documentation
+  - doc
+  - end
+  - ending
+---
+
 # Ending documentation
 
 !!! questions

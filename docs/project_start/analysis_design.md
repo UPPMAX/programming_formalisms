@@ -1,3 +1,9 @@
+---
+tags:
+  - project
+  - analysis
+---
+
 # Project start with analysis
 
 ## Requirements

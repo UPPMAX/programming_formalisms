@@ -1,3 +1,10 @@
+---
+tags:
+  - Contributor
+  - Code of Conduct
+  - CoC
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge

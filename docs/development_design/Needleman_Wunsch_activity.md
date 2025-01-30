@@ -1,3 +1,9 @@
+---
+tags:
+  - BLAST
+  - example
+---
+
 # BLAST: A real-world example
 
 "In bioinformatics, BLAST [basic local alignment search tool](https://en.wikipedia.org/wiki/BLAST_(biotechnology))

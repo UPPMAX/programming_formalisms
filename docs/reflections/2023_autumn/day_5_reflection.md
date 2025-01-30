@@ -1,3 +1,8 @@
+---
+tags:
+  - reflection
+---
+
 # Reflection day 5 autumn 2023
 
 Before the lesson, I was already

@@ -1,3 +1,13 @@
+---
+tags:
+  - project
+  - getting started
+  - clone
+  - start
+  - set up
+  - setup
+---
+
 # Get started with a project
 
 !!! info "Learning outcomes of 'Get started with Git/GitHub'"

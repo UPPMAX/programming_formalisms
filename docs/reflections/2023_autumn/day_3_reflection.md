@@ -1,3 +1,8 @@
+---
+tags:
+  - reflection
+---
+
 # Reflection day 3 autumn 2023
 
 Exercises felt at better length.

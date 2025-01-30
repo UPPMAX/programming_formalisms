@@ -1,3 +1,12 @@
+---
+tags:
+  - how
+  - generate
+  - slides
+  - create
+  - pdf
+---
+
 # How to generate the slides
 
 ```bash

@@ -1,3 +1,12 @@
+---
+tags:
+  - git
+  - GitHub
+  - merge
+  - contribute
+  - code review
+---
+
 # Merging and contributing with code review
 
 !!! questions

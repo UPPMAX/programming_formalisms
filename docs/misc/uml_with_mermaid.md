@@ -1,3 +1,10 @@
+---
+tags:
+  - flowcharts
+  - UML
+  - unified modeling language
+---
+
 # Flowcharts or Unified Modeling Language (UML)
 
 ## Tools

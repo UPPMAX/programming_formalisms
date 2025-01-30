@@ -1,3 +1,13 @@
+---
+tags:
+  - OOP
+  - OOD
+  - object-oriented
+  - object oriented
+  - programming
+  - development
+---
+
 # Object Oriented development
 
 ???- info "Learning outcomes"
