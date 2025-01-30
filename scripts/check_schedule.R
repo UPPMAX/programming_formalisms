@@ -60,6 +60,7 @@ create_constraints <- function() {
   tibble::tribble(
     ~topic, ~prerequisite,
     "TDD", "assert",
+    "modularity", "...",
     "Big O", "runtime speed profiles"
   )
 }
