@@ -3,7 +3,17 @@ name: Check spelling
 
 on:
   push:
+    paths:
+      - .github/workflows/check_markdown.yaml
+      - .wordlist.txt
+      - .spellcheck.yml
+      - '**.md'
   pull_request:
+    paths:
+      - .github/workflows/check_markdown.yaml
+      - .wordlist.txt
+      - .spellcheck.yml
+      - '**.md'
   schedule:
   - cron: "0 0 16 * *"
 
