@@ -67,8 +67,9 @@ read_schedule_from_file <- function() {
 
 
 
-read_constraints <- function(csv_filename = "") {
-  t <- readr::read_csv(csv_filename)
+read_constraints <- function() {
+  constraints_filename <- get_constraints_filename()
+  t <- readr::read_csv(constraints_filename, show_col_types = FALSE)
   testthat::expect_true("topic" %in% names(t))
   testthat::expect_true("prerequisite" %in% names(t))
   t
