@@ -111,4 +111,5 @@ read_constraints()
 
 message("Checking:")
 check_constraints()
+message("WORKS!")
 
