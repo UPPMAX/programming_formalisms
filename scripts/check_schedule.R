@@ -35,6 +35,17 @@ get_schedule_filename <- function() {
   schedule_filename
 }
 
+get_constraints_filename <- function() {
+  constraints_filename <- "scripts/constraints.csv"
+  if (!file.exists(constraints_filename)) {
+    stop(
+      "Cannot find '", constraints_filename, "'. \n",
+      "Current working directory: ", getwd()
+    )
+  }
+  constraints_filename
+}
+
 
 read_schedule_from_file <- function() {
   schedule_filename <- get_schedule_filename()
@@ -56,21 +67,17 @@ read_schedule_from_file <- function() {
 
 
 
-create_constraints <- function() {
-  tibble::tribble(
-    ~topic, ~prerequisite,
-    "TDD", "assert",
-    "modularity", "...",
-    "Big O", "runtime speed profiles"
-  )
+read_constraints <- function(csv_filename = "") {
+  t <- readr::read_csv(csv_filename)
+  testthat::expect_true("topic" %in% names(t))
+  testthat::expect_true("prerequisite" %in% names(t))
+  t
 }
-
-
 
 # Will stop with an error if not
 check_constraints <- function() {
   schedule <- read_schedule_from_file()
-  constraints <- create_constraints()
+  constraints <- read_constraints()
   for (constraint_index in seq_len(nrow(constraints))) {
     constraint <- constraints[constraint_index, ]
     topic <- constraint$topic
@@ -95,11 +102,12 @@ check_constraints <- function() {
   }
 }
 
-message("Checking schedule:")
+message("This is the schedule:")
 read_schedule_from_file()
 
-message("Checking for these constraints:")
-create_constraints()
+message("These are the constraints:")
+read_constraints()
 
+message("Checking:")
 check_constraints()
 
