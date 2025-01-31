@@ -1,3 +1,3 @@
 # Development
 
-Development is 
+Development is
