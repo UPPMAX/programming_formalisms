@@ -8,11 +8,13 @@ on:
     paths:
       - .github/workflows/check_schedule.yaml
       - scripts/check_schedule.R
+      - scripts/constraints.csv
       - docs/schedule.md
   pull_request:
     paths:
       - .github/workflows/check_schedule.yaml
       - scripts/check_schedule.R
+      - scripts/constraints.csv
       - docs/schedule.md
   schedule:
   - cron: "0 0 21 * *"
