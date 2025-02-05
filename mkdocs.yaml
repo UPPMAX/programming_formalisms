@@ -294,9 +294,9 @@ extra_css:
 
 markdown_extensions:
   toc:
-      toc_depth: 2
-      permalink: true
-      permalink_title: Anchor link to this section for reference
+    toc_depth: 2
+    permalink: true
+    permalink_title: Anchor link to this section for reference
   admonition
   tables
   attr_list
