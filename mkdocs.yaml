@@ -15,7 +15,7 @@ nav:
     Kanban board: project/kanban_board.md
     Team roles: project/team_roles.md
     Create class list: project/create_class_list.md
-    Create structs: project/create_struct.md
+    Create structs: project/create_structs.md
     Dream design: project/dream_design.md
   Intro:
     Introduction: introductions/intro.md
@@ -207,7 +207,6 @@ not_in_nav: |
   meeting_notes/2024_autumn.md
   misc/evaluation.md
   optimisation/README.md
-  project/create_structs.md
   project/projects.md
   project_start/spring2024/startup.md
   projects/example_project/DPAI_requirements.md
