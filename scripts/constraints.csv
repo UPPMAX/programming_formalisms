@@ -1,4 +1,14 @@
 topic,prerequisite
+assert,Issues
 TDD,assert
 Big O,runtime speed profiles
-TDD,Merge conflicts
+TDD 1,Merge conflicts
+TDD 2,TDD 1
+Formal testing framework,TDD 2
+Pair programming,branch
+Implement the project as a package,Continuous integration
+Formal testing framework,Pair programming
+Continuous integration,Formal testing framework
+Optimisation misconceptions,Continuous integration
+runtime speed profiles,Continuous integration
+Big O,Continuous integration
