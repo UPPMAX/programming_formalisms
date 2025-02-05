@@ -383,10 +383,6 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 -->
 
 
-
-
-
-
 ### How do I know I have a good Zoom setup?
 
 You have a Zoom good setup, if:
