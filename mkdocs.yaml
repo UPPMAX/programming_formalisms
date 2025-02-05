@@ -3,91 +3,83 @@ repo_url: https://github.com/UPPMAX/programming_formalisms
 edit_uri: 'blob/main/docs/'
 
 nav:
-  Home: index.md
-  About the course:
-    Pre-requirements: prereqs.md
-    Introduction: intro.md
-  Schedule: schedule.md
-  Course dates: course_dates.md
-  Project:
-    Intro: project/README.md
-    Issues: project/issues.md
-    Kanban board: project/kanban_board.md
-    Team roles: project/team_roles.md
-    Create class list: project/create_class_list.md
-    Create structs: project/create_structs.md
-    Dream design: project/dream_design.md
-  Intro:
-    Introduction: introductions/intro.md
-    SDLC tools: introductions/sdlc_tools.md
-  Planning:
-    Get started with a project: project_start/startup.md
-    Get started with git: project_start/startup_git.md
-    Project start with analysis and design: project_start/analysis_design.md
-  Design:
-    Software Development Lifecycle: introductions/sdlc.md
-    Object Oriented development: design_develop/OO_development.md
-    Function design: function_design/README.md
-    Expressive data types: expressive_data_type/README.md
-    Modular programming: modularity/modular.md
-    A 'has-a' relation: has_a_relation/README.md
-    Class design: data_structures/class_design.md
-    Optimisation misconceptions: optimisation/misconceptions.md
-    Big-O: optimisation/big_o.md
-    Runtime speed profiles: optimisation/runtime_speed_profiles.md
-  Development:
-    Issues: project/issues.md
-    Kanban board: project/kanban_board.md
-    Team roles: project/team_roles.md
-    Git workflow, branches: git/branches.md
-    Git(-Hub) workflow, branches/merging: git/merge.md
-    Contributing with code review: git/contribute.md
-    Sharing and social coding: social_coding/social_coding.md
-    Pair programming: pair_programming/README.md
-    Continuous integration: continuous_integration/README.md
-  Testing:
-    assert: assert/README.md
-    Test-driven development: tdd/README.md
-    Using a formal testing framework: testing/testing_framework.md
-  Deployment:
-    Implement the project as a package: package/README.md
-    Deploy: deployment/deploy.md
-    Documentation: deployment/documentation.md
-    Wrap-up: misc/wrap_up.md
-  Summary of days:
-    Summary of day: monday_summary.md
-    Summary of day: tuesday_summary.md
-    Summary of day: wednesday_summary.md
-    Summary of day: thursday_summary.md
-    Summary of day: friday_summary.md
-    Summary of week: summary_week.md
-  Misc:
-    Feedback: misc/feedback.md
-    Evaluations: evaluations/README.md
-    Reflections: reflections/README.md
-    Data: data/README.md
-    Emails: emails/README.md
-    Shared documents: shared_documents/README.md
-    Lesson plans: lesson_plans/README.md
-    Meeting notes: meeting_notes/README.md
-    Definitions: misc/definitions.md
-    Extra material (Earlier Intro day materials): extra.md
-    Project workflows: misc/project_workflows.md
-    Learn UML with mermaid: misc/uml_with_mermaid.md
-    git workflow: misc/git_workflow.md
-    Reading material: reading/README.md
-    FAQ: misc/faq.md
-    Functions to practice TDD: misc/functions.md
-    Retrospective: misc/retrospective.md
-    Wrap-up: misc/wrap_up.md
-
-
-# Replace by 'warn' in relaxed mode
-validation:
-  omitted_files: warn
-  absolute_links: warn
-  unrecognized_links: warn
-  anchors: warn
+  - Home: index.md
+  - About the course:
+    - Pre-requirements: prereqs.md
+    - Introduction: intro.md
+  - Schedule: schedule.md
+  - Course dates: course_dates.md
+  - Project:
+    - Intro: project/README.md
+    - Issues: project/issues.md
+    - Kanban board: project/kanban_board.md
+    - Team roles: project/team_roles.md
+    - Create class list: project/create_class_list.md
+    - Create structs: project/create_structs.md
+    - Dream design: project/dream_design.md
+  - Intro:
+    - Introduction: introductions/intro.md
+    - SDLC tools: introductions/sdlc_tools.md
+  - Planning:
+    - Get started with a project: project_start/startup.md
+    - Get started with git: project_start/startup_git.md
+    - Project start with analysis and design: project_start/analysis_design.md
+  - Design:
+    - Software Development Lifecycle: introductions/sdlc.md
+    - Object Oriented development: design_develop/OO_development.md
+    - Function design: function_design/README.md
+    - Expressive data types: expressive_data_type/README.md
+    - Modular programming: modularity/modular.md
+    - A 'has-a' relation: has_a_relation/README.md
+    - Class design: data_structures/class_design.md
+    - Optimisation misconceptions: optimisation/misconceptions.md
+    - Big-O: optimisation/big_o.md
+    - Runtime speed profiles: optimisation/runtime_speed_profiles.md
+  - Development:
+    - Issues: project/issues.md
+    - Kanban board: project/kanban_board.md
+    - Team roles: project/team_roles.md
+    - Git workflow, branches: git/branches.md
+    - Git(-Hub) workflow, branches/merging: git/merge.md
+    - Contributing with code review: git/contribute.md
+    - Sharing and social coding: social_coding/social_coding.md
+    - Pair programming: pair_programming/README.md
+    - Continuous integration: continuous_integration/README.md
+  - Testing:
+    - assert: assert/README.md
+    - Test-driven development: tdd/README.md
+    - Using a formal testing framework: testing/testing_framework.md
+  - Deployment:
+    - Implement the project as a package: package/README.md
+    - Deploy: deployment/deploy.md
+    - Documentation: deployment/documentation.md
+    - Wrap-up: misc/wrap_up.md
+  - Summary of days:
+    - Summary of day: monday_summary.md
+    - Summary of day: tuesday_summary.md
+    - Summary of day: wednesday_summary.md
+    - Summary of day: thursday_summary.md
+    - Summary of day: friday_summary.md
+    - Summary of week: summary_week.md
+  - Misc:
+    - Feedback: misc/feedback.md
+    - Evaluations: evaluations/README.md
+    - Reflections: reflections/README.md
+    - Data: data/README.md
+    - Emails: emails/README.md
+    - Shared documents: shared_documents/README.md
+    - Lesson plans: lesson_plans/README.md
+    - Meeting notes: meeting_notes/README.md
+    - Definitions: misc/definitions.md
+    - Extra material (Earlier Intro day materials): extra.md
+    - Project workflows: misc/project_workflows.md
+    - Learn UML with mermaid: misc/uml_with_mermaid.md
+    - git workflow: misc/git_workflow.md
+    - Reading material: reading/README.md
+    - FAQ: misc/faq.md
+    - Functions to practice TDD: misc/functions.md
+    - Retrospective: misc/retrospective.md
+    - Wrap-up: misc/wrap_up.md
 
 not_in_nav: |
   friday_intro.md
@@ -264,7 +256,6 @@ not_in_nav: |
   testing/testing_indeterminate_functions.md
   watching/README.md
 
-
 theme:
   name: material
   greetings: Welcome to the Programming Formalisms course materials
@@ -275,112 +266,56 @@ theme:
   logo: assets/programming_formalism_logo_rhs.png
 
   features:
-    toc.integrate
-    navigation.tabs
-    navigation.tabs.sticky
-    navigation.sections
-    navigation.path
-    navigation.footer
-    navigation.expand
-    search.suggest
-    content.code.annotate
-    content.code.copy
-    content.tabs.link
-    content.action.edit
-    content.action.view
+    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - navigation.expand
+    - search.suggest
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
     
 extra_css:
-  stylesheets/extra.css
+  - stylesheets/extra.css
 
 markdown_extensions:
-  toc:
-    toc_depth: 2
-    permalink: true
-    permalink_title: Anchor link to this section for reference
-  admonition
-  tables
-  attr_list
-  footnotes
-  pymdownx.details
-  pymdownx.tabbed:
+  - toc:
+      toc_depth: 2
+      permalink: true
+      permalink_title: Anchor link to this section for reference
+  - admonition
+  - tables
+  - attr_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.tabbed:
       alternate_style: true
-  pymdownx.highlight:
+  - pymdownx.highlight:
       anchor_linenums: true
-  pymdownx.inlinehilite
-  pymdownx.snippets
-  pymdownx.superfences:
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
       custom_fences:
-        name: mermaid
+        - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  pymdownx.keys
-  md_in_html
-  pymdownx.emoji:
+  - pymdownx.keys
+  - md_in_html
+  - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  pymdownx.arithmatex:
+  - pymdownx.arithmatex:
       generic: true
-  mkdocs_graphviz
+  - mkdocs_graphviz
 
 extra_javascript:
-  https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js
-  javascripts/mathjax.js
-  https://polyfill.io/v3/polyfill.min.js?features=es6
-  https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-      
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# validation:
-#   nav:
-#     omitted_files:
-#       data/counts/2023_autumn/README.md
-#       data/counts/2023_summer/README.md
-#       data/counts/2024_autumn/README.md
-#       data/counts/2024_summer/README.md
-#       emails/certificates.md
-#       emails/intake_form.md
-#       emails/onboarding.md
-#       emails/welcome_email.md
-#       evaluations/2023_autumn/README.md
-#       evaluations/2023_autumn/retrospective_results_course.md
-#       evaluations/2023_autumn/retrospective_results_day_2.md
-#       evaluations/2023_autumn/retrospective_results_day_3.md
-#       evaluations/2023_autumn/retrospective_results_day_4.md
-#       evaluations/2023_autumn/retrospective_results_day_5.md
-#       evaluations/2023_summer/README.md
-#       evaluations/2024_autumn/README.md
-#       evaluations/2024_autumn/20241118.md
-#       evaluations/2024_autumn/20241119.md
-#       evaluations/2024_autumn/20241120.md
-#       reflections/2023_autumn/day_4_reflection.md
-#       reflections/2023_autumn/day_5_reflection.md
-#       reflections/2023_summer/README.md
-#       reflections/2024_autumn/README.md
-#       reflections/2024_autumn/20241115_onboarding_richel.md
-#       reflections/2024_autumn/20241118_richel.md
-#       reflections/2024_autumn/20241119_richel.md
-#       reflections/2024_autumn/20241120_richel.md
-#       reflections/2024_autumn/20241121_richel.md
-#       reflections/2024_autumn/20241122_richel.md
-#       reflections/2024_summer/README.md
-#       reflections/2024_summer/20240422_richel.md
-#       reflections/2024_summer/20240423_richel.md
-#       reflections/2024_summer/20240424_richel.md
-#       reflections/2024_summer/20240425_richel.md
-#       reflections/2024_summer/20240426_richel.md
-#       shared_documents/2023_autumn/README.md
-#       shared_documents/2023_autumn/day_1.md
-#       shared_documents/2023_autumn/day_2.md
-#       shared_documents/2023_autumn/day_3.md
-#       shared_documents/2023_autumn/day_4.md
-#       shared_documents/2023_autumn/day_5.md
-#       shared_documents/2024_autumn/20241118.md
-#       shared_documents/2024_autumn/20241119.md
-#       shared_documents/2024_autumn/20241120.md
-#       shared_documents/2024_autumn/20241121.md
-#       shared_documents/2024_autumn/20241122.md
-#       shared_documents/2024_summer/20240422.md
-#       shared_documents/2024_summer/20240423.md
-#       shared_documents/2024_summer/20240424.md
-#       shared_documents/2024_summer/20240425.md
-#       shared_documents/2024_summer/20240426.md
-# 
