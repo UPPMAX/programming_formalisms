@@ -88,7 +88,10 @@
         With that out of the way(Usually not conducted for small project but included here for completeness)
 
         Third! first iteration of Needs gathering
-             Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
+             Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs. 
+             The SRS(Software Requirments Specification) can be structured as seen below.
+An SRS is concidered complete according to the following statement from the IEEE recomended practises (Trip et.al),An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
+             
 
              Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
              ---------------|-------------------------|---------------------|-----------------------
@@ -101,13 +104,14 @@
              R7| |  |
              R8| |  |
              R9| |  |
-             R10| |  |
+             R10|The software shall be developed in python |  |
+             R11|The software will use aditional python modules as needed by the design|
              
         Forth! Risks
         Remember to think of both primary and secondary/derived risks
         We start looking at the Risk involved in the software project.
             -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
-            -risk of
+            -risk of missread data
 
         Fifth! second iteration of needs analyzis
 
