@@ -89,7 +89,7 @@ Wilson et al. 2017: **Good enough practices** in Scientific computing
 - software development practices
     - explanations
     - naming
-    - eliminate duplications --> libraries
+    - eliminate duplication --> libraries
     - dependencies
     - DOI
 - tracking changes
