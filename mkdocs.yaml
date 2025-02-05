@@ -82,6 +82,13 @@ nav:
     Wrap-up: misc/wrap_up.md
 
 
+# Replace by 'warn' in relaxed mode
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
 not_in_nav: |
   friday_intro.md
   monday_intro.md
@@ -256,6 +263,7 @@ not_in_nav: |
   testing/testing_in_a_team.md
   testing/testing_indeterminate_functions.md
   watching/README.md
+
 
 theme:
   name: material
