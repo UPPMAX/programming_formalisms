@@ -93,10 +93,17 @@
              Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
              ---------------|-------------------------|---------------------|-----------------------
              R1|Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
-             R2|program that performs and presents some analysis related to temperature|||
+             R2|program that performs and presents some analysis related to temperature||
              R3| The software should be able to read and parse the data in the SMHI station data csv files||
              R4| A gliding aveage daily temperature should be analysed and displayed to the user in diagram format|
-        forth! Risks
+             R5| |  |    
+             R6| |  |
+             R7| |  |
+             R8| |  |
+             R9| |  |
+             R10| |  |
+             
+        Forth! Risks
         Remember to think of both primary and secondary/derived risks
         We start looking at the Risk involved in the software project.
             -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
@@ -108,6 +115,7 @@
 ## References
 
 - `ISO 12207:2018`
+- `IEEE Std 830™-1998(R2009)`
 - `ISO 73:2009`
 - `ISO 15271:1998`
 - Effective Methods for Software Testing: Includes Complete Guidelines,
