@@ -91,7 +91,7 @@ Wilson et al. 2017: **Good enough practices** in Scientific computing
     - naming
     - eliminate duplications --> libraries
     - dependencies
-    - DOI 
+    - DOI
 - tracking changes
 - collaborate
     - documentation
@@ -99,7 +99,7 @@ Wilson et al. 2017: **Good enough practices** in Scientific computing
     - strategies
     - license
     - citable
- 
+
 These cover
 
 - Development
@@ -138,9 +138,6 @@ These cover
         - Explanation
         - Reference
 
-
-
-
 ### Think about
 
 ???- "Why do we want to work with the mentioned tools?"
@@ -156,7 +153,5 @@ These cover
 ???- "Why sharing?"
 
 ## Summary of SDLC tools
-
-
 
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
