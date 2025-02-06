@@ -96,7 +96,7 @@ An SRS is concidered complete according to the following statement from the IEEE
              Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
              ---------------|-------------------------|---------------------|-----------------------
              R1|Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
-             R2|program that performs and presents some analysis related to temperature||
+             R2| Program that performs and presents some analysis related to temperature||
              R3| The software should be able to read and parse the data in the SMHI station data csv files||
              R4 |Load Dataset|Load the Uppsala temperature dataset from the provided zip file.| The dataset is successfully loaded into memory and is in the correct format (CSV or similar).
             R5| Preprocess Data Process the dataset to handle missing data, and approximate hourly or daily temperatures.| Data is processed to fill missing records and approximate hourly temperature values.
