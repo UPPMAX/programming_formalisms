@@ -275,7 +275,7 @@ move to the next session.
 - If you are more used to R than Python,
   consider watching [this video, 'R and TDD: is_one'](https://youtu.be/IPGfW4lrxOc)
 - Watch [this video called
-  'Programming Formalisms, session TDD, exercise 1: `is_zero`'](https://youtu.be/RGJpzMXDi6Q)
+  'Programming Formalisms, session TDD, exercise 1: `is_zero`'](https://youtu.be/B9oyvaz-HNU)
   until you understand the thought process of TDD
 - If you want to know more about `assert`, you can peek at
   [the session about 'assert'](../assert/README.md)
