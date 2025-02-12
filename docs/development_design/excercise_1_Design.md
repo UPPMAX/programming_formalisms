@@ -74,7 +74,7 @@
 
     **Answer**
 
-    First! we ask ourself what is the scope and magnitude of this project
+    **First!** we ask ourself what is the scope and magnitude of this project
     - This is a small project expected for the team to finish in about one week
     - The project will be driven and implemented by a small team of distributed developers.
     - the aim of the project is to teach the team the SDLC process
@@ -82,15 +82,15 @@
     **conclusion**- The project needs and goes through more formalized steps than a regular project of similar size.
     The projects needs a minimal risk assessment and and needs determination
 
-    Second! Determination of business and legal space.
+    **Second!** Determination of business and legal space.
         The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
         This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
     With that out of the way(Usually not conducted for small project but included here for completeness)
 
-    Third! first iteration of Needs gathering
-         Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs. 
+    **Third!** first iteration of Needs gathering
+         Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
          The SRS(Software Requirments Specification) can be structured as seen below.
-    
+
     An SRS is concidered complete according to the following statement from the IEEE recomended practises (Trip et.al),An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
 
 
@@ -115,13 +115,14 @@
     R17|Code Quality and Maintainability|The code should be modular, well-commented, and follow best practices for maintainability.| Code is structured, commented, and adheres to object-oriented principles.
     R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.
 
-    Forth! Risks
+    **Forth!** Risks
     Remember to think of both primary and secondary/derived risks
     We start looking at the Risk involved in the software project.
         -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
         -risk of missread data
 
-    Fifth! second iteration of needs analyzis
+    **Fifth!** second iteration of needs analysis
+    Now that we have established the risks we can go over our original table of requirements and revise them based on the risk evaluation.
 
 
 
