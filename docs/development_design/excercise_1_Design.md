@@ -9,7 +9,7 @@
 
     It needs to be approximate, as there are only few recordings
     per day.
-    It needs to be cleanly looking as [Björn takes over here!]
+    It needs to be cleanly looking as possible
     We want to have the average curve be displayed to reduce noise of visualization.
 
 ???- "for the teachers"
