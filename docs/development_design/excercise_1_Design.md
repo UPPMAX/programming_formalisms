@@ -65,14 +65,14 @@
 
 ???- question "One answer"
 
-    Start with a look at the user needs. and Risk involved in the project
+    Start with a look at the user needs and risk involved in the project
 
     Summary of the brief:
     The Brief specify that the users want to look at daily temperature data
     from uppsala from when it was started to be recorded to current day.
     They want to have the average curve be displayed to reduce noise of visualization.
 
-    !**Answer**
+    **Answer**
 
         First! we ask ourself what is the scope and magnitude of this project
         - This is a small project expected for the team to finish in about one week
@@ -109,10 +109,10 @@ An SRS is concidered complete according to the following statement from the IEEE
             R12|Performance Optimization |Ensure the system performs efficiently, especially when processing large datasets. |The system processes and visualizes the data within acceptable performance limits.
             R13| Clear Documentation of functionality |Provide simple documentation or user interface elements for users to interact with the data and view the visualizations.| Documentation is provided that explains how to run the system and interact with the visualization.
             R14|The software shall be developed in python , derived requirment from R9 |Use of python as developement language | The programm uses .py files to implement its function
-        R15| Scalability | The system must be able to handle a range of dataset sizes, from small subsets to the full dataset.| The system works seamlessly with both small and large datasets.
-R16|User Interface (UI) |Provide a simple and intuitive user interface for visualizing the temperature data and average curve.| The UI should allow users to interact with the graph and adjust visualization options.
-R17|Code Quality and Maintainability|The code should be modular, well-commented, and follow best practices for maintainability.| Code is structured, commented, and adheres to object-oriented principles.
-R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.
+            R15| Scalability | The system must be able to handle a range of dataset sizes, from small subsets to the full dataset.| The system works seamlessly with both small and large datasets.
+            R16|User Interface (UI) |Provide a simple and intuitive user interface for visualizing the temperature data and average curve.| The UI should allow users to interact with the graph and adjust visualization options.
+            R17|Code Quality and Maintainability|The code should be modular, well-commented, and follow best practices for maintainability.| Code is structured, commented, and adheres to object-oriented principles.
+            R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.
 
 
         Forth! Risks
