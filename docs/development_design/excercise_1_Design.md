@@ -74,54 +74,55 @@
 
     **Answer**
 
-        First! we ask ourself what is the scope and magnitude of this project
-        - This is a small project expected for the team to finish in about one week
-        - The project will be driven and implemented by a small team of distributed developers.
-        - the aim of the project is to teach the team the SDLC process
+    First! we ask ourself what is the scope and magnitude of this project
+    - This is a small project expected for the team to finish in about one week
+    - The project will be driven and implemented by a small team of distributed developers.
+    - the aim of the project is to teach the team the SDLC process
 
-        **conclusion**- The project needs and goes through more formalized steps than a regular project of similar size.
-        The projects needs a minimal risk assessment and and needs determination
+    **conclusion**- The project needs and goes through more formalized steps than a regular project of similar size.
+    The projects needs a minimal risk assessment and and needs determination
 
-        Second! Determination of business and legal space.
-            The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
-            This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
-        With that out of the way(Usually not conducted for small project but included here for completeness)
+    Second! Determination of business and legal space.
+        The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
+        This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
+    With that out of the way(Usually not conducted for small project but included here for completeness)
 
-        Third! first iteration of Needs gathering
-             Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs. 
-             The SRS(Software Requirments Specification) can be structured as seen below.
-       
-        An SRS is concidered complete according to the following statement from the IEEE recomended practises (Trip et.al),An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
+    Third! first iteration of Needs gathering
+         Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs. 
+         The SRS(Software Requirments Specification) can be structured as seen below.
+    
+    An SRS is concidered complete according to the following statement from the IEEE recomended practises (Trip et.al),An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
 
 
-        Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
-        ---------------|-------------------------|---------------------|-----------------------
-        R1|Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
-        R2| Program that performs and presents some analysis related to temperature||
-        R3| The software should be able to read and parse the data in the SMHI station data csv files||
-        R4 |Load Dataset|Load the Uppsala temperature dataset from the provided zip file.| The dataset is successfully loaded into memory and is in the correct format (CSV or similar).
-        R5| Preprocess Data Process the dataset to handle missing data, and approximate hourly or daily temperatures.| Data is processed to fill missing records and approximate hourly temperature values.
-        R6| Temperature Data Visualization| Use Matplotlib to create a graph displaying the recorded temperature data over time. |A graph is created where the temperature is on the y-axis and time (dates) on the x-axis.
-        R7| Calculate Average Temperature Curve |Compute the average temperature curve to smooth the data and reduce noise. Plot this curve on the same graph as the original data.| The average temperature curve is calculated and displayed on the graph.
-        R8| Modular Design for Prediction Functions| The system should allow different prediction functions (such as interpolation or trendline fitting) to be swapped out modularly.|Code is written in a way that allows easy swapping of prediction algorithms.
-        R9| Use of SciPy and NumPy| Utilize SciPy and NumPy for numerical calculations, with some algorithms written from scratch when necessary.| Appropriate use of SciPy/NumPy, or custom-written functions depending on the task.
-        R10| Object-Oriented Design| Implement the system using object-oriented principles. Different system components should be encapsulated in classes.| The system follows an object-oriented structure, with clear separation of concerns (e.g., a class for data processing, one for plotting, etc.).
-        R11| Risk Assessment and Error Handling|Conduct a risk assessment to identify potential failure points (e.g., corrupted data, missing files) and implement error handling.|The system gracefully handles errors, such as missing data, invalid file formats, or incorrect processing.
-        R12|Performance Optimization |Ensure the system performs efficiently, especially when processing large datasets. |The system processes and visualizes the data within acceptable performance limits.
-        R13| Clear Documentation of functionality |Provide simple documentation or user interface elements for users to interact with the data and view the visualizations.| Documentation is provided that explains how to run the system and interact with the visualization.
-        R14|The software shall be developed in python , derived requirment from R9 |Use of python as developement language | The programm uses .py files to implement its function
-        R15| Scalability | The system must be able to handle a range of dataset sizes, from small subsets to the full dataset.| The system works seamlessly with both small and large datasets.
-        R16|User Interface (UI) |Provide a simple and intuitive user interface for visualizing the temperature data and average curve.| The UI should allow users to interact with the graph and adjust visualization options.
-        R17|Code Quality and Maintainability|The code should be modular, well-commented, and follow best practices for maintainability.| Code is structured, commented, and adheres to object-oriented principles.
-        R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.
+    Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
+    ---------------|-------------------------|---------------------|-----------------------
+    R1|Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
+    R2| Program that performs and presents some analysis related to temperature||
+    R3| The software should be able to read and parse the data in the SMHI station data csv files||
+    R4 |Load Dataset|Load the Uppsala temperature dataset from the provided zip file.| The dataset is successfully loaded into memory and is in the correct format (CSV or similar).
+    R5| Preprocess Data Process the dataset to handle missing data, and approximate hourly or daily temperatures.| Data is processed to fill missing records and approximate hourly temperature values.
+    R6| Temperature Data Visualization| Use Matplotlib to create a graph displaying the recorded temperature data over time. |A graph is created where the temperature is on the y-axis and time (dates) on the x-axis.
+    R7| Calculate Average Temperature Curve |Compute the average temperature curve to smooth the data and reduce noise. Plot this curve on the same graph as the original data.| The average temperature curve is calculated and displayed on the graph.
+    R8| Modular Design for Prediction Functions| The system should allow different prediction functions (such as interpolation or trendline fitting) to be swapped out modularly.|Code is written in a way that allows easy swapping of prediction algorithms.
+    R9| Use of SciPy and NumPy| Utilize SciPy and NumPy for numerical calculations, with some algorithms written from scratch when necessary.| Appropriate use of SciPy/NumPy, or custom-written functions depending on the task.
+    R10| Object-Oriented Design| Implement the system using object-oriented principles. Different system components should be encapsulated in classes.| The system follows an object-oriented structure, with clear separation of concerns (e.g., a class for data processing, one for plotting, etc.).
+    R11| Risk Assessment and Error Handling|Conduct a risk assessment to identify potential failure points (e.g., corrupted data, missing files) and implement error handling.|The system gracefully handles errors, such as missing data, invalid file formats, or incorrect processing.
+    R12|Performance Optimization |Ensure the system performs efficiently, especially when processing large datasets. |The system processes and visualizes the data within acceptable performance limits.
+    R13| Clear Documentation of functionality |Provide simple documentation or user interface elements for users to interact with the data and view the visualizations.| Documentation is provided that explains how to run the system and interact with the visualization.
+    R14|The software shall be developed in python , derived requirment from R9 |Use of python as developement language | The programm uses .py files to implement its function
+    R15| Scalability | The system must be able to handle a range of dataset sizes, from small subsets to the full dataset.| The system works seamlessly with both small and large datasets.
+    R16|User Interface (UI) |Provide a simple and intuitive user interface for visualizing the temperature data and average curve.| The UI should allow users to interact with the graph and adjust visualization options.
+    R17|Code Quality and Maintainability|The code should be modular, well-commented, and follow best practices for maintainability.| Code is structured, commented, and adheres to object-oriented principles.
+    R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.
 
-        Forth! Risks
-        Remember to think of both primary and secondary/derived risks
-        We start looking at the Risk involved in the software project.
-            -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
-            -risk of missread data
+    Forth! Risks
+    Remember to think of both primary and secondary/derived risks
+    We start looking at the Risk involved in the software project.
+        -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
+        -risk of missread data
 
-        Fifth! second iteration of needs analyzis
+    Fifth! second iteration of needs analyzis
+
 
 
 ## References
