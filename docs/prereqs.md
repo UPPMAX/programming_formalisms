@@ -19,9 +19,9 @@ These are the prerequisites to follow this course:
 
 ???- question "How can I check if I have done these steps?"
 
-    - See the [Frequently Asked Questions 'Prerequisites' section](misc/faq/README.md#prerequisites)
+    - See the [Frequently Asked Questions 'Prerequisites' section](misc/faq.md#prerequisites)
 
 ???- question "What if I have another question?"
 
-    - See the [Frequently Asked Questions section](misc/faq/README.md)
+    - See the [Frequently Asked Questions section](misc/faq.md)
 

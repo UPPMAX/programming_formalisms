@@ -169,10 +169,6 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
     - `git` comes installed with all Linux distributions
     - To install `git`, do `sudo apt-get install git`
 
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
-
 ## Using git in VS code
 
 - When Git is installed you may need to restart a shell in VS code before it works.
@@ -190,10 +186,6 @@ git config --global core.editor "code --wait"
 ```
 -->
 
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
-
 
 ### Configure git
 
@@ -201,17 +193,11 @@ git config --global core.editor "code --wait"
 
 Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
 
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
 
 ### GitHub
 
 Sign up for GitHub account: [https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
 
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
 
 ### Git–GitHub connection through ssh keys
 
@@ -254,10 +240,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
-
 
 ## Git courses
 
@@ -272,9 +254,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
 
 ## Python
 
@@ -316,10 +295,6 @@ pbcopy < ~/.ssh/id_ed25519.pub
     - Example: make a hello.py script and run it with the "play" button.
     - Choose which Python interpreter to use.
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
-
-!!! info
-
-    Go back to [checkpoints](prereqs.md#checkpoints)
 
 ## Python courses
 
