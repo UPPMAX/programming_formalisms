@@ -87,14 +87,13 @@
 
     Start with a look at the user needs and risk involved in the project
 
-    Summary of the brief:
-    The Brief specify that the users want to look at daily temperature data
-    from uppsala from when it was started to be recorded to current day.
-    They want to have the average curve be displayed to reduce noise of visualization.
+    **Summary of the brief:**
+    - Do some analysis on data from an Uppsala weather station.
+
 
     **Answer**
 
-    **First!** we ask ourself what is the scope and magnitude of this project
+    **First!** We ask ourself what is the scope and magnitude of this project
     
     - This is a small project expected for the team to finish in about one week
     - The project will be driven and implemented by a small team of distributed developers.
@@ -109,7 +108,7 @@
     - This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
     - With that out of the way(Usually not conducted for small project but included here for completeness)
 
-    **Third!** first iteration of Needs gathering
+    **Third!** First iteration of Needs gathering
          
     - Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
     - The SRS(Software Requirments Specification) can be structured as seen below.
@@ -144,7 +143,7 @@
         -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
         -risk of misread data
 
-    **Fifth!** second iteration of needs analysis
+    **Fifth!** Second iteration of needs analysis
     
     - Now that we have established the risks we can go over our original table of requirements and revise them based on the risk evaluation.
 
