@@ -2,15 +2,7 @@
 
 !!! info "The brief"
 
-    We want to see (an approximation and cleanly looking)
-    hourly daily temperature data from Uppsala,
-    using a long-lasting dataset that recorded the temparature
-    a couple of times per day.
-
-    It needs to be approximate, as there are only few recordings
-    per day.
-    It needs to be cleanly looking as possible
-    We want to have the average curve be displayed to reduce noise of visualization.
+    Do some analysis on data from an Uppsala weather station.
 
 ???- "for the teachers"
 
@@ -28,6 +20,30 @@
       scratch, depending on the needs in Algorithms and TDD sections.
     - uses modular design to be able to swap out the prediction functions.
     - uses object oriented design and development
+
+!!! info "Details"
+
+    - You have a temperature data file (Uppsala)
+    - Build a program that performs and presents some analysis
+        - graph of running means
+        - other statistics
+            - daily maximums/min
+            - yearly maximums/min
+        - meta data extraction
+            - name of station
+            - dates , times and varible from which column
+        - presentation
+            - header of graphs (name)
+            - axis labels
+    - When the program is run, user should be able to decide which analysis to perform, for instance wit arguments from the commandline.
+    - How?
+        - modular design
+        - Different teams get different tasks focus
+        - Start with Uppsala file
+        - If time allows make program more general:
+            - make possible to read other files (defined by)
+            - there is a document that connects filenames to stations
+            - argument can be station name and the program reads the right file
 
 
 ???+ question "Discuss"
