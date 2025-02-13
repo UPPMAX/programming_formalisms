@@ -105,7 +105,7 @@
     **Second!** Determination of business and legal space.
     
     - The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
-    - This project is conducted inside a educational setting in Sweden and therefor the legal space is simple.
+    - This project is conducted inside a educational setting in Sweden and therefore the legal space is simple.
     - With that out of the way(Usually not conducted for small project but included here for completeness)
 
     **Third!** First iteration of Needs gathering
