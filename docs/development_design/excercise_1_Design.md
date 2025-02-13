@@ -36,7 +36,9 @@
             - header of graphs (name)
             - axis labels
     - When the program is run, user should be able to decide which analysis to perform, for instance wit arguments from the commandline.
-    - How?
+    
+    ???- question "How?"
+    
         - modular design
         - Different teams get different tasks focus
         - Start with Uppsala file
