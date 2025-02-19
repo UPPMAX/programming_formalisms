@@ -14,11 +14,13 @@
     [link](https://www.smhi.se/polopoly_fs/1.2866!/uppsala_tm_1722-2022.zip)
     to the data set.
 
+    The students will use some other data for Uppsala that have the same format for other weather stations in Sweden. Thus, the analysis can be extended to other sites.
+
     The outline of the project ...
 
-    - needs analysis and risk assesment
+    - needs analysis and risk assessment
     - uses Python and matplotlib plot the data
-    - uses `scypi` and `numpy` alternatively writing the functions from
+    - uses `scipy` and `numpy` alternatively writing the functions from
       scratch, depending on the needs in Algorithms and TDD sections.
     - uses modular design to be able to swap out the prediction functions.
     - uses object oriented design and development
@@ -37,11 +39,12 @@
         - presentation
             - header of graphs (name)
             - axis labels
-    - When the program is run, user should be able to decide which analysis to perform, for instance wit arguments from the commandline.
+    - When the program is run, user should be able to decide which analysis to perform, for instance with arguments from the commandline.
+    - Make sure to that it can load other data.
     
     ???- question "How?"
     
-        - modular design
+        - Modular design
         - Different teams get different tasks focus
         - Start with Uppsala file
         - If time allows make program more general:
@@ -52,8 +55,7 @@
 
 ???+ question "Discuss"
 
-    Discuss risks and requirements (A short Needs Analysis) for a program that
-    visualizes and does simple curve fitting for temperature data from uppsala
+    Discuss risks and requirements (A short Needs Analysis) for a program that visualizes and does simple curve fitting for temperature data from uppsala
 
 !!!- hint "Needs"
 
@@ -63,11 +65,9 @@
 
 !!!- hint "Risks"
 
-    Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on
-    objectives'. This has an attached Note 1: 'An effect is a deviation from
-    the expected — positive and/or negative'.
-    A positive risk is commonly known as an opportunity,
-    and can be addressed within the Risk Management process.
+    Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'. 
+    This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
+    A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.
 
     - Think about what the risks are in terms of access, legality
     - Think about risks of data loss etc.
@@ -111,8 +111,9 @@
     **Third!** First iteration of Needs gathering
          
     - Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
-    - The SRS(Software Requirments Specification) can be structured as seen below.
-    - An SRS is concidered complete according to the following statement from the IEEE recomended practises (Trip et.al),An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
+    - The SRS (Software Requirments Specification) can be structured as seen below.
+    - An SRS is considered complete according to the following statement from the IEEE recomended practises (Trip et.al)
+    - An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
 
 
     Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
@@ -140,8 +141,9 @@
     
     - Remember to think of both primary and secondary/derived risks
     - We start looking at the Risk involved in the software project.
-        -Over engineering - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
-        -risk of misread data
+        - Over engineering 
+        - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
+        - risk of misread data
 
     **Fifth!** Second iteration of needs analysis
     
