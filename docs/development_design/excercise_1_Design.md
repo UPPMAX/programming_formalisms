@@ -88,8 +88,8 @@
     Start with a look at the user needs and risk involved in the project
 
     **Summary of the brief:**
+    
     - Do some analysis on data from an Uppsala weather station.
-
 
     **Answer**
 
@@ -99,12 +99,12 @@
     - The project will be driven and implemented by a small team of distributed developers.
     - the aim of the project is to teach the team the SDLC process
 
-    **conclusion** The project needs and goes through more formalized steps than a regular project of similar size.
+    - **conclusion** The project needs and goes through more formalized steps than a regular project of similar size.
     The projects needs a minimal risk assessment and and needs determination
 
     **Second!** Determination of business and legal space.
     
-    - The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available , it non sensitive non personal data with minimal economic impact.
+    - The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available, it is non sensitive non personal data with minimal economic impact.
     - This project is conducted inside a educational setting in Sweden and therefore the legal space is simple.
     - With that out of the way(Usually not conducted for small project but included here for completeness)
 
