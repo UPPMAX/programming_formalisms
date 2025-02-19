@@ -52,25 +52,26 @@
             - argument can be station name and the program reads the right file
 
 
-???+ question "Discuss"
+???+ question "Exercise"
 
-    Discuss risks and requirements (A short Needs Analysis) for a program that visualizes and does simple curve fitting for temperature data from uppsala
+    Discuss risks and requirements (A short Needs Analysis) for the program above.
 
-!!!- hint "Needs"
+!!!- hint "Hints for needs"
 
     - Think about what the user needs from your application
     - Think about how the user interacts
 
-!!!- hint "Risks"
+!!!- hint "Hints for risks"
 
     - Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'.
-    - This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
-    - A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.
+        - This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
+        - A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.
 
+    Investigate 
 
-    - Think about what the risks are in terms of access, legality
-    - Think about risks of data loss etc.
-    - Think about requirements on users system
+    - what the risks are in terms of access, legality
+    - risks of data loss etc.
+    - requirements on users' system
 
     A short checklist of categories:
 
@@ -79,16 +80,16 @@
     - Data loss
     - Program Errors
         - such as yielding the wrong result
-        - Causing unintended system behavior
+        - causing unintended system behavior
 
 
-???- question "One answer"
+???- question "One possible answer"
 
     Start with a look at the user needs and risk involved in the project
 
     **Summary of the brief:**
     
-    - Do some analysis on data from an Uppsala weather station.
+    - Do some analysis on data from an Uppsala weather station and possibly other weather stations.
 
     **Answer**
 
@@ -96,20 +97,22 @@
     
     - This is a small project expected for the team to finish in about one week
     - The project will be driven and implemented by a small team of distributed developers.
-    - the aim of the project is to teach the team the SDLC process
+    - The aim of the project is to teach the team the SDLC process
 
-    - **conclusion** The project needs and goes through more formalized steps than a regular project of similar size.
-    The projects needs a minimal risk assessment and and needs determination
+    - **Conclusion:** 
+        - The project needs and goes through more formalized steps than a regular project of similar size.
+        - The projects needs a minimal risk assessment and needs determination.
 
     **Second!** Determination of business and legal space.
     
-    - The project operates inside an open non-profit open source scope, The Data Protection Impact assessment is not needed for this data set since it is open and readily available, it is non sensitive non personal data with minimal economic impact.
+    - The project operates inside an open non-profit open source scope.
+    - The Data Protection Impact assessment is not needed for this data set since it is open and readily available, it is non sensitive non personal data with minimal economic impact.
     - This project is conducted inside a educational setting in Sweden and therefore the legal space is simple.
-    - With that out of the way(Usually not conducted for small project but included here for completeness)
+    - With that out of the way (Usually not conducted for small project but included here for completeness).
 
     **Third!** First iteration of Needs gathering
 
-    - Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
+    - Start by assessing the brief and determined legal and business space. These should be taken into consideration when evalutating the needs.
     - The SRS (Software Requirments Specification) can be structured as seen below.
     - An SRS is considered complete according to the following statement from the IEEE recomended practises (Trip et.al)
     - An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
@@ -117,9 +120,9 @@
 
     Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
     ---------------|-------------------------|---------------------|-----------------------
-    R1|Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
-    R2| Program that performs and presents some analysis related to temperature|| -
-    R3| The software should be able to read and parse the data in the SMHI station data csv files|| -
+    R1| Open source development|the development process follows the principles of open-source development| In each step evaluate the accessability and openness
+    R2| Program that performs and presents some analysis related to temperature|-| -
+    R3| The software should be able to read and parse the data in the SMHI station data csv files|-| -
     R4 |Load Dataset|Load the Uppsala temperature dataset from the provided zip file.| The dataset is successfully loaded into memory and is in the correct format (CSV or similar).
     R5| Preprocess Data Process the dataset to handle missing data, and approximate hourly or daily temperatures.| Data is processed to fill missing records and approximate hourly temperature values.| -
     R6| Temperature Data Visualization| Use Matplotlib to create a graph displaying the recorded temperature data over time. |A graph is created where the temperature is on the y-axis and time (dates) on the x-axis.
