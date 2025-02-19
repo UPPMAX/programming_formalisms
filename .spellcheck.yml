@@ -17,7 +17,7 @@ matrix:
       - ':matches(code, pre)'
       - 'code'
       - 'pre'
-      - 'blockquote'
+#      - 'blockquote'
   sources:
   - README.md
   - learning_line.md
