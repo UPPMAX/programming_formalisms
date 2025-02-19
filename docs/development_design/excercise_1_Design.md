@@ -7,7 +7,7 @@
 ???- "for the teachers"
 
     **Needs update**
-   
+
     This project is based of the works of Bergström and Moberg
     [Bergström and Moberg 2002](https://www.smhi.se/polopoly_fs/1.175744!/Bergstr%C3%B6m_Moberg_Uppsala.pdf),
     using the [Uppsala "dygnsvärdes" temperature data](https://www.smhi.se/data/meteorologi/temperatur/uppsalas-temperaturserie-1.2855)
@@ -62,7 +62,6 @@
     - Think about what the user needs from your application
     - Think about how the user interacts
 
-
 !!!- hint "Risks"
 
     Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'. 
@@ -109,7 +108,7 @@
     - With that out of the way(Usually not conducted for small project but included here for completeness)
 
     **Third!** First iteration of Needs gathering
-         
+
     - Start by assesing the brief and determined legal and busissness space. These should be taken into consideration when evalutating the needs.
     - The SRS (Software Requirments Specification) can be structured as seen below.
     - An SRS is considered complete according to the following statement from the IEEE recomended practises (Trip et.al)
@@ -122,7 +121,7 @@
     R2| Program that performs and presents some analysis related to temperature||
     R3| The software should be able to read and parse the data in the SMHI station data csv files||
     R4 |Load Dataset|Load the Uppsala temperature dataset from the provided zip file.| The dataset is successfully loaded into memory and is in the correct format (CSV or similar).
-    R5| Preprocess Data Process the dataset to handle missing data, and approximate hourly or daily temperatures.| Data is processed to fill missing records and approximate hourly temperature values.
+    R5| Preprocess Data Process the dataset to handle missing data, and approximate hourly or daily temperatures.| Data is processed to fill missing records and approximate hourly temperature values.|
     R6| Temperature Data Visualization| Use Matplotlib to create a graph displaying the recorded temperature data over time. |A graph is created where the temperature is on the y-axis and time (dates) on the x-axis.
     R7| Calculate Average Temperature Curve |Compute the average temperature curve to smooth the data and reduce noise. Plot this curve on the same graph as the original data.| The average temperature curve is calculated and displayed on the graph.
     R8| Modular Design for Prediction Functions| The system should allow different prediction functions (such as interpolation or trendline fitting) to be swapped out modularly.|Code is written in a way that allows easy swapping of prediction algorithms.
@@ -135,21 +134,19 @@
     R15| Scalability | The system must be able to handle a range of dataset sizes, from small subsets to the full dataset.| The system works seamlessly with both small and large datasets.
     R16|User Interface (UI) |Provide a simple and intuitive user interface for visualizing the temperature data and average curve.| The UI should allow users to interact with the graph and adjust visualization options.
     R17|Code Quality and Maintainability|The code should be modular, well-commented, and follow best practices for maintainability.| Code is structured, commented, and adheres to object-oriented principles.
-    R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.
+    R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.|
 
     **Fourth!** Risks
     
     - Remember to think of both primary and secondary/derived risks
     - We start looking at the Risk involved in the software project.
-        - Over engineering 
+        - Over engineering
         - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
         - risk of misread data
 
     **Fifth!** Second iteration of needs analysis
     
     - Now that we have established the risks we can go over our original table of requirements and revise them based on the risk evaluation.
-
-
 
 ## References
 
