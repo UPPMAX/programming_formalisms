@@ -14,7 +14,7 @@ matrix:
       attributes:
       - alt
       ignores:
-      - ':matches(code, pre)'
+#      - ':matches(code, pre)'
 #      - 'code'
 #      - 'pre'
 #      - 'blockquote'
