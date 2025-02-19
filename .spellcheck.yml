@@ -16,7 +16,7 @@ matrix:
       ignores:
       - ':matches(code, pre)'
       - 'code'
-      - 'pre'
+#      - 'pre'
 #      - 'blockquote'
   sources:
   - README.md
