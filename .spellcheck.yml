@@ -13,7 +13,7 @@ matrix:
       comments: false
       attributes:
       - alt
-      ignores:
+#      ignores:
 #      - ':matches(code, pre)'
 #      - 'code'
 #      - 'pre'
