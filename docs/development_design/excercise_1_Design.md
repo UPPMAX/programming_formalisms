@@ -64,9 +64,10 @@
 
 !!!- hint "Risks"
 
-    Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'. 
-    This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
-    A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.
+    - Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'.
+    - This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
+    - A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.
+
 
     - Think about what the risks are in terms of access, legality
     - Think about risks of data loss etc.
