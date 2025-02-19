@@ -45,7 +45,6 @@
     ???- question "How?"
     
         - Modular design
-        - Different teams get different tasks focus
         - Start with Uppsala file
         - If time allows make program more general:
             - make possible to read other files (defined by)
