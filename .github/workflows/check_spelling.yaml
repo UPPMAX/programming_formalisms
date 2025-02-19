@@ -33,7 +33,6 @@ jobs:
         run: |
           rm -rf docs/evaluations
           rm -rf docs/meeting_notes
-          rm -rf development_design
           rm -rf projects
           rm -rf docs/feedback
           rm -rf docs/retrospectives
@@ -43,6 +42,6 @@ jobs:
       - name: Remove files that are not to be spellchecked yet
         run: |
           rm docs/project_start/analysis_design.md
-          rm docs/development_design/excercise_1_Design.md
+#          rm docs/development_design/excercise_1_Design.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
