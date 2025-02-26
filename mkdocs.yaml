@@ -55,11 +55,11 @@ nav:
     - Documentation: deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
   - Summary of days:
-    - Summary of day: monday_summary.md
-    - Summary of day: tuesday_summary.md
-    - Summary of day: wednesday_summary.md
-    - Summary of day: thursday_summary.md
-    - Summary of day: friday_summary.md
+    - Summary of monday: monday_summary.md
+    - Summary of tuesday: tuesday_summary.md
+    - Summary of wednesday: wednesday_summary.md
+    - Summary of thursday: thursday_summary.md
+    - Summary of friday: friday_summary.md
     - Summary of week: summary_week.md
   - Misc:
     - Feedback: misc/feedback.md
