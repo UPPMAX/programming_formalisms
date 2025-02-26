@@ -41,9 +41,9 @@
             - axis labels
     - When the program is run, user should be able to decide which analysis to perform, for instance with arguments from the commandline.
     - Make sure to that it can load other data.
-    
+
     ???- question "How?"
-    
+
         - Modular design
         - Start with Uppsala file
         - If time allows make program more general:
@@ -67,7 +67,7 @@
         - This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
         - A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.
 
-    Investigate 
+    Investigate
 
     - what the risks are in terms of access, legality
     - risks of data loss etc.
@@ -88,23 +88,23 @@
     Start with a look at the user needs and risk involved in the project
 
     **Summary of the brief:**
-    
+
     - Do some analysis on data from an Uppsala weather station and possibly other weather stations.
 
     **Answer**
 
     **First!** We ask ourself what is the scope and magnitude of this project
-    
+
     - This is a small project expected for the team to finish in about one week
     - The project will be driven and implemented by a small team of distributed developers.
     - The aim of the project is to teach the team the SDLC process
 
-    - **Conclusion:** 
+    - **Conclusion:**
         - The project needs and goes through more formalized steps than a regular project of similar size.
         - The projects needs a minimal risk assessment and needs determination.
 
     **Second!** Determination of business and legal space.
-    
+
     - The project operates inside an open non-profit open source scope.
     - The Data Protection Impact assessment is not needed for this data set since it is open and readily available, it is non sensitive non personal data with minimal economic impact.
     - This project is conducted inside a educational setting in Sweden and therefore the legal space is simple.
@@ -140,7 +140,7 @@
     R18| Documentation and Reporting Provide clear documentation for developers, including setup instructions, code comments, and user manuals.| The documentation is complete and easy to follow, explaining how to use and modify the system.| -
 
     **Fourth!** Risks
-    
+
     - Remember to think of both primary and secondary/derived risks
     - We start looking at the Risk involved in the software project.
         - Over engineering
@@ -148,7 +148,7 @@
         - risk of misread data
 
     **Fifth!** Second iteration of needs analysis
-    
+
     - Now that we have established the risks we can go over our original table of requirements and revise them based on the risk evaluation.
 
 ## References
