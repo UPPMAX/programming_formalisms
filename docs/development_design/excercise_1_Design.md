@@ -125,7 +125,6 @@
     Now that we have established the risks we can go over our original table of requirements and revise them based on the risk evaluation.
 
 
-
 ## References
 
 - `ISO 12207:2018`
