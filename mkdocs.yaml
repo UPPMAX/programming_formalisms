@@ -55,11 +55,11 @@ nav:
     - Documentation: deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
   - Summary of days:
-    - Summary of day: monday_summary.md
-    - Summary of day: tuesday_summary.md
-    - Summary of day: wednesday_summary.md
-    - Summary of day: thursday_summary.md
-    - Summary of day: friday_summary.md
+    - Summary of Monday: monday_summary.md
+    - Summary of Tuesday: tuesday_summary.md
+    - Summary of Wednesday: wednesday_summary.md
+    - Summary of Thursday: thursday_summary.md
+    - Summary of Friday: friday_summary.md
     - Summary of week: summary_week.md
   - Misc:
     - Feedback: misc/feedback.md
@@ -145,11 +145,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 not_in_nav: |
-  friday_intro.md
   monday_intro.md
-  thursday_intro.md
-  tuesday_intro.md
-  wednesday_intro.md
   algorithms/README.md
   common_practices/exercises/exercises_code_review.md
   common_practices/pages/notes_code_review_long.md

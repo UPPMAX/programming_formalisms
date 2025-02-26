@@ -25,8 +25,8 @@
 
 </center>
 
-![The UPPMAX logo](assets/uppmax_logo.png)
-![The NBIS logo](assets/nbis_green_logo.png)
+![The UPPMAX logo](assets/uppmax_logo_50.png)
+![The NBIS logo](assets/nbis_green_logo_25.png)
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
