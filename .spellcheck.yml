@@ -13,11 +13,11 @@ matrix:
       comments: false
       attributes:
       - alt
-      ignores:
-      - ':matches(code, pre)'
-      - 'code'
-      - 'pre'
-      - 'blockquote'
+#      ignores:
+#      - ':matches(code, pre)'
+#      - 'code'
+#      - 'pre'
+#      - 'blockquote'
   sources:
   - README.md
   - learning_line.md

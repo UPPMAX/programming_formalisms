@@ -1641,11 +1641,9 @@ reconceptualisation
 unesco
 signoff
 Hardcoding
-harddisc
 Bergström
 Moberg
 Scipy
-dygsvärdes
 OSDI
 USENIX
 prerequirements
