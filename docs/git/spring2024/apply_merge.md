@@ -370,7 +370,7 @@ gitGraph
     - on your local computer, modify a file, e.g. add the line `Anna was here`
       at the bottom of `README.md`. Then do `git add .`,
       `git commit -m "Anna was here"` and `git push`.
-      Do not merge braches yet, else there will be no merge conflicts!
+      Do not merge branches yet, else there will be no merge conflicts!
     - on your local computer, `git switch main`
     - on your local computer, modify a file, e.g. add the line `main person was here`.
       Then do `git add .`, `git commit -m "main person was here"` and `git push`.
