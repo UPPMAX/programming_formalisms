@@ -24,6 +24,7 @@ nav:
     - Get started with a project: project_start/startup.md
     - Get started with git: project_start/startup_git.md
     - Project start with analysis and design: project_start/analysis_design.md
+    - Development and design: development_design/excercise_1_Design.md
   - Design:
     - Software Development Lifecycle: introductions/sdlc.md
     - Object Oriented development: design_develop/OO_development.md
