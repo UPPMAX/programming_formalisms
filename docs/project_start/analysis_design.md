@@ -5,6 +5,7 @@ tags:
 ---
 
 # Project start
+
 As you have heard the first phase in any software development is Analysis An this is the phase we are focusing on in this lecture. The goal of the analysis phase is to figure out
 what the program should do and  what needs the program must meet. It like all other phases of modern software development is done in an iterative loop or spiral.
 In this early stage a focus is on needs determination and risk analysis.
@@ -117,8 +118,6 @@ evolve before arriving as valid stakeholder requirements.**
     R9             | Stop Simulation         | Ability to stop the simulation through interruption of the current main loop  | - Implement a user interface or mechanism to stop the simulation.  and check that the simulation ends when such mechanisms are invoked
     R10            | Restart simulation      | A simulation should be able to restart without restarting the interface| Test that the implementation of the restart function can activate after the simulation has ended
     R11            | Test-Driven Development | Develop the project using TDD | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code
-
-
 
 
 ### Risk analysis

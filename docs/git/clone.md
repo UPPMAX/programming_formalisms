@@ -10,7 +10,7 @@ tags:
 # Clone
 
 The `git` verb 'to clone' is close to
-the English sentence 'download to your local computer'. 
+the English sentence 'download to your local computer'.
 
 With VSCode is is easy to clone a GitHub repository.
 
