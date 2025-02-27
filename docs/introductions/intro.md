@@ -206,8 +206,8 @@ classDiagram
 !!! info "See also"
 
     - More on Thursday: Object-orientation **FIXLINK**
-    - More on Thursday: [Algorithms](../thursday_intro.md)
-    - More on Thursday: [Modular programming](../thursday_intro.md)
+    - More on Thursday: Algorithms
+    - More on Thursday: Modular programming
 
 ## Common problems
 
