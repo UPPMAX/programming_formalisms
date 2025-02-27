@@ -50,7 +50,7 @@ tags:
 
 - Create a new file with a unique name for your group,
   for example `group_anna_and_sven.txt`
-- All members of the team: get it on your local harddisc
+- All members of the team: get it on your local harddisk
 
 ???- question "How to get it on my local computer?"
 

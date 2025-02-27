@@ -16,7 +16,7 @@ With VSCode is is easy to clone a GitHub repository.
 
 Here it is shown how.
 
-## Produre
+## Procedure
 
 Here is the procedure on how to clone a GitHub repository.
 
