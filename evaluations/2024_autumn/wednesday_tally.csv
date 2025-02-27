@@ -1,0 +1,90 @@
+question,answer,n
+"I can create, switch and delete a git branch locally",8,3
+"I can create, switch and delete a git branch locally",9,2
+"I can create, switch and delete a git branch locally",10,4
+I can do Pull requests,9,4
+I can do Pull requests,10,5
+I can do a code review (in GitHub),8,4
+I can do a code review (in GitHub),9,3
+I can do a code review (in GitHub),10,2
+I can explain and evaluate the usefulness of branches,6,1
+I can explain and evaluate the usefulness of branches,8,2
+I can explain and evaluate the usefulness of branches,9,2
+I can explain and evaluate the usefulness of branches,10,4
+I can manage merge conflicts locally,2,1
+I can manage merge conflicts locally,3,1
+I can manage merge conflicts locally,4,1
+I can manage merge conflicts locally,6,2
+I can manage merge conflicts locally,7,2
+I can manage merge conflicts locally,8,2
+I can manage merge conflicts on GitHub,4,1
+I can manage merge conflicts on GitHub,5,2
+I can manage merge conflicts on GitHub,6,1
+I can manage merge conflicts on GitHub,7,1
+I can manage merge conflicts on GitHub,9,2
+I can manage merge conflicts on GitHub,10,2
+I can merge locally,3,1
+I can merge locally,6,1
+I can merge locally,8,3
+I can merge locally,9,3
+I can merge locally,10,1
+I can merge on GitHub,5,1
+I can merge on GitHub,7,2
+I can merge on GitHub,9,1
+I can merge on GitHub,10,5
+I can pair program,4,1
+I can pair program,8,2
+I can pair program,9,3
+I can pair program,10,3
+"I can put the files of my code in the right locations,",8,3
+"I can put the files of my code in the right locations,",9,4
+"I can put the files of my code in the right locations,",10,2
+I can write tests using a formal testing framework,5,2
+I can write tests using a formal testing framework,7,3
+I can write tests using a formal testing framework,8,2
+I can write tests using a formal testing framework,9,1
+I can write tests using a formal testing framework,10,1
+I feel confidence and motivation in making my code open-source,6,1
+I feel confidence and motivation in making my code open-source,7,3
+I feel confidence and motivation in making my code open-source,9,2
+I feel confidence and motivation in making my code open-source,10,3
+I have an idea about how to contribute as an external contributor,5,1
+I have an idea about how to contribute as an external contributor,7,2
+I have an idea about how to contribute as an external contributor,8,2
+I have an idea about how to contribute as an external contributor,9,3
+I have an idea about how to contribute as an external contributor,10,1
+I understand the FIND concept,1,3
+I understand the FIND concept,2,2
+I understand the FIND concept,5,1
+I understand the FIND concept,7,2
+I understand the FIND concept,8,1
+I understand the benefit of using a testing framework,6,1
+I understand the benefit of using a testing framework,8,1
+I understand the benefit of using a testing framework,9,1
+I understand the benefit of using a testing framework,10,6
+I understand what continuous integration is,1,1
+I understand what continuous integration is,2,3
+I understand what continuous integration is,4,1
+I understand what continuous integration is,5,2
+I understand what continuous integration is,7,1
+I understand what continuous integration is,8,1
+I understand what good pair programming looks like,4,1
+I understand what good pair programming looks like,9,3
+I understand what good pair programming looks like,10,5
+I understand when a forked workflow is recommended,4,1
+I understand when a forked workflow is recommended,5,1
+I understand when a forked workflow is recommended,7,1
+I understand when a forked workflow is recommended,8,3
+I understand when a forked workflow is recommended,9,1
+I understand when a forked workflow is recommended,10,2
+I understand why pair programming is important,8,2
+I understand why pair programming is important,9,1
+I understand why pair programming is important,10,6
+"create, switch and delete a git branch on GitHub",7,1
+"create, switch and delete a git branch on GitHub",8,1
+"create, switch and delete a git branch on GitHub",9,1
+"create, switch and delete a git branch on GitHub",10,6
+for the testing framework to find them,6,1
+for the testing framework to find them,8,2
+for the testing framework to find them,9,2
+for the testing framework to find them,10,4
