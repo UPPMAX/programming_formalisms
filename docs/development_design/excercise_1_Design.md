@@ -9,10 +9,9 @@
     **Needs update**
 
     This project is based of the works of Bergström and Moberg
-    [Bergström and Moberg 2002](https://www.smhi.se/polopoly_fs/1.175744!/Bergstr%C3%B6m_Moberg_Uppsala.pdf),
-    using the [Uppsala "dygnsvärdes" temperature data](https://www.smhi.se/data/meteorologi/temperatur/uppsalas-temperaturserie-1.2855)
-    [link](https://www.smhi.se/polopoly_fs/1.2866!/uppsala_tm_1722-2022.zip)
-    to the data set.
+    [Bergström and Moberg 2002](https://www.smhi.se/download/18.6ae791dc18fc9e7539e1121c/1717658901728/Bergstr%C3%B6m_Moberg_Uppsala.pdf),
+    using the [Uppsala "dygnsvärdes" temperature data](https://www.smhi.se/data/temperatur-och-vind/temperatur/uppsalas-temperaturserie)
+    ([link to the data set](https://www.smhi.se/download/18.53cdce23194f389da053a4e/1740398333056/uppsala_tm_1722-2022.zip)).
 
     The students will use some other data for Uppsala that have the same format for other weather stations in Sweden. Thus, the analysis can be extended to other sites.
 
