@@ -15,7 +15,6 @@ tags:
 
     - Introduction to some SDLC key features
     - Theory of project tools and thinking
-    -
 
 !!! info "Learning outcomes of 'SDLC tools'"
 
