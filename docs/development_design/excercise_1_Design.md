@@ -114,7 +114,7 @@
 
     - Start by assessing the brief and determined legal and business space. These should be taken into consideration when evalutating the needs.
     - The SRS (Software Requirments Specification) can be structured as seen below.
-    - An SRS is considered complete according to the following statement from the IEEE recomended practises (Trip et.al)
+    - An SRS is considered complete according to the following statement from the IEEE recomended practises `[Board & ICSSES, 1998]`
     - An SRS is correct if, and only if, every requirement stated therein is one that the software shall meet.
 
 
@@ -153,9 +153,13 @@
 
 ## References
 
+- `[Board & ICSSES, 1998]` Board, I. S. S., and ICSSES Committee.
+  "IEEE recommended practice for software requirements specifications."
+  Institute of Electrical and Electronics Engineers. 1998.
+  [here](https://ieeexplore.ieee.org/document/720574)
 - `ISO 12207:2018`
-- `IEEE Std 830™-1998(R2009)`
 - `ISO 73:2009`
 - `ISO 15271:1998`
 - Effective Methods for Software Testing: Includes Complete Guidelines,
   Checklists, and Templates 3rd Edition
+
