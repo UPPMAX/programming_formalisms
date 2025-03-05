@@ -301,7 +301,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - We assume familiarity with python at least equivalent
 - Learn the basics by choosing one or several of these  courses!
 
-    - [Python part](https://uppmax.github.io/uppmax_intro_python/) of the UPPMAX introductory course
+    - [Python part](https://uppmax.github.io/naiss_intro_python/) of the UPPMAX introductory course
     - [Python programming with applications to bioinformatics](https://uppsala.instructure.com/courses/85913).
 
 ## Other solutions
