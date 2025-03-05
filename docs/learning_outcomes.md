@@ -112,7 +112,7 @@ Today we:
 - [ ] can describe what a run-time speed profile is
 - [ ] have practiced to get a run-time speed profile
 
-# Friday
+## Friday
 
 Today we:
 
