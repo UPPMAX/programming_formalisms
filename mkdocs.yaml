@@ -7,9 +7,9 @@ nav:
   - About the course:
     - Learning outcomes: learning_outcomes.md
     - Pre-requirements: prereqs.md
-    - Schedule: schedule.md
     - Course dates: course_dates.md
     - Introduction: intro.md
+  - Schedule: schedule.md
   - Project:
     - Intro: project/README.md
     - Issues: project/issues.md
