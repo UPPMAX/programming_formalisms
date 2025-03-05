@@ -5,10 +5,11 @@ edit_uri: 'blob/main/docs/'
 nav:
   - Home: index.md
   - About the course:
+    - Learning outcomes: learning_outcomes.md
     - Pre-requirements: prereqs.md
+    - Schedule: schedule.md
+    - Course dates: course_dates.md
     - Introduction: intro.md
-  - Schedule: schedule.md
-  - Course dates: course_dates.md
   - Project:
     - Intro: project/README.md
     - Issues: project/issues.md
@@ -55,13 +56,6 @@ nav:
     - Deploy: deployment/deploy.md
     - Documentation: deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
-  - Summary of days:
-    - Summary of Monday: monday_summary.md
-    - Summary of Tuesday: tuesday_summary.md
-    - Summary of Wednesday: wednesday_summary.md
-    - Summary of Thursday: thursday_summary.md
-    - Summary of Friday: friday_summary.md
-    - Summary of week: summary_week.md
   - Misc:
     - Feedback: misc/feedback.md
     - Evaluations: evaluations/README.md
