@@ -5,6 +5,8 @@ tags:
 
 # Evaluation autumn 2024
 
+- Reflections: [Richel](../../reflections/20241118/README.md)
+
 ## Monday
 
 - [Retrospect](20241118.md)
