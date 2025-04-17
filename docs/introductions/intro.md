@@ -61,17 +61,17 @@ tags:
 
 ???- admonition "Changes"
 
-     - clear goal
-     - clearer guide 
-     - ask about level
-     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
-     - practical examples than just explain the concept.
-     - dictionary
-     - exercises
-         - practical things within exercise (not needing to scroll back and forth)
-         - clearer instructions
-         - solutions
-         - (advanced exercises)
+    - clear goal
+    - clearer guide 
+    - ask about level
+    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
+    - practical examples than just explain the concept.
+    - dictionary
+    - exercises
+        - practical things within exercise (not needing to scroll back and forth)
+        - clearer instructions
+        - solutions
+        - (advanced exercises)
     
 
 ## Different types of Scientific software
