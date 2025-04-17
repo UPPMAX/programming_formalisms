@@ -58,6 +58,8 @@ tags:
         - clearer instructions
         - advanced exercises
 
+    - Give more practical examples of git forking and branching and when it is appropriate to use them.
+
 ## Branching and merging
 
 Software development is often not linear:
