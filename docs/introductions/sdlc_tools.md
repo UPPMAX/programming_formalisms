@@ -184,6 +184,8 @@ WHY?
     - strategies
     - license
     - citable
+
+Also links to other sessions    
     
 ## Planning part with
 
