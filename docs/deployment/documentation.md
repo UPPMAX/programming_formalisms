@@ -16,13 +16,13 @@ tags:
 
     learners  
     
-    - I know the most important sections for a full public README
-    - I can make citation info
-    - I know how to find instruction of going to more sophisticated documentation
+    - know the most important sections for a full public README
+    - can make citation info
+    - know how to find instruction of going to more sophisticated documentation
 
 !!! info "Content"
 
-    - content of readme
+    - content of README
         - installation
         - get started
         - test
@@ -35,7 +35,19 @@ tags:
         - Wiki
         - GitHub pages/ReadTheDocs
         - MkDocs/sphinx
-  
+
+???- admonition "Changes"
+
+     - implement new project
+     - clear goal
+     - clearer guide
+     - ask about level
+     - exercises
+         - state where to work
+         - practical things within exercise (not needing to scroll back and forth)
+         - clearer instructions  
+         - advanced exercises
+
 
 ## Revisiting documentation
 
