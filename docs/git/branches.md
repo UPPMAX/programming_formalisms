@@ -58,8 +58,6 @@ tags:
         - clearer instructions  
         - advanced exercises
 
-
-
 ## Branching and merging
 
 Software development is often not linear:
