@@ -42,6 +42,22 @@ tags:
         - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
         - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
 
+???- admonition "Changes"
+
+     - implement new project??
+     - clear goal
+     - VS code
+     - clearer guide 
+     - ask about level
+     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
+     - practical examples than just explain the concept.
+     - more practical examples of git forking and branching and when it is appropriate to use them.
+     - exercises
+         - pull request
+         - practical things within exercise (not needing to scroll back and forth)
+         - clearer instructions  
+         - advanced exercises
+
 
 ## Branching and merging
 
