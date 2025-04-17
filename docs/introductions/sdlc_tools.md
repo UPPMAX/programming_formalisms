@@ -162,7 +162,7 @@ WHY?
     - naming
     - eliminate duplication --> libraries
     - dependencies
-    - DOI    
+    - DOI
 
 plus testing
 
@@ -173,7 +173,7 @@ Connected to documentation
 
 WHY?
 
-Git 
+Git
 
 ## Collaborate
 
@@ -185,7 +185,7 @@ WHY?
     - license
     - citable
 
-Also links to other sessions    
+Also links to other sessions
     
 ## Planning part with
 
@@ -219,8 +219,6 @@ WHY?
             - if functional programming: **functions/modules**
 
     - More in afternoon!
-
-
 
 ## Exercises
 
