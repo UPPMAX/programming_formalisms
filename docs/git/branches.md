@@ -59,6 +59,7 @@ tags:
         - advanced exercises
 
     - Give more practical examples of git forking and branching and when it is appropriate to use them.
+    -	Git branch couple to SDLC
 
 ## Branching and merging
 
