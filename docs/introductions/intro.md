@@ -62,7 +62,7 @@ tags:
 ???- admonition "Changes"
 
     - clear goal
-    - clearer guide 
+    - clearer guide
     - ask about level
     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
