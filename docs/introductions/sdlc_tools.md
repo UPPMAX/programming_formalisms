@@ -38,6 +38,19 @@ tags:
 
 ---
 
+???- admonition "Changes"
+
+    - clear goal
+    - clearer guide
+    - ask about level
+    - practical examples than just explain the concept.
+    - dictionary
+    - exercises
+        - practical things within exercise (not needing to scroll back and forth)
+        - clearer instructions
+        - solutions
+        - (advanced exercises)
+
 ## The waterfall model
 
 1. Requirements
