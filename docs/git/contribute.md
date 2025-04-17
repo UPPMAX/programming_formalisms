@@ -44,12 +44,13 @@ tags:
       Exercise 1: crit, exercise_1, after theory_1, 40s
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
+
 ???- admonition "Changes"
 
     - implement new project??
     - clear goal
     - VS code
-    - clearer guide 
+    - clearer guide
     - ask about level
     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
