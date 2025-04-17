@@ -179,17 +179,17 @@ Connected to documentation
     Software
     
     - explanation comment at the start of the program (also "help function" as for './program -h')
-    - functions 
+    - functions
         - names for variables and functions
     - eliminate duplication
         - libraries
         - test if you rely
-    - dependencies and requirements explicit 
+    - dependencies and requirements explicitly
     - program behavior by if/else (possibly arguments from outside)
     - run-all script and/or main program (also related to project organization)
     - example/test data set
     - DOI like zenodo
-   
+
 ## Tracking changes
 
 WHY?
@@ -214,11 +214,9 @@ Also links to other sessions
     - to-do list/issues
     - communication strategies
     - license explicit
-        -  recommendations and why
+        - recommendations and why
     - citable
 
-
-    
 ## Planning part with
 
     - requirements
