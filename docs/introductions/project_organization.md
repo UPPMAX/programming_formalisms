@@ -16,6 +16,3 @@ link to Richel's parts about organizing project
     - files
         - README
     - namings
-
-
-
