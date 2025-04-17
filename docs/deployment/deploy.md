@@ -45,6 +45,19 @@ tags:
         - workflows
         - containers
 
+
+???- admonition "Changes"
+
+     - implement new project
+     - clear goal
+     - clearer guide
+     - ask about level
+     - exercises
+         - state where to work
+         - practical things within exercise (not needing to scroll back and forth)
+         - clearer instructions  
+         - advanced exercises
+
 ## Introduction
 
 - It's about Distribution!
