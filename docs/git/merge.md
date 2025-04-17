@@ -36,19 +36,19 @@ tags:
     ```
 ???- admonition "Changes"
 
-     - implement new project??
-     - clear goal
-     - VS code
-     - clearer guide 
-     - ask about level
-     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
-     - practical examples than just explain the concept.
-     - more practical examples of git forking and branching and when it is appropriate to use them.
-     - exercises
-         - pull request
-         - practical things within exercise (not needing to scroll back and forth)
-         - clearer instructions  
-         - advanced exercises
+    - implement new project??
+    - clear goal
+    - VS code
+    - clearer guide 
+    - ask about level
+    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
+    - practical examples than just explain the concept.
+    - more practical examples of git forking and branching and when it is appropriate to use them.
+    - exercises
+        - pull request
+        - practical things within exercise (not needing to scroll back and forth)
+        - clearer instructions  
+        - advanced exercises
 
 
 ## Prior questions
