@@ -112,7 +112,7 @@ Wilson et al. 2017: **Good enough practices** in Scientific computing
     - license
     - citable
 
-These cover
+These cover **WHAT DO I MEAN??**
 
 - Development
 - Test
@@ -150,7 +150,79 @@ These cover
         - Explanation
         - Reference
 
-### Think about
+## project organization
+
+- wait to before lunch
+    
+## software development practices
+
+WHY?
+
+    - explanations
+    - naming
+    - eliminate duplication --> libraries
+    - dependencies
+    - DOI    
+
+plus testing
+
+Connected to documentation
+
+    
+## Tracking changes
+
+WHY?
+
+Git 
+
+## Collaborate
+
+WHY?
+
+    - documentation
+    - to-do lists
+    - strategies
+    - license
+    - citable
+    
+## Planning part with
+
+    - requirements
+    - analysis
+    - design
+
+WHY?
+
+!!! note
+
+    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
+    - It prepares you to build the real thing to reduce any potential risk of failure. "
+
+!!! note
+
+    - Planning step is to ...
+        - get an overview of the project/program.
+        - help planning writing the code
+        - identify parts needed
+        - risk analysis
+    - Can be divided into analysis and design
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
+            - graphical tools like UML
+            - text
+            - if object-oriented programming: **objects**
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or pseudocode
+            - if object-oriented programming: **classes**
+            - if functional programming: **functions/modules**
+
+    - More in afternoon!
+
+
+
+## Exercises
+
+Think about
 
 ???- "Why do we want to work with the mentioned tools?"
 
