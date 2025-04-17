@@ -120,6 +120,12 @@ These cover **WHAT DO I MEAN??**
 
 ### Also needed
 
+???- info "Details"
+
+    - good tools and practices for refactoring and devel steps
+    - focus scientific computing
+    - lacking planning steps like requirements, analysis and design
+
 - Planning part with
     - requirements
     - analysis
@@ -168,7 +174,22 @@ plus testing
 
 Connected to documentation
 
+???- note
+
+    Software
     
+    - explanation comment at the start of the program (also "help function" as for './program -h')
+    - functions 
+        - names for variables and functions
+    - eliminate duplication
+        - libraries
+        - test if you rely
+    - dependencies and requirements explicit 
+    - program behavior by if/else (possibly arguments from outside)
+    - run-all script and/or main program (also related to project organization)
+    - example/test data set
+    - DOI like zenodo
+   
 ## Tracking changes
 
 WHY?
@@ -186,6 +207,17 @@ WHY?
     - citable
 
 Also links to other sessions
+
+???- note
+
+    - overview: README etc
+    - to-do list/issues
+    - communication strategies
+    - license explicit
+        -  recommendations and why
+    - citable
+
+
     
 ## Planning part with
 
