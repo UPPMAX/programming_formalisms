@@ -47,7 +47,7 @@ tags:
     - implement new project??
     - clear goal
     - VS code
-    - clearer guide 
+    - clearer guide
     - ask about level
     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
