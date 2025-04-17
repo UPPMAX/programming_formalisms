@@ -5,7 +5,9 @@ tags:
 
 # Evaluation autumn 2024
 
-- Reflections: [Richel](../../reflections/20241118/README.md)
+- Reflections wrong: [Richel](../../reflections/20241118/README.md)
+- Reflections right(?): [Richel](../../reflections/2024_autumn/README.md)
+- 
 
 ## Monday
 
