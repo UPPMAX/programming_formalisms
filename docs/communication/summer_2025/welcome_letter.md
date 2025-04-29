@@ -5,9 +5,9 @@
 Hi and welcome to Programming Formalisms,
 we are getting ready for the course which starts on 5th of May and is online,
 the course page <https://uppmax.github.io/programming_formalisms/>
-The course and all materials relevant to the course are availible on GitHub
+The course and all materials relevant to the course are available on GitHub
 for reuse there will be a course project which is also GitHub.
-The use of `git` and tools like it are a valuble part of the toolkit
+The use of `git` and tools like it are a valuable part of the toolkit
 of a professional developer and the use of these tools in the course
 is an active choice as part of the learning experience.
 
