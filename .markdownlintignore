@@ -1,7 +1,9 @@
-docs/index.md
-docs/software/software-table.md
 evaluations/**/*_feedback.md
 docs/shared_documents/*
 docs/social_coding/not_used/*
 docs/meeting_notes/*
 docs/evaluations/*
+docs/deployment/spring2024/*
+docs/introductions/spring2024/*
+docs/git/spring2024/*
+docs/extra_bc/*

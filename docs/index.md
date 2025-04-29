@@ -1,3 +1,5 @@
+# Welcome to the Programming Formalisms course
+
 <br/>
 
 <figure markdown="span">
@@ -5,10 +7,7 @@
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
-
 <br/>
-
-# Welcome to the Programming Formalisms course!
 
 !!! note "Course mottos"
 
