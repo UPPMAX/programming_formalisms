@@ -16,14 +16,13 @@
     - Add theory to bolster already present practical skills
 
 <br/>
-<center>
+
 
 [Pre-requirements](prereqs.md){ .md-button .md-button--primary }
 [Intro](intro.md){ .md-button .md-button--primary }
 [Schedule](schedule.md){ .md-button .md-button--primary }
 [Feedback](misc/feedback.md){ .md-button .md-button--primary }
 
-</center>
 
 ![The UPPMAX logo](assets/uppmax_logo_50.png)
 ![The NBIS logo](assets/nbis_green_logo_25.png)
