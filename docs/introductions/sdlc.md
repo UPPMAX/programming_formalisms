@@ -115,7 +115,7 @@ graph TD;
 
 Further requirements analysis, risk assessment.
 Each group will work with about 7 requirements in the requirements document,
-that can be found [here](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/master/requirements.md).
+that can be found [here](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md).
 Each group will Make a copy of the document and work with it in their folder.
 They will label it `Requirements_BR_x.md`,
 so that the requirements engineer can collate the documents
