@@ -159,7 +159,7 @@ These cover **WHAT DO I MEAN??**
 ## project organization
 
 - wait to before lunch
-    
+
 ## software development practices
 
 WHY?
