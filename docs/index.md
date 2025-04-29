@@ -17,10 +17,10 @@
 <br/>
 
 
-[Pre-requirements](prereqs.md){ .md-button .md-button--primary }
-[Intro](intro.md){ .md-button .md-button--primary }
-[Schedule](schedule.md){ .md-button .md-button--primary }
-[Feedback](misc/feedback.md){ .md-button .md-button--primary }
+[Pre-requirements](prereqs.md){: .md-button .md-button--primary}
+[Intro](intro.md){: .md-button .md-button--primary}
+[Schedule](schedule.md){: .md-button .md-button--primary}
+[Feedback](misc/feedback.md){: .md-button .md-button--primary}
 
 
 ![The UPPMAX logo](assets/uppmax_logo_50.png)
