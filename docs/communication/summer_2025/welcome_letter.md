@@ -1,24 +1,25 @@
 # Welcome letter
 
-- Email title: Kursbrev programming formalism
+- Email title: Programming Formalisms course letter
 
-Hi and welcome to programming formalisms,
-we are getting ready for the course which starts on 5th of may and is online,
+Hi and welcome to Programming Formalisms,
+we are getting ready for the course which starts on 5th of May and is online,
 the course page https://uppmax.github.io/programming_formalisms/
-The course and all materials relevant to the course are availible on github
-for reuse there will be a course project which is also on git hub.
-The use of git and tools like it are a valuble part of the toolkit
+The course and all materials relevant to the course are availible on GitHub
+for reuse there will be a course project which is also GitHub.
+The use of `git` and tools like it are a valuble part of the toolkit
 of a professional developer and the use of these tools in the course
 is an active choice as part of the learning experience.
-Check the following prereqs before we start on monday the 5:th
+
+Check the following prereqs before we start on the first course day:
 
 https://uppmax.github.io/programming_formalisms/prereqs/ 
 
-We always start sharp at 09.00 and the zoom is always open
-30 min before the course starts.
+We always start sharp at 09:00 and the Zoom is always open
+30 minutes before the course starts.
 If you feel like, hanging out or have questions feel free to show up early.
 
-make sure you have followed the
+Make sure you have followed the
 https://uppmax.github.io/programming_formalisms/prereqs/
 so that you are set up to start the course.
 
