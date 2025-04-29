@@ -109,7 +109,7 @@ tags:
 
 ### View the project we will work with
 
-???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024>"
+???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2025>"
 
     - Click on a folder or file in the file explorer.
     - This enables the file "Expand file tree" button to the left of the repo name.
@@ -132,7 +132,7 @@ tags:
     - The result shall look something like this:
 
      ```console
-     git clone git@github.com:programming-formalisms/programming_formalisms_project_autumn_2024.git
+     git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2025.git
      ```
 
     **What just happened?**

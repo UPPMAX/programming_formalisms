@@ -392,7 +392,7 @@ of the errors.
         module = self._get_module_from_name(name)
       File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
         __import__(name)
-      File "/home/runner/work/programming_formalisms_project_autumn_2024/programming_formalisms_project_autumn_2024/
+      File "/home/runner/work/programming_formalisms_project_summer_2025/programming_formalisms_project_summer_2025/
       tests/test_sven.py", line 23
         def test_prime_numbers(self)
                                     ^
@@ -452,7 +452,7 @@ of the errors.
         module = self._get_module_from_name(name)
       File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
         __import__(name)
-      File "/home/runner/work/programming_formalisms_project_autumn_2024/programming_formalisms_project_autumn_2024/
+      File "/home/runner/work/programming_formalisms_project_summer_2025/programming_formalisms_project_summer_2025/
       tests/test_sven.py", line 23
         def test_prime_numbers(self)
                                     ^

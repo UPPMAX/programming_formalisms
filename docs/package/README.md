@@ -139,7 +139,7 @@ in the regular way.
 
     ```bash
     Traceback (most recent call last):
-      File "/home/richel/GitHubs/programming_formalisms_project_autumn_2024/main.py", line 10, in <module>
+      File "/home/richel/GitHubs/programming_formalisms_project_summer_2025/main.py", line 10, in <module>
         from bacsimx.experiment import (
     ModuleNotFoundError: No module named 'bacsim'
     ```
@@ -170,7 +170,7 @@ python3 -m build
 ???- question "How does that look like?"
 
     ```text
-    richel@richel-N141CU:~/GitHubs/programming_formalisms_project_autumn_2024$ python3 -m build
+    richel@richel-N141CU:~/GitHubs/programming_formalisms_project_summer_2025$ python3 -m build
     * Creating isolated environment: venv+pip...
     * Installing packages in isolated environment:
       - hatchling
@@ -190,7 +190,7 @@ Now there will be files in the `dist` folder:
 ???- question "How does that look like?"
 
     ```bash
-    richel@richel-N141CU:~/GitHubs/programming_formalisms_project_autumn_2024$ ls dist/
+    richel@richel-N141CU:~/GitHubs/programming_formalisms_project_summer_2025$ ls dist/
     bacsim-1.0.1-py3-none-any.whl  bacsim-1.0.1.tar.gz
     ```
 
@@ -217,7 +217,7 @@ python3 -m twine upload --repository testpypi dist/*
 ???- question "How does that look like?"
 
     ```bash
-    richel@richel-N141CU:~/GitHubs/programming_formalisms_project_autumn_2024$ python3 -m twine upload --repository testpypi dist/*
+    richel@richel-N141CU:~/GitHubs/programming_formalisms_project_summer_2025$ python3 -m twine upload --repository testpypi dist/*
     Uploading distributions to https://test.pypi.org/legacy/
     Enter your API token: 
     Uploading bacsim-1.0.1-py3-none-any.whl

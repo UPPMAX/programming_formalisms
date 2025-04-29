@@ -370,7 +370,7 @@ For this we use `.gitignore` files.
 
 !!! example "From our project repo"
 
-    <programming_formalisms_project_autumn_2024/blob/main/.gitignore>
+    <programming_formalisms_project_summer_2025/blob/main/.gitignore>
 
 ## Summary
 

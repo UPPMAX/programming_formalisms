@@ -57,9 +57,9 @@ tags:
 
 !!! note "Become a Programming Formalisms team member"
 
-    - Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/issues/1)
+    - Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/issues/1)
     - The project can be found
-      [here](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024)
+      [here](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025)
 
 ## Shared document
 
