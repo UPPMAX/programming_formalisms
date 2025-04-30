@@ -250,10 +250,10 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 ## References
 
-- `[Church 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941
-- `[Edsger W. Dijkstra 1970]` Notes On Structured Programming ,T.H. - Report 70-WSK-03,Second edition April 1970
+- `[Church, 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941
+- `[Dijkstra, 1970]` Notes On Structured Programming ,T.H. - Report 70-WSK-03,Second edition April 1970
 - `[ISO 12207:2017]`
-- `[Ivar Jacobson 1992] Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
-- `[Jones et.al 2001]`Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
-- `[Rumbaugh 1991]`, Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991
--`[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
+- `[Jacobson, 1992]` Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992
+- `[Jones et al., 2001]` Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
+- `[Rumbaugh, 1991]` Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991
+- `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
