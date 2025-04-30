@@ -230,14 +230,11 @@ fix that bug.
 
 ## References
 
-- `[Sutter & Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
-  C++ coding standards: 101 rules, guidelines, and best practices. 2004.
-  ISBN: 0-32-111358-6. Chapter 68: 'Assert liberally to document internal
-  assumptions and invariants'
-- `[Stroustrup, 1997]` Bjarne Stroustrup.
-  The C++ Programming Language (3rd edition). 1997.
-  ISBN: 0-201-88954-4. Advice 24.5.18: 'Explicitly express preconditions,
-  postconditions, and other assertions as assertions'
+- `[Liberty, 2001]` [5] Jesse Liberty. Sams teach yourself C++ in 24 hours.
+  ISBN: 0-672-32224-2. Hour 24, chapter 'assert()': 'Use assert freely'
+- `[Lakos, 1996]` John Lakos. Large-Scale C++ Software Design. 1996.
+  ISBN: 0-201-63362-0. Chapter 2.6: 'The use of assert statements can help to
+  document the assumptions you make when implementing your code
 - `[McConnell, 2004a]` Steve McConnell. Code Complete (2nd edition). 2004.
   ISBN: -735619670. Chapter 8.2 'Assertions', paragraph 'Guidelines for using
   asserts': 'Use assertions to document and verify preconditions and
@@ -245,11 +242,10 @@ fix that bug.
 - `[McConnell, 2004b]` Steve McConnell. Code Complete (2nd edition). 2004.
   ISBN: -735619670. Chapter 8.2 'Assertions', paragraph 'Guidelines for using
   asserts': 'Use assertions for conditions that should never occur'.
-- `[Liberty, 2001]` [5] Jesse Liberty. Sams teach yourself C++ in 24 hours.
-  ISBN: 0-672-32224-2. Hour 24, chapter 'assert()': 'Use assert freely'
-- `[Lakos, 1996]` John Lakos. Large-Scale C++ Software Design. 1996.
-  ISBN: 0-201-63362-0. Chapter 2.6: 'The use of assert statements can help to
-  document the assumptions you make when implementing your code
+- `[Stroustrup, 1997]` Bjarne Stroustrup.
+  The C++ Programming Language (3rd edition). 1997.
+  ISBN: 0-201-88954-4. Advice 24.5.18: 'Explicitly express preconditions,
+  postconditions, and other assertions as assertions'
 - `[Stroustrup, 2013a]` Bjarne Stroustrup.
   The C++ Programming Language (4th edition). 2013. ISBN: 978-0-321-56384-2.
   Chapter 30.5. Advice. page 884: '[13] Use static_assert() and assert() extensively'
@@ -257,6 +253,10 @@ fix that bug.
   The C++ Programming Language (4th edition). 2013. ISBN: 978-0-321-56384-2.
   Chapter 30.5. Advice. page 884: '[14] Do not assume that assert() is always
   evaluated'
+- `[Sutter & Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
+  C++ coding standards: 101 rules, guidelines, and best practices. 2004.
+  ISBN: 0-32-111358-6. Chapter 68: 'Assert liberally to document internal
+  assumptions and invariants'
 - `[Turner, 2024]` Jason Turner, cppbestpractices:
   'Never Put Code with Side Effects Inside an assert()'
   [here](https://github.com/cpp-best-practices/cppbestpractices/blob/master/03-Style.md#never-put-code-with-side-effects-inside-an-assert)

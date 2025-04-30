@@ -67,6 +67,10 @@ Wouldn't it be great
 if code could be tested to follow a coding standard automatically
 before merging?
 
+Use static code analysis tools to scan the code for unwanted antipatterns.
+If any are found, break the build
+`[Henney, 2010, chapter 'Automate Your Coding Standard']`
+
 ### Use case 4: measure run-time speed
 
 You want to measure the run-time speed of your project
@@ -107,6 +111,9 @@ Assures quality:
 - Percentage of code tested
 - Correlates with code quality `[Horgan et al., 1994][Del Frate et al., 1995]`
 - 100% mandatory to pass a code peer-review by rOpenSci `[Hart et al., 2013]`
+- Break the build if test coverage is too low 
+  `[Henney, 2010, chapter 'Automate Your Coding Standard']`
+
 
 ## Coding style
 
@@ -515,6 +522,9 @@ of the errors.
 - `[Hart et al., 2013]` Hart, Edmumd, et al.
   "rOpenSci-a collaborative effort to develop R-based tools for facilitating
   Open Science." figshare (2013): 791569.
+- `[Henney, 2010]` Henney, Kevlin.
+  97 things every programmer should know: collective wisdom from the experts. "
+  O'Reilly Media, Inc.", 2010.
 - `[Mens et al., 2008]` Mens, Tom, et al.
   "Empirical studies of open source evolution."
   Software evolution (2008): 263-288.
