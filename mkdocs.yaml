@@ -50,6 +50,7 @@ nav:
   - Testing:
     - assert: assert/README.md
     - Test-driven development: tdd/README.md
+    - Testing: testing/README.md
     - Using a formal testing framework: testing/testing_framework.md
   - Deployment:
     - Implement the project as a package: package/README.md

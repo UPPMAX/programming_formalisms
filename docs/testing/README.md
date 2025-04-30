@@ -43,39 +43,22 @@ tags:
     - 25 mins: challenge
     - 10 mins: feedback
 
-## Testing
+## Why use tests?
 
-Simple testing can prevent most critical failures `[Yuan et al., 2014]`
+Testing *helps* ensure the correctness of code.
 
-- [Using a formal testing framework](testing_framework.md)
-- [Testing indeterminate functions](testing_indeterminate_functions.md)
-- [Testing in a team and project](testing_in_a_team.md)
-- [Continuous integration](../continuous_integration/README.md)
+- Coding errors are extremely common `[Baggerly & Coombes, 2009]`
+- Contribute to the reproducibility crisis in science `[Vable et al., 2021]`,
+  e.g. `[Rahman & Farhana, 2020]`
+- Simple testing can prevent most critical failures `[Yuan et al., 2014]`
 
-## Recap
+## Levels of testing
 
-- Testing helps code correctness
-    - Use the Beyoncé Rule on precious behavior
-- Testing + CI:
-    - Helps teaching
-    - Helps bug reporting
-
-## Weaknesses
-
-- We developed only simple algorithms
-- We only use simple data structures
-- We ignore if code is fast (vague wording on purpose!)
-
-This will be addressed in the next lectures :-)
-
-## Observables
-
-In duos, `owner_name` is the GitHub username first in the alphabet.
-
-- 1: `owner_name/is_prime(x)`
-- 2: `owner_name/get_digits(x)`
-- 3: `owner_name/flip_coin(x)`
-- 4: `owner_name/roll_dice(x)`
+Test            |Description
+----------------|--------------------------------------------------------
+Unit test       |Tests 1 unit, e.g. a function
+Integration test|Tests multiple units together, i.e. a part of the system
+System test     |Tests the system as a whole
 
 ## References
 

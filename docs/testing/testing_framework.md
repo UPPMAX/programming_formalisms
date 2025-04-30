@@ -41,24 +41,27 @@ tags:
     - When do you trust code written by others?
     - How do you convince other developers of a bug?
 
-## Why?
-
-You want to write tests in the recommended way
-and put their files in a recommended place.
-You want your tests to be found by most of the tools
-in the Python ecosystem.
-
-## Testing
+## Why use tests?
 
 ???- question "Prefer this lecture as a video?"
 
     See [this YouTube video](https://youtu.be/FXdEtzl-wws)
+
+![Dilbert strip](dilbert_tdd_3.png)
 
 Testing *helps* ensure the correctness of code.
 
 - Coding errors are extremely common `[Baggerly & Coombes, 2009]`
 - Contribute to the reproducibility crisis in science `[Vable et al., 2021]`,
   e.g. `[Rahman & Farhana, 2020]`
+- Simple testing can prevent most critical failures `[Yuan et al., 2014]`
+
+## Why use a testing framework?
+
+You want to write tests in the recommended way
+and put their files in a recommended place.
+You want your tests to be found by most of the tools
+in the Python ecosystem.
 
 ## Testing framework
 
@@ -471,3 +474,9 @@ In this course, you've written some functions yourself.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
   [here](https://doi.org/10.1371/journal.pcbi.1005510)
+- `[Yuan et al., 2014]`
+  Yuan, Ding, et al.
+  "Simple testing can prevent most critical failures:
+  An analysis of production failures in distributed data-intensive systems."
+  11th USENIX Symposium on Operating Systems Design and Implementation
+  (OSDI 14). 2014.
