@@ -47,8 +47,6 @@ tags:
 
     See [this YouTube video](https://youtu.be/FXdEtzl-wws)
 
-![Dilbert strip](dilbert_tdd_3.png)
-
 Testing *helps* ensure the correctness of code.
 
 - Coding errors are extremely common `[Baggerly & Coombes, 2009]`

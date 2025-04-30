@@ -54,6 +54,8 @@ Testing *helps* ensure the correctness of code.
 
 ## Levels of testing
 
+![Dilbert strip](dilbert_tdd_3.png)
+
 Test            |Description
 ----------------|--------------------------------------------------------
 Unit test       |Tests 1 unit, e.g. a function
