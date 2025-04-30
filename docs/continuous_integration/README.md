@@ -67,10 +67,6 @@ Wouldn't it be great
 if code could be tested to follow a coding standard automatically
 before merging?
 
-Use static code analysis tools to scan the code for unwanted antipatterns.
-If any are found, break the build
-`[Henney, 2010, chapter 'Automate Your Coding Standard']`
-
 ### Use case 4: measure run-time speed
 
 You want to measure the run-time speed of your project
@@ -114,14 +110,18 @@ Assures quality:
 - Break the build if test coverage is too low 
   `[Henney, 2010, chapter 'Automate Your Coding Standard']`
 
-
 ## Coding style
 
 - Following a consistent coding style improves software quality `[Fang, 2001]`
     - Python: PEP8 `[PEP 8]`
     - R: Tidyverse `[Wickham, 2019]`
-- May include cyclomatic complexity
-    - More complex code, more bugs `[Abd Jader et al., 2018][Chen, 2019][Mens et al., 2008]`
+- Use static code analysis tools to scan the code for unwanted antipatterns
+  `[Henney, 2010, chapter 'Automate Your Coding Standard']`
+- The cyclomatic complexity of code is part of the coding style,
+  where more complex code is likelier to have more bugs
+  `[Abd Jader et al., 2018][Chen, 2019][Mens et al., 2008]`
+- If an antipattern is found, break the build
+  `[Henney, 2010, chapter 'Automate Your Coding Standard']`
 
 A 'linter' is program that tests code for style.
 

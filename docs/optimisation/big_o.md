@@ -41,7 +41,7 @@ tags:
       Exercise 2 after the break: crit, after exercise_2, 5s
     ```
 
-## Why?
+## Why Big O is important.
 
 You've added a continuous integration script to measure which code
 is spent most time in. You've made the program 10x as fast:
@@ -57,6 +57,8 @@ Instead, you want to optimize your code in a way that is useful.
 - Don't optimize prematurely `[CppCore Per.2]`
 - Don't optimize something
   that's not performance critical `[CppCore Per.3]`
+- Know the limits of your functions by measuring their complexity
+  `[Henney, 2010, chapter 'Know Your Limits']`.
 
 ## How to improve the run-time speed of an algorithm?
 
@@ -153,19 +155,17 @@ benchmark is a convenient solution.
 - Measure big-O complexity of <https://www.pythonpool.com/check-if-number-is-prime-in-python/>
 
 ```python
-def isprime(num):
-  for n in range(
-    2, int(num**0.5)+1
-  ):
-    if num%n==0:
-      return False
-  return True
+def isprime_1(num):
+    for n in range(2, int(num**0.5) + 1):
+        if num % n == 0:
+            return False
+    return True
 ```
 
 ```python
-def isprime(num):
-    if num> 1:
-        for n in range(2,num):
+def isprime_2(num):
+    if num > 1:
+        for n in range(2, num):
             if (num % n) == 0:
                 return False
         return True
@@ -188,3 +188,6 @@ def isprime(num):
   Don't optimize something that's not performance critical
   [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
 - `[Bartz-Beielstein et al., 2020]` Bartz-Beielstein, Thomas, et al. "Benchmarking in optimization: Best practice and open issues." arXiv preprint arXiv:2007.03488 (2020).
+- `[Henney, 2010]` Henney, Kevlin.
+  97 things every programmer should know: collective wisdom from the experts. "
+  O'Reilly Media, Inc.", 2010.
