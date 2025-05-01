@@ -16,6 +16,12 @@
 
 <br/>
 
+<div style="text-align: center; margin-top: 20px;">
+    <a href="prereqs.md" class="md-button md-button--primary" style="text-decoration:none;">Pre-requirements</a>
+    <a href="intro.md" class="md-button md-button--primary" style="text-decoration:none;">Intro</a>
+    <a href="schedule.md" class="md-button md-button--primary" style="text-decoration:none;">Schedule</a>
+    <a href="misc/feedback.md" class="md-button md-button--primary" style="text-decoration:none;">Feedback</a>
+</div>
 
 [Pre-requirements](prereqs.md){: .md-button .md-button--primary}
 [Intro](intro.md){: .md-button .md-button--primary}
