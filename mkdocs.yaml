@@ -23,8 +23,8 @@ nav:
     - SDLC tools: introductions/sdlc_tools.md
     - Documentation and organization: introductions/documentation_organization.md
   - Planning:
-    - Get started with git: project_start/git_startup.md
     - Get started with a project: project_start/startup.md
+    - Get started with git: project_start/git_startup.md
     - Project start with analysis and design: project_start/analysis_design.md
     - Development and design: development_design/excercise_1_Design.md
   - Design:
