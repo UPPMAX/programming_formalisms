@@ -250,7 +250,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
     - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
     - [Git by CodeRefinery](https://coderefinery.github.io/git-intro/)
     - [GitHub by CodeRefinery](https://coderefinery.github.io/git-collaborative/)
-    - [NAISS](https://www.hpc2n.umu.se/node/982)
+    - [NAISS](https://www.hpc2n.umu.se/events/courses/2024/fall/git)
 
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
