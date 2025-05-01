@@ -6,15 +6,6 @@ tags:
 
 # Introduction
 
-???+ questions
-
-    - What is the Purpose of Formalism in Computer Science?
-
-    - What is software development life cycle
-
-    - There seem to be many concepts in this course. What do they mean?
-
-
 !!! info "Content"
 
     We start with a more **theoretical introduction** covering software and mindsets for software development.
@@ -34,7 +25,6 @@ tags:
 
     The [pre-requirements](../prereqs.md):
 
-    - Learners know basic Git
     - Learners know basic Python
     - Learners have installed necessary tools
 
@@ -66,9 +56,8 @@ tags:
     - ask about level
     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
-    - dictionary
+    - **dictionary**
     - exercises
-        - practical things within exercise (not needing to scroll back and forth)
         - clearer instructions
         - solutions
         - (advanced exercises)
@@ -76,19 +65,29 @@ tags:
 
 ## Different types of Scientific software
 
-- analysis of data
+???- admonition "Analysis of data"
+
     - statistics
     - figures
     - visualization
-- tools for process data
+
+???- admonition "tools for process data"
+
     - refining data (formatting)
-    - bioinformatics
-- workflows
-- modelling (mimic the reality)
-    - simulations time-varying behaviour of a system
+
+???- admonition "Workflows"
+
+    - automate several steps
+        - many scripts doing different things but alltogether creating a result)
+
+???- admonition "Modelling (mimic the reality)"
+
     - mathematical models of relationships among variables in a system
-- decision assistance
-- Other
+    - simulations time-varying behaviour of a system
+
+???- admonition "Decision assistance"
+
+???- admonition "Other?"
 
 !!! discussion
 
@@ -113,126 +112,15 @@ tags:
         - Independent *modules*
         - Encapsulation/*information hiding*
 
-## How to program?
-
-### Object oriented programming
-
-- Object-oriented (OO) programming is
-    - a mindset of mimicking the real-world as:
-    - **entities (`objects`)** that are different
-    - or **share attributes**with each-other (within a `**class**`)
-    - info-hiding mindset...
-
-**Objects**
-
-![Elevator objects](../img/elevators.png)
-
-**Class**
-
-```mermaid
-classDiagram
-  class Elevator{
-    +string direction
-    +int floor
-
-    +goto_floor()
-    +stop()
-    + which_floor()
-  }
-```
-
-???- info "Object orientation (OO) in some programming languages"
-
-    - OO (built-in classes)
-        - C++
-        - Java
-        - Python
-        - Julia
-    - OO features
-        - Fortran 2003-
-        - MATLAB
-        - Perl
-        - PHP
-    - OO object-based (but not class-based)
-        - Javascript
-
-### Functional programming
-
-- Close to mathematics
-- Programmer defines information and relations
-  and the program concludes answers from that
-- Data is immutable, which removes some types of programming errors
-
-???- question "How does that look like?"
-
-    Here we define some functions:
-
-    ```text
-    grandparent(X) := parent(parent(X)).
-    parent(X) := mother(X).
-    parent(X) := father(X).
-    ```
-
-    Here we add information:
-
-    ```text
-    mother(charles) := elizabeth.
-    father(charles) := phillip.
-    mother(harry) := diana.
-    father(harry) := charles.
-    ```
-
-    Now we can ask who is a grandparent to whom:
-
-    ```text
-    ?- grandparent(X,Y).
-    ````
-
-    Results are:
-
-    ```text
-    X = harry, Y = elizabeth.
-    X = harry, Y = phillip.
-    ```
-
-    The defining feature here is that the program itself concluded
-    how to arrive at a conclusion from the given information,
-    where in produral languages you'll need to define that search
-    strategy yourself
-
-!!! info "To sum up"
-
-    - At its simplest, functional programming uses immutable data to tell the program exactly what to do.
-    - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
-    - Both paradigms can be used to create elegant code.
-
-### Modular coding
-
-- Modular coding breaks up the code in blocks that could be separate files.
-- Modularity could be within a program
-- ... but also for a workflow.
-    - script describing order of runs with different programs
-    - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
-
-!!! example "Demo: WRF module and a workflow in 'runtime'"
-
-    - [A weather model workflow](https://github.com/UPPMAX/programming_formalisms_intro/blob/main/doc/wrf-workflow.md)
-
-!!! info "See also"
-
-    - More on Thursday: Object-orientation **FIXLINK**
-    - More on Thursday: Algorithms
-    - More on Thursday: Modular programming
-
 ## Common problems
 
 !!! quote "We want"
 
-    - **Readability**
-    - **Correct**
-    - **Efficient**
-    - **Reusable**
-    - **Changeable**
+    - **Correctness**
+    - **Efficiency**
+    - **Reusability**
+    - **Changeabilitye**
+    - And **Readability**
 
 - Can other people **use** your code?
 - Do you or anyone else **understand** your code at a later moment?
@@ -245,28 +133,33 @@ classDiagram
     - like Linux/Max/Windows,
     - like different hardware architectures (intel, amd, arm)
 
-!!! example "Discuss"
-
-    - Do you want to add something?
-
 ??? question "How can we make it easier to get good software and usefulness?"
 
 ## Software Development Life Cycle (SDLC)
 
 - We need a workflow in our programming projects!
 
-### Some common steps
+!!! info "Phases defined in `[Perry, 2000]`, pages 148-149:"
+
+    - Requirements
+    - Design
+    - Program
+    - Test
+    - Installation
+    - Maintain
+
+### Alternative phases
 
 - **Planning**
-    - Analysis and design
-- **Development**
+    - Analysis (with *requirements*) and *design*
+- **Development** — the *programming*
     - Source control
     - Algorithms
     - In-code documentation
     - Optimization
         - Parallelism
-    - Tests
-- **Deployment** and **maintenance**
+    - *Tests*
+- **Deployment** (or *installation* and **maintenance**)
     - Documentation
     - Reproducibility and sharing
     - Packaging and dependencies
@@ -275,6 +168,20 @@ classDiagram
 
 - Agile development
     - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
+
+???- challenge "Can you connect the the phases above with what we ask of a program"
+
+     Discuss in groups
+
+    - **Correctness**
+    - **Efficiency**
+    - **Reusability**
+    - **Changeabilitye**
+    - And **Readability**
 
 ## Summary of Introduction
 
@@ -290,11 +197,12 @@ classDiagram
 
     - Software development is both series of steps:
     
-        1. Requirements
-        2. Analysis and design
-        3. Development
-        4. Test
-        5. Deployment and maintenance
+        - Requirements
+        - Design
+        - Program
+        - Test
+        - Installation
+        - Maintain
         
     - ... and iteration of these
 
@@ -306,3 +214,6 @@ classDiagram
     - Evaluate the importance of engaging with course content and identify
       strategies to maintain interest and motivation throughout the week.
 
+## Reference
+
+- `[Perry, 2000]` Perry, William E. "Effective Methods for Software Testing Second Edition." (2000).

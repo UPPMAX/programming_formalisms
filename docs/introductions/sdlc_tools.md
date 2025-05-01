@@ -190,6 +190,118 @@ Connected to documentation
     - example/test data set
     - DOI like zenodo
 
+
+## How to program?
+
+- Two tracks in the programming: **Object-oriented programming** or **functional programming**
+- Two tracks in organizing code: **Long files** or **modules**
+
+### Object-oriented programming
+
+- Object-oriented (OO) programming is
+    - a mindset of mimicking the real-world as:
+    - **entities (`objects`)** that are different
+    - or **share attributes**with each-other (within a `**class**`)
+    - info-hiding mindset...
+
+**Objects**
+
+![Elevator objects](../img/elevators.png)
+
+**Class**
+
+```mermaid
+classDiagram
+  class Elevator{
+    +string direction
+    +int floor
+
+    +goto_floor()
+    +stop()
+    + which_floor()
+  }
+```
+
+???- info "Object orientation (OO) in some programming languages"
+
+    - OO (built-in classes)
+        - C++
+        - Java
+        - Python
+        - Julia
+    - OO features
+        - Fortran 2003-
+        - MATLAB
+        - Perl
+        - PHP
+        - R
+    - OO object-based (but not class-based)
+        - Javascript
+
+### Functional programming
+
+- Close to mathematics
+- Programmer defines information and relations
+  and the program concludes answers from that
+- Data is immutable, which removes some types of programming errors
+
+???- question "How does that look like?"
+
+    Here we define some functions:
+
+    ```text
+    grandparent(X) := parent(parent(X)).
+    parent(X) := mother(X).
+    parent(X) := father(X).
+    ```
+
+    Here we add information:
+
+    ```text
+    mother(charles) := elizabeth.
+    father(charles) := phillip.
+    mother(harry) := diana.
+    father(harry) := charles.
+    ```
+
+    Now we can ask who is a grandparent to whom:
+
+    ```text
+    ?- grandparent(X,Y).
+    ````
+
+    Results are:
+
+    ```text
+    X = harry, Y = elizabeth.
+    X = harry, Y = phillip.
+    ```
+
+    The defining feature here is that the program itself concluded
+    how to arrive at a conclusion from the given information,
+    where in produral languages you'll need to define that search
+    strategy yourself
+
+!!! info "To sum up"
+
+    - At its simplest, functional programming uses immutable data to tell the program exactly what to do.
+    - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
+    - Both paradigms can be used to create elegant code.
+
+### Modular coding
+
+- Modular coding breaks up the code in blocks that could be separate files.
+- Modularity could be within a program
+- ... but also for a workflow.
+    - script describing order of runs with different programs
+    - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
+
+!!! info "See also **FIX correct days**"
+
+    - More on Thursday: Object-orientation **FIXLINK**
+    - More on Thursday: Algorithms
+    - More on Thursday: Modular programming
+
 ## Tracking changes
 
 WHY?
@@ -249,6 +361,10 @@ WHY?
             - if functional programming: **functions/modules**
 
     - More in afternoon!
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
 
 ## Exercises
 
