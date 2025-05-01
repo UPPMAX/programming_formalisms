@@ -1,4 +1,4 @@
-# Project organization
+# Documentation and project organization
 
 WHY?
 
