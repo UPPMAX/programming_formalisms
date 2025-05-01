@@ -51,33 +51,6 @@ There are a lot of misconceptions on optimisation.
 
 You may prefer correct advice regarding this.
 
-## Bad advice 1
-
-!!! warning "Bad advice 1"
-
-    Python is slow! Learn C or C++ or Rust to go fast!
-
-???- question "Why does this advice make sense?"
-
-    C, C++ and Rust allows one to write direct machine code.
-    You can write the theoretical best machine code in ... well ...
-    machine code. Hence, these are indeed the theoretically fastest
-    languages.
-
-    Python does not allow one to write machine code.
-    Hence, it cannot be as fast as the languages that can.
-
-???- question "Why is this bad advice?"
-
-    This is bad advice, because the variance within programming
-    languages is bigger than variance between
-    languages (adapted fig 2, from `[Prechelt, 2000]`):
-
-    ![Figure 2, from Prechelt, 2000](prechelt_fig_2_sub.png)
-
-    Instead of learning a faster language, learn how to be fast in
-    your language.
-
 ## Bad advice 2
 
 !!! warning "Bad advice 2"

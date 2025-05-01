@@ -28,16 +28,6 @@ tags:
 
 ## Why improve run-time speed?
 
-> It is far, far easier to make a correct program fast,
-> than it is to make a fast program correct.
->
-> Herb Sutter
-
-???- question "How does Herb Sutter look like?"
-
-    ![Herb Sutter](herb_sutter.jpg)
-
-    > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
 
 Your program is too slow.
 You want to make it go faster.

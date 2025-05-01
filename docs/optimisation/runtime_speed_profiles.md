@@ -29,9 +29,23 @@ tags:
 
 ## Why use runtime speed profiles?
 
-Your program is too slow and you need it to make it go faster.
-Indeed, you should not optimize without reason `[CppCore Per.1]`,
-so only now it is the time.
+> It is far, far easier to make a correct program fast,
+> than it is to make a fast program correct.
+>
+> Herb Sutter
+
+???- question "How does Herb Sutter look like?"
+
+    ![Herb Sutter](herb_sutter.jpg)
+
+    > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+
+Up until now, you've focussed on having code that is correct, instead
+of being fast. This is smart: you should not optimize prematurely 
+`[CppCore Per.2]`, nor should you optimize without reason `[CppCore Per.1]`.
+
+Now your program is getting too slow
+so you now have a reason to improve its runtime speed.
 
 However, you should not optimize each function,
 as not each function is a speed bottleneck:
@@ -255,14 +269,44 @@ Take a look at this speed profile:
     This was worth your time if you think a 2-fold speed increase
     was worth your time.
 
-## Exercise 4: use 
+## Exercise 4: should I learn a different language?
+
+C, C++ and Rust allows one to write direct machine code.
+You can write the theoretical best machine code in ... well ...
+machine code. Hence, these are indeed the theoretically fastest
+languages.
+
+Python does not allow one to write machine code.
+Hence, it cannot be as fast as the languages that can.
+
+To write fast code, should one learn those languages instead?
+
+Below is a figure from `[Prechelt, 2000]`.
+It shows the distribution of runtime speeds of a certain problem,
+for different programming language.
+
+![Figure 2, from Prechelt, 2000](prechelt_fig_2_sub.png)
+
+- Take a close look at the figure.
+  The paper has an advice to yes/no learn a 'faster'
+  programming language. What do you think the advice is?
+
+???- question "Answer"
+
+    The variance within a programming
+    language is bigger than variance between
+    languages (adapted fig 2, from `[Prechelt, 2000]`).
 
 
+    Instead of learning a faster language, learn how to be fast in
+    your language.
 
 ## References
 
 - `[CppCore Per.1]` C++ Core Guidelines: Per.1: Don't optimize without reason
   [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+- `[CppCore Per.2]` C++ Core Guidelines: Per.2: Don't optimize prematurely
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
 - `[CppCore Per.3]` C++ Core Guidelines: Per.3:
   Don't optimize something that's not performance critical
 - `[CppCore Per.6]`
@@ -273,4 +317,5 @@ Take a look at this speed profile:
   Generative and Transformational Techniques in Software Engineering II:
   International Summer School, GTTSE 2007, Braga, Portugal,
   July 2-7, 2007. Revised Papers (2008): 196-259.
+- `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of c, c++, java, perl, python, rexx and tcl." IEEE Computer 33.10 (2000): 23-29.
 - `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.
