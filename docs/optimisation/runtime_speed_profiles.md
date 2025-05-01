@@ -50,9 +50,11 @@ tags:
 >
 > Herb Sutter
 
-![Herb Sutter](herb_sutter.jpg)
+???- question "How does Herb Sutter look like?"
 
-> Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+    ![Herb Sutter](herb_sutter.jpg)
+
+    > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
 
 You've found out an input of sufficient complexity.
 You now need to measure which code is spent most time in
