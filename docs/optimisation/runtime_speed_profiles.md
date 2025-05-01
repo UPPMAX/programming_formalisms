@@ -162,7 +162,7 @@ cProfile.run('do_it()')
   'Obtaining a minimal and useful runtime speed profile'.
   What is the output?
 
-???- question "Anwer"
+???- question "Answer"
 
     The output will look similar to this:
 
@@ -181,7 +181,7 @@ cProfile.run('do_it()')
             1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
     ```
 
-- What is the total length of the program? Wich **two** lines did you find it?
+- What is the total length of the program? Which **two** lines did you find it?
 
 ???- question "Answer"
 

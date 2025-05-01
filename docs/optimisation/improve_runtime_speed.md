@@ -45,7 +45,7 @@ Its behaviour is tested to be correct.
 ### 1. Write the test
 
 We will write a new implementation of `is_prime`, in the
-hope that it will be faster. We wil call the current implementation
+hope that it will be faster. We will call the current implementation
 `is_prime_1` and the new implementation `is_prime_2`.
 This is the test we'll write:
 
@@ -53,7 +53,7 @@ This is the test we'll write:
 assert get_t_is_prime_2() * 10 < get_t_is_prime_1()
 ```
 
-Here we test that the newer implimentation must be 10x as fast,
+Here we test that the newer implementation must be 10x as fast,
 but you can use any constant other than 10 here.
 
 ### 2. Refactor
