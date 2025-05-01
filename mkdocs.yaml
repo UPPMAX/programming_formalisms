@@ -35,9 +35,6 @@ nav:
     - Modular programming: modularity/modular.md
     - A 'has-a' relation: has_a_relation/README.md
     - Class design: data_structures/class_design.md
-    - Optimisation misconceptions: optimisation/misconceptions.md
-    - Big-O: optimisation/big_o.md
-    - Runtime speed profiles: optimisation/runtime_speed_profiles.md
   - Development:
     - Issues: project/issues.md
     - Kanban board: project/kanban_board.md
@@ -53,6 +50,10 @@ nav:
     - Test-driven development: tdd/README.md
     - Testing: testing/README.md
     - Using a formal testing framework: testing/testing_framework.md
+    - Runtime speed profiles: optimisation/runtime_speed_profiles.md
+    - Improve run-time speed: optimisation/improve_runtime_speed.md
+    - Optimisation misconceptions: optimisation/misconceptions.md
+    - Big-O: optimisation/big_o.md
   - Deployment:
     - Implement the project as a package: package/README.md
     - Deploy: deployment/deploy.md
