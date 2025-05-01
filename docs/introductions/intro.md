@@ -194,7 +194,7 @@ tags:
 
 !!! info "Definitions"
 
-    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course? 
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
 
 !!! info "Learning outcomes of 'Introduction'"
 
