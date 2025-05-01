@@ -153,7 +153,6 @@ functions that have no arguments
     ```
 
 
-
 ## Exercises
 
 ### Exercise 1: improve the run-time speed

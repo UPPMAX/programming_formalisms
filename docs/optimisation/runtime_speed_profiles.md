@@ -41,7 +41,7 @@ tags:
     > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
 
 Up until now, you've focussed on having code that is correct, instead
-of being fast. This is smart: you should not optimize prematurely 
+of being fast. This is smart: you should not optimize prematurely
 `[CppCore Per.2]`, nor should you optimize without reason `[CppCore Per.1]`.
 
 Now your program is getting too slow
