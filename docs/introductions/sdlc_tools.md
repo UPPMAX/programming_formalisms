@@ -302,11 +302,6 @@ classDiagram
     - More on Thursday: Algorithms
     - More on Thursday: Modular programming
 
-!!! info "Definitions"
-
-    - Want [explanations and definitions](misc/definitions.md) of the technical terms in the course? 
-    
-
 ## Tracking changes
 
 WHY?
@@ -366,6 +361,10 @@ WHY?
             - if functional programming: **functions/modules**
 
     - More in afternoon!
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
 
 ## Exercises
 
