@@ -23,11 +23,8 @@
     <a href="misc/feedback.md" class="md-button md-button--primary" style="text-decoration:none;">Feedback</a>
 </div>
 
-<figure markdown="span">
   ![The UPPMAX logo](assets/uppmax_logo_50.png)
   ![The NBIS logo](assets/nbis_green_logo_25.png)
-</figure>
-
 
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
