@@ -101,9 +101,6 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - **Forking** (better for contribution to other's project)
         - Contributing to other's projects
 
-
-
-
 ## Exercises
 
 ### Present already
