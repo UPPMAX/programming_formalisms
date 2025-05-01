@@ -41,7 +41,7 @@ tags:
       Exercise 2 after the break: crit, after exercise_2, 5s
     ```
 
-## Why Big O is important.
+## Why Big O is important
 
 You've added a continuous integration script to measure which code
 is spent most time in. You've made the program 10x as fast:

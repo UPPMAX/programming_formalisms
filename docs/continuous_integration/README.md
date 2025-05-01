@@ -107,7 +107,7 @@ Assures quality:
 - Percentage of code tested
 - Correlates with code quality `[Horgan et al., 1994][Del Frate et al., 1995]`
 - 100% mandatory to pass a code peer-review by rOpenSci `[Hart et al., 2013]`
-- Break the build if test coverage is too low 
+- Break the build if test coverage is too low
   `[Henney, 2010, chapter 'Automate Your Coding Standard']`
 
 ## Coding style
