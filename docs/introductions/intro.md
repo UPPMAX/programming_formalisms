@@ -75,10 +75,10 @@ tags:
 
     - refining data (formatting)
 
-???- admonition "Workflows
+???- admonition "Workflows"
 
     - automate several steps
-        - many scripts doing different things but alltogather creating a result)
+        - many scripts doing different things but alltogether creating a result)
 
 ???- admonition "Modelling (mimic the reality)"
 
@@ -116,11 +116,11 @@ tags:
 
 !!! quote "We want"
 
-    - **Readability**
-    - **Correct**
-    - **Efficient**
-    - **Reusable**
-    - **Changeable**
+    - **Correctness**
+    - **Efficiency**
+    - **Reusability**
+    - **Changeabilitye**
+    - And **Readability**
 
 - Can other people **use** your code?
 - Do you or anyone else **understand** your code at a later moment?
@@ -159,7 +159,7 @@ tags:
     - Optimization
         - Parallelism
     - *Tests*
-- **Deployment** (or *installation* and **maintenance**
+- **Deployment** (or *installation* and **maintenance**)
     - Documentation
     - Reproducibility and sharing
     - Packaging and dependencies
@@ -168,6 +168,20 @@ tags:
 
 - Agile development
     - Division of tasks into **short phases of work** and frequent **re-assessment** and adaptation of plans.
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
+
+???- challenge "Can you connect the the phases above with what we ask of a program"
+
+     Discuss in groups
+
+    - **Correctness**
+    - **Efficiency**
+    - **Reusability**
+    - **Changeabilitye**
+    - And **Readability**
 
 ## Summary of Introduction
 
@@ -191,10 +205,6 @@ tags:
         - Maintain
         
     - ... and iteration of these
-
-!!! info "Definitions"
-
-    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
 
 !!! info "Learning outcomes of 'Introduction'"
 
