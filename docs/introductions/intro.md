@@ -74,10 +74,10 @@ tags:
 ???- admonition "tools for process data"
 
     - refining data (formatting)
- 
+
 ???- admonition "Workflows
 
-    - automate several steps 
+    - automate several steps
         - many scripts doing different things but alltogather creating a result)
 
 ???- admonition "Modelling (mimic the reality)"
@@ -191,6 +191,10 @@ tags:
         - Maintain
         
     - ... and iteration of these
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course? 
 
 !!! info "Learning outcomes of 'Introduction'"
 
