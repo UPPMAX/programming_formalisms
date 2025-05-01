@@ -8,7 +8,7 @@ tags:
   - setup
 ---
 
-# Get started with a project
+# Git and get started with a project
 
 !!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
