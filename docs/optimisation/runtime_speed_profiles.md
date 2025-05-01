@@ -44,7 +44,7 @@ tags:
     ```
 
 
-## Why?
+## Why use runtime speed profiles?
 
 > It is far, far easier to make a correct program fast, than it is to make a fast program correct.
 >
@@ -56,10 +56,10 @@ tags:
 
     > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
 
-You've found out an input of sufficient complexity.
-You now need to measure which code is spent most time in
-
-You are making a run-time speed profile!
+Your program is too slow.
+You want to make it go faster.
+Instead of guessing, you want to follow a formal method
+to detect the speed bottleneck
 
 ## Another myth
 
@@ -87,35 +87,48 @@ def superfast_xor_swap(x, y):
 - The code to be run should take at least 10 seconds
 - Consider using CI to obtain a speed profile every push!
 
-In our project, this is the current main function:
+Below is a minimally useful example code for runtime speed profiling.
+It will show which of the two `isprime` functions is faster:
 
 ```python
-if __name__ == "__main__":
-    run_experiment("parameters.csv", "results.csv")
-```
+def isprime_1(num):
+    for n in range(2, int(num**0.5) + 1):
+        if num % n == 0:
+            return False
+    return True
 
-We've tuned `parameters.csv` to create input of the right complexity.
+def isprime_2(num):
+    if num > 1:
+        for n in range(2, num):
+            if (num % n) == 0:
+                return False
+        return True
+    else:
+        return False
 
-To run-time speed profile this code, run instead:
+def do_it():
+    number = 15485863
+    isprime_1(number)
+    isprime_2(number)
 
-```python
 import cProfile
-cProfile.run('run_experiment("parameters.csv", "results.csv")')
+cProfile.run('do_it()')
 ```
 
-This will look similar to this:
+The output will look similar to this:
 
 ```bash
-$ /bin/python3 /home/sven/programming_formalisms_project/main.py
-         6 function calls in 0.000 seconds
+richel@richel-N141CU:~$ /bin/python3 /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_speed_profile.py
+         6 function calls in 1.143 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
-        1    0.000    0.000    0.000    0.000 experiment.py:3(run_experiment)
-        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
-        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    1.143    1.143 <string>:1(<module>)
+        1    0.001    0.001    0.001    0.001 minimal_speed_profile.py:1(isprime_1)
+        1    0.000    0.000    1.142    1.142 minimal_speed_profile.py:16(do_it)
+        1    1.142    1.142    1.142    1.142 minimal_speed_profile.py:7(isprime_2)
+        1    0.000    0.000    1.143    1.143 {built-in method builtins.exec}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 ```
 
