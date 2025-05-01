@@ -23,14 +23,12 @@
     <a href="misc/feedback.md" class="md-button md-button--primary" style="text-decoration:none;">Feedback</a>
 </div>
 
-[Pre-requirements](prereqs.md){: .md-button .md-button--primary}
-[Intro](intro.md){: .md-button .md-button--primary}
-[Schedule](schedule.md){: .md-button .md-button--primary}
-[Feedback](misc/feedback.md){: .md-button .md-button--primary}
+<figure markdown="span">
+  ![The UPPMAX logo](assets/uppmax_logo_50.png)
+  ![The NBIS logo](assets/nbis_green_logo_25.png)
+</figure>
 
 
-![The UPPMAX logo](assets/uppmax_logo_50.png)
-![The NBIS logo](assets/nbis_green_logo_25.png)
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
