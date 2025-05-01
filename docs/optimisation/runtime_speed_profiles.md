@@ -27,68 +27,49 @@ tags:
 
     - .
 
-    Lesson plans:
-
-    ```mermaid
-    gantt
-      title Lesson plan pair programming 1
-      dateFormat X
-      axisFormat %s
-      Introduction : intro, 0, 5s
-      Theory 1: theory_1, after intro, 5s
-      Exercise 1: crit, exercise_1, after theory_1, 15s
-      Feedback 1: feedback_1, after exercise_1, 5s
-      Theory 2: theory_2, after feedback_1, 5s
-      Exercise 2: crit, exercise_2, after theory_2, 10s
-      Exercise 2 after the break: crit, after exercise_2, 5s
-    ```
-
-
 ## Why use runtime speed profiles?
 
-> It is far, far easier to make a correct program fast, than it is to make a fast program correct.
->
-> Herb Sutter
+Your program is too slow and you need it to make it go faster.
+Indeed, you should not optimize without reason `[CppCore Per.1]`,
+so only now it is the time.
 
-???- question "How does Herb Sutter look like?"
+However, you should not optimize each function,
+as not each function is a speed bottleneck:
+only optimize those functions that are speed bottleneck `[CppCore Per.3]`.
 
-    ![Herb Sutter](herb_sutter.jpg)
+You should not guess where such a speed bottleneck is,
+because developers -also very experienced developers- are known
+to have a bad intuition `[Sutter & Alexandrescu, 2004]`
 
-    > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+Instead, you need measurements before
+making claims claims about performance
+`[CppCore Per.6][Chellappa et al., 2008]`.
 
-Your program is too slow.
-You want to make it go faster.
-Instead of guessing, you want to follow a formal method
-to detect the speed bottleneck
+Here we use runtime speed profiles to find the bottleneck of your runtime
+speed.
 
-## Another myth
+## Obtaining a minimal runtime speed profile
+
+Here is the minimal Python code to get a speed profile:
 
 ```python
-def slow_tmp_swap(x, y):
-    tmp = x
-    x = y
-    y = tmp
-    return x, y
+import cProfile
 
-def superfast_xor_swap(x, y):
-    x ^= y
-    y ^= x
-    x ^= y
-    return x, y
+def do_it():
+    print('Hello world')
+
+cProfile.run('do_it()')
 ```
 
-- [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
-- [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
-- [C++ Core Guidelines: Per.6: Don't make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)
+The code uses `cProfile` and its documentation
+can be found at [the official Python documentation](https://docs.python.org/3/library/profile.html#module-cProfile)
 
-## How to create a run-time speed profile?
+This speed profile is useless, as it cannot detect a speed bottleneck:
+it only runs 1 out of all 1 functions.
 
-- Use an input of suitable complexity
-- The code to be run should take at least 10 seconds
-- Consider using CI to obtain a speed profile every push!
+## Obtaining a minimal and useful runtime speed profile
 
-Below is a minimally useful example code for runtime speed profiling.
-It will show which of the two `isprime` functions is faster:
+Below is a useful speed profile, as it detects a speed bottleneck:
 
 ```python
 def isprime_1(num):
@@ -115,49 +96,97 @@ import cProfile
 cProfile.run('do_it()')
 ```
 
-The output will look similar to this:
-
-```bash
-richel@richel-N141CU:~$ /bin/python3 /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_speed_profile.py
-         6 function calls in 1.143 seconds
-
-   Ordered by: standard name
-
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    1.143    1.143 <string>:1(<module>)
-        1    0.001    0.001    0.001    0.001 minimal_speed_profile.py:1(isprime_1)
-        1    0.000    0.000    1.142    1.142 minimal_speed_profile.py:16(do_it)
-        1    1.142    1.142    1.142    1.142 minimal_speed_profile.py:7(isprime_2)
-        1    0.000    0.000    1.143    1.143 {built-in method builtins.exec}
-        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-```
-
-This is what the columns mean (simplified from [the Python profiling manual](https://docs.python.org/3/library/profile.html)):
-
-Parameter|Description
----------|---------------------------
-`ncalls` |The number of times the function is called
-`tottime`|The total time spent in the given function
-`percall`|The time spent in the given function per call
-`cumtime`|The cumulative time spent in this and all subfunctions
-`percall`|The cumulative time spent in this and all subfunctions per call
-
-## Test for increase in runtime speed
-
-Imagine improving the speed of `function_a`.
-You create a function called `function_b` that
-should be faster.
-You use TDD to have a test to work on:
-
-```python
-assert 10.0 * get_t_runtime_b() < get_t_runtime_a()
-```
-
-Adapt the constant to your preference.
-
 ## Exercises
 
-### Exercise 1: read a run-time speed profile
+### Exercise 1
+
+- Run the code of 'Obtaining a minimal runtime speed profile'.
+- What is the output?
+
+???- question "Answer"
+
+    ```bash
+    richel@richel-N141CU:~$ /bin/python3 /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_profile.py
+    Hello world
+             5 function calls in 0.000 seconds
+
+       Ordered by: standard name
+
+       ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+            1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+            1    0.000    0.000    0.000    0.000 minimal_profile.py:3(do_it)
+            1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+            1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+            1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+    ```
+
+- Where is the documentation about what these columns mean?
+
+???- question "Answer"
+
+    Searching for 'cProfile output' will take you to 
+    [the Python profiling manual](https://docs.python.org/3/library/profile.html))
+
+- What do the columns mean?
+
+???- question "Answers"
+
+    This is what the columns mean,
+    simplified from [the Python profiling manual](https://docs.python.org/3/library/profile.html)):
+
+    Parameter|Description
+    ---------|---------------------------
+    `ncalls` |The number of times the function is called
+    `tottime`|The total time spent in the given function
+    `percall`|The time spent in the given function per call
+    `cumtime`|The cumulative time spent in this and all subfunctions
+    `percall`|The cumulative time spent in this and all subfunctions per call
+
+### Exercise 2: run a run-time speed profile
+
+- Run the code as shown at
+  'Obtaining a minimal and useful runtime speed profile'.
+  What is the output?
+
+???- question "Anwer"
+
+    The output will look similar to this:
+
+    ```bash
+    richel@richel-N141CU:~$ /bin/python3 /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_speed_profile.py
+             6 function calls in 1.143 seconds
+
+       Ordered by: standard name
+
+       ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+            1    0.000    0.000    1.143    1.143 <string>:1(<module>)
+            1    0.001    0.001    0.001    0.001 minimal_speed_profile.py:1(isprime_1)
+            1    0.000    0.000    1.142    1.142 minimal_speed_profile.py:16(do_it)
+            1    1.142    1.142    1.142    1.142 minimal_speed_profile.py:7(isprime_2)
+            1    0.000    0.000    1.143    1.143 {built-in method builtins.exec}
+            1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+    ```
+
+- What is the total length of the program? Wich **two** lines did you find it?
+
+???- question "Answer"
+
+    1.143 seconds.
+
+    You can find it at 
+    - the top (`6 function calls in 1.143 seconds`)
+    - the first line
+      (`1    0.000    0.000    1.143    1.143 <string>:1(<module>)`),
+      which spans the whole prgram
+
+- In which function is the speed bottleneck? Why?
+
+???- question "Answer"
+
+    In `isprime_2`, as the program spends 1.142 out of 1.143 seconds
+    in this function.
+
+### Exercise 3: read a run-time speed profile
 
 Take a look at this speed profile:
 
@@ -188,9 +217,10 @@ Take a look at this speed profile:
 
 ???- question "Answer"
 
-    This depends on you.
+    This was worth your time if you think a 33-fold speed increase
+    was worth your time.
 
-### Exercise 2: read a run-time speed profile
+### Exercise 4: read a run-time speed profile
 
 Take a look at this speed profile:
 
@@ -222,10 +252,25 @@ Take a look at this speed profile:
 
 ???- question "Answer"
 
-    This depends on you.
+    This was worth your time if you think a 2-fold speed increase
+    was worth your time.
 
-### Exercise 3: create a run-time speed profile
+## Exercise 4: use 
 
-Follow the steps at 'Create a run-time speed profile'
-in your own code, to obtain your own run-time speed profile
 
+
+## References
+
+- `[CppCore Per.1]` C++ Core Guidelines: Per.1: Don't optimize without reason
+  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+- `[CppCore Per.3]` C++ Core Guidelines: Per.3:
+  Don't optimize something that's not performance critical
+- `[CppCore Per.6]`
+  [C++ Core Guidelines: Per.6: Don't make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)
+- `[Chellappa et al., 2008]`
+  Chellappa, Srinivas, Franz Franchetti, and Markus Püschel.
+  "How to write fast numerical code: A small introduction."
+  Generative and Transformational Techniques in Software Engineering II:
+  International Summer School, GTTSE 2007, Braga, Portugal,
+  July 2-7, 2007. Revised Papers (2008): 196-259.
+- `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.

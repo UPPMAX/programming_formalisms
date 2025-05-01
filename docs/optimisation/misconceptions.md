@@ -167,28 +167,6 @@ You may prefer correct advice regarding this.
     Lastly, parallalized code is commonly harder to debug (with
     irreproducible bugs) and harder to read.
 
-## Bad advice 4
-
-!!! warning "Bad advice 4"
-
-    'Optimize the function where you feel the performance problem is'
-
-???- question "Why does this advice make sense?"
-
-    As developers, the more experience we get, the better
-    we understand our code.
-
-???- question "Why is this bad advice?"
-
-    Developers -also very experienced developers- are known
-    to have a bad intuition `[Sutter & Alexandrescu, 2004]`
-
-    Instead (from `[Chellappa et al., 2008]`):
-
-    1. find the code that the program spends most time in
-    2. measure the timing of that code
-    3. analyze the measured runtimes
-
 ## Bad advice 5
 
 !!! warning "Bad advice 5"
@@ -207,6 +185,26 @@ You may prefer correct advice regarding this.
       that's not performance critical `[CppCore Per.3]`
     - The 90-10 rule: 90% of all time, the program spends in 10% of the code.
     - Your working hours can be spent once
+
+## Another myth
+
+```python
+def slow_tmp_swap(x, y):
+    tmp = x
+    x = y
+    y = tmp
+    return x, y
+
+def superfast_xor_swap(x, y):
+    x ^= y
+    y ^= x
+    x ^= y
+    return x, y
+```
+
+- [C++ Core Guidelines: Per.4: Don't assume that complicated code is necessarily faster than simple code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per4-dont-assume-that-complicated-code-is-necessarily-faster-than-simple-code)
+- [C++ Core Guidelines: Per.5: Don't assume that low-level code is necessarily faster than high-level code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per5-dont-assume-that-low-level-code-is-necessarily-faster-than-high-level-code)
+- [C++ Core Guidelines: Per.6: Don't make claims about performance without measurements](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per6-dont-make-claims-about-performance-without-measurements)
 
 ## References
 

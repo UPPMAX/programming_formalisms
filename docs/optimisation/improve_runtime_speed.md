@@ -28,6 +28,17 @@ tags:
 
 ## Why improve run-time speed?
 
+> It is far, far easier to make a correct program fast,
+> than it is to make a fast program correct.
+>
+> Herb Sutter
+
+???- question "How does Herb Sutter look like?"
+
+    ![Herb Sutter](herb_sutter.jpg)
+
+    > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+
 Your program is too slow.
 You want to make it go faster.
 You've used runtime speed profiling to find the
@@ -35,7 +46,7 @@ runtime speed bottleneck.
 Now, you want to follow a formal method
 to improve the runtime speed.
 
-## How to improve run-time speed?
+## How to improve run-time speed
 
 As an example, we assume that a function called `is_prime` is
 the speed bottleneck.
@@ -161,7 +172,7 @@ Start with the code below,
 including the test that breaks the code.
 Assume that `is_prime` is correct.
 
-```
+```python
 def is_prime(num):
     if num > 1:
         for n in range(2, num):

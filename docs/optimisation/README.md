@@ -23,13 +23,10 @@ To improve the runtime speed (or memory use) of a program
 
 We discuss:
 
+- [Runtime speed profiles](runtime_speed_profiles.md)
+- [Improve runtime speed](improve_runtime_speed.md)
 - [Misconceptions](misconceptions.md)
 - [Big-O](big_o.md)
-- [Runtime speed profiles](runtime_speed_profiles.md)
-
-## Case study
-
-- [ ] Show ProjectRampal
 
 ## Discussion
 
