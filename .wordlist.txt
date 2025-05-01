@@ -1694,4 +1694,6 @@ Fricker
 Grau
 Rainer
 ICSSES
-
+antipattern
+Henney
+Kevlin
