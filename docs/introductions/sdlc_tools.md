@@ -30,7 +30,7 @@ tags:
 
     - Understanding the Software development Life Cycle
 
-    Lesson Plan:
+    Lesson Plan (**FIX**):
 
     - **Total** 30 min
     - Theory 20
@@ -40,49 +40,47 @@ tags:
 
 ???- admonition "Changes"
 
-    - clear goal
     - clearer guide
-    - ask about level
     - practical examples than just explain the concept.
-    - dictionary
     - exercises
         - practical things within exercise (not needing to scroll back and forth)
         - clearer instructions
         - solutions
         - (advanced exercises)
 
-## The waterfall model
+## Some SLDC models
 
-1. Requirements
-2. Analysis and design
-3. Development
-4. Test
-5. Deployment and maintenance
+???+ info "Waterfall model"
 
+    1. Requirements
+    2. Analysis and design
+    3. Development
+    4. Test
+    5. Deployment and maintenance
 
-``` mermaid
-flowchart
-    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] -.-> Requirements
-```
+    ``` mermaid
+    flowchart
+        Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] -.-> Requirements
+    ```
 
-- Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
-
-!!! warning
-
-    - Error is spreading
-    - Small mistakes in the beginning will have large impact on the end result.
+    - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
+    
+    !!! warning
+    
+        - Error is spreading
+        - Small mistakes in the beginning will have large impact on the end result.
         - e.g. bugs, architecture limiting extensions
-    - Large costs economically and timely
+        - Large costs economically and timely
 
-## Other Models
+???+ info "Other Models"
 
-- Modern principles:
-    - automated tests, continuous integration (CI)
-- Deliver as fast as possible:
-    - small iterations are easier to manage
-- Extreme Programming
-    - Pair programming
-    - Test-driven development
+    - Modern principles:
+        - automated tests, continuous integration (CI)
+    - Deliver as fast as possible:
+        - small iterations are easier to manage
+    - Extreme Programming
+        - Pair programming
+        - Test-driven development
 
 !!! info "Conclusion"
 
@@ -90,91 +88,127 @@ flowchart
     - Don’t be afraid of trial and error
     - More info in [Software Development Lifecycle tomorrow](sdlc.md)
 
-## The tools/concepts for Developing a programming project
+## The tools/concepts for Developing in scientific computing
 
-### For small projects
+Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)** in Scientific computing
 
-Wilson et al. 2017: **Good enough practices** in Scientific computing
+- Good tools and practices for refactoring and development steps
+- Focus on scientific computing
 
-- project organization
+???- info "Project organization"
+    
     - folders
-- software development practices
+    
+???- info "Software development practices
+
     - explanations
     - naming
     - eliminate duplication --> libraries
     - dependencies
     - DOI
-- tracking changes
-- collaborate
+    
+???- info "Tracking changes"
+
+    - For instance Git/Github
+    
+???- info "Collaborate"
     - documentation
     - to-do lists
     - strategies
     - license
     - citable
 
-These cover **WHAT DO I MEAN??**
+!!! warning "These steps just cover the following Phases"
 
-- Development
-- Test
-- Deployment
+   - Development
+   - Test
+   - Deployment
 
-### Also needed
+- We want to add the planning phases with"
 
-???- info "Details"
-
-    - good tools and practices for refactoring and devel steps
-    - focus scientific computing
-    - lacking planning steps like requirements, analysis and design
-
-- Planning part with
     - requirements
     - analysis
     - design
 
-!!! admonition "Parts to be covered"
+!!! info "The Phases/practices to be covered!
 
-    - &#9745; Planning
-        - Pseudocode
-        - Unified Modelling Language (UML)
-    - &#9745; Testing
-        - Different levels
-    - &#9745; Source/version control
-        - Git etc
-    - &#9745; Collaboration
-        - GitHub
-    - &#9745; Reproducibility (for you and others)
-        - Deployment
-        - Dependencies
-        - (Workflows)
-    - &#9745; Sharing
-        - open science
-        - citation
-        - licensing
-    - &#9745; Documentation
-        - Tutorials
-        - How-to guides
-        - Explanation
-        - Reference
+- Project organisation
+- Planning
+    - Requirements
+    - Analysis
+    - Design 
+- Software development practices
+- Tracking changes
+- Collaborate
 
-## project organization
+## Tools to use
 
-- wait to before lunch
+### Project planning
 
-## software development practices
+- requirements
+- analysis
+- design
 
-WHY?
+!!! note "WHY?"
 
-    - explanations
-    - naming
-    - eliminate duplication --> libraries
-    - dependencies
-    - DOI
+    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
+    - It prepares you to build the real thing to reduce any potential risk of failure. "
 
-plus testing
+!!! note
 
-Connected to documentation
+    - Planning step is to ...
+        - get an overview of the project/program.
+        - help planning writing the code
+        - identify parts needed
+        - risk analysis
+    - Can be divided into analysis and design
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
+            - graphical tools like UML
+            - text
+            - if object-oriented programming: **objects**
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or pseudocode
+            - if object-oriented programming: **classes**
+            - if functional programming: **functions/modules**
 
-???- note
+    - More in afternoon!
+
+!!!
+
+
+### Project organization
+
+- It's about folder structure and setting up practices
+- We cover this in [project organization](organization_docs).
+
+!!! info "Tools"
+
+    - Local computer
+    - GitHub
+
+### Software development practices
+
+- explanations --> in-code documentation
+- naming --> good variable naming
+- eliminate duplication --> libraries
+- dependencies --> 
+- DOI --> also publish your code!
+- testing --> do lots of testing
+
+- To add: way of programming
+    - Functional vs Object-orientred
+
+_we'll cover these in many of the 
+
+!!! info "Tools"
+
+   - Documentation
+   - Ways of programming
+   - Testing
+
+
+???- "Connected to documentation"
 
     Software
     
@@ -189,6 +223,12 @@ Connected to documentation
     - run-all script and/or main program (also related to project organization)
     - example/test data set
     - DOI like zenodo
+
+
+## tracking changes
+
+## collaborate
+
 
 
 ## How to program?
@@ -302,13 +342,13 @@ classDiagram
     - More on Thursday: Algorithms
     - More on Thursday: Modular programming
 
-## Tracking changes
+???- Tracking changes
 
-WHY?
+    WHY?
 
-Git
+    Git
 
-## Collaborate
+???- Collaborate
 
 WHY?
 
@@ -329,42 +369,32 @@ Also links to other sessions
         - recommendations and why
     - citable
 
-## Planning part with
 
-    - requirements
-    - analysis
-    - design
+!!! admonition "Parts to be covered this week"
 
-WHY?
+    - &#9745; Planning
+        - Pseudocode
+        - Unified Modelling Language (UML)
+    - &#9745; Testing
+        - Different levels
+    - &#9745; Source/version control
+        - Git etc
+    - &#9745; Collaboration
+        - GitHub
+    - &#9745; Reproducibility (for you and others)
+        - Deployment
+        - Dependencies
+        - (Workflows)
+    - &#9745; Sharing
+        - open science
+        - citation
+        - licensing
+    - &#9745; Documentation
+        - Tutorials
+        - How-to guides
+        - Explanation
+        - Reference
 
-!!! note
-
-    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
-    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
-    - It prepares you to build the real thing to reduce any potential risk of failure. "
-
-!!! note
-
-    - Planning step is to ...
-        - get an overview of the project/program.
-        - help planning writing the code
-        - identify parts needed
-        - risk analysis
-    - Can be divided into analysis and design
-        - **Analysis** part is to **state the problem** and **define inputs and outputs**
-            - graphical tools like UML
-            - text
-            - if object-oriented programming: **objects**
-        - **Design** phase to find out the **specific algorithms** needed
-            - UML and/or pseudocode
-            - if object-oriented programming: **classes**
-            - if functional programming: **functions/modules**
-
-    - More in afternoon!
-
-!!! info "Definitions"
-
-    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
 
 ## Exercises
 
@@ -372,9 +402,9 @@ Think about
 
 ???- "Why do we want to work with the mentioned tools?"
 
-???- "What is Unified modelling language"
+???- "What is Unified modelling language **MOVE**"
 
-???- "What is source control and what are  the benefits?"
+???- "What is source control and what are the benefits?"
 
 ???- "When to write documentation?"
 
@@ -385,3 +415,13 @@ Think about
 ## Summary of SDLC tools
 
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+
+## Summary
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
+
+## References
+
+- Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)** in Scientific computing
