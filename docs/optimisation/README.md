@@ -25,7 +25,6 @@ We discuss:
 
 - [Runtime speed profiles](runtime_speed_profiles.md)
 - [Improve runtime speed](improve_runtime_speed.md)
-- [Misconceptions](misconceptions.md)
 - [Big-O](big_o.md)
 
 ## Discussion

@@ -52,7 +52,6 @@ nav:
     - Using a formal testing framework: testing/testing_framework.md
     - Runtime speed profiles: optimisation/runtime_speed_profiles.md
     - Improve run-time speed: optimisation/improve_runtime_speed.md
-    - Optimisation misconceptions: optimisation/misconceptions.md
     - Big-O: optimisation/big_o.md
   - Deployment:
     - Implement the project as a package: package/README.md
