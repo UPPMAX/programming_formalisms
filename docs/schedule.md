@@ -21,7 +21,7 @@ Monday   |13:00-15:40|Lars   |[Define and plan project](./project_start/analysis
 Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Tuesday  |09:00-10:00|Lars   |[Software development life cycle](./introductions/sdlc.md)
-Tuesday  |10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](project/kanban_board.md) and [team roles](project/team_roles.md)
+Tuesday  |10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](project/kanban_board.md)
 Tuesday  |11:15-12:00|Richel |[assert](assert/README.md)
 Tuesday  |13:00-14:00|Richel |[TDD 1](tdd/README.md)
 Tuesday  |14:15-15:00|Richel |[TDD 2](tdd/README.md)
