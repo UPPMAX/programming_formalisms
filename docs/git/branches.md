@@ -204,7 +204,7 @@ git branch -d new-feature    # remove branch
 !!! tip "git push doesn't work with new branch"
 
     - you always have to pull before a push:
-    
+
     ```git
     git pull #
     ```

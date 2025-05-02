@@ -13,7 +13,7 @@ tags:
 !!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
-    
+
     - are connected to the course repo
     - can commit
     - can write useful commit messages
@@ -138,7 +138,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - View Code of conduct
     - View License
     - Look at the history ("Commits" button just above the file explorer)
-    
+
 ### Clone the course project
 
 ???- question "Exercise: clone course project and create folders (3 min)"
@@ -192,7 +192,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - Commit every file individually
     - In local git:
         - Stage one or more (related) files and commit them together
-    
+
 !!! info "Git Cheat sheet"
 
     ```console
@@ -212,13 +212,13 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     $ git status
     On branch master
     Your branch is up to date with 'origin/master'.
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
             learners/bclaremar/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
     ```
 
     - There are untracked in the repository (directory).
@@ -232,7 +232,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
     On branch master
     Your branch is up to date with 'origin/master'.
-    
+
     Changes to be committed:
       (use "git restore --staged <file>..." to unstage)
             new file:   learners/bclaremar/README.md
@@ -264,7 +264,7 @@ Let us now commit the change to the repository:
     On branch master
     Your branch is ahead of 'origin/master' by 1 commit.
       (use "git push" to publish your local commits)
-    
+
     nothing to commit, working tree clean
     ```
 
@@ -420,7 +420,7 @@ This is the last line by me, Anna
 !!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
-    
+
     - can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
     - are connected to the course repo
     - know how to do in-code documentation

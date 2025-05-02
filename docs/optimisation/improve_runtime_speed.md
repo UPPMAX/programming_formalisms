@@ -117,7 +117,7 @@ def get_t_is_prime_2_impl():
 def get_t_is_prime_1():
     import timeit
     return timeit.timeit(get_t_is_prime_1_impl, number = 1)
-    
+
 def get_t_is_prime_2():
     import timeit
     return timeit.timeit(get_t_is_prime_2_impl, number = 1)
@@ -223,7 +223,7 @@ Let `is_prime` use the faster implementation.
     def get_t_is_prime_1():
         import timeit
         return timeit.timeit(get_t_is_prime_1_impl, number = 1)
-        
+
     def get_t_is_prime_2():
         import timeit
         return timeit.timeit(get_t_is_prime_2_impl, number = 1)

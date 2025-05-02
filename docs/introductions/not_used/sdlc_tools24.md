@@ -10,7 +10,7 @@ tags:
 
     - What are the key concepts and steps in the SDLC
     - What are the tools for a project?
-    
+
 !!! info "Content"
 
     - Introduction to some SDLC key features
@@ -461,13 +461,13 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 !!! Keypoints
 
     - Software development is both series of steps:
-    
+
         1. Requirements
         2. Analysis and design
         3. Development
         4. Test
         5. Deployment and maintenance
-        
+
     - ... and iteration of these
     - Planning for reproducibility, modularity and documentation should be started in the beginning
     - Tools for the developer

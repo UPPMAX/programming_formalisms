@@ -235,7 +235,7 @@ classDiagram
           self.velocity = any_velocity
         def __str__(self):
             return (
-                "Position: " + str(self.position)  + ", " 
+                "Position: " + str(self.position)  + ", "
                 + "velocity" + str(self.velocity)
             )
     ```

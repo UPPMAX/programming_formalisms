@@ -2,7 +2,7 @@
 tags:
   - data structures
   - class
-  - classes 
+  - classes
   - composition
 ---
 

@@ -55,7 +55,7 @@ tags:
     - exercises
         - state where to work
         - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions  
+        - clearer instructions
         - advanced exercises
 
 ## Introduction
@@ -256,7 +256,7 @@ deactivate # deactivate the venv!
     - Test in isolated environment (``venv``) on local computer if there are errors
     - That is, are there any more packages needed
     - follow the example above
-    
+
 ???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
 
     - each group in different branches
@@ -400,7 +400,7 @@ For this we use `.gitignore` files.
 
     - Just use an existing programming project you have today
     - use it in the follwong steps.
-    
+
 ???- question "Exercise B: Start the test project"
 
     - Make a ``test_project`` directory in a good place (like a ``Programming formalisms`` course folder)
@@ -431,12 +431,12 @@ For this we use `.gitignore` files.
 ???- question "Exercise: Add and commit the content"
 
     - Add and Commit your changes
-    
+
     ```console
     git add
     git commit -m 'first commit'
     ```
-    
+
     - Look and understand at the output of the following commands
 
     ```console
@@ -474,7 +474,7 @@ For this we use `.gitignore` files.
 
     ![New repo](../img/New_repo_formalisms.png)
     > Example project
-    
+
     - Press "**Create repository**"
 
     ![Create and push](../img/created_push.PNG)

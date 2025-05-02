@@ -232,7 +232,7 @@ Reflect:
 ???- question "Answers to reflection"
 
     Ideally, this is a yes.
-    
+
     Sure, people have different skill levels and
     one member wrote the more complex parts;
     this is part of being in a team:

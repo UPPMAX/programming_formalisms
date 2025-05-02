@@ -10,7 +10,7 @@ tags:
 
     - What are the key concepts and steps in the SDLC
     - What are the tools for a project?
-    
+
 !!! info "Content"
 
     - Introduction to some SDLC key features
@@ -66,9 +66,9 @@ tags:
     ```
 
     - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
-    
+
     !!! warning
-    
+
         - Error is spreading
         - Small mistakes in the beginning will have large impact on the end result.
         - e.g. bugs, architecture limiting extensions
@@ -100,7 +100,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 ???- info "Project organization"
 
     - folders
-    
+
 ???- info "Software development practices"
 
     - explanations
@@ -108,11 +108,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - eliminate duplication --> libraries
     - dependencies
     - DOI
-    
+
 ???- info "Tracking changes"
 
     - For instance Git/Github
-    
+
 ???- info "Collaborate"
 
     - documentation
@@ -260,7 +260,7 @@ classDiagram
 
 !!! info "Tools **FIXLINK**"
 
-    - Object-orientation 
+    - Object-orientation
     - Algorithms
     - Modular programming
 
@@ -313,7 +313,7 @@ classDiagram
 ???- "Connected to documentation"
 
     Software
-    
+
     - explanation comment at the start of the program (also "help function" as for './program -h')
     - functions
         - names for variables and functions

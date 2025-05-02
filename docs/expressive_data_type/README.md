@@ -62,19 +62,19 @@ can be considered good enough,
 until you've read up about classes:
 
 ```python
-parameters = { 
-    'n_bacteria': 42, 
+parameters = {
+    'n_bacteria': 42,
     'n_timesteps': 1000,
     'gradient_type': 'uniform',
     'bacteria_initialization': 'uniform'
 }
-def get_n_bacteria(parameters): 
+def get_n_bacteria(parameters):
     return parameters['n_bacteria']
-def get_n_timesteps(parameters): 
+def get_n_timesteps(parameters):
     return parameters['n_timesteps']
-def get_gradient_type(parameters): 
+def get_gradient_type(parameters):
     return parameters['gradient_type']
-def get_bacteria_initialization(parameters): 
+def get_bacteria_initialization(parameters):
     return parameters['bacteria_initialization']
 ```
 

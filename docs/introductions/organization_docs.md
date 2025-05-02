@@ -107,7 +107,7 @@ link to Richel's parts about organizing project
     - Doc
     - index
     - .gitignore file
-    
+
 ## Summary
 
 !!! admonition "Parts to be covered"

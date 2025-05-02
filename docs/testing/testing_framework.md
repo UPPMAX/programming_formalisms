@@ -443,7 +443,7 @@ print(isprime(8))
     ```python
     self.assertFalse(isprime(-1))
     ```
-    
+
     Both tests fail.
 
 It is beyond the scope of this exercise to fix this function :-)

@@ -21,7 +21,7 @@ tags:
 !!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
-    
+
     - can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
     - are connected to the course repo
     - know how to do in-code documentation
@@ -62,10 +62,10 @@ tags:
     git config --global init.defaultBranch "main"
     git config --global core.editor nano
     ```
-    
+
     or replace nano with another editor, like in Windows: ``notepad``
     Verify with:
-    
+
     ```console
     config --list
     ```
@@ -76,7 +76,7 @@ tags:
     git config --global credential.helper cache
     git config --global credential.helper 'cache --timeout=36000'
     ```
-    
+
     - With this we _don't need_ to use ssh and the configuration with ``ssh-keys``, like below:
 
         - **Git and GitHub should be configured prior to the course**
@@ -118,7 +118,7 @@ tags:
     - View Code of conduct
     - View License
     - Look at the history ("Commits" button just above the file explorer)
-    
+
 ### Clone the course project
 
 ???- question "Exercise: clone course project and create folders (3 min)"
@@ -172,7 +172,7 @@ tags:
         - Commit every file individually
     - In local git:
         - Stage one or more (related) files and commit them together
-    
+
 !!! info "Git Cheat sheet"
 
     ```console
@@ -192,13 +192,13 @@ tags:
     $ git status
     On branch master
     Your branch is up to date with 'origin/master'.
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
             learners/bclaremar/
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
     ```
 
     - There are untracked in the repository (directory).
@@ -212,7 +212,7 @@ tags:
 
     On branch master
     Your branch is up to date with 'origin/master'.
-    
+
     Changes to be committed:
       (use "git restore --staged <file>..." to unstage)
             new file:   learners/bclaremar/README.md
@@ -244,7 +244,7 @@ Let us now commit the change to the repository:
     On branch master
     Your branch is ahead of 'origin/master' by 1 commit.
       (use "git push" to publish your local commits)
-    
+
     nothing to commit, working tree clean
     ```
 
@@ -342,7 +342,7 @@ nothing to commit, working tree clean
 !!! info "Learning outcomes of 'Get started with Git/GitHub'"
 
     Learners
-    
+
     - can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
     - are connected to the course repo
     - know how to do in-code documentation

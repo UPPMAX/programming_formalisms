@@ -18,7 +18,7 @@ tags:
 
     - Someone made a change to the repository and breaks the code.
       How do you find out?
-      
+
 
     Lesson plans:
 

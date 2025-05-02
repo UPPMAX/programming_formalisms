@@ -58,9 +58,9 @@ tags:
     - exercises
         - pull request
         - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions  
+        - clearer instructions
         - advanced exercise
-    
+
 ## Branches, merging, code reviews
 
 !!! note

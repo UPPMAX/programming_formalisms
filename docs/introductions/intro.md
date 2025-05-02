@@ -14,7 +14,7 @@ tags:
 !!! info "Learning outcomes of 'Introduction'"
 
     Learners can
-    
+
     - Identify the main topics and objectives for the week's lessons.
     - Evaluate the importance of engaging with course content and identify
       strategies to maintain interest and motivation throughout the week.
@@ -61,7 +61,7 @@ tags:
         - clearer instructions
         - solutions
         - (advanced exercises)
-    
+
 
 ## Different types of Scientific software
 
@@ -196,20 +196,20 @@ tags:
         - Changeable
 
     - Software development is both series of steps:
-    
+
         - Requirements
         - Design
         - Program
         - Test
         - Installation
         - Maintain
-        
+
     - ... and iteration of these
 
 !!! info "Learning outcomes of 'Introduction'"
 
     Learners can
-    
+
     - Identify the main topics and objectives for the week's lessons.
     - Evaluate the importance of engaging with course content and identify
       strategies to maintain interest and motivation throughout the week.

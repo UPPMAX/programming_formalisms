@@ -219,7 +219,7 @@ python3 -m twine upload --repository testpypi dist/*
     ```bash
     richel@richel-N141CU:~/GitHubs/programming_formalisms_project_summer_2025$ python3 -m twine upload --repository testpypi dist/*
     Uploading distributions to https://test.pypi.org/legacy/
-    Enter your API token: 
+    Enter your API token:
     Uploading bacsim-1.0.1-py3-none-any.whl
     100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.8/24.8 kB • 00:00 • 72.3 MB/s
     Uploading bacsim-1.0.1.tar.gz

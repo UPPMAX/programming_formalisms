@@ -131,7 +131,7 @@ For the fall 2024:
 - Breakout room 4
     -R2.1-R5
 - Breakout room 5
-    - R6-R11  
+    - R6-R11
 
 ???+ note "Exercise 30 min"
 
@@ -154,11 +154,11 @@ For the fall 2024:
 
 Once we know what we want we can start thinking on how.
 in the design phase we commonly use Modeling Languages to illustrate concepts and architecture together with
-pseudo code to describe algorithms in much the  
-same way as we use programming languages  
+pseudo code to describe algorithms in much the
+same way as we use programming languages
 during development .
-Unified Modeling Language UML, is one such modeling  
-language [UML web page](https://www.uml.org/)  
+Unified Modeling Language UML, is one such modeling
+language [UML web page](https://www.uml.org/)
 here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
 UML was generated to unify the big popular object oriented modeling approaches of Booch (Booch Method superseded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
 

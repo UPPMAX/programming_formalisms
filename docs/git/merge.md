@@ -48,7 +48,7 @@ tags:
     - exercises
         - pull request
         - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions  
+        - clearer instructions
         - advanced exercises
 
 
@@ -88,7 +88,7 @@ and asks a human for help.
     Based on: <https://coderefinery.github.io/git-intro/conflicts/>
 
     ???- note "License: Creative Commons Attribution 4.0 International"
-    
+
         - Permits almost any use subject to providing credit and license notice.
         - Frequently used for media assets and educational materials.
         - The most common license for Open Access scientific publications.
@@ -109,7 +109,7 @@ and asks a human for help.
      ingredients.txt | 2 +-
      1 file changed, 1 insertion(+), 1 deletion(-)
     ```
-    
+
     - But the second will fail:
 
     ```git

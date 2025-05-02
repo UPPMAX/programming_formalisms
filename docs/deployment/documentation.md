@@ -14,8 +14,8 @@ tags:
 
 ???+ info "Learning outcomes of 'Documentation'"
 
-    learners  
-    
+    learners
+
     - know the most important sections for a full public README
     - can make citation info
     - know how to find instruction of going to more sophisticated documentation
@@ -27,9 +27,9 @@ tags:
         - get started
         - test
         - citation
-        
+
     - Revisit licence
-    
+
     - Update a Doc Index
     - View other possibilities
         - Wiki
@@ -45,7 +45,7 @@ tags:
     - exercises
         - state where to work
         - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions  
+        - clearer instructions
         - advanced exercises
 
 ## Revisiting documentation
@@ -211,7 +211,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - You can now work in GitHub directly
     - Do ``git push`` first from local command-line!
 
-    
+
     - We already have a file called ``README.md``, that is used for information for the course participants.
     - Let's continue to work with the ``README-EXT.md`` we used in last session.
 
@@ -219,7 +219,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     ???- question "Group 1: Work together and formulate an 'About' section"
 
     ???- question "Group 2: Work together and formulate 'Getting started' section"
-    
+
     ???- question "Group 3: Work together and formulate 'Citation' section"
 
 
@@ -232,8 +232,8 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 !!! info "See also"
 
     [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
-    
-    
+
+
 ## Going further with documentation
 
 !!! info "See also"
@@ -317,7 +317,7 @@ reusability:
       > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
     - Trust and community
       > ... somebody you trust recommended it?
-    
+
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control

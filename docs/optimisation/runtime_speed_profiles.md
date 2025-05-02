@@ -209,7 +209,7 @@ cProfile.run('do_it()')
     1.143 seconds.
 
     You can find it at
-    
+
     - the top (`6 function calls in 1.143 seconds`)
     - the first line
       (`1    0.000    0.000    1.143    1.143 <string>:1(<module>)`),

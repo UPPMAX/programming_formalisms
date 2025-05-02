@@ -34,7 +34,7 @@ tags:
       Should, and if yes, how, this knowledge be written down?
     - What synonymn does 'to assert' have in English?
     - Have you ever used asserts? In R, the equivalent is `testthat::expect_`
-      
+
 
     Lesson plans:
 
