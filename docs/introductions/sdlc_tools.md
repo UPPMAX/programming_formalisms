@@ -50,7 +50,7 @@ tags:
 
 ## Some SDLC models
 
-### If you want some overview today already!
+### If you want some overview today already
 
 ???- info "Waterfall model"
 
@@ -98,7 +98,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - Focus on scientific computing
 
 ???- info "Project organization"
-    
+
     - folders
     
 ???- info "Software development practices"
@@ -267,11 +267,10 @@ classDiagram
 #### Testing
 
 
-
 ### Project planning
 
 - Planning step is to ...
-    
+
     - get an overview of the project/program.
     - help planning writing the code
     - identify parts needed
@@ -309,7 +308,7 @@ classDiagram
     - Local computer
     - GitHub
 
-### 
+###
 
 ???- "Connected to documentation"
 
@@ -329,7 +328,6 @@ classDiagram
 
 
 ## Tracking changes
-
 
 
 ## Collaborate
@@ -397,7 +395,6 @@ Think about
         - How-to guides
         - Explanation
         - Reference
-
 
 
 !!! info "Definitions"
