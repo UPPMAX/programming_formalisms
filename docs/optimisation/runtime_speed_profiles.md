@@ -449,7 +449,7 @@ def superfast_xor_swap(x, y):
     One should not assume that complicated code is necessarily faster
     than simple code `[CppCore Per.4]`, not that low-level code is necessarily
     faster than high-level code `[CppCore Per.5]`.
-    
+
     Add that one should not make claims about performance without
     measurements `[CppCore Per.6]`: measure first.
 
@@ -466,7 +466,7 @@ def superfast_xor_swap(x, y):
 
 - `[CppCore Per.1]`
    [C++ Core Guidelines: Per.1: Don't optimize without reason](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
-- `[CppCore Per.2]` 
+- `[CppCore Per.2]`
   [C++ Core Guidelines: Per.2: Don't optimize prematurely](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
 - `[CppCore Per.3]`
   [C++ Core Guidelines: Per.3: Don't optimize something that's not performance critical](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
