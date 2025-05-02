@@ -30,7 +30,7 @@ tags:
 
     - Understanding the Software development Life Cycle
 
-    Lesson Plan:
+    Lesson Plan (**FIX**):
 
     - **Total** 30 min
     - Theory 20
@@ -40,49 +40,49 @@ tags:
 
 ???- admonition "Changes"
 
-    - clear goal
     - clearer guide
-    - ask about level
     - practical examples than just explain the concept.
-    - dictionary
     - exercises
         - practical things within exercise (not needing to scroll back and forth)
         - clearer instructions
         - solutions
         - (advanced exercises)
 
-## The waterfall model
+## Some SDLC models
 
-1. Requirements
-2. Analysis and design
-3. Development
-4. Test
-5. Deployment and maintenance
+### If you want some overview today already!
 
+???- info "Waterfall model"
 
-``` mermaid
-flowchart
-    Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] -.-> Requirements
-```
+    1. Requirements
+    2. Analysis and design
+    3. Development
+    4. Test
+    5. Deployment and maintenance
 
-- Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
+    ``` mermaid
+    flowchart
+        Requirements --> A["Analysis and design"] --> Development --> Test --> D["Deployment and maintenance"] -.-> Requirements
+    ```
 
-!!! warning
-
-    - Error is spreading
-    - Small mistakes in the beginning will have large impact on the end result.
+    - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
+    
+    !!! warning
+    
+        - Error is spreading
+        - Small mistakes in the beginning will have large impact on the end result.
         - e.g. bugs, architecture limiting extensions
-    - Large costs economically and timely
+        - Large costs economically and timely
 
-## Other Models
+???- info "Other Models"
 
-- Modern principles:
-    - automated tests, continuous integration (CI)
-- Deliver as fast as possible:
-    - small iterations are easier to manage
-- Extreme Programming
-    - Pair programming
-    - Test-driven development
+    - Modern principles:
+        - automated tests, continuous integration (CI)
+    - Deliver as fast as possible:
+        - small iterations are easier to manage
+    - Extreme Programming
+        - Pair programming
+        - Test-driven development
 
 !!! info "Conclusion"
 
@@ -90,113 +90,75 @@ flowchart
     - Don’t be afraid of trial and error
     - More info in [Software Development Lifecycle tomorrow](sdlc.md)
 
-## The tools/concepts for Developing a programming project
+## The tools/concepts for Developing in scientific computing
 
-### For small projects
+Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)** in Scientific computing
 
-Wilson et al. 2017: **Good enough practices** in Scientific computing
+- Good tools and practices for refactoring and development steps
+- Focus on scientific computing
 
-- project organization
+???- info "Project organization"
+    
     - folders
-- software development practices
+    
+???- info "Software development practices"
+
     - explanations
     - naming
     - eliminate duplication --> libraries
     - dependencies
     - DOI
-- tracking changes
-- collaborate
+    
+???- info "Tracking changes"
+
+    - For instance Git/Github
+    
+???- info "Collaborate"
+
     - documentation
     - to-do lists
     - strategies
     - license
     - citable
 
-These cover **WHAT DO I MEAN??**
+!!! warning "These steps just cover the following Phases"
 
-- Development
-- Test
-- Deployment
+    - Development
+    - Test
+    - Deployment
 
-### Also needed
+- We want to add the planning phases with
 
-???- info "Details"
-
-    - good tools and practices for refactoring and devel steps
-    - focus scientific computing
-    - lacking planning steps like requirements, analysis and design
-
-- Planning part with
     - requirements
     - analysis
     - design
 
-!!! admonition "Parts to be covered"
+!!! info "The Phases/practices to be covered!
 
-    - &#9745; Planning
-        - Pseudocode
-        - Unified Modelling Language (UML)
-    - &#9745; Testing
-        - Different levels
-    - &#9745; Source/version control
-        - Git etc
-    - &#9745; Collaboration
-        - GitHub
-    - &#9745; Reproducibility (for you and others)
-        - Deployment
-        - Dependencies
-        - (Workflows)
-    - &#9745; Sharing
-        - open science
-        - citation
-        - licensing
-    - &#9745; Documentation
-        - Tutorials
-        - How-to guides
-        - Explanation
-        - Reference
+- Project organisation
+- Planning
+    - Requirements
+    - Analysis
+    - Design
+- Software development practices
+- Tracking changes
+- Collaborate
 
-## project organization
+## Tools to use
 
-- wait to before lunch
+### Software development practices
 
-## software development practices
+- explanations --> in-code documentation
+- naming --> good variable naming
+- eliminate duplication --> libraries
+- dependencies -->
+- DOI --> also publish your code!
+- testing --> do lots of testing
 
-WHY?
+- To add: way of programming
+    - Functional vs Object-oriented
 
-    - explanations
-    - naming
-    - eliminate duplication --> libraries
-    - dependencies
-    - DOI
-
-plus testing
-
-Connected to documentation
-
-???- note
-
-    Software
-    
-    - explanation comment at the start of the program (also "help function" as for './program -h')
-    - functions
-        - names for variables and functions
-    - eliminate duplication
-        - libraries
-        - test if you rely
-    - dependencies and requirements explicitly
-    - program behavior by if/else (possibly arguments from outside)
-    - run-all script and/or main program (also related to project organization)
-    - example/test data set
-    - DOI like zenodo
-
-
-## How to program?
-
-- Two tracks in the programming: **Object-oriented programming** or **functional programming**
-- Two tracks in organizing code: **Long files** or **modules**
-
-### Object-oriented programming
+#### Object-oriented programming
 
 - Object-oriented (OO) programming is
     - a mindset of mimicking the real-world as:
@@ -238,7 +200,7 @@ classDiagram
     - OO object-based (but not class-based)
         - Javascript
 
-### Functional programming
+#### Functional programming
 
 - Close to mathematics
 - Programmer defines information and relations
@@ -288,7 +250,7 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
-### Modular coding
+#### Modular coding
 
 - Modular coding breaks up the code in blocks that could be separate files.
 - Modularity could be within a program
@@ -296,19 +258,83 @@ classDiagram
     - script describing order of runs with different programs
     - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
 
-!!! info "See also **FIX correct days**"
+!!! info "Tools **FIXLINK**"
 
-    - More on Thursday: Object-orientation **FIXLINK**
-    - More on Thursday: Algorithms
-    - More on Thursday: Modular programming
+    - Object-orientation 
+    - Algorithms
+    - Modular programming
+
+#### Testing
+
+
+
+### Project planning
+
+- Planning step is to ...
+    
+    - get an overview of the project/program.
+    - help planning writing the code
+    - identify parts needed
+    - risk analysis
+
+- Can be divided into analysis and design
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
+            - **Requirements** and **Risk analysis**
+            - Graphical tools like **UML** (Unified Modeling Language)
+            - text
+            - if object-oriented programming: **objects**
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
+            - if object-oriented programming: **classes**
+            - if functional programming: **functions/modules**
+
+!!! note "WHY?"
+
+    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
+    - It prepares you to build the real thing to reduce any potential risk of failure. "
+
+!!! info "Tools"
+
+    - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+    - More this afternoon
+
+### Project organization
+
+- It's about folder structure and setting up practices
+- We cover this in [project organization](organization_docs.md).
+
+!!! info "Tools"
+
+    - Local computer
+    - GitHub
+
+### 
+
+???- "Connected to documentation"
+
+    Software
+    
+    - explanation comment at the start of the program (also "help function" as for './program -h')
+    - functions
+        - names for variables and functions
+    - eliminate duplication
+        - libraries
+        - test if you rely
+    - dependencies and requirements explicitly
+    - program behavior by if/else (possibly arguments from outside)
+    - run-all script and/or main program (also related to project organization)
+    - example/test data set
+    - DOI like zenodo
+
 
 ## Tracking changes
 
-WHY?
 
-Git
 
 ## Collaborate
+
+???- Collaborate
 
 WHY?
 
@@ -329,52 +355,13 @@ Also links to other sessions
         - recommendations and why
     - citable
 
-## Planning part with
-
-    - requirements
-    - analysis
-    - design
-
-WHY?
-
-!!! note
-
-    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
-    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
-    - It prepares you to build the real thing to reduce any potential risk of failure. "
-
-!!! note
-
-    - Planning step is to ...
-        - get an overview of the project/program.
-        - help planning writing the code
-        - identify parts needed
-        - risk analysis
-    - Can be divided into analysis and design
-        - **Analysis** part is to **state the problem** and **define inputs and outputs**
-            - graphical tools like UML
-            - text
-            - if object-oriented programming: **objects**
-        - **Design** phase to find out the **specific algorithms** needed
-            - UML and/or pseudocode
-            - if object-oriented programming: **classes**
-            - if functional programming: **functions/modules**
-
-    - More in afternoon!
-
-!!! info "Definitions"
-
-    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
-
 ## Exercises
 
 Think about
 
 ???- "Why do we want to work with the mentioned tools?"
 
-???- "What is Unified modelling language"
-
-???- "What is source control and what are  the benefits?"
+???- "What is source control and what are the benefits?"
 
 ???- "When to write documentation?"
 
@@ -385,3 +372,38 @@ Think about
 ## Summary of SDLC tools
 
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+
+!!! admonition "Parts to be covered this week"
+
+    - &#9745; Planning
+        - Pseudocode
+        - Unified Modelling Language (UML)
+    - &#9745; Testing
+        - Different levels
+    - &#9745; Source/version control
+        - Git etc
+    - &#9745; Collaboration
+        - GitHub
+    - &#9745; Reproducibility (for you and others)
+        - Deployment
+        - Dependencies
+        - (Workflows)
+    - &#9745; Sharing
+        - open science
+        - citation
+        - licensing
+    - &#9745; Documentation
+        - Tutorials
+        - How-to guides
+        - Explanation
+        - Reference
+
+
+
+!!! info "Definitions"
+
+    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
+
+## References
+
+- Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)** in Scientific computing
