@@ -374,14 +374,23 @@ Take a look at this speed profile:
   Also, Amdahls law ignores the overhead of parallel
   code: there is CPU power needed to let the processes
   communicate with each other.
-  Also, parallalized code is commonly harder to debug (with
-  irreproducible bugs) and harder to read.
-  What do you think the literature states about parallelizing code?
+  What do you think the literature states for/against
+  parallelizing code?
 
 ???- question "Answer"
 
-    It is a valid technique to make code go faster,
-    just don't expect miracles that come without a cost.
+    Parallelization/concurrency is a valid technique to make code go faster,
+    just don't expect miracles that come without a cost:
+
+    - Concurrency does not always improve
+      performance `[Martin, 2009, p. 179]`
+    - Concurrency will change your software
+      architecture `[Martin, 2009, p. 179]`
+    - Concurrency incurs overhead, both in CPU and
+      code` [Martin, 2009, p. 179]`
+    - Correct concurrency is complex, even for simple
+      problems `[Martin, 2009, p. 179]`
+    - Concurrency bugs are not usually repeatable `[Martin, 2009, p. 180]`
 
 ## Exercise 7: should I unroll my for loops?
 
@@ -484,4 +493,8 @@ def superfast_xor_swap(x, y):
   International Summer School, GTTSE 2007, Braga, Portugal,
   July 2-7, 2007. Revised Papers (2008): 196-259.
 - `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of c, c++, java, perl, python, rexx and tcl." IEEE Computer 33.10 (2000): 23-29.
+- `[Martin, 2009]` Martin, Robert C.
+  Clean code: a handbook of agile software craftsmanship.
+  Pearson Education, 2009.
 - `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.
+
