@@ -572,7 +572,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   Gestión de sistemas de información.
   Test-driven development: An empirical evaluation of agile practice.
   Heidelberg: Springer, 2010.
-- `[Martin, 2007]` Martin, Robert C. 
+- `[Martin, 2007]` Martin, Robert C.
   "Professionalism and test-driven development."
   IEEE Software 24.3 (2007): 32-36.
 - `[Martin, 2009]` Martin, Robert C.
