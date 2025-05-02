@@ -52,7 +52,7 @@ link to Richel's parts about organizing project
 
 !!! admonition "Documentation comes in different forms"
 
-    - What _is_ documentation?
+    - What *is* documentation?
         - **Tutorials**: learning-oriented, allows the newcomer to get started
         - **How-to guides**: goal-oriented, shows how to solve a specific problem
         - **Explanation**: understanding-oriented, explains a concept
