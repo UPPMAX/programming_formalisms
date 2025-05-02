@@ -35,28 +35,28 @@ tags:
 
 ## Why use runtime speed profiles?
 
-> It is far, far easier to make a correct program fast,
-> than it is to make a fast program correct.
->
-> Herb Sutter
+!!! info "Quote from Herb Sutter"
+
+    It is far, far easier to make a correct program fast,
+    than it is to make a fast program correct.
 
 ???- question "How does Herb Sutter look like?"
 
     ![Herb Sutter](herb_sutter.jpg)
 
-    > [Source: Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+    - Source: [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
 
-> We should forget about small efficiencies,
-> say about 97% of the time: premature optimization is the root of all evil.
-> Yet we should not pass up our opportunities in that critical 3%.
->
-> Donald Knuth
+!!! info "Quote from Donald Knuth"
+
+    We should forget about small efficiencies,
+    say about 97% of the time: premature optimization is the root of all evil.
+    Yet we should not pass up our opportunities in that critical 3%.
 
 ???- question "How does Donald Knuth look like?"
 
     ![Donald Knuth](donald_knuth.jpg)
 
-    > Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
+    - Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/4/4f/KnuthAtOpenContentAlliance.jpg)
 
 Up until now, you've focussed on having code that is correct, instead
 of being fast. This is smart: you should not optimize prematurely
