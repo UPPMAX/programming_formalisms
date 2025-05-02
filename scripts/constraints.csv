@@ -1,5 +1,4 @@
 topic,prerequisite
-assert,Issues
 TDD,assert
 Big O,runtime speed profiles
 TDD 1,Merge conflicts
