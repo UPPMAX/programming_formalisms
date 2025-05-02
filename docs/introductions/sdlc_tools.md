@@ -48,7 +48,7 @@ tags:
         - solutions
         - (advanced exercises)
 
-## Some SLDC models
+## Some SDLC models
 
 ???+ info "Waterfall model"
 
@@ -112,6 +112,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - For instance Git/Github
     
 ???- info "Collaborate"
+
     - documentation
     - to-do lists
     - strategies
@@ -120,11 +121,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
 !!! warning "These steps just cover the following Phases"
 
-   - Development
-   - Test
-   - Deployment
+    - Development
+    - Test
+    - Deployment
 
-- We want to add the planning phases with"
+- We want to add the planning phases with
 
     - requirements
     - analysis
@@ -136,7 +137,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - Planning
     - Requirements
     - Analysis
-    - Design 
+    - Design
 - Software development practices
 - Tracking changes
 - Collaborate
@@ -180,7 +181,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 ### Project organization
 
 - It's about folder structure and setting up practices
-- We cover this in [project organization](organization_docs).
+- We cover this in [project organization](organization_docs.md).
 
 !!! info "Tools"
 
@@ -192,12 +193,12 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - explanations --> in-code documentation
 - naming --> good variable naming
 - eliminate duplication --> libraries
-- dependencies --> 
+- dependencies -->
 - DOI --> also publish your code!
 - testing --> do lots of testing
 
 - To add: way of programming
-    - Functional vs Object-orientred
+    - Functional vs Object-oriented
 
 _we'll cover these in many of the 
 
