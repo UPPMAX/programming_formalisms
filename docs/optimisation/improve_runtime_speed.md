@@ -134,7 +134,7 @@ functions that have no arguments
     No, but:
 
     - the code would become less readable, as more scaffolding would be needed
-    - implementation functions do exist 
+    - implementation functions do exist
 
 
 ???- question "What is a slower implementation of `is_prime`?"

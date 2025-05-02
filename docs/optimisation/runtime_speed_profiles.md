@@ -159,7 +159,7 @@ cProfile.run('do_it()')
 
 ???- question "Answer"
 
-    Searching for 'cProfile output' will take you to 
+    Searching for 'cProfile output' will take you to
     [the Python profiling manual](https://docs.python.org/3/library/profile.html))
 
 - What do the columns mean?
@@ -208,7 +208,8 @@ cProfile.run('do_it()')
 
     1.143 seconds.
 
-    You can find it at 
+    You can find it at
+    
     - the top (`6 function calls in 1.143 seconds`)
     - the first line
       (`1    0.000    0.000    1.143    1.143 <string>:1(<module>)`),

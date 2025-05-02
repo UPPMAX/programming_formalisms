@@ -39,7 +39,7 @@ link to Richel's parts about organizing project
 
 !!! objectives
 
-    - [Documentation part 1](../project_start/startup.md#introduction-to-documentation) aims to:
+    - Documentation part aims to (this lesson):
         - introduce motivation for documentation
         - get tips for in-code documentation
         - get tips for README files
@@ -52,7 +52,7 @@ link to Richel's parts about organizing project
 
 !!! admonition "Documentation comes in different forms"
 
-    - What _is_ documentation?
+    - What *is* documentation?
         - **Tutorials**: learning-oriented, allows the newcomer to get started
         - **How-to guides**: goal-oriented, shows how to solve a specific problem
         - **Explanation**: understanding-oriented, explains a concept
