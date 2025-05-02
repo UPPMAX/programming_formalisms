@@ -50,7 +50,9 @@ tags:
 
 ## Some SDLC models
 
-???+ info "Waterfall model"
+### If you want some overview today already!
+
+???- info "Waterfall model"
 
     1. Requirements
     2. Analysis and design
@@ -72,7 +74,7 @@ tags:
         - e.g. bugs, architecture limiting extensions
         - Large costs economically and timely
 
-???+ info "Other Models"
+???- info "Other Models"
 
     - Modern principles:
         - automated tests, continuous integration (CI)
@@ -99,7 +101,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     
     - folders
     
-???- info "Software development practices
+???- info "Software development practices"
 
     - explanations
     - naming
@@ -144,50 +146,6 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
 ## Tools to use
 
-### Project planning
-
-- requirements
-- analysis
-- design
-
-!!! note "WHY?"
-
-    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
-    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
-    - It prepares you to build the real thing to reduce any potential risk of failure. "
-
-!!! note
-
-    - Planning step is to ...
-        - get an overview of the project/program.
-        - help planning writing the code
-        - identify parts needed
-        - risk analysis
-    - Can be divided into analysis and design
-        - **Analysis** part is to **state the problem** and **define inputs and outputs**
-            - graphical tools like UML
-            - text
-            - if object-oriented programming: **objects**
-        - **Design** phase to find out the **specific algorithms** needed
-            - UML and/or pseudocode
-            - if object-oriented programming: **classes**
-            - if functional programming: **functions/modules**
-
-    - More in afternoon!
-
-!!!
-
-
-### Project organization
-
-- It's about folder structure and setting up practices
-- We cover this in [project organization](organization_docs.md).
-
-!!! info "Tools"
-
-    - Local computer
-    - GitHub
-
 ### Software development practices
 
 - explanations --> in-code documentation
@@ -200,39 +158,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - To add: way of programming
     - Functional vs Object-oriented
 
-!!! info "Tools"
-
-    - Documentation
-    - Ways of programming
-    - Testing
-
-???- "Connected to documentation"
-
-    Software
-    
-    - explanation comment at the start of the program (also "help function" as for './program -h')
-    - functions
-        - names for variables and functions
-    - eliminate duplication
-        - libraries
-        - test if you rely
-    - dependencies and requirements explicitly
-    - program behavior by if/else (possibly arguments from outside)
-    - run-all script and/or main program (also related to project organization)
-    - example/test data set
-    - DOI like zenodo
-
-
-## tracking changes
-
-## collaborate
-
-## How to program?
-
-- Two tracks in the programming: **Object-oriented programming** or **functional programming**
-- Two tracks in organizing code: **Long files** or **modules**
-
-### Object-oriented programming
+#### Object-oriented programming
 
 - Object-oriented (OO) programming is
     - a mindset of mimicking the real-world as:
@@ -274,7 +200,7 @@ classDiagram
     - OO object-based (but not class-based)
         - Javascript
 
-### Functional programming
+#### Functional programming
 
 - Close to mathematics
 - Programmer defines information and relations
@@ -324,7 +250,7 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
-### Modular coding
+#### Modular coding
 
 - Modular coding breaks up the code in blocks that could be separate files.
 - Modularity could be within a program
@@ -332,17 +258,81 @@ classDiagram
     - script describing order of runs with different programs
     - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
 
-!!! info "See also **FIX correct days**"
+!!! info "Tools **FIXLINK**"
 
-    - More on Thursday: Object-orientation **FIXLINK**
-    - More on Thursday: Algorithms
-    - More on Thursday: Modular programming
+    - Object-orientation 
+    - Algorithms
+    - Modular programming
 
-???- Tracking changes
+#### Testing
 
-    WHY?
 
-    Git
+
+### Project planning
+
+- Planning step is to ...
+    
+    - get an overview of the project/program.
+    - help planning writing the code
+    - identify parts needed
+    - risk analysis
+
+- Can be divided into analysis and design
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
+            - **Requirements** and **Risk analysis**
+            - Graphical tools like **UML** (Unified Modeling Language)
+            - text
+            - if object-oriented programming: **objects**
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
+            - if object-oriented programming: **classes**
+            - if functional programming: **functions/modules**
+
+!!! note "WHY?"
+
+    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
+    - It prepares you to build the real thing to reduce any potential risk of failure. "
+
+!!! info "Tools"
+
+    - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+    - More this afternoon
+
+### Project organization
+
+- It's about folder structure and setting up practices
+- We cover this in [project organization](organization_docs.md).
+
+!!! info "Tools"
+
+    - Local computer
+    - GitHub
+
+### 
+
+???- "Connected to documentation"
+
+    Software
+    
+    - explanation comment at the start of the program (also "help function" as for './program -h')
+    - functions
+        - names for variables and functions
+    - eliminate duplication
+        - libraries
+        - test if you rely
+    - dependencies and requirements explicitly
+    - program behavior by if/else (possibly arguments from outside)
+    - run-all script and/or main program (also related to project organization)
+    - example/test data set
+    - DOI like zenodo
+
+
+## Tracking changes
+
+
+
+## Collaborate
 
 ???- Collaborate
 
@@ -365,6 +355,23 @@ Also links to other sessions
         - recommendations and why
     - citable
 
+## Exercises
+
+Think about
+
+???- "Why do we want to work with the mentioned tools?"
+
+???- "What is source control and what are the benefits?"
+
+???- "When to write documentation?"
+
+???- "What does reproducibility mean?"
+
+???- "Why sharing?"
+
+## Summary of SDLC tools
+
+- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
 
 !!! admonition "Parts to be covered this week"
 
@@ -392,27 +399,6 @@ Also links to other sessions
         - Reference
 
 
-## Exercises
-
-Think about
-
-???- "Why do we want to work with the mentioned tools?"
-
-???- "What is Unified modelling language **MOVE**"
-
-???- "What is source control and what are the benefits?"
-
-???- "When to write documentation?"
-
-???- "What does reproducibility mean?"
-
-???- "Why sharing?"
-
-## Summary of SDLC tools
-
-- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
-
-## Summary
 
 !!! info "Definitions"
 
