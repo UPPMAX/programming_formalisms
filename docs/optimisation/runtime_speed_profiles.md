@@ -351,7 +351,7 @@ Take a look at this speed profile:
     speed increase
 
 - Take a close look at the figure below.
-  The figure belows shows the theoretical best
+  The figure below shows the theoretical best
   speed up regarding the percentage of code that can be parallelized.
   This is Amdahl's law (and also found in `[Rodgers, 1985]`).
   Which line applies to our speed profile?
