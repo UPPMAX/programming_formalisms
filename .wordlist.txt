@@ -1698,3 +1698,5 @@ antipattern
 antipatterns
 Henney
 Kevlin
+Mariot
+Tsitoara
