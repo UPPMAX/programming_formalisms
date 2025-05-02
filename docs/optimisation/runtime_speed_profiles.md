@@ -380,7 +380,8 @@ Take a look at this speed profile:
 
 ???- question "Answer"
 
-    Only parallelize your code if you have no other option.
+    It is a valid technique to make code go faster,
+    just don't expect miracles that come without a cost.
 
 ## Exercise 7: should I unroll my for loops?
 
