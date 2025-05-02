@@ -44,7 +44,7 @@ tags:
 
     ![Herb Sutter](herb_sutter.jpg)
 
-    > Source [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+    > [Source: Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
 
 > We should forget about small efficiencies,
 > say about 97% of the time: premature optimization is the root of all evil.
@@ -387,7 +387,7 @@ Take a look at this speed profile:
     - Concurrency will change your software
       architecture `[Martin, 2009, p. 179]`
     - Concurrency incurs overhead, both in CPU and
-      code` [Martin, 2009, p. 179]`
+      code `[Martin, 2009, p. 179]`
     - Correct concurrency is complex, even for simple
       problems `[Martin, 2009, p. 179]`
     - Concurrency bugs are not usually repeatable `[Martin, 2009, p. 180]`
