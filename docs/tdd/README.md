@@ -103,8 +103,17 @@ so it is a way to add features.
 Alternatively, the test that fails can be an exposed bug.
 In this case, there is no feature added,
 but a bug is removed permanently instead.
+The TDD cycles end when you cannot break
+your function anymore `[Beck, 2022][Langr, 2013]`.
 
-The TDD cycles end when you cannot break your function anymore `[Beck, 2022][Langr, 2013]`.
+The three laws of TDD ensure each cycle is short `[Martin, 2007]`:
+
+- You may not write production code until you have written a failing unit test
+- You may not write more of a unit test than is sufficient to fail,
+  and not compiling is failing
+- You may not write more production code than is sufficient to pass
+  the currently failing test
+
 
 ## Features of TDD
 
@@ -563,6 +572,12 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   Gestión de sistemas de información.
   Test-driven development: An empirical evaluation of agile practice.
   Heidelberg: Springer, 2010.
+- `[Martin, 2007]` Martin, Robert C. 
+  "Professionalism and test-driven development."
+  IEEE Software 24.3 (2007): 32-36.
+- `[Martin, 2009]` Martin, Robert C.
+  Clean code: a handbook of agile software craftsmanship.
+  Pearson Education, 2009.
 
 ![Martin, 2011](martin_the_clean_coder.jpg)
 
