@@ -200,14 +200,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - To add: way of programming
     - Functional vs Object-oriented
 
-_we'll cover these in many of the 
-
 !!! info "Tools"
 
-   - Documentation
-   - Ways of programming
-   - Testing
-
+    - Documentation
+    - Ways of programming
+    - Testing
 
 ???- "Connected to documentation"
 
@@ -229,8 +226,6 @@ _we'll cover these in many of the
 ## tracking changes
 
 ## collaborate
-
-
 
 ## How to program?
 
