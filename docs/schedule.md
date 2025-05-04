@@ -13,9 +13,9 @@ For a detailed daily schedule, see the detailed schedule of that day.
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Monday   |09:00-10:00|Björn  |[Syllabus](./intro.md) + [Introduction](./introductions/intro.md)
-Monday   |10:00-11:00|Björn  |[Software development tools](introductions/sdlc_tools.md)
-Monday   |11:00-11:45|Björn  |[Git/GitHub basics and start project](./project_start/git_startup.md) <!-- intro modularity ??? -->
+Monday   |09:00-9:50|Björn  |[Syllabus](./intro.md) + [Introduction](./introductions/intro.md)
+Monday   |10:05-10:55|Björn  |[Software development tools](./introductions/sdlc_tools.md) <!-- includes modules (tiny) -->
+Monday   |11:10-12:00|Björn  |[Git/GitHub basics and start project](./project_start/git_startup.md) <!-- includes merge conflicts -->
 Monday   |13:00-15:40|Lars   |[Define and plan project](./project_start/analysis_design.md)
 Monday   |15:40-16:00|Lars   |Confidence and retrospect
 |||||
