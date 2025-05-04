@@ -20,6 +20,7 @@ tags:
     - know how a local vs remote repo work
     - can push/pull
     - can manage conflicts
+    - are prepared for coming documentation
 
 !!!- note "Instructor notes"
 
@@ -61,15 +62,6 @@ tags:
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
-!!! admonition "Concepts in Git"
-
-    - **repository**: The project, contains all data and history (commits, branches, tags).
-    - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
-    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-        - `git clone` copies everything: all commits and all branches.
-    - We synchronize commits between local and remote with
-    - **git fetch**/**pull** and **git push**.
 
 ### The essence of version control
 
@@ -132,8 +124,44 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 - First contribution locally
 - Upload changes
 - Conflicts and resolutions
+- A bit about project organization
+- A bit about documenation
 
+## Principles
 
+!!! admonition "Concepts in Git"
+
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+        - **Local**: you computer or a server where you have full control
+        - **Remote**: server, e.g. GitHub
+    - Working locally
+        - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
+        - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - Working on Github
+        - Since you can only add changes in on file at a time, there is no middle step ``git add``
+        - ''Commit`` button
+    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
+        - `git clone` copies everything: all commits and all branches.
+    - We synchronize commits between local and remote with
+    - **git fetch**/**pull** and **git push**.
+
+### Local vs remote
+
+- In this course:
+    - Local: Your project in VS code
+    - Remote: Repo in GitHub  
+
+### Clone
+
+- Clone to your computer
+    - Buttons in VS code or a terminal, using ``git clone ``
+
+#### Sync from GitHub
+
+- As others are working on the same repo, there may be uploaded changes from *fast* collaborators.
+- Do a ``git pull`` to get these changes locally as well.
+- Do this before you start with new changes. Good practice!
+    - This reduces errors or double work!
 
 ### Make changes locally
 
@@ -148,18 +176,8 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - changes on GitHub are synced to you existinglocal git
         - good procedure to do this step before you start changes
 
-???- question "Exercise: Create a folder with your name (locally)"
 
-    - step into (``cd``) the ``learners/`` directory
-    - ``mkdir <your-name>``
-    - git cannot use emptly directories
-    - Therefore **create an empty README file in the created folder**
-    - ``cd <your-name>``
-    - ``touch README.md``
-    - go back to the root of the repo (not necessary)
-    - cd ../..
-
-### Stage files (in git)
+#### Stage files (in git)
 
 !!! info "track the changes"
 
@@ -167,6 +185,19 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - Commit every file individually
     - In local git:
         - Stage one or more (related) files and commit them together
+
+    - All chanegd files
+
+    ```console
+    $ git add .    # < -- "." means all files
+    ```
+    
+    - Chosen files
+
+    ```console
+    $ git add <file1> <file2>    # one or several files
+    ```
+
 
 !!! info "Git Cheat sheet"
 
@@ -179,80 +210,12 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     git pull
     ```
 
-???- question "Exercise: "Add/stage file"
-
-    - First check the status!
-
-    ```console
-    $ git status
-    On branch master
-    Your branch is up to date with 'origin/master'.
-
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-            learners/bclaremar/
-
-    nothing added to commit but untracked files present (use "git add" to track)
-
-    ```
-
-    - There are untracked in the repository (directory).
-    - You want to **add the files** (focus the camera) to the list of files tracked by Git.
-    - Git does not track any files automatically and you need make a conscious decision to add a file.
-    - Let's do what Git hints at and add the files:
-
-    ```console
-    $ git add .    # < -- "." means all files
-    $ git status
-
-    On branch master
-    Your branch is up to date with 'origin/master'.
-
-    Changes to be committed:
-      (use "git restore --staged <file>..." to unstage)
-            new file:   learners/bclaremar/README.md
-    ```
-
-    - Now this change is _staged_ and ready to be committed.
-
-### Commit
+#### Commit
 
 - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
 - BUT only what we have added to the "staging" area!
 
-Let us now commit the change to the repository:
-
-???- question "Exercise: Commit"
-
-    ```console
-    $ git commit -m "add personal folder"
-
-    [master 5914ad7] add personal folders
-     1 file changed, 0 insertions(+), 0 deletions(-)
-     create mode 100644 learners/bclaremar/README.md
-    ```
-
-    - Right after we query the status to get this useful command into our muscle memory:
-
-    ```console
-    $ git status
-    On branch master
-    Your branch is ahead of 'origin/master' by 1 commit.
-      (use "git push" to publish your local commits)
-
-    nothing to commit, working tree clean
-    ```
-
-    What does the `-m` flag mean? Let us check the help page for that command:
-
-    ```console
-    git help commit
-    ```
-
-    - You should see a very long help page as the tool is very versatile (press q to quit).
-        - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-        - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-        - Note that help pages also work when you don't have a network connection!
+-     $ git commit -m "add personal folder"
 
 **Alternative commits**
 
@@ -264,41 +227,22 @@ Let us now commit the change to the repository:
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-### Upload to GitHub
+#### Upload to GitHub
 
-- In previous path we got:
-
-```console
-$ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-   (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
+```git
+git push
 ```
 
-???- question "Exercise: Let's push back to GitHub"
+GitHub is now synced with your changes
 
-     ```git
-     git push
-     ```
+- [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
-!!! info "Working on GitHub"
+#### Sync from GitHub (again)
 
-    - You can do basically the **same work at GitHub as in your local git repo**
-    - The **graphical view** makes it easier to work with in everyday editing work at least.
-        - Depends on your own preferences of course.
-    - Here your commit each file at a time with the "commit button".
-        - **No staging** that is.
-        - Be aware of that feature!
-    - **GitHub Actions** are workflows defined by you, like:
-        - for automatic testing after each commit (Used in the test lessons)
-        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
-
-!!! note "See also"
-
-    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
-
+- As others are working on the same repo, there may be uploaded changes from your collaborators
+- Do a ``git pull`` to get these changes locally as well.
+- Do this before you start with new changes.
+    - This reduces errors or double work!
 
 ## Exercises
 
@@ -361,7 +305,140 @@ nothing to commit, working tree clean
     - `cd` the new directory that was created
     - list the files with `ls`
 
-### Exercise 3: merge conflicts
+### Exercise 3: Make changes locally (First steps without any conflicts!)
+
+???- question "Exercise 3: Create a folder with your name (locally)"
+
+    - step into (``cd``) the ``learners/`` directory
+    - ``mkdir <your-name>``
+    - git cannot use emptly directories
+    - Therefore **create an empty README file in the created folder**
+    - ``cd <your-name>``
+    - ``touch README.md``
+    - go back to the root of the repo (not necessary)
+    - cd ../..
+
+### Exercise 4: Stage files (in git)
+
+???- question "Exercise 4: "Add/stage file"
+
+    - First check the status!
+
+    ```console
+    $ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            learners/bclaremar/
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    ```
+
+    - There are untracked in the repository (directory).
+    - You want to **add the files** (focus the camera) to the list of files tracked by Git.
+    - Git does not track any files automatically and you need make a conscious decision to add a file.
+    - Let's do what Git hints at and add the files:
+
+    ```console
+    $ git add .    # < -- "." means all files
+    $ git status
+
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            new file:   learners/bclaremar/README.md
+    ```
+
+    - Now this change is _staged_ and ready to be committed.
+
+### Exercise 5: Commit
+
+Let us now commit the change to the repository:
+
+???- question "Exercise 5: Commit"
+
+    ```console
+    $ git commit -m "add personal folder"
+
+    [master 5914ad7] add personal folders
+     1 file changed, 0 insertions(+), 0 deletions(-)
+     create mode 100644 learners/bclaremar/README.md
+    ```
+
+    - Right after we query the status to get this useful command into our muscle memory:
+
+    ```console
+    $ git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+    ```
+
+    What does the `-m` flag mean? Let us check the help page for that command:
+
+    ```console
+    git help commit
+    ```
+
+    - You should see a very long help page as the tool is very versatile (press q to quit).
+        - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
+        - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
+        - Note that help pages also work when you don't have a network connection!
+
+**Alternative commits**
+
+- You can also omit the ``-m`` option and a text editor will open.
+- The first line will be your commit message.
+- You can add other lines to add some more detailed info about your changes.
+
+!!! tip "Writing useful commit messages"
+
+    [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
+
+### Exercise 6: Upload to GitHub
+
+- In previous path we got:
+
+```console
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+   (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
+
+???- question "Exercise 6: Let's push back to GitHub"
+
+     ```git
+     git push
+     ```
+
+!!! info "Working on GitHub"
+
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button".
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+
+
+### Exercise 7: merge conflicts
 
 - Create a new file with a unique name for your group,
   for example `group_anna_and_sven.txt`
