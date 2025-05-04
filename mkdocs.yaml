@@ -21,7 +21,6 @@ nav:
   - Intro:
     - Introduction: introductions/intro.md
     - SDLC tools: introductions/sdlc_tools.md
-    - Documentation and organization: introductions/documentation_organization.md
   - Planning:
     - Get started with git and the project: project_start/git_startup.md
     - Project start with analysis and design: project_start/analysis_design.md
