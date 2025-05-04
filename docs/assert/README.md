@@ -343,7 +343,7 @@ def read_file(filename):
 - Compare the behavior of the functions without and with `assert`.
   Did we do a better job by adding `assert`s? If yes: how? If no: why not?
 
-???- question "Anwer"
+???- question "Answer"
 
     We know we should 'assert liberally to document internal assumptions and
     invariants' `[Sutter & Alexandrescu, 2004, chapter 68]` which we did
