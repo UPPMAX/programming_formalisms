@@ -217,13 +217,26 @@ assert 1 == 2
 ### Exercise 2: making assumptions explicit
 
 - Below is a function that divides two floating point numbers.
-  Add the assumptions this function makes, either
-  as comments or as Python code
+  How to use it?
 
 ```python
 def divide_by(numerator, denominator):
     return (numerator / denominator)
 ```
+
+???- question "Answer"
+
+    One can use this function like this:
+
+    ```python
+    divide_by(1.2, 3.4)
+    ```
+
+    Put it at the end of your Python file.
+
+- Add the assumptions this function makes, either
+  as comments or as Python code
+
 
 ???- question "Answer with comments"
 

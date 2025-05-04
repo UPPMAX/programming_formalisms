@@ -54,6 +54,16 @@ Testing *helps* ensure the correctness of code.
   e.g. `[Rahman & Farhana, 2020]`
 - Simple testing can prevent most critical failures `[Yuan et al., 2014]`
 
+## Levels of testing
+
+![Dilbert strip](dilbert_tdd_3.png)
+
+Test            |Description
+----------------|--------------------------------------------------------
+Unit test       |Tests 1 unit, e.g. a function
+Integration test|Tests multiple units together, i.e. a part of the system
+System test     |Tests the system as a whole
+
 ## Why use a testing framework?
 
 You want to write tests in the recommended way
@@ -478,3 +488,5 @@ In this course, you've written some functions yourself.
   An analysis of production failures in distributed data-intensive systems."
   11th USENIX Symposium on Operating Systems Design and Implementation
   (OSDI 14). 2014.
+- `[Zen of Python]`
+  [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)

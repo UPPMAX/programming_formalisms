@@ -47,7 +47,6 @@ nav:
   - Testing:
     - assert: assert/README.md
     - Test-driven development: tdd/README.md
-    - Testing: testing/README.md
     - Using a formal testing framework: testing/testing_framework.md
     - Runtime speed profiles: optimisation/runtime_speed_profiles.md
     - Improve run-time speed: optimisation/improve_runtime_speed.md

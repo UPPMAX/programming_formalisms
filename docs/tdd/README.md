@@ -8,12 +8,12 @@ tags:
   - is_probability
 ---
 
-# TDD
+# Test-driven development
 
 !!!- info "Learning outcomes"
 
-    - Understand what TDD is
-    - Be able to do TDD
+    - Understand what test-driven development is
+    - Be able to do test-driven development
 
 ???- question "For teachers"
 
@@ -45,38 +45,16 @@ tags:
     - Why would it be important to have a formal way to grow/develop your code?
     - When have you tested your code enough? Is it ever enough?
 
-    Lesson plan:
-
-    ```mermaid
-    gantt
-      title Lesson plan TDD 1
-      dateFormat X
-      axisFormat %s
-      Pair programming: done, 0, 30
-      Theory: extra, 30, 45
-    ```
-
-    ```mermaid
-    gantt
-      title Lesson plan TDD 2
-      dateFormat X
-      axisFormat %s
-      Exercise 1: crit, exercise_1, 0, 20s
-      Feedback 1: feedback_1, after exercise_1, 10s
-      Retrospect: crit, 30, 15s
-    ```
-
-## Why?
+## Why use test-driven development?
 
 ???- question "Prefer this lecture as video?"
 
     See it [on YouTube](https://youtu.be/gw_4jVrkDok?si=PU74XKfw9xQGwHn_).
 
-The code of a project changes.
-You want to change code methodically
-in a time efficient way.
+The requirements (and hence code) of a project changes.
+You want to change code methodically in a time-efficient way.
 
-## What is TDD?
+## What is test-driven development?
 
 Test-driven development (TDD) is a systematic way to grow code,
 used in academia and industry. It works `[Martin, 2011]`!
@@ -113,7 +91,6 @@ The three laws of TDD ensure each cycle is short `[Martin, 2007]`:
   and not compiling is failing
 - You may not write more production code than is sufficient to pass
   the currently failing test
-
 
 ## Features of TDD
 
