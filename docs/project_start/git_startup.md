@@ -36,21 +36,10 @@ tags:
 
 ???- admonition "Changes"
 
-    - clear goal
-    - clearer guide
     - ask about level
-    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
-    - dictionary
     - exercises
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - solutions
         - (advanced exercises)
-
-## Source/version control and collaboration
-
-**FIX** RE_ARRANGE
 
 ## What is Git, and what is a Git repository?
 
@@ -61,50 +50,6 @@ tags:
 - `.git` uses relative paths - you can move the whole thing somewhere else and it will still work
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
-
-
-### The essence of version control
-
-Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
-
-- System which records **snapshots** of a project
-- Implements **branching**:
-    - You can work on several **feature** branches and switch between them
-    - **Different people** can work on the same code/project without interfering
-    - You can **experiment** with an idea and discard it if it turns out to be a bad idea
-- Implements **merging**:
-    - Person A and B’s simultaneous work can be **easily combined**
-
-!!! info "Why Git?"
-
-    We will use [Git](https://git-scm.com) to record snapshots of our work:
-
-    - **Easy to set up**: no server needed.
-    - **Very popular**: chances are high you will need to contribute to somebody else's code which is tracked with Git.
-    - **Distributed**: good backup, no single point of failure, you can track and clean-up changes offline, simplifies collaboration model for open-source projects.
-    - Important **platforms** such as [GitHub](https://github.com), [GitLab](https://gitlab.com), and [Bitbucket](https://bitbucket.org) build on top of Git.
-
-    However, any version control is better than no version control and it is OK to prefer a different tool than Git.
-
-    - Other tools:
-
-        - [Subversion](https://subversion.apache.org)
-        - [Mercurial](https://www.mercurial-scm.org)
-        - [Pijul](https://pijul.org/)
-
-## Collaboration
-
-### Example
-
-- Someone has given you access to a repository online and **you want to contribute** to it.
-- Quite easy to make a **copy and send a change back**.
-
-    1. get repository, make a change locally, and send the change directly back.
-    2. make a "pull request" that allows a review.
-
-- Once we know how code review works:
-    - we will be able to propose changes to repositories of others
-    - review changes submitted by external contributors.
 
 ## Before we continue we need to configure Git
 
