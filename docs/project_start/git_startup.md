@@ -457,7 +457,7 @@ This is the last line by me, Anna
 
 - Resolve the merge conflict and do a `git push`
 
-### What have we done?
+## Example of Git/GitHub workflow?
 
 ```mermaid
 graph TB
