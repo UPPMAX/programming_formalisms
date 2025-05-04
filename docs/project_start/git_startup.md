@@ -51,6 +51,26 @@ tags:
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
+### Centralized workflow
+
+**This is used when you are not a collaborator**
+
+![Centralized layout](../img/centralized.svg)
+
+**Centralized layout**
+
+- **Red** is the repository on GitHub.
+- **Blue** is where all contributors work on their own computers.
+
+- Centralized workflow is often used for **remote collaborative work**.
+- `origin` refers to where you cloned from (but you can relocate it).
+- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
+- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
+
+!!! note "Other workflows?"
+
+    - Other workflows in [Merging and contributing with code review](../git/contribute.md)
+
 ## Before we continue we need to configure Git
 
 !!! attention
@@ -365,23 +385,6 @@ nothing to commit, working tree clean
      git push
      ```
 
-!!! info "Working on GitHub"
-
-    - You can do basically the **same work at GitHub as in your local git repo**
-    - The **graphical view** makes it easier to work with in everyday editing work at least.
-        - Depends on your own preferences of course.
-    - Here your commit each file at a time with the "commit button".
-        - **No staging** that is.
-        - Be aware of that feature!
-    - **GitHub Actions** are workflows defined by you, like:
-        - for automatic testing after each commit (Used in the test lessons)
-        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
-
-!!! note "See also"
-
-    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
-
-
 ### Exercise 7: merge conflicts
 
 - Create a new file with a unique name for your group,
@@ -436,6 +439,24 @@ This is the last line by me, Anna
     ```
 
 - Resolve the merge conflict and do a `git push`
+
+## Work directly on GitHub
+
+!!! info "Working on GitHub"
+
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button".
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
 
 ## Summary
