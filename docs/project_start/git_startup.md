@@ -132,16 +132,16 @@ tags:
 - Do this before you start with new changes. Good practice!
     - This reduces errors or double work!
 
-???- question "Difference between ``git pull`` and ``git fetch``?" 
+???- question "Difference between ``git pull`` and ``git fetch``?"
 
     We may cover this later. Not important now!
     
-    - Git **pull** **copies changes** from a remote repository directly **into your** **working directory**, while git **fetch** **does not**. 
-    - The git **fetch** command only copies changes into your local **Git** repo. 
+    - Git **pull** **copies changes** from a remote repository directly **into your** **working directory**, while git **fetch** **does not**.
+    - The git **fetch** command only copies changes into your local **Git** repo.
     - The git **pull** command does **both**.
     - You Should Use git **fetch** When…
-      - You want to **check** if there are new **updates** on the remote repository but **don't want to apply them immediately**.
-      - You are working on new features and you want to **avoid potential merge conflicts**.
+        - You want to **check** if there are new **updates** on the remote repository but **don't want to apply them immediately**.
+        - You are working on new features and you want to **avoid potential merge conflicts**.
 
 ### Make changes locally
 
@@ -212,11 +212,11 @@ Tracked files can be in three states.
 
 !!! tip "Writing useful commit messages"
 
-    - Each commit should stand on its own. 
+    - Each commit should stand on its own.
     - Keep your commits small and independent.
-    - Write informative commit messages. 
-    - Each commit message should answer a question. 
-        - Why was the commit created? 
+    - Write informative commit messages.
+    - Each commit message should answer a question.
+        - Why was the commit created?
         - What problem does it solve?
 
     - What Not to Do
@@ -227,11 +227,11 @@ Tracked files can be in three states.
 
     ???- info "Example"
 
-        Best	| Bad	| Worst
-        ------|-----|------
-        [login] | Fix typo in DB call	| Fixed typo in DB call	Fix typo
-        refactor login function for reuse	| Changing login function by moving declarations to parameters | Code refactoring
-        add new api for user program check|	adding a new api for user program check |	New user api
+        Best | Bad | Worst
+        -----|-----|------
+        [login] Fix typo in DB call | Fixed typo in DB call | Fix typo
+        refactor login function for reuse | Changing login function by moving declarations to parameters | Code refactoring
+        add new api for user program check| adding a new api for user program check | New user api
 
         Source: [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf) Chaper 6
 
@@ -341,7 +341,7 @@ Tracked files can be in three states.
     - Hoover over the Source control icon in the Left menu
         - It should say: "1 pending changes"
     - Let's do what Git hints at and add the files:
-    - Click the Icon and then add (stage) the file with the "plus" sign 
+    - Click the Icon and then add (stage) the file with the "plus" sign
     - There should now be an **A** (for Added) beside the README.md file
 
 ### Exercise 5: Commit
@@ -379,16 +379,16 @@ nothing to commit, working tree clean
 
 ???- question "Exercise 6: Let's push back to GitHub"
 
-     - Let's "publish" you commits to the common GitHub repo
-     - In VS Code: Click the "Sync Changes" button
-     - You may also give a message, 
-         - could be the commit message again or something else summarizing several commits
+    - Let's "publish" you commits to the common GitHub repo
+    - In VS Code: Click the "Sync Changes" button
+    - You may also give a message, 
+        - could be the commit message again or something else summarizing several commits
 
-     ???- note "From bash terminal"
-     
-         ```git
-         git push
-         ```
+    ???- note "From bash terminal"
+
+        ```git
+        git push
+        ```
 
 ### Exercise 7: Merge conflicts
 
