@@ -54,10 +54,14 @@ tags:
 
 ![https://www.xkcd.com/379/](forgetting.png)
 
-## Why?
+## Why use assertions
 
-While writing code, you make assumptions.
-Writing down these assumptions as `assert` statements
+> If debugging is the process of removing bugs,
+> then programming must be the process of putting them in.
+> Edsger W. Dijkstra
+
+You will be writing code with flaws and bugs.
+Making you assumptions explicit
 will help you structure your thoughts and reduce
 the time you spend debugging.
 
@@ -90,8 +94,8 @@ average = sum_of_elements / n_elements
 
 This `assert` will terminate the program if the assertion is false.
 Assert liberally to document assumptions
-`[Sutter & Alexandrescu, 2004][Stroustrup, 1997][McConnell, 2004a]`
-`[Liberty, 2001][Lakos, 1996][Stroustrup, 2013a]`,
+`[Sutter & Alexandrescu, 2004; Stroustrup, 1997; McConnell, 2004a]`
+`[Liberty, 2001; Lakos, 1996; Stroustrup, 2013a]`,
 even if you think something should never occur `[McConnell, 2004b]`.
 
 ### Assertions in debug and release mode
@@ -175,7 +179,7 @@ Use `assert` to specifify assumption on the output of a function
 
 ## Exercises
 
-### Exercise 1: use `assert`
+### Exercise 1: the behavior of `assert` in debug and release mode
 
 - Write a script called `my_assert.py` with the following content:
 
@@ -210,31 +214,161 @@ assert 1 == 2
     There is no error message, as the Python script was run in
     release mode: in release mode, all `assert`s are removed
 
-### Exercise 2: use `assert` in the learners' project
+### Exercise 2: making assumptions explicit
 
-There is likely to be some code in the learners project
-that assumptions that are either invisible
-or written down as comments.
+- Below is a function that divides two floating point numbers.
+  Add the assumptions this function makes, either
+  as comments or as Python code
 
-???- question "What if not?"
+```python
+def divide_by(numerator, denominator):
+    return (numerator / denominator)
+```
 
-    Then it is time to develop new code :-) .
-    Assign yourself an issue and write it.
-    Put `assert` whenever you assume something to be true
+???- question "Answer with comments"
 
-Search for one occasion where this happens
-and put an `assert` statements there.
+    ```python
+    def divide_by(numerator, denominator):
+        # Numerator is a floating point number
+        # Denominator is a floating point number
+        # Numerator is not zero
+        return (numerator / denominator)
+    ```
 
-If you find a bug that way, create an issue to have someone
-fix that bug.
+???- question "Answer with Python code"
+
+    ```python
+    def divide_by(numerator, denominator):
+        assert isinstance(numerator, float)
+        assert isinstance(denominator, float)
+        assert(denominator != 0.0)
+        return (numerator / denominator)
+    ```
+
+- Run this function with the integer values 3 as the numerator
+  and 4 as the denominator and observe what happens.
+  Which two ways are there to solve this?
+
+???- question "Answer"
+
+    The code will fail, because the input are not floating point numbers
+    anymore. How to deal with this is a design decision. 
+
+    Here are the options:
+
+    - Change the **use** of the function: 
+      change `divide_by(3, 4)`
+      to `divide_by(3.0, 4.0)`
+
+    - Change the **implementation** of the function:
+
+    ```python
+    def divide_by_3(numerator, denominator):
+        assert isinstance(numerator, (float, int))
+        assert isinstance(denominator, (float, int))
+        assert type(numerator) == type(denominator)
+        assert(denominator != 0.0)
+        return (numerator / denominator)
+    ```
+
+    The first puts the responsibility at the user of the function,
+    the second puts it on the author of the function.
+
+- Which of the two ways is better?
+
+???- question "Answer"
+
+    The first one, because a function should does one thing correctly
+    `[Martin, 2009; CppCore F.2; tidyverse style guideline of functions]`.
+
+    Or phrased differently `[Martin, 2009]`:
+
+    > Functions should do one thing.
+    > They should do it well.
+    > They should do it only [sic].
+
+### Exercise 3: making assumptions explicit
+
+- Below is a function that reads a file and returns its contents.
+  How to use it?
+
+```python
+def read_file(filename):
+    file = open(filename, "r")
+    content = file.read()
+    file.close()
+    return content
+```
+
+???- question "Answer"
+
+    Here is how to use this function:
+
+    ```python
+    read_file("my_file.txt")
+    ```
+
+    The function will give an error is the file cannot be
+    found at the path.
+
+- Add the assumptions this function makes, either
+  as comments or as Python code
+
+???- question "Answer with comments"
+
+    ```python
+    def read_file(filename):
+        # The path to the filename exists
+        # The file is readable
+        file = open(filename, "r")
+        content = file.read()
+        file.close()
+        return content
+    ```
+
+???- question "Answer with code"
+
+    ```python
+    def read_file(filename):
+        import os
+        assert os.path.isfile(filename)
+        assert os.access(filename, os.R_OK)
+
+        file = open(filename, "r")
+        content = file.read()
+        file.close()
+        return content
+    ```
+
+- Compare the behavior of the functions without and with `assert`.
+  Did we do a better job by adding `assert`s? If yes: how? If no: why not?
+
+???- question "Anwer"
+
+    We know we should 'assert liberally to document internal assumptions and
+    invariants' `[Sutter & Alexandrescu, 2004, chapter 68]` which we did
+    well by adding those `assert`s.
+
+    The behavior of our code, however, has not changed much: the error
+    message by either function are readable enough, hence you could
+    argue that we've wasted our time typing out our assumptions.
+
+    On the other hand, asserting liberally is a good habit, so doing
+    it is fine.
 
 ## References
 
+- `[CppCore F.2]` C++ Core Guidelines.
+   F.2: A function should perform a single logical operation,
+   <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-logical>
 - `[Liberty, 2001]` [5] Jesse Liberty. Sams teach yourself C++ in 24 hours.
   ISBN: 0-672-32224-2. Hour 24, chapter 'assert()': 'Use assert freely'
 - `[Lakos, 1996]` John Lakos. Large-Scale C++ Software Design. 1996.
   ISBN: 0-201-63362-0. Chapter 2.6: 'The use of assert statements can help to
   document the assumptions you make when implementing your code
+- `[Martin, 2009]` Martin, Robert C.
+  Clean code: a handbook of agile software craftsmanship.
+  Pearson Education, 2009.
 - `[McConnell, 2004a]` Steve McConnell. Code Complete (2nd edition). 2004.
   ISBN: -735619670. Chapter 8.2 'Assertions', paragraph 'Guidelines for using
   asserts': 'Use assertions to document and verify preconditions and
@@ -257,6 +391,8 @@ fix that bug.
   C++ coding standards: 101 rules, guidelines, and best practices. 2004.
   ISBN: 0-32-111358-6. Chapter 68: 'Assert liberally to document internal
   assumptions and invariants'
+- `[tidyverse style guideline of functions]`
+  <https://style.tidyverse.org/functions.html>
 - `[Turner, 2024]` Jason Turner, cppbestpractices:
   'Never Put Code with Side Effects Inside an assert()'
   [here](https://github.com/cpp-best-practices/cppbestpractices/blob/master/03-Style.md#never-put-code-with-side-effects-inside-an-assert)
