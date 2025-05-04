@@ -174,6 +174,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     5. Test the resulting program
 
 #### Ways to plan OR program your project
+
 !!! info "Bottom-Up"
 
     Start with **parts first** and develop a bigger organization with time.
@@ -328,7 +329,7 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
-- [Function design lesson](function_design/README.md)
+- [Function design lesson](../function_design/README.md)
 
 #### Modular coding
 
