@@ -51,18 +51,6 @@ tags:
 
 ???- admonition "Changes"
 
-    - clear goal
-    - clearer guide
-    - ask about level
-    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
-    - practical examples than just explain the concept.
-    - **dictionary**
-    - exercises
-        - clearer instructions
-        - solutions
-        - (advanced exercises)
-
-
 ## Different types of Scientific software
 
 ???- admonition "Analysis of data"
@@ -71,7 +59,7 @@ tags:
     - figures
     - visualization
 
-???- admonition "tools for process data"
+???- admonition "Tools for process data"
 
     - refining data (formatting)
 
@@ -130,7 +118,7 @@ tags:
 - Does is use the resources **efficiently**?
 - Is is easy to use a part of the program in another program?
 - Can the program be run on different platforms
-    - like Linux/Max/Windows,
+    - like Linux/Mac/Windows,
     - like different hardware architectures (intel, amd, arm)
 
 ??? question "How can we make it easier to get good software and usefulness?"
