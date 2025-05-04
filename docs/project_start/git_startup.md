@@ -343,21 +343,28 @@ nothing to commit, working tree clean
 
 ???- question "Exercise 6: Let's push back to GitHub"
 
-     ```git
-     git push
-     ```
+     - Let's "publish" you commits to the common GitHub repo
+     - In VS Code: Click the "Sync Changes" button
+     - You may also give a message, 
+         - could be the commit message again or something else summarizing several commits
 
-### Exercise 7: merge conflicts
+     ???- note "From bash terminal"
+     
+         ```git
+         git push
+         ```
+
+### Exercise 7: Merge conflicts
 
 - Create a new file with a unique name for your group,
   for example `group_anna_and_sven.txt`
-- All members of the team: get it on your local hard drive
+- **All members of the team**: get it on your **local computer**
+    - That is: you will get several files in total, but each just locally, so far.  
 
-???- question "How to get it on my local computer?"
+???- question "How to do this?"
 
-    ```text
-    Screenshots of VSCode (if not in course material)
-    ```
+    - Do the same steps as the exercises above in the folder **Learners/** (not folder with name)
+        
 
 - One member add the line below at the end of that file
   and does a `git push`:
@@ -388,7 +395,6 @@ This is the last line by me, Anna
     >>>>>> 123456789abcdef
     ```
 
-
 - How would you resolve this merge conflict?
 
 ???- question "Answering"
@@ -401,24 +407,6 @@ This is the last line by me, Anna
     ```
 
 - Resolve the merge conflict and do a `git push`
-
-## Work directly on GitHub
-
-!!! info "Working on GitHub"
-
-    - You can do basically the **same work at GitHub as in your local git repo**
-    - The **graphical view** makes it easier to work with in everyday editing work at least.
-        - Depends on your own preferences of course.
-    - Here your commit each file at a time with the "commit button".
-        - **No staging** that is.
-        - Be aware of that feature!
-    - **GitHub Actions** are workflows defined by you, like:
-        - for automatic testing after each commit (Used in the test lessons)
-        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
-
-!!! note "See also"
-
-    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
 ### What have we done?
 
@@ -452,6 +440,24 @@ R <--> Node5
         end
 
 ```
+
+## Work directly on GitHub
+
+!!! info "Working on GitHub"
+
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button".
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
+!!! note "See also"
+
+    - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
 ## Summary
 
