@@ -30,7 +30,7 @@ tags:
 
     - Understanding the Software development Life Cycle
 
-    Lesson Plan (**FIX**):
+    Lesson Plan:
 
     - **Total** 30 min
     - Theory 20
@@ -40,7 +40,6 @@ tags:
 
 ???- admonition "Changes"
 
-    - clearer guide
     - practical examples than just explain the concept.
     - exercises
         - practical things within exercise (not needing to scroll back and forth)
@@ -51,6 +50,8 @@ tags:
 ## Some SDLC models
 
 ### If you want some overview today already
+
+(More In Software Development Life Cycle lesson)[sdlc.md]
 
 ???- info "Waterfall model"
 
@@ -99,7 +100,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
 ???- info "Project organization"
 
-    - folders
+    - folder structure
 
 ???- info "Software development practices"
 
@@ -115,6 +116,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
 ???- info "Collaborate"
 
+    - GitHub
     - documentation
     - to-do lists
     - strategies
@@ -135,20 +137,125 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
 !!! info "The Phases/practices to be covered!
 
-- Project organisation
-- Planning
-    - Requirements
-    - Analysis
-    - Design
-- Software development practices
-- Tracking changes
-- Collaborate
+    - Project organisation
+    - Planning
+        - Requirements
+        - Analysis
+        - Design
+    - Software development practices
+    - Tracking changes
+    - Collaborate
 
 ## Tools to use
 
+### Project organisation
+
+- It's about folder structure and setting up practices
+- We cover this in [project organization](organization_docs.md).
+
+!!! info "Tools"
+
+    - Local computer
+    - GitHub 
+
+!!! admonition "Directory structure"
+
+    - **Different projects should have separate folders**
+
+    - README file
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript)
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src  version controlled code goes here
+        - License (here or in the 1st level)
+        - Requirements.txt
+    - Doc
+    - index
+    - .gitignore file
+
+### Project planning
+
+- Planning step is to ...
+
+    - get an overview of the project/program.
+    - help planning writing the code
+    - identify parts needed
+    - risk analysis
+
+- Can be divided into analysis and design
+        - **Analysis** part is to **state the problem** and **define inputs and outputs**
+            - **Requirements** and **Risk analysis**
+            - Graphical tools like **UML** (Unified Modeling Language)
+            - text
+            - if object-oriented programming: **objects**
+        - **Design** phase to find out the **specific algorithms** needed
+            - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
+            - if object-oriented programming: **classes**
+            - if functional programming: **functions/modules**
+
+!!! note "WHY?"
+
+    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
+    - It prepares you to build the real thing to reduce any potential risk of failure. "
+
+!!! info "Top-down"
+
+    1. Clearly state whole problem
+    2. Define inputs and outputs
+    3. Design the algorithm with `pseudocode`
+    4. Turn the algorithm into specific language statements
+    5. Test the resulting program
+
+
+!!! info "Bottom-Up"
+
+    Start with **parts first** and develop a bigger organization with time.
+
+!!! discussion "Answer in HackMD: How do you program?"
+
+    - Top-down or Bottom-up?
+
+    - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+    - More this afternoon
+
+??? note "Example of Algorithm flow chart"
+
+    ```mermaid
+    flowchart TD
+      condition{Is something true?}
+      condition --> |yes| is_true[Do action 1]
+      condition --> |no| is_false[Do action 2]
+    ```
+
+    Mermaid code
+    
+    ```
+    flowchart TD
+      condition{Is something true?}
+      condition --> |yes| is_true[Do action 1]
+      condition --> |no| is_false[Do action 2]
+    ```
+
+!!! info "shape of boxes etc in flowchart and state diagrams "
+
+    - initial state (small circle)
+        - ``[*]``
+    - end state (small solid-filled circle)
+        - ``[*]``
+    - state (rectangle)
+        - ``A["text"]``
+    - activity (rounded recatngle)
+        - ``A("text")``
+    - choice (diamond)
+        - ``A{"text"}``
+    - arrow
+        - ``-->``
+
 ### Software development practices
 
-- explanations --> in-code documentation
+- explanations --> **in-code documentation**
 - naming --> good variable naming
 - eliminate duplication --> libraries
 - dependencies -->
@@ -200,6 +307,8 @@ classDiagram
     - OO object-based (but not class-based)
         - Javascript
 
+[Object Oriented development](design_develop/OO_developmentmd
+
 #### Functional programming
 
 - Close to mathematics
@@ -250,6 +359,8 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
+- [Function design lesson](function_design/README.md]
+
 #### Modular coding
 
 - Modular coding breaks up the code in blocks that could be separate files.
@@ -258,73 +369,44 @@ classDiagram
     - script describing order of runs with different programs
     - Ex. bash script for preparing input data, running Fortran programs and analysing output with python program.
 
-!!! info "Tools **FIXLINK**"
+!!! info "Tools"
 
     - Object-orientation
     - Algorithms
     - Modular programming
 
+- [Modular programming and refactoring](modularity/modular.md)
+
 #### Testing
 
+Does it work for all legal input data sets??
 
-### Project planning
+1. Unit testing
+2. Integration tests (test modules together as a whole)
 
-- Planning step is to ...
+**Typical testing process**
 
-    - get an overview of the project/program.
-    - help planning writing the code
-    - identify parts needed
-    - risk analysis
+```mermaid
+flowchart TD
+  unit_tests[Unit test]
+  unit_tests --> |As many times as necessary| unit_tests
+  unit_tests --> |worst bugs fixed| alpha
+  alpha[Alpha release]
+  alpha --> |As many times as necessary| unit_tests
+  alpha --> |worst bugs fixed| beta
+  beta[Beta release]
+  beta --> |As many times as necessary| alpha
+  beta --> |minor bugs fixed| done
+  done[Finished program]
+```
 
-- Can be divided into analysis and design
-        - **Analysis** part is to **state the problem** and **define inputs and outputs**
-            - **Requirements** and **Risk analysis**
-            - Graphical tools like **UML** (Unified Modeling Language)
-            - text
-            - if object-oriented programming: **objects**
-        - **Design** phase to find out the **specific algorithms** needed
-            - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
-            - if object-oriented programming: **classes**
-            - if functional programming: **functions/modules**
+!!! note "See also"
 
-!!! note "WHY?"
+    - [assert](../assert/README.md)
+    - [Test-driven development(TDD)](../tdd/README.md)
+    - [Using a formal testing framework](../testing/testing_framwork.md)
 
-    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
-    - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
-    - It prepares you to build the real thing to reduce any potential risk of failure. "
 
-!!! info "Tools"
-
-    - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
-    - More this afternoon
-
-### Project organization
-
-- It's about folder structure and setting up practices
-- We cover this in [project organization](organization_docs.md).
-
-!!! info "Tools"
-
-    - Local computer
-    - GitHub
-
-### docs
-
-???- "Connected to documentation"
-
-    Software
-
-    - explanation comment at the start of the program (also "help function" as for './program -h')
-    - functions
-        - names for variables and functions
-    - eliminate duplication
-        - libraries
-        - test if you rely
-    - dependencies and requirements explicitly
-    - program behavior by if/else (possibly arguments from outside)
-    - run-all script and/or main program (also related to project organization)
-    - example/test data set
-    - DOI like zenodo
 
 
 ## Tracking changes
@@ -368,19 +450,17 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 - Once we know how code review works:
     - we will be able to propose changes to repositories of others
-    - review changes submitted by external contributors.???- Collaborate
+    - review changes submitted by external contributors.
 
-WHY?
+!!! objectives
 
-    - documentation
-    - to-do lists
-    - strategies
-    - license
-    - citable
+    - [Collaboration](../git/contribute.md) aims to
+        - Get into working more with GitHub for collaboration
+        - **Centralized** workflow (good within a group)
+        - **Forking** (better for contribution to other's project)
+        - Contributing to other's projects
 
-Also links to other sessions
-
-???- note
+???- note "To cover in the course"
 
     - overview: README etc
     - to-do list/issues
@@ -388,6 +468,90 @@ Also links to other sessions
     - license explicit
         - recommendations and why
     - citable
+
+### Documentation
+
+???- "Connected to documentation"
+
+    Software
+
+    - explanation comment at the start of the program (also "help function" as for './program -h')
+    - functions
+        - names for variables and functions
+    - eliminate duplication
+        - libraries
+        - test if you rely
+    - dependencies and requirements explicitly
+    - program behavior by if/else (possibly arguments from outside)
+    - run-all script and/or main program (also related to project organization)
+    - example/test data set
+    - DOI like zenodo
+
+!!! admonition "Documentation comes in different forms"
+
+    - **Tutorials**: learning-oriented, allows the newcomer to get started
+    - **How-to guides**: goal-oriented, shows how to solve a specific problem
+    - **Explanation**: understanding-oriented, explains a concept
+    - **Reference**: information-oriented, describes the machinery
+    - **In-code documentaion — docstrings**
+    **Not to forget**
+    - Project documentation:
+        - requirements: what is the goal of the software, risks, platforms
+        - the analysis: pseudocode and UML
+        - risk analysis
+
+**There is no one size fits all**: often for small projects a `README.md` or
+`README.rst` can be enough (more about these formats later).
+
+!!! objectives
+
+    - [Documentation part 2](../deployment/documentation.md) aims to:
+        - get tips for README files
+    - get tips for full documentation and tutorials
+
+!!! info "In-code documentation"
+
+    - Comments, function docstrings, ...
+    - Advantages
+        - Good for programmers
+        - Version controlled alongside code
+        - Can be used to auto-generate documentation for functions/classes
+    - Disadvantage
+        - Probably not enough for users
+
+???- info "Order your files"
+
+    - Think that **everything is worth to be part of documentation** (like GitHub directory tree)
+    - The parts from the software development cycle
+        - The planning parts
+            - Requirements:
+            - what should the program deliver
+            - dependencies
+            - OS platforms
+            - Risk analysis
+            - Design documentation
+            - Analysis: pseudo code and UML
+        - Source code
+           - with in-code documentation
+        - README
+        - (Full documentation)
+        - (Tutorial)
+
+### Reproducibility and sharing
+
+???- info "Reproducible research"
+
+    - Have you ever spent days trying to repeat the results that took you hours to do the first time last week?
+    - Or you have to do paper revisions, but you just can’t get the results to match up?
+
+    - [Extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html)
+
+???- info "Sharing"
+
+     - The Open Science movement encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
+    
+     - [Sharing and social coding](social_coding/social_coding.md)
+    
 
 ## Exercises
 
@@ -398,8 +562,6 @@ Think about
 ???- "What is source control and what are the benefits?"
 
 ???- "When to write documentation?"
-
-???- "What does reproducibility mean?"
 
 ???- "Why sharing?"
 
