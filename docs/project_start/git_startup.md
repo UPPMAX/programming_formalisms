@@ -24,7 +24,7 @@ tags:
 
 ???- note "Instructor notes"
 
-    - Teacher give introduction with interaction 20 m
+    - Teacher gives introduction with interaction 20 m
     - Studens work in groups with at least one more used to Git in each
     
     Prerequisites are:
@@ -83,7 +83,7 @@ tags:
         - [Configure Git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#configure-git)
             - like: ``git config --global user.name "Mona Lisa"``
             - like: ``git config --global user.email "mona_lisa@gmail.com"``
-    - We hope also that you have already done these steps [HERE](../misc/faq/#prerequisites)
+    - We hope also that you have already done these steps [HERE](../misc/faq.md/#prerequisites)
 
 ## This lesson
 
@@ -102,7 +102,9 @@ tags:
 
 - You find the Git Bash terminal From the menu (different on mac and windows)
 
-## Principles
+![VS Code terminal](../img/commandline_VSC.png)
+
+## Principles with Git
 
 !!! admonition "Concepts in Git"
 
@@ -335,6 +337,10 @@ Tracked files can be in three states.
 ???- question "Exercise 4: "Add/stage file"
 
     - First check the status!
+
+    ![VS Code add](../img/Add_file_VSC.png)
+
+    
     - There is an **U** (for Untracked) beside the README.md file
     - You want to **add the files** (focus the camera) to the list of files tracked by Git.
     - Git does not track any files automatically and you need make a conscious decision to add a file.
@@ -350,7 +356,9 @@ Let us now commit the change to the repository:
 
 ???- question "Exercise 5: Commit"
 
-    - Write the commit message "add personal folder"
+    ![VS Code commit](../img/commit_VSC.png)
+
+    - Write the commit message "add personal folder" and click the button
 
     - We can check the status by opening the **bash terminal**
     - Choose the Git-bash
@@ -381,8 +389,13 @@ nothing to commit, working tree clean
 
     - Let's "publish" you commits to the common GitHub repo
     - In VS Code: Click the "Sync Changes" button
-    - You may also give a message, 
-        - could be the commit message again or something else summarizing several commits
+
+    ![VS Code sync_push](../img/sync_push_VSC.png)
+
+    - You may also give a message,
+        - could be the commit message again or something else summarizing several commits or left empty
+
+    ![VS Code push_message](../img/push_message_VSC.png)
 
     ???- note "From bash terminal"
 
