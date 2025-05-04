@@ -20,7 +20,7 @@ tags:
     - know how a local vs remote repo work
     - can push/pull
     - can manage conflicts
-    - can initiate new repo from (perhaps last day)
+    - are prepared for coming documentation
 
 !!!- note "Instructor notes"
 
@@ -62,15 +62,6 @@ tags:
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
-!!! admonition "Concepts in Git"
-
-    - **repository**: The project, contains all data and history (commits, branches, tags).
-    - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
-    - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-        - `git clone` copies everything: all commits and all branches.
-    - We synchronize commits between local and remote with
-    - **git fetch**/**pull** and **git push**.
 
 ### The essence of version control
 
@@ -126,10 +117,137 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - **Git and GitHub should be configured prior to the course**
     - We hope also that you have already done these steps HERE **FIX LINK**
 
+## This lesson
 
-### View the project we will work with
+- Get overview of the course project
+- Get local clone of the course project
+- First contribution locally
+- Upload changes
+- Conflicts and resolutions
+- A bit about project organization
+- A bit about documentation
 
-???+ Demo "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2025>"
+## Principles
+
+!!! admonition "Concepts in Git"
+
+    - **repository**: The project, contains all data and history (commits, branches, tags).
+        - **Local**: you computer or a server where you have full control
+        - **Remote**: server, e.g. GitHub
+    - Working locally
+        - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
+        - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
+    - Working on Github
+        - Since you can only add changes in on file at a time, there is no middle step ``git add``
+        - ''Commit`` button
+    - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
+        - `git clone` copies everything: all commits and all branches.
+    - We synchronize commits between local and remote with
+    - **git fetch**/**pull** and **git push**.
+
+### Local vs remote
+
+- In this course:
+    - Local: Your project in VS code
+    - Remote: Repo in GitHub  
+
+### Clone
+
+- Clone to your computer
+    - Buttons in VS code or a terminal, using ``git clone``
+
+#### Sync from GitHub
+
+- As others are working on the same repo, there may be uploaded changes from *fast* collaborators.
+- Do a ``git pull`` to get these changes locally as well.
+- Do this before you start with new changes. Good practice!
+    - This reduces errors or double work!
+
+### Make changes locally
+
+!!! admonition "Steps add changes to the git history"
+
+    - make changes locally
+    - add and commit to the git version control
+        - your changes become part of the git history
+    - git push
+        - your changes are synced to GitHub
+    - git pull
+        - changes on GitHub are synced to you existinglocal git
+        - good procedure to do this step before you start changes
+
+
+#### Stage files (in git)
+
+!!! info "track the changes"
+
+    - On GitHub:
+        - Commit every file individually
+    - In local git:
+        - Stage one or more (related) files and commit them together
+
+    - All chanegd files
+
+    ```console
+    git add .    # < -- "." means all files
+    ```
+    
+    - Chosen files
+
+    ```console
+    git add <file1> <file2>    # one or several files
+    ```
+
+!!! info "Git Cheat sheet"
+
+    ```console
+    git add     # add/stage file(s)
+    git commit  # commit staged file(s)
+    git status  # see what is going on
+    git log     # see history
+    git push
+    git pull
+    ```
+
+#### Commit
+
+- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
+- BUT only what we have added to the "staging" area!
+
+- ``git commit -m "<commit message>"``
+
+**Alternative commits**
+
+- You can also omit the ``-m`` option and a text editor will open.
+- The first line will be your commit message.
+- You can add other lines to add some more detailed info about your changes.
+
+!!! tip "Writing useful commit messages"
+
+    [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
+
+#### Upload to GitHub
+
+```git
+git push
+```
+
+GitHub is now synced with your changes
+
+- [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+
+#### Sync from GitHub (again)
+
+- As others are working on the same repo, there may be uploaded changes from your collaborators
+- Do a ``git pull`` to get these changes locally as well.
+- Do this before you start with new changes.
+    - This reduces errors or double work!
+
+## Exercises
+
+### Overview of the GitHub Project
+
+???- question "Exercise 1: "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2025>"
 
     - Click on a folder or file in the file explorer.
     - This enables the file "Expand file tree" button to the left of the repo name.
@@ -139,14 +257,13 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - View License
     - Look at the history ("Commits" button just above the file explorer)
 
-### Clone the course project
-
 !!! info "Groups of mixed expertise!"
 
     - 3 to 4 people in each group
 
+### Get a local clone of the project
 
-???- question "Exercise: clone course project using VS code (4 min)"
+???- question "Exercise 2a: clone course project using VS code (4 min)"
 
     - Start VS code
     - Start new window
@@ -168,7 +285,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - Create a new one if necessary in the "Open folder File explorer"
     - Select as Repository Destination
 
-???- question "Exercise: (Alternative with commandline) clone course project and create folders (4 min)"
+???- question "Exercise 2b: (Alternative with command line) clone course project and create folders (4 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
@@ -187,20 +304,9 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - `cd` the new directory that was created
     - list the files with `ls`
 
-### Make changes locally
+### Exercise 3: Make changes locally (First steps without any conflicts!)
 
-!!! admonition "Steps add changes to the git history"
-
-    - make changes locally
-    - add and commit to the git version control
-        - your changes become part of the git history
-    - git push
-        - your changes are synced to GitHub
-    - git pull
-        - changes on GitHub are synced to you existinglocal git
-        - good procedure to do this step before you start changes
-
-???- question "Exercise: Create a folder with your name (locally)"
+???- question "Exercise 3: Create a folder with your name (locally)"
 
     - step into (``cd``) the ``learners/`` directory
     - ``mkdir <your-name>``
@@ -211,27 +317,9 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - go back to the root of the repo (not necessary)
     - cd ../..
 
-### Stage files (in git)
+### Exercise 4: Stage files (in git)
 
-!!! info "track the changes"
-
-    - On GitHub:
-        - Commit every file individually
-    - In local git:
-        - Stage one or more (related) files and commit them together
-
-!!! info "Git Cheat sheet"
-
-    ```console
-    git add     # add/stage file(s)
-    git commit  # commit staged file(s)
-    git status  # see what is going on
-    git log     # see history
-    git push
-    git pull
-    ```
-
-???- question "Exercise: "Add/stage file"
+???- question "Exercise 4: "Add/stage file"
 
     - First check the status!
 
@@ -265,16 +353,13 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
             new file:   learners/bclaremar/README.md
     ```
 
-    - Now this change is _staged_ and ready to be committed.
+    - Now this change is *staged* and ready to be committed.
 
-### Commit
-
-- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
-- BUT only what we have added to the "staging" area!
+### Exercise 5: Commit
 
 Let us now commit the change to the repository:
 
-???- question "Exercise: Commit"
+???- question "Exercise 5: Commit"
 
     ```console
     $ git commit -m "add personal folder"
@@ -316,7 +401,7 @@ Let us now commit the change to the repository:
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-### Upload to GitHub
+### Exercise 6: Upload to GitHub
 
 - In previous path we got:
 
@@ -329,7 +414,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-???- question "Exercise: Let's push back to GitHub"
+???- question "Exercise 6: Let's push back to GitHub"
 
      ```git
      git push
@@ -352,19 +437,7 @@ nothing to commit, working tree clean
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
 
-## Exercises
-
-### Present already
-
-- Clone the course project
-    - clone course project and create folders
-- upload to github
-- start repo from existing repo (maybe last day instead)
-
-### New ones to address
-
-
-### Exercise x: merge conflicts
+### Exercise 7: merge conflicts
 
 - Create a new file with a unique name for your group,
   for example `group_anna_and_sven.txt`
