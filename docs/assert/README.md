@@ -252,11 +252,11 @@ def divide_by(numerator, denominator):
 ???- question "Answer"
 
     The code will fail, because the input are not floating point numbers
-    anymore. How to deal with this is a design decision. 
+    anymore. How to deal with this is a design decision.
 
     Here are the options:
 
-    - Change the **use** of the function: 
+    - Change the **use** of the function:
       change `divide_by(3, 4)`
       to `divide_by(3.0, 4.0)`
 
