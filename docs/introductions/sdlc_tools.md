@@ -51,7 +51,7 @@ tags:
 
 ### If you want some overview today already
 
-(More In Software Development Life Cycle lesson)[sdlc.md]
+[More In Software Development Life Cycle lesson](sdlc.md)
 
 ???- info "Waterfall model"
 
@@ -156,7 +156,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 !!! info "Tools"
 
     - Local computer
-    - GitHub 
+    - GitHub
 
 !!! admonition "Directory structure"
 
@@ -231,7 +231,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
     Mermaid code
     
-    ```
+    ```text
     flowchart TD
       condition{Is something true?}
       condition --> |yes| is_true[Do action 1]
@@ -307,7 +307,7 @@ classDiagram
     - OO object-based (but not class-based)
         - Javascript
 
-[Object Oriented development](design_develop/OO_developmentmd
+[Object Oriented development](design_develop/OO_development.md)
 
 #### Functional programming
 
@@ -375,7 +375,7 @@ classDiagram
     - Algorithms
     - Modular programming
 
-- [Modular programming and refactoring](modularity/modular.md)
+- [Modular programming and refactoring](../modularity/modular.md)
 
 #### Testing
 
@@ -384,32 +384,29 @@ Does it work for all legal input data sets??
 1. Unit testing
 2. Integration tests (test modules together as a whole)
 
-**Typical testing process**
+???- note "Typical testing process"
 
-```mermaid
-flowchart TD
-  unit_tests[Unit test]
-  unit_tests --> |As many times as necessary| unit_tests
-  unit_tests --> |worst bugs fixed| alpha
-  alpha[Alpha release]
-  alpha --> |As many times as necessary| unit_tests
-  alpha --> |worst bugs fixed| beta
-  beta[Beta release]
-  beta --> |As many times as necessary| alpha
-  beta --> |minor bugs fixed| done
-  done[Finished program]
-```
+    ```mermaid
+    flowchart TD
+      unit_tests[Unit test]
+      unit_tests --> |As many times as necessary| unit_tests
+      unit_tests --> |worst bugs fixed| alpha
+      alpha[Alpha release]
+      alpha --> |As many times as necessary| unit_tests
+      alpha --> |worst bugs fixed| beta
+      beta[Beta release]
+      beta --> |As many times as necessary| alpha
+      beta --> |minor bugs fixed| done
+      done[Finished program]
+    ```
 
 !!! note "See also"
 
     - [assert](../assert/README.md)
     - [Test-driven development(TDD)](../tdd/README.md)
-    - [Using a formal testing framework](../testing/testing_framwork.md)
+    - [Using a formal testing framework](../testing/testing_framework.md)
 
-
-
-
-## Tracking changes
+### Tracking changes
 
 Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
 
@@ -438,9 +435,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - [Mercurial](https://www.mercurial-scm.org)
         - [Pijul](https://pijul.org/)
 
-## Collaboration
-
-### Example
+### Collaboration
 
 - Someone has given you access to a repository online and **you want to contribute** to it.
 - Quite easy to make a **copy and send a change back**.
@@ -532,7 +527,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
             - Design documentation
             - Analysis: pseudo code and UML
         - Source code
-           - with in-code documentation
+            - with in-code documentation
         - README
         - (Full documentation)
         - (Tutorial)
@@ -548,11 +543,9 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ???- info "Sharing"
 
-     - The Open Science movement encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
+    - The Open Science movement encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
+    - [Sharing and social coding](../social_coding/social_coding.md)
     
-     - [Sharing and social coding](social_coding/social_coding.md)
-    
-
 ## Exercises
 
 Think about
