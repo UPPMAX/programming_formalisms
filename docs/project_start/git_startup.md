@@ -141,7 +141,34 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ### Clone the course project
 
-???- question "Exercise: clone course project and create folders (3 min)"
+!!! info "Groups of mixed expertise!"
+
+    - 3 to 4 people in each group
+
+
+???- question "Exercise: clone course project using VS code (4 min)"
+
+    - Start VS code
+    - Start new window
+
+    - In GitHub, locate the **Code** button, select **HTTPS** and click the **copy** symbol to the right
+
+    ???- question "Where is this?"
+
+        ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2025``
+            
+    ???- question "How will the address to clone look like?"
+        
+        ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2025.git``
+  
+    - In VS code: Clone Git repository
+        - The repo may show up automatically if you are already part of the project. Then click it.
+        - Otherwise paste the copied URL
+    - Open folder where you want to have your project
+        - Create a new one if necessary in the "Open folder File explorer"
+    - Select as Repository Destination
+
+???- question "Exercise: (Alternative with commandline) clone course project and create folders (4 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
