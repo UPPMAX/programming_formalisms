@@ -262,6 +262,39 @@ Tracked files can be in three states.
     - Do this before you start with new changes.
         - This reduces errors or double work!
 
+!!! Example of Git/GitHub workflow
+
+```mermaid
+graph TB
+
+P["Project idea"] -->|git init| Node2
+P["Project idea"] --> planet.py -->|git add| Node4
+Node4 --> |git commit| Node1
+Node2 --> |git push| Node5
+
+C[Uncommited changed planet.py] -->|commit button| R
+Node5 --> |"git pull (from local git)"| Node2
+R --> |"git pull (from local git)"| Node1
+R <--> Node5
+
+        subgraph "Local Git"
+        Node2[project]
+        Node1[planet.py]
+        Node1 <--> Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[planet.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[planet.py]
+        end
+
+```
+
 ## Exercises
 
 ### Overview of the GitHub Project
@@ -457,38 +490,9 @@ This is the last line by me, Anna
 
 - Resolve the merge conflict and do a `git push`
 
-## Example of Git/GitHub workflow?
+### (Optional) Exercise 8: 
 
-```mermaid
-graph TB
 
-P["Project idea"] -->|git init| Node2
-P["Project idea"] --> planet.py -->|git add| Node4
-Node4 --> |git commit| Node1
-Node2 --> |git push| Node5
-
-C[Uncommited changed planet.py] -->|commit button| R
-Node5 --> |"git pull (from local git)"| Node2
-R --> |"git pull (from local git)"| Node1
-R <--> Node5
-
-        subgraph "Local Git"
-        Node2[project]
-        Node1[planet.py]
-        Node1 <--> Node2
-
-        end
-
-        subgraph "staging area"
-        Node4[planet.py]
-        end
-
-        subgraph "GitHub"
-        Node5[project]
-        R[planet.py]
-        end
-
-```
 
 ## Work directly on GitHub
 
@@ -507,6 +511,25 @@ R <--> Node5
 !!! note "See also"
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+
+## Revisit on Directory structure
+
+!!! admonition "Directory structure"
+
+    - **Different projects should have separate folders**
+
+    - README file
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript)
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src  version controlled code goes here
+        - License (here or in the 1st level)
+        - Requirements.txt
+    - Doc
+    - index
+    - .gitignore file
+
 
 ## Summary
 
