@@ -395,7 +395,7 @@ nothing to commit, working tree clean
     - You may also give a message,
         - could be the commit message again or something else summarizing several commits or left empty
 
-    ![VS Code push_message](../img/push_message_VSC.png)
+    ![VS Code push_message](../img/push_message_GH.png)
 
     ???- note "From bash terminal"
 
