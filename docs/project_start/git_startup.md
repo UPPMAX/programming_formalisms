@@ -490,9 +490,9 @@ This is the last line by me, Anna
 
 - Resolve the merge conflict and do a `git push`
 
-### (Optional) Exercise 8: 
+### (Optional) Exercise 8
 
-
+- Go back to last session and read more about a topic, like UML and its syntax!
 
 ## Work directly on GitHub
 
