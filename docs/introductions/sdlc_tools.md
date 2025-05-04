@@ -123,8 +123,8 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - We want to add the planning phases with
 
     - Requirements
-    - Dnalysis
-    - design
+    - Analysis
+    - Design
 
 !!! info "The Phases/practices to be covered!"
 
@@ -149,8 +149,8 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - risk analysis
 
 - Can be divided into analysis and design
-        - **Analysis** part is to **state the problem** and **define inputs and outputs**
-            - **Requirements** and **Risk analysis**
+    - **Analysis** part is to **state the problem** and **define inputs and outputs**
+        - **Requirements** and **Risk analysis**
             - Graphical tools like **UML** (Unified Modeling Language)
             - text
             - if object-oriented programming: **objects**
@@ -173,12 +173,16 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     4. Turn the algorithm into specific language statements
     5. Test the resulting program
 
-
+#### Ways to plan OR program your project
 !!! info "Bottom-Up"
 
     Start with **parts first** and develop a bigger organization with time.
 
-!!! discussion "Answer in HackMD: How do you program?"
+???- discussion "How do you plan?"
+
+    - Top-down or Bottom-up?
+
+???- discussion "How do you program?"
 
     - Top-down or Bottom-up?
 
@@ -203,7 +207,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
       condition --> |no| is_false[Do action 2]
     ```
 
-!!! info "shape of boxes etc in flowchart and state diagrams "
+???- info "shape of boxes etc in flowchart and state diagrams "
 
     - initial state (small circle)
         - ``[*]``
@@ -324,7 +328,7 @@ classDiagram
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
 
-- [Function design lesson](function_design/README.md]
+- [Function design lesson](function_design/README.md)
 
 #### Modular coding
 
@@ -342,7 +346,7 @@ classDiagram
 
 - [Modular programming and refactoring](../modularity/modular.md)
 
-#### Testing
+### Testing
 
 Does it work for all legal input data sets??
 
@@ -404,10 +408,10 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 !!! info "Why GitHub?"
 
-    - GitHub is introduced as an excellent tool for 
-        - remote repositories, 
-        - offering code hosting services for both open source projects and private teams. 
-    - It serves as a version control system and provides a platform for developers to 
+    - GitHub is introduced as an excellent tool for
+        - remote repositories,
+        - offering code hosting services for both open source projects and private teams.
+    - It serves as a version control system and provides a platform for developers to
         - build, share, and document their projects, fostering a strong community of collaboration.
     
 - Someone has given you access to a repository online and **you want to contribute** to it.
@@ -415,7 +419,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 !!! objectives
 
-    - [Collaboration](../git/contribute.md) aims to
+    - [Collaboration](../git/contribute.md)
 
 ???- note "To cover in the course"
 
@@ -500,7 +504,9 @@ Documentation is a wide field, connecting many of the earlier topics
         - Requirements.txt
     - Doc
     - index
-    - .gitignore file
+    - .gitignore file (files to be ignored by git)
+
+## Summary of SDLC tools
 
 !!! admonition "Parts to be covered this week"
 
@@ -533,20 +539,17 @@ Documentation is a wide field, connecting many of the earlier topics
 
 ## Exercises
 
-Individually 
+Individually
 
 ???- "Why do we want to work with the mentioned tools/path?"
 
 ???- "(Optional) Learn more about UML"
 
-     - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
-
+    - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
 ## Summary of SDLC tools
 
 - Now after the overview you are ready to dig deeper in the topics and try it out yourself!
-
-
 
 ## References
 
