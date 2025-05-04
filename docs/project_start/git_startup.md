@@ -22,11 +22,14 @@ tags:
     - can manage conflicts
     - are prepared for coming documentation
 
-!!!- note "Instructor notes"
+???- note "Instructor notes"
 
+    - Teacher give introduction with interaction 20 m
+    - Studens work in groups with at least one more used to Git in each
+    
     Prerequisites are:
 
-    - Git acoount
+    - Git account
     - GitHub account
     - Git set up on computer
 
@@ -36,7 +39,6 @@ tags:
 
 ???- admonition "Changes"
 
-    - ask about level
     - practical examples than just explain the concept.
     - exercises
         - (advanced exercises)
@@ -113,18 +115,12 @@ tags:
     - We synchronize commits between local and remote with
     - **git fetch**/**pull** and **git push**.
 
-### Local vs remote
-
-- In this course:
-    - Local: Your project in VS code
-    - Remote: Repo in GitHub  
-
 ### Clone
 
 - Clone to your computer
     - Buttons in VS code or a terminal, using ``git clone``
 
-### Sync from GitHub
+### (May be needed if time goes by) Sync from GitHub
 
 - As others are working on the same repo, there may be uploaded changes from *fast* collaborators.
 - Do a ``git pull`` to get these changes locally as well.
@@ -132,6 +128,15 @@ tags:
     - This reduces errors or double work!
 
 ### Make changes locally
+
+Tracked files can be in three states.
+
+- Modified: You changed the file.
+- Staged: You changed the file and prepared it to be snapshotted.
+- Committed: You took a snapshot of the entire project, and the file was part of it.
+
+- On GitHub:
+    - Commit every file individually
 
 !!! admonition "Steps add changes to the git history"
 
@@ -145,16 +150,13 @@ tags:
         - good procedure to do this step before you start changes
 
 
-#### Stage files (in git)
+!!! admonition "Update the file(-s)"
 
-!!! info "track the changes"
+    - Save your changes as usual on your computer (e.g. in VS code)
 
-    - On GitHub:
-        - Commit every file individually
-    - In local git:
-        - Stage one or more (related) files and commit them together
+!!! admonition "Stage files (in git)"
 
-    - All chanegd files
+    - All changed files
 
     ```console
     git add .    # < -- "." means all files
@@ -166,50 +168,61 @@ tags:
     git add <file1> <file2>    # one or several files
     ```
 
-!!! info "Git Cheat sheet"
+!!! admonition "Commit"
 
-    ```console
-    git add     # add/stage file(s)
-    git commit  # commit staged file(s)
-    git status  # see what is going on
-    git log     # see history
-    git push
-    git pull
-    ```
+    - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version (Hash tag).
+    - BUT only what we have added to the "staging" area!
 
-#### Commit
+    - ``git commit -m "<commit message>"``
 
-- Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
-- BUT only what we have added to the "staging" area!
+    **Alternative commits**
 
-- ``git commit -m "<commit message>"``
-
-**Alternative commits**
-
-- You can also omit the ``-m`` option and a text editor will open.
-- The first line will be your commit message.
-- You can add other lines to add some more detailed info about your changes.
+    - You can also omit the ``-m`` option and a text editor will open.
+    - The first line will be your commit message.
+    - You can add other lines to add some more detailed info about your changes.
 
 !!! tip "Writing useful commit messages"
 
+    - Each commit should stand on its own. 
+    - Keep your commits small and independent.
+    - Write informative commit messages. 
+    - Each commit message should answer a question. 
+        - Why was the commit created? 
+        - What problem does it solve?
+
+    - What Not to Do
+        - solve multiple problems in one commit
+        - combining commits that have nothing in common.
+        - Git as a backup system: commit their changes at the end of each day
+
+
+    ???- info "Example"
+
+        Best	| Bad	| Worst
+        ------|-----|------
+        [login] | Fix typo in DB call	| Fixed typo in DB call	Fix typo
+        refactor login function for reuse	| Changing login function by moving declarations to parameters | Code refactoring
+        add new api for user program check|	adding a new api for user program check |	New user api
+
+        Source: [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf) Chaper 6
+
+
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-### Upload to GitHub
+!!! admonition "Upload to GitHub"
 
-```git
-git push
-```
+    ```git
+    git push
+    ```
 
-GitHub is now synced with your changes
+    GitHub is now synced with your changes
 
-- [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
+!!! admonition "Sync from GitHub (again)"
 
-#### Sync from GitHub (again)
-
-- As others are working on the same repo, there may be uploaded changes from your collaborators
-- Do a ``git pull`` to get these changes locally as well.
-- Do this before you start with new changes.
-    - This reduces errors or double work!
+    - As others are working on the same repo, there may be uploaded changes from your collaborators
+    - Do a ``git pull`` to get these changes locally as well.
+    - Do this before you start with new changes.
+        - This reduces errors or double work!
 
 ## Exercises
 
@@ -276,52 +289,24 @@ GitHub is now synced with your changes
 
 ???- question "Exercise 3: Create a folder with your name (locally)"
 
-    - step into (``cd``) the ``learners/`` directory
-    - ``mkdir <your-name>``
+    - Step into the ``learners/`` directory (VS Code)
+    - create a folder there, clicking the "new directory" icon in upper-left part
     - git cannot use emptly directories
-    - Therefore **create an empty README file in the created folder**
-    - ``cd <your-name>``
-    - ``touch README.md``
-    - go back to the root of the repo (not necessary)
-    - cd ../..
+    - Therefore **create an empty README.md file INSIDE the created folder**
 
 ### Exercise 4: Stage files (in git)
 
 ???- question "Exercise 4: "Add/stage file"
 
     - First check the status!
-
-    ```console
-    $ git status
-    On branch master
-    Your branch is up to date with 'origin/master'.
-
-    Untracked files:
-      (use "git add <file>..." to include in what will be committed)
-            learners/bclaremar/
-
-    nothing added to commit but untracked files present (use "git add" to track)
-
-    ```
-
-    - There are untracked in the repository (directory).
+    - There is an **U** (for Untracked) beside the README.md file
     - You want to **add the files** (focus the camera) to the list of files tracked by Git.
     - Git does not track any files automatically and you need make a conscious decision to add a file.
+    - Hoover over the Source control icon in the Left menu
+        - It should say: "1 pending changes"
     - Let's do what Git hints at and add the files:
-
-    ```console
-    $ git add .    # < -- "." means all files
-    $ git status
-
-    On branch master
-    Your branch is up to date with 'origin/master'.
-
-    Changes to be committed:
-      (use "git restore --staged <file>..." to unstage)
-            new file:   learners/bclaremar/README.md
-    ```
-
-    - Now this change is *staged* and ready to be committed.
+    - Click the Icon and then add (stage) the file with the "plus" sign 
+    - There should now be an **A** (for Added) beside the README.md file
 
 ### Exercise 5: Commit
 
@@ -329,15 +314,10 @@ Let us now commit the change to the repository:
 
 ???- question "Exercise 5: Commit"
 
-    ```console
-    $ git commit -m "add personal folder"
+    - Write the commit message "add personal folder"
 
-    [master 5914ad7] add personal folders
-     1 file changed, 0 insertions(+), 0 deletions(-)
-     create mode 100644 learners/bclaremar/README.md
-    ```
-
-    - Right after we query the status to get this useful command into our muscle memory:
+    - We can check the status by opening the bash commandline 
+    - Choose the Git-bash
 
     ```console
     $ git status
@@ -347,27 +327,6 @@ Let us now commit the change to the repository:
 
     nothing to commit, working tree clean
     ```
-
-    What does the `-m` flag mean? Let us check the help page for that command:
-
-    ```console
-    git help commit
-    ```
-
-    - You should see a very long help page as the tool is very versatile (press q to quit).
-        - Do not worry about this now but keep in mind that you can always read the help files when in doubt.
-        - Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.
-        - Note that help pages also work when you don't have a network connection!
-
-**Alternative commits**
-
-- You can also omit the ``-m`` option and a text editor will open.
-- The first line will be your commit message.
-- You can add other lines to add some more detailed info about your changes.
-
-!!! tip "Writing useful commit messages"
-
-    [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
 ### Exercise 6: Upload to GitHub
 
