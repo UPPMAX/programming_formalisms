@@ -83,7 +83,7 @@ tags:
         - **add**: Stage you files (collect what to be added to the git record — a kind of middle step)
         - **commit**: Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
     - Working on Github
-        - Since you can only add changes in on file at a time, there is no middle step ``git add``
+        - Since you can only add changes in one file at a time, there is no middle step ``git add``
         - ''Commit`` button
     - **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
         - `git clone` copies everything: all commits and all branches.
@@ -101,7 +101,7 @@ tags:
 - Clone to your computer
     - Buttons in VS code or a terminal, using ``git clone``
 
-#### Sync from GitHub
+### Sync from GitHub
 
 - As others are working on the same repo, there may be uploaded changes from *fast* collaborators.
 - Do a ``git pull`` to get these changes locally as well.
@@ -171,7 +171,7 @@ tags:
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
-#### Upload to GitHub
+### Upload to GitHub
 
 ```git
 git push
