@@ -307,7 +307,7 @@ classDiagram
     - OO object-based (but not class-based)
         - Javascript
 
-[Object Oriented development](design_develop/OO_development.md)
+[Object Oriented development](../design_develop/OO_development.md)
 
 #### Functional programming
 
