@@ -20,7 +20,6 @@ tags:
     - know how a local vs remote repo work
     - can push/pull
     - can manage conflicts
-    - can initiate new repo from (perhaps last day)
 
 !!!- note "Instructor notes"
 
@@ -126,6 +125,13 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - **Git and GitHub should be configured prior to the course**
     - We hope also that you have already done these steps HERE **FIX LINK**
 
+## This lesson
+
+- Get overview of the course project
+- Get local clone of the course project
+- First contribution locally
+- Upload changes
+- Conflicts and resolutions
 
 ### View the project we will work with
 
@@ -138,6 +144,9 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - View Code of conduct
     - View License
     - Look at the history ("Commits" button just above the file explorer)
+
+
+???- question "View the GitHub project"
 
 ### Clone the course project
 
@@ -353,16 +362,6 @@ nothing to commit, working tree clean
 
 
 ## Exercises
-
-### Present already
-
-- Clone the course project
-    - clone course project and create folders
-- upload to github
-- start repo from existing repo (maybe last day instead)
-
-### New ones to address
-
 
 ### Exercise x: merge conflicts
 
