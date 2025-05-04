@@ -51,7 +51,10 @@ tags:
 - Git doesn't do anything unless you ask it to (it does not record anything automatically).
 - Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).
 
-### Centralized workflow
+## Typical workflow for the course project
+
+- students make development in local git and push to github?
+- in principle centralized workflow
 
 **This is used when you are not a collaborator**
 
@@ -458,6 +461,38 @@ This is the last line by me, Anna
 
     - [Workshop on GitHub without command-line](https://coderefinery.github.io/github-without-command-line/)
 
+### What have we done?
+
+```mermaid
+graph TB
+
+P["Project idea"] -->|git init| Node2
+P["Project idea"] --> planet.py -->|git add| Node4
+Node4 --> |git commit| Node1
+Node2 --> |git push| Node5
+
+C[Uncommited changed planet.py] -->|commit button| R
+Node5 --> |"git pull (from local git)"| Node2
+R --> |"git pull (from local git)"| Node1
+R <--> Node5
+
+        subgraph "Local Git"
+        Node2[project]
+        Node1[planet.py]
+        Node1 <--> Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[planet.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[planet.py]
+        end
+
+```
 
 ## Summary
 
@@ -482,14 +517,6 @@ This is the last line by me, Anna
         - licensing
     - &#9745; Documentation
         - Explanation (in code)
-
-!!! info "Learning outcomes of 'Get started with Git/GitHub'"
-
-    Learners
-
-    - can demonstrate the ability to initiate and manage a software development project using Git and GitHub.
-    - are connected to the course repo
-    - know how to do in-code documentation
 
 !!! keypoints
 
