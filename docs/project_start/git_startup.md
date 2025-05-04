@@ -125,7 +125,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 - Upload changes
 - Conflicts and resolutions
 - A bit about project organization
-- A bit about documenation
+- A bit about documentation
 
 ## Principles
 
@@ -154,7 +154,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 ### Clone
 
 - Clone to your computer
-    - Buttons in VS code or a terminal, using ``git clone ``
+    - Buttons in VS code or a terminal, using ``git clone``
 
 #### Sync from GitHub
 
@@ -189,15 +189,14 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - All chanegd files
 
     ```console
-    $ git add .    # < -- "." means all files
+    git add .    # < -- "." means all files
     ```
     
     - Chosen files
 
     ```console
-    $ git add <file1> <file2>    # one or several files
+    git add <file1> <file2>    # one or several files
     ```
-
 
 !!! info "Git Cheat sheet"
 
@@ -215,7 +214,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version.
 - BUT only what we have added to the "staging" area!
 
--     $ git commit -m "add personal folder"
+- ``git commit -m "<commit message>"``
 
 **Alternative commits**
 
@@ -286,7 +285,7 @@ GitHub is now synced with your changes
         - Create a new one if necessary in the "Open folder File explorer"
     - Select as Repository Destination
 
-???- question "Exercise 2b: (Alternative with commandline) clone course project and create folders (4 min)"
+???- question "Exercise 2b: (Alternative with command line) clone course project and create folders (4 min)"
 
     - You may want to create a directory on your computer for this course.
     - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
@@ -354,7 +353,7 @@ GitHub is now synced with your changes
             new file:   learners/bclaremar/README.md
     ```
 
-    - Now this change is _staged_ and ready to be committed.
+    - Now this change is *staged* and ready to be committed.
 
 ### Exercise 5: Commit
 
