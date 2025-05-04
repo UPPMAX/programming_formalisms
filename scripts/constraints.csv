@@ -1,6 +1,5 @@
 topic,prerequisite
 TDD,assert
-Big O,runtime speed profiles
 TDD 1,Merge conflicts
 TDD 2,TDD 1
 Formal testing framework,TDD 2
@@ -9,7 +8,6 @@ Implement the project as a package,Continuous integration
 Continuous integration,Formal testing framework
 Optimisation misconceptions,Continuous integration
 runtime speed profiles,Continuous integration
-Big O,Continuous integration
 Formal, git
 social,issues
 social,formal

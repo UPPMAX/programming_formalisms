@@ -83,6 +83,10 @@ check_constraints <- function() {
     constraint <- constraints[constraint_index, ]
     topic <- constraint$topic
     topic_indices <- stringr::str_which(schedule$subject, pattern = topic)
+    if (length(topic_indices) == 0) {
+      stop("Cannot find topic '", topic, "' in schedule")  
+    }
+    testthat::expect_true(length(topic_indices) > 0)
     # A topic may be taught multiple hours
     topic_index <- topic_indices[1]
     testthat::expect_true(topic_index > 0)
