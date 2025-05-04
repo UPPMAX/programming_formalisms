@@ -38,15 +38,6 @@ tags:
 
 ---
 
-???- admonition "Changes"
-
-    - practical examples than just explain the concept.
-    - exercises
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - solutions
-        - (advanced exercises)
-
 ## Some SDLC models
 
 ### If you want some overview today already
@@ -98,11 +89,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - Good tools and practices for refactoring and development steps
 - Focus on scientific computing
 
-???- info "Project organization"
+???+ info "Project organization"
 
     - folder structure
 
-???- info "Software development practices"
+???+ info "Software development practices"
 
     - explanations
     - naming
@@ -110,11 +101,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - dependencies
     - DOI
 
-???- info "Tracking changes"
+???+ info "Tracking changes"
 
     - For instance Git/Github
 
-???- info "Collaborate"
+???+ info "Collaborate"
 
     - GitHub
     - documentation
@@ -131,11 +122,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
 - We want to add the planning phases with
 
-    - requirements
-    - analysis
+    - Requirements
+    - Dnalysis
     - design
 
-!!! info "The Phases/practices to be covered!
+!!! info "The Phases/practices to be covered!"
 
     - Project organisation
     - Planning
@@ -147,32 +138,6 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - Collaborate
 
 ## Tools to use
-
-### Project organisation
-
-- It's about folder structure and setting up practices
-- We cover this in [project organization](organization_docs.md).
-
-!!! info "Tools"
-
-    - Local computer
-    - GitHub
-
-!!! admonition "Directory structure"
-
-    - **Different projects should have separate folders**
-
-    - README file
-    - Data  (version controlled)(.gitignore)
-    - Processed data intermediate
-    - (Manuscript)
-    - Results  data, tables, figures (version controlled, git tags for manuscript version)
-    - Src  version controlled code goes here
-        - License (here or in the 1st level)
-        - Requirements.txt
-    - Doc
-    - index
-    - .gitignore file
 
 ### Project planning
 
@@ -217,8 +182,8 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 
     - Top-down or Bottom-up?
 
-    - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
-    - More this afternoon
+- [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+- More this afternoon
 
 ??? note "Example of Algorithm flow chart"
 
@@ -435,52 +400,49 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - [Mercurial](https://www.mercurial-scm.org)
         - [Pijul](https://pijul.org/)
 
-### Collaboration
+### Collaboration (with GitHub)
 
+!!! info "Why GitHub?"
+
+    - GitHub is introduced as an excellent tool for 
+        - remote repositories, 
+        - offering code hosting services for both open source projects and private teams. 
+    - It serves as a version control system and provides a platform for developers to 
+        - build, share, and document their projects, fostering a strong community of collaboration.
+    
 - Someone has given you access to a repository online and **you want to contribute** to it.
 - Quite easy to make a **copy and send a change back**.
-
-    1. get repository, make a change locally, and send the change directly back.
-    2. make a "pull request" that allows a review.
-
-- Once we know how code review works:
-    - we will be able to propose changes to repositories of others
-    - review changes submitted by external contributors.
 
 !!! objectives
 
     - [Collaboration](../git/contribute.md) aims to
-        - Get into working more with GitHub for collaboration
-        - **Centralized** workflow (good within a group)
-        - **Forking** (better for contribution to other's project)
-        - Contributing to other's projects
 
 ???- note "To cover in the course"
 
-    - overview: README etc
     - to-do list/issues
     - communication strategies
     - license explicit
         - recommendations and why
     - citable
+    - downloadable for all (sharing)
+
+### Reproducibility and sharing
+
+???- info "Reproducible research"
+
+    - Have you ever spent days trying to repeat the results that took you hours to do the first time last week?
+    - Or you have to do paper revisions, but you just can’t get the results to match up?
+
+    - [Extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html)
+
+???- info "Sharing"
+
+    - The Open Science movement encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
+    - [Sharing and social coding](../social_coding/social_coding.md)
 
 ### Documentation
 
-???- "Connected to documentation"
-
-    Software
-
-    - explanation comment at the start of the program (also "help function" as for './program -h')
-    - functions
-        - names for variables and functions
-    - eliminate duplication
-        - libraries
-        - test if you rely
-    - dependencies and requirements explicitly
-    - program behavior by if/else (possibly arguments from outside)
-    - run-all script and/or main program (also related to project organization)
-    - example/test data set
-    - DOI like zenodo
+Documentation is a wide field, connecting many of the earlier topics
 
 !!! admonition "Documentation comes in different forms"
 
@@ -488,7 +450,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - **How-to guides**: goal-oriented, shows how to solve a specific problem
     - **Explanation**: understanding-oriented, explains a concept
     - **Reference**: information-oriented, describes the machinery
-    - **In-code documentaion — docstrings**
+    - **In-code documentation — docstrings**
     **Not to forget**
     - Project documentation:
         - requirements: what is the goal of the software, risks, platforms
@@ -507,60 +469,38 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 !!! info "In-code documentation"
 
     - Comments, function docstrings, ...
+    - Explain why, not what.
     - Advantages
         - Good for programmers
         - Version controlled alongside code
         - Can be used to auto-generate documentation for functions/classes
     - Disadvantage
         - Probably not enough for users
-
-???- info "Order your files"
-
-    - Think that **everything is worth to be part of documentation** (like GitHub directory tree)
-    - The parts from the software development cycle
-        - The planning parts
-            - Requirements:
-            - what should the program deliver
-            - dependencies
-            - OS platforms
-            - Risk analysis
-            - Design documentation
-            - Analysis: pseudo code and UML
-        - Source code
-            - with in-code documentation
-        - README
-        - (Full documentation)
-        - (Tutorial)
-
-### Reproducibility and sharing
-
-???- info "Reproducible research"
-
-    - Have you ever spent days trying to repeat the results that took you hours to do the first time last week?
-    - Or you have to do paper revisions, but you just can’t get the results to match up?
-
-    - [Extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html)
-
-???- info "Sharing"
-
-    - The Open Science movement encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
-    - [Sharing and social coding](../social_coding/social_coding.md)
     
-## Exercises
+### Project organisation
 
-Think about
+- It's about folder structure and setting up practices
 
-???- "Why do we want to work with the mentioned tools?"
+!!! info "Tools"
 
-???- "What is source control and what are the benefits?"
+    - Local computer
+    - GitHub
 
-???- "When to write documentation?"
+???- admonition "Directory structure"
 
-???- "Why sharing?"
+    - **Different projects should have separate folders**
 
-## Summary of SDLC tools
-
-- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+    - README file
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript)
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src  version controlled code goes here
+        - License (here or in the 1st level)
+        - Requirements.txt
+    - Doc
+    - index
+    - .gitignore file
 
 !!! admonition "Parts to be covered this week"
 
@@ -587,9 +527,26 @@ Think about
         - Explanation
         - Reference
 
-!!! info "Definitions"
+???- info "Definitions"
 
     - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
+
+## Exercises
+
+Individually 
+
+???- "Why do we want to work with the mentioned tools/path?"
+
+???- "(Optional) Learn more about UML"
+
+     - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+
+
+## Summary of SDLC tools
+
+- Now after the overview you are ready to dig deeper in the topics and try it out yourself!
+
+
 
 ## References
 
