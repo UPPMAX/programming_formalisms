@@ -37,12 +37,6 @@ tags:
 
     - Use of git before
 
-???- admonition "Changes"
-
-    - practical examples than just explain the concept.
-    - exercises
-        - (advanced exercises)
-
 ## What is Git, and what is a Git repository?
 
 - Git is a version control system: can **record/save snapshots** and track the content of a folder as it changes over time.
@@ -58,7 +52,7 @@ tags:
 - students make development in local git and push to github?
 - in principle centralized workflow
 
-**This is used when you are not a collaborator**
+**This is used when you are a collaborator**
 
 ![Centralized layout](../img/centralized.svg)
 
@@ -85,7 +79,11 @@ tags:
 ???- note "Did you set up git and GitHub?"
 
     - **Git and GitHub should be configured prior to the course**
-    - We hope also that you have already done these steps HERE **FIX LINK**
+        - Note that Mac users may need to run a command from the terminal to be able to run ``git``: ``sudo xcodebuild -license accept``
+        - [Configure Git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#configure-git)
+            - like: ``git config --global user.name "Mona Lisa"``
+            - like: ``git config --global user.email "mona_lisa@gmail.com"``
+    - We hope also that you have already done these steps [HERE](../misc/faq/#prerequisites)
 
 ## This lesson
 
@@ -96,6 +94,13 @@ tags:
 - Conflicts and resolutions
 - A bit about project organization
 - A bit about documentation
+
+## VS Code terminal
+
+- We will work as much as possible (almost) in the VS Code graphical interface for Git
+- However, some things are better (or only) handled from a terminal/command line.
+
+- You find the Git Bash terminal From the menu (different on mac and windows)
 
 ## Principles
 
@@ -120,12 +125,23 @@ tags:
 - Clone to your computer
     - Buttons in VS code or a terminal, using ``git clone``
 
-### (May be needed if time goes by) Sync from GitHub
+### (May be needed if time goes by:) Sync from GitHub
 
 - As others are working on the same repo, there may be uploaded changes from *fast* collaborators.
 - Do a ``git pull`` to get these changes locally as well.
 - Do this before you start with new changes. Good practice!
     - This reduces errors or double work!
+
+???- question "Difference between ``git pull`` and ``git fetch``?" 
+
+    We may cover this later. Not important now!
+    
+    - Git **pull** **copies changes** from a remote repository directly **into your** **working directory**, while git **fetch** **does not**. 
+    - The git **fetch** command only copies changes into your local **Git** repo. 
+    - The git **pull** command does **both**.
+    - You Should Use git **fetch** When…
+      - You want to **check** if there are new **updates** on the remote repository but **don't want to apply them immediately**.
+      - You are working on new features and you want to **avoid potential merge conflicts**.
 
 ### Make changes locally
 
@@ -149,37 +165,50 @@ Tracked files can be in three states.
         - changes on GitHub are synced to you existinglocal git
         - good procedure to do this step before you start changes
 
-
 !!! admonition "Update the file(-s)"
 
     - Save your changes as usual on your computer (e.g. in VS code)
 
 !!! admonition "Stage files (in git)"
 
-    - All changed files
-
-    ```console
-    git add .    # < -- "." means all files
-    ```
+    VS CODE
     
-    - Chosen files
+    - Activate the source control environment from left menu!
+    - "+" button
+    
+    ???- note "From bash terminal"
+    
+        - All changed files
 
-    ```console
-    git add <file1> <file2>    # one or several files
-    ```
+        ```console
+        git add .    # < -- "." means all files
+        ```
+    
+        - Chosen files
+
+        ```console
+        git add <file1> <file2>    # one or several files
+        ```
 
 !!! admonition "Commit"
 
     - Every time we **commit** a snapshot, Git records a snapshot of the **entire project**, saves it, and assigns it a version (Hash tag).
     - BUT only what we have added to the "staging" area!
 
-    - ``git commit -m "<commit message>"``
+    VS CODE
+    
+    - Activate the source control environment from left menu!
+    - "Commit" button and "Commit message" text
 
-    **Alternative commits**
+     ???- note "From bash terminal"
 
-    - You can also omit the ``-m`` option and a text editor will open.
-    - The first line will be your commit message.
-    - You can add other lines to add some more detailed info about your changes.
+        - ``git commit -m "<commit message>"``
+
+        **Alternative commits**
+
+        - You can also omit the ``-m`` option and a text editor will open.
+        - The first line will be your commit message.
+        - You can add other lines to add some more detailed info about your changes.
 
 !!! tip "Writing useful commit messages"
 
@@ -206,16 +235,23 @@ Tracked files can be in three states.
 
         Source: [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf) Chaper 6
 
-
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
 !!! admonition "Upload to GitHub"
 
-    ```git
-    git push
-    ```
+    VS CODE
+    
+    - Activate the source control environemnt from left menu!
+    - Click the "Sync Changes" button (may be just a symbol)
+    - You can add a push message (shown on GitHub then) or leave it empty, then the last commit message will be used.
+    
+        ???- note "From bash terminal"
 
-    GitHub is now synced with your changes
+        ```git
+        git push
+        ```
+
+        GitHub is now synced with your changes
 
 !!! admonition "Sync from GitHub (again)"
 
@@ -316,7 +352,7 @@ Let us now commit the change to the repository:
 
     - Write the commit message "add personal folder"
 
-    - We can check the status by opening the bash commandline 
+    - We can check the status by opening the **bash terminal**
     - Choose the Git-bash
 
     ```console
