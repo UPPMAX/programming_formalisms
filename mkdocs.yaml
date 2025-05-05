@@ -23,8 +23,8 @@ nav:
     - SDLC tools: introductions/sdlc_tools.md
   - Planning:
     - Get started with git and the project: project_start/git_startup.md
-    - Project start with analysis and design: project_start/analysis_design.md
-    - Development and design: development_design/excercise_1_Design.md
+    - Analysis Phase: project_start/analysis_design.md
+    - Exercise Analysis Phase: development_design/excercise_1_Design.md
   - Design:
     - Software Development Lifecycle: introductions/sdlc.md
     - Object Oriented development: design_develop/OO_development.md
@@ -98,7 +98,7 @@ theme:
     - content.tabs.link
     - content.action.edit
     - content.action.view
-    
+
 extra_css:
   - stylesheets/extra.css
 
