@@ -17,10 +17,10 @@
 <br/>
 
 <div style="text-align: center; margin-top: 20px;">
-    <a href="prereqs.md" class="md-button md-button--primary" style="text-decoration:none;">Pre-requirements</a>
-    <a href="intro.md" class="md-button md-button--primary" style="text-decoration:none;">Intro</a>
-    <a href="schedule.md" class="md-button md-button--primary" style="text-decoration:none;">Schedule</a>
-    <a href="misc/feedback.md" class="md-button md-button--primary" style="text-decoration:none;">Feedback</a>
+    <a href="https://uppmax.github.io/programming_formalisms/prereqs.html" class="md-button md-button--primary" style="text-decoration:none;">Pre-requirements</a>
+    <a href="https://uppmax.github.io/programming_formalisms/intro.html" class="md-button md-button--primary" style="text-decoration:none;">Intro</a>
+    <a href="https://uppmax.github.io/programming_formalisms/schedule.html" class="md-button md-button--primary" style="text-decoration:none;">Schedule</a>
+    <a href="https://uppmax.github.io/programming_formalisms/misc/feedback.html" class="md-button md-button--primary" style="text-decoration:none;">Feedback</a>
 </div>
 
   ![The UPPMAX logo](assets/uppmax_logo_50.png)
