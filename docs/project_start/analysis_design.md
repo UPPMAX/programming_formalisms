@@ -70,11 +70,6 @@ evolve before arriving as valid stakeholder requirements.**
     - Risk severity
     - Risk value(Probaility x Severity)
 
-???+ exercise "Needs determination"
-
-    We now look at the Course project and start setting upp our first
-    development diagrams and design documents for the course project.
-
 ???- info "Example design process document"
 
     Here is an example design process document:
