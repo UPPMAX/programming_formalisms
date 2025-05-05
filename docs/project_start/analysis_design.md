@@ -6,8 +6,7 @@ tags:
 
 # First Phase: Analysis
 
-As you have heard the first phase in any software development is Analysis An this is the phase we are focusing on in this lecture. The goal of the analysis phase is to figure out
-what the program should do and  what needs the program must meet. It like all other phases of modern software development is done in an iterative loop or spiral.
+As you have heard the first phase in any software development is Analysis An this is the phase we are focusing on in this lecture. **The goal of the analysis phase is to figure out what the program should do and  what needs the program must meet**. It like all other phases of modern software development is done in an iterative loop or spiral.
 In this early stage a focus is on Requirements sometimes also called needs determination and risk analysis. The First thing to remember and include in your analysis is the scope of your project both in time and scale so that you do not over commit both in choice of level of formalism and amount of features that you which to construct.
 
 ## Requirements
@@ -30,7 +29,7 @@ are applicable and meaningful"*
 1993, pp. 17-24.
 
 What guidance can we then gleen in what a Requirement is the above mentioned paper asses that
-*"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"*
+**"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"**
 
 According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
