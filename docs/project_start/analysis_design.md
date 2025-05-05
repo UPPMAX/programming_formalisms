@@ -131,6 +131,8 @@ which calculate the risk in Probability of occurrence x severity of risk **RISK=
     It is common is to divide it in 5 severity categories and 5 probability
     levels then establishing a table as below to asses which needs are the
     most important to address.
+    Risk probability goes from P1 (very unlikely to occur) - P5(Happens in all execution)
+    Risk severity goes from S1(minor or no effect),S2(Some Impact or noticeable by user),S3(Major impact on execution of program or result with minor loss of resources at end user),S4(Prevents execution of software or cause major loss of resources to user), S5(major injury or death cause by unhandled risk)
 
 <table>
  <tr>
