@@ -299,6 +299,10 @@ Tracked files can be in three states.
 
 ### Overview of the GitHub Project
 
+!!! info "Groups of mixed expertise!"
+
+    - 3 to 4 people in each group
+
 ???- question "Exercise 1: "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2025>"
 
     - Click on a folder or file in the file explorer.
@@ -309,10 +313,6 @@ Tracked files can be in three states.
     - View License
     - Look at the history ("Commits" button just above the file explorer)
 
-!!! info "Groups of mixed expertise!"
-
-    - 3 to 4 people in each group
-
 ### Get a local clone of the project
 
 ???- question "Exercise 2a: clone course project using VS code (4 min)"
@@ -320,7 +320,7 @@ Tracked files can be in three states.
     - Start VS code
     - Start new window
 
-    - In GitHub, locate the **Code** button, select **HTTPS** and click the **copy** symbol to the right
+    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
 
     ???- question "Where is this?"
 
