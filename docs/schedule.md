@@ -13,7 +13,8 @@ For a detailed daily schedule, see the detailed schedule of that day.
 
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
-Monday   |09:00-9:50|Björn  |[Syllabus](./intro.md) + [Introduction](./introductions/intro.md)
+Monday   |09:00-09:05|Lars  | Welcome to the course
+Monday   |09:05-9:50|Björn  |[Syllabus](./intro.md) + [Introduction](./introductions/intro.md)
 Monday   |10:05-10:55|Björn  |[Software development tools](./introductions/sdlc_tools.md) <!-- includes modules (tiny) -->
 Monday   |11:10-12:00|Björn  |[Git/GitHub basics and start project](./project_start/git_startup.md) <!-- includes merge conflicts -->
 Monday   |13:00-15:40|Lars   |[Define and plan project](./project_start/analysis_design.md)
