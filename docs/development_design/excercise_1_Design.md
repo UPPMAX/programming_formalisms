@@ -4,6 +4,11 @@
 
 Given the below project brief we are to create a rudimentary requirement specification and risk analysis
 
+???+ question "Exercise"
+
+    Discuss risks and requirements (A short Needs Analysis) for the program above.
+
+
 !!! info "The brief"
 
     Do some analysis on data from an Uppsala weather station.
@@ -53,12 +58,6 @@ Given the below project brief we are to create a rudimentary requirement specifi
             - make possible to read other files (defined by)
             - there is a document that connects filenames to stations
             - argument can be station name and the program reads the right file
-
-## Exercise
-
-???+ question "Exercise"
-
-    Discuss risks and requirements (A short Needs Analysis) for the program above.
 
 !!!- hint "Hints for needs"
 
