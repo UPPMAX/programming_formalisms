@@ -66,7 +66,7 @@ Given the below project brief we are to create a rudimentary requirement specifi
 
 !!!- hint "Hints for risks"
 
-    - specify the Risk in the requirments specification as column
+    - specify the Risk in the requirements specification as Risk Probability,Risk severity  and Risk value (PxS)
 
     - Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'.
         - This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
@@ -151,7 +151,8 @@ Given the below project brief we are to create a rudimentary requirement specifi
     - We start looking at the Risk involved in the software project.
         - Over engineering
         - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
-        - risk of misread data
+        - risk of miss read data probability 3 and severity 3 PxS=9
+
 
     **Fifth!** Second iteration of needs analysis
 
