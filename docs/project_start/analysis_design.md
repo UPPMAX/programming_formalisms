@@ -70,7 +70,12 @@ evolve before arriving as valid stakeholder requirements.**
     - Risk severity
     - Risk value(Probaility x Severity)
 
-???- info "Example design process document"
+
+???- info "Design process document"
+    A Design process document is created when the process software design and or
+    analysis needs to be specified to keep the development on track.
+    It is created on organisational level to make sure that all project follow a
+    similar documentation, and analysis and Design path. (If AI is heavily used in the Analysis and Design phase this document define when and how to use the AI tools and how to document its uses.)
 
     Here is an example design process document:
 
