@@ -1,5 +1,9 @@
 # Discuss Risks and Requirements
 
+## exercise 1
+
+Given the below project brief we are to create a rudimentary requirement specification and risk analysis
+
 !!! info "The brief"
 
     Do some analysis on data from an Uppsala weather station.
@@ -50,6 +54,7 @@
             - there is a document that connects filenames to stations
             - argument can be station name and the program reads the right file
 
+## Exercise
 
 ???+ question "Exercise"
 
@@ -81,6 +86,7 @@
         - such as yielding the wrong result
         - causing unintended system behavior
 
+## Answers
 
 ???- question "One possible answer"
 
