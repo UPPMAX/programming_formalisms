@@ -204,13 +204,13 @@ Tracked files can be in three states.
 
      ???- note "From bash terminal"
 
-        - ``git commit -m "<commit message>"``
+         - ``git commit -m "<commit message>"``
 
-        **Alternative commits**
+         **Alternative commits**
 
-        - You can also omit the ``-m`` option and a text editor will open.
-        - The first line will be your commit message.
-        - You can add other lines to add some more detailed info about your changes.
+         - You can also omit the ``-m`` option and a text editor will open.
+         - The first line will be your commit message.
+         - You can add other lines to add some more detailed info about your changes.
 
 !!! tip "Writing useful commit messages"
 
@@ -262,38 +262,38 @@ Tracked files can be in three states.
     - Do this before you start with new changes.
         - This reduces errors or double work!
 
-!!! Example of Git/GitHub workflow
+???- example of Git/GitHub workflow
 
-```mermaid
-graph TB
+    ```mermaid
+    graph TB
 
-P["Project idea"] -->|git init| Node2
-P["Project idea"] --> planet.py -->|git add| Node4
-Node4 --> |git commit| Node1
-Node2 --> |git push| Node5
-
-C[Uncommited changed planet.py] -->|commit button| R
-Node5 --> |"git pull (from local git)"| Node2
-R --> |"git pull (from local git)"| Node1
-R <--> Node5
-
-        subgraph "Local Git"
-        Node2[project]
-        Node1[planet.py]
-        Node1 <--> Node2
-
-        end
-
-        subgraph "staging area"
-        Node4[planet.py]
-        end
-
-        subgraph "GitHub"
-        Node5[project]
-        R[planet.py]
-        end
-
-```
+    P["Project idea"] -->|git init| Node2
+    P["Project idea"] --> planet.py -->|git add| Node4
+    Node4 --> |git commit| Node1
+    Node2 --> |git push| Node5
+    
+    C[Uncommited changed planet.py] -->|commit button| R
+    Node5 --> |"git pull (from local git)"| Node2
+    R --> |"git pull (from local git)"| Node1
+    R <--> Node5
+    
+            subgraph "Local Git"
+            Node2[project]
+            Node1[planet.py]
+            Node1 <--> Node2
+    
+            end
+    
+            subgraph "staging area"
+            Node4[planet.py]
+            end
+    
+            subgraph "GitHub"
+            Node5[project]
+            R[planet.py]
+            end
+    
+    ```
 
 ## Exercises
 
