@@ -4,7 +4,7 @@ tags:
   - analysis
 ---
 
-# First Phase: Analysis 
+# First Phase: Analysis
 
 As you have heard the first phase in any software development is Analysis An this is the phase we are focusing on in this lecture. The goal of the analysis phase is to figure out
 what the program should do and  what needs the program must meet. It like all other phases of modern software development is done in an iterative loop or spiral.
