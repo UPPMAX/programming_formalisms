@@ -151,7 +151,8 @@ Given the below project brief we are to create a rudimentary requirement specifi
     - We start looking at the Risk involved in the software project.
         - Over engineering
         - In this kind of small project the risk of a project failing is increased with the risk of making the solutions significantly more complicated than they need to be
-        - risk of miss read data probability 3 and severity 3 PxS=9
+        - risk of miss read data probability 3 and severity 4 PxS=12 probability of a read mistake could easily arise if not properly care fore and it would result in the program not functioning therefore
+        the severity is 4 and not addressing this risk will aversely affect the ability to run the program at all.
 
 
     **Fifth!** Second iteration of needs analysis
