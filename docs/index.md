@@ -1,5 +1,3 @@
-# Welcome to the Programming Formalisms course
-
 <br/>
 
 <figure markdown="span">
@@ -7,7 +5,10 @@
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
+
 <br/>
+
+# Welcome to the Programming Formalisms course!
 
 !!! note "Course mottos"
 
@@ -16,15 +17,15 @@
 
 <br/>
 
-<div style="text-align: center; margin-top: 20px;">
-    <a href="https://uppmax.github.io/programming_formalisms/prereqs.html" class="md-button md-button--primary" style="text-decoration:none;">Pre-requirements</a>
-    <a href="https://uppmax.github.io/programming_formalisms/intro.html" class="md-button md-button--primary" style="text-decoration:none;">Intro</a>
-    <a href="https://uppmax.github.io/programming_formalisms/schedule.html" class="md-button md-button--primary" style="text-decoration:none;">Schedule</a>
-    <a href="https://uppmax.github.io/programming_formalisms/misc/feedback.html" class="md-button md-button--primary" style="text-decoration:none;">Feedback</a>
-</div>
 
-  ![The UPPMAX logo](assets/uppmax_logo_50.png)
-  ![The NBIS logo](assets/nbis_green_logo_25.png)
+[Pre-requirements](prereqs.md){ .md-button .md-button--primary }
+[Intro](intro.md){ .md-button .md-button--primary }
+[Schedule](schedule.md){ .md-button .md-button--primary }
+[Feedback](misc/feedback.md){ .md-button .md-button--primary }
+
+
+![The UPPMAX logo](assets/uppmax_logo_50.png)
+![The NBIS logo](assets/nbis_green_logo_25.png)
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
