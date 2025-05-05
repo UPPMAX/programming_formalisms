@@ -124,8 +124,8 @@ Risk analysis is central in some systems like RDD(Risk Driven Development),
 FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk.
 Where Business risk relates to direct requirements while technical risks
 are from derived requirements.
-One type of risk assessment is the FMEA Failure modes and effects analysis
-which calculate the risk in Probability of occurrence x severity of risk.
+One type of risk assessment is the Failure modes and effects analysis commonly abbreviated FMEA
+which calculate the risk in Probability of occurrence x severity of risk **RISK=PxS** a risk matrix is used to define what level of severity and occurrence warrants what action.
 
 !!! hint "How big should the risk analysis matrix be?"
 
