@@ -10,9 +10,7 @@ As you have heard the first phase in any software development is Analysis An thi
 what the program should do and  what needs the program must meet. It like all other phases of modern software development is done in an iterative loop or spiral.
 In this early stage a focus is on Requirements sometimes also called needs determination and risk analysis.
 
-## Analysis phase
-
-### Requirements
+## Requirements
 
 !!! info "Why do we need to specify requirements?"
 
@@ -120,7 +118,7 @@ evolve before arriving as valid stakeholder requirements.**
     R11            | Test-Driven Development | Develop the project using TDD | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code
 
 
-### Risk analysis
+## Risk analysis
 
 Risk analysis is central in some systems like RDD(Risk Driven Development),
 FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk.
