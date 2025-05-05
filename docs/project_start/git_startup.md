@@ -202,7 +202,7 @@ Tracked files can be in three states.
     - Activate the source control environment from left menu!
     - "Commit" button and "Commit message" text
 
-     ???- note "From bash terminal"
+    ???- note "From bash terminal"
 
         - ``git commit -m "<commit message>"``
 
@@ -262,42 +262,46 @@ Tracked files can be in three states.
     - Do this before you start with new changes.
         - This reduces errors or double work!
 
-!!! Example of Git/GitHub workflow
+???- example "Git/GitHub workflow"
 
-```mermaid
-graph TB
+    ```mermaid
+    graph TB
 
-P["Project idea"] -->|git init| Node2
-P["Project idea"] --> planet.py -->|git add| Node4
-Node4 --> |git commit| Node1
-Node2 --> |git push| Node5
-
-C[Uncommited changed planet.py] -->|commit button| R
-Node5 --> |"git pull (from local git)"| Node2
-R --> |"git pull (from local git)"| Node1
-R <--> Node5
-
-        subgraph "Local Git"
-        Node2[project]
-        Node1[planet.py]
-        Node1 <--> Node2
-
-        end
-
-        subgraph "staging area"
-        Node4[planet.py]
-        end
-
-        subgraph "GitHub"
-        Node5[project]
-        R[planet.py]
-        end
-
-```
+      P["Project idea"] -->|git init| Node2
+      P["Project idea"] --> planet.py -->|git add| Node4
+      Node4 --> |git commit| Node1
+      Node2 --> |git push| Node5
+    
+      C[Uncommited changed planet.py] -->|commit button| R
+      Node5 --> |"git pull (from local git)"| Node2
+      R --> |"git pull (from local git)"| Node1
+      R <--> Node5
+    
+            subgraph "Local Git"
+            Node2[project]
+            Node1[planet.py]
+            Node1 <--> Node2
+    
+            end
+    
+            subgraph "staging area"
+            Node4[planet.py]
+            end
+    
+            subgraph "GitHub"
+            Node5[project]
+            R[planet.py]
+            end
+    
+    ```
 
 ## Exercises
 
 ### Overview of the GitHub Project
+
+!!! info "Groups of mixed expertise!"
+
+    - 3 to 4 people in each group
 
 ???- question "Exercise 1: "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2025>"
 
@@ -309,10 +313,6 @@ R <--> Node5
     - View License
     - Look at the history ("Commits" button just above the file explorer)
 
-!!! info "Groups of mixed expertise!"
-
-    - 3 to 4 people in each group
-
 ### Get a local clone of the project
 
 ???- question "Exercise 2a: clone course project using VS code (4 min)"
@@ -320,7 +320,7 @@ R <--> Node5
     - Start VS code
     - Start new window
 
-    - In GitHub, locate the **Code** button, select **HTTPS** and click the **copy** symbol to the right
+    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
 
     ???- question "Where is this?"
 
