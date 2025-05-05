@@ -38,7 +38,7 @@ Given the below project brief we are to create a rudimentary requirement specifi
             - yearly maximums/min
         - meta data extraction
             - name of station
-            - dates , times and varible from which column
+            - dates , times and variable from which column
         - presentation
             - header of graphs (name)
             - axis labels
