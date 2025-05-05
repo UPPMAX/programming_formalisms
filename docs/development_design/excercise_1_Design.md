@@ -66,6 +66,8 @@ Given the below project brief we are to create a rudimentary requirement specifi
 
 !!!- hint "Hints for risks"
 
+    - specify the Risk in the requirments specification as column
+
     - Risk is defined in ISO Guide 73:2009 as 'The effect of uncertainty on objectives'.
         - This has an attached Note 1: 'An effect is a deviation from the expected — positive and/or negative'.
         - A positive risk is commonly known as an opportunity, and can be addressed within the Risk Management process.

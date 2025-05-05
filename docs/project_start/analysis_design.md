@@ -62,13 +62,14 @@ evolve before arriving as valid stakeholder requirements.**
 
     - Requirement ID
     - Requirement Description
-    - Risk type
+    - Acceptance Criteria
+    - Test Cases
+    <br />
     - Risk
+    - Risk type
     - Risk probability
     - Risk severity
     - Risk value(Probaility x Severity)
-    - Acceptance Criteria
-    - Test Cases
 
 ???+ exercise "Needs determination"
 
@@ -99,7 +100,7 @@ evolve before arriving as valid stakeholder requirements.**
 
 ???- info "Example requirements specification"
 
-    Here is an example requirements specification:
+    Here is an example of the needs part of the requirements specification:
 
     Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
     ---------------|-------------------------|---------------------|------------
