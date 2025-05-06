@@ -32,22 +32,6 @@ tags:
     - How would you define what an issue is?
     - How do you call the webpage where a list of issues can be seen?
 
-    Lesson plans:
-
-    ```mermaid
-    gantt
-      title Lesson plan pair programming 1
-      dateFormat X
-      axisFormat %s
-      Introduction : intro, 0, 5s
-      Theory 1: theory_1, after intro, 5s
-      Exercise 1: crit, exercise_1, after theory_1, 15s
-      Feedback 1: feedback_1, after exercise_1, 5s
-      Theory 2: theory_2, after feedback_1, 5s
-      Exercise 2: crit, exercise_2, after theory_2, 10s
-      Exercise 2 after the break: crit, after exercise_2, 5s
-    ```
-
 A good team member communicates.
 Here we show how to communicate to the rest of the team with minimal overhead.
 
@@ -120,7 +104,7 @@ Some issues originate from the requirements documents, as shown below.
 
     Writing the 'Methods' section and issues goes hand-in-hand.
 
-!!! note "R1: Create testing parameter set"
+!!! note "Issue 'R1: Create testing parameter set'"
 
     The requirements documentation states:
 
@@ -140,7 +124,7 @@ Some issues originate from the requirements documents, as shown below.
 
     Note the related requirent R2: 'check that parameters are well-formed'
 
-!!! note "R2: check that parameters are well-formed"
+!!! note "Issue 'R2: check that parameters are well-formed'"
 
     The requirements documentation states:
 
@@ -158,7 +142,7 @@ Some issues originate from the requirements documents, as shown below.
 
     Note the related requirent R1: 'Create testing parameter set'
 
-!!! note "R3: Read parameters from file"
+!!! note "Issue 'R3: Read parameters from file'"
 
     The requirements documentation states:
 
@@ -174,7 +158,7 @@ Some issues originate from the requirements documents, as shown below.
     Create a test parameters file, e.g. `test_parameters.csv` to test that
     the values read by `read_parameters` match those in the file.
 
-!!! note "R4: Create a test bacterium"
+!!! note "Issue 'R4: Create a test bacterium'"
 
     The requirements documentation states:
 
@@ -192,7 +176,7 @@ Some issues originate from the requirements documents, as shown below.
     but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
     of strings if this is not specified yet.
 
-!!! note "R5: check that a bacteria is well-formed"
+!!! note "Issue 'R5: check that a bacteria is well-formed'"
 
     The requirements documentation states:
 
@@ -216,10 +200,8 @@ In our project we use the following rules:
 
 - Always work on an issue, create an issue if needed
 - Issues are always based on the requirements document
-- First part of an issue can be to add it to the
-  requirements document.
-  Sure, the product owner is usually is charge of this, but in this
-  project, everyone is a bit of a product owner :-)
+- An issue can contain the assignment to add something to the
+  requirements document
 
 ## Exercises
 
