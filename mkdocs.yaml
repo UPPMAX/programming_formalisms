@@ -38,7 +38,7 @@ nav:
     - Kanban board: project/kanban_board.md
     - Team roles: project/team_roles.md
     - Git workflow, branches: git/branches.md
-    - Git(-Hub) workflow, branches/merging: git/merge.md
+    - Git(-Hub) workflow, merging: git/merge.md
     - Contributing with code review: git/contribute.md
     - Sharing and social coding: social_coding/social_coding.md
     - Pair programming: pair_programming/README.md
