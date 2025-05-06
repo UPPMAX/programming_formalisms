@@ -144,15 +144,10 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
 
     ```mermaid
     graph TD;
-        A(Initiation) -->|Unclear Requirements| B(Planning);
-        B -->|Scope Creep| C(Design);
-        C -->|Poor Design Choices| D(Development);
-        D -->|Bugs and Errors| E(Testing);
-        E -->|Incomplete Testing| F(Release);
-        F -->|Poor User Adoption| G(Maintenance);
-        G -->|Lack of Updates| H(End of Life);
-        G -->|Security Vulnerabilities| I(Security Patching);
-
+        A(Display on Screen) -->|show intial display| B(Display);
+        C(Pariticle field) --> |get field| B
+        E(User Interface) --> |show UI| B
+        B -->|User visualy confirms| F(Verification)
         classDef red fill:#f9cccc,stroke:#333,stroke-width:2px;
         classDef orange fill:#ffe6cc,stroke:#333,stroke-width:2px;
         classDef green fill:#ccffcc,stroke:#333,stroke-width:2px;
