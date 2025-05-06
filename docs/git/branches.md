@@ -526,8 +526,8 @@ git merge
 !!! Keypoints
 
     - A branch is a division unit of work, to be merged with main sometime
-    - Local branches often track remote branches.
-    - A remote serves as a full backup of your work.
+    - Both git locally and GitHub can be used
+    - You can delete a branch safely after merging
 
 !!! note "See also"
 
