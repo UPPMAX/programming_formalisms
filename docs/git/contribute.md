@@ -344,7 +344,6 @@ Now do the same for team member B.
 
 - [ ] explain and evaluate the usefulness of git Pull Request with code review
 
-
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
@@ -354,18 +353,19 @@ Now do the same for team member B.
         - branches
     - &#9745; Planning
         - &#9745; Analysis
-        - &#9745;Design
+        - &#9744; Design
     - &#9745; Testing
         - Different levels
-    - &#9745; Collaboration
-        - GitHub
-        - pull requests
+    - &#975; Collaboration
+        - &#975; GitHub
+        - &#975; pull requests
     - &#9744; Sharing
-        - &#9745; open science
+        - &#9744; open science
         - &#9744; citation
-        - &#9745; licensing
+        - &#9744; licensing
     - &#9744; Documentation
         - &#9745; in-code documentation
+        - &#9744; documentation for users
 
 ## Reference Git
 
