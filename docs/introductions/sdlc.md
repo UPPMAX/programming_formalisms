@@ -6,6 +6,12 @@ tags:
   - life cycle
 ---
 
+!!! Info learning outcomes
+    - We understand the general concept of the Software Development Lifecycle (SDLC)
+    - We are introduced to what UML is and how it can help us.
+    - We know what Feature driven development is and can use part of it.
+    - We know what a feature is and how to use it to concretize a requirement.
+
 # Software Development Lifecycle
 
 !!! info "Overview of Software Development Lifecycle (SDLC)"
@@ -108,24 +114,25 @@ graph TD;
 Once we know what we want (Requirements and risks)we can start thinking on how.
 
 in the design phase we commonly use Modeling Languages to illustrate concepts and architecture together with
-pseudo code to describe algorithms in much the
-same way as we use programming languages
-during development .
-Unified Modeling Language UML, is one such modeling
-language [UML web page](https://www.uml.org/)
-here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
+pseudo code to describe algorithms in much the same way as we use programming languages during development .
+
+Unified Modeling Language UML, is one such modeling language [UML web page](https://www.uml.org/).
+Here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
 UML was generated to unify the big popular object oriented modeling approaches of Booch (Booch Method superseded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
 
 FDD(Feature Driven Design) was developed in 1997 and first appears in the the book Java Modeling Color with Uml`[Coad et al., 1999]`. It is focusing on short development cycles and fast development. it is a way of concretize your requirements into action that can be implemented.
 *"A feature is a client-valued function that can be implemented in two weeks or less."* Using this we can break down our Requirements into actions that can be implemented.
 
 ## EXCERSIE
-### Excersie 1
+### Excersie 1 (10 min)
     Collate the requirements list Group work in plenary.
-### Excersie 2
+### Excersie 2 (10 min)
     Practice Mermaid by taking one requirement practice describing the overall solution using a flowchart in UML
+        - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+???- Example flow char of a requirement described as a User story or Use Case
 
-### Excersise 3
+
+### Excersise 3 (10 min)
     Produce a Feature list on the format
     - For features: <action> the <result> <by|for|of|to> a(n) <object>
     - For feature sets: <action><-ing> a(n) <object>
@@ -225,7 +232,7 @@ A problem is solved is not specifically defined, but instead focuses on what nee
 A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator"
 
 ## Further reading materials produced for this course
-    [A short introductory text to SDLC and modeling]()
+    -[A short introductory text to SDLC and modeling](../development_design/ReadmatSoftware.md)
 ## References
 
 - `[Church, 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941
