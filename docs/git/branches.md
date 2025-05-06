@@ -53,6 +53,7 @@ tags:
 Software development is often not linear:
 
 - We typically need at least one version of the code to "work" (to compile, to give expected results, ...).
+    -  This is the **main** branch (former *master*)
 - At the same time we work on new features, often several features concurrently.
   Often they are unfinished.
 - We need to be able to separate different lines of work really well.
@@ -105,12 +106,13 @@ In VS Code
   
     ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
-???- admonition "In command line"
+???+ admonition "In command line"
 
 ```console
 git branch new-feature  # create branch, switch to it
 git add/commit                   # work, work, work, ..., and test
 git switch master          # once feature is ready, switch back to master
+(git checkout <branch>)     # Old commead for switching branch, but also going back in history to earlier commit
 git branch                   # make clear which branch you are in
 git merge new-feature        # merge work to present branch
 git branch -d new-feature    # remove branch
@@ -122,11 +124,13 @@ git branch -d new-feature    # remove branch
 
 - GitHub
 
-   Link to last year
+  [network_GH](../img/network_GH.png)
+
+  [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
 
 - VS Code
 
-  - **Image here**
+  - ![git_graph_VSC](../img/git_graph_VSC.png)
 
 
 ???- tip "Graph alias in command line"
@@ -175,38 +179,48 @@ git branch -d new-feature    # remove branch
 
 !!! tip "Show unstaged/uncommitted modifications"
 
-    - When you are done editing the files, try `git diff`:
+    - When you are done editing the files, try "git diff"
+    - When you select a file in the Source Control view, the editor shows a diff view that highlights the file changes, compared to the previously committed file.
 
-    ```console
-    git diff
-    ```
+    ![file_saved_VSC](../img/file_saved_VSC.png)
+    
+    - Press "M" 
 
-    - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
-    - You will see some things like this.
+    ![diff_VSC](../img/diff_VSC.png)
 
-    ???- "Output from 'diff'"
 
-        ```diff
-        diff --git a/ingredients.txt b/ingredients.txt
-        index 4422a31..ba8854f 100644
-        --- a/ingredients.txt
-        +++ b/ingredients.txt
-        @@ -2,3 +2,4 @@
-         * 1 chili
-         * 1 lime
-         * 2 tsp salt
-        +* 1/2 onion
-        diff --git a/instructions.txt b/instructions.txt
-        index 7811273..2b11074 100644
-        --- a/instructions.txt
-        +++ b/instructions.txt
-        @@ -4,3 +4,4 @@
-         * squeeze lime
-         * add salt
-         * and mix well
-        +* enjoy!
+    ???- note "In console"
 
+        ```console
+        git diff
         ```
+
+        - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
+        - You will see some things like this.
+
+        ???- "Output from 'diff'"
+
+            ```diff
+            diff --git a/ingredients.txt b/ingredients.txt
+            index 4422a31..ba8854f 100644
+            --- a/ingredients.txt
+            +++ b/ingredients.txt
+            @@ -2,3 +2,4 @@
+             * 1 chili
+             * 1 lime
+             * 2 tsp salt
+            +* 1/2 onion
+            diff --git a/instructions.txt b/instructions.txt
+            index 7811273..2b11074 100644
+            --- a/instructions.txt
+            +++ b/instructions.txt
+            @@ -4,3 +4,4 @@
+             * squeeze lime
+             * add salt
+             * and mix well
+            +* enjoy!
+
+            ```
 
 ## Test
 
@@ -290,6 +304,104 @@ gitGraph
     Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     Done!
 
+    ???- admonition "If you wish to use the command line"
+    
+        ```git
+        git pull
+        ```
+
+        > - On your local computer:
+        >     - switch to the new branch
+
+        Switch to the new branch, for example, `richel`, by doing:
+
+        ```git
+        git switch richel
+        ```
+
+        > - On your local computer:
+        >     - change the content of the repository, for example,
+        >       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
+
+        This can be any change you'd like.
+        To create a file under Linux (and maybe this works on other
+        operating systems too), one can do:
+
+        ```git
+        touch learners/richel/richel_is_on_richel.txt
+        ```
+
+        After the change, commit these:
+
+
+        ```git
+        git add .
+        git commit -m "Richel is on richel"
+        ```
+
+        > - On your local computer:
+        >     - push your changes online.
+
+        Do:
+
+
+        ```git
+        git push
+        ```
+
+        And your code may end up online.
+
+       If that does not work, do:
+
+ 
+        ```git
+        git pull
+        ```
+
+        and try pushing again, maybe multiple times, as many people
+        are pushing to the shared repo.
+
+        > - On GitHub, verify that your changes on your branch can be found online
+
+        ![github_pushed_to_branch](github_pushed_to_branch.png)
+
+        Make sure you look at the correct branch, as displayed at 1.
+        Then your commit message shows up at 2.
+
+        > - On your local computer, switch to the main branch,
+        >   as we'll delete the branch you are on now
+
+        Switch to the main branch, for example, `main`, by doing:
+
+        ```git
+        git switch main
+        ```
+
+        > - Delete your branch (i.e. the one with the unique name).
+        >   You may use the web interface (easiest!) or use the command line
+    
+        ![github_view_branches_annotated](github_view_branches_annotated.png)
+
+        Click on 'Branches', as shown in the image above.
+
+        ![github_view_all_branches_annotated](github_view_all_branches_annotated.png)
+
+        Click on garbage bin, as shown in the image above.
+
+        ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
+    
+        The branch will now be deleted, as shown in the image above.
+     
+        > - On your local computer, update your code
+    
+        Do:
+    
+        ```git
+        git pull
+        ```
+
+    **This is for VS Code**
+  
     > - On your local computer:
     >     - update the repository
 
@@ -311,9 +423,11 @@ gitGraph
 
     Switch to the new branch, for example, `richel`, by doing:
 
-    ```git
-    git switch richel
-    ```
+    ???- admonition "command line"
+
+        ```git
+        git switch richel
+        ```
 
     > - On your local computer:
     >     - change the content of the repository, for example,
@@ -323,33 +437,41 @@ gitGraph
     To create a file under Linux (and maybe this works on other
     operating systems too), one can do:
 
-    ```git
-    touch learners/richel/richel_is_on_richel.txt
-    ```
+    ???- admonition "command line"
+
+        ```git
+        touch learners/richel/richel_is_on_richel.txt
+        ```
 
     After the change, commit these:
 
-    ```git
-    git add .
-    git commit -m "Richel is on richel"
-    ```
+    ???- admonition "command line"
+
+        ```git
+        git add .
+        git commit -m "Richel is on richel"
+        ```
 
     > - On your local computer:
     >     - push your changes online.
 
     Do:
 
-    ```git
-    git push
-    ```
+    ???- admonition "command line"
+
+        ```git
+        git push
+        ```
 
     And your code may end up online.
 
     If that does not work, do:
 
-    ```git
-    git pull
-    ```
+    ???- admonition "command line"
+
+        ```git
+        git pull
+        ```
 
     and try pushing again, maybe multiple times, as many people
     are pushing to the shared repo.
