@@ -167,7 +167,7 @@ or [use an existing project](https://github.com/programming-formalisms/programmi
 as reference.
 
 For the `unittest` framework, the actual functions are put in the
-`src/[package_name]` folder, for example `src/bacsim/sven_utils.py`.
+`src/[package_name]` folder, for example `src/weather/sven_utils.py`.
 With or without a testing framework, source code should be put in the `src`
 folder `[Wilson et al, 2017]`.
 
@@ -200,7 +200,7 @@ folder `[Wilson et al, 2017]`.
 
 The testing functions are put in the
 `tests` folder and all files have `test_` added.
-For example, the file to test `src/bacsim/richel_utils.py`
+For example, the file to test `src/weather/richel_utils.py`
 is called `tests/test_richel_utils.py`.
 
 ???- question "How does this look like in VSCode?"
@@ -212,14 +212,14 @@ is called `tests/test_richel_utils.py`.
     Here is how such a file could look like:
 
     ```python
-    """Tests all function in src.bacsim.richel_utils."""
+    """Tests all function in src.weather.richel_utils."""
     import unittest
 
-    from src.bacsim.richel_utils import is_zero
+    from src.weather.richel_utils import is_zero
 
     class TestRichelUtils(unittest.TestCase):
 
-        """Class to test the functions in src.bacsim.richel_utils."""
+        """Class to test the functions in src.weather.richel_utils."""
 
         def test_is_zero(self):
             """Test 'is_zero'."""
@@ -315,8 +315,8 @@ Fixing the failing tests is beyond the scope of this exercise.
 In this exercise, we will put worked-out code at the right spots.
 This code is known to work, so our package will keep working.
 
-- Create a file for the actual code, called, e.g. `src/bacsim/[name]_utils.py`,
-  e.g. `src/bacsim/sven_utils.py`
+- Create a file for the actual code, called, e.g. `src/weather/[name]_utils.py`,
+  e.g. `src/weather/sven_utils.py`
 - Copy-paste the following (familiar) code in that file:
 
 ```python
@@ -334,14 +334,14 @@ def is_zero(number):
 - Copy-paste the following (familiar) code in that file:
 
 ```python
-"""Tests all code in src.bacsim.sven_utils."""
+"""Tests all code in src.weather.sven_utils."""
 import unittest
 
-from src.bacsim.sven_utils import is_zero
+from src.weather.sven_utils import is_zero
 
 class TestSvenUtils(unittest.TestCase):
 
-    """Class to test the code in src.bacsim.sven_utils."""
+    """Class to test the code in src.weather.sven_utils."""
 
     def test_is_zero_has_documentation(self):
         """The function 'is_zero' has documentation."""
@@ -384,12 +384,12 @@ print(isprime(8))
 ```
 
 - Copy paste the function and put it in your file called,
-  e.g. `src/bacsim/[name]_utils.py`, e.g. `src/bacsim/sven_utils.py`
+  e.g. `src/weather/[name]_utils.py`, e.g. `src/weather/sven_utils.py`
 
 ???- question "Answer"
 
     Copy-paste the following text to your file,
-    e.g. `src/bacsim/[name]_utils.py`, e.g. `src/bacsim/sven_utils.py`:
+    e.g. `src/weather/[name]_utils.py`, e.g. `src/weather/sven_utils.py`:
 
     ```python
     def isprime(num):
@@ -420,11 +420,11 @@ print(isprime(8))
     This is how the file should look like:
 
     ```python
-    """Tests all code in src.bacsim.sven_utils."""
+    """Tests all code in src.weather.sven_utils."""
     import unittest
 
     # Other imports
-    from src.bacsim.sven_utils import isprime
+    from src.weather.sven_utils import isprime
 
     class TestSvenUtils(unittest.TestCase):
 
