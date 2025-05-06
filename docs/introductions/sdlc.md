@@ -157,7 +157,7 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
         class D,G green;
     ```
 
-### Excersise 3 (10 min)
+### Exercise 3 (10 min)
 
 - Produce a Feature list on the format
     - For features: `<action>` the `<result>` `<by|for|of|to> a(n) <object>`
@@ -274,4 +274,4 @@ A tool for rapid development is the so called Pair Programming where two develop
 - `[Jones et al., 2001]` Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
 - `[Rumbaugh, 1991]` Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
-- `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre, Eric Java Modeling Color with Uml: Enterprise Components and Process with Cdrom, Prentice Hall PTR, 1999
+- `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre, Eric Java Modeling Color with Uml: Enterprise Components and Process with CD-ROM, Prentice Hall PTR, 1999
