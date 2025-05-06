@@ -108,16 +108,29 @@ In VS Code
 
 ???+ admonition "In command line"
 
-```console
-git branch new-feature  # create branch, switch to it
-git add/commit                   # work, work, work, ..., and test
-git switch master          # once feature is ready, switch back to master
-(git checkout <branch>)     # Old commead for switching branch, but also going back in history to earlier commit
-git branch                   # make clear which branch you are in
-git merge new-feature        # merge work to present branch
-git branch -d new-feature    # remove branch
-```
+    ```console
+    git branch new-feature  # create branch, switch to it
+    git add/commit                   # work, work, work, ..., and test
+    git switch master          # once feature is ready, switch back to master
+    (git checkout <branch>)     # Old commead for switching branch, but also going back in history to earlier commit
+    git branch                   # make clear which branch you are in
+    git merge new-feature        # merge work to present branch
+    git branch -d new-feature    # remove branch
+    ```
 
+    !!! tip "git push doesn't work with new branch"
+
+        - you always have to pull before a push:
+
+        ```git
+        git pull #
+        ```
+    
+       - You may need to be more detailed:
+    
+        ```git
+        git push --set-upstream origin new-branch
+        ```
 ### Git graph
 
 - We can get an overview of graphs
@@ -235,21 +248,6 @@ git branch -d new-feature    # remove branch
     - Does changing a branch change the content of your local computer? Why?
     - Does deleting a branch create a new version? Why?
 
-
-!!! tip "git push doesn't work with new branch"
-
-    - you always have to pull before a push:
-
-    ```git
-    git pull #
-    ```
-
-    - You may need to be more detailed:
-
-    ```git
-    git push --set-upstream origin new-branch
-    ```
-
 ## Exercises
 
 !!! tip "Have VS code side-by-side with GitHub window"
@@ -299,7 +297,7 @@ gitGraph
     >   You may branch of from `main` or `develop` (if it exists).
     >   You may use the **web interface** (easiest!) or use the command line
 
-    ![github_create_branch_annotated](github_create_branch_annotated.png)
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
 
     Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     Done!
@@ -430,7 +428,7 @@ gitGraph
     >     - push your changes online.
 
     Push "Sync"
-
+    
     And your code may end up online.
 
     If that does not work, try pushing again, maybe multiple times, as many people
@@ -438,15 +436,18 @@ gitGraph
 
     > - On GitHub, verify that your changes on your branch can be found online
 
-    ![github_pushed_to_branch](github_pushed_to_branch.png)
+    ![github_pushed_to_branch](github_pushed_to_branch.png){width: 50%}
 
-    Make sure you look at the correct branch, as displayed at 1.
-    Then your commit message shows up at 2.
+    -	”Ignore pull request”
+
+    Make sure you look at the correct branch, as displayed by the "drop-down button".
+    Then your commit message shows up in the yellow section
+    -	”Ignore if a pull request shows up”
 
     > - On your local computer, switch to the main branch,
     >   as we'll delete the branch you are on now
 
-    Switch to the main branch, for example, `main`.
+    Switch to the _main_ branch.
 
     > - Delete your branch (i.e. the one with the unique name).
     >   You may use the web interface (easiest!) or use VS Cde
@@ -478,10 +479,6 @@ gitGraph
 ???- question "Need a video for command line?"
 
     See a video [here](https://youtu.be/Ewewytijw1g)
-
-
-
-
 
 ## Summary
 
