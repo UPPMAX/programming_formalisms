@@ -37,7 +37,7 @@ branches using GitHub
 
 ## Workflow of merge
 
-- Once a feature is ready, merge to 
+- Once a feature is ready, merge to "main" or "develop"
 
 ???+ admonition "Command line"
 
