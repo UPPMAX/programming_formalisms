@@ -12,7 +12,7 @@ tags:
     - How to work on parallel tracks (many developers, versions)?
     - How to fix mistakes?
 
-???- info "Learning outcomes of 'Branches'"
+!!! info "Learning outcomes of 'Branches'"
 
     - learners can
 
@@ -33,32 +33,19 @@ tags:
     - Exercise 20
     - Discussions 10 min
 
-!!! info "References"
-
-    - The [main git book](https://git-scm.com/book/en/v2)
-
-    - 'git best practices'
-
-        - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
-        - Tepavac, Igor, et al. "Version Control Systems, Tools and Best Practices: Case Git." CASE 27-Razvoj poslovnih i informatičkih sustava. 2015.
-
 ???- admonition "Changes"
 
-    - implement new project??
-    - clear goal
-    - VS code
     - clearer guide
     - ask about level
     - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
     - more practical examples of git forking and branching and when it is appropriate to use them.
     - exercises
-        - pull request
         - practical things within exercise (not needing to scroll back and forth)
         - clearer instructions
         - advanced exercises
 
-    - Give more practical examples of git forking and branching and when it is appropriate to use them.
+    - Give more practical examples of git branching and when it is appropriate to use them.
     - Git branch couple to SDLC
 
 ## Branching and merging
@@ -86,13 +73,39 @@ version that contains all changes.
 
 !!! note "Three ways to name a branch"
 
-    - Issues
-    - Features
-    - Personal
+    - Issues: #45: Concrete examples
+    - Features: GUI module
+    - Personal: Björn
 
 ### Typical workflows
 
 One typical workflow:
+
+- create branch
+- switch to it
+- work, work, work, ..., and test
+- add and commit
+- once feature is ready, switch back to main
+- make clear which branch you are in
+- merge new-feature to present branch
+- remove branch
+
+In VS Code
+
+- Here is where you handle branches
+
+[!branches in VS Code](../img/branch_section_VSC.png)
+
+- Click and you have the possibility to
+    - create a new branch
+
+    [!create branch in VS Code](../img/create_branch_VSC.png)
+
+    - and switch between existing branches
+  
+    [!switch branch in VS Code](../img/switch_branch_VSC.png)
+
+???- admonition "In command line"
 
 ```console
 git branch new-feature  # create branch, switch to it
@@ -103,15 +116,16 @@ git merge new-feature        # merge work to present branch
 git branch -d new-feature    # remove branch
 ```
 
-!!! note "See also"
+### Git graph
 
-    [More about branches](https://coderefinery.github.io/git-intro/branches/)
 
-!!! tip "Graph alias"
+
+
+???- tip "Graph alias in command line"
 
     **An important alias**
 
-    - We will now define an _alias_ in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
+    - We can define an _alias_ in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
 
     ```console
     git config --global alias.graph "log --all --graph --decorate --oneline"
@@ -119,38 +133,37 @@ git branch -d new-feature    # remove branch
 
     This will enable you to use ``git graph`` for short
 
-    - It will now give you something like this:
+    !!! example
+    
+        ```git
 
+        $ git graph
+        * 000b440 (HEAD -> main) rm print
+        | * 4d4acaf (modularity) 4 modular files
+        |/
+        | * 2d4e252 (jupiter) add jupiter
+        |/
+        * b9465e4 (origin/main) planet.py documentation
+        * 6a416b5 add folders and planet code
 
-    ```git
+        ```
 
-    $ git graph
-    * 000b440 (HEAD -> main) rm print
-    | * 4d4acaf (modularity) 4 modular files
-    |/
-    | * 2d4e252 (jupiter) add jupiter
-    |/
-    * b9465e4 (origin/main) planet.py documentation
-    * 6a416b5 add folders and planet code
+        ```mermaid
+        gitGraph
 
-    ```
+        commit id: "add folders and planet code"
+        commit id: "add planet.py documentation"
+        branch jupiter
+        checkout jupiter
+        commit id: "add jupiter"
+        checkout main
+        branch modular
+        checkout modular
+        commit id: "4 modular files"
+        checkout main
+        commit id: "rm print"
 
-    ```mermaid
-    gitGraph
-
-    commit id: "add folders and planet code"
-    commit id: "add planet.py documentation"
-    branch jupiter
-    checkout jupiter
-    commit id: "add jupiter"
-    checkout main
-    branch modular
-    checkout modular
-    commit id: "4 modular files"
-    checkout main
-    commit id: "rm print"
-
-    ```
+        ```
 
 !!! tip "Show unstaged/uncommitted modifications"
 
@@ -432,6 +445,11 @@ git merge
     - A repository can have one or multiple remotes (we will
     - Local branches often track remote branches.
     - A remote serves as a full backup of your work.
+
+!!! note "See also"
+
+    [More about branches](https://coderefinery.github.io/git-intro/branches/)
+
 
 ## Reference Git
 
