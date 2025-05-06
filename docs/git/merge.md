@@ -50,6 +50,8 @@ tags:
     - This is the **Branch** we want to **merge to**
 - You may want to double check that you are there.
 
+![commit_branch_GH](../img/commit_branch_GH.md)
+
 ???+ admonition "Command line"
 
     ```git
@@ -170,7 +172,7 @@ tags:
 
 !!! warning 
 
-   ´- In GitHub MERGE is called PULL REQUEST!
+    - In GitHub MERGE is called PULL REQUEST!
     - More in next session
   
 - Conflicts may show up like this:
@@ -211,16 +213,16 @@ tags:
 gitGraph
     commit id: "Stuff on main"
     branch develop
-    checkout develop
+    switch develop
     commit id: "Stuff on develop"
     branch anna
-    checkout anna
+    switch anna
     commit id: "Some work"
     commit id: "Branching version"
     branch bertil
-    checkout bertil
+    switch bertil
     commit id: "Modify my file"
-    checkout anna
+    switch anna
     merge bertil
     commit id: "Another commit"
     checkout develop
@@ -230,10 +232,19 @@ gitGraph
 - You work in a pair or trio
 - On **GitHub**, create a branch for person A, e.g. `anna` that branches off from `develop`
 - On **GitHub**, use the branch of person A and create a new commit.
+
+???- How should it look like?
+
+    ![commit_branch_GH](../img/commit_branch_GH.md)
+
 - On **GitHub**, create a branch for person B, e.g. `bertil` that branches off from `anna`
 - On **GitHub**, use the branch of person B and create a new commit.
-  Use the web interface or command-line.
 - On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
+
+???- How should it look like?
+
+    ![new_branch_commit_GH](../img/new_branch_commit_GH.md)
+
   The person that does this requests a reviewer.
 - On GitHub, the other person approves the Pull Request and merges
 - On GitHub, use web interface to create a Pull Request from `anna` to `develop`.
@@ -242,18 +253,23 @@ gitGraph
   or fix the merge conflict
 - On GitHub, the other person approves the Pull Request and merges
 
- 
 ### (Extra) exercise 2: Practice merging git branches locally
 
-To merge in VS code
+Continue with the branch you created in last session.
+In **VS CODE**
+
+- Pull/Sync!
+- You may branch off from `main` or `develop` (if it exists).
+- Go the the branch you created
+- Merge with the branch you branched off from, ``develop`` or ``main``
 
 ![merge_VSC](../img/merge_VSC.png)
 
-!!! note "Moved exercises"
+- Then delete (from same drop-down menu as for merge)
 
-    - We have already tested a conflict the first day
+### Merging in GitHub: We'll make a similar exercise in the next session instead
 
-### Merging in GitHub is called Pull Request and we'll make a similar exercise in the next session instead
+new_branch_commit_GH
 
 !!! admonition "Parts to be covered!"
 
@@ -294,4 +310,4 @@ To merge in VS code
 
 - [Main git book](https://git-scm.com/book/en/v2)
 - [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf)
-- Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
+- Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." [Beginning Git and GitHub](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/): A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
