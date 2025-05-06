@@ -314,69 +314,6 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 
 ## Exercises
 
-### Exercise 1: Practice merge conflicts between branches using GitHub
-
-Do the same step in
-
-**FIX** Make a GH version
-
-!!!- info "Learning outcomes"
-
-    - experience merge conflicts between branches
-    - fix merge conflicts between branches
-
- ```mermaid
-gitGraph
-    commit id: "Before start"
-    commit id: "Branching version"
-    branch anna
-    checkout anna
-    commit id: "Modify the file"
-    checkout main
-    checkout main
-    commit id: "Modify the file too"
-    checkout main
-    merge anna
-    commit id: "End"
-```
-
-> An example picture of how to create a merge conflict.
-
-- Create a merge conflict between two branches, e.g. a topic branch
-  and the main branch.
-- You can do so by following the structure from the figure above
-  shows the minimal git branching history to do so.
-- You can try to do all steps on in **GitHub**.
-
-???- info "Answers"
-
-    - modify the README file in learners/<your name>, e.g. add the line `Anna was here`
-      at the bottom
-    - commit with good message, but Create a new branch (instead of "commit directly to main")
-
-    ![new_branch_commit_GH](../img/new_branch_commit_GH)
-
-    - **Do not merge** branches yet, else there will be no merge conflicts!
-        - So ignore this step and go instead back to "Code" in the menu.
-
-    ![new_branch_commit_GH](../img/new_branch_commit_GH)
-    
-    - **change back to main** branch by the "branch button"
-    - Modify the same file, e.g. add the line `main person was here`.
-    - Commit with message "main person was here"`
-    - To generate the merge conflict, merge your branch into `main`, using `git merge main`.
-      You will get a clear error :-)
-    - Modify the file to have the texts merged.
-      Then do `git add .`, `git commit -m "Fixed merge conflict"` and `git push`.
-
-    ```git
-    git add     # add files or stage file(s)
-    git commit  # commit staged file(s)
-    git switch -b wild-idea    # create branch, switch to it, work, work, work ...
-    git switch main          # realize it was a bad idea, back to main/master
-    git branch -D wild-idea      # it is gone, off to a new idea
-    git merge
-    ```
 
 ### Extra exercise 2: practice code review
 
@@ -394,10 +331,6 @@ Now do the same for team member B.
 ???- question "Enjoy a video?"
 
     You can find a video [here](https://youtu.be/UXSKm_RvcLw)
-
-## Links
-
-- [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 ## Goals
 
@@ -427,6 +360,8 @@ Now do the same for team member B.
         - &#9744; documentation for users
 
 ## Reference Git
+
+- [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 - [Main git book](https://git-scm.com/book/en/v2)
 - [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf)
