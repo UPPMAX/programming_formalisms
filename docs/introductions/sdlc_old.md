@@ -102,10 +102,57 @@ graph TD;
     class C,E,F,I orange;
     class D,G green;
 ```
-## Design
 
-Once we know what we want (Requirements and risks)we can start thinking on how.
+!!! info "Sneak peak at roles"
 
+    - Project Manager
+    - Requirements Engineer : A requirements engineer is responsible for
+      gathering and formalising requirements and establishing and
+      maintaining the requirements document
+    - Lead programmer
+
+## Exercises
+
+Further requirements analysis, risk assessment.
+Each group will work with about 7 requirements in the requirements document,
+that can be found [here](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md).
+Each group will Make a copy of the document and work with it in their folder.
+They will label it `Requirements_BR_x.md`,
+so that the requirements engineer can collate the documents
+
+For the fall 2024:
+
+- Breakout room 1
+    - R1.1 - R1.5
+- Breakout room 2
+    - R1.6 - R1.8.1
+- Breakout room 3
+    - R1.9 -R2
+- Breakout room 4
+    -R2.1-R5
+- Breakout room 5
+    - R6-R11
+
+???+ note "Exercise 30 min"
+
+    For each requirement type(business or technical risk),
+    asses the major risk associated with the requirement.
+    It should be specified in one sentence.
+    Asses the probability that the specified risk will happen during a run,
+    on a scale of 1-5
+    (where 1 is a rare occurrence and 5 happens every time you run).
+    And do the same for severities (where S1 is a minor inconvenience to
+    the stakeholder or the software, and S5 means a major injury or damage to
+    stakeholder or catastrophic failure of the software).
+    Then multiply P and S and set that as the risk value.
+
+!!! info "Task for the Requirements engineer"
+
+     Collate the document into one document
+
+### Design
+
+Once we know what we want we can start thinking on how.
 in the design phase we commonly use Modeling Languages to illustrate concepts and architecture together with
 pseudo code to describe algorithms in much the
 same way as we use programming languages
@@ -115,7 +162,7 @@ language [UML web page](https://www.uml.org/)
 here is a [introduction to the language by Ed Seidewitz](https://www.youtube.com/watch?v=vAHHdnIV8rU)
 UML was generated to unify the big popular object oriented modeling approaches of Booch (Booch Method superseded by the UML), Rumbaugh `[Rumbaugh 1991]`och Jacobsen.`[Ivar Jacobson 1992]`
 
-
+When we design Object oriented our goal is to mimic the object of the real world which we the abstract into Classes
 
 ### Development
 
@@ -210,4 +257,3 @@ A tool for rapid development is the so called Pair Programming where two develop
 - `[Jones et al., 2001]` Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
 - `[Rumbaugh, 1991]` Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
-- `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre, Eric Java Modeling Color with Uml: Enterprise Components and Process with Cdrom, Prentice Hall PTR, 1999

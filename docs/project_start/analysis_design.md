@@ -243,5 +243,5 @@ which calculate the risk in Probability of occurrence x severity of risk **RISK=
 
 ???- info "Turning Requirements and Risk matrix into actionable Feature list"
 
-    Using the Requirements and risk matrix we can design a feature list which can be tracked using issues or project tab in Git or in a separate document. The feature list describes how to solve a requirement in plaintext english and with flowcharts This initiates a design phase in teh development
+    Using the Requirements and risk matrix we can design a feature list which can be tracked using issues or project tab in Git or in a separate document. The feature list describes how to solve a requirement in plaintext english and with flowcharts This initiates a design phase in the development
 
