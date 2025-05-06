@@ -120,12 +120,17 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
 *"A feature is a client-valued function that can be implemented in two weeks or less."* Using this we can break down our Requirements into actions that can be implemented.
 
 ## EXCERSIE
+
 ### Excersie 1
+
     Collate the requirements list Group work in plenary.
+
 ### Excersie 2
+
     Practice Mermaid by taking one requirement practice describing the overall solution using a flowchart in UML
 
 ### Excersise 3
+
     Produce a Feature list on the format
     - For features: <action> the <result> <by|for|of|to> a(n) <object>
     - For feature sets: <action><-ing> a(n) <object>
@@ -225,7 +230,9 @@ A problem is solved is not specifically defined, but instead focuses on what nee
 A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator"
 
 ## Further reading materials produced for this course
+
     [A short introductory text to SDLC and modeling]()
+
 ## References
 
 - `[Church, 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941
