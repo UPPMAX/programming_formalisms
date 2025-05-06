@@ -16,12 +16,6 @@ tags:
 
     - have an overview of motivations, benefits, but also risks of sharing and reusing code.
 
-!!! note "The Turing Way"
-
-    - The Turing Way is an open science, open collaboration, and community-driven project.
-    - We involve and support a diverse community of contributors to make data science accessible, comprehensible and effective for everyone.
-    - Our goal is to provide all the information that researchers, data scientists, software engineers, policymakers, and other practitioners in academia, industry, government and the public sector need to ensure that the projects they work on are easy to reproduce and reuse.
-    - [The Turing Way Handbook](https://book.the-turing-way.org/index.html)
 
 - The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
 - **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
@@ -44,17 +38,10 @@ tags:
     - **R**eusable
         - Is there a license allowing others to re-use?
 
-!!! info "See also"
 
-    - We will talk about this the last day!
+## Discussion in groups
 
-## Licensing
-
-!!! info "See also"
-
-    - We will talk about this the last day!
-
-## Question 1: Why would I want to share my scripts/code/data?
+### Question 1: Why would I want to share my scripts/code/data?
 
 - A: Easier to find and reproduce (scientific reproducibility)
 - B: More trustworthy: others can verify correctness and find and report bugs
@@ -73,7 +60,7 @@ tags:
 - K: It encourages me to code properly from the start
 
 
-## Question 2: The most concerning thing for me, If I share my software now
+### Question 2: The most concerning thing for me, If I share my software now
 
 - A: It will be scooped (stolen) by someone else
 - B: It will expose my "ugly code"
@@ -85,10 +72,12 @@ tags:
 - H: It is too early, I am just prototyping, I will write version to distribute later
 - I: Worried about licensing and legal matters, as they are very complicated
 
-## Question 3: Why is software often treated differently from papers?
+### Question 3: Why is software often treated differently from papers?
 
 
-## Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?
+### Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?
+
+
 
 ## Comparing sharing papers and sharing code
 
@@ -114,25 +103,25 @@ Sharing code:
 
 ## Journal policies as motivation for sharing
 
-From [Science editorial policy](https://www.sciencemag.org/authors/science-journals-editorial-policies):
+??? info "From [Science editorial policy](https://www.sciencemag.org/authors/science-journals-editorial-policies)"
 
-> "We require that **all computer code used for modeling and/or data analysis**
-> that is not commercially available be deposited in a **publicly accessible repository**
-> upon publication. In rare exceptional cases where security
-> concerns or competing commercial interests pose a conflict, code-sharing
-> arrangements that still facilitate reproduction of the work should be
-> discussed with your Editor no later than the revision stage."
+    > "We require that **all computer code used for modeling and/or data analysis**
+    > that is not commercially available be deposited in a **publicly accessible repository**
+    > upon publication. In rare exceptional cases where security
+    > concerns or competing commercial interests pose a conflict, code-sharing
+    > arrangements that still facilitate reproduction of the work should be
+    > discussed with your Editor no later than the revision stage."
 
-From [Nature editorial policy](https://www.nature.com/authors/policies/availability.html):
+???- info "From [Nature editorial policy](https://www.nature.com/authors/policies/availability.html)"
 
-> "An inherent principle of publication is that others should be able to
-> replicate and build upon the authors' published claims. A condition of
-> publication in a Nature Research journal is that authors are required to make
-> **materials, data, code, and associated protocols promptly available** to readers
-> without undue qualifications. Any restrictions on the availability of
-> materials or information must be disclosed to the editors at the time of
-> submission. Any restrictions must also be disclosed in the submitted
-> manuscript."
+    > "An inherent principle of publication is that others should be able to
+    > replicate and build upon the authors' published claims. A condition of
+    > publication in a Nature Research journal is that authors are required to make
+    > **materials, data, code, and associated protocols promptly available** to readers
+    > without undue qualifications. Any restrictions on the availability of
+    > materials or information must be disclosed to the editors at the time of
+    > submission. Any restrictions must also be disclosed in the submitted
+    > manuscript."
 
 However [a study](https://www.pnas.org/content/115/11/2584) showed that despite
 these policies, many people still do not share their code 😞. This paper
@@ -141,11 +130,6 @@ includes samples of charming author responses such as:
 > "When you approach a PI for the source codes and raw data, you better explain
 > who you are, whom you work for, why you need the data and what you are going
 > to do with it."
-
-## Benefits of sharing software
-
-We revisit answers to question 1 (above).
-
 
 ## Motivation for open source software
 
@@ -176,7 +160,6 @@ We revisit answers to question 1 (above).
   > Open source does not mean everybody can change **your version**.
 - **"Bad" derivative projects may appear**
   > It will be clear which is the official version.
-
 
 ## Code reusability
 
@@ -237,8 +220,16 @@ reusability:
 - Whether you can share your output depends on how you obtained your input.
 - A repository that is private today might become public one day.
 - Sometimes "OTHERS" are you yourself in the future in a different group/job.
-- **Software licenses** matter. And this is what we will discuss in the next episode.
+- **Software licenses** matter. And this is what we will discuss the last day.
 
 ## Sharing data
 
 <https://coderefinery.github.io/social-coding/sharing-data/>
+
+!!! note "The Turing Way"
+
+    - The Turing Way is an open science, open collaboration, and community-driven project.
+    - We involve and support a diverse community of contributors to make data science accessible, comprehensible and effective for everyone.
+    - Our goal is to provide all the information that researchers, data scientists, software engineers, policymakers, and other practitioners in academia, industry, government and the public sector need to ensure that the projects they work on are easy to reproduce and reuse.
+    - [The Turing Way Handbook](https://book.the-turing-way.org/index.html)
+
