@@ -358,9 +358,8 @@ gitGraph
 !!! Keypoints
 
     - A branch is a division unit of work, to be merged with main sometime
-    - Local branches often track remote branches.
-    - You can delet a branch safely after a 
-
+    - Both git locally and GitHub can be used
+    - You can delete a branch safely after merging
 
 !!! note "See also"
 
