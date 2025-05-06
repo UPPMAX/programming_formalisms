@@ -369,6 +369,95 @@ def read_file(filename):
     On the other hand, asserting liberally is a good habit, so doing
     it is fine.
 
+### Exercise 4: making assumptions explicit
+
+- Below is a function that reads a **non-empty** file and returns its contents.
+  How to use it?
+
+```python
+def read_non_empty_file(filename):
+    import os
+    assert os.path.isfile(filename)
+    assert os.access(filename, os.R_OK)
+    file = open(filename, "r")
+    content = file.read()
+    file.close()
+    return content
+```
+
+???- question "Answer"
+
+    Here is how to use this function:
+
+    ```python
+    read_non_empty_file("my_file.txt")
+    ```
+
+    The function will give an error is the file cannot be
+    found at the path.
+
+- Add the missing assumptions this function makes, either
+  as comments or as Python code
+
+???- question "Answer with comments"
+
+    ```python
+    def read_non_empty_file(filename):
+        import os
+        assert os.path.isfile(filename)
+        assert os.access(filename, os.R_OK)
+        file = open(filename, "r")
+        content = file.read()
+        # The content is at least one line
+        file.close()
+        return content
+    ```
+
+???- question "Answer with code"
+
+    ```python
+    def read_non_empty_file(filename):
+        import os
+        assert os.path.isfile(filename)
+        assert os.access(filename, os.R_OK)
+        file = open(filename, "r")
+        content = file.read()
+        assert len(content) > 0
+        file.close()
+        return content
+    ```
+
+- Compare the behavior of the functions without and with the added
+  `assert` statements.
+  Did we do a better job by adding `assert`s? If yes: how? If no: why not?
+
+???- question "Answer"
+
+    Yes, the `assert` does a good job here:
+    it guarantees that `read_non_empty_file`
+    indeed returns something.
+
+    However, it does so only **in debug mode**.
+
+    Sometimes, this is good enough, even in release mode:
+    the new `assert` can be seen as a stub.
+    
+    For a function `read_non_empty_file` that does exactly what it says
+    it does, raise an exception instead:
+
+    ```python
+    def read_non_empty_file(filename):
+        import os
+        assert os.path.isfile(filename)
+        assert os.access(filename, os.R_OK)
+        file = open(filename, "r")
+        content = file.read()
+        if len(content) == 0:
+            raise ValueError("File has no content")
+        file.close()
+        return content
+    ```
+
 ## References
 
 - `[CppCore F.2]` C++ Core Guidelines.
