@@ -50,7 +50,7 @@ tags:
     - This is the **Branch** we want to **merge to**
 - You may want to double check that you are there.
 
-![commit_branch_GH](../img/commit_branch_GH.md)
+![commit_branch_GH](../img/commit_branch_GH.png)
 
 ???+ admonition "Command line"
 
@@ -234,7 +234,7 @@ gitGraph
 
 ???- How should it look like?
 
-    ![commit_branch_GH](../img/commit_branch_GH.md)
+    ![commit_branch_GH](../img/commit_branch_GH.png)
 
 - On **GitHub**, create a branch for person B, e.g. `bertil` that branches off from `anna`
 - On **GitHub**, use the branch of person B and create a new commit.
@@ -242,7 +242,7 @@ gitGraph
 
 ???- How should it look like?
 
-    ![new_branch_commit_GH](../img/new_branch_commit_GH.md)
+    ![new_branch_commit_GH](../img/new_branch_commit_GH.png)
 
   The person that does this requests a reviewer.
 
@@ -271,7 +271,66 @@ In **VS CODE**
 
 ### Merging in GitHub: We'll make a similar exercise in the next session instead
 
-new_branch_commit_GH
+### Exercise 3: Practice merge conflicts between branches using GitHub
+
+This can be done alone!
+
+!!!- info "Learning outcomes"
+
+    - experience merge conflicts between branches
+    - fix merge conflicts between branches
+
+ ```mermaid
+gitGraph
+    commit id: "Before start"
+    commit id: "Branching version"
+    branch anna
+    switch anna
+    commit id: "Modify the file"
+    switch main
+    switch main
+    commit id: "Modify the file too"
+    switch main
+    merge anna
+    commit id: "End"
+```
+
+> An example picture of how to create a merge conflict.
+
+- Create a merge conflict between two branches, e.g. a topic branch
+  and the main branch.
+- You can do so by following the structure from the figure above
+  shows the minimal git branching history to do so.
+
+???- info "Answers which you may use directly if you want to"
+
+    - create a branch with your name and go there
+    - modify the README file in learners/<your name>, e.g. add the line `Anna was here`
+      at the bottom
+    - commit with good message, it says "commit directly to <you name>")
+
+    ![commit_branch_GH](../img/commit_branch_GH.png)
+
+    - **change back to main** branch by the "branch button"
+    - Modify the same file, e.g. add the line `main person was here`.
+    - Commit with message "main person was here"`
+    - To generate the merge conflict, Click Code in the upper menu
+    
+    ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
+
+     You will get a clear error :-)
+
+    - Modify the file to have the texts merged.
+
+    ![merge_pull_request_GH](../img/merge_pull_request_GH.png)
+
+    - Don't forget to Approve!
+    
+    ![PR_success_GH](../img/PR_success_GH.png)
+
+    - You may delete the old branch from here if you want!
+
+## Summary
 
 !!! admonition "Parts to be covered!"
 
@@ -300,7 +359,8 @@ new_branch_commit_GH
 
     - A branch is a division unit of work, to be merged with main sometime
     - Local branches often track remote branches.
-    - A remote serves as a full backup of your work.
+    - You can delet a branch safely after a 
+
 
 !!! note "See also"
 
