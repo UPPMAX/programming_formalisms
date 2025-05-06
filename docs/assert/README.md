@@ -44,7 +44,7 @@ tags:
 
     From [merriam-webster](https://www.merriam-webster.com/dictionary/assert):
 
-    - `1a`: **to state or declare positively and often forcefully 
+    - `1a`: **to state or declare positively and often forcefully
       **or aggressively
 
     > The suspect continued to assert his innocence.
@@ -52,7 +52,7 @@ tags:
     - `1b`: to compel or demand acceptance or recognition of
       (something, such as one's authority)
 
-    > the confrontations that inevitably occur [between orangutans] 
+    > the confrontations that inevitably occur [between orangutans]
     > when several males try to assert dominance
 
     - `2a`: to demonstrate the existence of
