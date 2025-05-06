@@ -140,11 +140,12 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
     That addresses the requirements.
 
 ???- Example feature list
-    <Calculate> the <mean temperature> for <a specified year>
-    <Display> the <graph of mean year temperature> for <the weather station>
-    <Displaying> a <Userinterface>
-        <User interface>
-            <Graph area>, <Statistics area>, <year input>, <data file input>, <Meta data output fields>
+
+    Feature: <Calculate> the <mean temperature> for <a specified year>
+    Feature: <Display> the <graph of mean year temperature> for <the weather station>
+    Feature set: <Displaying> a <Userinterface>
+        set: <User interface>
+              object: <Graph area>, <Statistics area>, <year input>, <data file input>, <Meta data output fields>
 
 ## Development
 
