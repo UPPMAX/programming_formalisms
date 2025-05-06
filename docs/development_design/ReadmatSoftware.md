@@ -280,7 +280,7 @@ releaseSoftware --> performLessonsLearned
 What follows next is an emphasis diagram which describes where the focus of the work should be put in at which time of the project. It is common to have a signoff at the end of each phase before starting the next one.
 
    <!--<image src="./img/Unified_Process_Model_for_Iterative_Development.png">-->
-   ![originally made Jakob Farian Krarup and released to the public domain under cc 0](./img/unified_Process_Model_for_Iterative_Development.png)
+   ![originally made Jakob Farian Krarup and released to the public domain under cc 0](./img/Unified_Process_Model_for_Iterative_Development.png)
    <span style="font-size:10px">Image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
 #### Inception (I1)
