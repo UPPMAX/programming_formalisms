@@ -170,7 +170,7 @@ tags:
 - Go to *Insights* in the top menu and then go to *Network* in side-bar
 - If we did this after the merging the branches do not show up.
 
-!!! warning 
+!!! warning
 
     - In GitHub MERGE is called PULL REQUEST!
     - More in next session
@@ -191,7 +191,6 @@ tags:
 
 
 ???- question "Test"
-
 
     - What does a merge do?
     - Do we need merging? When? Why?
@@ -246,11 +245,14 @@ gitGraph
     ![new_branch_commit_GH](../img/new_branch_commit_GH.md)
 
   The person that does this requests a reviewer.
+
 - On GitHub, the other person approves the Pull Request and merges
 - On GitHub, use web interface to create a Pull Request from `anna` to `develop`.
-  The person that does this requests a reviewer.
-  If there is a merge conflict, either stop (you've done the exercise, well done!)
+
+- The person that does this requests a reviewer.
+- If there is a merge conflict, either stop (you've done the exercise, well done!)
   or fix the merge conflict
+
 - On GitHub, the other person approves the Pull Request and merges
 
 ### (Extra) exercise 2: Practice merging git branches locally
