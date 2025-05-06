@@ -314,9 +314,9 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 
 ## Exercises
 
-### Exercise 1: Practice merge conflicts between branches using GitHub.
+### Exercise 1: Practice merge conflicts between branches using GitHub
 
-Do the same step in 
+Do the same step in
 
 **FIX** Make a GH version
 
@@ -351,14 +351,14 @@ gitGraph
 ???- info "Answers"
 
     - modify the README file in learners/<your name>, e.g. add the line `Anna was here`
-      at the bottom 
+      at the bottom
     - commit with good message, but Create a new branch (instead of "commit directly to main")
 
     ![new_branch_commit_GH](../img/new_branch_commit_GH)
 
     - **Do not merge** branches yet, else there will be no merge conflicts!
         - So ignore this step and go instead back to "Code" in the menu.
-   
+
     ![new_branch_commit_GH](../img/new_branch_commit_GH)
     
     - **change back to main** branch by the "branch button"
