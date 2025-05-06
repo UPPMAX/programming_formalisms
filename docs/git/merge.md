@@ -257,6 +257,11 @@ gitGraph
 
 ### (Extra) exercise 2: Practice merging git branches locally
 
+!!! tip
+
+    - Do this individually
+    - But you can still help each-other!
+
 Continue with the branch you created in last session.
 In **VS CODE**
 
@@ -273,7 +278,10 @@ In **VS CODE**
 
 ### Exercise 3: Practice merge conflicts between branches using GitHub
 
-This can be done alone!
+!!! tip
+
+    - Do this individually
+    - But you can still help each-other!
 
 !!!- info "Learning outcomes"
 
