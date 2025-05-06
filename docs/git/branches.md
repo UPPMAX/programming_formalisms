@@ -260,14 +260,11 @@ gitGraph
     branch sven
     checkout sven
     commit id: "Modify my file"
-    commit id: "Delete branch" type: HIGHLIGHT
-    checkout main
-    commit id: "Another commit"
 ```
 
 - For our shared **GitHub repository**, create a branch with your first name that is
   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
-  You may branch of from `main` or `develop` (if it exists).
+  You may branch off from `main` or `develop` (if it exists).
   You may use the web interface (easiest!) or use VS Code
 
 
