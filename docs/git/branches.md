@@ -217,6 +217,8 @@ git branch -d new-feature    # remove branch
 
 ## Exercises
 
+!!! tip "Have VS code side-by-side with GitHub window"
+
 ### Exercise 1: create, switch and delete a `git` branch
 
 ???- info "Learning outcomes"
