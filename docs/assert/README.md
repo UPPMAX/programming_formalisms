@@ -29,30 +29,37 @@ tags:
 
     Prior:
 
+    - When is your code good enough?
+    - What are the biggest causes of errors?
+    - When have you checked your code good enough?
     - Somewhere in you code, you know something, e.g. `x` is positive,
       and the rest of the code needs that to be true to be able to function.
       Should, and if yes, how, this knowledge be written down?
     - What synonymn does 'to assert' have in English?
     - Have you ever used asserts? In R, the equivalent is `testthat::expect_`
 
-
-    Lesson plans:
-
-    ```mermaid
-    gantt
-      title Lesson plan pair programming 1
-      dateFormat X
-      axisFormat %s
-      Introduction : intro, 0, 5s
-      Theory 1: theory_1, after intro, 5s
-      Exercise 1: crit, exercise_1, after theory_1, 15s
-      Feedback 1: feedback_1, after exercise_1, 5s
-      Theory 2: theory_2, after feedback_1, 5s
-      Exercise 2: crit, exercise_2, after theory_2, 10s
-      Exercise 2 after the break: crit, after exercise_2, 5s
-    ```
-
 ![https://www.xkcd.com/379/](forgetting.png)
+
+!!! info "About the verb 'to assert'"
+
+    From [merriam-webster](https://www.merriam-webster.com/dictionary/assert):
+
+    - `1a`: **to state or declare positively and often forcefully 
+      **or aggressively
+
+    > The suspect continued to assert his innocence.
+
+    - `1b`: to compel or demand acceptance or recognition of
+      (something, such as one's authority)
+
+    > the confrontations that inevitably occur [between orangutans] 
+    > when several males try to assert dominance
+
+    - `2a`: to demonstrate the existence of
+
+    > He wished to vindicate himself in some way, to assert his manhood.
+    > —James Joyce
+
 
 ## Why use assertions
 
