@@ -9,10 +9,9 @@ tags:
 
 !!!- info "Learning outcomes"
 
+    - practice merging branches using VS code
+    - practice merging branches using GitHub
     - practice fixing merge conflicts on GitHub
-    - practice merging branches using the command-line interface
-    - practice fixing merge conflicts on local computer,
-      using the command-line interface
 
 ???- question "For teachers"
 
@@ -88,6 +87,8 @@ tags:
     * b9465e4 planet.py documentation
     * 6a416b5 add folders and planet code
     ```
+
+- Good practice: Delete branch when done. You won't need it any more!
 
 ## Merge conflicts
 
@@ -256,65 +257,50 @@ gitGraph
   
 ### (Extra) exercise 2: Practice merging git branches locally
 
-
 To merge in VS code 
 
-- Image here
-
-### (Extra) exercise 3: Practice merge conflicts between branches using GitHub.
-
-Do the same step in 
-
-**FIX** Make a GH version
-
-!!!- info "Learning outcomes"
-
-    - experience merge conflicts between branches
-    - fix merge conflicts between branches
-
- ```mermaid
-gitGraph
-    commit id: "Before start"
-    commit id: "Branching version"
-    branch anna
-    checkout anna
-    commit id: "Modify the file"
-    checkout main
-    checkout main
-    commit id: "Modify the file too"
-    checkout main
-    merge anna
-    commit id: "End"
-```
-
-> An example picture of how to create a merge conflict.
-
-- Create a merge conflict between two branches, e.g. a topic branch
-  and the main branch.
-- You can do so by following the structure from the figure above
-  shows the minimal git branching history to do so.
-- You can try to do all steps on in **GitHub**.
-
-- Tip: Fig: new_branch_commit_VSC
-
-???- info "Answers"
-
-    - modify the README file in learners/<your name>, e.g. add the line `Anna was here`
-      at the bottom 
-    - commit with good message, but Create a new branch (instead of "commit directly to main")
-    - Ignore the next step and go instead back to "Code" in the menu.
-    - **Do not merge** branches yet, else there will be no merge conflicts!
-    - **change back to main** branch by the "branch button"
-    - Modify the same file, e.g. add the line `main person was here`.
-    - Commit with message "main person was here"`
-    - To generate the merge conflict, merge your branch into `main`, using `git merge main`.
-      You will get a clear error :-)
-    - Modify the file to have the texts merged.
-      Then do `git add .`, `git commit -m "Fixed merge conflict"` and `git push`.
-
-## Summary
+![merge_VSC](../img/merge_VSC.png)
 
 
+!!! note "Moved exercises"
+
+   -  We have already tested a conflict the first day
+
+### Merging in GitHub is called Pull Request and we'll make a similar exercise in the next session instead.
+
+!!! admonition "Parts to be covered!"
+
+    - &#9745; Source/version control
+        - Git
+        - We have a starting point!
+        - GitHub as remote backup
+        - branches
+    - &#9745; Planning
+        - &#9745; Analysis
+        - &#9744; Design
+    - &#9745; Testing
+        - Different levels
+    - &#974; Collaboration
+        - &#975; GitHub
+        - &#974; pull requests
+    - &#9744; Sharing
+        - &#9744; open science
+        - &#9744; citation
+        - &#9744; licensing
+    - &#9744; Documentation
+        - &#9745; in-code documentation
+        - &#9744; documentation for users
+
+!!! Keypoints
+
+    - A branch is a division unit of work, to be merged with main sometime
+    - Local branches often track remote branches.
+    - A remote serves as a full backup of your work.
+
+!!! note "See also"
+
+    [More about branching and merging](https://coderefinery.github.io/git-intro/branches/)
+    [More about conflict resolution](https://coderefinery.github.io/git-intro/conflicts/)
 
 
 ## Reference Git
