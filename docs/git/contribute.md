@@ -313,7 +313,8 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
     - Repositories that are forked or cloned **do not automatically synchronize themselves**.
 
 ## Exercises
-### (Extra) exercise 3: Practice merge conflicts between branches using GitHub.
+
+### Exercise 1: Practice merge conflicts between branches using GitHub.
 
 Do the same step in 
 
@@ -377,7 +378,7 @@ gitGraph
     git merge
     ```
 
-### Extra exercise 5: practice code review
+### Extra exercise 2: practice code review
 
 For team member A:
 
@@ -393,11 +394,6 @@ Now do the same for team member B.
 ???- question "Enjoy a video?"
 
     You can find a video [here](https://youtu.be/UXSKm_RvcLw)
-
-
-
-
-
 
 ## Links
 
@@ -434,4 +430,4 @@ Now do the same for team member B.
 
 - [Main git book](https://git-scm.com/book/en/v2)
 - [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf)
-- Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
+- Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." [Beginning Git and GitHub](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/): A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
