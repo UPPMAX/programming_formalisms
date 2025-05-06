@@ -242,7 +242,9 @@ A problem is solved is not specifically defined, but instead focuses on what nee
 A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator"
 
 ## Further reading materials produced for this course
+
     -[A short introductory text to SDLC and modeling](../development_design/ReadmatSoftware.md)
+
 ## References
 
 - `[Church, 1941]` The  Calculi of lambda-conversion, Princeton, Princeton University Press, Londos: Humphrey Milford Oxford University Press, 1941
