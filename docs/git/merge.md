@@ -180,7 +180,7 @@ tags:
 ### On GitHub
 
 - Let's view the branches on Github!
-- Go to _Insights_ in the top menu and then go to _Network_ in side-bar
+- Go to *Insights* in the top menu and then go to *Network* in side-bar
 - If we did this after the merging the branches do not show up.
 
 - Conflicts may show up like this:
@@ -257,16 +257,15 @@ gitGraph
   
 ### (Extra) exercise 2: Practice merging git branches locally
 
-To merge in VS code 
+To merge in VS code
 
 ![merge_VSC](../img/merge_VSC.png)
 
-
 !!! note "Moved exercises"
 
-   -  We have already tested a conflict the first day
+    - We have already tested a conflict the first day
 
-### Merging in GitHub is called Pull Request and we'll make a similar exercise in the next session instead.
+### Merging in GitHub is called Pull Request and we'll make a similar exercise in the next session instead
 
 !!! admonition "Parts to be covered!"
 
