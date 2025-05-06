@@ -32,21 +32,6 @@ tags:
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
-???- admonition "Changes"
-
-    - clear goal
-    - VS code
-    - clearer guide
-    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
-    - practical examples than just explain the concept.
-    - more practical examples of git forking and branching and when it is appropriate to use them.
-    - exercises
-        - pull request
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - advanced exercises
-
-
 ## Prior questions
 
 - What does a merge do?
@@ -183,6 +168,11 @@ tags:
 - Go to *Insights* in the top menu and then go to *Network* in side-bar
 - If we did this after the merging the branches do not show up.
 
+!!! warning 
+
+   ´- In GitHub MERGE is called PULL REQUEST!
+    - More in next session
+  
 - Conflicts may show up like this:
 
 ![conflict-edit-2](../img/contributing/conflict-edit-2.png)
@@ -238,11 +228,10 @@ gitGraph
 ```
 
 - You work in a pair or trio
-- On GitHub, create a branch for person A, e.g. `anna` that branches off from `develop`
-- On GitHub, use the branch of person A and create a new commit.
-  Use the web interface or command-line.
-- On GitHub, create a branch for person B, e.g. `bertil` that branches off from `anna`
-- On GitHub, use the branch of person B and create a new commit.
+- On **GitHub**, create a branch for person A, e.g. `anna` that branches off from `develop`
+- On **GitHub**, use the branch of person A and create a new commit.
+- On **GitHub**, create a branch for person B, e.g. `bertil` that branches off from `anna`
+- On **GitHub**, use the branch of person B and create a new commit.
   Use the web interface or command-line.
 - On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
   The person that does this requests a reviewer.
@@ -253,8 +242,7 @@ gitGraph
   or fix the merge conflict
 - On GitHub, the other person approves the Pull Request and merges
 
-    touch learners/richel/richel_is_on_richel.txt
-  
+ 
 ### (Extra) exercise 2: Practice merging git branches locally
 
 To merge in VS code
@@ -279,9 +267,9 @@ To merge in VS code
         - &#9744; Design
     - &#9745; Testing
         - Different levels
-    - &#974; Collaboration
-        - &#975; GitHub
-        - &#974; pull requests
+    - &#9744; Collaboration
+        - &#9745; GitHub
+        - &#9744; pull requests
     - &#9744; Sharing
         - &#9744; open science
         - &#9744; citation
