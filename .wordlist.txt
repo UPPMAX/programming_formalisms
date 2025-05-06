@@ -1703,3 +1703,8 @@ Tsitoara
 parallelizing
 FIXLINK
 snapshotted
+VSC
+concretize
+FDD
+Luca
+PTR
