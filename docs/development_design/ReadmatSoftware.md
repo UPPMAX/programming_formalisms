@@ -754,19 +754,24 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
     * Sequence diagram
      A sequence diagram is an interaction diagram. From the name, it is clear that the diagram deals with some sequences, which are the sequence of messages flowing from one object to another.
       Interaction among the components of a system is very important from implementation and execution perspective. Sequence diagram is used to visualize the sequence of calls in a system to perform a specific functionality.
+
     * Communication diagram or collaboration diagram
+
     It represents the structural organization of a system and the messages sent/received. Structural organization consists of objects and links.
     The purpose of collaboration diagram is similar to sequence diagram. However, the specific purpose of collaboration diagram is to visualize the organization of objects and their interaction.
     ![A MVC model describing a financial system from visual-paradigm-com](./img/Communication-Diagram-Financial-Analysis.webp)
     <!--<image src="./img/Communication-Diagram-Financial-Analysis.webp">--><span style="font-size:10px">
     [A MVC model describing a financial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
+
     * **Note** Plant UML can not do Communication diagram/collaboration diagrams
 
     * Interaction overview diagram
-     UML Interaction Overview Diagrams provide a high level of abstraction an interaction model. It is a variant of the Activity Diagram where the nodes are the interactions or interaction occurrences.
+    
+    UML Interaction Overview Diagrams provide a high level of abstraction an interaction model. It is a variant of the Activity Diagram where the nodes are the interactions or interaction occurrences.
 
     * Timing Diagram
-     Timing diagrams are UML interaction diagrams used to show interactions when a primary purpose of the diagram is to reason about time.
+    
+    Timing diagrams are UML interaction diagrams used to show interactions when a primary purpose of the diagram is to reason about time.
 
     ```plantuml
     @startuml
