@@ -19,7 +19,6 @@ tags:
         - explain and evaluate the usefulness of branches
         - create, switch and delete a `git` branch locally
 
-
 ???- note "Instructor notes"
 
     Prerequisites are:
@@ -131,13 +130,14 @@ In VS Code
 
 - GitHub
 
-[network_GH](../img/network_GH.png)
+    - ![network_GH](../img/network_GH.png)
 
-[Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
+    - [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
+    - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/network)
 
 - VS Code
 
-![git_graph_VSC](../img/git_graph_VSC.png)
+    - ![git_graph_VSC](../img/git_graph_VSC.png)
 
 
 ???- tip "Graph alias in command line"
@@ -460,7 +460,7 @@ gitGraph
 
     In VS Code
     
-    ![delete_branch](../img/delete_branch.png)
+    ![delete_branch](../img/delete_branch_VSC.png)
 
     ???- admonition "GitHub"
     
