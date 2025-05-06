@@ -487,9 +487,10 @@ This manifesto was first conceived at the Snowbird meeting in Utah in early 2001
 
 ### DevOps
 
-<image src="./img/Devops-toolchain.png">
+![The DevOps Loop includes both the traditional SDLC and the Organisational tasks of the release](./img/Devops-toolchain.png)
+<!--<image src="./img/Devops-toolchain.png">-->
    <span style="font-size:10px">The DevOps Loop includes both the traditional SDLC and the Organisational tasks of the release</span>
-From the [GitLab DevOps] Page(<https://about.gitlab.com/topics/devops/>)
+From the [GitLab DevOps](<https://about.gitlab.com/topics/devops/>) page
 
 DevOps can be best explained as people working together to conceive, build and deliver secure software at top speed. DevOps practices enable software developers (devs) and operations (ops) teams to accelerate delivery through automation, collaboration, fast feedback, and iterative improvement.
 
@@ -533,7 +534,7 @@ The point of designing with modular development is to enforce information hiding
 #### Additional material on Practical implementation of modular design
 
 The following is a reference to practical applied modular development and design of Agri software it has a good practice described.
-<br>Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
+[Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43.](https://www.sciencedirect.com/science/article/pii/S0308521X01000543)
 
 ### Object Orientation
 
@@ -581,11 +582,9 @@ mammal<|-d-dog:is a
 **The concept of Information Hiding** is about making sure that each time in the execution any part of the program only has the information it needs, the helps with establishing modularity and makes each part of the program atomic. This is something we want because it reduces the risk of side-effects and it allows for multiple developers to work on the project without risking to step on each others toes. Information hiding further lets you implement each parts without knowing how the internal data structure or algorithm implements the interface.
 This is accomplished through the use of *access qualifier* of the parameter/property or method. The levels of privacy are generally defined as:
 private, protected and public in increasing accessibility to the inheritance structure and other classes or objects. A private property is only accessible to the object itself, the protected are accessible to objects and classes in the same inheritance structure and public are accessible to any class or object in the software
-<br>
-<br>
+
 Additional material (From one of the Icons in OO):
-<br>
-Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
+*Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.*
 
 ## Paradigms of Programming
 
@@ -597,8 +596,8 @@ The concept of structural programming is from 1950s with the aim of improving cl
 
 Imperative programming is a software development paradigm where functions are implicitly coded in every step required to solve a problem. In imperative programming, every operation is coded and the code itself specifies how the problem is to be solved, which means that pre-coded models are not called on.
 
-Imperative programming requires an understanding of the functions necessary to solve a problem, rather than a reliance on models that are able to solve it. The focus of imperative programming is how the problem should be solved, which requires a detailed step-by-step guide. Because the written code performs the functions instead of models, the programmer must code each step.
-(<https://www.techtarget.com/whatis/definition/imperative-programming>)
+[Imperative programming](https://www.techtarget.com/whatis/definition/imperative-programming) requires an understanding of the functions necessary to solve a problem, rather than a reliance on models that are able to solve it. The focus of imperative programming is how the problem should be solved, which requires a detailed step-by-step guide. Because the written code performs the functions instead of models, the programmer must code each step.
+
 
 ### procedural programming
 
@@ -616,20 +615,23 @@ Programming languages like Haskell, LISP, IPL are languages that represent langu
 
 ### Declarative programming
 
-A problem is solved is not specifically defined, but instead focuses on what needs to be solved. Declarative programming provides a constant to check to ensure the problem is solved correctly, but does not provide instructions on how to solve the problem. The exact manner in which the problem is solved is defined by the programming language’s implementation through models. Declarative programming is also called model-based programming. Functional, domain-specific (DSL) and logical programming languages fit under declarative programming, such as SQL, HTML, XML and CSS.
-(<https://www.techtarget.com/whatis/definition/imperative-programming>)
+A problem is solved is not specifically defined, but instead focuses on what needs to be solved. [Declarative programming](https://www.techtarget.com/searchitoperations/definition/declarative-programming) provides a constant to check to ensure the problem is solved correctly, but does not provide instructions on how to solve the problem. The exact manner in which the problem is solved is defined by the programming language’s implementation through models. Declarative programming is also called model-based programming. Functional, domain-specific (DSL) and logical programming languages fit under declarative programming, such as SQL, HTML, XML and CSS.
+
 
 ## Tools
 
 ### UML
 
-The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software engineering). It is by that nature very good at describing the Rational Unified Process (RUP), see below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the UML standard is maintained by the omg standard development organisation <https://www.omg.org/spec/UML/2.5/PDF>)
+The Unified modelling language was first standardized in November 1997 as [UML-98]. It has its origin in Rumbaugh OMT and Jacobsens efforts with the OOSE (object oriented software engineering). It is by that nature very good at describing the Rational Unified Process (RUP), see below, created by Rumbaugh, Booch and Jacobsen in the late 90s. Today the [UML standard](https://www.omg.org/spec/UML/2.5/PDF) is maintained by the omg standard development organisation.
 A brief history of the development of UML and other modeling languages which primarily are for object-oriented modeling(observe that the UML standard also works well for describing other models using such things as activity diagrams and sequence diagram to describe algorithms or interactions between sections of your code.)
-<image src="./img/OO_Modeling_languages_history.jpg"><span style="font-size:10px"> Model language history from https://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
+![Model language history](./img/OO_Modeling_languages_history.jpg)<image src="./img/OO_Modeling_languages_history.jpg">
+<span style="font-size:10px"> Model language history from https://commons.wikimedia.org/wiki/File:OO_Modeling_languages_history.jpg</span>
 
-plantuml.org a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its cross-platform integration and its integration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use some sort of modeling software, a complete modeling software allows for at least forward engineering from models to code. There are of course great commercial versions but also some decent free ones.
-draw.io
-[Papyrus](https://eclipse.dev/papyrus/)
+[plantuml.com](https://plantuml.com/) a way of using UML graphs and charts in markdown, and to specify the relationship between objects using text/pseudo code. The reason we chose plantuml is for its cross-platform integration and its integration with github and markdown. There are many other software with more advanced features and that can be interacted through graphical user interfaces. The traditional method is to use some sort of modeling software, a complete modeling software allows for at least forward engineering from models to code. There are of course great commercial versions but also some decent free ones.
+[mermaid](https://mermaid.js.org/) same as above
+[draw.io](https://draw.io) Graphical tool for diagram drawing online
+[Papyrus](https://eclipse.dev/papyrus/) Eclipse Papyrus ™
+Modeling environment is a graphical modeling environment closely coupled to the Eclipse IDE
 
 [*Markdown Diagrams*](https://github.com/marcozaccari/markdown-diagrams-browser-extension) is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
 
@@ -691,9 +693,13 @@ stop
 ```
 
 Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organisation with 27 countries and more than 230 organisations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behavior. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
-**Diagrams**
-<image src="./img/Uml_hierarchie_des_diagrammes.png"><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
-*Structure Diagrams*
+
+#### Diagrams
+
+![The different diagram types.](./img/Uml_hierarchie_des_diagrammes.png)
+<!--<image src="./img/Uml_hierarchie_des_diagrammes.png">--><span style="font-size:10px"> The different diagram types. https://upload.wikimedia.org/wikipedia/commons/6/6f/Uml_hierarchie_des_diagrammes.png </span>
+
+##### Structure Diagrams
 
 * Class Diagram
 
@@ -726,7 +732,7 @@ Unified modeling language is defined and managed by the OMG(object management gr
 
 * **Note**  − If the above descriptions and usages are observed carefully then it is very clear that all the diagrams have some relationship with one another. Component diagrams are dependent upon the classes, interfaces, etc. which are part of class/object diagram. Again, the deployment diagram is dependent upon the components, which are used to make component diagrams.
 
-### Behavior Diagrams
+##### Behavior Diagrams
 
 * Activity Diagram
 Activity diagram describes the flow of control in a system. It consists of activities and links. The flow can be sequential, concurrent, or branched.
@@ -751,7 +757,9 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
     * Communication diagram or collaboration diagram
     It represents the structural organization of a system and the messages sent/received. Structural organization consists of objects and links.
     The purpose of collaboration diagram is similar to sequence diagram. However, the specific purpose of collaboration diagram is to visualize the organization of objects and their interaction.
-    <image src="./img/Communication-Diagram-Financial-Analysis.webp"><span style="font-size:10px"> [A MVC model describing a financial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
+    ![A MVC model describing a financial system from visual-paradigm-com](./img/Communication-Diagram-Financial-Analysis.webp)
+    <!--<image src="./img/Communication-Diagram-Financial-Analysis.webp">--><span style="font-size:10px">
+    [A MVC model describing a financial system from visual-paradigm-com](https://circle.visual-paradigm.com/financial-analysis/)</span>
     * **Note** Plant UML can not do Communication diagram/collaboration diagrams
 
     * Interaction overview diagram
