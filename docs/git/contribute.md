@@ -314,8 +314,7 @@ in this case **two remotes**: One remote refers to the **"central"** repository,
 
 ## Exercises
 
-
-### Extra exercise 2: practice code review
+### Extra exercise 1: Practice code review
 
 For team member A:
 
