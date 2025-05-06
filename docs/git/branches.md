@@ -45,7 +45,7 @@ tags:
 Software development is often not linear:
 
 - We typically need at least one version of the code to "work" (to compile, to give expected results, ...).
-    -  This is the **main** branch (former *master*)
+    - This is the **main** branch (former *master*)
 - At the same time we work on new features, often several features concurrently.
   Often they are unfinished.
 - We need to be able to separate different lines of work really well.
