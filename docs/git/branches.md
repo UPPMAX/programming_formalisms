@@ -94,16 +94,16 @@ In VS Code
 
 - Here is where you handle branches
 
-[!branches in VS Code](../img/branch_section_VSC.png)
+![branches in VS Code](../img/branch_section_VSC.png)
 
 - Click and you have the possibility to
     - create a new branch
 
-    [!create branch in VS Code](../img/create_branch_VSC.png)
+    ![create branch in VS Code](../img/create_branch_VSC.png)
 
     - and switch between existing branches
   
-    [!switch branch in VS Code](../img/switch_branch_VSC.png)
+    ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
 ???- admonition "In command line"
 
@@ -296,9 +296,9 @@ gitGraph
     On your **local computer**, navigate to the folder of the shared project
     and update:
 
-    [!branches in VS Code](../img/branch_section_VSC.png)
+    ![branches in VS Code](../img/branch_section_VSC.png)
 
-    [!switch branch in VS Code](../img/switch_branch_VSC.png)
+    ![switch branch in VS Code](../img/switch_branch_VSC.png)
   
     ???- admonition "command line"
     
