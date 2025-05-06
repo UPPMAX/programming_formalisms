@@ -131,6 +131,10 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
         - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
 ???- Example flow char of a requirement described as a User story or Use Case
+    from example [requirement specification](../project_start/analysis_design.md)
+    Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
+    ---------------|-------------------------|---------------------|------------
+    R1             | Visual Display          | The program must display a field with particles and a visual cue to runtime settings | - Verify that the program opens a graphical window or interface for displaying particles.
     ```mermaid
         graph TD;
             A(Initiation) -->|Unclear Requirements| B(Planning);
@@ -149,7 +153,7 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
             class A,B,H red;
             class C,E,F,I orange;
             class D,G green;
-        ```
+    ```
 
 ### Excersise 3 (10 min)
     Produce a Feature list on the format
