@@ -10,7 +10,8 @@ tags:
 !!!- info "Learning outcomes"
 
     - practice merging branches using VS code
-    - practice merging branches using GitHub
+    - practice merging/doing Pull Requests using the GitHub interface
+branches using GitHub
     - practice fixing merge conflicts on GitHub
 
 ???- question "For teachers"
@@ -32,25 +33,11 @@ tags:
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
-## Prior questions
-
-- What does a merge do?
-- Do we need merging? When? Why?
-- When does a merge give a merge conflict?
-- Can a `git commit` result in a merge conflict? Why?
-- Can a `git push` result in a merge conflict? Why?
-- Can a `git pull` result in a merge conflict? Why?
-
-
 ![Isolated tracks](../img/git-collaborative.svg)
 
 ## Workflow of merge
 
-- Once a feature is ready, switch to main!
-    - This is the **Branch** we want to **merge to**
-- You may want to double check that you are there.
-
-![commit_branch_GH](../img/commit_branch_GH.png)
+- Once a feature is ready, merge to 
 
 ???+ admonition "Command line"
 
@@ -199,7 +186,6 @@ tags:
     - Can a `git push` result in a merge conflict? Why?
     - Can a `git pull` result in a merge conflict? Why?
 
-
 ## Exercises
 
 ### Exercise 1: practice merging `git` branches using the GitHub interface
@@ -232,7 +218,7 @@ gitGraph
 - On **GitHub**, create a branch for person A, e.g. `anna` that branches off from `develop`
 - On **GitHub**, use the branch of person A and create a new commit.
 
-???- How should it look like?
+???- question "How should it look like?"
 
     ![commit_branch_GH](../img/commit_branch_GH.png)
 
@@ -240,7 +226,7 @@ gitGraph
 - On **GitHub**, use the branch of person B and create a new commit.
 - On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
 
-???- How should it look like?
+???- question "How should it look like?"
 
     ![new_branch_commit_GH](../img/new_branch_commit_GH.png)
 
@@ -288,7 +274,7 @@ In **VS CODE**
     - experience merge conflicts between branches
     - fix merge conflicts between branches
 
- ```mermaid
+```mermaid
 gitGraph
     commit id: "Before start"
     commit id: "Branching version"
@@ -326,8 +312,10 @@ gitGraph
     
     ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
 
-     You will get a clear error :-)
+    - Click the button!
 
+    You will be guided in solvinfg the conflict
+    
     - Modify the file to have the texts merged.
 
     ![merge_pull_request_GH](../img/merge_pull_request_GH.png)
