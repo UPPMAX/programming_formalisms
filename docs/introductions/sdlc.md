@@ -6,13 +6,14 @@ tags:
   - life cycle
 ---
 
+# Software Development Lifecycle
+
 !!! Info "learning goals"
+
     - We understand the general concept of the Software Development Lifecycle (SDLC)
     - We are introduced to what UML is and how it can help us.
     - We know what Feature driven development is and can use part of it.
     - We know what a feature is and how to use it to concretize a requirement.
-
-# Software Development Lifecycle
 
 !!! info "Overview of Software Development Lifecycle (SDLC)"
 
