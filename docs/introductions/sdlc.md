@@ -268,7 +268,7 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 ## Further reading materials produced for this course
 
-    -[A short introductory text to SDLC and modeling](../development_design/ReadmatSoftware.md)
+- [A short introductory text to SDLC and modeling](../development_design/ReadmatSoftware.md)
 
 ## References
 
