@@ -222,7 +222,7 @@ git branch -d new-feature    # remove branch
 
             ```
 
-## Test
+???- question "Test"
 
     - What is a branch?
     - What is the problem that branches alleviate?
@@ -279,7 +279,7 @@ gitGraph
   You may use the web interface (easiest!) or use VS Code
 
 
--** On your local computer:**
+- **On your local computer:**
     - update the repository (pull)
     - switch to the new branch
     - change the content of the repository, for example,
@@ -351,8 +351,7 @@ gitGraph
 
         And your code may end up online.
 
-       If that does not work, do:
-
+        If that does not work, do:
  
         ```git
         git pull
@@ -406,74 +405,35 @@ gitGraph
     >     - update the repository
 
     On your **local computer**, navigate to the folder of the shared project
-    and update:
+    and update: pull/sync
 
-    ![branches in VS Code](../img/branch_section_VSC.png)
-
-    ![switch branch in VS Code](../img/switch_branch_VSC.png)
+    ![pull_VSC](../img/pull_VSC.png)
   
-    ???- admonition "command line"
-    
-        ```git
-        git pull
-        ```
 
     > - On your local computer:
     >     - switch to the new branch
 
     Switch to the new branch, for example, `richel`, by doing:
 
-    ???- admonition "command line"
-
-        ```git
-        git switch richel
-        ```
+    ![branches in VS Code](../img/branch_section_VSC.png)
+    ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
     > - On your local computer:
     >     - change the content of the repository, for example,
     >       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
 
     This can be any change you'd like.
-    To create a file under Linux (and maybe this works on other
-    operating systems too), one can do:
 
-    ???- admonition "command line"
-
-        ```git
-        touch learners/richel/richel_is_on_richel.txt
-        ```
-
-    After the change, commit these:
-
-    ???- admonition "command line"
-
-        ```git
-        git add .
-        git commit -m "Richel is on richel"
-        ```
+    After the change, commit these ("+" and "commit")
 
     > - On your local computer:
     >     - push your changes online.
 
-    Do:
-
-    ???- admonition "command line"
-
-        ```git
-        git push
-        ```
+    Push "Sync"
 
     And your code may end up online.
 
-    If that does not work, do:
-
-    ???- admonition "command line"
-
-        ```git
-        git pull
-        ```
-
-    and try pushing again, maybe multiple times, as many people
+    If that does not work, try pushing again, maybe multiple times, as many people
     are pushing to the shared repo.
 
     > - On GitHub, verify that your changes on your branch can be found online
@@ -486,36 +446,36 @@ gitGraph
     > - On your local computer, switch to the main branch,
     >   as we'll delete the branch you are on now
 
-    Switch to the main branch, for example, `main`, by doing:
-
-    ```git
-    git switch main
-    ```
+    Switch to the main branch, for example, `main`.
 
     > - Delete your branch (i.e. the one with the unique name).
-    >   You may use the web interface (easiest!) or use the command line
+    >   You may use the web interface (easiest!) or use VS Cde
 
-    ![github_view_branches_annotated](github_view_branches_annotated.png)
+    **VS Code**
+    
+    ![delete_branch](../img/delete_branch.png)
 
-    Click on 'Branches', as shown in the image above.
+    ???- admonition "GitHub"
+    
+        ![github_view_branches_annotated](github_view_branches_annotated.png)
 
-    ![github_view_all_branches_annotated](github_view_all_branches_annotated.png)
+        Click on 'Branches', as shown in the image above.
 
-    Click on garbage bin, as shown in the image above.
+        ![github_view_all_branches_annotated](github_view_all_branches_annotated.png)
 
-    ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
+        Click on garbage bin, as shown in the image above.
 
-    The branch will now be deleted, as shown in the image above.
+        ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
+
+        The branch will now be deleted, as shown in the image above.
 
     > - On your local computer, update your code
 
-    Do:
+    Sync or Pull again!
 
-    ```git
-    git pull
-    ```
 
-???- question "Need a video?"
+
+???- question "Need a video for command line?"
 
     See a video [here](https://youtu.be/Ewewytijw1g)
 
