@@ -118,7 +118,15 @@ git branch -d new-feature    # remove branch
 
 ### Git graph
 
+- We can get an overview of graphs
 
+- GitHub
+
+   Link to last year
+
+- VS Code
+
+  - **Image here**
 
 
 ???- tip "Graph alias in command line"
@@ -251,29 +259,31 @@ gitGraph
     commit id: "Another commit"
 ```
 
-- For our shared GitHub repository, create a branch with your first name that is
+- For our shared **GitHub repository**, create a branch with your first name that is
   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
   You may branch of from `main` or `develop` (if it exists).
-  You may use the web interface (easiest!) or use the command line
-- On your local computer:
-    - update the repository
+  You may use the web interface (easiest!) or use VS Code
+
+
+-** On your local computer:**
+    - update the repository (pull)
     - switch to the new branch
     - change the content of the repository, for example,
       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
     - push your changes online.
-- On GitHub, verify that your changes on your branch can be found online
-- On your local computer, switch to the main branch,
+- On **GitHub**, verify that your changes on your branch can be found online
+- On your **local computer**, switch to the main branch,
   as we'll delete the branch you are on now
 - Delete your branch (i.e. the one with the unique name).
-  You may use the web interface (easiest!) or use the command line
-- On your local computer, update your code
+  You may use the web interface (easiest!) or use the VS Code
+- On your local computer, update your code (pull)
 
 ???- info "Answers"
 
     > - For our shared GitHub repository, create a branch with your first name that is
     >   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
     >   You may branch of from `main` or `develop` (if it exists).
-    >   You may use the web interface (easiest!) or use the command line
+    >   You may use the **web interface** (easiest!) or use the command line
 
     ![github_create_branch_annotated](github_create_branch_annotated.png)
 
@@ -283,12 +293,18 @@ gitGraph
     > - On your local computer:
     >     - update the repository
 
-    On your local computer, navigate to the folder of the shared project
+    On your **local computer**, navigate to the folder of the shared project
     and update:
 
-    ```git
-    git pull
-    ```
+    [!branches in VS Code](../img/branch_section_VSC.png)
+
+    [!switch branch in VS Code](../img/switch_branch_VSC.png)
+  
+    ???- admonition "command line"
+    
+        ```git
+        git pull
+        ```
 
     > - On your local computer:
     >     - switch to the new branch
@@ -380,6 +396,10 @@ gitGraph
 ???- question "Need a video?"
 
     See a video [here](https://youtu.be/Ewewytijw1g)
+
+
+
+
 
 ## Summary
 
