@@ -1,4 +1,4 @@
-# Welcome to the Programming Formalisms course!
+# Welcome to the Programming Formalisms course
 
 <br/>
 
