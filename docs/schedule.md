@@ -48,7 +48,7 @@ Friday   |09:00-10:00|Richel |[Runtime speed profiles](optimisation/runtime_spee
 Friday   |10:15-11:00|Richel |[Implement the project as a package](package/README.md)
 Friday   |11:15-13:30|Björn  |[Deployment](deployment/deploy.md)
 Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
-Friday   |15:15-15:40|Richel |[Wrap-up](misc/wrap_up.md)
+Friday   |15:15-15:40|Lars   |[Wrap-up](misc/wrap_up.md)
 Friday   |15:40-16:00|Lars   |Confidence and retrospect
 
 <!-- markdownlint-enable MD013 -->

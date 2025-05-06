@@ -74,6 +74,7 @@ tags:
 
 !!! attention
 
+    - Send your emails in the chat so that we can add you as "Collaborators" in the project!
     - Start VS Code
 
 ???- note "Did you set up git and GitHub?"
@@ -84,6 +85,7 @@ tags:
             - like: ``git config --global user.name "Mona Lisa"``
             - like: ``git config --global user.email "mona_lisa@gmail.com"``
     - We hope also that you have already done these steps [HERE](../misc/faq.md/#prerequisites)
+
 
 ## This lesson
 
@@ -235,7 +237,7 @@ Tracked files can be in three states.
         refactor login function for reuse | Changing login function by moving declarations to parameters | Code refactoring
         add new api for user program check| adding a new api for user program check | New user api
 
-        Source: [Git Best Practices (Chap 6 in Beginning Git](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/html/484631_2_En_6_Chapter.xhtml) 
+        Source: [Git Best Practices (Chap 6 in Beginning Git)](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/html/484631_2_En_6_Chapter.xhtml)
         
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 

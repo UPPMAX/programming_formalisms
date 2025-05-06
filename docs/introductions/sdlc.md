@@ -6,13 +6,14 @@ tags:
   - life cycle
 ---
 
+# Software Development Lifecycle
+
 !!! Info "learning goals"
+
     - We understand the general concept of the Software Development Lifecycle (SDLC)
     - We are introduced to what UML is and how it can help us.
     - We know what Feature driven development is and can use part of it.
     - We know what a feature is and how to use it to concretize a requirement.
-
-# Software Development Lifecycle
 
 !!! info "Overview of Software Development Lifecycle (SDLC)"
 
@@ -157,7 +158,7 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
         class D,G green;
     ```
 
-### Excersise 3 (10 min)
+### Exercise 3 (10 min)
 
 - Produce a Feature list on the format
     - For features: `<action>` the `<result>` `<by|for|of|to> a(n) <object>`
@@ -192,9 +193,9 @@ Updates and revisions bug testing etc. Maintaining persistent links and download
 
 Often does not happen but the software is gradually left to die, esp for scientific software where a retirement plan is seldom established esp if the software is developed by a PhD student or post-doc or other short term person part of the research group.
 
-# Paradigms of Design
+## Paradigms of Design
 
-## Modular development/programming
+### Modular development/programming
 
 A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the concept of modules in a language that have support for objects but not for modules.
 The principles of modular programming was introduced in the 1960s by Larry LeRoy Constantine with the proposal of adding modules to ALGOL68 to ALGOL68-R being the concrete application of the modular development paradigm.
@@ -210,7 +211,7 @@ There are two types of module, *program control modules* which are purposely and
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangeability over the design space.
 `[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software (agricultural sector) it has a good practice described.
 
-## Object Orientation
+### Object Orientation
 
 Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declarative programming which focuses on how you code. One can use any number of programming paradigms to implement the object-oriented design.
 
@@ -223,41 +224,41 @@ Objects also carry any association to other objects in their states. These relat
 A dynamic object relationship on the other hand implies two or more objects that actually communicate with each other
 `[Stroustrup B. 1998]`
 
-# Paradigms of Programming
+## Paradigms of Programming
 
 
-## Structural programming
+### Structural programming
 
 The concept of structural programming is from 1950s with the aim of improving clarity and quality of software, by the introduction of structured control flow and block structures that is clearly defined areas of computation. Edsger W. Dijkstra coined the term in NOTES ON STRUCTURED PROGRAMMING `[Edsger W. Dijkstra 1970]`
 
-## Imperative programming
+### Imperative programming
 
 Imperative programming is a software development paradigm where functions are implicitly coded in every step required to solve a problem. In imperative programming, every operation is coded and the code itself specifies how the problem is to be solved, which means that pre-coded models are not called on.
 
 Imperative programming requires an understanding of the functions necessary to solve a problem, rather than a reliance on models that are able to solve it. The focus of imperative programming is how the problem should be solved, which requires a detailed step-by-step guide. Because the written code performs the functions instead of models, the programmer must code each step.
 (<https://www.techtarget.com/whatis/definition/imperative-programming>)
 
-## procedural programming
+### procedural programming
 
 Derived from Imperative programming, the basic concept of a procedure call where a procedure is a routine or subroutine which contains the computational steps to be carried out.
 
-## object oriented programming
+### object oriented programming
 
 The evolution of programming languages that support the object oriented design paradigm is long and branched with different amounts of support for the different concepts. Any language can be used to code object oriented but the effort of doing so may not be useful or cost effective.
 
-## Functional programming
+### Functional programming
 
 In functional programming, based of the lambda calculus of Alonzo Church during the 1930s and 1940s,The Calculi of Lambda-Conversion (1941)`[Church 1941]`, the idea of *pure functions*, are meant to have *no side effects is implemented as a design strategy*, the second concept that needs to be implemented is the *concept of recursion* which functions as the mechanism of iteration in functional programming.
 
 Programming languages like Haskell, LISP, IPL are languages that represent languages that implement the functional paradigm to varying degrees, but as most design paradigms any language that allows for recursive high order functions will allow for functional programming.
 
-## Declarative programming
+### Declarative programming
 
 A problem is solved is not specifically defined, but instead focuses on what needs to be solved. Declarative programming provides a constant to check to ensure the problem is solved correctly, but does not provide instructions on how to solve the problem. The exact manner in which the problem is solved is defined by the programming language’s implementation through models. Declarative programming is also called model-based programming. Functional, domain-specific (DSL) and logical programming languages fit under declarative programming, such as SQL, HTML, XML and CSS.
 (<https://www.techtarget.com/whatis/definition/imperative-programming>)
 
 
-## Pair Programming
+### Pair Programming
 
 A tool for rapid development is the so called Pair Programming where two developers code on the same code simultaneously one as the "Driver" and one as the "Navigator"
 
@@ -274,4 +275,4 @@ A tool for rapid development is the so called Pair Programming where two develop
 - `[Jones et al., 2001]` Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43. <https://www.sciencedirect.com/science/article/pii/S0308521X01000543>
 - `[Rumbaugh, 1991]` Rumbaugh et. al, Object-oriented modeling and design, Prentice-Hall, Inc. 1991
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
-- `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre, Eric Java Modeling Color with Uml: Enterprise Components and Process with Cdrom, Prentice Hall PTR, 1999
+- `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre, Eric Java Modeling Color with Uml: Enterprise Components and Process with CD-ROM, Prentice Hall PTR, 1999
