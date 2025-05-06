@@ -11,18 +11,26 @@ tags:
 ## SDLC
 
 *SDLC* ,or the Software Development Life Cycle, is a model describing the process of bringing a piece of software to market and maintaining it. The basic steps or as they are know phases each encompass different tasks needed to be completed as the software goes from idea to fruition.
-<image src="./img/SDLC.png"/>
+<!--<image src="./img/SDLC.png"/>-->
+![Software Development Life Cycle showing the iterative nature of SDLC](./img/SDLC.png)
 <span style="font-size:10px"> Generalized SDLC phases as a cycle of steps where the circle is traversed multiple times, there is a week correlation between cycles and versions</span>
 
 You will if you google around many variations of this and the phases can change some what but the general idea stays constant. The following illustrations show both a variation of the common lifecycle model and  the ISO/IEC 12207 model described in ISO/IEC TR 24748-1:2010
   <!--- https://www.tutorialspoint.com/sdlc/index.htm --->
-<image src="./img/SDLC_ISO_IEC_12207.png"/><span style="font-size:10px"/> Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010
+<!--<image src="./img/SDLC_ISO_IEC_12207.png"/>-->
+![Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010](./img/SDLC_ISO_IEC_12207.png)
+<span style="font-size:10px"/> Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010
 Systems and Software Engineering—Life Cycle Management—Part 1: Guide for Life Cycle Management</span>
 
- The early models where depicted as circles stemming from the water fall model. <image src="./img/Waterfall_system_model.jpg"/><span style="font-size:10px"> Illustration waterfall model from <https://commons.wikimedia.org/wiki/File:Waterfall_system_model.jpg> </span>
+ The early models where depicted as circles stemming from the water fall model.
+ <!--<image src="./img/Waterfall_system_model.jpg"/>-->
+ ![Illustration waterfall model from <https://commons.wikimedia.org/wiki/File:Waterfall_system_model.jpg](./img/Waterfall_system_model.jpg)
+ <span style="font-size:10px"> Illustration waterfall model from <https://commons.wikimedia.org/wiki/File:Waterfall_system_model.jpg> </span>
 
  After the 80s models tend  to focus on the iterative nature of development. One way of thinking about the iterative nature of development while keeping the incremental cost of iteration is as a helix. Where a change in the design in a lower spiral incurs the cost of the previous spirals, eventually the cost of introducing change into the next step will be larger that what is profitable for the project, at which time the efforts into the project usually trickles down rather than following the theoretical step of retirement.
- <image src="./img/helix_legend-01.png" > The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license<span style="font-size:10px"> </span>
+ <!--<image src="./img/helix_legend-01.png" >-->
+ ![The helix model of SDLC](./img/helix_legend-01.png)
+  <span style="font-size:10px">The helix model of SDLC, concept: Lars Eklund, NBIS/UPPMAX, Uppsala University art: Jonas Söderberg, NBIS/UPPMAX, Uppsala University image is released under CC-BY license </span>
 
 Iterative models like RUP or Spiral model will emphasise that a software is developed in iterative steps where you may spend more or less time in any give phase, usually earlier iteration focus on planing and later on development and maintenance. Each time a change is introduced the impact on the cost increases with number of iteration and phases.
 Evolutionary software development like the Living Software Development Process takes inspiration from genetic algorithms and genetic programming to build a library of models from which to work.
@@ -33,7 +41,7 @@ Evolutionary software development like the Living Software Development Process t
 
 * [Towards a Tool Support for a Living Software Development Process](https://ieeexplore.ieee.org/document/994022 )
 
-* Evolutionary software engineering, a review, `https://www.sciencedirect.com/science/article/pii/S1568494604000778`
+* [Evolutionary software engineering, a review](https://www.sciencedirect.com/science/article/pii/S1568494604000778)
 
 Depending on the chosen method or methodology these steps are generally named slightly different dependent on model but in general these steps fulfill the standard SDLC.
 
@@ -160,8 +168,8 @@ A good resource for risk assessment templates are is <https://openregulatory.com
 
 ### Second phase   *Design*
 
-This stage corresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirements put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a little less :-)  but still it is important to not over-engineer when you and your team have a clear picture of what you want to develop that is when we step to the next phase)
-At the end of this stage we have our first iteration of the Design documents, after we should in a structured manner set up the project planning and transfer of Design Documentation to actionable pseudocode, if we are using Git this can be set up as git issues as demonstrated by Richel in this [youtube video](https://www.youtube.com/watch?v=f-rzfZtsPKU)<!--- https://www.youtube.com/watch?v=f-rzfZtsPKU  is a place holder with the same process just not adopted for the example project.-->
+This stage corresponds to the third phase in the ISO/IEC standard **Demonstration and Evaluation** where we flesh out and create the system that will full fill the identified requirements put on the system. This is where we most often use visual diagrams and pseudo-code to describe our system. The design phase should be detailed enough that you can plan and execute a coherent development, but it is important to note that doing more than what you need is as bad as doing to little(well a little less :-) ) but still it is important to not over-engineer when you and your team have a clear picture of what you want to develop that is when we step to the next phase.
+At the end of this stage we have our first iteration of the Design documents, after we should in a structured manner set up the project planning and transfer of Design Documentation to actionable pseudocode, if we are using Git this can be set up as git issues as demonstrated by Richèl in this [youtube video](https://www.youtube.com/watch?v=f-rzfZtsPKU)
 
 ### Third phase  *Development*
 
