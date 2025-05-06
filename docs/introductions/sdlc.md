@@ -123,33 +123,42 @@ UML was generated to unify the big popular object oriented modeling approaches o
 FDD(Feature Driven Design) was developed in 1997 and first appears in the the book Java Modeling Color with Uml`[Coad et al., 1999]`. It is focusing on short development cycles and fast development. it is a way of concretize your requirements into action that can be implemented.
 *"A feature is a client-valued function that can be implemented in two weeks or less."* Using this we can break down our Requirements into actions that can be implemented.
 
-## EXCERSIE
-### Excersie 1 (10 min)
-    Collate the requirements list Group work in plenary.
-### Excersie 2 (10 min)
-    Practice Mermaid by taking one requirement practice describing the overall solution using a flowchart in UML
+## Exercise
+
+### Exercise 1 (10 min)
+
+- Collate the requirements list Group work in plenary.
+
+### Exercise 2 (10 min)
+
+- Practice Mermaid by taking one requirement practice describing the overall solution using a flowchart in UML
         - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+
 ???- Example flow char of a requirement described as a User story or Use Case
 
 
 ### Excersise 3 (10 min)
-    Produce a Feature list on the format
-    - For features: <action> the <result> <by|for|of|to> a(n) <object>
-    - For feature sets: <action><-ing> a(n) <object>
-    where an object is a person, place, or thing (including roles, moments in time or intervals of time, or catalog-entry-like descriptions)
-    That addresses the requirements.
+
+- Produce a Feature list on the format
+    - For features: `<action>` the `<result>` `<by|for|of|to> a(n) <object>`
+    - For feature sets: `<action><-ing> a(n) <object>`
+      where an object is a person, place, or thing (including roles, moments in
+      time or intervals of time, or catalog-entry-like descriptions)
+      That addresses the requirements.
 
 ???- Example feature list
 
+    ```text
     Feature: <Calculate> the <mean temperature> for <a specified year>
     Feature: <Display> the <graph of mean year temperature> for <the weather station>
     Feature set: <Displaying> a <Userinterface>
         set: <User interface>
               object: <Graph area>, <Statistics area>, <year input>, <data file input>, <Meta data output fields>
+    ```
 
 ## Development
 
- During Development we implement the design using programming languages and techniques.
+During Development we implement the design using programming languages and techniques.
 
 ## Deployment
 
