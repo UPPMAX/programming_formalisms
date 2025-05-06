@@ -51,7 +51,8 @@ Software development is often not linear:
 - We need to be able to separate different lines of work really well.
 
 ![Isolated tracks](../img/git-collaborative.svg){width: 50%}
-_Isolated tracks of work._
+
+*Isolated tracks of work*
 
 The strength of version control is that it permits the researcher to **isolate
 different tracks of work**, which can later be merged to create a composite
@@ -118,7 +119,7 @@ In VS Code
         git pull #
         ```
     
-       - You may need to be more detailed:
+        - You may need to be more detailed:
     
         ```git
         git push --set-upstream origin new-branch
@@ -130,20 +131,20 @@ In VS Code
 
 - GitHub
 
-  [network_GH](../img/network_GH.png)
+[network_GH](../img/network_GH.png)
 
-  [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
+[Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
 
 - VS Code
 
-  - ![git_graph_VSC](../img/git_graph_VSC.png)
+![git_graph_VSC](../img/git_graph_VSC.png)
 
 
 ???- tip "Graph alias in command line"
 
     **An important alias**
 
-    - We can define an _alias_ in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
+    - We can define an *alias* in Git, to be able to nicely visualize branch structure in the terminal without having to remember a long Git command.
 
     ```console
     git config --global alias.graph "log --all --graph --decorate --oneline"
@@ -190,7 +191,7 @@ In VS Code
 
     ![file_saved_VSC](../img/file_saved_VSC.png)
     
-    - Press "M" 
+    - Press "M"
 
     ![diff_VSC](../img/diff_VSC.png)
 
@@ -201,7 +202,7 @@ In VS Code
         git diff
         ```
 
-        - You can use _arrows_ or _enter_ to scroll the output and quit with ``q``.
+        - You can use *arrows* or *enter* to scroll the output and quit with ``q``.
         - You will see some things like this.
 
         ???- "Output from 'diff'"
@@ -343,7 +344,7 @@ gitGraph
         And your code may end up online.
 
         If that does not work, do:
- 
+
         ```git
         git pull
         ```
@@ -395,7 +396,7 @@ gitGraph
         ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
     
         The branch will now be deleted, as shown in the image above.
-     
+
         > - On your local computer, update your code
     
         Do:
@@ -452,7 +453,7 @@ gitGraph
     > - On your local computer, switch to the main branch,
     >   as we'll delete the branch you are on now
 
-    Switch to the _main_ branch.
+    Switch to the *main* branch.
 
     > - Delete your branch (i.e. the one with the unique name).
     > - You may use the web interface (easiest!) or use VS Cde
