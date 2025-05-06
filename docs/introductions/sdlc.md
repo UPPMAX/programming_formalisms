@@ -193,9 +193,9 @@ Updates and revisions bug testing etc. Maintaining persistent links and download
 
 Often does not happen but the software is gradually left to die, esp for scientific software where a retirement plan is seldom established esp if the software is developed by a PhD student or post-doc or other short term person part of the research group.
 
-# Paradigms of Design
+## Paradigms of Design
 
-## Modular development/programming
+### Modular development/programming
 
 A software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules.Each module contains everything necessary to execute only one aspect of the desired functionality of the software. Each module fits together like pieces of lego. A derivation of modular programming is interface programming which uses OOP/OOD to implement the concept of modules in a language that have support for objects but not for modules.
 The principles of modular programming was introduced in the 1960s by Larry LeRoy Constantine with the proposal of adding modules to ALGOL68 to ALGOL68-R being the concrete application of the modular development paradigm.
@@ -211,7 +211,7 @@ There are two types of module, *program control modules* which are purposely and
 The point of designing with modular development is to enforce information hiding which in this case mainly makes the development independent of the specific development team and enables code reuse. At a higher state a modular design achieve the same interchangeability over the design space.
 `[Jones et.al 2001]`Approaches to modular model development is a practical modular development and design of Agri software (agricultural sector) it has a good practice described.
 
-## Object Orientation
+### Object Orientation
 
 Object orientation is primarily a design paradigm unlike Imperative,procedural,functional and declarative programming which focuses on how you code. One can use any number of programming paradigms to implement the object-oriented design.
 
