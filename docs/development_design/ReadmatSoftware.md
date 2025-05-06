@@ -192,7 +192,9 @@ then risk minimised,but in practice the choice is often determined by the cultur
 
 The spiral model was developed in 1986 by Barry Boehm in his paper A Spiral Model of Software Development and Enhancement
 The focus of the spiral model is to identify risk
-<image src="./img/Spiral_model_(Boehm,_1988).png"><span style="font-size:10px"> Illustration of the spiral model as presented by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
+<!--<image src="./img/Spiral_model_(Boehm,_1988).png">-->
+![Illustration of the spiral model as presented by Boehm 1988](./img/Spiral_model_(Boehm,_1988).png)
+<span style="font-size:10px"> Illustration of the spiral model as presented by Boehm 1988 </span>, from `https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).png`
 
 ### RUP, Rational Unified Process
 
@@ -277,12 +279,11 @@ releaseSoftware --> performLessonsLearned
 
 What follows next is an emphasis diagram which describes where the focus of the work should be put in at which time of the project. It is common to have a signoff at the end of each phase before starting the next one.
 
-<p>
- <p>
-   <image src="./img/Unified_Process_Model_for_Iterative_Development.png">
-   <span style="font-size:10px">image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
+   <!--<image src="./img/unified_Process_Model_for_Iterative_Development.png">-->
+   ![originally made Jakob Farian Krarup and released to the public domain under cc 0](./img/unified_Process_Model_for_Iterative_Development.png)
+   <span style="font-size:10px">Image contributed from  Wikimedia Commons and was originally made Jakob Farian Krarup and released to the public domain under cc 0 </span>
 
-#### Inception
+#### Inception (I1)
 
  The focus of the inception stage is to identify the user needs to initial use case development
 
@@ -302,7 +303,7 @@ What follows next is an emphasis diagram which describes where the focus of the 
 
 * Requirements understanding, through use case design.
 
-#### Elaboration
+#### Elaboration (E1,E2)
 
 The elaboration phase is focused on the refinement of requirements the design of the software and test that are to be run through the project iteration lifetime.
 Deliverables of the Elaboration phase is:
@@ -312,7 +313,7 @@ Deliverables of the Elaboration phase is:
 * A stable project plan
 * Actual resource cost versus planned resource cost, etc.
 
-#### Construction
+#### Construction (C1-C4)
 
 Is the development of the software and the creation of the deployment modules that are needed
 Deliverables are:
@@ -320,7 +321,7 @@ Deliverables are:
 * A user manual
 * A fully completed software system
 
-### Transition
+#### Transition (T1,T2)
 
 The transition phase T1 and T2 is when you take your product to market maintain the current iteration and plan for the next iteration during this phase the Buisning modeling done regards to the future effects transitions in the organisation might bring on future organisation the requirements gathering is commonly extracted from bug reports, design is almost never changed during the transition phase while Testing and deployment have mayor focus in this phase.
 Deliverables:
@@ -333,13 +334,10 @@ Deliverables:
 
 Further reading RUP and examples of applied RUP:
 
-* The Rational Unified Process--An Introduction., Kruchten, Philippe. (2000).
- <https://www.researchgate.net/publication/220018149_The_Rational_Unified_Process--An_Introduction>
- The links are outdated as the sale of RUP to IBM in 2003 his references lead to DevOps (IBMs newest development model)
-* Real world example RUP as used by volvo, Åsa Nordin( Master Thesis, Trollhättan 2003):
-  <https://www.diva-portal.org/smash/get/diva2:215156/FULLTEXT01.pdf>
-* Using Rational Unified Process in an SME – A Case Study,  Hansen et. al (springer 2005)
-  <https://www.researchgate.net/publication/221045898_Using_Rational_Unified_Process_in_an_SME_-_A_Case_Study>
+* [The Rational Unified Process--An Introduction., Kruchten, Philippe. (2000).](https://www.researchgate.net/publication/220018149_The_Rational_Unified_Process--An_Introduction)
+
+* [Real world example RUP as used by volvo, Åsa Nordin( Master Thesis, Trollhättan 2003)](https://www.diva-portal.org/smash/get/diva2:215156/FULLTEXT01.pdf)
+* [Using Rational Unified Process in an SME – A Case Study,  Hansen et. al (springer 2005)](https://www.researchgate.net/publication/221045898_Using_Rational_Unified_Process_in_an_SME_-_A_Case_Study)
 
 ### RAD Rapid Application Development
 
@@ -363,30 +361,28 @@ Using Prototyping and minimal design to generate fast development cycles, this h
 * The technical architecture is unclear and much of the technology will be used for the first time within the project.
 * Technical requirements are tight for the equipment to be used.
 
-further reading for RAD (Rapid Application Development):
-
-* <https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=>_
+[further reading for RAD (Rapid Application Development](https://www.projectmanagement.com/process/processMain.cfm?ID=11306#_=)
 
 ### eXtreme Programming
-
-<image src="./img/Extreme_Programming_bgw.png">
+<!--<image src="./img/Extreme_Programming_bgw.png">-->
+![The loops of eXtremeProgramming](./img/Extreme_Programming_bgw.png)
    <span style="font-size:10px">The loops of eXtremeProgramming </span>
 
 ### TDD Test Driven Development
 
 Test-Driven Development (TDD) is a methodology in software development that focuses on an iterative development cycle where the emphasis is placed on writing test cases before the actual feature or function is written. The iterative cycle in TDD is often referred to as the RED-GREEN-REFACTOR were code first fails the test, the code is then modified until it succeeds the test, lastly the code is refactored
  <br />
-  <image src="./img/TDD_Global_Lifecycle.png">
+  <!--<image src="./img/TDD_Global_Lifecycle.png">-->
+  ![image contributed from Xarawn, CC BY-SA 4.0](./img/TDD_Global_Lifecycle.png)
    <span style="font-size:10px"> image contributed from Xarawn, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons and released to the public domain with the aforementioned license</span>
 <br />
- The three laws of TDD:
+ **The three laws of TDD:**
 
-* 1.You are not allowed to write any production code unless it is to make a failing unit test pass.
-* 2.You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
-* 3.You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
+1. You are not allowed to write any production code unless it is to make a failing unit test pass.
+2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
-   <br />
-  <http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd>
+From the [clean coder](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html) Robert C. Martin aka Uncle Bob
 
 The following Use Case model describes some common steps followed when developing according to TDD, in this scenario only one developer actor is present but this can be several people holding the role of developer when
      they interact with the model. In TDD pair programming is very common and  a practice of writing tests for your colleague is common practice. So one developer works on the code and one developer is working on the test and then they
