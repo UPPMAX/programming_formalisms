@@ -29,24 +29,16 @@ tags:
     Lesson Plan:
 
     - **Total** 50 min
-    - Theory 20
-    - Exercise 20
+    - Theory 15
+    - Exercise 25
     - Discussions 10 min
 
 ???- admonition "Changes"
 
-    - clearer guide
-    - ask about level
-    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
     - practical examples than just explain the concept.
-    - more practical examples of git forking and branching and when it is appropriate to use them.
+    - Git branch couple to SDLC??
     - exercises
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
         - advanced exercises
-
-    - Give more practical examples of git branching and when it is appropriate to use them.
-    - Git branch couple to SDLC
 
 ## Branching and merging
 
@@ -131,6 +123,7 @@ In VS Code
         ```git
         git push --set-upstream origin new-branch
         ```
+
 ### Git graph
 
 - We can get an overview of graphs
@@ -358,6 +351,20 @@ gitGraph
         and try pushing again, maybe multiple times, as many people
         are pushing to the shared repo.
 
+        !!! tip "git push doesn't work with new branch"
+
+            - you always have to pull before a push:
+
+            ```git
+            git pull #
+            ```
+    
+            - You may need to be more detailed:
+    
+            ```git
+            git push --set-upstream origin new-branch
+            ```
+
         > - On GitHub, verify that your changes on your branch can be found online
 
         ![github_pushed_to_branch](github_pushed_to_branch.png)
@@ -438,11 +445,9 @@ gitGraph
 
     ![github_pushed_to_branch](github_pushed_to_branch.png){width: 50%}
 
-    -	”Ignore pull request”
-
-    Make sure you look at the correct branch, as displayed by the "drop-down button".
-    Then your commit message shows up in the yellow section
-    -	”Ignore if a pull request shows up”
+    - Make sure you look at the correct branch, as displayed by the "drop-down button".
+    - Then your commit message shows up in the yellow section
+        - ”Ignore if a pull request shows up”
 
     > - On your local computer, switch to the main branch,
     >   as we'll delete the branch you are on now
@@ -450,9 +455,9 @@ gitGraph
     Switch to the _main_ branch.
 
     > - Delete your branch (i.e. the one with the unique name).
-    >   You may use the web interface (easiest!) or use VS Cde
+    > - You may use the web interface (easiest!) or use VS Cde
 
-    **VS Code**
+    In VS Code
     
     ![delete_branch](../img/delete_branch.png)
 
@@ -474,26 +479,13 @@ gitGraph
 
     Sync or Pull again!
 
-
-
 ???- question "Need a video for command line?"
 
     See a video [here](https://youtu.be/Ewewytijw1g)
 
 ## Summary
 
-- Now we know how to save snapshots:
-
 ```git
-git add <file(s)>
-git commit
-```
-
-- And that is what we do as we program.
-- Other very useful commands are these:
-
-```git
-git init    # initialize new repository
 git add     # add files or stage file(s)
 git commit  # commit staged file(s)
 git status  # see what is going on
@@ -535,20 +527,13 @@ git merge
 
 !!! Keypoints
 
-    - Initializing a Git repository is simple: ``git init``.
-    - Commits should be used to tell a story.
-    - Git uses the .git folder to store the snapshots.
-    - Don’t be afraid to stage and commit often. Better too o
-    - A branch is a division unit of work, to be merged with
-    - A tag is a pointer to a moment in the history of a proj
-    - A repository can have one or multiple remotes (we will
+    - A branch is a division unit of work, to be merged with main sometime
     - Local branches often track remote branches.
     - A remote serves as a full backup of your work.
 
 !!! note "See also"
 
     [More about branches](https://coderefinery.github.io/git-intro/branches/)
-
 
 ## Reference Git
 
