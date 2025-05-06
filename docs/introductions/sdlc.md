@@ -6,7 +6,7 @@ tags:
   - life cycle
 ---
 
-!!! Info learning outcomes
+!!! Info "learning outcomes"
     - We understand the general concept of the Software Development Lifecycle (SDLC)
     - We are introduced to what UML is and how it can help us.
     - We know what Feature driven development is and can use part of it.
