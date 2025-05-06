@@ -17,7 +17,7 @@ tags:
 !!! info Content
 
     - We will give an overview of
-        - centralized collaboration
+        - Centralized collaboration
         - Forked collaboration
         - How to contribute
 
@@ -47,19 +47,9 @@ tags:
 
 ???- admonition "Changes"
 
-    - implement new project??
-    - clear goal
-    - VS code
-    - clearer guide
-    - ask about level
-    - If possible simplify things even further, or expand on rationale behind each step not just "big picture"
-    - practical examples than just explain the concept.
     - more practical examples of git forking and branching and when it is appropriate to use them.
     - exercises
-        - pull request
-        - practical things within exercise (not needing to scroll back and forth)
         - clearer instructions
-        - advanced exercise
 
 ## Branches, merging, code reviews
 
@@ -74,7 +64,7 @@ For a Pull Request, a team member can be asked for a code review.
 Code reviews are useful for many reasons,
 among others the spread of knowledge.
 
-One can merge branches locally, using the command-line.
+One can merge branches locally, using the command-line or VS code.
 This will bypass code review and that is OK.
 For example, merging develop to your topic branch
 does not need a code review.
@@ -89,7 +79,6 @@ There are two more ways to create “copies” of repositories into your user sp
     - The newly created repository will start with a _new history_, only one commit, and not inherit the history of the template.
 - You can **import** a repository from another hosting service or web address.
     - This will _preserve the history_ of the imported project.
-
 
 ## Different workflows for collaboration
 
@@ -222,23 +211,6 @@ We can practice how a conflict looks and how to resolve it:
 > - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
 > - What can we do to avoid conflicts?
 
-### Summary
-
-![Centralized layout](../img/centralized.svg)
-
-**Centralized layout**
-
-- **Red** is the repository on GitHub.
-- **Blue** is where all contributors work on their own computers.
-
-- Centralized workflow is often used for **remote collaborative work**.
-- `origin` refers to where you cloned from (but you can relocate it).
-- `origin/mybranch` is a read-only pointer to branch `mybranch` on `origin`.
-- These read-only pointers only move when you `git fetch`/`git pull` or `git push`.
-
-!!! info "See also"
-
-    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/same-repository/)
 
 ## How to contribute changes to somebody else’s project
 
@@ -331,6 +303,10 @@ Now do the same for team member B.
 
     You can find a video [here](https://youtu.be/UXSKm_RvcLw)
 
+
+## Summary
+
+
 ## Goals
 
 - [ ] explain and evaluate the usefulness of git Pull Request with code review
@@ -357,6 +333,10 @@ Now do the same for team member B.
     - &#9744; Documentation
         - &#9745; in-code documentation
         - &#9744; documentation for users
+
+!!! info "See also"
+
+    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/same-repository/)
 
 ## Reference Git
 
