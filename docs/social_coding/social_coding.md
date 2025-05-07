@@ -77,8 +77,6 @@ tags:
 
 ### Question 4: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?
 
-
-
 ## Comparing sharing papers and sharing code
 
 <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
