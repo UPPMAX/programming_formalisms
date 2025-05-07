@@ -78,7 +78,7 @@ Asynchronous feedback removes the time pressure but can be easily forgotten!
 
 > Reviewing more than 400 lines of code (LoC) can have an adverse impact on your ability to find bugs, and in fact, most are found in the first 200 lines. - Recommendation from Code Review at Cisco Systems
 >
-> **[5 code review best practices. Work Life by Atlassian](https://www.atlassian.com/blog/add-ons/code-review-best-practices**), Usman Ghani\*\*
+> **[5 code review best practices. Work Life by Atlassian](https://www.atlassian.com/blog/add-ons/code-review-best-practices)**, Usman Ghani\*\*
 
 ## Multiple people can also review the code asynchronously
 
