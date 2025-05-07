@@ -328,6 +328,24 @@ gitGraph
 
 ## Summary
 
+```git
+git add     # add files or stage file(s)
+git commit  # commit staged file(s)
+git status  # see what is going on
+git log     # see history
+git diff    # show unstaged/uncommitted modifications
+git show    # show the change for a specific commit
+git switch -b wild-idea    # create branch, switch to it, work, work, work ...
+git switch main          # realize it was a bad idea, back to main/master
+git branch -D wild-idea      # it is gone, off to a new idea
+git merge
+```
+
+**Overview workflow**
+
+![git branches](../img/git_branches.png)
+
+
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
