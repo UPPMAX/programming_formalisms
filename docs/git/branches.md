@@ -496,11 +496,6 @@ git branch -D wild-idea      # it is gone, off to a new idea
 git merge
 ```
 
-**Overview workflow**
-
-![git branches](../img/git_branches.png)
-
-
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
