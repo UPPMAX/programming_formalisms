@@ -257,7 +257,7 @@ assert str(type(a)) == "<class '__main__.Position'>"
     - Medium: the parameters class as shown above, work in `src/learners`
     - Hardest: one in the learners' project, work in `src/weather`
 
-- Write the definition of the classes
+- Write the tests and definitio of your class
 
 ???- question "Answer for the position class"
 
@@ -268,6 +268,10 @@ assert str(type(a)) == "<class '__main__.Position'>"
         def __init__(self, any_x, any_y):
           self.x = any_x
           self.y = any_y
+        def get_x():
+            return self.x
+        def get_y():
+            return self.y
         def __repr__(self):
             return "Position"
         def __str__(self):
