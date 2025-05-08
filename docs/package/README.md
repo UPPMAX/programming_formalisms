@@ -46,7 +46,7 @@ tags:
 
 ## Why?
 
-![weather on PyPI](weather_on_testpypi.png)
+![weather on PyPI](bacsim_on_testpypi.png)
 
 > `weather` on (the test version of) PyPI
 
