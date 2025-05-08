@@ -147,7 +147,6 @@ tags:
 
 !!! example
 
-    - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
     - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
 
 ## Ignoring files and paths with .gitignore
@@ -209,7 +208,7 @@ For this we use `.gitignore` files.
 
     - add to .gitignore file
 
-???- question "Step 3: Run the program and look for missing packages'"´
+???- question "Step 3: Run the program and look for missing packages'"
 
     - You can switch to the directory where you have your code and test to run it
     - It may give you errors of missing packages, like ``numpy``
@@ -222,7 +221,7 @@ For this we use `.gitignore` files.
     - No need to use ´´--user``, since it will be installed in the virtual environment only.
     - Do this until your program works
 
-???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"´
+???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
 
     - Check what is installed by:
 
@@ -258,9 +257,14 @@ For this we use `.gitignore` files.
 
 ## Going further with deployment
 
-[Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
+???- admonition "Python for scientific computing"
 
-???- question "Possibilities for other languages can be"
+    **Course advertisement** 
+    
+    - [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
+    - [Python packaging session](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
+
+???- admonition "Possibilities for other languages can be"
 
     - C/C+
         - CMake
@@ -271,61 +275,61 @@ For this we use `.gitignore` files.
         - Pkg.jl
 
 - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
-
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
 
-**Course advertisement:** [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
 
-### Containers
+???- admonition "Compiled language, course"
 
-- Containers let you install programs without needing to think about the computer environment, like
+    - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
-    - operative system
-    - dependencies (libraries and other programs) with correct versions
+???- admonition "Containers"
 
-![Containerization](./img/Containerization_nextlabs.png)
+    - Containers let you install programs without needing to think about the computer environment, like
 
-> From [Nextlabs](https://www.nextlabs.com/what-is-containerization/)
+        - operative system
+        - dependencies (libraries and other programs) with correct versions
 
-!!! info
+    ![Containerization](./img/Containerization_nextlabs.png)
 
-    - 2(3) types
+    > From [Nextlabs](https://www.nextlabs.com/what-is-containerization/)
 
-        1. Singularity/Apptainer perfect for HPC systems
-        2. Docker that does not work on HPC-systems
+    !!! info
 
-            - But docker images can be used by Singularity and Apptainer
+        - 2(3) types
 
-    - Everything is included
-    - Workflow:
+            1. Singularity/Apptainer perfect for HPC systems
+            2. Docker that does not work on HPC-systems
 
-        - Download on Rackham or local computer
-        - Transfer to Bianca
-        - Move to from wharf to any place in your working folders on Bianca
+                - But docker images can be used by Singularity and Apptainer
 
-    - Draw-backs
+        - Everything is included
+        - Workflow:
 
-        - you install also things that may be already installed
-        - therefore, probably more disk space is needed
+            - Download on Rackham or local computer
+            - Transfer to Bianca
+            - Move to from wharf to any place in your working folders on Bianca
 
-!!! info "More info"
+        - Draw-backs
 
-    - [Singularity course](https://pmitev.github.io/UPPMAX-Singularity-workshop/)
-    - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
-    - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
+            - you install also things that may be already installed
+            - therefore, probably more disk space is needed
 
+    !!! info "More info"
 
-### Workflows
+        - [Singularity course](https://pmitev.github.io/UPPMAX-Singularity-workshop/)
+        - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
+        - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
 
-!!! info "See also"
+???- admonition "Workflows"
 
     **Learn more**
-    [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
-    [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
+    
+    - [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
+    - [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
 
-### Make a file executable by its own
+## Make a file executable by its own
 
-- Run a python script without the ``python`` before!
+- Run a python script without the ``python`` before in a linux environment
 
 - This line helps in the top of the main script:
 
@@ -335,10 +339,6 @@ For this we use `.gitignore` files.
 
 - Then the python active in "PATH" will automatically be used
     - especially important on a shared system where python is not in the typical "/usr/bin/python" path.
-
-### Compiled languages
-
-- [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
 ## Start a Git/GitHub repo from personal existing project
 
