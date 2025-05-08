@@ -72,7 +72,8 @@ Composition implies a relationship where the child cannot exist independent of t
 
 
 ```mermaid
-classDiagram;
+classDiagram
+    direction TD
     Owner --> Animal: cares for
     Dog*--"1"Head
     Dog*--"1"Body
