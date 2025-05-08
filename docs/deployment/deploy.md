@@ -168,19 +168,21 @@ For this we use `.gitignore` files.
 
 ## Exercise 1: Identify lacking packages
 
-!!! tip
-
     - Work individually locally (in VS Code)
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
     - Go to the dir ``learners/<your-name>``
+    - Create a new folder called ``test``
+    - Go into that folder
+    - Create a virtual environment, called ``usertest``
 
-    ```console
-    python -m venv <path>/usertest
-    ```
+        ```console
+        python -m venv <path>/usertest
+        ```
 
-    - This creates an empty virtual environment located in `<path>/usertest` directory
+    - This creates an empty virtual environment located in `usertest` directory
+
     - **GITIGNORE!**
     - Activate
 
@@ -204,13 +206,46 @@ For this we use `.gitignore` files.
     which pip        #must point to the pip belonging to the virtual environment
     ```
 
-???- question "(Step 2: Add this to ``.gitignore``)"
+    - Check it is empty with the command ``pip list``
+        - It should just show
+
+        ```bash
+        Package    Version
+        ---------- -------
+        pip        23.2.1
+        setuptools 65.5.0
+        ```
+
+        - and some notes.
+   
+???- question "(Optional Step 2: Add the folder to ``.gitignore``)"
 
     - add to .gitignore file
 
-???- question "Step 3: Run the program and look for missing packages'"
+???- question "Step 3: Install the weather package and run the program and look for missing packages'"
 
-    - You can switch to the directory where you have your code and test to run it
+    **FIX**
+    
+    - Install with 'pip install
+    
+    ???- info "Hints"
+
+        - The main program ``main.py`` is in the repo.
+        - ``weather`` is a python package needed by ``main.py``
+        - available here: <https://test.pypi.org/project/weather/1.0.1/>
+
+    ```bash
+    pip install -i https://test.pypi.org/project/bacsim==1.0.1
+    ```
+
+    - run the program
+
+    **FIX**
+ 
+    ```bash
+    python ...
+    ```
+    
     - It may give you errors of missing packages, like ``numpy``
     - Install them with
 
@@ -218,7 +253,7 @@ For this we use `.gitignore` files.
     pip install <package name>
     ```
 
-    - No need to use ´´--user``, since it will be installed in the virtual environment only.
+    - Do NOT use ´´--user``, since it should be installed in the virtual environment only.
     - Do this until your program works
 
 ???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
@@ -236,15 +271,15 @@ For this we use `.gitignore` files.
     pip freeze > requirements.txt
     ```
 
+    - Other users can then install the same packages with:
+
+
 ???- question "Step 5: Test the requirements file in a new environment"
 
-    - End the isolated environment and work with other things!
-
+    - End the isolated environment
     ```console
     deactivate
     ```
-
-    - Other users can then install the same packages with:
 
     ```console
     pip install --user -r requirements.txt
