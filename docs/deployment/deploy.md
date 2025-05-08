@@ -157,18 +157,41 @@ python -m venv <path>/usertest
 - This creates an empty virtual environment located in `<path>/usertest` directory
 - Activate
 
-```console
-source <PATH>/usertest/bin/activate
-```
+=== "Mac/Linux"
 
-- In Windows you may have to instead do:
+    ```console
+    source <PATH>/usertest/bin/activate
+    ```
 
-```console
-source <PATH>/usertest/Scripts/activate
-```
+=== "Windows"
+
+    - In Windows you may have to instead do:
+
+    ```console
+    source <PATH>/usertest/Scripts/activate
+    ```
 
 - Note the ``(usertest)`` in the beginning of the prompt!
 - Do note the python version and you may inform users that you know that this version is known to work!
+
+Test copy
+
+=== "Mac/Linux"
+
+    ```console
+    source <PATH>/usertest/bin/activate
+    ```
+
+=== "Windows"
+
+    - In Windows you may have to instead do:
+
+    ```console
+    source <PATH>/usertest/Scripts/activate
+    ```
+
+
+
 
 ```console
 which python        #must point to the python belonging to the virtual environment
