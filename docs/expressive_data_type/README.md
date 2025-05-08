@@ -226,7 +226,7 @@ assert str(type(a)) == "<class '__main__.Position'>"
 - Pick a class to design at your skill level:
     - Easiest: the worked-out position class, work in `src/learners`
     - Medium: the parameters class as shown above, work in `src/learners`
-    - Hardest: one in the learners' project, work in `src/bacsim`
+    - Hardest: one in the learners' project, work in `src/weather`
 
 - Write the definition of the classes
 

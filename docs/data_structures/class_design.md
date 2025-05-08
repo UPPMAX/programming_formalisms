@@ -200,7 +200,7 @@ well `[Gamma et al., 1995]`
 
 ???- note "Hard: a class in the learners' project"
 
-    Work in `src/bacsim`
+    Work in `src/weather`
 
     Don't break the main branch :-)
 
