@@ -39,8 +39,8 @@ Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 Thursday |09:00-09:45|Richel |[Function design](function_design/README.md)
 Thursday |10:00-10:45|Richel |[Expressive data type](expressive_data_type/README.md)
 Thursday |11:00-12:00|Lars   |[Object-oriented design](design_develop/OO_development.md)
-Thursday |13:00-14:00|Lars   |[Modular programming](./modularity/modular.md)
-Thursday |14:15-15:00|Richel |[Has-a relation](has_a_relation/README.md), [class design](data_structures/class_design.md)
+Thursday |13:00-14:00|Richel |Continue, [Has-a relation](has_a_relation/README.md), [class design](data_structures/class_design.md)
+Thursday |14:15-15:00|Lars   |[Modular programming](./modularity/modular.md)
 Thursday |15:15-15:40|Richel |[Continuous integration](continuous_integration/README.md)
 Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
