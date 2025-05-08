@@ -4,7 +4,7 @@ tags:
   - refactoring
 ---
 
-# Modular programming and Refactoring
+#  Refactoring and Modular programming
 
 ???- info "Learning outcomes"
 
@@ -122,7 +122,7 @@ Some examples of code smell
 ???- "Refactor your design document"
 
     Try to consider what in your code are or will require classes to know about each other (Association).
-    Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part) or if the part exist independently of the aggregate(aggregation)
+    Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part)
 
 ???- "Refactor your code"
     Chose an Issue that you are responsible for go through the code and refactor the code.
