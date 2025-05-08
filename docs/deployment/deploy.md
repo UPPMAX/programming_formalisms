@@ -45,7 +45,6 @@ tags:
         - workflows
         - containers
 
-
 ???- admonition "Changes"
 
     - implement new project
@@ -341,7 +340,7 @@ For this we use `.gitignore` files.
 
 - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
-## Start a Git/GitHub repo from persnonal existing project
+## Start a Git/GitHub repo from personal existing project
 
 - Many projects/scripts start as something for personal use, but expands to be distributed.
 - Let's start in that end and be prepared.
@@ -349,7 +348,7 @@ For this we use `.gitignore` files.
 ### Principle
 
 - Initiate git project
-    - Browse to right _root_ directory (the folder contatining all the project-related files)
+    - Browse to right _root_ directory (the folder containing all the project-related files)
 - Stage and commit
 - upload to github
 
