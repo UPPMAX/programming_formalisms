@@ -168,9 +168,12 @@ For this we use `.gitignore` files.
 
     <programming_formalisms_project_summer_2025/blob/main/.gitignore>
 
-## Exercise 1: Identify lacking packages
+## Exercise 1: Identify lacking packages (10-15 min)
+
+!!! tip 
 
     - Work individually locally (in VS Code)
+    - Help each-other if getting stuck
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
@@ -317,7 +320,7 @@ For this we use `.gitignore` files.
 
     - Run the program!
 
-    No errors shpuld show up!
+    No errors should show up!
 
 ### Follow up
 
@@ -424,7 +427,12 @@ For this we use `.gitignore` files.
 - Stage and commit
 - upload to github
 
-### Try yourself
+### (Optional) exercise 2
+
+!!! tip 
+
+    - Work individually locally (in VS Code)
+    - Help each-other if getting stuck
 
 - Let's say you have some code you have started to work with
 - Start with 1A OR 1B
@@ -461,10 +469,11 @@ For this we use `.gitignore` files.
 
         ![initialize_VSC](../img/initialize_VSC.png)
 
-        - Initialize and then continue with step 3.
-        - Or Publish to GitHub diectly **and you are done**!
+        - **RECOMMENDED** Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
             - Include the file(s) (in this case the hello.py file) in the repo!
+
+        - ALTERNATIVE: Initialize and then continue with step 3.
 
         - Double check it was created on GitHub!
             - It should show up under repos in your user space
@@ -481,7 +490,7 @@ For this we use `.gitignore` files.
         - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
 
 
-???- question "Exercise 3: Add and commit the content"
+???- question "(Optional) Exercise 3: Add and commit the content"
 
     - So far, there is no content. We have to manually add the content to the repo.
     - Add and Commit your changes
@@ -497,7 +506,7 @@ For this we use `.gitignore` files.
         git commit -m 'first commit'
         ```
 
-???- question "Exercise 4: Upload to GitHub"
+???- question "(Optional) Exercise 4: Upload to GitHub"
 
     ???- question "In VS Code"
 
@@ -580,7 +589,6 @@ R <--> Node5
 !!! info "Key points"
 
     **Make sure it works for others or yourself in the future!**
-
 
 !!! admonition "Parts to be covered!"
 
