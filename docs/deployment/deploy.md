@@ -327,18 +327,18 @@ For this we use `.gitignore` files.
     - [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
     - [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
 
-## Make a file executable by its own
+## Quality of life
 
-- Run a python script without the ``python`` before in a linux environment
+- Run a python script without the ``python`` before in a linux environment!
 
 - This line helps in the top of the main script:
 
-```bash
-#!/bin/env python
-```
+    ```bash
+    #!/bin/env python
+    ```
 
 - Then the python active in "PATH" will automatically be used
-    - especially important on a shared system where python is not in the typical "/usr/bin/python" path.
+    - especially important on a shared system where python is not in the typical ``/usr/bin/python`` path.
 
 ## Start a Git/GitHub repo from personal existing project
 
@@ -352,17 +352,12 @@ For this we use `.gitignore` files.
 - Stage and commit
 - upload to github
 
-
 ### Try yourself
 
 - Let's say you have some code you have started to work with
 - Start with 1A or 1B
 
-        - Be in a terminal and go to the ``planets`` folder, which will be the project repository (**repo**)
-        - run ``git init``
-        - make sure that there is a ``.git`` directory created
-
-???- question "Exercise 1A: Start project from one of your existing projects"
+ ???- question "Exercise 1A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
     - Browse to right _root_ directory (the folder contatining all the project-related files)
@@ -370,16 +365,30 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1B: Start a new test project"
 
     - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
-    - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
+    
 
-    ```python
-    # We just want some output from a simple program
-    print('Hello world!')
-    ```
+    ???+ question "In VS Code?"
+
+        - Make a new window
+        - Open Folder
+        - Create new Folder with name ``test_project``
+        - Select folder
+        - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
+
+        ```python
+        # We just want some output from a simple program
+        print('Hello world!')
+        ```
 
 ???- question "Exercise 2: Initiate the project"
 
     ???- question "VS CODE""
+
+        - Initialize and then continue with step 3.
+        - Or Publish to GitHub diectly and you are done!
+            - You may change the name of the repo for the GitHub instance, but not recommended.
+            - Double check on GitHub!
+        
 
     ???- question "Terminal"
 
@@ -400,6 +409,7 @@ For this we use `.gitignore` files.
 
     ???- question "VS Code"
 
+         We do this all the time! :)
     
     ???- question "Terminal"
 
@@ -446,7 +456,7 @@ For this we use `.gitignore` files.
     - Paste the code
 
     - Did it work??
-    - Reload the GitHub page and see the fiels present locally is also present there.
+    - Reload the GitHub page and see the files present locally is also present there.
 
     **Done!**
 
