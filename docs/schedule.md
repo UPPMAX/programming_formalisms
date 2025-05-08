@@ -46,8 +46,10 @@ Thursday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Friday   |09:00-09:45|Richel |[Implement the project as a package](package/README.md)
 Friday   |10:00-11:00|Richel |[Runtime speed profiles](optimisation/runtime_speed_profiles.md), [Improve run-time speed](optimisation/improve_runtime_speed.md)
-Friday   |11:15-13:30|Björn  |[Deployment](deployment/deploy.md)
-Friday   |13:30-15:00|Björn  |[Documentation](deployment/documentation.md)
+Friday   |11:15-12:00|Björn  |[Deployment](deployment/deploy.md)
+Friday   |13:00-13:30|Björn  |[Deployment p2](deployment/deploy.md)
+Friday   |13:30-13:50|Björn  |[Documentation](deployment/documentation.md)
+Friday   |14:05-15:00|Björn  |[Documentation](deployment/documentation.md)
 Friday   |15:15-15:40|Lars   |[Wrap-up](misc/wrap_up.md)
 Friday   |15:40-16:00|Lars   |Confidence and retrospect
 
