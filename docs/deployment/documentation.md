@@ -193,7 +193,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
 
-!!! example
+!!! example "Examples of README files"
 
     - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
     - Conda: <https://github.com/biobakery/MetaPhlAn>
@@ -232,7 +232,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
     - Test in isolated environment (``venv``) on local computer if there are errors
     - That is, are there any more packages needed
-    - follow the example above
+    - Follow the example above
 
 ???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
 
