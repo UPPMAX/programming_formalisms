@@ -31,7 +31,7 @@ tags:
 
     - Package
 
-    Lesson Plan: 
+    Lesson Plan:
 
     - **Total** 75 min
     - Theory 20+10
@@ -147,9 +147,9 @@ For this we use `.gitignore` files.
 
 - [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
 
-- [Our course repo](https://github.com/programming-formalisms/rogramming_formalisms_project_summer_2025/blob/main/.gitignore)
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
 
-## Exercise 1: Identify lacking packages (10-15 min)
+## Exercise 1: Identify lacking packages (15-20 min)
 
 !!! tip
 
@@ -501,9 +501,8 @@ For this we use `.gitignore` files.
         - Make sure that you are **logged into GitHub**.
         - You can use this for both VS Code and terminal
 
-        ![New repo](../img/New_repo.png){ width="500" }
+        ![New repo](../img/New_repo.png){ width=60% }
         
-    
         - To create a repository we either click the green button "New" (top right corner).
     
         - Or if you see your profile page, there is a "+" menu (top right corner).
