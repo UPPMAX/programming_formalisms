@@ -105,7 +105,7 @@ We can also write a test:
     ```python
     class TestExperiment(unittest.TestCase):
 
-        """Class to test the code in src.bacsim.particle."""
+        """Class to test the code in src.weather.particle."""
 
         def test_create_experiment(self):
             # Should pass without error
@@ -168,7 +168,7 @@ We can also write a test:
     ```python
     class TestExperiment(unittest.TestCase):
 
-        """Class to test the code in src.bacsim.particle."""
+        """Class to test the code in src.weather.particle."""
 
         def test_run(self):
             experiment = create_experiment()
@@ -228,7 +228,7 @@ We can also write a test:
     ```python
     class TestExperiment(unittest.TestCase):
 
-        """Class to test the code in src.bacsim.particle."""
+        """Class to test the code in src.weather.particle."""
 
         def test_run_creates_a_result(self):
             experiment = create_experiment()
@@ -279,7 +279,7 @@ We can also write a test:
     ```python
     class TestExperiment(unittest.TestCase):
 
-        """Class to test the code in src.bacsim.particle."""
+        """Class to test the code in src.weather.particle."""
 
         def test_save(self):
             experiment = create_experiment()
@@ -344,7 +344,7 @@ We can also write a test:
     ```python
     class TestExperiment(unittest.TestCase):
 
-        """Class to test the code in src.bacsim.particle."""
+        """Class to test the code in src.weather.particle."""
 
         def test_create_an_experiment_with_parameters(self):
             parameters = create_parameters()
@@ -392,7 +392,7 @@ We can also write a test:
     ```python
     class TestExperiment(unittest.TestCase):
 
-        """Class to test the code in src.bacsim.particle."""
+        """Class to test the code in src.weather.particle."""
 
         def test_read_parameters_from_file(self):
             # Should pass without errors
@@ -430,7 +430,7 @@ Consider the tests we dreamt of writing:
 ```python
 class TestExperiment(unittest.TestCase):
 
-    """Class to test the code in src.bacsim.particle."""
+    """Class to test the code in src.weather.particle."""
 
     def test_create_experiment(self):
         # Should pass without error

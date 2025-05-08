@@ -12,10 +12,38 @@ tags:
     - Practice to use classes for type safety
     - Practice to use composition for a 'has-a' relationship
 
+???- question "For teachers"
+
+    Prior:
+
+    - What is a class?
+    - Why are classes important?
+    - Can you work without classes?
+    - What makes a well-written class?
+
 ## Why?
 
 You want to combine your variables into bigger things.
 You want those 'bigger things' to work well with the rest of your code.
+
+## Terminology
+
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+Term                 |Description
+---------------------|----------------------------------------------------------------------------------
+Class constructor    |A function (called `__init__`) to create an (initialized) class
+Class definition     |The complete class
+Class `init` function|A function (called `__init__`) to create an (initialized) class
+Class `str` function |A function (called `__str__`) to create an string to show the class' member values
+Class name           |The name of the class
+Class member variable|A variable that is part of the class
+Class member function|A function that is part of the class
+Class method         |A function that is part of the class
+Class procedure      |A function that is part of the class, that has no arguments
+Free function        |A function that is not part of a class
+
+<!-- markdownlint-enable MD013 -->
 
 ## When a `list` is not good enough anymore
 
@@ -226,7 +254,7 @@ assert str(type(a)) == "<class '__main__.Position'>"
 - Pick a class to design at your skill level:
     - Easiest: the worked-out position class, work in `src/learners`
     - Medium: the parameters class as shown above, work in `src/learners`
-    - Hardest: one in the learners' project, work in `src/bacsim`
+    - Hardest: one in the learners' project, work in `src/weather`
 
 - Write the definition of the classes
 
@@ -264,9 +292,9 @@ assert str(type(a)) == "<class '__main__.Position'>"
     print(type(a))
     ```
 
-???- question "Answer for the parameters class"
+???- question "Answer for the learners project"
 
-    Modify the answer for the `Position` class :-)
+    No answer here, as I cannot read your mind :-)
 
 ## References
 

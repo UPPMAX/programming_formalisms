@@ -209,7 +209,7 @@ classDiagram
 
 - Pick a class to design at your skill level:
     - Easiest: the particle class, work in `src/learners`
-    - Hardest: one in the learners' project, work in `src/bacsim`
+    - Hardest: one in the learners' project, work in `src/weather`
 - Write the definition of the classes
 
 ???- question "Answer for the particle"

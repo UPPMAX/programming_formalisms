@@ -248,8 +248,8 @@ deactivate # deactivate the venv!
     ???- info "Hints"
 
         - The main program ``main.py`` is in the repo.
-        - ``bacsim`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/bacsim/1.0.1/>
+        - ``weather`` is a python package needed by ``main.py``
+        - available here: <https://test.pypi.org/project/weather/1.0.1/>
 
 ???+ question "(In groups) Will people need any additional packages for this tool?"
 
