@@ -22,7 +22,6 @@ tags:
     - We will prepare for installation of your code
     - But also...
         - some theory of packages
-        - some theory of workflows
         - some theory of containers
         - get some hands on
 
@@ -32,30 +31,11 @@ tags:
 
     - Package
 
-    Lesson Plan: **FIX**
+    Lesson Plan: 
 
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
-
-???- info "TOC"
-
-    - Overview
-        - Recording dependencies
-        - workflows
-        - containers
-
-???- admonition "Changes"
-
-    - implement new project
-    - clear goal
-    - clearer guide
-    - ask about level
-    - exercises
-        - state where to work
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - advanced exercises
+    - **Total** 75 min
+    - Theory 20+10
+    - Exercises 30+15 min
 
 ## Introduction
 
@@ -69,7 +49,7 @@ tags:
 
 !!! attention
 
-    - Make your program or workflow works for others and yourself in the future.
+    - Make your program or workflow work for others and yourself in the future.
 
 ## Recording dependencies
 
@@ -115,6 +95,9 @@ tags:
 ### To make sure about needed dependencies
 
 - Start with empty environment
+- 2 levels of dependencies
+    - system libraries
+    - packages, like Python
 - Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
     - will your program require specific "system files"
     - are these typically not installed already?
@@ -144,8 +127,8 @@ tags:
 
 - You may have developed your Python program with your existing python modules environment. You may have installed some new packages during the development but did not track it in a good way.
 - We need to identify what python packages a user (or you on another computer) will need, to make the program work!
-    - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
-    - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
+    - There are many packages distributed in the "base" installation of Python so **it is not just to look at the import lines in the code**.
+    - You may also be hard to get an overview because you have **too many import lines**, also distributed among files if you worked in a modular way
 
 !!! example
 
@@ -162,11 +145,9 @@ Compiled and generated files are not committed to version control. There are man
 
 For this we use `.gitignore` files.
 
-- Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
 
-!!! example "From our project repo"
-
-    <programming_formalisms_project_summer_2025/blob/main/.gitignore>
+- [Our course repo](https://github.com/programming-formalisms/rogramming_formalisms_project_summer_2025/blob/main/.gitignore)
 
 ## Exercise 1: Identify lacking packages (10-15 min)
 
@@ -187,8 +168,6 @@ For this we use `.gitignore` files.
         ```
 
     - This creates an empty virtual environment located in `usertest` directory
-
-    - **GITIGNORE!**
     - Activate
 
     === "Mac/Linux"
@@ -212,20 +191,20 @@ For this we use `.gitignore` files.
     ```
 
     - Check it is empty with the command ``pip list``
-        - It should just show
+    - It should just show
 
-        ```bash
-        Package    Version
-        ---------- -------
-        pip        23.2.1
-        setuptools 65.5.0
-        ```
+    ```bash
+    Package    Version
+    ---------- -------
+    pip        23.2.1
+    setuptools 65.5.0
+    ```
 
-        - and some notes.
+    - and some notes.
 
 ???- question "(Optional Step 2: Add the folder to ``.gitignore``)"
 
-    - add to .gitignore file
+    - Add test directory to .gitignore file
 
 ???- question "Step 3: Install the weather package and run the program and look for missing packages'"
 
@@ -258,7 +237,7 @@ For this we use `.gitignore` files.
     pip install <package name>
     ```
 
-    - Do NOT use ´´--user``, since it should be installed in the virtual environment only.
+    - Do NOT use ``--user``, since it should be installed in the virtual environment only.
     - Do this until your program works
 
 ???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
@@ -478,11 +457,10 @@ For this we use `.gitignore` files.
         - **RECOMMENDED** Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
             - Include the file(s) (in this case the hello.py file) in the repo!
+            - Double check it was created on GitHub!
+                - It should show up under repos in your user space
 
         - ALTERNATIVE: Initialize and then continue with step 3.
-
-        - Double check it was created on GitHub!
-            - It should show up under repos in your user space
 
     ???- question "Terminal"
 
@@ -516,17 +494,15 @@ For this we use `.gitignore` files.
 
     ???- question "In VS Code"
 
-        - There was an opportunity to directly publish on GitHub
+        - There is an opportunity to directly publish on GitHub
     
     ???- question "From GitHub"
     
         - Make sure that you are **logged into GitHub**.
         - You can use this for both VS Code and terminal
 
-        <figure markdown="span">
-        ![New repo](../i/New_repo.png){ width="500" }
-        </figure>
-    
+        ![New repo](../img/New_repo.png){ width="500" }
+        
     
         - To create a repository we either click the green button "New" (top right corner).
     
