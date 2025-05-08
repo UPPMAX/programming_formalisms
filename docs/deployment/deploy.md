@@ -443,6 +443,9 @@ For this we use `.gitignore` files.
 
         - Make a new window
         - Open Folder
+
+            ![start_VSC](../img/start_VSC.png)
+           
         - Create new Folder with name ``test_project``
         - Select folder
         - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
@@ -459,7 +462,11 @@ For this we use `.gitignore` files.
         - Initialize and then continue with step 3.
         - Or Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
-            - Double check on GitHub!
+
+            ![initialize_VSC](../img/initialize_VSC.png)
+
+        - Double check it was created on GitHub!
+
 
     ???- question "Terminal"
 
