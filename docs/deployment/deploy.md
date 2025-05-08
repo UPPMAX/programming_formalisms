@@ -76,7 +76,7 @@ tags:
 
 - **Reproducibility**: We can control our code but how can we control dependencies?
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
-- **Dependency hell**: Different codes on the same environment can have conflicting dependencies.
+- **Dependency hell**: Different codes in the same environment can have conflicting dependencies.
 
 ### To make sure about needed dependencies
 
@@ -115,20 +115,20 @@ tags:
     - General tools
         - Containers
 
-### Conda, pip
+???- info  "Conda & pip"
 
-**These _Python-related_ tools try to solve the following problems:**
+    **These _Python-related_ tools try to solve the following problems:**
 
-- **Defining a specific set of dependencies**, possibly with well-defined versions
+    - **Defining a specific set of dependencies**, possibly with well-defined versions
     - requirements.txt...
-- **Installing those dependencies** mostly automatically
-- **Recording the versions** for all dependencies
-- **Isolated environments** (venv, virtualenv)
-    - On your computer for projects so they can use different software.
-    - Isolate environments on computers with many users (and allow self-installations)
-    - Using **different Python/R versions** per project??
-    - Provide tools and services to **share packages**
-
+    - **Installing those dependencies** mostly automatically
+    - **Recording the versions** for all dependencies
+    - **Isolated environments** (venv, virtualenv)
+        - On your computer for projects so they can use different software.
+        - Isolate environments on computers with many users (and allow self-installations)
+        - Using **different Python/R versions** per project??
+        - Provide tools and services to **share packages**
+    
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll cover the other tools after the exercise.
@@ -145,102 +145,121 @@ tags:
 - We need to identify what python packages a user (or you on another computer) will need, to make the program work!
     - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
     - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
-- So here are some steps:
 
-- Start a python virtual environment.
-    - you can do this outside the git repo to not pollute it
+### Ignoring files and paths with .gitignore
 
-```console
-python -m venv <path>/usertest
-```
+Compiled and generated files are not committed to version control. There are many reasons for this:
 
-- This creates an empty virtual environment located in `<path>/usertest` directory
-- Activate
+- Your code could be run on different platforms.
+- These files are automatically generated and thus do not contribute in any meaningful way.
+- The number of changes to track per source code change can increase quickly.
+- When tracking generated files you could see differences in the code although you haven't touched the code.
 
-=== "Mac/Linux"
+For this we use `.gitignore` files.
 
-    ```console
-    source <PATH>/usertest/bin/activate
-    ```
+- Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
 
-=== "Windows"
+!!! example "From our project repo"
 
-    - In Windows you may have to instead do:
+    <programming_formalisms_project_summer_2025/blob/main/.gitignore>
 
-    ```console
-    source <PATH>/usertest/Scripts/activate
-    ```
+## Exercise 1: Identify lacking packages
 
-- Note the ``(usertest)`` in the beginning of the prompt!
-- Do note the python version and you may inform users that you know that this version is known to work!
+!!! tip
 
-Test copy
+    - Work individually locally (in VS Code)
 
-=== "Mac/Linux"
+???- question "Step 1: Start an EMPTY python virtual environment"
+
+    - Go to the dir **XXX**
 
     ```console
-    source <PATH>/usertest/bin/activate
+    python -m venv <path>/usertest
     ```
+    - This creates an empty virtual environment located in `<path>/usertest` directory
+    - **GITIGNORE!**
+    - Activate
 
-=== "Windows"
+    === "Mac/Linux"
 
-    - In Windows you may have to instead do:
+        ```console
+        source <PATH>/usertest/bin/activate
+        ```
+
+    === "Windows"
+
+        ```console
+        source <PATH>/usertest/Scripts/activate
+        ```
+
+    - Note the ``(usertest)`` in the beginning of the prompt!
 
     ```console
-    source <PATH>/usertest/Scripts/activate
+    which python        #must point to the python belonging to the virtual environment
+    python -V            # note this version
+    which pip        #must point to the pip belonging to the virtual environment
+    ```
+
+???- question "Step 2: Add this to ``.gitignore``"
+
+     - add to .gitignore file
+
+???- question "Step 3: Run the program and look for missing packages'"´
+
+    - You can switch to the directory where you have your code and test to run it
+    - It may give you errors of missing packages, like ``numpy``
+    - Install them with
+
+    ```console
+    pip install <package name>
+    ```
+
+    - No need to use ´´--user``, since it will be installed in the virtual environment only.
+    - Do this until your program works
+
+
+???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"´
+
+    - Check what is installed by:
+
+    ```console
+    pip freeze        #pip list works as well
+    ```
+
+    - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
+
+    - Save your requirements as a file that user can run to get the needed dependencies
+
+    ```console
+    pip freeze > requirements.txt
+    ```
+    
+
+???- question "Step 5: Test the requirements file in a new environment"´
+
+    - End the isolated environment and work with other things!
+
+    ```console
+    deactivate # deactivate the venv!
+    ```
+
+    - Other users can then install the same packages with:
+   
+    ```console
+    pip install --user -r requirements.txt
     ```
 
 
-
-
-```console
-which python        #must point to the python belonging to the virtual environment
-python -V            # note this version
-which pip        #must point to the pip belonging to the virtual environment
-```
-
-- You can switch to the directory where you have your code and test to run it
-- It may give you errors of missing packages, like ``numpy``
-- Install them with
-
-```console
-pip install <package name>
-```
-
-- No need to use ´´--user``, since it will be installed in the virtual environment only.
-- Do this until your program works
-- Check what is installed by:
-
-```console
-pip freeze        #pip list works as well
-```
-
-- You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
-
-- Save your requirements as a file that user can run to get the needed dependencies
-
-```console
-pip freeze > requirements.txt
-```
-
-- Other users can then install the same packages with:
-
-```console
-pip install --user -r requirements.txt
-```
-
-- End the isolated environment and work with other things!
-
-```console
-deactivate # deactivate the venv!
-```
 
 !!! example
 
     - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
     - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
 
-### README: installation section
+
+
+
+## README: installation section
 
 **Let's take a look at different READMEs**
 
@@ -254,7 +273,7 @@ deactivate # deactivate the venv!
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
-## Exercises 20-30 min
+### Exercises 20-30 min
 
 - We already have a file called ``README.md``, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
@@ -377,23 +396,6 @@ deactivate # deactivate the venv!
 
 - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
-
-### Ignoring files and paths with .gitignore
-
-Compiled and generated files are not committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use `.gitignore` files.
-
-- Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
-
-!!! example "From our project repo"
-
-    <programming_formalisms_project_summer_2025/blob/main/.gitignore>
 
 ## (Optional) Start a Git/GitHub repo from existing project
 
