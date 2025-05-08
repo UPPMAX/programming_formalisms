@@ -30,7 +30,7 @@ tags:
 
     Prerequisites are:
 
-    - ...
+    - Package
 
     Lesson Plan: **FIX**
 
@@ -254,13 +254,14 @@ For this we use `.gitignore` files.
 
 ???- question "(One person): Move the requirements file to the ``learners/source`` folder"
 
-     - This will be the "official" requirements file
+    - Move the requirements file to the ``learners/source`` folder
+    - This will be the "official" requirements file
 
 ## Going further with deployment
 
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 
-- **Possibilities for other languages can be**
+???- question "Possibilities for other languages can be"
     - C/C+
         - CMake
         - Conda
@@ -274,8 +275,7 @@ For this we use `.gitignore` files.
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
 
 
-**Course advertisement**
-[Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
+**Course advertisement:** [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
 
 ### Containers
 
@@ -349,7 +349,7 @@ For this we use `.gitignore` files.
 ### Principle
 
 - Initiate git project
-    - Browse to right *root* directory (the folder contatining all the project-related files)   
+    - Browse to right _root_ directory (the folder contatining all the project-related files)
 - Stage and commit
 - upload to github
 
@@ -366,7 +366,7 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
-    - Browse to right *root* directory (the folder contatining all the project-related files)   
+    - Browse to right *root* directory (the folder contatining all the project-related files)
 
 ???- question "Exercise 1B: Start a new test project"
 
