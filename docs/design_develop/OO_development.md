@@ -17,7 +17,6 @@ tags:
     - Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
     - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
-    - Explore the concept of design patterns as blueprints for solving common software design problems.
 
 
 
@@ -132,6 +131,7 @@ Further reading:
 
     make a markdown document in your learners folder
     Add objects that we need for our weather project such as Display, Graph.
+    references to the requirements found in the [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md) document (A requirements document is often refered to as an SRS - System/**S**oftware **R**equirement **S**pecification )
 
 ## Design patters(self study)
 
@@ -140,6 +140,8 @@ Further reading:
     - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
     - The learners can describe the general parts of a design pattern and why we use them.
     - The Learners should be able to understand the "Decorator pattern" and what problem it solves
+    - Explore the concept of design patterns as blueprints for solving common software design problems.
+
 
 The zero line code is the most optimal code there for the zero line design must be the most optimal?
 
