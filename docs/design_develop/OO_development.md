@@ -57,6 +57,7 @@ The semantic gap(The distance form input to understanding) between reality and m
         The behavior and information are encapsulated in the object
         `[Ivar Jacobson 1992]`
 
+
 ???- question "What is a Class"
 
     >A class is a set of objects that share a common structure, common behavior, and common semantics.
@@ -68,14 +69,14 @@ are association, composition and aggregation
 
 ```mermaid
 classDiagram
-    Owner-->Animal: cares for
+    Owner --> Animal: cares for
     Dog*--"1"Head
     Dog*--"1"Body
     Dog*--"0..1"Tail
     Owner o--"0..*"Animal
-    Animal <|--Dog
-    Animal <|--Cat
-    Animal <|--GoldFish
+    Animal <|-- Dog
+    Animal <|-- Cat
+    Animal <|-- GoldFish
 ```
 
 Further reading:
@@ -105,17 +106,11 @@ Further reading:
     with the "has a" relation ship rather than "is a" relation ship.
     we work with the composite and the aggregate relationships
 
+
 ### Exercise
 
 ???- "Objects"
-    Write a object description for Uppsala Weather statin and Bacterium Parameters then translate this into a class make a markdown document in your learners folder
-
-???- "Class Diagram"
-    Construct a class diagram for the classes
-    try to model the relationships ass associations, aggregations
-    and compositions
-    use [this link](https://mermaid.js.org/syntax/classDiagram.html)
-   and the [playground or live editor](https://www.mermaidchart.com/play#pako:eNpdjbEOgjAURX_lpZMO_QEGEynKQqIDW2F4wdY2Sl9TmhBD-XfByKB3PefeO7GOboplTD9p7AyGCHXRhMbBkqMUJtgh9ji0wPkhlSpCT069EuS7kmAw5L119_3WyFcNxFStooJorHvMGxSfjYtTCQpZoY_k219Wj5TgJO3VLCf_zAS1NM9SY6aRdxhAYPhKbH4Dm8NAOg)
+    Write a object description for Uppsala Weather station then translate this into a class make a markdown document in your learners folder
 
 ## Design patters(self study)
 
