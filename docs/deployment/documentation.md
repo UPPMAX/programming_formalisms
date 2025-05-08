@@ -30,23 +30,10 @@ tags:
 
     - Revisit licence
 
-    - Update a Doc Index
     - View other possibilities
         - Wiki
         - GitHub pages/ReadTheDocs
         - MkDocs/sphinx
-
-???- admonition "Changes"
-
-    - implement new project
-    - clear goal
-    - clearer guide
-    - ask about level
-    - exercises
-        - state where to work
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - advanced exercises
 
 ## Revisiting documentation
 
@@ -58,7 +45,9 @@ tags:
         - **Explanation**: understanding-oriented, explains a concept
         - **Reference**: information-oriented, describes the machinery
         - **In-code documentaion — docstrings**
+
         **Not to forget**
+
         - Project documentation:
             - requirements: what is the goal of the software, risks, platforms
             - the analysis: pseudocode and UML
@@ -71,7 +60,7 @@ tags:
 
 **DONE**
 
-- &#9745; in-code documentation
+- &#9745; In-code documentation
 - &#9745; Project documentation:
     - requirements: what is the goal of the software, risks, platforms
     - the analysis: pseudocode and UML
@@ -80,9 +69,9 @@ tags:
 **Finalize today**
 
 - &#9744; README
-    - &#9745; installation instruction
+    - &#9744; installation instruction
     - &#9744; Tutorial: get started
-    - &#9744; citation
+    - &#9744; Citation
 
 **Further documentation for future projects**
 
@@ -91,6 +80,36 @@ tags:
 - &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
 - &#9744; **Explanation**: understanding-oriented, explains a concept
 - &#9744; **Reference**: information-oriented, describes the machinery
+
+## Markdown
+
+- One of the most popular lightweight markup languages.
+
+```markdown
+# This is a section heading in Markdown   
+
+## This is a subsection header
+
+Nothing special needed for a normal paragraph.
+
+    This is a code block
+
+
+**Bold** and *emphasized*.
+
+A list:
+- this is an item
+- another item
+
+There is more:
+![images](link to file),
+[links](URL),
+tables...
+```
+
+!!! info "Read more"
+
+    [reStructuredText and Markdown](../extra_bc/documentation_deeper.md/#restructuredtext-and-markdown)
 
 ## The README
 
@@ -228,7 +247,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 ## Exercises
 
-### Exercises 30-30 min
+### Exercises 30-40 min
 
 - We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
@@ -242,12 +261,28 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
         - When done, merge
     - In the end we do code review together of the merging conflicts
 
+???- tip "Markdown Cheat-Sheet"
 
-???+ question "(In groups) Will people need any additional packages for this tool?"
+    ```markdown
+    # This is a section heading in Markdown   
 
-    - Test in isolated environment (``venv``) on local computer if there are errors
-    - That is, are there any more packages needed
-    - Follow the example above
+    ## This is a subsection header
+
+    Nothing special needed for a normal paragraph.
+
+        This is a code block
+
+    **Bold** and *emphasized*.
+
+    A list:
+    - this is an item
+    - another item
+
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    tables...
+    ```
 
 ### Group 1: Make 'installation instruction' in groups
 
@@ -266,7 +301,7 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - Open the file ``learners/README-EXT.md``
 
     - Be inspired by the examples above
-    - Include the sections "Dependencies" and "Installing"
+    - Include the sections "**Dependencies**" and "**Installing**"
     - When done, make pull request to main
 
 ### Group 2 Formulate an 'About' section
@@ -280,8 +315,8 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - Open the file ``learners/README-EXT.md``
 
     - Be inspired by the examples above
-    - Include the section "About" which should give some background of what the program does and how to run it.
-    - Include the section 'Getting started'
+    - Include the section "**About**" which should give some background of what the program does and how to run it.
+    - Include the section '**Getting started**'
     
     - When done, make pull request to main
 
@@ -293,13 +328,13 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - Do ``git push`` first from local command-line, everyone!
     - 1 person types directly in GitHub
     - Create branch ``sharing``
-    - First open the file ``learners/CITATION.cff`` file
+    - Work with a CITATION(.cff) file
 
     ???- question "How?"
 
         **Easier**
 
-        Create a learners/CITATION file (no file extension) with most of the following lines
+        Create a learners/**CITATION** file (no file extension) with most of the following lines
         
         - Creator
         - Title
@@ -354,10 +389,6 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 ## Going further with documentation
 
-!!! info "See also"
-
-    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
-
 ### Wikis
 
 - Popular solutions (but many others exist):
@@ -397,14 +428,14 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
     - hosts public Sphinx documentation for free!
     - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
 
-#### GitHub pages
+!!! info "GitHub pages"
 
-- Easiest. Everything is local to GitHub
-- This lesson material
+    - Easiest. Everything is local to GitHub
+    - This lesson material
 
-#### Read the Docs
+!!! info "Read the Docs"
 
-- Somewhat more possibilities, like having several versions of documentation to switch between.
+    - Somewhat more possibilities, like having several versions of documentation to switch between.
 
 ### What contributes to reusability?
 
@@ -436,6 +467,14 @@ reusability:
     - Trust and community
       > ... somebody you trust recommended it?
 
+## Summary
+
+!!! info "Key points"
+
+    **Make sure it works for others or yourself in the future!**
+
+### We are done!
+
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
@@ -460,3 +499,6 @@ reusability:
         - &#9745; in-code documentation
         - &#9745; finish documentation
 
+!!! info "See also"
+
+    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
