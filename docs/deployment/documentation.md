@@ -208,25 +208,20 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 ## Exercises
 
-### Exercises 20-30 min
+### Exercises 30-30 min
 
-- We already have a file called ``README.md``, that is used for information for the course participants.
+- We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
 
 !!! info "Intro"
 
-    - (External) Users should be able to install the the complete tool, including dependencies:
-    . Repo work
-        - work on GitHub!
+    - (External) users should be able to install and use the the complete tool, including dependencies
+    - Repo work
+        - Work on GitHub!
         - When modifying repo, use a group specific branch
         - When done, merge
     - In the end we do code review together of the merging conflicts
 
-    ???- info "Hints"
-
-        - The main program ``main.py`` is in the repo.
-        - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/weather/1.0.1/>
 
 ???+ question "(In groups) Will people need any additional packages for this tool?"
 
@@ -234,42 +229,63 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - That is, are there any more packages needed
     - Follow the example above
 
-???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
+### Group 1: Make 'installation instruction' in groups
 
-    - each group in different branches
-    - then merge and teacher does code review
+???- info "Hints **FIX**"
 
-???+ question "(In groups) Make 'installation instruction' in groups"
+    - The main program ``main.py`` is in the repo.
+    - ``weather`` is a python package needed by ``main.py``
+    - available here: <https://test.pypi.org/project/weather/1.0.1/>
 
-    - each group in different branches
-    - then merge and teacher does code review
+???+ question "Make 'installation instruction'"
 
-### More exercises
+    - Work together in group
+    - Do ``git push`` first from local command-line, everyone!
+    - 1 person types directly in GitHub
+    - Create branch ``installation``
+    - Open the file ``learners/README-EXT.md``
 
-!!! info "Intro"
+    - Be inspired by the examples above
+    - Include the sections "Dependencies" and "Installing"
+    - When done, make pull request to main
 
-    - Revisit ``README-ext.md`` and update it with info after all our commits
-        - About
-        - Citing
-    - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
-    - Do a ``git pull`` to have the same version of your project repo locally!
+### Group 2 Formulate an 'About' section
 
-???+ question "Update your documentation in groups"
+???+ question "Make 'About' and 'Getting started'"
 
-    - You can now work in GitHub directly
-    - Do ``git push`` first from local command-line!
+    - Work together in group
+    - Do ``git push`` first from local command-line, everyone!
+    - 1 person types directly in GitHub
+    - Create branch ``about``
+    - Open the file ``learners/README-EXT.md``
 
+    - Be inspired by the examples above
+    - Include the section "About" which should give some background of what the program does and how to run it.
+    - Include the section 'Getting started'
+    - When done, make pull request to main
 
-    - We already have a file called ``README.md``, that is used for information for the course participants.
-    - Let's continue to work with the ``README-EXT.md`` we used in last session.
+### Group 3: Formulate "Sharing sections and getting started"
 
+???+ question "Make sections about 'Getting started', 'Citation', 'License' and 'Authors'"
 
-    ???- question "Group 1: Work together and formulate an 'About' section"
+    - Work together in group
+    - Do ``git push`` first from local command-line, everyone!
+    - 1 person types directly in GitHub
+    - Create branch ``sharing``
+    - First open the file ``learners/CITATION.cff`` file
+    - Fill it in!    
+    - Open the file ``learners/README-EXT.md``
+    - Be inspired by the examples above
+    - Include the sections
+        - 'Citation', link to the cff file
+        - 'License' link to the license
+            - try relative or absolute path!
+        - 'Authors', List of the involved learners
+    - When done, make pull request to main
 
-    ???- question "Group 2: Work together and formulate 'Getting started' section"
+???- solution "Example solution from last course"
 
-    ???- question "Group 3: Work together and formulate 'Citation' section"
-
+     [programming_formalisms_project_autumn_2024](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/blob/master/README-EXT.md)
 
 ## Discussion
 
@@ -285,7 +301,13 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 >    If the licenses of components are strong copyleft, one must use the same license
 
-![license_project](../img/license_project.png)
+- We can click on the license and a image will also show up!
+
+    - [LICENS](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/LICENSE)
+
+???- question "How does that look like?"
+
+    ![license_project](../img/license_project.png)
 
 !!! info "See also"
 
