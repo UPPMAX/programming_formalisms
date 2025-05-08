@@ -16,7 +16,7 @@ tags:
     - Learn the definition and characteristics of an object, including its ability to save state and perform operations.
     - Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
-    - Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.
+    - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
     - Explore the concept of design patterns as blueprints for solving common software design problems.
     - Develop a practical understanding of the Factory Method design pattern
 
@@ -63,7 +63,8 @@ The semantic gap(The distance form input to understanding) between reality and m
     >A class is a set of objects that share a common structure, common behavior, and common semantics.
     `[Booch 2007]`
 
-
+The modeling software company [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/) has a guide in some common roles between object such as Association.
+"If two classes in a model need to communicate with each other, there must be a link between them, and that can be represented by an association (connector)."
 
 Composition implies a relationship where the child cannot exist independent of the parent. Example: House (parent) and Room (child). Rooms don't exist separate to a House.
 
