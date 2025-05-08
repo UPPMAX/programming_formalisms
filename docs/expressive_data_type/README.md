@@ -257,7 +257,7 @@ assert str(type(a)) == "<class '__main__.Position'>"
     - Medium: the parameters class as shown above, work in `src/learners`
     - Hardest: one in the learners' project, work in `src/weather`
 
-- Write the tests and definitio of your class
+- Write the tests and definition of your class
 
 ???- question "Answer for the position class"
 

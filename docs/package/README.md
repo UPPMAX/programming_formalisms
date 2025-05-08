@@ -233,4 +233,4 @@ Indeed, the package can now be found at [https://test.pypi.org/project/weather/1
 
 ???- question "How does that look like?"
 
-    ![weather on PyPI](weather_on_testpypi.png)
+    ![weather on PyPI](bacsim_on_testpypi.png)

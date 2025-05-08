@@ -18,8 +18,6 @@ tags:
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
     - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
 
-
-
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
