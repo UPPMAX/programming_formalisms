@@ -476,8 +476,6 @@ Node4 --> |git commit| Node1
 Node2 --> |git push| Node5
 
 %% C[Uncommited changed hello.py] -->|commit button| R
-Node5 --> |"git pull (from local git)"| Node2
-R --> |"git pull (from local git)"| Node1
 R <--> Node5
        subgraph "Local Git"
         Node2[project]
