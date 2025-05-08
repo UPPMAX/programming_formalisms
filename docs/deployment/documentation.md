@@ -416,37 +416,31 @@ There are many tools that can turn RST or Markdown into beautiful HTML pages:
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
     - [HICexplorer documentation](https://hicexplorer.readthedocs.io/en/latest/)
-- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
+- [MkDocs](https://www.mkdocs.org/) **← this is how this lesson material is built**
     - Generates HTML from Markdown.
     - Example: [Programming formalisms course](https://uppmax.github.io/programming_formalisms)
 
 There are many more ...
 
-??? question "Do you like one more?"
+??? question "Do you like one style more?"
 
     - [Read the docs style 1](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
     - [Read the docs style 2](https://hicexplorer.readthedocs.io/en/latest/)
-    - [MkDocs materials](https://uppmax.github.io/programming_formalisms)
+    - [MkDocs materials style](https://uppmax.github.io/programming_formalisms)
    
 ### Deployment on servers
 
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
-- [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
+- [GitHub Pages](https://pages.github.com) (GH-pages) **← this is what we and many others use for course and tutorial material**
+    - Easy to set up. Part of GitHub Actions and CI
 - [Bitbucket Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=bitbucket)
 - [GitLab Pages](https://pages.gitlab.io)
 - [Read the docs](http://readthedocs.org) ← this is what NBIS uses for some course material
     - hosts public Sphinx documentation for free!
+    - Somewhat more possibilities, like having **several versions of documentation** to switch between. Good for different version releases of a software
     - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
 
-!!! info "GitHub pages"
-
-    - Easiest. Everything is local to GitHub
-    - This lesson material
-
-!!! info "Read the Docs"
-
-    - Somewhat more possibilities, like having several versions of documentation to switch between.
 
 ### What contributes to reusability?
 
