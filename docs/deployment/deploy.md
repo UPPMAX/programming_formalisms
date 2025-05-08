@@ -146,7 +146,12 @@ tags:
     - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
     - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
 
-### Ignoring files and paths with .gitignore
+!!! example
+
+    - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
+    - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
+
+## Ignoring files and paths with .gitignore
 
 Compiled and generated files are not committed to version control. There are many reasons for this:
 
@@ -176,6 +181,7 @@ For this we use `.gitignore` files.
     ```console
     python -m venv <path>/usertest
     ```
+
     - This creates an empty virtual environment located in `<path>/usertest` directory
     - **GITIGNORE!**
     - Activate
@@ -202,7 +208,7 @@ For this we use `.gitignore` files.
 
 ???- question "Step 2: Add this to ``.gitignore``"
 
-     - add to .gitignore file
+    - add to .gitignore file
 
 ???- question "Step 3: Run the program and look for missing packages'"´
 
@@ -217,47 +223,34 @@ For this we use `.gitignore` files.
     - No need to use ´´--user``, since it will be installed in the virtual environment only.
     - Do this until your program works
 
-
 ???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"´
 
     - Check what is installed by:
 
     ```console
-    pip freeze        #pip list works as well
+    pip freeze        #'pip list' works as well
     ```
 
     - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
-
-    - Save your requirements as a file that user can run to get the needed dependencies
+    - Save your requirements as a file that user can run to get the needed dependencies.
 
     ```console
     pip freeze > requirements.txt
     ```
-    
 
 ???- question "Step 5: Test the requirements file in a new environment"´
 
     - End the isolated environment and work with other things!
 
     ```console
-    deactivate # deactivate the venv!
+    deactivate
     ```
 
     - Other users can then install the same packages with:
-   
+
     ```console
     pip install --user -r requirements.txt
     ```
-
-
-
-!!! example
-
-    - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
-    - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
-
-
-
 
 ## README: installation section
 
