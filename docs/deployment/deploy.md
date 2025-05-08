@@ -415,6 +415,12 @@ For this we use `.gitignore` files.
 - Then the python active in "PATH" will automatically be used
     - especially important on a shared system where python is not in the typical ``/usr/bin/python`` path.
 
+
+!!! info "See also"
+
+    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
+    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
+
 ## Start a Git/GitHub repo from personal existing project
 
 - Many projects/scripts start as something for personal use, but expands to be distributed.
