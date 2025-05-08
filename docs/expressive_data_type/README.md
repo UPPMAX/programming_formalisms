@@ -264,9 +264,9 @@ assert str(type(a)) == "<class '__main__.Position'>"
     print(type(a))
     ```
 
-???- question "Answer for the parameters class"
+???- question "Answer for the learners project"
 
-    Modify the answer for the `Position` class :-)
+    No answer here, as I cannot read your mind :-)
 
 ## References
 
