@@ -20,14 +20,8 @@ tags:
     - Explore the concept of design patterns as blueprints for solving common software design problems.
     - Develop a practical understanding of the Factory Method design pattern
 
-???- info "Learning outcomes of Design Patterns"
 
-    - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
-    - The learners can describe the general parts of a design pattern and why we use them.
-    - The Learners should be able to understand the "Factory pattern" and what problem it solves
-
-
->People regard their environment in terms of objects"
+"People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
 This leads to a smaller semantic gap which
@@ -111,6 +105,32 @@ Further reading:
     with the "has a" relation ship rather than "is a" relation ship.
     we work with the composite and the aggregate relationships
 
+### Exercise
+
+???- "Objects"
+    Write a object description for Uppsala Weather statin and Bacterium Parameters then translate this into a class make a markdown document in your learners folder
+
+???- "Class Diagram"
+    Construct a class diagram for the classes
+    try to model the relationships ass associations, aggregations
+    and compositions
+    use [this link](https://mermaid.js.org/syntax/classDiagram.html)
+   and the [playground or live editor](https://www.mermaidchart.com/play#pako:eNpdjbEOgjAURX_lpZMO_QEGEynKQqIDW2F4wdY2Sl9TmhBD-XfByKB3PefeO7GOboplTD9p7AyGCHXRhMbBkqMUJtgh9ji0wPkhlSpCT069EuS7kmAw5L119_3WyFcNxFStooJorHvMGxSfjYtTCQpZoY_k219Wj5TgJO3VLCf_zAS1NM9SY6aRdxhAYPhKbH4Dm8NAOg)
+
+## Design patters(self study)
+
+???- info "Learning outcomes of Design Patterns"
+
+    - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
+    - The learners can describe the general parts of a design pattern and why we use them.
+    - The Learners should be able to understand the "Decorator pattern" and what problem it solves
+
+The zero line code is the most optimal code there for the zero line design must be the most optimal?
+
+The zero line code/design simply refers do not make something that some one else already has coded unless warranted by either security concerns (the source is not trusted such as untested code )or for learning.
+
+Zero line Design is optimal in the sense that if some one already figure out a tried a tested method to do something don't do it yourself. Zero line design means using a tried and tested design.
+
 ???- question  "What is a Design Pattern?"
 
     Design patterns are typical solutions to common problems
@@ -118,6 +138,8 @@ Further reading:
     that you can customize to solve a particular
     design problem in your code.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
+
+    Gamma et al. starts describing a design pattern with a quote from Christopher alexander "Each pattern describes a problem which occurs over and over again in our environment,and then describes the core of the solution to that problem in such away that you can use this solution a million time over , without doing it the same way twice" which is a qoute about buildings and towns, but they go on to claim that this is applicable in object design as well`[Gamma et al., 1995]`
 
 ???- question  "Why do we use Design Patterns?"
 
@@ -128,30 +150,31 @@ Further reading:
     Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-### Exercise
+Exercise
 
-???- "Objects"
-    Write a object description for Parameters and Bacterium Parameters then translate this into a class make a markdown document in your learners folder
+???+ "Design Patterns"
 
-???- "Class Diagram"
-    Construct a class diagram for the classes
-    try to model the relationships ass associations, aggregations
-    and compositions
-    use [this link](https://mermaid.js.org/syntax/classDiagram.html)
-   and the [playground or live editor](https://www.mermaidchart.com/play#pako:eNpdjbEOgjAURX_lpZMO_QEGEynKQqIDW2F4wdY2Sl9TmhBD-XfByKB3PefeO7GOboplTD9p7AyGCHXRhMbBkqMUJtgh9ji0wPkhlSpCT069EuS7kmAw5L119_3WyFcNxFStooJorHvMGxSfjYtTCQpZoY_k219Wj5TgJO3VLCf_zAS1NM9SY6aRdxhAYPhKbH4Dm8NAOg)
+    Read the [Decorator](https://refactoring.guru/design-patterns/decorator) pattern is there a function or Class that would fit this particular problem?
 
-???- "Design Patterns"
+!!! Hint "Something that must be done differently but belong together"
+    when looking for pattern it is always good to go through what you have design or code so far and check if something just changes how a thing looks. Or when you need to access multiple data formats in one way
 
-    Design a Factory method for the creation of bacteria
+
+!!!- "Answer"
+
+    The temperature converter in utils is an excellent case where generalization by a decorator that lets you add as many converters to the system as you like
 
 ???- "Extra assignment"
 
-    Using refactoring.guru find an design Describe in a design document another pattern that is useful for your project.
+    Using refactoring.guru find an design Describe in a design document a pattern that is useful for the weather project
 
+<!--![Gamma et al., 1995]() consider adding images of each book used in the refrence -->
 
 ## References
 
 - `[Ivar Jacobson 1992]` Ivar Jacobson et al., Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992.
 - `[Booch 2007]` Grady Booch et al.,Object-oriented analysis and design with applications -3rd ed,Addison-wesley 2007.
 - `[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
+-`[Gamma et al., 1995]` Gamma, Erich, et al.
+  "Elements of reusable object-oriented software." Design Patterns (1995).
 

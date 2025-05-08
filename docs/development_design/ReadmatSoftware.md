@@ -766,11 +766,11 @@ State chart diagram is used to visualize the reaction of a system by internal/ex
     * **Note** Plant UML can not do Communication diagram/collaboration diagrams
 
     * Interaction overview diagram
-    
+
     UML Interaction Overview Diagrams provide a high level of abstraction an interaction model. It is a variant of the Activity Diagram where the nodes are the interactions or interaction occurrences.
 
     * Timing Diagram
-    
+
     Timing diagrams are UML interaction diagrams used to show interactions when a primary purpose of the diagram is to reason about time.
 
     ```plantuml
