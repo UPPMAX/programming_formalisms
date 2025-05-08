@@ -122,14 +122,15 @@ Further reading:
     the syntax for adding mermaid to a markdown is
 
     ```mermaid
-        classDiagram
+    classDiagram
+        direction TD
         Owner --> Animal: cares for
         Dog*--"1"Head
         Dog*--"1"Body
         Dog*--"0..1"Tail
         Owner o--"0..*"Animal
         Animal <|-- Dog
-        ```
+    ```
 
     make a markdown document in your learners folder
     Add objects that we need for our weather project such as Display, Graph.
