@@ -18,7 +18,7 @@ tags:
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
     - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
     - Explore the concept of design patterns as blueprints for solving common software design problems.
-    - Develop a practical understanding of the Factory Method design pattern
+
 
 
 "People regard their environment in terms of objects"
@@ -57,6 +57,8 @@ The semantic gap(The distance form input to understanding) between reality and m
         The behavior and information are encapsulated in the object
         `[Ivar Jacobson 1992]`
 
+    3: **The concept of message passing**
+        Each object has a external interface through which it interacts with other objects, it is the carriers of messages public(access qualifier, see below) methods of the Classes are the implementation of message passing.
 
 ???- question "What is a Class"
 
@@ -77,7 +79,7 @@ classDiagram
     Dog*--"0..1"Tail
     Owner o--"0..*"Animal
     Animal <|-- Dog
- ``
+ ```
 
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
@@ -98,6 +100,7 @@ Further reading:
     make commonality explicit by using inheritance.
     `[Stroustrup B. 1988]`
 
+
 !!! hint "Why do we Break the rule?"
 
     In this course we do not go into the concept of
@@ -109,8 +112,26 @@ Further reading:
 
 ### Exercise
 
-???- "Objects"
-    Write a object description for Uppsala Weather station then translate this into a class make a markdown document in your learners folder
+???+ question "Code along Mermaid"
+    Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground then follow
+    along as I create in mermaid
+
+???- question "Objects"
+    Write a object description for Uppsala Weather station
+    the syntax for adding mermaid to a markdown is
+
+    ```mermaid
+        classDiagram
+        Owner --> Animal: cares for
+        Dog*--"1"Head
+        Dog*--"1"Body
+        Dog*--"0..1"Tail
+        Owner o--"0..*"Animal
+        Animal <|-- Dog
+        ```
+
+    make a markdown document in your learners folder
+    Add objects that we need for our weather project such as Display, Graph.
 
 ## Design patters(self study)
 
