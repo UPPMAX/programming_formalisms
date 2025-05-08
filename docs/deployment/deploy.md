@@ -262,6 +262,7 @@ For this we use `.gitignore` files.
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 
 ???- question "Possibilities for other languages can be"
+
     - C/C+
         - CMake
         - Conda
@@ -273,7 +274,6 @@ For this we use `.gitignore` files.
 - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
 
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
-
 
 **Course advertisement:** [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
 
@@ -366,7 +366,7 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
-    - Browse to right *root* directory (the folder contatining all the project-related files)
+    - Browse to right _root_ directory (the folder contatining all the project-related files)
 
 ???- question "Exercise 1B: Start a new test project"
 
@@ -482,7 +482,6 @@ R <--> Node5
         end
 
 ```
-
 
 ## Summary
 
