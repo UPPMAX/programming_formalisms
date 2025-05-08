@@ -360,7 +360,7 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
-    - Browse to right _root_ directory (the folder contatining all the project-related files)
+    - Browse to right _root_ directory (the folder containing all the project-related files)
 
 ???- question "Exercise 1B: Start a new test project"
 
