@@ -221,25 +221,25 @@ Now results in
 
 Then add this to the class:
 
-    ```python
+```python
+def __repr__(self):
+    return "Position"
+```
+
+Resulting in the complete class:
+
+```python
+class Position:
+    def __init__(self, any_x, any_y):
+        self.x = any_x
+        self.y = any_y
+    def __str__(self):
+        return "(" + str(self.x) + ", " + str(self.y) + ")"
     def __repr__(self):
-        return "Position"
-    ```
+        return 'Position'
+```
 
-    Resulting in the complete class:
-
-    ```python
-    class Position:
-        def __init__(self, any_x, any_y):
-            self.x = any_x
-            self.y = any_y
-        def __str__(self):
-            return "(" + str(self.x) + ", " + str(self.y) + ")"
-        def __repr__(self):
-            return 'Position'
-    ```
-
-    > When asked for its data type, return the word 'Position'.
+> When asked for its data type, return the word 'Position'.
 
 Aha, `a` is a **position**!
 
