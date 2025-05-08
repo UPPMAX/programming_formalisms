@@ -276,6 +276,11 @@ assert str(type(a)) == "<class '__main__.Position'>"
             return "Position"
         def __str__(self):
             return "(" + str(self.x) + ", " + str(self.y) + ")"
+
+    assert len(str(Position(1.2, 3.4))) > 0
+    assert len(type(Position(1.2, 3.4))) > 0
+    assert Position(1.2, 3.4).get_x() == 1.2
+    assert Position(1.2, 3.4).get_y() == 3.4
     ```
 
 ???- question "Answer for the parameters class"
