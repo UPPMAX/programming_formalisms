@@ -178,7 +178,7 @@ For this we use `.gitignore` files.
     - Create a virtual environment, called ``usertest``
 
         ```console
-        python -m venv <path>/usertest
+        python -m venv usertest
         ```
 
     - This creates an empty virtual environment located in `usertest` directory
@@ -189,13 +189,13 @@ For this we use `.gitignore` files.
     === "Mac/Linux"
 
         ```console
-        source <PATH>/usertest/bin/activate
+        source usertest/bin/activate
         ```
 
     === "Windows"
 
         ```console
-        source <PATH>/usertest/Scripts/activate
+        source usertest/Scripts/activate
         ```
 
     - Note the ``(usertest)`` in the beginning of the prompt!
@@ -226,7 +226,7 @@ For this we use `.gitignore` files.
 
     **FIX**
     
-    - Install with 'pip install
+    - Install with ``pip install -i ...``
     
     ???- info "Hints"
 
@@ -238,7 +238,7 @@ For this we use `.gitignore` files.
     pip install -i https://test.pypi.org/project/bacsim==1.0.1
     ```
 
-    - run the program
+    - Run the program
 
     **FIX**
  
@@ -271,24 +271,62 @@ For this we use `.gitignore` files.
     pip freeze > requirements.txt
     ```
 
-    - Other users can then install the same packages with:
+    - **Other users** can then install the same packages with:
 
-
-???- question "Step 5: Test the requirements file in a new environment"
+        ```console
+        pip install --user -r requirements.txt
+        ```
 
     - End the isolated environment
+    
     ```console
     deactivate
     ```
 
+???- question "(Optional) Step 5: Test the requirements file in a new environment"
+
+    - Double-check it works!
+    
+    - create another virtual environment
+       
+        ```console
+        python -m venv usertest2
+        ```
+
+    - Activate
+
+    === "Mac/Linux"
+
+        ```console
+        source usertest2/bin/activate
+        ```
+
+    === "Windows"
+
+        ```console
+        source usertest2/Scripts/activate
+        ```
+
+    - Note the ``(usertest2)`` in the beginning of the prompt!
+    
     ```console
     pip install --user -r requirements.txt
     ```
 
-???- question "(One person): Move the requirements file to the ``learners/source`` folder"
+    - Run the program!
+
+    No errors shpuld show up!
+
+### Follow up!
+
+???- question "(One person): Move a working requirements file to the ``src/learners`` folder"
 
     - Move the requirements file to the ``learners/source`` folder
     - This will be the "official" requirements file
+    - That person git commit and pushes to GitHub!
+
+
+
 
 ## Going further with deployment
 
