@@ -79,7 +79,7 @@ classDiagram;
     Dog*--"0..1"Tail
     Owner o--"0..*"Animal
     Animal <|-- Dog
- ```
+```
 
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
