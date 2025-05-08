@@ -77,26 +77,6 @@ tags:
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
 - **Dependency hell**: Different codes in the same environment can have conflicting dependencies.
 
-### To make sure about needed dependencies
-
-- Start with empty environment
-- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
-    - will your program require specific "system files"
-    - are these typically not installed already?
-    - in the **best world test on Windows/Mac and Linux platforms**
-        - and with as empty as possible environment
-- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
-
-!!! discussion "Discussion: Where do you run your program?"
-
-    - From a terminal?
-    - On different computers?
-    - On a cluster?
-
-- We need to either inform what is needed to run the software in the README file
-- Or provide them with everything needed
-    - hopefully not interfering with other software they are using
-
 !!! note "Ways to distribute"
 
     - Python packages:
@@ -131,6 +111,28 @@ tags:
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll cover the other tools after the exercise.
+
+### To make sure about needed dependencies
+
+- Start with empty environment
+- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
+    - will your program require specific "system files"
+    - are these typically not installed already?
+    - in the **best world test on Windows/Mac and Linux platforms**
+        - and with as empty as possible environment
+- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
+
+!!! discussion "Discussion: Where do you run your program?"
+
+    - From a terminal?
+    - On different computers?
+    - On a cluster?
+
+!!! info "We need to"
+
+    - Inform what is needed to run the software in the README file
+    - Or provide them with everything needed
+        - hopefully not interfering with other software they are using
 
 ### Principle using python pip in a virtual environment
 
@@ -226,7 +228,7 @@ For this we use `.gitignore` files.
 
     **FIX**
     
-    - Install with ``pip install -i ...``
+    - Install the weather package with ``pip install -i ...``
     
     ???- info "Hints"
 
@@ -285,10 +287,10 @@ For this we use `.gitignore` files.
 
 ???- question "(Optional) Step 5: Test the requirements file in a new environment"
 
-    - Double-check it works!
+    - Double-check it works by:
     
-    - create another virtual environment
-       
+    - Create another virtual environment
+    
         ```console
         python -m venv usertest2
         ```
@@ -317,16 +319,13 @@ For this we use `.gitignore` files.
 
     No errors shpuld show up!
 
-### Follow up!
+### Follow up
 
 ???- question "(One person): Move a working requirements file to the ``src/learners`` folder"
 
     - Move the requirements file to the ``learners/source`` folder
     - This will be the "official" requirements file
     - That person git commit and pushes to GitHub!
-
-
-
 
 ## Going further with deployment
 
