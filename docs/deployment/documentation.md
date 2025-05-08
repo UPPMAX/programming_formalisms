@@ -145,6 +145,26 @@ tags:
 - How to contribute?
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
 
+### Licensing
+
+- We use GPL-3 in the project
+
+> Strong copyleft share-alike (GPL, AGPL)
+> Derivative work is free software and derivative work extends to the combined project
+> If the licenses of components are strong copyleft, one must use the same license
+
+- We can click on the license and a image will also show up!
+
+    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/LICENSE)
+
+???- question "How does that look like?"
+
+    ![license_project](../img/license_project.png)
+
+!!! info "See also"
+
+    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+
 ### Acknowledgements
 
 - Add references that inspired or added algorithms to your code
@@ -262,9 +282,10 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - Be inspired by the examples above
     - Include the section "About" which should give some background of what the program does and how to run it.
     - Include the section 'Getting started'
+    
     - When done, make pull request to main
 
-### Group 3: Formulate "Sharing sections and getting started"
+### Group 3: Formulate "Sharing sections"
 
 ???+ question "Make sections about 'Getting started', 'Citation', 'License' and 'Authors'"
 
@@ -281,37 +302,23 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
         - 'License' link to the license
             - try relative or absolute path!
         - 'Authors', List of the involved learners
+        - 'Acknowledgements'
+            - Add references that inspired or added algorithms to your code
+            - Example: https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements
+
+
     - When done, make pull request to main
 
 ???- solution "Example solution from last course"
 
      [programming_formalisms_project_autumn_2024](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/blob/master/README-EXT.md)
 
-## Discussion
+### Discussion of the README file
 
 ???- question "Discussion: Describe what you've done and why?"
 
-## Licensing
-
-- We use GPL-3 in the project 
-
-> Strong copyleft share-alike (GPL, AGPL)
-
->    Derivative work is free software and derivative work extends to the combined project
-
->    If the licenses of components are strong copyleft, one must use the same license
-
-- We can click on the license and a image will also show up!
-
-    - [LICENS](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/LICENSE)
-
-???- question "How does that look like?"
-
-    ![license_project](../img/license_project.png)
-
-!!! info "See also"
-
-    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+   - We go through the README!
+   - Teacher makes Code review if needed
 
 ## Going further with documentation
 
