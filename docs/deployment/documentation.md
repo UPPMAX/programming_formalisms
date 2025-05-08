@@ -277,7 +277,15 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 ## Licensing
 
-Some more content
+- We use GPL-3 in the project 
+
+> Strong copyleft share-alike (GPL, AGPL)
+
+>    Derivative work is free software and derivative work extends to the combined project
+
+>    If the licenses of components are strong copyleft, one must use the same license
+
+![license_project](../img/license_project.png)
 
 !!! info "See also"
 
