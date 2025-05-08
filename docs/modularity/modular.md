@@ -21,13 +21,13 @@ tags:
     - Appreciate the importance of modularization in collaborative projects, especially for reducing conflicts in version control.
 
     ```mermaid
-        gantt
-        title Lesson plan Refactoring, and modularization
-        dateFormat X
-        axisFormat %s
-        Refactoring: refactoring,0, 10,
-        Refactoring Exercise: Exercise_1, 10, 15s
-        Modularity:Modularity_1,25, 15s
+    gantt
+        title "Lesson plan Refactoring, and modularization"
+        dateFormat mm
+        axisFormat %M
+        Refactoring: refactoring,00, 10m
+        Refactoring Exercise: Exercise_1, 10, 20m
+        Modularity:Modularity_1,30, 15m
     ```
 
 ???- info "Learning outcomes of Refactoring"
