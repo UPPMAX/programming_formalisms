@@ -146,7 +146,12 @@ tags:
     - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
     - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
 
-### Ignoring files and paths with .gitignore
+!!! example
+
+    - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
+    - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
+
+## Ignoring files and paths with .gitignore
 
 Compiled and generated files are not committed to version control. There are many reasons for this:
 
@@ -176,6 +181,7 @@ For this we use `.gitignore` files.
     ```console
     python -m venv <path>/usertest
     ```
+
     - This creates an empty virtual environment located in `<path>/usertest` directory
     - **GITIGNORE!**
     - Activate
@@ -202,7 +208,7 @@ For this we use `.gitignore` files.
 
 ???- question "Step 2: Add this to ``.gitignore``"
 
-     - add to .gitignore file
+    - add to .gitignore file
 
 ???- question "Step 3: Run the program and look for missing packages'"´
 
@@ -217,100 +223,36 @@ For this we use `.gitignore` files.
     - No need to use ´´--user``, since it will be installed in the virtual environment only.
     - Do this until your program works
 
-
 ???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"´
 
     - Check what is installed by:
 
     ```console
-    pip freeze        #pip list works as well
+    pip freeze        #'pip list' works as well
     ```
 
     - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
-
-    - Save your requirements as a file that user can run to get the needed dependencies
+    - Save your requirements as a file that user can run to get the needed dependencies.
 
     ```console
     pip freeze > requirements.txt
     ```
-    
 
 ???- question "Step 5: Test the requirements file in a new environment"´
 
     - End the isolated environment and work with other things!
 
     ```console
-    deactivate # deactivate the venv!
+    deactivate
     ```
 
     - Other users can then install the same packages with:
-   
+
     ```console
     pip install --user -r requirements.txt
     ```
 
-
-
-!!! example
-
-    - [planet project](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
-    - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
-
-
-
-
-## README: installation section
-
-**Let's take a look at different READMEs**
-
-- Also interesting: Is there any test that makes sure it is correctly installed?
-
-!!! example
-
-    - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
-    - Conda: <https://github.com/biobakery/MetaPhlAn>
-    - pip: <https://github.com/deeptools/HiCExplorer>
-    - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
-    - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
-
-### Exercises 20-30 min
-
-- We already have a file called ``README.md``, that is used for information for the course participants.
-- Let's work with a README file for potential users. We can call it ``README-EXT.md``
-
-!!! info "Intro"
-
-    - (External) Users should be able to install the the complete tool, including dependencies:
-    . Repo work
-        - work on GitHub!
-        - When modifying repo, use a group specific branch
-        - When done, merge
-    - In the end we do code review together of the merging conflicts
-
-    ???- info "Hints"
-
-        - The main program ``main.py`` is in the repo.
-        - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/weather/1.0.1/>
-
-???+ question "(In groups) Will people need any additional packages for this tool?"
-
-    - Test in isolated environment (``venv``) on local computer if there are errors
-    - That is, are there any more packages needed
-    - follow the example above
-
-???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
-
-    - each group in different branches
-    - then merge and teacher does code review
-
-???+ question "(In groups) Make 'installation instruction' in groups"
-
-    - each group in different branches
-    - then merge and teacher does code review
-
 ## Going further with deployment
-
 
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 
@@ -397,7 +339,7 @@ For this we use `.gitignore` files.
 - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
 
-## (Optional) Start a Git/GitHub repo from existing project
+## Start a Git/GitHub repo from existing project
 
 !!! note
 

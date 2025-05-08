@@ -110,9 +110,56 @@ tags:
     - Also in GitHub in upper right corner!
 - More information below below the first description
 
-### Install
+### Installation section
 
-- We covered this in last session
+**Let's take a look at different READMEs**
+
+- Also interesting: Is there any test that makes sure it is correctly installed?
+
+!!! example
+
+    - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
+    - Conda: <https://github.com/biobakery/MetaPhlAn>
+    - pip: <https://github.com/deeptools/HiCExplorer>
+    - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
+    - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
+
+### Exercises 20-30 min
+
+- We already have a file called ``README.md``, that is used for information for the course participants.
+- Let's work with a README file for potential users. We can call it ``README-EXT.md``
+
+!!! info "Intro"
+
+    - (External) Users should be able to install the the complete tool, including dependencies:
+    . Repo work
+        - work on GitHub!
+        - When modifying repo, use a group specific branch
+        - When done, merge
+    - In the end we do code review together of the merging conflicts
+
+    ???- info "Hints"
+
+        - The main program ``main.py`` is in the repo.
+        - ``weather`` is a python package needed by ``main.py``
+        - available here: <https://test.pypi.org/project/weather/1.0.1/>
+
+???+ question "(In groups) Will people need any additional packages for this tool?"
+
+    - Test in isolated environment (``venv``) on local computer if there are errors
+    - That is, are there any more packages needed
+    - follow the example above
+
+???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
+
+    - each group in different branches
+    - then merge and teacher does code review
+
+???+ question "(In groups) Make 'installation instruction' in groups"
+
+    - each group in different branches
+    - then merge and teacher does code review
+
 
 ### Get started
 
