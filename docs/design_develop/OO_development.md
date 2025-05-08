@@ -16,9 +16,8 @@ tags:
     - Learn the definition and characteristics of an object, including its ability to save state and perform operations.
     - Comprehend the principles of object-oriented development, such as information hiding, encapsulation, and message passing.
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
-    - Recognize the importance of relationships between classes, including association, composition, and aggregation, in class diagrams.
-    - Explore the concept of design patterns as blueprints for solving common software design problems.
-    - Develop a practical understanding of the Factory Method design pattern
+    - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
+
 
 
 "People regard their environment in terms of objects"
@@ -57,25 +56,30 @@ The semantic gap(The distance form input to understanding) between reality and m
         The behavior and information are encapsulated in the object
         `[Ivar Jacobson 1992]`
 
+    3: **The concept of message passing**
+        Each object has a external interface through which it interacts with other objects, it is the carriers of messages public(access qualifier, see below) methods of the Classes are the implementation of message passing.
+
 ???- question "What is a Class"
 
     >A class is a set of objects that share a common structure, common behavior, and common semantics.
     `[Booch 2007]`
 
 
-The 4 most important relationship classes can have
-are association, composition and aggregation
+The modeling software company [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/) has a guide in some common roles between object such as Association.
+"If two classes in a model need to communicate with each other, there must be a link between them, and that can be represented by an association (connector)."
+
+Composition implies a relationship where the child cannot exist independent of the parent. Example: House (parent) and Room (child). Rooms don't exist separate to a House.
+
 
 ```mermaid
 classDiagram
-    Owner-->Animal: cares for
+    direction TD
+    Owner --> Animal: cares for
     Dog*--"1"Head
     Dog*--"1"Body
     Dog*--"0..1"Tail
     Owner o--"0..*"Animal
-    Animal <|--Dog
-    Animal <|--Cat
-    Animal <|--GoldFish
+    Animal <|-- Dog
 ```
 
 Further reading:
@@ -97,6 +101,7 @@ Further reading:
     make commonality explicit by using inheritance.
     `[Stroustrup B. 1988]`
 
+
 !!! hint "Why do we Break the rule?"
 
     In this course we do not go into the concept of
@@ -105,17 +110,31 @@ Further reading:
     with the "has a" relation ship rather than "is a" relation ship.
     we work with the composite and the aggregate relationships
 
+
 ### Exercise
 
-???- "Objects"
-    Write a object description for Uppsala Weather statin and Bacterium Parameters then translate this into a class make a markdown document in your learners folder
+???+ question "Code along Mermaid"
+    Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground then follow
+    along as I create in mermaid
 
-???- "Class Diagram"
-    Construct a class diagram for the classes
-    try to model the relationships ass associations, aggregations
-    and compositions
-    use [this link](https://mermaid.js.org/syntax/classDiagram.html)
-   and the [playground or live editor](https://www.mermaidchart.com/play#pako:eNpdjbEOgjAURX_lpZMO_QEGEynKQqIDW2F4wdY2Sl9TmhBD-XfByKB3PefeO7GOboplTD9p7AyGCHXRhMbBkqMUJtgh9ji0wPkhlSpCT069EuS7kmAw5L119_3WyFcNxFStooJorHvMGxSfjYtTCQpZoY_k219Wj5TgJO3VLCf_zAS1NM9SY6aRdxhAYPhKbH4Dm8NAOg)
+???- question "Objects"
+    Write a object description for Uppsala Weather station
+    the syntax for adding mermaid to a markdown is
+
+    ```mermaid
+    classDiagram
+        direction TD
+        Owner --> Animal: cares for
+        Dog*--"1"Head
+        Dog*--"1"Body
+        Dog*--"0..1"Tail
+        Owner o--"0..*"Animal
+        Animal <|-- Dog
+    ```
+
+    make a markdown document in your learners folder
+    Add objects that we need for our weather project such as Display, Graph.
+    references to the requirements found in the [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md) document (A requirements document is often refered to as an SRS - System/**S**oftware **R**equirement **S**pecification )
 
 ## Design patters(self study)
 
@@ -124,6 +143,8 @@ Further reading:
     - The learners know of the "zero line" code and how it relates to software design "Zero line" Design
     - The learners can describe the general parts of a design pattern and why we use them.
     - The Learners should be able to understand the "Decorator pattern" and what problem it solves
+    - Explore the concept of design patterns as blueprints for solving common software design problems.
+
 
 The zero line code is the most optimal code there for the zero line design must be the most optimal?
 
