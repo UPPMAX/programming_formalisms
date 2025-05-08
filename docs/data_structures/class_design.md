@@ -82,7 +82,7 @@ classDiagram
 
 ???- question "What is the invariant in the `Range` class?"
 
-    The invariant is that `highest~ must be bigger or equal to
+    The invariant is that `highest` must be bigger or equal to
     `lowest`.
 
 ## Writing a good class
