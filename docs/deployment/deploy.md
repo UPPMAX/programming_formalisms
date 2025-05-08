@@ -170,7 +170,7 @@ For this we use `.gitignore` files.
 
 ## Exercise 1: Identify lacking packages (10-15 min)
 
-!!! tip 
+!!! tip
 
     - Work individually locally (in VS Code)
     - Help each-other if getting stuck
@@ -429,7 +429,7 @@ For this we use `.gitignore` files.
 
 ### (Optional) exercise 2
 
-!!! tip 
+!!! tip
 
     - Work individually locally (in VS Code)
     - Help each-other if getting stuck
