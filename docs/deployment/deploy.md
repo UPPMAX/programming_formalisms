@@ -30,7 +30,7 @@ tags:
 
     Prerequisites are:
 
-    - ...
+    - Package
 
     Lesson Plan: **FIX**
 
@@ -44,7 +44,6 @@ tags:
         - Recording dependencies
         - workflows
         - containers
-
 
 ???- admonition "Changes"
 
@@ -176,7 +175,7 @@ For this we use `.gitignore` files.
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
-    - Go to the dir **XXX**
+    - Go to the dir ``learners/<your-name>``
 
     ```console
     python -m venv <path>/usertest
@@ -206,7 +205,7 @@ For this we use `.gitignore` files.
     which pip        #must point to the pip belonging to the virtual environment
     ```
 
-???- question "Step 2: Add this to ``.gitignore``"
+???- question "(Step 2: Add this to ``.gitignore``)"
 
     - add to .gitignore file
 
@@ -238,7 +237,7 @@ For this we use `.gitignore` files.
     pip freeze > requirements.txt
     ```
 
-???- question "Step 5: Test the requirements file in a new environment"´
+???- question "Step 5: Test the requirements file in a new environment"
 
     - End the isolated environment and work with other things!
 
@@ -252,62 +251,17 @@ For this we use `.gitignore` files.
     pip install --user -r requirements.txt
     ```
 
-## README: installation section
+???- question "(One person): Move the requirements file to the ``learners/source`` folder"
 
-**Let's take a look at different READMEs**
-
-- Also interesting: Is there any test that makes sure it is correctly installed?
-
-!!! example
-
-    - R: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#install-the-whole-thing>
-    - Conda: <https://github.com/biobakery/MetaPhlAn>
-    - pip: <https://github.com/deeptools/HiCExplorer>
-    - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
-    - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
-
-### Exercises 20-30 min
-
-- We already have a file called ``README.md``, that is used for information for the course participants.
-- Let's work with a README file for potential users. We can call it ``README-EXT.md``
-
-!!! info "Intro"
-
-    - (External) Users should be able to install the the complete tool, including dependencies:
-    . Repo work
-        - work on GitHub!
-        - When modifying repo, use a group specific branch
-        - When done, merge
-    - In the end we do code review together of the merging conflicts
-
-    ???- info "Hints"
-
-        - The main program ``main.py`` is in the repo.
-        - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/weather/1.0.1/>
-
-???+ question "(In groups) Will people need any additional packages for this tool?"
-
-    - Test in isolated environment (``venv``) on local computer if there are errors
-    - That is, are there any more packages needed
-    - follow the example above
-
-???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
-
-    - each group in different branches
-    - then merge and teacher does code review
-
-???+ question "(In groups) Make 'installation instruction' in groups"
-
-    - each group in different branches
-    - then merge and teacher does code review
+    - Move the requirements file to the ``learners/source`` folder
+    - This will be the "official" requirements file
 
 ## Going further with deployment
 
-
 [Python packaging](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 
-- **Possibilities for other languages can be**
+???- question "Possibilities for other languages can be"
+
     - C/C+
         - CMake
         - Conda
@@ -320,9 +274,7 @@ For this we use `.gitignore` files.
 
 - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
 
-
-**Course advertisement**
-[Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
+**Course advertisement:** [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
 
 ### Containers
 
@@ -384,44 +336,40 @@ For this we use `.gitignore` files.
 - Then the python active in "PATH" will automatically be used
     - especially important on a shared system where python is not in the typical "/usr/bin/python" path.
 
-
 ### Compiled languages
 
 - [Build Systems Course](https://github.com/PDC-support/build-systems-course)
 
+## Start a Git/GitHub repo from personal existing project
 
-## (Optional) Start a Git/GitHub repo from existing project
+- Many projects/scripts start as something for personal use, but expands to be distributed.
+- Let's start in that end and be prepared.
 
-!!! note
+### Principle
 
-    - Many projects/scripts start as something for personal use, but expands to be distributed.
-    - Let's start in that end and be prepared.
-    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
+- Initiate git project
+    - Browse to right _root_ directory (the folder containing all the project-related files)
+- Stage and commit
+- upload to github
 
-!!! info "Principle"
 
-    - Let's say you have some code you have started to work with
-    - Initiate git project
+### Try yourself
+
+- Let's say you have some code you have started to work with
+- Start with 1A or 1B
+
         - Be in a terminal and go to the ``planets`` folder, which will be the project repository (**repo**)
         - run ``git init``
         - make sure that there is a ``.git`` directory created
-    - stage and commit
-    - upload to github
 
-### Initial code base
-
-- Let's say you have some code you have started to work with
-
-- Choose one of the following
-
-???- question "Exercise A: Start project from one of your existing projects"
+???- question "Exercise 1A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
-    - use it in the follwong steps.
+    - Browse to right _root_ directory (the folder contatining all the project-related files)
 
-???- question "Exercise B: Start the test project"
+???- question "Exercise 1B: Start a new test project"
 
-    - Make a ``test_project`` directory in a good place (like a ``Programming formalisms`` course folder)
+    - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
     - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
 
     ```python
@@ -429,46 +377,41 @@ For this we use `.gitignore` files.
     print('Hello world!')
     ```
 
-## Initiate a project
+???- question "Exercise 2: Initiate the project"
 
-???- question "Exercise: Initiate the project"
+    ???- question "VS CODE""
 
-    - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
-    - run ``git init``
-    - make sure that there is a ``.git`` directory created
-        - you have to show hidden files, in bash terminal with ``ls -a``
+    ???- question "Terminal"
 
-    - Now you have a git repo called ``test_project``
-    - check with the command: ``git status``
-    - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
+        - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
+        - run ``git init``
+        - make sure that there is a ``.git`` directory created
+            - you have to show hidden files, in bash terminal with ``ls -a``
 
-### Add/Commit
+        - Now you have a git repo called ``test_project``
+        - check with the command: ``git status``
+        - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
 
 - So far, there is no content. We have to manually add the content to the repo.
 
-???- question "Exercise: Add and commit the content"
+???- question "Exercise 3: Add and commit the content"
 
     - Add and Commit your changes
 
-    ```console
-    git add
-    git commit -m 'first commit'
-    ```
+    ???- question "VS Code"
 
-    - Look and understand at the output of the following commands
+    
+    ???- question "Terminal"
 
-    ```console
-    git status
-    git log
-    git log --stat
-    git log --oneline
-    ```
+        ```console
+        git add
+        git commit -m 'first commit'
+        ```
 
-### Upload to GitHub
-
-???- question "Exercise: Follow the steps below"
+???- question "Exercise 4: Upload to GitHub"
 
     - Make sure that you are **logged into GitHub**.
+    - You can use this for both VS Code and terminal
 
     <figure markdown="span">
     ![New repo](../i/New_repo.png){ width="500" }
@@ -539,7 +482,6 @@ R <--> Node5
 
 ```
 
-
 ## Summary
 
 !!! info "Key points"
@@ -551,8 +493,8 @@ R <--> Node5
 
     - &#9745; Source/version control
         - Git
-        - We have a starting point!
         - GitHub as remote backup
+        - **inititalize from existing project**
         - branches
     - &#9745; Planning
         - &#9745; Analysis

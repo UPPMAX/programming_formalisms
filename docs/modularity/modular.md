@@ -4,7 +4,7 @@ tags:
   - refactoring
 ---
 
-#  Refactoring and Modular programming
+# Refactoring and Modular programming
 
 ???- info "Learning outcomes"
 
@@ -21,13 +21,13 @@ tags:
     - Appreciate the importance of modularization in collaborative projects, especially for reducing conflicts in version control.
 
     ```mermaid
-        gantt
-        title Lesson plan Refactoring, and modularization
-        dateFormat X
-        axisFormat %s
-        Refactoring: refactoring,0, 10,
-        Refactoring Exercise: Exercise_1, 10, 15s
-        Modularity:Modularity_1,25, 15s
+    gantt
+        title "Lesson plan Refactoring, and modularization"
+        dateFormat mm
+        axisFormat %M
+        Refactoring: refactoring,00, 10m
+        Refactoring Exercise: Exercise_1, 10, 20m
+        Modularity:Modularity_1,30, 15m
     ```
 
 ???- info "Learning outcomes of Refactoring"
@@ -129,6 +129,7 @@ Some examples of code smell
     Chose an Issue that you are responsible for go through the code and refactor the code.
 
 ## Code Coupling
+
 ???- "What is Coupling in code"
 
 Lets talk about Tightly vs loosely coupled code.
@@ -157,7 +158,7 @@ Lets talk about Tightly vs loosely coupled code.
     Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
 
 !!! info "lets read about modular programming"(10 min)
-    This is a wikipeda article on [modular programming](https://en.wikipedia.org/wiki/Modular_programming)
+    This is a Wikipedia article on [modular programming](https://en.wikipedia.org/wiki/Modular_programming)
 
 ??? question "Lets Discuss"
 
@@ -183,5 +184,4 @@ From this these for principles are generally considered a requirement for modula
 
 !!! info "another take on modular programming (about 30 min)"
     A good [lesson](https://www.youtube.com/watch?v=MYDAAhB1QIo) on Modularity by Huw Collingbourne
-
 
