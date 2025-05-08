@@ -124,8 +124,6 @@ tags:
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
-
-
 ### Get started
 
 - This session can be "running some test data" to get an overview of what the program can perform.
@@ -279,17 +277,11 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 ## Licensing
 
-
-
-
-
+Some more content
 
 !!! info "See also"
 
     [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
-
-
-
 
 ## Going further with documentation
 
