@@ -35,6 +35,7 @@ Term                 |Description
 Class constructor    |A function (called `__init__`) to create an (initialized) class
 Class definition     |The complete class
 Class `init` function|A function (called `__init__`) to create an (initialized) class
+Class `repr` function|A function (called `__repr__`) to create an string to show the class name
 Class `str` function |A function (called `__str__`) to create an string to show the class' member values
 Class name           |The name of the class
 Class member variable|A variable that is part of the class
