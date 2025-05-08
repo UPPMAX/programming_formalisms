@@ -141,8 +141,8 @@ A good function ...
     - intention-revealing `[Martin, 2009]`
     - pronounceable `[Martin, 2009]`
     - searchable `[Martin, 2009]`
-    - not cute `[Martin, 2009]`
-    - no pun `[Martin, 2009]`
+    - not cute `[Martin, 2009]` (e.g. `apply_holy_handgrenade` over `remove_invalid_items`)
+    - no pun `[Martin, 2009]` (e.g. apply `add` to both add numbers and insert an item into a collection. Instead, use `insert` to add an item to a collection)
     - carefully `[CppCore functions]`
 
 ???- question "Famous quote on naming functions"
