@@ -419,45 +419,51 @@ For this we use `.gitignore` files.
 
 ???- question "Exercise 4: Upload to GitHub"
 
-    - Make sure that you are **logged into GitHub**.
-    - You can use this for both VS Code and terminal
+    ???- question "In VS Code"
 
-    <figure markdown="span">
-    ![New repo](../i/New_repo.png){ width="500" }
-    </figure>
+        - There was an opportunity to directly publish on GitHub
+    
+    ???- question "From GitHub"
+    
+        - Make sure that you are **logged into GitHub**.
+        - You can use this for both VS Code and terminal
 
+        <figure markdown="span">
+        ![New repo](../i/New_repo.png){ width="500" }
+        </figure>
+    
+    
+        - To create a repository we either click the green button "New" (top right corner).
+    
+        - Or if you see your profile page, there is a "+" menu (top right corner).
+    
+        ![New top-right](../img/new-top-right.png){ width=60% }
 
-    - To create a repository we either click the green button "New" (top right corner).
+        ---
 
-    - Or if you see your profile page, there is a "+" menu (top right corner).
+        - On this page choose a project name, e.g. ``test_project``
 
-    ![New top-right](../img/new-top-right.png){ width=60% }
+        - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
 
-    ---
+        - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
+        - and **NO Licence**
 
-    - On this page choose a project name, e.g. ``test_project``
+        ![New repo](../img/New_repo_formalisms.png)
+        > Example project
 
-    - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
+        - Press "**Create repository**"
 
-    - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
-    - and **NO Licence**
+        ![Create and push](../img/created_push.PNG)
 
-    ![New repo](../img/New_repo_formalisms.png)
-    > Example project
+        - Choose **html**
+        - Copy-paste the code for "**…or push an existing repository from the command line**"
+        - Go to **local git terminal** and go to the **git project you started above**
+        - Paste the code
 
-    - Press "**Create repository**"
+        - Did it work??
+        - Reload the GitHub page and see the files present locally is also present there.
 
-    ![Create and push](../img/created_push.PNG)
-
-    - Choose **html**
-    - Copy-paste the code for "**…or push an existing repository from the command line**"
-    - Go to **local git terminal** and go to the **git project you started above**
-    - Paste the code
-
-    - Did it work??
-    - Reload the GitHub page and see the files present locally is also present there.
-
-    **Done!**
+        **Done!**
 
 ### What we did
 
