@@ -64,6 +64,7 @@ The semantic gap(The distance form input to understanding) between reality and m
     >A class is a set of objects that share a common structure, common behavior, and common semantics.
     `[Booch 2007]`
 
+
 The modeling software company [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/) has a guide in some common roles between object such as Association.
 "If two classes in a model need to communicate with each other, there must be a link between them, and that can be represented by an association (connector)."
 
