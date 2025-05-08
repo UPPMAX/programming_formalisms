@@ -259,7 +259,7 @@ For this we use `.gitignore` files.
 
 ???- admonition "Python for scientific computing"
 
-    **Course advertisement** 
+    **Course advertisement**
     
     - [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
     - [Python packaging session](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
