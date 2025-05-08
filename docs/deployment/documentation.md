@@ -294,18 +294,50 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - 1 person types directly in GitHub
     - Create branch ``sharing``
     - First open the file ``learners/CITATION.cff`` file
-    - Fill it in!    
+
+    ???- question "How?"
+
+        **Easier**
+
+        Create a learners/CITATION file (no file extension) with most of the following lines
+        
+        - Creator
+        - Title
+        - Publication venue
+        - Date
+        - Identifier
+        - Version
+        - Type
+
+        **Harder**
+
+        - open the file ``learners/CITATION.cff`` file
+        - Fill it in
+
+        ???- question "How can it look like?"
+
+            ```yaml
+            cff-version: 1.2.0
+            message: "If you use this software, please cite it as below."
+            authors:
+              - family-names: Druskat
+                given-names: Stephan
+                orcid: https://orcid.org/0000-0003-4925-7248
+            title: "My Research Software"
+            version: 2.0.4
+            doi: 10.5281/zenodo.1234
+            date-released: 2021-08-11
+
     - Open the file ``learners/README-EXT.md``
     - Be inspired by the examples above
     - Include the sections
-        - 'Citation', link to the cff file
+        - 'Citation', link to the CITATION(.cff) file
         - 'License' link to the license
             - try relative or absolute path!
         - 'Authors', List of the involved learners
         - 'Acknowledgements'
             - Add references that inspired or added algorithms to your code
-            - Example: https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements
-
+            - [Example](https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements)
 
     - When done, make pull request to main
 
@@ -317,8 +349,8 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
 
 ???- question "Discussion: Describe what you've done and why?"
 
-   - We go through the README!
-   - Teacher makes Code review if needed
+    - We go through the README!
+    - Teacher makes Code review if needed
 
 ## Going further with documentation
 
