@@ -215,7 +215,7 @@ You will need to defend this in a code review :-)
 
     ![The check_spelling job result](check_spelling_job_results.png)
 
-Fixing this is beyond this exercise.
+Fixing this is beyond this exercise (but it is in the next :-) ).
 
 ### Exercise 2: improve the learners' project
 
