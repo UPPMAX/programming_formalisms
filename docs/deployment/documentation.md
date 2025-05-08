@@ -39,22 +39,20 @@ tags:
 
 !!! admonition "Documentation comes in different forms"
 
-    - What *is* documentation?
-        - **Tutorials**: learning-oriented, allows the newcomer to get started
-        - **How-to guides**: goal-oriented, shows how to solve a specific problem
-        - **Explanation**: understanding-oriented, explains a concept
-        - **Reference**: information-oriented, describes the machinery
-        - **In-code documentaion — docstrings**
+    - **Tutorials**: learning-oriented, allows the newcomer to get started
+    - **How-to guides**: goal-oriented, shows how to solve a specific problem
+    - **Explanation**: understanding-oriented, explains a concept
+    - **Reference**: information-oriented, describes the machinery
+    - **In-code documentaion — docstrings**
 
-        **Not to forget**
+    **Not to forget**
 
-        - Project documentation:
-            - requirements: what is the goal of the software, risks, platforms
-            - the analysis: pseudocode and UML
-            - risk analysis
+    - Project documentation:
+        - requirements: what is the goal of the software, risks, platforms
+        - the analysis: pseudocode and UML
+        - risk analysis
 
-**There is no one size fits all**: often for small projects a `README.md` or
-`README.rst` can be enough (more about these formats later).
+    **There is no one size fits all**: often for small projects a `README.md` can be enough (more about md format later).
 
 ### Where are we?
 
@@ -69,7 +67,7 @@ tags:
 **Finalize today**
 
 - &#9744; README
-    - &#9744; installation instruction
+    - &#9744; Installation instruction
     - &#9744; Tutorial: get started
     - &#9744; Citation
 
@@ -84,28 +82,37 @@ tags:
 ## Markdown
 
 - One of the most popular lightweight markup languages.
+- File extension ``.md`` makes it _render_ directly in GitHub!
 
-```markdown
-# This is a section heading in Markdown   
+???+ question "How does it look like?"
 
-## This is a subsection header
+    ```markdown
+    # This is a section heading in Markdown   
 
-Nothing special needed for a normal paragraph.
+    ## This is a subsection header
 
-    This is a code block
+    Nothing special needed for a normal paragraph.
+
+        This is a code block
 
 
-**Bold** and *emphasized*.
+    **Bold** and *emphasized*.
 
-A list:
-- this is an item
-- another item
+    A list:
 
-There is more:
-![images](link to file),
-[links](URL),
-tables...
-```
+    - this is an item
+    - another item
+
+    A numbered list:
+
+    1. this is an item
+    1. items are numbered automatically
+
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    tables...
+    ```
 
 !!! info "Read more"
 
@@ -176,9 +183,9 @@ tables...
 
     - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/LICENSE)
 
-???- question "How does that look like?"
+    ???- question "How does that look like?"
 
-    ![license_project](../img/license_project.png)
+        ![license_project](../img/license_project.png)
 
 !!! info "See also"
 
@@ -193,44 +200,47 @@ tables...
 
 - Think the same as for a scientific paper
 
-**Practical recommendations**:
+???- info "Practical recommendations**"
 
-- Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
-- Open source license can't demand citation, but it is required by science ethics anyway.
-- Make it as easy as possible! Clearly say what you want cited.
-- Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
-- [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
+    - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
+    - Open source license can't demand citation, but it is required by science ethics anyway.
+    - Make it as easy as possible! Clearly say what you want cited.
+    - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
+    - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
-This is an example of a simple `CITATION.cff` file:
+???+ "Recommended format for software citation"
 
-```yaml
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Druskat
-    given-names: Stephan
-    orcid: https://orcid.org/0000-0003-4925-7248
-title: "My Research Software"
-version: 2.0.4
-doi: 10.5281/zenodo.1234
-date-released: 2021-08-11
-```
+    - Creator
+    - Title
+    - Publication venue
+    - Date
+    - Identifier
+    - Version
+    - Type
 
-Recommended format for software citation is to ensure the following information
-is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
+    [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
 
-- Creator
-- Title
-- Publication venue
-- Date
-- Identifier
-- Version
-- Type
+???- example "This is an example of a simple `CITATION.cff` file"
 
-- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
-- CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
+    ```yaml
+    cff-version: 1.2.0
+    message: "If you use this software, please cite it as below."
+    authors:
+      - family-names: Druskat
+        given-names: Stephan
+        orcid: https://orcid.org/0000-0003-4925-7248
+    title: "My Research Software"
+    version: 2.0.4
+    doi: 10.5281/zenodo.1234
+    date-released: 2021-08-11
+    ```
 
-- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
+!!! info "DOI and Zenodo"
+
+    - Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
+    - CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
+
+### Full examples
 
 !!! example "Examples of README files"
 
@@ -239,11 +249,6 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - pip: <https://github.com/deeptools/HiCExplorer>
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
-
-!!! info "See also"
-
-    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
-    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
 
 ## Exercises
 
@@ -439,9 +444,10 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
 ### What contributes to reusability?
 
-What contributes to you being able to reuse stuff that others make, and others
-(or you) being able to reuse your stuff? When you find a repository with code
-you would like to reuse, you may look at the following things to determine its
+- What contributes to you being able to reuse stuff that others make,
+- and others (or you) being able to reuse your stuff? 
+
+- When you find a repository with code you would like to reuse, you may look at the following things to determine its
 reusability:
 
 !!! note
