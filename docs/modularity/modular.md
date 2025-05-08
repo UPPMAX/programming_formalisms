@@ -4,7 +4,7 @@ tags:
   - refactoring
 ---
 
-#  Refactoring and Modular programming
+# Refactoring and Modular programming
 
 ???- info "Learning outcomes"
 
@@ -129,6 +129,7 @@ Some examples of code smell
     Chose an Issue that you are responsible for go through the code and refactor the code.
 
 ## Code Coupling
+
 ???- "What is Coupling in code"
 
 Lets talk about Tightly vs loosely coupled code.
@@ -183,5 +184,4 @@ From this these for principles are generally considered a requirement for modula
 
 !!! info "another take on modular programming (about 30 min)"
     A good [lesson](https://www.youtube.com/watch?v=MYDAAhB1QIo) on Modularity by Huw Collingbourne
-
 
