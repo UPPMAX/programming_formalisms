@@ -64,8 +64,9 @@ The semantic gap(The distance form input to understanding) between reality and m
     `[Booch 2007]`
 
 
-The 4 most important relationship classes can have
-are association, composition and aggregation
+
+Composition implies a relationship where the child cannot exist independent of the parent. Example: House (parent) and Room (child). Rooms don't exist separate to a House.
+
 
 ```mermaid
 classDiagram
@@ -75,9 +76,7 @@ classDiagram
     Dog*--"0..1"Tail
     Owner o--"0..*"Animal
     Animal <|-- Dog
-    Animal <|-- Cat
-    Animal <|-- GoldFish
-```
+ ``
 
 Further reading:
 [Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
