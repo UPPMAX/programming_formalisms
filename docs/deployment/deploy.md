@@ -219,7 +219,7 @@ For this we use `.gitignore` files.
         ```
 
         - and some notes.
-   
+
 ???- question "(Optional Step 2: Add the folder to ``.gitignore``)"
 
     - add to .gitignore file
@@ -243,7 +243,7 @@ For this we use `.gitignore` files.
     - Run the program
 
     **FIX**
- 
+
     ```bash
     python ...
     ```
@@ -445,7 +445,7 @@ For this we use `.gitignore` files.
         - Open Folder
 
             ![start_VSC](../img/start_VSC.png)
-           
+        
         - Create new Folder with name ``test_project``
         - Select folder
         - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
@@ -457,16 +457,17 @@ For this we use `.gitignore` files.
 
 ???- question "Exercise 2: Initiate the project"
 
-    ???- question "VS CODE""
+    ???+ question "VS CODE"
+
+        ![initialize_VSC](../img/initialize_VSC.png)
 
         - Initialize and then continue with step 3.
         - Or Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
-
-            ![initialize_VSC](../img/initialize_VSC.png)
+            - Include the file(s) (in this case the hello.py file) in the repo!
 
         - Double check it was created on GitHub!
-
+            - It should show up under repos in your user space
 
     ???- question "Terminal"
 
@@ -479,13 +480,13 @@ For this we use `.gitignore` files.
         - check with the command: ``git status``
         - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
 
-- So far, there is no content. We have to manually add the content to the repo.
 
 ???- question "Exercise 3: Add and commit the content"
 
+    - So far, there is no content. We have to manually add the content to the repo.
     - Add and Commit your changes
 
-    ???- question "VS Code"
+    ???+ question "VS Code"
 
          We do this all the time! :)
     
