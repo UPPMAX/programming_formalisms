@@ -355,9 +355,9 @@ For this we use `.gitignore` files.
 ### Try yourself
 
 - Let's say you have some code you have started to work with
-- Start with 1A or 1B
+- Start with 1A OR 1B
 
- ???- question "Exercise 1A: Start project from one of your existing projects"
+???- question "Exercise 1A: Start project from one of your existing projects"
 
     - Just use an existing programming project you have today
     - Browse to right _root_ directory (the folder contatining all the project-related files)
@@ -385,10 +385,9 @@ For this we use `.gitignore` files.
     ???- question "VS CODE""
 
         - Initialize and then continue with step 3.
-        - Or Publish to GitHub diectly and you are done!
+        - Or Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
             - Double check on GitHub!
-        
 
     ???- question "Terminal"
 
