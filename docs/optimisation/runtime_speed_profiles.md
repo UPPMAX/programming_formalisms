@@ -472,6 +472,97 @@ def superfast_xor_swap(x, y):
     nor without reason `[CppCore Per.1]`,
     nor prematurely `[CppCore Per.2]`.
 
+## Exercise 9: how to make things go faster?
+
+You want to make the code below faster.
+You've measured the speed profile, also as shown below.
+How to make it go faster? 
+
+- Tip: how can you achieve the same with less calculations?
+
+```bash
+   ncalls  tottime  percall  cumtime  percall function
+     1000   99.000   99.000   99.000   99.000 calc_fitness
+     1000    5.000    5.000    5.000    1.000 Individual.get_phenotype
+     1000    0.000    0.000    0.000    0.000 Individual.__init__
+     1000    0.000    0.000    0.000    0.000 list.append
+```
+
+
+```python
+class Individual:
+    def __init__(self, phenotype):
+        """Genotype, a value from 0 to and including 9"""
+        assert isinstance(phenotype, int)
+        assert phenotype >= 0
+        assert phenotype <= 9
+        self._phenotype = phenotype
+    def get_phenotype(self):
+        """Genotype, a value from 0 to and including 9"""
+        return self._phenotype
+
+def calc_fitness(phenotype):
+    """Complex calculation."""
+    assert isinstance(phenotype, int)
+    assert phenotype >= 0
+    assert phenotype <= 9
+    return (phenotype + 5) % 10 # Imagine something complex here
+
+n_individuals = 1000
+population = []
+for i in range(n_individuals):
+    population.append(Individual(i % 10))
+assert len(population) == n_individuals
+
+# Calculate the fitness each time
+for i in range(n_individuals):
+    phenotype = population[i].get_phenotype()
+    fitness = calc_fitness(phenotype) # Complex calculation
+    # Do something with the fitness
+```
+
+???- question "Answer"
+
+    There are only 10 possible phenotypes,
+    hence there are only 10 possible fitness values.
+    Instead of doing this calculation each time,
+    we could calculate all possible fitness values for
+    all possible phenotypes.
+
+    The technical jargon is: we are going to create a look-up table,
+    commonly abbreviated to 'LUT'. In Python, the `dict` is the go-to
+    datatype for this.    
+
+    ```python
+    def create_phenotype_fitness_lookup_table():
+        lut = dict()
+        for phenotype in range(10):
+            assert phenotype >= 0
+            assert phenotype <= 9
+            lut[phenotype] = calc_fitness(phenotype)
+        return lut
+    ```
+
+    Note that using a `list` would work just as fine too, and that
+    might be faster. Feel encouraged to measure this :-)
+
+    Now using that look-up table:
+
+    ```python
+    phenotype_fitness_lookup_table = create_phenotype_fitness_lookup_table()
+    for i in range(n_individuals):
+        phenotype = population[i].get_phenotype()
+        fitness = phenotype_fitness_lookup_table[phenotype] # Look up the value
+        # Do something with the fitness
+    ```
+
+
+    Do measure the speed before **and after**,
+    as you need measurements before
+    making claims claims about performance
+    `[CppCore Per.6][Chellappa et al., 2008]`:
+    the code may actually be slower!
+
 ## References
 
 - `[CppCore Per.1]`
