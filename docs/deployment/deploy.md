@@ -22,7 +22,6 @@ tags:
     - We will prepare for installation of your code
     - But also...
         - some theory of packages
-        - some theory of workflows
         - some theory of containers
         - get some hands on
 
@@ -32,30 +31,11 @@ tags:
 
     - Package
 
-    Lesson Plan: **FIX**
+    Lesson Plan:
 
-    - **Total** 30 min
-    - Theory 20
-    - Discussions 10 min
-
-???- info "TOC"
-
-    - Overview
-        - Recording dependencies
-        - workflows
-        - containers
-
-???- admonition "Changes"
-
-    - implement new project
-    - clear goal
-    - clearer guide
-    - ask about level
-    - exercises
-        - state where to work
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - advanced exercises
+    - **Total** 75 min
+    - Theory 20+10
+    - Exercises 30+15 min
 
 ## Introduction
 
@@ -69,33 +49,13 @@ tags:
 
 !!! attention
 
-    - Make your program or workflow works for others and yourself in the future.
+    - Make your program or workflow work for others and yourself in the future.
 
 ## Recording dependencies
 
 - **Reproducibility**: We can control our code but how can we control dependencies?
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
 - **Dependency hell**: Different codes in the same environment can have conflicting dependencies.
-
-### To make sure about needed dependencies
-
-- Start with empty environment
-- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
-    - will your program require specific "system files"
-    - are these typically not installed already?
-    - in the **best world test on Windows/Mac and Linux platforms**
-        - and with as empty as possible environment
-- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
-
-!!! discussion "Discussion: Where do you run your program?"
-
-    - From a terminal?
-    - On different computers?
-    - On a cluster?
-
-- We need to either inform what is needed to run the software in the README file
-- Or provide them with everything needed
-    - hopefully not interfering with other software they are using
 
 !!! note "Ways to distribute"
 
@@ -132,6 +92,31 @@ tags:
     - Remember we made a package this morning!
 - We'll cover the other tools after the exercise.
 
+### To make sure about needed dependencies
+
+- Start with empty environment
+- 2 levels of dependencies
+    - system libraries
+    - packages, like Python
+- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
+    - will your program require specific "system files"
+    - are these typically not installed already?
+    - in the **best world test on Windows/Mac and Linux platforms**
+        - and with as empty as possible environment
+- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
+
+!!! discussion "Discussion: Where do you run your program?"
+
+    - From a terminal?
+    - On different computers?
+    - On a cluster?
+
+!!! info "We need to"
+
+    - Inform what is needed to run the software in the README file
+    - Or provide them with everything needed
+        - hopefully not interfering with other software they are using
+
 ### Principle using python pip in a virtual environment
 
 - We can make other users aware of the dependencies for our Python project.
@@ -142,8 +127,8 @@ tags:
 
 - You may have developed your Python program with your existing python modules environment. You may have installed some new packages during the development but did not track it in a good way.
 - We need to identify what python packages a user (or you on another computer) will need, to make the program work!
-    - There are many packages distributed in the "base" installation of Python so it is not just to look at the import lines in the code.
-    - You may also be hard to get an overview because you have too many import lines, also distributed among files if you worked in a modular way
+    - There are many packages distributed in the "base" installation of Python so **it is not just to look at the import lines in the code**.
+    - You may also be hard to get an overview because you have **too many import lines**, also distributed among files if you worked in a modular way
 
 !!! example
 
@@ -160,40 +145,41 @@ Compiled and generated files are not committed to version control. There are man
 
 For this we use `.gitignore` files.
 
-- Read more <https://uppmax.github.io/programming_formalisms_intro/git_deeper.html>
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
 
-!!! example "From our project repo"
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
 
-    <programming_formalisms_project_summer_2025/blob/main/.gitignore>
-
-## Exercise 1: Identify lacking packages
+## Exercise 1: Identify lacking packages (15-20 min)
 
 !!! tip
 
     - Work individually locally (in VS Code)
+    - Help each-other if getting stuck
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
     - Go to the dir ``learners/<your-name>``
+    - Create a new folder called ``test``
+    - Go into that folder
+    - Create a virtual environment, called ``usertest``
 
-    ```console
-    python -m venv <path>/usertest
-    ```
+        ```console
+        python -m venv usertest
+        ```
 
-    - This creates an empty virtual environment located in `<path>/usertest` directory
-    - **GITIGNORE!**
+    - This creates an empty virtual environment located in `usertest` directory
     - Activate
 
     === "Mac/Linux"
 
         ```console
-        source <PATH>/usertest/bin/activate
+        source usertest/bin/activate
         ```
 
     === "Windows"
 
         ```console
-        source <PATH>/usertest/Scripts/activate
+        source usertest/Scripts/activate
         ```
 
     - Note the ``(usertest)`` in the beginning of the prompt!
@@ -204,13 +190,46 @@ For this we use `.gitignore` files.
     which pip        #must point to the pip belonging to the virtual environment
     ```
 
-???- question "(Step 2: Add this to ``.gitignore``)"
+    - Check it is empty with the command ``pip list``
+    - It should just show
 
-    - add to .gitignore file
+    ```bash
+    Package    Version
+    ---------- -------
+    pip        23.2.1
+    setuptools 65.5.0
+    ```
 
-???- question "Step 3: Run the program and look for missing packages'"
+    - and some notes.
 
-    - You can switch to the directory where you have your code and test to run it
+???- question "(Optional Step 2: Add the folder to ``.gitignore``)"
+
+    - Add test directory to .gitignore file
+
+???- question "Step 3: Install the weather package and run the program and look for missing packages'"
+
+    **FIX**
+    
+    - Install the weather package with ``pip install -i ...``
+    
+    ???- info "Hints"
+
+        - The main program ``main.py`` is in the repo.
+        - ``weather`` is a python package needed by ``main.py``
+        - available here: <https://test.pypi.org/project/weather/1.0.1/>
+
+    ```bash
+    pip install -i https://test.pypi.org/project/bacsim==1.0.1
+    ```
+
+    - Run the program
+
+    **FIX**
+
+    ```bash
+    python ...
+    ```
+    
     - It may give you errors of missing packages, like ``numpy``
     - Install them with
 
@@ -218,7 +237,7 @@ For this we use `.gitignore` files.
     pip install <package name>
     ```
 
-    - No need to use ´´--user``, since it will be installed in the virtual environment only.
+    - Do NOT use ``--user``, since it should be installed in the virtual environment only.
     - Do this until your program works
 
 ???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
@@ -236,24 +255,59 @@ For this we use `.gitignore` files.
     pip freeze > requirements.txt
     ```
 
-???- question "Step 5: Test the requirements file in a new environment"
+    - **Other users** can then install the same packages with:
 
-    - End the isolated environment and work with other things!
+        ```console
+        pip install --user -r requirements.txt
+        ```
 
+    - End the isolated environment
+    
     ```console
     deactivate
     ```
 
-    - Other users can then install the same packages with:
+???- question "(Optional) Step 5: Test the requirements file in a new environment"
 
+    - Double-check it works by:
+    
+    - Create another virtual environment
+    
+        ```console
+        python -m venv usertest2
+        ```
+
+    - Activate
+
+    === "Mac/Linux"
+
+        ```console
+        source usertest2/bin/activate
+        ```
+
+    === "Windows"
+
+        ```console
+        source usertest2/Scripts/activate
+        ```
+
+    - Note the ``(usertest2)`` in the beginning of the prompt!
+    
     ```console
     pip install --user -r requirements.txt
     ```
 
-???- question "(One person): Move the requirements file to the ``learners/source`` folder"
+    - Run the program!
+
+    No errors should show up!
+
+### Follow up
+
+???- question "(One person): Move a working requirements file to the ``src/learners`` folder"
 
     - Move the requirements file to the ``learners/source`` folder
     - This will be the "official" requirements file
+    - That person git commit and pushes to GitHub!
 
 ## Going further with deployment
 
@@ -340,6 +394,12 @@ For this we use `.gitignore` files.
 - Then the python active in "PATH" will automatically be used
     - especially important on a shared system where python is not in the typical ``/usr/bin/python`` path.
 
+
+!!! info "See also"
+
+    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
+    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
+
 ## Start a Git/GitHub repo from personal existing project
 
 - Many projects/scripts start as something for personal use, but expands to be distributed.
@@ -352,7 +412,12 @@ For this we use `.gitignore` files.
 - Stage and commit
 - upload to github
 
-### Try yourself
+### (Optional) exercise 2
+
+!!! tip
+
+    - Work individually locally (in VS Code)
+    - Help each-other if getting stuck
 
 - Let's say you have some code you have started to work with
 - Start with 1A OR 1B
@@ -371,6 +436,9 @@ For this we use `.gitignore` files.
 
         - Make a new window
         - Open Folder
+
+            ![start_VSC](../img/start_VSC.png)
+        
         - Create new Folder with name ``test_project``
         - Select folder
         - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
@@ -382,12 +450,17 @@ For this we use `.gitignore` files.
 
 ???- question "Exercise 2: Initiate the project"
 
-    ???- question "VS CODE""
+    ???+ question "VS CODE"
 
-        - Initialize and then continue with step 3.
-        - Or Publish to GitHub diectly **and you are done**!
+        ![initialize_VSC](../img/initialize_VSC.png)
+
+        - **RECOMMENDED** Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
-            - Double check on GitHub!
+            - Include the file(s) (in this case the hello.py file) in the repo!
+            - Double check it was created on GitHub!
+                - It should show up under repos in your user space
+
+        - ALTERNATIVE: Initialize and then continue with step 3.
 
     ???- question "Terminal"
 
@@ -400,13 +473,13 @@ For this we use `.gitignore` files.
         - check with the command: ``git status``
         - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
 
-- So far, there is no content. We have to manually add the content to the repo.
 
-???- question "Exercise 3: Add and commit the content"
+???- question "(Optional) Exercise 3: Add and commit the content"
 
+    - So far, there is no content. We have to manually add the content to the repo.
     - Add and Commit your changes
 
-    ???- question "VS Code"
+    ???+ question "VS Code"
 
          We do this all the time! :)
     
@@ -417,22 +490,19 @@ For this we use `.gitignore` files.
         git commit -m 'first commit'
         ```
 
-???- question "Exercise 4: Upload to GitHub"
+???- question "(Optional) Exercise 4: Upload to GitHub"
 
     ???- question "In VS Code"
 
-        - There was an opportunity to directly publish on GitHub
+        - There is an opportunity to directly publish on GitHub
     
     ???- question "From GitHub"
     
         - Make sure that you are **logged into GitHub**.
         - You can use this for both VS Code and terminal
 
-        <figure markdown="span">
-        ![New repo](../i/New_repo.png){ width="500" }
-        </figure>
-    
-    
+        ![New repo](../img/New_repo.png){ width=60% }
+        
         - To create a repository we either click the green button "New" (top right corner).
     
         - Or if you see your profile page, there is a "+" menu (top right corner).
@@ -500,7 +570,6 @@ R <--> Node5
 !!! info "Key points"
 
     **Make sure it works for others or yourself in the future!**
-
 
 !!! admonition "Parts to be covered!"
 

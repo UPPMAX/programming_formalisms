@@ -30,48 +30,35 @@ tags:
 
     - Revisit licence
 
-    - Update a Doc Index
     - View other possibilities
         - Wiki
         - GitHub pages/ReadTheDocs
         - MkDocs/sphinx
 
-???- admonition "Changes"
-
-    - implement new project
-    - clear goal
-    - clearer guide
-    - ask about level
-    - exercises
-        - state where to work
-        - practical things within exercise (not needing to scroll back and forth)
-        - clearer instructions
-        - advanced exercises
-
 ## Revisiting documentation
 
 !!! admonition "Documentation comes in different forms"
 
-    - What *is* documentation?
-        - **Tutorials**: learning-oriented, allows the newcomer to get started
-        - **How-to guides**: goal-oriented, shows how to solve a specific problem
-        - **Explanation**: understanding-oriented, explains a concept
-        - **Reference**: information-oriented, describes the machinery
-        - **In-code documentaion — docstrings**
-        **Not to forget**
-        - Project documentation:
-            - requirements: what is the goal of the software, risks, platforms
-            - the analysis: pseudocode and UML
-            - risk analysis
+    - **Tutorials**: learning-oriented, allows the newcomer to get started
+    - **How-to guides**: goal-oriented, shows how to solve a specific problem
+    - **Explanation**: understanding-oriented, explains a concept
+    - **Reference**: information-oriented, describes the machinery
+    - **In-code documentaion — docstrings**
 
-**There is no one size fits all**: often for small projects a `README.md` or
-`README.rst` can be enough (more about these formats later).
+    **Not to forget**
+
+    - Project documentation:
+        - requirements: what is the goal of the software, risks, platforms
+        - the analysis: pseudocode and UML
+        - risk analysis
+
+    **There is no one size fits all**: often for small projects a `README.md` can be enough (more about md format later).
 
 ### Where are we?
 
 **DONE**
 
-- &#9745; in-code documentation
+- &#9745; In-code documentation
 - &#9745; Project documentation:
     - requirements: what is the goal of the software, risks, platforms
     - the analysis: pseudocode and UML
@@ -80,9 +67,9 @@ tags:
 **Finalize today**
 
 - &#9744; README
-    - &#9745; installation instruction
+    - &#9744; Installation instruction
     - &#9744; Tutorial: get started
-    - &#9744; citation
+    - &#9744; Citation
 
 **Further documentation for future projects**
 
@@ -91,6 +78,45 @@ tags:
 - &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
 - &#9744; **Explanation**: understanding-oriented, explains a concept
 - &#9744; **Reference**: information-oriented, describes the machinery
+
+## Markdown
+
+- One of the most popular lightweight markup languages.
+- File extension ``.md`` makes it _render_ directly in GitHub!
+
+???+ question "How does it look like?"
+
+    ```markdown
+    # This is a section heading in Markdown   
+
+    ## This is a subsection header
+
+    Nothing special needed for a normal paragraph.
+
+        This is a code block
+
+
+    **Bold** and *emphasized*.
+
+    A list:
+
+    - this is an item
+    - another item
+
+    A numbered list:
+
+    1. this is an item
+    1. items are numbered automatically
+
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    tables...
+    ```
+
+!!! info "Read more"
+
+    [reStructuredText and Markdown](../extra_bc/documentation_deeper.md/#restructuredtext-and-markdown)
 
 ## The README
 
@@ -145,6 +171,26 @@ tags:
 - How to contribute?
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
 
+### Licensing
+
+- We use GPL-3 in the project
+
+> Strong copyleft share-alike (GPL, AGPL)
+> Derivative work is free software and derivative work extends to the combined project
+> If the licenses of components are strong copyleft, one must use the same license
+
+- We can click on the license and a image will also show up!
+
+    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/LICENSE)
+
+    ???- question "How does that look like?"
+
+        ![license_project](../img/license_project.png)
+
+!!! info "See also"
+
+    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+
 ### Acknowledgements
 
 - Add references that inspired or added algorithms to your code
@@ -154,44 +200,47 @@ tags:
 
 - Think the same as for a scientific paper
 
-**Practical recommendations**:
+???- info "Practical recommendations**"
 
-- Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
-- Open source license can't demand citation, but it is required by science ethics anyway.
-- Make it as easy as possible! Clearly say what you want cited.
-- Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
-- [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
+    - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
+    - Open source license can't demand citation, but it is required by science ethics anyway.
+    - Make it as easy as possible! Clearly say what you want cited.
+    - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
+    - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
-This is an example of a simple `CITATION.cff` file:
+???+ "Recommended format for software citation"
 
-```yaml
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-  - family-names: Druskat
-    given-names: Stephan
-    orcid: https://orcid.org/0000-0003-4925-7248
-title: "My Research Software"
-version: 2.0.4
-doi: 10.5281/zenodo.1234
-date-released: 2021-08-11
-```
+    - Creator
+    - Title
+    - Publication venue
+    - Date
+    - Identifier
+    - Version
+    - Type
 
-Recommended format for software citation is to ensure the following information
-is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
+    [Katz, Chue Hong, Clark, 2021](https://f1000research.com/articles/9-1257/v2):
 
-- Creator
-- Title
-- Publication venue
-- Date
-- Identifier
-- Version
-- Type
+???- example "This is an example of a simple `CITATION.cff` file"
 
-- Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
-- CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
+    ```yaml
+    cff-version: 1.2.0
+    message: "If you use this software, please cite it as below."
+    authors:
+      - family-names: Druskat
+        given-names: Stephan
+        orcid: https://orcid.org/0000-0003-4925-7248
+    title: "My Research Software"
+    version: 2.0.4
+    doi: 10.5281/zenodo.1234
+    date-released: 2021-08-11
+    ```
 
-- Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#reference>
+!!! info "DOI and Zenodo"
+
+    - Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
+    - CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
+
+### Full examples
 
 !!! example "Examples of README files"
 
@@ -201,93 +250,149 @@ is provided as part of the reference [Katz, Chue Hong, Clark, 2021](https://f100
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
-!!! info "See also"
-
-    - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
-    - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
-
 ## Exercises
 
-### Exercises 20-30 min
+### Exercises 30-40 min
 
-- We already have a file called ``README.md``, that is used for information for the course participants.
+- We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
 
 !!! info "Intro"
 
-    - (External) Users should be able to install the the complete tool, including dependencies:
-    . Repo work
-        - work on GitHub!
+    - (External) users should be able to install and use the the complete tool, including dependencies
+    - Repo work
+        - Work on GitHub!
         - When modifying repo, use a group specific branch
         - When done, merge
     - In the end we do code review together of the merging conflicts
 
-    ???- info "Hints"
+???- tip "Markdown Cheat-Sheet"
 
-        - The main program ``main.py`` is in the repo.
-        - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/weather/1.0.1/>
+    ```markdown
+    # This is a section heading in Markdown   
 
-???+ question "(In groups) Will people need any additional packages for this tool?"
+    ## This is a subsection header
 
-    - Test in isolated environment (``venv``) on local computer if there are errors
-    - That is, are there any more packages needed
-    - Follow the example above
+    Nothing special needed for a normal paragraph.
 
-???+ question "(In groups) Make a 'requirements.txt' file (if needed)"
+        This is a code block
 
-    - each group in different branches
-    - then merge and teacher does code review
+    **Bold** and *emphasized*.
 
-???+ question "(In groups) Make 'installation instruction' in groups"
+    A list:
+    - this is an item
+    - another item
 
-    - each group in different branches
-    - then merge and teacher does code review
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    tables...
+    ```
 
-### More exercises
+### Group 1: Make 'installation instruction' in groups
 
-!!! info "Intro"
+???- info "Hints **FIX**"
 
-    - Revisit ``README-ext.md`` and update it with info after all our commits
-        - About
-        - Citing
-    - Lastly, you may, if time allows, update the doc/index.md file that should describe the content
-    - Do a ``git pull`` to have the same version of your project repo locally!
+    - The main program ``main.py`` is in the repo.
+    - ``weather`` is a python package needed by ``main.py``
+    - available here: <https://test.pypi.org/project/weather/1.0.1/>
 
-???+ question "Update your documentation in groups"
+???+ question "Make 'installation instruction'"
 
-    - You can now work in GitHub directly
-    - Do ``git push`` first from local command-line!
+    - Work together in group
+    - Do ``git push`` first from local command-line, everyone!
+    - 1 person types directly in GitHub
+    - Create branch ``installation``
+    - Open the file ``learners/README-EXT.md``
 
+    - Be inspired by the examples above
+    - Include the sections "**Dependencies**" and "**Installing**"
+    - When done, make pull request to main
 
-    - We already have a file called ``README.md``, that is used for information for the course participants.
-    - Let's continue to work with the ``README-EXT.md`` we used in last session.
+### Group 2 Formulate an 'About' section
 
+???+ question "Make 'About' and 'Getting started'"
 
-    ???- question "Group 1: Work together and formulate an 'About' section"
+    - Work together in group
+    - Do ``git push`` first from local command-line, everyone!
+    - 1 person types directly in GitHub
+    - Create branch ``about``
+    - Open the file ``learners/README-EXT.md``
 
-    ???- question "Group 2: Work together and formulate 'Getting started' section"
+    - Be inspired by the examples above
+    - Include the section "**About**" which should give some background of what the program does and how to run it.
+    - Include the section '**Getting started**'
+    
+    - When done, make pull request to main
 
-    ???- question "Group 3: Work together and formulate 'Citation' section"
+### Group 3: Formulate "Sharing sections"
 
+???+ question "Make sections about 'Getting started', 'Citation', 'License' and 'Authors'"
 
-## Discussion
+    - Work together in group
+    - Do ``git push`` first from local command-line, everyone!
+    - 1 person types directly in GitHub
+    - Create branch ``sharing``
+    - Work with a CITATION(.cff) file
+
+    ???- question "How?"
+
+        **Easier**
+
+        Create a learners/**CITATION** file (no file extension) with most of the following lines
+        
+        - Creator
+        - Title
+        - Publication venue
+        - Date
+        - Identifier
+        - Version
+        - Type
+
+        **Harder**
+
+        - open the file ``learners/CITATION.cff`` file
+        - Fill it in
+
+        ???- question "How can it look like?"
+
+            ```yaml
+            cff-version: 1.2.0
+            message: "If you use this software, please cite it as below."
+            authors:
+              - family-names: Druskat
+                given-names: Stephan
+                orcid: https://orcid.org/0000-0003-4925-7248
+            title: "My Research Software"
+            version: 2.0.4
+            doi: 10.5281/zenodo.1234
+            date-released: 2021-08-11
+
+    - Open the file ``learners/README-EXT.md``
+    - Be inspired by the examples above
+    - Include the sections
+        - 'Citation', link to the CITATION(.cff) file
+        - 'License' link to the license
+            - try relative or absolute path!
+        - 'Authors', List of the involved learners
+        - 'Acknowledgements'
+            - Add references that inspired or added algorithms to your code
+            - [Example](https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements)
+
+    - When done, make pull request to main
+
+???- solution "Example solution from last course"
+
+     [programming_formalisms_project_autumn_2024](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/blob/master/README-EXT.md)
+
+### Discussion of the README file
 
 ???- question "Discussion: Describe what you've done and why?"
 
-## Licensing
-
-Some more content
-
-!!! info "See also"
-
-    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
+    - We go through the README!
+    - Teacher makes Code review if needed
 
 ## Going further with documentation
-
-!!! info "See also"
-
-    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
 
 ### Wikis
 
@@ -304,44 +409,45 @@ Some more content
 
 There are many tools that can turn RST or Markdown into beautiful HTML pages:
 
+- [Jekyll](https://jekyllrb.com)
+    - Generates HTML from Markdown.
+    - GitHub supports this without adding extra build steps.
 - [Sphinx](http://sphinx-doc.org)
     - Generate HTML/PDF/LaTeX from RST and Markdown.
     - [Read the docs style](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
     - [HICexplorer documentation](https://hicexplorer.readthedocs.io/en/latest/)
-- [Jekyll](https://jekyllrb.com)
-    - Generates HTML from Markdown.
-    - GitHub supports this without adding extra build steps.
-- [MkDocs](https://www.mkdocs.org/) **← we will exercise this, this is how this lesson material is built**
+- [MkDocs](https://www.mkdocs.org/) **← this is how this lesson material is built**
     - Generates HTML from Markdown.
     - Example: [Programming formalisms course](https://uppmax.github.io/programming_formalisms)
 
 There are many more ...
 
+??? question "Do you like one style more?"
+
+    - [Read the docs style 1](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
+    - [Read the docs style 2](https://hicexplorer.readthedocs.io/en/latest/)
+    - [MkDocs materials style](https://uppmax.github.io/programming_formalisms)
+   
 ### Deployment on servers
 
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 
-- [GitHub Pages](https://pages.github.com) (GH-pages) ← this is what we and many others use for course and tutorial material
+- [GitHub Pages](https://pages.github.com) (GH-pages) **← this is what we and many others use for course and tutorial material**
+    - Easy to set up. Part of GitHub Actions and CI
 - [Bitbucket Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=bitbucket)
 - [GitLab Pages](https://pages.gitlab.io)
 - [Read the docs](http://readthedocs.org) ← this is what NBIS uses for some course material
     - hosts public Sphinx documentation for free!
+    - Somewhat more possibilities, like having **several versions of documentation** to switch between. Good for different version releases of a software
     - Example: [NBIS Introduction to Git](https://nbis-reproducible-research.readthedocs.io/en/course_1803/git/)
 
-#### GitHub pages
-
-- Easiest. Everything is local to GitHub
-- This lesson material
-
-#### Read the Docs
-
-- Somewhat more possibilities, like having several versions of documentation to switch between.
 
 ### What contributes to reusability?
 
-What contributes to you being able to reuse stuff that others make, and others
-(or you) being able to reuse your stuff? When you find a repository with code
-you would like to reuse, you may look at the following things to determine its
+- What contributes to you being able to reuse stuff that others make,
+- and others (or you) being able to reuse your stuff? 
+
+- When you find a repository with code you would like to reuse, you may look at the following things to determine its
 reusability:
 
 !!! note
@@ -367,6 +473,14 @@ reusability:
     - Trust and community
       > ... somebody you trust recommended it?
 
+## Summary
+
+!!! info "Key points"
+
+    **Make sure it works for others or yourself in the future!**
+
+### We are done!
+
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
@@ -391,3 +505,6 @@ reusability:
         - &#9745; in-code documentation
         - &#9745; finish documentation
 
+!!! info "See also"
+
+    [Documentation by CodeRefinery](https://coderefinery.github.io/documentation/)
