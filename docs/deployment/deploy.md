@@ -240,14 +240,12 @@ For this we use `.gitignore` files.
 
     ???- info "Hints"
 
-        - The main program ``main.py`` is in the repo.
+        - The main program ``main.py`` is in the repo's root folder.
         - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/weather/1.0.1/>
+        - available here: <https://test.pypi.org/project/uppsalaweather/0.9/>
 
-
+    - Go to the directory where ``main.py`` is
     - Run the program
-
-    **FIX**
 
     ```bash
     python main.py
@@ -257,10 +255,12 @@ For this we use `.gitignore` files.
     - Install weather with
 
     ```bash
-    pip install -i https://test.pypi.org/project/bacsim==1.0.1
+    pip install -i https://test.pypi.org/simple/ uppsalaweather==0.9
     ```
-
-    - Test run the program againagain
+    
+    (note the blank space before the package name!
+    
+    - Test run the program again
 
     - If more packages are needed, errors will still show up
     - **Otherwise continue to next step**
@@ -274,46 +274,12 @@ For this we use `.gitignore` files.
         - Do NOT use ``--user``, since it should be installed in the virtual environment only.
         - Do this until your program works
     
-???- question "Step 4: Run the program and look for missing packages'"
-
-    **FIX**
-    
-    - Install the weather package with ``pip install -i ...``
-    
-    ???- info "Hints"
-
-        - The main program ``main.py`` is in the repo.
-        - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/weather/1.0.1/>
-
-    ```bash
-    pip install -i https://test.pypi.org/project/bacsim==1.0.1
-    ```
-
-    - Run the program
-
-    **FIX**
-
-    ```bash
-    python main.py
-    ```
-    
-    - It may give you errors of missing packages, like ``numpy``
-    - Install them with
-
-    ```console
-    pip install <package name>
-    ```
-
-    - Do NOT use ``--user``, since it should be installed in the virtual environment only.
-    - Do this until your program works
-
-???- question "Step 5: Save your requirements as a file that user can run to get the needed dependencies"
+???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
 
     - Check what is installed by:
 
     ```console
-    pip freeze        #'pip list' works as well
+    pip freeze
     ```
 
     - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
@@ -335,7 +301,7 @@ For this we use `.gitignore` files.
     deactivate
     ```
 
-???- question "(Optional) Step 6: Test the requirements file in a new environment"
+???- question "(Optional) Step 5: Test the requirements file in a new environment"
 
     - Double-check it works by:
     
