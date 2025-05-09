@@ -14,7 +14,7 @@ def calc_fitness(phenotype):
     assert isinstance(phenotype, int)
     assert phenotype >= 0
     assert phenotype <= 9
-    return (phenotype + 5) % 10
+    return (phenotype + 5) % 10 # Imagine something complex here
 
 def create_phenotype_fitness_lookup_table():
     lut = dict()

@@ -135,13 +135,21 @@ cProfile.run('do_it()')
 
 ### Exercise 1
 
-- Run the code of 'Obtaining a minimal runtime speed profile'.
-- What is the output?
+- Run the code of 'Obtaining a minimal runtime speed profile'
+  in **release mode**. What is the output?
+
+???- question "How to run in release mode?"
+
+    Run `python` with the `-O` (dash capital-oh) to run Python in release mode:
+
+    ```console
+    python -O minimal_profile.py
+    ```
 
 ???- question "Answer"
 
     ```bash
-    richel@richel-N141CU:~$ /bin/python3 /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_profile.py
+    richel@richel-N141CU:~$ /bin/python3 -O /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_profile.py
     Hello world
              5 function calls in 0.000 seconds
 
@@ -188,7 +196,7 @@ cProfile.run('do_it()')
     The output will look similar to this:
 
     ```bash
-    richel@richel-N141CU:~$ /bin/python3 /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_speed_profile.py
+    richel@richel-N141CU:~$ /bin/python3 -O /home/richel/GitHubs/programming_formalisms/docs/optimisation/minimal_speed_profile.py
              6 function calls in 1.143 seconds
 
        Ordered by: standard name
