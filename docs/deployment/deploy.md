@@ -335,6 +335,17 @@ For this we use `.gitignore` files.
 
 ### Follow up
 
+???- tip "requirements file enabling test packages to be found"
+
+    ```text
+    --index-url https://test.pypi.org/simple/
+    --extra-index-url https://pypi.org/simple
+    --pre
+    uppsalaweather==0.9
+    ```
+
+    - possibly not all of the 3 upper lines are needed
+
 ???- question "(One person): Move a working requirements file to the ``src/learners`` folder"
 
     - Move the requirements file to the ``learners/source`` folder
