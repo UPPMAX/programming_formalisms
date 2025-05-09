@@ -14,8 +14,7 @@ tags:
 !!! info "Learning outcomes of 'Deployment'"
 
     - I can mentalize the installation needs from the users' perspective
-    - I can evaluate different available tools for reproducibility and installations
-    - I can make an installation instruction for potential users
+    - I can initialize a new project
 
 !!! info "Content"
 
@@ -23,7 +22,6 @@ tags:
     - But also...
         - some theory of packages
         - some theory of containers
-        - get some hands on
 
 ???- note "Instructor notes"
 
@@ -236,7 +234,7 @@ For this we use `.gitignore` files.
 
     - Add test directory to .gitignore file
 
-???- question "Step 3: Run the program and look for missing packages'"
+???- question "Step 3: Run the program and look for missing packages"
 
     ???- info "Hints"
 
