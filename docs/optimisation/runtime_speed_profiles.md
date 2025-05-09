@@ -484,7 +484,7 @@ def superfast_xor_swap(x, y):
 
 You want to make the code below faster.
 You've measured the speed profile, also as shown below.
-How to make it go faster? 
+How to make it go faster?
 
 - Tip: how can you achieve the same with less calculations?
 
@@ -539,7 +539,7 @@ for i in range(n_individuals):
 
     The technical jargon is: we are going to create a look-up table,
     commonly abbreviated to 'LUT'. In Python, the `dict` is the go-to
-    datatype for this.    
+    datatype for this.
 
     ```python
     def create_phenotype_fitness_lookup_table():
