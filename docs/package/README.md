@@ -114,8 +114,8 @@ in the regular way.
     The script imports a function from `weather`:
 
     ```python
-    from weather.experiment import (
-        run_experiment,
+    from weather.reader import (
+        read_data,
     )
     ```
 
@@ -132,6 +132,14 @@ in the regular way.
 
 - Run the script `main.py` to verify our package is installed.
   Have you successfully installed our code as a package?
+
+???- question "How to run that script again?"
+
+    Run:
+
+    ```console
+    python main.py
+    ```
 
 ???- question "Answer"
 
