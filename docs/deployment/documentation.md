@@ -17,10 +17,11 @@ tags:
     learners
 
     - know the most important sections for a full public README
+    - can make a installation instruction
     - can make citation info
     - know how to find instruction of going to more sophisticated documentation
 
-!!! info "Content"
+???+ info "Content"
 
     - content of README
         - installation
@@ -200,7 +201,7 @@ tags:
 
 - Think the same as for a scientific paper
 
-???- info "Practical recommendations**"
+???- info "Practical recommendations"
 
     - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
     - Open source license can't demand citation, but it is required by science ethics anyway.
