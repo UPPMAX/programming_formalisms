@@ -149,6 +149,36 @@ For this we use `.gitignore` files.
 
 - [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
 
+???- tip "Demo with planet"
+
+    ```bash
+
+        git switch -c venv
+        python -m venv venv
+        venv/Scripts/activate
+        pip freeze  #should be empty
+        ls
+        cd code
+        ls
+        python planet_main.py
+            import numpy as np
+            ModuleNotFoundError: No module named 'numpy'
+
+        pip install numpy
+        python planet_main.py
+            ModuleNotFoundError: No module named 'matplotlib'
+        pip install matplotlib
+        pip freeze
+        pip freeze > requirements.txt
+        git add requirements.txt
+        git commit -m "add requirements.txt"
+        git push
+        git switch main
+        git merge venv
+        git push
+    ```
+
+
 ## Exercise 1: Identify lacking packages (15-20 min)
 
 !!! tip
@@ -206,7 +236,45 @@ For this we use `.gitignore` files.
 
     - Add test directory to .gitignore file
 
-???- question "Step 3: Install the weather package and run the program and look for missing packages'"
+???- question "Step 3: Run the program and look for missing packages'"
+
+    ???- info "Hints"
+
+        - The main program ``main.py`` is in the repo.
+        - ``weather`` is a python package needed by ``main.py``
+        - available here: <https://test.pypi.org/project/weather/1.0.1/>
+
+
+    - Run the program
+
+    **FIX**
+
+    ```bash
+    python main.py
+    ```
+    
+    - It may give you errors of missing packages, like ``weather``
+    - Install weather with
+
+    ```bash
+    pip install -i https://test.pypi.org/project/bacsim==1.0.1
+    ```
+
+    - Test run the program againagain
+
+    - If more packages are needed, errors will still show up
+    - **Otherwise continue to next step**
+    
+    ???- question "How do I install other packages"
+    
+        ```console
+        pip install <package name>
+        ```
+
+        - Do NOT use ``--user``, since it should be installed in the virtual environment only.
+        - Do this until your program works
+    
+???- question "Step 4: Run the program and look for missing packages'"
 
     **FIX**
     
@@ -227,7 +295,7 @@ For this we use `.gitignore` files.
     **FIX**
 
     ```bash
-    python ...
+    python main.py
     ```
     
     - It may give you errors of missing packages, like ``numpy``
@@ -240,7 +308,7 @@ For this we use `.gitignore` files.
     - Do NOT use ``--user``, since it should be installed in the virtual environment only.
     - Do this until your program works
 
-???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
+???- question "Step 5: Save your requirements as a file that user can run to get the needed dependencies"
 
     - Check what is installed by:
 
@@ -267,7 +335,7 @@ For this we use `.gitignore` files.
     deactivate
     ```
 
-???- question "(Optional) Step 5: Test the requirements file in a new environment"
+???- question "(Optional) Step 6: Test the requirements file in a new environment"
 
     - Double-check it works by:
     
