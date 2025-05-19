@@ -26,7 +26,7 @@ tags:
 
     - Teacher gives introduction with interaction 20 m
     - Studens work in groups with at least one more used to Git in each
-    
+
     Prerequisites are:
 
     - Git account
@@ -139,7 +139,7 @@ tags:
 ???- question "Difference between ``git pull`` and ``git fetch``?"
 
     We may cover this later. Not important now!
-    
+
     - Git **pull** **copies changes** from a remote repository directly **into your** **working directory**, while git **fetch** **does not**.
     - The git **fetch** command only copies changes into your local **Git** repo.
     - The git **pull** command does **both**.
@@ -176,18 +176,18 @@ Tracked files can be in three states.
 !!! admonition "Stage files (in git)"
 
     VS CODE
-    
+
     - Activate the source control environment from left menu!
     - "+" button
-    
+
     ???- note "From bash terminal"
-    
+
         - All changed files
 
         ```console
         git add .    # < -- "." means all files
         ```
-    
+
         - Chosen files
 
         ```console
@@ -200,7 +200,7 @@ Tracked files can be in three states.
     - BUT only what we have added to the "staging" area!
 
     VS CODE
-    
+
     - Activate the source control environment from left menu!
     - "Commit" button and "Commit message" text
 
@@ -238,17 +238,17 @@ Tracked files can be in three states.
         add new api for user program check| adding a new api for user program check | New user api
 
         Source: [Git Best Practices (Chap 6 in Beginning Git)](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/html/484631_2_En_6_Chapter.xhtml)
-        
+
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 
 !!! admonition "Upload to GitHub"
 
     VS CODE
-    
+
     - Activate the source control environemnt from left menu!
     - Click the "Sync Changes" button (may be just a symbol)
     - You can add a push message (shown on GitHub then) or leave it empty, then the last commit message will be used.
-    
+
         ???- note "From bash terminal"
 
         ```git
@@ -273,28 +273,28 @@ Tracked files can be in three states.
       P["Project idea"] --> planet.py -->|git add| Node4
       Node4 --> |git commit| Node1
       Node2 --> |git push| Node5
-    
+
       C[Uncommited changed planet.py] -->|commit button| R
       Node5 --> |"git pull (from local git)"| Node2
       R --> |"git pull (from local git)"| Node1
       R <--> Node5
-    
+
             subgraph "Local Git"
             Node2[project]
             Node1[planet.py]
             Node1 <--> Node2
-    
+
             end
-    
+
             subgraph "staging area"
             Node4[planet.py]
             end
-    
+
             subgraph "GitHub"
             Node5[project]
             R[planet.py]
             end
-    
+
     ```
 
 ## Exercises
@@ -327,11 +327,11 @@ Tracked files can be in three states.
     ???- question "Where is this?"
 
         ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2025``
-            
+
     ???- question "How will the address to clone look like?"
-        
+
         ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2025.git``
-  
+
     - In VS code: Clone Git repository
         - The repo may show up automatically if you are already part of the project. Then click it.
         - Otherwise paste the copied URL
@@ -375,7 +375,7 @@ Tracked files can be in three states.
 
     ![VS Code add](../img/Add_file_VSC.png)
 
-    
+
     - There is an **U** (for Untracked) beside the README.md file
     - You want to **add the files** (focus the camera) to the list of files tracked by Git.
     - Git does not track any files automatically and you need make a conscious decision to add a file.
@@ -443,12 +443,12 @@ nothing to commit, working tree clean
 - Create a new file with a unique name for your group,
   for example `group_anna_and_sven.txt`
 - **All members of the team**: get it on your **local computer**
-    - That is: you will get several files in total, but each just locally, so far.  
+    - That is: you will get several files in total, but each just locally, so far.
 
 ???- question "How to do this?"
 
     - Do the same steps as the exercises above in the folder **Learners/** (not folder with name)
-        
+
 
 - One member add the line below at the end of that file
   and does a `git push`:

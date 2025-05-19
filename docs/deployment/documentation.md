@@ -88,7 +88,7 @@ tags:
 ???+ question "How does it look like?"
 
     ```markdown
-    # This is a section heading in Markdown   
+    # This is a section heading in Markdown
 
     ## This is a subsection header
 
@@ -270,7 +270,7 @@ tags:
 ???- tip "Markdown Cheat-Sheet"
 
     ```markdown
-    # This is a section heading in Markdown   
+    # This is a section heading in Markdown
 
     ## This is a subsection header
 
@@ -323,7 +323,7 @@ tags:
     - Be inspired by the examples above
     - Include the section "**About**" which should give some background of what the program does and how to run it.
     - Include the section '**Getting started**'
-    
+
     - When done, make pull request to main
 
 ### Group 3: Formulate "Sharing sections"
@@ -341,7 +341,7 @@ tags:
         **Easier**
 
         Create a learners/**CITATION** file (no file extension) with most of the following lines
-        
+
         - Creator
         - Title
         - Publication venue
@@ -428,7 +428,7 @@ There are many more ...
     - [Read the docs style 1](https://sphinx-rtd-theme.readthedocs.io/en/stable/)
     - [Read the docs style 2](https://hicexplorer.readthedocs.io/en/latest/)
     - [MkDocs materials style](https://uppmax.github.io/programming_formalisms)
-   
+
 ### Deployment on servers
 
 GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
@@ -446,7 +446,7 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 ### What contributes to reusability?
 
 - What contributes to you being able to reuse stuff that others make,
-- and others (or you) being able to reuse your stuff? 
+- and others (or you) being able to reuse your stuff?
 
 - When you find a repository with code you would like to reuse, you may look at the following things to determine its
 reusability:

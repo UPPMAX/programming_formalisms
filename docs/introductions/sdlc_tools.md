@@ -200,7 +200,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     ```
 
     Mermaid code
-    
+
     ```text
     flowchart TD
       condition{Is something true?}
@@ -414,7 +414,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
         - offering code hosting services for both open source projects and private teams.
     - It serves as a version control system and provides a platform for developers to
         - build, share, and document their projects, fostering a strong community of collaboration.
-    
+
 - Someone has given you access to a repository online and **you want to contribute** to it.
 - Quite easy to make a **copy and send a change back**.
 
@@ -481,7 +481,7 @@ Documentation is a wide field, connecting many of the earlier topics
         - Can be used to auto-generate documentation for functions/classes
     - Disadvantage
         - Probably not enough for users
-    
+
 ### Project organisation
 
 - It's about folder structure and setting up practices

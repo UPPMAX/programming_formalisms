@@ -448,7 +448,7 @@ def read_non_empty_file(filename):
 
     Sometimes, this is good enough, even in release mode:
     the new `assert` can be seen as a stub.
-    
+
     For a function `read_non_empty_file` that does exactly what it says
     it does, raise an exception instead:
 

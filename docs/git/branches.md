@@ -95,7 +95,7 @@ In VS Code
     ![create branch in VS Code](../img/create_branch_VSC.png)
 
     - and switch between existing branches
-  
+
     ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
 ???+ admonition "In command line"
@@ -117,9 +117,9 @@ In VS Code
         ```git
         git pull #
         ```
-    
+
         - You may need to be more detailed:
-    
+
         ```git
         git push --set-upstream origin new-branch
         ```
@@ -153,7 +153,7 @@ In VS Code
     This will enable you to use ``git graph`` for short
 
     !!! example
-    
+
         ```git
 
         $ git graph
@@ -190,7 +190,7 @@ In VS Code
     - When you select a file in the Source Control view, the editor shows a diff view that highlights the file changes, compared to the previously committed file.
 
     ![file_saved_VSC](../img/file_saved_VSC.png)
-    
+
     - Press "M"
 
     ![diff_VSC](../img/diff_VSC.png)
@@ -294,7 +294,7 @@ gitGraph
     Done!
 
     ???- admonition "If you wish to use the command line"
-    
+
         ```git
         git pull
         ```
@@ -356,9 +356,9 @@ gitGraph
             ```git
             git pull #
             ```
-    
+
             - You may need to be more detailed:
-    
+
             ```git
             git push --set-upstream origin new-branch
             ```
@@ -381,7 +381,7 @@ gitGraph
 
         > - Delete your branch (i.e. the one with the unique name).
         >   You may use the web interface (easiest!) or use the command line
-    
+
         ![github_view_branches_annotated](github_view_branches_annotated.png)
 
         Click on 'Branches', as shown in the image above.
@@ -391,19 +391,19 @@ gitGraph
         Click on garbage bin, as shown in the image above.
 
         ![github_view_all_branches_just_deleted_annotated](github_view_all_branches_just_deleted_annotated.png)
-    
+
         The branch will now be deleted, as shown in the image above.
 
         > - On your local computer, update your code
-    
+
         Do:
-    
+
         ```git
         git pull
         ```
 
     **This is for VS Code**
-  
+
     > - On your local computer:
     >     - update the repository
 
@@ -411,7 +411,7 @@ gitGraph
     and update: pull/sync
 
     ![pull_VSC](../img/pull_VSC.png)
-  
+
 
     > - On your local computer:
     >     - switch to the new branch
@@ -433,7 +433,7 @@ gitGraph
     >     - push your changes online.
 
     Push "Sync"
-    
+
     And your code may end up online.
 
     If that does not work, try pushing again, maybe multiple times, as many people
@@ -456,11 +456,11 @@ gitGraph
     > - You may use the web interface (easiest!) or use VS Cde
 
     In VS Code
-    
+
     ![delete_branch](../img/delete_branch_VSC.png)
 
     ???- admonition "GitHub"
-    
+
         ![github_view_branches_annotated](github_view_branches_annotated.png)
 
         Click on 'Branches', as shown in the image above.

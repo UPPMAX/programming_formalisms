@@ -161,7 +161,7 @@ branches using GitHub
 
     - In GitHub MERGE is called PULL REQUEST!
     - More in next session
-  
+
 - Conflicts may show up like this:
 
 ![conflict-edit-2](../img/contributing/conflict-edit-2.png)
@@ -309,19 +309,19 @@ gitGraph
     - Modify the same file, e.g. add the line `main person was here`.
     - Commit with message "main person was here"`
     - To generate the merge conflict, Click Code in the upper menu
-    
+
     ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
 
     - Click the button!
 
     You will be guided in solvinfg the conflict
-    
+
     - Modify the file to have the texts merged.
 
     ![merge_pull_request_GH](../img/merge_pull_request_GH.png)
 
     - Don't forget to Approve!
-    
+
     ![PR_success_GH](../img/PR_success_GH.png)
 
     - You may delete the old branch from here if you want!

@@ -85,7 +85,7 @@ tags:
         - Isolate environments on computers with many users (and allow self-installations)
         - Using **different Python/R versions** per project??
         - Provide tools and services to **share packages**
-    
+
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll cover the other tools after the exercise.
@@ -248,30 +248,30 @@ For this we use `.gitignore` files.
     ```bash
     python main.py
     ```
-    
+
     - It may give you errors of missing packages, like ``weather``
     - Install weather with
 
     ```bash
     pip install -i https://test.pypi.org/simple/ uppsalaweather==0.9
     ```
-    
+
     (note the blank space before the package name!
-    
+
     - Test run the program again
 
     - If more packages are needed, errors will still show up
     - **Otherwise continue to next step**
-    
+
     ???- question "How do I install other packages"
-    
+
         ```console
         pip install <package name>
         ```
 
         - Do NOT use ``--user``, since it should be installed in the virtual environment only.
         - Do this until your program works
-    
+
 ???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
 
     - Check what is installed by:
@@ -294,7 +294,7 @@ For this we use `.gitignore` files.
         ```
 
     - End the isolated environment
-    
+
     ```console
     deactivate
     ```
@@ -302,9 +302,9 @@ For this we use `.gitignore` files.
 ???- question "(Optional) Step 5: Test the requirements file in a new environment"
 
     - Double-check it works by:
-    
+
     - Create another virtual environment
-    
+
         ```console
         python -m venv usertest2
         ```
@@ -324,7 +324,7 @@ For this we use `.gitignore` files.
         ```
 
     - Note the ``(usertest2)`` in the beginning of the prompt!
-    
+
     ```console
     pip install --user -r requirements.txt
     ```
@@ -357,7 +357,7 @@ For this we use `.gitignore` files.
 ???- admonition "Python for scientific computing"
 
     **Course advertisement**
-    
+
     - [Python for scientific computing](https://aaltoscicomp.github.io/python-for-scicomp/)
     - [Python packaging session](https://aaltoscicomp.github.io/python-for-scicomp/packaging/).
 
@@ -420,7 +420,7 @@ For this we use `.gitignore` files.
 ???- admonition "Workflows"
 
     **Learn more**
-    
+
     - [Workflow management by CodeRefinery](https://coderefinery.github.io/reproducible-research/workflow-management/)
     - [Snakemake by CodeRefinery](https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/)
 
@@ -473,7 +473,7 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1B: Start a new test project"
 
     - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
-    
+
 
     ???+ question "In VS Code?"
 
@@ -481,7 +481,7 @@ For this we use `.gitignore` files.
         - Open Folder
 
             ![start_VSC](../img/start_VSC.png)
-        
+
         - Create new Folder with name ``test_project``
         - Select folder
         - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
@@ -525,7 +525,7 @@ For this we use `.gitignore` files.
     ???+ question "VS Code"
 
          We do this all the time! :)
-    
+
     ???- question "Terminal"
 
         ```console
@@ -538,18 +538,18 @@ For this we use `.gitignore` files.
     ???- question "In VS Code"
 
         - There is an opportunity to directly publish on GitHub
-    
+
     ???- question "From GitHub"
-    
+
         - Make sure that you are **logged into GitHub**.
         - You can use this for both VS Code and terminal
 
         ![New repo](../img/New_repo.png){ width=60% }
-        
+
         - To create a repository we either click the green button "New" (top right corner).
-    
+
         - Or if you see your profile page, there is a "+" menu (top right corner).
-    
+
         ![New top-right](../img/new-top-right.png){ width=60% }
 
         ---
