@@ -84,7 +84,8 @@ tags:
         - [Configure Git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#configure-git)
             - like: ``git config --global user.name "Mona Lisa"``
             - like: ``git config --global user.email "mona_lisa@gmail.com"``
-    - We hope also that you have already done these steps [HERE](../misc/faq.md/#prerequisites)
+    - We hope also that you have already done these steps
+      [at the 'Prerequisites' page of this course](../misc/faq.md/#prerequisites)
 
 
 ## This lesson
