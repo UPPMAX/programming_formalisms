@@ -8,7 +8,7 @@ are obsolete.
 
 Here is a list of such obsolete files:
 
-./social_coding/not_used/notes_social_coding.pdf
+```text
 ./development_design/Modular_Programming.pdf
 ./development_design/Development and Programming Formalisms vt2023.pdf
 ./development_design/Development_and_Programming_Formalisms.pdf
@@ -18,5 +18,6 @@ Here is a list of such obsolete files:
 ./development_design/analysis_and_design_programming_formalism_ht_2023.pdf
 ./common_practices/slides/notes_code_review.pdf
 ./img/development_design/AI_assisted_No_UU_logo.pptx
+```
 
 I suggest to delete all these
