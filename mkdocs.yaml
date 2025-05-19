@@ -139,7 +139,6 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 not_in_nav: |
-  algorithms/README.md
   common_practices/exercises/exercises_code_review.md
   common_practices/pages/notes_code_review_long.md
   common_practices/slides/notes_code_review.md
