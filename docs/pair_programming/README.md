@@ -184,7 +184,7 @@ Before doing the exercises:
 - Decide upon a function to write together.
   Use either the testing framework setup, or use the more informal
   one with assert.
-  The course has many example functions [here](https://uppmax.github.io/programming_formalisms/misc/functions/).
+  The course has [a page with many example functions](https://uppmax.github.io/programming_formalisms/misc/functions/).
 
 The exercise, to be done as a pair:
 

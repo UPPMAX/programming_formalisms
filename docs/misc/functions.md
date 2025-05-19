@@ -20,7 +20,7 @@ practicing TDD.
 
 ???- question "`is_zero` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_zero(x):
@@ -48,7 +48,7 @@ practicing TDD.
 
 ???- question "`is_even` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_even(x):
@@ -75,7 +75,7 @@ practicing TDD.
 
 ???- question "`is_odd` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_odd(x):
@@ -116,7 +116,7 @@ practicing TDD.
 
 ???- question "`is_probability` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_probability(x):
@@ -148,7 +148,7 @@ practicing TDD.
 
 ???- question "`is_number` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_number(x):
@@ -171,7 +171,7 @@ practicing TDD.
 
 ???- question "`are_numbers` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def are_numbers(x):
@@ -196,7 +196,7 @@ practicing TDD.
 
 ???- question "`get_digits` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
 
     ```python
     def get_digits(x):
@@ -318,7 +318,7 @@ practicing TDD.
 
 ???- question "`are_strings` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def are_strings(x):
@@ -343,7 +343,7 @@ practicing TDD.
 
 ???- question "`check_are_strings` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def check_are_strings(x):
@@ -371,7 +371,7 @@ practicing TDD.
 
 ???- question "`check_different` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def check_different(a, b):
@@ -391,7 +391,7 @@ practicing TDD.
 
 ???- question "`check_equal` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def check_equal(a, b):
@@ -412,7 +412,7 @@ practicing TDD.
 
 ???- question "`check_is_number` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def check_is_number(x):
@@ -432,7 +432,7 @@ practicing TDD.
 
 ???- question "`check_is_probability` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def check_is_probability(x):
@@ -453,7 +453,7 @@ practicing TDD.
 
 ???- question "`is_string` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def check_is_string(x):
@@ -473,7 +473,7 @@ practicing TDD.
 
 ???- question "`divide_safely` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def divide_safely(a, b):
@@ -495,7 +495,7 @@ practicing TDD.
 
 ???- question "`is_dividable_by_three` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_dividable_by_three(x):
@@ -516,7 +516,7 @@ practicing TDD.
 
 ???- question "`is_string` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/tdd.py).
 
     ```python
     def is_string(x):
@@ -529,7 +529,7 @@ practicing TDD.
 
 ???- question "`flip_coin` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
 
     ```python
     from random import randint
@@ -541,7 +541,7 @@ practicing TDD.
 
 ???- question "`roll_dice` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
 
     ```python
     from random import randint
@@ -553,7 +553,7 @@ practicing TDD.
 
 ???- question "`sum_primes` example implementation"
 
-    Copied from [here](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
+    Copied from [this tested implementation](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/src/pf_example/testing.py).
 
     ```python
     def sum_primes(num):

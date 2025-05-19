@@ -22,7 +22,9 @@ Here is the procedure on how to clone a GitHub repository.
 
 ???- question "Prefer a video?"
 
-    See [here](https://youtu.be/gL8RvfhvJ2Q)
+    See the
+    ['How to clone a GitHub repository from VSCode and a bit more git'](https://youtu.be/gL8RvfhvJ2Q)
+    YouTube video.
 
 ### 1. Get the URL to your GitHub repository
 

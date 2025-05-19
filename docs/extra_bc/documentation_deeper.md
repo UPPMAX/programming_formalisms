@@ -145,7 +145,7 @@ GitHub, GitLab, and Bitbucket make it possible to serve HTML pages:
 - You can do this checkout whenever you want.
 
 **The basic steps are:**
-(also presented [here](https://coderefinery.github.io/documentation/sphinx/)
+(also presented [in the 'Sphinx' session of a CodeRefinery course](https://coderefinery.github.io/documentation/sphinx/)
 - Start locally in repo with name describing the project
 - You can generate Sphinx documentation in an existing code project (may be a git repo)
 - Install python package: `sphinx`

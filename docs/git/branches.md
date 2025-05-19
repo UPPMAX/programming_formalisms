@@ -479,7 +479,8 @@ gitGraph
 
 ???- question "Need a video for command line?"
 
-    See a video [here](https://youtu.be/Ewewytijw1g)
+    See the
+    ['Programming Formalisms: git branch exercise' YouTube video](https://youtu.be/Ewewytijw1g)
 
 ## Summary
 

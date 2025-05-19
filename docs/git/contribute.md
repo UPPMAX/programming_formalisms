@@ -301,8 +301,8 @@ Now do the same for team member B.
 
 ???- question "Enjoy a video?"
 
-    You can find a video [here](https://youtu.be/UXSKm_RvcLw)
-
+    See the
+    ['Programming Formalisms, 'Apply merge' exercise 3' YouTube video](https://youtu.be/UXSKm_RvcLw)
 
 ## Summary
 

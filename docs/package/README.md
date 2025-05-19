@@ -161,7 +161,7 @@ in the regular way.
 
 #### Exercise 2.1: Build the package distribution files
 
-Follow the steps at [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/):
+Follow the steps at [the official Python packaging documentation](https://packaging.python.org/en/latest/tutorials/packaging-projects/):
 
 Install `build`:
 

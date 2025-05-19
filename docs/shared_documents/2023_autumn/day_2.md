@@ -57,7 +57,8 @@ Passcode: 583470
     - A:In most software for UML, yes for plantuml you can use !include this will include the contents from the other file into the current file.
 
 - Q: Is it possible to generate a UML from actual (e.g. Python) code?
-    - A [Richel]: Yes, for example, [Doxygen](https://www.doxygen.nl/manual/docblocks.html#pythonblocks) makes a class diagram from documentation, but there are more ways, e.g. [here](https://stackoverflow.com/a/7554457). I predict that ChatGPT can do a reasonable job.
+    - A [Richel]: Yes, for example, [Doxygen](https://www.doxygen.nl/manual/docblocks.html#pythonblocks) 
+        makes a class diagram from documentation, but there are more ways, e.g. [Stack Overflow](https://stackoverflow.com/a/7554457). I predict that ChatGPT can do a reasonable job.
     - A: [Lars]ChatGPT can do a reasonable job as well, there are also other more specialiced software that deal with this issue it is called Reverse Engeneering
          and is nowadays a much more complete proces. When you then develop new diagrams from this that influcese the code it is what is called Roundtrip Engineering
 

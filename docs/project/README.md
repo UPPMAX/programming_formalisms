@@ -7,7 +7,7 @@ tags:
 
 In this course, we work together on a project:
 
-**[The Programming Formalisms Summer 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025)**.
+**[The Programming Formalisms Summer 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)**.
 
 The goal of having a project is to provide a situation in which the theory is
 experienced. For example, at the start, merging code together will give
@@ -15,14 +15,10 @@ some troubles. Later in the course, we learn how to avoid these troubles.
 Making the learners experience which problems are solved by
 using professional workflows is the reason of having one project.
 
-A worked-out example project can be found
-[here](https://github.com/programming-formalisms/programming_formalisms_example_project).
-
 ## Exercises
 
 These exercises are about working on the shared project.
-The current project, as well as earlier shared projects,
-can be found [here](projects.md).
+The current project can be found [at the 'Projects' page](projects.md).
 
 - [Dataset](uppsala_tm_1722-2022.zip)
 - [Watching](../watching/README.md)

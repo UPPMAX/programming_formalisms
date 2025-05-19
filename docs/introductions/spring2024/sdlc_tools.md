@@ -312,7 +312,7 @@ flowchart TD
         - object-orientation (which gives the choices Python or C++)
         - and functional (choices Python or Fortran)
 
-    - Syntax cheat sheet [here](https://mermaid.js.org/syntax/flowchart.html)
+    - [Mermaid syntax cheat sheet](https://mermaid.js.org/syntax/flowchart.html)
 
 
 ### Pseudocode

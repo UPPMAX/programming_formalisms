@@ -324,7 +324,8 @@ gitGraph
 
 ???- question "Prefer a video?"
 
-    You can find a video [here](https://youtu.be/BSi9nFhlgwM)
+    See the
+    ['Programming Formalisms: Apply merge, exercise 1' YouTube video](https://youtu.be/BSi9nFhlgwM)
 
 ### Extra exercise 4: practice merge conflicts between branches using the command line
 
@@ -381,7 +382,8 @@ gitGraph
 
 ???- question "Enjoy a video?"
 
-    You can find a video [here](https://youtu.be/2RTO8I9qdCk)
+    See the
+    ['Programming Formalisms: 'Apply merge', exercise 2' YouTube video](https://youtu.be/2RTO8I9qdCk)
 
 ### Extra exercise 5: practice code review
 
@@ -398,8 +400,8 @@ Now do the same for team member B.
 
 ???- question "Enjoy a video?"
 
-    You can find a video [here](https://youtu.be/UXSKm_RvcLw)
-
+    See the
+    ['Programming Formalisms, 'Apply merge' exercise 3' YouTube video](https://youtu.be/UXSKm_RvcLw)
 
 ## Links
 

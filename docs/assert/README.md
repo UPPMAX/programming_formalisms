@@ -504,4 +504,4 @@ def read_non_empty_file(filename):
   <https://style.tidyverse.org/functions.html>
 - `[Turner, 2024]` Jason Turner, cppbestpractices:
   'Never Put Code with Side Effects Inside an assert()'
-  [here](https://github.com/cpp-best-practices/cppbestpractices/blob/master/03-Style.md#never-put-code-with-side-effects-inside-an-assert)
+  [Source](https://github.com/cpp-best-practices/cppbestpractices/blob/master/03-Style.md#never-put-code-with-side-effects-inside-an-assert)

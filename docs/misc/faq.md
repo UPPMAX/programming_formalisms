@@ -154,15 +154,17 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
         - Follow the setup insctructions from the Windows part at [https://coderefinery.github.io/installation/git-in-terminal/](https://coderefinery.github.io/installation/git-in-terminal/) by CodeRefinery.
         - Included will be the **Git Bash**
 
-=== "Mac"
+=== "MacOS"
 
     - We use [the VSCode built-in terminal](https://github.com/UPPMAX/programming_formalisms/issues/83) to some extent
     - Choose one of your choice, the built-in or another!
     - Chances are big that you already have **git installed on your computer**.
     - You can check by running e.g. `git --version`.
         - and if it reports 2.28 or higher, then you are good.
-    - If you have a very old version of git or you don't have it, install it following the instructions [here](https://git-scm.com/download/mac)
-        - You may have to do ``xcode select --install`` from the Mac terminal.
+    - If you have a very old version of git or you don't have it,
+      install it following
+      [the git MacOS download instructions](https://git-scm.com/download/mac)
+        - You may have to do `xcode select --install` from the Mac terminal.
 
 === "Linux"
 

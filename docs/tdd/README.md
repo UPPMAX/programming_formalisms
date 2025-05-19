@@ -574,7 +574,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 - `[Stroustrup & Sutter, 2017]`
   Stroustrup, Bjarne, and Herb Sutter.
   "C++ Core Guidelines (2017)."
-  [here](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+  [Website](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
   (Cited on pages 100 and 103) (2015).
 - `[study I cannot find]` in one of the classics, there was a bar chart that
   showed developers write functions such as `is_prime` with and without TDD

@@ -181,12 +181,12 @@ def isprime_2(num):
 ## References
 
 - `[CppCore Per.1]` C++ Core Guidelines: Per.1: Don't optimize without reason
-  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
+  [Website](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rper-reason)
 - `[CppCore Per.2]` C++ Core Guidelines: Per.2: Don't optimize prematurely
-  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
+  [Website](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per2-dont-optimize-prematurely)
 - `[CppCore Per.3]` C++ Core Guidelines: Per.3:
   Don't optimize something that's not performance critical
-  [here](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
+  [Website](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#per3-dont-optimize-something-thats-not-performance-critical)
 - `[Bartz-Beielstein et al., 2020]` Bartz-Beielstein, Thomas, et al. "Benchmarking in optimization: Best practice and open issues." arXiv preprint arXiv:2007.03488 (2020).
 - `[Henney, 2010]` Henney, Kevlin.
   97 things every programmer should know: collective wisdom from the experts. "

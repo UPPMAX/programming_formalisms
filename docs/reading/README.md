@@ -17,4 +17,4 @@ Here are open-access paper that we cite in this course.
 - `[Wilson et al., 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
-  [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
+  [Article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)

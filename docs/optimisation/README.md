@@ -39,4 +39,4 @@ Agree yes/no?
 ## Links
 
 - [Project Euler](https://projecteuler.net/archives): plenty of programming problems
-- Lecture of 2022: [here](https://uppsala.instructure.com/courses/69215/pages/optimisation-when-and-how?module_item_id=503139):
+- [Lecture of 2022](https://uppsala.instructure.com/courses/69215/pages/optimisation-when-and-how?module_item_id=503139):

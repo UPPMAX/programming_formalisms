@@ -239,7 +239,11 @@ tags:
 !!! info "DOI and Zenodo"
 
     - Digital object identifiers (DOI) are the backbone of the academic reference and metrics system.
-    - CodeRefinery has an exercise to see how to make a GitHub repository citable by archiving it on the Zenodo archiving service. If you are interested,  have a look [here](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
+    - CodeRefinery has an exercise to see how to make a GitHub repository
+      citable by archiving it on the Zenodo archiving service.
+      If you are interested, 
+      have a look
+      [at this Coderefinery webpage](https://coderefinery.github.io/github-without-command-line/doi/#making-your-project-citable)
 
 ### Full examples
 

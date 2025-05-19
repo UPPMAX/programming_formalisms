@@ -164,7 +164,7 @@ Given the below project brief we are to create a rudimentary requirement specifi
 - `[Board & ICSSES, 1998]` Board, I. S. S., and ICSSES Committee.
   "IEEE recommended practice for software requirements specifications."
   Institute of Electrical and Electronics Engineers. 1998.
-  [here](https://ieeexplore.ieee.org/document/720574)
+  [Article](https://ieeexplore.ieee.org/document/720574)
 - `ISO 12207:2018`
 - `ISO 73:2009`
 - `ISO 15271:1998`

@@ -481,7 +481,7 @@ In this course, you've written some functions yourself.
 - `[Wilson et al, 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
-  [here](https://doi.org/10.1371/journal.pcbi.1005510)
+  [Article](https://doi.org/10.1371/journal.pcbi.1005510)
 - `[Yuan et al., 2014]`
   Yuan, Ding, et al.
   "Simple testing can prevent most critical failures:

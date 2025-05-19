@@ -195,7 +195,8 @@ gitGraph
 
 ???- question "Need a video?"
 
-    See a video [here](https://youtu.be/Ewewytijw1g)
+    See the
+    ['Programming Formalisms: git branch exercise' YouTube video](https://youtu.be/Ewewytijw1g)
 
 ## Links
 
