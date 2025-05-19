@@ -16,6 +16,5 @@ tags:
 
 Iteration|Week|Days
 ---------|----|-----------------------------------------------------
-5        |19  |Monday 2025-05-05 to and including Friday 2025-05-09
 6        |43  |Monday 2025-10-20 to and including Friday 2025-10-24
 
