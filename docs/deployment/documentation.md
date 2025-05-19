@@ -480,7 +480,7 @@ reusability:
 
     **Make sure it works for others or yourself in the future!**
 
-### We are done!
+### We are done
 
 !!! admonition "Parts to be covered!"
 
