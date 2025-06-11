@@ -1,0 +1,22 @@
+question,mean
+"I can create, switch and delete a git branch locally",9.11111111111111
+I can do Pull requests,9.555555555555555
+I can do a code review (in GitHub),8.777777777777779
+I can explain and evaluate the usefulness of branches,8.88888888888889
+I can manage merge conflicts locally,5.666666666666667
+I can manage merge conflicts on GitHub,7.222222222222222
+I can merge locally,7.777777777777778
+I can merge on GitHub,8.666666666666666
+I can pair program,8.555555555555555
+"I can put the files of my code in the right locations,",8.88888888888889
+I can write tests using a formal testing framework,7.333333333333333
+I feel confidence and motivation in making my code open-source,8.333333333333334
+I have an idea about how to contribute as an external contributor,8
+I understand the FIND concept,3.7777777777777777
+I understand the benefit of using a testing framework,9.222222222222221
+I understand what continuous integration is,4
+I understand what good pair programming looks like,9
+I understand when a forked workflow is recommended,7.666666666666667
+I understand why pair programming is important,9.444444444444445
+"create, switch and delete a git branch on GitHub",9.333333333333334
+for the testing framework to find them,8.88888888888889
