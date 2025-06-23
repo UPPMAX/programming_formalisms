@@ -56,23 +56,24 @@ nav:
     - Documentation: deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
   - Misc:
-    - Feedback: misc/feedback.md
-    - Evaluations: evaluations/README.md
-    - Reflections: reflections/README.md
     - Data: data/README.md
-    - Emails: emails/README.md
-    - Shared documents: shared_documents/README.md
-    - Lesson plans: lesson_plans/README.md
-    - Meeting notes: meeting_notes/README.md
     - Definitions: misc/definitions.md
+    - Emails: emails/README.md
+    - Evaluations: evaluations/README.md
     - Extra material (Earlier Intro day materials): extra.md
-    - Project workflows: misc/project_workflows.md
-    - Learn UML with mermaid: misc/uml_with_mermaid.md
-    - git workflow: misc/git_workflow.md
-    - Reading material: reading/README.md
     - FAQ: misc/faq.md
+    - Feedback: misc/feedback.md
     - Functions to practice TDD: misc/functions.md
+    - git workflow: misc/git_workflow.md
+    - Lesson plans: lesson_plans/README.md
+    - Learn UML with mermaid: misc/uml_with_mermaid.md
+    - Meeting notes: meeting_notes/README.md
+    - Project workflows: misc/project_workflows.md
+    - Reading material: reading/README.md
+    - Reflections: reflections/README.md
     - Retrospective: misc/retrospective.md
+    - Shared documents: shared_documents/README.md
+    - SciLifeLab course registration procedure: misc/scilifelab_course_registration.md
     - Wrap-up: misc/wrap_up.md
 
 theme:
