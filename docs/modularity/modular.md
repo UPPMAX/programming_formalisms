@@ -180,8 +180,3 @@ From this these for principles are generally considered a requirement for modula
 
     - Reusability
     - Working with others (encapsulation of work and function)
-
-
-!!! info "another take on modular programming (about 30 min)"
-    A good [lesson](https://www.youtube.com/watch?v=MYDAAhB1QIo) on Modularity by Huw Collingbourne
-
