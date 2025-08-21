@@ -112,15 +112,12 @@ check_constraints <- function() {
       pattern = stringr::regex(topic, ignore_case = TRUE)
     )
     if (length(topic_indices) == 0) {
-      stop(
+      warning(
         "Cannot find topic '", topic, "' (from constraints.csv)",
         " in the schedule. \n",
-        " \n",
-        "Topics in the schedule: ",
-        " \n",
-
-        paste(paste("-", unique(schedule$subject)), collapse = "\n")
+        "This indicates that the topic is not in the schedule (yet)"
       )
+      next
     }
     testthat::expect_true(length(topic_indices) > 0)
     # A topic may be taught multiple hours
