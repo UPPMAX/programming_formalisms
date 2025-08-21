@@ -81,7 +81,7 @@ read_schedule_from_file <- function() {
   t_schedule
 }
 
-testthat::expect_output(read_schedule_from_file())
+testthat::expect_true(tibble::is_tibble(read_schedule_from_file()))
 testthat::expect_equal(
   0,
   sum(
