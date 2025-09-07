@@ -57,7 +57,7 @@ tags:
 
 ### Revisiting class design
 
-The 4 most important relationship classes can have
+The four most important relationship classes can have
 are association, composition and aggregation
 
 #### Bad structure
