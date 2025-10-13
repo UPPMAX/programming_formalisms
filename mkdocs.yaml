@@ -56,6 +56,7 @@ nav:
     - Documentation: deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
   - Misc:
+    - Contact us: contact_us.md
     - Data: data/README.md
     - Definitions: misc/definitions.md
     - Emails: emails/README.md
