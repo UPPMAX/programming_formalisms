@@ -22,6 +22,3 @@ Teacher           |Richèl Bilderbeek|[Contact details](https://www.uu.se/en/con
 Teacher           |Björn Claremar   |[Contact details](https://www.uu.se/en/contact-and-organisation/staff?query=N4-6)
 
 <!-- markdownlint-enable MD013 -->
-
-
-
