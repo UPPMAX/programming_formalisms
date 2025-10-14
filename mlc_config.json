@@ -16,5 +16,8 @@
     {
       "pattern": "https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/"
     }
+    {
+      "pattern": "https://www.bugzilla.org/docs/2.18/html/lifecycle.html"
+    }
   ]
 }
