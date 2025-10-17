@@ -92,7 +92,7 @@ You have set up a GitHub account, if you can login at
 
 Otherwise, sign up for GitHub account, following these [instructions](https://coderefinery.github.io/installation/github/)
 
-A second step is to connect Git and GitHub in a nice way, see [Git–GitHub ection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
+A second step is to connect Git and GitHub in a nice way, see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
 
 ### How do I know if I have Python installed?
 
