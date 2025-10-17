@@ -591,9 +591,9 @@ for i in range(n_individuals):
   Generative and Transformational Techniques in Software Engineering II:
   International Summer School, GTTSE 2007, Braga, Portugal,
   July 2-7, 2007. Revised Papers (2008): 196-259.
-- `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of c, c++, java, perl, python, rexx and tcl." IEEE Computer 33.10 (2000): 23-29.
+- `[Prechelt, 2000]` Prechelt, Lutz. "An empirical comparison of C, C++, Java, Perl, Python, REXX and TCL." IEEE Computer 33.10 (2000): 23-29.
 - `[Martin, 2009]` Martin, Robert C.
-  Clean code: a handbook of agile software craftsmanship.
+  Clean code: a handbook of Agile software craftsmanship.
   Pearson Education, 2009.
 - `[Sutter & Alexandrescu, 2004]` Sutter, Herb, and Andrei Alexandrescu. C++ coding standards: 101 rules, guidelines, and best practices. Pearson Education, 2004.
 

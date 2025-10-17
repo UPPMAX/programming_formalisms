@@ -1,4 +1,9 @@
 # Reflections Summer 2025
 
-- [2025-05-05](20250505.md)
-- [2025-05-06](20250506.md)
+Day|Reflections
+---|--------------------------------
+1  |[Reflection](20250505.md)
+2  |[Reflection](20250506.md)
+3  |[Reflection](20250507.md)
+4  |[Reflection](20250508.md)
+5  |[Reflection](20250509.md)

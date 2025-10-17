@@ -1,10 +1,3 @@
----
-tags:
-  - lesson
-  - plan
-  - preparation
----
-
 # Day 4 part 1
 
 * 9:00-12:00

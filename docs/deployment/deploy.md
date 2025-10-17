@@ -388,8 +388,8 @@ For this we use `.gitignore` files.
 
     ![Containerization](./img/Containerization_nextlabs.png)
 
-    > From [Nextlabs](https://www.nextlabs.com/what-is-containerization/)
-
+    > From Nextlabs:
+    
     !!! info
 
         - 2(3) types

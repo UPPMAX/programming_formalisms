@@ -241,8 +241,7 @@ For that, a [kanban board](kanban_board.md) is used instead.
   "The social nature of issue tracking in software engineering."
   University of Calgary (2009).
 - `[Bugzilla, 2009]` Bugzilla (2009). Life Cycle of a Bug.
-  Retrieved October 30, 2009 from
-  <https://www.bugzilla.org/docs/2.18/html/lifecycle.html>
+  [Mozilla archive](https://www-archive.mozilla.org/bugs/)
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed.
   Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
 - `[Wilson et al, 2017]` Wilson, Greg, et al.

@@ -9,7 +9,7 @@ tags:
 
 # Projects
 
-[Autumn 2025 learners project GitHub repository](https://github.com/programming-formalisms/programming_formalisms_project_autum_2025)
+[Autumn 2025 learners project GitHub repository](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
 
 ## Former projects
 

@@ -46,6 +46,22 @@ get_constraints_filename <- function() {
   constraints_filename
 }
 
+#' Extracts only the subjects
+#'
+#' In the schedule of the course, subjects are commonly
+#' connected with a link, e.g. `[assert](assert/README.md)`
+
+extract_subject <- function(raw_subject) {
+  subject_1 <- stringr::str_replace(raw_subject, "\\]\\(.*\\.md\\)", "")
+  subject_2 <- stringr::str_replace(subject_1, "\\[", "")
+  stringr::str_trim(subject_2)
+}
+
+testthat::expect_equal(
+  extract_subject(raw_subject = "[assert](assert/README.md)"),
+  "assert"
+)
+
 
 read_schedule_from_file <- function() {
   schedule_filename <- get_schedule_filename()
@@ -61,11 +77,20 @@ read_schedule_from_file <- function() {
   t_schedule$day <- stringr::str_trim(t_schedule$day)
   t_schedule$time <- stringr::str_trim(t_schedule$time)
   t_schedule$teacher <- stringr::str_trim(t_schedule$teacher)
-  t_schedule$subject <- stringr::str_trim(t_schedule$subject)
+  t_schedule$subject <- extract_subject(t_schedule$subject)
   t_schedule
 }
 
-
+testthat::expect_true(tibble::is_tibble(read_schedule_from_file()))
+testthat::expect_equal(
+  0,
+  sum(
+    stringr::str_detect(
+      read_schedule_from_file()$subject,
+      "\\["
+    )
+  )
+)
 
 read_constraints <- function() {
   constraints_filename <- get_constraints_filename()
@@ -82,21 +107,47 @@ check_constraints <- function() {
   for (constraint_index in seq_len(nrow(constraints))) {
     constraint <- constraints[constraint_index, ]
     topic <- constraint$topic
-    topic_indices <- stringr::str_which(schedule$subject, pattern = topic)
+    topic_indices <- stringr::str_which(
+      schedule$subject,
+      pattern = stringr::regex(topic, ignore_case = TRUE)
+    )
     if (length(topic_indices) == 0) {
-      stop("Cannot find topic '", topic, "' (from constraints.csv) in schedule")  
+      warning(
+        "Cannot find topic '", topic, "' (from constraints.csv)",
+        " in the schedule. \n",
+        "This indicates that the topic is not in the schedule (yet)"
+      )
+      next
     }
     testthat::expect_true(length(topic_indices) > 0)
     # A topic may be taught multiple hours
     topic_index <- topic_indices[1]
     testthat::expect_true(topic_index > 0)
-    
+
     prerequisite <- constraint$prerequisite
-    prereq_indices <- stringr::str_which(schedule$subject, pattern = prerequisite)
+    prereq_indices <- stringr::str_which(
+      schedule$subject,
+      pattern = stringr::regex(prerequisite, ignore_case = TRUE)
+    )
+    if (length(prereq_indices) == 0) {
+      stop(
+        "Prerequisite with name '", prerequisite, "' is not found \n",
+        "among the subjects (shown at the bottom of this error message). \n",
+        "Tip: edit the constraints file at '",
+        get_constraints_filename(),
+        "' \n",
+        "to exactly match the topic in the schedule.",
+        " \n",
+        "Topics in the schedule: ",
+        " \n",
+        paste(paste("-", unique(schedule$subject)), collapse = "\n")
+
+      )
+    }
     # A prereq may be taught multiple hours
     prereq_index <- prereq_indices[1]
     testthat::expect_true(prereq_index > 0)
-    
+
     if (prereq_index > topic_index) {
       stop(
         "Incorrect order detected: \n",
@@ -106,6 +157,7 @@ check_constraints <- function() {
     }
   }
 }
+
 
 message("This is the schedule:")
 read_schedule_from_file()

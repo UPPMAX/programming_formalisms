@@ -1,10 +1,3 @@
----
-tags:
-  - lesson
-  - plans
-  - preparation
----
-
 # Lesson plans
 
 Preparation by the teachers.
