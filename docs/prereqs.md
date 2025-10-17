@@ -11,8 +11,8 @@ tags:
 
 These are the prerequisites to follow this course:
 
-- Prerequisite 1/6: [Have a Git account configured on your computer](https://uppmax.github.io/programming_formalisms/misc/faq/#configure-git)
-- Prerequisite 2/6: [Have a GitHub account](https://uppmax.github.io/programming_formalisms/misc/faq/#github)
+- Prerequisite 1/6: Have a Git account configured on your computer
+- Prerequisite 2/6: Have a GitHub account
 - Prerequisite 3/6: Have VS Code installed
 - Prerequisite 3/6: Have Python installed
 - Prerequisite 4/6: Know the basics of Python
