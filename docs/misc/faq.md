@@ -81,7 +81,7 @@ Otherwise, [download here](https://code.visualstudio.com/download)
 ### How do I know I have a Git account configured on your computer?
 
 **Git (specific installation may be required) and terminals are already integrated in VS Code and can be the first choice**
-Otherwise follow the steps in [some installation procedures](prereqs.md#configure-git)!
+Otherwise follow the steps in [some installation procedures](faq.md#some-installation-and-configuring-procedures)!
 
 Check [configure git section](faq.md#configure-git)
 
@@ -231,6 +231,7 @@ Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en
 ssh-keygen -t ed25519 -C "<email address for your GitHub account>"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+```
 
 - For WINDOWS
 
