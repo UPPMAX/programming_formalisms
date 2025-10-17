@@ -63,6 +63,11 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
+!!! warning
+
+    This page may be updated during the next days. 
+    Please email back to Björn to let us know if somthing is unclear in the instructions!
+
 ### How do I know I have VS Code installed?
 
 You know if you have VS Code installed,
