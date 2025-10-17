@@ -63,6 +63,17 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
+### How do I know I have a Git account configured on your computer?
+
+You have set up a Git account, if you can do:
+
+    XXX
+
+### How do I know I have a GitHub account?
+
+You have set up a GitHub account, if you can login at
+[https://github.com/](https://github.com/).
+
 ### How do I know I have VS Code installed?
 
 You know if you have VS Code installed,
@@ -72,11 +83,6 @@ and it looks like this:
 ```text
 [TODO: screenshot of VS Code here]
 ```
-
-#### How do I know I have a GitHub account?
-
-You have set up a GitHub account, if you can login at
-[https://github.com/](https://github.com/).
 
 
 ### How do I know if I have Python installed?
