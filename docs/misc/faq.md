@@ -65,8 +65,8 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 !!! warning
 
-    This page may be updated during the next days. 
-    Please email back to Björn to let us know if somthing is unclear in the instructions!
+    - This page may be updated during the next days.
+    - Please email back to Björn to let us know if somthing is unclear in the instructions!
 
 ### How do I know I have VS Code installed?
 
@@ -92,7 +92,7 @@ You have set up a GitHub account, if you can login at
 
 Otherwise, sign up for GitHub account, following these [instructions](https://coderefinery.github.io/installation/github/)
 
-A second step is to conenct Git and GitHub in a nice way, see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
+A second step is to connect Git and GitHub in a nice way, see [Git–GitHub ection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
 
 ### How do I know if I have Python installed?
 
@@ -305,9 +305,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
     - Choose which Python interpreter to use.
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
 
-
-
-### Courses 
+### Courses
 
 #### Git courses
 
