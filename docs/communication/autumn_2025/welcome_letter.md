@@ -12,7 +12,7 @@ The course and all materials relevant to the course are available on GitHub for 
 
 Course material: <https://uppmax.github.io/programming_formalisms/>
 Course repo: <https://github.com/UPPMAX/programming_formalisms/>
-Project repo: <https://github.com/programming-formalisms/programming_formalisms_project_[XXX>]
+Project repo: `<https://github.com/programming-formalisms/programming_formalisms_project_[XXX]>`
 
 Make sure you have followed the <https://uppmax.github.io/programming_formalisms/prereqs/> so that you are set up to start the course.
 
