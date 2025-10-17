@@ -80,9 +80,7 @@ You know if you have VS Code installed,
 if you can start this program
 and it looks like this:
 
-```text
-[TODO: screenshot of VS Code here]
-```
+![VSCode start](../img/VSCode.png)
 
 
 ### How do I know if I have Python installed?
