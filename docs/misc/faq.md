@@ -63,17 +63,6 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
-### How do I know I have a Git account configured on your computer?
-
-You have set up a Git account, if you can do:
-
-    XXX
-
-### How do I know I have a GitHub account?
-
-You have set up a GitHub account, if you can login at
-[https://github.com/](https://github.com/).
-
 ### How do I know I have VS Code installed?
 
 You know if you have VS Code installed,
@@ -82,18 +71,33 @@ and it looks like this:
 
 ![VSCode start](../img/VSCode.png)
 
+Otherwise, [download here](https://code.visualstudio.com/download)
+
+### How do I know I have a Git account configured on your computer?
+
+**Git (specific installation may be required) and terminals are already integrated in VS Code and can be the first choice**
+Otherwise follow the steps in [some installation procedures](prereqs.md#configure-git)!
+
+Check [configure git section](faq.md#configure-git)
+
+### How do I know I have a GitHub account?
+
+You have set up a GitHub account, if you can login at
+[https://github.com/](https://github.com/).
+
+Otherwise, sign up for GitHub account, following these [instructions](https://coderefinery.github.io/installation/github/)
+
+A second step is to conenct Git and GitHub in a nice way, see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
 
 ### How do I know if I have Python installed?
 
 You have installed Python, if
 
 ```text
-TODO: Add how to check in VS Code
-
-Maybe:
 In a terminal, running `python --version` or `python3 --version` shows the Python version.
 ```
 
+- If not working, follow the [installation steps](faq.md#python) suitable for you and/or [instructions for Python in VSCode](faq.md#python-in-vs-code).
 
 ### Can you run Python from VS Code?
 
@@ -135,15 +139,29 @@ Within your IDE, you will need:
 - To develop Python code as part of a Python package
 - To use `git` for version control
 
-### Some other solutions
+### How do I know I have a good Zoom setup?
+
+You have a Zoom good setup, if:
+
+- you can talk freely. If not, find a room/place where you can.
+- others in the Zoom room can clearly hear what you say.
+  If not, use a microphone.
+- you can clearly hear what others in the Zoom room say.
+  If not, use a headset.
 
 
-<!--
+### Do I really need a good Zoom setup?
 
-## Install Git
+Yes.
 
-**Git (specific installation may be required) and terminals are already integrated in VS Code and can be the first choice**
-Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#other-solutions)!
+You will be working together with other learners a lot.
+Not being able to talk and/or share your screen and/or
+your camera is likely to make you feel excluded.
+
+
+### Some installation and configuring procedures
+
+#### Git Bash
 
 - Version >= 2.28 would do
 
@@ -175,13 +193,10 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
     - `git` comes installed with all Linux distributions
     - To install `git`, do `sudo apt-get install git`
 
-## Using git in VS code
+
+#### Using VS Code as a git editor
 
 - When Git is installed you may need to restart a shell in VS code before it works.
-
-<!--
-### Using VS Code as a git editor
-
 - This will set VS Code as the editor that Git starts.
 - It will start a new tab, and Git will wait until you save and close that tab.
 - Git for Windows on Windows may automatically set this if you select it as an editor.
@@ -190,22 +205,15 @@ Otherwise follow the steps in the end of this page ([Other solutions]prereqs.md#
 ```console
 git config --global core.editor "code --wait"
 ```
--->
 
-
-### Configure git
+#### Configure git
 
 **This must be done**
 
 Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
 
 
-### GitHub
-
-Sign up for GitHub account: [https://coderefinery.github.io/installation/github/](https://coderefinery.github.io/installation/github/)
-
-
-### Git–GitHub connection through ssh keys
+#### Git–GitHub connection through ssh keys
 
 (This may take a while to get working, but is worth it)
 [https://coderefinery.github.io/installation/ssh/](https://coderefinery.github.io/installation/ssh/)
@@ -218,14 +226,18 @@ Sign up for GitHub account: [https://coderefinery.github.io/installation/github/
 ssh-keygen -t ed25519 -C "<email address for your GitHub account>"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
-# Copy the SSH public key to your clipboard. For WINDOWS:
+
+- For WINDOWS
+
+```console
+# Copy the SSH public key to your clipboard.
 clip < ~/.ssh/id_ed25519.pub
 ```
 
 - On Mac, use ``pbcopy`` instead, like:
 
 ```console
-# Copy the SSH public key to your clipboard. For MAC:
+# Copy the SSH public key to your clipboard:
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
@@ -246,22 +258,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
-
-## Git courses
-
-- Learn the basics!
-- Choose one or several of these!
-
-- Git courses
-    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
-    - [Git by CodeRefinery](https://coderefinery.github.io/git-intro/)
-    - [GitHub by CodeRefinery](https://coderefinery.github.io/git-collaborative/)
-    - [NAISS](https://www.hpc2n.umu.se/events/courses/2024/fall/git)
-
-- [Pro Git book](https://git-scm.com/book/en/v2)
-
-
-## Python
+#### Python
 
 - Use what you already have
 - If you don't have Python there are different ways to go. We won't use Conda during the lessons, for instance.
@@ -293,7 +290,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - In Linux and Bash, Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 
-## Python in VS Code
+#### Python in VS Code
 
 - Step 1. Install a supported version of Python on your system, see above.
 - Step 2. Install the Python extension for Visual Studio Code from the left menu bar.
@@ -302,7 +299,25 @@ pbcopy < ~/.ssh/id_ed25519.pub
     - Choose which Python interpreter to use.
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
 
-## Python courses
+
+
+### Courses 
+
+#### Git courses
+
+- Learn the basics!
+- Choose one or several of these!
+
+- Git courses
+    - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
+    - [Git by CodeRefinery](https://coderefinery.github.io/git-intro/)
+    - [GitHub by CodeRefinery](https://coderefinery.github.io/git-collaborative/)
+    - [NAISS](https://www.hpc2n.umu.se/events/courses/2024/fall/git)
+
+- [Pro Git book](https://git-scm.com/book/en/v2)
+
+
+#### Python courses
 
 - We assume familiarity with python at least equivalent
 - Learn the basics by choosing one or several of these  courses!
@@ -360,28 +375,6 @@ There are some other solutions for installations but they are probably not suppo
  -``$ echo "alias python='winpty python.exe'" >> ~/.bashrc``
 
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
-
--->
-
-
-### How do I know I have a good Zoom setup?
-
-You have a Zoom good setup, if:
-
-- you can talk freely. If not, find a room/place where you can.
-- others in the Zoom room can clearly hear what you say.
-  If not, use a microphone.
-- you can clearly hear what others in the Zoom room say.
-  If not, use a headset.
-
-
-### Do I really need a good Zoom setup?
-
-Yes.
-
-You will be working together with other learners a lot.
-Not being able to talk and/or share your screen and/or
-your camera is likely to make you feel excluded.
 
 
 ## Course teaching
