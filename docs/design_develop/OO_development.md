@@ -63,7 +63,7 @@ The semantic gap(The distance form input to understanding) between reality and m
     `[Booch 2007]`
 
 
-The modeling software company [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/) has a guide in some common roles between object such as Association.
+The modeling software company [Visual Paradigm](https://www.visual-paradigm.com) has a guide in some common roles between object such as Association.
 "If two classes in a model need to communicate with each other, there must be a link between them, and that can be represented by an association (connector)."
 
 Composition implies a relationship where the child cannot exist independent of the parent. Example: House (parent) and Room (child). Rooms don't exist separate to a House.
@@ -81,7 +81,7 @@ classDiagram
 ```
 
 Further reading:
-[Aggregation vs composition and Generalization vs Specialization](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+[UML Association vs Aggregation vs Composition](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
 
 ???- question "Is a programming language object oriented?"
 
