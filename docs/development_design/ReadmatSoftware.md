@@ -200,81 +200,45 @@ The focus of the spiral model is to identify risk
 
 Rational Unified Process is a software development method based on iterative object-oriented development. The idea is that you tailor the development method to fit the project, this however is not without cost as adapting and formulating templates take time. It is important to note that development models of this type are not in contrast to Agile development but some concessions to the iterative flow may have to be made as the image depicts RUP follows the phases of design as SDLC (with the addition of a 0th step Business modeling), Each phase in RUP is a complete iteration of the design steps Inception, Elaboration,Construction and Transition
 
-```plantuml
-@startuml
- !theme blueprint
+```mermaid
+graph LR
+    A[Manager] --> B(Define Project Vision)
+    A --> C(Create Business Case)
+    A --> D(Gather User Feedback)
+    A --> E(Perform Lessons Learned)
 
-skinparam packageStyle rectangle
-skinparam packageTitleFontColor #ffffff
-skinparam packageTitleBackgroundColor #3288bd
+    B --> F{Develop Use Case Model}
+    C --> G{Create Analysis Model}
+    E --> H{Design System Architecture}
 
-actor "Manager" as manager
-actor "Software Architect" as architect
-actor "Devloper" as dev
-actor "Deployment engineer" as depEng
+    F --> I{Develop Iteration Plan}
+    G --> I
 
-rectangle "Inception" as inception {
-  usecase "Define Project Vision" as defineVision
-  usecase "Create Business Case" as createBusinessCase
-  usecase "Perform Risk Assessment" as performRiskAssessment
-}
+    H --> J(Implement System Components)
+    I --> J
 
-rectangle "Elaboration" as elaboration {
-  usecase "Develop Use Case Model" as developUseCaseModel
-  usecase "Create Analysis Model" as createAnalysisModel
-  usecase "Design System Architecture" as designSystemArchitecture
-  usecase "Develop Iteration Plan" as developIterationPlan
-}
+    J --> K(Perform Unit Testing)
+    K --> L(Integrate System Components)
+    L --> M(Perform System Testing)
+    M --> N(Deploy System)
 
-rectangle "Construction" as construction {
-  usecase "Implement System Components" as implementSystemComponents
-  usecase "Perform Unit Testing" as performUnitTesting
-  usecase "Integrate System Components" as integrateSystemComponents
-  usecase "Perform System Testing" as performSystemTesting
-  usecase "Deploy System" as deploySystem
-}
+    D --> O(Release Software)
+    O --> P(Perform Lessons Learned)
 
-rectangle "Transition" as transition {
-  usecase "Gather User Feedback" as gatherUserFeedback
-  usecase "Release Software" as releaseSoftware
-  usecase "Perform Lessons Learned" as performLessonsLearned
-}
-
-manager -- defineVision
-manager -- createBusinessCase
-manager -- gatherUserFeedback
-manager -- performLessonsLearned
-
-architect -- performRiskAssessment
-architect -- developUseCaseModel
-architect -- createAnalysisModel
-architect -- designSystemArchitecture
-architect -- developIterationPlan
-dev -- implementSystemComponents
-dev -- performUnitTesting
-dev -- integrateSystemComponents
-depEng -- deploySystem
-depEng -- releaseSoftware
-
-defineVision --> developUseCaseModel
-createBusinessCase --> createAnalysisModel
-performRiskAssessment --> designSystemArchitecture
-
-developUseCaseModel --> createAnalysisModel
-developUseCaseModel --> designSystemArchitecture
-createAnalysisModel --> developIterationPlan
-
-designSystemArchitecture --> implementSystemComponents
-developIterationPlan --> implementSystemComponents
-implementSystemComponents --> performUnitTesting
-performUnitTesting --> integrateSystemComponents
-integrateSystemComponents --> performSystemTesting
-performSystemTesting --> deploySystem
-
-gatherUserFeedback --> releaseSoftware
-releaseSoftware --> performLessonsLearned
-
-@enduml
+    style A fill:#f9f,stroke:#000,stroke-width:2px
+    style B fill:#ccf,stroke:#333,stroke-width:1px
+    style C fill:#ccf,stroke:#333,stroke-width:1px
+    style D fill:#ccf,stroke:#333,stroke-width:1px
+    style E fill:#ccf,stroke:#333,stroke-width:1px
+    style F fill:#ccf,stroke:#333,stroke-width:1px
+    style G fill:#ccf,stroke:#333,stroke-width:1px
+    style H fill:#ccf,stroke:#333,stroke-width:1px
+    style I fill:#ccf,stroke:#333,stroke-width:1px
+    style J fill:#ccf,stroke:#333,stroke-width:1px
+    style K fill:#ccf,stroke:#333,stroke-width:1px
+    style L fill:#ccf,stroke:#333,stroke-width:1px
+    style M fill:#ccf,stroke:#333,stroke-width:1px
+    style N fill:#ccf,stroke:#333,stroke-width:1px
 ```
 
 What follows next is an emphasis diagram which describes where the focus of the work should be put in at which time of the project. It is common to have a signoff at the end of each phase before starting the next one.
@@ -387,36 +351,29 @@ From the [clean coder](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCycle
 The following Use Case model describes some common steps followed when developing according to TDD, in this scenario only one developer actor is present but this can be several people holding the role of developer when
      they interact with the model. In TDD pair programming is very common and  a practice of writing tests for your colleague is common practice. So one developer works on the code and one developer is working on the test and then they
 switch.
+```mermaid
 
-```plantuml
-@startuml
+graph TD
+    A[Developer]--(Write Test)
+    A--(Run Test)
+    A--(Write Code)
+    A--(Refactor Code)
+    A--F(Repeat)
 
-actor Developer as Dev
+    (Write Test) --> (Analyze Requirements)
+    (Write Test) --> (Design Test)
+    (Write Test) --> (Implement Test)
+    (Run Test) --> (Execute Test)
+    (Run Test) --> (Evaluate Test Results)
+    (Evaluate Test Results) --> (Test Failed)
+    (Evaluate Test Results) --> (Test Passed)
+    (Test Failed) --> (Write Test)
+    (Test Passed) --> (Write Code)
+    (Write Code) --> (Run Test)
+    (Write Code) --> (Refactor Code)
+    (Refactor Code) --> (Run Test)
+    (Refactor Code) --> (Write Test)
 
-rectangle TDD {
-  Dev -- (Write Test)
-  Dev -- (Run Test)
-  Dev -- (Write Code)
-  Dev -- (Refactor Code)
-  Dev -- (Repeat)
-
-  (Write Test) --> (Analyze Requirements)
-  (Write Test) --> (Design Test)
-  (Write Test) --> (Implement Test)
-  (Run Test) --> (Execute Test)
-  (Run Test) --> (Evaluate Test Results)
-  (Evaluate Test Results) --> (Test Failed)
-  (Evaluate Test Results) --> (Test Passed)
-  (Test Failed) --> (Write Test)
-  (Test Passed) --> (Write Code)
-  (Write Code) --> (Run Test)
-  (Write Code) --> (Refactor Code)
-  (Refactor Code) --> (Run Test)
-  (Refactor Code) --> (Write Test)
-}
-
-
-@enduml
 ```
 
 In this diagram, a relatively detailed representation of the TDD process has been rendered:
