@@ -22,6 +22,14 @@ tags:
     - can manage conflicts
     - are prepared for coming documentation
 
+???- question "Already know git and GitHub?"
+
+    If you have made 100 commits to GitHub,
+    we assume you are already know git and GitHub.
+
+    You are welcome in the simultaneous session,
+    where we'll go a faster and further.
+
 ???- note "Instructor notes"
 
     - Teacher gives introduction with interaction 20 m
