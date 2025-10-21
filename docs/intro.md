@@ -53,12 +53,7 @@ tags:
       such as pair programming and code reviews
     - understand and use a run-time speed profiler
 
-## The project
 
-!!! note "Become a Programming Formalisms team member"
-
-    - Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/issues/1)
-    - Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
 
 ## Shared document
 
