@@ -8,11 +8,9 @@
 
 !!! note
 
-    - Let's learn details of Git and GitHub later!## Become a member of the Project
+    - Let's learn details of Git and GitHub later!
 
-
-
-## Become member of coure project!
+## Become member of the course project!
 
 - Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
 
