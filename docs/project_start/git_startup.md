@@ -22,14 +22,6 @@ tags:
     - can manage conflicts
     - are prepared for coming documentation
 
-???- question "Already know git and GitHub?"
-
-    If you have made 100 commits to GitHub,
-    we assume you are already know git and GitHub.
-
-    You are welcome in the simultaneous session,
-    where we'll go a faster and further.
-
 ???- note "Instructor notes"
 
     - Teacher gives introduction with interaction 20 m
@@ -44,6 +36,19 @@ tags:
     Not needed
 
     - Use of git before
+
+!!! bug "Did you miss to set up everything?"
+
+    - Then try this in the background or ask for help?
+    - See the [setup session](./project_start/configurations.md) this morning?
+
+???- question "Already know git and GitHub?"
+
+    If you have made 100 commits to GitHub,
+    we assume you are already know git and GitHub.
+
+    You are welcome in the simultaneous session,
+    where we'll go a faster and further.
 
 ## What is Git, and what is a Git repository?
 
@@ -77,10 +82,6 @@ tags:
 !!! note "Other workflows?"
 
     - Other workflows in [Merging and contributing with code review](../git/contribute.md)
-
-!!! attention "Did you miss to set up everything?"
-
-    - See the [setup session](./project_start/configuration.md) this morning
 
 ## This lesson
 
