@@ -23,7 +23,7 @@ nav:
     - Introduction: introductions/intro.md
     - SDLC tools: introductions/sdlc_tools.md
     - Get started with git and the project: project_start/git_startup.md
- - Planning:
+  - Planning:
     - Analysis Phase: project_start/analysis_design.md
     - Exercise Analysis Phase: development_design/excercise_1_Design.md
   - Design:
