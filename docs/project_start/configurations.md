@@ -8,7 +8,8 @@
 
 ## Become a member of the Project
 
-Email!
+- Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/issues/1)
+- Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
 
 ## Before we continue we need to configure Git
 
