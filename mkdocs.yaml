@@ -12,6 +12,7 @@ nav:
   - Schedule: schedule.md
   - Project:
     - Intro: project/README.md
+    - Become member of project: project_start/configurations.md
     - Issues: project/issues.md
     - Kanban board: project/kanban_board.md
     - Team roles: project/team_roles.md
@@ -21,8 +22,8 @@ nav:
   - Intro:
     - Introduction: introductions/intro.md
     - SDLC tools: introductions/sdlc_tools.md
-  - Planning:
     - Get started with git and the project: project_start/git_startup.md
+  - Planning:
     - Analysis Phase: project_start/analysis_design.md
     - Exercise Analysis Phase: development_design/excercise_1_Design.md
   - Design:

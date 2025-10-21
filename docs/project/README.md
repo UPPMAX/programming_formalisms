@@ -7,7 +7,7 @@ tags:
 
 In this course, we work together on a project:
 
-**[The Programming Formalisms Summer 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)**.
+**[The Programming Formalisms Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)**.
 
 The goal of having a project is to provide a situation in which the theory is
 experienced. For example, at the start, merging code together will give

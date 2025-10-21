@@ -37,6 +37,19 @@ tags:
 
     - Use of git before
 
+!!! bug "Did you miss to set up everything?"
+
+    - Then try this in the background or ask for help?
+    - See the [setup session](configurations.md) this morning?
+
+???- question "Already know git and GitHub?"
+
+    If you have made 100 commits to GitHub,
+    we assume you are already know git and GitHub.
+
+    You are welcome in the simultaneous session,
+    where we'll go a faster and further.
+
 ## What is Git, and what is a Git repository?
 
 - Git is a version control system: can **record/save snapshots** and track the content of a folder as it changes over time.
@@ -69,24 +82,6 @@ tags:
 !!! note "Other workflows?"
 
     - Other workflows in [Merging and contributing with code review](../git/contribute.md)
-
-## Before we continue we need to configure Git
-
-!!! attention
-
-    - Send your emails in the chat so that we can add you as "Collaborators" in the project!
-    - Start VS Code
-
-???- note "Did you set up git and GitHub?"
-
-    - **Git and GitHub should be configured prior to the course**
-        - Note that Mac users may need to run a command from the terminal to be able to run ``git``: ``sudo xcodebuild -license accept``
-        - [Configure Git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#configure-git)
-            - like: ``git config --global user.name "Mona Lisa"``
-            - like: ``git config --global user.email "mona_lisa@gmail.com"``
-    - We hope also that you have already done these steps
-      [at the 'Prerequisites' page of this course](../misc/faq.md/#prerequisites)
-
 
 ## This lesson
 
@@ -316,61 +311,18 @@ Tracked files can be in three states.
     - View License
     - Look at the history ("Commits" button just above the file explorer)
 
-### Get a local clone of the project
+### Exercise 2: Make changes locally (First steps without any conflicts!)
 
-???- question "Exercise 2a: clone course project using VS code (4 min)"
-
-    - Start VS code
-    - Start new window
-
-    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
-
-    ???- question "Where is this?"
-
-        ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2025``
-
-    ???- question "How will the address to clone look like?"
-
-        ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2025.git``
-
-    - In VS code: Clone Git repository
-        - The repo may show up automatically if you are already part of the project. Then click it.
-        - Otherwise paste the copied URL
-    - Open folder where you want to have your project
-        - Create a new one if necessary in the "Open folder File explorer"
-    - Select as Repository Destination
-
-???- question "Exercise 2b: (Alternative with command line) clone course project and create folders (4 min)"
-
-    - You may want to create a directory on your computer for this course.
-    - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
-    - ``mkdir Programming_formalisms``
-    - ``cd Programming_formalisms``
-    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
-    - Back in your terminal type ``git clone`` followed by pasting the copied text.
-    - The result shall look something like this:
-
-     ```console
-     git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2025.git
-     ```
-
-    **What just happened?**
-
-    - `cd` the new directory that was created
-    - list the files with `ls`
-
-### Exercise 3: Make changes locally (First steps without any conflicts!)
-
-???- question "Exercise 3: Create a folder with your name (locally)"
+???- question "Exercise 2: Create a folder with your name (locally)"
 
     - Step into the ``learners/`` directory (VS Code)
     - create a folder there, clicking the "new directory" icon in upper-left part
     - git cannot use emptly directories
     - Therefore **create an empty README.md file INSIDE the created folder**
 
-### Exercise 4: Stage files (in git)
+### Exercise 3: Stage files (in git)
 
-???- question "Exercise 4: "Add/stage file"
+???- question "Exercise 3: "Add/stage file"
 
     - First check the status!
 
@@ -386,11 +338,11 @@ Tracked files can be in three states.
     - Click the Icon and then add (stage) the file with the "plus" sign
     - There should now be an **A** (for Added) beside the README.md file
 
-### Exercise 5: Commit
+### Exercise 4: Commit
 
 Let us now commit the change to the repository:
 
-???- question "Exercise 5: Commit"
+???- question "Exercise 4: Commit"
 
     ![VS Code commit](../img/commit_VSC.png)
 
@@ -408,7 +360,7 @@ Let us now commit the change to the repository:
     nothing to commit, working tree clean
     ```
 
-### Exercise 6: Upload to GitHub
+### Exercise 5: Upload to GitHub
 
 - In previous path we got:
 
@@ -421,7 +373,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 ```
 
-???- question "Exercise 6: Let's push back to GitHub"
+???- question "Exercise 5: Let's push back to GitHub"
 
     - Let's "publish" you commits to the common GitHub repo
     - In VS Code: Click the "Sync Changes" button
@@ -439,7 +391,7 @@ nothing to commit, working tree clean
         git push
         ```
 
-### Exercise 7: Merge conflicts
+### Exercise 6: Merge conflicts
 
 - Create a new file with a unique name for your group,
   for example `group_anna_and_sven.txt`
@@ -493,7 +445,7 @@ This is the last line by me, Anna
 
 - Resolve the merge conflict and do a `git push`
 
-### (Optional) Exercise 8
+### (Optional) Exercise 7
 
 - Go back to last session and read more about a topic, like UML and its syntax!
 
