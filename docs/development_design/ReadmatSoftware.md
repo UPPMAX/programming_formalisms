@@ -351,28 +351,59 @@ From the [clean coder](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCycle
 The following Use Case model describes some common steps followed when developing according to TDD, in this scenario only one developer actor is present but this can be several people holding the role of developer when
      they interact with the model. In TDD pair programming is very common and  a practice of writing tests for your colleague is common practice. So one developer works on the code and one developer is working on the test and then they
 switch.
+
 ```mermaid
+---
+config:
+  theme: neutral
+---
 
-graph TD
-    A[Developer]--(Write Test)
-    A--(Run Test)
-    A--(Write Code)
-    A--(Refactor Code)
-    A--F(Repeat)
+flowchart TD
+    A@{icon: "fa:circle-user"}
+    A[Developer]:::dev
+    B(Write Test):::test
+    C(Run Test):::test
+    D(Write Code):::code
+    E(Refactor Code):::ref
+    G(Analyze Requirements):::test
+    H(Design Test):::test
+    I(Implement Test):::test
+    J(Execute Test):::test
+    K(Evaluate Test Results):::decision
+    L(Test Failed):::fail
+    M(Test Passed):::pass
+    A --> D
+    A --> B
+    D --> C
+    B --> G
+    G --> H
+    H --> I
+    B --> C
+    C --> J
+    J --> K
+    K --> L
+    K --> M
+    L --> E
+    M --> D
+    E --> C
+    %% Node styles
+    classDef dev fill:#CAE5FF,stroke:#0C4F8A,stroke-width:2px;
+    classDef test fill:#E6F9E8,stroke:#238B45,stroke-width:2px;
+    classDef code fill:#F3F6FC,stroke:#0A8A0A,stroke-width:2px;
+    classDef ref fill:#CAE5FF,stroke:#0C4F8A,stroke-width:2px;
+    classDef loop fill:#FBE9FF,stroke:#900080,stroke-width:2px;
+    classDef decision fill:#F3F6FC,stroke:#304FFE,stroke-width:2px;
+    classDef pass fill:#D0FFD0,stroke:#0A8A0A,stroke-width:2px;
+    classDef fail fill:#FFD6D6,stroke:#B00020,stroke-width:2px;
 
-    (Write Test) --> (Analyze Requirements)
-    (Write Test) --> (Design Test)
-    (Write Test) --> (Implement Test)
-    (Run Test) --> (Execute Test)
-    (Run Test) --> (Evaluate Test Results)
-    (Evaluate Test Results) --> (Test Failed)
-    (Evaluate Test Results) --> (Test Passed)
-    (Test Failed) --> (Write Test)
-    (Test Passed) --> (Write Code)
-    (Write Code) --> (Run Test)
-    (Write Code) --> (Refactor Code)
-    (Refactor Code) --> (Run Test)
-    (Refactor Code) --> (Write Test)
+    class A dev;
+    class B,I,C,J test;
+    class D code;
+    class E ref;
+    class F loop;
+    class K,G,,H decision;
+    class L fail;
+    class M pass;
 
 ```
 
@@ -592,45 +623,82 @@ Modeling environment is a graphical modeling environment closely coupled to the 
 
 [*Markdown Diagrams*](https://github.com/marcozaccari/markdown-diagrams-browser-extension) is available both as chrome extension and as firefox extension. To see the diagrams the extension has to be loaded.
 
-```plantuml
-@startuml
-!theme superhero
-title:"use case Diagrams"
-skinparam actorStyle awesome
-Lecturer -d->(Present slides on UML)
-Participant-d->(learn UML from SLIDES)
-@enduml
+```mermaid
+
+graph LR
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
+    classDef usecase fill:#ffc,stroke:#333,stroke-width:2px
+
+    A[Lecturer << Actor >>] -- Presents --> B((Present slides on UML))
+    C[Participant << Actor >>] -- Learns --> B
+
+    class A actor;
+    class B usecase;
+    class C actor;
+
 ```
 
-```plantuml
-@startuml
- !theme _none_
+```mermaid
+
+classDiagram
+
+class class01 {
+    Time : Date
+    + method02()
+}
+
+class class02
+
+class class03
+
+class class04
+
+class class05
+
+class class06
+
+class class07
+
+class class08
+
+class class09
+
+class class10
+
+class01 <|-- class02 : inheritance
+class03 --* class04  : aggregation
+class05 --o class06  : composition
+class07 <|-- class08  : inheritance
+class07 <|-- class09  : inheritance
+class09 <|-- class10  : inheritance
+class01 <-- class10 : dependency
+class02 -- class03 : association
+
+```
+
+```mermaid
+
+classDiagram
+
   class class01 {
     -var01 : Integer
     Time : Date
     #method01()
     +get_var01()
-    {method}Without paranteces or Qualifiers
  }
+
  class01 <|-- class02
  class03 *-- class04
  class05 o-- class06
- class01 - class03 : knows >
-@enduml
+ class01 --- class03 : knows
+
+
 ```
 
 //legacy style uml
 
-```plantuml
-@startuml
-!theme amiga
-(*)--> activity1
-if "stuff?" then
--->[true] "action2"
--r->(*)
-else
---> [false](*)
-@enduml
+```mermaid
+
 ```
 
 //new style
