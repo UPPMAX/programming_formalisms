@@ -53,13 +53,12 @@ tags:
       such as pair programming and code reviews
     - understand and use a run-time speed profiler
 
-## The project
+## Git/GitHub project
 
-!!! note "Become a Programming Formalisms team member"
-
-    - Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/issues/1)
-    - Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
+- We are going to use a GitHub repository in this course.
+- You'll  also have local git repository of the same project.
+- We'll set up these in the next session!
 
 ## Shared document
 
-- [HackMD](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig)
+- [HackMD](https://hackmd.io/@UPPMAX/BksCPhE0ge/edit)
