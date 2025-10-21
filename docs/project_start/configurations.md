@@ -10,7 +10,7 @@
 
     - Let's learn details of Git and GitHub later!
 
-## Become member of the course project!
+## Become member of the course project
 
 - Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
 
@@ -20,8 +20,6 @@
 
 - We will work as much as possible (almost) in the VS Code graphical interface for Git
 - However, some things are better (or only) handled from a terminal/command line.
-
-
 - You find the Git Bash terminal From the menu (different on mac and windows)
 
 ![VS Code terminal](../img/commandline_VSC.png)
@@ -30,7 +28,7 @@
 
 !!! attention
 
-     - Start VS Code
+    - Start VS Code
 
 ??? warning "This should have been done already"
 
