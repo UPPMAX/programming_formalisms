@@ -40,7 +40,7 @@ tags:
 !!! bug "Did you miss to set up everything?"
 
     - Then try this in the background or ask for help?
-    - See the [setup session](./project_start/configurations.md) this morning?
+    - See the [setup session](configurations.md) this morning?
 
 ???- question "Already know git and GitHub?"
 
