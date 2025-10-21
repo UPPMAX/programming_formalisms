@@ -53,8 +53,12 @@ tags:
       such as pair programming and code reviews
     - understand and use a run-time speed profiler
 
+## Git/GitHub project
 
+- We are going to use a GitHub repository in this course.
+- You'll  also have local git repository of the same project.
+- We'll set up these in the next session!
 
 ## Shared document
 
-- [HackMD](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig)
+- [HackMD](https://hackmd.io/@UPPMAX/BksCPhE0ge/edit)
