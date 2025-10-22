@@ -89,11 +89,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - Good tools and practices for refactoring and development steps
 - Focus on scientific computing
 
-???+ info "Project organization"
+??? info "Project organization"
 
     - folder structure
 
-???+ info "Software development practices"
+??? info "Software development practices"
 
     - explanations
     - naming
@@ -101,11 +101,11 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - dependencies
     - DOI
 
-???+ info "Tracking changes"
+??? info "Tracking changes"
 
     - For instance Git/Github
 
-???+ info "Collaborate"
+??? info "Collaborate"
 
     - GitHub
     - documentation
@@ -151,7 +151,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
 - Can be divided into analysis and design
     - **Analysis** part is to **state the problem** and **define inputs and outputs**
         - **Requirements** and **Risk analysis**
-            - Graphical tools like **UML** (Unified Modeling Language)
+            - Graphical tools like **[UML](../misc/uml_with_mermaid.md)** (Unified Modeling Language)
             - text
             - if object-oriented programming: **objects**
         - **Design** phase to find out the **specific algorithms** needed
@@ -165,6 +165,8 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
     - It prepares you to build the real thing to reduce any potential risk of failure. "
 
+#### Ways to plan OR program your project
+
 !!! info "Top-down"
 
     1. Clearly state whole problem
@@ -172,8 +174,6 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     3. Design the algorithm with `pseudocode`
     4. Turn the algorithm into specific language statements
     5. Test the resulting program
-
-#### Ways to plan OR program your project
 
 !!! info "Bottom-Up"
 
@@ -188,6 +188,7 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - Top-down or Bottom-up?
 
 - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+
 - More this afternoon
 
 ??? note "Example of Algorithm flow chart"
@@ -349,8 +350,6 @@ classDiagram
 
 ### Testing
 
-Does it work for all legal input data sets??
-
 1. Unit testing
 2. Integration tests (test modules together as a whole)
 
@@ -370,7 +369,7 @@ Does it work for all legal input data sets??
       done[Finished program]
     ```
 
-!!! note "See also"
+??? note "Coming lessons"
 
     - [assert](../assert/README.md)
     - [Test-driven development(TDD)](../tdd/README.md)
@@ -387,8 +386,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - You can **experiment** with an idea and discard it if it turns out to be a bad idea
 - Implements **merging**:
     - Person A and B’s simultaneous work can be **easily combined**
-
-!!! info "Why Git?"
+???- info "Why Git?"
 
     We will use [Git](https://git-scm.com) to record snapshots of our work:
 
@@ -407,7 +405,10 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ### Collaboration (with GitHub)
 
-!!! info "Why GitHub?"
+- Someone has given you access to a repository online and **you want to contribute** to it.
+- Quite easy to make a **copy and send a change back**.
+
+??? info "Why GitHub?"
 
     - GitHub is introduced as an excellent tool for
         - remote repositories,
@@ -415,14 +416,11 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
     - It serves as a version control system and provides a platform for developers to
         - build, share, and document their projects, fostering a strong community of collaboration.
 
-- Someone has given you access to a repository online and **you want to contribute** to it.
-- Quite easy to make a **copy and send a change back**.
-
-!!! objectives
+??? note "Coming lesson"
 
     - [Collaboration](../git/contribute.md)
 
-???- note "To cover in the course"
+!!! info "To cover in the course"
 
     - to-do list/issues
     - communication strategies
@@ -449,7 +447,9 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 Documentation is a wide field, connecting many of the earlier topics
 
-!!! admonition "Documentation comes in different forms"
+??? example"What is documentation?"
+
+??? info "Documentation comes in different forms"
 
     - **Tutorials**: learning-oriented, allows the newcomer to get started
     - **How-to guides**: goal-oriented, shows how to solve a specific problem
@@ -462,8 +462,7 @@ Documentation is a wide field, connecting many of the earlier topics
         - the analysis: pseudocode and UML
         - risk analysis
 
-**There is no one size fits all**: often for small projects a `README.md` or
-`README.rst` can be enough (more about these formats later).
+    **There is no one size fits all**: often for small projects a `README.md` or `README.rst` can be enough (more about these formats later).
 
 !!! objectives
 
