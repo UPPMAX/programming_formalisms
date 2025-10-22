@@ -85,14 +85,6 @@
     - `cd` the new directory that was created
     - list the files with `ls`
 
-## Use shared document to train on writing Markdown!
-
-<https://hackmd.io/@UPPMAX/BksCPhE0ge/edit>
-
-
-
-
-
 !!! summary
 
     - You should now hopefully be connected to the project and have a local copy of it!
