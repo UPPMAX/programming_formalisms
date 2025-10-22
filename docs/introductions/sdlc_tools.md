@@ -40,8 +40,6 @@ tags:
 
 ## Some SDLC models
 
-### If you want some overview today already
-
 [More In Software Development Life Cycle lesson](sdlc.md)
 
 ???- info "Waterfall model"
@@ -59,12 +57,6 @@ tags:
 
     - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
-    !!! warning
-
-        - Error is spreading
-        - Small mistakes in the beginning will have large impact on the end result.
-        - e.g. bugs, architecture limiting extensions
-        - Large costs economically and timely
 
 ???- info "Other Models"
 
@@ -76,18 +68,31 @@ tags:
         - Pair programming
         - Test-driven development
 
-!!! info "Conclusion"
+!!! info "Summary"
 
     - Each team has unique requirements
     - Don’t be afraid of trial and error
     - More info in [Software Development Lifecycle tomorrow](sdlc.md)
 
-## The tools/concepts for Developing in scientific computing
+### In this course
 
-Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)** in Scientific computing
+The tools/concepts for Developing in scientific computing
+
+**[Good enough practices doe Developing in Scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)**. Wilson et al. 2017
 
 - Good tools and practices for refactoring and development steps
 - Focus on scientific computing
+
+!!! info "The Phases/practices to be covered!"
+
+    - Project organisation
+    - Planning (extended by Waterfall steps)
+        - Requirements 
+        - Analysis
+        - Design
+    - Software development practices
+    - Tracking changes
+    - Collaborate
 
 ??? info "Project organization"
 
@@ -114,50 +119,9 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - license
     - citable
 
-!!! warning "These steps just cover the following Phases"
-
-    - Development
-    - Test
-    - Deployment
-
-- We want to add the planning phases with
-
-    - Requirements
-    - Analysis
-    - Design
-
-!!! info "The Phases/practices to be covered!"
-
-    - Project organisation
-    - Planning
-        - Requirements
-        - Analysis
-        - Design
-    - Software development practices
-    - Tracking changes
-    - Collaborate
-
 ## Tools to use
 
 ### Project planning
-
-- Planning step is to ...
-
-    - get an overview of the project/program.
-    - help planning writing the code
-    - identify parts needed
-    - risk analysis
-
-- Can be divided into analysis and design
-    - **Analysis** part is to **state the problem** and **define inputs and outputs**
-        - **Requirements** and **Risk analysis**
-            - Graphical tools like **[UML](../misc/uml_with_mermaid.md)** (Unified Modeling Language)
-            - text
-            - if object-oriented programming: **objects**
-        - **Design** phase to find out the **specific algorithms** needed
-            - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
-            - if object-oriented programming: **classes**
-            - if functional programming: **functions/modules**
 
 !!! note "WHY?"
 
@@ -165,27 +129,28 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
     - It prepares you to build the real thing to reduce any potential risk of failure. "
 
-#### Ways to plan OR program your project
 
-!!! info "Top-down"
+- find out the requirements what the program shall do
+- risk analysis
+- get an overview of the project/program.
+- help planning writing the code
+- identify parts needed
 
-    1. Clearly state whole problem
-    2. Define inputs and outputs
-    3. Design the algorithm with `pseudocode`
-    4. Turn the algorithm into specific language statements
-    5. Test the resulting program
+!!! info "Tools for analysis"
 
-!!! info "Bottom-Up"
+    **Analysis** part is to **state the problem** and **define inputs and outputs**
+            
+    - Graphical tools like **[UML](../misc/uml_with_mermaid.md)** (Unified Modeling Language)
+    - text
+    - if object-oriented programming: **objects**
 
-    Start with **parts first** and develop a bigger organization with time.
-
-???- discussion "How do you plan?"
-
-    - Top-down or Bottom-up?
-
-???- discussion "How do you program?"
-
-    - Top-down or Bottom-up?
+!!! info "Tools for design"
+            
+    Find out the **specific algorithms** needed
+            
+    - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
+    - if object-oriented programming: **classes**
+    - if functional programming: **functions/modules**
 
 - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
