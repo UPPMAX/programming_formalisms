@@ -49,8 +49,6 @@ tags:
     - Example
     - Software Development Life Cycle
 
-???- admonition "Changes"
-
 ## Different types of Scientific software
 
 ???- admonition "Analysis of data"
@@ -80,6 +78,8 @@ tags:
 !!! discussion
 
     **What do you develop for?**
+    
+    - [HackMD](https://hackmd.io/@UPPMAX/BksCPhE0ge/edit)
 
 ## Outcome of a Program
 
@@ -121,9 +121,9 @@ tags:
     - like Linux/Mac/Windows,
     - like different hardware architectures (intel, amd, arm)
 
-??? question "How can we make it easier to get good software and usefulness?"
-
 ## Software Development Life Cycle (SDLC)
+
+??? question "How can we make it easier to get good software and usefulness?"
 
 - We need a workflow in our programming projects!
 
@@ -136,7 +136,7 @@ tags:
     - Installation
     - Maintain
 
-### Alternative phases
+??? info "Alternative phases"
 
 - **Planning**
     - Analysis (with *requirements*) and *design*
