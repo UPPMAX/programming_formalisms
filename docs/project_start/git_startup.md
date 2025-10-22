@@ -463,7 +463,7 @@ This is the last line by me, Anna
 ### (Optional) Exercise 7
 
 - Go back to last session and read more about a topic, like UML and/or Markdown and their syntax!
-- Test out the Markdown and/or UML [exercises](sdlc_tools.md#exercises) directly in GitHub in your personal folder.
+- Test out the Markdown and/or UML [exercises](./sdlc_tools.md#exercises) directly in GitHub in your personal folder.
 - See the rendered pages directly after saving the file(s)!
 
 !!! note "See also"
