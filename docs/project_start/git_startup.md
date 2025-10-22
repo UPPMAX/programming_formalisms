@@ -294,6 +294,20 @@ Tracked files can be in three states.
 
     ```
 
+## Work directly on GitHub
+
+!!! info "Working on GitHub"
+
+    - You can do basically the **same work at GitHub as in your local git repo**
+    - The **graphical view** makes it easier to work with in everyday editing work at least.
+        - Depends on your own preferences of course.
+    - Here your commit each file at a time with the "commit button".
+        - **No staging** that is.
+        - Be aware of that feature!
+    - **GitHub Actions** are workflows defined by you, like:
+        - for automatic testing after each commit (Used in the test lessons)
+        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+
 ## Exercises
 
 ### Overview of the GitHub Project
@@ -448,21 +462,9 @@ This is the last line by me, Anna
 
 ### (Optional) Exercise 7
 
-- Go back to last session and read more about a topic, like UML and its syntax!
-
-## Work directly on GitHub
-
-!!! info "Working on GitHub"
-
-    - You can do basically the **same work at GitHub as in your local git repo**
-    - The **graphical view** makes it easier to work with in everyday editing work at least.
-        - Depends on your own preferences of course.
-    - Here your commit each file at a time with the "commit button".
-        - **No staging** that is.
-        - Be aware of that feature!
-    - **GitHub Actions** are workflows defined by you, like:
-        - for automatic testing after each commit (Used in the test lessons)
-        - for GitHub Pages, briefly covered in last session today or Extra reading: [Documentation](https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html).
+- Go back to last session and read more about a topic, like UML and/or Markdown and their syntax!
+- Test out the Markdown and/or UML [exercises](sdlc_tools.md#exercises) directly in GitHub in your personal folder.
+- See the rendered pages directly after saving the file(s)!
 
 !!! note "See also"
 
