@@ -152,6 +152,7 @@ The tools/concepts for Developing in scientific computing
     - if object-oriented programming: **classes**
     - if functional programming: **functions/modules**
 
+#### UML
 - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
 - More this afternoon
@@ -436,6 +437,42 @@ Documentation is a wide field, connecting many of the earlier topics
 
     **There is no one size fits all**: often for small projects a `README.md` or `README.rst` can be enough (more about these formats later).
 
+### Markdown 
+
+- Markdown (.md) is one of the most popular lightweight markup languages.
+- File extension ``.md`` makes it _render_ directly in GitHub!
+
+???- question "How does it look like?"
+
+    ```markdown
+    # This is a section heading in Markdown
+
+    ## This is a subsection header
+
+    Nothing special needed for a normal paragraph.
+
+        This is a code block
+
+
+    **Bold** and *emphasized*.
+
+    A list:
+
+    - this is an item
+    - another item
+
+    A numbered list:
+
+    1. this is an item
+    1. items are numbered automatically
+
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    tables...
+    ```
+
+
 !!! objectives
 
     - [Documentation on last day](../deployment/documentation.md) aims to:
@@ -515,9 +552,26 @@ Individually
 
 ???- "Why do we want to work with the mentioned tools/path?"
 
+???- "Get used to markdown"
+
+    - Test some of the [examples here](sdlc_tools.md#markdown) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#Markdown-tests)
+    - Tip:
+        - write in the left-hand side
+        - first make a section header with your name with a correct level
+        - then test other formatting
+    - You should see the "rendered" results directly to the right!
+    
 ???- "(Optional) Learn more about UML"
 
     - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+
+    - Test some of the [examples here](sdlc_tools.md#uml) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#UML-tests)
+    - Tip:
+        - write in the left-hand side
+        - first make a section header with your name with a correct level
+        - then test some ``mermaid`` lines
+    - You should see the "rendered" results directly to the right!
+
 
 ## Summary of SDLC tools
 
