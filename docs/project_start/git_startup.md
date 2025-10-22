@@ -44,10 +44,11 @@ tags:
 
 ???- question "Already know git and GitHub?"
 
-    If you have made 100 commits to GitHub,
+    If you have made 25 commits to GitHub,
     we assume you are already know git and GitHub.
 
-    You are welcome in the simultaneous session,
+    If there is a minority that already knows git and GitHub,
+    then those are welcome in the simultaneous session,
     where we'll go a faster and further.
 
 ## What is Git, and what is a Git repository?
