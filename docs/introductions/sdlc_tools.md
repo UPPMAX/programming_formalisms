@@ -87,7 +87,7 @@ The tools/concepts for Developing in scientific computing
 
     - Project organisation
     - Planning (extended by Waterfall steps)
-        - Requirements 
+        - Requirements
         - Analysis
         - Design
     - Software development practices
@@ -289,13 +289,13 @@ classDiagram
     where in produral languages you'll need to define that search
     strategy yourself
 
+- [Function design lesson](../function_design/README.md)
+
 !!! info "To sum up"
 
     - At its simplest, functional programming uses immutable data to tell the program exactly what to do.
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
-
-- [Function design lesson](../function_design/README.md)
 
 #### Modular coding
 
@@ -342,15 +342,20 @@ classDiagram
 
 ### Tracking changes
 
-Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
+??? question "Discuss Why"
 
-- System which records **snapshots** of a project
-- Implements **branching**:
-    - You can work on several **feature** branches and switch between them
-    - **Different people** can work on the same code/project without interfering
-    - You can **experiment** with an idea and discard it if it turns out to be a bad idea
-- Implements **merging**:
-    - Person A and B’s simultaneous work can be **easily combined**
+??? info "What it is"
+
+    Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
+
+    - System which records **snapshots** of a project
+    - Implements **branching**:
+        - You can work on several **feature** branches and switch between them
+        - **Different people** can work on the same code/project without interfering
+        - You can **experiment** with an idea and discard it if it turns out to be a bad idea
+    - Implements **merging**:
+        - Person A and B’s simultaneous work can be **easily combined**
+
 ???- info "Why Git?"
 
     We will use [Git](https://git-scm.com) to record snapshots of our work:
@@ -370,8 +375,10 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ### Collaboration (with GitHub)
 
-- Someone has given you access to a repository online and **you want to contribute** to it.
-- Quite easy to make a **copy and send a change back**.
+??? question "Why?"
+
+    - Someone has given you access to a repository online and **you want to contribute** to it.
+    - Quite easy to make a **copy and send a change back**.
 
 ??? info "Why GitHub?"
 
@@ -385,7 +392,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
     - [Collaboration](../git/contribute.md)
 
-!!! info "To cover in the course"
+??? info "content in the course"
 
     - to-do list/issues
     - communication strategies
@@ -412,7 +419,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 Documentation is a wide field, connecting many of the earlier topics
 
-??? example"What is documentation?"
+??? example "What is documentation?"
 
 ??? info "Documentation comes in different forms"
 
@@ -431,7 +438,7 @@ Documentation is a wide field, connecting many of the earlier topics
 
 !!! objectives
 
-    - [Documentation part 2](../deployment/documentation.md) aims to:
+    - [Documentation on last day](../deployment/documentation.md) aims to:
         - get tips for README files
     - get tips for full documentation and tutorials
 
