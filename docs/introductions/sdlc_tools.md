@@ -153,6 +153,7 @@ The tools/concepts for Developing in scientific computing
     - if functional programming: **functions/modules**
 
 #### UML
+
 - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
 - More this afternoon
@@ -437,7 +438,7 @@ Documentation is a wide field, connecting many of the earlier topics
 
     **There is no one size fits all**: often for small projects a `README.md` or `README.rst` can be enough (more about these formats later).
 
-### Markdown 
+### Markdown
 
 - Markdown (.md) is one of the most popular lightweight markup languages.
 - File extension ``.md`` makes it _render_ directly in GitHub!
