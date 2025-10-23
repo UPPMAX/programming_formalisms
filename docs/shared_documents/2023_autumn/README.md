@@ -1,24 +1,11 @@
----
-tags:
-  - shared
-  - documents
-  - HackMDs
----
+# Autumn 2023 shared documents
 
-# Shared documents 2023 autumn
+These are the shared documents used in this course iteration.
 
-## HackMD
-
-* [Day 1](https://hackmd.io/@LarsEklundScilifeLife/DayOneHT2023)
-* [Day 2](https://hackmd.io/@LarsEklundScilifeLife/DayTwoHT2023)
-* [Day 3](https://hackmd.io/@LarsEklundScilifeLife/DayThreeHT2023)
-* [Day 4](https://hackmd.io/@LarsEklundScilifeLife/DayFourHT2023)
-* [Day 5](https://hackmd.io/@LarsEklundScilifeLife/DayFiveHT2023)
-
-## Download
-
-* [Day 1](day_1.md)
-* [Day 2](day_2.md)
-* [Day 3](day_3.md)
-* [Day 4](day_4.md)
-* [Day 5](day_5.md)
+Day  |Shared document
+-----|------------------------------------
+1    |[Shared document](day_1.md)
+2    |[Shared document](day_2.md)
+3    |[Shared document](day_3.md)
+4    |[Shared document](day_4.md)
+5    |[Shared document](day_5.md)
