@@ -42,6 +42,6 @@ jobs:
       - name: Remove files that are not to be spellchecked yet
         run: |
           rm docs/project_start/analysis_design.md
-#          rm docs/development_design/excercise_1_Design.md
+          rm docs/development_design/ReadmatSoftware.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
