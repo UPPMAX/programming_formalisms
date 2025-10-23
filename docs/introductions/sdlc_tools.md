@@ -211,23 +211,23 @@ The tools/concepts for Developing in scientific computing
     - or **share attributes**with each-other (within a `**class**`)
     - info-hiding mindset...
 
-**Objects**
+???- info "How do objects look like in UML?"
 
-![Elevator objects](../img/elevators.png)
+    ![Elevator objects](../img/elevators.png)
 
-**Class**
+???- info "How do Classes look like in UML?"
 
-```mermaid
-classDiagram
-  class Elevator{
-    +string direction
-    +int floor
-
-    +goto_floor()
-    +stop()
-    + which_floor()
-  }
-```
+    ```mermaid
+    classDiagram
+      class Elevator{
+        +string direction
+        +int floor
+    
+        +goto_floor()
+        +stop()
+        + which_floor()
+      }
+    ```
 
 ???- info "Object orientation (OO) in some programming languages"
 
