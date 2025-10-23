@@ -837,7 +837,7 @@ Some examples of where this pattern has been implemented in modern times are:
 * [Angular](https://angular.io/) is built using TypeScript
 A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Object-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
 
-### AI assisted programming/AI
+### AI assisted programming/AI (Vibe Coding)
 
 With the emergence of more complex AI and especially the use of LLM (Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space. One of the issues is that whenever we employ AI or construct AI we need to be aware of the particular ethics surrounding this, As it stands we as developers and writers have the soul accountability for any development don on and with ai. A good starting point in these ethics are the RDA guidelines from the AIDV working group that will be presented in full in may, until then another good source is the [UNESCO recommendations on AI ethics](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
 These comprehensive recommendations basically states that in all development done with or on ai we need to keep a view of what is good for humanity in perspective. One hard issue in the scientific endeavor when using AI assisted development is credit. How do we credit. So how can we use AI in development, In the design and development phase Traditionally we seek the requirements as described above, but we can get a head start and generate a discussion point.
