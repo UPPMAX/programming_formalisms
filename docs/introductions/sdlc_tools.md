@@ -78,7 +78,7 @@ tags:
 
 The tools/concepts for Developing in scientific computing
 
-**[Good enough practices doe Developing in Scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)**. Wilson et al. 2017
+**[Good enough practices for Developing in Scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)**. Wilson et al. 2017
 
 - Good tools and practices for refactoring and development steps
 - Focus on scientific computing
