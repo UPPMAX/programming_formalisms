@@ -50,15 +50,62 @@ The generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010 s
 Needs Gathering which is the first steps have many different names in the different software development models,
 usually named Use Cases or User Stories or something similar
 
+```mermaid
+
+graph LR
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
+    classDef usecase fill:#ffc,stroke:#333,stroke-width:2px
+
+    A[Lecturer << Actor >>] -- Presents --> B((Present slides on UML))
+    C[Participant << Actor >>] -- Learns --> B
+
+    class A actor;
+    class B usecase;
+    class C actor;
+
+```
+
+```
+
+graph LR
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
+    classDef usecase fill:#ffc,stroke:#333,stroke-width:2px
+
+    A[Lecturer << Actor >>] -- Presents --> B((Present slides on UML))
+    C[Participant << Actor >>] -- Learns --> B
+
+    class A actor;
+    class B usecase;
+    class C actor;
+
+```
 
 !!! info "Finding the needs!"
 
     Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
 
+
+!!! info "Project brief"
+
+    Using the information in Bergström et. al and the Data specified in the project. Do some analysis on data from an Uppsala weather station and present the result to the user in a structured manner.
+
+    `[Bergström & Moberg, 2002]` Bergström, Hans, and Anders Moberg. "Daily air temperature and pressure series for Uppsala (1722–1998)."
+    Climatic change 53.1 (2002): 213-252
+    [PDF](https://www.smhi.se/download/18.6ae791dc18fc9e7539e1121c/1717658901728/Bergstr%C3%B6m_Moberg_Uppsala.pdf)
+    [Data](https://www.smhi.se/download/18.53cdce23194f389da053a4e/1740398333056/uppsala_tm_1722-2022.zip)
+
+!!! exercise  "Generate the Needs for the Project"
+
+    We shall make a short description of a "Use Case" and the needs that that "Use case" generates the Needs will then be clarified as requirements
+
+
 ???- "Where do you start?"
 
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
+
+!!! exercise  "Generate Requirements for the Project"
+    Using your user stories generate a requirement document in markdown that follows the below specification.
 
 !!! hint "How does a typical requirements document look like?"
 
