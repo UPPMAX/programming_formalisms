@@ -208,26 +208,26 @@ The tools/concepts for Developing in scientific computing
 - Object-oriented (OO) programming is
     - a mindset of mimicking the real-world as:
     - **entities (`objects`)** that are different
-    - or **share attributes**with each-other (within a `**class**`)
+    - or **share attributes** with each-other (within a `class`)
     - info-hiding mindset...
 
-**Objects**
+???- info "How do objects look like in UML?"
 
-![Elevator objects](../img/elevators.png)
+    ![Elevator objects](../img/elevators.png)
 
-**Class**
+???- info "How do Classes look like in UML?"
 
-```mermaid
-classDiagram
-  class Elevator{
-    +string direction
-    +int floor
-
-    +goto_floor()
-    +stop()
-    + which_floor()
-  }
-```
+    ```mermaid
+    classDiagram
+      class Elevator{
+        +string direction
+        +int floor
+    
+        +goto_floor()
+        +stop()
+        + which_floor()
+      }
+    ```
 
 ???- info "Object orientation (OO) in some programming languages"
 
@@ -555,7 +555,7 @@ Individually
 
 ???- "Get used to markdown"
 
-    - Test some of the [examples here](sdlc_tools.md#markdown) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#Markdown-tests)
+    - Test some of the [examples here](sdlc_tools.md#markdown) in a section in [HackMD shared document](https://hackmd.io/u6y5SOdvTuegOKhMgzjqGg?both#Markdown-tests)
     - Tip:
         - write in the left-hand side
         - first make a section header with your name with a correct level
@@ -566,7 +566,7 @@ Individually
 
     - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
-    - Test some of the [examples here](sdlc_tools.md#uml) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#UML-tests)
+    - Test some of the [examples here](sdlc_tools.md#uml) in a section in [HackMD shared document](https://hackmd.io/u6y5SOdvTuegOKhMgzjqGg?both#UML-tests)
     - Tip:
         - write in the left-hand side
         - first make a section header with your name with a correct level
