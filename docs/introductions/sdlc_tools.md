@@ -555,7 +555,7 @@ Individually
 
 ???- "Get used to markdown"
 
-    - Test some of the [examples here](sdlc_tools.md#markdown) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#Markdown-tests)
+    - Test some of the [examples here](sdlc_tools.md#markdown) in a section in [HackMD shared document](https://hackmd.io/u6y5SOdvTuegOKhMgzjqGg?both#Markdown-tests)
     - Tip:
         - write in the left-hand side
         - first make a section header with your name with a correct level
@@ -566,7 +566,7 @@ Individually
 
     - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
-    - Test some of the [examples here](sdlc_tools.md#uml) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#UML-tests)
+    - Test some of the [examples here](sdlc_tools.md#uml) in a section in [HackMD shared document](https://hackmd.io/u6y5SOdvTuegOKhMgzjqGg?both#UML-tests)
     - Tip:
         - write in the left-hand side
         - first make a section header with your name with a correct level
