@@ -1,10 +1,3 @@
----
-tags:
-  - shared
-  - document
-  - HackMD
----
-
 # Day Two Q&A Fall 2023
 
 <!--- I remind you that these documents will be uploaded to the repository branch that will be created and that the NBIS training code of conduct should be followed. Be respectfull to eachother so you do not edit others posts. Hack md alows for simultaions editing. -->

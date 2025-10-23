@@ -1,10 +1,3 @@
----
-tags:
-  - shared
-  - document
-  - HackMD
----
-
 # Day one Q&A Fall 2023
 <!--- Reminder do not edit anothers post, please use a fresh paragraph when typing hack md is a simultations editing tool-->
 
