@@ -6,9 +6,12 @@ tags:
 
 # Feedback
 
-You can share any feedback anonymously
-during the day [here](https://hackmd.io/@k477sRgaS86BlstUj83IKQ/Byd3nNvRxl).
-Thanks!
+You can share any feedback anonymously during the day
+[in this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfQ018HL6zmJ6iaIucYnB8D89sn3tdsTW9ObgwWOCfBR2BXzQ/viewform?usp=header).
+
+<!-- https://hackmd.io/@k477sRgaS86BlstUj83IKQ/Byd3nNvRxl -->
+
+These results will be published publicly at the end of each day.
 
 ???- question "For teachers: what is in that form?"
 
