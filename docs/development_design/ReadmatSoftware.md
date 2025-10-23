@@ -695,15 +695,21 @@ classDiagram
 
 ```
 
-//legacy style uml
+Activity diagrams have changed and there are a legacy style uml
+se image below, this traditional flowchart style can be almost replicated in
+mermaid using flowcharts as mermaid diagram tools do not include activity diagrams
+![image of legacy style UML activity diagram](\img\legacyActivity.png)
 
-```mermaid
+
+The new style(image below) has a slightly different approach to how selection is diagramed. as you can se it has a selection start node and end node where as the legacy style does not, this more closely depicts underlying pseudocode.
+
+![image of legacy style UML activity diagram](\img\Newstyle.png)
+
+Which is produced using plantUML a diagram tool(see code snippet below) that is much more extensive than mermaid but requires more setup to
+work.
 
 ```
 
-//new style
-
-```plantuml
 @startuml
 !theme amiga
 start
@@ -715,6 +721,7 @@ else(false)
 endif
 stop
 @enduml
+
 ```
 
 Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organisation with 27 countries and more than 230 organisations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behavior. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
