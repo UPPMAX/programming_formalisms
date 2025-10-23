@@ -7,8 +7,7 @@ tags:
 # Feedback
 
 You can share any feedback anonymously
-during the day here. **FIX new instance**
-
+during the day [here](https://hackmd.io/@k477sRgaS86BlstUj83IKQ/Byd3nNvRxl).
 Thanks!
 
 ???- question "For teachers: what is in that form?"
