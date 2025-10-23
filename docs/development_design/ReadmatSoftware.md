@@ -695,15 +695,21 @@ classDiagram
 
 ```
 
-//legacy style uml
+Activity diagrams have changed and there are a legacy style uml
+se image below, this traditional flowchart style can be almost replicated in
+mermaid using flowcharts as mermaid diagram tools do not include activity diagrams
+![image of legacy style UML activity diagram](\img\legacyActivity.png)
 
-```mermaid
+
+The new style(image below) has a slightly different approach to how selection is diagramed. as you can se it has a selection start node and end node where as the legacy style does not, this more closely depicts underlying pseudocode.
+
+![image of legacy style UML activity diagram](\img\Newstyle.png)
+
+Which is produced using plantUML a diagram tool(see code snippet below) that is much more extensive than mermaid but requires more setup to
+work.
 
 ```
 
-//new style
-
-```plantuml
 @startuml
 !theme amiga
 start
@@ -715,6 +721,7 @@ else(false)
 endif
 stop
 @enduml
+
 ```
 
 Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organisation with 27 countries and more than 230 organisations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioural and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioural models include state machines, activities and interactions and are based on actions and common behavior. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
@@ -830,7 +837,7 @@ Some examples of where this pattern has been implemented in modern times are:
 * [Angular](https://angular.io/) is built using TypeScript
 A good source for learning Design patterns and using as a reference material is [Design Patterns, Elements of Reusable Object-Oriented Software by Gamma Et.al 1994](https://libris.kb.se/bib/11947731)
 
-### AI assisted programming/AI
+### AI assisted programming/AI (Vibe Coding)
 
 With the emergence of more complex AI and especially the use of LLM (Large Language Models) in AI has given us a new development tool in AI assisted coding.  This may result in high quality coding solutions outside of our current solution space. One of the issues is that whenever we employ AI or construct AI we need to be aware of the particular ethics surrounding this, As it stands we as developers and writers have the soul accountability for any development don on and with ai. A good starting point in these ethics are the RDA guidelines from the AIDV working group that will be presented in full in may, until then another good source is the [UNESCO recommendations on AI ethics](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
 These comprehensive recommendations basically states that in all development done with or on ai we need to keep a view of what is good for humanity in perspective. One hard issue in the scientific endeavor when using AI assisted development is credit. How do we credit. So how can we use AI in development, In the design and development phase Traditionally we seek the requirements as described above, but we can get a head start and generate a discussion point.
@@ -838,3 +845,14 @@ In traditional requirements gathering we usually take the plain English project 
 Once the requirements have been gathered and refined and checked against the test case. Test case for requirement documents generally are written on the form of does R have correspondence in the Project brief or technical requirement that follows the brief?
 There are quite a lot of references to code from natural sentence structure Microsoft chief engineer has written a short article to summarise some of the work <https://news.microsoft.com/source/features/ai/how-ai-makes-developers-lives-easier-and-helps-everybody-learn-to-develop-software/>
 When presented with these options it is tempting to skip some of the steps in the SDLC, and go directly from Idea to production code, I caution against this as it will lead to less maintainable code where you as the developer have less understanding of issues arising. I instead recommend using ai assistance through out the development process and to view it as a partner that assists you both in design and implementation and testing. There is a risk that when presented with the "Answer" we feel we as developers should not touch "Their"*(the AI)* solution, this should be overcome as in all design work rework and reconceptualisation is inevitable.
+
+Since Feb 2025 the term Vibe Coding was introduced by Andrej Karpathy of OpenAI,
+
+Wikipedia describes the term [Vibe Coding](https://en.wikipedia.org/wiki/Vibe_coding)
+"Vibe coding is an artificial intelligence-assisted software development technique popularized by Andrej Karpathy in February 2025.[1][2][3] The term was listed in the Merriam-Webster Dictionary the following month as a "slang & trending" term.[4]
+
+Vibe coding describes a chatbot-based approach to creating software where the developer describes a project or task to a large language model (LLM), which generates code based on the prompt. The developer does not review or edit the code, but solely uses tools and execution results to evaluate it and asks the LLM for improvements. Unlike traditional AI-assisted coding or pair programming, the human developer avoids examination of the code, accepts AI-suggested completions without human review, and focuses more on iterative experimentation than code correctness or structure.
+
+Advocates of vibe coding say that it allows even amateur programmers to produce software without the extensive training and skills required for software engineering.[5][6] Critics point out a lack of accountability, maintainability, and the increased risk of introducing security vulnerabilities in the resulting software.[6][1]"
+
+This term for describing AI assisted coding has been growing in popularity and is now the defacto term used for coding assisted by an LLM

@@ -40,8 +40,6 @@ tags:
 
 ## Some SDLC models
 
-### If you want some overview today already
-
 [More In Software Development Life Cycle lesson](sdlc.md)
 
 ???- info "Waterfall model"
@@ -59,12 +57,6 @@ tags:
 
     - Good approach for **small and simple systems** where the team knows the system and **requirements very well**.
 
-    !!! warning
-
-        - Error is spreading
-        - Small mistakes in the beginning will have large impact on the end result.
-        - e.g. bugs, architecture limiting extensions
-        - Large costs economically and timely
 
 ???- info "Other Models"
 
@@ -76,18 +68,31 @@ tags:
         - Pair programming
         - Test-driven development
 
-!!! info "Conclusion"
+!!! info "Summary"
 
     - Each team has unique requirements
     - Don’t be afraid of trial and error
     - More info in [Software Development Lifecycle tomorrow](sdlc.md)
 
-## The tools/concepts for Developing in scientific computing
+### In this course
 
-Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)** in Scientific computing
+The tools/concepts for Developing in scientific computing
+
+**[Good enough practices doe Developing in Scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)**. Wilson et al. 2017
 
 - Good tools and practices for refactoring and development steps
 - Focus on scientific computing
+
+!!! info "The Phases/practices to be covered!"
+
+    - Project organisation
+    - Planning (extended by Waterfall steps)
+        - Requirements
+        - Analysis
+        - Design
+    - Software development practices
+    - Tracking changes
+    - Collaborate
 
 ??? info "Project organization"
 
@@ -114,50 +119,9 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - license
     - citable
 
-!!! warning "These steps just cover the following Phases"
-
-    - Development
-    - Test
-    - Deployment
-
-- We want to add the planning phases with
-
-    - Requirements
-    - Analysis
-    - Design
-
-!!! info "The Phases/practices to be covered!"
-
-    - Project organisation
-    - Planning
-        - Requirements
-        - Analysis
-        - Design
-    - Software development practices
-    - Tracking changes
-    - Collaborate
-
 ## Tools to use
 
 ### Project planning
-
-- Planning step is to ...
-
-    - get an overview of the project/program.
-    - help planning writing the code
-    - identify parts needed
-    - risk analysis
-
-- Can be divided into analysis and design
-    - **Analysis** part is to **state the problem** and **define inputs and outputs**
-        - **Requirements** and **Risk analysis**
-            - Graphical tools like **[UML](../misc/uml_with_mermaid.md)** (Unified Modeling Language)
-            - text
-            - if object-oriented programming: **objects**
-        - **Design** phase to find out the **specific algorithms** needed
-            - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
-            - if object-oriented programming: **classes**
-            - if functional programming: **functions/modules**
 
 !!! note "WHY?"
 
@@ -165,27 +129,30 @@ Wilson et al. 2017: **[Good enough practices](https://journals.plos.org/ploscomp
     - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
     - It prepares you to build the real thing to reduce any potential risk of failure. "
 
-#### Ways to plan OR program your project
 
-!!! info "Top-down"
+- find out the requirements what the program shall do
+- risk analysis
+- get an overview of the project/program.
+- help planning writing the code
+- identify parts needed
 
-    1. Clearly state whole problem
-    2. Define inputs and outputs
-    3. Design the algorithm with `pseudocode`
-    4. Turn the algorithm into specific language statements
-    5. Test the resulting program
+!!! info "Tools for analysis"
 
-!!! info "Bottom-Up"
+    **Analysis** part is to **state the problem** and **define inputs and outputs**
+            
+    - Graphical tools like **[UML](../misc/uml_with_mermaid.md)** (Unified Modeling Language)
+    - text
+    - if object-oriented programming: **objects**
 
-    Start with **parts first** and develop a bigger organization with time.
+!!! info "Tools for design"
+            
+    Find out the **specific algorithms** needed
+            
+    - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
+    - if object-oriented programming: **classes**
+    - if functional programming: **functions/modules**
 
-???- discussion "How do you plan?"
-
-    - Top-down or Bottom-up?
-
-???- discussion "How do you program?"
-
-    - Top-down or Bottom-up?
+#### UML
 
 - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
@@ -324,13 +291,13 @@ classDiagram
     where in produral languages you'll need to define that search
     strategy yourself
 
+- [Function design lesson](../function_design/README.md)
+
 !!! info "To sum up"
 
     - At its simplest, functional programming uses immutable data to tell the program exactly what to do.
     - Object-oriented programming tells the program how to achieve results through objects altering the program's state.
     - Both paradigms can be used to create elegant code.
-
-- [Function design lesson](../function_design/README.md)
 
 #### Modular coding
 
@@ -377,15 +344,20 @@ classDiagram
 
 ### Tracking changes
 
-Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
+??? question "Discuss Why"
 
-- System which records **snapshots** of a project
-- Implements **branching**:
-    - You can work on several **feature** branches and switch between them
-    - **Different people** can work on the same code/project without interfering
-    - You can **experiment** with an idea and discard it if it turns out to be a bad idea
-- Implements **merging**:
-    - Person A and B’s simultaneous work can be **easily combined**
+??? info "What it is"
+
+    Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivation/)
+
+    - System which records **snapshots** of a project
+    - Implements **branching**:
+        - You can work on several **feature** branches and switch between them
+        - **Different people** can work on the same code/project without interfering
+        - You can **experiment** with an idea and discard it if it turns out to be a bad idea
+    - Implements **merging**:
+        - Person A and B’s simultaneous work can be **easily combined**
+
 ???- info "Why Git?"
 
     We will use [Git](https://git-scm.com) to record snapshots of our work:
@@ -405,8 +377,10 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 ### Collaboration (with GitHub)
 
-- Someone has given you access to a repository online and **you want to contribute** to it.
-- Quite easy to make a **copy and send a change back**.
+??? question "Why?"
+
+    - Someone has given you access to a repository online and **you want to contribute** to it.
+    - Quite easy to make a **copy and send a change back**.
 
 ??? info "Why GitHub?"
 
@@ -420,7 +394,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
     - [Collaboration](../git/contribute.md)
 
-!!! info "To cover in the course"
+??? info "content in the course"
 
     - to-do list/issues
     - communication strategies
@@ -447,7 +421,7 @@ Summarized from [Code refinery](https://coderefinery.github.io/git-intro/motivat
 
 Documentation is a wide field, connecting many of the earlier topics
 
-??? example"What is documentation?"
+??? example "What is documentation?"
 
 ??? info "Documentation comes in different forms"
 
@@ -464,9 +438,45 @@ Documentation is a wide field, connecting many of the earlier topics
 
     **There is no one size fits all**: often for small projects a `README.md` or `README.rst` can be enough (more about these formats later).
 
+### Markdown
+
+- Markdown (.md) is one of the most popular lightweight markup languages.
+- File extension ``.md`` makes it _render_ directly in GitHub!
+
+???- question "How does it look like?"
+
+    ```markdown
+    # This is a section heading in Markdown
+
+    ## This is a subsection header
+
+    Nothing special needed for a normal paragraph.
+
+        This is a code block
+
+
+    **Bold** and *emphasized*.
+
+    A list:
+
+    - this is an item
+    - another item
+
+    A numbered list:
+
+    1. this is an item
+    1. items are numbered automatically
+
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    tables...
+    ```
+
+
 !!! objectives
 
-    - [Documentation part 2](../deployment/documentation.md) aims to:
+    - [Documentation on last day](../deployment/documentation.md) aims to:
         - get tips for README files
     - get tips for full documentation and tutorials
 
@@ -543,9 +553,26 @@ Individually
 
 ???- "Why do we want to work with the mentioned tools/path?"
 
+???- "Get used to markdown"
+
+    - Test some of the [examples here](sdlc_tools.md#markdown) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#Markdown-tests)
+    - Tip:
+        - write in the left-hand side
+        - first make a section header with your name with a correct level
+        - then test other formatting
+    - You should see the "rendered" results directly to the right!
+    
 ???- "(Optional) Learn more about UML"
 
     - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+
+    - Test some of the [examples here](sdlc_tools.md#uml) in a section in [HackMD shared document](https://hackmd.io/29fyx-PaTZ6WPgAShRM8ig?both#UML-tests)
+    - Tip:
+        - write in the left-hand side
+        - first make a section header with your name with a correct level
+        - then test some ``mermaid`` lines
+    - You should see the "rendered" results directly to the right!
+
 
 ## Summary of SDLC tools
 

@@ -16,10 +16,12 @@
 
 - Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/issues/1)
 
+
 ## VS Code terminal
 
 - We will work as much as possible (almost) in the VS Code graphical interface for Git
 - However, some things are better (or only) handled from a terminal/command line.
+
 - You find the Git Bash terminal From the menu (different on mac and windows)
 
 ![VS Code terminal](../img/commandline_VSC.png)
