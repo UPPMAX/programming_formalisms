@@ -208,7 +208,7 @@ The tools/concepts for Developing in scientific computing
 - Object-oriented (OO) programming is
     - a mindset of mimicking the real-world as:
     - **entities (`objects`)** that are different
-    - or **share attributes**with each-other (within a `**class**`)
+    - or **share attributes** with each-other (within a `class`)
     - info-hiding mindset...
 
 ???- info "How do objects look like in UML?"
