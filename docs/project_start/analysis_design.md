@@ -4,12 +4,16 @@ tags:
   - analysis
 ---
 
-# First Phase: Analysis
+# Planning
 
-As you have heard the first phase in any software development is Analysis phase or Requirements phase or Inception phase (Swedish ideom "Kärt barn har många namn"-translation "Dearest child has many names") in this is the phase we are focusing on in this lecture. **The goal of the analysis phase is to figure out what the program should do and  what needs the program must meet**. It like all other phases of modern software development is done in an iterative loop or spiral.
+![SDLC image](../development_design/img/SDLC.png)
+
+## First Phase: Analysis
+
+As you have heard the first phase in any software development is Analysis phase or Requirements phase or Inception phase (Swedish idiom "Kärt barn har många namn"-translation "Dearest child has many names") in this is the phase we are focusing on in this lecture. **The goal of the analysis phase is to figure out what the program should do and  what needs the program must meet**. It like all other phases of modern software development is done in an iterative loop or spiral.
 In this early stage a focus is on Requirements sometimes also called needs determination and risk analysis. The First thing to remember and include in your analysis is the scope of your project both in time and scale so that you do not over commit both in choice of level of formalism and amount of features that you which to construct.
 
-## Requirements
+### Requirements
 
 !!! info "Why do we need to specify requirements?"
 
@@ -25,11 +29,10 @@ the transition Division into product, bas his or her own
 definition of a requirement, With the rare exception, all
 are applicable and meaningful"*
 
--- "What is a Requirement?" by R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp. Nat'I Council Systems Eng.,
-1993, pp. 17-24.
+-- "What is a Requirement?"
 
 What guidance can we then gleen in what a Requirement is the above mentioned paper asses that
-**"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"**
+**"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"**[R. Harwell et al, 1993]
 
 According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
@@ -44,18 +47,72 @@ evolve before arriving as valid stakeholder requirements.**
         — it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
         — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
 
+The generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010 starts with needs analysis
+![Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010](../development_design/img/SDLC_ISO_IEC_12207.png)
+
+Needs Gathering which is the first steps have many different names in the different software development models,
+usually named Use Cases or User Stories or something similar
+
+```mermaid
+
+graph LR
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
+    classDef usecase fill:#ffc,stroke:#333,stroke-width:2px
+
+    A[Lecturer << Actor >>] -- Presents --> B((Present slides on UML))
+    C[Participant << Actor >>] -- Learns --> B
+
+    class A actor;
+    class B usecase;
+    class C actor;
+
+```
+
+```pseudo-code
+
+graph LR
+    classDef actor fill:#f9f,stroke:#333,stroke-width:2px
+    classDef usecase fill:#ffc,stroke:#333,stroke-width:2px
+
+    A[Lecturer << Actor >>] -- Presents --> B((Present slides on UML))
+    C[Participant << Actor >>] -- Learns --> B
+
+    class A actor;
+    class B usecase;
+    class C actor;
+
+```
+
 !!! info "Finding the needs!"
 
     Is a process of finding the subjects and verbs of the project brief and formalize them as testable statements, once that is done we do our first iteration of risk analysis on those sets.
+
+
+!!! info "Project brief"
+
+    Using the information in Bergström et. al and the Data specified in the project. Do some analysis on data from an Uppsala weather station and present the result to the user in a structured manner.
+
+    `[Bergström & Moberg, 2002]` Bergström, Hans, and Anders Moberg. "Daily air temperature and pressure series for Uppsala (1722–1998)."
+    Climatic change 53.1 (2002): 213-252
+    [PDF](https://www.smhi.se/download/18.6ae791dc18fc9e7539e1121c/1717658901728/Bergstr%C3%B6m_Moberg_Uppsala.pdf)
+    [Data](https://www.smhi.se/download/18.53cdce23194f389da053a4e/1740398333056/uppsala_tm_1722-2022.zip)
+
+!!! exercise  "Generate the Needs for the Project"
+
+    We shall make a short description of a "Use Case" and the needs that that "Use case" generates the Needs will then be clarified as requirements
+
 
 ???- "Where do you start?"
 
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
 
+!!! exercise  "Generate Requirements for the Project"
+    Using your user stories generate a requirement document in markdown that follows the below specification.
+
 !!! hint "How does a typical requirements document look like?"
 
-    A typical requirements document can be made in a spreadsheet program of your choice
+    A typical requirements document can be made in a spreadsheet program of your choice or as a table in a markdown document as you will see later.
 
 !!! info "Commonly used categories of requirements"
 
@@ -68,13 +125,13 @@ evolve before arriving as valid stakeholder requirements.**
     - Risk type
     - Risk probability
     - Risk severity
-    - Risk value(Probaility x Severity)
+    - Risk value(Probability x Severity)
 
 
 ???- info "Design process document"
     A Design process document is created when the process software design and or
     analysis needs to be specified to keep the development on track.
-    It is created on organisational level to make sure that all project follow a
+    It is created on organizational level to make sure that all project follow a
     similar documentation, and analysis and Design path. (If AI is heavily used in the Analysis and Design phase this document define when and how to use the AI tools and how to document its uses.)
 
     Here is an example design process document:
@@ -245,3 +302,5 @@ which calculate the risk in Probability of occurrence x severity of risk **RISK=
 
     Using the Requirements and risk matrix we can design a feature list which can be tracked using issues or project tab in Git or in a separate document. The feature list describes how to solve a requirement in plaintext english and with flowcharts This initiates a design phase in the development
 
+[R. Harwell et al] R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp. Nat'I Council Systems Eng.,
+1993, pp. 17-24.

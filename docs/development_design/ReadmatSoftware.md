@@ -708,21 +708,19 @@ The new style(image below) has a slightly different approach to how selection is
 Which is produced using plantUML a diagram tool(see code snippet below) that is much more extensive than mermaid but requires more setup to
 work.
 
-```
-
 @startuml
 !theme amiga
 start
 :activity 1;
 -> data;
 if (stuff?) then (true)
-   :action 2;
+  :action 2;
 else(false)
 endif
 stop
 @enduml
 
-```
+
 
 Unified modeling language is defined and managed by the OMG(object management group)(omg.org), which is a standards developments organization with 27 countries and more than 230 organizations which produces standards for business development and the software industry. UML is divided into Diagram types these types are supplemental, behavioral and structural - modeling. The Supplemental modeling is Use Cases, Deployments and Information flows. The Behavioral models include state machines, activities and interactions and are based on actions and common behavior. Structural modeling models Values, Classifiers and Packages and describe the common structure of the software. Structural modeling is vital to discover proper abstraction of classes and interaction models help you find the methods needed to run an object oriented design. Activities and state machines are great for describing the flow of a program and to supplement pseudo code when visualizing processes or algorithms.
 
