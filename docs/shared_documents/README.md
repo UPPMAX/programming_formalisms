@@ -9,6 +9,11 @@ tags:
 
 These are the previous shared documents used in the course.
 
+??? question "Where is the shared document used today?"
+
+    It can be found at [the 'Shared document' page](../shared_document.md)
+
+
 Index|Shared document
 -----|------------------------------------
 6    |[2025 autumn](2025_autumn/README.md)
