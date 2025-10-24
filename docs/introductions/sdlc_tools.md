@@ -145,7 +145,7 @@ The tools/concepts for Developing in scientific computing
     - if object-oriented programming: **objects**
 
 !!! info "Tools for design"
-            
+
     Find out the **specific algorithms** needed
             
     - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**

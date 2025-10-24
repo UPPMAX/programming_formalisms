@@ -41,7 +41,7 @@ tags:
     - When do you trust code written by others?
     - How do you convince other developers of a bug?
 
-## Why use tests?
+## 1. Why use tests?
 
 ???- question "Prefer this lecture as a video?"
 
@@ -54,7 +54,7 @@ Testing *helps* ensure the correctness of code.
   e.g. `[Rahman & Farhana, 2020]`
 - Simple testing can prevent most critical failures `[Yuan et al., 2014]`
 
-## Levels of testing
+## 2. Levels of testing
 
 ![Dilbert strip](dilbert_tdd_3.png)
 
@@ -64,14 +64,14 @@ Unit test       |Tests 1 unit, e.g. a function
 Integration test|Tests multiple units together, i.e. a part of the system
 System test     |Tests the system as a whole
 
-## Why use a testing framework?
+## 3. Why use a testing framework?
 
 You want to write tests in the recommended way
 and put their files in a recommended place.
 You want your tests to be found by most of the tools
 in the Python ecosystem.
 
-## Testing framework
+## 4. Testing framework
 
 There are multiple testing frameworks, here is an incomplete overview:
 
@@ -90,7 +90,7 @@ Drawback of `unittest` (and many other testing frameworks):
 
 - Takes some scaffolding
 
-## Example test: test if something is true
+## 4.1. Example test: test if something is true
 
 No testing framework:
 
@@ -110,7 +110,7 @@ class TestSmall(unittest.TestCase):
 
 Mostly scaffolding here...
 
-## Example test: test if something is equal
+## 4.2. Example test: test if something is equal
 
 No testing framework:
 
@@ -130,7 +130,7 @@ class TestSmall(unittest.TestCase):
 
 Hamcrest notation can give better error message.
 
-## Example test: test if something raises an exception
+## 4.3. Example test: test if something raises an exception
 
 No testing framework:
 
@@ -158,7 +158,7 @@ class TestSmall(unittest.TestCase):
 
 Here using a formal testing framework saves typing.
 
-## File setup
+## 5. File setup
 
 A testing framework needs files to be in standarized places.
 
@@ -231,7 +231,7 @@ is called `tests/test_richel_utils.py`.
             self.assertRaises(TypeError, is_zero, "I am a string")
     ```
 
-## Running a test
+## 6. Running a test
 
 ???- question "Get error `ModuleNotFoundError: No module named 'src'`?"
 
@@ -293,9 +293,9 @@ Clicking on the 'Run'/'Play' button to run the tests.
     An easy fix is to delete the file `.vscode/setting.json`
     and restart VS Code
 
-## Exercises
+## 7. Exercises
 
-### Exercise 1: get the existing tests to work
+## 7.1. Exercise 1: get the existing tests to work
 
 In this exercise, we get the tests to work within our IDE.
 
@@ -304,13 +304,13 @@ In this exercise, we get the tests to work within our IDE.
     If you do not use VS Code, try to get it to run on your IDE.
     The steps for VS Code may be simular to those in your IDE.
 
-- Follow the steps at [running a test](#running-a-test)
+- Follow the steps at [running a test](#6-running-a-test)
 - Run all the tests of the package
 - Are all tests passing? If not, can you see the error message?
 
 Fixing the failing tests is beyond the scope of this exercise.
 
-### Exercise 2: put example code to fit the testing framework
+## 7.2. Exercise 2: put example code to fit the testing framework
 
 In this exercise, we will put worked-out code at the right spots.
 This code is known to work, so our package will keep working.
@@ -366,7 +366,7 @@ class TestSvenUtils(unittest.TestCase):
 - Confirm that your new tests passes
 - If your tests pass, push it to the GitHub repo
 
-### Exercise 2: put example code to fit the testing framework
+## 7.3. Exercise 3: put example code to fit the testing framework
 
 In this exercise, we convert some pre-programmed code to fit the
 testing framework.
@@ -458,7 +458,7 @@ print(isprime(8))
 
 It is beyond the scope of this exercise to fix this function :-)
 
-### Exercise 3: convert your code to fit the testing framework
+## 7.4. Exercise 4: convert your code to fit the testing framework
 
 In this course, you've written some functions yourself.
 

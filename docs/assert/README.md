@@ -61,7 +61,7 @@ tags:
     > —James Joyce
 
 
-## Why use assertions
+## 1. Why use assertions
 
 > If debugging is the process of removing bugs,
 > then programming must be the process of putting them in.
@@ -72,7 +72,7 @@ Making you assumptions explicit
 will help you structure your thoughts and reduce
 the time you spend debugging.
 
-## About assumptions
+## 2. About assumptions
 
 > Assert liberally to document internal assumptions and invariants
 >
@@ -105,7 +105,7 @@ Assert liberally to document assumptions
 `[Liberty, 2001; Lakos, 1996; Stroustrup, 2013a]`,
 even if you think something should never occur `[McConnell, 2004b]`.
 
-### Assertions in debug and release mode
+## 2.1. Assertions in debug and release mode
 
 Python scripts can be run in debug mode or release mode:
 
@@ -136,7 +136,7 @@ How to run script   |`python my_script.py`|`python -O my_script.py`
 Behavior of `assert`|Active               |Ignored
 Runtime speed       |Lower                |Unaffected
 
-### Using assertions as a stub
+## 2.2. Using assertions as a stub
 
 `assert` can be used as a stub,
 to signal that work that needs to be done.
@@ -160,7 +160,7 @@ Use `assert` to specifify assumption on the input of a function
 
     [Specifify](https://www.urbandictionary.com/define.php?term=specifify): When you have to further define what you are talking about to further explain yourself.
 
-### Using assertions to check a function's return value
+## 2.3. Using assertions to check a function's return value
 
 Lastly, `assert` can be used to quick check
 to check if a function return a not-too-crazy value.
@@ -184,9 +184,9 @@ test to find bugs.
 Use `assert` to specifify assumption on the output of a function
 `[Stroustrup, 1997][McConnell, 2004a]`.
 
-## Exercises
+## 3. Exercises
 
-### Exercise 1: the behavior of `assert` in debug and release mode
+## 3.1. Exercise 1: the behavior of `assert` in debug and release mode
 
 - Write a script called `my_assert.py` with the following content:
 
@@ -221,7 +221,7 @@ assert 1 == 2
     There is no error message, as the Python script was run in
     release mode: in release mode, all `assert`s are removed
 
-### Exercise 2: making assumptions explicit
+## 3.2. Exercise 2: making assumptions explicit
 
 - Below is a function that divides two floating point numbers.
   How to use it?
@@ -307,7 +307,7 @@ def divide_by(numerator, denominator):
     > They should do it well.
     > They should do it only [sic].
 
-### Exercise 3: making assumptions explicit
+## 3.3. Exercise 3: making assumptions explicit
 
 - Below is a function that reads a file and returns its contents.
   How to use it?
@@ -376,7 +376,7 @@ def read_file(filename):
     On the other hand, asserting liberally is a good habit, so doing
     it is fine.
 
-### Exercise 4: making assumptions explicit
+## 3.4. Exercise 4: making assumptions explicit
 
 - Below is a function that reads a **non-empty** file and returns its contents.
   How to use it?
@@ -465,7 +465,7 @@ def read_non_empty_file(filename):
         return content
     ```
 
-## References
+## 4. References
 
 - `[CppCore F.2]` C++ Core Guidelines.
    F.2: A function should perform a single logical operation,
