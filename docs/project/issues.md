@@ -32,13 +32,15 @@ tags:
     - How would you define what an issue is?
     - How do you call the webpage where a list of issues can be seen?
 
+## 1. Why are issues important?
+
 A good team member communicates.
 Here we show how to communicate to the rest of the team with minimal overhead.
 
 - What needs to be done?
 - Who is doing what now?
 
-## Issues
+## 2. Issues
 
 > A bug-tracking database is not just a memory aid or ascheduling tool.
 > It doesn 't make it easier to produce great software,
@@ -66,20 +68,15 @@ Nah, it is not done yet!|Re-opening an issue            |Why it was not done
 
 > The life cycle of a issue, from `[Bugzilla, 2009]`
 
-## Duplicates
+## 2.1. Issues that are duplicates
 
 Sometimes, two issues describe the same problem.
 This is called a duplicate.
 Because duplicates are not uncommon,
 there is an issue label called `duplicate`.
 
-## Managing issues
 
-For a fresh project, there are many things to do.
-It is not uncommon to have an 'issue manager'
-that keeps an overview of all issues.
-
-## Issues with dependencies
+## 2.2. Issues with dependencies
 
 Sometimes issues depend on other issues.
 This is typically indicated with a `depends` issue label.
@@ -93,7 +90,7 @@ This issue dependends on #42
 
 The hashtag (`#`) turns the `#42` into a link to issue 42.
 
-## Issues based on requirements
+## 2.3. Issues based on requirements
 
 Some issues originate from the requirements documents, as shown below.
 
@@ -194,7 +191,13 @@ Some issues originate from the requirements documents, as shown below.
 
     Note the related requirent R4: 'Create a test bacterium'
 
-## Our project
+## 3. Managing issues
+
+For a fresh project, there are many things to do.
+It is not uncommon to have an 'issue manager'
+that keeps an overview of all issues.
+
+## 4. Our project
 
 In our project we use the following rules:
 
@@ -203,9 +206,9 @@ In our project we use the following rules:
 - An issue can contain the assignment to add something to the
   requirements document
 
-## Exercises
+## 5. Exercises
 
-### Exercise 1: a typical issue lifecycle
+## 5.1. Exercise 1: a typical issue lifecycle
 
 Do the following in our student project:
 
@@ -215,7 +218,7 @@ Do the following in our student project:
 - Assign yourself to the issue
 - Close the issue. In the text, write why you close that issue
 
-### Exercise 2: learners' project: create an issue
+## 5.2. Exercise 2: learners' project: create an issue
 
 For the learners' project:
 
@@ -223,7 +226,7 @@ For the learners' project:
   you think need to be done, based on the design document.
   Assign yourself to one issue
 
-## Discussion
+## 6. Discussion
 
 Issues are useful to communicate:
 
@@ -235,7 +238,7 @@ However, an issue tracker is not designed to
 communicate what is _actively_ being worked on.
 For that, a [kanban board](kanban_board.md) is used instead.
 
-## References
+## 7. References
 
 - `[Bertram, 2009]` Bertram, Dane.
   "The social nature of issue tracking in software engineering."

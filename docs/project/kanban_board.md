@@ -28,15 +28,17 @@ tags:
 
 ![A well-used kanban board](kanban_board.png)
 
+## 1. Why is a Kanban board important?
+
 A good team member communicates.
 Here we show how to communicate to the rest of the team with minimal overhead.
 
 - What needs to be done?
 - Who is doing what now?
 
-## Exercises
+## 2. Exercises
 
-### Exercise 1: use the Kanban board
+## 2.1. Exercise 1: use the Kanban board
 
 Do the following in our student project:
 
@@ -49,7 +51,7 @@ Do the following in our student project:
 - Close the issue. In the text, write why you close that issue
 - If needed, move the issue to the 'Done' column.
 
-### Exercise 2: learners' project
+## 2.2. Exercise 2: learners' project
 
 For the learners' project:
 
