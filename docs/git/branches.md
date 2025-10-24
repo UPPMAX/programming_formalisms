@@ -271,7 +271,7 @@ gitGraph
 - **On your local computer:**
     - update the repository (pull)
     - switch to the new branch
-    - change the content of the repository, for example,
+    - change the content of the repository
       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
     - push your changes online.
 - On **GitHub**, verify that your changes on your branch can be found online
