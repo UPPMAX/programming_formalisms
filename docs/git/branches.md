@@ -133,7 +133,7 @@ In VS Code
     - ![network_GH](../img/network_GH.png)
 
     - [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
-    - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/network)
+    - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/network)
 
 - VS Code
 
