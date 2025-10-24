@@ -304,7 +304,7 @@ In this exercise, we get the tests to work within our IDE.
     If you do not use VS Code, try to get it to run on your IDE.
     The steps for VS Code may be simular to those in your IDE.
 
-- Follow the steps at [running a test](#running-a-test)
+- Follow the steps at [running a test](#6-running-a-test)
 - Run all the tests of the package
 - Are all tests passing? If not, can you see the error message?
 
