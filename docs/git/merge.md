@@ -191,7 +191,7 @@ branches using GitHub
 !!! info "Content"
 
     1. Practice merging `git` branches using the GitHub interface
-    2. (Optional) Practice merging git branches locally
+    2. Practice merge conflicts between branches using GitHub
 
 ### Exercise 1: Practice merging `git` branches using the GitHub interface
 
@@ -311,7 +311,7 @@ gitGraph
 
     - You may delete the old branch from here if you want!
 
-### (Optional) exercise 3: Practice merging git branches locally
+### (Optional) exercise 3: Practice merging git branches locally (without conflict)
 
 !!! tip
 
@@ -322,8 +322,11 @@ Continue with the branch you created in last session.
 In **VS CODE**
 
 - Pull/Sync!
-- You may branch off from `main` or `develop` (if it exists).
-- Go the the branch you created
+- You may branch off from `main` or `develop` (if it exists) with the your name as a branch name.
+- Go the the branch you created.
+- Modify the README file in learners/<your name>, e.g. add the line `Anna was here`
+      at the bottom
+    - commit with good message, it says "commit directly to <you name>")
 - Merge with the branch you branched off from, ``develop`` or ``main``
 
 ![merge_VSC](../img/merge_VSC.png)
