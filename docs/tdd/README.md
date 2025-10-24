@@ -45,7 +45,7 @@ tags:
     - Why would it be important to have a formal way to grow/develop your code?
     - When have you tested your code enough? Is it ever enough?
 
-## Why use test-driven development?
+## 1. Why use test-driven development?
 
 ???- question "Prefer this lecture as video?"
 
@@ -54,7 +54,7 @@ tags:
 The requirements (and hence code) of a project changes.
 You want to change code methodically in a time-efficient way.
 
-## What is test-driven development?
+## 2. What is test-driven development?
 
 Test-driven development (TDD) is a systematic way to grow code,
 used in academia and industry. It works `[Martin, 2011]`!
@@ -92,7 +92,7 @@ The three laws of TDD ensure each cycle is short `[Martin, 2007]`:
 - You may not write more production code than is sufficient to pass
   the currently failing test
 
-## Features of TDD
+## 3. Features of TDD
 
 Advantages of TDD are:
 
@@ -117,45 +117,45 @@ We will discuss formal testing later, but now note that
 testing is not about finding bugs `[Thomas & Hunt, 2019, tip 66]`,
 instead a test is the first user of your code `[Thomas & Hunt, 2019, tip 67]`.
 
-## Express yourself in Python
+## 4. Express yourself in Python
 
 This course does not teach Python.
 To save time, here are English statements and their
 Python (more-or-less) equivalent.
 
-### I assume `my_function` to have documentation
+## 4.1. I assume `my_function` to have documentation
 
 ```python
 assert my_function.__doc__
 ```
 
-### My function has documentation
+## 4.2. My function has documentation
 
 ```python
 def my_function():
     """This is documentation"""
 ```
 
-### I assume `my_function` to return a value, e.g. `42`
+## 4.3. I assume `my_function` to return a value, e.g. `42`
 
 ```python
 assert my_function() == 42
 ```
 
-### My function returns a number, e.g. `42
+## 4.4. My function returns a number, e.g. `42
 
 ```python
 def my_function():
     return 42
 ```
 
-### My function returns not a number, e.g. not `42
+## 4.5. My function returns not a number, e.g. not `42
 
 ```python
 assert not my_function() == 42
 ```
 
-### I assume `my_function` raises an exception when given nonsense input
+## 4.6. I assume `my_function` raises an exception when given nonsense input
 
 ```python
 has_thrown = False
@@ -232,7 +232,7 @@ assert has_thrown
     and our test fails.
 
 
-### My function raises an exception when the input `x` is not integer
+## 4.7. My function raises an exception when the input `x` is not integer
 
 ```python
 def my_function(x):
@@ -240,7 +240,7 @@ def my_function(x):
         raise TypeError("'x' must be of type int")
 ```
 
-## Exercises
+## 5. Exercises
 
 Below are some TDD exercise,
 with the goal of practicing TDD.
@@ -256,7 +256,7 @@ writing R, how annoying this may feel).
 If you feel comfortable enough with TDD,
 move to the next session.
 
-### Exercise 1: `is_zero`
+## 5.1. Exercise 1: `is_zero`
 
 - If you are more used to R than Python,
   consider watching [this video, 'R and TDD: is_one'](https://youtu.be/IPGfW4lrxOc)
@@ -307,7 +307,7 @@ move to the next session.
     ```
 
 
-### Exercise 2: `is_even`
+## 5.2. Exercise 2: `is_even`
 
 Develop a function called `is_even`:
 
@@ -356,7 +356,7 @@ Develop a function called `is_even`:
     - [Python](https://youtu.be/ZcgJEdaRRpc)
     - [R](https://youtu.be/4NBsCis584U?si=A7k5w9fLAwAJc3ta)
 
-### Exercise 3: `is_odd`
+## 5.3. Exercise 3: `is_odd`
 
 Develop a function called `is_odd`:
 
@@ -424,7 +424,7 @@ Consider using the `is_even` function.
     - [Python](https://youtu.be/BxyIsJw3E14)
     - [R](https://youtu.be/Lah3fm3lUiA?si=40JdVJAO3oBcjrkH)
 
-### Exercise 4: `is_probability`
+## 5.4. Exercise 4: `is_probability`
 
 Develop a function called `is_probability`.
 
@@ -465,7 +465,7 @@ Develop a function called `is_probability`.
         return x >= min_probability and x <= max_probability
     ```
 
-### Exercise 5: `is_prime`
+## 5.5. Exercise 5: `is_prime`
 
 Develop a function called `is_prime`.
 
@@ -484,7 +484,7 @@ Develop a function called `is_prime`.
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
-## Conclusion
+## 6. Conclusion
 
 - This session, we wrote **unit tests**
 - It is only those your boss may read
@@ -492,7 +492,7 @@ Develop a function called `is_prime`.
     in C++ `[Stroustrup & Sutter, 2017]`,
     R `[Wickham, 2019]` and Python `[PEP 8]`
 
-## Discussion
+## 7. Discussion
 
 - We only test manually
 - We only test on our own computer

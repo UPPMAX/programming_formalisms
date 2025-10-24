@@ -104,7 +104,7 @@ Some issues originate from the requirements documents, as shown below.
 
     Writing the 'Methods' section and issues goes hand-in-hand.
 
-!!! note "Issue 'R1: Create testing parameter set'"
+!!! note "Example issue 'R1: Create testing parameter set'"
 
     The requirements documentation states:
 
@@ -124,7 +124,7 @@ Some issues originate from the requirements documents, as shown below.
 
     Note the related requirent R2: 'check that parameters are well-formed'
 
-!!! note "Issue 'R2: check that parameters are well-formed'"
+!!! note "Example issue 'R2: check that parameters are well-formed'"
 
     The requirements documentation states:
 
@@ -142,7 +142,7 @@ Some issues originate from the requirements documents, as shown below.
 
     Note the related requirent R1: 'Create testing parameter set'
 
-!!! note "Issue 'R3: Read parameters from file'"
+!!! note "Example issue 'R3: Read parameters from file'"
 
     The requirements documentation states:
 
@@ -158,7 +158,7 @@ Some issues originate from the requirements documents, as shown below.
     Create a test parameters file, e.g. `test_parameters.csv` to test that
     the values read by `read_parameters` match those in the file.
 
-!!! note "Issue 'R4: Create a test bacterium'"
+!!! note "Example issue 'R4: Create a test bacterium'"
 
     The requirements documentation states:
 
@@ -176,7 +176,7 @@ Some issues originate from the requirements documents, as shown below.
     but use a [list](https://docs.python.org/3/tutorial/datastructures.html)
     of strings if this is not specified yet.
 
-!!! note "Issue 'R5: check that a bacteria is well-formed'"
+!!! note "Example issue 'R5: check that a bacteria is well-formed'"
 
     The requirements documentation states:
 
