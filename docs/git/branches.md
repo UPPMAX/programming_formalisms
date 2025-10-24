@@ -104,7 +104,7 @@ In VS Code
     git branch new-feature  # create branch, switch to it
     git add/commit                   # work, work, work, ..., and test
     git switch master          # once feature is ready, switch back to master
-    (git checkout <branch>)     # Old commead for switching branch, but also going back in history to earlier commit
+    (git checkout <branch>)     # Old command for switching branch, but also going back in history to earlier commit
     git branch                   # make clear which branch you are in
     git merge new-feature        # merge work to present branch
     git branch -d new-feature    # remove branch
