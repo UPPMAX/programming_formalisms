@@ -129,13 +129,16 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
 ### Exercise 1 (10 min)
 
 - Collate the requirements list Group work in plenary.
+- Extra assignment if time allows read
+mermaid syntax for requirment documents [here](https://mermaid.js.org/syntax/requirementDiagram.html)
+-Write your requimnets and their interactons using mermaid charts use the mermaid [playground](https://www.mermaidchart.com/play?utm_source=mermaid_live_editor&utm_medium=toggle#pako:eNpNjrEOwjAMRH_Fyl4k1gxMrPyBJRRRt7FoHEhcRFT130k6oGz23bvTbeYRRzLWJHqvnCiQ6JXdnFxA6TRQynqvAmwoPFo4oyh91YJ6Okxo76mGOD8teJ49yocST-VG6mONNAplR6Gl66wHa2m1Wl5kIXNYF6cc5WB7ZoBcjTwxZRgu_0lm_wFYLkuj)
 
 ### Exercise 2 (10 min)
 
 - Practice Mermaid by taking one requirement practice describing the overall solution using a flowchart in UML
         - [Flowcharts or Unified Modeling Language (UML)](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
 
-???- info "Example flow char of a requirement described as a User story or Use Case"
+???- info "Example flow chart of a requirement described as a User story or Use Case"
 
     From example [requirement specification](../project_start/analysis_design.md):
 
