@@ -280,14 +280,13 @@ In VS Code
 ??? example "Look Björns new Issue"
 
     - Do we agree?
-    - add to the isse the namings of 2-3 feature branches (depending on class size) to be used in exercise 1.
+    - Add to the issue the namings of 2 feature branches from Req 6.1-2 to be used in exercise 1.
 
     !!! note "Three ways to name a branch"
 
         - Issues: #45: Concrete examples
         - Features: GUI module
         - Personal: Björn
-
 
 ## Exercises
 
@@ -311,9 +310,11 @@ gitGraph
     commit id: "Modify my file"
 ```
 
+- Create a .py file describing the content of the issue
+
+- Work on GitHub
 
 ### Exercise 2: create, switch and delete a test branch
-
 
 ```mermaid
 gitGraph
