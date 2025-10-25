@@ -203,6 +203,8 @@ that you can assign to your fellow team members.
 
 ![Python logo](python_logo.png)
 
+<!-- markdownlint-disable MD013 --><!-- Weirdly the last url fails to be ignored, hence will break 80 characters per line -->
+
 - `[Yuan et al., 2014]`
   Yuan, Ding, et al.
   "Simple testing can prevent most critical failures:
@@ -212,3 +214,5 @@ that you can assign to your fellow team members.
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 - `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)
+
+<!-- markdownlint-enable MD013 -->
