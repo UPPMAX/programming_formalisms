@@ -38,10 +38,9 @@ tags:
     - **R**eusable
         - Is there a license allowing others to re-use?
 
-
 ## Opening discussions
 
-!!! info 
+!!! info
 
     Choose one or several!
 
@@ -92,14 +91,6 @@ Sharing code:
 - "I did all the ground work and they get to do the interesting science?"
 - Sharing code and encouraging _derivative work_ may boost your academic impact.
 - But will your work be visible if it is used two levels deep down?
-
-??? info "Read more:  Why is software often treated differently from papers?
-
-    **Comparing sharing papers and sharing code**
-
-    <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
-
-    https://coderefinery.github.io/social-coding/social-coding/
 
 ### Journal policies as motivation for sharing
 
@@ -195,12 +186,10 @@ How do you turn your own small project into the next NumPy? Do you want to?
     - Trust and community
       > ... somebody you trust recommended it?
     
-... most of which you have or will learn during this
-[CodeRefinery](https://coderefinery.org) workshop!
+    ... most of which you have or will learn during the 
+    [CodeRefinery](https://coderefinery.org) workshop!
 
 ## Sharing or not sharing?
-
-<img src="https://github.com/coderefinery/social-coding/blob/main/content/img/in-out.jpg?raw=true" alt="Our work depends on ideas, articles, data, and software" width="600"/>
 
 > Whether and what we can share depends on how we obtained the components.
 
@@ -217,7 +206,7 @@ How do you turn your own small project into the next NumPy? Do you want to?
 !!! note "The Turing Way"
 
     - The Turing Way is an open science, open collaboration, and community-driven project.
-    - We involve and support a diverse community of contributors to make data science accessible, comprehensible and effective for everyone.
-    - Our goal is to provide all the information that researchers, data scientists, software engineers, policymakers, and other practitioners in academia, industry, government and the public sector need to ensure that the projects they work on are easy to reproduce and reuse.
+    - We involve and support a diverse community of contributors **to make data science accessible, comprehensible and effective for everyone**.
+    - Our **goal is to provide all the information** that researchers, data scientists, software engineers, policymakers, and other practitioners in academia, industry, government and the public sector need **to ensure that the projects they work on are easy to reproduce and reuse**.
     - [The Turing Way Handbook](https://book.the-turing-way.org/index.html)
 
