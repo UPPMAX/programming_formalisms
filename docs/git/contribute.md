@@ -291,10 +291,6 @@ Now do the same for team member B.
     See the
     ['Programming Formalisms, 'Apply merge' exercise 3' YouTube video](https://youtu.be/UXSKm_RvcLw)
 
-## Goals
-
-- [ ] explain and evaluate the usefulness of git Pull Request with code review
-
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
