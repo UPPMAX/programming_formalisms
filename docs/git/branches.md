@@ -266,10 +266,10 @@ In VS Code
 
 ### Lets's look at Björn's input and practice code review already (together)!
 
-![Commit_add data requirements](Commit_add data requirements.png)
-![bjorn branch](bjorn branch.png)
-![No contribution info](No contribution info.png)
-![Compare & pull request_bjorn](Compare & pull request_bjorn.png)
+![Commit_add data requirements](Commit_add_data_requirements.png)
+![bjorn branch](bjorn_branch.png)
+![No contribution info](No_contribution info.png)
+![Compare & pull request_bjorn](Compare_pull_request_bjorn.png)
 ![PR_add_reqs6](PR_add_reqs6.png)
 ![PR_overview](PR_overview.png)
 
