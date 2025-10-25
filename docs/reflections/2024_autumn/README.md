@@ -1,8 +1,3 @@
----
-tags:
-  - reflections
----
-
 # Reflections autumn 2024
 
 - [2024-11-15 by Richel](20241115_onboarding_richel.md)
