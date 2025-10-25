@@ -39,7 +39,11 @@ tags:
         - Is there a license allowing others to re-use?
 
 
-## Discussion in groups
+## Opening discussions
+
+!!! info 
+
+    Choose one or several!
 
 ??? question "1: Why would I want to share my scripts/code/data?"
 
@@ -71,17 +75,6 @@ tags:
     - H: It is too early, I am just prototyping, I will write version to distribute later
     - I: Worried about licensing and legal matters, as they are very complicated
 
-
-??? question "3: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?"
-
-??? info "Read more:  Why is software often treated differently from papers?
-
-    **Comparing sharing papers and sharing code**
-
-    <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
-
-    https://coderefinery.github.io/social-coding/social-coding/
-
 ## Sharing code and Citation
 
 Citation as one form of academic credit to motivate sharing papers.
@@ -100,7 +93,15 @@ Sharing code:
 - Sharing code and encouraging _derivative work_ may boost your academic impact.
 - But will your work be visible if it is used two levels deep down?
 
-## Journal policies as motivation for sharing
+??? info "Read more:  Why is software often treated differently from papers?
+
+    **Comparing sharing papers and sharing code**
+
+    <img src="https://github.com/coderefinery/social-coding/blob/main/content/img/sharing-papers.jpg?raw=true" alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" width="600"/>
+
+    https://coderefinery.github.io/social-coding/social-coding/
+
+### Journal policies as motivation for sharing
 
 ??? info "From [Science editorial policy](https://www.sciencemag.org/authors/science-journals-editorial-policies)"
 
@@ -125,16 +126,16 @@ Sharing code:
 However [a study](https://www.pnas.org/content/115/11/2584) showed that despite
 these policies, many people still do not share their code 😞.
 
-## Motivation for open source software
+!!! note "Motivation for open source software"
 
-- Enable derivative work
-- Do not lock yourself out of own code
-- Attract developers who want to be able to show the coding work on their CVs
-- Tightly regulated domains require open source
-- Open-source software (OSS) can lead to more engagement from industry which may lead to more impact
-- If it's not open, it is not likely to become standard
+    - Enable derivative work
+    - Do not lock yourself out of own code
+    - Attract developers who want to be able to show the coding work on their CVs
+    - Tightly regulated domains require open source
+    - Open-source software (OSS) can lead to more engagement from industry which may lead to more impact
+    - If it's not open, it is not likely to become standard
 
-??? question "Sharing software is also scary. Why?"
+??? question "Sharing software is also scary. Why? (And solutions)"
 
     - **Fear of being scooped**
       > A license can avoid it, and you can release when you are ready. Anyway, it is
@@ -171,36 +172,29 @@ How do you turn your own small project into the next NumPy? Do you want to?
 
 ### What contributes to reusability?"
 
-What contributes to you being able to reuse stuff that others make, and others
-(or you) being able to reuse your stuff? When you find a repository with code
-you would like to reuse, you may look at the following things to determine its
-reusability:
-    
-!!! note
+??? question "3: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?"
 
-    This can be now reconnected to question 3 (above).
+    - Date of last code change
+      > ... is the project abandoned?
+    - Release history
+      > ... how about stability and backwards-compatibility?
+    - Versioning
+      > ... will it be painful to upgrade?
+    - Number of open pull requests and issues
+      > ... are they followed-up?
+    - Installation instructions
+      > ... will it be difficult to get it running?
+    - Example
+      > ... will it be difficult to get started?
+    - License
+      > ... am I allowed to use it?
+    - Contribution guide
+      > ... how to contribute and decision process?
+    - Code of conduct
+      > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
+    - Trust and community
+      > ... somebody you trust recommended it?
     
-- Date of last code change
-  > ... is the project abandoned?
-- Release history
-  > ... how about stability and backwards-compatibility?
-- Versioning
-  > ... will it be painful to upgrade?
-- Number of open pull requests and issues
-  > ... are they followed-up?
-- Installation instructions
-  > ... will it be difficult to get it running?
-- Example
-  > ... will it be difficult to get started?
-- License
-  > ... am I allowed to use it?
-- Contribution guide
-  > ... how to contribute and decision process?
-- Code of conduct
-  > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
-- Trust and community
-  > ... somebody you trust recommended it?
-
 ... most of which you have or will learn during this
 [CodeRefinery](https://coderefinery.org) workshop!
 
