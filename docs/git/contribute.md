@@ -307,6 +307,7 @@ Now do the same for team member B.
 ## Summary
 
 
+
 ## Goals
 
 - [ ] explain and evaluate the usefulness of git Pull Request with code review
