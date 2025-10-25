@@ -85,6 +85,19 @@ ggplot2::ggplot(
 
 ggplot2::ggsave(filename = "20251024_average_confidences_per_question.png", width = 6, height = 7)
 
-t_sessions_taught <- t |> dplyr::filter(is_richel)
+## Richel-only part
+
+t <- t |> dplyr::filter(is_richel)
 success_score <- mean(t$grade / 5.0)
 readr::write_lines(x = success_score, "20251024_success_score_richel.txt")
+
+average_confidences <- average_confidences |> dplyr::filter(is_richel)
+
+ggplot2::ggplot(
+  average_confidences,
+  ggplot2::aes(y = learning_outcome, x = mean)
+) +
+  ggplot2::geom_bar(stat = "identity") +
+  ggplot2::geom_vline(xintercept = mean(average_confidences$mean))
+
+ggplot2::ggsave(filename = "20251024_average_confidences_per_question_richel.png", width = 6, height = 7)
