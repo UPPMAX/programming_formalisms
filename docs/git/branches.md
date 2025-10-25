@@ -104,7 +104,7 @@ In VS Code
     git branch new-feature  # create branch, switch to it
     git add/commit                   # work, work, work, ..., and test
     git switch master          # once feature is ready, switch back to master
-    (git checkout <branch>)     # Old commead for switching branch, but also going back in history to earlier commit
+    (git checkout <branch>)     # Old command for switching branch, but also going back in history to earlier commit
     git branch                   # make clear which branch you are in
     git merge new-feature        # merge work to present branch
     git branch -d new-feature    # remove branch
@@ -133,7 +133,7 @@ In VS Code
     - ![network_GH](../img/network_GH.png)
 
     - [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
-    - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/network)
+    - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/network)
 
 - VS Code
 
@@ -271,7 +271,7 @@ gitGraph
 - **On your local computer:**
     - update the repository (pull)
     - switch to the new branch
-    - change the content of the repository, for example,
+    - change the content of the repository
       by creating a file in `learners/[your_name]/[your_name]_is_on_[your_branch_name]`
     - push your changes online.
 - On **GitHub**, verify that your changes on your branch can be found online

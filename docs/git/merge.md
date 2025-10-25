@@ -188,7 +188,12 @@ branches using GitHub
 
 ## Exercises
 
-### Exercise 1: practice merging `git` branches using the GitHub interface
+!!! info "Content"
+
+    1. Practice merging `git` branches using the GitHub interface
+    2. Practice merge conflicts between branches using GitHub
+
+### Exercise 1: Practice merging `git` branches using the GitHub interface
 
 !!!- info "Learning outcomes"
 
@@ -215,15 +220,15 @@ gitGraph
 ```
 
 - You work in a pair or trio
-- On **GitHub**, create a branch for person A, e.g. `anna` that branches off from `develop`
-- On **GitHub**, use the branch of person A and create a new commit.
+- On **GitHub**, create a branch for **person A**, e.g. `anna` that branches off from `develop`
+- On **GitHub**, use the branch of **person A** and create a new commit.
 
 ???- question "How should it look like?"
 
     ![commit_branch_GH](../img/commit_branch_GH.png)
 
-- On **GitHub**, create a branch for person B, e.g. `bertil` that branches off from `anna`
-- On **GitHub**, use the branch of person B and create a new commit.
+- On **GitHub**, create a branch for **person B**, e.g. `bertil` that branches off from `anna`
+- On **GitHub**, use the branch of **person B** and create a new commit.
 - On GitHub, use web interface to create a Pull Request from `bertil` to `anna`.
 
 ???- question "How should it look like?"
@@ -241,28 +246,8 @@ gitGraph
 
 - On GitHub, the other person approves the Pull Request and merges
 
-### (Extra) exercise 2: Practice merging git branches locally
 
-!!! tip
-
-    - Do this individually
-    - But you can still help each-other!
-
-Continue with the branch you created in last session.
-In **VS CODE**
-
-- Pull/Sync!
-- You may branch off from `main` or `develop` (if it exists).
-- Go the the branch you created
-- Merge with the branch you branched off from, ``develop`` or ``main``
-
-![merge_VSC](../img/merge_VSC.png)
-
-- Then delete (from same drop-down menu as for merge)
-
-### Merging in GitHub: We'll make a similar exercise in the next session instead
-
-### Exercise 3: Practice merge conflicts between branches using GitHub
+### Exercise 2: Practice merge conflicts between branches using GitHub
 
 !!! tip
 
@@ -293,7 +278,7 @@ gitGraph
 
 - Create a merge conflict between two branches, e.g. a topic branch
   and the main branch.
-- You can do so by following the structure from the figure above
+- You can do so by following the structure from the figure above that
   shows the minimal git branching history to do so.
 
 ???- info "Answers which you may use directly if you want to"
@@ -314,7 +299,7 @@ gitGraph
 
     - Click the button!
 
-    You will be guided in solvinfg the conflict
+    You will be guided in solving the conflict
 
     - Modify the file to have the texts merged.
 
@@ -325,6 +310,31 @@ gitGraph
     ![PR_success_GH](../img/PR_success_GH.png)
 
     - You may delete the old branch from here if you want!
+
+### (Optional) exercise 3: Practice merging git branches locally (without conflict)
+
+!!! tip
+
+    - Do this individually
+    - But you can still help each-other!
+
+Continue with the branch you created in last session.
+In **VS CODE**
+
+- Pull/Sync!
+- You may branch off from `main` or `develop` (if it exists) with the your name as a branch name.
+- Go the the branch you created.
+- Modify the README file in learners/<your name>, e.g. add the line `Anna was here`
+      at the bottom
+    - commit with good message, it says "commit directly to <you name>")
+- Merge with the branch you branched off from, ``develop`` or ``main``
+
+![merge_VSC](../img/merge_VSC.png)
+
+- Then delete (from same drop-down menu as for merge)
+- Push!
+
+### Merging in GitHub: We'll make a similar exercise in the next session instead
 
 ## Summary
 
