@@ -26,7 +26,6 @@ visualising
 Pagess
 Rumbaugh
 modelling
-diagrammes
 omg
 behavioural
 Buisning
