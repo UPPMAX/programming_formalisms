@@ -128,17 +128,16 @@ In VS Code
 
 - We can get an overview of graphs
 
-- GitHub
+??? info "GitHub"
 
-    - ![network_GH](../img/network_GH.png)
+    ![network_GH](../img/network_GH.png)
 
     - [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
     - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/network)
 
-- VS Code
+??? info "VS Code"
 
     - ![git_graph_VSC](../img/git_graph_VSC.png)
-
 
 ???- tip "Graph alias in command line"
 
@@ -183,6 +182,11 @@ In VS Code
         commit id: "rm print"
         ```
         
+**Overview workflow**
+
+![git branches](../img/git_branches.png)
+
+
 ## Extra: ``git diff``
 
 ??? tip "Show unstaged/uncommitted modifications"
@@ -243,16 +247,73 @@ In VS Code
     - Does changing a branch change the content of your local computer? Why?
     - Does deleting a branch create a new version? Why?
 
+## The project: From requirement to branch
+
+!!! note workflow of project
+
+    1. requirement
+    2. issue
+    3. branching
+    4. merging/pull request
+    5. code review
+
+    Steps:
+
+    - branching
+    - merging/pull request
+    - code review
+    - issue
+
+### Lets's look at Björn's input and practice code review already (together)!
+
+??? example "Björns new requirements"
+
+    - Updated information on requirements
+    - Björn used a branch
+    - Wants to merge (becomes Pull request on GitHub)
+
+??? example "Approve Björns new requirements"
+
+    - Lets look and fix together
+    - Code review!
+
+??? example "Look Björns new Issue"
+
+    - Do we agree?
+    - add to the isse the namings of 2-3 feature branches (depending on class size) to be used in exercise 1.
+
+    !!! note "Three ways to name a branch"
+
+        - Issues: #45: Concrete examples
+        - Features: GUI module
+        - Personal: Björn
+
+
 ## Exercises
-
-!!! tip "Have VS code side-by-side with GitHub window"
-
-### Exercise 1: create, switch and delete a `git` branch
 
 ???- info "Learning outcomes"
 
     - Create, switch and delete a `git` branch
     - Build up experience using git without troubleshooting
+
+!!! tip "Have VS code side-by-side with GitHub window"
+
+### Exercise 1: Create a and switch to a project branch
+
+The groups create 2-3 branches according to issue above.
+
+```mermaid
+gitGraph
+    commit id: "Before start"
+    commit id: "Branching version"
+    branch sven
+    checkout sven
+    commit id: "Modify my file"
+```
+
+
+### Exercise 2: create, switch and delete a test branch
+
 
 ```mermaid
 gitGraph
