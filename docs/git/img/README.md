@@ -1,1 +1,1 @@
-# Images connected to stteps in the project
+# Images connected to steps in the project
