@@ -249,7 +249,7 @@ In VS Code
 
 ## The project: From requirement to branch
 
-!!! note workflow of project
+!!! note "Workflow of project"
 
     1. requirement
     2. issue
@@ -257,14 +257,16 @@ In VS Code
     4. merging/pull request
     5. code review
 
-    Steps:
 
-    - branching
-    - merging/pull request
-    - code review
-    - issue
+### Let's look at Björn's input and practice code review already (together)
 
-### Lets's look at Björn's input and practice code review already (together)
+Steps:
+
+- branching
+- merging/pull request
+- code review
+- issue
+
 
 ??? question "Commit_add data requirements"
 
