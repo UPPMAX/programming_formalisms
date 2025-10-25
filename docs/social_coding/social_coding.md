@@ -187,7 +187,7 @@ How do you turn your own small project into the next NumPy? Do you want to?
     - Trust and community
       > ... somebody you trust recommended it?
     
-    ... most of which you have or will learn during the 
+    ... most of which you have or will learn during the
     [CodeRefinery](https://coderefinery.org) workshop!
 
 ## Sharing or not sharing?
