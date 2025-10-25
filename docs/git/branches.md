@@ -266,6 +266,13 @@ In VS Code
 
 ### Lets's look at Björn's input and practice code review already (together)!
 
+![Commit_add data requirements](Commit_add data requirements.png)
+![bjorn branch](bjorn branch.png)
+![No contribution info](No contribution info.png)
+![Compare & pull request_bjorn](Compare & pull request_bjorn.png)
+![PR_add_reqs6](PR_add_reqs6.png)
+![PR_overview](PR_overview.png)
+
 ??? example "Björns new requirements"
 
     - Updated information on requirements
