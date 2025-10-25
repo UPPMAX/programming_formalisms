@@ -318,10 +318,6 @@ Now do the same for team member B.
         - &#9745; in-code documentation
         - &#9744; documentation for users
 
-!!! info "See also"
-
-    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/same-repository/)
-
 ## Reference Git
 
 - [Book 'Pro Git', chapter 'git branching'](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
