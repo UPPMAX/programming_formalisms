@@ -484,6 +484,24 @@ Develop a function called `is_prime`.
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
+## 5.5. Exercise 5: your function
+
+Think of a function you want to write, or
+pick one [of the many example TDD functions](../misc/functions.md).
+
+???- question "Does this still work for complex functions?"
+
+    Yes. TDD can always be applied.
+
+???- question "Could you show me an example of well-tested complex functions?"
+
+    Yes.
+
+    Here are some:
+
+    - [Tests for a C++ chess game](https://github.com/richelbilderbeek/conquer_chess/blob/main/src/test_game.cpp)
+    - [Tests for an R phylenetics tool](https://github.com/ropensci/beautier/blob/main/tests/testthat/test-is_mcmc.R)
+
 ## 6. Conclusion
 
 - This session, we wrote **unit tests**
