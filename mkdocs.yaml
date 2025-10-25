@@ -74,7 +74,7 @@ nav:
     - Reading material: reading/README.md
     - Reflections: reflections/README.md
     - Retrospective: misc/retrospective.md
-    - Shared document: misc/shared_document.md
+    - Shared document: shared_document.md
     - Shared documents: shared_documents/README.md
     - SciLifeLab course registration procedure: misc/scilifelab_course_registration.md
     - Wrap-up: misc/wrap_up.md
@@ -147,25 +147,28 @@ not_in_nav: |
   common_practices/pages/notes_code_review_long.md
   common_practices/slides/notes_code_review.md
   common_practices/slides/README.md
+  communication/autumn_2025/README.md
+  communication/autumn_2025/welcome_letter.md
   communication/README.md
   communication/summer_2025/README.md
   communication/summer_2025/welcome_letter.md
-  data_structures/built_in_data_structures.md
-  data_structures/README.md
   data/counts/2023_autumn/README.md
   data/counts/2023_summer/README.md
   data/counts/2024_autumn/README.md
   data/counts/2024_summer/README.md
+  data/counts/2025_autumn/README.md
+  data_structures/built_in_data_structures.md
+  data_structures/README.md
   deployment/img/README.md
   deployment/not_used/reproducible.md
   deployment/spring2024/deploy.md
   deployment/spring2024/documentation.md
+  development/README.md
   development_design/excercise_1_Design.md
   development_design/ModularProgramming.md
   development_design/Needleman_Wunsch_activity.md
   development_design/ReadmatSoftware.md
   development_design/README.md
-  development/README.md
   emails/certificates.md
   emails/intake_form.md
   emails/onboarding.md
@@ -189,6 +192,12 @@ not_in_nav: |
   evaluations/2024_summer/20240425.md
   evaluations/2024_summer/20240426.md
   evaluations/2024_summer/README.md
+  evaluations/2025_autumn/20251023.md
+  evaluations/2025_autumn/20251024.md
+  evaluations/2025_autumn/20251027.md
+  evaluations/2025_autumn/20251028.md
+  evaluations/2025_autumn/20251029.md
+  evaluations/2025_autumn/README.md
   evaluations/2025_summer/20250505.md
   evaluations/2025_summer/20250506.md
   evaluations/2025_summer/20250507.md
@@ -234,10 +243,16 @@ not_in_nav: |
   lesson_plans/2024_autumn/README.md
   lesson_plans/2024_summer/README.md
   lesson_plans/2024_summer/richel/README.md
+  lesson_plans/2025_autumn/20251023_richel.md
+  lesson_plans/2025_autumn/20251024_richel.md
+  lesson_plans/2025_autumn/20251027_richel.md
+  lesson_plans/2025_autumn/20251028_richel.md
+  lesson_plans/2025_autumn/20251029_richel.md
+  lesson_plans/2025_autumn/README.md
   lesson_plans/2025_summer/20250505_richel.md
   lesson_plans/2025_summer/20250506_richel.md
-  lesson_plans/2025_summer/20250507_richel.md
   lesson_plans/2025_summer/20250507.md
+  lesson_plans/2025_summer/20250507_richel.md
   lesson_plans/2025_summer/20250508_richel.md
   lesson_plans/2025_summer/20250509_richel.md
   lesson_plans/2025_summer/README.md
@@ -255,7 +270,6 @@ not_in_nav: |
   meeting_notes/20231020.md
   meeting_notes/20231110.md
   meeting_notes/20231115.md
-  meeting_notes/2024_autumn.md
   meeting_notes/20240207.md
   meeting_notes/20240221.md
   meeting_notes/20240228.md
@@ -273,24 +287,26 @@ not_in_nav: |
   meeting_notes/20241010.md
   meeting_notes/20241018.md
   meeting_notes/20241025.md
-  meeting_notes/20241029_nbis_training_hub.md
   meeting_notes/20241029.md
+  meeting_notes/20241029_nbis_training_hub.md
   meeting_notes/20241108.md
   meeting_notes/20241115.md
   meeting_notes/20241129.md
   meeting_notes/20241217.md
+  meeting_notes/2024_autumn.md
+  meeting_notes/next.md
   misc/evaluation.md
   monday_intro.md
   optimisation/README.md
   past_course_dates.md
-  project_start/not_used/startup_old.md
-  project_start/spring2024/startup.md
   project/projects.md
   projects/example_project/DPAI_requirements.md
   projects/example_project/DPD_assisted.md
   projects/example_project/DPD_unassisted.md
   projects/example_project/DPUA_requirementspecification.md
   projects/example_project/Example_project_designProcessDocumentation.md
+  project_start/not_used/startup_old.md
+  project_start/spring2024/startup.md
   recursive_algorithms/README.md
   reflections/2023_autumn/course_reflection.md
   reflections/2023_autumn/day_3_reflection.md
@@ -311,6 +327,12 @@ not_in_nav: |
   reflections/2024_summer/20240425_richel.md
   reflections/2024_summer/20240426_richel.md
   reflections/2024_summer/README.md
+  reflections/2025_autumn/20251023.md
+  reflections/2025_autumn/20251024.md
+  reflections/2025_autumn/20251027.md
+  reflections/2025_autumn/20251028.md
+  reflections/2025_autumn/20251029.md
+  reflections/2025_autumn/README.md
   reflections/2025_summer/20250505.md
   reflections/2025_summer/20250506.md
   reflections/2025_summer/20250507.md
@@ -328,15 +350,23 @@ not_in_nav: |
   shared_documents/2024_autumn/20241120.md
   shared_documents/2024_autumn/20241121.md
   shared_documents/2024_autumn/20241122.md
+  shared_documents/2024_autumn/README.md
   shared_documents/2024_summer/20240422.md
   shared_documents/2024_summer/20240423.md
   shared_documents/2024_summer/20240424.md
   shared_documents/2024_summer/20240425.md
   shared_documents/2024_summer/20240426.md
-  social_coding/not_used/notes_social_coding_long.md
+  shared_documents/2024_summer/README.md
+  shared_documents/2025_autumn/20251023.md
+  shared_documents/2025_autumn/20251024.md
+  shared_documents/2025_autumn/20251027.md
+  shared_documents/2025_autumn/20251028.md
+  shared_documents/2025_autumn/20251029.md
+  shared_documents/2025_autumn/README.md
   social_coding/not_used/notes_social_coding.md
+  social_coding/not_used/notes_social_coding_long.md
   summary_week.md
   testing/README.md
-  testing/testing_in_a_team.md
   testing/testing_indeterminate_functions.md
+  testing/testing_in_a_team.md
   watching/README.md
