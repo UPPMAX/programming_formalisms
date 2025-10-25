@@ -264,7 +264,7 @@ In VS Code
     - code review
     - issue
 
-### Lets's look at Björn's input and practice code review already (together)!
+### Lets's look at Björn's input and practice code review already (together)
 
 ??? question "Commit_add data requirements"
 
