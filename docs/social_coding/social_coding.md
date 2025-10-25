@@ -6,9 +6,6 @@ tags:
 
 # Social coding
 
-> This material is based on the Social Coding lecture by Code Refinery:
-> [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
-
 
 !!! info "Learning outcomes of 'Social coding'"
 
@@ -16,9 +13,13 @@ tags:
 
     - have an overview of motivations, benefits, but also risks of sharing and reusing code.
 
+!!! note
 
-- The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
-- **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
+    - This material is based on the Social Coding lecture by Code Refinery:
+    - [Social coding](https://github.com/coderefinery/social-coding/blob/main/content/social-coding.md) by [CodeRefinery](https://coderefinery.org/) is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
+
+    - The **Open Science movement** encourages researchers to share research output beyond the contents of a published academic article (and possibly supplementary information).
+    - **Open-source license** is a type of license for computer software and other products that allows the source code, blueprint or design to be used, modified and/or shared under defined terms and conditions.
 
 !!! admonition "FAIR"
 
