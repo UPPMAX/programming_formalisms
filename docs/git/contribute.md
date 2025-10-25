@@ -307,9 +307,9 @@ Now do the same for team member B.
         - &#9744; Design
     - &#9745; Testing
         - Different levels
-    - &#975; Collaboration
-        - &#975; GitHub
-        - &#975; pull requests
+    - &#9745; Collaboration
+        - &#9745; GitHub
+        - &#9745; pull requests
     - &#9744; Sharing
         - &#9744; open science
         - &#9744; citation
