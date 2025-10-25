@@ -183,8 +183,10 @@ In VS Code
         commit id: "rm print"
 
         ```
+## Extra: ``git diff``
 
-!!! tip "Show unstaged/uncommitted modifications"
+
+??? tip "Show unstaged/uncommitted modifications"
 
     - When you are done editing the files, try "git diff"
     - When you select a file in the Source Control view, the editor shows a diff view that highlights the file changes, compared to the previously committed file.
