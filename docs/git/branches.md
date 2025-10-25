@@ -181,10 +181,9 @@ In VS Code
         commit id: "4 modular files"
         checkout main
         commit id: "rm print"
-
         ```
+        
 ## Extra: ``git diff``
-
 
 ??? tip "Show unstaged/uncommitted modifications"
 
