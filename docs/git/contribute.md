@@ -7,7 +7,7 @@ tags:
   - code review
 ---
 
-# Merging and contributing with code review
+# Contributing and code reviews
 
 !!! questions
 
