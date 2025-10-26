@@ -268,7 +268,7 @@ Steps:
 - issue
 
 
-??? example "Björns new requirements, using GitHub"
+??? example "Björn's new requirements, using GitHub"
 
     - Updated information on requirements
 
@@ -306,12 +306,12 @@ Steps:
 
         ![PR_overview](img/PR_overview.png)
 
-??? example "Approve Björns new requirements"
+??? example "Approve Björn's new requirements"
 
     - Lets look and fix together
     - Code review!
 
-??? example "Look Björns new Issue"
+??? example "Look at Björn's new Issue"
 
     - Do we agree?
     - Add to the issue the namings of 2 feature branches from Req 6.1-2 to be used in exercise 1.
@@ -335,22 +335,23 @@ Steps:
 
 - The 2 groups create one branch each according to issue above.
 - Go to the branch
-- Create a .py file which can be a function in the full program with a good name
-- Make a docstring describing what the function should do
-- We will not go further with the file now, so let's go back to mai
+- Create a .py file which can be a function in the full program with a good name in the ``src/weather`` directory
+- Copy-paste the suitable example below.
+- (If there is time) Make a docstring describing what the function should do
+- We will not go further with the file now, so let's go back to ``main``
 
-??? example "Exampe code 6.1 using ``pandas``"
+??? example "Example code 6.1 (read Uppsala 1722-2022) using ``pandas``"
 
     ```python
     import pandas as pd
 
-    df=pd.read_csv("../data/uppsala_tm_1722-2022.dat",sep='\s+')
+    df=pd.read_csv("../../data/uppsala_tm_1722-2022.dat",sep='\s+')
     print(df)
     df.columns=['Year','Month','Day','T','Tcorr','Data id']
     print(df.Tcorr)
     ```
 
-??? example "Exampe code 6.2 using ``pandas``"
+??? example "Example code 6.2 (read other Swedish stations) using ``pandas``"
 
     ```python
     column_names=['Date','Time','Temp']
@@ -367,13 +368,11 @@ Workflow
 gitGraph
     commit id: "Before start"
     commit id: "Branching version"
-    branch <name>
-    checkout <name>
+    branch featurename
+    checkout featurename
     commit id: "New python file"
     checkout main
 ```
-
-
 
 ??? info "Answer"
 
@@ -383,11 +382,11 @@ gitGraph
     ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
 
     - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
-    Done!
-    
-
-  
-
+    - Now do the work in the branch.
+    - Save/commit
+    - DO NOT MERGE!
+    - Click on Branch and choose ``main``
+    - Done!
 
 ### Exercise 2: create, switch and delete a test branch LOCALLY
 
