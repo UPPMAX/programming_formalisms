@@ -84,14 +84,15 @@ on the weather project data. This part of the draft paper is as below:
 
     To calculate the average daily temperate, we take the average of
     interpolated temperatures measured at 0:30, 1:30, etc.,
-    until and including 23:30. (note to others: see the sketch below).
+    until and including 23:30. (note to others: see the sketch below)
+    (note to others: what to do with daylight saving time?).
 
     ![Sketch](sketch.png)
 
     > My sketch. Todo: remove this from final paper
 
     We compare these yearly average tempares with a two-sided
-    Kolmogorov–Smirnov test (so to avoid assuming an increase/decrease,
+    Kolmogorov-Smirnov test (so to avoid assuming an increase/decrease,
     nor a distribution on these average temperatures),
     with the null hypothesis that these distributions are identical.
 
@@ -154,9 +155,6 @@ that you can assign to your fellow team members.
 - `[Janzen & Saiedian, 2006]` Janzen, David S., and Hossein Saiedian.
   "Test-driven learning: intrinsic integration of testing into the CS/SE
   curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
-
-![Langr, 2013](book_langr.jpg)
-
 - `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better.
   "Modern C++ Programming with Test-Driven Development." (2013).
 - `[Madeyski et al., 2010]` Madeyski, Lech, and
@@ -169,9 +167,6 @@ that you can assign to your fellow team members.
 - `[Martin, 2009]` Martin, Robert C.
   Clean code: a handbook of agile software craftsmanship.
   Pearson Education, 2009.
-
-![Martin, 2011](martin_the_clean_coder.jpg)
-
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
@@ -193,15 +188,10 @@ that you can assign to your fellow team members.
 - `[study I cannot find]` in one of the classics, there was a bar chart that
   showed developers write functions such as `is_prime` with and without TDD
   and showed that TDD was twice as fast. TODO: find this reference
-
-![Thomas & Hunt, 2019](thomas_and_hunt_the_pragmatic_programmer.jpg)
-
 - `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt.
   The Pragmatic Programmer: your journey to mastery.
   Addison-Wesley Professional, 2019.
 - `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
-
-![Python logo](python_logo.png)
 
 <!-- markdownlint-disable MD013 --><!-- Weirdly the last url fails to be ignored, hence will break 80 characters per line -->
 
