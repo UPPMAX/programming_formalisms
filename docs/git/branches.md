@@ -590,7 +590,7 @@ gitGraph
 
     > - On GitHub, verify that your changes on your branch can be found online
 
-    ![github_pushed_to_branch](github_pushed_to_branch.png){width: 50%}
+    ![github_pushed_to_branch](github_pushed_to_branch.png){width: 30%}
 
     - Make sure you look at the correct branch, as displayed by the "drop-down button".
     - Then your commit message shows up in the yellow section
@@ -610,7 +610,7 @@ gitGraph
 
     ???- admonition "GitHub"
 
-        ![github_view_branches_annotated](github_view_branches_annotated.png)
+        ![github_view_branches_annotated](github_view_branches_annotated.png){width: 50%}
 
         Click on 'Branches', as shown in the image above.
 
