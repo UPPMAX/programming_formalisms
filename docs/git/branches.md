@@ -329,26 +329,67 @@ Steps:
     - Create, switch and delete a `git` branch
     - Build up experience using git without troubleshooting
 
-!!! tip "Have VS code side-by-side with GitHub window"
-
 ### Exercise 1: Create a and switch to a project branch
 
-The groups create 2-3 branches according to issue above.
+!!! tip "Use GitHub"
+
+- The 2 groups create one branch each according to issue above.
+- Go to the branch
+- Create a .py file which can be a function in the full program with a good name
+- Make a docstring describing what the function should do
+- We will not go further with the file now, so let's go back to mai
+
+??? example "Exampe code 6.1 using ``pandas``"
+
+    ```python
+    import pandas as pd
+
+    df=pd.read_csv("../data/uppsala_tm_1722-2022.dat",sep='\s+')
+    print(df)
+    df.columns=['Year','Month','Day','T','Tcorr','Data id']
+    print(df.Tcorr)
+    ```
+
+??? example "Exampe code 6.2 using ``pandas``"
+
+    ```python
+    column_names=['Date','Time','Temp']
+    df = pd.read_csv('data/smhi_opendata_1_97530_20250224_081022.csv', header=None, delimiter=";", names=column_names,skiprows = 10, usecols=[0, 1, 2])
+    print(df)
+    print(df.Date)
+    print(df.Time)
+    print(df.Temp)
+    ```
+
+Workflow
 
 ```mermaid
 gitGraph
     commit id: "Before start"
     commit id: "Branching version"
-    branch sven
-    checkout sven
-    commit id: "Modify my file"
+    branch <name>
+    checkout <name>
+    commit id: "New python file"
+    checkout main
 ```
 
-- Create a .py file describing the content of the issue
 
-- Work on GitHub
 
-### Exercise 2: create, switch and delete a test branch
+??? info "Answer"
+
+    - For our shared GitHub repository, create a branch with the name
+    - You may branch of from `main` or `develop` (ONLY if it exists).    
+
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
+
+    - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
+    Done!
+    
+
+  
+
+
+### Exercise 2: create, switch and delete a test branch LOCALLY
 
 ```mermaid
 gitGraph
