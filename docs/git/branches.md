@@ -268,35 +268,43 @@ Steps:
 - issue
 
 
-??? question "Commit_add data requirements"
-
-    ![Commit_add data requirements](img/Commit_add_data_requirements.png)
-
-??? question "bjorn branch"
-
-    ![bjorn branch](img/bjorn_branch.png)
-
-??? question "No contribution info"
-
-    ![No contribution info](img/No_contribution info.png)
-
-??? question "Compare & pull request_bjorn"
-
-    ![Compare & pull request_bjorn](img/Compare_pull_request_bjorn.png)
-
-??? question "PR_add_reqs6"
-
-    ![PR_add_reqs6](img/PR_add_reqs6.png)
-
-??? question "PR_overview"
-
-    ![PR_overview](img/PR_overview.png)
-
-??? example "Björns new requirements"
+??? example "Björns new requirements, using GitHub"
 
     - Updated information on requirements
+
+    ??? question "Commit_add data requirements"
+
+        ![Commit_add data requirements](img/Commit_add_data_requirements.png)
+
     - Björn used a branch
-    - Wants to merge (becomes Pull request on GitHub)
+
+    ??? question "bjorn branch"
+
+        ![bjorn branch](img/bjorn_branch.png)
+
+    - Wants to merge
+
+    ??? question "No contribution info"
+
+        ![No contribution info](img/No_contribution_info.png)
+
+    - Need to go to root!
+    
+    ??? question "Compare & pull request_bjorn"
+
+        ![Compare & pull request_bjorn](img/Compare_pull_request_bjorn.png)
+
+    - Open pull request
+    
+    ??? question "PR_add_reqs6"
+
+        ![PR_add_reqs6](img/PR_add_reqs6.png)
+
+    - We find all pull requests (PRs) in the upper menu!
+    
+    ??? question "PR_overview"
+
+        ![PR_overview](img/PR_overview.png)
 
 ??? example "Approve Björns new requirements"
 
