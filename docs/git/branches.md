@@ -83,20 +83,20 @@ One typical workflow:
 - merge new-feature to present branch
 - remove branch
 
-In VS Code
+!!! info "In VS Code"
 
-- Here is where you handle branches
+    - Here is where you handle branches
 
-![branches in VS Code](../img/branch_section_VSC.png)
+    ![branches in VS Code](../img/branch_section_VSC.png)
 
-- Click and you have the possibility to
-    - create a new branch
+    - Click and you have the possibility to
+        - create a new branch
 
-    ![create branch in VS Code](../img/create_branch_VSC.png)
+        ![create branch in VS Code](../img/create_branch_VSC.png)
 
-    - and switch between existing branches
+        - and switch between existing branches
 
-    ![switch branch in VS Code](../img/switch_branch_VSC.png)
+        ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
 ???+ admonition "In command line"
 
@@ -123,6 +123,24 @@ In VS Code
         ```git
         git push --set-upstream origin new-branch
         ```
+
+???+ admonition "On GitHub"
+
+    - You may branch of from `main` or `develop` (ONLY if it exists).
+
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 30%}
+
+    - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
+    - To view all branches
+
+    ![new_branch_GH.png](new_branch_GH.png){width: 50%}
+
+    - The overview
+
+    ![nbranches_GH](branches_GH.png){width: 50%}
+
+    
+
 
 ### Git graph
 
@@ -379,7 +397,7 @@ gitGraph
     - For our shared GitHub repository, create a branch with the name
     - You may branch of from `main` or `develop` (ONLY if it exists).
 
-    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 30%}
 
     - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     - Now do the work in the branch.
@@ -423,13 +441,7 @@ gitGraph
     > - For our shared GitHub repository, create a branch with your first name that is
     >   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
     >   You may branch of from `main` or `develop` (if it exists).
-    >   You may use the **web interface** (easiest!) or use the command line
-
-    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
-
-    Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
-    Done!
-
+ 
     ???- admonition "If you wish to use the command line"
 
         ```git
