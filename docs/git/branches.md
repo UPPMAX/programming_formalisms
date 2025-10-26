@@ -377,7 +377,7 @@ gitGraph
 ??? info "Answer"
 
     - For our shared GitHub repository, create a branch with the name
-    - You may branch of from `main` or `develop` (ONLY if it exists).    
+    - You may branch of from `main` or `develop` (ONLY if it exists).
 
     ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
 
