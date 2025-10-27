@@ -62,6 +62,21 @@ branches using GitHub
     * 6a416b5 add folders and planet code
     ```
 
+???- admonition "GitHub" 
+
+     - Merge
+     
+     ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
+
+     - Be sure that you merge to right branch!
+     - Either 1:
+     
+     ![merge to which branch](img/merge_to_which_branch.png)
+
+     - Or 2:
+     
+     ![note merge branch branch](img/note_merge_branch.png)
+
 - Good practice: Delete branch when done. You won't need it any more!
 
 ## Merge conflicts
@@ -69,7 +84,7 @@ branches using GitHub
 - When merging two branches a conflict can arise *when the same file portion has been modified in two different ways on the two branches*.
 - A merge conflict occurs when ``git`` is unsure how to merge branches and asks a human for help.
 
-!!! example "**Two** branches to be merged"
+??? example "Example: Two branches to be merged"
 
     Based on: <https://coderefinery.github.io/git-intro/conflicts/>
 
@@ -160,7 +175,6 @@ branches using GitHub
 !!! warning
 
     - In GitHub MERGE is called PULL REQUEST!
-    - More in next session
 
 - Conflicts may show up like this:
 
@@ -253,7 +267,7 @@ gitGraph
 - On GitHub, the other person approves the Pull Request and merges
 
 
-### Exercise 2: Practice merge conflicts between branches using GitHub
+### Exercise 2: Practice merge CONFLICTS between branches using GitHub
 
 !!! tip
 
@@ -268,6 +282,7 @@ gitGraph
 ```mermaid
 gitGraph
     commit id: "Before start"
+
     commit id: "Branching version"
     branch anna
     switch anna
@@ -294,7 +309,9 @@ gitGraph
       at the bottom
     - commit with good message, it says "commit directly to <you name>")
 
-    ![commit_branch_GH](../img/commit_branch_GH.png)
+    ??? question "How could that look like?"
+    
+        ![commit_branch_GH](../img/commit_branch_GH.png)
 
     - **change back to main** branch by the "branch button"
     - Modify the same file, e.g. add the line `main person was here`.
