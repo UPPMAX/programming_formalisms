@@ -190,6 +190,8 @@ Before doing the exercises:
 
 The exercise, to be done as a pair:
 
+- Work on a branch for your group, e.g. `lasse_and_maja`.
+  Branch off from `develop`
 - Develop the code together
 - Share code by `push`ing it
 - Agree upon when the code is done
