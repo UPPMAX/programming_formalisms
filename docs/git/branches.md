@@ -124,7 +124,7 @@ One typical workflow:
         git push --set-upstream origin new-branch
         ```
 
-???+ admonition "On GitHub"
+???- admonition "On GitHub"
 
     - You may branch of from `main` or `develop` (ONLY if it exists).
 
@@ -137,7 +137,7 @@ One typical workflow:
 
     - The overview
 
-    ![nbranches_GH](./img/branches_GH.png){width: 50%}
+    ![branches_GH](./img/branches_GH.png){width: 50%}
 
 ### Git graph
 
