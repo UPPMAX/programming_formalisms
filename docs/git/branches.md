@@ -133,11 +133,11 @@ One typical workflow:
     - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     - To view all branches
 
-    ![new_branch_GH.png](img/new_branch_GH.png){width: 50%}
+    ![new_branch_GH.png](./img/new_branch_GH.png){width: 50%}
 
     - The overview
 
-    ![nbranches_GH](img/branches_GH.png){width: 50%}
+    ![nbranches_GH](./img/branches_GH.png){width: 50%}
 
 ### Git graph
 
