@@ -124,7 +124,7 @@ One typical workflow:
         git push --set-upstream origin new-branch
         ```
 
-???+ admonition "On GitHub"
+???- admonition "On GitHub"
 
     - You may branch of from `main` or `develop` (ONLY if it exists).
 
@@ -133,11 +133,11 @@ One typical workflow:
     - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     - To view all branches
 
-    ![new_branch_GH.png](img/new_branch_GH.png){width: 50%}
+    ![new_branch_GH.png](./img/new_branch_GH.png){width: 50%}
 
     - The overview
 
-    ![nbranches_GH](img/branches_GH.png){width: 50%}
+    ![branches_GH](./img/branches_GH.png){width: 50%}
 
 ### Git graph
 
@@ -300,7 +300,7 @@ Steps:
 
 !!! tip "Use GitHub"
 
-- The 2 groups create one branch each according to issue above.
+- The 3 groups create one branch each according to issue above.
 - Go to the branch
 - Create a .py file which can be a function in the full program with a good name in the ``src/weather`` directory
 - Copy-paste the suitable example below.
@@ -329,6 +329,11 @@ Steps:
     print(df.Temp)
     ```
 
+??? example "Example code 6.3 (conenct station name with file name) "
+
+    Make a simple docstring!
+
+    
 Workflow
 
 ```mermaid
