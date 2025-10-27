@@ -300,7 +300,7 @@ Steps:
 
 !!! tip "Use GitHub"
 
-- The 2 groups create one branch each according to issue above.
+- The 3 groups create one branch each according to issue above.
 - Go to the branch
 - Create a .py file which can be a function in the full program with a good name in the ``src/weather`` directory
 - Copy-paste the suitable example below.
@@ -329,6 +329,11 @@ Steps:
     print(df.Temp)
     ```
 
+??? example "Example code 6.3 (conenct station name with file name) "
+
+    Make a simple docstring!
+
+    
 Workflow
 
 ```mermaid
