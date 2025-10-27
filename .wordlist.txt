@@ -52,6 +52,8 @@ behaviour
 Bennekum
 Bhat
 Bilderbeek
+Kolmogorov
+Smirnov
 Bioinformatics
 Boby
 Boehm
