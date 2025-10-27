@@ -69,8 +69,11 @@ branches using GitHub
      ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
 
      - Be sure that you merge to right branch!
+     - Either 1:
      
      ![merge to which branch](img/merge_to_which_branch.png)
+
+     - Or 2:
      
      ![note merge branch branch](img/note_merge_branch.png)
 
@@ -219,6 +222,9 @@ branches using GitHub
 ```mermaid
 gitGraph
     commit id: "Stuff on main"
+    branch develop
+    switch develop
+    commit id: "Stuff on develop"
     branch anna
     switch anna
     commit id: "Some work"
@@ -229,12 +235,12 @@ gitGraph
     switch anna
     merge bertil
     commit id: "Another commit"
-    checkout main
+    checkout develop
     merge anna
 ```
 
 - You work in a pair or trio
-- On **GitHub**, create a branch for **person A**, e.g. `anna` that branches off from `main`
+- On **GitHub**, create a branch for **person A**, e.g. `anna` that branches off from `develop`
 - On **GitHub**, use the branch of **person A** and create a new commit.
 
 ???- question "How should it look like?"
@@ -276,6 +282,7 @@ gitGraph
 ```mermaid
 gitGraph
     commit id: "Before start"
+
     commit id: "Branching version"
     branch anna
     switch anna
