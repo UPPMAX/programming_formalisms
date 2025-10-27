@@ -185,7 +185,7 @@ Before doing the exercises:
   be for a paper. You can use the same analysis
   as done in [the 'TDD at scale' session](../tdd_at_scale/README.md)
   or come up with your own hypothesis.
-  If that is too hard, try 
+  If that is too hard, try
   [one of the many example functions](https://uppmax.github.io/programming_formalisms/misc/functions/)
 
 The exercise, to be done as a pair:
