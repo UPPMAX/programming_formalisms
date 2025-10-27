@@ -62,6 +62,18 @@ branches using GitHub
     * 6a416b5 add folders and planet code
     ```
 
+???- admonition "GitHub" 
+
+     - Merge
+     
+     ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
+
+     - Be sure that you merge to right branch!
+     
+     ![merge to which branch](img/merge_to_which_branch.png)
+     
+     ![note merge branch branch](img/note_merge_branch.png)
+
 - Good practice: Delete branch when done. You won't need it any more!
 
 ## Merge conflicts
@@ -69,7 +81,7 @@ branches using GitHub
 - When merging two branches a conflict can arise *when the same file portion has been modified in two different ways on the two branches*.
 - A merge conflict occurs when ``git`` is unsure how to merge branches and asks a human for help.
 
-!!! example "**Two** branches to be merged"
+??? example "Example: Two branches to be merged"
 
     Based on: <https://coderefinery.github.io/git-intro/conflicts/>
 
@@ -160,7 +172,6 @@ branches using GitHub
 !!! warning
 
     - In GitHub MERGE is called PULL REQUEST!
-    - More in next session
 
 - Conflicts may show up like this:
 
@@ -208,9 +219,6 @@ branches using GitHub
 ```mermaid
 gitGraph
     commit id: "Stuff on main"
-    branch develop
-    switch develop
-    commit id: "Stuff on develop"
     branch anna
     switch anna
     commit id: "Some work"
@@ -221,12 +229,12 @@ gitGraph
     switch anna
     merge bertil
     commit id: "Another commit"
-    checkout develop
+    checkout main
     merge anna
 ```
 
 - You work in a pair or trio
-- On **GitHub**, create a branch for **person A**, e.g. `anna` that branches off from `develop`
+- On **GitHub**, create a branch for **person A**, e.g. `anna` that branches off from `main`
 - On **GitHub**, use the branch of **person A** and create a new commit.
 
 ???- question "How should it look like?"
@@ -253,7 +261,7 @@ gitGraph
 - On GitHub, the other person approves the Pull Request and merges
 
 
-### Exercise 2: Practice merge conflicts between branches using GitHub
+### Exercise 2: Practice merge CONFLICTS between branches using GitHub
 
 !!! tip
 
@@ -294,7 +302,9 @@ gitGraph
       at the bottom
     - commit with good message, it says "commit directly to <you name>")
 
-    ![commit_branch_GH](../img/commit_branch_GH.png)
+    ??? question "How could that look like?"
+    
+        ![commit_branch_GH](../img/commit_branch_GH.png)
 
     - **change back to main** branch by the "branch button"
     - Modify the same file, e.g. add the line `main person was here`.
