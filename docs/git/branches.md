@@ -331,7 +331,7 @@ Steps:
     print(df.Temp)
     ```
 
-??? example "Example code 6.3 (conenct station name with file name) "
+??? example "Example code 6.3 (connect station name with file name)"
 
     Make a simple docstring!
 
@@ -397,7 +397,7 @@ gitGraph
     > - For our shared GitHub repository, create a branch with your first name that is
     >   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
     >   You may branch of from `main` or `develop` (if it exists).
- 
+
     ???- admonition "If you wish to use the command line"
 
         ```git
@@ -631,8 +631,8 @@ gitGraph
              * add salt
              * and mix well
             +* enjoy!
-
             ```
+            
 ## Summary
 
 ```git
