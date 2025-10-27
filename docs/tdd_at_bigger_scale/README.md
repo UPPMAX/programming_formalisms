@@ -569,15 +569,20 @@ as reading a table and selecting rows and columns from it!
 
 ## 5. Exercises
 
+## 5.1. Discuss the steps shown
+
+Go through the steps shown above together.
+
+- Do you agree that the steps taken are reasonable? If not, why?
+- Do you think a mistake has been made? If yes, where?
+- Would you trust the results of this analysis? Why?
+
 ## References
 
 - `[Alkaoud & Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
   "Quality metrics of test suites in test-driven designed applications."
   International Journal of Software Engineering Applications (IJSEA)
   2018 (2018).
-
-![Beck, 2022](beck_tdd_by_example.jpg)
-
 - `[Beck, 2022]` Beck, Kent. Test driven development: By example.
   Addison-Wesley Professional, 2022.
 - `[Bhat & Nagappan, 2006]` Bhat, Thirumalesh, and Nachiappan Nagappan.
