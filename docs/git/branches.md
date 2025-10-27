@@ -128,7 +128,7 @@ One typical workflow:
 
     - You may branch of from `main` or `develop` (ONLY if it exists).
 
-    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 20%}
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 10%}
 
     - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     - To view all branches
@@ -196,8 +196,10 @@ One typical workflow:
         checkout main
         commit id: "rm print"
         ```
+
+## Overview
         
-!!! info "Overview workflow"
+??? info "Overview workflow"
 
     ![git branches](../img/git_branches.png)
 
