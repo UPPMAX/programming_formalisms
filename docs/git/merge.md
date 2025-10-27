@@ -177,6 +177,12 @@ branches using GitHub
 ![conflict-resolution](../img/contributing/conflict-resolution.png)
 
 
+!!! example "Discuss"
+
+    - Merge locally or on GitHub?
+    - Does it matter?
+    - Dependent on "level"?
+
 ???- question "Test"
 
     - What does a merge do?

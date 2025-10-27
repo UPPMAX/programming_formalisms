@@ -125,9 +125,9 @@ The tools/concepts for Developing in scientific computing
 
 !!! note "WHY?"
 
-    - "If I had nine hours to chop down a tree, I'd spend the first six sharpening my axe."
+    - "If I had 6 hours to chop down a tree, I'd spend the first 4 sharpening my axe." (Abraham Lincoln?)
     - Modelling sharpens your axe since it helps you think about what you're going to build, how to seek feedback, and where to make improvements.
-    - It prepares you to build the real thing to reduce any potential risk of failure. "
+    - It prepares you to build the real thing to reduce any potential risk of failure.
 
 
 - find out the requirements what the program shall do

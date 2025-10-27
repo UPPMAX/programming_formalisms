@@ -83,20 +83,20 @@ One typical workflow:
 - merge new-feature to present branch
 - remove branch
 
-In VS Code
+!!! info "In VS Code"
 
-- Here is where you handle branches
+    - Here is where you handle branches
 
-![branches in VS Code](../img/branch_section_VSC.png)
+    ![branches in VS Code](../img/branch_section_VSC.png)
 
-- Click and you have the possibility to
-    - create a new branch
+    - Click and you have the possibility to
+        - create a new branch
 
-    ![create branch in VS Code](../img/create_branch_VSC.png)
+        ![create branch in VS Code](../img/create_branch_VSC.png)
 
-    - and switch between existing branches
+        - and switch between existing branches
 
-    ![switch branch in VS Code](../img/switch_branch_VSC.png)
+        ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
 ???+ admonition "In command line"
 
@@ -123,6 +123,24 @@ In VS Code
         ```git
         git push --set-upstream origin new-branch
         ```
+
+???+ admonition "On GitHub"
+
+    - You may branch of from `main` or `develop` (ONLY if it exists).
+
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 30%}
+
+    - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
+    - To view all branches
+
+    ![new_branch_GH.png](new_branch_GH.png){width: 50%}
+
+    - The overview
+
+    ![nbranches_GH](branches_GH.png){width: 50%}
+
+    
+
 
 ### Git graph
 
@@ -268,7 +286,7 @@ Steps:
 - issue
 
 
-??? example "Björns new requirements, using GitHub"
+??? example "Björn's new requirements, using GitHub"
 
     - Updated information on requirements
 
@@ -306,12 +324,12 @@ Steps:
 
         ![PR_overview](img/PR_overview.png)
 
-??? example "Approve Björns new requirements"
+??? example "Approve Björn's new requirements"
 
     - Lets look and fix together
     - Code review!
 
-??? example "Look Björns new Issue"
+??? example "Look at Björn's new Issue"
 
     - Do we agree?
     - Add to the issue the namings of 2 feature branches from Req 6.1-2 to be used in exercise 1.
@@ -329,26 +347,66 @@ Steps:
     - Create, switch and delete a `git` branch
     - Build up experience using git without troubleshooting
 
-!!! tip "Have VS code side-by-side with GitHub window"
-
 ### Exercise 1: Create a and switch to a project branch
 
-The groups create 2-3 branches according to issue above.
+!!! tip "Use GitHub"
+
+- The 2 groups create one branch each according to issue above.
+- Go to the branch
+- Create a .py file which can be a function in the full program with a good name in the ``src/weather`` directory
+- Copy-paste the suitable example below.
+- (If there is time) Make a docstring describing what the function should do
+- We will not go further with the file now, so let's go back to ``main``
+
+??? example "Example code 6.1 (read Uppsala 1722-2022) using ``pandas``"
+
+    ```python
+    import pandas as pd
+
+    df=pd.read_csv("../../data/uppsala_tm_1722-2022.dat",sep='\s+')
+    print(df)
+    df.columns=['Year','Month','Day','T','Tcorr','Data id']
+    print(df.Tcorr)
+    ```
+
+??? example "Example code 6.2 (read other Swedish stations) using ``pandas``"
+
+    ```python
+    column_names=['Date','Time','Temp']
+    df = pd.read_csv('data/smhi_opendata_1_97530_20250224_081022.csv', header=None, delimiter=";", names=column_names,skiprows = 10, usecols=[0, 1, 2])
+    print(df)
+    print(df.Date)
+    print(df.Time)
+    print(df.Temp)
+    ```
+
+Workflow
 
 ```mermaid
 gitGraph
     commit id: "Before start"
     commit id: "Branching version"
-    branch sven
-    checkout sven
-    commit id: "Modify my file"
+    branch featurename
+    checkout featurename
+    commit id: "New python file"
+    checkout main
 ```
 
-- Create a .py file describing the content of the issue
+??? info "Answer"
 
-- Work on GitHub
+    - For our shared GitHub repository, create a branch with the name
+    - You may branch of from `main` or `develop` (ONLY if it exists).
 
-### Exercise 2: create, switch and delete a test branch
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 30%}
+
+    - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
+    - Now do the work in the branch.
+    - Save/commit
+    - DO NOT MERGE!
+    - Click on Branch and choose ``main``
+    - Done!
+
+### Exercise 2: create, switch and delete a test branch LOCALLY
 
 ```mermaid
 gitGraph
@@ -383,13 +441,7 @@ gitGraph
     > - For our shared GitHub repository, create a branch with your first name that is
     >   unique, e.g. `sven`, `sven_svensson` or `sven_svensson_314`.
     >   You may branch of from `main` or `develop` (if it exists).
-    >   You may use the **web interface** (easiest!) or use the command line
-
-    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 50%}
-
-    Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
-    Done!
-
+ 
     ???- admonition "If you wish to use the command line"
 
         ```git
@@ -538,7 +590,7 @@ gitGraph
 
     > - On GitHub, verify that your changes on your branch can be found online
 
-    ![github_pushed_to_branch](github_pushed_to_branch.png){width: 50%}
+    ![github_pushed_to_branch](github_pushed_to_branch.png){width: 30%}
 
     - Make sure you look at the correct branch, as displayed by the "drop-down button".
     - Then your commit message shows up in the yellow section
@@ -558,7 +610,7 @@ gitGraph
 
     ???- admonition "GitHub"
 
-        ![github_view_branches_annotated](github_view_branches_annotated.png)
+        ![github_view_branches_annotated](github_view_branches_annotated.png){width: 50%}
 
         Click on 'Branches', as shown in the image above.
 
