@@ -83,7 +83,7 @@ One typical workflow:
 - merge new-feature to present branch
 - remove branch
 
-!!! info "In VS Code"
+??? info "In VS Code"
 
     - Here is where you handle branches
 
@@ -98,7 +98,7 @@ One typical workflow:
 
         ![switch branch in VS Code](../img/switch_branch_VSC.png)
 
-???+ admonition "In command line"
+??? info "In command line"
 
     ```console
     git branch new-feature  # create branch, switch to it
@@ -124,20 +124,20 @@ One typical workflow:
         git push --set-upstream origin new-branch
         ```
 
-???- admonition "On GitHub"
+??? info "On GitHub"
 
     - You may branch of from `main` or `develop` (ONLY if it exists).
 
-    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 30%}
+    ![github_create_branch_annotated](github_create_branch_annotated.png){width: 20%}
 
     - Click on 1, type your branch name at 2 (in this case, `richel`), then click 3.
     - To view all branches
 
-    ![new_branch_GH.png](./img/new_branch_GH.png){width: 50%}
+    ![branches_GH](./img/branches_GH.png){width: 40%}
 
     - The overview
 
-    ![branches_GH](./img/branches_GH.png){width: 50%}
+    ![new_branch_GH.png](./img/new_branch_GH.png){width: 40%}
 
 ### Git graph
 
