@@ -54,6 +54,7 @@ Bhat
 Bilderbeek
 Kolmogorov
 Smirnov
+beautier
 Bioinformatics
 Boby
 Boehm
