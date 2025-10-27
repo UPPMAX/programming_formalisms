@@ -64,18 +64,18 @@ branches using GitHub
 
 ???- admonition "GitHub" 
 
-     - Merge
+    - Merge
      
-     ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
+    ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
 
-     - Be sure that you merge to right branch!
-     - Either 1:
-     
-     ![merge to which branch](img/merge_to_which_branch.png)
+    - Be sure that you merge to right branch!
+    - Either 1:
+    
+    ![merge to which branch](img/merge_to_which_branch.png)
 
-     - Or 2:
-     
-     ![note merge branch branch](img/note_merge_branch.png)
+    - Or 2:
+ 
+    ![note merge branch branch](img/note_merge_branch.png)
 
 - Good practice: Delete branch when done. You won't need it any more!
 
