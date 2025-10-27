@@ -385,12 +385,12 @@ website. Luckily, the website has a worked-out example:
 >
 > Consider two manufacturing processes that produce slightly different
 > measurements for a critical component.
-> Suppose sample A consists of the diameters [5.01, 4.98, 5.03, 5.00, 5.02] 
-> millimeters, while sample B produces [4.97, 4.99, 5.04, 5.01, 4.96]. 
-> When these values are entered into the calculator, 
-> the sorted ECDFs reveal a maximum deviation of 
-> D. With both samples containing five observations, 
-> the approximation above yields a p‑value around 0.70. 
+> Suppose sample A consists of the diameters [5.01, 4.98, 5.03, 5.00, 5.02]
+> millimeters, while sample B produces [4.97, 4.99, 5.04, 5.01, 4.96].
+> When these values are entered into the calculator,
+> the sorted ECDFs reveal a maximum deviation of
+> D. With both samples containing five observations,
+> the approximation above yields a p‑value around 0.70.
 
 We change the tests to the worked-out example:
 
@@ -440,7 +440,7 @@ I feel making the `calc_p_value` function use the actual values
 from the dataset would be most useful.
 Here I rewrite `calc_p_value`:
 
-```
+```python
 def calc_p_value(values_1 = get_first_third_temperatures(), values_2 = get_last_third_temperatures()):
     # Function body stays the same
 ```
