@@ -25,7 +25,7 @@ Friday  |10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](proj
 Friday  |11:15-12:00|Richel |[assert](assert/README.md)
 Friday  |13:00-14:00|Richel |[TDD 1](tdd/README.md)
 Friday  |14:15-15:00|Richel |[TDD 2](tdd/README.md)
-Friday  |15:00-15:40|Richel |[Formal testing framework](testing/testing_framework.md)
+Friday  |15:00-15:40|Richel |[TDD at a bigger scale](tdd_at_bigger_scale/README.md)
 Friday  |15:40-16:00|Lars   |Confidence and retrospect
 |||||
 Monday|09:00-10:00|Björn  |[Formal git workflow, branches](./git/branches.md)
