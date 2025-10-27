@@ -139,9 +139,6 @@ One typical workflow:
 
     ![nbranches_GH](branches_GH.png){width: 50%}
 
-    
-
-
 ### Git graph
 
 - We can get an overview of graphs
@@ -200,57 +197,9 @@ One typical workflow:
         commit id: "rm print"
         ```
         
-**Overview workflow**
+!!! info "Overview workflow"
 
-![git branches](../img/git_branches.png)
-
-
-## Extra: ``git diff``
-
-??? tip "Show unstaged/uncommitted modifications"
-
-    - When you are done editing the files, try "git diff"
-    - When you select a file in the Source Control view, the editor shows a diff view that highlights the file changes, compared to the previously committed file.
-
-    ![file_saved_VSC](../img/file_saved_VSC.png)
-
-    - Press "M"
-
-    ![diff_VSC](../img/diff_VSC.png)
-
-
-    ???- note "In console"
-
-        ```console
-        git diff
-        ```
-
-        - You can use *arrows* or *enter* to scroll the output and quit with ``q``.
-        - You will see some things like this.
-
-        ???- "Output from 'diff'"
-
-            ```diff
-            diff --git a/ingredients.txt b/ingredients.txt
-            index 4422a31..ba8854f 100644
-            --- a/ingredients.txt
-            +++ b/ingredients.txt
-            @@ -2,3 +2,4 @@
-             * 1 chili
-             * 1 lime
-             * 2 tsp salt
-            +* 1/2 onion
-            diff --git a/instructions.txt b/instructions.txt
-            index 7811273..2b11074 100644
-            --- a/instructions.txt
-            +++ b/instructions.txt
-            @@ -4,3 +4,4 @@
-             * squeeze lime
-             * add salt
-             * and mix well
-            +* enjoy!
-
-            ```
+    ![git branches](../img/git_branches.png)
 
 ???- question "Test"
 
@@ -631,6 +580,52 @@ gitGraph
     See the
     ['Programming Formalisms: git branch exercise' YouTube video](https://youtu.be/Ewewytijw1g)
 
+## Extra: ``git diff``
+
+??? tip "Show unstaged/uncommitted modifications"
+
+    - When you are done editing the files, try "git diff"
+    - When you select a file in the Source Control view, the editor shows a diff view that highlights the file changes, compared to the previously committed file.
+
+    ![file_saved_VSC](../img/file_saved_VSC.png)
+
+    - Press "M"
+
+    ![diff_VSC](../img/diff_VSC.png)
+
+
+    ???- note "In console"
+
+        ```console
+        git diff
+        ```
+
+        - You can use *arrows* or *enter* to scroll the output and quit with ``q``.
+        - You will see some things like this.
+
+        ???- "Output from 'diff'"
+
+            ```diff
+            diff --git a/ingredients.txt b/ingredients.txt
+            index 4422a31..ba8854f 100644
+            --- a/ingredients.txt
+            +++ b/ingredients.txt
+            @@ -2,3 +2,4 @@
+             * 1 chili
+             * 1 lime
+             * 2 tsp salt
+            +* 1/2 onion
+            diff --git a/instructions.txt b/instructions.txt
+            index 7811273..2b11074 100644
+            --- a/instructions.txt
+            +++ b/instructions.txt
+            @@ -4,3 +4,4 @@
+             * squeeze lime
+             * add salt
+             * and mix well
+            +* enjoy!
+
+            ```
 ## Summary
 
 ```git
