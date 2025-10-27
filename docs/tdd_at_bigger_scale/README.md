@@ -56,6 +56,27 @@ End-to-end  |Start with big to small, yet develop more detailed functions when e
 
 <!-- markdownlint-enable MD013 -->
 
+In the example below we go end-to-end,
+starting at a high-level function called `do_analysis`
+until the low-level function called `read_data`.
+The functions in that example can be displayed
+as the figure below:
+
+```mermaid
+flowchart TD
+
+  subgraph do_analysis
+    create_figure
+    subgraph create_statistics_file
+      subgraph calc_p_value
+        subgraph get_first_third_temperatures
+          read_data
+        end
+      end
+    end
+  end
+```
+
 ## 3. An example
 
 ## 3.1. Draft paper
