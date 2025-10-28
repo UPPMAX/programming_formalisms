@@ -275,6 +275,83 @@ A common case where we utilize the power of inheritance, is
 when we have a group of objects that share a common interface.
 the interface is then implemented as an abstract class(a class that cannot be instantiated into and object.) which the other classes inherits. This common set of behavior and properties needed to convey information to a class but lets the child classes deal with the information as it will, this is a common practice when designing multiple UI for example if the CLI and the graphical UI interact with the controller class in a similar way passing messages(data) between the analysis unit and the UI this can easily be implemented as a inheritance structure.
 
+an example of how an Abstract(Interface) is utilized to allow for multiple behaviours without coupling the classes
+
+```mermaid
+classDiagram
+ dierction TD
+ namespace WeatherAnalysis {
+
+    class UserInterface {
+        <<Abstract>>
+        +start()*
+    }
+
+    class WebApp {
+        +start()
+    }
+    class CLI {
+        +start()
+    }
+
+    class DataController {
+        +applyTimeFilter()
+        +applyDateFilter()
+        +applyRegionFilter()
+    }
+
+    class PlotService {
+        +drawTimeSeries()
+        +drawHistogram()
+        +drawBoxPlot()
+    }
+
+    class StatsService {
+        +computeAverage()
+        +computeMin()
+        +computeMax()
+        +computeMedian()
+        +computeMode()
+    }
+
+    class DownloadService {
+        +exportRawData()
+        +exportFilteredData()
+        +exportPlot()
+        +exportStats()
+    }
+
+    class GitHubDataSource {
+        +loadData()
+        +verifyData()
+    }
+}
+    %% relations
+    UserInterface --> DataController
+    DataController --> PlotService
+    DataController --> StatsService
+    UserInterface --> DownloadService
+    DownloadService --> GitHubDataSource
+    CLI --|> UserInterface : implements
+    WebApp --|> UserInterface : implements
+
+    %% color clean classes green
+    style UserInterface fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+    style DataController fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+    style PlotService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+    style StatsService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+    style DownloadService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+    style GitHubDataSource fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+
+    note for WebApp " concrete user interface that implements the behavior of the User interface class "
+    note for CLI " concrete user interface that implements the behavior of the User interface class"
+    note for UserInterface "De couples behavior and visualization"
+    note for DataController "Single Responsibility: handles filtering only"
+    note for PlotService "Separate concern: visual rendering"
+    note for StatsService "Separate concern: statistical computation"
+    note for DownloadService "Exports only"
+    note for GitHubDataSource "Isolated backend logic"
+```
 
 ### Design patters(self study)
 
@@ -311,7 +388,7 @@ Zero line Design is optimal in the sense that if some one already figure out a t
     Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-## Exercise
+### Exercise
 
 ???+ info "Design Patterns"
 
