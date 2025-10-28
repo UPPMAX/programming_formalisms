@@ -45,21 +45,55 @@ tags:
     - Let's start in that end and be prepared.
     - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
-!!! hint
-
-    - Make your program or workflow work for others and yourself in the future.
-
 !!! tip
 
     - Make your program or workflow work for others and yourself in the future.
 
-## Recording dependencies
+## To make sure about needed dependencies
 
 - **Reproducibility**: We can control our code but how can we control dependencies?
 - **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
 - **Dependency hell**: Different codes in the same environment can have conflicting dependencies.
 
-!!! note "Ways to distribute"
+- 2 levels of dependencies
+
+??? note "System libraries"
+
+    - Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
+        - will your program require specific "system files"
+        - are these typically not installed already?
+        - in the **best world test on Windows/Mac and Linux platforms**
+            - and with as empty as possible environment
+
+??? note "packages, like in Python"
+
+    - Python packages
+    - R packages
+    - Julia packages
+    - Matlab Add-ons
+
+??? note "Shaered secrvices like HPC clusters"
+
+    - What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
+
+??? question "Discussion: Where do you run your program?"
+
+    - From a terminal?
+        - Linux, Mac, Windows?
+    - From IDE?
+        - VSCode, RStudio, MATLAB, Jupyter, Spyder
+    - On different computers
+        - Using several platforms
+    - On a cluster?
+        - NAISS resources, other?
+
+!!! info "We need to"
+
+    - Inform what is needed to run the software in the README file (Next session)
+    - Or provide them with everything needed (file )
+        - hopefully not interfering with other software they are using
+
+??? info "Ways to distribute"
 
     - Python packages:
         - pip (PyPI)
@@ -92,37 +126,11 @@ tags:
 
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
-- We'll cover the other tools after the exercise.
+- We'll briefly cover the other tools after the exercise.
 
-### To make sure about needed dependencies
+## Recording dependencies
 
 - Start with empty environment
-- 2 levels of dependencies
-    - system libraries
-    - packages, like Python
-- Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions
-    - will your program require specific "system files"
-    - are these typically not installed already?
-    - in the **best world test on Windows/Mac and Linux platforms**
-        - and with as empty as possible environment
-- What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
-
-!!! discussion "Discussion: Where do you run your program?"
-
-    - From a terminal?
-        - Linux, Mac, Windows?
-    - From IDE?
-        - VSCode, RStudio, MATLAB, Jupyter, Spyder
-    - On different computers
-        - Using several platforms
-    - On a cluster?
-        - NAISS resources, other?
-
-!!! info "We need to"
-
-    - Inform what is needed to run the software in the README file
-    - Or provide them with everything needed
-        - hopefully not interfering with other software they are using
 
 ### Principle using python pip in a virtual environment
 

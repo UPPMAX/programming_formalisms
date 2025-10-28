@@ -413,6 +413,6 @@ Zero line Design is optimal in the sense that if some one already figure out a t
 - `[Ivar Jacobson 1992]` Ivar Jacobson et al., Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992.
 - `[Booch 2007]` Grady Booch et al.,Object-oriented analysis and design with applications -3rd ed,Addison-wesley 2007.
 - `[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
--`[Gamma et al., 1995]` Gamma, Erich, et al.
+- `[Gamma et al., 1995]` Gamma, Erich, et al.
   "Elements of reusable object-oriented software." Design Patterns (1995).
 
