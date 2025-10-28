@@ -18,6 +18,14 @@ tags:
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
     - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
 
+???- question "For teachers"
+
+    Prior:
+
+    - What is a Object orientation?
+    - What is a semantic gap?
+    - What do we mean when we say a programming language is object oriented?
+
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
