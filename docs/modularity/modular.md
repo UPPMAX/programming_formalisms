@@ -318,6 +318,8 @@ Lets talk about Tightly vs loosely coupled code.
 
 !!! Hint "Circular dependency"
 
+    A circular dependency occurs when two entities both rely on data from each other, either directly or through secondary coupling. This can be a natural an un avoidable consequence of the domain space or it as it is usually seen in software development an anti pattern that is a pattern that hinders development.
+
 ## Modular Programming
 
 ???- "What is Modular Programming"
