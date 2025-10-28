@@ -213,7 +213,7 @@ tags:
     - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
     - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
-??? example "Example with nextflow""
+??? example "Example with Nextflow"
 
     ``` console
     nextflow -version
@@ -318,7 +318,7 @@ tags:
 ### First steps for ALL
 
 - Work together in group of 2-3
--  1 person types directly in GitHub
+- 1 person types directly in GitHub
 - Do ``git push`` first from local command-line, everyone!
 
 
@@ -334,7 +334,6 @@ tags:
 
     - Create branch ``installation``
     - Open the file ``learners/README-EXT.md``
-
     - Be inspired by the examples above
     - Include the sections "**Dependencies**" and "**Installing**"
     - When done, make pull request to main
