@@ -229,7 +229,7 @@ A simple function                     |`src/learners`
 An try-out of the analysis of the data|`src/learners`
 An analysis of the data               |`src/weather`
 
-When uploading your code, check the results of the CI scripts regularily:
+When uploading your code, check the results of the CI scripts regularly:
 
 - Go to the learners' project
 - Click on the 'Actions' tab
