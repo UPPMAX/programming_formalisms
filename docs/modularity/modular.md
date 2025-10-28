@@ -306,7 +306,6 @@ Some examples of code smell
     Here is an example of how a refactored example from the above design
 
     ```mermaid
-
         classDiagram
 
         namespace WeatherAnalysis {
