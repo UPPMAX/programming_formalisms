@@ -224,11 +224,12 @@ well `[Gamma et al., 1995]`
 
     Work in `src/learners`
 
-???- note "Hard: a class in the learners' project"
+???- note "Hard: your own class"
 
-    Work in `src/weather`
+    Come up with a class you may need yourself
+    and try to write it.
 
-    Don't break the main branch :-)
+    Work in `src/learners`
 
 - Write the class that protects its invariant
 
