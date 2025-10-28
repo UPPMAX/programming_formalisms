@@ -190,14 +190,43 @@ tags:
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
-    - Go to the dir ``learners/<your-name>``
+    - Git pull!
+    - Go to the dir ``learners/<your-name>`` **locally**
     - Create a new folder called ``test``
     - Go into that folder
+    - Check that you can run python from the commandline!
+
+    ```console
+    which python     # must point to the python belonging to the virtual environment
+    ```
+
+    ??? question "Don't find it?"
+    
+        - If not found, and you have installed Conda/miniconda, "source activate Conda"
+
+        ```Examples, please try to find your solution from thes or combination of these
+    
+        === "Mac/Linux and miniconda"
+    
+            ```console
+            source /Users/[username]/miniconda3/bin/activate base
+            ```
+        
+        === "Windows and Anaconda"
+    
+            ```console
+            source C:/Users/[username]/AppData/Local/anaconda3/Scripts/activate base
+            ```
+
+            Note that in Windows the activate source file is in the directory ``Scripts`` not the usual ``bin`` directory.
+
+        - Test ``which python`` again!    
+
     - Create a virtual environment, called ``usertest``
 
-        ```console
-        python -m venv usertest
-        ```
+    ```console
+    python -m venv usertest
+    ```
 
     - This creates an empty virtual environment located in `usertest` directory
     - Activate
@@ -214,12 +243,13 @@ tags:
         source usertest/Scripts/activate
         ```
 
-    - Note the ``(usertest)`` in the beginning of the prompt!
-
+    - Note the ``(usertest)`` in the beginning of the prompt! Could be together with the conda ``(base)`` environment as well.
+    - Check versions
+    
     ```console
-    which python        #must point to the python belonging to the virtual environment
-    python -V            # note this version
-    which pip        #must point to the pip belonging to the virtual environment
+    which python     # must point to the python belonging to the virtual environment
+    python -V        # note this version (same as you started the virtual environment from)
+    which pip        # must point to the pip belonging to the virtual environment
     ```
 
     - Check it is empty with the command ``pip list``
@@ -464,13 +494,13 @@ tags:
 - Stage and commit
 - upload to github
 
-### (Optional)Exercise 2 10-15 minutes
+### (Optional) Exercise 2 10-15 minutes
 
 - Let's say you have some code you have started to work with
 
 !!! tip
 
-    - Work individually locally (in VS Code)
+    - Work individually locally (in VS Code or terminal)
     - Help each-other if getting stuck
     - Start with 1A OR 1B
         - 1a goes to Breakout room 1
