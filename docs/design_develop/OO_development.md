@@ -155,12 +155,12 @@ Further reading:
     An object description can be done either using plain text
     A combination of plaintext and mermaid diagram either a flowchart or a class diagram, in the case of flowchart the behavior and properties or write them separately in your markdown
 
+!!!- hint "what to add"
+    Add objects that we need for our weather project such as Display, Graph, user interface etc. look in your features and requirements
 
-!!!- hint "markdown document"
-    Make a markdown document in your learners folder with the mermaid chart
-
-    Add objects that we need for our weather project such as Display, Graph, user interface etc.
-    References to the requirements found in the [requirements]() document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
+!!!- hint "Where to find requirements"
+    References to the requirements found either in the teacher example [requirements](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
+    or in your own [requirments](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/learners/merged_requirements.md) document. Also check your issues for features you want to include
 
 
 !!!- Hint "A solution"
@@ -177,7 +177,7 @@ Further reading:
         weatherStationData --> DataSource
     ```
 
-???+ question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)"(10 min)
+???+ question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)" (10 min)
 
 !!!- Hint "example of a weather station analysis class diagram"
 
