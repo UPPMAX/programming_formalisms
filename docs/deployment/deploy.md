@@ -18,10 +18,11 @@ tags:
 
 !!! info "Content"
 
-    - We will prepare for installation of your code
+    - We will prepare for user installation of our code
     - But also...
         - some theory of packages
         - some theory of containers
+        - starting a git repo from existing code project
 
 ???- note "Instructor notes"
 
