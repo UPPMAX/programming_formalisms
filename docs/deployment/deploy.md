@@ -10,7 +10,8 @@ tags:
 !!! questions
 
     - How to make your program work for others?
-
+    - How to start a git repo from existing code project?
+    
 !!! info "Learning outcomes of 'Deployment'"
 
     - I can mentalize the installation needs from the users' perspective
@@ -185,6 +186,7 @@ tags:
 
     - Work individually locally (in VS Code)
     - Help each-other if getting stuck
+    - 2-3 per group
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
@@ -462,22 +464,24 @@ tags:
 - Stage and commit
 - upload to github
 
-### (Optional)Exercise 2
+### (Optional)Exercise 2 10-15 minutes
+
+- Let's say you have some code you have started to work with
 
 !!! tip
 
     - Work individually locally (in VS Code)
     - Help each-other if getting stuck
+    - Start with 1A OR 1B
+        - 1a goes to Breakout room 1
+        - 1b goes to Breakout room 2
 
-- Let's say you have some code you have started to work with
-- Start with 1A OR 1B
+???- question "Exercise 1A: Identify existing project"
 
-???- question "Exercise 1A: Start project from one of your existing projects"
-
-    - Just use an existing programming project you have today
+    - Just use an existing programming project you already have
     - Browse to right _root_ directory (the folder containing all the project-related files)
 
-???- question "Exercise 1B: Start a new test project"
+???- question "Exercise 1B: Make a code base for a new test project"
 
     - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
 
@@ -499,7 +503,7 @@ tags:
 
 ???- question "Exercise 2: Initiate the project"
 
-    ???+ question "VS CODE"
+    ???- question "VS CODE"
 
         ![initialize_VSC](../img/initialize_VSC.png)
 
@@ -519,16 +523,15 @@ tags:
             - you have to show hidden files, in bash terminal with ``ls -a``
 
         - Now you have a git repo called ``test_project``
-        - check with the command: ``git status``
-        - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
+        - Check with the command: ``git status``
+            - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next.
 
-
-???- question "(Optional) Exercise 3: Add and commit the content"
+???- question "(If needed) Exercise 3: Add and commit the content"
 
     - So far, there is no content. We have to manually add the content to the repo.
     - Add and Commit your changes
 
-    ???+ question "VS Code"
+    ??? question "VS Code"
 
          We do this all the time! :)
 
@@ -539,7 +542,7 @@ tags:
         git commit -m 'first commit'
         ```
 
-???- question "(Optional) Exercise 4: Upload to GitHub"
+???- question "(If needed) Exercise 4: Upload to GitHub"
 
     ???- question "In VS Code"
 
@@ -560,7 +563,7 @@ tags:
 
         ---
 
-        - On this page choose a project name, e.g. ``test_project``
+        - On this page choose a project name, e.g. ``test_project`` or a project name suiting your existing project.
 
         - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
 
