@@ -296,7 +296,7 @@ Some examples of code smell
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part)
 
-        or
+    or
 
     Refactor the above design into a good design. Consider things like technology lock in and other issues.
 
@@ -390,6 +390,7 @@ Some examples of code smell
 Lets talk about Tightly vs loosely coupled code.
 
 ???- "What is tightly coupled code?"
+
      Tightly coupled code is when a group of classes are highly dependent on one another. This isn't necessarily a bad thing, but it can make the code harder to test because of the dependent classes are so intertwined. They can't be used independently or substituted easily.
 
     In tightly coupled systems, each component or class in the system knows details about many other components or classes. They are interdependent, meaning that if one component changes, it can have a ripple effect on all other components that depend on it. This can make the system as a whole more difficult to maintain, because changes in one place can require changes in many other places.
