@@ -72,7 +72,7 @@ tags:
     - Julia packages
     - Matlab Add-ons
 
-??? note "Shaered secrvices like HPC clusters"
+??? note "Shaered services like HPC clusters"
 
     - What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
 
