@@ -10,7 +10,7 @@ tags:
 
 # Object Oriented development
 
-!!!+ info "Learning outcomes"
+!!! info "Learning outcomes"
 
     - Understand the benefits of object-oriented development, including smaller semantic gaps for improved understanding and easier modification of models.
     - Learn the definition and characteristics of an object, including its ability to save state and perform operations.
