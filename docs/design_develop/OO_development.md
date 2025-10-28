@@ -168,12 +168,12 @@ Further reading:
 !!!- hint "what to add"
     Add objects that we need for our weather project such as Display, Graph, user interface etc. look in your features and requirements
 
-???- hint "Where to find requirements"
+???- "Where to find requirements"
     References to the requirements found either in the teacher example [requirements](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
     or in your own [requirments](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/learners/merged_requirements.md) document. Also check your issues for features you want to include
 
 
-???- info "A solution"
+???- "A solution"
 
     ```mermaid
         flowchart TD
@@ -316,7 +316,7 @@ Exercise
     when looking for pattern it is always good to go through what you have design or code so far and check if something just changes how a thing looks. Or when you need to access multiple data formats in one way
 
 
-!!!- "Answer"
+???- "Answer"
 
     The temperature converter in utils is an excellent case where generalization by a decorator that lets you add as many converters to the system as you like
 
