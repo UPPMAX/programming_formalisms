@@ -45,7 +45,11 @@ tags:
     - Let's start in that end and be prepared.
     - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
-!!! attention
+!!! hint
+
+    - Make your program or workflow work for others and yourself in the future.
+
+!!! tip
 
     - Make your program or workflow work for others and yourself in the future.
 
@@ -106,8 +110,13 @@ tags:
 !!! discussion "Discussion: Where do you run your program?"
 
     - From a terminal?
-    - On different computers?
+        - Linux, Mac, Windows?
+    - From IDE?
+        - VSCode, RStudio, MATLAB, Jupyter, Spyder
+    - On different computers
+        - Using several platforms
     - On a cluster?
+        - NAISS resources, other?
 
 !!! info "We need to"
 
@@ -132,7 +141,7 @@ tags:
 
     - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
 
-## Ignoring files and paths with .gitignore
+## Ignoring files and paths with ``.gitignore``
 
 Compiled and generated files are not committed to version control. There are many reasons for this:
 
@@ -371,8 +380,8 @@ For this we use `.gitignore` files.
     - Julia
         - Pkg.jl
 
-- [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
-- [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
+    - [More info](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies)
+    - [The tools](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools)
 
 
 ???- admonition "Compiled language, course"
@@ -430,13 +439,18 @@ For this we use `.gitignore` files.
 
 - This line helps in the top of the main script:
 
-    ```bash
-    #!/bin/env python
-    ```
+```bash
+#!/bin/env python
+```
 
 - Then the python active in "PATH" will automatically be used
     - especially important on a shared system where python is not in the typical ``/usr/bin/python`` path.
 
+- Run from command line as:
+
+```bash
+./pythonscript
+```
 
 !!! info "See also"
 
@@ -455,7 +469,7 @@ For this we use `.gitignore` files.
 - Stage and commit
 - upload to github
 
-### (Optional) exercise 2
+### (Optional)Exercise 2
 
 !!! tip
 
@@ -473,7 +487,6 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1B: Start a new test project"
 
     - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
-
 
     ???+ question "In VS Code?"
 
@@ -580,33 +593,35 @@ For this we use `.gitignore` files.
 
 ### What we did
 
-```mermaid
-graph TB
+??? info "Workflow"
 
-P["Project idea"] -->|git init| Node2
-P["Project idea"] --> hello.py -->|git add| Node4
-Node4 --> |git commit| Node1
-Node2 --> |git push| Node5
+    ```mermaid
+    graph TB
 
-%% C[Uncommited changed hello.py] -->|commit button| R
-R <--> Node5
-       subgraph "Local Git"
-        Node2[project]
-        Node1[hello.py]
-        Node1 <--> Node2
-
-        end
-
-        subgraph "staging area"
-        Node4[hello.py]
-        end
-
-        subgraph "GitHub"
-        Node5[project]
-        R[hello.py]
-        end
-
-```
+    P["Project idea"] -->|git init| Node2
+    P["Project idea"] --> hello.py -->|git add| Node4
+    Node4 --> |git commit| Node1
+    Node2 --> |git push| Node5
+    
+    %% C[Uncommited changed hello.py] -->|commit button| R
+    R <--> Node5
+           subgraph "Local Git"
+            Node2[project]
+            Node1[hello.py]
+            Node1 <--> Node2
+    
+            end
+    
+            subgraph "staging area"
+            Node4[hello.py]
+            end
+    
+            subgraph "GitHub"
+            Node5[project]
+            R[hello.py]
+            end
+    
+    ```
 
 ## Summary
 
