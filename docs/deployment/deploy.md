@@ -380,9 +380,9 @@ For this we use a `.gitignore` file (put in root folder)
 
     No errors should show up!
 
-???- question "(Optional) Step 5: Add the folder to ``.gitignore``)"
+???- question "(Optional) Step 5: Add the folder to ``.gitignore``"
 
-    - Add test directory to .gitignore file (root folder in repository)
+    - Add test directory to ``.gitignore`` file (root folder in repository)
 
 ### Follow up
 
@@ -511,7 +511,7 @@ For this we use a `.gitignore` file (put in root folder)
 - Stage and commit
 - upload to github
 
-### (Optional) Exercise 2 10-15 minutes
+### (Optional) Exercise 2: 10-15 minutes
 
 - Let's say you have some code you have started to work with
 
