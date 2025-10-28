@@ -54,7 +54,7 @@ states
 
 ## Objects
 
-!!! info "What is an object?"
+???- info "What is an object?"
 
     An object is an entity that is defined by being able to save state(Information) and a number of operations(Behavior).
 
@@ -137,7 +137,7 @@ Further reading:
     Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground, make a object diagram either use a flowchart with each object as a box. This is quite common the other option is to use a class diagram.
     This should show some object structure
 
-!!!- "An answer"
+???- info "An answer"
 
     ```mermaid
 
@@ -168,12 +168,12 @@ Further reading:
 !!!- hint "what to add"
     Add objects that we need for our weather project such as Display, Graph, user interface etc. look in your features and requirements
 
-!!!- hint "Where to find requirements"
+???- hint "Where to find requirements"
     References to the requirements found either in the teacher example [requirements](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
     or in your own [requirments](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/learners/merged_requirements.md) document. Also check your issues for features you want to include
 
 
-!!!- Hint "A solution"
+???- info "A solution"
 
     ```mermaid
         flowchart TD
@@ -190,7 +190,7 @@ Further reading:
 
 ??? question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)(10 min)"
 
-!!!- Hint "example of a weather station analysis class diagram"
+???- info "example of a weather station analysis class diagram"
 
     ```mermaid
     classDiagram
