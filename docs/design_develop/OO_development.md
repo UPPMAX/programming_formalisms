@@ -82,7 +82,6 @@ The modeling software company [Visual Paradigm](https://www.visual-paradigm.com)
 
 Composition implies a relationship where the child cannot exist independent of the parent. Example: House (parent) and Room (child). Rooms don't exist separate to a House.
 
-
 ```mermaid
 classDiagram
     direction TD
@@ -130,6 +129,7 @@ Further reading:
     This should show some object structure
 
 !!!- "An answer"
+
     ```mermaid
 
         classDiagram
@@ -141,6 +141,7 @@ Further reading:
             Owner o--"0..*"Animal
             Animal <|-- Dog
     ```
+
     ```mermaid
         flowchart TD
             Owner -->|cares for| Dog
@@ -164,6 +165,7 @@ Further reading:
 
 
 !!!- Hint "A solution"
+
     ```mermaid
         flowchart TD
 
