@@ -593,6 +593,8 @@ as reading a table and selecting rows and columns from it!
 ## 5.1. Discuss the steps shown
 
 Go through the steps shown above together.
+Make sure you follow along with the code on your own screen,
+as in each little discussion, there will be no screen shared.
 
 - Do you agree that the steps taken are reasonable? If not, why?
 - Do you think a mistake has been made? If yes, where?
