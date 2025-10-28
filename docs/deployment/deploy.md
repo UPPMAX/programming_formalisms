@@ -149,21 +149,6 @@ tags:
 
     - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
 
-## Ignoring files and paths with ``.gitignore``
-
-Compiled and generated files are not committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use `.gitignore` files.
-
-- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
-
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
-
 ???- tip "Demo with planet"
 
     ```bash
@@ -192,7 +177,6 @@ For this we use `.gitignore` files.
         git merge venv
         git push
     ```
-
 
 ## Exercise 1: Identify lacking packages (15-20 min)
 
@@ -630,6 +614,22 @@ For this we use `.gitignore` files.
             end
     
     ```
+
+## Ignoring files and paths with ``.gitignore``
+
+Compiled and generated files are not committed to version control. There are many reasons for this:
+
+- Your code could be run on different platforms.
+- These files are automatically generated and thus do not contribute in any meaningful way.
+- The number of changes to track per source code change can increase quickly.
+- When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use a `.gitignore` file (put in root folder)
+
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
+
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
+
 
 ## Summary
 
