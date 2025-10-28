@@ -13,33 +13,10 @@ tags:
 
 ???- question "For teachers"
 
-    Prerequisites are:
-
-    - .
-
-    Teaching goals are:
-
-    - .
-
     Prior:
 
-    - .
-
-    Lesson plans:
-
-    ```mermaid
-    gantt
-      title Lesson plan pair programming 1
-      dateFormat X
-      axisFormat %s
-      Introduction : intro, 0, 5s
-      Theory 1: theory_1, after intro, 5s
-      Exercise 1: crit, exercise_1, after theory_1, 15s
-      Feedback 1: feedback_1, after exercise_1, 5s
-      Theory 2: theory_2, after feedback_1, 5s
-      Exercise 2: crit, exercise_2, after theory_2, 10s
-      Exercise 2 after the break: crit, after exercise_2, 5s
-    ```
+    - What are classes?
+    - When to use classes, or when not?
 
 ## Why?
 
@@ -224,11 +201,12 @@ well `[Gamma et al., 1995]`
 
     Work in `src/learners`
 
-???- note "Hard: a class in the learners' project"
+???- note "Hard: your own class"
 
-    Work in `src/weather`
+    Come up with a class you may need yourself
+    and try to write it.
 
-    Don't break the main branch :-)
+    Work in `src/learners`
 
 - Write the class that protects its invariant
 
