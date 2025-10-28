@@ -7,8 +7,11 @@ tags:
   - programming
   - development
 ---
-
 # Object Oriented development
+
+!!! Hint "The most important thing for your Design and Analysis Documents"
+
+    A Design document or Requirements document must be kept up to date with your code, If you during coding realize that you need another class or feature these should be added to the documentation do not be afraid to refactor your designs.
 
 !!! info "Learning outcomes"
 
@@ -25,6 +28,8 @@ tags:
     - What is a Object orientation?
     - What is a semantic gap?
     - What do we mean when we say a programming language is object oriented?
+
+??? "Read material"(10min)
 
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
@@ -122,26 +127,43 @@ Further reading:
 
 ???+ question "Explore Mermaid"(5 min)
     Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground, make a object diagram either use a flowchart with each object as a box. This is quite common the other option is to use a class diagram.
+    This should show some object structure
 
-!!!- hint "Mermaid document"
-
-
-???- question "Objects"(5 min)
-    Write a object description for Uppsala Weather station
-    the syntax for adding mermaid to a markdown is
-
+!!!- "An answer"
     ```mermaid
 
         classDiagram
             direction TD
-            Owner --> Animal: cares for
+            Owner--  "cares for" --> Animal
             Dog*--"1"Head
             Dog*--"1"Body
             Dog*--"0..1"Tail
             Owner o--"0..*"Animal
             Animal <|-- Dog
     ```
+    ```mermaid
+        flowchart TD
+            Owner -->|cares for| Dog
+            Dog ---|has a| Head
+            Dog ---|has a| Body
+            Dog ---|has a| Tail
+    ```
 
+
+???- question "Objects"(5 min)
+    Write a object description for Uppsala Weather station
+    An object description can be done either using plain text
+    A combination of plaintext and mermaid diagram either a flowchart or a class diagram, in the case of flowchart the behavior and properties or write them separately in your markdown
+
+
+!!!- hint "markdown document"
+    Make a markdown document in your learners folder with the mermaid chart
+
+    Add objects that we need for our weather project such as Display, Graph, user interface etc.
+    References to the requirements found in the [requirements]() document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
+
+
+!!!- Hint "A solution"
     ```mermaid
         flowchart TD
 
@@ -154,12 +176,6 @@ Further reading:
         StatisticsData --> Graph
         weatherStationData --> DataSource
     ```
-
-
-
-    Make a markdown document in your learners folder with the mermaid chart
-    Add objects that we need for our weather project such as Display, Graph.
-    References to the requirements found in the [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
 
 ???+ question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)"(10 min)
 
