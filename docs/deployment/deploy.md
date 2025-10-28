@@ -220,7 +220,7 @@ tags:
 
             Note that in Windows the activate source file is in the directory ``Scripts`` not the usual ``bin`` directory.
 
-        - Test ``which python`` again!    
+        - Test ``which python`` again!
 
     - Create a virtual environment, called ``usertest``
 
