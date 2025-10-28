@@ -132,7 +132,7 @@ Further reading:
 
 ### Exercise
 
-???- question "Explore Mermaid"(5 min)
+???- question "Explore Mermaid"(5 min)"
 
     Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground, make a object diagram either use a flowchart with each object as a box. This is quite common the other option is to use a class diagram.
     This should show some object structure
