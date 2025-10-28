@@ -83,7 +83,7 @@ tags:
     - From a terminal?
         - Linux, Mac, Windows?
     - From IDE?
-        - VSCode, RStudio, MATLAB, Jupyter, Spyder
+        - VSCode, RStudio, MATLAB, Jupyter, Spyder, Idle
     - On different computers
         - Using several platforms
     - On a cluster?
