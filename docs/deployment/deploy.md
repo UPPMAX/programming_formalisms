@@ -180,6 +180,22 @@ tags:
         git push
     ```
 
+## Ignoring files and paths with ``.gitignore``
+
+Compiled and generated files are not committed to version control. There are many reasons for this:
+
+- Your code could be run on different platforms.
+- These files are automatically generated and thus do not contribute in any meaningful way.
+- The number of changes to track per source code change can increase quickly.
+- When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use a `.gitignore` file (put in root folder)
+
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
+
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
+
+
 ## Exercise 1: Identify lacking packages (15-20 min)
 
 !!! tip
@@ -204,7 +220,7 @@ tags:
     
         - If not found, and you have installed Conda/miniconda, "source activate Conda"
 
-        ```Examples, please try to find your solution from thes or combination of these
+        Examples, please try to find your solution from these or combination of these.
     
         === "Mac/Linux and miniconda"
     
@@ -264,13 +280,10 @@ tags:
 
     - and some notes.
 
-???- question "(Optional Step 2: Add the folder to ``.gitignore``)"
 
-    - Add test directory to .gitignore file
+???- question "Step 2: Run the program and look for missing packages"
 
-???- question "Step 3: Run the program and look for missing packages"
-
-    ???- info "Hints"
+    ???- info "Hints (**FIX?**)"
 
         - The main program ``main.py`` is in the repo's root folder.
         - ``weather`` is a python package needed by ``main.py``
@@ -306,7 +319,7 @@ tags:
         - Do NOT use ``--user``, since it should be installed in the virtual environment only.
         - Do this until your program works
 
-???- question "Step 4: Save your requirements as a file that user can run to get the needed dependencies"
+???- question "Step 3: Save your requirements as a file that user can run to get the needed dependencies"
 
     - Check what is installed by:
 
@@ -333,7 +346,7 @@ tags:
     deactivate
     ```
 
-???- question "(Optional) Step 5: Test the requirements file in a new environment"
+???- question "(Optional) Step 4: Test the requirements file in a new environment"
 
     - Double-check it works by:
 
@@ -367,9 +380,13 @@ tags:
 
     No errors should show up!
 
+???- question "(Optional) Step 5: Add the folder to ``.gitignore``)"
+
+    - Add test directory to .gitignore file (root folder in repository)
+
 ### Follow up
 
-???- tip "requirements file enabling test packages to be found"
+???- tip "Requirements file enabling test packages to be found"
 
     ```text
     --index-url https://test.pypi.org/simple/
@@ -648,22 +665,6 @@ tags:
             end
     
     ```
-
-## Ignoring files and paths with ``.gitignore``
-
-Compiled and generated files are not committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use a `.gitignore` file (put in root folder)
-
-- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
-
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
-
 
 ## Summary
 
