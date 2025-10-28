@@ -10,7 +10,7 @@ tags:
 
 # Object Oriented development
 
-???- info "Learning outcomes"
+!!!+ info "Learning outcomes"
 
     - Understand the benefits of object-oriented development, including smaller semantic gaps for improved understanding and easier modification of models.
     - Learn the definition and characteristics of an object, including its ability to save state and perform operations.
@@ -18,17 +18,27 @@ tags:
     - Understand the definition and structure of a class as a collection of objects with common traits and behaviors.
     - Recognize the importance of relationships between classes, including association, composition, in class diagrams.
 
+???- question "For teachers"
+
+    Prior:
+
+    - What is a Object orientation?
+    - What is a semantic gap?
+    - What do we mean when we say a programming language is object oriented?
+
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
-This leads to a smaller semantic gap which
-gives two major benefits
+!!!- info "The impact of objects on the Semantic gap"
 
-- **Understanding**
-The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
+    This leads to a smaller semantic gap which
+    gives two major benefits
 
-- **Modification**
-    The model tends to be local resulting from a individual item. Each of these are represented by a single object.
+    - **Understanding**
+    The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
+
+    - **Modification**
+        The model tends to be local resulting from a individual item. Each of these are represented by a single object.
 
 
 ## Objects
