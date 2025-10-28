@@ -181,14 +181,18 @@ Before doing the exercises:
 
 - Reach an agreement on how to do pair programming: among others,
   decide upon the first driver and when to switch roles.
-- Decide upon a function to write together.
-  Use either the testing framework setup, or use the more informal
-  one with assert.
-  The course has [a page with many example functions](https://uppmax.github.io/programming_formalisms/misc/functions/).
+- Write your own analysis on the weather data, as if it would
+  be for a paper. You can use the same analysis
+  as done in [the 'TDD at a larger scale' session](../tdd_at_bigger_scale/README.md)
+  or come up with your own hypothesis.
+  If that is too hard, try
+  [one of the many example functions](https://uppmax.github.io/programming_formalisms/misc/functions/)
 
 The exercise, to be done as a pair:
 
-- Develop the function together
+- Work on a branch for your group, e.g. `lasse_and_maja`.
+  Branch off from `develop`
+- Develop the code together
 - Share code by `push`ing it
 - Agree upon when the code is done
 
@@ -244,15 +248,9 @@ Reflect:
 - `[Flor et al., 1991]` Flor, Nick V.; Hutchins, Edwin L. (1991). "Analyzing Distributed Cognition in Software Teams: A Case Study of Team Programming During Perfective Software Maintenance". In Koenemann-Belliveau, Jürgen; Moher, Thomas G.; Robertson, Scott P. (eds.). Empirical Studies of Programmers: Fourth Workshop. Ablex. pp. 36–64. ISBN 978-0-89391-856-9.
 - `[Fowler's website]` [Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
 - `[Hattie, 2012]` Hattie, John. Visible learning for teachers: Maximizing impact on learning. Routledge, 2012. TODO: check that this is a reference for optimal group size of 2
-
-![Martin, 2011](martin_the_clean_coder.jpg)
-
 - `[Martin, 2011]` Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
 - [reference for best group size 2] The reference that a group size of 2
   is best [#71](https://github.com/UPPMAX/programming_formalisms/issues/71)
 - `[Schwartz & Gurung, 2012]` Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012. TODO: check that this is a reference for optimal group size of 2
-
-![Thomas & Hunt, 2019](thomas_and_hunt_the_pragmatic_programmer.jpg)
-
 - `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
 - `[Williams & Kessler, 2000]` Williams, Laurie; Kessler, Robert R.; Cunningham, Ward; Jeffries, Ron (2000). "Strengthening the case for pair programming" (PDF). IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248. doi:10.1109/52.854064.

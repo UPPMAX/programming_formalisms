@@ -35,8 +35,8 @@ tags:
 
     Teaching form used:
 
-    - Pair programming
-    - `master` branch
+    - Individual work
+    - `main` branch
 
     Prior knowledge questions:
 
@@ -91,6 +91,11 @@ The three laws of TDD ensure each cycle is short `[Martin, 2007]`:
   and not compiling is failing
 - You may not write more production code than is sufficient to pass
   the currently failing test
+
+## Live demo
+
+Give a live demo here, as suggested at
+[a Retrospect of this day](../shared_documents/2025_autumn/20251014.md).
 
 ## 3. Features of TDD
 
@@ -319,6 +324,21 @@ Develop a function called `is_even`:
         - Returns `False` if the input is not even
         - :warning: Gives an error when the input is not a number
 
+???- question "That is quite similar to the previous exercise, isn't it?"
+
+    Yes.
+
+    The goal of the previous exercise is to have a first try-out of
+    examplary TDD.
+    Most learners make a mistake in that exercise, as TDD is quite
+    counter-intuitive to some, such as:
+
+    - use `print` instead of `assert`
+    - forgetting to push their code in the blue phase
+
+    The goal of this exercise is to be a second chance to get it right,
+    without adding too much new Python syntax.
+
 ???- info "Answer"
 
     Note that the practice of TDD is the goal of the exercise,
@@ -359,6 +379,16 @@ Develop a function called `is_even`:
 ## 5.3. Exercise 3: `is_odd`
 
 Develop a function called `is_odd`:
+
+???- question "That is quite similar to the previous exercise, isn't it?"
+
+    Yes.
+
+    The goal of the previous exercise is to have second chance to get it right,
+    without adding too much new Python syntax.
+
+    The goal of this exercise is to be the first chance to go fast,
+    without adding too much new Python syntax.
 
 ???+ note "`is_odd`"
 
@@ -424,50 +454,20 @@ Consider using the `is_even` function.
     - [Python](https://youtu.be/BxyIsJw3E14)
     - [R](https://youtu.be/Lah3fm3lUiA?si=40JdVJAO3oBcjrkH)
 
-## 5.4. Exercise 4: `is_probability`
 
-Develop a function called `is_probability`.
-
-!!! note "`is_probability`"
-
-    - Function name: `is_probability`
-    - Output:
-        - Returns `True` if the input is in the range [0.0, 1.0],
-        that is from (and including) zero to (and including) one.
-        - Returns `False` if the input is not a probability
-        - :warning: Gives an error when the input is not one number
-
-???- info "Answer"
-
-    Note that the practice of TDD is the goal of the exercise,
-    not the exact outcome.
-
-    Here is a possible solution:
-
-    ```python
-    def is_probability(x):
-        """Determine if `x` is a probability.
-
-        Determine if `x` is a probability,
-        i.e. a value between 0.0 and 1.0, including both 0.0 and 1.0.
-        If `x` is not a floating point number, a `TypeError` is raised.
-
-        Returns `True` if `x` is a probability
-        """
-        if not isinstance(x, float):
-            msg = "'number' must be a floating point number. "
-            raise TypeError(
-                msg,
-                "Actual type of 'number': ", type(x),
-            )
-        min_probability = 0.0
-        max_probability = 1.0
-        return x >= min_probability and x <= max_probability
-    ```
-
-## 5.5. Exercise 5: `is_prime`
+## 5.4. Exercise 4: `is_prime`
 
 Develop a function called `is_prime`.
+
+???- question "That is quite similar to the previous exercise, isn't it?"
+
+    Yes.
+
+    The goal of the previous exercise is to go fast,
+    without adding too much new Python syntax.
+
+    The goal of this exercise is to tackle a more complex problem
+    and discover how few tests are needed here.
 
 !!! note "`is_prime`"
 
@@ -483,6 +483,24 @@ Develop a function called `is_prime`.
 
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
+
+## 5.5. Exercise 5: your function
+
+Think of a function you want to write, or
+pick one [of the many example TDD functions](../misc/functions.md).
+
+???- question "Does this still work for complex functions?"
+
+    Yes. TDD can always be applied.
+
+???- question "Could you show me an example of well-tested complex functions?"
+
+    Yes.
+
+    Here are some:
+
+    - [Tests for a C++ chess game](https://github.com/richelbilderbeek/conquer_chess/blob/main/src/test_game.cpp)
+    - [Tests for an R phylenetics tool](https://github.com/ropensci/beautier/blob/main/tests/testthat/test-is_mcmc.R)
 
 ## 6. Conclusion
 

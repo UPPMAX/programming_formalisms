@@ -209,6 +209,18 @@ tags:
     - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
     - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
+!!! example
+
+    ``` console
+    nextflow -version
+
+      N E X T F L O W
+      version 24.10.2 build 5932
+      created 27-11-2024 21:23 UTC (22:23 CEST)
+      cite doi:10.1038/nbt.3820
+      http://nextflow.io
+    ```  
+
 ???+ "Recommended format for software citation"
 
     - Creator

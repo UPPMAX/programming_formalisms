@@ -130,8 +130,8 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
 
 - Collate the requirements list Group work in plenary.
 - Extra assignment if time allows read
-mermaid syntax for requirment documents [here](https://mermaid.js.org/syntax/requirementDiagram.html)
--Write your requimnets and their interactons using mermaid charts use the mermaid [playground](https://www.mermaidchart.com/play?utm_source=mermaid_live_editor&utm_medium=toggle#pako:eNpNjrEOwjAMRH_Fyl4k1gxMrPyBJRRRt7FoHEhcRFT130k6oGz23bvTbeYRRzLWJHqvnCiQ6JXdnFxA6TRQynqvAmwoPFo4oyh91YJ6Okxo76mGOD8teJ49yocST-VG6mONNAplR6Gl66wHa2m1Wl5kIXNYF6cc5WB7ZoBcjTwxZRgu_0lm_wFYLkuj)
+[mermaid syntax for requirement documents](https://mermaid.js.org/syntax/requirementDiagram.html)
+- Write your requirements and their interactions using mermaid charts use the mermaid [playground](https://www.mermaidchart.com/play?utm_source=mermaid_live_editor&utm_medium=toggle#pako:eNpNjrEOwjAMRH_Fyl4k1gxMrPyBJRRRt7FoHEhcRFT130k6oGz23bvTbeYRRzLWJHqvnCiQ6JXdnFxA6TRQynqvAmwoPFo4oyh91YJ6Okxo76mGOD8teJ49yocST-VG6mONNAplR6Gl66wHa2m1Wl5kIXNYF6cc5WB7ZoBcjTwxZRgu_0lm_wFYLkuj)
 
 ### Exercise 2 (10 min)
 

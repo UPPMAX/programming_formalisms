@@ -1,8 +1,3 @@
----
-tags:
-  - reflections
----
-
 # Reflections autumn 2023
 
 * [Day 3 reflection](day_3_reflection.md)

@@ -7,7 +7,7 @@ tags:
   - code review
 ---
 
-# Merging and contributing with code review
+# Contributing and code reviews
 
 !!! questions
 
@@ -137,9 +137,13 @@ single-person repository in the previous episodes.
 
 - We learned how to directly commit changes either via web or via the desktop and you need to be a collaborator (have write permissions) to be able to do that.
 
-- The tool here is [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- The tool here is [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
-!!! example "Example with a salad repo"
+!!! note
+
+    When merging a branch on GitHub you come to the same place!
+
+??? example "Example with a salad repo"
 
     - In this example the contributor will not change the `main` branch directly but submit a "pull request" (a **change proposal**) towards the `main` branch for **code review**.
     - You do this by just **changing the file at GitHub**
@@ -168,6 +172,8 @@ single-person repository in the previous episodes.
 
 ---
 
+### Branch protection
+
 - **To make sure that _all_ changes of the `main` branch are reviewed and nobody
 can push commits to it directly, it can be useful to "protect" branches.**
 
@@ -175,41 +181,22 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 ![Branch protection](../img/contributing/branch-protection.png)
 
-### Discussion
+!!! tip
 
-> - Protecting the `main` branch "forces" all changes to it to be reviewed first.
->   **We recommend this for group repositories**.
->   Discuss the advantages/disadvantages of this.
+    - Protecting the `main` branch "forces" all changes to it to be reviewed first.
+    - **We recommend this for group repositories**.
+    - Discuss the advantages/disadvantages of this.
 
 ---
 
 ### Resolving a conflict
 
-**When merging** two branches a conflict can arise when the same file **portion**
-has been modified in two **different** ways on the two branches.
+This will work the same as with merging
 
-We can practice how a conflict looks and how to resolve it:
+??? question "Discussion"
 
-- Two participants send two "pull requests" (change proposals)
-  branching from `main` changing the same line in two different ways
-
-![conflict-edit-1](../img/contributing/conflict-edit-1.png)
-![conflict-edit-2](../img/contributing/conflict-edit-2.png)
-
-- We merge together one of the pull requests (this will work)
-- Then we try to merge the other and we see a conflict:
-
-![conflict-pull-request](../img/contributing/conflict-pull-request.png)
-
-- We try to resolve the conflict via web
-- **Choose the version that you wish to keep**, remove conflict markers, "Mark as resolved" and commit the change
-
-![conflict-resolution](../img/contributing/conflict-resolution.png)
-
-### Discussion
-
-> - Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
-> - What can we do to avoid conflicts?
+    Compare with Google Docs: can you get conflicts there? What are the advantages and disadvantages?
+    What can we do to avoid conflicts?
 
 
 ## How to contribute changes to somebody else’s project
@@ -304,13 +291,6 @@ Now do the same for team member B.
     See the
     ['Programming Formalisms, 'Apply merge' exercise 3' YouTube video](https://youtu.be/UXSKm_RvcLw)
 
-## Summary
-
-
-## Goals
-
-- [ ] explain and evaluate the usefulness of git Pull Request with code review
-
 !!! admonition "Parts to be covered!"
 
     - &#9745; Source/version control
@@ -323,9 +303,9 @@ Now do the same for team member B.
         - &#9744; Design
     - &#9745; Testing
         - Different levels
-    - &#975; Collaboration
-        - &#975; GitHub
-        - &#975; pull requests
+    - &#9745; Collaboration
+        - &#9745; GitHub
+        - &#9745; pull requests
     - &#9744; Sharing
         - &#9744; open science
         - &#9744; citation
@@ -333,10 +313,6 @@ Now do the same for team member B.
     - &#9744; Documentation
         - &#9745; in-code documentation
         - &#9744; documentation for users
-
-!!! info "See also"
-
-    - For ideas view Code Refinery's  [Centralized workflow](https://coderefinery.github.io/git-collaborative/same-repository/)
 
 ## Reference Git
 
