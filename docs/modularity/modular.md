@@ -119,7 +119,7 @@ Some examples of code smell
 
     - Consider is your class diagram reflecting your code
 
-???- "Bad Weather identify the design smells"
+???- question "Bad Weather identify the design smells"
 
     Identify the different design smells of the following diagram use notes to denote the found smells
 
@@ -196,6 +196,7 @@ Some examples of code smell
     ```
 
 ???- "Answer design smells"
+    Here is one answer, there can be more design smells that given here!
 
     ```mermaid
 
