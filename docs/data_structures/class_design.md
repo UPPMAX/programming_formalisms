@@ -49,6 +49,28 @@ and you want it to be natural to use in your code.
 
 This is a goal of class design.
 
+## Example
+
+Here we see some code where a user constantly checks
+if his/her stays positive:
+
+```python
+positive_number = 42
+assert positive_number >= 0
+
+positive_number = do_something_with_it(positive_number)
+assert positive_number >= 0
+
+positive_number = do_something_else_with_it(positive_number)
+assert positive_number >= 0
+```
+
+Wouldn't it be great if `positive_number` itself could check
+if it is positive, instead of us `assert`ing this at every step?
+
+For that, we could write a class for exactly that,
+with a name such as `PositiveNumber`.
+
 ## Benefits from object-oriented development
 
 Benefits from object-oriented development (from `[Booch, 2008]`):
@@ -146,6 +168,8 @@ was broken.
 Note that some other programming languages completely disallows
 you from modifying a so-called 'private' member variable.
 
+<!--
+
 ## Inheritance and polymorphism quote
 
 > C++ is a horrible language.
@@ -165,6 +189,8 @@ well `[Gamma et al., 1995]`
 ![Gamma et al., 1995](design_patterns_book.jpg)
 
 > `[Gamma et al., 1995]`
+
+-->
 
 ## Exercise
 
