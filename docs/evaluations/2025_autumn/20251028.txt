@@ -1,0 +1,18 @@
+I understand why Continuous Integration is useful,5,5,5,3,4,
+I can find the error messages given by the Continuous Integration tests,5,5,5,4,5,
+I can (choose to) write code that is Good Enough,4,3,4,3,5,
+I understand what a Semantic gap is,4,1,3,1,3,
+I Comprehend the principles of object-oriented development such as information hiding,5,4,3,3,2
+I know what modular programming is,3,5,3,3,3
+I have an idea when use classes is worth it (and when not),3,4,3,4,2
+I can give some features of good class design,4,2,2,2,2
+I can write a simple class,4,3,3,3,4
+I understand the type of relation 'composition',3,2,2,2,1
+Iterative refactoring,5,2,2,1,3
+Learn about common interfaces protocols and their role in modular programming,3,1,1,1,1
+Learn the definition and characteristics of an object,5,3,3,4,2,
+Recognize and address tight coupling in code to improve modularity.,3,2,3,1,2,
+Recognize the importance of relationships between classes including coposition and association,4,1,1,2,2,
+Understand the benefits of object-oriented development,4,3,4,2,
+Understand the concept of code smells and design smells,5,4,3,2,2,
+Understand the definition and structure of a class as a collection of objects,5,2,4,2,2, 
