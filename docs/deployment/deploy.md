@@ -10,7 +10,8 @@ tags:
 !!! questions
 
     - How to make your program work for others?
-
+    - How to start a git repo from existing code project?
+    
 !!! info "Learning outcomes of 'Deployment'"
 
     - I can mentalize the installation needs from the users' perspective
@@ -18,10 +19,11 @@ tags:
 
 !!! info "Content"
 
-    - We will prepare for installation of your code
+    - We will prepare for user installation of our code
     - But also...
         - some theory of packages
         - some theory of containers
+        - starting a git repo from existing code project
 
 ???- note "Instructor notes"
 
@@ -72,7 +74,7 @@ tags:
     - Julia packages
     - Matlab Add-ons
 
-??? note "Shaered secrvices like HPC clusters"
+??? note "Shared services like HPC clusters"
 
     - What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?
 
@@ -149,21 +151,6 @@ tags:
 
     - [requirements.txt](https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt)
 
-## Ignoring files and paths with ``.gitignore``
-
-Compiled and generated files are not committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use `.gitignore` files.
-
-- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
-
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
-
 ???- tip "Demo with planet"
 
     ```bash
@@ -193,24 +180,53 @@ For this we use `.gitignore` files.
         git push
     ```
 
-
 ## Exercise 1: Identify lacking packages (15-20 min)
 
 !!! tip
 
     - Work individually locally (in VS Code)
     - Help each-other if getting stuck
+    - 2-3 per group
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
-    - Go to the dir ``learners/<your-name>``
+    - Git pull!
+    - Go to the dir ``learners/<your-name>`` **locally**
     - Create a new folder called ``test``
     - Go into that folder
+    - Check that you can run python from the commandline!
+
+    ```console
+    which python     # must point to the python belonging to the virtual environment
+    ```
+
+    ??? question "Don't find it?"
+    
+        - If not found, and you have installed Conda/miniconda, "source activate Conda"
+
+        ```Examples, please try to find your solution from thes or combination of these
+    
+        === "Mac/Linux and miniconda"
+    
+            ```console
+            source /Users/[username]/miniconda3/bin/activate base
+            ```
+        
+        === "Windows and Anaconda"
+    
+            ```console
+            source C:/Users/[username]/AppData/Local/anaconda3/Scripts/activate base
+            ```
+
+            Note that in Windows the activate source file is in the directory ``Scripts`` not the usual ``bin`` directory.
+
+        - Test ``which python`` again!
+
     - Create a virtual environment, called ``usertest``
 
-        ```console
-        python -m venv usertest
-        ```
+    ```console
+    python -m venv usertest
+    ```
 
     - This creates an empty virtual environment located in `usertest` directory
     - Activate
@@ -227,12 +243,13 @@ For this we use `.gitignore` files.
         source usertest/Scripts/activate
         ```
 
-    - Note the ``(usertest)`` in the beginning of the prompt!
-
+    - Note the ``(usertest)`` in the beginning of the prompt! Could be together with the conda ``(base)`` environment as well.
+    - Check versions
+    
     ```console
-    which python        #must point to the python belonging to the virtual environment
-    python -V            # note this version
-    which pip        #must point to the pip belonging to the virtual environment
+    which python     # must point to the python belonging to the virtual environment
+    python -V        # note this version (same as you started the virtual environment from)
+    which pip        # must point to the pip belonging to the virtual environment
     ```
 
     - Check it is empty with the command ``pip list``
@@ -477,22 +494,24 @@ For this we use `.gitignore` files.
 - Stage and commit
 - upload to github
 
-### (Optional)Exercise 2
+### (Optional) Exercise 2 10-15 minutes
+
+- Let's say you have some code you have started to work with
 
 !!! tip
 
-    - Work individually locally (in VS Code)
+    - Work individually locally (in VS Code or terminal)
     - Help each-other if getting stuck
+    - Start with 1A OR 1B
+        - 1a goes to Breakout room 1
+        - 1b goes to Breakout room 2
 
-- Let's say you have some code you have started to work with
-- Start with 1A OR 1B
+???- question "Exercise 1A: Identify existing project"
 
-???- question "Exercise 1A: Start project from one of your existing projects"
-
-    - Just use an existing programming project you have today
+    - Just use an existing programming project you already have
     - Browse to right _root_ directory (the folder containing all the project-related files)
 
-???- question "Exercise 1B: Start a new test project"
+???- question "Exercise 1B: Make a code base for a new test project"
 
     - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
 
@@ -514,7 +533,7 @@ For this we use `.gitignore` files.
 
 ???- question "Exercise 2: Initiate the project"
 
-    ???+ question "VS CODE"
+    ???- question "VS CODE"
 
         ![initialize_VSC](../img/initialize_VSC.png)
 
@@ -534,16 +553,15 @@ For this we use `.gitignore` files.
             - you have to show hidden files, in bash terminal with ``ls -a``
 
         - Now you have a git repo called ``test_project``
-        - check with the command: ``git status``
-        - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:
+        - Check with the command: ``git status``
+            - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next.
 
-
-???- question "(Optional) Exercise 3: Add and commit the content"
+???- question "(If needed) Exercise 3: Add and commit the content"
 
     - So far, there is no content. We have to manually add the content to the repo.
     - Add and Commit your changes
 
-    ???+ question "VS Code"
+    ??? question "VS Code"
 
          We do this all the time! :)
 
@@ -554,7 +572,7 @@ For this we use `.gitignore` files.
         git commit -m 'first commit'
         ```
 
-???- question "(Optional) Exercise 4: Upload to GitHub"
+???- question "(If needed) Exercise 4: Upload to GitHub"
 
     ???- question "In VS Code"
 
@@ -575,7 +593,7 @@ For this we use `.gitignore` files.
 
         ---
 
-        - On this page choose a project name, e.g. ``test_project``
+        - On this page choose a project name, e.g. ``test_project`` or a project name suiting your existing project.
 
         - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
 
@@ -630,6 +648,22 @@ For this we use `.gitignore` files.
             end
     
     ```
+
+## Ignoring files and paths with ``.gitignore``
+
+Compiled and generated files are not committed to version control. There are many reasons for this:
+
+- Your code could be run on different platforms.
+- These files are automatically generated and thus do not contribute in any meaningful way.
+- The number of changes to track per source code change can increase quickly.
+- When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use a `.gitignore` file (put in root folder)
+
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
+
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
+
 
 ## Summary
 

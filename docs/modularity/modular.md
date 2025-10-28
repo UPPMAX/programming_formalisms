@@ -72,8 +72,8 @@ are association, composition and inheritance.
 
 #### Bad structure
 
-    - `PetsIOwn` is a relation DB table not an object as it has
-    - no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
+- `PetsIOwn` is a relation DB table not an object as it has
+- no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
 
 ```mermaid
 classDiagram
@@ -286,13 +286,99 @@ Some examples of code smell
             note for StatsManager "Smells: Large Method computeAllStatsInOneMethod"
             note for DownloadManager "Smells: Does too much (handles all file types)"
             note for GitHubBackend "Smells: UI and backend mixed"
-        ```
+    ```
 
 ???- "Refactor your design document"
+
+    Either:
     Chose an Issue that you are responsible for!
 
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part)
+
+    or
+
+    Refactor the above design into a good design. Consider things like technology lock in and other issues.
+
+
+???- info "Answer here is one example of fixed structure"
+
+    Here is an example of how a refactored example from the above design
+
+    ```mermaid
+        classDiagram
+
+        namespace WeatherAnalysis {
+
+        class UserInterface {
+            +start()
+        }
+
+        class webapp {
+            +start()
+        }
+        class CLI {
+            +start()
+        }
+
+        class DataController {
+            +applyTimeFilter()
+            +applyDateFilter()
+            +applyRegionFilter()
+        }
+
+        class PlotService {
+            +drawTimeSeries()
+            +drawHistogram()
+            +drawBoxPlot()
+        }
+
+        class StatsService {
+            +computeAverage()
+            +computeMin()
+            +computeMax()
+            +computeMedian()
+            +computeMode()
+        }
+
+        class DownloadService {
+            +exportRawData()
+            +exportFilteredData()
+            +exportPlot()
+            +exportStats()
+        }
+
+        class GitHubDataSource {
+            +loadData()
+            +verifyData()
+        }
+    }
+        %% relations
+        UserInterface --> DataController
+        DataController --> PlotService
+        DataController --> StatsService
+        UserInterface --> DownloadService
+        DownloadService --> GitHubDataSource
+        CLI --|> UserInterface
+        WebApp --|> UserInterface
+
+        %% color clean classes green
+        style UserInterface fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style DataController fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style PlotService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style StatsService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style DownloadService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style GitHubDataSource fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+
+        note for UserInterface "Clean: Controller coordinates components"
+        note for DataController "Single Responsibility: handles filtering only"
+        note for PlotService "Separate concern: visual rendering"
+        note for StatsService "Separate concern: statistical computation"
+        note for DownloadService "Exports only"
+        note for GitHubDataSource "Isolated backend logic"
+
+    ```
+
 
 ???- "Refactor your code"
     Chose an Issue that you are responsible for go through the code and refactor the code.(if you do not have an issue claim one)
@@ -304,6 +390,7 @@ Some examples of code smell
 Lets talk about Tightly vs loosely coupled code.
 
 ???- "What is tightly coupled code?"
+
      Tightly coupled code is when a group of classes are highly dependent on one another. This isn't necessarily a bad thing, but it can make the code harder to test because of the dependent classes are so intertwined. They can't be used independently or substituted easily.
 
     In tightly coupled systems, each component or class in the system knows details about many other components or classes. They are interdependent, meaning that if one component changes, it can have a ripple effect on all other components that depend on it. This can make the system as a whole more difficult to maintain, because changes in one place can require changes in many other places.
@@ -318,6 +405,8 @@ Lets talk about Tightly vs loosely coupled code.
 
 !!! Hint "Circular dependency"
 
+    A circular dependency occurs when two entities both rely on data from each other, either directly or through secondary coupling. This can be a natural an un avoidable consequence of the domain space or it as it is usually seen in software development an anti pattern that is a pattern that hinders development.
+
 ## Modular Programming
 
 ???- "What is Modular Programming"
@@ -326,7 +415,8 @@ Lets talk about Tightly vs loosely coupled code.
 
     Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
 
-!!! info "lets read about modular programming"(10 min)
+!!! info "lets read about modular programming (10 min)"
+
     This is a Wikipedia article on [modular programming](https://en.wikipedia.org/wiki/Modular_programming)
 
 ??? question "Lets Discuss"
@@ -340,10 +430,10 @@ From this these for principles are generally considered a requirement for modula
 
 !!! info "What does it mean in practice"
 
-- That what you must clearly define for any function or object is a Common Interface that is static
-- That there are no side effect from your implementation
-- That you do not do message passing by reference.
-- That you program blackbox methods and classes.
+    - That what you must clearly define for any function or object is a Common Interface that is static
+    - That there are no side effect from your implementation
+    - That you do not do message passing by reference.
+    - That you program blackbox methods and classes.
 
 ???- "Why is Modular Programming something to strive for"
 

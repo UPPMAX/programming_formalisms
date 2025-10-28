@@ -32,9 +32,9 @@ tags:
 ???- question "Read the material(10 min)"
     we now read the material down till exercises
 
-Why do we suggest that Obeject Oriented design is still relevant.
+Why do we suggest that Object Oriented design is still relevant.
 Ivar Jacobson one of the Inventors of the UML language and
-the opject oriented software enginering method OOSE
+the object oriented software engineering method OOSE
 states
 
 "People regard their environment in terms of objects"
@@ -275,7 +275,7 @@ A common case where we utilize the power of inheritance, is
 when we have a group of objects that share a common interface.
 the interface is then implemented as an abstract class(a class that cannot be instantiated into and object.) which the other classes inherits. This common set of behavior and properties needed to convey information to a class but lets the child classes deal with the information as it will, this is a common practice when designing multiple UI for example if the CLI and the graphical UI interact with the controller class in a similar way passing messages(data) between the analysis unit and the UI this can easily be implemented as a inheritance structure.
 
-an example of how an Abstract(Interface) is utilized to allow for multiple behaviours without coupling the classes
+an example of how an Abstract(Interface) is utilized to allow for multiple behaviors without coupling the classes
 
 ```mermaid
 classDiagram
