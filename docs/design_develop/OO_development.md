@@ -29,14 +29,16 @@ tags:
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
-This leads to a smaller semantic gap which
-gives two major benefits
+!!!- info "The impact of objects on the Semantic gap"
 
-- **Understanding**
-The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
+    This leads to a smaller semantic gap which
+    gives two major benefits
 
-- **Modification**
-    The model tends to be local resulting from a individual item. Each of these are represented by a single object.
+    - **Understanding**
+    The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
+
+    - **Modification**
+        The model tends to be local resulting from a individual item. Each of these are represented by a single object.
 
 
 ## Objects
