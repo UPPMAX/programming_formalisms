@@ -136,12 +136,12 @@ Further reading:
 
         classDiagram
             direction TD
-            Owner--  "cares for" --> Animal
-            Dog*--"1"Head
-            Dog*--"1"Body
-            Dog*--"0..1"Tail
-            Owner o--"0..*"Animal
-            Animal <|-- Dog
+            Owner --> Animal :"cares for"
+            Dog*--"1"Head : "has a"
+            Dog*--"1"Body : "has a"
+            Dog*--"0..1"Tail : "has a"
+            Owner o--"0..*"Animal : "has a"
+            Animal <|-- Dog : "is a"
     ```
 
     ```mermaid
