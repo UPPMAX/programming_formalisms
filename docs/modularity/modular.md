@@ -286,7 +286,7 @@ Some examples of code smell
             note for StatsManager "Smells: Large Method computeAllStatsInOneMethod"
             note for DownloadManager "Smells: Does too much (handles all file types)"
             note for GitHubBackend "Smells: UI and backend mixed"
-        ```
+    ```
 
 ???- "Refactor your design document"
 
