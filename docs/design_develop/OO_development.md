@@ -132,7 +132,7 @@ Further reading:
 
 ### Exercise
 
-???- question "Explore Mermaid"(5 min)"
+???- question "Explore Mermaid (5 min)"
 
     Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground, make a object diagram either use a flowchart with each object as a box. This is quite common the other option is to use a class diagram.
     This should show some object structure
@@ -160,20 +160,22 @@ Further reading:
     ```
 
 
-???- question "Objects"(5 min)"
+???- question "Objects (5 min)"
+
     Write a object description for Uppsala Weather station
     An object description can be done either using plain text
     A combination of plaintext and mermaid diagram either a flowchart or a class diagram, in the case of flowchart the behavior and properties or write them separately in your markdown
 
 !!!- hint "what to add"
+
     Add objects that we need for our weather project such as Display, Graph, user interface etc. look in your features and requirements
 
-???- "Where to find requirements"
+???- question "Where to find requirements?"
+
     References to the requirements found either in the teacher example [requirements](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
     or in your own [requirments](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/learners/merged_requirements.md) document. Also check your issues for features you want to include
 
-
-???- "A solution"
+???- hint "A solution"
 
     ```mermaid
         flowchart TD
@@ -188,7 +190,10 @@ Further reading:
         weatherStationData --> DataSource
     ```
 
-???- question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)(10 min)"
+???- question "Make an refactoring and extension of your class diagrams (10 min)"
+
+    Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)
+
     Refactoriig is basically reorganisation to match or imporve your design.
 
 ???- info "example of a weather station analysis class diagram"
@@ -306,9 +311,9 @@ Zero line Design is optimal in the sense that if some one already figure out a t
     Design patterns define a common language that you and your teammates can use to communicate more efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-Exercise
+## Exercise
 
-???+ "Design Patterns"
+???+ info "Design Patterns"
 
     Read the [Decorator](https://refactoring.guru/design-patterns/decorator) pattern is there a function or Class that would fit this particular problem?
 
@@ -316,11 +321,11 @@ Exercise
     when looking for pattern it is always good to go through what you have design or code so far and check if something just changes how a thing looks. Or when you need to access multiple data formats in one way
 
 
-???- "Answer"
+???- question "Answer"
 
     The temperature converter in utils is an excellent case where generalization by a decorator that lets you add as many converters to the system as you like
 
-???- "Extra assignment"
+???- question "Extra assignment"
 
     Using refactoring.guru find an design Describe in a design document a pattern that is useful for the weather project
 
