@@ -52,7 +52,7 @@ states
         The model tends to be local resulting from a individual item. Each of these are represented by a single object.
 
 
-## Objects
+## Objects and Classes
 
 ???- info "What is an object?"
 
