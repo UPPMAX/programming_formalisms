@@ -289,10 +289,94 @@ Some examples of code smell
         ```
 
 ???- "Refactor your design document"
+
+    Either:
     Chose an Issue that you are responsible for!
 
     Try to consider what in your code are or will require classes to know about each other (Association).
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part)
+
+        or
+
+    Refactor the above design into a good design. Consider things like technology lock in and other issues.
+
+
+???- info "Answer here is one example of fixed structure
+
+    Here is an example of how a refactored example from the above design
+    ```mermaid
+    classDiagram
+
+            namespace WeatherAnalysis {
+
+            class UserInterface {
+                +start()
+            }
+
+            class webapp {
+                +start()
+            }
+            class CLI {
+                +start()
+            }
+
+            class DataController {
+                +applyTimeFilter()
+                +applyDateFilter()
+                +applyRegionFilter()
+            }
+
+            class PlotService {
+                +drawTimeSeries()
+                +drawHistogram()
+                +drawBoxPlot()
+            }
+
+            class StatsService {
+                +computeAverage()
+                +computeMin()
+                +computeMax()
+                +computeMedian()
+                +computeMode()
+            }
+
+            class DownloadService {
+                +exportRawData()
+                +exportFilteredData()
+                +exportPlot()
+                +exportStats()
+            }
+
+            class GitHubDataSource {
+                +loadData()
+                +verifyData()
+            }
+        }
+            %% relations
+            UserInterface --> DataController
+            DataController --> PlotService
+            DataController --> StatsService
+            UserInterface --> DownloadService
+            DownloadService --> GitHubDataSource
+            CLI --|> UserInterface
+            WebApp --|> UserInterface
+
+            %% color clean classes green
+            style UserInterface fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+            style DataController fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+            style PlotService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+            style StatsService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+            style DownloadService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+            style GitHubDataSource fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+
+            note for UserInterface "Clean: Controller coordinates components"
+            note for DataController "Single Responsibility: handles filtering only"
+            note for PlotService "Separate concern: visual rendering"
+            note for StatsService "Separate concern: statistical computation"
+            note for DownloadService "Exports only"
+            note for GitHubDataSource "Isolated backend logic"
+        ```
+
 
 ???- "Refactor your code"
     Chose an Issue that you are responsible for go through the code and refactor the code.(if you do not have an issue claim one)
