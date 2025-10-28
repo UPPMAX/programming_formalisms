@@ -301,7 +301,7 @@ Some examples of code smell
     Refactor the above design into a good design. Consider things like technology lock in and other issues.
 
 
-???- info "Answer here is one example of fixed structure
+???- info "Answer here is one example of fixed structure"
 
     Here is an example of how a refactored example from the above design
 
