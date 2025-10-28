@@ -65,16 +65,16 @@ branches using GitHub
 ???- admonition "GitHub"
 
     - Merge
-     
+
     ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
 
     - Be sure that you merge to right branch!
     - Either 1:
-    
+
     ![merge to which branch](img/merge_to_which_branch.png)
 
     - Or 2:
- 
+
     ![note merge branch branch](img/note_merge_branch.png)
 
 - Good practice: Delete branch when done. You won't need it any more!
@@ -310,7 +310,7 @@ gitGraph
     - commit with good message, it says "commit directly to <you name>")
 
     ??? question "How could that look like?"
-    
+
         ![commit_branch_GH](../img/commit_branch_GH.png)
 
     - **change back to main** branch by the "branch button"
