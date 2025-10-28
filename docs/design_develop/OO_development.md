@@ -29,10 +29,17 @@ tags:
     - What is a semantic gap?
     - What do we mean when we say a programming language is object oriented?
 
-??? "Read material"(10min)
+???- question "Read the material(10 min)"
+    we now read the material down till exercises
+
+Why do we suggest that Obeject Oriented design is still relevant.
+Ivar Jacobson one of the Inventors of the UML language and
+the opject oriented software enginering method OOSE
+states
 
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
+
 
 ???- question "What is the impact of objects on the Semantic gap"
 
