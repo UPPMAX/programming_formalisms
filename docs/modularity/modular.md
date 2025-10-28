@@ -196,84 +196,85 @@ Some examples of code smell
     ```
 
 ???- "Answer design smells"
-```mermaid
 
-classDiagram
+    ```mermaid
 
-%% =======================
-%% SMELLY DESIGN
-%% =======================
-namespace Smelly {
-    class Website {
-        +String url
-        +String repoPath
-        +String filters
-        +void loadEverythingAtOnce()
-        +void reloadPageOnFilterChange()
-        +void renderAllPlotsAndStatsTogether()
-        +void handleDownloadRequest(fileType, filter, plot, stat, timeRange, dateRange, region)
+    classDiagram
+
+    %% =======================
+    %% SMELLY DESIGN
+    %% =======================
+    namespace Smelly {
+        class Website {
+            +String url
+            +String repoPath
+            +String filters
+            +void loadEverythingAtOnce()
+            +void reloadPageOnFilterChange()
+            +void renderAllPlotsAndStatsTogether()
+            +void handleDownloadRequest(fileType, filter, plot, stat, timeRange, dateRange, region)
+        }
+
+        class FilterManager {
+            +String selectedTime
+            +String selectedDate
+            +String selectedRegion
+            +void applyFilters(time, date, region)
+            +void filterEverything()
+        }
+
+        class PlotManager {
+            +void drawTimeSeries(data)
+            +void drawHistogramAndBoxPlotTogether(data)
+            +void renderAllStatsOnPlot(data)
+        }
+
+        class StatsManager {
+            +float average
+            +float minimum
+            +float maximum
+            +float median
+            +float mode
+            +void computeAllStatsInOneMethod(data)
+        }
+
+        class DownloadManager {
+            +void downloadEverything()
+            +void zipEverythingTogether()
+        }
+
+        class GitHubBackend {
+            +String dataPath
+            +void connectToGitHub()
+            +void loadDataIntoAnalysisProgram(file)
+            +void sendVerifyMessageToUser()
+        }
     }
+        %% relationships
+        Website --> FilterManager
+        Website --> PlotManager
+        Website --> StatsManager
+        Website --> DownloadManager
+        Website --> GitHubBackend
+        FilterManager --> PlotManager
+        PlotManager --> StatsManager
+        DownloadManager --> GitHubBackend
 
-    class FilterManager {
-        +String selectedTime
-        +String selectedDate
-        +String selectedRegion
-        +void applyFilters(time, date, region)
-        +void filterEverything()
-    }
+        %% color all smelly classes red
+        style Website fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style FilterManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style PlotManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style StatsManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style DownloadManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style GitHubBackend fill:#ffdddd,stroke:#ff0000,stroke-width:2px
 
-    class PlotManager {
-        +void drawTimeSeries(data)
-        +void drawHistogramAndBoxPlotTogether(data)
-        +void renderAllStatsOnPlot(data)
-    }
-
-    class StatsManager {
-        +float average
-        +float minimum
-        +float maximum
-        +float median
-        +float mode
-        +void computeAllStatsInOneMethod(data)
-    }
-
-    class DownloadManager {
-        +void downloadEverything()
-        +void zipEverythingTogether()
-    }
-
-    class GitHubBackend {
-        +String dataPath
-        +void connectToGitHub()
-        +void loadDataIntoAnalysisProgram(file)
-        +void sendVerifyMessageToUser()
-    }
-}
-    %% relationships
-    Website --> FilterManager
-    Website --> PlotManager
-    Website --> StatsManager
-    Website --> DownloadManager
-    Website --> GitHubBackend
-    FilterManager --> PlotManager
-    PlotManager --> StatsManager
-    DownloadManager --> GitHubBackend
-
-    %% color all smelly classes red
-    style Website fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-    style FilterManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-    style PlotManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-    style StatsManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-    style DownloadManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-    style GitHubBackend fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-
-    note for Website "Smells: God Class, Long Parameter List, Tight Coupling, Bloater"
-    note for FilterManager "Smells: Feature Envy (accesses others' data)"
-    note for PlotManager "Smells: Duplicated Responsibility with StatsManager"
-    note for StatsManager "Smells: Large Method computeAllStatsInOneMethod"
-    note for DownloadManager "Smells: Does too much (handles all file types)"
-    note for GitHubBackend "Smells: UI and backend mixed"
-```
+        note for Website "Smells: God Class, Long Parameter List, Tight Coupling, Bloater"
+        note for FilterManager "Smells: Feature Envy (accesses others' data)"
+        note for PlotManager "Smells: Duplicated Responsibility with StatsManager"
+        note for StatsManager "Smells: Large Method computeAllStatsInOneMethod"
+        note for DownloadManager "Smells: Does too much (handles all file types)"
+        note for GitHubBackend "Smells: UI and backend mixed"
+    ```
 
 ???- "Refactor your design document"
     Chose an Issue that you are responsible for!
