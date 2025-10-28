@@ -144,7 +144,22 @@ Further reading:
     Add objects that we need for our weather project such as Display, Graph.
     references to the requirements found in the [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md) document (A requirements document is often refered to as an SRS - System/**S**oftware **R**equirement **S**pecification )
 
-## Design patters(self study)
+## Further studies(Self study)
+
+### Inheritance(Self study)
+
+The concept of inheritance "is a" relation ship although central to many design structures is not necessary to uphold the tenants of Object orientation.
+The basic concept of inheritance is the parent to child
+relationship in OO the child has all the properties and behavior of the parent, it either extends or limits(specializes) the parent object(or class).
+
+The way we discover inheritance in OO is usually when we
+see a set of object that share properties or behavior we abstract those behaviors and properties into a parent this usually happens when we transition from object design to class design and are looking to group similar objects together.
+A common case where we utilize the power of inheritance, is
+when we have a group of objects that share a common interface.
+the interface is then implemented as an abstract class(a class that cannot be instantiated into and object.) which the other classes inherits. This common set of behavior and properties needed to convey information to a class but lets the child classes deal with the information as it will, this is a common practice when designing multiple UI for example if the CLI and the graphical UI interact with the controller class in a similar way passing messages(data) between the analysis unit and the UI this can easily be implemented as a inheritance structure.
+
+
+### Design patters(self study)
 
 ???- info "Learning outcomes of Design Patterns"
 
