@@ -121,7 +121,7 @@ Some examples of code smell
 
 ???- question "Bad Weather identify the design smells"
 
-    Identify the different design smells of the following diagram use notes to denote the found smells
+    Identify the different design smells of the following diagram use notes to denote the found smells, then put it in a markdown document and commit to your learners space in the project.
 
     ```mermaid
         classDiagram
