@@ -47,6 +47,16 @@ tags:
 
     - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
+
+???- question "For teachers"
+
+    Prior:
+
+    - What is a Refactoring?
+    - What is a Design/code Smell?
+    - What is a Module?
+    - Why make modular design/code, what is the benefit?
+
 ## Refactoring
 
 ???- "What is Refactoring"
