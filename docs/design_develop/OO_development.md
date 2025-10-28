@@ -29,10 +29,9 @@ tags:
 "People regard their environment in terms of objects"
 `[Jacobson 1992]`
 
-!!!- info "The impact of objects on the Semantic gap"
+???- question "What is the impact of objects on the Semantic gap"
 
-    This leads to a smaller semantic gap which
-    gives two major benefits
+    Object leads to a smaller semantic gap as they are a more natural abstraction of data in the world which gives two major benefits
 
     - **Understanding**
     The semantic gap(The distance form input to understanding) between reality and model is smaller making the risk of misunderstanding less.
@@ -121,28 +120,113 @@ Further reading:
 
 ### Exercise
 
-???+ question "Code along Mermaid"
-    Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground then follow
-    along as I create in mermaid
+???+ question "Explore Mermaid"(5 min)
+    Open the [Mermaid](https://mermaid.js.org/) page click on Try Playground, make a object diagram either use a flowchart with each object as a box. This is quite common the other option is to use a class diagram.
 
-???- question "Objects"
+!!!- hint "Mermaid document"
+
+
+???- question "Objects"(5 min)
     Write a object description for Uppsala Weather station
     the syntax for adding mermaid to a markdown is
 
     ```mermaid
-    classDiagram
-        direction TD
-        Owner --> Animal: cares for
-        Dog*--"1"Head
-        Dog*--"1"Body
-        Dog*--"0..1"Tail
-        Owner o--"0..*"Animal
-        Animal <|-- Dog
+
+        classDiagram
+            direction TD
+            Owner --> Animal: cares for
+            Dog*--"1"Head
+            Dog*--"1"Body
+            Dog*--"0..1"Tail
+            Owner o--"0..*"Animal
+            Animal <|-- Dog
     ```
 
-    make a markdown document in your learners folder
+    ```mermaid
+        flowchart TD
+
+        DownloadService --> UserInterface
+        Graph ---> UserInterface
+        StatisticsData --> UserInterface
+        DataSource --> StatisticsData
+        DataSource --> DownloadService
+        DataSource --> Graph
+        StatisticsData --> Graph
+        weatherStationData --> DataSource
+    ```
+
+
+
+    Make a markdown document in your learners folder with the mermaid chart
     Add objects that we need for our weather project such as Display, Graph.
-    references to the requirements found in the [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md) document (A requirements document is often refered to as an SRS - System/**S**oftware **R**equirement **S**pecification )
+    References to the requirements found in the [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
+
+???+ question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)"(10 min)
+
+!!!- Hint "example of a weather station analysis class diagram"
+
+    ```mermaid
+    classDiagram
+        direction TD
+        namespace WeatherStationAnalyzer {
+
+            class UserInterface {
+                +start()
+                +MsgGetDownload()
+                +MsgApplyFilter(FilterType)
+                +MsgPlotData()
+                +MsgAnalyzeStats()
+            }
+
+            class DataController {
+                +applyTimeFilter()
+                +applyDateFilter()
+                +applyRegionFilter()
+            }
+
+            class PlotService {
+                +drawTimeSeries()
+                +drawHistogram()
+                +drawBoxPlot()
+            }
+
+            class StatsService {
+                +computeAverage()
+                +computeMin()
+                +computeMax()
+                +computeMedian()
+                +computeMode()
+            }
+
+            class DownloadService {
+                +exportRawData()
+                +exportFilteredData()
+                +exportPlot()
+                +exportStats()
+            }
+
+            class GitHubDataSource {
+                +loadData()
+                +verifyData()
+            }
+        }
+        %% relations
+        UserInterface --> DataController
+        DataController --> PlotService
+        DataController --> StatsService
+        UserInterface --> DownloadService
+        DownloadService --> GitHubDataSource
+
+        %% color clean classes green
+        style UserInterface fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style DataController fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style PlotService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style StatsService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style DownloadService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+        style GitHubDataSource fill:#ddffdd,stroke:#00aa00,stroke-width:2px
+
+    ```
+
 
 ## Further studies(Self study)
 
