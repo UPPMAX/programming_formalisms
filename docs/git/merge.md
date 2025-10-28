@@ -62,7 +62,7 @@ branches using GitHub
     * 6a416b5 add folders and planet code
     ```
 
-???- admonition "GitHub" 
+???- admonition "GitHub"
 
     - Merge
      
