@@ -47,6 +47,16 @@ tags:
 
     - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
 
+
+???- question "For teachers"
+
+    Prior:
+
+    - What is a Refactoring?
+    - What is a Design/code Smell?
+    - What is a Module?
+    - Why make modular design/code, what is the benefit?
+
 ## Refactoring
 
 ???- "What is Refactoring"
@@ -119,6 +129,164 @@ Some examples of code smell
 
     - Consider is your class diagram reflecting your code
 
+???- question "Bad Weather identify the design smells"
+
+    Identify the different design smells of the following diagram use notes to denote the found smells, then put it in a markdown document and commit to your learners space in the project.
+
+    ```mermaid
+        classDiagram
+
+            %% =======================
+            %% SMELLY DESIGN
+            %% =======================
+            namespace Smelly {
+                class Website {
+                    +String url
+                    +String repoPath
+                    +String filters
+                    +void loadEverythingAtOnce()
+                    +void reloadPageOnFilterChange()
+                    +void renderAllPlotsAndStatsTogether()
+                    +void handleDownloadRequest(fileType, filter, plot, stat, timeRange, dateRange, region)
+                }
+
+                class FilterManager {
+                    +String selectedTime
+                    +String selectedDate
+                    +String selectedRegion
+                    +void applyFilters(time, date, region)
+                    +void filterEverything()
+                }
+
+                class PlotManager {
+                    +void drawTimeSeries(data)
+                    +void drawHistogramAndBoxPlotTogether(data)
+                    +void renderAllStatsOnPlot(data)
+                }
+
+                class StatsManager {
+                    +float average
+                    +float minimum
+                    +float maximum
+                    +float median
+                    +float mode
+                    +void computeAllStatsInOneMethod(data)
+                }
+
+                class DownloadManager {
+                    +void downloadEverything()
+                    +void zipEverythingTogether()
+                }
+
+                class GitHubBackend {
+                    +String dataPath
+                    +void connectToGitHub()
+                    +void loadDataIntoAnalysisProgram(file)
+                    +void sendVerifyMessageToUser()
+                }
+            }
+        %% relationships
+        Website --> FilterManager
+        Website --> PlotManager
+        Website --> StatsManager
+        Website --> DownloadManager
+        Website --> GitHubBackend
+        FilterManager --> PlotManager
+        PlotManager --> StatsManager
+        DownloadManager --> GitHubBackend
+
+        %% color all smelly classes red
+        style Website fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style FilterManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style PlotManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style StatsManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style DownloadManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style GitHubBackend fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+
+    ```
+
+???- "Answer design smells"
+    Here is one answer, there can be more design smells that given here!
+
+    ```mermaid
+
+    classDiagram
+
+    %% =======================
+    %% SMELLY DESIGN
+    %% =======================
+    namespace Smelly {
+        class Website {
+            +String url
+            +String repoPath
+            +String filters
+            +void loadEverythingAtOnce()
+            +void reloadPageOnFilterChange()
+            +void renderAllPlotsAndStatsTogether()
+            +void handleDownloadRequest(fileType, filter, plot, stat, timeRange, dateRange, region)
+        }
+
+        class FilterManager {
+            +String selectedTime
+            +String selectedDate
+            +String selectedRegion
+            +void applyFilters(time, date, region)
+            +void filterEverything()
+        }
+
+        class PlotManager {
+            +void drawTimeSeries(data)
+            +void drawHistogramAndBoxPlotTogether(data)
+            +void renderAllStatsOnPlot(data)
+        }
+
+        class StatsManager {
+            +float average
+            +float minimum
+            +float maximum
+            +float median
+            +float mode
+            +void computeAllStatsInOneMethod(data)
+        }
+
+        class DownloadManager {
+            +void downloadEverything()
+            +void zipEverythingTogether()
+        }
+
+        class GitHubBackend {
+            +String dataPath
+            +void connectToGitHub()
+            +void loadDataIntoAnalysisProgram(file)
+            +void sendVerifyMessageToUser()
+        }
+    }
+        %% relationships
+        Website --> FilterManager
+        Website --> PlotManager
+        Website --> StatsManager
+        Website --> DownloadManager
+        Website --> GitHubBackend
+        FilterManager --> PlotManager
+        PlotManager --> StatsManager
+        DownloadManager --> GitHubBackend
+
+        %% color all smelly classes red
+        style Website fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style FilterManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style PlotManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style StatsManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style DownloadManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+        style GitHubBackend fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+
+        note for Website "Smells: God Class, Long Parameter List, Tight Coupling, Bloater"
+        note for FilterManager "Smells: Feature Envy (accesses others' data)"
+        note for PlotManager "Smells: Duplicated Responsibility with StatsManager"
+        note for StatsManager "Smells: Large Method computeAllStatsInOneMethod"
+        note for DownloadManager "Smells: Does too much (handles all file types)"
+        note for GitHubBackend "Smells: UI and backend mixed"
+    ```
+
 ???- "Refactor your design document"
     Chose an Issue that you are responsible for!
 
@@ -126,7 +294,7 @@ Some examples of code smell
     Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part)
 
 ???- "Refactor your code"
-    Chose an Issue that you are responsible for go through the code and refactor the code.
+    Chose an Issue that you are responsible for go through the code and refactor the code.(if you do not have an issue claim one)
 
 ## Code Coupling
 
