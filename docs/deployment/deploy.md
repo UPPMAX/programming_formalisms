@@ -45,11 +45,11 @@ tags:
     - Let's start in that end and be prepared.
     - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
-!!! hint 
+!!! hint
 
     - Make your program or workflow work for others and yourself in the future.
 
-!!! tip 
+!!! tip
 
     - Make your program or workflow work for others and yourself in the future.
 
@@ -445,13 +445,12 @@ For this we use `.gitignore` files.
 
 - Then the python active in "PATH" will automatically be used
     - especially important on a shared system where python is not in the typical ``/usr/bin/python`` path.
- 
+
 - Run from command line as:
 
 ```bash
 ./pythonscript
 ```
-
 
 !!! info "See also"
 
@@ -488,7 +487,6 @@ For this we use `.gitignore` files.
 ???- question "Exercise 1B: Start a new test project"
 
     - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
-
 
     ???+ question "In VS Code?"
 
