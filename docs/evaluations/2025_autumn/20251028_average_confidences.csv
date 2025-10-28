@@ -1,19 +1,19 @@
 learning_outcome,is_richel,mean
-Learn about common interfaces protocols and their role in modular programming,FALSE,1.4
+Learn about CIP and their role in MP,FALSE,1.4
 I understand the type of relation 'composition',FALSE,2
-Recognize the importance of relationships between classes including coposition and association,FALSE,2
-Recognize and address tight coupling in code to improve modularity.,FALSE,2.2
+Recognize the importance of relationships between classes,FALSE,2
+Recognize and address tight coupling to improve modularity,FALSE,2.2
 I can give some features of good class design,TRUE,2.4
 I understand what a Semantic gap is,FALSE,2.4
 Iterative refactoring,FALSE,2.6
-Understand the definition and structure of a class as a collection of objects,FALSE,3
+Understand the definition and structure of a class,FALSE,3
 I have an idea when use classes is worth it (and when not),TRUE,3.2
 Understand the concept of code smells and design smells,FALSE,3.2
 Understand the benefits of object-oriented development,FALSE,3.25
-I Comprehend the principles of object-oriented development such as information hiding,FALSE,3.4
+I Comprehend the principles of OO development,FALSE,3.4
 I can write a simple class,TRUE,3.4
 I know what modular programming is,FALSE,3.4
 Learn the definition and characteristics of an object,FALSE,3.4
 I can (choose to) write code that is Good Enough,TRUE,3.8
 I understand why Continuous Integration is useful,TRUE,4.4
-I can find the error messages given by the Continuous Integration tests,TRUE,4.8
+I can find the error messages given by the CI tests,TRUE,4.8
