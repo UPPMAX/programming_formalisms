@@ -217,10 +217,19 @@ You will need to defend this in a code review :-)
 
 Fixing this is beyond this exercise (but it is in the next :-) ).
 
-### Exercise 2: improve the learners' project
+### Exercise 2: practice with CI errors
 
-Now we try to improve the learners' project by fixing one
-of the errors.
+In this exercise we will develop **clean** code.
+
+Pick something at your level, in the relevant folder:
+
+What                                  |Which folder
+--------------------------------------|--------------
+A simple function                     |`src/learners`
+An try-out of the analysis of the data|`src/learners`
+An analysis of the data               |`src/weather`
+
+When uploading your code, check the results of the CI scripts regularly:
 
 - Go to the learners' project
 - Click on the 'Actions' tab

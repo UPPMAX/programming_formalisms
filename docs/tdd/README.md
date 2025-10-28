@@ -95,7 +95,7 @@ The three laws of TDD ensure each cycle is short `[Martin, 2007]`:
 ## Live demo
 
 Give a live demo here, as suggested at
-[a Retrospect of this day](../shared_documents/2025_autumn/20251014.md).
+[a Retrospect of this day](../shared_documents/2025_autumn/20251024.md).
 
 ## 3. Features of TDD
 

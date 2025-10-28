@@ -198,7 +198,7 @@ One typical workflow:
         ```
 
 ## Overview
-        
+
 ??? info "Overview workflow"
 
     ![git branches](../img/git_branches.png)
