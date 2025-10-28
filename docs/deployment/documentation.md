@@ -85,7 +85,7 @@ tags:
 - One of the most popular lightweight markup languages.
 - File extension ``.md`` makes it _render_ directly in GitHub!
 
-???+ question "How does it look like?"
+??? question "How does it look like?"
 
     ```markdown
     # This is a section heading in Markdown
@@ -112,10 +112,14 @@ tags:
     There is more:
     ![images](link to file),
     [links](URL),
-    tables...
+    A|B|C
+    -|-|-
+    1|x|y
+    2|m|n
+
     ```
 
-!!! info "Read more"
+??? info "Read more"
 
     [reStructuredText and Markdown](../extra_bc/documentation_deeper.md/#restructuredtext-and-markdown)
 
@@ -209,7 +213,7 @@ tags:
     - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
     - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
-!!! example
+??? example "Example with nextflow""
 
     ``` console
     nextflow -version
@@ -273,14 +277,14 @@ tags:
 
 - We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
+- (External) users should be able to install and use the the complete tool, including dependencies
 
 !!! info "Intro"
 
-    - (External) users should be able to install and use the the complete tool, including dependencies
     - Repo work
         - Work on GitHub!
         - When modifying repo, use a group specific branch
-        - When done, merge
+        - When done, merge/pull request
     - In the end we do code review together of the merging conflicts
 
 ???- tip "Markdown Cheat-Sheet"
@@ -303,8 +307,20 @@ tags:
     There is more:
     ![images](link to file),
     [links](URL),
-    tables...
+
+    A|B|C
+    -|-|-
+    1|x|y
+    2|m|n
+
     ```
+
+### First steps for ALL
+
+- Work together in group of 2-3
+-  1 person types directly in GitHub
+- Do ``git push`` first from local command-line, everyone!
+
 
 ### Group 1: Make 'installation instruction' in groups
 
@@ -316,9 +332,6 @@ tags:
 
 ???+ question "Make 'installation instruction'"
 
-    - Work together in group
-    - Do ``git push`` first from local command-line, everyone!
-    - 1 person types directly in GitHub
     - Create branch ``installation``
     - Open the file ``learners/README-EXT.md``
 
@@ -330,9 +343,6 @@ tags:
 
 ???+ question "Make 'About' and 'Getting started'"
 
-    - Work together in group
-    - Do ``git push`` first from local command-line, everyone!
-    - 1 person types directly in GitHub
     - Create branch ``about``
     - Open the file ``learners/README-EXT.md``
 
@@ -346,9 +356,6 @@ tags:
 
 ???+ question "Make sections about 'Getting started', 'Citation', 'License' and 'Authors'"
 
-    - Work together in group
-    - Do ``git push`` first from local command-line, everyone!
-    - 1 person types directly in GitHub
     - Create branch ``sharing``
     - Work with a CITATION(.cff) file
 
