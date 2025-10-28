@@ -72,8 +72,8 @@ are association, composition and inheritance.
 
 #### Bad structure
 
-    - `PetsIOwn` is a relation DB table not an object as it has
-    - no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
+- `PetsIOwn` is a relation DB table not an object as it has
+- no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
 
 ```mermaid
 classDiagram
@@ -415,6 +415,7 @@ Lets talk about Tightly vs loosely coupled code.
     Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
 
 !!! info "lets read about modular programming"(10 min)
+
     This is a Wikipedia article on [modular programming](https://en.wikipedia.org/wiki/Modular_programming)
 
 ??? question "Lets Discuss"
