@@ -181,7 +181,7 @@ Further reading:
         weatherStationData --> DataSource
     ```
 
-???+ question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)" (10 min)
+???- question "Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)" (10 min)
 
 !!!- Hint "example of a weather station analysis class diagram"
 
