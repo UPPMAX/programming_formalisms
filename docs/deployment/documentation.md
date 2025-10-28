@@ -213,7 +213,7 @@ tags:
     - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
     - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
-??? example "Example with Nextflow"
+??? example "Example with NextFlow"
 
     ``` console
     nextflow -version
