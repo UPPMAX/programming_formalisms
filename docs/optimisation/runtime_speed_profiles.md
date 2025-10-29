@@ -135,8 +135,8 @@ cProfile.run('do_it()')
 
 ### Exercise 1
 
-- Run the code of 'Obtaining a minimal runtime speed profile'
-  in **release mode**. What is the output?
+- Put the code of 'Obtaining a minimal runtime speed profile'
+  in a Python script and run it in **release mode**. What is the output?
 
 ???- question "How to run in release mode?"
 
@@ -187,8 +187,8 @@ cProfile.run('do_it()')
 
 ### Exercise 2: run a run-time speed profile
 
-- Run the code as shown at
-  'Obtaining a minimal and useful runtime speed profile'.
+- Put the code of 'Obtaining a minimal and useful runtime speed profile'
+  in a Python script and run it.
   What is the output?
 
 ???- question "Answer"
