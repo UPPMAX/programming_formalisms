@@ -9,6 +9,14 @@ These are our unedited evaluation results.
 We use multiple types of evaluations, such as Retrospects
 or anonymous forms.
 
+???- question "Where is the form for anonymous feedback?"
+
+    It is at [the feedback page of this course](../misc/feedback.md)
+
+???- question "Where is the form for the Retrospect?"
+
+    It is at [the shared document of this course](../shared_document.md)
+
 !!! note "No checks here"
 
     We choose only to edit evaluations when we have to (i.e.
