@@ -18,3 +18,9 @@ Here are open-access paper that we cite in this course.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
   [Article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
+
+
+Other reading material not yet cited.
+
+[Fair for Research software](https://rdcu.be/eNhd1)
+`[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]`Barker, M., Chue Hong, N.P., Katz, D.S. et al. Introducing the FAIR Principles for research software. Sci Data 9, 622 (2022).
