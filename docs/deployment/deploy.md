@@ -157,7 +157,7 @@ tags:
 
         git switch -c venv
         python -m venv venv
-        venv/Scripts/activate
+        venv/Scripts/activate # Mac/Linux has venv/bin/activate
         pip freeze  #should be empty
         ls
         cd code
@@ -172,6 +172,8 @@ tags:
         pip install matplotlib
         pip freeze
         pip freeze > requirements.txt
+        deactivate # deactivate the virtual environment
+
         git add requirements.txt
         git commit -m "add requirements.txt"
         git push
@@ -206,10 +208,8 @@ For this we use a `.gitignore` file (put in root folder)
 
 ???- question "Step 1: Start an EMPTY python virtual environment"
 
-    - Git pull!
+    - **Git pull!**
     - Go to the dir ``learners/<your-name>`` **locally**
-    - Create a new folder called ``test``
-    - Go into that folder
     - Check that you can run python from the commandline!
 
     ```console
@@ -281,43 +281,40 @@ For this we use a `.gitignore` file (put in root folder)
     - and some notes.
 
 
-???- question "Step 2: Run the program and look for missing packages"
+???- question "Step 2: Run the ``analysis.py`` script in ``/src/example`` and look for missing packages"
 
-    ???- info "Hints (**FIX?**)"
-
-        - The main program ``main.py`` is in the repo's root folder.
-        - ``weather`` is a python package needed by ``main.py``
-        - available here: <https://test.pypi.org/project/uppsalaweather/0.9/>
-
-    - Go to the directory where ``main.py`` is
+    - Go to the ``/src/example`` directory where ``analysis.py`` is
     - Run the program
 
     ```bash
     python main.py
     ```
 
-    - It may give you errors of missing packages, like ``weather``
-    - Install weather with
+    - It may give you errors of missing packages
+    - Install it with
 
+    ```bash
+    pip install [package name]
+    ```
+
+    ???- question "How do I install packages in virtual environments"
+
+        - Do NOT use ``--user``, since it should be installed in the virtual environment only.
+
+
+<!---
     ```bash
     pip install -i https://test.pypi.org/simple/ uppsalaweather==0.9
     ```
 
     (note the blank space before the package name!
-
+--->
     - Test run the program again
 
     - If more packages are needed, errors will still show up
+    - Do pip installations until your program works!
+
     - **Otherwise continue to next step**
-
-    ???- question "How do I install other packages"
-
-        ```console
-        pip install <package name>
-        ```
-
-        - Do NOT use ``--user``, since it should be installed in the virtual environment only.
-        - Do this until your program works
 
 ???- question "Step 3: Save your requirements as a file that user can run to get the needed dependencies"
 
@@ -328,10 +325,10 @@ For this we use a `.gitignore` file (put in root folder)
     ```
 
     - You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.
-    - Save your requirements as a file that user can run to get the needed dependencies.
+    - Save your requirements as a file in your learners folder.
 
     ```console
-    pip freeze > requirements.txt
+    pip freeze > /learners/[name]/requirements.txt
     ```
 
     - **Other users** can then install the same packages with:
@@ -345,6 +342,7 @@ For this we use a `.gitignore` file (put in root folder)
     ```console
     deactivate
     ```
+    - Push the 
 
 ???- question "(Optional) Step 4: Test the requirements file in a new environment"
 
@@ -352,9 +350,9 @@ For this we use a `.gitignore` file (put in root folder)
 
     - Create another virtual environment
 
-        ```console
-        python -m venv usertest2
-        ```
+    ```console
+    python -m venv usertest2
+    ```
 
     - Activate
 
@@ -383,6 +381,11 @@ For this we use a `.gitignore` file (put in root folder)
 ???- question "(Optional) Step 5: Add the folder to ``.gitignore``"
 
     - Add test directory to ``.gitignore`` file (root folder in repository)
+
+???- question "Push changes"
+    
+    - **Git push!**
+    - You should all have a requirements file in your folder
 
 ### Follow up
 
