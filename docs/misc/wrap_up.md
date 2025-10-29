@@ -65,6 +65,8 @@ flowchart TD
     algorithms[Algorithms]:::richel_node
     optimisation[Optimisation]:::richel_node
 
+    ood[Object Oriented Development]:::lars_node
+    refactoring[Refactoring]:::lars_node
     modular_programming[Modular programming]:::lars_node
     package[Package]:::richel_node
     deployment[Deployment]:::bjorn_node
@@ -74,6 +76,7 @@ flowchart TD
   sdlc --> requirements
   sdlc --> risk_analysis
   devtools --> version_control_1
+  requirements <--> risk_analysis
 
   requirements --> class_design
   version_control_1 --> requirements
@@ -93,7 +96,11 @@ flowchart TD
   package <--> modular_programming
   package --> optimisation
   algorithms --> package
-
+  requirements --> ood
+  ood --> class_design
+  issues --> class_design
+  class_design --> refactoring
+  refactoring --> modular_programming
   package --> deployment
   package --> documentation
 ```
