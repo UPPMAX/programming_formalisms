@@ -15,12 +15,17 @@ If a teacher does not have the proper time to prepare,
 consider reducing the amount of teaching hours for that
 teacher, so he/she has the time to focus on those fewer hours.
 
+I think all of us should follow the NBIS 'Train the Trainer' course,
+as I think some more knowledge on teaching would help us prepare our lessons
+better.
+
 If a teacher does not read the evaluation results,
 lets not bother the learners by asking those questions.
 
 As we do not actually work on a project,
-I suggest to remove pretending to do so.
-I do think we should keep working on a shared repository.
+I suggest to remove pretending to do so
+or add more time for this.
+In any case, I do think we should keep working on a shared repository.
 
 As we do not use issues in practice,
 I suggest to remove the session on issues.
