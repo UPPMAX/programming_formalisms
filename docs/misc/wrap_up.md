@@ -12,6 +12,13 @@ tags:
 
     - Remember what the course was about
 
+!!! hint Remember to revisit the course material
+    - The course material is under constant update from your reviews
+    and therefore will add information over time.
+    - The course material is updated to reflect new trends
+    - Remind your self what the techniques where
+    - Continuous learning
+
 ## Why?
 
 !!! note "Course mottos"
@@ -19,7 +26,6 @@ tags:
     - Turning scripters into computer scientists
     - Add theory to bolster already present practical skills
 
-To determine if the course mottos have held.
 
 
 ## Course overview
