@@ -26,9 +26,11 @@ tags:
     - Turning scripters into computer scientists
     - Add theory to bolster already present practical skills
 
-
-
 ## Course overview
+
+Some of the [definitions](https://uppmax.github.io/programming_formalisms/misc/definitions/) used in the course.
+
+And a mermaid diagram showing the overview of the course lessons.
 
 ```mermaid
 flowchart TD
@@ -69,7 +71,7 @@ flowchart TD
 
     data_structures[Data structures]:::richel_node
     algorithms[Algorithms]:::richel_node
-    optimisation[Optimisation]:::richel_node
+    optimization[Optimisation]:::richel_node
 
     ood[Object Oriented Development]:::lars_node
     refactoring[Refactoring]:::lars_node
@@ -100,7 +102,7 @@ flowchart TD
   testing --> algorithms
   data_structures --> package
   package <--> modular_programming
-  package --> optimisation
+  package --> optimization
   algorithms --> package
   requirements --> ood
   ood --> class_design
@@ -115,3 +117,9 @@ flowchart TD
 > Red: Richel.
 > Green: Lars.
 > Blue: Björn.
+
+## Miscellaneous good links
+
+- [Reading materials](https://uppmax.github.io/programming_formalisms/reading/)
+- [Learn UML](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
+- [Git workflow](https://uppmax.github.io/programming_formalisms/misc/git_workflow/)
