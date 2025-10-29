@@ -222,6 +222,26 @@ have the API token be allowed to upload to testPyPI. Upload:
 python3 -m twine upload --repository testpypi dist/*
 ```
 
+???- question "I got a 403 error with the word 'legacy' in it"
+
+    This error happens when you are not the first to upload this package.
+
+    To solve this, edit the `pyproject.toml` file. Look for this section:
+
+    ```text
+    [project]
+    name = "uppsalaweather"
+    ```
+
+    Replace the name by something new, for example:
+
+    ```text
+    [project]
+    name = "uppsalaweather_sven"
+    ```
+
+    Rebuild the package again and upload.
+
 ???- question "How does that look like?"
 
     ```bash
