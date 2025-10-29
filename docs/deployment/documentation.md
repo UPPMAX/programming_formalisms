@@ -353,7 +353,7 @@ tags:
 
 ### Group 3: Formulate "Sharing sections"
 
-???+ question "Make sections about 'Getting started', 'Citation', 'License' and 'Authors'"
+???+ question "Make sections about 'Citation', 'License' and 'Authors'"
 
     - Create branch ``sharing``
     - Work with a CITATION(.cff) file
