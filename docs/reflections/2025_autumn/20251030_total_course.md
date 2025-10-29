@@ -9,6 +9,8 @@
 
 ## Commits of teachers
 
+- [Analysis script](commit_analysis.R)
+
 I was interested in the commits: who of us committed when?
 
 ![Commits per hour](commit_hours.png)
@@ -21,6 +23,8 @@ and in the weekends. Maybe this puts too much stress on us?
 On the other hand: I am super happy with working at my weirder hours :-)
 
 ## Commits of learners
+
+- [Analysis script](learners_commit_analysis.R)
 
 I was interested in the commits: who of us committed when?
 
