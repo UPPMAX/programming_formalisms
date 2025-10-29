@@ -54,6 +54,7 @@ rename_author <- function(name) {
   if (name == "SLAment") return("LA")
   if (name == "Lore Ament") return("LA")
   if (name == "gabriel-ducrocq") return("GD")
+  if (name == "Gabriel Ducrocq") return("GD")
   if (name == "Hyewon Jang") return("HJ")
   message("'", name, "'")
   stop(name)
