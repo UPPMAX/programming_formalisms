@@ -1,0 +1,16 @@
+B,I can connect to the course repo,5,5,5
+L,I can find the needs/buissnes requirments,1,3,3,3,4,3,2,4,2,3
+L,I can do a simple FMEA,2,2,2,2
+L,I know what FMEA stands for,0,4,4,4
+B,I can make an issue in the project,5,5,5,5
+B,I know basic Git,5,4,5,5
+L,I know what a Requirement is,5,5,3,5
+L,I know how to write a formal requiremnts documentation,3,4,3,3
+B,I know how a remote repo works,5,5,4,4
+L,I know why we specify requirments,4,5,4,5
+L,I know the purpose of formalism in Computer Science,3,4,3,3
+U,I know what are the outcomes of a program,3,4
+U,I know what are the steps of development,4,3
+U,I know what is the Software development life cycle,3,3
+U,I know what is the importance of Documentation,5,5
+U,I know what is the different kinds of documentation,3,4
