@@ -118,6 +118,12 @@ flowchart TD
 > Green: Lars.
 > Blue: Björn.
 
+## Commits
+
+Some fun statistic about commits to the project.
+
+[Commit statistics](https://uppmax.github.io/programming_formalisms/reflections/2025_autumn/20251030_total_course/#commits-of-learners) you can see a page with some analysis of the commits that Richèl Bilderbeek has done
+
 ## Miscellaneous good links
 
 - [Reading materials](https://uppmax.github.io/programming_formalisms/reading/)
