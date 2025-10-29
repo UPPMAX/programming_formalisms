@@ -7,7 +7,7 @@
 
 
 
-## Commits
+## Commits of teachers
 
 I was interested in the commits: who of us committed when?
 
@@ -19,6 +19,19 @@ I see that some of us work outside of working hours
 and in the weekends. Maybe this puts too much stress on us?
 
 On the other hand: I am super happy with working at my weirder hours :-)
+
+## Commits of learners
+
+I was interested in the commits: who of us committed when?
+
+![Number of commits](learners_n_commits.png)
+
+![The hours commits are done](learners_commit_hours.png)
+
+![The weekdays that commits are done](learners_commit_wdays.png)
+
+I am happy to see no learners worked in the weekend
+and most commit under course hours :-)
 
 ## To discuss at a meeting
 
