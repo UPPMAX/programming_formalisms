@@ -22,8 +22,7 @@ Here are open-access paper that we cite in this course.
 
 Other reading material not yet cited.
 
-[Fair for Research software](https://rdcu.be/eNhd1)
-`[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]`Barker, M., Chue Hong, N.P., Katz, D.S. et al. Introducing the FAIR Principles for research software. Sci Data 9, 622 (2022).
+`[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]`Barker, M., Chue Hong, N.P., Katz, D.S. et al. Introducing the FAIR Principles for research software. Sci Data 9, 622 (2022). [Fair4RS](https://rdcu.be/eNhd1)
 
 
 Non open-access references
