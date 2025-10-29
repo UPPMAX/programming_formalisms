@@ -131,7 +131,7 @@ flowchart TD
 
 Some fun statistic about commits to the project.
 
-[Here](https://uppmax.github.io/programming_formalisms/reflections/2025_autumn/20251030_total_course/#commits-of-learners) you can se a page with some analysis of the commits that Richèl Bilderbeek has done
+[Commit statistics](https://uppmax.github.io/programming_formalisms/reflections/2025_autumn/20251030_total_course/#commits-of-learners) you can see a page with some analysis of the commits that Richèl Bilderbeek has done
 
 ## Miscellaneous good links
 
