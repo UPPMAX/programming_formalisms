@@ -24,7 +24,7 @@ tags:
 <br/>
 
 <figure markdown="span">
-  ![Programming formalism logo](https://uppmax.github.io/programming_formalisms/assets/programming_formalism_logo.png){ width="500" }
+  ![Programming formalism logo](../assets/programming_formalism_logo.png){ width="500" }
   <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
 </figure>
 
