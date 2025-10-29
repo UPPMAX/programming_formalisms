@@ -157,7 +157,7 @@ tags:
 
         git switch -c venv
         python -m venv venv
-        venv/Scripts/activate # Mac/Linux has venv/bin/activate
+        source venv/Scripts/activate # Mac/Linux has venv/bin/activate
         pip freeze  #should be empty
         ls
         cd code
@@ -294,28 +294,21 @@ For this we use a `.gitignore` file (put in root folder)
     - Install it with
 
     ```bash
-    pip install [package name]
+    python3 -m pip install [package name]  # 
     ```
-    
-    <!-- note to BC: this is what one of our learners found out to work:
-
-    python3 -m pip install [package name]
-
-    -->
-
 
     ???- question "How do I install packages in virtual environments"
 
         - Do NOT use ``--user``, since it should be installed in the virtual environment only.
 
 
-<!---
+    <!---
     ```bash
     pip install -i https://test.pypi.org/simple/ uppsalaweather==0.9
     ```
 
     (note the blank space before the package name!
---->
+    --->
     - Test run the program again
 
     - If more packages are needed, errors will still show up
