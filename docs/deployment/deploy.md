@@ -296,6 +296,13 @@ For this we use a `.gitignore` file (put in root folder)
     ```bash
     pip install [package name]
     ```
+    
+    <!-- note to BC: this is what one of our learners found out to work:
+
+    python3 -m pip install [package name]
+
+    -->
+
 
     ???- question "How do I install packages in virtual environments"
 
