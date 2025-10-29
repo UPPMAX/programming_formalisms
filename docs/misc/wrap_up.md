@@ -12,6 +12,13 @@ tags:
 
     - Remember what the course was about
 
+!!! hint Remember to revisit the course material
+    - The course material is under constant update from your reviews
+    and therefore will add information over time.
+    - The course material is updated to reflect new trends
+    - Remind your self what the techniques where
+    - Continuous learning
+
 ## Why?
 
 !!! note "Course mottos"
@@ -19,7 +26,6 @@ tags:
     - Turning scripters into computer scientists
     - Add theory to bolster already present practical skills
 
-To determine if the course mottos have held.
 
 
 ## Course overview
@@ -65,6 +71,8 @@ flowchart TD
     algorithms[Algorithms]:::richel_node
     optimisation[Optimisation]:::richel_node
 
+    ood[Object Oriented Development]:::lars_node
+    refactoring[Refactoring]:::lars_node
     modular_programming[Modular programming]:::lars_node
     package[Package]:::richel_node
     deployment[Deployment]:::bjorn_node
@@ -74,6 +82,7 @@ flowchart TD
   sdlc --> requirements
   sdlc --> risk_analysis
   devtools --> version_control_1
+  requirements <--> risk_analysis
 
   requirements --> class_design
   version_control_1 --> requirements
@@ -93,7 +102,11 @@ flowchart TD
   package <--> modular_programming
   package --> optimisation
   algorithms --> package
-
+  requirements --> ood
+  ood --> class_design
+  issues --> class_design
+  class_design --> refactoring
+  refactoring --> modular_programming
   package --> deployment
   package --> documentation
 ```

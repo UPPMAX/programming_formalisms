@@ -116,7 +116,7 @@ Some examples of code smell
 
 - Bloaters
 - Object-Orientation Abusers
-- Change Preventers
+- Change Presenters
 - Dispensables
 - Couplers
 
@@ -433,7 +433,7 @@ From this these for principles are generally considered a requirement for modula
     - That what you must clearly define for any function or object is a Common Interface that is static
     - That there are no side effect from your implementation
     - That you do not do message passing by reference.
-    - That you program blackbox methods and classes.
+    - That you program  black box methods and classes.
 
 ???- "Why is Modular Programming something to strive for"
 
