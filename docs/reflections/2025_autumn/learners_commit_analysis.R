@@ -66,7 +66,7 @@ t$short_name <- rename_authors(t$author)
 testthat::expect_true(all(nchar(t$short_name) == 2 | nchar(t$short_name) == 3))
 
 t$hour <- lubridate::hour(t$datetime)
-t$wday <- lubridate::wday(t$datetime)
+t$wday <- lubridate::wday(t$datetime, label = TRUE)
 
 ggplot2::ggplot(t, ggplot2::aes(short_name)) +
   ggplot2::geom_histogram(stat = "count")
@@ -80,7 +80,7 @@ ggplot2::ggplot(t, ggplot2::aes(hour, fill = short_name)) +
 ggplot2::ggsave("learners_commit_hours.png", width = 7, height = 7)
 
 ggplot2::ggplot(t, ggplot2::aes(wday, fill = short_name)) +
-  ggplot2::geom_histogram(position = "dodge")
+  ggplot2::geom_histogram(stat = "count")
 
 ggplot2::ggsave("learners_commit_wdays.png", width = 7, height = 7)
 
