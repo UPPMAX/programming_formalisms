@@ -7,3 +7,6 @@ Day|Evaluations
 3  |[Evaluation](20251027.md)
 4  |[Evaluation](20251028.md)
 5  |[Evaluation](20251029.md)
+
+
+![All autumn 2025 confidences](2025_autumn_all_confidences.png)

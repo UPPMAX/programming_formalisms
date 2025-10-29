@@ -1,14 +1,14 @@
-NR,I can create switch and delete a git branch locally,5,5,5,5,5
-NR,I can do Pull requests,5,5,5,5,5
-NR,I can do a code review (in GitHub),5,4,4,4,4
-NR,I can explain and evaluate the usefulness of branches,5,5,4,4,4
-NR,I can manage merge conflicts locally,5,5,3,5,4
-NR,I can manage merge conflicts on GitHub,5,4,4,5,4
-NR,I can merge locally,5,4,4,5,4
-NR,I can merge on GitHub,5,4,4,5,4
-NR,I feel confidence and motivation in making my code open-source,5,4,5,5,5
-NR,I have an idea about how to contribute as an external contributor,4,5,4,4,4
-NR,I understand when a forked workflow is recommended,5,5,4,4,4
+B,I can create switch and delete a git branch locally,5,5,5,5,5
+B,I can do Pull requests,5,5,5,5,5
+B,I can do a code review (in GitHub),5,4,4,4,4
+B,I can explain and evaluate the usefulness of branches,5,5,4,4,4
+B,I can manage merge conflicts locally,5,5,3,5,4
+B,I can manage merge conflicts on GitHub,5,4,4,5,4
+B,I can merge locally,5,4,4,5,4
+B,I can merge on GitHub,5,4,4,5,4
+B,I feel confidence and motivation in making my code open-source,5,4,5,5,5
+B,I have an idea about how to contribute as an external contributor,4,5,4,4,4
+B,I understand when a forked workflow is recommended,5,5,4,4,4
 R,I understand how to do TDD at a larger scale,4,4,4,2,5
 R,I understand why pair programming is important,5,5,4,5,4
 R,I understand what good pair programming looks like,4,4,4,3,4,
