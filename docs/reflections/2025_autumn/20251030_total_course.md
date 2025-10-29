@@ -5,8 +5,48 @@
 
 ## Course as a whole
 
+Here I mark changes we made to this course:
 
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+<!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
 
+Day      |Time       |Teacher|Subject
+---------|-----------|-------|-----------------------------------------------------------
+Friday  |09:00-10:00|Lars   |Software development life cycle
+Friday  |10:15-11:00|Richel |Issues and kanban board
+Friday  |11:15-12:00|Richel |assert
+Friday  |13:00-14:00|Richel |TDD 1
+Friday  |14:15-15:00|Richel |TDD 2
+Friday  |15:00-15:40|Richel |Formal testing framework **-> TDD at a bigger scale**
+Friday  |15:40-16:00|Lars   |Confidence and retrospect
+|||||
+Monday|09:00-10:00|Björn  |Formal git workflow, branches
+Monday|10:15-11:00|Björn  |Formal git workflow, merge
+Monday|11:15-12:00|Björn  |Formal git workflow, contribute & Social coding and sharing
+Monday|13:00-14:00|Richel |Pair programming
+Monday|14:15-15:00|Richel |Pair programming
+Monday|15:15-15:40|Richel |Formal testing framework **-> Pair programming**
+Monday|15:40-16:00|Lars   |Confidence and retrospect
+|||||
+Tuesday |09:00-09:45|Richel |Function design **-> Continuous integration**
+Tuesday |10:00-10:45 -> **10:00-11:00**|Richel |Expressive data type **-> Continuous integration**
+Tuesday |11:00-12:00 -> **11:15-12:00**|Lars   |Object-oriented design
+Tuesday |13:00-14:00|Richel |Has-a relation and class design **-> class design**
+Tuesday |14:15-15:00|Lars   |Modular programming 
+Tuesday |15:15-15:40|Richel **-> Lars** |Continuous integration **-> Modular programming**
+Tuesday |15:40-16:00|Lars   |Confidence and retrospect
+|||||
+Wednesday|09:00-09:45|Richel |Implement the project as a package
+Wednesday|10:00-11:00|Richel |Runtime speed profiles, Improve run-time speed **-> Runtime speed profiles**
+Wednesday|11:15-12:00|Björn  |Deployment
+Wednesday|13:00-13:30|Björn  |Deployment
+Wednesday|13:30-13:50|Björn  |Documentation
+Wednesday|14:05-15:00|Björn  |Documentation
+Wednesday|15:15-15:40|Lars   |Wrap-up
+Wednesday|15:40-16:00|Lars   |Confidence and retrospect
+
+<!-- markdownlint-enable MD013 -->
+<!-- markdownlint-enable MD055 -->
 
 ## Commits of teachers
 
