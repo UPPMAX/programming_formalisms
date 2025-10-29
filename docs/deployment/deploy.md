@@ -669,6 +669,11 @@ For this we use a `.gitignore` file (put in root folder)
     
     ```
 
+!!! info "About releases"
+
+
+    [About releases on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
+
 ## Summary
 
 !!! info "Key points"
