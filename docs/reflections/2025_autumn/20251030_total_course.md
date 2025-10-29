@@ -48,6 +48,9 @@ Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 <!-- markdownlint-enable MD013 -->
 <!-- markdownlint-enable MD055 -->
 
+- [x] Consider menioning [pyOpenSci](https://github.com/pyopensci/software-submission):
+  it results in a paper!
+
 ## Commits of teachers
 
 - [Analysis script](commit_analysis.R)
