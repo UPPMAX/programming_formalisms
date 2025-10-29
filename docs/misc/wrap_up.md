@@ -21,6 +21,15 @@ tags:
 
 ## Why?
 
+<br/>
+
+<figure markdown="span">
+  ![Programming formalism logo](https://uppmax.github.io/programming_formalisms/assets/programming_formalism_logo.png){ width="500" }
+  <figcaption>'Programming Formalisms' course logo, by Jonas Söderberg and Lars Eklund</figcaption>
+</figure>
+
+<br/>
+
 !!! note "Course mottos"
 
     - Turning scripters into computer scientists
@@ -117,6 +126,12 @@ flowchart TD
 > Red: Richel.
 > Green: Lars.
 > Blue: Björn.
+
+## Commits
+
+Some fun statistic about commits to the project.
+
+[Here](https://uppmax.github.io/programming_formalisms/reflections/2025_autumn/20251030_total_course/#commits-of-learners) you can se a page with some analysis of the commits that Richèl Bilderbeek has done
 
 ## Miscellaneous good links
 
