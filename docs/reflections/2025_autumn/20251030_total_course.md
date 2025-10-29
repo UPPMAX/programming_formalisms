@@ -3,9 +3,24 @@
 - Total course
 - Author: Richel
 
+## Course as a whole
+
+
+
+## Commits
+
+I was interested in the commits: who of us committed when?
+
 ![Commits per hour](commit_hours.png)
 
 ![Commits per day of the week](commit_wdays.png)
+
+I see that some of us work outside of working hours
+and in the weekends. Maybe this puts too much stress on us?
+
+On the other hand: I am super happy with working at my weirder hours :-)
+
+## To discuss at a meeting
 
 If a coordinator does not have the proper time to do his/her job,
 consider reducing the amount of teaching hours for that
