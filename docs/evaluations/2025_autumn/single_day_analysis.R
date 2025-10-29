@@ -11,6 +11,19 @@
 #   ./single_day_analysis 20251029
 
 args <- commandArgs(trailingOnly = TRUE)
+
+if (length(args) != 1) {
+  stop(
+    "Please provide one argument to this script: \n",
+    " \n",
+    "   ./single_day_analysis [date in ISO 8601 format] \n",
+    " \n",
+    " Example: \n",
+    " \n",
+    "   ./single_day_analysis 20251029 \n"
+  )
+}
+
 testthat::expect_equal(1, length(args))
 
 date <- args
