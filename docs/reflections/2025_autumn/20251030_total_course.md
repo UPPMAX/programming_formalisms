@@ -3,6 +3,10 @@
 - Total course
 - Author: Richel
 
+![Commits per hour](commit_hours.png)
+
+![Commits per day of the week](commit_wdays.png)
+
 If a coordinator does not have the proper time to do his/her job,
 consider reducing the amount of teaching hours for that
 teacher, so he/she has the time to do so.
