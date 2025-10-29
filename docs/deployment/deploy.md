@@ -302,13 +302,14 @@ For this we use a `.gitignore` file (put in root folder)
         - Do NOT use ``--user``, since it should be installed in the virtual environment only.
 
 
-    <!---
-    ```bash
-    pip install -i https://test.pypi.org/simple/ uppsalaweather==0.9
-    ```
+    ??? example "how to install ``uppsalaweather``"
 
-    (note the blank space before the package name!
-    --->
+        ```bash
+        pip install -i https://test.pypi.org/simple/ uppsalaweather==0.9
+        ```
+    
+        (note the blank space before the package name!
+    
     - Test run the program again
 
     - If more packages are needed, errors will still show up
@@ -342,7 +343,8 @@ For this we use a `.gitignore` file (put in root folder)
     ```console
     deactivate
     ```
-    - Push the 
+
+    - Push the changes
 
 ???- question "(Optional) Step 4: Test the requirements file in a new environment"
 
