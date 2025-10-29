@@ -32,9 +32,9 @@ tags:
 ???- question "Read the material(10 min)"
     we now read the material down till exercises
 
-Why do we suggest that Obeject Oriented design is still relevant.
+Why do we suggest that Object Oriented design is still relevant.
 Ivar Jacobson one of the Inventors of the UML language and
-the opject oriented software enginering method OOSE
+the object oriented software engineering method OOSE
 states
 
 "People regard their environment in terms of objects"
@@ -173,7 +173,7 @@ Further reading:
 ???- question "Where to find requirements?"
 
     References to the requirements found either in the teacher example [requirements](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
-    or in your own [requirments](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/learners/merged_requirements.md) document. Also check your issues for features you want to include
+    or in your own [requirements](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/blob/main/learners/merged_requirements.md) document. Also check your issues for features you want to include
 
 ???- hint "A solution"
 
@@ -194,7 +194,7 @@ Further reading:
 
     Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)
 
-    Refactoriig is basically reorganisation to match or imporve your design.
+    Refactoring is basically reorganization to match or improve your design.
 
 ???- info "example of a weather station analysis class diagram"
 
@@ -275,11 +275,11 @@ A common case where we utilize the power of inheritance, is
 when we have a group of objects that share a common interface.
 the interface is then implemented as an abstract class(a class that cannot be instantiated into and object.) which the other classes inherits. This common set of behavior and properties needed to convey information to a class but lets the child classes deal with the information as it will, this is a common practice when designing multiple UI for example if the CLI and the graphical UI interact with the controller class in a similar way passing messages(data) between the analysis unit and the UI this can easily be implemented as a inheritance structure.
 
-an example of how an Abstract(Interface) is utilized to allow for multiple behaviours without coupling the classes
+an example of how an Abstract(Interface) is utilized to allow for multiple behaviors without coupling the classes
 
 ```mermaid
 classDiagram
- dierction TD
+ direction TD
  namespace WeatherAnalysis {
 
     class UserInterface {
@@ -377,7 +377,7 @@ Zero line Design is optimal in the sense that if some one already figure out a t
     design problem in your code.
     from [refactoring.guru](https://refactoring.guru/design-patterns)
 
-    Gamma et al. starts describing a design pattern with a quote from Christopher alexander "Each pattern describes a problem which occurs over and over again in our environment,and then describes the core of the solution to that problem in such away that you can use this solution a million time over , without doing it the same way twice" which is a qoute about buildings and towns, but they go on to claim that this is applicable in object design as well`[Gamma et al., 1995]`
+    Gamma et al. starts describing a design pattern with a quote from Christopher alexander "Each pattern describes a problem which occurs over and over again in our environment,and then describes the core of the solution to that problem in such away that you can use this solution a million time over , without doing it the same way twice" which is a quote about buildings and towns, but they go on to claim that this is applicable in object design as well`[Gamma et al., 1995]`
 
 ???- question  "Why do we use Design Patterns?"
 
@@ -406,11 +406,11 @@ Zero line Design is optimal in the sense that if some one already figure out a t
 
     Using refactoring.guru find an design Describe in a design document a pattern that is useful for the weather project
 
-<!--![Gamma et al., 1995]() consider adding images of each book used in the refrence -->
+<!--![Gamma et al., 1995]() consider adding images of each book used in the reference -->
 
 ## References
 
-- `[Ivar Jacobson 1992]` Ivar Jacobson et al., Object-Oriented Software Engineering, a usecase driven approach, Addison-wesley 1992.
+- `[Ivar Jacobson 1992]` Ivar Jacobson et al., Object-Oriented Software Engineering, a use case driven approach, Addison-wesley 1992.
 - `[Booch 2007]` Grady Booch et al.,Object-oriented analysis and design with applications -3rd ed,Addison-wesley 2007.
 - `[Stroustrup B. 1998]` Stroustrup B. What is “Object-oriented Programming”? Software, IEEE. 1988 Jun 1;5:10–20.
 - `[Gamma et al., 1995]` Gamma, Erich, et al.
