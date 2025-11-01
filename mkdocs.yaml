@@ -67,12 +67,12 @@ nav:
     - FAQ: misc/faq.md
     - Feedback: misc/feedback.md
     - Functions to practice TDD: misc/functions.md
+    - Further learning: further_learning.md
     - git workflow: misc/git_workflow.md
     - Lesson plans: lesson_plans/README.md
     - Learn UML with mermaid: misc/uml_with_mermaid.md
     - Meeting notes: meeting_notes/README.md
     - Project workflows: misc/project_workflows.md
-    - Reading material: reading/README.md
     - Reflections: reflections/README.md
     - Retrospective: misc/retrospective.md
     - Shared document: shared_document.md

@@ -126,6 +126,4 @@ Some fun statistic about commits to the project.
 
 ## Miscellaneous good links
 
-- [Reading materials](https://uppmax.github.io/programming_formalisms/reading/)
-- [Learn UML](https://uppmax.github.io/programming_formalisms/misc/uml_with_mermaid/)
-- [Git workflow](https://uppmax.github.io/programming_formalisms/misc/git_workflow/)
+- [Further learning](../further_learning.md)
