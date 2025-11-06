@@ -11,6 +11,8 @@ For a detailed daily schedule, see the detailed schedule of that day.
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 <!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
 
+<!-- Remove temporarily for PRAO students
+
 Day      |Time       |Teacher|Subject
 ---------|-----------|-------|-----------------------------------------------------------
 Thursday |09:00-09:10|Lars   | [Welcome to the course](./intro.md)
@@ -52,6 +54,8 @@ Wednesday|13:30-13:50|Björn  |[Documentation](deployment/documentation.md)
 Wednesday|14:05-15:00|Björn  |[Documentation](deployment/documentation.md)
 Wednesday|15:15-15:40|Lars   |[Wrap-up](misc/wrap_up.md)
 Wednesday|15:40-16:00|Lars   |Confidence and retrospect
+
+-->
 
 <!-- markdownlint-enable MD013 -->
 <!-- markdownlint-enable MD055 -->
