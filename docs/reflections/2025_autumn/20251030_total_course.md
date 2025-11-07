@@ -156,7 +156,7 @@ difficult problems for those who are ahead to solve
 
 ### 2. [Improve runtime speed](https://uppmax.github.io/programming_formalisms/optimisation/improve_runtime_speed/)
 
-- Add some illustrations
+- [X] Add some illustrations
 - Add a summary
 - Explain deeper in the outcomes
 - Consider adding more difficult problems for the quicker learners
@@ -211,7 +211,8 @@ It has no text that's conected to the picture,
 the only thing that can be connected is the word "Why?"
 So that's a little confusing.
 
-- [ ] Make it clear what the image is about
+- [x] Make it clear what the image is about
+- [x] Make the header 'Why?' more descriptive
 
 And there wasn't that much information about anything really.
 The whole course material is almost only exercises,

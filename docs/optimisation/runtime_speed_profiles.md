@@ -35,16 +35,12 @@ tags:
 
 ## Why use runtime speed profiles?
 
-!!! info "Quote from Herb Sutter"
+!!! info "A runtime speed profile"
 
-    It is far, far easier to make a correct program fast,
-    than it is to make a fast program correct.
+    ![A flamegraph](flamegraph.png)
 
-???- question "How does Herb Sutter look like?"
-
-    ![Herb Sutter](herb_sutter.jpg)
-
-    - Source: [Wikimedia](https://commons.wikimedia.org/wiki/Category:Herb_Sutter#/media/File:Professional_Developers_Conference_2009_Technical_Leaders_Panel_7.jpg)
+    > A runtime speed profile visualization from
+    > [some example Java code](https://github.com/jarasez/flamegraph)
 
 !!! info "Quote from Donald Knuth"
 
@@ -130,6 +126,8 @@ def do_it():
 import cProfile
 cProfile.run('do_it()')
 ```
+
+
 
 ## Exercises
 

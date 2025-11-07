@@ -28,7 +28,6 @@ tags:
 
 ## Why improve run-time speed?
 
-
 Your program is too slow.
 You want to make it go faster.
 You've used runtime speed profiling to find the
