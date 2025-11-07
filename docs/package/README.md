@@ -44,7 +44,7 @@ tags:
       Exercise 2 after the break: crit, after exercise_2, 5s
     ```
 
-## Why?
+## Why put your code in a Python package?
 
 !!! info "Our app on PyPI"
 
@@ -264,3 +264,4 @@ Indeed, the package can now be found at [https://test.pypi.org/project/weather/1
 ???- question "How does that look like?"
 
     ![`bacsim` on PyPI](bacsim_on_testpypi.png)
+
