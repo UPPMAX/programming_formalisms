@@ -46,9 +46,11 @@ tags:
 
 ## Why?
 
-![weather on PyPI](bacsim_on_testpypi.png)
+!!! info "Our app on PyPI"
 
-> `weather` on (the test version of) PyPI
+    ![`bacsim` on PyPI](bacsim_on_testpypi.png)
+
+    > An earlier project called `bacsim` on (the test version of) PyPI
 
 You want to share or re-use your work
 in the regular way.
@@ -261,4 +263,4 @@ Indeed, the package can now be found at [https://test.pypi.org/project/weather/1
 
 ???- question "How does that look like?"
 
-    ![weather on PyPI](bacsim_on_testpypi.png)
+    ![`bacsim` on PyPI](bacsim_on_testpypi.png)
