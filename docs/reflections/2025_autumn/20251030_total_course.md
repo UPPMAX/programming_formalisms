@@ -103,6 +103,10 @@ I suggest to remove pretending to do so
 or add more time for this.
 In any case, I do think we should keep working on a shared repository.
 
+I suggest to expand the programming languages we use, i.e. R and Bash,
+as per request of some future learners. This will mainly affect Richel.
+This will be easiest to do if there is no shared project.
+
 As we do not use issues in practice,
 I suggest to remove the session on issues.
 

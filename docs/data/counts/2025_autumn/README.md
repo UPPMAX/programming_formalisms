@@ -15,3 +15,7 @@ keeping learners in an online course.
 
 - Number of registrations: 15
 
+![Average number of learners in time](average_n_learners_in_time.png)
+
+![Number of learners in time per day](n_learners_in_time_per_day.png)
+
