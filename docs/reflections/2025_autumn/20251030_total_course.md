@@ -132,3 +132,86 @@ development' and all other lectures, I suggest to rewrite or remove it.
 As I think there should be enough time for function design,
 I suggest to remove all sessions on OOP, unless functions can be
 discussed properly.
+
+## Course feedback
+
+For 1 and 2 i think you could add some more illustation to make them less bland
+and help differenciate the different parts.
+I like that there is a summary at the end of the first one and
+i think the other two could also use a summary to make it simpler
+to remind yourself without having to read the whole thing all over again.
+Also i think they should go deeper into what you are expected to learn
+in the learning outcomes for all of them and
+maybe add some learning outcomes for 1.
+Not really needed but it could be a good idea to add some more
+difficult problems for those who are ahead to solve
+
+### 1. [Deploy your code](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
+
+Add some illustrations, add more learning outcomes and explain deeper what you will learn
+
+### 2. [Improve runtime speed](https://uppmax.github.io/programming_formalisms/optimisation/improve_runtime_speed/)
+
+Add some illustrations, add a summary, explain deeper in the outcomes.
+
+### 3. [Object Oriented development](https://uppmax.github.io/programming_formalisms/design_develop/OO_development/)
+
+Add summary, explain further in the outcomes
+
+## Course feedback
+
+For each course material i would like to see a summary,
+that in the course material it says what you will be learning.
+
+I would like if there were some questions that can prepair
+you for what's comming.
+
+I would also like some images that shows how to do some steps
+or to make the the course material more intresting to read about.
+
+Looking at images is also a way to get a quick glance
+of what the course material is about.
+
+And of course i want there to be some information about
+what you will be learning.
+
+### 1. [Documentation](https://uppmax.github.io/programming_formalisms/deployment/documentation/)
+
+The course material looks interesting and it does make me want to take the course.
+I like how in the begining it shows what you will be learning
+in the course and with the summary at the end it makes it clear what you will be learning.
+It does have some group questions that you are going to do,
+but not questions that you can take or try to solve before you start the course.
+And the course dosn't have any images,
+which is okay but it does make the course material look pretty bland
+and not very interesting to look at. 
+
+### 2. [Package](https://uppmax.github.io/programming_formalisms/package/)
+
+Package : It has a learning outcome that tells what students will be learning,
+and it has questions about the material,
+and where to find the answers.
+And if you are still not sure if you did correct it has answer button
+that shows you if you got it correct.
+It does also have a image,
+but it's not that clear of what it is about.
+It has no text that's conected to the picture,
+the only thing that can be conected is the word "Why?"
+So that's a little confusing.
+And there wasn't that much information about anything really.
+The whole course material is almost only exercises,
+no text or imformation at all.
+It does have some webpages with the information and that's good
+but i really would like for the course material to have more information.
+
+### 3. [Refactoring and Modular programming](https://uppmax.github.io/programming_formalisms/modularity/modular/)
+
+Refactoring and Modular programming : I like how it has a learning outcome
+for both part's of the programs, one for refactoring and
+one for modular programming.
+It dosn't have a summary, which is one of the most iportant things.
+It does have images that are clear what they are about.
+They have a text that very clearly explains what the picture is about.
+It does also have some exercises with the answers.
+But i dosn't have a summary.
+
