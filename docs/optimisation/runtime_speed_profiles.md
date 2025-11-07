@@ -37,9 +37,9 @@ tags:
 
 !!! info "A runtime speed profile"
 
-    ![A flamegraph](flamegraph.png)
+    ![A flamegraph](flamegraph_50.png)
 
-    > A runtime speed profile visualization from
+    > A runtime speed profile visualization adapted from
     > [some example Java code](https://github.com/jarasez/flamegraph)
 
 !!! info "Quote from Donald Knuth"
