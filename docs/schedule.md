@@ -8,12 +8,10 @@ For a detailed daily schedule, see the detailed schedule of that day.
 
     See [the course dates](course_dates.md).
 
-<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
-<!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
+???- question "For teachers"
 
-<!-- 
-
-    Remove temporarily for PRAO students
+    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+    <!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
 
     Day      |Time       |Teacher|Subject
     ---------|-----------|-------|-----------------------------------------------------------
@@ -57,7 +55,5 @@ For a detailed daily schedule, see the detailed schedule of that day.
     Wednesday|15:15-15:40|Lars   |[Wrap-up](misc/wrap_up.md)
     Wednesday|15:40-16:00|Lars   |Confidence and retrospect
 
--->
-
-<!-- markdownlint-enable MD013 -->
-<!-- markdownlint-enable MD055 -->
+    <!-- markdownlint-enable MD013 -->
+    <!-- markdownlint-enable MD055 -->
