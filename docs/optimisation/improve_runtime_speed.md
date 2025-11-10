@@ -241,5 +241,5 @@ Let `is_prime` use the faster implementation.
 !!! info "Summary"
 
     - One can (and should) test for runtime speed improvement
-    - Measure the runtime speed bottleneck; do **not** follow your gut-feeling 
+    - Measure the runtime speed bottleneck; do **not** follow your gut-feeling
     - Consider following the literature over your gut-feeling
