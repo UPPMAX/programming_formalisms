@@ -571,7 +571,7 @@ for i in range(n_individuals):
 !!! info "Summary"
 
     - Consider runtime speed only when needed
-    - Measure the runtime speed bottleneck; do **not** follow your gut-feeling 
+    - Measure the runtime speed bottleneck; do **not** follow your gut-feeling
     - Consider following the literature over your gut-feeling
 
 ## References
