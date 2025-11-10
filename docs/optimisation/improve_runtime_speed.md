@@ -28,6 +28,13 @@ tags:
 
 ## Why improve run-time speed?
 
+!!! info "A runtime speed profile"
+
+    ![A flamegraph](flamegraph_50.png)
+
+    > A runtime speed profile visualization adapted from
+    > [some example Java code](https://github.com/jarasez/flamegraph)
+
 Your program is too slow.
 You want to make it go faster.
 You've used runtime speed profiling to find the
@@ -230,3 +237,9 @@ Let `is_prime` use the faster implementation.
 
     assert get_t_is_prime_2() * 10 < get_t_is_prime_1()
     ```
+
+!!! info "Summary"
+
+    - One can (and should) test for runtime speed improvement
+    - Measure the runtime speed bottleneck; do **not** follow your gut-feeling 
+    - Consider following the literature over your gut-feeling

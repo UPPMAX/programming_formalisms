@@ -569,6 +569,12 @@ for i in range(n_individuals):
     `[CppCore Per.6][Chellappa et al., 2008]`:
     the code may actually be slower!
 
+!!! info "Summary"
+
+    - Consider runtime speed only when needed
+    - Measure the runtime speed bottleneck; do **not** follow your gut-feeling 
+    - Consider following the literature over your gut-feeling
+
 ## References
 
 - `[CppCore Per.1]`
