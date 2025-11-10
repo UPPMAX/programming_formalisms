@@ -385,7 +385,7 @@ For this we use a `.gitignore` file (put in root folder)
     - Add test directory to ``.gitignore`` file (root folder in repository)
 
 ???- question "Push changes"
-    
+
     - **Git push!**
     - You should all have a requirements file in your folder
 

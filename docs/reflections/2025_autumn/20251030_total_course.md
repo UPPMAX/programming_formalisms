@@ -32,7 +32,7 @@ Tuesday |09:00-09:45|Richel |Function design **-> Continuous integration**
 Tuesday |10:00-10:45 -> **10:00-11:00**|Richel |Expressive data type **-> Continuous integration**
 Tuesday |11:00-12:00 -> **11:15-12:00**|Lars   |Object-oriented design
 Tuesday |13:00-14:00|Richel |Has-a relation and class design **-> class design**
-Tuesday |14:15-15:00|Lars   |Modular programming 
+Tuesday |14:15-15:00|Lars   |Modular programming
 Tuesday |15:15-15:40|Richel **-> Lars** |Continuous integration **-> Modular programming**
 Tuesday |15:40-16:00|Lars   |Confidence and retrospect
 |||||
@@ -194,7 +194,7 @@ It does have some group questions that you are going to do,
 but not questions that you can take or try to solve before you start the course.
 And the course doesn't have any images,
 which is okay but it does make the course material look pretty bland
-and not very interesting to look at. 
+and not very interesting to look at.
 
 - [ ] Consider adding (more) images
 

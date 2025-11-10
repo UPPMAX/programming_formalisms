@@ -128,7 +128,6 @@ cProfile.run('do_it()')
 ```
 
 
-
 ## Exercises
 
 ### Exercise 1
