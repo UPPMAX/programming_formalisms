@@ -52,6 +52,16 @@ behaviour
 Bennekum
 Bhat
 Bilderbeek
+ENCCS
+SCoRe
+amiga
+endif
+Andrej
+Karpathy
+OpenAI
+defacto
+chatbot
+Harwell
 Kolmogorov
 Smirnov
 beautier
