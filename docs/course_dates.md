@@ -21,7 +21,7 @@ Iteration|Week     |Days
 7        |19 `[1]` |Monday 2026-05-04 to (and including) Friday 2026-05-08
 8        |?43      |To be announced
 
-- `[1]` BC suggested this in the NAISS training schedule
+- `[1]` as is in the NAISS training schedule and confirmed by all teachers
 
 <!-- markdownlint-enable MD013 -->
 
