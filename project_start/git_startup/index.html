@@ -1,0 +1,3849 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../introductions/sdlc_tools/">
+      
+      
+        <link rel="next" href="../analysis_design/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Get started with git and the project - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git-and-get-started-with-a-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Get started with git and the project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learning_outcomes/" class="md-tabs__link">
+          
+  
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../introductions/intro/" class="md-tabs__link">
+          
+  
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../analysis_design/" class="md-tabs__link">
+          
+  
+  
+  Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introductions/sdlc/" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/issues/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../assert/" class="md-tabs__link">
+          
+  
+  
+  Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../package/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contact_us/" class="md-tabs__link">
+          
+  
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About the course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning_outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning outcomes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prereqs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Become member of project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_class_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create class list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_structs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create structs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/dream_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dream design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDLC tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started with git and the project
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started with git and the project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-git-and-what-is-a-git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Git, and what is a Git repository?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typical-workflow-for-the-course-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typical workflow for the course project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#this-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        This lesson
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs-code-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code terminal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles-with-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principles with Git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-directly-on-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Work directly on GitHub
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revisit-on-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisit on Directory structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference Git
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development_design/excercise_1_Design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercise Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Development Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design_develop/OO_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../function_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../expressive_data_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expressive data types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modularity/modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../has_a_relation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A 'has-a' relation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_structures/class_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git workflow, branches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git(-Hub) workflow, merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing & code review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social_coding/social_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sharing and social coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pair_programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pair programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../continuous_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    assert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-driven development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd_at_bigger_scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDD at a bigger scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a formal testing framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime speed profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/improve_runtime_speed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improve run-time speed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/big_o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implement the project as a package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra material (Earlier Intro day materials)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions to practice TDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../further_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/git_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson_plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn UML with mermaid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meeting_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meeting notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/project_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/retrospective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrospective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/scilifelab_course_registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciLifeLab course registration procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../introductions/intro/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Intro
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/project_start/git_startup.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/project_start/git_startup.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="git-and-get-started-with-a-project">Git and get started with a project<a class="headerlink" href="#git-and-get-started-with-a-project" title="Anchor link to this section for reference">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Learning outcomes of 'Get started with Git/GitHub'</p>
+<p>Learners</p>
+<ul>
+<li>are connected to the course repo</li>
+<li>can commit</li>
+<li>can write useful commit messages</li>
+<li>know how a local vs remote repo work</li>
+<li>can push/pull</li>
+<li>can manage conflicts</li>
+<li>are prepared for coming documentation</li>
+</ul>
+</div>
+<details class="- note">
+<summary>Instructor notes</summary>
+<ul>
+<li>Teacher gives introduction with interaction 20 m</li>
+<li>Studens work in groups with at least one more used to Git in each</li>
+</ul>
+<p>Prerequisites are:</p>
+<ul>
+<li>Git account</li>
+<li>GitHub account</li>
+<li>Git set up on computer</li>
+</ul>
+<p>Not needed</p>
+<ul>
+<li>Use of git before</li>
+</ul>
+</details>
+<div class="admonition bug">
+<p class="admonition-title">Did you miss to set up everything?</p>
+<ul>
+<li>Then try this in the background or ask for help?</li>
+<li>See the <a href="../configurations/">setup session</a> this morning?</li>
+</ul>
+</div>
+<details class="- question">
+<summary>Already know git and GitHub?</summary>
+<p>If you have made 25 commits to GitHub,
+we assume you are already know git and GitHub.</p>
+<p>If there is a minority that already knows git and GitHub,
+then those are welcome in the simultaneous session,
+where we'll go a faster and further.</p>
+</details>
+<h2 id="what-is-git-and-what-is-a-git-repository">What is Git, and what is a Git repository?<a class="headerlink" href="#what-is-git-and-what-is-a-git-repository" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Git is a version control system: can <strong>record/save snapshots</strong> and track the content of a folder as it changes over time.</li>
+<li>Every time we <strong>commit</strong> a snapshot, Git records a snapshot of the <strong>entire project</strong>, saves it, and assigns it a version.</li>
+<li>These snapshots are kept inside a sub-folder called <code>.git</code>.</li>
+<li>If we remove <code>.git</code>, we remove the repository and history (but keep the working directory!).</li>
+<li><code>.git</code> uses relative paths - you can move the whole thing somewhere else and it will still work</li>
+<li>Git doesn't do anything unless you ask it to (it does not record anything automatically).</li>
+<li>Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).</li>
+</ul>
+<h2 id="typical-workflow-for-the-course-project">Typical workflow for the course project<a class="headerlink" href="#typical-workflow-for-the-course-project" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>students make development in local git and push to github?</li>
+<li>in principle centralized workflow</li>
+</ul>
+<p><strong>This is used when you are a collaborator</strong></p>
+<p><img alt="Centralized layout" src="../../img/centralized.svg" /></p>
+<p><strong>Centralized layout</strong></p>
+<ul>
+<li><strong>Red</strong> is the repository on GitHub.</li>
+<li>
+<p><strong>Blue</strong> is where all contributors work on their own computers.</p>
+</li>
+<li>
+<p>Centralized workflow is often used for <strong>remote collaborative work</strong>.</p>
+</li>
+<li><code>origin</code> refers to where you cloned from (but you can relocate it).</li>
+<li><code>origin/mybranch</code> is a read-only pointer to branch <code>mybranch</code> on <code>origin</code>.</li>
+<li>These read-only pointers only move when you <code>git fetch</code>/<code>git pull</code> or <code>git push</code>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Other workflows?</p>
+<ul>
+<li>Other workflows in <a href="../../git/contribute/">Merging and contributing with code review</a></li>
+</ul>
+</div>
+<h2 id="this-lesson">This lesson<a class="headerlink" href="#this-lesson" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Get overview of the course project</li>
+<li>Get local clone of the course project</li>
+<li>First contribution locally</li>
+<li>Upload changes</li>
+<li>Conflicts and resolutions</li>
+<li>A bit about project organization</li>
+<li>A bit about documentation</li>
+</ul>
+<h2 id="vs-code-terminal">VS Code terminal<a class="headerlink" href="#vs-code-terminal" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>We will work as much as possible (almost) in the VS Code graphical interface for Git</li>
+<li>
+<p>However, some things are better (or only) handled from a terminal/command line.</p>
+</li>
+<li>
+<p>You find the Git Bash terminal From the menu (different on mac and windows)</p>
+</li>
+</ul>
+<p><img alt="VS Code terminal" src="../../img/commandline_VSC.png" /></p>
+<h2 id="principles-with-git">Principles with Git<a class="headerlink" href="#principles-with-git" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition admonition">
+<p class="admonition-title">Concepts in Git</p>
+<ul>
+<li><strong>repository</strong>: The project, contains all data and history (commits, branches, tags).<ul>
+<li><strong>Local</strong>: you computer or a server where you have full control</li>
+<li><strong>Remote</strong>: server, e.g. GitHub</li>
+</ul>
+</li>
+<li>Working locally<ul>
+<li><strong>add</strong>: Stage you files (collect what to be added to the git record — a kind of middle step)</li>
+<li><strong>commit</strong>: Snapshot of the project, gets a unique identifier (e.g. <code>c7f0e8bfc718be04525847fc7ac237f470add76e</code>).</li>
+</ul>
+</li>
+<li>Working on Github<ul>
+<li>Since you can only add changes in one file at a time, there is no middle step <code>git add</code></li>
+<li>''Commit`` button</li>
+</ul>
+</li>
+<li><strong>cloning</strong>: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.<ul>
+<li><code>git clone</code> copies everything: all commits and all branches.</li>
+</ul>
+</li>
+<li>We synchronize commits between local and remote with</li>
+<li><strong>git fetch</strong>/<strong>pull</strong> and <strong>git push</strong>.</li>
+</ul>
+</div>
+<h3 id="clone">Clone<a class="headerlink" href="#clone" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Clone to your computer<ul>
+<li>Buttons in VS code or a terminal, using <code>git clone</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="may-be-needed-if-time-goes-by-sync-from-github">(May be needed if time goes by:) Sync from GitHub<a class="headerlink" href="#may-be-needed-if-time-goes-by-sync-from-github" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>As others are working on the same repo, there may be uploaded changes from <em>fast</em> collaborators.</li>
+<li>Do a <code>git pull</code> to get these changes locally as well.</li>
+<li>Do this before you start with new changes. Good practice!<ul>
+<li>This reduces errors or double work!</li>
+</ul>
+</li>
+</ul>
+<details class="- question">
+<summary>Difference between <code>git pull</code> and <code>git fetch</code>?</summary>
+<p>We may cover this later. Not important now!</p>
+<ul>
+<li>Git <strong>pull</strong> <strong>copies changes</strong> from a remote repository directly <strong>into your</strong> <strong>working directory</strong>, while git <strong>fetch</strong> <strong>does not</strong>.</li>
+<li>The git <strong>fetch</strong> command only copies changes into your local <strong>Git</strong> repo.</li>
+<li>The git <strong>pull</strong> command does <strong>both</strong>.</li>
+<li>You Should Use git <strong>fetch</strong> When…<ul>
+<li>You want to <strong>check</strong> if there are new <strong>updates</strong> on the remote repository but <strong>don't want to apply them immediately</strong>.</li>
+<li>You are working on new features and you want to <strong>avoid potential merge conflicts</strong>.</li>
+</ul>
+</li>
+</ul>
+</details>
+<h3 id="make-changes-locally">Make changes locally<a class="headerlink" href="#make-changes-locally" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Tracked files can be in three states.</p>
+<ul>
+<li>Modified: You changed the file.</li>
+<li>Staged: You changed the file and prepared it to be snapshotted.</li>
+<li>
+<p>Committed: You took a snapshot of the entire project, and the file was part of it.</p>
+</li>
+<li>
+<p>On GitHub:</p>
+<ul>
+<li>Commit every file individually</li>
+</ul>
+</li>
+</ul>
+<div class="admonition admonition">
+<p class="admonition-title">Steps add changes to the git history</p>
+<ul>
+<li>make changes locally</li>
+<li>add and commit to the git version control<ul>
+<li>your changes become part of the git history</li>
+</ul>
+</li>
+<li>git push<ul>
+<li>your changes are synced to GitHub</li>
+</ul>
+</li>
+<li>git pull<ul>
+<li>changes on GitHub are synced to you existinglocal git</li>
+<li>good procedure to do this step before you start changes</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Update the file(-s)</p>
+<ul>
+<li>Save your changes as usual on your computer (e.g. in VS code)</li>
+</ul>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Stage files (in git)</p>
+<p>VS CODE</p>
+<ul>
+<li>Activate the source control environment from left menu!</li>
+<li>"+" button</li>
+</ul>
+<details class="- note">
+<summary>From bash terminal</summary>
+<ul>
+<li>All changed files</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="go">git add .    # &lt; -- &quot;.&quot; means all files</span>
+</code></pre></div>
+<ul>
+<li>Chosen files</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="go">git add &lt;file1&gt; &lt;file2&gt;    # one or several files</span>
+</code></pre></div>
+</details>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Commit</p>
+<ul>
+<li>Every time we <strong>commit</strong> a snapshot, Git records a snapshot of the <strong>entire project</strong>, saves it, and assigns it a version (Hash tag).</li>
+<li>BUT only what we have added to the "staging" area!</li>
+</ul>
+<p>VS CODE</p>
+<ul>
+<li>Activate the source control environment from left menu!</li>
+<li>"Commit" button and "Commit message" text</li>
+</ul>
+<details class="- note">
+<summary>From bash terminal</summary>
+<ul>
+<li><code>git commit -m "&lt;commit message&gt;"</code></li>
+</ul>
+<p><strong>Alternative commits</strong></p>
+<ul>
+<li>You can also omit the <code>-m</code> option and a text editor will open.</li>
+<li>The first line will be your commit message.</li>
+<li>You can add other lines to add some more detailed info about your changes.</li>
+</ul>
+</details>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Writing useful commit messages</p>
+<ul>
+<li>Each commit should stand on its own.</li>
+<li>Keep your commits small and independent.</li>
+<li>Write informative commit messages.</li>
+<li>
+<p>Each commit message should answer a question.</p>
+<ul>
+<li>Why was the commit created?</li>
+<li>What problem does it solve?</li>
+</ul>
+</li>
+<li>
+<p>What Not to Do</p>
+<ul>
+<li>solve multiple problems in one commit</li>
+<li>combining commits that have nothing in common.</li>
+<li>Git as a backup system: commit their changes at the end of each day</li>
+</ul>
+</li>
+</ul>
+<details class="info" open="open">
+<summary>Example</summary>
+<table>
+<thead>
+<tr>
+<th>Best</th>
+<th>Bad</th>
+<th>Worst</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[login] Fix typo in DB call</td>
+<td>Fixed typo in DB call</td>
+<td>Fix typo</td>
+</tr>
+<tr>
+<td>refactor login function for reuse</td>
+<td>Changing login function by moving declarations to parameters</td>
+<td>Code refactoring</td>
+</tr>
+<tr>
+<td>add new api for user program check</td>
+<td>adding a new api for user program check</td>
+<td>New user api</td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/html/484631_2_En_6_Chapter.xhtml">Git Best Practices (Chap 6 in Beginning Git)</a></p>
+</details>
+<p><a href="https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages">Check this page!</a></p>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Upload to GitHub</p>
+<p>VS CODE</p>
+<ul>
+<li>Activate the source control environemnt from left menu!</li>
+<li>Click the "Sync Changes" button (may be just a symbol)</li>
+<li>
+<p>You can add a push message (shown on GitHub then) or leave it empty, then the last commit message will be used.</p>
+<details class="- note">
+<summary>From bash terminal</summary>
+</details>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git push
+</code></pre></div>
+<p>GitHub is now synced with your changes</p>
+</li>
+</ul>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Sync from GitHub (again)</p>
+<ul>
+<li>As others are working on the same repo, there may be uploaded changes from your collaborators</li>
+<li>Do a <code>git pull</code> to get these changes locally as well.</li>
+<li>Do this before you start with new changes.<ul>
+<li>This reduces errors or double work!</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="- example">
+<summary>Git/GitHub workflow</summary>
+<pre class="mermaid"><code>graph TB
+
+  P["Project idea"] --&gt;|git init| Node2
+  P["Project idea"] --&gt; planet.py --&gt;|git add| Node4
+  Node4 --&gt; |git commit| Node1
+  Node2 --&gt; |git push| Node5
+
+  C[Uncommited changed planet.py] --&gt;|commit button| R
+  Node5 --&gt; |"git pull (from local git)"| Node2
+  R --&gt; |"git pull (from local git)"| Node1
+  R &lt;--&gt; Node5
+
+        subgraph "Local Git"
+        Node2[project]
+        Node1[planet.py]
+        Node1 &lt;--&gt; Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[planet.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[planet.py]
+        end
+</code></pre>
+</details>
+<h2 id="work-directly-on-github">Work directly on GitHub<a class="headerlink" href="#work-directly-on-github" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Working on GitHub</p>
+<ul>
+<li>You can do basically the <strong>same work at GitHub as in your local git repo</strong></li>
+<li>The <strong>graphical view</strong> makes it easier to work with in everyday editing work at least.<ul>
+<li>Depends on your own preferences of course.</li>
+</ul>
+</li>
+<li>Here your commit each file at a time with the "commit button".<ul>
+<li><strong>No staging</strong> that is.</li>
+<li>Be aware of that feature!</li>
+</ul>
+</li>
+<li><strong>GitHub Actions</strong> are workflows defined by you, like:<ul>
+<li>for automatic testing after each commit (Used in the test lessons)</li>
+<li>for GitHub Pages, briefly covered in last session today or Extra reading: <a href="https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html">Documentation</a>.</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="overview-of-the-github-project">Overview of the GitHub Project<a class="headerlink" href="#overview-of-the-github-project" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Groups of mixed expertise!</p>
+<ul>
+<li>3 to 4 people in each group</li>
+</ul>
+</div>
+<details class="- question">
+<summary>Exercise 1: "View the GitHub project at: <a href="https://github.com/programming-formalisms/programming_formalisms_project_summer_2025">https://github.com/programming-formalisms/programming_formalisms_project_summer_2025</a></summary>
+<ul>
+<li>Click on a folder or file in the file explorer.</li>
+<li>This enables the file "Expand file tree" button to the left of the repo name.</li>
+<li>Click on that and look at the file tree!</li>
+<li>View README.md</li>
+<li>View Code of conduct</li>
+<li>View License</li>
+<li>Look at the history ("Commits" button just above the file explorer)</li>
+</ul>
+</details>
+<h3 id="exercise-2-make-changes-locally-first-steps-without-any-conflicts">Exercise 2: Make changes locally (First steps without any conflicts!)<a class="headerlink" href="#exercise-2-make-changes-locally-first-steps-without-any-conflicts" title="Anchor link to this section for reference">&para;</a></h3>
+<details class="- question">
+<summary>Exercise 2: Create a folder with your name (locally)</summary>
+<ul>
+<li>Step into the <code>learners/</code> directory (VS Code)</li>
+<li>create a folder there, clicking the "new directory" icon in upper-left part</li>
+<li>git cannot use emptly directories</li>
+<li>Therefore <strong>create an empty README.md file INSIDE the created folder</strong></li>
+</ul>
+</details>
+<h3 id="exercise-3-stage-files-in-git">Exercise 3: Stage files (in git)<a class="headerlink" href="#exercise-3-stage-files-in-git" title="Anchor link to this section for reference">&para;</a></h3>
+<details class="- question">
+<summary>Exercise 3: "Add/stage file</summary>
+<ul>
+<li>First check the status!</li>
+</ul>
+<p><img alt="VS Code add" src="../../img/Add_file_VSC.png" /></p>
+<ul>
+<li>There is an <strong>U</strong> (for Untracked) beside the README.md file</li>
+<li>You want to <strong>add the files</strong> (focus the camera) to the list of files tracked by Git.</li>
+<li>Git does not track any files automatically and you need make a conscious decision to add a file.</li>
+<li>Hoover over the Source control icon in the Left menu<ul>
+<li>It should say: "1 pending changes"</li>
+</ul>
+</li>
+<li>Let's do what Git hints at and add the files:</li>
+<li>Click the Icon and then add (stage) the file with the "plus" sign</li>
+<li>There should now be an <strong>A</strong> (for Added) beside the README.md file</li>
+</ul>
+</details>
+<h3 id="exercise-4-commit">Exercise 4: Commit<a class="headerlink" href="#exercise-4-commit" title="Anchor link to this section for reference">&para;</a></h3>
+<p>Let us now commit the change to the repository:</p>
+<details class="- question">
+<summary>Exercise 4: Commit</summary>
+<p><img alt="VS Code commit" src="../../img/commit_VSC.png" /></p>
+<ul>
+<li>
+<p>Write the commit message "add personal folder" and click the button</p>
+</li>
+<li>
+<p>We can check the status by opening the <strong>bash terminal</strong></p>
+</li>
+<li>Choose the Git-bash</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gp">$ </span>git<span class="w"> </span>status
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="go">On branch master</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go">Your branch is ahead of &#39;origin/master&#39; by 1 commit.</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="go">  (use &quot;git push&quot; to publish your local commits)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="go">nothing to commit, working tree clean</span>
+</code></pre></div>
+</details>
+<h3 id="exercise-5-upload-to-github">Exercise 5: Upload to GitHub<a class="headerlink" href="#exercise-5-upload-to-github" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>In previous path we got:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">$ </span>git<span class="w"> </span>status
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="go">On branch master</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="go">Your branch is ahead of &#39;origin/master&#39; by 1 commit.</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="go">   (use &quot;git push&quot; to publish your local commits)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="go">nothing to commit, working tree clean</span>
+</code></pre></div>
+<details class="- question">
+<summary>Exercise 5: Let's push back to GitHub</summary>
+<ul>
+<li>Let's "publish" you commits to the common GitHub repo</li>
+<li>In VS Code: Click the "Sync Changes" button</li>
+</ul>
+<p><img alt="VS Code sync_push" src="../../img/sync_push_VSC.png" /></p>
+<ul>
+<li>You may also give a message,<ul>
+<li>could be the commit message again or something else summarizing several commits or left empty</li>
+</ul>
+</li>
+</ul>
+<p><img alt="VS Code push_message" src="../../img/push_message_GH.png" /></p>
+<details class="- note">
+<summary>From bash terminal</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git push
+</code></pre></div>
+</details>
+</details>
+<h3 id="exercise-6-merge-conflicts">Exercise 6: Merge conflicts<a class="headerlink" href="#exercise-6-merge-conflicts" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Create a new file with a unique name for your group,
+  for example <code>group_anna_and_sven.txt</code></li>
+<li><strong>All members of the team</strong>: get it on your <strong>local computer</strong><ul>
+<li>That is: you will get several files in total, but each just locally, so far.</li>
+</ul>
+</li>
+</ul>
+<details class="- question">
+<summary>How to do this?</summary>
+<ul>
+<li>Do the same steps as the exercises above in the folder <strong>Learners/</strong> (not folder with name)</li>
+</ul>
+</details>
+<ul>
+<li>One member add the line below at the end of that file
+  and does a <code>git push</code>:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>This is the last line by me, Sven
+</code></pre></div>
+<ul>
+<li>After this, <strong>without doing a git pull</strong>,
+  the other group member(s) add a last line at the end
+  (for example, the line shown below) and does a <code>git push</code>:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>This is the last line by me, Anna
+</code></pre></div>
+<ul>
+<li>This person will get a merge conflict. How does the file look like?</li>
+</ul>
+<details class="- question">
+<summary>Answer</summary>
+<p>The file will look similar to this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>This is the last line by me, Sven
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>======
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>This is the last line by me, Anna
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>&gt;&gt;&gt;&gt;&gt;&gt; 123456789abcdef
+</code></pre></div>
+</details>
+<ul>
+<li>How would you resolve this merge conflict?</li>
+</ul>
+<details class="- question">
+<summary>Answering</summary>
+<p>Combining these two lines of text is up to taste.
+The text could be replaced by, for example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>This is the last line by us, Anna and Sven
+</code></pre></div>
+</details>
+<ul>
+<li>Resolve the merge conflict and do a <code>git push</code></li>
+</ul>
+<h3 id="optional-exercise-7">(Optional) Exercise 7<a class="headerlink" href="#optional-exercise-7" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Go back to last session and read more about a topic, like UML and/or Markdown and their syntax!</li>
+<li>Test out the Markdown and/or UML <a href="../../introductions/sdlc_tools/#exercises">exercises</a> directly in GitHub in your personal folder.</li>
+<li>See the rendered pages directly after saving the file(s)!</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">See also</p>
+<ul>
+<li><a href="https://coderefinery.github.io/github-without-command-line/">Workshop on GitHub without command-line</a></li>
+</ul>
+</div>
+<h2 id="revisit-on-directory-structure">Revisit on Directory structure<a class="headerlink" href="#revisit-on-directory-structure" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition admonition">
+<p class="admonition-title">Directory structure</p>
+<ul>
+<li>
+<p><strong>Different projects should have separate folders</strong></p>
+</li>
+<li>
+<p>README file</p>
+</li>
+<li>Data  (version controlled)(.gitignore)</li>
+<li>Processed data intermediate</li>
+<li>(Manuscript)</li>
+<li>Results  data, tables, figures (version controlled, git tags for manuscript version)</li>
+<li>Src  version controlled code goes here<ul>
+<li>License (here or in the 1st level)</li>
+<li>Requirements.txt</li>
+</ul>
+</li>
+<li>Doc</li>
+<li>index</li>
+<li>.gitignore file</li>
+</ul>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition admonition">
+<p class="admonition-title">Parts to be covered</p>
+<ul>
+<li>&#9744; Planning<ul>
+<li>Pseudocode</li>
+<li>Unified Modelling Language (UML)</li>
+</ul>
+</li>
+<li>&#9744; Testing<ul>
+<li>Different levels</li>
+</ul>
+</li>
+<li>&#9745; Source/version control<ul>
+<li>Git intro</li>
+</ul>
+</li>
+<li>&#9744; Collaboration<ul>
+<li>GitHub</li>
+</ul>
+</li>
+<li>&#9744; Reproducibility (for you and others)<ul>
+<li>Deployment</li>
+<li>Dependencies</li>
+<li>(Workflows)</li>
+</ul>
+</li>
+<li>&#9744; Sharing<ul>
+<li>open science</li>
+<li>citation</li>
+<li>licensing</li>
+</ul>
+</li>
+<li>&#9745; Documentation<ul>
+<li>Explanation (in code)</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition keypoints">
+<p class="admonition-title">Keypoints</p>
+<ul>
+<li>A repository can have one or multiple remotes (we will revisit these later).</li>
+<li>A remote (GitHub) in this case serves as a full backup of your work.</li>
+<li>Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.</li>
+</ul>
+</div>
+<h2 id="reference-git">Reference Git<a class="headerlink" href="#reference-git" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2">Main git book</a></li>
+<li><a href="https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf">Pro Git</a></li>
+<li>Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../introductions/sdlc_tools/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SDLC tools">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                SDLC tools
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../analysis_design/" class="md-footer__link md-footer__link--next" aria-label="Next: Analysis Phase">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Analysis Phase
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

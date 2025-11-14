@@ -1,0 +1,3787 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Get started with a project - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#get-started-with-a-project" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Get started with a project
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../learning_outcomes/" class="md-tabs__link">
+          
+  
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../project/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../introductions/intro/" class="md-tabs__link">
+          
+  
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../analysis_design/" class="md-tabs__link">
+          
+  
+  
+  Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../introductions/sdlc/" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../project/issues/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../assert/" class="md-tabs__link">
+          
+  
+  
+  Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../package/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../contact_us/" class="md-tabs__link">
+          
+  
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About the course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../learning_outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning outcomes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../prereqs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course_dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configurations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Become member of project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/create_class_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create class list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/create_structs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create structs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/dream_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dream design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introductions/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDLC tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git_startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started with git and the project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analysis_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../development_design/excercise_1_Design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercise Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../introductions/sdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Development Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../design_develop/OO_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../function_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../expressive_data_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expressive data types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modularity/modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../has_a_relation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A 'has-a' relation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data_structures/class_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../git/branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git workflow, branches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../git/merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git(-Hub) workflow, merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../git/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing & code review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../social_coding/social_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sharing and social coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pair_programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pair programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../continuous_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../assert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    assert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-driven development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tdd_at_bigger_scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDD at a bigger scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../testing/testing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a formal testing framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime speed profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../optimisation/improve_runtime_speed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improve run-time speed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../optimisation/big_o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implement the project as a package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deployment/deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deployment/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra material (Earlier Intro day materials)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions to practice TDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../further_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/git_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lesson_plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn UML with mermaid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../meeting_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meeting notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/project_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reflections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/retrospective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrospective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shared_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shared_documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/scilifelab_course_registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciLifeLab course registration procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/project_start/spring2024/startup.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/project_start/spring2024/startup.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="get-started-with-a-project">Get started with a project<a class="headerlink" href="#get-started-with-a-project" title="Anchor link to this section for reference">&para;</a></h1>
+<div class="admonition questions">
+<p class="admonition-title">Questions</p>
+<ul>
+<li>How to get started?</li>
+<li>How can I use Git/GitHub?</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Content</p>
+<ul>
+<li>Get started with a git/github project</li>
+<li>Do the basic <code>git</code> workflow<ul>
+<li>create documents</li>
+<li>initial documentation</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Learning outcomes of 'Get started with Git/GitHub'</p>
+<ul>
+<li>Demonstrate the ability to initiate and manage a software development project using Git and GitHub.</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Instructor notes</p>
+<p>Prerequisites are:</p>
+<ul>
+<li>Git acoount</li>
+<li>GitHub account</li>
+<li>Git set up on computer</li>
+</ul>
+<p>Teaching goals are:</p>
+<ul>
+<li>Learners can demonstrate the ability to initiate and manage a software development project using Git and GitHub.</li>
+</ul>
+<p>Lesson Plan: <strong>FIX</strong></p>
+<ul>
+<li><strong>Total</strong> 30 min</li>
+<li>Theory 20</li>
+<li>Discussions 10 min</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">TOC</p>
+<ul>
+<li>A test project: Type-along on starting a project<ul>
+<li>REASON: have tested this step</li>
+</ul>
+</li>
+</ul>
+</div>
+<ul>
+<li>test project (Planet)<ul>
+<li>code file
+        - git init
+        - add and commit</li>
+<li>you can also start a directory and do git init</li>
+<li>Intro documentation<ul>
+<li>order your files</li>
+</ul>
+</li>
+<li>README<ul>
+<li>license</li>
+</ul>
+</li>
+<li>git diff</li>
+<li>Start with the steps related to the project (Type-along)<ul>
+<li>Git locally with config and cloning</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>mkdir user
+        - work in user/</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Think about:</p>
+<ul>
+<li>structure of the files and folders for the project</li>
+<li>documentation already</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<ul>
+<li>Many projects/scripts start as something for personal use, but expands to be distributed.</li>
+<li>Let's start in that end and be prepared.</li>
+<li>The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.</li>
+</ul>
+<h2 id="before-we-continue-we-need-to-configure-git">Before we continue we need to configure Git<a class="headerlink" href="#before-we-continue-we-need-to-configure-git" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<ul>
+<li>Start your terminal of choice</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Pre-requirements</p>
+<ul>
+<li><strong>Git and GitHub should be configured prior to the course</strong><ul>
+<li>Test: <code>ssh -T git@github.com</code></li>
+<li>Output should be something like this: <code>Hi bclaremar! You've successfully authenticated, but GitHub does not provide shell access.</code></li>
+</ul>
+</li>
+<li>Being comfortable with the command line. No expertise is required, but the lesson will be mostly taken from the command line.</li>
+<li>Students should be familiar with using a <strong>text editor</strong> on their system.</li>
+<li>We hope also that you have already done these steps:</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;&lt;Your Name&gt;&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>&lt;your<span class="w"> </span>GitHub-connected<span class="w"> </span>email<span class="w"> </span>address&gt;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span><span class="s2">&quot;main&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>nano
+</code></pre></div>
+or replace nano with another editor, like in Windows: <code>notepad</code>
+Verify with:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--list
+</code></pre></div></p>
+</div>
+<h2 id="what-is-git-and-what-is-a-git-repository">What is Git, and what is a Git repository?<a class="headerlink" href="#what-is-git-and-what-is-a-git-repository" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Git is a version control system: can <strong>record/save snapshots</strong> and track the content of a folder as it changes over time.</li>
+<li>Every time we <strong>commit</strong> a snapshot, Git records a snapshot of the <strong>entire project</strong>, saves it, and assigns it a version.</li>
+<li>These snapshots are kept inside a sub-folder called <code>.git</code>.</li>
+<li>If we remove <code>.git</code>, we remove the repository and history (but keep the working directory!).</li>
+<li><code>.git</code> uses relative paths - you can move the whole thing somewhere else and it will still work</li>
+<li>Git doesn't do anything unless you ask it to (it does not record anything automatically).</li>
+<li>Multiple interfaces to Git exist (command line, graphical interfaces, web interfaces).</li>
+</ul>
+<div class="admonition admonition">
+<p class="admonition-title">Concepts in Git</p>
+<ul>
+<li><strong>repository</strong>: The project, contains all data and history (commits, branches, tags).</li>
+<li><strong>add</strong>: Stage you files (collect what to be added to the git record — a kind of middle step)</li>
+<li><strong>commit</strong>: Snapshot of the project, gets a unique identifier (e.g. <code>c7f0e8bfc718be04525847fc7ac237f470add76e</code>).</li>
+<li><strong>cloning</strong>: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.<ul>
+<li><code>git clone</code> copies everything: all commits and all branches.</li>
+</ul>
+</li>
+<li>Branches on the remote appear as (read-only) local branches with a prefix, e.g. <code>origin/main</code>.</li>
+<li>We synchronize commits between local and remote with <code>git fetch</code>/<code>git pull</code> and <code>git push</code>.</li>
+</ul>
+</div>
+<h2 id="a-test-project-started-locally">A test project started locally<a class="headerlink" href="#a-test-project-started-locally" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="initial-code-base">Initial code base<a class="headerlink" href="#initial-code-base" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Let's say you have some code you have started to work with</li>
+</ul>
+<details class="- question">
+<summary>Exercise: start the test project</summary>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Type-along or Demo</p>
+<p><strong>You can also listen and try this out yourself when you have time</strong></p>
+<ul>
+<li>Example code, <code>planets.py</code></li>
+</ul>
+<div class="admonition - code">
+<p class="admonition-title">-</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">#planet</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1">#constants</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">G</span><span class="o">=</span><span class="mf">6.6743e-11</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">AU</span><span class="o">=</span><span class="mf">149.597871e9</span> <span class="c1"># 1 astronomical unit (AU) is the mean distance between su</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">AU1</span><span class="o">=</span><span class="mf">150.8e9</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">mj</span><span class="o">=</span><span class="mf">5.97219e24</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">mJ</span><span class="o">=</span><span class="mf">1.899e27</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">M</span><span class="o">=</span><span class="mf">1.9891e30</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">day</span><span class="o">=</span><span class="mi">86400</span><span class="p">;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">year</span><span class="o">=</span><span class="mi">31556926</span><span class="p">;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">v0</span><span class="o">=</span><span class="n">AU</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">year</span><span class="p">;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="n">Fg</span><span class="o">=</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">*</span><span class="n">mj</span><span class="o">/</span><span class="n">AU</span><span class="o">**</span><span class="mi">2</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="n">ag</span><span class="o">=</span><span class="n">Fg</span><span class="o">/</span><span class="n">mj</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="n">Fc</span><span class="o">=</span><span class="n">mj</span><span class="o">*</span><span class="n">v0</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">AU</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="n">ac</span><span class="o">=</span><span class="n">Fc</span><span class="o">/</span><span class="n">mj</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="n">L</span><span class="o">=</span><span class="mi">2</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="n">x0</span><span class="o">=</span><span class="n">AU1</span><span class="p">;</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="n">u0</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">365</span><span class="o">*</span><span class="n">L</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">);</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="n">y</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">365</span><span class="o">*</span><span class="n">L</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">);</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">x0</span><span class="p">;</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">y0</span><span class="p">;</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="n">u</span><span class="o">=</span><span class="n">u0</span><span class="p">;</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="n">v</span><span class="o">=</span><span class="n">v0</span><span class="p">;</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">365</span><span class="o">*</span><span class="n">L</span><span class="p">):</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>    <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">day</span><span class="o">*</span><span class="n">u</span><span class="p">;</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>    <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">day</span><span class="o">*</span><span class="n">v</span><span class="p">;</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    <span class="n">ax</span><span class="o">=-</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>    <span class="n">ay</span><span class="o">=-</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span><span class="o">*</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>    <span class="n">u</span><span class="o">=</span><span class="n">u</span><span class="o">+</span><span class="n">ax</span><span class="o">*</span><span class="n">day</span><span class="p">;</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a>    <span class="n">v</span><span class="o">=</span><span class="n">v</span><span class="o">+</span><span class="n">ay</span><span class="o">*</span><span class="n">day</span><span class="p">;</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="n">rj</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">.5</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="n">a</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">rj</span><span class="p">)</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a><span class="n">b</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">rj</span><span class="p">)</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="n">e</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="n">rel</span><span class="o">=</span><span class="p">(</span><span class="n">a</span><span class="o">/</span><span class="n">b</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a><span class="n">fig</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a><span class="c1">#axis equal</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a><span class="n">ax</span><span class="o">=</span><span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">365</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span><span class="n">rj</span><span class="p">)</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a>
+<a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;../Figures/planet_earth.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<ul>
+<li>Make a folder with name <code>planets</code></li>
+<li>BASH: <code>mkdir planets</code></li>
+<li>Create a folder in the <code>planets/</code> folder, called <code>Figures/</code></li>
+<li>Also create a folder within <code>planets/</code> folder with the name <code>code</code></li>
+<li>In the <code>code</code> folder, create a file.</li>
+<li>Copy paste the python code above into it and save as <code>planets.py</code>.</li>
+</ul>
+</div>
+<h3 id="initiate-a-project">Initiate a project<a class="headerlink" href="#initiate-a-project" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Type-along or demo</p>
+<ul>
+<li>Be in a terminal and go to the <code>planets</code> folder, which will be the project repository (<strong>repo</strong>)</li>
+<li>run <code>git init</code></li>
+<li>
+<p>make sure that there is a <code>.git</code> directory created</p>
+</li>
+<li>
+<p>Now you have a git repo called planets</p>
+</li>
+<li>check with the command: <code>git status</code></li>
+<li>
+<p>It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next:</p>
+</li>
+<li>
+<p>So far, there is no content. We have to manually add the content to the repo.</p>
+</li>
+<li>
+<p>This is done with the commands <code>add</code> and <code>commit</code></p>
+</li>
+</ul>
+</div>
+<h3 id="staging-files">Staging files<a class="headerlink" href="#staging-files" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Demo or type-along</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="gp">$ </span>git<span class="w"> </span>status
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="go">On branch main</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="go">No commits yet</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="go">Untracked files:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="go">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="go">        Figures/</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="go">        code/</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="go">nothing added to commit but untracked files present (use &quot;git add&quot; to track)</span>
+</code></pre></div>
+</div>
+<ul>
+<li>The two files are untracked in the repository (directory).</li>
+<li>You want to <strong>add the files</strong> (focus the camera) to the list of files tracked by Git.</li>
+<li>Git does not track any files automatically and you need make a conscious decision to add a file.</li>
+<li>Let's do what Git hints at and add the files:</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Type-along or demo</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gp">$ </span>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">    </span><span class="c1"># &lt; -- &quot;.&quot; means all files</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="gp">$ </span>git<span class="w"> </span>status
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="go">On branch main</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="go">No commits yet</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="go">Changes to be committed:</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="go">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="go">        new file:   Figures/planet_earth.png</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="go">        new file:   code/planet.py</span>
+</code></pre></div>
+<p>Now this change is <em>staged</em> and ready to be committed.</p>
+</div>
+<h3 id="commit">Commit<a class="headerlink" href="#commit" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Every time we <strong>commit</strong> a snapshot, Git records a snapshot of the <strong>entire project</strong>, saves it, and assigns it a version.</li>
+<li>BUT only what we have added to the "staging" area!</li>
+</ul>
+<p>Let us now commit the change to the repository:</p>
+<div class="admonition example">
+<p class="admonition-title">Demo or Type-along</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gp">$ </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;add folders and planet code&quot;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="go">[main (root-commit) 6a416b5] add folders and planet code</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="go"> 2 files changed, 58 insertions(+)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="go"> create mode 100644 Figures/planet_earth.png</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="go"> create mode 100644 code/planet.py</span>
+</code></pre></div>
+<p>Right after we query the status to get this useful command into our muscle memory:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gp">$ </span>git<span class="w"> </span>status
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="go">On branch master</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="go">nothing to commit, working tree clean</span>
+</code></pre></div>
+</div>
+<p>What does the <code>-m</code> flag mean? Let us check the help page for that command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="go">git help commit</span>
+</code></pre></div>
+<ul>
+<li>You should see a very long help page as the tool is very versatile (press q to quit).<ul>
+<li>Do not worry about this now but keep in mind that you can always read the help files when in doubt.</li>
+<li>Searching online can also be useful, but choosing search terms to find relevant information takes some practice and discussions in some online threads may be confusing.</li>
+<li>Note that help pages also work when you don't have a network connection!</li>
+</ul>
+</li>
+</ul>
+<p><strong>Alternative commits</strong></p>
+<ul>
+<li>You can also omit the <code>-m</code> option and a text editor will open.</li>
+<li>The first line will be your commit message.</li>
+<li>You can add other lines to add some more detailed info about your changes.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Writing useful commit messages</p>
+<p><a href="https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages">Check this page!</a></p>
+</div>
+<h3 id="upload-to-github">Upload to GitHub<a class="headerlink" href="#upload-to-github" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Demo or Type-along</p>
+<ul>
+<li>Make sure that you are <strong>logged into GitHub</strong>.</li>
+</ul>
+<p><figure markdown="span">
+<img alt="New repo" src="../img/New_repo.png" width="500" />
+</figure></p>
+<ul>
+<li>
+<p>To create a repository we either click the green button "New" (top right corner).</p>
+</li>
+<li>
+<p>Or if you see your profile page, there is a "+" menu (top right corner).</p>
+</li>
+</ul>
+<p><img alt="New top-right" src="../img/new-top-right.png" width="60%" /></p>
+<hr />
+<ul>
+<li>
+<p>On this page choose a project name, e.g. <code>planets-&lt;username&gt;</code></p>
+<ul>
+<li>Add your name there so there are no clashes when/if you collaborate and fork other repositories</li>
+<li>Note that the name does not need to be similar to your local git project, but it is good if you can connect them "logically"</li>
+</ul>
+</li>
+<li>
+<p>For the sake of this exercise <strong>do NOT select</strong> "Initialize this repository with a README"</p>
+</li>
+<li>and <strong>NO Licence</strong></li>
+</ul>
+<p><img alt="New repo " src="../img/New_repo_formalisms.png" /></p>
+<ul>
+<li>Press "<strong>Create repository</strong>"</li>
+</ul>
+<p><img alt="Create and push" src="../img/created_push.PNG" /></p>
+<ul>
+<li>Choose <strong>SSH</strong></li>
+<li>Copy-paste the code for "<strong>…or push an existing repository from the command line</strong>"</li>
+<li>Go to <strong>local git terminal</strong> and go to the <strong>git project you started above</strong></li>
+<li>
+<p>Paste the code</p>
+</li>
+<li>
+<p>Did it work??</p>
+</li>
+<li>Reload the GitHub page and see the fiels present locally is also present there.</li>
+</ul>
+<p><strong>Done!</strong></p>
+</div>
+<ul>
+<li><strong>Let's view the license!</strong></li>
+<li>There is pre-written text for the different types.</li>
+<li>More info at <a href="extra_bc/sharing_deeper.mg#licensing">Licensing</a></li>
+</ul>
+<h2 id="introduction-to-documentation">Introduction to documentation<a class="headerlink" href="#introduction-to-documentation" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="order-your-files">Order your files<a class="headerlink" href="#order-your-files" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Think that <strong>everything is worth to be part of documentation</strong> (like GitHub directory tree)</li>
+<li>The parts from the software development cycle<ul>
+<li>The planning parts<ul>
+<li>Requirements:</li>
+<li>what should the program deliver</li>
+<li>dependencies</li>
+<li>OS platforms</li>
+<li>Risk analysis</li>
+</ul>
+</li>
+<li>Design documentation<ul>
+<li>Analysis: pseudo code and UML</li>
+</ul>
+</li>
+<li>Source code<ul>
+<li>with in-code documentation</li>
+</ul>
+</li>
+<li>README</li>
+<li>(Full documentation)</li>
+<li>(Tutorial)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition admonition">
+<p class="admonition-title">Directory structure</p>
+<ul>
+<li>
+<p><strong>Different projects should have separate folders</strong></p>
+</li>
+<li>
+<p>ReadMe file</p>
+</li>
+<li>Data  (version controlled)(.gitignore)</li>
+<li>Processed data intermediate</li>
+<li>(Manuscript)</li>
+<li>Results  data, tables, figures (version controlled, git tags for manuscript version)</li>
+<li>Src  version controlled code goes here<ul>
+<li>License (here or in the 1st level)</li>
+<li>Requirements.txt</li>
+</ul>
+</li>
+<li>Doc</li>
+<li>index</li>
+<li>.gitignore file</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>If software is reused in several projects it can make sense to put them in its own repo, not connected to a specific research project</li>
+</ul>
+</div>
+<h3 id="readme-files">README files<a class="headerlink" href="#readme-files" title="Anchor link to this section for reference">&para;</a></h3>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Versioned (goes with the code development)</li>
+<li>It is often good enough to have a <code>README.md</code> or <code>README.rst</code> along with your code/script</li>
+<li>If you use README files, use either<ul>
+<li><a href="http://docutils.sourceforge.net/rst.html">RST</a> or</li>
+<li><a href="https://commonmark.org/help/">Markdown</a></li>
+</ul>
+</li>
+<li>A great guide to README files: <a href="https://www.makeareadme.com/">MakeaREADME</a></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">A README file should include</p>
+<ul>
+<li>A descriptive project title</li>
+<li>Motivation (why the project exists)</li>
+<li>How to setup</li>
+<li>Copy-pastable quick start code example</li>
+<li>Recommended citation</li>
+</ul>
+</div>
+<h4 id="cheat-sheet">Cheat-sheet<a class="headerlink" href="#cheat-sheet" title="Anchor link to this section for reference">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>    <span class="gs">**Cheat sheet**</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    # This is a section in Markdown
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    ## This is a subsection
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    Nothing special needed for
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    a normal paragraph.
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        This is a code block
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="gs">**Bold**</span> and <span class="ge">*emphasized*</span>.
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>    A list:
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>this is an item
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">    </span><span class="k">-</span><span class="w"> </span>another item
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">See also</p>
+<p>We will later look at the README file, present in the Course project repository</p>
+</div>
+<h3 id="in-code-documentation">In-code documentation<a class="headerlink" href="#in-code-documentation" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Comments, function docstrings, ...</li>
+<li>Advantages<ul>
+<li>Good for programmers</li>
+<li>Version controlled alongside code</li>
+<li>Can be used to auto-generate documentation for functions/classes</li>
+</ul>
+</li>
+<li>Disadvantage<ul>
+<li>Probably not enough for users</li>
+</ul>
+</li>
+</ul>
+<p><strong>Comments examples</strong></p>
+<p>Let's take a look at two example comments (comments in python start with <code>#</code>):</p>
+<p><strong>Comment A</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Now we check if temperature is larger then -50:</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">50</span><span class="p">:</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;do something&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Comment B</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># We regard temperatures below -50 degrees as measurement errors</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">50</span><span class="p">:</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;do something&#39;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li>Comment A describes <strong>what</strong> happens in this piece of code, whereas comment B describes <strong>why</strong> this piece of code is there, i.e. its <strong>purpose</strong>.</li>
+<li>Comments in the form of B are much more useful, comments of form A are redundant and we should avoid them.</li>
+</ul>
+<p><strong>Why and not how</strong></p>
+<h4 id="function-docstrings">Function docstrings<a class="headerlink" href="#function-docstrings" title="Anchor link to this section for reference">&para;</a></h4>
+<p>A docstring is a structured comment associated to a segment of code (i.e. function or class)</p>
+<p>Good docstrings describe:</p>
+<div class="highlight"><pre><span></span><code>What the function does
+What goes in (including the type of the input variables)
+What goes out (including the return type)
+Python example: ``help()``
+</code></pre></div>
+<p><strong>Example</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">mean_temperature</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="sd">    Get the mean temperature</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="sd">    Args:</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="sd">        data (pandas.DataFrame): A pandas dataframe with air temperature measurements.</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="sd">        The mean air temperature (float)</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    <span class="n">temperatures</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Air temperature (degC)&#39;</span><span class="p">]</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">temperatures</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">temperatures</span><span class="p">))</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Working on GitHub</p>
+<ul>
+<li>You can do basically the <strong>same work at GitHub as in your local git repo</strong></li>
+<li>The <strong>graphical view</strong> makes it easier to work with in everyday editing work at least.<ul>
+<li>Depends on your own preferences of course.</li>
+</ul>
+</li>
+<li>Here your commit each file at a time with the "commit button".<ul>
+<li><strong>No staging</strong> that is.</li>
+<li>Be aware of that feature!</li>
+</ul>
+</li>
+<li><strong>GitHub Actions</strong> are workflows defined by you, like:<ul>
+<li>for automatic testing after each commit (Used in the test lessons)</li>
+<li>for GitHub Pages, briefly covered in last session today or Extra reading: <a href="https://uppmax.github.io/programming_formalisms_intro/documentation_deeper.html">Documentation</a>.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">See also</p>
+<ul>
+<li><a href="https://coderefinery.github.io/github-without-command-line/">Workshop on GitHub without command-line</a></li>
+</ul>
+</div>
+<h3 id="add-in-code-documentation-on-github-and-pull-from-local-git">Add in-code documentation on Github and pull from local git<a class="headerlink" href="#add-in-code-documentation-on-github-and-pull-from-local-git" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">Type-along: in-code docs</p>
+<ul>
+<li>Use GitHub</li>
+<li>Open <code>planet.py</code></li>
+<li>Add some documentation (comments in python start with <code>#</code>)</li>
+<li>Example:</li>
+<li>Time iteration of the postion of Earth</li>
+<li>Make subplots of Earth's revolution and the change of Sun–Earth distance</li>
+<li>Commit your changes</li>
+<li>Note that there is no staging area on GitHub</li>
+<li>Go to your local git folder in a terminal to get the GitHub changes locally.</li>
+<li>Do <code>git pull</code> in the terminal</li>
+<li>Also try these commands!</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="gp">$ </span>git<span class="w"> </span>log
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="gp">$ </span>git<span class="w"> </span>log<span class="w"> </span>--stat
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="gp">$ </span>git<span class="w"> </span>log<span class="w"> </span>--oneline
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Key points</p>
+<ul>
+<li>Comments should describe the why for your code not the what.</li>
+<li>Writing docstrings is an easy way to write documentation while you type code.</li>
+<li>Copy-pastable quick start code example</li>
+<li>Recommended citation</li>
+</ul>
+</div>
+<h3 id="what-have-we-done">What have we done?<a class="headerlink" href="#what-have-we-done" title="Anchor link to this section for reference">&para;</a></h3>
+<pre class="mermaid"><code>graph TB
+
+P["Project idea"] --&gt;|git init| Node2
+P["Project idea"] --&gt; planet.py --&gt;|git add| Node4
+Node4 --&gt; |git commit| Node1
+Node2 --&gt; |git push| Node5
+
+C[Uncommited changed planet.py] --&gt;|commit button| R
+Node5 --&gt; |"git pull (from local git)"| Node2
+R --&gt; |"git pull (from local git)"| Node1
+R &lt;--&gt; Node5
+
+        subgraph "Local Git"
+        Node2[project]
+        Node1[planet.py]
+        Node1 &lt;--&gt; Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[planet.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[planet.py]
+        end
+
+</code></pre>
+<hr />
+<h2 id="start-with-course-project">Start with course project<a class="headerlink" href="#start-with-course-project" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="view-the-project">View the project<a class="headerlink" href="#view-the-project" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>
+<p>View the GitHub project at: <a href="https://github.com/programming-formalisms/programming_formalisms_project_summer_2024">https://github.com/programming-formalisms/programming_formalisms_project_summer_2024</a></p>
+</li>
+<li>
+<p>See the tree!</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>├──<span class="w"> </span>CODE_OF_CONDUCT.md
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>├──<span class="w"> </span>design
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>│<span class="w">   </span>└──<span class="w"> </span>README.md
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>├──<span class="w"> </span>fairytale.md
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>├──<span class="w"> </span>learners
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>│<span class="w">   </span>├──<span class="w"> </span>README.md
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>│<span class="w">   </span>└──<span class="w"> </span>richel
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>│<span class="w">       </span>└──<span class="w"> </span>README.md
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>├──<span class="w"> </span>LICENSE
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>├──<span class="w"> </span>programming_formalisms_student_team_summer_2024_logo_50.png
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>├──<span class="w"> </span>README.md
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>├──<span class="w"> </span>run_and_tumble.jpg
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>└──<span class="w"> </span>src
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">    </span>└──<span class="w"> </span>weather
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">        </span>└──<span class="w"> </span>README.md
+</code></pre></div>
+<ul>
+<li>View README.md</li>
+<li>View License</li>
+</ul>
+<div class="admonition admonition">
+<p class="admonition-title">Concepts in Git</p>
+<ul>
+<li><strong>repository</strong>: The project, contains all data and history (commits, branches, tags).</li>
+<li><strong>add</strong>: Stage you files (collect what to be added to the git record — a kind of middle step)</li>
+<li><strong>commit</strong>: Snapshot of the project, gets a unique identifier (e.g. <code>c7f0e8bfc718be04525847fc7ac237f470add76e</code>).</li>
+<li><strong>cloning</strong>: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.<ul>
+<li><code>git clone</code> copies everything: all commits and all branches.</li>
+</ul>
+</li>
+<li>We synchronize commits between local and remote with</li>
+<li><strong>git fetch</strong>/<strong>pull</strong> and <strong>git push</strong>.</li>
+</ul>
+</div>
+<h3 id="clone-the-course-project">Clone the course project<a class="headerlink" href="#clone-the-course-project" title="Anchor link to this section for reference">&para;</a></h3>
+<details class="question" open="open">
+<summary>Exercise: clone course project and create folders</summary>
+<p><strong>Now you and other people can clone this repository and contribute changes.</strong></p>
+<ul>
+<li>You may want to create a directory on your computer for this course.</li>
+<li>You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)</li>
+<li><code>mkdir Programming_formalisms</code></li>
+<li><code>cd Programming_formalisms</code></li>
+<li>In GitHub, locate the <strong>Code</strong> button, select <strong>SSH</strong> and click the <em>copy</em> symbol to the right</li>
+<li>Back in your terminal type <code>git clone</code> followed by pasting the copied text.</li>
+<li>The result shall look something like this:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:programming-formalisms/programming_formalisms_project_summer_2024.git
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Using the SSH makes it very straight-forward to upload your local changes back to GitHub.</li>
+<li>Use HTTP if you clone repos that do not belong to you or your group.</li>
+</ul>
+</div>
+<p><strong>What just happened?</strong></p>
+<ul>
+<li><code>cd</code> the new directory that was created</li>
+<li>list the files with <code>ls</code></li>
+</ul>
+<p><strong>Create a folder with your name</strong></p>
+<ul>
+<li>step into (<code>cd</code>) the <code>learners/</code> directory</li>
+<li>
+<p><code>mkdir &lt;your-name&gt;</code></p>
+</li>
+<li>
+<p>Git needs files to be able to commit.</p>
+</li>
+<li>
+<p>Therefore <strong>create an empty README file in the created folder</strong></p>
+</li>
+<li>
+<p><code>touch README.md</code></p>
+</li>
+<li>
+<p>git add/commit this file</p>
+</li>
+</ul>
+<p><strong>Push your changes to the GitHub repo</strong></p>
+<ul>
+<li><code>git push</code></li>
+</ul>
+<p><strong>When everyone are done pull the latest changes to the local git repo</strong></p>
+<ul>
+<li><code>git pull</code></li>
+</ul>
+</details>
+<h2 id="typical-workflow-for-the-course-project">Typical workflow for the course project<a class="headerlink" href="#typical-workflow-for-the-course-project" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>students make development in local git and push to github?</li>
+<li>in principle centralized workflow</li>
+</ul>
+<p><img alt="Centralized layout" src="../img/centralized.svg" width="50%" /></p>
+<p><strong>Centralized layout</strong></p>
+<ul>
+<li><strong>Red</strong> is the repository on GitHub.</li>
+<li>
+<p><strong>Blue</strong> is where all contributors work on their own computers.</p>
+</li>
+<li>
+<p>Centralized workflow is often used for <strong>remote collaborative work</strong>.</p>
+</li>
+<li><code>origin</code> refers to where you cloned from (but you can relocate it).</li>
+<li><code>origin/mybranch</code> is a read-only pointer to branch <code>mybranch</code> on <code>origin</code>.</li>
+<li>These read-only pointers only move when you <code>git fetch</code>/<code>git pull</code> or <code>git push</code>.</li>
+</ul>
+<h2 id="remarks">Remarks<a class="headerlink" href="#remarks" title="Anchor link to this section for reference">&para;</a></h2>
+<h3 id="git-cheat-sheet">Git Cheat sheet<a class="headerlink" href="#git-cheat-sheet" title="Anchor link to this section for reference">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="go">git init    # initialize new repository</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="go">git add     # add files or stage file(s)</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="go">git commit  # commit staged file(s)</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="go">git status  # see what is going on</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="go">git log     # see history</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="go">git diff    # show unstaged/uncommitted modifications</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="go">git show    # show the change for a specific commit</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="go">git mv      # move tracked files</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="go">git rm      # remove tracked files  (from repository only)</span>
+</code></pre></div>
+<div class="admonition goal">
+<p class="admonition-title">Goal</p>
+<ul>
+<li>[ ] Demonstrate the ability to initiate and manage a software development project using Git and GitHub.</li>
+</ul>
+</div>
+<div class="admonition keypoints">
+<p class="admonition-title">Keypoints</p>
+<ul>
+<li>A repository can have one or multiple remotes (we will revisit these later).</li>
+<li>A remote (GitHub) in this case serves as a full backup of your work.</li>
+<li>Code development might be easier to develop in the local git repo since you can run and test locally in an easy way.</li>
+</ul>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Parts to be covered!</p>
+<ul>
+<li>&#9745; Source/version control<ul>
+<li>Git</li>
+<li>We have a starting point!</li>
+<li>GitHub as remote backup</li>
+</ul>
+</li>
+<li>&#9744; Planning<ul>
+<li>UML</li>
+<li>Pseudocode</li>
+</ul>
+</li>
+<li>&#9744; Testing<ul>
+<li>Different levels</li>
+<li>We don't do this today!</li>
+</ul>
+</li>
+<li>&#9744; Collaboration<ul>
+<li>GitHub</li>
+</ul>
+</li>
+<li>&#9745; Sharing<ul>
+<li>&#9745; open science</li>
+<li>&#9744; citation</li>
+<li>&#9745; licensing</li>
+</ul>
+</li>
+<li>&#9744; Documentation</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

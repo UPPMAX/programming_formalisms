@@ -1,0 +1,4083 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../package/">
+      
+      
+        <link rel="next" href="../documentation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Deploy - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deploy-your-code" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deploy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learning_outcomes/" class="md-tabs__link">
+          
+  
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introductions/intro/" class="md-tabs__link">
+          
+  
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project_start/analysis_design/" class="md-tabs__link">
+          
+  
+  
+  Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introductions/sdlc/" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/issues/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../assert/" class="md-tabs__link">
+          
+  
+  
+  Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../package/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contact_us/" class="md-tabs__link">
+          
+  
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About the course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning_outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning outcomes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prereqs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/configurations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Become member of project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_class_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create class list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_structs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create structs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/dream_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dream design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDLC tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/git_startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started with git and the project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/analysis_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development_design/excercise_1_Design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercise Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Development Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design_develop/OO_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../function_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../expressive_data_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expressive data types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modularity/modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../has_a_relation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A 'has-a' relation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_structures/class_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git workflow, branches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git(-Hub) workflow, merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing & code review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social_coding/social_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sharing and social coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pair_programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pair programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../continuous_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    assert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-driven development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd_at_bigger_scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDD at a bigger scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a formal testing framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime speed profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/improve_runtime_speed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improve run-time speed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/big_o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implement the project as a package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-make-sure-about-needed-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        To make sure about needed dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recording-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recording dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignoring-files-and-paths-with-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ignoring files and paths with .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise-1-identify-lacking-packages-15-20-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: Identify lacking packages (15-20 min)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#going-further-with-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Going further with deployment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-of-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quality of life
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-a-gitgithub-repo-from-personal-existing-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start a Git/GitHub repo from personal existing project
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra material (Earlier Intro day materials)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions to practice TDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../further_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/git_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson_plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn UML with mermaid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../meeting_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meeting notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/project_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/retrospective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrospective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/scilifelab_course_registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciLifeLab course registration procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../package/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Deployment
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/deployment/deploy.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/deployment/deploy.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="deploy-your-code">Deploy your code<a class="headerlink" href="#deploy-your-code" title="Anchor link to this section for reference">&para;</a></h1>
+<div class="admonition questions">
+<p class="admonition-title">Questions</p>
+<ul>
+<li>How to make your program work for others?</li>
+<li>How to start a git repo from existing code project?</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Learning outcomes of 'Deployment'</p>
+<ul>
+<li>I can mentalize the installation needs from the users' perspective</li>
+<li>I can initialize a new project</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Content</p>
+<ul>
+<li>We will prepare for user installation of our code</li>
+<li>But also...<ul>
+<li>some theory of packages</li>
+<li>some theory of containers</li>
+<li>starting a git repo from existing code project</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="- note">
+<summary>Instructor notes</summary>
+<p>Prerequisites are:</p>
+<ul>
+<li>Package</li>
+</ul>
+<p>Lesson Plan:</p>
+<ul>
+<li><strong>Total</strong> 75 min</li>
+<li>Theory 20+10</li>
+<li>Exercises 30+15 min</li>
+</ul>
+</details>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>It's about Distribution!</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Many projects/scripts start as something for personal use, but expands to be distributed.</li>
+<li>Let's start in that end and be prepared.</li>
+<li>The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Make your program or workflow work for others and yourself in the future.</li>
+</ul>
+</div>
+<h2 id="to-make-sure-about-needed-dependencies">To make sure about needed dependencies<a class="headerlink" href="#to-make-sure-about-needed-dependencies" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li><strong>Reproducibility</strong>: We can control our code but how can we control dependencies?</li>
+<li><strong>10-year challenge</strong>: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?</li>
+<li>
+<p><strong>Dependency hell</strong>: Different codes in the same environment can have conflicting dependencies.</p>
+</li>
+<li>
+<p>2 levels of dependencies</p>
+</li>
+</ul>
+<details class="note">
+<summary>System libraries</summary>
+<ul>
+<li>Nowadays platforms are less important, still "system files" may differ among OS platforms and Linux distributions<ul>
+<li>will your program require specific "system files"</li>
+<li>are these typically not installed already?</li>
+<li>in the <strong>best world test on Windows/Mac and Linux platforms</strong><ul>
+<li>and with as empty as possible environment</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="note">
+<summary>packages, like in Python</summary>
+<ul>
+<li>Python packages</li>
+<li>R packages</li>
+<li>Julia packages</li>
+<li>Matlab Add-ons</li>
+</ul>
+</details>
+<details class="note">
+<summary>Shared services like HPC clusters</summary>
+<ul>
+<li>What about Shared services like a cluster where users and most staff do not have writing privileges ('sudo' rights) for system installations?</li>
+</ul>
+</details>
+<details class="question">
+<summary>Discussion: Where do you run your program?</summary>
+<ul>
+<li>From a terminal?<ul>
+<li>Linux, Mac, Windows?</li>
+</ul>
+</li>
+<li>From IDE?<ul>
+<li>VSCode, RStudio, MATLAB, Jupyter, Spyder, Idle</li>
+</ul>
+</li>
+<li>On different computers<ul>
+<li>Using several platforms</li>
+</ul>
+</li>
+<li>On a cluster?<ul>
+<li>NAISS resources, other?</li>
+</ul>
+</li>
+</ul>
+</details>
+<div class="admonition info">
+<p class="admonition-title">We need to</p>
+<ul>
+<li>Inform what is needed to run the software in the README file (Next session)</li>
+<li>Or provide them with everything needed (file )<ul>
+<li>hopefully not interfering with other software they are using</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="info">
+<summary>Ways to distribute</summary>
+<ul>
+<li>Python packages:<ul>
+<li>pip (PyPI)</li>
+<li>conda</li>
+</ul>
+</li>
+<li>R:<ul>
+<li>R repos like CRAN and GitHub (devtools)</li>
+<li>conda</li>
+</ul>
+</li>
+<li>Compiled languages:<ul>
+<li>built binaries (platform specific)</li>
+<li>install from source<ul>
+<li>manual</li>
+<li>make</li>
+<li>CMake</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>General tools<ul>
+<li>Containers</li>
+</ul>
+</li>
+</ul>
+</details>
+<details class="- info">
+<summary>Conda &amp; pip</summary>
+<p><strong>These <em>Python-related</em> tools try to solve the following problems:</strong></p>
+<ul>
+<li><strong>Defining a specific set of dependencies</strong>, possibly with well-defined versions</li>
+<li>requirements.txt...</li>
+<li><strong>Installing those dependencies</strong> mostly automatically</li>
+<li><strong>Recording the versions</strong> for all dependencies</li>
+<li><strong>Isolated environments</strong> (venv, virtualenv)<ul>
+<li>On your computer for projects so they can use different software.</li>
+<li>Isolate environments on computers with many users (and allow self-installations)</li>
+<li>Using <strong>different Python/R versions</strong> per project??</li>
+<li>Provide tools and services to <strong>share packages</strong></li>
+</ul>
+</li>
+</ul>
+</details>
+<ul>
+<li>Let's focus here on PyPI!<ul>
+<li>Remember we made a package this morning!</li>
+</ul>
+</li>
+<li>We'll briefly cover the other tools after the exercise.</li>
+</ul>
+<h2 id="recording-dependencies">Recording dependencies<a class="headerlink" href="#recording-dependencies" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Start with empty environment</li>
+</ul>
+<h3 id="principle-using-python-pip-in-a-virtual-environment">Principle using python pip in a virtual environment<a class="headerlink" href="#principle-using-python-pip-in-a-virtual-environment" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>We can make other users aware of the dependencies for our Python project.</li>
+<li>One can state those specifically as a list in a README</li>
+<li>Or, we can make a ready file (in python)</li>
+</ul>
+<p><strong>Save your requirements as a file</strong></p>
+<ul>
+<li>You may have developed your Python program with your existing python modules environment. You may have installed some new packages during the development but did not track it in a good way.</li>
+<li>We need to identify what python packages a user (or you on another computer) will need, to make the program work!<ul>
+<li>There are many packages distributed in the "base" installation of Python so <strong>it is not just to look at the import lines in the code</strong>.</li>
+<li>You may also be hard to get an overview because you have <strong>too many import lines</strong>, also distributed among files if you worked in a modular way</li>
+</ul>
+</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<ul>
+<li><a href="https://github.com/bclaremar/planets-bjorn/blob/main/code/requirements.txt">requirements.txt</a></li>
+</ul>
+</div>
+<details class="- tip">
+<summary>Demo with planet</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>venv
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nb">source</span><span class="w"> </span>venv/Scripts/activate<span class="w"> </span><span class="c1"># Mac/Linux has venv/bin/activate</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span>pip<span class="w"> </span>freeze<span class="w">  </span><span class="c1">#should be empty</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span>ls
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nb">cd</span><span class="w"> </span>code
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span>ls
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span>python<span class="w"> </span>planet_main.py
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span>import<span class="w"> </span>numpy<span class="w"> </span>as<span class="w"> </span>np
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span>ModuleNotFoundError:<span class="w"> </span>No<span class="w"> </span>module<span class="w"> </span>named<span class="w"> </span><span class="s1">&#39;numpy&#39;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>numpy
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span>python<span class="w"> </span>planet_main.py
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span>ModuleNotFoundError:<span class="w"> </span>No<span class="w"> </span>module<span class="w"> </span>named<span class="w"> </span><span class="s1">&#39;matplotlib&#39;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span>pip<span class="w"> </span>freeze
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span>deactivate<span class="w"> </span><span class="c1"># deactivate the virtual environment</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span>git<span class="w"> </span>add<span class="w"> </span>requirements.txt
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;add requirements.txt&quot;</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span>git<span class="w"> </span>push
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span>git<span class="w"> </span>switch<span class="w"> </span>main
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span>git<span class="w"> </span>merge<span class="w"> </span>venv
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">    </span>git<span class="w"> </span>push
+</code></pre></div>
+</details>
+<h2 id="ignoring-files-and-paths-with-gitignore">Ignoring files and paths with <code>.gitignore</code><a class="headerlink" href="#ignoring-files-and-paths-with-gitignore" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Compiled and generated files are not committed to version control. There are many reasons for this:</p>
+<ul>
+<li>Your code could be run on different platforms.</li>
+<li>These files are automatically generated and thus do not contribute in any meaningful way.</li>
+<li>The number of changes to track per source code change can increase quickly.</li>
+<li>When tracking generated files you could see differences in the code although you haven't touched the code.</li>
+</ul>
+<p>For this we use a <code>.gitignore</code> file (put in root folder)</p>
+<ul>
+<li>
+<p><a href="https://uppmax.github.io/programming_formalisms_intro/git_deeper.html">Read more</a></p>
+</li>
+<li>
+<p><a href="https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore">Our course repo</a></p>
+</li>
+</ul>
+<h2 id="exercise-1-identify-lacking-packages-15-20-min">Exercise 1: Identify lacking packages (15-20 min)<a class="headerlink" href="#exercise-1-identify-lacking-packages-15-20-min" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Work individually locally (in VS Code)</li>
+<li>Help each-other if getting stuck</li>
+<li>2-3 per group</li>
+</ul>
+</div>
+<details class="- question">
+<summary>Step 1: Start an EMPTY python virtual environment</summary>
+<ul>
+<li><strong>Git pull!</strong></li>
+<li>Go to the dir <code>learners/&lt;your-name&gt;</code> <strong>locally</strong></li>
+<li>Check that you can run python from the commandline!</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="go">which python     # must point to the python belonging to the virtual environment</span>
+</code></pre></div>
+<details class="question">
+<summary>Don't find it?</summary>
+<ul>
+<li>If not found, and you have installed Conda/miniconda, "source activate Conda"</li>
+</ul>
+<p>Examples, please try to find your solution from these or combination of these.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Mac/Linux and miniconda</label><label for="__tabbed_1_2">Windows and Anaconda</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="go">source /Users/[username]/miniconda3/bin/activate base</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="go">source C:/Users/[username]/AppData/Local/anaconda3/Scripts/activate base</span>
+</code></pre></div>
+<p>Note that in Windows the activate source file is in the directory <code>Scripts</code> not the usual <code>bin</code> directory.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Test <code>which python</code> again!</li>
+</ul>
+</details>
+<ul>
+<li>Create a virtual environment, called <code>usertest</code></li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="go">python -m venv usertest</span>
+</code></pre></div>
+<ul>
+<li>This creates an empty virtual environment located in <code>usertest</code> directory</li>
+<li>Activate</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Mac/Linux</label><label for="__tabbed_2_2">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="go">source usertest/bin/activate</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="go">source usertest/Scripts/activate</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<ul>
+<li>Note the <code>(usertest)</code> in the beginning of the prompt! Could be together with the conda <code>(base)</code> environment as well.</li>
+<li>Check versions</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="go">which python     # must point to the python belonging to the virtual environment</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="go">python -V        # note this version (same as you started the virtual environment from)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="go">which pip        # must point to the pip belonging to the virtual environment</span>
+</code></pre></div>
+<ul>
+<li>Check it is empty with the command <code>pip list</code></li>
+<li>It should just show</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Package<span class="w">    </span>Version
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>----------<span class="w"> </span>-------
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>pip<span class="w">        </span><span class="m">23</span>.2.1
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>setuptools<span class="w"> </span><span class="m">65</span>.5.0
+</code></pre></div>
+<ul>
+<li>and some notes.</li>
+</ul>
+</details>
+<details class="- question">
+<summary>Step 2: Run the <code>analysis.py</code> script in <code>/src/example</code> and look for missing packages</summary>
+<ul>
+<li>Go to the <code>/src/example</code> directory where <code>analysis.py</code> is</li>
+<li>Run the program</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python<span class="w"> </span>main.py
+</code></pre></div>
+<ul>
+<li>It may give you errors of missing packages</li>
+<li>Install it with</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="o">[</span>package<span class="w"> </span>name<span class="o">]</span><span class="w">  </span><span class="c1"># </span>
+</code></pre></div>
+<details class="- question">
+<summary>How do I install packages in virtual environments</summary>
+<ul>
+<li>Do NOT use <code>--user</code>, since it should be installed in the virtual environment only.</li>
+</ul>
+</details>
+<details class="example">
+<summary>how to install <code>uppsalaweather</code></summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>https://test.pypi.org/simple/<span class="w"> </span><span class="nv">uppsalaweather</span><span class="o">==</span><span class="m">0</span>.9
+</code></pre></div>
+<p>(note the blank space before the package name!</p>
+</details>
+<ul>
+<li>
+<p>Test run the program again</p>
+</li>
+<li>
+<p>If more packages are needed, errors will still show up</p>
+</li>
+<li>
+<p>Do pip installations until your program works!</p>
+</li>
+<li>
+<p><strong>Otherwise continue to next step</strong></p>
+</li>
+</ul>
+</details>
+<details class="- question">
+<summary>Step 3: Save your requirements as a file that user can run to get the needed dependencies</summary>
+<ul>
+<li>Check what is installed by:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="go">pip freeze</span>
+</code></pre></div>
+<ul>
+<li>You will probably recognise some of them, but some may be more obscure and were installed automatically as dependencies.</li>
+<li>Save your requirements as a file in your learners folder.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="go">pip freeze &gt; /learners/[name]/requirements.txt</span>
+</code></pre></div>
+<ul>
+<li>
+<p><strong>Other users</strong> can then install the same packages with:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="go">pip install --user -r requirements.txt</span>
+</code></pre></div>
+</li>
+<li>
+<p>End the isolated environment</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="go">deactivate</span>
+</code></pre></div>
+<ul>
+<li>Push the changes</li>
+</ul>
+</details>
+<details class="- question">
+<summary>(Optional) Step 4: Test the requirements file in a new environment</summary>
+<ul>
+<li>
+<p>Double-check it works by:</p>
+</li>
+<li>
+<p>Create another virtual environment</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="go">python -m venv usertest2</span>
+</code></pre></div>
+<ul>
+<li>Activate</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Mac/Linux</label><label for="__tabbed_3_2">Windows</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="go">source usertest2/bin/activate</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="go">source usertest2/Scripts/activate</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<ul>
+<li>Note the <code>(usertest2)</code> in the beginning of the prompt!</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="go">pip install --user -r requirements.txt</span>
+</code></pre></div>
+<ul>
+<li>Run the program!</li>
+</ul>
+<p>No errors should show up!</p>
+</details>
+<details class="- question">
+<summary>(Optional) Step 5: Add the folder to <code>.gitignore</code></summary>
+<ul>
+<li>Add test directory to <code>.gitignore</code> file (root folder in repository)</li>
+</ul>
+</details>
+<details class="- question">
+<summary>Push changes</summary>
+<ul>
+<li><strong>Git push!</strong></li>
+<li>You should all have a requirements file in your folder</li>
+</ul>
+</details>
+<h3 id="follow-up">Follow up<a class="headerlink" href="#follow-up" title="Anchor link to this section for reference">&para;</a></h3>
+<details class="- tip">
+<summary>Requirements file enabling test packages to be found</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>--index-url https://test.pypi.org/simple/
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>--extra-index-url https://pypi.org/simple
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>--pre
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>uppsalaweather==0.9
+</code></pre></div>
+<ul>
+<li>possibly not all of the 3 upper lines are needed</li>
+</ul>
+</details>
+<details class="- question">
+<summary>(One person): Move a working requirements file to the <code>src/learners</code> folder</summary>
+<ul>
+<li>Move the requirements file to the <code>learners/source</code> folder</li>
+<li>This will be the "official" requirements file</li>
+<li>That person git commit and pushes to GitHub!</li>
+</ul>
+</details>
+<h2 id="going-further-with-deployment">Going further with deployment<a class="headerlink" href="#going-further-with-deployment" title="Anchor link to this section for reference">&para;</a></h2>
+<details class="- admonition">
+<summary>Python for scientific computing</summary>
+<p><strong>Course advertisement</strong></p>
+<ul>
+<li><a href="https://aaltoscicomp.github.io/python-for-scicomp/">Python for scientific computing</a></li>
+<li><a href="https://aaltoscicomp.github.io/python-for-scicomp/packaging/">Python packaging session</a>.</li>
+</ul>
+</details>
+<details class="- admonition">
+<summary>Possibilities for other languages can be</summary>
+<ul>
+<li>C/C+<ul>
+<li>CMake</li>
+<li>Conda</li>
+</ul>
+</li>
+<li>Fortran<ul>
+<li>Fortran package manager</li>
+</ul>
+</li>
+<li>
+<p>Julia</p>
+<ul>
+<li>Pkg.jl</li>
+</ul>
+</li>
+<li>
+<p><a href="https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#recording-dependencies">More info</a></p>
+</li>
+<li><a href="https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#the-tools">The tools</a></li>
+</ul>
+</details>
+<details class="- admonition">
+<summary>Compiled language, course</summary>
+<ul>
+<li><a href="https://github.com/PDC-support/build-systems-course">Build Systems Course</a></li>
+</ul>
+</details>
+<details class="- admonition">
+<summary>Containers</summary>
+<ul>
+<li>
+<p>Containers let you install programs without needing to think about the computer environment, like</p>
+<ul>
+<li>operative system</li>
+<li>dependencies (libraries and other programs) with correct versions</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Containerization" src="../img/Containerization_nextlabs.png" /></p>
+<blockquote>
+<p>From Nextlabs:</p>
+</blockquote>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>
+<p>2(3) types</p>
+<ol>
+<li>Singularity/Apptainer perfect for HPC systems</li>
+<li>
+<p>Docker that does not work on HPC-systems</p>
+<ul>
+<li>But docker images can be used by Singularity and Apptainer</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Everything is included</p>
+</li>
+<li>
+<p>Workflow:</p>
+<ul>
+<li>Download on Rackham or local computer</li>
+<li>Transfer to Bianca</li>
+<li>Move to from wharf to any place in your working folders on Bianca</li>
+</ul>
+</li>
+<li>
+<p>Draw-backs</p>
+<ul>
+<li>you install also things that may be already installed</li>
+<li>therefore, probably more disk space is needed</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">More info</p>
+<ul>
+<li><a href="https://pmitev.github.io/UPPMAX-Singularity-workshop/">Singularity course</a></li>
+<li><a href="https://coderefinery.github.io/reproducible-research/environments">Environments by CodeRefinery</a></li>
+<li><a href="https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers">Containers in the extra material</a></li>
+</ul>
+</div>
+</details>
+<details class="- admonition">
+<summary>Workflows</summary>
+<p><strong>Learn more</strong></p>
+<ul>
+<li><a href="https://coderefinery.github.io/reproducible-research/workflow-management/">Workflow management by CodeRefinery</a></li>
+<li><a href="https://nbis-reproducible-research.readthedocs.io/en/course_2104/snakemake/">Snakemake by CodeRefinery</a></li>
+</ul>
+</details>
+<h2 id="quality-of-life">Quality of life<a class="headerlink" href="#quality-of-life" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>
+<p>Run a python script without the <code>python</code> before in a linux environment!</p>
+</li>
+<li>
+<p>This line helps in the top of the main script:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="ch">#!/bin/env python</span>
+</code></pre></div>
+<ul>
+<li>
+<p>Then the python active in "PATH" will automatically be used</p>
+<ul>
+<li>especially important on a shared system where python is not in the typical <code>/usr/bin/python</code> path.</li>
+</ul>
+</li>
+<li>
+<p>Run from command line as:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>./pythonscript
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">See also</p>
+<ul>
+<li><a href="https://www.softwareheritage.org/">Collection of (Academic) software repo links</a></li>
+<li><a href="https://github.com/NLeSC/awesome-research-software-registries">Awesome list of Research Software Registries</a></li>
+</ul>
+</div>
+<h2 id="start-a-gitgithub-repo-from-personal-existing-project">Start a Git/GitHub repo from personal existing project<a class="headerlink" href="#start-a-gitgithub-repo-from-personal-existing-project" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Many projects/scripts start as something for personal use, but expands to be distributed.</li>
+<li>Let's start in that end and be prepared.</li>
+</ul>
+<h3 id="principle">Principle<a class="headerlink" href="#principle" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Initiate git project<ul>
+<li>Browse to right <em>root</em> directory (the folder containing all the project-related files)</li>
+</ul>
+</li>
+<li>Stage and commit</li>
+<li>upload to github</li>
+</ul>
+<h3 id="optional-exercise-2-10-15-minutes">(Optional) Exercise 2: 10-15 minutes<a class="headerlink" href="#optional-exercise-2-10-15-minutes" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Let's say you have some code you have started to work with</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>Work individually locally (in VS Code or terminal)</li>
+<li>Help each-other if getting stuck</li>
+<li>Start with 1A OR 1B<ul>
+<li>1a goes to Breakout room 1</li>
+<li>1b goes to Breakout room 2</li>
+</ul>
+</li>
+</ul>
+</div>
+<details class="- question">
+<summary>Exercise 1A: Identify existing project</summary>
+<ul>
+<li>Just use an existing programming project you already have</li>
+<li>Browse to right <em>root</em> directory (the folder containing all the project-related files)</li>
+</ul>
+</details>
+<details class="- question">
+<summary>Exercise 1B: Make a code base for a new test project</summary>
+<ul>
+<li>Make a <code>test_project</code> directory in a good place (like a local <code>Programming formalisms</code> course folder)</li>
+</ul>
+<details class="question" open="open">
+<summary>In VS Code?</summary>
+<ul>
+<li>Make a new window</li>
+<li>
+<p>Open Folder</p>
+<p><img alt="start_VSC" src="../../img/start_VSC.png" /></p>
+</li>
+<li>
+<p>Create new Folder with name <code>test_project</code></p>
+</li>
+<li>Select folder</li>
+<li>Create and save a file <code>hello.py</code> with the following code base and the in-code documentation answering the question "why".</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># We just want some output from a simple program</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+</details>
+<details class="- question">
+<summary>Exercise 2: Initiate the project</summary>
+<details class="- question">
+<summary>VS CODE</summary>
+<p><img alt="initialize_VSC" src="../../img/initialize_VSC.png" /></p>
+<ul>
+<li>
+<p><strong>RECOMMENDED</strong> Publish to GitHub diectly <strong>and you are done</strong>!</p>
+<ul>
+<li>You may change the name of the repo for the GitHub instance, but not recommended.</li>
+<li>Include the file(s) (in this case the hello.py file) in the repo!</li>
+<li>Double check it was created on GitHub!<ul>
+<li>It should show up under repos in your user space</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>ALTERNATIVE: Initialize and then continue with step 3.</p>
+</li>
+</ul>
+</details>
+<details class="- question">
+<summary>Terminal</summary>
+<ul>
+<li>Be in a terminal and go to the <code>project</code> folder, which will be the project repository (<strong>repo</strong>)</li>
+<li>run <code>git init</code></li>
+<li>
+<p>make sure that there is a <code>.git</code> directory created</p>
+<ul>
+<li>you have to show hidden files, in bash terminal with <code>ls -a</code></li>
+</ul>
+</li>
+<li>
+<p>Now you have a git repo called <code>test_project</code></p>
+</li>
+<li>Check with the command: <code>git status</code><ul>
+<li>It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next.</li>
+</ul>
+</li>
+</ul>
+</details>
+</details>
+<details class="- question">
+<summary>(If needed) Exercise 3: Add and commit the content</summary>
+<ul>
+<li>So far, there is no content. We have to manually add the content to the repo.</li>
+<li>Add and Commit your changes</li>
+</ul>
+<details class="question">
+<summary>VS Code</summary>
+<p>We do this all the time! :)</p>
+</details>
+<details class="- question">
+<summary>Terminal</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="go">git add</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="go">git commit -m &#39;first commit&#39;</span>
+</code></pre></div>
+</details>
+</details>
+<details class="- question">
+<summary>(If needed) Exercise 4: Upload to GitHub</summary>
+<details class="- question">
+<summary>In VS Code</summary>
+<ul>
+<li>There is an opportunity to directly publish on GitHub</li>
+</ul>
+</details>
+<details class="- question">
+<summary>From GitHub</summary>
+<ul>
+<li>Make sure that you are <strong>logged into GitHub</strong>.</li>
+<li>You can use this for both VS Code and terminal</li>
+</ul>
+<p><img alt="New repo" src="../../img/New_repo.png" width="60%" /></p>
+<ul>
+<li>
+<p>To create a repository we either click the green button "New" (top right corner).</p>
+</li>
+<li>
+<p>Or if you see your profile page, there is a "+" menu (top right corner).</p>
+</li>
+</ul>
+<p><img alt="New top-right" src="../../img/new-top-right.png" width="60%" /></p>
+<hr />
+<ul>
+<li>
+<p>On this page choose a project name, e.g. <code>test_project</code> or a project name suiting your existing project.</p>
+</li>
+<li>
+<p><strong>NOTE</strong> It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.</p>
+</li>
+<li>
+<p>For the sake of this exercise <strong>do NOT select</strong> "Initialize this repository with a README"</p>
+</li>
+<li>and <strong>NO Licence</strong></li>
+</ul>
+<p><img alt="New repo" src="../../img/New_repo_formalisms.png" /></p>
+<blockquote>
+<p>Example project</p>
+</blockquote>
+<ul>
+<li>Press "<strong>Create repository</strong>"</li>
+</ul>
+<p><img alt="Create and push" src="../../img/created_push.PNG" /></p>
+<ul>
+<li>Choose <strong>html</strong></li>
+<li>Copy-paste the code for "<strong>…or push an existing repository from the command line</strong>"</li>
+<li>Go to <strong>local git terminal</strong> and go to the <strong>git project you started above</strong></li>
+<li>
+<p>Paste the code</p>
+</li>
+<li>
+<p>Did it work??</p>
+</li>
+<li>Reload the GitHub page and see the files present locally is also present there.</li>
+</ul>
+<p><strong>Done!</strong></p>
+</details>
+</details>
+<h3 id="what-we-did">What we did<a class="headerlink" href="#what-we-did" title="Anchor link to this section for reference">&para;</a></h3>
+<details class="info">
+<summary>Workflow</summary>
+<pre class="mermaid"><code>graph TB
+
+P["Project idea"] --&gt;|git init| Node2
+P["Project idea"] --&gt; hello.py --&gt;|git add| Node4
+Node4 --&gt; |git commit| Node1
+Node2 --&gt; |git push| Node5
+
+%% C[Uncommited changed hello.py] --&gt;|commit button| R
+R &lt;--&gt; Node5
+       subgraph "Local Git"
+        Node2[project]
+        Node1[hello.py]
+        Node1 &lt;--&gt; Node2
+
+        end
+
+        subgraph "staging area"
+        Node4[hello.py]
+        end
+
+        subgraph "GitHub"
+        Node5[project]
+        R[hello.py]
+        end
+</code></pre>
+</details>
+<div class="admonition info">
+<p class="admonition-title">About releases</p>
+<p><a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">About releases on GitHub</a></p>
+</div>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Key points</p>
+<p><strong>Make sure it works for others or yourself in the future!</strong></p>
+</div>
+<div class="admonition admonition">
+<p class="admonition-title">Parts to be covered!</p>
+<ul>
+<li>&#9745; Source/version control<ul>
+<li>Git</li>
+<li>GitHub as remote backup</li>
+<li><strong>inititalize from existing project</strong></li>
+<li>branches</li>
+</ul>
+</li>
+<li>&#9745; Planning<ul>
+<li>&#9745; Analysis</li>
+<li>&#9745; Design</li>
+</ul>
+</li>
+<li>&#9745; Testing<ul>
+<li>Different levels</li>
+</ul>
+</li>
+<li>&#9745; Collaboration<ul>
+<li>GitHub</li>
+<li>pull requests</li>
+</ul>
+</li>
+<li>&#9744; Sharing<ul>
+<li>&#9745; open science</li>
+<li>&#9744; citation</li>
+<li>&#9744; licensing</li>
+<li>&#9745; deploying</li>
+</ul>
+</li>
+<li>&#9744; Documentation<ul>
+<li>&#9745; in-code documentation</li>
+<li>&#9744; finish documentation</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../package/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Implement the project as a package">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Implement the project as a package
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../documentation/" class="md-footer__link md-footer__link--next" aria-label="Next: Documentation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Documentation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
