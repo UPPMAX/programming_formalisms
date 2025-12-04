@@ -1,7 +1,5 @@
 ---
 tags:
-  - meeting
-  - notes
   - NBIS
   - training
   - hub

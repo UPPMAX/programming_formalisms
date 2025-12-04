@@ -1,9 +1,3 @@
----
-tags:
-  - meeting
-  - notes
----
-
 # Meeting notes for autumn course 2022
 
 ## Current Teachers/TA
