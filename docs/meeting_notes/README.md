@@ -2,6 +2,7 @@
 tags:
   - meeting
   - notes
+  - minutes
 ---
 
 # Meeting notes
