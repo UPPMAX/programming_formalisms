@@ -1,0 +1,3652 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Meeting notes for autumn course 2022 - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#meeting-notes-for-autumn-course-2022" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Meeting notes for autumn course 2022
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../learning_outcomes/" class="md-tabs__link">
+          
+  
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introductions/intro/" class="md-tabs__link">
+          
+  
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project_start/analysis_design/" class="md-tabs__link">
+          
+  
+  
+  Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introductions/sdlc/" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/issues/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../assert/" class="md-tabs__link">
+          
+  
+  
+  Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../package/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contact_us/" class="md-tabs__link">
+          
+  
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About the course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning_outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning outcomes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prereqs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course_dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/configurations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Become member of project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_class_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create class list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create_structs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create structs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/dream_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dream design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDLC tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/git_startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started with git and the project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project_start/analysis_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development_design/excercise_1_Design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercise Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introductions/sdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Development Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../design_develop/OO_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../function_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../expressive_data_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expressive data types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modularity/modular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../has_a_relation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A 'has-a' relation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_structures/class_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/kanban_board/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kanban board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git workflow, branches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git(-Hub) workflow, merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../git/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing & code review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../social_coding/social_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sharing and social coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pair_programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pair programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../continuous_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    assert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-driven development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tdd_at_bigger_scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDD at a bigger scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a formal testing framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime speed profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/improve_runtime_speed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improve run-time speed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../optimisation/big_o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implement the project as a package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra material (Earlier Intro day materials)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions to practice TDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../further_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/git_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lesson_plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn UML with mermaid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meeting notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/project_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reflections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/retrospective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrospective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../shared_documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/scilifelab_course_registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciLifeLab course registration procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/meeting_notes/2022_autumn.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/meeting_notes/2022_autumn.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="meeting-notes-for-autumn-course-2022">Meeting notes for autumn course 2022<a class="headerlink" href="#meeting-notes-for-autumn-course-2022" title="Anchor link to this section for reference">&para;</a></h1>
+<h2 id="current-teachersta">Current Teachers/TA<a class="headerlink" href="#current-teachersta" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>[name=Lars Eklund], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(Software development and modular programming)</li>
+<li>[name= Björn Claremar], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(Introduction and Git)</li>
+<li>[name=Marcus Lundberg],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#114;&#99;&#117;&#115;&#46;&#108;&#117;&#110;&#100;&#98;&#101;&#114;&#103;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(Algorithms and Datastructures)</li>
+<li>[name= Matias Piqueras],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#109;&#97;&#116;&#105;&#97;&#115;&#46;&#112;&#105;&#113;&#117;&#101;&#114;&#97;&#115;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a>(TDD examples and github actions)</li>
+<li>[name=Richèl Biderbeek], <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#114;&#105;&#99;&#104;&#101;&#108;&#46;&#98;&#105;&#108;&#100;&#101;&#114;&#98;&#101;&#101;&#107;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a> (TDD)</li>
+<li>[name=Jon Ander Novella],<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#110;&#98;&#105;&#115;&#46;&#115;&#101;</a> (Social coding)</li>
+</ul>
+<h2 id="participation-list">Participation List<a class="headerlink" href="#participation-list" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#108;&#97;&#114;&#115;&#46;&#101;&#107;&#108;&#117;&#110;&#100;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>Björn Claremar, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#98;&#106;&#111;&#114;&#110;&#46;&#99;&#108;&#97;&#114;&#101;&#109;&#97;&#114;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>Jonas Söderberg, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#97;&#115;&#46;&#115;&#111;&#100;&#101;&#114;&#98;&#101;&#114;&#103;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;">&#106;&#111;&#110;&#97;&#115;&#46;&#115;&#111;&#100;&#101;&#114;&#98;&#101;&#114;&#103;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;</a>(as student)</li>
+<li>Diana Iusan, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#97;&#110;&#97;&#46;&#105;&#117;&#115;&#97;&#110;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#100;&#105;&#97;&#110;&#97;&#46;&#105;&#117;&#115;&#97;&#110;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a></li>
+<li>Pavlin Mitev, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#97;&#118;&#108;&#105;&#110;&#46;&#109;&#105;&#116;&#101;&#118;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;">&#112;&#97;&#118;&#108;&#105;&#110;&#46;&#109;&#105;&#116;&#101;&#118;&#64;&#117;&#112;&#112;&#109;&#97;&#120;&#46;&#117;&#117;&#46;&#115;&#101;</a> (as student)</li>
+<li>Jon Ander Novella, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;</a></li>
+<li>Douglas Scofield</li>
+<li>Marcus Lundberg</li>
+<li>Martin</li>
+<li>Per</li>
+</ul>
+<h2 id="helper-schedule">Helper schedule<a class="headerlink" href="#helper-schedule" title="Anchor link to this section for reference">&para;</a></h2>
+<p>We need someone each day to administer and answer questions on HackMd. Please fill in your name for the days where you can help</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Topic</th>
+<th>Helpers morning</th>
+<th>Helpers afternoon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>Intro</td>
+<td>Lars</td>
+<td>Lars</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>Algorithms and data structures</td>
+<td>Matias, Lars</td>
+<td>Lars, Björn</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>Paradigms</td>
+<td>Lars, Björn</td>
+<td>Lars</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>Testing</td>
+<td>Lars, Matias, Björn</td>
+<td>Lars</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>Optimization</td>
+<td>Lars, Björn</td>
+<td>Lars</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this section for reference">&para;</a></h2>
+<p><code>https://github.com/UPPMAX/programming_formalism/blob/main/setup.md</code></p>
+<h2 id="participaton-list-meeting-5-13-oct">Participaton List meeting 5 (13 Oct)<a class="headerlink" href="#participaton-list-meeting-5-13-oct" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Björn</li>
+<li>Lars</li>
+<li>
+<h2 id="matias">Matias<a class="headerlink" href="#matias" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+<h3 id="links">Links<a class="headerlink" href="#links" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>General<ul>
+<li><a href="https://github.com/UPPMAX/programming_formalism">https://github.com/UPPMAX/programming_formalism</a></li>
+</ul>
+</li>
+<li>Intro<ul>
+<li><a href="https://uppmax.github.io/programming_formalisms/">https://uppmax.github.io/programming_formalisms/</a></li>
+</ul>
+</li>
+<li>Test driven design<ul>
+<li><code>Broken link to a TDD repo of https://github.com/MatPiq</code></li>
+</ul>
+</li>
+<li>Link to the previous instance of the course<ul>
+<li><a href="https://uppsala.instructure.com/courses/69215">https://uppsala.instructure.com/courses/69215</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="bjorns-questions-for-intro-day">Björn's questions for Intro day<a class="headerlink" href="#bjorns-questions-for-intro-day" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>UML seems to require that I talk about Object orientation as well<ul>
+<li>How much?</li>
+<li>I will cover it in detail during the Paradigm as it is very important to understand the concepts of object orientation inorder to grasp modern modularisation in my oppinion.</li>
+<li>What do you cover in your lesson, Lars?
+  [x] class+sequence+ aktivitetsdiagram
+  [x] plantUML
+  [ ] Flow (aktivitetsdiagram men lite annorlunda pilar och hörn etc...)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>st=&gt;start: HAS AN
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>OWNER AND
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>IS OPEN!
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>e=&gt;end: RESOLVE
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>op=&gt;operation: ASSIGN
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>AGAIN
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>op3=&gt;operation: SET
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>&quot;NOBODY&quot;,
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>MAKE
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>MARCUS
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>AWARE
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>op4=&gt;operation: WAIT
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>op5=&gt;operation: STALL
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>AND
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>COMMENT
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>op6=&gt;operation: RESOLVE
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>BUT
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>COMMENT
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>op7=&gt;end: DONE
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>op8=&gt;operation: NEW TICKET OR JIRA
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>cond=&gt;condition: CAN
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>I
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>RESOLVE?
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>cond2=&gt;condition: AWAITING
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>USER
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>INPUT?
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>cond3=&gt;condition: AWAITING
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>EXTERNAL
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>INPUT?
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>cond4=&gt;condition: REQUEST
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>SOLVED?
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>cond5=&gt;condition: WORK
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>NEEDED
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>INTERNALLY?
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>st-&gt;cond-&gt;cond2
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>op3-&gt;op
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>op4-&gt;cond
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>op6-&gt;cond5
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>cond(yes)-&gt;cond2
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>cond(no)-&gt;op3
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>cond2(yes)-&gt;cond4
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>cond2(no)-&gt;cond3
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>cond3(yes)-&gt;op5
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>cond3(no)-&gt;e
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>cond4(yes)-&gt;op6
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>cond4(no)-&gt;op4
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>cond5(yes)-&gt;op8
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>cond5(no)-&gt;op7
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">digraph</span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">&quot;Enterprise&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">Kirk</span><span class="p">,</span><span class="w"> </span><span class="nt">Picard</span><span class="p">,</span><span class="w"> </span><span class="nt">Archer</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nt">Enterprise</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Kirk</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">Enterprise</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Original</span><span class="p">,</span><span class="w"> </span><span class="nt">A</span><span class="p">,</span><span class="w"> </span><span class="nt">B</span><span class="p">,</span><span class="w"> </span><span class="nt">C</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>start
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>if( HAS AN
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>OWNER AND IS OPEN) then(yes)
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> if (CAN I RESOLVE) then
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a> if (waiting user input) then
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a> elseif (condition D) then (yes)
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  :Text 4;
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>else ()
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  :Text else;
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>endif
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>stop
+</code></pre></div>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Anchor link to this section for reference">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Actor --&gt;(test)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>User -&gt; Authenticator : request
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Authenticator -&gt; User : respond &lt;token&gt;
+</code></pre></div>
+<h2 id="participation-list-meeting-4">Participation List meeting 4<a class="headerlink" href="#participation-list-meeting-4" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund</li>
+<li>Matias (TDD)</li>
+<li>Björn (intro)</li>
+<li>Per Johansson (TDD)</li>
+<li>Jon Ander Novella ()</li>
+</ul>
+<h3 id="schedule">Schedule<a class="headerlink" href="#schedule" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>
+<p>Day1 Intro</p>
+<ul>
+<li>SDLC<ul>
+<li>waterfall</li>
+<li>cont I and D:s</li>
+</ul>
+</li>
+<li>version control</li>
+<li>reproducibility<ul>
+<li>personal use to general use</li>
+<li>dependencies</li>
+<li>platforms</li>
+</ul>
+</li>
+<li>planning: UML</li>
+<li>
+<h2 id="documentation">documentation<a class="headerlink" href="#documentation" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+</li>
+<li>
+<p>Day2 Algorithms+data structures</p>
+<ul>
+<li>intro</li>
+<li>storing</li>
+<li>searching for things</li>
+<li>sorting</li>
+<li>BLAST</li>
+<li>exercises</li>
+</ul>
+</li>
+<li>Day3-4 Paradigms: design patterns, modular code<ul>
+<li>How?</li>
+<li>Programming paradigms<ul>
+<li>SDLC and the models for the development process</li>
+<li>overview</li>
+</ul>
+</li>
+<li>Modular programming<ul>
+<li>design patterns introduction to element of reusable software modules</li>
+<li>what is module</li>
+<li>common interface design</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Day4 TDD, testing<ul>
+<li>first look</li>
+<li>types of tests</li>
+<li>TDD in practice (afternoon 13:00-16:00)<ul>
+<li>Testing in Python with pytest</li>
+<li>Automating testing with Github Actions</li>
+<li>Putting it all together</li>
+<li>"Advanced" topics</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Day5 Optimization: halvdag...?</li>
+</ul>
+<h2 id="participaton-list-meeting-3">Participaton List meeting 3<a class="headerlink" href="#participaton-list-meeting-3" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund</li>
+<li>Matias</li>
+<li>Björn</li>
+<li>Marcus</li>
+</ul>
+<h3 id="status-intro-by-bjorn">Status Intro by Björn<a class="headerlink" href="#status-intro-by-bjorn" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>
+<p>Different types of Scientific software:</p>
+<ul>
+<li>Your analysis of data<ul>
+<li>statistics</li>
+<li>figures</li>
+<li>visualization</li>
+</ul>
+</li>
+<li>tools for process data<ul>
+<li>many bioinformatics tools</li>
+</ul>
+</li>
+<li>workflows</li>
+<li>modelling (3D or mimic of nature)</li>
+<li>Web-service e.g. "decision assistant"</li>
+<li>Distributed package vs. one-time usage</li>
+</ul>
+</li>
+<li>
+<p>I'm learning about SDLC</p>
+<ul>
+<li>I'll arrange for 15 min summary</li>
+<li>
+<p>Partly applicable on data (standards, versioning, technical)</p>
+</li>
+<li>
+<p>intro like history, take aways from:</p>
+<ul>
+<li><strong>OK korta ned...</strong></li>
+<li><strong>waterfall</strong></li>
+<li><strong>spiral model</strong></li>
+<li>RUP (Lars har erfarenhet)</li>
+<li>DSDM (dynamic system development method)</li>
+<li>FDD (feature-driven development)</li>
+<li>Crystal method</li>
+<li>Scrum</li>
+<li>Lean</li>
+<li>Kanban</li>
+<li>Extreme Programming<ul>
+<li>pair programming</li>
+<li>TDD</li>
+</ul>
+</li>
+<li>Spotify</li>
+<li>DevOps<ul>
+<li>continous Integration, development and deployment</li>
+</ul>
+</li>
+<li>CMMI (Capability maturity model integration)</li>
+<li>
+<h2 id="six-sigma">Six Sigma<a class="headerlink" href="#six-sigma" title="Anchor link to this section for reference">&para;</a></h2>
+</li>
+</ul>
+</li>
+<li>Input from CR course</li>
+<li>dokumentation<ul>
+<li>in-code (less needed if good functions names)</li>
+<li>readme</li>
+<li>kort om sphinx</li>
+</ul>
+</li>
+<li>git/github (exercise)</li>
+<li>recording dependencies/packages<ul>
+<li>NOT computational steps</li>
+<li>Reproducibility: We can control our code but how can we control dependencies?</li>
+<li>10-year challenge: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?</li>
+<li>Dependency hell</li>
+</ul>
+</li>
+<li>briefly about social coding<ul>
+<li>NOT licensing?</li>
+</ul>
+</li>
+<li>testing<ul>
+<li>intro (how much?)<ul>
+<li>defensive programming?</li>
+<li>unit tests?</li>
+<li>integration</li>
+<li>regression</li>
+<li>TDD</li>
+<li>continuous integration</li>
+</ul>
+</li>
+<li>github actions</li>
+</ul>
+</li>
+<li>modular code<ul>
+<li>intro</li>
+</ul>
+</li>
+<li>UML</li>
+<li>pseudokod</li>
+<li>Concepts are included in each subsession<ul>
+<li>but can be summarised in a summary session first day</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="participaton-list-meeting-2">Participaton List meeting 2<a class="headerlink" href="#participaton-list-meeting-2" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="teachers">Teachers<a class="headerlink" href="#teachers" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Lars Eklund</li>
+<li>Marcus Lundberg</li>
+<li>Björn</li>
+<li>Diana</li>
+</ul>
+<h2 id="advertising-text-for-the-snic-training-newsletter">Advertising text for the SNIC training newsletter<a class="headerlink" href="#advertising-text-for-the-snic-training-newsletter" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Programming Formalism Course - October 24-28 (online)</p>
+<p>This full 5-day course aims to give life scientists, bioinformaticians, and other scientists with some experience in programming and scripting an understanding of the underlying principles of software development, design, and programming. The course aims to strengthen the understanding of more advanced programming concepts, ability to produce more reusable scripts through modular programming and to enable a better understanding of how to evaluate a script or programs performance.</p>
+<p>We will cover an introduction to Algorithms and Data structures, Programming Paradigms especially structured and object oriented programming, and to give an overview of other paradigms like functional programming. Modular development and (code) reusability, testing and optimisation.</p>
+<p>We will cover theory with bridging practical examples and applications to enhance the theoretical understanding of the principles.</p>
+<p>For more information and registration, please visit: <code>[broken link to Programming Formalisms course at UPPMAX website]</code></p>
+<h2 id="contributors">Contributors<a class="headerlink" href="#contributors" title="Anchor link to this section for reference">&para;</a></h2>
+<p>/<em>any one interested in helping out. Please add name and email</em>/</p>
+<ul>
+<li>Tomas Reed (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#111;&#109;&#97;&#115;&#46;&#114;&#101;&#101;&#100;&#64;&#108;&#105;&#117;&#46;&#115;&#101;">&#116;&#111;&#109;&#97;&#115;&#46;&#114;&#101;&#101;&#100;&#64;&#108;&#105;&#117;&#46;&#115;&#101;</a>)</li>
+<li>Jon Ander Novella (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;">&#106;&#111;&#110;&#46;&#110;&#111;&#118;&#101;&#108;&#108;&#97;&#64;&#115;&#99;&#105;&#108;&#105;&#102;&#101;&#108;&#97;&#98;&#46;&#115;&#101;</a>)</li>
+</ul>
+<h2 id="format-and-length">Format and length<a class="headerlink" href="#format-and-length" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Full days, online 9-16</li>
+<li>Lectures/seminars and "homework" exercises</li>
+<li>Morning recap+semin</li>
+<li>Afternoon exercise</li>
+<li>pair teaching</li>
+<li>single for more theoretical parts</li>
+<li>Toy project that is built-upon thought the course, possibly as examination too</li>
+<li>Breakout rooms</li>
+<li>assignments and quizzes</li>
+<li>Menti for interaction</li>
+</ul>
+<h2 id="when-month-at-least">When? (month at least!)<a class="headerlink" href="#when-month-at-least" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>late October, week 43 oct 24-28</li>
+</ul>
+<h2 id="goal">Goal<a class="headerlink" href="#goal" title="Anchor link to this section for reference">&para;</a></h2>
+<p>"Turning scripters into computer scientists"
+Add theory to bolster already present practical skills</p>
+<h2 id="expectations">Expectations<a class="headerlink" href="#expectations" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Code efficiency, speed</li>
+<li>Code accuracy, correctness of results</li>
+<li>Availability and sharability</li>
+<li>understanding of development concepts</li>
+</ul>
+<h2 id="prerequisites_1">Prerequisites<a class="headerlink" href="#prerequisites_1" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Decent scripting skills</li>
+<li>What is a skilled scripter.. coder</li>
+</ul>
+<h2 id="material">Material<a class="headerlink" href="#material" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li><a href="https://uppsala.instructure.com/courses/69215">https://uppsala.instructure.com/courses/69215</a></li>
+</ul>
+<h2 id="topics">Topics<a class="headerlink" href="#topics" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>other languages and ways of understanding which is usefull</li>
+<li>Documentation<ul>
+<li>part of all modules?</li>
+</ul>
+</li>
+<li>"Project" in pseudocode over all week<ul>
+<li>updated with new parts every day under source control</li>
+</ul>
+</li>
+<li>Formalism of breaking down the problem</li>
+<li>Use Practical problems as introducing the complexities</li>
+</ul>
+<h3 id="which-modules">Which modules<a class="headerlink" href="#which-modules" title="Anchor link to this section for reference">&para;</a></h3>
+<ul>
+<li>Setup meeting before course start<ul>
+<li>reminders of deadlines</li>
+</ul>
+</li>
+<li>Introduction (including source control) [name=Björn] 1d<ul>
+<li>focus on the <strong>concepts</strong><ul>
+<li>parts already in other courses, so just recap of this</li>
+<li>like: <a href="https://nbis-reproducible-research.readthedocs.io/en/course_1911/">https://nbis-reproducible-research.readthedocs.io/en/course_1911/</a></li>
+</ul>
+</li>
+<li>SDLC intro software development lifecycle 15 min</li>
+<li>waterfall, spiral</li>
+<li>source control<ul>
+<li>git as example</li>
+<li>collaborative sharing (github)</li>
+<li>(peer programming:  non-real-time co-operation)</li>
+</ul>
+</li>
+<li>reproducible research? (canvas course)<ul>
+<li>recording dependencies etc...</li>
+<li>"social coding"</li>
+</ul>
+</li>
+<li>development cycle?<ul>
+<li>ex. maintenance</li>
+<li>code management plan!</li>
+<li>for project applications?</li>
+</ul>
+</li>
+<li>Exercises for this part?<ul>
+<li>sketching the project flow.</li>
+<li>adding source control?</li>
+</ul>
+</li>
+<li>Introduction to UML:<ul>
+<li>introduction to flowcharts</li>
+</ul>
+</li>
+<li>Educational outcome course</li>
+<li>sorting out the concepts<ul>
+<li>Peer programming is QC/QA collab sharing</li>
+<li>Pair programming is real-time development teqch to increase  algorithm implementation, pass off, introduction</li>
+<li>Agile development, the Agile manifest (Not a full process)</li>
+<li>OOSE-like Rational Unifed Proces</li>
+<li>TDD</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>First day exercises:
+    <strong>(a short paragraph or two)</strong></p>
+<ul>
+<li>What do you mean with:<ul>
+<li>scripts?</li>
+<li>programming?</li>
+<li>software development?</li>
+<li>algorithm?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Algorithms and datastructures ([name=Marcus]) 1d</p>
+<ul>
+<li>aspect of complexity of algorithms</li>
+<li>common algorithms</li>
+<li>Big(O)</li>
+</ul>
+</li>
+<li>Development  paradigms([name=Lars]) 1d</li>
+<li>2h, Menti topics<ul>
+<li>
+<ul>
+<li>SDLC,RAD,RUP, Spiral model,(Funnel visualisation) [name=Lars]
+        - Extreme Programming and Prototype driven development
+   short historical overview.
+ -MENTI FOR INTRaction
+ development strategies and design strategies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>-UML Digagrams -20 min</li>
+<li>-UML exersise 10 min<ul>
+<li>functional programming(short intro to concepts)</li>
+<li>Iterative/Declarative programming</li>
+<li>object-oriented <code>[as intro to modular]</code> (Lars)</li>
+<li>concept of classifiaction and classes as a means of compartimalisation<ul>
+<li>Concept of inheretance as a mean of propagating comonallity
+-----LUNCH----</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Common development practices[name=Jon]<ul>
+<li>Choosing a software development methodology[name=Lars]</li>
+<li>Social coding (<a href="https://coderefinery.github.io/social-coding/social-coding/">https://coderefinery.github.io/social-coding/social-coding/</a>)</li>
+<li>Code reviews<ul>
+<li>Pair programming -two devlopers <em>driver and navigator</em></li>
+<li>Exercise: pair develop two of your algorithms from yesterday coding. Switching roles.</li>
+<li>Present NBIS code development guidelines (<a href="https://github.com/NBISweden/development-guidelines">https://github.com/NBISweden/development-guidelines</a>)</li>
+<li>Exercise: How to do code reviews?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Modular programming and Design Patterns([name=Lars])2h Day 4</p>
+<ul>
+<li>Comon interface<ul>
+<li>Objects as means to information hiding</li>
+<li>Collections and Modules</li>
+</ul>
+</li>
+<li>collabortative development<ul>
+<li>Why are modules so important when working collaborativly</li>
+<li><em>One asset one file</em> , How to create an environment that promotes easy sharing of work.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>1h</p>
+</li>
+<li>Design Patterns([name=Lars]) 1h DAY 4<ul>
+<li>What is  a design pattern</li>
+<li>Common design patterns and there applications       -</li>
+</ul>
+</li>
+<li>Testing and TDD (Test Driven Design)([name=Per],[name=Matias] Practicals) 1d?<ul>
+<li>(sys Dev)</li>
+<li>Peer programming (code review)</li>
+<li>Checking others code, checking the module.</li>
+<li>13:00-16:00 Afternoon session TDD in practice: <code>[Broken link to matpiq's PF-TDD GitHub repo]</code></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13:00-13:30</td>
+<td>Introduction to testing in Python</td>
+</tr>
+<tr>
+<td>13:30-14:00</td>
+<td>Automated testing using Github actions</td>
+</tr>
+<tr>
+<td>14:00-14:15</td>
+<td>Break</td>
+</tr>
+<tr>
+<td>14:15-15:00</td>
+<td>Putting it all together - code along</td>
+</tr>
+<tr>
+<td>15:00-15:30</td>
+<td>Exercises</td>
+</tr>
+<tr>
+<td>15:30-16:00</td>
+<td>Advanced Topics</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Optimisation([name=Marcus])<ul>
+<li>right tool for the job</li>
+<li>how formal should I be?</li>
+<li>code optimisation</li>
+<li>Benchmarking Profiler, timing</li>
+</ul>
+</li>
+</ul>
+<h2 id="complementary-course-suggestions">Complementary course suggestions<a class="headerlink" href="#complementary-course-suggestions" title="Anchor link to this section for reference">&para;</a></h2>
+<p>// Courses that are useful in conjuction with this course</p>
+<ul>
+<li>Hackmd</li>
+<li>UML</li>
+<li>reproducable research</li>
+</ul>
+<h2 id="covered-by-other-courses">Covered by other courses<a class="headerlink" href="#covered-by-other-courses" title="Anchor link to this section for reference">&para;</a></h2>
+<h2 id="next-meeting">Next meeting<a class="headerlink" href="#next-meeting" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>Weekly teachers meetings of Programming formalisms for life scientists and bioinformaticians course is on Thursdays 11-12  on zoom,<a href="https://uu-se.zoom.us/j/67602711000">https://uu-se.zoom.us/j/67602711000</a></li>
+<li>Passcode: 880630</li>
+</ul>
+<h2 id="questions-for-the-admissions-form">Questions for the admissions form<a class="headerlink" href="#questions-for-the-admissions-form" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Registration form: <a href="https://docs.google.com/forms/d/1VpzwuZXEawPTtEjEUhY33a_afpBs4ioZulX9UqhdzSo/edit?usp=sharing">https://docs.google.com/forms/d/1VpzwuZXEawPTtEjEUhY33a_afpBs4ioZulX9UqhdzSo/edit?usp=sharing</a></p>
+<ul>
+<li>Name*?<ul>
+<li>short answer</li>
+</ul>
+</li>
+<li>Email*?<ul>
+<li>short answer</li>
+</ul>
+</li>
+<li>Affiliation?<ul>
+<li>short answer</li>
+</ul>
+</li>
+<li>
+<p>Briefly describe your background and experience in programming:</p>
+<ul>
+<li>long answer</li>
+</ul>
+</li>
+<li>
+<p>Do you plan to follow the whole course</p>
+<ul>
+<li>Yes/No</li>
+</ul>
+</li>
+<li>What do you expect to learn in this course?<ul>
+<li>short answer / free form</li>
+</ul>
+</li>
+<li>How did you learn about this course?<ul>
+<li>SNIC training newsletter</li>
+<li>NBIS ...</li>
+<li>UPPMAX website</li>
+<li>colleague</li>
+<li>other (free form)</li>
+</ul>
+</li>
+</ul>
+<h2 id="participation-emails">Participation emails<a class="headerlink" href="#participation-emails" title="Anchor link to this section for reference">&para;</a></h2>
+<p>LE Paradigms, Introduction to formalised development</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Anchor link to this section for reference">&para;</a></h2>
+<p>[Bell, 2020] Bell, Mike. The fundamentals of teaching: A five-step model to put the research evidence into practice. Routledge, 2020.
+[Hattie, 2008] Hattie, John. Visible learning: A synthesis of over 800 meta-analyses relating to achievement. routledge, 2008.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
