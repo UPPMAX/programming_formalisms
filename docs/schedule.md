@@ -14,13 +14,13 @@ For a detailed daily schedule, see the detailed schedule of that day.
     <!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
 
     Day      | Time        | Teacher | Subject
-    ---------|-------------|------|-----------------------------------------------------------
-    Thursday | 09:00-09:10 | R    | [Welcome to the course](./intro.md)
-    Thursday | 09:10-09:50 | R    | [Project set-up](./project_start/configurations.md) + [Introduction](./introductions/intro.md)
-    Thursday | 10:05-10:55 | R    | [Software development tools](./introductions/sdlc_tools.md) <!-- includes modules (tiny) --> [Git/GitHub basics and start project](./project_start/git_startup.md) <!-- includes merge conflicts -->
-    Thursday | 11:10-12:00 | Lars | Lars stuff 
-    Thursday | 13:00-15:40 | Lars | [Define and plan project](./project_start/analysis_design.md)
-    Thursday | 15:40-16:00 | Lars | Confidence and retrospect
+    ---------|-------------|---------|-----------------------------------------------------------
+    Thursday | 09:00-09:10 | R       | [Welcome to the course](./intro.md)
+    Thursday | 09:10-09:50 | R       | [Project set-up](./project_start/configurations.md) + [Introduction](./introductions/intro.md)
+    Thursday | 10:05-10:55 | R       | [Software development tools](./introductions/sdlc_tools.md) <!-- includes modules (tiny) --> [Git/GitHub basics and start project](./project_start/git_startup.md) <!-- includes merge conflicts -->
+    Thursday | 11:10-12:00 | Lars    | Lars stuff 
+    Thursday | 13:00-15:40 | Lars    | [Define and plan project](./project_start/analysis_design.md)
+    Thursday | 15:40-16:00 | Lars    | Confidence and retrospect
     |||||
     Friday  | 09:00-10:00|R   |[Software development life cycle](./introductions/sdlc.md)
     Friday  | 10:15-11:00|Richel |[Issues](project/issues.md) and [kanban board](project/kanban_board.md)
