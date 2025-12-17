@@ -142,9 +142,9 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
 
     From example [requirement specification](../project_start/analysis_design.md):
 
-    Requirement ID | Requirement Description | Acceptance Criteria | Test Cases
-    ---------------|-------------------------|---------------------|------------
-    R1             | Visual Display          | The program must display a field with particles and a visual cue to runtime settings | - Verify that the program opens a graphical window or interface for displaying particles.
+    | Requirement ID | Requirement Description | Acceptance Criteria                                                                  | Test Cases                                                                                |
+    |----------------|-------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+    | R1             | Visual Display          | The program must display a field with particles and a visual cue to runtime settings | - Verify that the program opens a graphical window or interface for displaying particles. |
 
     ```mermaid
     graph TD;
