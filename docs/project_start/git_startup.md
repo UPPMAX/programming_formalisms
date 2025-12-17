@@ -228,13 +228,13 @@ Tracked files can be in three states.
 
     ???+ info "Example"
 
-        Best | Bad | Worst
-        -----|-----|------
-        [login] Fix typo in DB call | Fixed typo in DB call | Fix typo
-        refactor login function for reuse | Changing login function by moving declarations to parameters | Code refactoring
-        add new api for user program check| adding a new api for user program check | New user api
+        | Best                               | Bad                                                          | Worst            |
+        |------------------------------------|--------------------------------------------------------------|------------------|
+        | [login] Fix typo in DB call        | Fixed typo in DB call                                        | Fix typo         |
+        | refactor login function for reuse  | Changing login function by moving declarations to parameters | Code refactoring |
+        | add new api for user program check | adding a new api for user program check                      | New user api     |
 
-        Source: [Git Best Practices (Chap 6 in Beginning Git)](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/html/484631_2_En_6_Chapter.xhtml)
+        - Source: [Git Best Practices (Chap 6 in Beginning Git)](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/html/484631_2_En_6_Chapter.xhtml)
 
     [Check this page!](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html#writing-useful-commit-messages)
 

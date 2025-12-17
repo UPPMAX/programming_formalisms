@@ -4,18 +4,18 @@
 
 ## Result
 
-| Requirement ID | Requirement Description | Acceptance Criteria | Test Cases |
-|----------------|-------------------------|---------------------|------------|
-| R1             | Visual Display         | The program must display a field with particles | - Verify that the program opens a graphical window or interface for displaying particles. |
-| R2             | Particle Initialization | Particles must be initialized with positions and speeds | - Confirm that each particle has a unique position and speed. |
-| R3             | Particle Interaction   | Particles must interact with each other | - Implement a chosen interaction (e.g., gravitational attraction, Lennard-Jones potential, or direction alignment). - Verify that particles respond to each other's presence. |
-| R4             | Boundary Condition     | Choose a boundary condition for the field | - Implement chosen boundary conditions (e.g., bounce, wrap, or elimination). - Confirm that particles behave according to the chosen boundary conditions. |
-| R5             | Simulation Step        | The simulation must progress in discrete steps | - Implement a mechanism to advance the simulation step by step. |
-| R6             | Real-time Visualization | Draw each simulation step in real-time | - Ensure that the simulation displays each step visually as it progresses. |
-| R7             | Maximum Particle Limit  | The simulation should handle a maximum number of particles | - Test the simulation with varying numbers of particles up to the maximum limit and verify that it remains stable. |
-| R8             | Acceptable Framerate    | The simulation should maintain an acceptable framerate | - Measure and verify that the framerate remains above a defined threshold with the maximum number of particles. |
-| R9             | Stop Simulation         | Ability to stop the simulation | - Implement a user interface or mechanism to stop the simulation. |
-| R10            | Test-Driven Development | Develop the project using TDD | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code. |
+| Requirement ID | Requirement Description | Acceptance Criteria                                        | Test Cases                                                                                                                                                                    |
+|----------------|-------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| R1             | Visual Display          | The program must display a field with particles            | - Verify that the program opens a graphical window or interface for displaying particles.                                                                                     |
+| R2             | Particle Initialization | Particles must be initialized with positions and speeds    | - Confirm that each particle has a unique position and speed.                                                                                                                 |
+| R3             | Particle Interaction    | Particles must interact with each other                    | - Implement a chosen interaction (e.g., gravitational attraction, Lennard-Jones potential, or direction alignment). - Verify that particles respond to each other's presence. |
+| R4             | Boundary Condition      | Choose a boundary condition for the field                  | - Implement chosen boundary conditions (e.g., bounce, wrap, or elimination). - Confirm that particles behave according to the chosen boundary conditions.                     |
+| R5             | Simulation Step         | The simulation must progress in discrete steps             | - Implement a mechanism to advance the simulation step by step.                                                                                                               |
+| R6             | Real-time Visualization | Draw each simulation step in real-time                     | - Ensure that the simulation displays each step visually as it progresses.                                                                                                    |
+| R7             | Maximum Particle Limit  | The simulation should handle a maximum number of particles | - Test the simulation with varying numbers of particles up to the maximum limit and verify that it remains stable.                                                            |
+| R8             | Acceptable Framerate    | The simulation should maintain an acceptable framerate     | - Measure and verify that the framerate remains above a defined threshold with the maximum number of particles.                                                               |
+| R9             | Stop Simulation         | Ability to stop the simulation                             | - Implement a user interface or mechanism to stop the simulation.                                                                                                             |
+| R10            | Test-Driven Development | Develop the project using TDD                              | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code.                                               |
 
 From this matrix we build derived requirements using the following prompt: generate derived requirements from the requirement matrix
 
