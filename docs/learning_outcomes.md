@@ -1,5 +1,13 @@
 # Learning outcomes
 
+## Course
+
+- have experienced a software development lifecycle
+- be able to develop software collaboratively
+- be able to grow code in a methodological way
+- detect when your code is Good Enough
+- be able to release a Python package
+
 ## Monday
 
 Today we:
