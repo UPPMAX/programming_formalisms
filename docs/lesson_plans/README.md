@@ -17,6 +17,6 @@ Index|Course
 4    |[2024 autumn](2024_autumn/README.md)
 5    |[2025 summer](2025_summer/README.md)
 6    |[2025 autumn](2025_autumn/README.md)
-7    |2026 summer
+7    |[2026 summer](2026_summer/README.md)
 8    |2026 autumn
 
