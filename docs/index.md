@@ -21,8 +21,11 @@
 [Schedule](schedule.md){ .md-button .md-button--primary }
 [Feedback](misc/feedback.md){ .md-button .md-button--primary }
 
-![The UPPMAX logo](assets/uppmax_logo_50.png)
+<!-- I, RB, ordered the logos alphabetically -->
+
+![The NAISS logo](assets/naiss_logo_inverted.png)
 ![The NBIS logo](assets/nbis_green_logo_25.png)
+![The UPPMAX logo](assets/uppmax_logo_50.png)
 
 <!-- markdownlint-disable MD013 --><!-- Badges cannot be split up over lines, hence will break 80 characters per line -->
 
