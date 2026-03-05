@@ -16,10 +16,13 @@ tags:
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
+This course is taught once a year. 
+
+Here you can find the course dates:
+
 Iteration|Week     |Days                                                  |Registration form                                                   |Registration deadline
 ---------|---------|------------------------------------------------------|--------------------------------------------------------------------|---------------------------
 7        |19 `[1]` |Monday 2026-05-04 to (and including) Friday 2026-05-08|[TODO](https://github.com/UPPMAX/programming_formalisms/issues/196) |TBA
-8        |?43      |To be announced                                       |.                                                                   |.
 
 - `[1]` as is in the NAISS training schedule and confirmed by all teachers
 
