@@ -163,8 +163,14 @@ These are summaries of the books.
 
 ???- info "`[Stodden and Miguez, 2014]`"
 
-    ...
+    This paper suggests these best practices about how to setup
+    your infrastructure to achieve reproducible research:
 
+    - Open licensing should be used for data and code
+    - Workflow tracking should be carried out during the research process.
+    - Data must be available and accessible
+    - Code and methods must be available and accessible
+    - All 3rd party data and software should be cited
 
 ???- info "`[Visser et al., 2016]`"
 
@@ -183,7 +189,53 @@ These are summaries of the books.
 
 ???- info "`[Wilson et al., 2017]`"
 
-    ...
+    This paper summarizes best practices that are good enough.
+    Here is (a slightly adapted) box 1 from that paper:
+
+    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+    `n`|Theme                   |Recommendatation
+    ---|------------------------|---------------------------------------------
+    1  |Data management         |Save the raw data.
+    .  |.                       |Ensure that raw data are backed up in more than one location.
+    .  |.                       |Create the data you wish to see in the world.
+    .  |.                       |Create analysis-friendly data.
+    .  |.                       |Record all the steps used to process data.
+    .  |.                       |Anticipate the need to use multiple tables, and use a unique identifier for every record.
+    .  |.                       |Submit data to a reputable DOI-issuing repository so that others can access and cite it.
+    2  |Software                |Place a brief explanatory comment at the start of every program.
+    .  |.                       |Decompose programs into functions.
+    .  |.                       |Be ruthless about eliminating duplication.
+    .  |.                       |Always search for well-maintained software libraries that do what you need.
+    .  |.                       |Test libraries before relying on them.
+    .  |.                       |Give functions and variables meaningful names.
+    .  |.                       |Make dependencies and requirements explicit.
+    .  |.                       |Do not comment and uncomment sections of code to control a program’s behavior.
+    .  |.                       |Provide a simple example or test data set.
+    .  |.                       |Submit code to a reputable DOI-issuing repository.
+    3  |Collaboration           |Create an overview of your project.
+    .  |.                       |Create a shared "to-do" list for the project.
+    .  |.                       |Decide on communication strategies.
+    .  |.                       |Make the license explicit.
+    .  |.                       |Make the project citable.
+    4  |Project organization    |Put each project in its own directory, which is named after the project.
+    .  |.                       |Put text documents associated with the project in the doc directory.
+    .  |.                       |Put raw data and metadata in a data directory and files generated during cleanup and analysis in a results directory.
+    .  |.                       |Put project source code in the src directory.
+    .  |.                       |Put external scripts or compiled programs in the bin directory.
+    .  |.                       |Name all files to reflect their content or function.
+    5  |Keeping track of changes|Back up (almost) everything created by a human being as soon as it is created.
+    .  |.                       |Keep changes small.
+    .  |.                       |Share changes frequently.
+    .  |.                       |Create, maintain, and use a checklist for saving and sharing changes to the project.
+    .  |.                       |Store each project in a folder that is mirrored off the researcher’s working machine.
+    .  |.                       |Add a file called CHANGELOG.txt to the project’s docs subfolder.
+    .  |.                       |Copy the entire project whenever a significant change has been made.
+    .  |.                       |Use a version control system.
+    6  |Manuscripts             |Write manuscripts using online tools with rich formatting, change tracking, and reference management.
+    .  |.                       |Write the manuscript in a plain text format that permits version control.
+
+    <!-- markdownlint-enable MD013 -->
 
 ## References
 
