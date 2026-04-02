@@ -7,6 +7,7 @@ tags:
   - programming
   - development
 ---
+
 # Object Oriented development
 
 !!! Hint "The most important thing for your Design and Analysis Documents"
