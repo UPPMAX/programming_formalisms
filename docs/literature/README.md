@@ -19,7 +19,7 @@ Reference                     |PDF                                |Description
 `[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Kroll et al., 2013]`        |[PDF](kroll_et_al_2013.pdf)        |Best practices in software development
-`[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub 
+`[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub
 `[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
 `[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Using `git` in teaching
 `[Stodden and Miguez, 2014]`  |[PDF](stodden_and_miguez_2014.pdf) |Best practices for a project
@@ -78,7 +78,8 @@ These are summaries of the books.
   ISBN 978-3-319-11217-6.
 
 - `[Perez-Riverol et al., 2016]`
-  Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
+  Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
+  of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
   [Paper homepage](https://doi.org/10.1371/journal.pcbi.1004947)
 
 - `[Ram, 2013]` Ram, Karthik.
@@ -105,6 +106,4 @@ These are summaries of the books.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
   [Paper homepage](https://doi.org/10.1371/journal.pcbi.1005510)
-
-
 
