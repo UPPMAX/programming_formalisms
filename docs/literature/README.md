@@ -24,6 +24,7 @@ Reference                     |PDF                                |One-line summ
 `[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Applies `[Serban et al., 2020]` to rate if a project follows the recommended practices
 `[Stodden and Miguez, 2014]`  |[PDF](stodden_and_miguez_2014.pdf) |Best practices for a project
 `[Visser et al., 2016]`       |None                               |Ten best practices for effective software development
+`[Wilson et al., 2014]`       |[PDF](wilson_et_al_2014.pdf)       |Best practices for a project
 `[Wilson et al., 2017]`       |[PDF](wilson_et_al_2017.pdf)       |Good enough practices for a project
 
 <!-- markdownlint-enable MD013 -->
@@ -187,6 +188,42 @@ These are summaries of the books.
     - Manage Usage of Third-Party Code
     - Document Just Enough
 
+???- info "`[Wilson et al., 2014]`"
+
+    This paper summarizes best practices.
+    Here is (a slightly adapted) box 1 from that paper:
+
+    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+    `n`|Theme                                           |Recommendatation
+    ---|------------------------------------------------|---------------------------------------------
+    1  |Write programs for people, not computers        |A program should not require its readers to hold more than a handful of facts in memory at once.
+    .  |.                                               |Make names consistent, distinctive, and meaningful.
+    .  |.                                               |Make code style and formatting consistent.
+    2  |Let the computer do the work                    |Make the computer repeat tasks.
+    .  |.                                               |Save recent commands in a file for re-use.
+    .  |.                                               |Use a build tool to automate workflows.
+    3  |Make incremental changes                        |Work in small steps with frequent feedback and course correction.
+    .  |.                                               |Use a version control system.
+    .  |.                                               |Put everything that has been created manually in version control.
+    4  |Don't repeat yourself (or others)               |Every piece of data must have a single authoritative representation in the system.
+    .  |.                                               |Modularize code rather than copying and pasting.
+    .  |.                                               |Re-use code instead of rewriting it.
+    5  | Plan for mistakes                              |Add assertions to programs to check their operation.
+    .  |.                                               |Use an off-the-shelf unit testing library.
+    .  |.                                               |Turn bugs into test cases.
+    .  |.                                               |Use a symbolic debugger.
+    6  |Optimize software only after it works correctly |Use a profiler to identify bottlenecks.
+    .  |.                                               |Write code in the highest-level language possible.
+    7  |Document design and purpose, not mechanics      |Document interfaces and reasons, not implementations.
+    .  |.                                               |Refactor code in preference to explaining how it works.
+    .  |.                                               |Embed the documentation for a piece of software in that software.
+    8  |Collaborate                                     |Use pre-merge code reviews.
+    .  |.                                               |Use pair programming when bringing someone new up to speed and when tackling particularly tricky problems.
+    .  |.                                               |Use an issue tracking tool.
+
+    <!-- markdownlint-enable MD013 -->
+
 ???- info "`[Wilson et al., 2017]`"
 
     This paper summarizes best practices that are good enough.
@@ -210,7 +247,7 @@ These are summaries of the books.
     .  |.                       |Test libraries before relying on them.
     .  |.                       |Give functions and variables meaningful names.
     .  |.                       |Make dependencies and requirements explicit.
-    .  |.                       |Do not comment and uncomment sections of code to control a program’s behavior.
+    .  |.                       |Do not comment and uncomment sections of code to control a program's behavior.
     .  |.                       |Provide a simple example or test data set.
     .  |.                       |Submit code to a reputable DOI-issuing repository.
     3  |Collaboration           |Create an overview of your project.
@@ -228,8 +265,8 @@ These are summaries of the books.
     .  |.                       |Keep changes small.
     .  |.                       |Share changes frequently.
     .  |.                       |Create, maintain, and use a checklist for saving and sharing changes to the project.
-    .  |.                       |Store each project in a folder that is mirrored off the researcher’s working machine.
-    .  |.                       |Add a file called CHANGELOG.txt to the project’s docs subfolder.
+    .  |.                       |Store each project in a folder that is mirrored off the researcher's working machine.
+    .  |.                       |Add a file called CHANGELOG.txt to the project's docs subfolder.
     .  |.                       |Copy the entire project whenever a significant change has been made.
     .  |.                       |Use a version control system.
     6  |Manuscripts             |Write manuscripts using online tools with rich formatting, change tracking, and reference management.
@@ -296,6 +333,11 @@ These are summaries of the books.
 - `[Visser et al., 2016]` Visser, Joost, et al.
   Building software teams: Ten best practices for
   effective software development. " O'Reilly Media, Inc.", 2016.
+
+- `[Wilson et al., 2014]` Wilson, Greg, et al.
+  "Best practices for scientific computing."
+  PLoS biology 12.1 (2014): e1001745.
+  [Paper homepage](https://doi.org/10.1371/journal.pbio.1001745)
 
 - `[Wilson et al., 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
