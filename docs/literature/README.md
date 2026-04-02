@@ -1,6 +1,15 @@
-# Reading
+---
+tags:
+  - papers
+  - literature
+  - books
+  - reading
+  - articles
+---
 
-These are papers that have influenced the course.
+# Literature
+
+These are books and academic papers that have influenced the course.
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
