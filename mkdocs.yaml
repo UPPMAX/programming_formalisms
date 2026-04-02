@@ -11,51 +11,47 @@ nav:
     - Introduction: intro.md
   - Schedule: schedule.md
   - Project:
-    - Intro: project/README.md
-    - Become member of project: project_start/configurations.md
-    - Issues: project/issues.md
-    - Kanban board: project/kanban_board.md
-    - Team roles: project/team_roles.md
-    - Create class list: project/create_class_list.md
-    - Create structs: project/create_structs.md
-    - Dream design: project/dream_design.md
+    - Intro: sessions/project/README.md
+    - Become member of project: sessions/project_start/configurations.md
+    - Team roles: sessions/project/team_roles.md
+    - Create class list: sessions/project/create_class_list.md
+    - Create structs: sessions/project/create_structs.md
+    - Dream design: sessions/project/dream_design.md
   - Intro:
-    - Introduction: introductions/intro.md
-    - SDLC tools: introductions/sdlc_tools.md
-    - Get started with git and the project: project_start/git_startup.md
+    - Introduction: sessions/introductions/intro.md
+    - SDLC tools: sessions/introductions/sdlc_tools.md
+    - Get started with git and the project: sessions/project_start/git_startup.md
   - Planning:
-    - Analysis Phase: project_start/analysis_design.md
-    - Exercise Analysis Phase: development_design/excercise_1_Design.md
+    - Analysis Phase: sessions/project_start/analysis_design.md
+    - Exercise Analysis Phase: sessions/development_design/excercise_1_Design.md
   - Design:
-    - Software Development Lifecycle: introductions/sdlc.md
-    - Object Oriented development: design_develop/OO_development.md
-    - Function design: function_design/README.md
-    - Expressive data types: expressive_data_type/README.md
-    - Modular programming: modularity/modular.md
-    - A 'has-a' relation: has_a_relation/README.md
-    - Class design: data_structures/class_design.md
+    - Software Development Lifecycle: sessions/introductions/sdlc.md
+    - Object Oriented development: sessions/design_develop/OO_development.md
+    - Function design: sessions/function_design/README.md
+    - Expressive data types: sessions/expressive_data_type/README.md
+    - Modular programming: sessions/modularity/modular.md
+    - A 'has-a' relation: sessions/has_a_relation/README.md
+    - Class design: sessions/data_structures/class_design.md
   - Development:
-    - Issues: project/issues.md
-    - Kanban board: project/kanban_board.md
-    - Team roles: project/team_roles.md
-    - Git workflow, branches: git/branches.md
-    - Git(-Hub) workflow, merging: git/merge.md
-    - Contributing & code review: git/contribute.md
-    - Sharing and social coding: social_coding/social_coding.md
-    - Pair programming: pair_programming/README.md
-    - Continuous integration: continuous_integration/README.md
+    - Team roles: sessions/project/team_roles.md
+    - Git workflow, branches: sessions/git/branches.md
+    - Git(-Hub) workflow, merging: sessions/git/merge.md
+    - Contributing & code review: sessions/git/contribute.md
+    - Sharing and social coding: sessions/social_coding/social_coding.md
+    - Pair programming: sessions/pair_programming/README.md
+    - Continuous integration: sessions/continuous_integration/README.md
   - Testing:
-    - assert: assert/README.md
-    - Test-driven development: tdd/README.md
-    - TDD at a bigger scale: tdd_at_bigger_scale/README.md
-    - Using a formal testing framework: testing/testing_framework.md
-    - Runtime speed profiles: optimisation/runtime_speed_profiles.md
-    - Improve run-time speed: optimisation/improve_runtime_speed.md
-    - Big-O: optimisation/big_o.md
+    - assert: sessions/assert/README.md
+    - Test-driven development: sessions/tdd/README.md
+    - TDD at a bigger scale: sessions/tdd_at_bigger_scale/README.md
+    - Using a formal testing framework: sessions/testing/testing_framework.md
+    - Runtime speed profiles: sessions/optimisation/runtime_speed_profiles.md
+    - Improve run-time speed: sessions/optimisation/improve_runtime_speed.md
+    - Big-O: sessions/optimisation/big_o.md
   - Deployment:
-    - Implement the project as a package: package/README.md
-    - Deploy: deployment/deploy.md
-    - Documentation: deployment/documentation.md
+    - Implement the project as a package: sessions/package/README.md
+    - Deploy: sessions/deployment/deploy.md
+    - Documentation: sessions/deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
   - Misc:
     - Contact us: contact_us.md
@@ -73,6 +69,7 @@ nav:
     - Learn UML with mermaid: misc/uml_with_mermaid.md
     - Meeting notes: meeting_notes/README.md
     - Project workflows: misc/project_workflows.md
+    - Reading: reading/README.md
     - Reflections: reflections/README.md
     - Retrospective: misc/retrospective.md
     - Shared document: shared_document.md
