@@ -17,7 +17,6 @@ Reference                     |PDF                                |Description
 ------------------------------|-----------------------------------|------------------------------------
 `[Chacon and Straub, 2014]`   |[PDF](chacon_and_straub_2014.pdf)  |The book about `git`
 `[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
-`[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Kroll et al., 2013]`        |[PDF](kroll_et_al_2013.pdf)        |Best practices in software development
 `[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub
 `[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
@@ -32,22 +31,88 @@ Reference                     |PDF                                |Description
 
 These are summaries of the books.
 
+???- info "`[Jiménez et al., 2017]`"
+
+    These are the 4 recommendations:
+
+    - Make source code publicly accessible from day one
+    - Make software easy to discover by providing software metadata
+      via a popular community registry
+    - Adopt a licence and comply with the licence of third-party dependencies
+    - Define clear and transparent contribution, governance and
+      communication processes
+
+???- info "`[Kroll et al., 2013]`"
+
+    This paper is a literature review, tailored to best practices in
+    Follow-the-sun software development. Below is a table that shows
+    how many papers (`n`) recommend a specific practice.
+
+    `n`|Best practice
+    ---|-----------------------------------------------------------------------
+    6  |Agile methods
+    6  |Use of technology for knowledge sharing
+    3  |Process documentation
+    3  |Use of an FTP Server (or data repository) to exchange code and documents
+    3  |Time window3
+
+???- info "`[Perez-Riverol et al., 2016]`"
+
+    This paper shared 10 simple rules to take advantage of `git` and GitHub:
+
+    - Rule 1: Use GitHub to Track Your Projects
+    - Rule 2: GitHub for Single Users, Teams, and Organizations
+    - Rule 3: Developing and Collaborating on New Features:
+      Branching and Forking
+    - Rule 4: Naming Branches and Commits: Tags and Semantic Versions
+    - Rule 5: Let GitHub Do Some Tasks for You: Integrate
+    - Rule 6: Let GitHub Do More Tasks for You: Automate
+    - Rule 7: Use GitHub to Openly and Collaboratively Discuss,
+      Address, and Close Issues
+    - Rule 8: Make Your Code Easily Citable, and Cite Source Code!
+    - Rule 9: Promote and Discuss Your Projects: Web Page and More
+    - Rule 10: Use GitHub to Be Social: Follow and Watch
+
+???- info "`[Ram, 2013]`"
+
+    This paper supplies these 8 use cases for Git in science:
+
+    - Lab notebook
+    - Facilitating collaboration
+    - Backup and failsafe against data loss
+    - Freedom to explore new ideas and methods
+    - Mechanism to solicit feedback and reviews
+    - Increase transparency and verifiability
+    - Managing large data
+    - Lowering barriers to reuse
+
+
+???- info "`[Stieler and Bauer, 2023]`"
+
+    ...
+
+???- info "`[Stodden and Miguez, 2014]`"
+
+    ...
+
 ???- info "`[Visser et al., 2016]`"
 
     This closed-access paper has the following table of content:
 
-    ```text
-    2. Derive Metrics from Your Measurement Goals
-    3. Make Definition of Done Explicit
-    4. Control Code Versions and Development Branches
-    5. Control Development, Test, Acceptance, and Production Environments
-    6. Automate Tests
-    7. Use Continuous Integration
-    8. Automate Deployment
-    9. Standardize the Development Environment
-    10. Manage Usage of Third-Party Code
-    11. Document Just Enough
-    ```
+    - Derive Metrics from Your Measurement Goals
+    - Make Definition of Done Explicit
+    - Control Code Versions and Development Branches
+    - Control Development, Test, Acceptance, and Production Environments
+    - Automate Tests
+    - Use Continuous Integration
+    - Automate Deployment
+    - Standardize the Development Environment
+    - Manage Usage of Third-Party Code
+    - Document Just Enough
+
+???- info "`[Wilson et al., 2017]`"
+
+    ...
 
 ## References
 
