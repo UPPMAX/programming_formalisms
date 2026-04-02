@@ -14,3 +14,9 @@ Course iteration|Number of learners
 2               |[Autumn 2023](counts/2023_autumn/README.md)
 3               |[Summer 2024](counts/2024_summer/README.md)
 4               |[Autumn 2024](counts/2024_autumn/README.md)
+
+## Registrations
+
+Date    |Number of registrations
+--------|-----------------------
+May 2026|26 ([source](https://github.com/UPPMAX/programming_formalisms/issues/196#issuecomment-4175469826))
