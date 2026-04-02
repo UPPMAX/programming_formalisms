@@ -13,19 +13,22 @@ These are books and academic papers that have influenced the course.
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
-Reference                     |PDF                                |Description
+Reference                     |PDF                                |One-line summary `[1]`
 ------------------------------|-----------------------------------|------------------------------------
 `[Chacon and Straub, 2014]`   |[PDF](chacon_and_straub_2014.pdf)  |The book about `git`
 `[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Kroll et al., 2013]`        |[PDF](kroll_et_al_2013.pdf)        |Best practices in software development
 `[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub
 `[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
-`[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Using `git` in teaching
+`[Serban et al., 2020]`       |[PDF](serban_et_al_2020.pdf)       |Recommends some software engineering best practices, in the field of machine learning
+`[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Applies `[Serban et al., 2020]` to rate if a project follows the recommended practices
 `[Stodden and Miguez, 2014]`  |[PDF](stodden_and_miguez_2014.pdf) |Best practices for a project
 `[Visser et al., 2016]`       |None                               |Ten best practices for effective software development
 `[Wilson et al., 2017]`       |[PDF](wilson_et_al_2017.pdf)       |Good enough practices for a project
 
 <!-- markdownlint-enable MD013 -->
+
+- `[1]` You can find more extensive summaries below
 
 ## Summaries
 
@@ -86,14 +89,82 @@ These are summaries of the books.
     - Managing large data
     - Lowering barriers to reuse
 
+???- info "`[Serban et al., 2020]`"
+
+    This aricle shows the importance of a practice
+    and how much it is adopted, in the context of a machine learning project:
+
+    ![Serban et al., 2020, figure 3, annotation mine](serban_et_al_2020_fig_3_annotated.png)
+
+    Note that there are 2x a 28, where 29 is absent. I assume that the
+    28 to the right, with and orange circle and an importance of 0.2
+    had to be 29. I assume so, as the 28 with a green triangle
+    should indeed be a green triangle. This has been clearly annotated :-)
+
+    These are the top 10 most important practices, after which I show
+    the full table:
+
+    `n`|Title
+    ---|----------------------------------------------------------------------
+    25 |Log Production Predictions with the Model's Version and Input Data
+    27 |Work Against a Shared Backlog
+    21 |Continuously Monitor the Behaviour of Deployed Models
+    18 |Use Continuous Integration
+    20 |Automate Model Deployment
+    16 |Use Versioning for Data, Model, Configurations and Training Scripts
+    26 |Use A Collaborative Development Platform
+    29 |Enforce Fairness and Privacy
+    17 |Run Automated Regression Tests
+    12 |Enable Parallel Training Experiments
+
+    Here is the full table:
+
+    `n`|Title
+    ---|----------------------------------------------------------------------
+    1  |Use Sanity Checks for All External Data Sources
+    2  |Check that Input Data is Complete, Balanced and Well Distributed
+    3  |Write Reusable Scripts for Data Cleaning and Merging
+    4  |Ensure Data Labelling is Performed in a Strictly Controlled Process
+    5  |Make Data Sets Available on Shared Infrastructure (private or public)
+    6  |Share a Clearly Defined Training Objective within the Team
+    7  |Capture the Training Objective in a Metric thatis Easy to Measure and Understand
+    8  |Test all Feature Extraction Code
+    9  |Assign an Owner to Each Feature and Document its Rationale
+    10 |Actively Remove or Archive Features That are Not Used
+    11 |Peer Review Training Scripts
+    12 |Enable Parallel Training Experiments
+    13 |Automate Hyper-Parameter Optimisation and Model Selection
+    14 |Continuously Measure Model Quality and Performance
+    15 |Share Status and Outcomes of Experiments Within the Team
+    16 |Use Versioningfor Data, Model, Configurations and Training Scripts
+    17 |Run Automated Regression Tests
+    18 |Use Continuous Integration
+    19 |Use Static Analysis to Check Code Quality
+    20 |Automate Model Deployment
+    21 |Continuously Monitor the Behaviour of Deployed Models
+    22 |Enable Shadow Deployment
+    23 |Perform Checks to Detect Skews between Models
+    24 |Enable Automatic Roll Backs for Production Models
+    25 |Log Production Predictions with the Model's Version and Input Data
+    26 |Use A Collaborative Development Platform
+    27 |Work Against a Shared Backlog
+    28 |Communicate, Align, and Collaborate With Multidisciplinary Team Members
+    29 |Enforce Fairness and Privacy
+
+    I used
+    [the Doc2Lang image to table converter](https://doc2lang.com/image-to-table)
+    to convert the image to a table
 
 ???- info "`[Stieler and Bauer, 2023]`"
 
-    ...
+    Applies `[Serban et al., 2020]` for a data-centric AI project called GW4AL.
+    It is irrelevant for us.
+
 
 ???- info "`[Stodden and Miguez, 2014]`"
 
     ...
+
 
 ???- info "`[Visser et al., 2016]`"
 
@@ -151,6 +222,13 @@ These are summaries of the books.
   "Git can facilitate greater reproducibility and increased transparency
   in science." Source code for biology and medicine 8.1 (2013): 7.
   [Paper homepage](https://link.springer.com/article/10.1186/1751-0473-8-7)
+
+- `[Serban et al., 2020]` Serban, Alex, et al.
+  "Adoption and effects of software engineering best practices
+  in machine learning." Proceedings of the 14th ACM/IEEE
+  International Symposium on Empirical Software Engineering and
+  Measurement (ESEM). 2020.
+  [Paper homepage](https://doi.org/10.1145/3382494.3410681)
 
 - `[Stieler and Bauer, 2023]` Stieler, Fabian, and Bernhard Bauer.
   "Git workflow for active learning-a development methodology proposal
