@@ -7,6 +7,7 @@ These are papers that have influenced the course
 Reference                     |PDF                                |Description
 ------------------------------|-----------------------------------|------------------------------------
 `[Chacon and Straub, 2014]`   |[PDF](chacon_and_straub_2014.pdf)  |The book about `git`
+`[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub 
 `[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
 `[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Using `git` in teaching
@@ -20,6 +21,11 @@ Reference                     |PDF                                |Description
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
   Pro git. Springer Nature, 2014.
   [Book homepage](https://git-scm.com/book/en/v2)
+
+- `[Jiménez et al., 2017]` Jiménez, Rafael C., et al.
+  "Four simple recommendations to encourage best practices
+  in research software." F1000Research 6 (2017): ELIXIR-876.
+  [Paper homepage](https://pubmed.ncbi.nlm.nih.gov/28751965/)
 
 - `[Perez-Riverol et al., 2016]`
   Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
