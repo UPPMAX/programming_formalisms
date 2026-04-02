@@ -24,4 +24,9 @@ jobs:
       - run: sudo apt install graphviz
       - run: pip install mkdocs-material
       - run: pip install mkdocs-graphviz
+
+      - name: remove unused folders and files
+        run: |
+          rm -rf docs/unused
+
       - run: mkdocs gh-deploy --force
