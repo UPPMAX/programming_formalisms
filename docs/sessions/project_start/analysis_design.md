@@ -4,6 +4,8 @@ tags:
   - analysis
 ---
 
+<!-- This file is not spellchecked by .github/workflows/check_spelling.yaml -->
+
 # Planning
 
 ![SDLC image](../development_design/img/SDLC.png)

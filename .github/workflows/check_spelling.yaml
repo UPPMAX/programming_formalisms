@@ -36,7 +36,11 @@ jobs:
           rm -rf docs/meeting_notes
           rm -rf docs/retrospectives
           rm -rf docs/reflections
+          rm -rf docs/sessions/unused
           rm -rf docs/shared_documents
-          rm -rf docs/unused
+
+      - name: Remove folders that need to be corrected
+        run: |
+          rm docs/sessions/project_start/analysis_design.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
