@@ -1,6 +1,6 @@
 # Reading
 
-These are papers that have influenced the course
+These are papers that have influenced the course.
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
@@ -12,11 +12,26 @@ Reference                     |PDF                                |Description
 `[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
 `[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Using `git` in teaching
 `[Stodden and Miguez, 2014]`  |[PDF](stodden_and_miguez_2014.pdf) |Best practices for a project
+`[Visser et al., 2016]`       |None                               |Ten best practices for effective software development
 `[Wilson et al., 2017]`       |[PDF](wilson_et_al_2017.pdf)       |Good enough practices for a project
 
 <!-- markdownlint-enable MD013 -->
 
+## `[Visser et al., 2016]` table of content
+
+2. Derive Metrics from Your Measurement Goals
+3. Make Definition of Done Explicit
+4. Control Code Versions and Development Branches
+5. Control Development, Test, Acceptance, and Production Environments
+6. Automate Tests
+7. Use Continuous Integration
+8. Automate Deployment
+9. Standardize the Development Environment
+10. Manage Usage of Third-Party Code
+11. Document Just Enough
+
 ## References
+
 
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
   Pro git. Springer Nature, 2014.
@@ -46,6 +61,10 @@ Reference                     |PDF                                |Description
   Software infrastructure and environments for reproducible and
   extensible research." (2014).
   [Paper homepage](https://openresearchsoftware.metajnl.com/articles/jors.ay)
+
+- `[Visser et al., 2016]` Visser, Joost, et al.
+  Building software teams: Ten best practices for
+  effective software development. " O'Reilly Media, Inc.", 2016.
 
 - `[Wilson et al., 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
