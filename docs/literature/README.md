@@ -18,6 +18,7 @@ Reference                     |PDF                                |One-line summ
 `[Chacon and Straub, 2014]`   |[PDF](chacon_and_straub_2014.pdf)  |The book about `git`
 `[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Kroll et al., 2013]`        |[PDF](kroll_et_al_2013.pdf)        |Best practices in software development
+`[Pastrana et al., 2025]`     |[PDF](pastrana_et_al_2025.pdf)     |Literature review of best practices in Scrum and DevOps
 `[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub
 `[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
 `[Serban et al., 2020]`       |[PDF](serban_et_al_2020.pdf)       |Recommends some software engineering best practices, in the field of machine learning
@@ -59,6 +60,53 @@ These are summaries of the books.
     3  |Process documentation
     3  |Use of an FTP Server (or data repository) to exchange code and documents
     3  |Time window3
+
+
+???- info "`[Pastrana et al., 2025]`"
+
+    This is a literature review paper on Scrum and DevOps.
+
+    Box 11 shows the benefits of Scrum and DevOps practices.
+    Here is an adapted version of box 11:
+
+    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+    Benefits              | Improvement Observed
+    ----------------------|---------------------------------------------------------
+    Scrum adoption        | Actively involved stakeholders
+    .                     | Transparent communication channels
+    .                     | Increased team collaboration
+    .                     | Improved predictability
+    .                     | Creation of a collaborative culture
+    .                     | Continuous improvement
+    .                     | Constant quality measurement or concurrent testing
+    DevOps adoption       | Early and continuous feedback
+    .                     | Productivity increasedby 20%
+    .                     | Deployment time decreased by 30%
+    Faster release cycles | Time to market decreased by 25%
+    .                     | Incident resolution time decreased by 40%
+    .                     | Quality deliverable
+    .                     | Early and continuous feedback
+    Continuous integration| Quality deliverable
+    .                     | Time to market decreased by 25%
+    .                     | Incident resolution time decreased by 40%
+    .                     | Transparent communication channels
+    Automated testing     | Test execution speed increasedby 35%
+    .                     | Defect detection increased by 18%
+    Security automation   | Security vulnerabilities decreased by 30%
+    .                     | response time decreased by 50%
+    Agile transformation  | The development cycle decreasedby 25%
+    .                     | Project success rates increased by 18%
+
+    <!-- markdownlint-enable MD013 -->
+
+    I removed the conclusion to `[Sravani et al., 2023]` (`[117]` in the paper)
+    as that paper does not supply these numbers at all.
+
+    I used
+    [the Doc2Lang image to table converter](https://doc2lang.com/image-to-table)
+    to convert the image to a table.
+
 
 ???- info "`[Perez-Riverol et al., 2016]`"
 
@@ -274,6 +322,7 @@ These are summaries of the books.
 
     <!-- markdownlint-enable MD013 -->
 
+
 ## References
 
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
@@ -302,6 +351,12 @@ These are summaries of the books.
   'Advances in Intelligent Informatics', volume 320,
   ISBN 978-3-319-11217-6.
 
+- `[Pastrana et al., 2025]` Pastrana, Manuel, et al.
+  "Best Practices Evidenced for Software Development Based on DevOps
+  and Scrum: A Literature Review."
+  Applied Sciences 15.10 (2025): 5421.
+  [Paper homepage](https://doi.org/10.3390/app15105421)
+
 - `[Perez-Riverol et al., 2016]`
   Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
   of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
@@ -318,6 +373,12 @@ These are summaries of the books.
   International Symposium on Empirical Software Engineering and
   Measurement (ESEM). 2020.
   [Paper homepage](https://doi.org/10.1145/3382494.3410681)
+
+- `[Sravani et al., 2023]` Sravani, Diyyala, et al.
+  "Python security in devOps: Best practices for secure coding,
+  configuration management, and continuous testing and monitoring."
+  2023 4th International Conference on Electronics and Sustainable
+  Communication Systems (ICESC). IEEE, 2023.
 
 - `[Stieler and Bauer, 2023]` Stieler, Fabian, and Bernhard Bauer.
   "Git workflow for active learning-a development methodology proposal
