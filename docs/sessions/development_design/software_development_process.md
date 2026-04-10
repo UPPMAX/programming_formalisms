@@ -846,10 +846,10 @@ When presented with these options it is tempting to skip some of the steps in th
 Since Feb 2025 the term Vibe Coding was introduced by Andrej Karpathy of OpenAI,
 
 Wikipedia describes the term [Vibe Coding](https://en.wikipedia.org/wiki/Vibe_coding)
-"Vibe coding is an artificial intelligence-assisted software development technique popularized by Andrej Karpathy in February 2025.[1][2][3] The term was listed in the Merriam-Webster Dictionary the following month as a "slang & trending" term.[4]
+"Vibe coding is an artificial intelligence-assisted software development technique popularized by Andrej Karpathy in February 2025. `[1][2][3]` The term was listed in the Merriam-Webster Dictionary the following month as a "slang & trending" term.`[4]`
 
 Vibe coding describes a chatbot-based approach to creating software where the developer describes a project or task to a large language model (LLM), which generates code based on the prompt. The developer does not review or edit the code, but solely uses tools and execution results to evaluate it and asks the LLM for improvements. Unlike traditional AI-assisted coding or pair programming, the human developer avoids examination of the code, accepts AI-suggested completions without human review, and focuses more on iterative experimentation than code correctness or structure.
 
-Advocates of vibe coding say that it allows even amateur programmers to produce software without the extensive training and skills required for software engineering.[5][6] Critics point out a lack of accountability, maintainability, and the increased risk of introducing security vulnerabilities in the resulting software.[6][1]"
+Advocates of vibe coding say that it allows even amateur programmers to produce software without the extensive training and skills required for software engineering. `[5][6]` Critics point out a lack of accountability, maintainability, and the increased risk of introducing security vulnerabilities in the resulting software.`[6][1]`"
 
 This term for describing AI assisted coding has been growing in popularity and is now the defacto term used for coding assisted by an LLM

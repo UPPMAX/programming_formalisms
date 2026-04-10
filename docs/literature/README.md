@@ -343,7 +343,7 @@ Here is (a slightly adapted) box 1 from that paper:
   [Book homepage](https://git-scm.com/book/en/v2).
 
 - `[Church, 1941]` The  Calculi of lambda-conversion, Princeton,
-  Princeton University Press, 
+  Princeton University Press,
   Londos: Humphrey Milford Oxford University Press, 1941
 
 - `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre,
@@ -359,7 +359,7 @@ Here is (a slightly adapted) box 1 from that paper:
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed.
   Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
 
-- `[ISO 12207:2017]` 
+- `[ISO 12207:2017]`
   [ISO/IEC/IEEE 12207:2017 Systems and software engineering — Software life cycle processes](https://www.iso.org/standard/63712.html)
 
 - `[Jacobson, 1992]`
@@ -451,5 +451,4 @@ Here is (a slightly adapted) box 1 from that paper:
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
   [Paper homepage](https://doi.org/10.1371/journal.pcbi.1005510)
-
 
