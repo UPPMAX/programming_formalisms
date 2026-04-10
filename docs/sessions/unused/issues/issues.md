@@ -236,7 +236,7 @@ Issues are useful to communicate:
 
 However, an issue tracker is not designed to
 communicate what is _actively_ being worked on.
-For that, a [kanban board](kanban_board.md) is used instead.
+For that, a kanban board is used instead.
 
 ## 7. References
 
