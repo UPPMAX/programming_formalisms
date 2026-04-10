@@ -8,7 +8,7 @@ tags:
 
 # Planning
 
-![SDLC image](../development_design/img/SDLC.png)
+![SDLC image](../../development_design/img/SDLC.png)
 
 ## First Phase: Analysis
 
@@ -50,7 +50,7 @@ evolve before arriving as valid stakeholder requirements.**
         — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
 
 The generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010 starts with needs analysis
-![Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010](../development_design/img/SDLC_ISO_IEC_12207.png)
+![Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010](../../development_design/img/SDLC_ISO_IEC_12207.png)
 
 Needs Gathering which is the first steps have many different names in the different software development models,
 usually named Use Cases or User Stories or something similar
