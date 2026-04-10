@@ -22,14 +22,14 @@ nav:
     - SDLC tools: sessions/introductions/sdlc_tools.md
     - Get started with git and the project: sessions/project_start/git_startup/README.md
   - Planning:
-    - Analysis Phase: sessions/project_start/analysis_design.md
-    - Exercise Analysis Phase: sessions/development_design/excercise_1_Design.md
+    - Analysis Phase: sessions/project_start/analysis_design/README.md
+    - Exercise Analysis Phase: sessions/development_design/risk_and_requirements_exercise.md
   - Design:
     - Software Development Lifecycle: sessions/introductions/sdlc.md
-    - Object Oriented development: sessions/design_develop/OO_development.md
+    - Object Oriented development: sessions/object_oriented_development/README.md
     - Function design: sessions/function_design/README.md
     - Expressive data types: sessions/expressive_data_type/README.md
-    - Modular programming: sessions/modularity/modular.md
+    - Modular programming: sessions/modularity/README.md
     - A 'has-a' relation: sessions/has_a_relation/README.md
     - Class design: sessions/data_structures/class_design.md
   - Development:
@@ -133,6 +133,14 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - mkdocs_graphviz
+
+plugins:
+  - exclude:
+      glob:
+        - sessions/project_start/spring2024/startup.md
+        - sessions/introductions/sdlc_old.md
+        - sessions/git/spring2024/apply_merge.md
+        - sessions/git/spring2024/apply_branches.md
 
 extra_javascript:
   - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js
@@ -404,6 +412,7 @@ not_in_nav: |
   sessions/unused/project_example_bacterial_movement/example_project/DPD_unassisted.md
   sessions/unused/project_example_bacterial_movement/example_project/DPUA_requirementspecification.md
   sessions/unused/project_example_bacterial_movement/example_project/Example_project_designProcessDocumentation.md
+  sessions/watching/README.md
   shared_documents/2023_autumn/day_1.md
   shared_documents/2023_autumn/day_2.md
   shared_documents/2023_autumn/day_3.md
