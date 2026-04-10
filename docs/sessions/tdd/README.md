@@ -95,7 +95,7 @@ The three laws of TDD ensure each cycle is short `[Martin, 2007]`:
 ## Live demo
 
 Give a live demo here, as suggested at
-[a Retrospect of this day](../shared_documents/2025_autumn/20251024.md).
+[a Retrospect of this day](../../shared_documents/2025_autumn/20251024.md).
 
 ## 3. Features of TDD
 
@@ -487,7 +487,7 @@ Develop a function called `is_prime`.
 ## 5.5. Exercise 5: your function
 
 Think of a function you want to write, or
-pick one [of the many example TDD functions](../misc/functions.md).
+pick one [of the many example TDD functions](../../misc/functions.md).
 
 ???- question "Does this still work for complex functions?"
 

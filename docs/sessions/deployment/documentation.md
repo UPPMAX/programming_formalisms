@@ -190,7 +190,7 @@ tags:
 
     ???- question "How does that look like?"
 
-        ![license_project](../img/license_project.png)
+        ![license_project](../../img/license_project.png)
 
 !!! info "See also"
 

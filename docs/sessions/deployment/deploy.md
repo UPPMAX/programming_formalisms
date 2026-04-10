@@ -442,7 +442,7 @@ For this we use a `.gitignore` file (put in root folder)
         - operative system
         - dependencies (libraries and other programs) with correct versions
 
-    ![Containerization](./img/Containerization_nextlabs.png)
+    ![Containerization](img/Containerization_nextlabs.png)
 
     > From Nextlabs:
     
@@ -542,7 +542,7 @@ For this we use a `.gitignore` file (put in root folder)
         - Make a new window
         - Open Folder
 
-            ![start_VSC](../img/start_VSC.png)
+            ![start_VSC](../../img/start_VSC.png)
 
         - Create new Folder with name ``test_project``
         - Select folder
@@ -557,7 +557,7 @@ For this we use a `.gitignore` file (put in root folder)
 
     ???- question "VS CODE"
 
-        ![initialize_VSC](../img/initialize_VSC.png)
+        ![initialize_VSC](../../img/initialize_VSC.png)
 
         - **RECOMMENDED** Publish to GitHub diectly **and you are done**!
             - You may change the name of the repo for the GitHub instance, but not recommended.
@@ -605,13 +605,13 @@ For this we use a `.gitignore` file (put in root folder)
         - Make sure that you are **logged into GitHub**.
         - You can use this for both VS Code and terminal
 
-        ![New repo](../img/New_repo.png){ width=60% }
+        ![New repo](../../img/New_repo.png){ width=60% }
 
         - To create a repository we either click the green button "New" (top right corner).
 
         - Or if you see your profile page, there is a "+" menu (top right corner).
 
-        ![New top-right](../img/new-top-right.png){ width=60% }
+        ![New top-right](../../img/new-top-right.png){ width=60% }
 
         ---
 
@@ -622,12 +622,12 @@ For this we use a `.gitignore` file (put in root folder)
         - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
         - and **NO Licence**
 
-        ![New repo](../img/New_repo_formalisms.png)
+        ![New repo](../../img/New_repo_formalisms.png)
         > Example project
 
         - Press "**Create repository**"
 
-        ![Create and push](../img/created_push.PNG)
+        ![Create and push](../../img/created_push.PNG)
 
         - Choose **html**
         - Copy-paste the code for "**…or push an existing repository from the command line**"

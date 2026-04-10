@@ -84,7 +84,7 @@ There are two more ways to create “copies” of repositories into your user sp
 
 ### Centralized workflow
 
-![Centralized layout](../img/centralized.svg)
+![Centralized layout](../../img/centralized.svg)
 
 **Centralized layout**
 
@@ -101,7 +101,7 @@ There are two more ways to create “copies” of repositories into your user sp
 
 **This is used when you are not a collaborator**
 
-![Forking layout](../img/forking-overview.svg)
+![Forking layout](../../img/forking-overview.svg)
 
 **Forking workflow**
 
@@ -149,11 +149,11 @@ single-person repository in the previous episodes.
     - You do this by just **changing the file at GitHub**
     - Before committing/proposing file change you may preview the changes.
 
-    ![Propose file change](../img/contributing/propose-file-change.png)
+    ![Propose file change](../../img/contributing/propose-file-change.png)
 
     - After we click "Commit / change proposal" we are taken to this form:
 
-    ![Contribute form](../img/contributing/pull-request-form.png)
+    ![Contribute form](../../img/contributing/pull-request-form.png)
 
     - In there we
         - verify the **source and target branch**,
@@ -179,7 +179,7 @@ can push commits to it directly, it can be useful to "protect" branches.**
 
 - "Settings", then "Branches", then "Add rule":
 
-![Branch protection](../img/contributing/branch-protection.png)
+![Branch protection](../../img/contributing/branch-protection.png)
 
 !!! tip
 
@@ -205,7 +205,7 @@ This will work the same as with merging
 
 - We apply the Forking workflow
 
-  ![Forking layout](../img/forking-overview.svg){width: 50%}
+  ![Forking layout](../../img/forking-overview.svg){width: 50%}
 
 **Forking workflow**
 
