@@ -202,6 +202,12 @@ not_in_nav: |
   evaluations/2025_summer/20250508.md
   evaluations/2025_summer/20250509.md
   evaluations/2025_summer/README.md
+  evaluations/2026_summer/README.md
+  evaluations/2026_summer/20260504.md
+  evaluations/2026_summer/20260505.md
+  evaluations/2026_summer/20260506.md
+  evaluations/2026_summer/20260507.md
+  evaluations/2026_summer/20260508.md
   extra_bc/collab_deeper.md
   extra_bc/deploy_deeper.md
   extra_bc/documentation_deeper.md
@@ -255,6 +261,12 @@ not_in_nav: |
   lesson_plans/2025_summer/20250509_richel.md
   lesson_plans/2025_summer/README.md
   lesson_plans/2025_summer/richel/README.md
+  lesson_plans/2026_summer/README.md
+  lesson_plans/2026_summer/20260504_richel.md
+  lesson_plans/2026_summer/20260505_richel.md
+  lesson_plans/2026_summer/20260506_richel.md
+  lesson_plans/2026_summer/20260507_richel.md
+  lesson_plans/2026_summer/20260508_richel.md
   meeting_notes/2022_autumn.md
   meeting_notes/20230419.md
   meeting_notes/20230426.md
@@ -292,6 +304,7 @@ not_in_nav: |
   meeting_notes/20241129.md
   meeting_notes/20241217.md
   meeting_notes/2024_autumn.md
+  meeting_notes/20251204.md
   meeting_notes/next.md
   misc/evaluation.md
   monday_intro.md
@@ -337,9 +350,60 @@ not_in_nav: |
   reflections/2025_summer/20250508.md
   reflections/2025_summer/20250509.md
   reflections/2025_summer/README.md
+  reflections/2025_autumn/20251030_total_course.md
+  reflections/2026_summer/README.md
+  reflections/2026_summer/20260504.md
+  reflections/2026_summer/20260505.md
+  reflections/2026_summer/20260506.md
+  reflections/2026_summer/20260507.md
+  reflections/2026_summer/20260508.md
+  sessions/data_structures/README.md
+  sessions/data_structures/built_in_data_structures.md
+  sessions/deployment/img/README.md
+  sessions/deployment/spring2024/deploy.md
+  sessions/deployment/spring2024/documentation.md
+  sessions/development/README.md
+  sessions/development_design/blast.md
+  sessions/development_design/risk_and_requirements_exercise.md
+  sessions/development_design/software_development_process.md
+  sessions/extra_bc/collab_deeper.md
+  sessions/extra_bc/deploy_deeper.md
+  sessions/extra_bc/documentation_deeper.md
+  sessions/extra_bc/git_deeper.md
+  sessions/extra_bc/plantUML.md
+  sessions/extra_bc/pseudocode.md
+  sessions/extra_bc/reproducible_deeper.md
+  sessions/extra_bc/sdlc_models.md
+  sessions/extra_bc/sharing_deeper.md
+  sessions/git/clone.md
+  sessions/git/img/README.md
+  sessions/git/spring2024/apply_branches.md
+  sessions/git/spring2024/apply_merge.md
+  sessions/introductions/organization_docs.md
+  sessions/introductions/sdlc_old.md
+  sessions/modularity/README.md
+  sessions/object_oriented_development/README.md
+  sessions/optimisation/README.md
+  sessions/project/projects.md
+  sessions/project_start/README.md
+  sessions/project_start/analysis_design/README.md
+  sessions/recursive_algorithms/README.md
+  sessions/testing/testing_in_a_team.md
+  sessions/testing/testing_indeterminate_functions.md
+  sessions/project_start/spring2024/startup.md
+  sessions/project_start/not_used/startup_old.md
+  sessions/unused/common_practices/exercises/exercises_code_review.md
+  sessions/unused/common_practices/pages/notes_code_review_long.md
+  sessions/unused/common_practices/slides/README.md
+  sessions/unused/common_practices/slides/notes_code_review.md
   sessions/unused/issues/issues.md
   sessions/unused/issues/kanban_board.md
-  sessions/project_start/spring2024/startup.md
+  sessions/unused/kanban_board/kanban_board.md
+  sessions/unused/project_example_bacterial_movement/example_project/DPAI_requirements.md
+  sessions/unused/project_example_bacterial_movement/example_project/DPD_assisted.md
+  sessions/unused/project_example_bacterial_movement/example_project/DPD_unassisted.md
+  sessions/unused/project_example_bacterial_movement/example_project/DPUA_requirementspecification.md
+  sessions/unused/project_example_bacterial_movement/example_project/Example_project_designProcessDocumentation.md
   shared_documents/2023_autumn/day_1.md
   shared_documents/2023_autumn/day_2.md
   shared_documents/2023_autumn/day_3.md
@@ -371,3 +435,5 @@ not_in_nav: |
   testing/testing_indeterminate_functions.md
   testing/testing_in_a_team.md
   watching/README.md
+
+
