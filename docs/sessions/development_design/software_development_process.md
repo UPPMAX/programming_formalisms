@@ -701,7 +701,7 @@ mermaid using flowcharts as mermaid diagram tools do not include activity diagra
 ![image of legacy style UML activity diagram](./img/legacyActivity.png)
 
 
-The new style(image below) has a slightly different approach to how selection is diagramed. as you can se it has a selection start node and end node where as the legacy style does not, this more closely depicts underlying pseudocode.
+The new style(image below) has a slightly different approach to how selection is diagrammed. as you can se it has a selection start node and end node where as the legacy style does not, this more closely depicts underlying pseudocode.
 
 ![image of legacy style UML activity diagram](./img/Newstyle.png)
 

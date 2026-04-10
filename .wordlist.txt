@@ -1751,3 +1751,6 @@ Diyyala
 ICESC
 Sravani
 devOps
+Razvoj
+diagrammed
+informatičkih
