@@ -385,7 +385,7 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 
 ### What is the goal of the shared project?
 
-See [Projects](../project/README.md) for the goal of the shared project.
+See [Projects](../sessions/project/README.md) for the goal of the shared project.
 
 ### How is the course prepared?
 

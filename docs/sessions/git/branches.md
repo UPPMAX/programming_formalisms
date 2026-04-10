@@ -49,7 +49,7 @@ Software development is often not linear:
   Often they are unfinished.
 - We need to be able to separate different lines of work really well.
 
-![Isolated tracks](../img/git-collaborative.svg){width: 50%}
+![Isolated tracks](../../img/git-collaborative.svg){width: 50%}
 
 *Isolated tracks of work*
 
@@ -87,16 +87,16 @@ One typical workflow:
 
     - Here is where you handle branches
 
-    ![branches in VS Code](../img/branch_section_VSC.png)
+    ![branches in VS Code](../../img/branch_section_VSC.png)
 
     - Click and you have the possibility to
         - create a new branch
 
-        ![create branch in VS Code](../img/create_branch_VSC.png)
+        ![create branch in VS Code](../../img/create_branch_VSC.png)
 
         - and switch between existing branches
 
-        ![switch branch in VS Code](../img/switch_branch_VSC.png)
+        ![switch branch in VS Code](../../img/switch_branch_VSC.png)
 
 ??? info "In command line"
 
@@ -145,14 +145,14 @@ One typical workflow:
 
 ??? info "GitHub"
 
-    ![network_GH](../img/network_GH.png)
+    ![network_GH](../../img/network_GH.png)
 
     - [Link to last year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/network)
     - [Link to this year](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/network)
 
 ??? info "VS Code"
 
-    - ![git_graph_VSC](../img/git_graph_VSC.png)
+    - ![git_graph_VSC](../../img/git_graph_VSC.png)
 
 ???- tip "Graph alias in command line"
 
@@ -201,7 +201,7 @@ One typical workflow:
 
 ??? info "Overview workflow"
 
-    ![git branches](../img/git_branches.png)
+    ![git branches](../../img/git_branches.png)
 
 ???- question "Test"
 
@@ -515,7 +515,7 @@ gitGraph
     On your **local computer**, navigate to the folder of the shared project
     and update: pull/sync
 
-    ![pull_VSC](../img/pull_VSC.png)
+    ![pull_VSC](../../img/pull_VSC.png)
 
 
     > - On your local computer:
@@ -523,8 +523,8 @@ gitGraph
 
     Switch to the new branch, for example, `richel`, by doing:
 
-    ![branches in VS Code](../img/branch_section_VSC.png)
-    ![switch branch in VS Code](../img/switch_branch_VSC.png)
+    ![branches in VS Code](../../img/branch_section_VSC.png)
+    ![switch branch in VS Code](../../img/switch_branch_VSC.png)
 
     > - On your local computer:
     >     - change the content of the repository, for example,
@@ -562,7 +562,7 @@ gitGraph
 
     In VS Code
 
-    ![delete_branch](../img/delete_branch_VSC.png)
+    ![delete_branch](../../img/delete_branch_VSC.png)
 
     ???- admonition "GitHub"
 
@@ -594,11 +594,11 @@ gitGraph
     - When you are done editing the files, try "git diff"
     - When you select a file in the Source Control view, the editor shows a diff view that highlights the file changes, compared to the previously committed file.
 
-    ![file_saved_VSC](../img/file_saved_VSC.png)
+    ![file_saved_VSC](../../img/file_saved_VSC.png)
 
     - Press "M"
 
-    ![diff_VSC](../img/diff_VSC.png)
+    ![diff_VSC](../../img/diff_VSC.png)
 
 
     ???- note "In console"
