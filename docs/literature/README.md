@@ -81,7 +81,7 @@ Scrum adoption        | Actively involved stakeholders
 .                     | Continuous improvement
 .                     | Constant quality measurement or concurrent testing
 DevOps adoption       | Early and continuous feedback
-.                     | Productivity increasedby 20%
+.                     | Productivity increased by 20%
 .                     | Deployment time decreased by 30%
 Faster release cycles | Time to market decreased by 25%
 .                     | Incident resolution time decreased by 40%
@@ -91,11 +91,11 @@ Continuous integration| Quality deliverable
 .                     | Time to market decreased by 25%
 .                     | Incident resolution time decreased by 40%
 .                     | Transparent communication channels
-Automated testing     | Test execution speed increasedby 35%
+Automated testing     | Test execution speed increased by 35%
 .                     | Defect detection increased by 18%
 Security automation   | Security vulnerabilities decreased by 30%
 .                     | response time decreased by 50%
-Agile transformation  | The development cycle decreasedby 25%
+Agile transformation  | The development cycle decreased by 25%
 .                     | Project success rates increased by 18%
 
 <!-- markdownlint-enable MD013 -->
@@ -140,7 +140,7 @@ This paper supplies these 8 use cases for Git in science:
 
 ## Summary of `[Serban et al., 2020]`
 
-This aricle shows the importance of a practice
+This article shows the importance of a practice
 and how much it is adopted, in the context of a machine learning project:
 
 ![Serban et al., 2020, figure 3, annotation mine](serban_et_al_2020_fig_3_annotated.png)
@@ -176,7 +176,7 @@ Here is the full table:
 4  |Ensure Data Labelling is Performed in a Strictly Controlled Process
 5  |Make Data Sets Available on Shared Infrastructure (private or public)
 6  |Share a Clearly Defined Training Objective within the Team
-7  |Capture the Training Objective in a Metric thatis Easy to Measure and Understand
+7  |Capture the Training Objective in a Metric that is Easy to Measure and Understand
 8  |Test all Feature Extraction Code
 9  |Assign an Owner to Each Feature and Document its Rationale
 10 |Actively Remove or Archive Features That are Not Used
@@ -185,7 +185,7 @@ Here is the full table:
 13 |Automate Hyper-Parameter Optimisation and Model Selection
 14 |Continuously Measure Model Quality and Performance
 15 |Share Status and Outcomes of Experiments Within the Team
-16 |Use Versioningfor Data, Model, Configurations and Training Scripts
+16 |Use versioning for Data, Model, Configurations and Training Scripts
 17 |Run Automated Regression Tests
 18 |Use Continuous Integration
 19 |Use Static Analysis to Check Code Quality
