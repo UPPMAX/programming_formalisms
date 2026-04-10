@@ -140,7 +140,7 @@ The tools/concepts for Developing in scientific computing
 
     **Analysis** part is to **state the problem** and **define inputs and outputs**
             
-    - Graphical tools like **[UML](../misc/uml_with_mermaid.md)** (Unified Modeling Language)
+    - Graphical tools like **[UML](../../misc/uml_with_mermaid.md)** (Unified Modeling Language)
     - text
     - if object-oriented programming: **objects**
 
@@ -148,7 +148,7 @@ The tools/concepts for Developing in scientific computing
 
     Find out the **specific algorithms** needed
             
-    - UML and/or **[pseudocode](https://uppmax.github.io/programming_formalisms/extra_bc/pseudocode/)**
+    - UML and/or **[pseudocode](../extra_bc/pseudocode.md)**
     - if object-oriented programming: **classes**
     - if functional programming: **functions/modules**
 
@@ -213,7 +213,7 @@ The tools/concepts for Developing in scientific computing
 
 ???- info "How do objects look like in UML?"
 
-    ![Elevator objects](../img/elevators.png)
+    ![Elevator objects](../../img/elevators.png)
 
 ???- info "How do Classes look like in UML?"
 
@@ -245,7 +245,7 @@ The tools/concepts for Developing in scientific computing
     - OO object-based (but not class-based)
         - Javascript
 
-[Object Oriented development](../design_develop/OO_development.md)
+[Object Oriented development](../unused/object_oriented_development/README.md)
 
 #### Functional programming
 
@@ -313,7 +313,7 @@ The tools/concepts for Developing in scientific computing
     - Algorithms
     - Modular programming
 
-- [Modular programming and refactoring](../modularity/modular.md)
+- [Modular programming and refactoring](../unused/modularity/README.md)
 
 ### Testing
 

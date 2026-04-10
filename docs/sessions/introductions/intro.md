@@ -23,7 +23,7 @@ tags:
 
     Prerequisites are:
 
-    The [pre-requirements](../prereqs.md):
+    The [pre-requirements](../../prereqs.md):
 
     - Learners know basic Python
     - Learners have installed necessary tools
@@ -159,7 +159,7 @@ tags:
 
 !!! info "Definitions"
 
-    - Want [explanations and definitions](../misc/definitions.md) of the technical terms in the course?
+    - Want [explanations and definitions](../../misc/definitions.md) of the technical terms in the course?
 
 ???- challenge "Can you connect the the phases above with what we ask of a program"
 
