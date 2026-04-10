@@ -147,21 +147,21 @@ maybe add some learning outcomes for 1.
 Not really needed but it could be a good idea to add some more
 difficult problems for those who are ahead to solve
 
-### 1. [Deploy your code](https://uppmax.github.io/programming_formalisms/deployment/deploy/)
+### 1. Deploy your code
 
 - Add some illustrations
 - Add more learning outcomes
 - Explain deeper what you will learn
 - Consider adding more difficult problems for the quicker learners
 
-### 2. [Improve runtime speed](https://uppmax.github.io/programming_formalisms/optimisation/improve_runtime_speed/)
+### 2. Improve runtime speed
 
 - [X] Add some illustrations
 - Add a summary
 - Explain deeper in the outcomes
 - Consider adding more difficult problems for the quicker learners
 
-### 3. [Object Oriented development](https://uppmax.github.io/programming_formalisms/design_develop/OO_development/)
+### 3. Object Oriented development
 
 - Add summary
 - Explain further in the outcomes
@@ -184,7 +184,7 @@ of what the course material is about.
 And of course i want there to be some information about
 what you will be learning.
 
-### 1. [Documentation](https://uppmax.github.io/programming_formalisms/deployment/documentation/)
+### 1. Documentation
 
 The course material looks interesting and it does make me want to take the course.
 I like how in the begining it shows what you will be learning
@@ -198,7 +198,7 @@ and not very interesting to look at.
 
 - [ ] Consider adding (more) images
 
-### 2. [Package](https://uppmax.github.io/programming_formalisms/package/)
+### 2. Package
 
 It has a learning outcome that tells what students will be learning,
 and it has questions about the material,
@@ -220,7 +220,7 @@ no text or imformation at all.
 It does have some webpages with the information and that's good
 but i really would like for the course material to have more information.
 
-### 3. [Refactoring and Modular programming](https://uppmax.github.io/programming_formalisms/modularity/modular/)
+### 3. Refactoring and Modular programming
 
 I like how it has a learning outcome
 for both part's of the programs, one for refactoring and
