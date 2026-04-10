@@ -34,7 +34,7 @@ Reference                     |PDF                                |One-line summ
 
 ## Summaries
 
-These are summaries of the books.
+These are summaries of some of the papers mentioned.
 
 ## Summary of `[Jiménez et al., 2017]`
 
@@ -325,14 +325,55 @@ Here is (a slightly adapted) box 1 from that paper:
 
 ## References
 
+- `[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]`
+  Barker, M., Chue Hong, N.P., Katz, D.S. et al.
+  Introducing the FAIR Principles for research software.
+  Sci Data 9, 622 (2022). [Fair4RS](https://rdcu.be/eNhd1)
+
+- `[Bertram, 2009]` Bertram, Dane.
+  "The social nature of issue tracking in software engineering."
+  University of Calgary (2009).
+
+- `[Booch 2007]` Grady Booch et al.,
+  Object-oriented analysis and design with applications - 3rd ed,
+  Addison-wesley 2007.
+
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
   Pro git. Springer Nature, 2014.
-  [Book homepage](https://git-scm.com/book/en/v2)
+  [Book homepage](https://git-scm.com/book/en/v2).
+
+- `[Church, 1941]` The  Calculi of lambda-conversion, Princeton,
+  Princeton University Press, 
+  Londos: Humphrey Milford Oxford University Press, 1941
+
+- `[Coad et al., 1999]` Coad, Peter and Luca, Jeff de and Lefebvre,
+  Eric Java Modeling Color with Uml: Enterprise Components
+  and Process with CD-ROM, Prentice Hall PTR, 1999
+
+- `[Dijkstra, 1970]` Notes On Structured Programming,
+  T.H. - Report 70-WSK-03,Second edition April 1970
+
+- `[Gamma et al., 1995]` Gamma, Erich, et al.
+  "Elements of reusable object-oriented software." Design Patterns (1995).
+
+- `[Gunderloy, 2007]` Gunderloy, Mike, ed.
+  Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
+
+- `[ISO 12207:2017]` 
+  [ISO/IEC/IEEE 12207:2017 Systems and software engineering — Software life cycle processes](https://www.iso.org/standard/63712.html)
+
+- `[Jacobson, 1992]`
+  Jacobson, Ivar, et al.
+  Object-Oriented Software Engineering,
+  a usecase driven approach, Addison-wesley 1992
 
 - `[Jiménez et al., 2017]` Jiménez, Rafael C., et al.
   "Four simple recommendations to encourage best practices
   in research software." F1000Research 6 (2017): ELIXIR-876.
   [Paper homepage](https://pubmed.ncbi.nlm.nih.gov/28751965/)
+
+- `[Jones et al., 2001]`
+  [Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43](https://www.sciencedirect.com/science/article/pii/S0308521X01000543)
 
 - `[Kroll et al., 2013]` Kroll, Josiane, et al.
   "A systematic literature review of best practices and challenges in
@@ -367,6 +408,9 @@ Here is (a slightly adapted) box 1 from that paper:
   in science." Source code for biology and medicine 8.1 (2013): 7.
   [Paper homepage](https://link.springer.com/article/10.1186/1751-0473-8-7)
 
+- `[Rumbaugh, 1991]` Rumbaugh et. al,
+  Object-oriented modeling and design, Prentice-Hall, Inc. 1991
+
 - `[Serban et al., 2020]` Serban, Alex, et al.
   "Adoption and effects of software engineering best practices
   in machine learning." Proceedings of the 14th ACM/IEEE
@@ -391,6 +435,9 @@ Here is (a slightly adapted) box 1 from that paper:
   extensible research." (2014).
   [Paper homepage](https://openresearchsoftware.metajnl.com/articles/jors.ay)
 
+- `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”?
+  Software, IEEE. 1988 Jun 1;5:10–20.
+
 - `[Visser et al., 2016]` Visser, Joost, et al.
   Building software teams: Ten best practices for
   effective software development. " O'Reilly Media, Inc.", 2016.
@@ -404,4 +451,5 @@ Here is (a slightly adapted) box 1 from that paper:
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
   [Paper homepage](https://doi.org/10.1371/journal.pcbi.1005510)
+
 
