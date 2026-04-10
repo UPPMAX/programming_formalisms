@@ -20,7 +20,7 @@ nav:
   - Intro:
     - Introduction: sessions/introductions/intro.md
     - SDLC tools: sessions/introductions/sdlc_tools.md
-    - Get started with git and the project: sessions/project_start/git_startup.md
+    - Get started with git and the project: sessions/project_start/git_startup/README.md
   - Planning:
     - Analysis Phase: sessions/project_start/analysis_design.md
     - Exercise Analysis Phase: sessions/development_design/excercise_1_Design.md
