@@ -22,8 +22,6 @@ The current project can be found [at the 'Projects' page](projects.md).
 
 - [Dataset](uppsala_tm_1722-2022.zip)
 - [Watching](../watching/README.md)
-- [Issues](issues.md)
-- [Kanban board](kanban_board.md)
 - [Team roles](team_roles.md)
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
