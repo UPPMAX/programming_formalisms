@@ -675,5 +675,5 @@ git switch main          # realize it was a bad idea, back to main/master
 ## Reference Git
 
 - [Main git book](https://git-scm.com/book/en/v2)
-- [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf)
+- [Pro Git (PDF)](../../literature/chacon_and_straub_2014.pdf)
 - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." [Beginning Git and GitHub](https://learning.oreilly.com/library/view/beginning-git-and/9798868802157/): A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.

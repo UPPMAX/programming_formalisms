@@ -33,7 +33,7 @@ branches using GitHub
       Feedback 1: feedback_1, after exercise_1, 10s
     ```
 
-![Isolated tracks](../img/git-collaborative.svg)
+![Isolated tracks](../../img/git-collaborative.svg)
 
 ## Workflow of merge
 
@@ -66,7 +66,7 @@ branches using GitHub
 
     - Merge
 
-    ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
+    ![compare_pullreq_GH](../../img/compare_pullreq_GH.png)
 
     - Be sure that you merge to right branch!
     - Either 1:
@@ -178,17 +178,17 @@ branches using GitHub
 
 - Conflicts may show up like this:
 
-![conflict-edit-2](../img/contributing/conflict-edit-2.png)
+![conflict-edit-2](../../img/contributing/conflict-edit-2.png)
 
 - We merge together one of the pull requests (this will work)
 - Then we try to merge the other and we see a conflict:
 
-![conflict-pull-request](../img/contributing/conflict-pull-request.png)
+![conflict-pull-request](../../img/contributing/conflict-pull-request.png)
 
 - We try to resolve the conflict via web
 - **Choose the version that you wish to keep**, remove conflict markers, "Mark as resolved" and commit the change
 
-![conflict-resolution](../img/contributing/conflict-resolution.png)
+![conflict-resolution](../../img/contributing/conflict-resolution.png)
 
 
 !!! example "Discuss"
@@ -245,7 +245,7 @@ gitGraph
 
 ???- question "How should it look like?"
 
-    ![commit_branch_GH](../img/commit_branch_GH.png)
+    ![commit_branch_GH](../../img/commit_branch_GH.png)
 
 - On **GitHub**, create a branch for **person B**, e.g. `bertil` that branches off from `anna`
 - On **GitHub**, use the branch of **person B** and create a new commit.
@@ -253,7 +253,7 @@ gitGraph
 
 ???- question "How should it look like?"
 
-    ![new_branch_commit_GH](../img/new_branch_commit_GH.png)
+    ![new_branch_commit_GH](../../img/new_branch_commit_GH.png)
 
   The person that does this requests a reviewer.
 
@@ -311,14 +311,14 @@ gitGraph
 
     ??? question "How could that look like?"
 
-        ![commit_branch_GH](../img/commit_branch_GH.png)
+        ![commit_branch_GH](../../img/commit_branch_GH.png)
 
     - **change back to main** branch by the "branch button"
     - Modify the same file, e.g. add the line `main person was here`.
     - Commit with message "main person was here"`
     - To generate the merge conflict, Click Code in the upper menu
 
-    ![compare_pullreq_GH](../img/compare_pullreq_GH.png)
+    ![compare_pullreq_GH](../../img/compare_pullreq_GH.png)
 
     - Click the button!
 
@@ -326,11 +326,11 @@ gitGraph
 
     - Modify the file to have the texts merged.
 
-    ![merge_pull_request_GH](../img/merge_pull_request_GH.png)
+    ![merge_pull_request_GH](../../img/merge_pull_request_GH.png)
 
     - Don't forget to Approve!
 
-    ![PR_success_GH](../img/PR_success_GH.png)
+    ![PR_success_GH](../../img/PR_success_GH.png)
 
     - You may delete the old branch from here if you want!
 
@@ -352,7 +352,7 @@ In **VS CODE**
     - commit with good message, it says "commit directly to <you name>")
 - Merge with the branch you branched off from, ``develop`` or ``main``
 
-![merge_VSC](../img/merge_VSC.png)
+![merge_VSC](../../img/merge_VSC.png)
 
 - Then delete (from same drop-down menu as for merge)
 - Push!
@@ -376,7 +376,7 @@ git merge
 
 **Overview workflow**
 
-![git branches](../img/git_branches.png)
+![git branches](../../img/git_branches.png)
 
 
 !!! admonition "Parts to be covered!"

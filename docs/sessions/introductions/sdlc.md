@@ -140,7 +140,7 @@ FDD(Feature Driven Design) was developed in 1997 and first appears in the the bo
 
 ???- info "Example flow chart of a requirement described as a User story or Use Case"
 
-    From example [requirement specification](../project_start/analysis_design.md):
+    From example [requirement specification](../../project_start/analysis_design.md):
 
     | Requirement ID | Requirement Description | Acceptance Criteria                                                                  | Test Cases                                                                                |
     |----------------|-------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -267,7 +267,7 @@ A tool for rapid development is the so called Pair Programming where two develop
 
 ## Further reading materials produced for this course
 
-- [A short introductory text to SDLC and modeling](../development_design/ReadmatSoftware.md)
+- [A short introductory text to SDLC and modeling](../../development_design/ReadmatSoftware.md)
 
 ## References
 

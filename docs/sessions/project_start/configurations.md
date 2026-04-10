@@ -24,7 +24,7 @@
 
 - You find the Git Bash terminal From the menu (different on mac and windows)
 
-![VS Code terminal](../img/commandline_VSC.png)
+![VS Code terminal](../../img/commandline_VSC.png)
 
 ## Before we continue we need to configure Git
 
