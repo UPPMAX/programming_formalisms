@@ -29,7 +29,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
-      - name: Remove folders that need not to be be spellchecked
+      - name: Remove files or folders that need not to be be spellchecked
         run: |
           rm -rf docs/evaluations
           rm -rf docs/feedback
@@ -39,8 +39,8 @@ jobs:
           rm -rf docs/sessions/unused
           rm -rf docs/shared_documents
 
-      - name: Remove folders that need to be corrected
+      - name: Remove file or folders that need to be corrected
         run: |
-          rm docs/sessions/project_start/analysis_design.md
+          rm docs/sessions/project_start/analysis_design/README.md
 
       - uses: igsekor/pyspelling-any@v0.0.2
