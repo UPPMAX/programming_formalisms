@@ -68,7 +68,7 @@ tags:
 
 **This is used when you are a collaborator**
 
-![Centralized layout](../img/centralized.svg)
+![Centralized layout](img/centralized.svg)
 
 **Centralized layout**
 
@@ -101,7 +101,7 @@ tags:
 
 - You find the Git Bash terminal From the menu (different on mac and windows)
 
-![VS Code terminal](../img/commandline_VSC.png)
+![VS Code terminal](img/commandline_VSC.png)
 
 ## Principles with Git
 
@@ -341,7 +341,7 @@ Tracked files can be in three states.
 
     - First check the status!
 
-    ![VS Code add](../img/Add_file_VSC.png)
+    ![VS Code add](img/Add_file_VSC.png)
 
 
     - There is an **U** (for Untracked) beside the README.md file
@@ -359,7 +359,7 @@ Let us now commit the change to the repository:
 
 ???- question "Exercise 4: Commit"
 
-    ![VS Code commit](../img/commit_VSC.png)
+    ![VS Code commit](img/commit_VSC.png)
 
     - Write the commit message "add personal folder" and click the button
 
@@ -393,12 +393,12 @@ nothing to commit, working tree clean
     - Let's "publish" you commits to the common GitHub repo
     - In VS Code: Click the "Sync Changes" button
 
-    ![VS Code sync_push](../img/sync_push_VSC.png)
+    ![VS Code sync_push](img/sync_push_VSC.png)
 
     - You may also give a message,
         - could be the commit message again or something else summarizing several commits or left empty
 
-    ![VS Code push_message](../img/push_message_GH.png)
+    ![VS Code push_message](img/push_message_GH.png)
 
     ???- note "From bash terminal"
 
