@@ -193,7 +193,7 @@ Further reading:
 
 ???- question "Make an refactoring and extension of your class diagrams (10 min)"
 
-    Make an refactoring and extension of your class diagrams from [Expressive data types](https://uppmax.github.io/programming_formalisms/expressive_data_type/)
+    Make an refactoring and extension of your class diagrams from [Expressive data types](../expressive_data_type/README.md)
 
     Refactoring is basically reorganization to match or improve your design.
 

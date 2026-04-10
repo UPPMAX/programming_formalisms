@@ -245,7 +245,7 @@ The tools/concepts for Developing in scientific computing
     - OO object-based (but not class-based)
         - Javascript
 
-[Object Oriented development](../../unused/object_oriented_development/README.md)
+[Object Oriented development](../../object_oriented_development/README.md)
 
 #### Functional programming
 
@@ -313,7 +313,7 @@ The tools/concepts for Developing in scientific computing
     - Algorithms
     - Modular programming
 
-- [Modular programming and refactoring](../../unused/modularity/README.md)
+- [Modular programming and refactoring](../../modularity/README.md)
 
 ### Testing
 
