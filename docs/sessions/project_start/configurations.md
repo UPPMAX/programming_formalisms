@@ -35,7 +35,7 @@
 ??? warning "This should have been done already"
 
     - We hope also that you have already done these steps
-      [at the 'Prerequisites' page of this course](../misc/faq.md/#prerequisites)
+      [at the 'Prerequisites' page of this course](../../misc/faq.md/#prerequisites)
     - **Git and GitHub should be configured prior to the course**
         - Note that Mac users may need to run a command from the terminal to be able to run ``git``: ``sudo xcodebuild -license accept``
         - [Configure Git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#configure-git)

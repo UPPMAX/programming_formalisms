@@ -522,5 +522,5 @@ This is the last line by me, Anna
 ## Reference Git
 
 - [Main git book](https://git-scm.com/book/en/v2)
-- [Pro Git](https://uppmax.github.io/programming_formalisms/reading/chacon_and_straub_2014.pdf)
+- [Pro Git (PDF)](../../literature/chacon_and_straub_2014.pdf)
 - Tsitoara, Mariot, and Mariot Tsitoara. "Git best practices." Beginning Git and GitHub: A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer (2020): 79-86.
