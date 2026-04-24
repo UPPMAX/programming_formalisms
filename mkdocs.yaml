@@ -18,7 +18,7 @@ nav:
     - Create structs: sessions/project/create_structs.md
     - Dream design: sessions/project/dream_design.md
   - Intro:
-    - Introduction: sessions/introductions/intro.md
+    - Course introduction: sessions/introductions/course_introduction/README.md
     - SDLC tools: sessions/introductions/sdlc_tools.md
     - Get started with git and the project: sessions/project_start/git_startup/README.md
   - Planning:
