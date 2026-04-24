@@ -12,7 +12,7 @@ nav:
   - Schedule: schedule.md
   - Project:
     - Intro: sessions/project/README.md
-    - Become member of project: sessions/project_start/configurations.md
+    - Setup: sessions/project_setup/README.md
     - Team roles: sessions/project/team_roles.md
     - Create class list: sessions/project/create_class_list.md
     - Create structs: sessions/project/create_structs.md
