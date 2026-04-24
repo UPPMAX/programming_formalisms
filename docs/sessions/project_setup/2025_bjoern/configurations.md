@@ -12,9 +12,9 @@
 
 ## Become member of the course project
 
-- Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025)
+- Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026)
 
-- Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/issues/1)
+- Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/issues/1)
 
 
 ## VS Code terminal
@@ -53,7 +53,7 @@
 
     ???- question "Where is this?"
 
-        ``https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025``
+        ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2026``
 
     ???- question "How will the address to clone look like?"
 
@@ -77,7 +77,7 @@
     - The result shall look something like this:
 
      ```console
-     git clone git@github.com:programming-formalisms/programming_formalisms_project_autumn_2025.git
+     git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2026.git
      ```
 
     **What just happened?**

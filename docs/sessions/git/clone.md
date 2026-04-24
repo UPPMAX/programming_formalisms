@@ -29,9 +29,9 @@ Here is the procedure on how to clone a GitHub repository.
 ### 1. Get the URL to your GitHub repository
 
 For example, for the GitHub repository
-at [https://github.com/programming-formalisms/programming_formalisms_project_summer_2025](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025),
+at [https://github.com/programming-formalisms/programming_formalisms_project_summer_2026](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026),
 the URL is
-`https://github.com/programming-formalisms/programming_formalisms_project_summer_2025`.
+`https://github.com/programming-formalisms/programming_formalisms_project_summer_2026`.
 
 ### 2. In VSCode, click 'Clone Git Repository'
 

@@ -316,7 +316,7 @@ Tracked files can be in three states.
 
     - 3 to 4 people in each group
 
-???- question "Exercise 1: "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2025>"
+???- question "Exercise 1: "View the GitHub project at: <https://github.com/programming-formalisms/programming_formalisms_project_summer_2026>"
 
     - Click on a folder or file in the file explorer.
     - This enables the file "Expand file tree" button to the left of the repo name.

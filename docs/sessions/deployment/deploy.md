@@ -195,7 +195,7 @@ For this we use a `.gitignore` file (put in root folder)
 
 - [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
 
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/.gitignore)
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
 
 ## Exercise 1: Identify lacking packages (15-20 min)

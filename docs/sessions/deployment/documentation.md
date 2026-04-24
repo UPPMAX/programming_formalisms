@@ -186,7 +186,7 @@ tags:
 
 - We can click on the license and a image will also show up!
 
-    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2025/blob/main/LICENSE)
+    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/LICENSE)
 
     ???- question "How does that look like?"
 
