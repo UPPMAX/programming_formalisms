@@ -16,7 +16,7 @@ Day       | Time        | Teacher           | Subject
 ----------|-------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Monday    | 09:00-10:00 | Richèl Bilderbeek | [Course introduction](sessions/course_introduction/README.md)
 .         | .           | Richèl Bilderbeek | [Project introduction](sessions/project_introduction/README.md)
-.         | .           | Richèl Bilderbeek | [Software development life cycle](sessions/life_cycle/README.md)
+.         | .           | Richèl Bilderbeek | [Software development life cycle](sessions/lifecycle/README.md)
 .         | 10:00-10:15 | .                 | Break
 .         | 10:15-10:55 | Richèl Bilderbeek | [Software development tools](sessions/introductions/sdlc_tools.md) <!-- includes modules (tiny) --> [Git/GitHub basics and start project](sessions/project_start/git_startup/README.md) <!-- merge conflicts -->
 .         | 11:10-12:00 | Lars Eklund       | Lars decides here
