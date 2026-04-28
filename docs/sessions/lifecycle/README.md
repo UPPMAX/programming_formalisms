@@ -115,7 +115,7 @@ What are these?
 
     You can see these at the top menu:
 
-    ![](course_page_phases.png)
+    ![Software development phases, as used in this course](course_page_phases.png)
 
     The phases are:
 
