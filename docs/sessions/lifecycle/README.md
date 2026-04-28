@@ -67,7 +67,7 @@ Model    |Description                                             |Example      
 Tradition|Go through each phase once, do not go back              |Waterfall          |![Yas et al., 2023, figure 3](yas_2023_figure_3.png)
 Agile    |Cycle through each of the phases often, in small changes|eXtreme Programming|![Yas et al., 2023, figure 8, enhanced by `https://imgenhancer.app`](yas_2023_figure_8_enhanced.png)
 
-Note that a software develmentment lifecycle does not need to be a cycle :-)
+Note that a software development lifecycle does not need to be a cycle :-)
 
 `[Leau et al., 2012]` (Table 1) gives a comparison of traditional
 versus agile software development:
@@ -131,7 +131,7 @@ the different software development phases. What are these?
 
 In the text it is mentioned:
 
-> A software develmentment lifecycle does not need to be a cycle :-)
+> A software development lifecycle does not need to be a cycle :-)
 
 What is meant by this?
 
