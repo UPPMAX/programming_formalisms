@@ -31,7 +31,8 @@ A way to develop software.
 
 ## Why is it important?
 
-The wrong software development lifecycle will slow you down
+Using the wrong software development lifecycle will
+cost you more time and money `[Aniley et al., 2024]`.
 
 ## Software development lifecycles
 
@@ -51,37 +52,58 @@ consists of these phases:
 - Maintenance
 - Decommission
 
-
-
-
-
 The most important distinction is `[Yas et al., 2023]`:
 
-- Traditional models, e.g. the waterfall method
+- **Traditional models**:
+  go through each phase once
+  and -like a waterfall- do not go back.
+  The waterfall model is a good example of a traditional model
+- **Agile models**:
+  cycle through each of these phases often
+  in small changes.
+  The eXtreme Programming model is a good example of an Agile model
 
-[Picture here]
+![Yas et al., 2023, figure 3](yas_2023_figure_3.png)
 
+![Yas et al., 2023, figure 8, enhanced by https://imgenhancer.app](yas_2023_figure_8_enhanced.png)
 
-- Agile models, e.g. eXtreme Programming
+Model    |Description                                             |Example            |Overview
+---------|--------------------------------------------------------|-------------------|-------------------
+Tradition|Go through each phase once, do not go back              |Waterfall          |![Yas et al., 2023, figure 3](yas_2023_figure_3.png)
+Agile    |Cycle through each of the phases often, in small changes|eXtreme Programming|![Yas et al., 2023, figure 8, enhanced by https://imgenhancer.app](yas_2023_figure_8_enhanced.png)
 
-[Picture here]
+`[Leau et al., 2012]` (Table 1) gives a comparison of traditional
+versus agile software developmentare:
+
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+Parameter                            |Agile                                          |Traditional
+-------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------
+User requirement                     |Iterative acquisition                          |Detailed user requirements are welldefined before coding/implementation
+Rework cost                          |Low                                            |High
+Development direction                |Readily changeable                             |Fixed
+Testing                              |On every iteration                             |After coding phase completed
+Customer involvement                 |High                                           |Low
+Extra quality required for developers|Interpersonal skills & basic business knowledge|Nothing in particular
+Suitable Project scale               |Low to medium-scaled                           |Large-scaled
+
+<!-- markdownlint-enable MD013 -->
 
 The literature states:
 
 - Of all the best practices (in follow-the-sun development),
   Agile is the most often recommended best practice `[Kroll et al., 2013]`
+- Use Agile `[Aniley et al., 2024]` (although the paper does not describe
+  where this recommendation is based on) 
 - You should implement continuous delivery `[Forsgren et al., 2018]`
 - You should use Agile, as software development cycles are 25% shorter
   and project success rates increase by 18%  `[Pastrana et al., 2025]`
 - Use Continuous Integration `[Serban et al., 2020]`
 - Use Continuous Integration `[Visser et al., 2016]`
-- Make incremental changes `[Wilson et al., 2014]`
-- Keep changes small `[Wilson et al., 2017]`
-
-
-
-
-
+- In scientific computing, make incremental changes `[Wilson et al., 2014]`
+- In scientific computing, keep changes small `[Wilson et al., 2017]`
+- Use Agile for small-medium project development, 
+  use traditional models for large-scale project
 
 
 
@@ -93,28 +115,11 @@ The literature states:
 
 
 
-## Reference
+## References
 
-- Aniley, D. Bitew, E. Alemneh Jalew, and G. Abeba Agegnehu. "Selection of software development life cycle models using machine learning approach." Int J Comput Appl 186 (2024): 36-43.
+- `[Aniley et al., 2024]` Aniley, D. Bitew, E. Alemneh Jalew, and G. Abeba Agegnehu. "Selection of software development life cycle models using machine learning approach." Int J Comput Appl 186 (2024): 36-43.
 
-<!--
-Inappropriate selection of Software Development Life Cycle
-(SDLC) models can lead to increased development time and costs,
-heightened overhead, elevated risk exposure, difficulty managing
-uncertainty, reduced quality, strained client relations, and
-insufficient project tracking and control
-
-Models:
-
-- Waterfall
-- Iterative
-- Agile
-- Prototype
-- Incremental
-- Spiral
-- RAD
-
--->
+- `[Leau et al., 2012]` Leau, Yu Beng, et al. "Software development life cycle AGILE vs traditional approaches." International Conference on Information and Network Technology. Vol. 37. No. 1. 2012.
 
 - `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit ALazzawi, and Bahbibi Rahmatullah. "A comprehensive review of software development life cycle methodologies: Pros, cons, and future directions." Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
 

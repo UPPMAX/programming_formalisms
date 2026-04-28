@@ -36,9 +36,24 @@ Reference                     |PDF                                |One-line summ
 
 These are summaries of some of the papers mentioned.
 
+## Summary of `[Aniley et al., 2024]
+
+This paper seems useful at first glance:
+the authors trained an algorithm
+to detect the best software development lifecycle
+for projects. 
+
+They recommend to use Agile software development models,
+but it is unclear where they base this on exactly.
+
 ## Summary of `[Forsgren et al., 2018]`
 
-From Appendix A:
+This book is written by some computer scientists,
+where they measure software development metrics
+to find out what really works.
+
+Their conclusopmns are summed up in Appendix A,
+which has the following headers:
 
 - Continuous Delivery
   - Use version control for all production artifacts
@@ -94,6 +109,26 @@ how many papers (`n`) recommend a specific practice.
 3  |Process documentation
 3  |Use of an FTP Server (or data repository) to exchange code and documents
 3  |Time window
+
+
+## Summary of `[Leau et al., 2012]`
+
+This paper compares Agile versus traditional software development,
+with Table 1 (see below) sums up the findings:
+
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+Parameter                            |Agile                                          |Traditional
+-------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------
+User requirement                     |Iterative acquisition                          |Detailed user requirements are welldefined before coding/implementation
+Rework cost                          |Low                                            |High
+Development direction                |Readily changeable                             |Fixed
+Testing                              |On every iteration                             |After coding phase completed
+Customer involvement                 |High                                           |Low
+Extra quality required for developers|Interpersonal skills & basic business knowledge|Nothing in particular
+Suitable Project scale               |Low to medium-scaled                           |Large-scaled
+
+<!-- markdownlint-enable MD013 -->
 
 
 ## Summary of `[Pastrana et al., 2025]`
@@ -359,6 +394,10 @@ Here is (a slightly adapted) box 1 from that paper:
 
 ## References
 
+- `[Aniley et al., 2024]` Aniley, D. Bitew, E. Alemneh Jalew,
+  and G. Abeba Agegnehu. "Selection of software development life cycle
+  models using machine learning approach." Int J Comput Appl 186 (2024): 36-43.
+
 - `[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]`
   Barker, M., Chue Hong, N.P., Katz, D.S. et al.
   Introducing the FAIR Principles for research software.
@@ -420,6 +459,11 @@ Here is (a slightly adapted) box 1 from that paper:
   2013 IEEE 8th International Conference on Global Software Engineering
   Workshops. IEEE, 2013.
   [Paper homepage](https://doi-org.ezproxy.its.uu.se/10.1109/ICGSEW.2013.10)
+
+- `[Leau et al., 2012]` Leau, Yu Beng, et al.
+  "Software development life cycle AGILE vs traditional approaches."
+  International Conference on Information and Network Technology.
+  Vol. 37. No. 1. 2012.
 
 - `[Ordoñez-Pacheco et al., 2021]`
   Ordoñez-Pacheco, Rodrigo, Karen Cortes-Verdin, and Jorge Octavio
