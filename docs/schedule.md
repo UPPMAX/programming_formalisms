@@ -22,6 +22,7 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek | [Course introduction](sessions/co
 .         | 11:10-12:00 | Lars Eklund       | Lars decides here
 .         | 13:00-15:40 | Lars Eklund       | [Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
+
           |             |                   |
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek | [Software development life cycle](sessions/introductions/sdlc.md)
 .         | 10:15-11:00 | Richèl Bilderbeek |.

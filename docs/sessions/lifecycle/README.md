@@ -91,7 +91,7 @@ The literature states:
 - In follow-the-sun development, of all the best practices,
   Agile is the one most often recommended `[Kroll et al., 2013]`
 - Use Agile `[Aniley et al., 2024]` (although the paper does not describe
-  where this recommendation is based on) 
+  where this recommendation is based on)
 - You should implement continuous delivery `[Forsgren et al., 2018]`
 - You should use Agile, as software development cycles are 25% shorter
   and project success rates increase by 18%  `[Pastrana et al., 2025]`
@@ -99,7 +99,7 @@ The literature states:
 - Use Continuous Integration `[Visser et al., 2016]`
 - In scientific computing, make incremental changes `[Wilson et al., 2014]`
 - In scientific computing, keep changes small `[Wilson et al., 2017]`
-- Use Agile for small-medium project development, 
+- Use Agile for small-medium project development,
   use traditional models for large-scale project
 
 In this course, we mostly follow the Agile model.

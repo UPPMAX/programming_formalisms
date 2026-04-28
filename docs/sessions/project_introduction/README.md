@@ -46,7 +46,7 @@ Share your GitHub name [at this issue](https://github.com/programming-formalisms
 Read [the research project](#the-research-project).
 
 In a file, write down one or more hypotheses one could test with that
-data. 
+data.
 
 ???- question "Does it matter what kind of file?"
 
@@ -141,7 +141,7 @@ To view the file in its original form, view the file in its raw form.
     
     ![View the raw file](view_raw_file.png)
 
-## (optional) Exercise 3: 
+## (optional) Exercise 3
 
 Explore the learners' project GitHub repository.
 Where can you find the things below?
@@ -198,7 +198,6 @@ The folder containing the GitHub Actions scripts
 The folder containing the GitHub Actions scripts
 
 
-
 ## References
 
 - `[Perez-Riverol et al., 2016]`
@@ -226,10 +225,6 @@ This paper shared 10 simple rules to take advantage of `git` and GitHub:
 - Rule 10: Use GitHub to Be Social: Follow and Watch
 
 -->
-
-
-
-
 
 
 ## Old

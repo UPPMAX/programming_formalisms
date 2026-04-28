@@ -41,7 +41,7 @@ These are summaries of some of the papers mentioned.
 This paper seems useful at first glance:
 the authors trained an algorithm
 to detect the best software development lifecycle
-for projects. 
+for projects.
 
 They recommend to use Agile software development models,
 but it is unclear where they base this on exactly.
@@ -56,34 +56,34 @@ Their conclusopmns are summed up in Appendix A,
 which has the following headers:
 
 - Continuous Delivery
-  - Use version control for all production artifacts
-  - Automate your deployment process
-  - Implement Continuous Integration
-  - Use trunk-based development methods
-  - Implement test automation
-  - Support test data management
-  - Shift Left on Security (i.e. make security part of the software delivery)
-  - Implement Continuous Delivery (CD)
+    - Use version control for all production artifacts
+    - Automate your deployment process
+    - Implement Continuous Integration
+    - Use trunk-based development methods
+    - Implement test automation
+    - Support test data management
+    - Shift Left on Security (i.e. make security part of the software delivery)
+    - Implement Continuous Delivery (CD)
 - Architecture
-  - Use a Loosely Coupled Architecture
-  - Architect for Empowered Teams
+    - Use a Loosely Coupled Architecture
+    - Architect for Empowered Teams
 - Product and Process
-  - Gather and Implement Customer Feedback
-  - Make the Flow of Work Visible through the Value Stream
-  - Work in Small Batches
-  - Foster and Enable Team Experimentation
+    - Gather and Implement Customer Feedback
+    - Make the Flow of Work Visible through the Value Stream
+    - Work in Small Batches
+    - Foster and Enable Team Experimentation
 - Lean Management and Monitoring
-  - Have a Lightweight Change Approval Processes
-  - Monitor across Application and Infrastructure to Inform Business Decisions
-  - Check System Health Proactively
-  - Improve Processes and Manage Work with Work-In-Process (WIP) Limits
-  - Visualize Work to Monitor Quality and Communicate throughout the Team
+    - Have a Lightweight Change Approval Processes
+    - Monitor across Application and Infrastructure to Inform Business Decisions
+    - Check System Health Proactively
+    - Improve Processes and Manage Work with Work-In-Process (WIP) Limits
+    - Visualize Work to Monitor Quality and Communicate throughout the Team
 - Cultural
-  - Support a Generative Culture
-  - Encourage and Support Learning
-  - Support and Facilitate Collaboration among Teams
-  - Provide Resources and Tools that Make Work Meaningful
-  - Support or Embody Transformational Leadership
+    - Support a Generative Culture
+    - Encourage and Support Learning
+    - Support and Facilitate Collaboration among Teams
+    - Provide Resources and Tools that Make Work Meaningful
+    - Support or Embody Transformational Leadership
 
 ## Summary of `[Jiménez et al., 2017]`
 
