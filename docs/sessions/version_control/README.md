@@ -25,7 +25,7 @@ File status |Description
 Untracked   |File(s) without version control
 Staged      |File(s) on the stage
 Committed   |File(s) that are part of a change
-Unmodified  |File(s) that are indentical to the online version
+Unmodified  |File(s) that are identical to the online version
 Changed     |File(s) that are different than the online version
   
 ## The verbs in version control
