@@ -34,38 +34,31 @@ A way to develop software.
 Using the wrong software development lifecycle will
 cost you more time and money `[Aniley et al., 2024]`.
 
+## Software development phases
+
+Software develops in phases.
+As there are multiple lists of these phases,
+here is a list from
+[Wikipedia](https://en.wikipedia.org/wiki/Systems_development_life_cycle#Phases),
+with my description of each phase:
+
+Phase                |Description
+---------------------|-----------------------------------------------
+Conceptualization    |Getting an idea
+Requirements analysis|Develop an understanding of what is needed
+Design               |Create the architecture on how to realize this
+Construction         |Write the code
+Acceptance           |Make sure it is good enough
+Deployment           |Release the finished software
+Maintenance          |Keep the software running
+Decommission         |Archive or delete the software
+
 ## Software development lifecycles
 
-There are multiple different phases in software development:
-
-![Software development life cycle, from https://en.wikipedia.org/wiki/File:Systems_development_life_cycle.svg](software_development_life_cycle.png)
-
-This list, taken from [Wikipedia](https://en.wikipedia.org/wiki/Systems_development_life_cycle#Phases),
-consists of these phases:
-
-- Conceptualization
-- Requirements analysis
-- Design
-- Construction
-- Acceptance
-- Deployment
-- Maintenance
-- Decommission
-
-The most important distinction is `[Yas et al., 2023]`:
-
-- **Traditional models**:
-  go through each phase once
-  and -like a waterfall- do not go back.
-  The waterfall model is a good example of a traditional model
-- **Agile models**:
-  cycle through each of these phases often
-  in small changes.
-  The eXtreme Programming model is a good example of an Agile model
-
-![Yas et al., 2023, figure 3](yas_2023_figure_3.png)
-
-![Yas et al., 2023, figure 8, enhanced by https://imgenhancer.app](yas_2023_figure_8_enhanced.png)
+The software development life cycle is the way how you
+transitions between phases,
+with the most important distinction being
+a traditional versus an Agile model `[Yas et al., 2023]`:
 
 Model    |Description                                             |Example            |Overview
 ---------|--------------------------------------------------------|-------------------|-------------------
