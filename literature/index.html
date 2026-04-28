@@ -1,0 +1,4121 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../misc/uml_with_mermaid/">
+      
+      
+        <link rel="next" href="../meeting_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Literature - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#literature" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Literature
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../learning_outcomes/" class="md-tabs__link">
+          
+  
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/project/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/introductions/course_introduction/README.md" class="md-tabs__link">
+          
+  
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/project_start/analysis_design/" class="md-tabs__link">
+          
+  
+  
+  Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/introductions/sdlc/" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/project/team_roles/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/assert/" class="md-tabs__link">
+          
+  
+  
+  Testing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/package/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../contact_us/" class="md-tabs__link">
+          
+  
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About the course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learning_outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning outcomes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prereqs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/create_class_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create class list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/create_structs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create structs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/dream_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dream design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/introductions/course_introduction/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/introductions/sdlc_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SDLC tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project_start/git_startup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get started with git and the project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project_start/analysis_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/development_design/risk_and_requirements_exercise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercise Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/introductions/sdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Development Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/object_oriented_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/function_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/expressive_data_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expressive data types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/modularity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/has_a_relation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A 'has-a' relation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/data_structures/class_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/team_roles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team roles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/git/branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git workflow, branches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/git/merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git(-Hub) workflow, merging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/git/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing & code review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/social_coding/social_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sharing and social coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/pair_programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pair programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/continuous_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Testing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/assert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    assert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-driven development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/tdd_at_bigger_scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDD at a bigger scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/testing/testing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a formal testing framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime speed profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/optimisation/improve_runtime_speed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improve run-time speed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/optimisation/big_o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implement the project as a package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/deployment/deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/deployment/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra material (Earlier Intro day materials)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions to practice TDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../further_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/git_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson_plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn UML with mermaid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Literature
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Literature
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-jimenez-et-al-2017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Jiménez et al., 2017]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-kroll-et-al-2013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Kroll et al., 2013]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-pastrana-et-al-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Pastrana et al., 2025]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-perez-riverol-et-al-2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Perez-Riverol et al., 2016]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-ram-2013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Ram, 2013]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-serban-et-al-2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Serban et al., 2020]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-stieler-and-bauer-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Stieler and Bauer, 2023]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-stodden-and-miguez-2014" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Stodden and Miguez, 2014]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-visser-et-al-2016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Visser et al., 2016]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-wilson-et-al-2014" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Wilson et al., 2014]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-wilson-et-al-2017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary of [Wilson et al., 2017]
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meeting_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meeting notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/project_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reflections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/retrospective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrospective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shared_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shared_documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/scilifelab_course_registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciLifeLab course registration procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../contact_us/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Misc
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/literature/README.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/literature/README.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="literature">Literature<a class="headerlink" href="#literature" title="Anchor link to this section for reference">&para;</a></h1>
+<p>These are books and academic papers that have influenced the course.</p>
+<!-- markdownlint-disable MD013 -->
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>PDF</th>
+<th>One-line summary <code>[1]</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[Chacon and Straub, 2014]</code></td>
+<td><a href="chacon_and_straub_2014.pdf">PDF</a></td>
+<td>The book about <code>git</code></td>
+</tr>
+<tr>
+<td><code>[Jiménez et al., 2017]</code></td>
+<td><a href="jimenez_et_al_2017.pdf">PDF</a></td>
+<td>Best practices in research software</td>
+</tr>
+<tr>
+<td><code>[Kroll et al., 2013]</code></td>
+<td><a href="kroll_et_al_2013.pdf">PDF</a></td>
+<td>Best practices in software development</td>
+</tr>
+<tr>
+<td><code>[Pastrana et al., 2025]</code></td>
+<td><a href="pastrana_et_al_2025.pdf">PDF</a></td>
+<td>Literature review of best practices in Scrum and DevOps</td>
+</tr>
+<tr>
+<td><code>[Perez-Riverol et al., 2016]</code></td>
+<td><a href="perez_riverol_et_al_2016.pdf">PDF</a></td>
+<td>Recommendations on <code>git</code> and GitHub</td>
+</tr>
+<tr>
+<td><code>[Ram, 2013]</code></td>
+<td><a href="ram_2013.pdf">PDF</a></td>
+<td>Effect of <code>git</code> on reproducibility</td>
+</tr>
+<tr>
+<td><code>[Serban et al., 2020]</code></td>
+<td><a href="serban_et_al_2020.pdf">PDF</a></td>
+<td>Recommends some software engineering best practices, in the field of machine learning</td>
+</tr>
+<tr>
+<td><code>[Stieler and Bauer, 2023]</code></td>
+<td><a href="stieler_and_bauer_2023.pdf">PDF</a></td>
+<td>Applies <code>[Serban et al., 2020]</code> to rate if a project follows the recommended practices</td>
+</tr>
+<tr>
+<td><code>[Stodden and Miguez, 2014]</code></td>
+<td><a href="stodden_and_miguez_2014.pdf">PDF</a></td>
+<td>Best practices for a project</td>
+</tr>
+<tr>
+<td><code>[Visser et al., 2016]</code></td>
+<td>None</td>
+<td>Ten best practices for effective software development</td>
+</tr>
+<tr>
+<td><code>[Wilson et al., 2014]</code></td>
+<td><a href="wilson_et_al_2014.pdf">PDF</a></td>
+<td>Best practices for a project</td>
+</tr>
+<tr>
+<td><code>[Wilson et al., 2017]</code></td>
+<td><a href="wilson_et_al_2017.pdf">PDF</a></td>
+<td>Good enough practices for a project</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+
+<ul>
+<li><code>[1]</code> You can find more extensive summaries below</li>
+</ul>
+<h2 id="summaries">Summaries<a class="headerlink" href="#summaries" title="Anchor link to this section for reference">&para;</a></h2>
+<p>These are summaries of some of the papers mentioned.</p>
+<h2 id="summary-of-jimenez-et-al-2017">Summary of <code>[Jiménez et al., 2017]</code><a class="headerlink" href="#summary-of-jimenez-et-al-2017" title="Anchor link to this section for reference">&para;</a></h2>
+<p>These are the 4 recommendations:</p>
+<ul>
+<li>Make source code publicly accessible from day one</li>
+<li>Make software easy to discover by providing software metadata
+  via a popular community registry</li>
+<li>Adopt a licence and comply with the licence of third-party dependencies</li>
+<li>Define clear and transparent contribution, governance and
+  communication processes</li>
+</ul>
+<h2 id="summary-of-kroll-et-al-2013">Summary of <code>[Kroll et al., 2013]</code><a class="headerlink" href="#summary-of-kroll-et-al-2013" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This paper is a literature review, tailored to best practices in
+Follow-the-sun software development. Below is a table that shows
+how many papers (<code>n</code>) recommend a specific practice.</p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Best practice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Agile methods</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Use of technology for knowledge sharing</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Process documentation</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Use of an FTP Server (or data repository) to exchange code and documents</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Time window3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary-of-pastrana-et-al-2025">Summary of <code>[Pastrana et al., 2025]</code><a class="headerlink" href="#summary-of-pastrana-et-al-2025" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This is a literature review paper on Scrum and DevOps.</p>
+<p>Box 11 shows the benefits of Scrum and DevOps practices.
+Here is an adapted version of box 11:</p>
+<!-- markdownlint-disable MD013 -->
+<table>
+<thead>
+<tr>
+<th>Benefits</th>
+<th>Improvement Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scrum adoption</td>
+<td>Actively involved stakeholders</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Transparent communication channels</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Increased team collaboration</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Improved predictability</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Creation of a collaborative culture</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Continuous improvement</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Constant quality measurement or concurrent testing</td>
+</tr>
+<tr>
+<td>DevOps adoption</td>
+<td>Early and continuous feedback</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Productivity increased by 20%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Deployment time decreased by 30%</td>
+</tr>
+<tr>
+<td>Faster release cycles</td>
+<td>Time to market decreased by 25%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Incident resolution time decreased by 40%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Quality deliverable</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Early and continuous feedback</td>
+</tr>
+<tr>
+<td>Continuous integration</td>
+<td>Quality deliverable</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Time to market decreased by 25%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Incident resolution time decreased by 40%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Transparent communication channels</td>
+</tr>
+<tr>
+<td>Automated testing</td>
+<td>Test execution speed increased by 35%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Defect detection increased by 18%</td>
+</tr>
+<tr>
+<td>Security automation</td>
+<td>Security vulnerabilities decreased by 30%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>response time decreased by 50%</td>
+</tr>
+<tr>
+<td>Agile transformation</td>
+<td>The development cycle decreased by 25%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Project success rates increased by 18%</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+
+<p>I removed the conclusion to <code>[Sravani et al., 2023]</code> (<code>[117]</code> in the paper)
+as that paper does not supply these numbers at all.</p>
+<p>I used
+<a href="https://doc2lang.com/image-to-table">the Doc2Lang image to table converter</a>
+to convert the image to a table.</p>
+<h2 id="summary-of-perez-riverol-et-al-2016">Summary of <code>[Perez-Riverol et al., 2016]</code><a class="headerlink" href="#summary-of-perez-riverol-et-al-2016" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This paper shared 10 simple rules to take advantage of <code>git</code> and GitHub:</p>
+<ul>
+<li>Rule 1: Use GitHub to Track Your Projects</li>
+<li>Rule 2: GitHub for Single Users, Teams, and Organizations</li>
+<li>Rule 3: Developing and Collaborating on New Features:
+  Branching and Forking</li>
+<li>Rule 4: Naming Branches and Commits: Tags and Semantic Versions</li>
+<li>Rule 5: Let GitHub Do Some Tasks for You: Integrate</li>
+<li>Rule 6: Let GitHub Do More Tasks for You: Automate</li>
+<li>Rule 7: Use GitHub to Openly and Collaboratively Discuss,
+  Address, and Close Issues</li>
+<li>Rule 8: Make Your Code Easily Citable, and Cite Source Code!</li>
+<li>Rule 9: Promote and Discuss Your Projects: Web Page and More</li>
+<li>Rule 10: Use GitHub to Be Social: Follow and Watch</li>
+</ul>
+<h2 id="summary-of-ram-2013">Summary of <code>[Ram, 2013]</code><a class="headerlink" href="#summary-of-ram-2013" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This paper supplies these 8 use cases for Git in science:</p>
+<ul>
+<li>Lab notebook</li>
+<li>Facilitating collaboration</li>
+<li>Backup and failsafe against data loss</li>
+<li>Freedom to explore new ideas and methods</li>
+<li>Mechanism to solicit feedback and reviews</li>
+<li>Increase transparency and verifiability</li>
+<li>Managing large data</li>
+<li>Lowering barriers to reuse</li>
+</ul>
+<h2 id="summary-of-serban-et-al-2020">Summary of <code>[Serban et al., 2020]</code><a class="headerlink" href="#summary-of-serban-et-al-2020" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This article shows the importance of a practice
+and how much it is adopted, in the context of a machine learning project:</p>
+<p><img alt="Serban et al., 2020, figure 3, annotation mine" src="serban_et_al_2020_fig_3_annotated.png" /></p>
+<p>Note that there are 2x a 28, where 29 is absent. I assume that the
+28 to the right, with and orange circle and an importance of 0.2
+had to be 29. I assume so, as the 28 with a green triangle
+should indeed be a green triangle. This has been clearly annotated :-)</p>
+<p>These are the top 10 most important practices, after which I show
+the full table:</p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25</td>
+<td>Log Production Predictions with the Model's Version and Input Data</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Work Against a Shared Backlog</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Continuously Monitor the Behaviour of Deployed Models</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Use Continuous Integration</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Automate Model Deployment</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Use Versioning for Data, Model, Configurations and Training Scripts</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Use A Collaborative Development Platform</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Enforce Fairness and Privacy</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Run Automated Regression Tests</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Enable Parallel Training Experiments</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the full table:</p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Use Sanity Checks for All External Data Sources</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Check that Input Data is Complete, Balanced and Well Distributed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Write Reusable Scripts for Data Cleaning and Merging</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ensure Data Labelling is Performed in a Strictly Controlled Process</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Make Data Sets Available on Shared Infrastructure (private or public)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Share a Clearly Defined Training Objective within the Team</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Capture the Training Objective in a Metric that is Easy to Measure and Understand</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Test all Feature Extraction Code</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Assign an Owner to Each Feature and Document its Rationale</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Actively Remove or Archive Features That are Not Used</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Peer Review Training Scripts</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Enable Parallel Training Experiments</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Automate Hyper-Parameter Optimisation and Model Selection</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Continuously Measure Model Quality and Performance</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Share Status and Outcomes of Experiments Within the Team</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Use versioning for Data, Model, Configurations and Training Scripts</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Run Automated Regression Tests</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Use Continuous Integration</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Use Static Analysis to Check Code Quality</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Automate Model Deployment</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Continuously Monitor the Behaviour of Deployed Models</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Enable Shadow Deployment</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Perform Checks to Detect Skews between Models</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Enable Automatic Roll Backs for Production Models</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Log Production Predictions with the Model's Version and Input Data</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Use A Collaborative Development Platform</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Work Against a Shared Backlog</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Communicate, Align, and Collaborate With Multidisciplinary Team Members</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Enforce Fairness and Privacy</td>
+</tr>
+</tbody>
+</table>
+<p>I used
+<a href="https://doc2lang.com/image-to-table">the Doc2Lang image to table converter</a>
+to convert the image to a table</p>
+<h2 id="summary-of-stieler-and-bauer-2023">Summary of <code>[Stieler and Bauer, 2023]</code><a class="headerlink" href="#summary-of-stieler-and-bauer-2023" title="Anchor link to this section for reference">&para;</a></h2>
+<p>Applies <code>[Serban et al., 2020]</code> for a data-centric AI project called GW4AL.
+It is irrelevant for us.</p>
+<h2 id="summary-of-stodden-and-miguez-2014">Summary of <code>[Stodden and Miguez, 2014]</code><a class="headerlink" href="#summary-of-stodden-and-miguez-2014" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This paper suggests these best practices about how to setup
+your infrastructure to achieve reproducible research:</p>
+<ul>
+<li>Open licensing should be used for data and code</li>
+<li>Workflow tracking should be carried out during the research process.</li>
+<li>Data must be available and accessible</li>
+<li>Code and methods must be available and accessible</li>
+<li>All 3rd party data and software should be cited</li>
+</ul>
+<h2 id="summary-of-visser-et-al-2016">Summary of <code>[Visser et al., 2016]</code><a class="headerlink" href="#summary-of-visser-et-al-2016" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This closed-access paper has the following table of content:</p>
+<ul>
+<li>Derive Metrics from Your Measurement Goals</li>
+<li>Make Definition of Done Explicit</li>
+<li>Control Code Versions and Development Branches</li>
+<li>Control Development, Test, Acceptance, and Production Environments</li>
+<li>Automate Tests</li>
+<li>Use Continuous Integration</li>
+<li>Automate Deployment</li>
+<li>Standardize the Development Environment</li>
+<li>Manage Usage of Third-Party Code</li>
+<li>Document Just Enough</li>
+</ul>
+<h2 id="summary-of-wilson-et-al-2014">Summary of <code>[Wilson et al., 2014]</code><a class="headerlink" href="#summary-of-wilson-et-al-2014" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This paper summarizes best practices.
+Here is (a slightly adapted) box 1 from that paper:</p>
+<!-- markdownlint-disable MD013 -->
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Theme</th>
+<th>Recommendatation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Write programs for people, not computers</td>
+<td>A program should not require its readers to hold more than a handful of facts in memory at once.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make names consistent, distinctive, and meaningful.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make code style and formatting consistent.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Let the computer do the work</td>
+<td>Make the computer repeat tasks.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Save recent commands in a file for re-use.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a build tool to automate workflows.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Make incremental changes</td>
+<td>Work in small steps with frequent feedback and course correction.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a version control system.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put everything that has been created manually in version control.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Don't repeat yourself (or others)</td>
+<td>Every piece of data must have a single authoritative representation in the system.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Modularize code rather than copying and pasting.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Re-use code instead of rewriting it.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Plan for mistakes</td>
+<td>Add assertions to programs to check their operation.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use an off-the-shelf unit testing library.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Turn bugs into test cases.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a symbolic debugger.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Optimize software only after it works correctly</td>
+<td>Use a profiler to identify bottlenecks.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Write code in the highest-level language possible.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Document design and purpose, not mechanics</td>
+<td>Document interfaces and reasons, not implementations.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Refactor code in preference to explaining how it works.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Embed the documentation for a piece of software in that software.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Collaborate</td>
+<td>Use pre-merge code reviews.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use pair programming when bringing someone new up to speed and when tackling particularly tricky problems.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use an issue tracking tool.</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+
+<h2 id="summary-of-wilson-et-al-2017">Summary of <code>[Wilson et al., 2017]</code><a class="headerlink" href="#summary-of-wilson-et-al-2017" title="Anchor link to this section for reference">&para;</a></h2>
+<p>This paper summarizes best practices that are good enough.
+Here is (a slightly adapted) box 1 from that paper:</p>
+<!-- markdownlint-disable MD013 -->
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Theme</th>
+<th>Recommendatation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Data management</td>
+<td>Save the raw data.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Ensure that raw data are backed up in more than one location.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create the data you wish to see in the world.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create analysis-friendly data.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Record all the steps used to process data.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Anticipate the need to use multiple tables, and use a unique identifier for every record.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Submit data to a reputable DOI-issuing repository so that others can access and cite it.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Software</td>
+<td>Place a brief explanatory comment at the start of every program.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Decompose programs into functions.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Be ruthless about eliminating duplication.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Always search for well-maintained software libraries that do what you need.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Test libraries before relying on them.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Give functions and variables meaningful names.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make dependencies and requirements explicit.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Do not comment and uncomment sections of code to control a program's behavior.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Provide a simple example or test data set.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Submit code to a reputable DOI-issuing repository.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Collaboration</td>
+<td>Create an overview of your project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create a shared "to-do" list for the project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Decide on communication strategies.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make the license explicit.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make the project citable.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Project organization</td>
+<td>Put each project in its own directory, which is named after the project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put text documents associated with the project in the doc directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put raw data and metadata in a data directory and files generated during cleanup and analysis in a results directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put project source code in the src directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put external scripts or compiled programs in the bin directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Name all files to reflect their content or function.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Keeping track of changes</td>
+<td>Back up (almost) everything created by a human being as soon as it is created.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Keep changes small.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Share changes frequently.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create, maintain, and use a checklist for saving and sharing changes to the project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Store each project in a folder that is mirrored off the researcher's working machine.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Add a file called CHANGELOG.txt to the project's docs subfolder.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Copy the entire project whenever a significant change has been made.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a version control system.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Manuscripts</td>
+<td>Write manuscripts using online tools with rich formatting, change tracking, and reference management.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Write the manuscript in a plain text format that permits version control.</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+
+<h2 id="references">References<a class="headerlink" href="#references" title="Anchor link to this section for reference">&para;</a></h2>
+<ul>
+<li>
+<p><code>[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]</code>
+  Barker, M., Chue Hong, N.P., Katz, D.S. et al.
+  Introducing the FAIR Principles for research software.
+  Sci Data 9, 622 (2022). <a href="https://rdcu.be/eNhd1">Fair4RS</a></p>
+</li>
+<li>
+<p><code>[Bertram, 2009]</code> Bertram, Dane.
+  "The social nature of issue tracking in software engineering."
+  University of Calgary (2009).</p>
+</li>
+<li>
+<p><code>[Booch 2007]</code> Grady Booch et al.,
+  Object-oriented analysis and design with applications - 3rd ed,
+  Addison-wesley 2007.</p>
+</li>
+<li>
+<p><code>[Chacon and Straub, 2014]</code> Chacon, Scott, and Ben Straub.
+  Pro git. Springer Nature, 2014.
+  <a href="https://git-scm.com/book/en/v2">Book homepage</a>.</p>
+</li>
+<li>
+<p><code>[Church, 1941]</code> The  Calculi of lambda-conversion, Princeton,
+  Princeton University Press,
+  Londos: Humphrey Milford Oxford University Press, 1941</p>
+</li>
+<li>
+<p><code>[Coad et al., 1999]</code> Coad, Peter and Luca, Jeff de and Lefebvre,
+  Eric Java Modeling Color with Uml: Enterprise Components
+  and Process with CD-ROM, Prentice Hall PTR, 1999</p>
+</li>
+<li>
+<p><code>[Dijkstra, 1970]</code> Notes On Structured Programming,
+  T.H. - Report 70-WSK-03,Second edition April 1970</p>
+</li>
+<li>
+<p><code>[Gamma et al., 1995]</code> Gamma, Erich, et al.
+  "Elements of reusable object-oriented software." Design Patterns (1995).</p>
+</li>
+<li>
+<p><code>[Gunderloy, 2007]</code> Gunderloy, Mike, ed.
+  Painless project management with FogBugz. Berkeley, CA: Apress, 2007.</p>
+</li>
+<li>
+<p><code>[ISO 12207:2017]</code>
+  <a href="https://www.iso.org/standard/63712.html">ISO/IEC/IEEE 12207:2017 Systems and software engineering — Software life cycle processes</a></p>
+</li>
+<li>
+<p><code>[Jacobson, 1992]</code>
+  Jacobson, Ivar, et al.
+  Object-Oriented Software Engineering,
+  a usecase driven approach, Addison-wesley 1992</p>
+</li>
+<li>
+<p><code>[Jiménez et al., 2017]</code> Jiménez, Rafael C., et al.
+  "Four simple recommendations to encourage best practices
+  in research software." F1000Research 6 (2017): ELIXIR-876.
+  <a href="https://pubmed.ncbi.nlm.nih.gov/28751965/">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Jones et al., 2001]</code>
+  <a href="https://www.sciencedirect.com/science/article/pii/S0308521X01000543">Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43</a></p>
+</li>
+<li>
+<p><code>[Kroll et al., 2013]</code> Kroll, Josiane, et al.
+  "A systematic literature review of best practices and challenges in
+  follow-the-sun software development."
+  2013 IEEE 8th International Conference on Global Software Engineering
+  Workshops. IEEE, 2013.
+  <a href="https://doi-org.ezproxy.its.uu.se/10.1109/ICGSEW.2013.10">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Ordoñez-Pacheco et al., 2021]</code>
+  Ordoñez-Pacheco, Rodrigo, Karen Cortes-Verdin, and Jorge Octavio
+  Ocharán-Hernández.
+  "Best practices for software development: A systematic literature review."
+  International Conference on Software Process Improvement.
+  Springer, Cham, 2021.
+  Note: this paper does not exist. It is not part of the book
+  'Advances in Intelligent Informatics', volume 320,
+  ISBN 978-3-319-11217-6.</p>
+</li>
+<li>
+<p><code>[Pastrana et al., 2025]</code> Pastrana, Manuel, et al.
+  "Best Practices Evidenced for Software Development Based on DevOps
+  and Scrum: A Literature Review."
+  Applied Sciences 15.10 (2025): 5421.
+  <a href="https://doi.org/10.3390/app15105421">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Perez-Riverol et al., 2016]</code>
+  Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
+  of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
+  <a href="https://doi.org/10.1371/journal.pcbi.1004947">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Ram, 2013]</code> Ram, Karthik.
+  "Git can facilitate greater reproducibility and increased transparency
+  in science." Source code for biology and medicine 8.1 (2013): 7.
+  <a href="https://link.springer.com/article/10.1186/1751-0473-8-7">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Rumbaugh, 1991]</code> Rumbaugh et. al,
+  Object-oriented modeling and design, Prentice-Hall, Inc. 1991</p>
+</li>
+<li>
+<p><code>[Serban et al., 2020]</code> Serban, Alex, et al.
+  "Adoption and effects of software engineering best practices
+  in machine learning." Proceedings of the 14th ACM/IEEE
+  International Symposium on Empirical Software Engineering and
+  Measurement (ESEM). 2020.
+  <a href="https://doi.org/10.1145/3382494.3410681">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Sravani et al., 2023]</code> Sravani, Diyyala, et al.
+  "Python security in devOps: Best practices for secure coding,
+  configuration management, and continuous testing and monitoring."
+  2023 4th International Conference on Electronics and Sustainable
+  Communication Systems (ICESC). IEEE, 2023.</p>
+</li>
+<li>
+<p><code>[Stieler and Bauer, 2023]</code> Stieler, Fabian, and Bernhard Bauer.
+  "Git workflow for active learning-a development methodology proposal
+  for data-centric AI projects." (2023).
+  <a href="https://doi.org/10.5220/0011988400003464">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Stodden and Miguez, 2014]</code> Stodden, Victoria, and Sheila Miguez.
+  "Best practices for computational science:
+  Software infrastructure and environments for reproducible and
+  extensible research." (2014).
+  <a href="https://openresearchsoftware.metajnl.com/articles/jors.ay">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Stroustrup, 1998]</code> Stroustrup B. What is “Object-oriented Programming”?
+  Software, IEEE. 1988 Jun 1;5:10–20.</p>
+</li>
+<li>
+<p><code>[Visser et al., 2016]</code> Visser, Joost, et al.
+  Building software teams: Ten best practices for
+  effective software development. " O'Reilly Media, Inc.", 2016.</p>
+</li>
+<li>
+<p><code>[Wilson et al., 2014]</code> Wilson, Greg, et al.
+  "Best practices for scientific computing."
+  PLoS biology 12.1 (2014): e1001745.
+  <a href="https://doi.org/10.1371/journal.pbio.1001745">Paper homepage</a></p>
+</li>
+<li>
+<p><code>[Wilson et al., 2017]</code> Wilson, Greg, et al.
+  "Good enough practices in scientific computing."
+  PLoS computational biology 13.6 (2017): e1005510.
+  <a href="https://doi.org/10.1371/journal.pcbi.1005510">Paper homepage</a></p>
+</li>
+</ul>
+<!-- Tables cannot be split up over lines, hence will break 80 characters per line --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../misc/uml_with_mermaid/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Learn UML with mermaid">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Learn UML with mermaid
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../meeting_notes/" class="md-footer__link md-footer__link--next" aria-label="Next: Meeting notes">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Meeting notes
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
