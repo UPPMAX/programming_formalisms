@@ -18,7 +18,9 @@
     - What is GitHub?
     - What is a GitHub repository?
     - What is a GitHub issue?
+    - What is a Markdown?
     - What is a Markdown file?
+    - What do we mean when we say 'This shows the rendered file'?
 
 ## Why we set up the project as such
 
@@ -108,9 +110,93 @@ Check if your file has been created.
     There are two indications:
     
     - The so-called 'commit message' shows above the files in the folder
-    - In the folder, you can see the file
+    - In the folder, you can see the file's name
 
     ![The file is created](file_created_annotated.png)
+
+View the file.
+
+???- question "How do I do this?"
+
+    Click on the file:
+    
+    ![Click on the file](click_file.png)
+
+    You will now see the rendered file:
+    
+    ![View the rendered file](view_file.png)
+
+You now see the rendered file.
+It may look different than the text you copy-pasted.
+However, your text is absolutely there as you have copy-pasted it.
+To view the file in its original form, view the file in its raw form.
+
+???- question "How do I do this?"
+
+    Click on the file:
+    
+    ![Click on 'View raw'](click_raw_file.png)
+
+    You will now see the raw file:
+    
+    ![View the raw file](view_raw_file.png)
+
+## (optional) Exercise 3: 
+
+Explore the learners' project GitHub repository.
+Where can you find the things below?
+
+The folder to put documentation
+
+???- question "Answer"
+
+    The `doc` folder.
+    
+    This is a standard and standarized name for documentation.
+
+The folder for the learners to put their notes
+
+???- question "Answer"
+
+    The `learners` folder.
+    
+    Us teachers picked this name.
+
+The folder to put code.
+
+???- question "Answer"
+
+    The `src` folder.
+    
+    This is a standard and standarized name for source code.
+
+The folder to put tests.
+
+???- question "Answer"
+
+    The `tests` folder.
+    
+    This is a standard and standarized name for a folder that
+    contains code to assure everything works as it should.
+
+The folder containing the scripts to work on the project.
+
+???- question "Answer"
+
+    The `scripts` folder.
+    
+    Us teachers picked this name.
+
+The folder containing the GitHub Actions scripts
+
+???- question "Answer"
+
+    The `.github/worksflows` folder.
+    
+    This is the standarized name used by GitHub
+
+The folder containing the GitHub Actions scripts
+
 
 
 
