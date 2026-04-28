@@ -18,13 +18,14 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek | [Course introduction](sessions/co
 .         | .           | Richèl Bilderbeek | [Project introduction](sessions/project_introduction/README.md)
 .         | .           | Richèl Bilderbeek | [Software development life cycle](sessions/lifecycle/README.md)
 .         | 10:00-10:15 | .                 | Break
-.         | 10:15-10:55 | Richèl Bilderbeek | [Software development tools](sessions/introductions/sdlc_tools.md) <!-- includes modules (tiny) --> [Git/GitHub basics and start project](sessions/project_start/git_startup/README.md) <!-- merge conflicts -->
+.         | 10:15-10:55 | Richèl Bilderbeek | [Version control](sessions/version_control/README.md)
+.         | .           | Richèl Bilderbeek | [Merge conflicts](sessions/merge_conflicts/README.md)
 .         | 11:10-12:00 | Lars Eklund       | Lars decides here
 .         | 13:00-15:40 | Lars Eklund       | [Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
 
           |             |                   |
-Tuesday   | 09:00-10:00 | Richèl Bilderbeek | [Software development life cycle](sessions/introductions/sdlc.md)
+Tuesday   | 09:00-10:00 | Richèl Bilderbeek |.
 .         | 10:15-11:00 | Richèl Bilderbeek |.
 .         | 11:15-12:00 | Richèl Bilderbeek | [assert](sessions/assert/README.md)
 .         | 13:00-14:00 | Richèl Bilderbeek | [TDD 1](sessions/tdd/README.md)
