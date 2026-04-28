@@ -189,7 +189,7 @@ What is it?
   Building software teams: Ten best practices for
   effective software development. " O'Reilly Media, Inc.", 2016.
 
-- `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit ALazzawi, and
+- `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit Alazzawi, and
   Bahbibi Rahmatullah. "A comprehensive review of software development
   life cycle methodologies: Pros, cons, and future directions."
   Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.

@@ -535,7 +535,7 @@ Here is (a slightly adapted) box 1 from that paper:
   PLoS computational biology 13.6 (2017): e1005510.
   [Paper homepage](https://doi.org/10.1371/journal.pcbi.1005510)
 
-- `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit ALazzawi, and
+- `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit Alazzawi, and
   Bahbibi Rahmatullah. "A comprehensive review of software development
   life cycle methodologies: Pros, cons, and future directions."
   Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
