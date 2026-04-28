@@ -21,13 +21,14 @@ nav:
     - Course introduction: sessions/course_introduction/README.md
     - Project setup: sessions/project_setup/README.md
     - Software Development Lifecycle: sessions/lifecycle/README.md
+    - Version control: sessions/version_control/README.md
+    - Merge conflicts: sessions/merge_conflicts/README.md
     - Get started with git and the project: sessions/project_start/git_startup/README.md
     - SDLC tools: sessions/introductions/sdlc_tools.md
   - Planning:
     - Analysis Phase: sessions/project_start/analysis_design/README.md
     - Exercise Analysis Phase: sessions/development_design/risk_and_requirements_exercise.md
   - Design:
-    - Software Development Lifecycle: sessions/introductions/sdlc.md
     - Object Oriented development: sessions/object_oriented_development/README.md
     - Function design: sessions/function_design/README.md
     - Expressive data types: sessions/expressive_data_type/README.md
