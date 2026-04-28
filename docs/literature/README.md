@@ -120,7 +120,7 @@ with Table 1 (see below) sums up the findings:
 
 Parameter                            |Agile                                          |Traditional
 -------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------
-User requirement                     |Iterative acquisition                          |Detailed user requirements are welldefined before coding/implementation
+User requirement                     |Iterative acquisition                          |Detailed user requirements are well-defined before coding/implementation
 Rework cost                          |Low                                            |High
 Development direction                |Readily changeable                             |Fixed
 Testing                              |On every iteration                             |After coding phase completed

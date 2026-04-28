@@ -65,7 +65,7 @@ a traditional versus an Agile model `[Yas et al., 2023]`:
 Model    |Description                                             |Example            |Overview
 ---------|--------------------------------------------------------|-------------------|-------------------
 Tradition|Go through each phase once, do not go back              |Waterfall          |![Yas et al., 2023, figure 3](yas_2023_figure_3.png)
-Agile    |Cycle through each of the phases often, in small changes|eXtreme Programming|![Yas et al., 2023, figure 8, enhanced by `https://imgenhancer.app`](yas_2023_figure_8_enhanced.png)
+Agile    |Cycle through each of the phases often, in small changes|eXtreme Programming|![Yas et al., 2023, figure 8, enhanced by https://imgenhancer.app](yas_2023_figure_8_enhanced.png)
 
 Note that a software development lifecycle does not need to be a cycle :-)
 
