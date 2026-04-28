@@ -12,11 +12,11 @@ tags:
 
     Learners ...
 
-    - understand what the project is about
-    - understand why the course project is set up as such
-    - are a collaborator of the course project's GitHub repository
-    - can modify the content of the course project's GitHub repository
-      from GitHub
+    - understand what a software development phase is
+    - understand what a software development lifecycle is
+    - can name the two main categories of software development lifecycle models
+    - understand which software development phases the course uses
+    - understand which software development lifecycle models the course uses
 
 ??? question "For teachers"
 
