@@ -44,4 +44,4 @@ the things below?
 - The sessions
 - A description of the course project
 - Earlier evaluation results
-- The [literature used by this course](../literature/README.md)
+- The [literature used by this course](../../literature/README.md)
