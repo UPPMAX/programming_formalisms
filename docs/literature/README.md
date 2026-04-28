@@ -52,7 +52,7 @@ This book is written by some computer scientists,
 where they measure software development metrics
 to find out what really works.
 
-Their conclusopmns are summed up in Appendix A,
+Their conclusions are summed up in Appendix A,
 which has the following headers:
 
 - Continuous Delivery

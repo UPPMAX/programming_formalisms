@@ -8,7 +8,7 @@ tags:
   - conflicts
 ---
 
-# Merge conflics
+# Merge conflicts
 
 !!! info "Learning outcomes"
 

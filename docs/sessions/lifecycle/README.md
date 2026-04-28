@@ -65,18 +65,18 @@ a traditional versus an Agile model `[Yas et al., 2023]`:
 Model    |Description                                             |Example            |Overview
 ---------|--------------------------------------------------------|-------------------|-------------------
 Tradition|Go through each phase once, do not go back              |Waterfall          |![Yas et al., 2023, figure 3](yas_2023_figure_3.png)
-Agile    |Cycle through each of the phases often, in small changes|eXtreme Programming|![Yas et al., 2023, figure 8, enhanced by https://imgenhancer.app](yas_2023_figure_8_enhanced.png)
+Agile    |Cycle through each of the phases often, in small changes|eXtreme Programming|![Yas et al., 2023, figure 8, enhanced by `https://imgenhancer.app`](yas_2023_figure_8_enhanced.png)
 
 Note that a software develmentment lifecycle does not need to be a cycle :-)
 
 `[Leau et al., 2012]` (Table 1) gives a comparison of traditional
-versus agile software developmentare:
+versus agile software development:
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
 Parameter                            |Agile                                          |Traditional
 -------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------
-User requirement                     |Iterative acquisition                          |Detailed user requirements are welldefined before coding/implementation
+User requirement                     |Iterative acquisition                          |Detailed user requirements are well-defined before coding/implementation
 Rework cost                          |Low                                            |High
 Development direction                |Readily changeable                             |Fixed
 Testing                              |On every iteration                             |After coding phase completed
