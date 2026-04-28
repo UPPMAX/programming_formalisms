@@ -51,5 +51,10 @@ graph TB
 
 ## Exercise 1: clone the learners project
 
+???- question "Prefer a video?"
+
+    Watch the YouTube video
+    [How to use VSCode to (git) clone a repository](https://youtu.be/bcYFlBh9WUk?si=H6a2LG6XuIUw1DoC)
+
 ## Exercise 2: change a file
 
