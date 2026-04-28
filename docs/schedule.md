@@ -24,7 +24,7 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek | [Course introduction](sessions/co
 .         | 12:00-13:00 | .                 | Break
 .         | 13:00-15:40 | Lars Eklund       | [Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
-          |             |                   |
+.         |.            |.                  |.
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek |.
 .         | 10:00-10:15 | .                 | Break
 .         | 10:15-11:00 | Richèl Bilderbeek |.
@@ -37,7 +37,7 @@ Tuesday   | 09:00-10:00 | Richèl Bilderbeek |.
 .         | 15:00-15:15 | .                 | Break
 .         | 15:15-15:40 | Richèl Bilderbeek | [TDD at a bigger scale](sessions/tdd_at_bigger_scale/README.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
-          |             |                   |
+.         |.            |.                  |.
 Wednesday | 09:00-10:00 | Richèl Bilderbeek | branches
 .         | 10:00-10:15 | .                 | Break
 .         | 10:15-11:00 | Richèl Bilderbeek | merge
@@ -49,7 +49,7 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek | branches
 .         | 14:15-15:00 | Richèl Bilderbeek | [Pair programming](sessions/pair_programming/README.md)
 .         | 15:15-15:40 | Richèl Bilderbeek | [Formal testing framework](sessions/testing/testing_framework.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
-          |             |                   |
+.         |.            |.                  |.
 Thursday  | 09:00-09:45 | Richèl Bilderbeek | [Function design](sessions/function_design/README.md)
 .         | 10:00-10:45 | Richèl Bilderbeek | [Expressive data type](sessions/expressive_data_type/README.md)
 .         | 11:00-12:00 | Richèl Bilderbeek | [Object-oriented design](sessions/object_oriented_development/README.md)
@@ -57,7 +57,7 @@ Thursday  | 09:00-09:45 | Richèl Bilderbeek | [Function design](sessions/functi
 .         | 14:15-15:00 | Richèl Bilderbeek | [Modular programming](sessions/modularity/README.md)
 .         | 15:15-15:40 | Richèl Bilderbeek | [Continuous integration](sessions/continuous_integration/README.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
-          |             |                   |
+.         |.            |.                  |.
 Friday    | 09:00-09:45 | Richèl Bilderbeek | [Implement the project as a package](sessions/package/README.md)
 .         | 10:00-11:00 | Richèl Bilderbeek | [Runtime speed profiles](sessions/optimisation/runtime_speed_profiles.md), [Improve run-time speed](sessions/optimisation/improve_runtime_speed.md)
 .         | 11:15-12:00 | Björn Claremar    | [Deployment](sessions/deployment/deploy.md)
