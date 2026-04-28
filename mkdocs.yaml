@@ -18,9 +18,11 @@ nav:
     - Create structs: sessions/project/create_structs.md
     - Dream design: sessions/project/dream_design.md
   - Intro:
-    - Course introduction: sessions/introductions/course_introduction/README.md
-    - SDLC tools: sessions/introductions/sdlc_tools.md
+    - Course introduction: sessions/course_introduction/README.md
+    - Project setup: sessions/project_setup/README.md
+    - Software Development Lifecycle: sessions/introductions/sdlc.md
     - Get started with git and the project: sessions/project_start/git_startup/README.md
+    - SDLC tools: sessions/introductions/sdlc_tools.md
   - Planning:
     - Analysis Phase: sessions/project_start/analysis_design/README.md
     - Exercise Analysis Phase: sessions/development_design/risk_and_requirements_exercise.md

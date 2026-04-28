@@ -8,7 +8,7 @@ tags:
 
 !!! info "Learning outcomes"
 
-    Learners have ...
+    Learners have...
 
     - heard to course goal
     - Identify the main topics and objectives for the week's lessons.
@@ -44,3 +44,4 @@ the things below?
 - The sessions
 - A description of the course project
 - Earlier evaluation results
+- The [literature used by this course](../literature/README.md)

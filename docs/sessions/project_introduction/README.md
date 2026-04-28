@@ -1,19 +1,128 @@
-# Project setup
+# Project introduction
 
 !!! info "Learning outcomes"
 
-    Learners
+    Learners ...
 
-    - are a Collaborator of the course project's GitHub repository
-    - can modify the content the course project's GitHub repository
-      from VS Code
+    - understand what the project is about
+    - understand why the course project is set up as such
+    - are a collaborator of the course project's GitHub repository
+    - can modify the content of the course project's GitHub repository
+      from GitHub
 
-## Become member of the course project
+??? question "For teachers"
 
-- Join [the Autumn 2025 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026)
+    Prior:
 
-- Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/issues/1)
+    - You work together with someone. How would you set up the project?
+    - What is GitHub?
+    - What is a GitHub repository?
+    - What is a GitHub issue?
+    - What is a Markdown file?
 
+## Why we set up the project as such
+
+This project
+
+## The research project
+
+## Exercises
+
+
+## Exercise 1: become member of the course project
+
+Login to GitHub.
+
+Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/issues/1)
+
+???- question "What happens then?"
+
+    The teachers will make you a member of the learners' project
+
+## Exercise 2: share your hypothesis to test
+
+Read [the research project](#the-research-project).
+
+In a file, write down one or more hypotheses one could test with that
+data. 
+
+???- question "Does it matter what kind of file?"
+
+    No. A Word document is fine, a plain-text file is fine too.
+
+Check your email for a GitHub invitation to the course project,
+or find this message in the GitHub notifications.
+Accept the invitation. Welcome to the project!
+
+???- question "Where are the GitHub notifications?"
+
+    These are at the top-right of your GitHub pages:
+
+    ![The GitHub notifications button](github_notifications_button.png)
+    
+    Click on it and your will see your GitHub notifications,
+    which will look similar to this:
+
+    ![GitHub notifications](github_notifications.png)
+
+In the course repository website,
+navigate into the `learners` folder.
+
+???- question "How do I do this?"
+
+    To navigate into the `learners` folder, click on the text `learners`:
+    
+    ![Click on the text `learners`](project_page_annotated.png)
+
+In the course repository website,
+create a new file.
+
+???- question "How do I do this?"
+
+    At the top-left, click on 'Add file | Create new file':
+    
+    ![Click on 'Add file | Create new file'](add_file.png)
+
+???- question "Huh? I am not allowed to do this...?"
+
+    You did not yet accept the GitHub invitation to this project.
+    Take a closer look at the previous step.
+    Else, notify a teacher.
+
+
+In the editor:
+
+- name the file `[your_name].md`, e.g. `sven.md`
+- copy-paste your hypotheses to this file
+
+When done, click on the 'Commit' button
+
+???- question "How does this look like?"
+
+    ![Editing a file](edit_file.png)
+
+Check if your file has been created.
+
+???- question "How do I check this?"
+
+    There are two indications:
+    
+    - The so-called 'commit message' shows above the files in the folder
+    - In the folder, you can see the file
+
+    ![The file is created](file_created_annotated.png)
+
+
+
+
+
+
+
+
+
+
+
+## Old
 
 ## VS Code terminal
 
