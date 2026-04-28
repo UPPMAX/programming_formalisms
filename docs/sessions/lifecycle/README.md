@@ -86,6 +86,8 @@ Suitable Project scale               |Low to medium-scaled                      
 
 <!-- markdownlint-enable MD013 -->
 
+## Why we follow the Agile software development model
+
 The literature states:
 
 - In follow-the-sun development, of all the best practices,
@@ -108,8 +110,8 @@ In this course, we mostly follow the Agile model.
 
 ## Exercise 1
 
-The course website shows our pick of software development phases.
-What are these?
+The course website clearly shows how we preferred to group
+the different software development phases. What are these?
 
 ???- question "Answer"
 
