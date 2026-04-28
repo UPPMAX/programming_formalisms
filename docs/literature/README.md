@@ -36,6 +36,40 @@ Reference                     |PDF                                |One-line summ
 
 These are summaries of some of the papers mentioned.
 
+## Summary of `[Forsgren et al., 2018]`
+
+From Appendix A:
+
+- Continuous Delivery
+  - Use version control for all production artifacts
+  - Automate your deployment process
+  - Implement Continuous Integration
+  - Use trunk-based development methods
+  - Implement test automation
+  - Support test data management
+  - Shift Left on Security (i.e. make security part of the software delivery)
+  - Implement Continuous Delivery (CD)
+- Architecture
+  - Use a Loosely Coupled Architecture
+  - Architect for Empowered Teams
+- Product and Process
+  - Gather and Implement Customer Feedback
+  - Make the Flow of Work Visible through the Value Stream
+  - Work in Small Batches
+  - Foster and Enable Team Experimentation
+- Lean Management and Monitoring
+  - Have a Lightweight Change Approval Processes
+  - Monitor across Application and Infrastructure to Inform Business Decisions
+  - Check System Health Proactively
+  - Improve Processes and Manage Work with Work-In-Process (WIP) Limits
+  - Visualize Work to Monitor Quality and Communicate throughout the Team
+- Cultural
+  - Support a Generative Culture
+  - Encourage and Support Learning
+  - Support and Facilitate Collaboration among Teams
+  - Provide Resources and Tools that Make Work Meaningful
+  - Support or Embody Transformational Leadership
+
 ## Summary of `[Jiménez et al., 2017]`
 
 These are the 4 recommendations:
@@ -59,7 +93,7 @@ how many papers (`n`) recommend a specific practice.
 6  |Use of technology for knowledge sharing
 3  |Process documentation
 3  |Use of an FTP Server (or data repository) to exchange code and documents
-3  |Time window3
+3  |Time window
 
 
 ## Summary of `[Pastrana et al., 2025]`
@@ -257,7 +291,7 @@ Here is (a slightly adapted) box 1 from that paper:
 4  |Don't repeat yourself (or others)               |Every piece of data must have a single authoritative representation in the system.
 .  |.                                               |Modularize code rather than copying and pasting.
 .  |.                                               |Re-use code instead of rewriting it.
-5  | Plan for mistakes                              |Add assertions to programs to check their operation.
+5  |Plan for mistakes                               |Add assertions to programs to check their operation.
 .  |.                                               |Use an off-the-shelf unit testing library.
 .  |.                                               |Turn bugs into test cases.
 .  |.                                               |Use a symbolic debugger.
@@ -352,6 +386,11 @@ Here is (a slightly adapted) box 1 from that paper:
 
 - `[Dijkstra, 1970]` Notes On Structured Programming,
   T.H. - Report 70-WSK-03,Second edition April 1970
+
+- `[Forsgren et al., 2018]` Forsgren, Nicole, Jez Humble, and Gene Kim.
+  Accelerate: The science of lean software and devops:
+  Building and scaling high performing technology organizations.
+  IT Revolution, 2018.
 
 - `[Gamma et al., 1995]` Gamma, Erich, et al.
   "Elements of reusable object-oriented software." Design Patterns (1995).

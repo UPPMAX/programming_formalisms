@@ -27,7 +27,63 @@ tags:
     
 ## What is a software development lifecycle?
 
+A way to develop software.
+
 ## Why is it important?
+
+The wrong software development lifecycle will slow you down
+
+## Software development lifecycles
+
+There are multiple different phases in software development:
+
+![Software development life cycle, from https://en.wikipedia.org/wiki/File:Systems_development_life_cycle.svg](software_development_life_cycle.png)
+
+This list, taken from [Wikipedia](https://en.wikipedia.org/wiki/Systems_development_life_cycle#Phases),
+consists of these phases:
+
+- Conceptualization
+- Requirements analysis
+- Design
+- Construction
+- Acceptance
+- Deployment
+- Maintenance
+- Decommission
+
+
+
+
+
+The most important distinction is `[Yas et al., 2023]`:
+
+- Traditional models, e.g. the waterfall method
+
+[Picture here]
+
+
+- Agile models, e.g. eXtreme Programming
+
+[Picture here]
+
+The literature states:
+
+- Of all the best practices (in follow-the-sun development),
+  Agile is the most often recommended best practice `[Kroll et al., 2013]`
+- You should implement continuous delivery `[Forsgren et al., 2018]`
+- You should use Agile, as software development cycles are 25% shorter
+  and project success rates increase by 18%  `[Pastrana et al., 2025]`
+- Use Continuous Integration `[Serban et al., 2020]`
+- Use Continuous Integration `[Visser et al., 2016]`
+- Make incremental changes `[Wilson et al., 2014]`
+- Keep changes small `[Wilson et al., 2017]`
+
+
+
+
+
+
+
 
 ## Exercises
 
@@ -59,6 +115,58 @@ Models:
 - RAD
 
 -->
+
+- `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit ALazzawi, and Bahbibi Rahmatullah. "A comprehensive review of software development life cycle methodologies: Pros, cons, and future directions." Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
+
+<!--
+
+The software development process needs specific and studied steps within a reliable plan to achieve
+the requirements for the success of any project. Software development life cycle (SDLC) methodologies have
+provided several models that meet the needs of the various proposed projects. 
+
+
+Traditional:
+
+- Waterfall Model
+- Iterative Model
+- Spiral Model
+- V-Model
+- Big Bang Model
+
+Agile:
+
+- eXtreme Programming (XP) Model
+- Scrum Model
+- Feature-Driven Development (FDD) Model
+- Kanban Model
+
+-->
+
+- `[Kroll et al., 2013]` Kroll, Josiane, et al.
+  "A systematic literature review of best practices and challenges in
+  follow-the-sun software development."
+  2013 IEEE 8th International Conference on Global Software Engineering
+  Workshops. IEEE, 2013.
+  [Paper homepage](https://doi-org.ezproxy.its.uu.se/10.1109/ICGSEW.2013.10)
+
+
+<!-- 
+## Summary of `[Kroll et al., 2013]`
+
+This paper is a literature review, tailored to best practices in
+Follow-the-sun software development. Below is a table that shows
+how many papers (`n`) recommend a specific practice.
+
+`n`|Best practice
+---|-----------------------------------------------------------------------
+6  |Agile methods
+6  |Use of technology for knowledge sharing
+3  |Process documentation
+3  |Use of an FTP Server (or data repository) to exchange code and documents
+3  |Time window3
+
+-->
+
 
 ## Old
 
