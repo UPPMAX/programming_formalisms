@@ -17,6 +17,8 @@ tags:
     - can name the two main categories of software development lifecycle models
     - understand which software development phases the course uses
     - understand which software development lifecycle models the course uses
+    - understand why the course uses Agile
+    - understand why the course needs you to be social
 
 ??? question "For teachers"
 
@@ -26,6 +28,7 @@ tags:
     - Could you name some phases in software development?
     - What is meant by 'Software development lifecycle?'
     - Could you name some models of software development lifecycles?
+    - Is coding a social activity?
     
 ## What is a software development lifecycle?
 
@@ -108,7 +111,7 @@ In this course, we mostly follow the Agile model.
 
 ## Exercises
 
-## Exercise 1
+## Exercise 1: which phases does the course use?
 
 The course website clearly shows how we preferred to group
 the different software development phases. What are these?
@@ -121,13 +124,14 @@ the different software development phases. What are these?
 
     The phases are:
 
+    - Conceptualization
     - Planning
     - Design
     - Development
     - Testing
     - Deployment
 
-## Exercise 2
+## Exercise 2: software development lifecycle does not need to be cycle?
 
 In the text it is mentioned:
 
@@ -139,7 +143,7 @@ What is meant by this?
 
     It highlights that the traditional model is not a cycle at all.
 
-## Exercise 3
+## Exercise 3: which lifecycle does the course use?
 
 The course logo gives a hint at our software development life cycle.
 
@@ -150,6 +154,26 @@ What is it?
     The course logo contains a circle, hinting at a cycle.
     Having (many) cycles is typical of an Agile software
     development lifecycle.
+
+## Exercise 4: what does the course lifecycle require of team members?
+
+We use Agile as most (all?) literature recommends this for
+our project size. However, Agile has **more**
+demands on the team. What are these?
+
+???- question "Answer"
+
+    The team members need 'Interpersonal skills & basic business knowledge'.
+
+    It can be found in the table from `[Leau et al., 2012]` (Table 1):
+
+    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+    Parameter                            |Agile                                          |Traditional
+    -------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------
+    Extra quality required for developers|Interpersonal skills & basic business knowledge|Nothing in particular
+
+    <!-- markdownlint-enable MD013 -->
 
 ## References
 
