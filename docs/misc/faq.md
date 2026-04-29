@@ -68,7 +68,7 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
-### How do I install VS Code installed?
+### How do I install VS Code?
 
 [Download VS Code from its homepage](https://code.visualstudio.com/download).
 
