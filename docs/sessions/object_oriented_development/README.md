@@ -174,7 +174,7 @@ Further reading:
 ???- question "Where to find requirements?"
 
     References to the requirements found either in the teacher example [requirements](https://github.com/programming-formalisms/programming_formalisms_example_project/blob/main/docs/requirements.md) document (A requirements document is often referred to as an SRS - System/**S**oftware **R**equirement **S**pecification )
-    or in your own [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/learners/requirements.md) document. Also check your issues for features you want to include
+    or in your own [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md) document. Also check your issues for features you want to include
 
 ???- hint "A solution"
 
