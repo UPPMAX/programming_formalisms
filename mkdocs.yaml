@@ -5,7 +5,7 @@ edit_uri: 'blob/main/docs/'
 nav:
   - Home: index.md
   - About the course:
-    - Learning outcomes: learning_outcomes.md
+    - Learning outcomes: learning_outcomes/README.md
     - Pre-requirements: prereqs.md
     - Course dates: course_dates.md
     - Introduction: intro.md
