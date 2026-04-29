@@ -24,7 +24,13 @@
 
 ## Why we set up the project as such
 
-This project
+For this course, we need a project to work, together.
+
+As teachers, we've looked for a research project
+on real data, that is as simple as possible.
+
+In the end of the course, we will put our work into a Python
+package, so that everyone can reproduce our results. 
 
 ## The research project
 
