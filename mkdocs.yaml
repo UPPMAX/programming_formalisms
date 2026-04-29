@@ -17,7 +17,7 @@ nav:
     - Create class list: sessions/project/create_class_list.md
     - Create structs: sessions/project/create_structs.md
     - Dream design: sessions/project/dream_design.md
-  - Intro:
+  - Conceptualization:
     - Course introduction: sessions/course_introduction/README.md
     - Project setup: sessions/project_setup/README.md
     - Software Development Lifecycle: sessions/lifecycle/README.md
