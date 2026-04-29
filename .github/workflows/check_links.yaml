@@ -30,6 +30,7 @@ jobs:
       # such as unused or old files
       - name: Remove files to be ignored
         run: |
+          rm -rf docs/course_goals/2025_bjoern
           rm -rf docs/sessions/course_introduction/2025_bjoern
           rm -rf docs/sessions/git/spring2024
           rm -rf docs/sessions/lifecycle/2024_bjoern
