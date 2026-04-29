@@ -218,11 +218,9 @@ Python is installed.
 
     ![The Python version from VS Code](vs_code_python_version.png)
 
-### Can you run Python from VS Code?
+### How do I run Python from VS Code?
 
-Yes.
-
-You do need to install the Python extension in VS Code.
+You need to install the Python extension in VS Code.
 Here is a step-by-step guide.
 
 In VS Code, click on the 'Extensions' panel.
@@ -252,6 +250,63 @@ You should now see that the Python extension is installed.
 ???- question "How does that look like?"
 
     ![The VS Code Python extention is installed](vs_code_python_extension_installed.png)
+
+### How can I check that I can run Python from VS Code?
+
+By running a minimal Python script from VS Code.
+Below is the procedure to do so.
+
+In VS Code, click on 'File | New file'
+
+???- question "How does that look like?"
+
+    ![In VS Code, click on 'New file'](vs_code_click_new_file.png)
+
+Type the file name `hello_world.py`. 
+
+???- question "How does that look like?"
+
+    ![Type the file name 'hello_world.py'](vs_code_create_hello_world_file.png)
+
+Save the to-be-created file somewhere.
+
+???- question "How does that look like?"
+
+    ![Save the to-be-created file somewhere.](vs_code_create_new_file.png)
+
+When the file is created, then VS Code offers to install a Python
+extension if you have not done so yet. Do install that extension
+when asked :-)
+
+???- question "How does that look like?"
+
+    ![An empty 'Hello world' program](vs_code_empty_hello_world.png)
+
+Copy-paste the following code into your Python script:
+
+```python
+print("Hello world")
+```
+
+???- question "How does that look like?"
+
+    'Run' is at the top-left of your screen.
+
+    ![The 'Hello world' program](vs_code_hello_world.png)
+
+Click on 'Run'.
+
+???- question "How does that look like?"
+
+    'Run' is at the top-left of your screen.
+
+    ![Click 'Run'](vs_code_run_hello_world.png)
+
+If the program shows 'Hello world', you can run Python from VS Code.
+
+???- question "How does that look like?"
+
+    ![The 'Hello world' program worked](vs_code_hello_world_worked.png)
 
 ### How do I know that I know the basics of Python?
 
