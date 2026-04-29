@@ -1,3 +1,8 @@
+---
+tags:
+  - learning outcomes
+---
+
 # Learning outcomes
 
 ![Programming formalism logo](../assets/programming_formalism_logo.png){ width="500" }
