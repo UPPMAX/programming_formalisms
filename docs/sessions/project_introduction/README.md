@@ -241,7 +241,18 @@ To view the file in its original form, view the file in its raw form.
     
     ![View the raw file](view_raw_file.png)
 
-## (optional) Exercise 3
+## (optional) Exercise 4: unwatch the learners project
+
+When being added to a GitHub repository,
+it is assumed you want to be informed on any event,
+e.g. when the code breaks or when you are mentioned.
+
+You will receive an email for every such event.
+
+To prevent this, follow
+[this course material on changing your 'Watch' settings](../watching/README.md).
+
+## (optional) Exercise 5: explore the learners project
 
 Explore the learners' project GitHub repository.
 Where can you find the things below?
@@ -250,7 +261,7 @@ The folder to put documentation
 
 ???- question "Answer"
 
-    The `doc` folder.
+    The `docs` folder.
     
     This is a standard and standarized name for documentation.
 

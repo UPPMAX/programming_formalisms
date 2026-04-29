@@ -35,16 +35,19 @@ tags:
       Exercise 2: crit, exercise_2, after theory_2, 10s
       Exercise 2 after the break: crit, after exercise_2, 5s
     ```
+## What is watching?
 
-## Why?
+Being informed when an event happens on your repository,
+such as you getting mentioned.
 
-You want to be notified of certain things, but not of all things.
+## Why is watching useful?
+
+When you want to be informed.
 
 ## Introduction
 
 At the start of the course, you'll be added to the learners' project.
-By default, it is assumed you want to be informed on any event:
-when the code breaks or when you are mentioned.
+By default, it is assumed you want to be informed on any event.
 
 You can see this at the repository:
 at the top-right, there is a button with an eye and the text 'Unwatch'.
