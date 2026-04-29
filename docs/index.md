@@ -17,7 +17,7 @@
 <br/>
 
 [Pre-requirements](prereqs.md){ .md-button .md-button--primary }
-[Intro](intro.md){ .md-button .md-button--primary }
+[Learning outcomes](learning_outcomes/README.md){ .md-button .md-button--primary }
 [Schedule](schedule.md){ .md-button .md-button--primary }
 [Feedback](misc/feedback.md){ .md-button .md-button--primary }
 

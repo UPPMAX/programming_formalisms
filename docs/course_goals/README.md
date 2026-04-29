@@ -25,7 +25,7 @@ Whenever we give some advice,
 we will try to supply a references to the literature
 ([#57](https://github.com/UPPMAX/programming_formalisms/issues/57)).
 You can always give anonymous feedback at any time
-[at the course 'Feedback' page](misc/feedback.md)
+[at the course 'Feedback' page](../misc/feedback.md)
 ([#75](https://github.com/UPPMAX/programming_formalisms/issues/75)).
 
 Teach evidence-based or expert-recommended best practices on how to:

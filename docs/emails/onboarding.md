@@ -25,13 +25,11 @@ pre-requirements at
 there is a checklist there. If you struggle or are uncertain
 with a pre-requirement: the onboarding session is there to help you out!
 
-Minimal schedule (with full schedule at
-[https://uppmax.github.io/programming_formalisms/intro/#schedule](https://uppmax.github.io/programming_formalisms/intro/#schedule)):
+Each course day, we start at 9:00 sharp.
+The course schedule can be found at
+[https://uppmax.github.io/programming_formalisms/schedule/](https://uppmax.github.io/programming_formalisms/schedule/)).
 
-- `[date][day][time]` (optional) Onboarding
-- `[date]` Monday 9:00 (sharp!): start of lessons
-
-See you at the optional onboarding or Monday 9:00 (sharp!)
+See you Monday 9:00 (sharp!)
 at the Programming Formalisms course, in the Zoom room below.
 
 Cheers, the Programming Formalisms team
