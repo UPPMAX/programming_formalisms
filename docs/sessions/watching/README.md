@@ -35,6 +35,7 @@ tags:
       Exercise 2: crit, exercise_2, after theory_2, 10s
       Exercise 2 after the break: crit, after exercise_2, 5s
     ```
+
 ## What is watching?
 
 Being informed when an event happens on your repository,
