@@ -158,6 +158,14 @@ to what needed to be copy-pasted into a terminal:
 git config --global merge.default merge
 ```
 
+Upon editing a file, Git will use a text editor.
+By default, Git uses the `vim` editor.
+Below is the command to use VS Code instead.
+
+```console
+git config --global core.editor "code --wait"
+```
+
 ## How do I know I have Git configured on my computer?
 
 You already have.
@@ -262,7 +270,7 @@ In VS Code, click on 'File | New file'
 
     ![In VS Code, click on 'New file'](vs_code_click_new_file.png)
 
-Type the file name `hello_world.py`. 
+Type the file name `hello_world.py`.
 
 ???- question "How does that look like?"
 
@@ -360,6 +368,9 @@ You will be working together with other learners a lot.
 Not being able to talk and/or share your screen and/or
 your camera is likely to make you feel excluded.
 
+<!--
+
+RJCB: this is already described, more concise and with more screenshots 
 
 ## Some installation and configuring procedures
 
@@ -395,6 +406,11 @@ your camera is likely to make you feel excluded.
     - `git` comes installed with all Linux distributions
     - To install `git`, do `sudo apt-get install git`
 
+-->
+
+<!--
+
+RJCB: Thiis is put in the git configuration section
 
 #### Using VS Code as a git editor
 
@@ -407,6 +423,12 @@ your camera is likely to make you feel excluded.
 ```console
 git config --global core.editor "code --wait"
 ```
+
+-->
+
+<!-- 
+
+RJCB: Put a simpler alternative in the git configuration section
 
 #### Git–GitHub connection through ssh keys
 
@@ -454,6 +476,12 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - If there was a problem, confer the full article [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
+-->
+
+<!--
+
+RJCB: what is actually needed is described at 'How to install Python'
+
 #### Python
 
 - Use what you already have
@@ -486,6 +514,12 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 - In Linux and Bash, Python should work from the command line by typing ``python``/``python3`` or running a script with ``python <script>``/``python3 <script>``
 
+-->
+
+<!--
+
+RJCB: described in the 'How to install the Python extension in VS Code
+
 #### Python in VS Code
 
 - Step 1. Install a supported version of Python on your system, see above.
@@ -495,29 +529,27 @@ pbcopy < ~/.ssh/id_ed25519.pub
     - Choose which Python interpreter to use.
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
 
+-->
+
 ## Courses
 
-#### Git courses
+[The 'Courses' section of the SCoRe user documentation](https://docs.score.nbis.se/courses/)
+shows an overview of many courses.
 
-- Learn the basics!
-- Choose one or several of these!
+Here we highlight some more courses:
 
-- Git courses
+- Git:
     - [NBIS](https://nbis-reproducible-research.readthedocs.io/en/course_2104/git/)
     - [Git by CodeRefinery](https://coderefinery.github.io/git-intro/)
     - [GitHub by CodeRefinery](https://coderefinery.github.io/git-collaborative/)
     - [NAISS](https://www.hpc2n.umu.se/events/courses/2024/fall/git)
-
-- [Pro Git book](https://git-scm.com/book/en/v2)
-
-
-#### Python courses
-
-- We assume familiarity with python at least equivalent
-- Learn the basics by choosing one or several of these  courses!
-
-    - [Python part](https://uppmax.github.io/naiss_intro_python/) of the UPPMAX introductory course
+- Python
+    - The 'Python' part of the [NAISS 'Intro to HPC Python' Day 1](https://uppmax.github.io/naiss_intro_python/)
     - [Python programming with applications to bioinformatics](https://uppsala.instructure.com/courses/85913).
+
+<!--
+
+RJCB: We use the terminal from VS Code
 
 ## Other solutions
 
@@ -570,6 +602,7 @@ There are some other solutions for installations but they are probably not suppo
 
 Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/)
 
+-->
 
 ## Course teaching
 
