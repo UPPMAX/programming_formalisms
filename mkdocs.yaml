@@ -12,7 +12,7 @@ nav:
   - Schedule: schedule.md
   - Conceptualization:
     - Course introduction: sessions/course_introduction/README.md
-    - Project setup: sessions/project_setup/README.md
+    - Project introduction: sessions/project_introduction/README.md
     - Software Development Lifecycle: sessions/lifecycle/README.md
     - Version control: sessions/version_control/README.md
     - Merge conflicts: sessions/merge_conflicts/README.md
