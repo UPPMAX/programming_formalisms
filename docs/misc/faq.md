@@ -19,7 +19,7 @@ If your question is not answered here,
 
 ## Credits
 
-### Can I get University Credits for this course?
+## Can I get University Credits for this course?
 
 No.
 
@@ -29,7 +29,7 @@ You can ask for a certificate after the course that helps with the decisions.
 
 ## Eligibility
 
-### I have never programmed before. Am I eligible?
+## I have never programmed before. Am I eligible?
 
 Not yet (for your own good)!
 
@@ -44,7 +44,7 @@ and you may feel bad about that.
 Take an introductory programming course first
 and then we hope to see you here again!
 
-### I am a non-Python programmer. Am I eligible?
+## I am a non-Python programmer. Am I eligible?
 
 Yes.
 
@@ -62,17 +62,17 @@ To make that possible for non-Python programmers:
 
 ## Preparation
 
-### How do I prepare?
+## How do I prepare?
 
 See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
-### How do I install VS Code?
+## How do I install VS Code?
 
 [Download VS Code from its homepage](https://code.visualstudio.com/download).
 
-### How do I know I have VS Code installed?
+## How do I know I have VS Code installed?
 
 You know if you have VS Code installed,
 if you can start the program.
@@ -81,11 +81,11 @@ if you can start the program.
 
     ![VS Code startup screen](vs_code_startup.png)
 
-### How do I install Git on my computer?
+## How do I install Git on my computer?
 
 You have Git installed when you have VS Code installed.
 
-### How do I know I installed Git on my computer?
+## How do I know I installed Git on my computer?
 
 Start VS Code.
 
@@ -123,7 +123,7 @@ You should see your Git version.
     ![VS Code shows the Git version](vs_code_view_git_version.png)
 
 
-### How do I configure Git on my computer?
+## How do I configure Git on my computer?
 
 Git is already configured on your computer.
 
@@ -158,18 +158,18 @@ to what needed to be copy-pasted into a terminal:
 git config --global merge.default merge
 ```
 
-### How do I know I have Git configured on my computer?
+## How do I know I have Git configured on my computer?
 
 You already have.
 
-### How do I get a GitHub account?
+## How do I get a GitHub account?
 
 Go to [the GitHub homepage](https://github.com/).
 and click on 'Sign up' at the top right.
 
 The free account is good enough for this course.
 
-### How do I know I have a GitHub account?
+## How do I know I have a GitHub account?
 
 Go to [the GitHub homepage](https://github.com/)
 and click on 'Log in' at the top right.
@@ -177,7 +177,7 @@ and click on 'Log in' at the top right.
 If you pass the login screen (you will be asked your username
 and password), you know you have a GitHub account.
 
-### How do I configure my GitHub account?
+## How do I configure my GitHub account?
 
 Your GitHub is already configured.
 
@@ -188,14 +188,14 @@ see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-throu
 
 -->
 
-### How do I install Python?
+## How do I install Python?
 
 There are many ways.
 
 [The 'Python' VS Code documentation](https://code.visualstudio.com/docs/languages/python)
 documents this well.
 
-### How do I know if I have Python installed?
+## How do I know if I have Python installed?
 
 By checking its version.
 
@@ -218,7 +218,7 @@ Python is installed.
 
     ![The Python version from VS Code](vs_code_python_version.png)
 
-### How do I run Python from VS Code?
+## How do I run Python from VS Code?
 
 You need to install the Python extension in VS Code.
 Here is a step-by-step guide.
@@ -251,7 +251,7 @@ You should now see that the Python extension is installed.
 
     ![The VS Code Python extention is installed](vs_code_python_extension_installed.png)
 
-### How can I check that I can run Python from VS Code?
+## How can I check that I can run Python from VS Code?
 
 By running a minimal Python script from VS Code.
 Below is the procedure to do so.
@@ -308,7 +308,7 @@ If the program shows 'Hello world', you can run Python from VS Code.
 
     ![The 'Hello world' program worked](vs_code_hello_world_worked.png)
 
-### How do I know that I know the basics of Python?
+## How do I know that I know the basics of Python?
 
 You know enough basic Python, if:
 
@@ -320,7 +320,7 @@ If you do not know enough Python,
 [chapters 1 and 2 of 'How to Think Like a Computer Scientist'](https://openbookproject.net/thinkcs/python/english3e/index.html)
 is all you need.
 
-### Why do you use VS Code?
+## Why do you use VS Code?
 
 Because it ...
 
@@ -330,7 +330,7 @@ Because it ...
 - has version control built-in
 - has a built-in terminal
 
-### Can I use PyCharm? Or IDLE? Or any other IDE?
+## Can I use PyCharm? Or IDLE? Or any other IDE?
 
 Yes.
 
@@ -341,7 +341,7 @@ Within your IDE, you will need:
 - To develop Python code as part of a Python package
 - To use Git for version control
 
-### How do I know I have a good Zoom setup?
+## How do I know I have a good Zoom setup?
 
 You have a Zoom good setup, if:
 
@@ -352,7 +352,7 @@ You have a Zoom good setup, if:
   If not, use a headset.
 
 
-### Do I really need a good Zoom setup?
+## Do I really need a good Zoom setup?
 
 Yes.
 
@@ -361,7 +361,7 @@ Not being able to talk and/or share your screen and/or
 your camera is likely to make you feel excluded.
 
 
-### Some installation and configuring procedures
+## Some installation and configuring procedures
 
 #### Git Bash
 
@@ -495,7 +495,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
     - Choose which Python interpreter to use.
 - Step 4. To run Python from a VS Code terminal (Bash or other) you may have to restart the shell
 
-### Courses
+## Courses
 
 #### Git courses
 
@@ -523,7 +523,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 There are some other solutions for installations but they are probably not supported by the teachers of the course.
 
-### Terminals
+## Terminals
 
 === "Windows"
 
@@ -553,7 +553,7 @@ There are some other solutions for installations but they are probably not suppo
     - [Installing and using Linux Bash on Windows](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
     - [Installing Linux Bash on Windows](https://itsfoss.com/install-bash-on-windows/)
 
-### Python from In Git-bash (Windows)
+## Python from In Git-bash (Windows)
 
 - Get it working from **Git Bash**
     - if the command ``type python`` gives you a path, then proceed
@@ -573,11 +573,11 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 
 ## Course teaching
 
-### What is the goal of the shared project?
+## What is the goal of the shared project?
 
 See [Projects](../sessions/project/README.md) for the goal of the shared project.
 
-### How is the course prepared?
+## How is the course prepared?
 
 - meetings
 - lesson plans in the course material
@@ -585,7 +585,7 @@ See [Projects](../sessions/project/README.md) for the goal of the shared project
   ['Misc } lesson_plans'](../lesson_plans/README.md)
   of this GitHub repository
 
-### What happens to the retrospectives?
+## What happens to the retrospectives?
 
 Retrospectives are:
 
@@ -596,11 +596,11 @@ Retrospectives are:
 - reflected upon, where the reflections can be found in
   [at 'Misc | Reflections'](../reflections/README.md)
 
-### Why do you publish your retrospectives?
+## Why do you publish your retrospectives?
 
 Because we like to be transparent.
 
-### What happens to the evaluations?
+## What happens to the evaluations?
 
 Evaluations are:
 
@@ -611,10 +611,10 @@ Evaluations are:
 - reflected upon, where the reflections can be found in
   ['Misc | Reflections'](../reflections/README.md)
 
-### Why do you publish your evaluations?
+## Why do you publish your evaluations?
 
 Because we like to be transparent.
 
-### Why do you publish your reflections?
+## Why do you publish your reflections?
 
 Because we like to be transparent.
