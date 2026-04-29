@@ -25,10 +25,12 @@ tags:
     - What is formal software development?
     - What are some examples of evidence-based best practices?
 
-## Course goal
+## Course goal summarized
 
-The goal of the 'Programming Formalisms' course is to teach
-formal and evidence-based best practices principles of software development.
+Summarized from
+[the goals of the 'Programming Formalisms' course](../../course_goals/README.md),
+is to teach formal and evidence-based best practices principles of
+software development.
 
 ## Course approach
 
