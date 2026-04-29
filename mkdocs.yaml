@@ -138,6 +138,7 @@ markdown_extensions:
   - mkdocs_graphviz
 
 plugins:
+  - search # Add search box
   - exclude:
       glob:
         - sessions/project_start/spring2024/startup.md
