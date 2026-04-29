@@ -15,6 +15,7 @@ These are books and academic papers that have influenced the course.
 
 Reference                     |PDF                                |One-line summary `[1]`
 ------------------------------|-----------------------------------|------------------------------------
+`[Bergström and Moberg, 2002]`|.                                  |Describes the weather data set
 `[Chacon and Straub, 2014]`   |[PDF](chacon_and_straub_2014.pdf)  |The book about `git`
 `[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
 `[Kroll et al., 2013]`        |[PDF](kroll_et_al_2013.pdf)        |Best practices in software development
@@ -45,6 +46,11 @@ for projects.
 
 They recommend to use Agile software development models,
 but it is unclear where they base this on exactly.
+
+## Summary of `[Bergström and Moberg, 2002]`
+
+This paper describes how the weather data, used in the learners
+project, has been obtained.
 
 ## Summary of `[Forsgren et al., 2018]`
 
@@ -402,6 +408,11 @@ Here is (a slightly adapted) box 1 from that paper:
   Barker, M., Chue Hong, N.P., Katz, D.S. et al.
   Introducing the FAIR Principles for research software.
   Sci Data 9, 622 (2022). [Fair4RS](https://rdcu.be/eNhd1)
+
+- `[Bergström and Moberg, 2002]` Bergström, Hans, and Anders Moberg.
+  "Daily air temperature and pressure series for Uppsala (1722–1998)."
+  Climatic change 53.1 (2002): 213-252.
+  [Paper homepage](https://doi.org/10.1023/A:1014983229213)
 
 - `[Bertram, 2009]` Bertram, Dane.
   "The social nature of issue tracking in software engineering."

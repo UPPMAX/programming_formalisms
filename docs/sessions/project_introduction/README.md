@@ -28,6 +28,14 @@ This project
 
 ## The research project
 
+You discovered data from the paper `[Bergström and Moberg, 2002]`,
+where the average temperature is measured on a daily basis
+since 1772 (yes, year seventeen-hundred-and-twenty-two)
+in Uppsala.
+
+You want to use this simple data set for a toy project
+to practice software development with.
+
 ## Exercises
 
 
@@ -35,18 +43,110 @@ This project
 
 Login to GitHub.
 
+???- question "I don't have a GitHub account?"
+
+    It is [a course prerequisite](../../prereqs.md) to have a GitHub
+    account.
+
+    If you forgot, then now is the time to make a (free) GitHub account :+1:
+
 Share your GitHub name [at this issue](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/issues/1)
 
 ???- question "What happens then?"
 
     The teachers will make you a member of the learners' project
 
-## Exercise 2: share your hypothesis to test
+## Exercise 2: take a look at the project data
+
+In this exercise, we'll take a look at the project data files
+that are the result of research described in `[Bergström and Moberg, 2002]`.
+The data files can be found in
+[the `data` of the learners project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/data/README.md).
+
+Take a look at the file `uppsala_tm_1722-2022.dat`.
+What is the purpose of this file?
+
+???- question "Answer"
+
+    This is a metadata file: it describes the data
+
+Take a look at the file `uppsala_tm_1722-2022.txt`.
+What is the purpose of this file?
+
+???- question "Answer"
+
+    This file contains the actual data.
+
+How would you describe the content of these files together?
+
+???- question "Answer"
+
+    These files describe the average daily temperature in Uppsala.
+
+<!--
+There are three more files. What are these about?
+
+???- question "Answer"
+
+    These files describe the individually measured temparatures
+    as measured in Kiruna (a town in the far North of Sweden),
+    Lund (a city in the far West of Sweden)
+    and Uppsala.
+
+Of these four datasets, which is/are easiest to work with? Why?
+
+???- question "Answer"
+
+    The files with the average temperature in Uppsala.
+
+    These are easiest to work with, as the file with
+    data (`uppsala_tm_1722-2022.dat`) can be directly read
+    by a computer.
+    The metadata file only needs to be read by humans.
+
+    The individual weather measurement files need some *parsing*, i.e.
+    specialized code is needed to convert this text into a table.
+
+-->
+
+## Exercise 3: share your hypothesis to test
 
 Read [the research project](#the-research-project).
 
 In a file, write down one or more hypotheses one could test with that
 data.
+
+???- question "I cannot come up with a hypothesis"
+
+    Sure, here are some:
+
+    ???- info "Example hypothesis 1"
+
+        Does the yearly average temperate increase over time?
+
+    ???- info "Example hypothesis 2"
+
+        Does the different between yearly minimum and maximum temperature
+        increase over time?
+
+    ???- info "Example hypothesis 3"
+
+        Can daily temperatures be approximated by a (co)sine function?
+
+    ???- info "Example hypothesis 4"
+
+        Is the day with the least amount of sun
+        (i.e. winter soltice, December 21st)
+        the coldest day of the year?
+
+        Is the day with the most amount of sun
+        (i.e. summer soltice, June 21st)
+        the warmest day of the year?
+
+    ???- info "Example hypothesis 5"
+
+        Have the dates for the coldest and warmest day of the year
+        moved in time?
 
 ???- question "Does it matter what kind of file?"
 
@@ -225,6 +325,12 @@ This paper shared 10 simple rules to take advantage of `git` and GitHub:
 - Rule 10: Use GitHub to Be Social: Follow and Watch
 
 -->
+
+
+- `[Bergström and Moberg, 2002]` Bergström, Hans, and Anders Moberg.
+  "Daily air temperature and pressure series for Uppsala (1722–1998)."
+  Climatic change 53.1 (2002): 213-252.
+  [Paper homepage](https://doi.org/10.1023/A:1014983229213)
 
 
 ## Old
