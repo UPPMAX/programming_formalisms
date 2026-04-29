@@ -179,35 +179,68 @@ see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-throu
 
 ### How do I install Python?
 
+There are many ways.
+
+[The 'Python' VS Code documentation](https://code.visualstudio.com/docs/languages/python)
+documents this well.
+
 ### How do I know if I have Python installed?
 
 By checking its version.
 
-In a terminal, run:
+In VS Code, create a new terminal
+
+???- question "How does that look like?"
+
+    ![In VS Code, create a new terminal](vs_code_create_new_terminal.png)
+
+In the VS Code terminal, type:
 
 ```bash
 python --version
 ```
 
-or
-
-```bash
-python3 --version
-```
-
 If you see your Python version (i.e. not an error message),
 Python is installed.
 
-If not working, follow the [installation steps](faq.md#python)
-suitable for you and/or
-[instructions for Python in VSCode](faq.md#python-in-vs-code).
+???- question "How does that look like?"
+
+    ![The Python version from VS Code](vs_code_python_version.png)
 
 ### Can you run Python from VS Code?
 
 Yes.
 
-We even use VS Code to install Python,
-as VS Code has an easy to install Python plugin.
+You do need to install the Python extension in VS Code.
+Here is a step-by-step guide.
+
+In VS Code, click on the 'Extensions' panel.
+
+???- question "Where is that panel?"
+
+    ![Click on the 'Extensions' panel](vs_code_click_extensions.png)
+
+???- question "How does that look like?"
+
+    ![The 'Extensions' panel](vs_code_extensions_panel.png)
+
+In the 'Extensions' panel, type 'Python' in the search box.
+
+???- question "How does that look like?"
+
+    ![Click on 'Install' of the first results](vs_code_install_python_extension.png)
+
+In the search results, click on 'Install' of the first result.
+
+???- question "How does that look like?"
+
+    ![Click on 'Install' of the first results](vs_code_install_python_extension.png)
+
+You should now see that the Python extension is installed.
+
+???- question "How does that look like?"
+
+    ![The VS Code Python extention is installed](vs_code_python_extension_installed.png)
 
 ### How do I know that I know the basics of Python?
 
