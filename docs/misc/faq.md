@@ -68,19 +68,53 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
+### How do I install VS Code installed?
+
+[Download VS Code from its homepage](https://code.visualstudio.com/download).
+
 ### How do I know I have VS Code installed?
 
 You know if you have VS Code installed,
-if you can start this program
-and it looks like this:
+if you can start the program.
 
-![VSCode start](../img/VSCode.png)
+???- question "How does that look like?"
 
-Otherwise, [download here](https://code.visualstudio.com/download)
+    ![VS Code startup screen](vs_code_startup.png)
 
-### How do I know I have Git configured on my computer?
+### How do I install Git on my computer?
 
-You already have.
+You have Git installed when you have VS Code installed.
+
+### How do I know I installed Git on my computer?
+
+Start VS Code.
+
+???- question "How does that look like?"
+
+    ![VS Code startup screen](vs_code_startup.png)
+
+In VS Code, create a new terminal
+
+???- question "How does that look like?"
+
+    ![In VS Code, create a new terminal](vs_code_create_new_terminal.png)
+
+In the VS Code terminal, type:
+
+```bash
+git --version
+```
+
+You should see your Git version.
+
+???- question "How does that look like?"
+
+    ![VS Code shows the Git version](vs_code_view_git_version.png)
+
+
+### How do I configure Git on my computer?
+
+Git is already configured on your computer.
 
 You can consider to configure Git to ask you for a password every 10 hours.
 If you enjoy this, these two lines needed to be copy-pasted
@@ -113,14 +147,37 @@ to what needed to be copy-pasted into a terminal:
 git config --global merge.default merge
 ```
 
+### How do I know I have Git configured on my computer?
+
+You already have.
+
+### How do I get a GitHub account?
+
+Go to [the GitHub homepage](https://github.com/).
+and click on 'Sign up' at the top right.
+
+The free account is good enough for this course.
+
 ### How do I know I have a GitHub account?
 
-You have set up a GitHub account, if you can login at
-[https://github.com/](https://github.com/).
+Go to [the GitHub homepage](https://github.com/)
+and click on 'Log in' at the top right.
 
-Otherwise, sign up for GitHub account, following these [instructions](https://coderefinery.github.io/installation/github/)
+If you pass the login screen (you will be asked your username
+and password), you know you have a GitHub account.
 
-A second step is to connect Git and GitHub in a nice way, see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
+### How do I configure my GitHub account?
+
+Your GitHub is already configured.
+
+<!--
+
+You can consider to connect Git and GitHub in a nice way,
+see [Git–GitHub connection through ssh keys](faq.md#gitgithub-connection-through-ssh-keys)
+
+-->
+
+### How do I install Python?
 
 ### How do I know if I have Python installed?
 
