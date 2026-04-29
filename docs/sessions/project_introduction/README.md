@@ -354,11 +354,6 @@ This paper shared 10 simple rules to take advantage of `git` and GitHub:
 
     - We hope also that you have already done these steps
       [at the 'Prerequisites' page of this course](../../misc/faq.md/#prerequisites)
-    - **Git and GitHub should be configured prior to the course**
-        - Note that Mac users may need to run a command from the terminal to be able to run ``git``: ``sudo xcodebuild -license accept``
-        - [Configure Git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#configure-git)
-            - like: ``git config --global user.name "Mona Lisa"``
-            - like: ``git config --global user.email "mona_lisa@gmail.com"``
 
 ## Get a local clone of the project
 

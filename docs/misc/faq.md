@@ -54,6 +54,8 @@ To make that possible for non-Python programmers:
 - code will be simple and/or copy-pasted
 - learners are usually paired up,
   so that usually one of the learners knows Python.
+- you may use a web search and/or AI to write (non-test) Python code:
+  this course shows how to make sure that that code is correct
 
 ## Preparation
 
@@ -211,12 +213,32 @@ your camera is likely to make you feel excluded.
 git config --global core.editor "code --wait"
 ```
 
-#### Configure git
+## Setup Git
 
-**This must be done**
+It is [a course prerequisite](../prereqs.md) to
+'have Git configured on your computer'.
 
-Follow these instructions. [https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git](https://nbis-reproducible-research.readthedocs.io/en/course_2104/setup/#installing-git)
+However, `git` does indicate clearly when it needs you to make a
+choice: read what it states and then pick your favorite choice.
 
+Regardless, below are some choices Git wants you to make.
+
+Upon a commit, Git needs to know who you are.
+Below is an example of the two lines needed to be copy-pasted
+into a terminal:
+
+```bash
+git config --global user.name "Mona Lisa"
+git config --global user.email "mona_lisa@gmail.com"
+```
+
+Upon a merge, Git needs to know how you want to do so.
+Below is an example of the recommended choice
+to what needed to be copy-pasted into a terminal:
+
+```bash
+git config --global merge.default merge
+```
 
 #### Git–GitHub connection through ssh keys
 
