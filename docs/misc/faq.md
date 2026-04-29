@@ -14,6 +14,9 @@ The frequently asked questions, about:
 - [course teaching](#course-teaching),
   i.e. how the course is conducted and ideas behind it
 
+If your question is not answered here,
+[contact us](../contact_us.md) :+1:
+
 ## Credits
 
 ### Can I get University Credits for this course?
@@ -65,11 +68,6 @@ See [prerequisites](../prereqs.md) for how to prepare.
 
 ## Prerequisites
 
-!!! warning
-
-    - This page may be updated during the next days.
-    - Please email back to Björn to let us know if somthing is unclear in the instructions!
-
 ### How do I know I have VS Code installed?
 
 You know if you have VS Code installed,
@@ -80,12 +78,40 @@ and it looks like this:
 
 Otherwise, [download here](https://code.visualstudio.com/download)
 
-### How do I know I have a Git account configured on your computer?
+### How do I know I have Git configured on my computer?
 
-**Git (specific installation may be required) and terminals are already integrated in VS Code and can be the first choice**
-Otherwise follow the steps in [some installation procedures](faq.md#some-installation-and-configuring-procedures)!
+You already have.
 
-Check [configure git section](faq.md#configure-git)
+You can consider to configure Git to ask you for a password every 10 hours.
+If you enjoy this, these two lines needed to be copy-pasted
+into a terminal:
+
+```bash
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=36000'
+```
+
+Besides that, Git does indicate clearly when it needs you to make a
+choice: read what it states and then pick your favorite choice.
+
+Regardless, below are some choices Git wants you to make.
+
+Upon a commit, Git needs to know who you are.
+Below is an example of the two lines needed to be copy-pasted
+into a terminal:
+
+```bash
+git config --global user.name "Mona Lisa"
+git config --global user.email "mona_lisa@gmail.com"
+```
+
+Upon a merge, Git needs to know how you want to do so.
+Below is an example of the recommended choice
+to what needed to be copy-pasted into a terminal:
+
+```bash
+git config --global merge.default merge
+```
 
 ### How do I know I have a GitHub account?
 
@@ -98,13 +124,26 @@ A second step is to connect Git and GitHub in a nice way, see [Git–GitHub conn
 
 ### How do I know if I have Python installed?
 
-You have installed Python, if
+By checking its version.
 
-```text
-In a terminal, running `python --version` or `python3 --version` shows the Python version.
+In a terminal, run:
+
+```bash
+python --version
 ```
 
-- If not working, follow the [installation steps](faq.md#python) suitable for you and/or [instructions for Python in VSCode](faq.md#python-in-vs-code).
+or
+
+```bash
+python3 --version
+```
+
+If you see your Python version (i.e. not an error message),
+Python is installed.
+
+If not working, follow the [installation steps](faq.md#python)
+suitable for you and/or
+[instructions for Python in VSCode](faq.md#python-in-vs-code).
 
 ### Can you run Python from VS Code?
 
@@ -132,7 +171,7 @@ Because it ...
 - is free (as in beer)
 - works on all operating systems
 - has plugins that are easy to install to develop Python code as part of a Python package
-- has `git` for version control built-in
+- has version control built-in
 - has a built-in terminal
 
 ### Can I use PyCharm? Or IDLE? Or any other IDE?
@@ -144,7 +183,7 @@ However, we may not be able to help you with your IDE problems.
 Within your IDE, you will need:
 
 - To develop Python code as part of a Python package
-- To use `git` for version control
+- To use Git for version control
 
 ### How do I know I have a good Zoom setup?
 
@@ -211,33 +250,6 @@ your camera is likely to make you feel excluded.
 
 ```console
 git config --global core.editor "code --wait"
-```
-
-## Setup Git
-
-It is [a course prerequisite](../prereqs.md) to
-'have Git configured on your computer'.
-
-However, `git` does indicate clearly when it needs you to make a
-choice: read what it states and then pick your favorite choice.
-
-Regardless, below are some choices Git wants you to make.
-
-Upon a commit, Git needs to know who you are.
-Below is an example of the two lines needed to be copy-pasted
-into a terminal:
-
-```bash
-git config --global user.name "Mona Lisa"
-git config --global user.email "mona_lisa@gmail.com"
-```
-
-Upon a merge, Git needs to know how you want to do so.
-Below is an example of the recommended choice
-to what needed to be copy-pasted into a terminal:
-
-```bash
-git config --global merge.default merge
 ```
 
 #### Git–GitHub connection through ssh keys
