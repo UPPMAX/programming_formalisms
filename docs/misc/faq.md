@@ -93,7 +93,18 @@ Start VS Code.
 
     ![VS Code startup screen](vs_code_startup.png)
 
-In VS Code, create a new terminal
+If you see the 'Source control' panel at the left,
+you can assume Git is installed.
+
+???- question "Where is that panel?"
+
+    It is at the left side of the screen
+
+    ![The VS Code source control panel](vs_code_source_control.png)
+
+If you want to be really sure, then, follow the rest of the procedure.
+
+In VS Code, create a new terminal.
 
 ???- question "How does that look like?"
 
