@@ -42,8 +42,8 @@ software development.
 Explore the website of the course. Where you can you find
 the things below?
 
-- The schedule
-- The sessions
-- A description of the course project
-- Earlier evaluation results
-- The [literature used by this course](../../literature/README.md)
+- [The schedule](../../schedule.md)
+- [A description of the course project](../project/README.md)
+- [Earlier evaluation results](../../evaluations/README.md)
+- [The literature used by this course](../../literature/README.md)
+- [Form for anonymous feedback](../../misc/feedback/README.md)
