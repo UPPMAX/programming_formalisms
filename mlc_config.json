@@ -1,5 +1,5 @@
 {
-  "aliveStatusCodes": [0, 200, 202, 403, 418, 420, 429, 502, 503, 520],
+  "aliveStatusCodes": [0, 200, 202, 403, 418, 420, 429, 500, 502, 503, 520],
   "ignorePatterns": [
     {
       "pattern": "https://www.sciencedirect.com/science/article/pii/S0308521X01000543"
