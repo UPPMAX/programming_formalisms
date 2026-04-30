@@ -17,7 +17,7 @@ Day       | Time        | Teacher           | Subject
 Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/course_introduction/README.md)
 .         | .           | Richèl Bilderbeek |[Project introduction](sessions/project_introduction/README.md)
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-10:55 | Richèl Bilderbeek |[Registered report](sessions/registered_report.md)
+.         | 10:15-10:55 | Richèl Bilderbeek |[Registered report](sessions/registered_report/README.md)
 .         | 11:10-12:00 | Lars Eklund       |Lars decides here
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-15:40 | Lars Eklund       |[Define and plan project](sessions/project_start/analysis_design/README.md)

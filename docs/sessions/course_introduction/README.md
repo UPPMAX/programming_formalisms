@@ -47,4 +47,4 @@ the things below?
 - [Earlier evaluation results](../../evaluations/README.md)
 - [The literature used by this course](../../literature/README.md)
 - [Form for anonymous feedback](../../misc/feedback.md)
-- [The FAQ how to run Python code from VS Code](../../misc/faq/#how-do-i-run-python-from-vs-code)
+- [The FAQ how to run Python code from VS Code](../../misc/faq.md#how-do-i-run-python-from-vs-code)
