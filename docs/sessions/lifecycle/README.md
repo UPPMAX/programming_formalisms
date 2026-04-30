@@ -61,9 +61,13 @@ Decommission         |Archive or delete the software
 ## Software development lifecycles
 
 The software development lifecycle is the way how you
-transitions between phases,
-with the most important distinction being
-a traditional versus an Agile model `[Yas et al., 2023]`:
+transitions between phases.
+There are many software development lifecycles.
+Yas and colleagues collected the most important ones
+and described the advantages and disadvantages of each
+cycle `[Yas et al., 2023]`.
+Here I follow their primary grouping of development lifecycles,
+following either a traditional or an Agile model `[Yas et al., 2023]`:
 
 Model    |Description                                             |Example            |Overview
 ---------|--------------------------------------------------------|-------------------|-------------------
@@ -72,8 +76,9 @@ Agile    |Cycle through each of the phases often, in small changes|eXtreme Progr
 
 Note that a software development lifecycle does not need to be a cycle :-)
 
-`[Leau et al., 2012]` (Table 1) gives a comparison of traditional
-versus agile software development:
+The same grouping is used by Leau and colleagues ,
+where they gives a comparison of traditional
+versus agile software development `[Leau et al., 2012]` (Table 1):
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
 
