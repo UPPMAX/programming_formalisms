@@ -86,7 +86,7 @@ You can look it up at [the session about version control](../version_control/REA
     repository'.
 
 Start VS Code and try to clone and open the learners project
-without looking at the answers. 
+without looking at the answers.
 
 ???- question "How do I do this?"
 
@@ -154,7 +154,7 @@ without looking at the answers.
 
 In VS Code (with the learners project loaded),
 try to see the project commit history,
-without looking at the answers. 
+without looking at the answers.
 
 ???- question "How do I do this?"
 
