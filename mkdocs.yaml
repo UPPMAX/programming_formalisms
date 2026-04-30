@@ -13,6 +13,7 @@ nav:
   - Conceptualization:
     - Course introduction: sessions/course_introduction/README.md
     - Project introduction: sessions/project_introduction/README.md
+    - Registered report: sessions/registered_report/README.md
     - Software Development Lifecycle: sessions/lifecycle/README.md
     - Version control: sessions/version_control/README.md
     - Merge conflicts: sessions/merge_conflicts/README.md

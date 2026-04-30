@@ -289,8 +289,6 @@ The folder containing the GitHub Actions scripts
     
     This is the standarized name used by GitHub.
 
-The folder containing the GitHub Actions scripts
-
 ???- question "What are 'GitHub Actions scripts'?"
 
     These are scripts that are run upon a new online commit.

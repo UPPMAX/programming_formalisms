@@ -167,6 +167,9 @@ What would be your rule for a good commit message?
 
 ## Exercise 2: change a file using the GitHub web interface
 
+Change a file you created in the `learners` folder (if there is none,
+create one).
+
 ## Exercise 3: clone the learners project from VS Code
 
 ???- question "Prefer a video?"
@@ -177,6 +180,11 @@ What would be your rule for a good commit message?
 ## Exercise 4: view the learners project history from VS Code
 
 ## Exercise 5: change a file from VS Code
+
+## Exercise 6: sketch a research project from VS Code
+
+
+
 
 ## References
 
