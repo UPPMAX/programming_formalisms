@@ -5,6 +5,7 @@
     Learners ...
 
     - understand what version control is
+    - can see the history of a project
 
 ??? question "For teachers"
 
@@ -13,6 +14,7 @@
     - What is meant by 'Version control'?
     - What is a version control system?
     - Could you name a tool or program that is a version control system?
+    - What is a commit?
 
 ## What is version control?
 
@@ -54,13 +56,35 @@ as no collaborator can truely destroy your work.
 
 ## The file status in version control
 
+From a version control perspective,
+a file one of these Three Stages `[Chacon and Straub, 2014]` (chapter 1.3,
+paragraph 'The Three Stages'):
+
+File status |Description
+------------|---------------------------------------------------
+Modified    |File(s) that are different than the online version
+Staged      |File(s) on the stage
+Committed   |File(s) that are part of a change
+
+There are two more statuses:
+
 File status |Description
 ------------|---------------------------------------------------
 Untracked   |File(s) without version control
-Staged      |File(s) on the stage
-Committed   |File(s) that are part of a change
 Unmodified  |File(s) that are identical to the online version
-Changed     |File(s) that are different than the online version
+
+Here is the cycle of these file statuses:
+
+```mermaid
+graph TB
+  untracked
+  modified
+  staged
+  commited
+  unmodified
+
+  untracked --> modified --> staged --> commited --> unmodified --> modified
+```
   
 ## The verbs in version control
 
@@ -73,32 +97,75 @@ commit|Give a name to the change(s) made to the staged file(s)
 push  |Upload
 pull  |Update
 
-## The version control workflow
+Here is the cycle of these verbs:
 
-Git based stages                                                      |VS Code stages
-----------------------------------------------------------------------|----------------------------------------------------------------------
-`mermaid graph TB; clone --> add --> commit --> push --> pull --> add`|`mermaid graph TB; clone --> commit --> sync --> commit`
-
-Git based:
 
 ```mermaid
 graph TB
-  clone --> add
-  add --> commit --> push --> pull --> add
+  clone --> add --> commit --> push --> pull --> add
 ```
 
-VS Code:
+VS Code simplifies this somewhat to this:
 
-```
+```mermaid
 graph TB
   clone --> commit --> sync --> commit
 ```
 
 ## Exercises
 
-## Exercise 1: view the learners project history from the GitHub web interface
+## Exercise 1: view the learners project history from the web interface
 
-## Exercise 2: change a file from the GitHub web interface
+The learners project has a history.
+Search the web interface on how to view it.
+Tip: look for the word 'Commits'.
+View it using the web interface.
+
+???- question "Where is it?"
+
+    It is at the top-right side:
+
+    ![Click on 'Commits'](click_commits.png)
+
+???- question "How does it look like?"
+
+    It will look similar to this:
+
+    ![Commit history](commit_history.png)
+
+Now we have seen a commit history, how would you define what a commit is?
+
+???- question "Answer"
+
+    The answer is similar to this definition:
+
+    A commit is one or more changes to one or more files
+    that has a short message that describes the change(s).
+
+Judge the commit messages.
+What would be your rule for a good commit message?
+
+???- question "Answer"
+
+    This is not an easy answer, as the academic literature is divided.
+
+    However, a common theme is that a good commit messages describes:
+
+    - What: the summary of the code change
+    - Why: the motivation/reason behind it
+
+    Then recommended is:
+
+    - A good commit message should have both `[Li and Ahmed, 2023]`
+    - A good commit message can be either `[Tian et al, 2022]`
+
+    Would I (Richel) come up with a rule, it would be:
+    a commit message should match
+    what you would say to a human to help him/her understand the reason of
+    the change in a place where communication is hard (e.g. a place with
+    loud music, so that you need to yell, while having a sore throat)
+
+## Exercise 2: change a file using the GitHub web interface
 
 ## Exercise 3: clone the learners project from VS Code
 
@@ -112,6 +179,10 @@ graph TB
 ## Exercise 5: change a file from VS Code
 
 ## References
+
+- `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
+  Pro git. Springer Nature, 2014.
+  [Book homepage](https://git-scm.com/book/en/v2).
 
 - `[Forsgren et al., 2018]` Forsgren, Nicole, Jez Humble, and Gene Kim.
   Accelerate: The science of lean software and devops:

@@ -136,6 +136,14 @@ Suitable Project scale               |Low to medium-scaled                      
 
 <!-- markdownlint-enable MD013 -->
 
+## Summary of `[Li and Ahmed, 2023]`
+
+This paper is about the impact and evolution of commit message quality.
+
+They define a good commit message as such:
+
+> it should have both the summary of the
+> code change (What) and the motivation/reason behind it (Why).
 
 ## Summary of `[Pastrana et al., 2025]`
 
@@ -295,6 +303,16 @@ your infrastructure to achieve reproducible research:
 - Data must be available and accessible
 - Code and methods must be available and accessible
 - All 3rd party data and software should be cited
+
+## Summary of `[Tian et al, 2022]`
+
+This paper describes what makes a good commit message,
+classifying good commit messages in 'What' and 'Why'
+categories.
+
+It does describe reasonably clear what is a bad commit message,
+however, it not give any clear guidance on what is a good commit message.
+
 
 ## Summary of `[Visser et al., 2016]`
 
@@ -476,6 +494,13 @@ Here is (a slightly adapted) box 1 from that paper:
   International Conference on Information and Network Technology.
   Vol. 37. No. 1. 2012.
 
+- `[Li and Ahmed, 2023]` Li, Jiawei, and Iftekhar Ahmed.
+  "Commit message matters: Investigating impact and evolution of
+  commit message quality."
+  2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE).
+  IEEE, 2023.
+  [Paper homepage](https://doi.org/10.1109/ICSE48619.2023.00076)
+
 - `[Ordoñez-Pacheco et al., 2021]`
   Ordoñez-Pacheco, Rodrigo, Karen Cortes-Verdin, and Jorge Octavio
   Ocharán-Hernández.
@@ -531,6 +556,12 @@ Here is (a slightly adapted) box 1 from that paper:
 
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”?
   Software, IEEE. 1988 Jun 1;5:10–20.
+
+- `[Tian et al, 2022]` Tian, Yingchen, et al.
+  "What makes a good commit message?."
+  Proceedings of the 44th International Conference on Software Engineering.
+  2022.
+  [Paper homepage](https://doi.org/10.1145/3510003.3510205)
 
 - `[Visser et al., 2016]` Visser, Joost, et al.
   Building software teams: Ten best practices for
