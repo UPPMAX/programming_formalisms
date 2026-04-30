@@ -37,6 +37,14 @@ Reference                     |PDF                                |One-line summ
 
 These are summaries of some of the papers mentioned.
 
+## Summary of `[Allen and Mehler, 2019]`
+
+This paper addresses challenges and misconceptions on adopting
+open science principles in a scientific career.
+
+It shows a figure in which it is shows that traditional literature,
+compared to registered reports, reports on null findings 4x less likely.
+
 ## Summary of `[Aniley et al., 2024]
 
 This paper seems useful at first glance:
@@ -51,6 +59,14 @@ but it is unclear where they base this on exactly.
 
 This paper describes how the weather data, used in the learners
 project, has been obtained.
+
+## Summary of `[Chambers, 2019]`
+
+This comment (i.e. an article that introduces multiple papers)
+described the current and future challanges of registered reports.
+
+It has a cartoon that illustrates the difference between
+traditional science and registered reports.
 
 ## Summary of `[Forsgren et al., 2018]`
 
@@ -144,6 +160,13 @@ They define a good commit message as such:
 
 > it should have both the summary of the
 > code change (What) and the motivation/reason behind it (Why).
+
+
+## Summary of `[Munafò et al., 2017]`
+
+This paper describes practices that hinder reproducibility
+of scientific findings, as well as measures to increase reproducibility
+of scientific findings, such as using registered reports.
 
 ## Summary of `[Pastrana et al., 2025]`
 
@@ -287,6 +310,20 @@ I used
 [the Doc2Lang image to table converter](https://doc2lang.com/image-to-table)
 to convert the image to a table
 
+
+## Summary of `[Soderberg et al., 2021]`
+
+This paper shows that registered reports result in better
+science, compared to 'regular' papers.
+
+In this experiment, researches selected 'regular' papers
+and registered reports. The researchers then asked reviewers
+to score papers on the feature shown in the figure,
+where these reviewers were unaware of this experimental variable.
+
+For all features (including 'Creativity'), registered reports
+scored higher.
+
 ## Summary of `[Stieler and Bauer, 2023]`
 
 Applies `[Serban et al., 2020]` for a data-centric AI project called GW4AL.
@@ -418,6 +455,11 @@ Here is (a slightly adapted) box 1 from that paper:
 
 ## References
 
+- `[Allen and Mehler, 2019]` Allen, Christopher, and David MA Mehler.
+  "Open science challenges, benefits and tips in early career and beyond."
+  PLoS biology 17.5 (2019): e3000246.
+  [Paper homepage](https://doi.org/10.1371/journal.pbio.3000246)
+
 - `[Aniley et al., 2024]` Aniley, D. Bitew, E. Alemneh Jalew,
   and G. Abeba Agegnehu. "Selection of software development life cycle
   models using machine learning approach." Int J Comput Appl 186 (2024): 36-43.
@@ -443,6 +485,10 @@ Here is (a slightly adapted) box 1 from that paper:
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
   Pro git. Springer Nature, 2014.
   [Book homepage](https://git-scm.com/book/en/v2).
+
+- `[Chambers, 2019]` Chambers, Chris. "What’s next for registered reports?."
+  Nature 573.7773 (2019): 187-189.
+  [Comment (i.e. it is not a paper) homepage](https://doi.org/10.1038/d41586-019-02674-6)
 
 - `[Church, 1941]` The  Calculi of lambda-conversion, Princeton,
   Princeton University Press,
@@ -501,6 +547,11 @@ Here is (a slightly adapted) box 1 from that paper:
   IEEE, 2023.
   [Paper homepage](https://doi.org/10.1109/ICSE48619.2023.00076)
 
+- `[Munafò et al., 2017]` Munafò, Marcus R., et al.
+  "A manifesto for reproducible science."
+  Nature human behaviour 1.1 (2017): 0021.
+  [Paper homepage](https://doi.org/10.1038/s41562-016-0021)
+
 - `[Ordoñez-Pacheco et al., 2021]`
   Ordoñez-Pacheco, Rodrigo, Karen Cortes-Verdin, and Jorge Octavio
   Ocharán-Hernández.
@@ -536,6 +587,12 @@ Here is (a slightly adapted) box 1 from that paper:
   International Symposium on Empirical Software Engineering and
   Measurement (ESEM). 2020.
   [Paper homepage](https://doi.org/10.1145/3382494.3410681)
+
+- `[Soderberg et al., 2021]` Soderberg, Courtney K., et al.
+  "Initial evidence of research quality of registered reports
+  compared with the standard publishing model."
+  Nature Human Behaviour 5.8 (2021): 990-997.
+  [Paper homepage](https://doi.org/10.1038/s41562-021-01142-4)
 
 - `[Sravani et al., 2023]` Sravani, Diyyala, et al.
   "Python security in devOps: Best practices for secure coding,

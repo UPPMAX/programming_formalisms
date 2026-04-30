@@ -6,14 +6,15 @@
 
     - understand what a registered report is
     - understand the goal of the learners project
+    - create an informal design document
 
 ??? question "For teachers"
 
     Prior:
 
-    - What is a preregistration?
+    - How do you design your research project?
+    - How does an ideal program looks like?
     - What is a registered report?
-    - 
 
 ## What is a registered report?
 
@@ -56,6 +57,14 @@ is made public upon publication.
     The values are in the standardized effect size metric, i.e.
     a value of 1.0 means that this value is 1.0 standard deviations higher.
 
+## How does a registered report blend with this course?
+
+A registered report is a more informal form of design,
+that is close to what scientists are familiar with,
+that fits perfectly well with the phase of the course.
+
+## An example draft registered report
+
 Introduction: industrialization may have an impact on the climate
 
 Hypothesis: the average yearly temperature remains the same
@@ -74,12 +83,68 @@ Conclusion: if the distributions are similar,
 Discussion: this is only a correlational study, with no direct link
   between temperature and industrialization being measured
 
+## Exercises
 
+## Exercise 1: the ideal program
 
-  
+In this course, we will create a Python package for a research project.
+This package should create all texts, tables and figures needed for
+publication.
 
+What would be your ideal use of this Python package?
+That is, how would you **ideally** document the Python code
+on how to (re)do the experiment?
 
+???- question "Answer"
 
+    This answer is personal.
+
+    However, I (Richel) think the following use is close to ideal:
+
+    ```python
+    import weather
+    weather.do_experiment()
+    ```
+
+    I use `weather` as the name of the Python package, but any reasonable
+    name will do.
+
+    I think this code is ideal, as it is both readable and short.
+    
+Do you agree with the answer?
+
+## Exercise 2: output from the ideal program
+
+Assume an ideal program to do the experiment described
+at ['an example draft registered report'](#an-example-draft-registered-report).
+
+What should this program produce *at least*?
+Can you imagine other things that may be produced that can be
+used in the final paper?
+
+???- question "Answer"
+
+    It should at least produce:
+
+    - The p value of the statistical experiment
+
+    It may also produce:
+
+    - A figure showing the two distribution of weather temperatures
+      (i.e. the first/earliest third and the last/latest third),
+      with an indication if these distributions differ
+
+## Exercise 3: your draft registered report
+
+In an earlier exercises, you've written down a hypothesis.
+
+In this exercise, expand on this hypothesis and turn it into
+a draft registered report. Make the report as minimal as possible:
+it should serve as an informal design document,
+not be a full journal submission. You are allowed to make things up
+if needed.
+ 
+Save your results in the learners project, in the `learners` folder.
 
 ## References
 
@@ -95,6 +160,7 @@ Discussion: this is only a correlational study, with no direct link
 - `[Munafò et al., 2017]` Munafò, Marcus R., et al.
   "A manifesto for reproducible science."
   Nature human behaviour 1.1 (2017): 0021.
+  [Paper homepage](https://doi.org/10.1038/s41562-016-0021)
 
 - `[Soderberg et al., 2021]` Soderberg, Courtney K., et al.
   "Initial evidence of research quality of registered reports
