@@ -89,32 +89,6 @@ How would you describe the content of these files together?
 
     These files describe the average daily temperature in Uppsala.
 
-<!--
-There are three more files. What are these about?
-
-???- question "Answer"
-
-    These files describe the individually measured temparatures
-    as measured in Kiruna (a town in the far North of Sweden),
-    Lund (a city in the far West of Sweden)
-    and Uppsala.
-
-Of these four datasets, which is/are easiest to work with? Why?
-
-???- question "Answer"
-
-    The files with the average temperature in Uppsala.
-
-    These are easiest to work with, as the file with
-    data (`uppsala_tm_1722-2022.dat`) can be directly read
-    by a computer.
-    The metadata file only needs to be read by humans.
-
-    The individual weather measurement files need some *parsing*, i.e.
-    specialized code is needed to convert this text into a table.
-
--->
-
 ## Exercise 3: share your hypothesis to test
 
 Read [the research project](#the-research-project).
@@ -348,74 +322,3 @@ This paper shared 10 simple rules to take advantage of `git` and GitHub:
   "Daily air temperature and pressure series for Uppsala (1722–1998)."
   Climatic change 53.1 (2002): 213-252.
   [Paper homepage](https://doi.org/10.1023/A:1014983229213)
-
-
-## Old
-
-## VS Code terminal
-
-- We will work as much as possible (almost) in the VS Code graphical interface for Git
-- However, some things are better (or only) handled from a terminal/command line.
-
-- You find the Git Bash terminal From the menu (different on mac and windows)
-
-![VS Code terminal](../../img/commandline_VSC.png)
-
-## Before we continue we need to configure Git
-
-!!! attention
-
-    - Start VS Code
-
-??? warning "This should have been done already"
-
-    - We hope also that you have already done these steps
-      [at the 'Prerequisites' page of this course](../../misc/faq.md/#prerequisites)
-
-## Get a local clone of the project
-
-???- question "Exercise 2a: clone course project using VS code (4 min)"
-
-    - Start VS code
-    - Start new window
-
-    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
-
-    ???- question "Where is this?"
-
-        ``https://github.com/programming-formalisms/programming_formalisms_project_summer_2026``
-
-    ???- question "How will the address to clone look like?"
-
-        ``https://github.com/programming-formalisms/programming_formalisms_project_autunr_2025.git``
-
-    - In VS code: Clone Git repository
-        - The repo may show up automatically if you are already part of the project. Then click it.
-        - Otherwise paste the copied URL
-    - Open folder where you want to have your project
-        - Create a new one if necessary in the "Open folder File explorer"
-    - Select as Repository Destination
-
-???- question "Exercise 2b: (Alternative with command line) clone course project and create folders (4 min)"
-
-    - You may want to create a directory on your computer for this course.
-    - You can do it in the normal way or use your terminal, like this, in a good place (like "Courses" if you have that)
-    - ``mkdir Programming_formalisms``
-    - ``cd Programming_formalisms``
-    - In GitHub, locate the **Code** button, select **SSH** and click the **copy** symbol to the right
-    - Back in your terminal type ``git clone`` followed by pasting the copied text.
-    - The result shall look something like this:
-
-     ```console
-     git clone git@github.com:programming-formalisms/programming_formalisms_project_summer_2026.git
-     ```
-
-    **What just happened?**
-
-    - `cd` the new directory that was created
-    - list the files with `ls`
-
-!!! summary
-
-    - You should now hopefully be connected to the project and have a local copy of it!
-    
