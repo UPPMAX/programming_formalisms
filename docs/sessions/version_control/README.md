@@ -15,6 +15,7 @@
     - What is a version control system?
     - Could you name a tool or program that is a version control system?
     - What is a commit?
+    - What is a commit hash?
 
 ## What is version control?
 
@@ -169,6 +170,48 @@ What would be your rule for a good commit message?
 
 Change a file you created in the `learners` folder (if there is none,
 create one).
+
+View the history of the file.
+
+???- question "Where do I need to click?"
+
+    Click at the top-right, on the 'History' button:
+
+    ![Click at the top-right](click_readme_history.png)
+
+???- question "How does it look like?"
+
+    You will see something similar to this:
+
+    ![The history of the README file](readme_history.png)
+
+Assume you want to undo/revert the last commit.
+To do so (without going into detail)
+you will need the *commit hash*,
+i.e. the unique ID for your commit.
+Find and click on the latest commit hash
+of your file
+
+???- question "Where do I need to click?"
+
+    Click at the top-right, at the hexadecimal number.
+
+    ![Click at the top-right, at the hexadecimal number](click_view_commit_details.png)
+
+What do you see?
+
+???- question "Answer"
+
+    You see the commit details.
+
+    ![Commit details](commit_details.png)
+
+In which scenario is it useful to see the commit details?
+
+???- question "Answer"
+
+    When you want to know what were the exact changes
+    of a certain commit.
 
 ## Exercise 3: clone the learners project from VS Code
 
