@@ -16,6 +16,7 @@ nav:
     - Registered report: sessions/registered_report/README.md
     - Software Development Lifecycle: sessions/lifecycle/README.md
     - Version control: sessions/version_control/README.md
+    - Integrated development environment: sessions/ide/README.md
     - Merge conflicts: sessions/merge_conflicts/README.md
     - Get started with git and the project: sessions/project_start/git_startup/README.md
     - SDLC tools: sessions/introductions/sdlc_tools.md

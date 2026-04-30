@@ -213,20 +213,6 @@ In which scenario is it useful to see the commit details?
     When you want to know what were the exact changes
     of a certain commit.
 
-## Exercise 3: clone the learners project from VS Code
-
-???- question "Prefer a video?"
-
-    Watch the YouTube video
-    [How to use VSCode to (git) clone a repository](https://youtu.be/bcYFlBh9WUk?si=H6a2LG6XuIUw1DoC)
-
-## Exercise 4: view the learners project history from VS Code
-
-## Exercise 5: change a file from VS Code
-
-## Exercise 6: sketch a research project from VS Code
-
-
 ## References
 
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.

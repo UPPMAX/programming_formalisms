@@ -26,6 +26,7 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/cou
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
 .         | 10:00-10:15 | .                 |Break
 .         | 10:15-11:00 | Richèl Bilderbeek |[Version control](sessions/version_control/README.md)
+.         | 10:15-11:00 | .                 |[Integrated development environment](sessions/ide/README.md)
 .         | 10:15-11:00 | .                 |[Merge conflicts](sessions/merge_conflicts/README.md)
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[assert](sessions/assert/README.md)
