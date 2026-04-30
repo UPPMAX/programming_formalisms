@@ -152,7 +152,127 @@ without looking at the answers.
 
 ## Exercise 2: view the learners project history from VS Code
 
+In VS Code (with the learners project loaded),
+try to see the project commit history,
+without looking at the answers. 
+
+???- question "How do I do this?"
+
+    In VS Code, at the left, at the so-called 'Primary Side Bar',
+    click on 'Source control'.
+
+    ![In VS Code, at the left, click on 'Source control'](vs_code_click_source_control.png)
+
+    Now VS Code shows the project commit history.
+
+???- question "How does that look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code shows the project commit history](vs_code_shows_project_commit_history.png)
+
 ## Exercise 3: change a file from VS Code
+
+Go to the (file) explorer view, by clicking on 'Explorer'
+in the so-called 'Primary Side Bar' at the left.
+
+???- question "Where do I click?"
+
+    Click at the top icon in the so-called 'Primary Side Bar' at the left.
+
+    ![Click at the top icon in the so-called 'Primary Side Bar' at the left](vs_code_click_explorer.png)
+
+In the explorer, find a file in your `learners` folder and double-click
+it to start editing it.
+
+???- question "How does that look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code shows a file](vs_code_view_file.png)
+
+Edit the file, in any way and save it.
+
+Do save it, else nothing will happen yet :-)
+
+???- question "How does that look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code displays an edited file](vs_code_view_edited_file.png)
+
+In the file explorer, there is an 'M' after the file name.
+What does that 'M' stand for?
+
+???- question "Answer"
+
+    It stands for 'Modified'. This is one of The Three Stages in
+    version control. You can find this back in
+    [the session about version control](../version_control/README.md).
+
+Is there a second indication that there is a file that has been modified?
+
+???- question "Answer"
+
+    Yes, the 'Source control' section shows that there is 1 pending change.
+
+    ![The 'Source control' section shows that there is 1 pending change](vs_code_source_control_shows_pending_change.png)
+
+Click on 'Source control' in the 'Primary Side Bar'.
+
+???- question "How does that look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code displays pending changes](vs_code_with_pending_changes_click_commit.png)
+
+Add a commit message (e.g. 'Created a test edit') and click on 'Commit'.
+Do add a commit message, else you will see another editor with text show up.
+
+???- question "Where do I type text and where do I click?"
+
+    Type the text above the blue commit button.
+
+    The blue commit button is at the top-left.
+
+    ![Click at the blue commit button](vs_code_with_pending_changes_and_commit_message_click_commit.png)
+
+You have now committed your changes. Well done!
+
+VS Code suggests, with a blue 'Sync' button, what to do next.
+
+???- question "How does that look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code after just having committed](vs_code_commited.png)
+
+How would you describe what VS Code wants you to do now?
+
+???- question "Answer"
+
+    It wants you to syncronize the code between your local computer
+    and the online repository.
+
+    VS Code wants you to upload/push your code, as well as download/pull
+    newer changes made online (if any).
+
+Click on the 'Sync changes' button.
+
+???- question "How does that look like?"
+
+    VS Code will take some time to synchonize changes.
+
+    ![VS Code is syncronizing](vs_code_click_sync_changes.png)
+
+Now, VS Code has syncronized the changes. Well done, now your local
+code matches the code in the online repository!
+
+???- question "How does that look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code has synced the changes](vs_code_has_synced_changes.png)
 
 ## References
 
