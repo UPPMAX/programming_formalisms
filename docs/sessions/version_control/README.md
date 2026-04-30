@@ -75,10 +75,23 @@ pull  |Update
 
 ## The version control workflow
 
+Git based stages                                                      |VS Code stages
+----------------------------------------------------------------------|----------------------------------------------------------------------
+`mermaid graph TB; clone --> add --> commit --> push --> pull --> add`|`mermaid graph TB; clone --> commit --> sync --> commit`
+
+Git based:
+
 ```mermaid
 graph TB
   clone --> add
   add --> commit --> push --> pull --> add
+```
+
+VS Code:
+
+```
+graph TB
+  clone --> commit --> sync --> commit
 ```
 
 ## Exercises
