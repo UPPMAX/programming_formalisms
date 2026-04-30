@@ -265,7 +265,7 @@ Click on the 'Sync changes' button.
 
     ![VS Code is syncronizing](vs_code_click_sync_changes.png)
 
-Now, VS Code has syncronized the changes. Well done, now your local
+Now, VS Code has synchronized the changes. Well done, now your local
 code matches the code in the online repository!
 
 ???- question "How does that look like?"
