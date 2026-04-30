@@ -45,7 +45,7 @@ open science principles in a scientific career.
 It shows a figure in which it is shows that traditional literature,
 compared to registered reports, reports on null findings 4x less likely.
 
-## Summary of `[Aniley et al., 2024]
+## Summary of `[Aniley et al., 2024]`
 
 This paper seems useful at first glance:
 the authors trained an algorithm
