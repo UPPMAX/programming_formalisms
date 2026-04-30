@@ -6,6 +6,7 @@
 
     - understand what version control is
     - can see the history of a project
+    - experience a problem with the repository web interface
 
 ??? question "For teachers"
 
@@ -212,6 +213,56 @@ In which scenario is it useful to see the commit details?
 
     When you want to know what were the exact changes
     of a certain commit.
+
+## Exercise 3: change a file twice at the same time
+
+Imagine two people editing the same file using the web interface.
+
+The content of the file, before editing, was:
+
+```text
+Once upon a time ...
+```
+
+The first person intends to commit this text:
+
+```text
+Once upon a time, there was a prince.
+```
+
+The second person intends to commit this text:
+
+```text
+Once upon a time ... ... and they lived happily every after.
+```
+
+The first person then commits. Then the second person commits.
+
+What would you say **should** happen?
+
+???- question "Answer"
+
+    My feeling is that the changes should be merged to:
+
+    ```text
+    Once upon a time, there was a prince. ... and they lived happily ever after.
+    ```
+
+Test this. What happens?
+
+???- question "Answer"
+
+    The final text will be the text submitted by the second person.
+
+Why is this a problem?
+
+???- question "Answer"
+
+    Because it completely ignored the work of the first person.
+
+This problem is solved better when using an
+[integrated development environment](../ide/README.md)
+or when using the version control system locally.
 
 ## References
 
