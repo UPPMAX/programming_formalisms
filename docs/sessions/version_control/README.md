@@ -7,6 +7,7 @@
     - understand what version control is
     - can see the history of a project
     - experience a problem with the repository web interface
+    - understand when to commit
 
 ??? question "For teachers"
 
@@ -17,6 +18,7 @@
     - Could you name a tool or program that is a version control system?
     - What is a commit?
     - What is a commit hash?
+    - When should you commit?
 
 ## What is version control?
 
@@ -263,6 +265,19 @@ Why is this a problem?
 This problem is solved better when using an
 [integrated development environment](../ide/README.md)
 or when using the version control system locally.
+
+Let's say we accept that this problem exists.
+How do we reduce the problem of this?
+
+???- question "Answer"
+
+    By committing often.
+
+    The manta goes:
+
+    > Commit early, commit often
+
+
 
 ## References
 
