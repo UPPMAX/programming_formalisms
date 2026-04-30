@@ -29,6 +29,10 @@ For this course, we need a project to work, together.
 As teachers, we've looked for a research project
 on real data, that is as simple as possible.
 
+We used the most popular code hosting website,
+as is recommended (among others, `[Perez-Riverol et al., 2016]`,
+but there will be many more references during the course).
+
 In the end of the course, we will put our work into a Python
 package, so that everyone can reproduce our results.
 
@@ -43,7 +47,6 @@ You want to use this simple data set for a toy project
 to practice software development with.
 
 ## Exercises
-
 
 ## Exercise 1: become member of the course project
 
@@ -284,41 +287,23 @@ The folder containing the GitHub Actions scripts
 
     The `.github/worksflows` folder.
     
-    This is the standarized name used by GitHub
+    This is the standarized name used by GitHub.
 
 The folder containing the GitHub Actions scripts
 
+???- question "What are 'GitHub Actions scripts'?"
+
+    These are scripts that are run upon a new online commit.
+    We will discuss these more when we discuss Continuous Integration.
 
 ## References
-
-- `[Perez-Riverol et al., 2016]`
-  Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
-  of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
-  [Paper homepage](https://doi.org/10.1371/journal.pcbi.1004947)
-
-<!--
-
-## Summary of `[Perez-Riverol et al., 2016]`
-
-This paper shared 10 simple rules to take advantage of `git` and GitHub:
-
-- Rule 1: Use GitHub to Track Your Projects
-- Rule 2: GitHub for Single Users, Teams, and Organizations
-- Rule 3: Developing and Collaborating on New Features:
-  Branching and Forking
-- Rule 4: Naming Branches and Commits: Tags and Semantic Versions
-- Rule 5: Let GitHub Do Some Tasks for You: Integrate
-- Rule 6: Let GitHub Do More Tasks for You: Automate
-- Rule 7: Use GitHub to Openly and Collaboratively Discuss,
-  Address, and Close Issues
-- Rule 8: Make Your Code Easily Citable, and Cite Source Code!
-- Rule 9: Promote and Discuss Your Projects: Web Page and More
-- Rule 10: Use GitHub to Be Social: Follow and Watch
-
--->
-
 
 - `[Bergström and Moberg, 2002]` Bergström, Hans, and Anders Moberg.
   "Daily air temperature and pressure series for Uppsala (1722–1998)."
   Climatic change 53.1 (2002): 213-252.
   [Paper homepage](https://doi.org/10.1023/A:1014983229213)
+
+- `[Perez-Riverol et al., 2016]`
+  Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
+  of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
+  [Paper homepage](https://doi.org/10.1371/journal.pcbi.1004947)
