@@ -66,7 +66,7 @@ project, has been obtained.
 ## Summary of `[Chambers, 2019]`
 
 This comment (i.e. an article that introduces multiple papers)
-described the current and future challanges of registered reports.
+described the current and future challenges of registered reports.
 
 It has a cartoon that illustrates the difference between
 traditional science and registered reports.

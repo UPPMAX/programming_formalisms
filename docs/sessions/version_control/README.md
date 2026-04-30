@@ -39,7 +39,7 @@ It allows you:
 - undo every mistake
 
 This allows you to **work together**,
-as no collaborator can truely destroy your work.
+as no collaborator can truly destroy your work.
 
 ## What does the literature say?
 
