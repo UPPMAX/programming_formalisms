@@ -660,4 +660,3 @@ Figure 8 depicts the eXtreme programming model:
   life cycle methodologies: Pros, cons, and future directions."
   Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
 
-

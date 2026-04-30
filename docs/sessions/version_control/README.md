@@ -184,8 +184,6 @@ create one).
 ## Exercise 6: sketch a research project from VS Code
 
 
-
-
 ## References
 
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.

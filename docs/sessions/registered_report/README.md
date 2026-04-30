@@ -143,7 +143,7 @@ a draft registered report. Make the report as minimal as possible:
 it should serve as an informal design document,
 not be a full journal submission. You are allowed to make things up
 if needed.
- 
+
 Save your results in the learners project, in the `learners` folder.
 
 ## References
