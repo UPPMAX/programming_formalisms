@@ -58,6 +58,11 @@ for projects.
 They recommend to use Agile software development models,
 but it is unclear where they base this on exactly.
 
+## Summary of `[Beelders and du Plessis, 2015]`
+
+This study asked students to read code, with or without syntax
+highlighting. They found no significant difference in understanding.
+
 ## Summary of `[Bergström and Moberg, 2002]`
 
 This paper describes how the weather data, used in the learners
@@ -121,6 +126,27 @@ These are the 4 recommendations:
 - Define clear and transparent contribution, governance and
   communication processes
 
+## Summary of `[Khan, 2009]`
+
+This PhD thesis investigates both programmer mood and IDE.
+In the final chapter, the IDE is used to improve a programmer's
+mood when a negative emotion is detected.
+To improve the mood of a programmer,
+a video is shown to urge the developer to do ... exercises...?
+
+## Summary of `[Kline and Seffah, 2005]`
+
+This study states that IDEs are 'too often functionality-oriented
+and difficult to use, learn, and master'. The more experienced
+uses score the usability of an IDE higher.
+
+![Kline and Seffah, 2005, figure 1](kline_and_seffah_2005_fig_1.png)
+
+<!-- The image is enhanced with https://herhor.net/minecraft/imager -->
+
+The large standard deviations in the experts is explain by the low
+amount of experts: there were 7 experts (compared to a 100 beginners).
+
 ## Summary of `[Kroll et al., 2013]`
 
 This paper is a literature review, tailored to best practices in
@@ -164,6 +190,16 @@ They define a good commit message as such:
 > it should have both the summary of the
 > code change (What) and the motivation/reason behind it (Why).
 
+## Summary of `[Morales et al., 2019]`
+
+This study asks students to evaluate how friendly different IDEs
+are to use.
+
+Note that it misquotes `[Beelders and du Plessis, 2015]`,
+where this paper insinuates that syntax highlighting (as
+typically provided by IDEs) is a good thing. The misquoted
+paper, however, found that there is no difference between black-and-white
+code versus colored syntax highlighted code.
 
 ## Summary of `[Munafò et al., 2017]`
 
@@ -490,6 +526,12 @@ Figure 8 depicts the eXtreme programming model:
   Introducing the FAIR Principles for research software.
   Sci Data 9, 622 (2022). [Fair4RS](https://rdcu.be/eNhd1)
 
+- `[Beelders and du Plessis, 2015]` Beelders, Tanya R.,
+  and Jean-Pierre L. du Plessis.
+  "Syntax highlighting as an influencing factor when reading and
+  comprehending source code." Journal of Eye Movement Research 9.1 (2015): 1.
+  [Paper homepage](https://doi.org/10.16910/jemr.9.1.1)
+
 - `[Bergström and Moberg, 2002]` Bergström, Hans, and Anders Moberg.
   "Daily air temperature and pressure series for Uppsala (1722–1998)."
   Climatic change 53.1 (2002): 213-252.
@@ -549,6 +591,17 @@ Figure 8 depicts the eXtreme programming model:
 - `[Jones et al., 2001]`
   [Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43](https://www.sciencedirect.com/science/article/pii/S0308521X01000543)
 
+- `[Khan, 2009]` Khan, Iftikhar Ahmed.
+  Towards a mood sensitive integrated development environment
+  to enhance the performance of programmers.
+  Diss. Brunel University, School of Information Systems,
+  Computing and Mathematics, 2009.
+
+- `[Kline and Seffah, 2005]` Kline, Rex Bryan, and Ahmed Seffah.
+  "Evaluation of integrated software development environments:
+  Challenges and results from three empirical studies."
+  International journal of human-computer studies 63.6 (2005): 607-627.
+
 - `[Kroll et al., 2013]` Kroll, Josiane, et al.
   "A systematic literature review of best practices and challenges in
   follow-the-sun software development."
@@ -567,6 +620,12 @@ Figure 8 depicts the eXtreme programming model:
   2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE).
   IEEE, 2023.
   [Paper homepage](https://doi.org/10.1109/ICSE48619.2023.00076)
+
+- `[Morales et al., 2019]` Morales, Jenny, et al.
+  "How “friendly” integrated development environments are?."
+  International Conference on Human-Computer Interaction.
+  Cham: Springer International Publishing, 2019.
+  [Paper homepage](https://doi.org/10.1007/978-3-030-21902-4_7)
 
 - `[Munafò et al., 2017]` Munafò, Marcus R., et al.
   "A manifesto for reproducible science."
