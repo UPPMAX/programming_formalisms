@@ -62,12 +62,93 @@ if they use the same program to work in.
 
 ## Exercises
 
-## Exercise 1: clone the learners project from VS Code
+## Exercise 1: clone the learners project using VS Code
 
 ???- question "Prefer a video?"
 
     Watch the YouTube video
     [How to use VSCode to (git) clone a repository](https://youtu.be/bcYFlBh9WUk?si=H6a2LG6XuIUw1DoC)
+
+In this exercise, we are going to clone the learners project
+using VS Code.
+
+What does 'clone' mean?
+You can look it up at [the session about version control](../version_control/README.md).
+
+???- question "Answer"
+
+    'Download'.
+
+    It is a bit more technical than that, but 'download' is the a good
+    first step in your understanding.
+
+    The more technical explanation: 'to create a local copy from a remote
+    repository'.
+
+Start VS Code and try to clone and open the learners project
+without looking at the answers. 
+
+???- question "How do I do this?"
+
+    In your favorite way.
+
+    Here I show the least technical way to do so.
+
+    At the VS Code welcome screen, click on 'Clone Git repository':
+
+    ![At the VS Code welcome screen, click on 'Clone Git repository'](vs_code_click_clone_git_repository.png)
+
+    You will be taken to the top editor, called the 'Command Palette'.
+    In the Command Palette, click 'Clone from GitHub'.
+
+    ![In the Command Palette, click 'Clone from GitHub'](vscode_click_clone_from_github.png)
+
+    When VS Code request access to GitHub, click 'Allow'.
+
+    ![When VS Code request access to GitHub, click 'Allow'](vs_code_requests_access_to_github_click_allow.png)
+
+    If you just allowed VS Code to access GitHub,
+    VS Code will show it is signing in to GitHub.
+
+    ![VS Code shows it is signing in to GitHub](vs_code_signing_in_to_github.png)
+
+    If you just allowed VS Code to access GitHub,
+    go to your web browser. In your web browser,
+    authorize VS Code to access GitHub by clicking 'Continue'.
+
+    ![Authorize VS Code to access GitHub by clicking 'Continue'](github_authorize_vs_code_click_continue.png)
+
+    If your web browsers requests access to VS Code, allow it,
+    for example, by clicking on 'Open xdg-open'.
+
+    ![Click on 'Open xdg-open'](web_browser_request_access_to_vs_code_click_open.png)
+
+    If your web browser does not know which (of multiple) VS Code
+    programs to use, pick the first VS Code.
+
+    ![Let the first VS Code handle URLs](let_vs_code_handle_urls.png)
+
+    In the 'Command Palette', click on the GitHub repository with the learners
+    project.
+
+    ![In the 'Command Palette', click on the GitHub repository with the learners project](vs_code_open_learners_project.png)
+
+    When VS Code asks where to clone the repository in, select your favorite
+    folder
+
+    ![Select your favorite folder to clone the repository in](vs_code_ask_folder_to_clone_repo_to.png)
+
+    When VS Code asks what to do with this repository, click 'Open'.
+
+    ![When VS Code asks what to do with this repository, click 'Open'](vs_code_open_repo_click_open.png)
+
+    Congratulations! VS Code has now cloned and loaded your repository!
+
+???- question "How does this look like?"
+
+    Your screen will look similar to this:
+
+    ![VS Code has now cloned and loaded your repository](vs_code_has_loaded_repo.png)
 
 ## Exercise 2: view the learners project history from VS Code
 
