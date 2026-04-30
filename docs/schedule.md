@@ -14,29 +14,28 @@ For a detailed daily schedule, see the detailed schedule of that day.
 
 Day       | Time        | Teacher           | Subject
 ----------|-------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Monday    | 09:00-10:00 | Richèl Bilderbeek | [Course introduction](sessions/course_introduction/README.md)
-.         | .           | Richèl Bilderbeek | [Project introduction](sessions/project_introduction/README.md)
-.         | .           | Richèl Bilderbeek | [Software development life cycle](sessions/lifecycle/README.md)
-.         | 10:00-10:15 | .                 | Break
-.         | 10:15-10:55 | Richèl Bilderbeek | [Version control](sessions/version_control/README.md)
-.         | .           | Richèl Bilderbeek | [Merge conflicts](sessions/merge_conflicts/README.md)
-.         | 11:10-12:00 | Lars Eklund       | Lars decides here
-.         | 12:00-13:00 | .                 | Break
-.         | 13:00-15:40 | Lars Eklund       | [Define and plan project](sessions/project_start/analysis_design/README.md)
-.         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
+Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/course_introduction/README.md)
+.         | .           | Richèl Bilderbeek |[Project introduction](sessions/project_introduction/README.md)
+.         | 10:00-10:15 | .                 |Break
+.         | 10:15-10:55 | Richèl Bilderbeek |[Version control](sessions/version_control/README.md)
+.         | .           | Richèl Bilderbeek |.
+.         | 11:10-12:00 | Lars Eklund       |Lars decides here
+.         | 12:00-13:00 | .                 |Break
+.         | 13:00-15:40 | Lars Eklund       |[Define and plan project](sessions/project_start/analysis_design/README.md)
+.         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
-Tuesday   | 09:00-10:00 | Richèl Bilderbeek |.
-.         | 10:00-10:15 | .                 | Break
-.         | 10:15-11:00 | Richèl Bilderbeek |.
-.         | 11:00-11:15 | .                 | Break
-.         | 11:15-12:00 | Richèl Bilderbeek | [assert](sessions/assert/README.md)
-.         | 12:00-13:00 | .                 | Break
-.         | 13:00-14:00 | Richèl Bilderbeek | [TDD 1](sessions/tdd/README.md)
-.         | 14:00-14:15 | .                 | Break
-.         | 14:15-15:00 | Richèl Bilderbeek | [TDD 2](sessions/tdd/README.md)
-.         | 15:00-15:15 | .                 | Break
-.         | 15:15-15:40 | Richèl Bilderbeek | [TDD at a bigger scale](sessions/tdd_at_bigger_scale/README.md)
-.         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
+Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
+.         | 10:00-10:15 | .                 |Break
+.         | 10:15-11:00 | Richèl Bilderbeek |[Merge conflicts](sessions/merge_conflicts/README.md)
+.         | 11:00-11:15 | .                 |Break
+.         | 11:15-12:00 | Richèl Bilderbeek |[assert](sessions/assert/README.md)
+.         | 12:00-13:00 | .                 |Break
+.         | 13:00-14:00 | Richèl Bilderbeek |[TDD 1](sessions/tdd/README.md)
+.         | 14:00-14:15 | .                 |Break
+.         | 14:15-15:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
+.         | 15:00-15:15 | .                 |Break
+.         | 15:15-15:40 | Richèl Bilderbeek |[TDD at a bigger scale](sessions/tdd_at_bigger_scale/README.md)
+.         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
 Wednesday | 09:00-10:00 | Richèl Bilderbeek | branches
 .         | 10:00-10:15 | .                 | Break
