@@ -42,8 +42,11 @@ These are summaries of some of the papers mentioned.
 This paper addresses challenges and misconceptions on adopting
 open science principles in a scientific career.
 
-It shows a figure in which it is shows that traditional literature,
+Below it shows figure 1 of this paper.
+It is shows that traditional literature,
 compared to registered reports, reports on null findings 4x less likely.
+
+![Allan and Mehler, 2019, figure 1](allen_and_mehler_2019_fig_1.png)
 
 ## Summary of `[Aniley et al., 2024]`
 
@@ -316,6 +319,10 @@ to convert the image to a table
 This paper shows that registered reports result in better
 science, compared to 'regular' papers.
 
+Here is figure 3 of that paper:
+
+![Soderberg et al., 2021, figure 3](soderberg_et_al_2021_fig_3.png)
+
 In this experiment, researches selected 'regular' papers
 and registered reports. The researchers then asked reviewers
 to score papers on the feature shown in the figure,
@@ -452,6 +459,20 @@ Here is (a slightly adapted) box 1 from that paper:
 
 <!-- markdownlint-enable MD013 -->
 
+
+## Summary of `[Yas, 2023]`
+
+This paper tries to collect and categorize
+all software development life cycles.
+The primary grouping is between traditional and agile models.
+
+Figure 3 depicts the waterfall model:
+
+![Yas, 2023, figure 3](yas_2023_figure_3.png)
+
+Figure 8 depicts the eXtreme programming model:
+
+![Yas, 2023, figure 8, enhanced](yas_2023_figure_8_enhanced.png)
 
 ## References
 
@@ -638,3 +659,5 @@ Here is (a slightly adapted) box 1 from that paper:
   Bahbibi Rahmatullah. "A comprehensive review of software development
   life cycle methodologies: Pros, cons, and future directions."
   Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
+
+
