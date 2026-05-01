@@ -9,29 +9,11 @@ tags:
 
 # Literature
 
-These are books and academic papers that have influenced the course.
+This page describes the books and academic papers
+that have influenced the course.
 
-<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
-
-Reference                     |PDF                                |One-line summary `[1]`
-------------------------------|-----------------------------------|------------------------------------
-`[Bergström and Moberg, 2002]`|.                                  |Describes the weather data set
-`[Chacon and Straub, 2014]`   |[PDF](chacon_and_straub_2014.pdf)  |The book about `git`
-`[Jiménez et al., 2017]`      |[PDF](jimenez_et_al_2017.pdf)      |Best practices in research software
-`[Kroll et al., 2013]`        |[PDF](kroll_et_al_2013.pdf)        |Best practices in software development
-`[Pastrana et al., 2025]`     |[PDF](pastrana_et_al_2025.pdf)     |Literature review of best practices in Scrum and DevOps
-`[Perez-Riverol et al., 2016]`|[PDF](perez_riverol_et_al_2016.pdf)|Recommendations on `git` and GitHub
-`[Ram, 2013]`                 |[PDF](ram_2013.pdf)                |Effect of `git` on reproducibility
-`[Serban et al., 2020]`       |[PDF](serban_et_al_2020.pdf)       |Recommends some software engineering best practices, in the field of machine learning
-`[Stieler and Bauer, 2023]`   |[PDF](stieler_and_bauer_2023.pdf)  |Applies `[Serban et al., 2020]` to rate if a project follows the recommended practices
-`[Stodden and Miguez, 2014]`  |[PDF](stodden_and_miguez_2014.pdf) |Best practices for a project
-`[Visser et al., 2016]`       |None                               |Ten best practices for effective software development
-`[Wilson et al., 2014]`       |[PDF](wilson_et_al_2014.pdf)       |Best practices for a project
-`[Wilson et al., 2017]`       |[PDF](wilson_et_al_2017.pdf)       |Good enough practices for a project
-
-<!-- markdownlint-enable MD013 -->
-
-- `[1]` You can find more extensive summaries below
+- [Summaries](#summaries): summaries of some of the references
+- [References](#references): the list of references
 
 ## Summaries
 
@@ -76,6 +58,12 @@ described the current and future challenges of registered reports.
 It has a cartoon that illustrates the difference between
 traditional science and registered reports.
 
+## Summary of `[Chacon and Straub, 2014]`
+
+This is *the* book about Git.
+
+It is open access.
+
 ## Summary of `[Forsgren et al., 2018]`
 
 This book is written by some computer scientists,
@@ -117,6 +105,8 @@ which has the following headers:
 
 ## Summary of `[Jiménez et al., 2017]`
 
+This open-access paper gives some best practices in research software.
+
 These are the 4 recommendations:
 
 - Make source code publicly accessible from day one
@@ -149,7 +139,7 @@ amount of experts: there were 7 experts (compared to a 100 beginners).
 
 ## Summary of `[Kroll et al., 2013]`
 
-This paper is a literature review, tailored to best practices in
+This open-access paper is a literature review, tailored to best practices in
 Follow-the-sun software development. Below is a table that shows
 how many papers (`n`) recommend a specific practice.
 
@@ -209,7 +199,7 @@ of scientific findings, such as using registered reports.
 
 ## Summary of `[Pastrana et al., 2025]`
 
-This is a literature review paper on Scrum and DevOps.
+This open-access paper is a literature review paper on Scrum and DevOps.
 
 Box 11 shows the benefits of Scrum and DevOps practices.
 Here is an adapted version of box 11:
@@ -255,7 +245,9 @@ to convert the image to a table.
 
 ## Summary of `[Perez-Riverol et al., 2016]`
 
-This paper shared 10 simple rules to take advantage of `git` and GitHub:
+
+
+This open-access paper shares 10 simple rules to take advantage of `git` and GitHub:
 
 - Rule 1: Use GitHub to Track Your Projects
 - Rule 2: GitHub for Single Users, Teams, and Organizations
@@ -272,7 +264,7 @@ This paper shared 10 simple rules to take advantage of `git` and GitHub:
 
 ## Summary of `[Ram, 2013]`
 
-This paper supplies these 8 use cases for Git in science:
+This open-access paper supplies these 8 use cases for Git in science.
 
 - Lab notebook
 - Facilitating collaboration
@@ -285,7 +277,7 @@ This paper supplies these 8 use cases for Git in science:
 
 ## Summary of `[Serban et al., 2020]`
 
-This article shows the importance of a practice
+This open-access article shows the importance of a practice
 and how much it is adopted, in the context of a machine learning project:
 
 ![Serban et al., 2020, figure 3, annotation mine](serban_et_al_2020_fig_3_annotated.png)
@@ -349,7 +341,6 @@ I used
 [the Doc2Lang image to table converter](https://doc2lang.com/image-to-table)
 to convert the image to a table
 
-
 ## Summary of `[Soderberg et al., 2021]`
 
 This paper shows that registered reports result in better
@@ -369,13 +360,14 @@ scored higher.
 
 ## Summary of `[Stieler and Bauer, 2023]`
 
-Applies `[Serban et al., 2020]` for a data-centric AI project called GW4AL.
+This open-access paper applies `[Serban et al., 2020]`
+for a data-centric AI project called GW4AL.
 It is irrelevant for us.
 
 
 ## Summary of `[Stodden and Miguez, 2014]`
 
-This paper suggests these best practices about how to setup
+This open-access paper suggests these best practices about how to setup
 your infrastructure to achieve reproducible research:
 
 - Open licensing should be used for data and code
@@ -658,6 +650,7 @@ Figure 8 depicts the eXtreme programming model:
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
   Pro git. Springer Nature, 2014.
   [Book homepage](https://git-scm.com/book/en/v2).
+  [PDF](chacon_and_straub_2014.pdf)
 
 - `[Chambers, 2019]` Chambers, Chris. "What’s next for registered reports?."
   Nature 573.7773 (2019): 187-189.
@@ -697,6 +690,7 @@ Figure 8 depicts the eXtreme programming model:
   "Four simple recommendations to encourage best practices
   in research software." F1000Research 6 (2017): ELIXIR-876.
   [Paper homepage](https://pubmed.ncbi.nlm.nih.gov/28751965/)
+  [PDF](jimenez_et_al_2017.pdf)
 
 - `[Jones et al., 2001]`
   [Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43](https://www.sciencedirect.com/science/article/pii/S0308521X01000543)
@@ -718,6 +712,7 @@ Figure 8 depicts the eXtreme programming model:
   2013 IEEE 8th International Conference on Global Software Engineering
   Workshops. IEEE, 2013.
   [Paper homepage](https://doi-org.ezproxy.its.uu.se/10.1109/ICGSEW.2013.10)
+  [PDF](kroll_et_al_2013.pdf)
 
 - `[Leau et al., 2012]` Leau, Yu Beng, et al.
   "Software development life cycle AGILE vs traditional approaches."
@@ -756,17 +751,20 @@ Figure 8 depicts the eXtreme programming model:
   "Best Practices Evidenced for Software Development Based on DevOps
   and Scrum: A Literature Review."
   Applied Sciences 15.10 (2025): 5421.
-  [Paper homepage](https://doi.org/10.3390/app15105421)
+  [Paper homepage](https://doi.org/10.3390/app15105421).
+  [PDF](pastrana_et_al_2025.pdf)
 
 - `[Perez-Riverol et al., 2016]`
   Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
   of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
   [Paper homepage](https://doi.org/10.1371/journal.pcbi.1004947)
+  [PDF](perez_riverol_et_al_2016.pdf)
 
 - `[Ram, 2013]` Ram, Karthik.
   "Git can facilitate greater reproducibility and increased transparency
   in science." Source code for biology and medicine 8.1 (2013): 7.
   [Paper homepage](https://link.springer.com/article/10.1186/1751-0473-8-7)
+  [PDF](ram_2013.pdf)
 
 - `[Rumbaugh, 1991]` Rumbaugh et. al,
   Object-oriented modeling and design, Prentice-Hall, Inc. 1991
@@ -776,7 +774,8 @@ Figure 8 depicts the eXtreme programming model:
   in machine learning." Proceedings of the 14th ACM/IEEE
   International Symposium on Empirical Software Engineering and
   Measurement (ESEM). 2020.
-  [Paper homepage](https://doi.org/10.1145/3382494.3410681)
+  [Paper homepage](https://doi.org/10.1145/3382494.3410681).
+  [PDF](serban_et_al_2020.pdf)
 
 - `[Soderberg et al., 2021]` Soderberg, Courtney K., et al.
   "Initial evidence of research quality of registered reports
@@ -793,13 +792,15 @@ Figure 8 depicts the eXtreme programming model:
 - `[Stieler and Bauer, 2023]` Stieler, Fabian, and Bernhard Bauer.
   "Git workflow for active learning-a development methodology proposal
   for data-centric AI projects." (2023).
-  [Paper homepage](https://doi.org/10.5220/0011988400003464)
+  [Paper homepage](https://doi.org/10.5220/0011988400003464).
+  [PDF](stieler_and_bauer_2023.pdf)
 
 - `[Stodden and Miguez, 2014]` Stodden, Victoria, and Sheila Miguez.
   "Best practices for computational science:
   Software infrastructure and environments for reproducible and
   extensible research." (2014).
-  [Paper homepage](https://openresearchsoftware.metajnl.com/articles/jors.ay)
+  [Paper homepage](https://openresearchsoftware.metajnl.com/articles/jors.ay).
+  [PDF](stodden_and_miguez_2014.pdf)
 
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”?
   Software, IEEE. 1988 Jun 1;5:10–20.
@@ -822,12 +823,15 @@ Figure 8 depicts the eXtreme programming model:
 - `[Wilson et al., 2014]` Wilson, Greg, et al.
   "Best practices for scientific computing."
   PLoS biology 12.1 (2014): e1001745.
-  [Paper homepage](https://doi.org/10.1371/journal.pbio.1001745)
+  [Paper homepage](https://doi.org/10.1371/journal.pbio.1001745).
+  [PDF](wilson_et_al_2014.pdf)
+
 
 - `[Wilson et al., 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.
-  [Paper homepage](https://doi.org/10.1371/journal.pcbi.1005510)
+  [Paper homepage](https://doi.org/10.1371/journal.pcbi.1005510).
+  [PDF](wilson_et_al_2017.pdf)
 
 - `[Yas et al., 2023]` Yas, Qahtan M., Abdulbasit Alazzawi, and
   Bahbibi Rahmatullah. "A comprehensive review of software development
