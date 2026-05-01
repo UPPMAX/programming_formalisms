@@ -133,8 +133,21 @@ the different software development phases. What are these?
     - Planning
     - Design
     - Development
-    - Testing
     - Deployment
+
+It seems that the 'Testing' phase is missing.
+Does this course ignore testing?
+Tip: check the table of content of the 'Development' menu item.
+
+???- question "Answer"
+
+    No.
+
+    The 'Development' menu item shows some items with the word 'testing'
+    in it.
+
+    This indicates that this course bundles
+    development and testing into one phase.
 
 ## Exercise 2: software development lifecycle does not need to be cycle?
 
