@@ -57,6 +57,8 @@ as no collaborator can truly destroy your work.
 - Use code versioning `[Visser et al., 2016]`
 - As a best practice in scientific computing, use a version control system `[Wilson et al., 2014]`
 - As a good enough practice in scientific computing, use a version control system `[Wilson et al., 2017]`
+- Always use version control `[Thomas and Hunt, 2019]`
+
 
 ## The file status in version control
 
@@ -277,6 +279,8 @@ How do we reduce the problem of this?
 
     > Commit early, commit often
 
+    Or 'Take small steps - always' `[Thomas and Hunt, 2019]` (tip 42).
+
 
 ## References
 
@@ -300,6 +304,11 @@ How do we reduce the problem of this?
   International Symposium on Empirical Software Engineering and
   Measurement (ESEM). 2020.
   [Paper homepage](https://doi.org/10.1145/3382494.3410681)
+
+- `[Thomas and Hunt, 2019]`
+  Thomas, David, and Andrew Hunt.
+  The Pragmatic Programmer: your journey to mastery.
+  Addison-Wesley Professional, 2019.
 
 - `[Visser et al., 2016]` Visser, Joost, et al.
   Building software teams: Ten best practices for

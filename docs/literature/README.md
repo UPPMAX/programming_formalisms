@@ -384,6 +384,116 @@ your infrastructure to achieve reproducible research:
 - Code and methods must be available and accessible
 - All 3rd party data and software should be cited
 
+## Summary of `[Thomas and Hunt, 2019]`
+
+This book is a classic, with 100 tips.
+Here is an overview of the (sometimes cryptically phrased) tips,
+as well as the page of the book where you can find it explained.
+
+Tip|Page|Tip
+---|----|-----------------------
+1  |xxi |Care About Your Craft
+2  |xxi |Think! About Your Work
+3  |2   |You Have Agency
+4  |4   |Provide Options, Don't Make Lame Excuses
+5  |7   |Don't Live with Broken Windows
+6  |9   |Be a Catalyst for Change
+7  |10  |Remember the Big Picture
+8  |12  |Make Quality a Requirements Issue
+9  |15  |Invest Regularly in Your Knowledge Portfolio
+10 |17  |Critically Analyze What You Read and Hear
+11 |20  |English is Just Another Programming Language
+12 |22  |It's Both What You Say and the Way You Say It
+13 |23  |Build Documentation In, Don't Bolt It On
+14 |28  |Good Design Is Easier to Change Than Bad Design
+15 |31  |DRY - Don't Repeat Yourself
+16 |38  |Make It Easy to Reuse
+17 |40  |Eliminate Effects Between Unrelated Things
+18 |48  |There Are No Final Decisions
+19 |49  |Forgo Following Fads
+20 |51  |Use Tracer Bullets to Find the Target
+21 |57  |Prototype to Learn
+22 |60  |Program Close to the Problem Domain
+23 |66  |Estimate to Avoid Surprises
+24 |70  |Iterate the Schedule with the Code
+25 |75  |Keep Knowledge in Plain Text
+26 |79  |Use the Power of Command Shells
+27 |81  |Achieve Editor Fluency
+28 |85  |Always Use Version Control
+29 |89  |Fix the Problem, Not the Blame
+30 |89  |Don't Panic
+31 |91  |Failing Test Before Fixing Code
+32 |92  |Read the Damn Error Message
+33 |95  |`select` Isn't Broken
+34 |96  |Don't Assume It - Prove It
+35 |98  |Learn a Text Manipulation Language
+36 |102 |You Can't Write Perfect Software
+37 |107 |Design with Contracts
+38 |113 |Crash Early
+39 |115 |Use Assertions to Prevent the Impossible
+40 |118 |Finish What You Start
+41 |121 |Act Locally
+42 |126 |Take Small Steps - Always
+43 |127 |Avoid Fortune-Telling
+44 |131 |Decoupled Code Is Easier to Change
+45 |132 |Tell, Don't Ask
+46 |134 |Don't Chain Method Calls
+47 |136 |Avoid Global Data
+48 |136 |If It's Important Enough To Be Global, Wrap It in an API
+49 |149 |Programming Is About Code, But Programs Are About Data
+50 |153 |Don't Hoard State; Pass It Around
+51 |161 |Don't Pay Inheritance Tax
+52 |162 |Prefer Interfaces to Express Polymorphism
+53 |163 |Delegate to Services|Has-A Trumps Is-A
+54 |165 |Use Mixins to Share Functionality
+55 |166 |Parameterize Your App Using External Configuration
+56 |171 |Analyze Workflow to Improve Concurrency
+57 |174 |Shared State Is Incorrect State
+58 |180 |Random Failures Are Often Concurrency Issues
+59 |182 |Use Actors For Concurrency Without Shared State
+60 |189 |Use Blackboards to Coordinate Workflow
+61 |194 |Listen to Your Inner Lizard
+62 |200 |Don't Program by Coincidence
+63 |207 |Estimate the Order of Your Algorithms
+64 |208 |Test Your Estimates
+65 |212 |Refactor Early, Refactor Often
+66 |214 |Testing Is Not About Finding Bugs
+67 |216 |A Test Is the First User of Your Code
+68 |218 |Build End-To-End, Not Top-Down or Bottom Up
+69 |221 |Design to Test
+70 |223 |Test Your Software, or Your Users Will
+71 |224 |Use Property-Based Tests to Validate Your Assumptions
+72 |234 |Keep It Simple and Minimize Attack Surfaces
+73 |235 |Apply Security Patches Quickly
+74 |242 |Name Well; Rename When Needed
+75 |244 |No One Knows Exactly What They Want
+76 |245 |Programmers Help People Understand What They Want
+77 |246 |Requirements Are Learned in a Feedback Loop
+78 |247 |Work with a User to Think Like a User
+79 |248 |Policy Is Metadata
+80 |251 |Use a Project Glossary
+81 |254 |Don't Think Outside the Box - Find the Box
+82 |259 |Don't Go into the Code Alone
+83 |259 |Agile Is Not a Noun; Agile Is How You Do Things
+84 |264 |Maintain Small Stable Teams
+85 |266 |Schedule It to Make It Happen
+86 |268 |Organize Fully Functional Teams
+87 |271 |Do What Works, Not What's Fashionable
+88 |273 |Deliver When Users Need It
+89 |274 |Use Version Control to Drive Builds, Tests, and Releases
+90 |275 |Test Early, Test Often, Test Automatically
+91 |275 |Coding Ain't Done 'Til All the Tests Run
+92 |277 |Use Saboteurs to Test Your Testing
+93 |278 |Test State Coverage, Not Code Coverage
+94 |278 |Find Bugs Once
+95 |279 |Don't Use Manual Procedures
+96 |281 |Delight Users, Don't Just Deliver Code
+97 |282 |Sign Your Work
+98 |286 |First, Do No Harm
+99 |287 |Don't Enable Scumbags
+100|287 |It's Your Life. Share it. Celebrate it. Build it. AND HAVE FUN! 
+
+
 ## Summary of `[Tian et al, 2022]`
 
 This paper describes what makes a good commit message,
@@ -693,6 +803,11 @@ Figure 8 depicts the eXtreme programming model:
 
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”?
   Software, IEEE. 1988 Jun 1;5:10–20.
+
+- `[Thomas and Hunt, 2019]`
+  Thomas, David, and Andrew Hunt.
+  The Pragmatic Programmer: your journey to mastery.
+  Addison-Wesley Professional, 2019.
 
 - `[Tian et al, 2022]` Tian, Yingchen, et al.
   "What makes a good commit message?."
