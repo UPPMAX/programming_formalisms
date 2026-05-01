@@ -16,14 +16,16 @@ tags:
 
 !!!- info "Learning outcomes"
 
-    - Understand the purpose of `assert`
-    - Understand that Python has a debug and release mode
-    - Understand that `assert` is superior to documentation
-    - Understand that `assert` has no reduction in run-time speed
+    Learners ...
+
+    - understand the purpose of `assert`
+    - understand that Python has a debug and release mode
+    - understand that `assert` is superior to documentation
+    - understand that `assert` has no reduction in run-time speed
       in release mode
-    - Understand that `assert` statements should have no side effects
-    - Understand that `assert` can be used to signal stubs
-    - `assert` liberally
+    - understand that `assert` statements should have no side effects
+    - understand that `assert` can be used to signal stubs
+    - can use `assert`
 
 ???- question "For teachers"
 
