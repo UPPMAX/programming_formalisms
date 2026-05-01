@@ -33,7 +33,7 @@ Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | Richèl Bilderbeek |[assert](sessions/assert/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |[TDD 1](sessions/tdd/README.md) 
+.         | 15:15-15:40 | Richèl Bilderbeek |[TDD 1](sessions/tdd/README.md)
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
 Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
