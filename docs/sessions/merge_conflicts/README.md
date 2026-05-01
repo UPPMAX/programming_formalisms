@@ -40,6 +40,27 @@ Once upon a time ... ... and they lived happily every after.
 >>>>> 1234567890abcdef123456
 ```
 
+Here is a schematic overview of the merge conflict
+we will cause in the exercises:
+
+```mermaid
+graph TB
+  classDef optional_node stroke-dasharray: 5 5
+
+  subgraph online
+    direction TD
+    version_a_online["abcdef1: Once upon a time ..."]
+    version_b["123456a: Once upon a time, there was a prince."]
+    version_a_online --> version_b
+  end
+  subgraph local
+    direction TD
+    version_a_local["abcdef1: Once upon a time ..."]
+    version_c["a1b2c3d: Once upon a time ... ... and they lived happily every after."]
+    version_a_local --> version_c
+  end
+```  
+
 ## Why are merge conflict important?
 
 Merge conflicts inevitably happen when working together.
@@ -49,7 +70,8 @@ by the most experienced team member.
 
 ## Strategies to avoid merge conflicts
 
-- The mantra 'Commit early, commit often'
+- 'Take small steps - always' `[Thomas and Hunt, 2019]` (tip 42).
+  This overlaps with the mantra 'Commit early, commit often'
 - Limit the amount of characters per line: the version control
   system works on a line-by-line basis
 
