@@ -159,7 +159,7 @@ VS Code indicates that there is an incoming change.
 
     It looks similar to this:
 
-    ![VS Code detects the incoming new file](vs_code_detects_incoming_new_file.png)
+    ![VS Code detects the incoming new file](vs_code_click_sync_to_get_new_file.png)
 
 Sync your local code with the remote repository.
 
