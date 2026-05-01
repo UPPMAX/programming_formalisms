@@ -481,6 +481,66 @@ def read_non_empty_file(filename):
         return content
     ```
 
+## 3.5. Exercise 5: making assumptions explicit when using our package
+
+In [the first setup](../development_introduction/README.md#exercise-1-our-first-setup)
+it was suggested that the code below would be good to use our project with:
+
+```python
+import weather
+weather.do_experiment()
+```
+
+Add `assert` statements around this code to make our assumptions explicit.
+You are allowed to use functions that do not exist (yet) or pseudocode.
+
+???- question "Answer"
+
+    Here is a superior starting point:
+
+    ```python
+    import weather
+    weather.do_experiment()
+    assert file_exists("figure.png")
+    assert file_exists("statistics_results.txt")
+    ```
+
+Do you agree with the given answer? Where do you disagree?
+
+## 3.6. Exercise 6: making assumptions explicit within our package
+
+In [the our stub `do_experiment` function](../development_introduction/README.md#exercise-2-a-stub-package-function)
+it was suggested that the code below would be a good start:
+
+```python
+def do_experiment():
+  # Read the data
+  # Do the statistics
+  # Save the statistics results to file
+  # Create the figure
+  # Save the figure to file
+```
+
+Replace some pseudocode with `assert` statements.
+You are allowed to use functions that do not exist (yet) or pseudocode.
+
+???- question "Answer"
+
+    This is a possible solution:
+
+    ```python
+    def do_experiment():
+      # Read the data
+      # Do the statistics
+      # Save the statistics results to file
+      assert file_exists("figure.png")
+      # Create the figure
+      # Save the figure to file
+      assert file_exists("statistics_results.txt")
+    ```
+
+Do you agree with the given answer? Where do you disagree?
+
 ## 4. References
 
 - `[Liberty, 2001]` Jesse Liberty. Sams teach yourself C++ in 24 hours.
