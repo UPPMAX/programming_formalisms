@@ -153,7 +153,8 @@ used in the final paper?
 
     - A figure showing the two distribution of weather temperatures
       (i.e. the first/earliest third and the last/latest third),
-      with an indication if these distributions differ
+      with an indication if these distributions differ.
+      A sketch of this figure is shown in the draft registered report.
 
 ## Exercise 3: your draft registered report
 
