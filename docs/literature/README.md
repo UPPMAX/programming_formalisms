@@ -1084,7 +1084,6 @@ Figure 8 depicts the eXtreme programming model:
   [Paper homepage](https://doi.org/10.1371/journal.pbio.1001745).
   [PDF](wilson_et_al_2014.pdf)
 
-
 - `[Wilson et al., 2017]` Wilson, Greg, et al.
   "Good enough practices in scientific computing."
   PLoS computational biology 13.6 (2017): e1005510.

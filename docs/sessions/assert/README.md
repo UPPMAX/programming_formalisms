@@ -188,22 +188,22 @@ test to find bugs.
 
 - Assert liberally to document internal assumptions and invariants
   `[Sutter & Alexandrescu, 2004]`, chapter 68.
-
 - Explicitly express preconditions, postconditions,
   and other assertions as assertions' `[Stroustrup, 1997]` (Advice 24.5.18)
-
 - Use `assert` freely `[Liberty, 2001]` (hour 24)
 - The use of assert statements can help to
   document the assumptions you make when implementing your code `[Lakos, 1996]`
   (chapter 2.6)
 - Use `assert` extensively' `[Stroustrup, 2013a]` (Chapter 30.5. Advice)
 - Assert liberally to document assumptions `[Stroustrup, 2013a]`
-- Use assertions to document and verify preconditions and postconditions `[McConnell, 2004a]`
+- Use assertions to document and verify preconditions and postconditions
+  `[McConnell, 2004a]`
   (Chapter 8.2 'Assertions', paragraph 'Guidelines for using asserts')
 - Use assertions for conditions that should never occur `[McConnell, 2004b]`
   (Chapter 8.2 'Assertions', paragraph 'Guidelines for using asserts')
 - Do not assume that `assert` is always
   evaluated' `[Stroustrup, 2013b]` (Chapter 30.5. Advice)
+- Add assertions to programs to check their operation `[Wilson et al., 2014]`
 
 
 ## 3. Exercises
@@ -506,3 +506,8 @@ def read_non_empty_file(filename):
 - `[Sutter & Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
   C++ coding standards: 101 rules, guidelines, and best practices. 2004.
   ISBN: 0-32-111358-6.
+- `[Wilson et al., 2014]` Wilson, Greg, et al.
+  "Best practices for scientific computing."
+  PLoS biology 12.1 (2014): e1001745.
+  [Paper homepage](https://doi.org/10.1371/journal.pbio.1001745).
+  [PDF](wilson_et_al_2014.pdf)
