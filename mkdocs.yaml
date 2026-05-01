@@ -18,7 +18,6 @@ nav:
     - Version control: sessions/version_control/README.md
     - Integrated development environment: sessions/ide/README.md
     - Merge conflicts: sessions/merge_conflicts/README.md
-    - Get started with git and the project: sessions/project_start/git_startup/README.md
     - SDLC tools: sessions/introductions/sdlc_tools.md
   - Planning:
     - Analysis Phase: sessions/project_start/analysis_design/README.md
