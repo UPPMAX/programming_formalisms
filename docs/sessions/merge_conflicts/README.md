@@ -61,6 +61,12 @@ graph TB
   end
 ```  
 
+> a schematic overview of the merge conflict
+> we will cause in the exercises.
+> The hexadecimal numbers indicate the version of the
+> file (i.e. the commit hash).
+> The actual file content starts after the colon.
+
 ## Why are merge conflict important?
 
 Merge conflicts inevitably happen when working together.
