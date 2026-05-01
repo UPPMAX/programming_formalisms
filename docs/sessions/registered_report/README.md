@@ -76,7 +76,7 @@ that fits perfectly well with the phase of the course.
     Temperatures remain the same
 
     **Methods**
-    
+
     We test our hypothesis by comparing the average yearly temperatures
     at the start and end of our measurement period. To prevent that the
     temperatures are too related, we compare the first third of the
@@ -99,7 +99,7 @@ that fits perfectly well with the phase of the course.
 
     > Figure: temperature distribution (TODO: replace sketch with real figure)
 
-    **Discussion** 
+    **Discussion**
 
     This is only a correlational study, with no direct link
     between temperature and industrialization being measured.
@@ -131,7 +131,7 @@ on how to (re)do the experiment?
     name will do.
 
     I think this code is ideal, as it is both readable and short.
-    
+
 Do you agree with the answer?
 
 ## Exercise 2: output from the ideal program
