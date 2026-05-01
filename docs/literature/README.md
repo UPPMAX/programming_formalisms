@@ -444,7 +444,7 @@ Tip|Page|Tip
 50 |153 |Don't Hoard State; Pass It Around
 51 |161 |Don't Pay Inheritance Tax
 52 |162 |Prefer Interfaces to Express Polymorphism
-53 |163 |Delegate to Services|Has-A Trumps Is-A
+53 |163 |Delegate to Services, Has-A Trumps Is-A
 54 |165 |Use Mixins to Share Functionality
 55 |166 |Parameterize Your App Using External Configuration
 56 |171 |Analyze Workflow to Improve Concurrency
@@ -491,7 +491,7 @@ Tip|Page|Tip
 97 |282 |Sign Your Work
 98 |286 |First, Do No Harm
 99 |287 |Don't Enable Scumbags
-100|287 |It's Your Life. Share it. Celebrate it. Build it. AND HAVE FUN! 
+100|287 |It's Your Life. Share it. Celebrate it. Build it. AND HAVE FUN!
 
 
 ## Summary of `[Tian et al, 2022]`
