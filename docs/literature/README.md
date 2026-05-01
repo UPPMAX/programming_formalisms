@@ -246,7 +246,6 @@ to convert the image to a table.
 ## Summary of `[Perez-Riverol et al., 2016]`
 
 
-
 This open-access paper shares 10 simple rules to take advantage of `git` and GitHub:
 
 - Rule 1: Use GitHub to Track Your Projects
