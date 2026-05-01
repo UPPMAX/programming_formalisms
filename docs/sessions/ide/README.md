@@ -49,16 +49,21 @@ with many features to do so.
 
 ## Why does this course recommends to use an IDE anyways?
 
-Because it reduces the amount of tools you need to install,
-as the IDE installs these for you:
+We recommend to use an IDE, because:
 
-- Built-in version control
-- Built-in terminal
-- Built-in git credential manager
-- Built-in debugger
+- it reduces the amount of tools you need to install,
+  as the IDE installs these for you:
+  - Built-in version control
+  - Built-in terminal
+  - Built-in git credential manager
+  - Built-in debugger
+- it is intended to make the learning curve less steep:
+  one can 'just click through things', where these things will make
+  sense later.
+- it gives a common environment to learn in,
+  so that learners can better understand what the other is doing
 
-Additionally, it helps the learners understand what the other is doing,
-if they use the same program to work in.
+We recommend VS Code, as this is the most popular IDE.
 
 ## Exercises
 
