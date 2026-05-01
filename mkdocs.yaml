@@ -29,17 +29,16 @@ nav:
     - A 'has-a' relation: sessions/has_a_relation/README.md
     - Class design: sessions/data_structures/class_design.md
   - Development:
+    - assert: sessions/assert/README.md
+    - Test-driven development: sessions/tdd/README.md
+    - TDD at a bigger scale: sessions/tdd_at_bigger_scale/README.md
+    - Using a formal testing framework: sessions/testing/testing_framework.md
     - Team roles: sessions/project/team_roles.md
     - Git workflow, branches: sessions/git/branches.md
     - Contributing & code review: sessions/git/contribute.md
     - Sharing and social coding: sessions/social_coding/social_coding.md
     - Pair programming: sessions/pair_programming/README.md
     - Continuous integration: sessions/continuous_integration/README.md
-  - Testing:
-    - assert: sessions/assert/README.md
-    - Test-driven development: sessions/tdd/README.md
-    - TDD at a bigger scale: sessions/tdd_at_bigger_scale/README.md
-    - Using a formal testing framework: sessions/testing/testing_framework.md
     - Runtime speed profiles: sessions/optimisation/runtime_speed_profiles.md
     - Improve run-time speed: sessions/optimisation/improve_runtime_speed.md
     - Big-O: sessions/optimisation/big_o.md
