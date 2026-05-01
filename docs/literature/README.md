@@ -523,9 +523,9 @@ Idx|Rule
 17 |Avoid magic numbers
 18 |Declare variables as locally as possible
 19 |Always initialize variables
-20 |Avoid long functions|Avoid deep nesting
+20 |Avoid long functions. Avoid deep nesting
 21 |Avoid initialization dependencies across compilation units
-22 |Minimize definitional dependencies|Avoid cyclic dependencies
+22 |Minimize definitional dependencies. Avoid cyclic dependencies
 23 |Make header files self-sufficient
 24 |Always write internal `#include` guards. Never write external `#include` guards.
 25 |Take parameters appropriately by value, (smart) pointer, or reference
@@ -533,7 +533,7 @@ Idx|Rule
 27 |Prefer the canonical forms of arithmetic and assignment operators
 28 |Prefer the canonical form of `++` and `--` . Prefer calling the prefix forms
 29 |Consider overloading to avoid implicit type conversions
-30 |Avoid overloading `&&`, `||`, or `,` (comma)
+30 |Avoid overloading `&&`, [the `or` operator], or `,` (comma)
 31 |Don't write code that depends on the order of evaluation of function arguments
 32 |Be clear what kind of class you're writing
 33 |Prefer minimal classes to monolithic classes
@@ -557,7 +557,7 @@ Idx|Rule
 51 |Destructors, deallocation, and `swap` never fail
 52 |Copy and destroy consistently
 53 |Explicitly enable or disable copying
-54 |Avoid slicing|Consider `Clone` in stead of copying in base classes
+54 |Avoid slicing. Consider `Clone` in stead of copying in base classes
 55 |Prefer the canonical form of assignment
 56 |Whenever it makes sense, provide a no-fail swap (and provide it correctly)
 57 |Keep a type and its nonmember function interface in the same namespace
@@ -579,7 +579,7 @@ Idx|Rule
 73 |Throw by value, catch by reference
 74 |Report, handle, and translate errors appropriately
 75 |Avoid exception specifications.
-76 |Use vector by default|Otherwise, choose an appropriate container
+76 |Use vector by default. Otherwise, choose an appropriate container
 77 |Use `vector` and `string` instead of arrays
 78 |Use `vector` (and `string::c_str`) to exchange data with non-C++ APIs
 79 |Store only values and smart pointers in containers
@@ -602,7 +602,7 @@ Idx|Rule
 96 |Don't `memcpy` or `memcmp` non-PODs
 97 |Don't use unions to reinterpret representation.
 98 |Don't use varargs (ellipsis)
-99 |Don't use invalid objects|Don't use unsafe functions
+99 |Don't use invalid objects. Don't use unsafe functions
 100|Don't treat arrays polymorphically
 
 <!-- markdownlint-enable MD013 -->
