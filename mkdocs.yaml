@@ -31,7 +31,6 @@ nav:
   - Development:
     - Team roles: sessions/project/team_roles.md
     - Git workflow, branches: sessions/git/branches.md
-    - Git(-Hub) workflow, merging: sessions/git/merge.md
     - Contributing & code review: sessions/git/contribute.md
     - Sharing and social coding: sessions/social_coding/social_coding.md
     - Pair programming: sessions/pair_programming/README.md
@@ -51,7 +50,6 @@ nav:
     - Wrap-up: misc/wrap_up.md
   - Project:
     - Intro: sessions/project/README.md
-    - Setup: sessions/project_setup/README.md
     - Team roles: sessions/project/team_roles.md
     - Create class list: sessions/project/create_class_list.md
     - Create structs: sessions/project/create_structs.md
@@ -62,7 +60,7 @@ nav:
     - Definitions: misc/definitions.md
     - Emails: emails/README.md
     - Evaluations: evaluations/README.md
-    - Extra material (Earlier Intro day materials): extra.md
+    - Extra material: extra.md
     - FAQ: misc/faq.md
     - Feedback: misc/feedback.md
     - Functions to practice TDD: misc/functions.md
@@ -139,12 +137,21 @@ markdown_extensions:
 
 plugins:
   - search # Add search box
-  - exclude:
+  - exclude: # These files must be excluded when building the website in strict mode
       glob:
         - sessions/project_start/spring2024/startup.md
         - sessions/introductions/sdlc_old.md
         - sessions/git/spring2024/apply_merge.md
         - sessions/git/spring2024/apply_branches.md
+        - sessions/unused/sdlc_tools/README.md
+        - sessions/unused/git_startup/spring2024/startup.md
+        - sessions/merge_conflicts/2025_bjoern/merge.md
+        - course_goals/2025_bjoern/intro.md
+        - sessions/unused/git_startup/README.md
+        - sessions/project_introduction/2025_bjoern/configurations.md
+        - sessions/lifecycle/2025_bjoern/sdlc.md
+        - sessions/lifecycle/2024_bjoern/sdlc_old.md
+        - sessions/course_introduction/2025_bjoern/intro.md
 
 extra_javascript:
   - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js
@@ -162,6 +169,7 @@ not_in_nav: |
   communication/README.md
   communication/summer_2025/README.md
   communication/summer_2025/welcome_letter.md
+  course_goals/2025_bjoern/intro.md
   data/counts/2023_autumn/README.md
   data/counts/2023_summer/README.md
   data/counts/2024_autumn/README.md
@@ -237,6 +245,7 @@ not_in_nav: |
   introductions/sdlc_old.md
   introductions/spring2024/intro.md
   introductions/spring2024/sdlc_tools.md
+  learning_outcomes/2025_bjoern/learning_outcomes.md
   lesson_plans/2023_autumn/day_3_lesson_plan.md
   lesson_plans/2023_autumn/day_4_lesson_plan.md
   lesson_plans/2023_autumn/day_5_lesson_plan.md
@@ -317,6 +326,7 @@ not_in_nav: |
   meeting_notes/20241217.md
   meeting_notes/2024_autumn.md
   meeting_notes/20251204.md
+  meeting_notes/20260427.md
   meeting_notes/next.md
   misc/evaluation.md
   monday_intro.md
@@ -369,6 +379,7 @@ not_in_nav: |
   reflections/2026_summer/20260506.md
   reflections/2026_summer/20260507.md
   reflections/2026_summer/20260508.md
+  sessions/course_introduction/2025_bjoern/intro.md
   sessions/data_structures/README.md
   sessions/data_structures/built_in_data_structures.md
   sessions/deployment/img/README.md
@@ -393,10 +404,14 @@ not_in_nav: |
   sessions/git/spring2024/apply_merge.md
   sessions/introductions/organization_docs.md
   sessions/introductions/sdlc_old.md
+  sessions/lifecycle/2024_bjoern/sdlc_old.md
+  sessions/lifecycle/2025_bjoern/sdlc.md
+  sessions/merge_conflicts/2025_bjoern/merge.md
   sessions/modularity/README.md
   sessions/object_oriented_development/README.md
   sessions/optimisation/README.md
   sessions/project/projects.md
+  sessions/project_introduction/2025_bjoern/configurations.md
   sessions/project_start/README.md
   sessions/project_start/analysis_design/README.md
   sessions/recursive_algorithms/README.md
@@ -404,10 +419,14 @@ not_in_nav: |
   sessions/testing/testing_indeterminate_functions.md
   sessions/project_start/spring2024/startup.md
   sessions/project_start/not_used/startup_old.md
+  sessions/unused/README.md
   sessions/unused/common_practices/exercises/exercises_code_review.md
   sessions/unused/common_practices/pages/notes_code_review_long.md
   sessions/unused/common_practices/slides/README.md
   sessions/unused/common_practices/slides/notes_code_review.md
+  sessions/unused/git_startup/README.md
+  sessions/unused/git_startup/not_used/startup_old.md
+  sessions/unused/git_startup/spring2024/startup.md
   sessions/unused/issues/issues.md
   sessions/unused/issues/kanban_board.md
   sessions/unused/kanban_board/kanban_board.md
@@ -416,6 +435,7 @@ not_in_nav: |
   sessions/unused/project_example_bacterial_movement/example_project/DPD_unassisted.md
   sessions/unused/project_example_bacterial_movement/example_project/DPUA_requirementspecification.md
   sessions/unused/project_example_bacterial_movement/example_project/Example_project_designProcessDocumentation.md
+  sessions/unused/sdlc_tools/README.md
   sessions/watching/README.md
   shared_documents/2023_autumn/day_1.md
   shared_documents/2023_autumn/day_2.md
