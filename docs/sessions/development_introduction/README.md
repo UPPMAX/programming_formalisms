@@ -53,3 +53,14 @@ After this, we move to the 'Design' phase.
     After having written code with bad design (as you will :-) ),
     we can (better) experience the change to good design.
 
+## What will we make?
+
+We will make it possible to (after installing our package)
+to run this code (as copied from
+[exercise 1 'The ideal program' in the 'Registered report' session](../registered_report/README.md#exercise-1-the-ideal-program)):
+
+```python
+import weather
+weather.do_experiment()
+```
+
