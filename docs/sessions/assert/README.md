@@ -155,12 +155,6 @@ The developer (you!) has indicated clearly that the function,
 for now, expects to take two DNA sequences.
 The `# TODO` is signalling clearly that this will be changed in the
 future.
-Use `assert` to specifify assumption on the input of a function
-`[Stroustrup, 1997][McConnell, 2004a]`.
-
-!!! note
-
-    [Specifify](https://www.urbandictionary.com/define.php?term=specifify): When you have to further define what you are talking about to further explain yourself.
 
 ## 2.3. Using assertions to check a function's return value
 
