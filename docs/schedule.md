@@ -26,21 +26,21 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/cou
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
 .         | 10:00-10:15 | .                 |Break
 .         | 10:15-11:00 | Richèl Bilderbeek |[Version control](sessions/version_control/README.md)
-.         | 10:15-11:00 | .                 |[Integrated development environment](sessions/ide/README.md)
-.         | 10:15-11:00 | .                 |[Merge conflicts](sessions/merge_conflicts/README.md)
 .         | 11:00-11:15 | .                 |Break
-.         | 11:15-12:00 | Richèl Bilderbeek |[assert](sessions/assert/README.md)
+.         | 11:15-12:00 | Richèl Bilderbeek |[Integrated development environment](sessions/ide/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |[TDD 1](sessions/tdd/README.md)
+.         | 13:00-14:00 | Richèl Bilderbeek |[Merge conflicts](sessions/merge_conflicts/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
+.         | 14:15-15:00 | Richèl Bilderbeek |[assert](sessions/assert/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |[TDD at a bigger scale](sessions/tdd_at_bigger_scale/README.md)
+.         | 15:15-15:40 | Richèl Bilderbeek |[TDD 1](sessions/tdd/README.md) 
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
-Wednesday | 09:00-10:00 | Richèl Bilderbeek | branches
+Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
 .         | 10:00-10:15 | .                 | Break
-.         | 10:15-11:00 | Richèl Bilderbeek | merge
+.         | 10:15-11:00 | Richèl Bilderbeek |[TDD at a bigger scale](sessions/tdd_at_bigger_scale/README.md)
+.         |            .| .                 |branches, merge
+.         | 11:00-11:15 | .                 | Break
 .         | 11:00-11:15 | .                 | Break
 .         | 11:15-12:00 | Richèl Bilderbeek | [Formal git workflow, contribute](sessions/git/contribute.md)
 .         | .           | Richèl Bilderbeek | [Social coding and sharing](sessions/social_coding/social_coding.md)
