@@ -25,7 +25,7 @@ tags:
 
 ## What have we done so far?
 
-In [the software development lifecycle](../lifecyle/README.md)
+In [the software development lifecycle](../lifecycle/README.md)
 we have now rounded of the planning phase:
 
 - We have created the design documents for the project
@@ -33,7 +33,7 @@ we have now rounded of the planning phase:
 
 ## What is next?
 
-In [the software development lifecycle](../lifecyle/README.md)
+In [the software development lifecycle](../lifecycle/README.md)
 we will now enter the 'Development' phase:
 
 - We will learn how to develop good code in a systematic way
