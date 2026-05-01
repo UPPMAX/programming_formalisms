@@ -255,6 +255,11 @@ how many papers (`n`) recommend a specific practice.
 3  |Time window
 
 
+## Summary of `[Lakos, 1996]` 
+
+This book discusses how top design large scale C++ software,
+with some advice that can by applied to all programming languages.
+
 ## Summary of `[Leau et al., 2012]`
 
 This paper compares Agile versus traditional software development,
@@ -282,6 +287,16 @@ They define a good commit message as such:
 
 > it should have both the summary of the
 > code change (What) and the motivation/reason behind it (Why).
+
+## Summary of `[Liberty, 2001]`
+
+This is a friendly to read book about C++,
+with some advice that applies to all programming languages.
+
+## Summary of `[Martin, 2009]`
+
+This book is written by the famous Robert C. Martin
+and gives advice how to develop software best.
 
 ## Summary of `[Morales et al., 2019]`
 
@@ -941,6 +956,9 @@ Figure 8 depicts the eXtreme programming model:
   [Paper homepage](https://doi-org.ezproxy.its.uu.se/10.1109/ICGSEW.2013.10)
   [PDF](kroll_et_al_2013.pdf)
 
+- `[Lakos, 1996]` John Lakos. Large-Scale C++ Software Design. 1996.
+  ISBN: 0-201-63362-0.
+
 - `[Leau et al., 2012]` Leau, Yu Beng, et al.
   "Software development life cycle AGILE vs traditional approaches."
   International Conference on Information and Network Technology.
@@ -952,6 +970,13 @@ Figure 8 depicts the eXtreme programming model:
   2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE).
   IEEE, 2023.
   [Paper homepage](https://doi.org/10.1109/ICSE48619.2023.00076)
+
+- `[Liberty, 2001]` Jesse Liberty. Sams teach yourself C++ in 24 hours.
+  ISBN: 0-672-32224-2.
+
+- `[Martin, 2009]` Martin, Robert C.
+  Clean code: a handbook of agile software craftsmanship.
+  Pearson Education, 2009.
 
 - `[Morales et al., 2019]` Morales, Jenny, et al.
   "How “friendly” integrated development environments are?."
@@ -1029,8 +1054,15 @@ Figure 8 depicts the eXtreme programming model:
   [Paper homepage](https://openresearchsoftware.metajnl.com/articles/jors.ay).
   [PDF](stodden_and_miguez_2014.pdf)
 
+- `[Stroustrup, 1997]` Bjarne Stroustrup.
+  The C++ Programming Language (3rd edition). 1997.
+  ISBN: 0-201-88954-4.
+
 - `[Stroustrup, 1998]` Stroustrup B. What is “Object-oriented Programming”?
   Software, IEEE. 1988 Jun 1;5:10–20.
+
+- `[Stroustrup, 2013]` Bjarne Stroustrup.
+  The C++ Programming Language (4th edition). 2013. ISBN: 978-0-321-56384-2.
 
 - `[Sutter & Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
   C++ coding standards: 101 rules, guidelines, and best practices. 2004.
