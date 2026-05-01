@@ -97,7 +97,7 @@ that fits perfectly well with the phase of the course.
 
     ![Sketch boxplot](sketch_boxplot.png)
 
-    > Figure: temperature distribution
+    > Figure: temperature distribution (TODO: replace sketch with real figure)
 
     **Discussion** 
 
