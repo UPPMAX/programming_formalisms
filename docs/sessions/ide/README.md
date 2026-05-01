@@ -53,10 +53,10 @@ We recommend to use an IDE, because:
 
 - it reduces the amount of tools you need to install,
   as the IDE installs these for you:
-  - Built-in version control
-  - Built-in terminal
-  - Built-in git credential manager
-  - Built-in debugger
+    - Built-in version control
+    - Built-in terminal
+    - Built-in git credential manager
+    - Built-in debugger
 - it is intended to make the learning curve less steep:
   one can 'just click through things', where these things will make
   sense later.
