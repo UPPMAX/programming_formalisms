@@ -18,7 +18,6 @@ nav:
     - Version control: sessions/version_control/README.md
     - Integrated development environment: sessions/ide/README.md
     - Merge conflicts: sessions/merge_conflicts/README.md
-    - SDLC tools: sessions/introductions/sdlc_tools.md
   - Planning:
     - Analysis Phase: sessions/project_start/analysis_design/README.md
     - Exercise Analysis Phase: sessions/development_design/risk_and_requirements_exercise.md
