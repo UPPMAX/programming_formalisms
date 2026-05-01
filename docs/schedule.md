@@ -39,8 +39,7 @@ Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](
 .         |.            |.                  |.
 Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
 .         | 10:00-10:15 | .                 | Break
-.         | 10:15-11:00 | Richèl Bilderbeek |[TDD at a bigger scale](sessions/tdd_at_bigger_scale/README.md)
-.         |            .| .                 |branches, merge
+.         | 10:15-11:00 | Richèl Bilderbeek |Branches, merge
 .         | 11:00-11:15 | .                 | Break
 .         | 11:00-11:15 | .                 | Break
 .         | 11:15-12:00 | Richèl Bilderbeek | [Formal git workflow, contribute](sessions/git/contribute.md)

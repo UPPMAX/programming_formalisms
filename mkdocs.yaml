@@ -138,19 +138,20 @@ plugins:
   - search # Add search box
   - exclude: # These files must be excluded when building the website in strict mode
       glob:
-        - sessions/project_start/spring2024/startup.md
-        - sessions/introductions/sdlc_old.md
+        - course_goals/2025_bjoern/intro.md
+        - sessions/course_introduction/2025_bjoern/intro.md
         - sessions/git/spring2024/apply_merge.md
         - sessions/git/spring2024/apply_branches.md
-        - sessions/unused/sdlc_tools/README.md
-        - sessions/unused/git_startup/spring2024/startup.md
-        - sessions/merge_conflicts/2025_bjoern/merge.md
-        - course_goals/2025_bjoern/intro.md
-        - sessions/unused/git_startup/README.md
-        - sessions/project_introduction/2025_bjoern/configurations.md
         - sessions/lifecycle/2025_bjoern/sdlc.md
         - sessions/lifecycle/2024_bjoern/sdlc_old.md
-        - sessions/course_introduction/2025_bjoern/intro.md
+        - sessions/introductions/sdlc_old.md
+        - sessions/merge_conflicts/2025_bjoern/merge.md
+        - sessions/project_start/spring2024/startup.md
+        - sessions/project_introduction/2025_bjoern/configurations.md
+        - sessions/unused/git_startup/README.md
+        - sessions/unused/git_startup/spring2024/startup.md
+        - sessions/unused/sdlc_tools/README.md
+        - sessions/unused/tdd_at_bigger_scale/README.md
 
 extra_javascript:
   - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js
@@ -435,6 +436,7 @@ not_in_nav: |
   sessions/unused/project_example_bacterial_movement/example_project/DPUA_requirementspecification.md
   sessions/unused/project_example_bacterial_movement/example_project/Example_project_designProcessDocumentation.md
   sessions/unused/sdlc_tools/README.md
+  sessions/unused/tdd_at_bigger_scale/README.md
   sessions/watching/README.md
   shared_documents/2023_autumn/day_1.md
   shared_documents/2023_autumn/day_2.md
