@@ -148,7 +148,7 @@ For example, here is a function that aligns any amount of DNA sequences:
 
 ```python
 def align(dna_sequences):
-    """Align the DNA sequences"""
+    """Align two or more DNA sequences"""
     assert len(dna_sequences) == 2 # TODO
     # the actual code
 ```
@@ -167,10 +167,9 @@ For example, here is a function that aligns two DNA sequences:
 
 ```python
 def align_two_dna_sequences(dna_sequences):
-    """Align the DNA sequences"""
+    """Align two DNA sequences, returning two strings of equal length."""
     # ....
-    results = ["AAAA", "AAC-"] # Should be result of calculation
-    assert len(results[1]) == len(results[2])
+    assert len(results[0]) == len(results[1])
     return results
 ```
 
