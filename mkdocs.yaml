@@ -32,7 +32,6 @@ nav:
     - Introduction: sessions/development_introduction/README.md
     - assert: sessions/assert/README.md
     - Test-driven development: sessions/tdd/README.md
-    - TDD at a bigger scale: sessions/tdd_at_bigger_scale/README.md
     - Using a formal testing framework: sessions/testing/testing_framework.md
     - Team roles: sessions/project/team_roles.md
     - Git workflow, branches: sessions/git/branches.md

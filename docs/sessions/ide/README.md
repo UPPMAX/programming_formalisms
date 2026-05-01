@@ -30,6 +30,9 @@ with many features to do so.
 - IDEs are difficult to use, learn, and master.
   Experts perceive IDEs better (but not much) than beginners
   `[Kline and Seffah, 2005]`
+- Know your IDE `[Henney, 2010]` (page 90). The author of this
+  chapter delights in the many useful features IDEs have nowadays
+  and suggests, among others, to try to learn the keyboard shortcuts.
 - Even though syntax highlighting is present in most (all?) IDEs,
   this does not improve readability or understanding
   `[Beelders and du Plessis, 2015]`
@@ -286,6 +289,11 @@ code matches the code in the online repository!
   "Syntax highlighting as an influencing factor when reading and
   comprehending source code." Journal of Eye Movement Research 9.1 (2015): 1.
   [Paper homepage](https://doi.org/10.16910/jemr.9.1.1)
+
+- `[Henney, 2010]`, Kevlin.
+  97 things every programmer should know:
+  collective wisdom from the experts. "
+  O'Reilly Media, Inc.", 2010.
 
 - `[Khan, 2009]` Khan, Iftikhar Ahmed.
   Towards a mood sensitive integrated development environment

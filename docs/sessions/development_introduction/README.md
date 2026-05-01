@@ -53,7 +53,10 @@ After this, we move to the 'Design' phase.
     After having written code with bad design (as you will :-) ),
     we can (better) experience the change to good design.
 
-## What will we make?
+
+## Exercises
+
+## Exercise 1: our first setup
 
 We will make it possible to (after installing our package)
 to run this code (as copied from
@@ -63,4 +66,41 @@ to run this code (as copied from
 import weather
 weather.do_experiment()
 ```
+
+This code then should produce the output and files
+we need as the results of our research.
+
+Do you agree with this setup?
+
+What would be the best next step according to you?
+
+## Exercise 2: a stub package function
+
+From this setup, a next step would be to write all the code
+of the `weather` package to make the code above work:
+
+```python
+def do_experiment():
+  # Read the data
+  # Do the statistics
+  # Save the statistics results to file
+  # Create the figure
+  # Save the figure to file
+```
+
+A function like this is called a 'stub', i.e. a beginning or a first sketch
+of what it will be. This stub contains mostly *pseudocode*, in this
+comments that tell in English what needs to be done.
+
+Do you agree that writing this stub would be a reasonable next step?
+
+What would be the best next step according to you?
+
+## Exercise 3: which next step?
+
+Our next step will be to test if the function `do_experiment`
+indeed creates the files we need.
+
+Would you agree why this is a good idea? If not, what do you think would be
+better?
 
