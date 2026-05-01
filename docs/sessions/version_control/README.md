@@ -94,6 +94,8 @@ graph TB
   
 ## The verbs in version control
 
+These are the verbs used in a version control system:
+
 Verb  |Description
 ------|--------------------------------------------------------
 status|Get the status
@@ -102,21 +104,30 @@ add   |Stage one or more files
 commit|Give a name to the change(s) made to the staged file(s)
 push  |Upload
 pull  |Update
+fetch |Check for update of online repository
+sync  |Update local and online code to be the same
 
-Here is the cycle of these verbs:
+Which verbs are used depends on the program to do version control with.
+These verbs are used in a cycle.
 
-
-```mermaid
-graph TB
-  clone --> add --> commit --> push --> pull --> add
-```
-
-VS Code simplifies this somewhat to this:
+Here are two cycles of the verbs used in version control:
 
 ```mermaid
 graph TB
-  clone --> commit --> sync --> commit
+  classDef optional_node stroke-dasharray: 5 5
+
+  subgraph version_control[Our version control system]
+    direction TD
+    git_clone[Clone] --> git_add[Add] --> git_commit[Commit] --> git_push[Push] --> git_pull[Pull] --> git_add
+  end
+  subgraph ide[Our integrated development environment]
+    direction TD
+    ide_clone[Clone] --> ide_add[Add]:::optional_node --> ide_commit[Commit] --> ide_fetch[Fetch] --> ide_sync[Sync] --> ide_add
+  end
 ```
+
+> The dashed node at 'Add' indicates that this verb can be 'removed'
+> by the IDE. Then, the IDE will allways stage all files in a commit for you.
 
 ## Exercises
 
