@@ -31,7 +31,7 @@ Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-14:00 | Richèl Bilderbeek |[Merge conflicts](sessions/merge_conflicts/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |[Development introduction](sessions_development_introduction/README.md)
+.         | 14:15-15:00 | Richèl Bilderbeek |[Development introduction](sessions/development_introduction/README.md)
 .         | .           | .                 |[assert](sessions/assert/README.md)
 .         | 15:00-15:15 | .                 |Break
 .         | 15:15-15:40 | Richèl Bilderbeek |[TDD 1](sessions/tdd/README.md)
