@@ -278,7 +278,6 @@ How do we reduce the problem of this?
     > Commit early, commit often
 
 
-
 ## References
 
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
