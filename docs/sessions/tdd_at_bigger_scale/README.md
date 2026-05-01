@@ -81,7 +81,7 @@ flowchart TD
 
 ## 3.1. Draft paper
 
-Imagine that you are part of a team that works on 
+Imagine that you are part of a team that works on
 [the draft registered report shown in the 'registered report' session](../registered_report/README.md#an-example-draft-registered-report).
 
 ## 3.2. Small to big
