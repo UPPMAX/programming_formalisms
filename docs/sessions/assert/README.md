@@ -504,4 +504,3 @@ def read_non_empty_file(filename):
   "Best practices for scientific computing."
   PLoS biology 12.1 (2014): e1001745.
   [Paper homepage](https://doi.org/10.1371/journal.pbio.1001745).
-  [PDF](wilson_et_al_2014.pdf)
