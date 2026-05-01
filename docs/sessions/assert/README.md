@@ -38,7 +38,11 @@ tags:
     - What synonymn does 'to assert' have in English?
     - Have you ever used asserts? In R, the equivalent is `testthat::expect_`
 
+<!--
+
 ![https://www.xkcd.com/379/](forgetting.png)
+
+-->
 
 !!! info "About the verb 'to assert'"
 
@@ -63,9 +67,11 @@ tags:
 
 ## 1. Why use assertions
 
-> If debugging is the process of removing bugs,
-> then programming must be the process of putting them in.
-> Edsger W. Dijkstra
+!!! info "Famous quote"
+
+    > If debugging is the process of removing bugs,
+    > then programming must be the process of putting them in.
+    > Edsger W. Dijkstra
 
 You will be writing code with flaws and bugs.
 Making you assumptions explicit
@@ -73,10 +79,6 @@ will help you structure your thoughts and reduce
 the time you spend debugging.
 
 ## 2. About assumptions
-
-> Assert liberally to document internal assumptions and invariants
->
-> `[Sutter & Alexandrescu, 2004]`, chapter 68.
 
 While coding, we have assumptions.
 Take, for example, this code:
@@ -87,23 +89,24 @@ average = sum_of_elements / n_elements
 
 Here, we assume that `n_elements` is non-zero,
 else we cannot calculate an average.
-We can express that with an `assert` statement:
+
+We can express that with a comment:
+
+```python
+# The number of elements must be non-zero and positive
+average = sum_of_elements / n_elements
+```
+
+However, comments are not read by computers.
+Instead, we can express the same idea with an `assert` statement:
 
 ```python
 assert n_elements > 0
 average = sum_of_elements / n_elements
 ```
 
-???- question "Prefer R?"
-
-    In R, the same story hold for the `testthat::expect_true`
-    (as part of the Tidyverse) function.
-
-This `assert` will terminate the program if the assertion is false.
-Assert liberally to document assumptions
-`[Sutter & Alexandrescu, 2004; Stroustrup, 1997; McConnell, 2004a]`
-`[Liberty, 2001; Lakos, 1996; Stroustrup, 2013a]`,
-even if you think something should never occur `[McConnell, 2004b]`.
+This `assert` will be read by your computer and
+terminate the program if the assertion is false.
 
 ## 2.1. Assertions in debug and release mode
 
@@ -181,8 +184,21 @@ as they should. The resulting DNA sequences may have incorrect content,
 which likely is to be checked someplace else. But checking for the
 sequences to be of equal length may help as a first quick
 test to find bugs.
-Use `assert` to specifify assumption on the output of a function
-`[Stroustrup, 1997][McConnell, 2004a]`.
+
+## What does the literature say?
+
+- Assert liberally to document internal assumptions and invariants 
+  `[Sutter & Alexandrescu, 2004]`, chapter 68.
+- Assert liberally to document assumptions `[Stroustrup, 1997]`
+- Assert liberally to document assumptions `[McConnell, 2004a]`
+- Assert liberally to document assumptions `[Liberty, 2001]`
+- Assert liberally to document assumptions `[Lakos, 1996]`
+- Assert liberally to document assumptions `[Stroustrup, 2013a]`
+- Assert even if you think something should never occur `[McConnell, 2004b]`
+- Use `assert` to specifify assumption on the input of a function `[Stroustrup, 1997]`
+- Use `assert` to specifify assumption on the input of a function `[McConnell, 2004a]`
+- Use `assert` to specifify assumption on the output of a function `[Stroustrup, 1997]`.
+- Use `assert` to specifify assumption on the output of a function `[McConnell, 2004a]`.
 
 ## 3. Exercises
 
