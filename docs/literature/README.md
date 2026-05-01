@@ -255,7 +255,7 @@ how many papers (`n`) recommend a specific practice.
 3  |Time window
 
 
-## Summary of `[Lakos, 1996]` 
+## Summary of `[Lakos, 1996]`
 
 This book discusses how top design large scale C++ software,
 with some advice that can by applied to all programming languages.
