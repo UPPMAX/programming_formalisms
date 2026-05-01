@@ -81,42 +81,8 @@ flowchart TD
 
 ## 3.1. Draft paper
 
-Imagine that you are part of a team that works on writing a paper
-on the weather project data. Part of the draft paper is as below:
-
-!!! info "Part of the paper"
-
-    **Research question**
-
-    Have temperatures risen in Uppsala in the period 1722 to 2022?
-
-    **Hypotheses**
-
-    Hypothesis: temperatures remain the same
-
-    **Methods**
-    
-    We test our hypothesis by comparing the average yearly temperatures
-    at the start and end of our measurement period. To prevent that the
-    temperatures are too related, we compare the first third of the
-    measurements (i.e. 1722-1822) with the last third of the measurements
-    (i.e. 1922-2022) and ignoring the measurements in between.
-    We only consider years that are measured completely, to remove seasonal
-    effects, which means that the first year (1722) will be ignored.
-
-    We compare these yearly average tempares with a two-sided
-    Kolmogorov-Smirnov test (so to avoid assuming an increase/decrease,
-    nor a distribution on these average temperatures),
-    with the null hypothesis that these distributions are identical.
-    We use an alpha value of 0.05. If the measured p value is below the alpha,
-    then we reject the null hypothesis that the distributions are identical
-    and we conclude that the temperatures have changed.
-
-    **Results**
-
-    ![Sketch boxplot](sketch_boxplot.png)
-
-    > Figure: temperature distribution
+Imagine that you are part of a team that works on 
+[the draft registered report shown in the 'registered report' session](../registered_report/README.md#an-example-draft-registered-report).
 
 ## 3.2. Small to big
 

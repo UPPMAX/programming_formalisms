@@ -65,23 +65,44 @@ that fits perfectly well with the phase of the course.
 
 ## An example draft registered report
 
-Introduction: industrialization may have an impact on the climate
+!!! info "An example draft registered report"
 
-Hypothesis: the average yearly temperature remains the same
+    **Research question**
 
-Methods: use a Kolmogov-Smirnov test
-  to test if the first/earliest third of the
-  temperatures come from the same underlying distribution
-  as the last/latest third of the temperatures,
-  using an alpha value of 0.05.
+    Have temperatures risen in Uppsala in the period 1722 to 2022?
 
-Conclusion: if the distributions are similar,
-  the average yearly temperature has remained the same.
-  If the distributions are different, it means that industrialization
-  *may* have changed temperatures
+    **Hypotheses**
 
-Discussion: this is only a correlational study, with no direct link
-  between temperature and industrialization being measured
+    Temperatures remain the same
+
+    **Methods**
+    
+    We test our hypothesis by comparing the average yearly temperatures
+    at the start and end of our measurement period. To prevent that the
+    temperatures are too related, we compare the first third of the
+    measurements (i.e. 1722-1822) with the last third of the measurements
+    (i.e. 1922-2022) and ignoring the measurements in between.
+    We only consider years that are measured completely, to remove seasonal
+    effects, which means that the first year (1722) will be ignored.
+
+    We compare these yearly average tempares with a two-sided
+    Kolmogorov-Smirnov test (so to avoid assuming an increase/decrease,
+    nor a distribution on these average temperatures),
+    with the null hypothesis that these distributions are identical.
+    We use an alpha value of 0.05. If the measured p value is below the alpha,
+    then we reject the null hypothesis that the distributions are identical
+    and we conclude that the temperatures have changed.
+
+    **Results**
+
+    ![Sketch boxplot](sketch_boxplot.png)
+
+    > Figure: temperature distribution
+
+    **Discussion** 
+
+    This is only a correlational study, with no direct link
+    between temperature and industrialization being measured.
 
 ## Exercises
 
