@@ -497,7 +497,8 @@ some advice applies to all programming languages.
 - 10. Minimize global and shared data
 - 11. Hide information
 - 12. Know when and how to code for concurrency
-- 13. Ensure resources are owned by objects. Use explicit RAII and smart pointers.
+- 13. Ensure resources are owned by objects.
+  Use explicit RAII and smart pointers.
 - 14. Prefer compile- and link-time errors to run-time errors
 - 15. Use `const` proactively
 - 16. Avoid macros
@@ -508,33 +509,41 @@ some advice applies to all programming languages.
 - 21. Avoid initialization dependencies across compilation units
 - 22. Minimize definitional dependencies. Avoid cyclic dependencies
 - 23. Make header files self-sufficient
-- 24. Always write internal `#include` guards. Never write external `#include` guards.
+- 24. Always write internal `#include` guards.
+  Never write external `#include` guards.
 - 25. Take parameters appropriately by value, (smart) pointer, or reference
 - 26. Preserve natural semantics for overloaded operators
 - 27. Prefer the canonical forms of arithmetic and assignment operators
-- 28. Prefer the canonical form of `++` and `--` . Prefer calling the prefix forms
+- 28. Prefer the canonical form of `++` and `--` .
+  Prefer calling the prefix forms
 - 29. Consider overloading to avoid implicit type conversions
-- 30. Avoid overloading `&amp;&amp;`, `||`, or `,` (comma)
-- 31. Don't write code that depends on the order of evaluation of function arguments
+- 30. Avoid overloading `&&`, `||`, or `,` (comma)
+- 31. Don't write code that depends on the order of evaluation
+  of function arguments
 - 32. Be clear what kind of class you're writing
 - 33. Prefer minimal classes to monolithic classes
 - 34. Prefer composition to inheritance
 - 35. Avoid inheriting from classes that were not designed to be base classes
 - 36. Prefer providing abstract interfaces
-- 37. Public inheritance is substitutability. Inherit, not to reuse,but to be reused
+- 37. Public inheritance is substitutability. Inherit, not to reuse,
+  but to be reused
 - 38. Practice safe overriding
-- 39. Consider making virtual functions nonpublic, and public functions nonvirtual
+- 39. Consider making virtual functions nonpublic,
+  and public functions nonvirtual
 - 40. Avoid providing implicit conversions
-- 41. Make data members private, except in behaviourless aggregates (C-style `struct`s)
+- 41. Make data members private, except in behaviourless
+  aggregates (C-style `struct`s)
 - 42. Don't give away your internals
 - 43. Pimpl judiciously
 - 44. Prefer writing nonmember nonfriend functions
 - 45. Always provide `new` and `delete` together
-- 46. If you provide any class-specific `new`, provide all of the standard forms (plain, in-place, and `nothrow`)
+- 46. If you provide any class-specific `new`, provide all of the standard
+  forms (plain, in-place, and `nothrow`)
 - 47. Define and initialize member variables in the same order
 - 48. Prefer initialization to assignment in constructors
 - 49. Avoid calling virtual functions in constructors and destructors
-- 50. Make base class destructors public and virtual, or protected and nonvirtual
+- 50. Make base class destructors public and virtual,
+  or protected and nonvirtual
 - 51. Destructors, deallocation, and `swap` never fail
 - 52. Copy and destroy consistently
 - 53. Explicitly enable or disable copying
@@ -542,7 +551,8 @@ some advice applies to all programming languages.
 - 55. Prefer the canonical form of assignment
 - 56. Whenever it makes sense, provide a no-fail swap (and provide it correctly)
 - 57. Keep a type and its nonmember function interface in the same namespace
-- 58. Keep types and functions in separate namespaces unless they're specifically intended to work together
+- 58. Keep types and functions in separate namespaces
+  unless they're specifically intended to work together
 - 59. Don't write namespace `using`s in a header file or before an `#include`
 - 60. Avoid allocating and deallocating memory in different modules
 - 61. Don't define entities with linkage in a header file
@@ -566,7 +576,8 @@ some advice applies to all programming languages.
 - 79. Store only values and smart pointers in containers
 - 80. Prefer push back to other ways of expanding a sequence
 - 81. Prefer range operations to single-element operations
-- 82. Use the accepted idioms to really shrink capacity and really erase elements
+- 82. Use the accepted idioms to really shrink capacity
+  and really erase elements
 - 83. Use a checked STL implementation
 - 84. Prefer algorithm calls to handwritten loops
 - 85. Use the right STL search algorithm

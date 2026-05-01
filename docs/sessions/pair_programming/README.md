@@ -182,7 +182,7 @@ Before doing the exercises:
 - Reach an agreement on how to do pair programming: among others,
   decide upon the first driver and when to switch roles.
 - Write your own analysis on the weather data, as if it would
-  be for a paper. 
+  be for a paper.
   or come up with your own hypothesis.
   If that is too hard, try
   [one of the many example functions](https://uppmax.github.io/programming_formalisms/misc/functions/)

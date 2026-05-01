@@ -187,7 +187,7 @@ test to find bugs.
 
 ## What does the literature say?
 
-- Assert liberally to document internal assumptions and invariants 
+- Assert liberally to document internal assumptions and invariants
   `[Sutter & Alexandrescu, 2004]`, chapter 68.
 - Assert liberally to document assumptions `[Stroustrup, 1997]`
 - Assert liberally to document assumptions `[McConnell, 2004a]`
