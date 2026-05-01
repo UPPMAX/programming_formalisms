@@ -181,7 +181,7 @@ test to find bugs.
 ## What does the literature say?
 
 - Assert liberally to document internal assumptions and invariants
-  `[Sutter & Alexandrescu, 2004]`, chapter 68.
+  `[Sutter & Alexandrescu, 2004]` (chapter 68)
 - Explicitly express preconditions, postconditions,
   and other assertions as assertions' `[Stroustrup, 1997]` (Advice 24.5.18)
 - Use `assert` freely `[Liberty, 2001]` (hour 24)
@@ -196,9 +196,8 @@ test to find bugs.
 - Use assertions for conditions that should never occur `[McConnell, 2004b]`
   (Chapter 8.2 'Assertions', paragraph 'Guidelines for using asserts')
 - Do not assume that `assert` is always
-  evaluated' `[Stroustrup, 2013b]` (Chapter 30.5. Advice)
+  evaluated `[Stroustrup, 2013b]` (Chapter 30.5. Advice)
 - Add assertions to programs to check their operation `[Wilson et al., 2014]`
-
 
 ## 3. Exercises
 
