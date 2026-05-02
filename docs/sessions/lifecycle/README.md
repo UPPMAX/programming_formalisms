@@ -193,7 +193,7 @@ demands on the team. What are these?
 
     <!-- markdownlint-enable MD013 -->
 
-## References
+## [References](../references/README.md)
 
 - `[Aniley et al., 2024]` Aniley, D. Bitew, E. Alemneh Jalew,
   and G. Abeba Agegnehu. "Selection of software development life cycle

@@ -302,7 +302,7 @@ assert str(type(a)) == "<class '__main__.Position'>"
 
     No answer here, as I cannot read your mind :-)
 
-## References
+## [References](../references/README.md)
 
 - `[CppCore P.1]` [P.1. Express ideas directly in code](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rp-direct)
 - `[PEP 20]` [PEP 20: 'Explicit is better than implicit'](https://peps.python.org/pep-0020/#the-zen-of-python)

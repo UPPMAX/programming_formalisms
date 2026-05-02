@@ -409,7 +409,7 @@ Zero line Design is optimal in the sense that if some one already figure out a t
 
 <!--![Gamma et al., 1995]() consider adding images of each book used in the reference -->
 
-## References
+## [References](../references/README.md)
 
 - `[Ivar Jacobson 1992]` Ivar Jacobson et al., Object-Oriented Software Engineering, a use case driven approach, Addison-wesley 1992.
 - `[Booch 2007]` Grady Booch et al.,Object-oriented analysis and design with applications -3rd ed,Addison-wesley 2007.

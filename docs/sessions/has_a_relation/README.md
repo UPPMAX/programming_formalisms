@@ -240,6 +240,6 @@ classDiagram
             )
     ```
 
-## References
+## [References](../references/README.md)
 
 - `[CppCore C.1]` [C.1. Organize related data into structures (structs or classes)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-org)

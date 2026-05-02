@@ -469,7 +469,8 @@ In this course, you've written some functions yourself.
 - Pick the favorite function you've written
 - Add it to the package, in the same files
 
-## References
+## [References](../references/README.md)
+
 
 - `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes.
   "Deriving chemosensitivity from cell lines: forensic bioinformatics and

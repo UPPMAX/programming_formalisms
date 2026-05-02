@@ -293,7 +293,7 @@ How do we reduce the problem of this?
     Or 'Take small steps - always' `[Thomas and Hunt, 2019]` (tip 42).
 
 
-## References
+## [References](../references/README.md)
 
 - `[Chacon and Straub, 2014]` Chacon, Scott, and Ben Straub.
   Pro git. Springer Nature, 2014.
