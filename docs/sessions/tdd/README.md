@@ -251,15 +251,12 @@ Below are some TDD exercise,
 with the goal of practicing TDD.
 
 Work in the `src/learners` folder and create a file named
-after you, e.g. `sven.py`.
+after you, e.g. `sven.py`, `anna_and_sven.py`, `team_cool.py`.
 
 If you use R and it would help, at [the 'Videos' subsection](#videos),
 you can find videos of doing the same in R. After seeing
 such a video, try to write the Python code (i.e. do not stick with
 writing R, how annoying this may feel).
-
-If you feel comfortable enough with TDD,
-move to the next session.
 
 ## 5.1. Exercise 1: `is_zero`
 
@@ -484,23 +481,36 @@ Develop a function called `is_prime`.
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
-## 5.5. Exercise 5: your function
+## 5.5. Exercise 5: the research project
 
-Think of a function you want to write, or
-pick one [of the many example TDD functions](../../misc/functions.md).
+For our research project, we have already written some tests
+in [the session about `assert`](../assert/README.md).
 
-???- question "Does this still work for complex functions?"
+We have written the tests for the package:
 
-    Yes. TDD can always be applied.
+```python
+import weather
+weather.do_experiment()
+assert file_exists("figure.png")
+assert file_exists("statistics_results.txt")
+```
 
-???- question "Could you show me an example of well-tested complex functions?"
+However, we will not develop at this level.
 
-    Yes.
+We have written the tests for the `do_experiment` function:
 
-    Here are some:
+```
+def do_experiment():
+  # Read the data
+  # Do the statistics
+  # Save the statistics results to file
+  assert file_exists("figure.png")
+  # Create the figure
+  # Save the figure to file
+  assert file_exists("statistics_results.txt")
+```
 
-    - [Tests for a C++ chess game](https://github.com/richelbilderbeek/conquer_chess/blob/main/src/test_game.cpp)
-    - [Tests for an R phylenetics tool](https://github.com/ropensci/beautier/blob/main/tests/testthat/test-is_mcmc.R)
+Apply TDD to develop this code.
 
 ## 6. Conclusion
 
