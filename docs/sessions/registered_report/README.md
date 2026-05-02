@@ -112,6 +112,17 @@ In this course, we will create a Python package for a research project.
 This package should create all texts, tables and figures needed for
 publication.
 
+Why would one put code in a package, instead of a script?
+
+???- question "Answer"
+
+    Because a package is:
+
+    - for users: it is easier to install: when installing a Python packages,
+      the prerequisites are installed with them
+    - for us: we can use the formalized architecture of a Python package,
+      such as modules and testing code
+
 What would be your ideal use of this Python package?
 That is, how would you **ideally** document the Python code
 on how to (re)do the experiment?
