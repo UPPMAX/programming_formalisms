@@ -78,7 +78,7 @@ This is *the* book about Git.
 
 It is open access.
 
-## Summary of `[Erdogmus and Morisio, 2005]` 
+## Summary of `[Erdogmus and Morisio, 2005]`
 
 TDD makes developers more productive and increases the quality of the code.
 
@@ -297,21 +297,21 @@ Chapter 11, 'Growing and sustaining TDD' provides for
 - research on TDD
 - the Bad Test Death spiral. Below is a possible path, where
   the book provides ways to counter it.
-  - The team writes mostly integration tests
-  - The growing body of tests begings to pass the pain threshold
-  - Developers run the test suit less frequently
+    - The team writes mostly integration tests
+    - The growing body of tests begings to pass the pain threshold
+    - Developers run the test suit less frequently
     or run subsets of the tests
-  - Developers delete tests
-  - Defects begin to increase
-  - The team, or management, questions the value of TDD
-  - The team abandons TDD
+    - Developers delete tests
+    - Defects begin to increase
+    - The team, or management, questions the value of TDD
+    - The team abandons TDD
 - The rules for pair programming
-  - Two programmers actively develop a solution
-  - The programmers typically sit side by side
-  - At any given time, one is the driver, the other is the navigator
-  - The programmers swap roles frequently,
+    - Two programmers actively develop a solution
+    - The programmers typically sit side by side
+    - At any given time, one is the driver, the other is the navigator
+    - The programmers swap roles frequently,
     e.g. every time a test fails or passes
-  - Pairing sessions are short-lived, around 90 minutes,
+    - Pairing sessions are short-lived, around 90 minutes,
     to increase knowledge (and hence, reduce risk) accross the team
 - Code katas
 
@@ -1194,7 +1194,8 @@ Figure 8 depicts the eXtreme programming model:
   2022.
   [Paper homepage](https://doi.org/10.1145/3510003.3510205)
 
-- `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)
+- `[Uncle Bob, 2024]`
+  [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)
 
 - `[Visser et al., 2016]` Visser, Joost, et al.
   Building software teams: Ten best practices for
