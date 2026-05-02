@@ -207,7 +207,7 @@ that have influenced the course.
   "A structured experiment of test-driven development."
   Information and software Technology 46.5 (2004): 337-342.
 
-???- info "Summary of `[George and Williams, 2004]`
+???- info "Summary of `[George and Williams, 2004]`"
 
     TDD takes 16% more time, with 18% more black-box tests that pass.
 
@@ -223,7 +223,7 @@ that have influenced the course.
   collective wisdom from the experts. "
   O'Reilly Media, Inc.", 2010.
 
-???- info "Summary of `[Henney, 2010]`
+???- info "Summary of `[Henney, 2010]`"
 
     This book gives 97 pieces of advice, as given by experts.
     Here is the table of content:
@@ -338,7 +338,7 @@ that have influenced the course.
   "Test-driven learning: intrinsic integration of testing into the CS/SE
   curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
 
-???- info "Summary of `[Janzen and Saiedian, 2006]`
+???- info "Summary of `[Janzen and Saiedian, 2006]`"
 
     TDD increases quality of the code.
 
@@ -348,7 +348,7 @@ that have influenced the course.
   [Paper homepage](https://pubmed.ncbi.nlm.nih.gov/28751965/)
   [PDF](jimenez_et_al_2017.pdf)
 
-???- info "Summary of `[Jiménez et al., 2017]`
+???- info "Summary of `[Jiménez et al., 2017]`"
 
       This open-access paper gives some best practices in research software.
 
@@ -429,7 +429,7 @@ that have influenced the course.
 - `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better.
   "Modern C++ Programming with Test-Driven Development." (2013).
 
-???- info "Summary of `[Langr, 2013]`
+???- info "Summary of `[Langr, 2013]`"
 
     In this book, Jeff Langr describes how to do TDD in C++.
 
@@ -544,7 +544,7 @@ that have influenced the course.
   Cham: Springer International Publishing, 2019.
   [Paper homepage](https://doi.org/10.1007/978-3-030-21902-4_7)
 
-???- info "Summary of `[Morales et al., 2019]`
+???- info "Summary of `[Morales et al., 2019]`"
 
     This study asks students to evaluate how friendly different IDEs
     are to use.
@@ -666,7 +666,7 @@ that have influenced the course.
   [Paper homepage](https://link.springer.com/article/10.1186/1751-0473-8-7)
   [PDF](ram_2013.pdf)
 
-???- info "Summary of `[Ram, 2013]`
+???- info "Summary of `[Ram, 2013]`"
 
     This open-access paper supplies these 8 use cases for Git in science.
 
@@ -796,7 +796,7 @@ that have influenced the course.
   [Paper homepage](https://doi.org/10.5220/0011988400003464).
   [PDF](stieler_and_bauer_2023.pdf)
 
-???- info "Summary of `[Stieler and Bauer, 2023]`
+???- info "Summary of `[Stieler and Bauer, 2023]`"
 
     This open-access paper applies `[Serban et al., 2020]`
     for a data-centric AI project called GW4AL.
@@ -960,7 +960,7 @@ that have influenced the course.
   The Pragmatic Programmer: your journey to mastery.
   Addison-Wesley Professional, 2019.
 
-???- info "Summary of `[Thomas and Hunt, 2019]`
+???- info "Summary of `[Thomas and Hunt, 2019]`"
 
     This book is a classic, with 100 tips.
     Here is an overview of the (sometimes cryptically phrased) tips,
@@ -1075,7 +1075,7 @@ that have influenced the course.
   2022.
   [Paper homepage](https://doi.org/10.1145/3510003.3510205)
 
-???- info "Summary of `[Tian et al, 2022]`
+???- info "Summary of `[Tian et al, 2022]`"
 
     This paper describes what makes a good commit message,
     classifying good commit messages in 'What' and 'Why'
@@ -1091,7 +1091,7 @@ that have influenced the course.
   Building software teams: Ten best practices for
   effective software development. " O'Reilly Media, Inc.", 2016.
 
-???- info "Summary of `[Visser et al., 2016]`
+???- info "Summary of `[Visser et al., 2016]`"
 
     This closed-access paper has the following table of content:
 
