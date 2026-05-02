@@ -986,6 +986,9 @@ Figure 8 depicts the eXtreme programming model:
   Building and scaling high performing technology organizations.
   IT Revolution, 2018.
 
+- `[Fowler's website]`
+  [Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
+
 - `[Gamma et al., 1995]` Gamma, Erich, et al.
   "Elements of reusable object-oriented software." Design Patterns (1995).
 
@@ -995,6 +998,10 @@ Figure 8 depicts the eXtreme programming model:
 
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed.
   Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
+
+- `[Hattie, 2012]` Hattie, John.
+  Visible learning for teachers: Maximizing impact on learning.
+  Routledge, 2012.
 
 - `[Henney, 2010]`, Kevlin.
   97 things every programmer should know:
@@ -1136,6 +1143,11 @@ Figure 8 depicts the eXtreme programming model:
 - `[Rumbaugh, 1991]` Rumbaugh et. al,
   Object-oriented modeling and design, Prentice-Hall, Inc. 1991
 
+- `[Schwartz and Gurung, 2012]`
+  Schwartz, Beth M., and Regan AR Gurung.
+  Evidence-based teaching for higher education.
+  American Psychological Association, 2012.
+
 - `[Serban et al., 2020]` Serban, Alex, et al.
   "Adoption and effects of software engineering best practices
   in machine learning." Proceedings of the 14th ACM/IEEE
@@ -1209,6 +1221,12 @@ Figure 8 depicts the eXtreme programming model:
   effective software development. " O'Reilly Media, Inc.", 2016.
 
 - `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
+
+- `[Williams and Kessler, 2000]` Williams, Laurie; Kessler, Robert R.;
+  Cunningham, Ward; Jeffries, Ron (2000).
+  "Strengthening the case for pair programming" (PDF).
+  IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248.
+  doi:10.1109/52.854064.
 
 - `[Wilson et al., 2014]` Wilson, Greg, et al.
   "Best practices for scientific computing."

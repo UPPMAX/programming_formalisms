@@ -72,16 +72,16 @@ Pair programming is a facet of developing code better.
 We use it a lot in this course, because:
 
 - it is recommended by influential software development
-  classics `[Martin, 2011][Thomas & Hunt, 2019]`
+  classics `[Martin, 2011][Thomas and Hunt, 2019]`
 - scientific evidence is mixed, however, e.g.
     - a pair considers more alternative ways for a solution `[Flor et al., 1991]`,
       however, this is only 2 programming teams
     - 96% of developers prefer pair programming over developing
-      alone `[Williams & Kessler, 2000]`, however,
+      alone `[Williams and Kessler, 2000]`, however,
       this is only 41 respondents
 - what is for sure: it works great with recommended teaching practices,
   e.g. grouping up learners
-  is effective `[Hattie, 2012][Schwartz & Gurung, 2012, page 65]`
+  is effective `[Hattie, 2012][Schwartz and Gurung, 2012, page 65]`
   (with the optimal group size of 2 [reference for best group size 2])
   and indeed the Programming Formalisms learners like it
   [as they write in the retrospective](../../evaluations/2023_autumn/retrospective_results_course.md)
@@ -152,14 +152,14 @@ Questions:
     for example (from two Wikipedia references):
 
     - a pair considers more alternative ways for a solution `[Flor et al., 1991]`
-    - 96% of developers prefer pair programming over developing alone `[Williams & Kessler, 2000]`
+    - 96% of developers prefer pair programming over developing alone `[Williams and Kessler, 2000]`
 
     However, the first study uses only 2 programming teams,
     the second study 41 self-selected respondents.
     One can/should be critical on these studies.
 
     Yet, for teaching, working is groups has a high effect size `[Hattie, 2012]`,
-    where the optimal group size is two `[Schwartz & Gurung, 2012]`.
+    where the optimal group size is two `[Schwartz and Gurung, 2012]`.
 
 ### Exercise 2: criticise teachers pair programming
 
@@ -244,12 +244,36 @@ Reflect:
 
 ## References
 
-- `[Flor et al., 1991]` Flor, Nick V.; Hutchins, Edwin L. (1991). "Analyzing Distributed Cognition in Software Teams: A Case Study of Team Programming During Perfective Software Maintenance". In Koenemann-Belliveau, Jürgen; Moher, Thomas G.; Robertson, Scott P. (eds.). Empirical Studies of Programmers: Fourth Workshop. Ablex. pp. 36–64. ISBN 978-0-89391-856-9.
-- `[Fowler's website]` [Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
-- `[Hattie, 2012]` Hattie, John. Visible learning for teachers: Maximizing impact on learning. Routledge, 2012. TODO: check that this is a reference for optimal group size of 2
-- `[Martin, 2011]` Martin, Robert C. The clean coder: a code of conduct for professional programmers. Pearson Education, 2011.
-- [reference for best group size 2] The reference that a group size of 2
-  is best [#71](https://github.com/UPPMAX/programming_formalisms/issues/71)
-- `[Schwartz & Gurung, 2012]` Schwartz, Beth M., and Regan AR Gurung. Evidence-based teaching for higher education. American Psychological Association, 2012. TODO: check that this is a reference for optimal group size of 2
-- `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt. The Pragmatic Programmer: your journey to mastery. Addison-Wesley Professional, 2019.
-- `[Williams & Kessler, 2000]` Williams, Laurie; Kessler, Robert R.; Cunningham, Ward; Jeffries, Ron (2000). "Strengthening the case for pair programming" (PDF). IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248. doi:10.1109/52.854064.
+- `[Flor et al., 1991]` Flor, Nick V.; Hutchins, Edwin L. (1991).
+  "Analyzing Distributed Cognition in Software Teams:
+  A Case Study of Team Programming During Perfective Software Maintenance".
+  In Koenemann-Belliveau, Jürgen; Moher, Thomas G.; Robertson, Scott P. (eds.).
+  Empirical Studies of Programmers: Fourth Workshop.
+  Ablex. pp. 36–64. ISBN 978-0-89391-856-9.
+
+- `[Fowler's website]`
+  [Fowler's website](https://martinfowler.com/articles/on-pair-programming.html)
+
+- `[Hattie, 2012]` Hattie, John.
+  Visible learning for teachers: Maximizing impact on learning.
+  Routledge, 2012.
+
+- `[Martin, 2011]` Martin, Robert C.
+  The clean coder: a code of conduct for professional programmers.
+  Pearson Education, 2011.
+
+- `[Schwartz and Gurung, 2012]`
+  Schwartz, Beth M., and Regan AR Gurung.
+  Evidence-based teaching for higher education.
+  American Psychological Association, 2012.
+
+- `[Thomas and Hunt, 2019]`
+  Thomas, David, and Andrew Hunt.
+  The Pragmatic Programmer: your journey to mastery.
+  Addison-Wesley Professional, 2019.
+
+- `[Williams and Kessler, 2000]` Williams, Laurie; Kessler, Robert R.;
+  Cunningham, Ward; Jeffries, Ron (2000).
+  "Strengthening the case for pair programming" (PDF).
+  IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248.
+  doi:10.1109/52.854064.
