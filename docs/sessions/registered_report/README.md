@@ -179,7 +179,7 @@ if needed.
 
 Save your results in the learners project, in the `learners` folder.
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Allen and Mehler, 2019]` Allen, Christopher, and David MA Mehler.
   "Open science challenges, benefits and tips in early career and beyond."

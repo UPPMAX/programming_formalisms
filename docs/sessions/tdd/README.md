@@ -546,7 +546,7 @@ TDD 3: TDD bottom line       |  4 mins | [Python](https://youtu.be/633qwj2DUNc)
 Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 .                            |       . | [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Alkaoud and Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
   "Quality metrics of test suites in test-driven designed applications."

@@ -49,9 +49,9 @@ tags:
 
 Testing *helps* ensure the correctness of code.
 
-- Coding errors are extremely common `[Baggerly & Coombes, 2009]`
+- Coding errors are extremely common `[Baggerly and Coombes, 2009]`
 - Contribute to the reproducibility crisis in science `[Vable et al., 2021]`,
-  e.g. `[Rahman & Farhana, 2020]`
+  e.g. `[Rahman and Farhana, 2020]`
 - Simple testing can prevent most critical failures `[Yuan et al., 2014]`
 
 ## 2. Levels of testing
@@ -469,14 +469,14 @@ In this course, you've written some functions yourself.
 - Pick the favorite function you've written
 - Add it to the package, in the same files
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 
-- `[Baggerly & Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes.
+- `[Baggerly and Coombes, 2009]` Baggerly, Keith A., and Kevin R. Coombes.
   "Deriving chemosensitivity from cell lines: forensic bioinformatics and
   reproducible research in high-throughput biology."
   The Annals of Applied Statistics (2009): 1309-1334.
-- `[Rahman & Farhana, 2020]` Rahman, Akond, and Effat Farhana.
+- `[Rahman and Farhana, 2020]` Rahman, Akond, and Effat Farhana.
   "An exploratory characterization of bugs in COVID-19 software projects."
   arXiv preprint arXiv:2006.00586 (2020).
 - `[Vable et al., 2021]` Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour.

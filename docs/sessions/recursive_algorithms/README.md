@@ -108,6 +108,6 @@ assert calc_factorial_iterative(13) ==
 - Develop a function to get the nth value in the Fibonacci sequence
   using recursions
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Hunter, 2021]` Hunter, David J. Essentials of discrete mathematics. Jones & Bartlett Learning, 2021.

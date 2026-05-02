@@ -294,7 +294,7 @@ The folder containing the GitHub Actions scripts
     These are scripts that are run upon a new online commit.
     We will discuss these more when we discuss Continuous Integration.
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Bergström and Moberg, 2002]` Bergström, Hans, and Anders Moberg.
   "Daily air temperature and pressure series for Uppsala (1722–1998)."

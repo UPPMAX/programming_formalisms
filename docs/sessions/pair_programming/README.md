@@ -242,7 +242,7 @@ Reflect:
     pair programming is one of the best ways to transfer
     knowledge!
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Flor et al., 1991]` Flor, Nick V.; Hutchins, Edwin L. (1991).
   "Analyzing Distributed Cognition in Software Teams:

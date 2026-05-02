@@ -282,7 +282,7 @@ code matches the code in the online repository!
 
     ![VS Code has synced the changes](vs_code_has_synced_changes.png)
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Beelders and du Plessis, 2015]` Beelders, Tanya R.,
   and Jean-Pierre L. du Plessis.

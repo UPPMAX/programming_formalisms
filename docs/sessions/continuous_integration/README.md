@@ -509,7 +509,7 @@ When uploading your code, check the results of the CI scripts regularly:
     - Write tests to trigger those lines
     - Remove the lines that are not triggered
 
-## [References](../references/README.md)
+## [References](../../references/README.md)
 
 - `[Abd Jader et al., 2018]` Abd Jader, Marwa Najm, and Riyadh Zaghlool Mahmood.
   "Calculating McCabe's cyclomatic complexity metric and its effect on the
