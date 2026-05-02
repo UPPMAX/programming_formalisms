@@ -495,11 +495,13 @@ assert file_exists("figure.png")
 assert file_exists("statistics_results.txt")
 ```
 
-However, we will not develop at this level.
+However, we will not develop at this level, i.e. the level at which
+we use our package from the outside.
 
-We have written the tests for the `do_experiment` function:
+Instead, we do these same tests on the inside of the package.
+These are the tests written for the `do_experiment` function:
 
-```
+```python
 def do_experiment():
   # Read the data
   # Do the statistics
@@ -510,7 +512,7 @@ def do_experiment():
   assert file_exists("statistics_results.txt")
 ```
 
-Apply TDD to develop this code.
+Apply TDD to develop this function (as long as time permits).
 
 ## 6. Conclusion
 
