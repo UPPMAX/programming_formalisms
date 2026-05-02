@@ -974,6 +974,13 @@ Figure 8 depicts the eXtreme programming model:
   Marco Torchiano. "On the effectiveness of the test-first approach to
   programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
 
+- `[Flor et al., 1991]` Flor, Nick V.; Hutchins, Edwin L. (1991).
+  "Analyzing Distributed Cognition in Software Teams:
+  A Case Study of Team Programming During Perfective Software Maintenance".
+  In Koenemann-Belliveau, Jürgen; Moher, Thomas G.; Robertson, Scott P. (eds.).
+  Empirical Studies of Programmers: Fourth Workshop.
+  Ablex. pp. 36–64. ISBN 978-0-89391-856-9.
+
 - `[Forsgren et al., 2018]` Forsgren, Nicole, Jez Humble, and Gene Kim.
   Accelerate: The science of lean software and devops:
   Building and scaling high performing technology organizations.
@@ -1219,6 +1226,20 @@ Figure 8 depicts the eXtreme programming model:
   Bahbibi Rahmatullah. "A comprehensive review of software development
   life cycle methodologies: Pros, cons, and future directions."
   Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
+
+???- info "Summary"
+
+    This paper tries to collect and categorize
+    all software development life cycles.
+    The primary grouping is between traditional and agile models.
+
+    Figure 3 depicts the waterfall model:
+
+    ![Yas, 2023, figure 3](yas_2023_figure_3.png)
+
+    Figure 8 depicts the eXtreme programming model:
+
+    ![Yas, 2023, figure 8, enhanced](yas_2023_figure_8_enhanced.png)
 
 - `[Yuan et al., 2014]`
   Yuan, Ding, et al.
