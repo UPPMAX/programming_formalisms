@@ -40,7 +40,7 @@ package, so that everyone can reproduce our results.
 
 You discovered data from the paper `[Bergström and Moberg, 2002]`,
 where the average temperature is measured on a daily basis
-since 1772 (yes, year seventeen-hundred-and-twenty-two)
+since 1722 (yes, year seventeen-hundred-and-twenty-two)
 in Uppsala.
 
 You want to use this simple data set for a toy project
