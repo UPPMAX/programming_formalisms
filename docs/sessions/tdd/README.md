@@ -101,9 +101,9 @@ Give a live demo here, as suggested at
 
 Advantages of TDD are:
 
-- TDD makes developers more productive `[Erdogmus & Morisio, 2005]`
+- TDD makes developers more productive `[Erdogmus and Morisio, 2005]`
 - TDD increases quality of the code
-  `[Erdogmus & Morisio, 2005][Alkaoud & Walcott, 2018][Janzen & Saiedian, 2006]`
+  `[Erdogmus and Morisio, 2005][Alkaoud and Walcott, 2018][Janzen and Saiedian, 2006]`
     - There are plenty of costly programming mistakes documented!
 - TDD helps shape the project architecture `[Mayr, 2005]`
 - TDD helps better modularisation `[Madeyski et al., 2010]`
@@ -112,15 +112,15 @@ Developers do really do this `[Beck, 2022][Langr, 2013]`, even
 though TDD takes longer (but note `[Martin, 2017][Uncle Bob, 2024]`
 for the same example that it is faster, but feels slower):
 
-Study                       | Extra time | Effect
-----------------------------|------------|-------------------------------
-`[George & Williams, 2004]` | 16%        | 18% more black-box tests pass
-`[Bhat & Nagappan, 2006]`   | 15%        | 2x higher code quality
-`[Nagappan et al., 2008]`   | 15-35%     | 40%-90% less defects
+Study                        | Extra time | Effect
+-----------------------------|------------|-------------------------------
+`[George and Williams, 2004]`| 16%        | 18% more black-box tests pass
+`[Bhat and Nagappan, 2006]`  | 15%        | 2x higher code quality
+`[Nagappan et al., 2008]`    | 15-35%     | 40%-90% less defects
 
 We will discuss formal testing later, but now note that
-testing is not about finding bugs `[Thomas & Hunt, 2019, tip 66]`,
-instead a test is the first user of your code `[Thomas & Hunt, 2019, tip 67]`.
+testing is not about finding bugs `[Thomas and Hunt, 2019, tip 66]`,
+instead a test is the first user of your code `[Thomas and Hunt, 2019, tip 67]`.
 
 ## 4. Express yourself in Python
 
@@ -507,7 +507,7 @@ pick one [of the many example TDD functions](../../misc/functions.md).
 - This session, we wrote **unit tests**
 - It is only those your boss may read
 - The literature assumes a responsible programmer writes tests,
-    in C++ `[Stroustrup & Sutter, 2017]`,
+    in C++ `[Stroustrup and Sutter, 2017]`,
     R `[Wickham, 2019]` and Python `[PEP 8]`
 
 ## 7. Discussion
@@ -536,76 +536,82 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
 
 ## References
 
-- `[Alkaoud & Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
+- `[Alkaoud and Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
   "Quality metrics of test suites in test-driven designed applications."
   International Journal of Software Engineering Applications (IJSEA)
   2018 (2018).
 
-![Beck, 2022](beck_tdd_by_example.jpg)
-
 - `[Beck, 2022]` Beck, Kent. Test driven development: By example.
   Addison-Wesley Professional, 2022.
-- `[Bhat & Nagappan, 2006]` Bhat, Thirumalesh, and Nachiappan Nagappan.
+
+- `[Bhat and Nagappan, 2006]` Bhat, Thirumalesh, and Nachiappan Nagappan.
   "Evaluating the efficacy of test-driven development: industrial case
   studies." Proceedings of the 2006 ACM/IEEE international symposium on
   Empirical software engineering. 2006.
-- `[Erdogmus & Morisio, 2005]` Erdogmus, Hakan, Maurizio Morisio, and
+
+- `[Erdogmus and Morisio, 2005]` Erdogmus, Hakan, Maurizio Morisio, and
   Marco Torchiano. "On the effectiveness of the test-first approach to
   programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
-- `[George & Williams, 2004]` George, Boby, and Laurie Williams.
+
+- `[George and Williams, 2004]` George, Boby, and Laurie Williams.
   "A structured experiment of test-driven development."
   Information and software Technology 46.5 (2004): 337-342.
-- `[Janzen & Saiedian, 2006]` Janzen, David S., and Hossein Saiedian.
+
+- `[Janzen and Saiedian, 2006]` Janzen, David S., and Hossein Saiedian.
   "Test-driven learning: intrinsic integration of testing into the CS/SE
   curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
 
-![Langr, 2013](book_langr.jpg)
-
 - `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better.
   "Modern C++ Programming with Test-Driven Development." (2013).
+
 - `[Madeyski et al., 2010]` Madeyski, Lech, and
   Gestión de sistemas de información.
   Test-driven development: An empirical evaluation of agile practice.
   Heidelberg: Springer, 2010.
+
 - `[Martin, 2007]` Martin, Robert C.
   "Professionalism and test-driven development."
   IEEE Software 24.3 (2007): 32-36.
+
 - `[Martin, 2009]` Martin, Robert C.
   Clean code: a handbook of agile software craftsmanship.
   Pearson Education, 2009.
 
-![Martin, 2011](martin_the_clean_coder.jpg)
-
 - `[Martin, 2011]` Martin, Robert C.
   The clean coder: a code of conduct for professional programmers.
   Pearson Education, 2011.
+
 - `[Martin, 2017]` Martin, Robert C. "Clean architecture." 12 Sep. 2017,
+
 - `[Mayr, 2005]` Mayr, Herwig.
   Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen.
   Hanser Verlag, 2005.
+
 - `[Nagappan et al., 2008]` Nagappan, Nachiappan, et al.
   "Realizing quality improvement through test driven development:
   results and experiences of four industrial teams."
   Empirical Software Engineering 13 (2008): 289-302.
+
 - `[PEP 8]` Van Rossum, Guido, Barry Warsaw, and Nick Coghlan.
   "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
-- `[Stroustrup & Sutter, 2017]`
+
+- `[Stroustrup and Sutter, 2017]`
   Stroustrup, Bjarne, and Herb Sutter.
   "C++ Core Guidelines (2017)."
   [Website](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
   (Cited on pages 100 and 103) (2015).
+
 - `[study I cannot find]` in one of the classics, there was a bar chart that
   showed developers write functions such as `is_prime` with and without TDD
   and showed that TDD was twice as fast. TODO: find this reference
 
-![Thomas & Hunt, 2019](thomas_and_hunt_the_pragmatic_programmer.jpg)
-
-- `[Thomas & Hunt, 2019]` Thomas, David, and Andrew Hunt.
+- `[Thomas and Hunt, 2019]` Thomas, David, and Andrew Hunt.
   The Pragmatic Programmer: your journey to mastery.
   Addison-Wesley Professional, 2019.
-- `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
-![Python logo](python_logo.png)
+- `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)
+
+- `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
 - `[Yuan et al., 2014]`
   Yuan, Ding, et al.
@@ -613,7 +619,7 @@ Solution `is_prime`          |  9 mins | [Python](https://youtu.be/qVtHieuwM1M)
   An analysis of production failures in distributed data-intensive systems."
   11th USENIX Symposium on Operating Systems Design and Implementation
   (OSDI 14). 2014.
+
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
 
-- `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)

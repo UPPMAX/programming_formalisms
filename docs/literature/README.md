@@ -19,6 +19,10 @@ that have influenced the course.
 
 These are summaries of some of the papers mentioned.
 
+## Summary of `[Alkaoud and Walcott, 2018]`
+
+TDD increases quality of the code.
+
 ## Summary of `[Allen and Mehler, 2019]`
 
 This paper addresses challenges and misconceptions on adopting
@@ -40,6 +44,11 @@ for projects.
 They recommend to use Agile software development models,
 but it is unclear where they base this on exactly.
 
+## Summary of `[Beck, 2022]`
+
+This is a book about TDD by the famous Kent Beck,
+the inventor of eXtreme programming.
+
 ## Summary of `[Beelders and du Plessis, 2015]`
 
 This study asked students to read code, with or without syntax
@@ -49,6 +58,11 @@ highlighting. They found no significant difference in understanding.
 
 This paper describes how the weather data, used in the learners
 project, has been obtained.
+
+## Summary of `[Bhat and Nagappan, 2006]`
+
+Doing TDD results in code that takes 15% longer to develop,
+with 2x higher code quality.
 
 ## Summary of `[Chambers, 2019]`
 
@@ -63,6 +77,10 @@ traditional science and registered reports.
 This is *the* book about Git.
 
 It is open access.
+
+## Summary of `[Erdogmus and Morisio, 2005]` 
+
+TDD makes developers more productive and increases the quality of the code.
 
 ## Summary of `[Forsgren et al., 2018]`
 
@@ -102,6 +120,14 @@ which has the following headers:
     - Support and Facilitate Collaboration among Teams
     - Provide Resources and Tools that Make Work Meaningful
     - Support or Embody Transformational Leadership
+
+## Summary of `[George and Williams, 2004]`
+
+TDD takes 16% more time, with 18% more black-box tests that pass.
+
+## Summary of `[Janzen and Saiedian, 2006]`
+
+TDD increases quality of the code.
 
 ## Summary of `[Jiménez et al., 2017]`
 
@@ -260,6 +286,35 @@ how many papers (`n`) recommend a specific practice.
 This book discusses how top design large scale C++ software,
 with some advice that can by applied to all programming languages.
 
+## Summary of `[Langr, 2013]`
+
+In this book, Jeff Langr describes how to do TDD in C++.
+
+The subtitle is: 'Code better. Sleep better'.
+
+Chapter 11, 'Growing and sustaining TDD' provides for
+
+- research on TDD
+- the Bad Test Death spiral. Below is a possible path, where
+  the book provides ways to counter it.
+  - The team writes mostly integration tests
+  - The growing body of tests begings to pass the pain threshold
+  - Developers run the test suit less frequently
+    or run subsets of the tests
+  - Developers delete tests
+  - Defects begin to increase
+  - The team, or management, questions the value of TDD
+  - The team abandons TDD
+- The rules for pair programming
+  - Two programmers actively develop a solution
+  - The programmers typically sit side by side
+  - At any given time, one is the driver, the other is the navigator
+  - The programmers swap roles frequently,
+    e.g. every time a test fails or passes
+  - Pairing sessions are short-lived, around 90 minutes,
+    to increase knowledge (and hence, reduce risk) accross the team
+- Code katas
+
 ## Summary of `[Leau et al., 2012]`
 
 This paper compares Agile versus traditional software development,
@@ -292,6 +347,10 @@ They define a good commit message as such:
 
 This is a friendly to read book about C++,
 with some advice that applies to all programming languages.
+
+## Summary of `[Madeyski et al., 2010]`
+
+TDD helps better modularisation.
 
 ## Summary of `[Martin, 2009]`
 
@@ -493,7 +552,7 @@ your infrastructure to achieve reproducible research:
 - Code and methods must be available and accessible
 - All 3rd party data and software should be cited
 
-## Summary of `[Sutter & Alexandrescu, 2004]`
+## Summary of `[Sutter and Alexandrescu, 2004]`
 
 This C++ classic gives 101 rules in C++ software development.
 Even though this course uses Python,
@@ -845,6 +904,11 @@ Figure 8 depicts the eXtreme programming model:
 
 ## References
 
+- `[Alkaoud and Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
+  "Quality metrics of test suites in test-driven designed applications."
+  International Journal of Software Engineering Applications (IJSEA)
+  2018 (2018).
+
 - `[Allen and Mehler, 2019]` Allen, Christopher, and David MA Mehler.
   "Open science challenges, benefits and tips in early career and beyond."
   PLoS biology 17.5 (2019): e3000246.
@@ -870,9 +934,17 @@ Figure 8 depicts the eXtreme programming model:
   Climatic change 53.1 (2002): 213-252.
   [Paper homepage](https://doi.org/10.1023/A:1014983229213)
 
+- `[Beck, 2022]` Beck, Kent. Test driven development: By example.
+  Addison-Wesley Professional, 2022.
+
 - `[Bertram, 2009]` Bertram, Dane.
   "The social nature of issue tracking in software engineering."
   University of Calgary (2009).
+
+- `[Bhat and Nagappan, 2006]` Bhat, Thirumalesh, and Nachiappan Nagappan.
+  "Evaluating the efficacy of test-driven development: industrial case
+  studies." Proceedings of the 2006 ACM/IEEE international symposium on
+  Empirical software engineering. 2006.
 
 - `[Booch 2007]` Grady Booch et al.,
   Object-oriented analysis and design with applications - 3rd ed,
@@ -898,6 +970,10 @@ Figure 8 depicts the eXtreme programming model:
 - `[Dijkstra, 1970]` Notes On Structured Programming,
   T.H. - Report 70-WSK-03,Second edition April 1970
 
+- `[Erdogmus and Morisio, 2005]` Erdogmus, Hakan, Maurizio Morisio, and
+  Marco Torchiano. "On the effectiveness of the test-first approach to
+  programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.
+
 - `[Forsgren et al., 2018]` Forsgren, Nicole, Jez Humble, and Gene Kim.
   Accelerate: The science of lean software and devops:
   Building and scaling high performing technology organizations.
@@ -905,6 +981,10 @@ Figure 8 depicts the eXtreme programming model:
 
 - `[Gamma et al., 1995]` Gamma, Erich, et al.
   "Elements of reusable object-oriented software." Design Patterns (1995).
+
+- `[George and Williams, 2004]` George, Boby, and Laurie Williams.
+  "A structured experiment of test-driven development."
+  Information and software Technology 46.5 (2004): 337-342.
 
 - `[Gunderloy, 2007]` Gunderloy, Mike, ed.
   Painless project management with FogBugz. Berkeley, CA: Apress, 2007.
@@ -921,6 +1001,10 @@ Figure 8 depicts the eXtreme programming model:
   Jacobson, Ivar, et al.
   Object-Oriented Software Engineering,
   a usecase driven approach, Addison-wesley 1992
+
+- `[Janzen and Saiedian, 2006]` Janzen, David S., and Hossein Saiedian.
+  "Test-driven learning: intrinsic integration of testing into the CS/SE
+  curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.
 
 - `[Jiménez et al., 2017]` Jiménez, Rafael C., et al.
   "Four simple recommendations to encourage best practices
@@ -953,6 +1037,9 @@ Figure 8 depicts the eXtreme programming model:
 - `[Lakos, 1996]` John Lakos. Large-Scale C++ Software Design. 1996.
   ISBN: 0-201-63362-0.
 
+- `[Langr, 2013]` Langr, Jeff. Better, Code, and Sleep Better.
+  "Modern C++ Programming with Test-Driven Development." (2013).
+
 - `[Leau et al., 2012]` Leau, Yu Beng, et al.
   "Software development life cycle AGILE vs traditional approaches."
   International Conference on Information and Network Technology.
@@ -968,9 +1055,28 @@ Figure 8 depicts the eXtreme programming model:
 - `[Liberty, 2001]` Jesse Liberty. Sams teach yourself C++ in 24 hours.
   ISBN: 0-672-32224-2.
 
+- `[Madeyski et al., 2010]` Madeyski, Lech, and
+  Gestión de sistemas de información.
+  Test-driven development: An empirical evaluation of agile practice.
+  Heidelberg: Springer, 2010.
+
+- `[Martin, 2007]` Martin, Robert C.
+  "Professionalism and test-driven development."
+  IEEE Software 24.3 (2007): 32-36.
+
 - `[Martin, 2009]` Martin, Robert C.
   Clean code: a handbook of agile software craftsmanship.
   Pearson Education, 2009.
+
+- `[Martin, 2011]` Martin, Robert C.
+  The clean coder: a code of conduct for professional programmers.
+  Pearson Education, 2011.
+
+- `[Martin, 2017]` Martin, Robert C. "Clean architecture." 12 Sep. 2017,
+
+- `[Mayr, 2005]` Mayr, Herwig.
+  Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen.
+  Hanser Verlag, 2005.
 
 - `[Morales et al., 2019]` Morales, Jenny, et al.
   "How “friendly” integrated development environments are?."
@@ -982,6 +1088,11 @@ Figure 8 depicts the eXtreme programming model:
   "A manifesto for reproducible science."
   Nature human behaviour 1.1 (2017): 0021.
   [Paper homepage](https://doi.org/10.1038/s41562-016-0021)
+
+- `[Nagappan et al., 2008]` Nagappan, Nachiappan, et al.
+  "Realizing quality improvement through test driven development:
+  results and experiences of four industrial teams."
+  Empirical Software Engineering 13 (2008): 289-302.
 
 - `[Ordoñez-Pacheco et al., 2021]`
   Ordoñez-Pacheco, Rodrigo, Karen Cortes-Verdin, and Jorge Octavio
@@ -999,6 +1110,9 @@ Figure 8 depicts the eXtreme programming model:
   Applied Sciences 15.10 (2025): 5421.
   [Paper homepage](https://doi.org/10.3390/app15105421).
   [PDF](pastrana_et_al_2025.pdf)
+
+- `[PEP 8]` Van Rossum, Guido, Barry Warsaw, and Nick Coghlan.
+  "PEP 8–style guide for python code." Python. org 1565 (2001): 28.
 
 - `[Perez-Riverol et al., 2016]`
   Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
@@ -1058,10 +1172,16 @@ Figure 8 depicts the eXtreme programming model:
 - `[Stroustrup, 2013]` Bjarne Stroustrup.
   The C++ Programming Language (4th edition). 2013. ISBN: 978-0-321-56384-2.
 
-- `[Sutter & Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
+- `[Sutter and Alexandrescu, 2004]` Herb Sutter, Andrei Alexandrescu.
   C++ coding standards: 101 rules, guidelines, and best practices. 2004.
   ISBN: 0-32-111358-6. Chapter 68: 'Assert liberally to document internal
   assumptions and invariants'
+
+- `[Stroustrup and Sutter, 2017]`
+  Stroustrup, Bjarne, and Herb Sutter.
+  "C++ Core Guidelines (2017)."
+  [Website](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+  (Cited on pages 100 and 103) (2015).
 
 - `[Thomas and Hunt, 2019]`
   Thomas, David, and Andrew Hunt.
@@ -1074,9 +1194,13 @@ Figure 8 depicts the eXtreme programming model:
   2022.
   [Paper homepage](https://doi.org/10.1145/3510003.3510205)
 
+- `[Uncle Bob, 2024]` [YouTube video 'Is Test Driven Development Slow?' by Uncle Bob](https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2)
+
 - `[Visser et al., 2016]` Visser, Joost, et al.
   Building software teams: Ten best practices for
   effective software development. " O'Reilly Media, Inc.", 2016.
+
+- `[Wickham, 2019]` Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.
 
 - `[Wilson et al., 2014]` Wilson, Greg, et al.
   "Best practices for scientific computing."
@@ -1095,3 +1219,12 @@ Figure 8 depicts the eXtreme programming model:
   life cycle methodologies: Pros, cons, and future directions."
   Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.
 
+- `[Yuan et al., 2014]`
+  Yuan, Ding, et al.
+  "Simple testing can prevent most critical failures:
+  An analysis of production failures in distributed data-intensive systems."
+  11th USENIX Symposium on Operating Systems Design and Implementation
+  (OSDI 14). 2014.
+
+- `[Zen of Python]`
+  [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
