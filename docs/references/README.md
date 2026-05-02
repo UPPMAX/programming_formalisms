@@ -5,12 +5,12 @@ tags:
   - books
   - reading
   - articles
+  - references
 ---
 
-# Literature
+# References
 
-This page describes the books and academic papers
-that have influenced the course.
+This page lists and sometimes summarizes the references used in this course.
 
 - `[Alkaoud and Walcott, 2018]` Alkaoud, Hessah, and Kristen R. Walcott.
   "Quality metrics of test suites in test-driven designed applications."

@@ -66,9 +66,9 @@ nav:
     - git workflow: misc/git_workflow.md
     - Lesson plans: lesson_plans/README.md
     - Learn UML with mermaid: misc/uml_with_mermaid.md
-    - Literature: literature/README.md
     - Meeting notes: meeting_notes/README.md
     - Project workflows: misc/project_workflows.md
+    - References: references/README.md
     - Reflections: reflections/README.md
     - Retrospective: misc/retrospective.md
     - Shared document: shared_document.md

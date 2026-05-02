@@ -19,4 +19,4 @@ tags:
 
 ## Literature
 
-See [our overview of the literature](literature/README.md).
+See [our overview of the literature](references/README.md).

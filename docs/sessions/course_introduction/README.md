@@ -45,6 +45,6 @@ the things below?
 - [The schedule](../../schedule.md)
 - [A description of the course project](../project/README.md)
 - [Earlier evaluation results](../../evaluations/README.md)
-- [The literature used by this course](../../literature/README.md)
+- [The literature used by this course](../../references/README.md)
 - [Form for anonymous feedback](../../misc/feedback.md)
 - [The FAQ how to run Python code from VS Code](../../misc/faq.md#how-do-i-run-python-from-vs-code)
