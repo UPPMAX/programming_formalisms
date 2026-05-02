@@ -1545,6 +1545,7 @@ namespaces
 nonfriend
 Bitewe
 nongeneric
+katas
 nonvirtual
 pessimize
 PODs

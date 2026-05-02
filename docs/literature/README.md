@@ -298,7 +298,7 @@ Chapter 11, 'Growing and sustaining TDD' provides for
 - the Bad Test Death spiral. Below is a possible path, where
   the book provides ways to counter it.
     - The team writes mostly integration tests
-    - The growing body of tests begings to pass the pain threshold
+    - The growing body of tests begins to pass the pain threshold
     - Developers run the test suit less frequently
     or run subsets of the tests
     - Developers delete tests
@@ -312,7 +312,7 @@ Chapter 11, 'Growing and sustaining TDD' provides for
     - The programmers swap roles frequently,
     e.g. every time a test fails or passes
     - Pairing sessions are short-lived, around 90 minutes,
-    to increase knowledge (and hence, reduce risk) accross the team
+    to increase knowledge (and hence, reduce risk) across the team
 - Code katas
 
 ## Summary of `[Leau et al., 2012]`
