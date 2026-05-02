@@ -43,7 +43,6 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
 .         | 10:15-11:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
-.         | .           | Richèl Bilderbeek |
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-14:00 | Richèl Bilderbeek |Branches, merge, [Formal git workflow, contribute](sessions/git/contribute.md)
 .         | 14:00-14:15 | .                 |Break

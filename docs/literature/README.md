@@ -644,7 +644,8 @@ that have influenced the course.
 
 ???- info "Summary of `[Perez-Riverol et al., 2016]`"
 
-    This open-access paper shares 10 simple rules to take advantage of `git` and GitHub:
+    This open-access paper shares 10 simple rules to take advantage of `git`
+    and GitHub:
 
     - Rule 1: Use GitHub to Track Your Projects
     - Rule 2: GitHub for Single Users, Teams, and Organizations
