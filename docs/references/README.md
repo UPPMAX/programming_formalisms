@@ -350,16 +350,16 @@ This page lists and sometimes summarizes the references used in this course.
 
 ???- info "Summary of `[Jiménez et al., 2017]`"
 
-      This open-access paper gives some best practices in research software.
+    This open-access paper gives some best practices in research software.
 
-      These are the 4 recommendations:
+    These are the 4 recommendations:
 
-      - Make source code publicly accessible from day one
-      - Make software easy to discover by providing software metadata
-        via a popular community registry
-      - Adopt a licence and comply with the licence of third-party dependencies
-      - Define clear and transparent contribution, governance and
-        communication processes
+    - Make source code publicly accessible from day one
+    - Make software easy to discover by providing software metadata
+      via a popular community registry
+    - Adopt a licence and comply with the licence of third-party dependencies
+    - Define clear and transparent contribution, governance and
+      communication processes
 
 - `[Jones et al., 2001]`
   [Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43](https://www.sciencedirect.com/science/article/pii/S0308521X01000543)
