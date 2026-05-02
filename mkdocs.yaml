@@ -48,7 +48,6 @@ nav:
     - Wrap-up: misc/wrap_up.md
   - Project:
     - Intro: sessions/project/README.md
-    - Team roles: sessions/project/team_roles.md
     - Create class list: sessions/project/create_class_list.md
     - Create structs: sessions/project/create_structs.md
     - Dream design: sessions/project/dream_design.md
@@ -436,6 +435,7 @@ not_in_nav: |
   sessions/unused/project_example_bacterial_movement/example_project/Example_project_designProcessDocumentation.md
   sessions/unused/sdlc_tools/README.md
   sessions/unused/tdd_at_bigger_scale/README.md
+  sessions/unused/team_roles/README.md
   sessions/watching/README.md
   shared_documents/2023_autumn/day_1.md
   shared_documents/2023_autumn/day_2.md

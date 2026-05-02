@@ -22,7 +22,6 @@ The current project can be found [at the 'Projects' page](projects.md).
 
 - [Dataset](uppsala_tm_1722-2022.zip)
 - [Watching](../watching/README.md)
-- [Team roles](team_roles.md)
 - [Create a list of classes](create_class_list.md)
 - [Create the structures in code](create_structs.md)
 - [Add Continuous integration](../continuous_integration/README.md)
