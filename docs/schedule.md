@@ -47,7 +47,7 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD 2](sessions/tdd/README.md)
 .         | 12:00-13:00 | .                 | Break
 .         | 13:00-14:00 | Richèl Bilderbeek | [Pair programming](sessions/pair_programming/README.md)
 .         | 14:15-15:00 | Richèl Bilderbeek | [Pair programming](sessions/pair_programming/README.md)
-.         | 15:15-15:40 | Richèl Bilderbeek | [Formal testing framework](sessions/testing/testing_framework.md)
+.         | 15:15-15:40 | Richèl Bilderbeek | [Formal testing framework](sessions/testing_framework/README.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
 .         |.            |.                  |.
 Thursday  | 09:00-09:45 | Richèl Bilderbeek | [Function design](sessions/function_design/README.md)

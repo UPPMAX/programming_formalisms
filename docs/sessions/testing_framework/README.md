@@ -56,7 +56,11 @@ Testing *helps* ensure the correctness of code.
 
 ## 2. Levels of testing
 
+<!--
+
 ![Dilbert strip](dilbert_tdd_3.png)
+
+-->
 
 Test            |Description
 ----------------|--------------------------------------------------------

@@ -32,13 +32,12 @@ nav:
     - Introduction: sessions/development_introduction/README.md
     - assert: sessions/assert/README.md
     - Test-driven development: sessions/tdd/README.md
-    - Using a formal testing framework: sessions/testing/testing_framework.md
-    - Team roles: sessions/project/team_roles.md
+    - Pair programming: sessions/pair_programming/README.md
+    - Using a formal testing framework: sessions/testing_framework/README.md
+    - Continuous integration: sessions/continuous_integration/README.md
     - Git workflow, branches: sessions/git/branches.md
     - Contributing & code review: sessions/git/contribute.md
     - Sharing and social coding: sessions/social_coding/social_coding.md
-    - Pair programming: sessions/pair_programming/README.md
-    - Continuous integration: sessions/continuous_integration/README.md
     - Runtime speed profiles: sessions/optimisation/runtime_speed_profiles.md
     - Improve run-time speed: sessions/optimisation/improve_runtime_speed.md
     - Big-O: sessions/optimisation/big_o.md
