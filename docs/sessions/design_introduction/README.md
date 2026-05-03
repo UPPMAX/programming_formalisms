@@ -22,6 +22,7 @@ tags:
     - What are the software development lifecycle phases used in this course?
     - Where are we in the software development lifecycle?
     - With the planning done, what would be a good next step?
+    - From a design perspective, what does a package consist of?
 
 ## What have we done so far?
 
@@ -36,13 +37,29 @@ we have now rounded of the planning phase:
 In [the software development lifecycle](../lifecycle/README.md)
 we will now enter the 'Design' phase:
 
-- We have learned how to design a project
-- We have learned how to design a function
+- We have conceptualized our project
+- We have planned our project
 
 After this, we move to the 'Develop' phase.
 
-After completing a cycle in the 'Develop' phase, we may loop back
-to the 'Design' phase and discuss object oriented programming.
+First, we will work at designing functions, then modules and (if we
+are fast enough) objects.
+
+## Levels of design
+
+Here are the levels of design:
+
+```mermaid
+graph TB
+  subgraph package
+    subgraph modules
+      subgraph classes
+      end
+      subgraph functions
+      end
+    end
+  end
+```
 
 ## What the literature states
 
@@ -56,16 +73,62 @@ to the 'Design' phase and discuss object oriented programming.
 
 ## Exercises
 
-## Exercise 1: our first setup
+## Exercise 1: levels of design
 
+The [Levels of design](#levels-of-design) sessions shows
+four levels of design and how they relate.
 
+Do you agree with this diagram? If not, where do you disagree?
 
+## Exercise 2: our first setup
 
-## Exercise 3: which next step?
+Here is a first setup for the design of our research:
 
-Our next step will be to test if the function `do_experiment`
-indeed creates the files we need.
+```mermaid
+graph TB
+  subgraph package["weather"]
+    do_experiment
+  end
+```
 
-Would you agree why this is a good idea? If not, what do you think would be
-better?
+> Yellow boxes indicate packages,
+> where blue boxes indicate functions
 
+It put all our code in one package,
+with one function doing everything.
+
+Sure, there will be more functions later,
+but, as a start, could you agree with this setup?
+
+What would be the best next step according to you?
+
+## Exercise 3: a glimpse into the future
+
+The schematic below may be how the design ends up:
+
+```mermaid
+graph TB
+  subgraph package[the 'weather' package]
+    subgraph main_module[the 'main' module]
+      read_data
+      do_experiment
+      create_figure
+      create_statistics_output
+    end
+    subgraph anna_module[the 'anna' module]
+      anna_read_data[read_data]
+    end
+    subgraph sven_module[the 'sven' module]
+      sven_create_figure[create_figure]
+      sven_create_statistics_output[create_statistics_output]
+    end
+  end
+  read_data --> anna_read_data
+  create_figure --> sven_create_figure
+  create_statistics_output --> sven_create_statistics_output
+  do_experiment --> read_data
+  do_experiment --> create_figure
+  do_experiment --> create_statistics_output
+```
+
+How would you interpret this figure? What has happened? Is the team done?
