@@ -28,7 +28,24 @@ tags:
     - What is more important: that a function is easy to use or that
       it is fast?
 
-## Why?
+## What is function design?
+
+This is an example function:
+
+```python
+def greet():
+    print("Hello world")
+```
+
+There have gone multiple design decisions into this function:
+
+- The name, `greet` in this case
+- The input, none in this case
+- The value(s) returned by the function, none in this case
+- The side effect, with is some text being printed to a screen
+- The documentation, none in this case
+
+## Why is function design important?
 
 You want your program to do many things, like
 reading files, doing an analysis and saving the
