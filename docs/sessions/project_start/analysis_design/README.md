@@ -84,7 +84,55 @@ evolve before arriving as valid stakeholder requirements.**
         — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
 
 The generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010 starts with needs analysis
+
 ![Illustration of the generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010](../../development_design/img/SDLC_ISO_IEC_12207.png)
+
+???- info "Design process document"
+    A Design process document is created when the process software design and or     analysis needs to be specified to keep the development on track.
+    It is created on organizational level to make sure that all project follow a similar documentation, and analysis and Design path. (If AI is heavily used in the Analysis and Design phase this document define when and how to use the AI tools and how to document its uses.)
+
+    Here is an example design process document:
+
+    > When gathering requirements for the program
+    > the first iteration is based on analyzing
+    > the project brief for subjects and actions,
+    > i.e nouns and verbs that will describe the possible
+    > demands the users have on the system,
+    > after the first pass pay attention to adjective and adverbials
+    > that may change a need or requirement.
+    >
+    > After this make a Table of requirements,
+    > from this a system use case design can begin.
+    > After the use cases have been determined,
+    > go through each use case
+    > and see how an object or action can solve this use case.
+    >
+    > Design a object/class diagram to reflect this possibly
+    > through a collaborations diagram.
+
+
+???- info "Example requirements specification"
+
+    Here is an example of the needs part of the requirements specification:
+
+    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
+    | Requirement ID | Requirement Description | Acceptance Criteria                                                                                                                                                      | Test Cases                                                                                                                                                                    |
+    |----------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | R1             | Visual Display          | The program must display a field with particles and a visual cue to runtime settings                                                                                     | - Verify that the program opens a graphical window or interface for displaying particles.                                                                                     |
+    | R2             | Particle Initialization | Particles must be initialized with positions and speeds and constants relevant to the simulation such as gravity or energy potentials and parameters must be initialized | - Confirm that each particle has a unique position and speed. and that each parameter is set                                                                                  |
+    | R3             | Particle Interaction    | Particles must interact with each other with at least pair wise interactions                                                                                             | - Implement a chosen interaction (e.g., gravitational attraction, Lennard-Jones potential, or direction alignment). - Verify that particles respond to each other's presence. |
+    | R4             | Boundary Condition      | Choose a boundary condition for the field  this includes how to handle interactions across borders                                                                       | - Implement chosen boundary conditions (e.g., bounce, wrap, or elimination). - Confirm that particles behave according to the chosen boundary conditions.                     |
+    | R5             | Simulation Step         | The simulation should progress in discrete steps                                                                                                                         | - Implement a mechanism to advance the simulation step by step                                                                                                                |
+    | R6             | Real-time Visualization | Draw each simulation step with a suitable frame rate update                                                                                                              | - Ensure that the simulation displays each step visually as it progresses.                                                                                                    |
+    | R7             | Maximum Particle Limit  | The simulation should handle a maximum number of particles set in the runtime settings                                                                                   | - Test the simulation with varying numbers of particles up to the maximum limit and verify that it remains stable.                                                            |
+    | R8             | Acceptable Framerate    | The simulation should maintain an acceptable framerate even at maximum number of particles                                                                               | - Measure and verify that the framerate remains above a defined threshold with the maximum number of particles.                                                               |
+    | R9             | Stop Simulation         | Ability to stop the simulation through interruption of the current main loop                                                                                             | - Implement a user interface or mechanism to stop the simulation.  and check that the simulation ends when such mechanisms are invoked                                        |
+    | R10            | Restart simulation      | A simulation should be able to restart without restarting the interface                                                                                                  | Test that the implementation of the restart function can activate after the simulation has ended                                                                              |
+    | R11            | Test-Driven Development | Develop the project using TDD                                                                                                                                            | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code                                                |
+
+    <!-- markdownlint-enable MD013 -->
+### Needs Gathering
 
 Needs Gathering which is the first steps have many different names in the different software development models,
 usually named Use Cases or User Stories or something similar
@@ -133,22 +181,11 @@ graph LR
     [PDF](https://www.smhi.se/download/18.6ae791dc18fc9e7539e1121c/1717658901728/Bergstr%C3%B6m_Moberg_Uppsala.pdf)
     [Data](https://www.smhi.se/download/18.53cdce23194f389da053a4e/1740398333056/uppsala_tm_1722-2022.zip)
 
-!!! exercise  "Generate the Needs for the Project"
-
-    We shall make a short description of a "Use Case" and the needs that that "Use case" generates the Needs will then be clarified as requirements
-
 
 ???- "Where do you start?"
 
     - project brief, if you are given a project brief or write one your self the project brief should state the problem you would like to solve and any related ideas and constraints you have on the project. This is done in plain english
     - Problem statement, the problem statement is a subset of the project brief as it only describes the problem you wish to solve.
-
-!!! exercise  "Generate Requirements for the Project"
-    Using your user stories generate a requirement document in markdown that follows the below specification.
-
-!!! hint "How does a typical requirements document look like?"
-
-    A typical requirements document can be made in a spreadsheet program of your choice or as a table in a markdown document as you will see later.
 
 !!! info "Commonly used categories of requirements"
 
@@ -163,57 +200,9 @@ graph LR
     - Risk severity
     - Risk value(Probability x Severity)
 
-
-???- info "Design process document"
-    A Design process document is created when the process software design and or
-    analysis needs to be specified to keep the development on track.
-    It is created on organizational level to make sure that all project follow a
-    similar documentation, and analysis and Design path. (If AI is heavily used in the Analysis and Design phase this document define when and how to use the AI tools and how to document its uses.)
-
-    Here is an example design process document:
-
-    > When gathering requirements for the program
-    > the first iteration is based on analyzing
-    > the project brief for subjects and actions,
-    > i.e nouns and verbs that will describe the possible
-    > demands the users have on the system,
-    > after the first pass pay attention to adjective and adverbials
-    > that may change a need or requirement.
-    >
-    > After this make a Table of requirements,
-    > from this a system use case design can begin.
-    > After the use cases have been determined,
-    > go through each use case
-    > and see how an object or action can solve this use case.
-    >
-    > Design a object/class diagram to reflect this possibly
-    > through a collaborations diagram.
-
-
-???- info "Example requirements specification"
-
-    Here is an example of the needs part of the requirements specification:
-
-    <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
-
-    | Requirement ID | Requirement Description | Acceptance Criteria                                                                                                                                                      | Test Cases                                                                                                                                                                    |
-    |----------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | R1             | Visual Display          | The program must display a field with particles and a visual cue to runtime settings                                                                                     | - Verify that the program opens a graphical window or interface for displaying particles.                                                                                     |
-    | R2             | Particle Initialization | Particles must be initialized with positions and speeds and constants relevant to the simulation such as gravity or energy potentials and parameters must be initialized | - Confirm that each particle has a unique position and speed. and that each parameter is set                                                                                  |
-    | R3             | Particle Interaction    | Particles must interact with each other with at least pair wise interactions                                                                                             | - Implement a chosen interaction (e.g., gravitational attraction, Lennard-Jones potential, or direction alignment). - Verify that particles respond to each other's presence. |
-    | R4             | Boundary Condition      | Choose a boundary condition for the field  this includes how to handle interactions across borders                                                                       | - Implement chosen boundary conditions (e.g., bounce, wrap, or elimination). - Confirm that particles behave according to the chosen boundary conditions.                     |
-    | R5             | Simulation Step         | The simulation should progress in discrete steps                                                                                                                         | - Implement a mechanism to advance the simulation step by step                                                                                                                |
-    | R6             | Real-time Visualization | Draw each simulation step with a suitable frame rate update                                                                                                              | - Ensure that the simulation displays each step visually as it progresses.                                                                                                    |
-    | R7             | Maximum Particle Limit  | The simulation should handle a maximum number of particles set in the runtime settings                                                                                   | - Test the simulation with varying numbers of particles up to the maximum limit and verify that it remains stable.                                                            |
-    | R8             | Acceptable Framerate    | The simulation should maintain an acceptable framerate even at maximum number of particles                                                                               | - Measure and verify that the framerate remains above a defined threshold with the maximum number of particles.                                                               |
-    | R9             | Stop Simulation         | Ability to stop the simulation through interruption of the current main loop                                                                                             | - Implement a user interface or mechanism to stop the simulation.  and check that the simulation ends when such mechanisms are invoked                                        |
-    | R10            | Restart simulation      | A simulation should be able to restart without restarting the interface                                                                                                  | Test that the implementation of the restart function can activate after the simulation has ended                                                                              |
-    | R11            | Test-Driven Development | Develop the project using TDD                                                                                                                                            | - Write test cases before implementing each feature or functionality. - Ensure that the tests pass after implementing the code                                                |
-
-    <!-- markdownlint-enable MD013 -->
-
-Lets look at the examples for the Learnes project and analyse if they
-conform to a well formed requirment.
+!!! exercise  ""
+ Lets look at the examples for the Learners project and analyze if they
+conform to a well formed requirement, these requirement
 
 ## References
 - [ISO 9000:2015]
