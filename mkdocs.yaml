@@ -22,10 +22,10 @@ nav:
     - Analysis Phase: sessions/project_start/analysis_design/README.md
     - Exercise Analysis Phase: sessions/development_design/risk_and_requirements_exercise.md
   - Design:
-    - Object Oriented development: sessions/object_oriented_development/README.md
     - Function design: sessions/function_design/README.md
-    - Expressive data types: sessions/expressive_data_type/README.md
     - Modular programming: sessions/modularity/README.md
+    - Expressive data types: sessions/expressive_data_type/README.md
+    - Object Oriented development: sessions/object_oriented_development/README.md
     - A 'has-a' relation: sessions/has_a_relation/README.md
     - Class design: sessions/data_structures/class_design.md
   - Development:

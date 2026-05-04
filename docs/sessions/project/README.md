@@ -9,11 +9,15 @@ In this course, we work together on a project:
 
 **[The Programming Formalisms Summer 2026 learners' project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026)**.
 
-The goal of having a project is to provide a situation in which the theory is
-experienced. For example, at the start, merging code together will give
-some troubles. Later in the course, we learn how to avoid these troubles.
-Making the learners experience which problems are solved by
-using professional workflows is the reason of having one project.
+???- question "What is the goal of working on a project?"
+
+    The goal of having a project is to provide a situation in which the theory is
+    experienced. For example, at the start, merging code together will give
+    some troubles. Later in the course, we learn how to avoid these troubles.
+    Making the learners experience which problems are solved by
+    using professional workflows is the reason of having one project.
+
+<!--
 
 ## Exercises
 
@@ -32,3 +36,5 @@ The current project can be found [at the 'Projects' page](projects.md).
 - Code deployment
 - Add documentation
 - [Bundle code in package](../package/README.md)
+
+-->
