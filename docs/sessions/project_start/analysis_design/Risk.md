@@ -140,10 +140,9 @@ and occurrence warrants what action.
     Focus on the risks  that are issues or unacceptable first.
     Then develop towards risks that are acceptable
 
-???- info "Turning Requirements and Risk matrix into actionable Feature list"
-
-    Using the Requirements and risk matrix we can design a feature list
-    which can be tracked using issues or project tab in Git or in a separate
-    document. The feature list describes how to solve a requirement in
-    plaintext english and with flowcharts This initiates a design phase in
-    the development
+???- "Turning Requirements and Risk matrix into actionable Feature list"
+  Using the Requirements and risk matrix we can design a feature list
+  which can be tracked using issues or project tab in Git or in a separate
+  document. The feature list describes how to solve a requirement in
+  plaintext english and with flowcharts This initiates a design phase in
+  the development
