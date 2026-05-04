@@ -202,7 +202,7 @@ graph LR
 
 !!! exercise  ""
  Lets look at the examples for the Learners project and analyze if they
-conform to a well formed requirement, these requirement
+conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md)
 
 ## References
 - [ISO 9000:2015]
