@@ -72,14 +72,14 @@ that are the result of research described in `[Bergström and Moberg, 2002]`.
 The data files can be found in
 [the `data` of the learners project](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/data/README.md).
 
-Take a look at the file `uppsala_tm_1722-2022.dat`.
+Take a look at the file `uppsala_tm_1722-2022.txt`.
 What is the purpose of this file?
 
 ???- question "Answer"
 
     This is a metadata file: it describes the data
 
-Take a look at the file `uppsala_tm_1722-2022.txt`.
+Take a look at the file `uppsala_tm_1722-2022.dat`.
 What is the purpose of this file?
 
 ???- question "Answer"
