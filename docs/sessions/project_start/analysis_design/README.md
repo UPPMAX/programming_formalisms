@@ -16,13 +16,13 @@ tags:
 
 # Planning
 
-## Verifcation and validation
+## Verification and validation
 
-Two steps enusre quality the process of verfication, which can be adressed through process verification
-This is what we have talked about in the session on registered reports, the verifcation is the process of where you verify that the process will lead to the desierd outcome
-The second process is validation validation is the process of determening
-that you fullfill the need for the software. That is that the software fullfills and accoplices the needs put on it by stakeholder or user.
-To full fill the second part we must know what the User needs, called Needs determination, this is then expressed as requirments which if well formed can be tested the act of validation.
+Two steps ensure quality the process of verification, which can be addressed through process verification
+This is what we have talked about in the session on registered reports, the verification is the process of where you verify that the process will lead to the desired outcome
+The second process is validation validation is the process of determining
+that you fulfill the need for the software. That is that the software fulfills and accomplices the needs put on it by stakeholder or user.
+To full fill the second part we must know what the User needs, called Needs determination, this is then expressed as requirements which if well formed can be tested the act of validation.
 
 **validation reference**
 
