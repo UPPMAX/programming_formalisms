@@ -6,11 +6,29 @@ tags:
 
 <!-- This file is not spellchecked by .github/workflows/check_spelling.yaml -->
 
+!!! info "Learning outcomes"
+
+    Learners ...
+
+    - understand what the goal of the analysis phase is
+    - understand why verification and validaion means
+    - Have an understanding of a well formed requirement
+
 # Planning
 
-![SDLC image](../../development_design/img/SDLC.png)
+## Verifcation and validation
+
+Two steps enusre quality the process of verfication, which can be adressed through process verification
+This is what we have talked about in the session on registered reports, the verifcation is the process of where you verify that the process will lead to the desierd outcome
+The second process is validation validation is the process of determening
+that you fullfill the need for the software. That is that the software fullfills and accoplices the needs put on it by stakeholder or user.
+To full fill the second part we must know what the User needs, called Needs determination, this is then expressed as requirments which if well formed can be tested the act of validation.
+
+**validation reference**
 
 ## First Phase: Analysis
+
+![SDLC image](../../development_design/img/SDLC.png)
 
 As you have heard the first phase in any software development is Analysis phase or Requirements phase or Inception phase (Swedish idiom "Kärt barn har många namn"-translation "Dearest child has many names") in this is the phase we are focusing on in this lecture. **The goal of the analysis phase is to figure out what the program should do and  what needs the program must meet**. It like all other phases of modern software development is done in an iterative loop or spiral.
 In this early stage a focus is on Requirements sometimes also called needs determination and risk analysis. The First thing to remember and include in your analysis is the scope of your project both in time and scale so that you do not over commit both in choice of level of formalism and amount of features that you which to construct.
@@ -178,148 +196,9 @@ graph LR
 
     <!-- markdownlint-enable MD013 -->
 
+Lets look at the examples for the Learnes project and analyse if they
+conform to a well formed requirment.
 
-## Risk analysis
-
-Risk analysis is central in some systems like RDD(Risk Driven Development),
-FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk.
-Where Business risk relates to direct requirements while technical risks
-are from derived requirements.
-One type of risk assessment is the Failure modes and effects analysis
-commonly abbreviated FMEA
-which calculate the risk in Probability of occurrence x severity of
-risk **RISK=PxS** a risk matrix is used to define what level of severity
-and occurrence warrants what action.
-
-!!! hint "How big should the risk analysis matrix be?"
-
-    It is common is to divide it in 5 severity categories and 5 probability
-    levels then establishing a table as below to asses which needs are the
-    most important to address.
-    Risk probability goes from P1 (very unlikely to
-    occur) - P5(Happens in all execution)
-    Risk severity goes from S1(minor or no effect),
-    S2(Some Impact or noticeable by user),
-    S3(Major impact on execution of program or result with minor loss of
-    resources at end user),
-    S4(Prevents execution of software or cause major loss of resources to user),
-    S5(major injury or death cause by unhandled risk)
-
-<table>
- <tr>
-    <th>Probability/Severity</th>
-    <th>S1</th>
-    <th>S2</th>
-    <th>S3</th>
-    <th>S4</th>
-    <th>S5</th>
-  </tr>
-  <tr>
-    <td>P5</td>
-    <td style="background-color: DARKGOLDENROD">
-      <p align=center>5</p>Supplementary issue
-    </td>
-    <td style="background-color: ORANGE">
-      <p align=center>10</p>Issue
-    </td>
-    <td style="background-color: RED">
-      <p align=center>15</p>Unacceptable
-    </td>
-    <td style="background-color: RED">
-      <p align=center>20</p>Unacceptable
-    </td>
-    <td style="background-color: RED">
-      <p align=center>25</p>Unacceptable
-    </td>
-
-  </tr>
-  <tr>
-    <td>P4</td>
-    <td style="background-color: GREEN">
-     <p align=center>4</p>Acceptable
-    </td>
-    <td style="background-color: DARKGOLDENROD">
-      <p align=center>8</p>Supplementary issue
-    </td>
-    <td style="background-color: ORANGE">
-      <p align=center>12</p>Issue
-    </td>
-    <td style="background-color: RED">
-    <p align=center>16</p>Unacceptable
-    </td>
-    <td style="background-color: RED">
-    <p align=center>20</p>Unacceptable
-    </td>
-
-  </tr>
-  <tr>
-    <td>P3</td>
-   <td style="background-color: GREEN">
-   <p align=center>3</p>Acceptable
-   </td>
-    <td style="background-color: DARKGOLDENROD">
-    <p align=center>6</p>Supplementary issue
-    </td>
-    <td style="background-color: DARKGOLDENROD">
-      <p align=center>9</p>Supplementary issue
-    </td>
-    <td style="background-color: ORANGE">
-      <p align=center>12</p>Issue
-    </td>
-    <td style="background-color: RED">
-    <p align=center>15</p>Unacceptable
-    </td>
-  </tr>
-  <tr>
-    <td>P2</td>
-    <td style="background-color: GREEN">
-    <p align=center>2</p>Acceptable
-    </td>
-    <td style="background-color: GREEN">
-    <p align=center>4</p>Acceptable
-    </td>
-    <td style="background-color: DARKGOLDENROD">
-    <p align=center>6</p>Supplementary issue
-    </td>
-    <td style="background-color: DARKGOLDENROD">
-    <p align=center>8</p>Supplementary issue
-    </td>
-    <td style="background-color: ORANGE">
-    <p align=center>10</p>issue
-    </td>
-  </tr>
-  <tr>
-    <td>P1</td>
-    <td style="background-color: GREEN">
-    <p align=center>1</p>Acceptable
-    </td>
-    <td style="background-color: GREEN">
-    <p align=center>2</p>Acceptable
-    </td>
-    <td style="background-color: GREEN">
-    <p align=center>3</p>Acceptable
-    </td>
-    <td style="background-color: GREEN">
-    <p align=center>4</p>Acceptable
-    </td>
-    <td style="background-color: DARKGOLDENROD">
-    <p align=center>5</p>Supplementary issue
-    </td>
-  </tr>
-</table>
-
-!!! hint "Where to focus?"
-
-    Focus on the risks  that are issues or unacceptable first.
-    Then develop towards risks that are acceptable
-
-???- info "Turning Requirements and Risk matrix into actionable Feature list"
-
-    Using the Requirements and risk matrix we can design a feature list
-    which can be tracked using issues or project tab in Git or in a separate
-    document. The feature list describes how to solve a requirement in
-    plaintext english and with flowcharts This initiates a design phase in
-    the development
 
 - [R. Harwell et al] R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp.
   Nat'I Council Systems Eng., 1993, pp. 17-24.
