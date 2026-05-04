@@ -72,6 +72,10 @@ What guidance can we then gleen in what a Requirement is the above mentioned pap
 
 !!! "Regulatory requirement!"
     A well formed SRS will be asked of you to full fill regulatory requirements especially  if you work with AI , Sensitive data or medical software.
+    Examples:
+    -[AI act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng) , [Development analysis of the AI act](https://artificialintelligenceact.eu/)
+    -[Software as a Medical Device (SaMD)](https://www.imdrf.org/sites/default/files/docs/imdrf/final/technical/imdrf-tech-131209-samd-key-definitions-140901.pdf)
+
 
 According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
@@ -208,7 +212,11 @@ graph LR
 conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md)
 
 ## References
-- [ISO 9000:2015]
+
+- [AI act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng)
 - [Batachare et. al 2024](https://arxiv.org/pdf/2405.07781)
+- [Development analysis of the AI act](https://artificialintelligenceact.eu/)
+- [ISO/IEC/IEEE 29148:2018]
+- [ISO 9000:2015]
 - [R. Harwell et al] R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp.
   Nat'I Council Systems Eng., 1993, pp. 17-24.
