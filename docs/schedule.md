@@ -17,9 +17,9 @@ Day       | Time        | Teacher           | Subject
 Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/course_introduction/README.md)
 .         | .           | Richèl Bilderbeek |[Project introduction](sessions/project_introduction/README.md)
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-10:55 | Richèl Bilderbeek |[Registered report](sessions/registered_report/README.md)
-.         | 10:55-11:10 | .                 |Break
-.         | 11:10-12:00 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/README.md)
+.         | 10:15-11:00 | Richèl Bilderbeek |[Registered report](sessions/registered_report/README.md)
+.         | 11:00-11:15 | .                 |Break
+.         | 11:15-12:00 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/README.md)
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-15:40 | Lars Eklund       |[Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
