@@ -207,10 +207,11 @@ graph LR
     - Risk severity
     - Risk value(Probability x Severity)
 
-!!! Exercise  "Well formed requirements"
+!!! "Exercise! Well formed requirements"
 
     Lets look at the examples for the Learners project and analyze if they
-    conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md)
+    conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md). The Goal of this exercise is to read through the page and learn what a wellformed requirment is, then look through and discuss the requirments. After this see if you can spot any system or functional requirment that needs expanding. Make a document about this in your learners folder called requirment_analysis_NN.md
+
 ???- "Remember what makes a requirement well formed. "
     A well-formed specified requirement contains one or more of the following:
         — it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
