@@ -24,6 +24,20 @@ The second process is validation validation is the process of determining
 that you fulfill the need for the software. That is that the software fulfills and accomplices the needs put on it by stakeholder or user.
 To full fill the second part we must know what the User needs, called Needs determination, this is then expressed as requirements which if well formed can be tested the act of validation.
 
+-- "What is verification"
+    from ISO 9000:2015
+        3.8.12 verification
+        confirmation, through the provision of objective evidence (3.8.3), that specified requirements (3.6.4)
+        have been fulfilled
+        Note 1 to entry: The objective evidence needed for a verification can be the result of an inspection (3.11.7) or of
+        other forms of determination (3.11.1) such as performing alternative calculations or reviewing documents (3.8.5).
+        Note 2 to entry: The activities carried out for verification are sometimes called a qualification process (3.4.1).
+        Note 3 to entry: The word “verified” is used to designate the corresponding status.
+-- "what is validation"
+    from ISO 9000:2015
+    3.8.13 validation
+        confirmation, through the provision of objective evidence (3.8.3), that the requirements (3.6.4) for a specific intended use or application have been fulfilled
+
 **validation reference**
 
 ## First Phase: Analysis
