@@ -38,7 +38,6 @@ To full fill the second part we must know what the User needs, called Needs dete
     3.8.13 validation
         confirmation, through the provision of objective evidence (3.8.3), that the requirements (3.6.4) for a specific intended use or application have been fulfilled
 
-**validation reference**
 
 ## First Phase: Analysis
 
@@ -217,7 +216,7 @@ Lets look at the examples for the Learnes project and analyse if they
 conform to a well formed requirment.
 
 ## References
-
+- [ISO 9000:2015]
 - [Batachare et. al 2024](https://arxiv.org/pdf/2405.07781)
 - [R. Harwell et al] R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp.
   Nat'I Council Systems Eng., 1993, pp. 17-24.
