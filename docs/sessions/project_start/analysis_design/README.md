@@ -11,7 +11,7 @@ tags:
     Learners ...
 
     - understand what the goal of the analysis phase is
-    - understand why verification and validaion means
+    - understand why verification and validation means
     - Have an understanding of a well formed requirement
 
 # Planning
