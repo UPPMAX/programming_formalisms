@@ -54,6 +54,9 @@ are applicable and meaningful"*
 What guidance can we then gleen in what a Requirement is the above mentioned paper asses that
 **"if it mandates that something must be accomplished, transformed, produced, or provided, it is a requirement"**[R. Harwell et al, 1993]
 
+-- "Why do we need a Software Requirements Specification(SRS) in Research software
+    [Bajraktari et al. 2024](https://arxiv.org/pdf/2405.07781) argue that requirements engineering is necessary in research software to improve maintainability, reproducibility, and collaboration between researchers and developers. Furthermore, empirical studies of Software Requirement Specifications (SRS) have shown that academic environments play a significant role in evaluating and improving requirements engineering techniques.
+
 According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life cycle processes — Requirements engineering)
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
 evolve before arriving as valid stakeholder requirements.**
@@ -199,6 +202,8 @@ graph LR
 Lets look at the examples for the Learnes project and analyse if they
 conform to a well formed requirment.
 
+## References
 
+- [Batachare et. al 2024](https://arxiv.org/pdf/2405.07781)
 - [R. Harwell et al] R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp.
   Nat'I Council Systems Eng., 1993, pp. 17-24.
