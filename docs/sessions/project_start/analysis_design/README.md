@@ -229,3 +229,8 @@ graph LR
 - [ISO 9000:2015]
 - [R. Harwell et al] R. Harwell et al. from Proc. 3,dAnn. lnt' I Symp.
   Nat'I Council Systems Eng., 1993, pp. 17-24.
+
+## Extra reading
+
+    Some extra material that are outside of what we use directly in the course compiled by Lars Eklund on different formal software development methodologies,[SDLC and modelleling methods](../../development_design/software_development_process.md)
+
