@@ -48,3 +48,11 @@ the things below?
 - [The literature used by this course](../../references/README.md)
 - [Form for anonymous feedback](../../misc/feedback.md)
 - [The FAQ how to run Python code from VS Code](../../misc/faq.md#how-do-i-run-python-from-vs-code)
+
+## Exercise 2: what do you think will be your favorite session?
+
+There are a lot of sessions in [the schedule](../../schedule.md).
+Take a sneak peak at some that you think you will like.
+What do you think will be your favorite session?
+
+
