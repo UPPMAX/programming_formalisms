@@ -250,7 +250,7 @@ def my_function(x):
 Below are some TDD exercise,
 with the goal of practicing TDD.
 
-Work in the `src/learners` folder and create a file named
+Work in the `learners` folder and create a file named
 after you, e.g. `sven.py`, `anna_and_sven.py`, `team_cool.py`.
 
 If you use R and it would help, at [the 'Videos' subsection](#videos),

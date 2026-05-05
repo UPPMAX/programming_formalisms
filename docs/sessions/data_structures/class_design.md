@@ -185,7 +185,7 @@ well `[Gamma et al., 1995]`
     PositiveNumber(-1) # Must raise an exception
     ```
 
-    Work in `src/learners`.
+    Work in `learners`.
 
 ???- note "Medium: a class for a range, e.g 'a range from 3 to 10'"
 
@@ -199,14 +199,14 @@ well `[Gamma et al., 1995]`
     Range(100, 10) # Must raise an exception
     ```
 
-    Work in `src/learners`
+    Work in `learners`
 
 ???- note "Hard: your own class"
 
     Come up with a class you may need yourself
     and try to write it.
 
-    Work in `src/learners`
+    Work in `learners`
 
 - Write the class that protects its invariant
 

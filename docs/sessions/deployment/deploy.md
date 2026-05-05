@@ -281,9 +281,9 @@ For this we use a `.gitignore` file (put in root folder)
     - and some notes.
 
 
-???- question "Step 2: Run the ``analysis.py`` script in ``/src/example`` and look for missing packages"
+???- question "Step 2: Run the ``analysis.py`` script in ``/example`` and look for missing packages"
 
-    - Go to the ``/src/example`` directory where ``analysis.py`` is
+    - Go to the ``/example`` directory where ``analysis.py`` is
     - Run the program
 
     ```bash
@@ -402,7 +402,7 @@ For this we use a `.gitignore` file (put in root folder)
 
     - possibly not all of the 3 upper lines are needed
 
-???- question "(One person): Move a working requirements file to the ``src/learners`` folder"
+???- question "(One person): Move a working requirements file to the ``learners`` folder"
 
     - Move the requirements file to the ``learners/source`` folder
     - This will be the "official" requirements file

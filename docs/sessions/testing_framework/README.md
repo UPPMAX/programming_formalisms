@@ -171,9 +171,11 @@ or [use an existing project](https://github.com/programming-formalisms/programmi
 as reference.
 
 For the `unittest` framework, the actual functions are put in the
-`src/[package_name]` folder, for example `src/weather/sven_utils.py`.
-With or without a testing framework, source code should be put in the `src`
-folder `[Wilson et al, 2017]`.
+`[package_name]` folder, for example `weather/sven_utils.py`.
+With or without a testing framework, source code of a package
+should be put in a folder with the same name, such as `weather`
+`[The Python documentation]` [section 6.4. Packages](https://docs.python.org/3/tutorial/modules.html#packages),
+`[Reitz and Schlusser, 2016]` [chapter 'Structuring your project'](https://docs.python-guide.org/writing/structure/).
 
 ???- question "How does this look like in VSCode?"
 
@@ -204,7 +206,7 @@ folder `[Wilson et al, 2017]`.
 
 The testing functions are put in the
 `tests` folder and all files have `test_` added.
-For example, the file to test `src/weather/richel_utils.py`
+For example, the file to test `weather/richel_utils.py`
 is called `tests/test_richel_utils.py`.
 
 ???- question "How does this look like in VSCode?"
@@ -216,14 +218,14 @@ is called `tests/test_richel_utils.py`.
     Here is how such a file could look like:
 
     ```python
-    """Tests all function in src.weather.richel_utils."""
+    """Tests all function in weather.richel_utils."""
     import unittest
 
-    from src.weather.richel_utils import is_zero
+    from weather.richel_utils import is_zero
 
     class TestRichelUtils(unittest.TestCase):
 
-        """Class to test the functions in src.weather.richel_utils."""
+        """Class to test the functions in weather.richel_utils."""
 
         def test_is_zero(self):
             """Test 'is_zero'."""
@@ -236,20 +238,6 @@ is called `tests/test_richel_utils.py`.
     ```
 
 ## 6. Running a test
-
-???- question "Get error `ModuleNotFoundError: No module named 'src'`?"
-
-    You will get the error `ModuleNotFoundError: No module named 'src'`
-    when you click 'Run' on your file with tests.
-
-    ![The error you get from running this script](running_a_test_script_normally_fails_annotated.png)
-
-    > Clicking on 'Run' (see the red rectangle at the top-left)
-    > for a file that has tests
-    > will give the error `ModuleNotFoundError: No module named 'src'`.
-    > Click the green 'Testing' tab at the right instead.
-
-    Instead, click on the green 'Testing' tab at the right.
 
 Click on the 'Testing' tab (with the erlenmeyer flask) at the right.
 
@@ -319,8 +307,8 @@ Fixing the failing tests is beyond the scope of this exercise.
 In this exercise, we will put worked-out code at the right spots.
 This code is known to work, so our package will keep working.
 
-- Create a file for the actual code, called, e.g. `src/weather/[name]_utils.py`,
-  e.g. `src/weather/sven_utils.py`
+- Create a file for the actual code, called, e.g. `weather/[name]_utils.py`,
+  e.g. `weather/sven_utils.py`
 - Copy-paste the following (familiar) code in that file:
 
 ```python
@@ -338,14 +326,14 @@ def is_zero(number):
 - Copy-paste the following (familiar) code in that file:
 
 ```python
-"""Tests all code in src.weather.sven_utils."""
+"""Tests all code in weather.sven_utils."""
 import unittest
 
-from src.weather.sven_utils import is_zero
+from weather.sven_utils import is_zero
 
 class TestSvenUtils(unittest.TestCase):
 
-    """Class to test the code in src.weather.sven_utils."""
+    """Class to test the code in weather.sven_utils."""
 
     def test_is_zero_has_documentation(self):
         """The function 'is_zero' has documentation."""
@@ -388,12 +376,12 @@ print(isprime(8))
 ```
 
 - Copy paste the function and put it in your file called,
-  e.g. `src/weather/[name]_utils.py`, e.g. `src/weather/sven_utils.py`
+  e.g. `weather/[name]_utils.py`, e.g. `weather/sven_utils.py`
 
 ???- question "Answer"
 
     Copy-paste the following text to your file,
-    e.g. `src/weather/[name]_utils.py`, e.g. `src/weather/sven_utils.py`:
+    e.g. `weather/[name]_utils.py`, e.g. `weather/sven_utils.py`:
 
     ```python
     def isprime(num):
@@ -424,11 +412,11 @@ print(isprime(8))
     This is how the file should look like:
 
     ```python
-    """Tests all code in src.weather.sven_utils."""
+    """Tests all code in weather.sven_utils."""
     import unittest
 
     # Other imports
-    from src.weather.sven_utils import isprime
+    from weather.sven_utils import isprime
 
     class TestSvenUtils(unittest.TestCase):
 
@@ -479,6 +467,11 @@ In this course, you've written some functions yourself.
 - `[Rahman and Farhana, 2020]` Rahman, Akond, and Effat Farhana.
   "An exploratory characterization of bugs in COVID-19 software projects."
   arXiv preprint arXiv:2006.00586 (2020).
+- `[Reitz and Schlusser, 2016]` Reitz, Kenneth, and Tanya Schlusser. 
+  The Hitchhiker's guide to Python: 
+  best practices for development. " O'Reilly Media, Inc.", 2016.
+- `[The Python documentation]` 
+  [Documentation homepage](https://docs.python.org)
 - `[Vable et al., 2021]` Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour.
   "Code review as a simple trick to enhance reproducibility, accelerate
   learning, and improve the quality of your team’s research."
@@ -495,3 +488,6 @@ In this course, you've written some functions yourself.
   (OSDI 14). 2014.
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
+
+
+

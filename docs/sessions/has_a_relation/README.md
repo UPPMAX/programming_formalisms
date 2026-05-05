@@ -208,8 +208,8 @@ classDiagram
 ## Exercise 1: write two classes with a has-a relation
 
 - Pick a class to design at your skill level:
-    - Easiest: the particle class, work in `src/learners`
-    - Hardest: one in the learners' project, work in `src/weather`
+    - Easiest: the particle class, work in `learners`
+    - Hardest: one in the learners' project, work in `weather`
 - Write the definition of the classes
 
 ???- question "Answer for the particle"

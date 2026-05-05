@@ -33,7 +33,7 @@ tags:
 
     - A shared document where duos can assign themselves to a class,
       needed for exercise 2
-    - The learner project must have a folder `/src/[package_name]`
+    - The learner project must have a folder `/[package_name]`
       where learners can put their code,
       needed for exercise 2
 
