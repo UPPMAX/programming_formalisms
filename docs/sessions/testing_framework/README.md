@@ -467,10 +467,10 @@ In this course, you've written some functions yourself.
 - `[Rahman and Farhana, 2020]` Rahman, Akond, and Effat Farhana.
   "An exploratory characterization of bugs in COVID-19 software projects."
   arXiv preprint arXiv:2006.00586 (2020).
-- `[Reitz and Schlusser, 2016]` Reitz, Kenneth, and Tanya Schlusser. 
-  The Hitchhiker's guide to Python: 
+- `[Reitz and Schlusser, 2016]` Reitz, Kenneth, and Tanya Schlusser.
+  The Hitchhiker's guide to Python:
   best practices for development. " O'Reilly Media, Inc.", 2016.
-- `[The Python documentation]` 
+- `[The Python documentation]`
   [Documentation homepage](https://docs.python.org)
 - `[Vable et al., 2021]` Vable, Anusha M., Scott F. Diehl, and M. Maria Glymour.
   "Code review as a simple trick to enhance reproducibility, accelerate
@@ -488,6 +488,4 @@ In this course, you've written some functions yourself.
   (OSDI 14). 2014.
 - `[Zen of Python]`
   [Zen Of Python: 'Errors should never pass silently'](https://peps.python.org/pep-0020/#the-zen-of-python)
-
-
 

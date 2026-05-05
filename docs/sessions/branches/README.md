@@ -97,7 +97,7 @@ In words:
 In this exercises, we will create a feature branch for ourselves.
 
 Click on the 'Branch' button (which displays the `main` branch).
- 
+
 ???- question "Where is that?"
 
     It is at the top-left:
@@ -177,7 +177,7 @@ You are now on your own branch!
 
 Modify something on your feature branch.
 
-![The sven branch is modified](vs_code_sven_is_modified_not_commited.png) 
+![The sven branch is modified](vs_code_sven_is_modified_not_commited.png)
 
 Commit the code as usual.
 
