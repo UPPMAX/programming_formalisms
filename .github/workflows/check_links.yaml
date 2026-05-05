@@ -37,6 +37,7 @@ jobs:
           rm -rf docs/sessions/lifecycle/2025_bjoern
           rm -rf docs/sessions/merge_conflicts/2025_bjoern
           rm -rf docs/sessions/project_introduction/2025_bjoern
+          rm -rf docs/sessions/project_start/analysis_design
           rm -rf docs/sessions/project_start/not_used
           rm -rf docs/sessions/project_start/spring2024
           rm -rf docs/sessions/unused
