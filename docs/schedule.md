@@ -56,11 +56,11 @@ Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_p
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |Working with multiple branches
+.         | 13:00-14:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |Working with multiple branches
+.         | 14:15-15:00 | Richèl Bilderbeek |[Modular programming](sessions/modularity/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |[Modular programming](sessions/modularity/README.md)
+.         | 15:15-15:40 | Richèl Bilderbeek |Code review
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
 Friday    | 09:00-09:45 | Richèl Bilderbeek |[Implement the project as a package](sessions/package/README.md)
