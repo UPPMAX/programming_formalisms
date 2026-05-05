@@ -22,6 +22,7 @@ nav:
     - Analysis Phase: sessions/project_start/analysis_design/README.md
     - Exercise Analysis Phase: sessions/development_design/risk_and_requirements_exercise.md
   - Design:
+    - Introduction: sessions/design_introduction/README.md
     - Function design: sessions/function_design/README.md
     - Modular programming: sessions/modularity/README.md
     - Expressive data types: sessions/expressive_data_type/README.md
