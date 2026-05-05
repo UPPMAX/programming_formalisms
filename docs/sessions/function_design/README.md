@@ -472,13 +472,6 @@ def Prime(no, i):
         return Prime(x, 2)
     ```
 
-### Exercise 4: misnomers in learners' project?
-
-Look at the code of the learners' project.
-Do you think there is a function that has a bad name?
-If yes, create an issue to suggest to change it to your suggestion,
-which should include your reasoning.
-
 ## [References](../../references/README.md)
 
 - `[CppCore functions]` C++ Core Guidelines.
