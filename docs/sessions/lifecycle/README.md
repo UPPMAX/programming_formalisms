@@ -28,7 +28,7 @@ tags:
     - Could you name some phases in software development?
     - What is meant by 'Software development lifecycle?'
     - Could you name some models of software development lifecycles?
-    - Is coding a social activity?
+    - Does a programmer need social skills?
     
 ## What is a software development lifecycle?
 

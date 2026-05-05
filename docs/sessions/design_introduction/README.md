@@ -91,7 +91,7 @@ graph TB
   end
 ```
 
-> Yellow boxes indicate packages,
+> Light grey boxes indicate packages,
 > where blue boxes indicate functions
 
 It put all our code in one package,
