@@ -1,0 +1,5487 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../misc/project_workflows/">
+      
+      
+        <link rel="next" href="../reflections/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>References - Programming Formalisms</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#references" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Programming Formalisms" class="md-header__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Formalisms
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              References
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../course_goals/" class="md-tabs__link">
+          
+  
+  
+  About the course
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../schedule/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Schedule
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/course_introduction/" class="md-tabs__link">
+          
+  
+  
+  Conceptualization
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/project_start/analysis_design/" class="md-tabs__link">
+          
+  
+  
+  Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/design_introduction/" class="md-tabs__link">
+          
+  
+  
+  Design
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/development_introduction/" class="md-tabs__link">
+          
+  
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/package/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../sessions/project/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../contact_us/" class="md-tabs__link">
+          
+  
+  
+  Misc
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Programming Formalisms" class="md-nav__button md-logo" aria-label="Programming Formalisms" data-md-component="logo">
+      
+  <img src="../assets/programming_formalism_logo_rhs.png" alt="logo">
+
+    </a>
+    Programming Formalisms
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UPPMAX/programming_formalisms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About the course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About the course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_goals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Goals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learning_outcomes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning outcomes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prereqs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_dates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course dates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schedule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schedule
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptualization
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Conceptualization
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/course_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/registered_report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registered report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Development Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/version_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/ide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrated development environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/merge_conflicts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Merge conflicts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project_start/analysis_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/development_design/risk_and_requirements_exercise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercise Analysis Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/design_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/function_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Function design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/modularity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modular programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/expressive_data_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Expressive data types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/object_oriented_development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Object Oriented development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/has_a_relation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A 'has-a' relation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/data_structures/class_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/development_introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/assert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    assert
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-driven development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/pair_programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pair programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/testing_framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Using a formal testing framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/continuous_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/branches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Branches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/git/contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing & code review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/social_coding/social_coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sharing and social coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/optimisation/runtime_speed_profiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Runtime speed profiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/optimisation/improve_runtime_speed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improve run-time speed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/optimisation/big_o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Big-O
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implement the project as a package
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/deployment/deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deploy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/deployment/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/create_class_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create class list
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/create_structs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create structs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/project/dream_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dream design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Misc
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Misc
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact_us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact us
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/definitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../emails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Emails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../evaluations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extra material
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/functions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Functions to practice TDD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../further_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Further learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/git_workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    git workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson_plans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lesson plans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/uml_with_mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn UML with mermaid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meeting_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meeting notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/project_workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reflections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/retrospective/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrospective
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shared_document/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared document
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shared_documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shared documents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/scilifelab_course_registration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SciLifeLab course registration procedure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../misc/wrap_up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wrap-up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../contact_us/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Misc
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/UPPMAX/programming_formalisms/blob/main/docs/references/README.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/UPPMAX/programming_formalisms/raw/main/docs/references/README.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="references">References<a class="headerlink" href="#references" title="Anchor link to this section for reference">&para;</a></h1>
+<p>This page lists and sometimes summarizes the references used in this course.</p>
+<ul>
+<li><code>[Alkaoud and Walcott, 2018]</code> Alkaoud, Hessah, and Kristen R. Walcott.
+  "Quality metrics of test suites in test-driven designed applications."
+  International Journal of Software Engineering Applications (IJSEA)
+  2018 (2018).</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Alkaoud and Walcott, 2018]</code></summary>
+<p>TDD increases quality of the code.</p>
+</details>
+<ul>
+<li><code>[Allen and Mehler, 2019]</code> Allen, Christopher, and David MA Mehler.
+  "Open science challenges, benefits and tips in early career and beyond."
+  PLoS biology 17.5 (2019): e3000246.
+  <a href="https://doi.org/10.1371/journal.pbio.3000246">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Allen and Mehler, 2019]</code></summary>
+<p>This paper addresses challenges and misconceptions on adopting
+open science principles in a scientific career.</p>
+<p>Below it shows figure 1 of this paper.
+It is shows that traditional literature,
+compared to registered reports, reports on null findings 4x less likely.</p>
+<p><img alt="Allan and Mehler, 2019, figure 1" src="allen_and_mehler_2019_fig_1.png" /></p>
+</details>
+<ul>
+<li><code>[Aniley et al., 2024]</code> Aniley, D. Bitewe Continuous Integration, E. Alemneh Jalew,
+  and G. Abeba Agegnehu. "Selection of software development life cycle
+  models using machine learning approach." Int J Comput Appl 186 (2024): 36-43.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Aniley et al., 2024]</code></summary>
+<p>This paper seems useful at first glance:
+the authors trained an algorithm
+to detect the best software development lifecycle
+for projects.</p>
+<p>They recommend to use Agile software development models,
+but it is unclear where they base this on exactly.</p>
+</details>
+<ul>
+<li>
+<p><code>[Barker, M., Chue Hong, N.P., Katz, D.S. et al. ]</code>
+  Barker, M., Chue Hong, N.P., Katz, D.S. et al.
+  Introducing the FAIR Principles for research software.
+  Sci Data 9, 622 (2022). <a href="https://rdcu.be/eNhd1">Fair4RS</a></p>
+</li>
+<li>
+<p><code>[Beck, 2022]</code> Beck, Kent. Test driven development: By example.
+  Addison-Wesley Professional, 2022.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Beck, 2022]</code></summary>
+<p>This is a book about TDD by the famous Kent Beck,
+the inventor of eXtreme programming.</p>
+</details>
+<ul>
+<li><code>[Beelders and du Plessis, 2015]</code> Beelders, Tanya R.,
+  and Jean-Pierre L. du Plessis.
+  "Syntax highlighting as an influencing factor when reading and
+  comprehending source code." Journal of Eye Movement Research 9.1 (2015): 1.
+  <a href="https://doi.org/10.16910/jemr.9.1.1">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Beelders and du Plessis, 2015]</code></summary>
+<p>This study asked students to read code, with or without syntax
+highlighting. They found no significant difference in understanding.</p>
+</details>
+<ul>
+<li><code>[Bergström and Moberg, 2002]</code> Bergström, Hans, and Anders Moberg.
+  "Daily air temperature and pressure series for Uppsala (1722–1998)."
+  Climatic change 53.1 (2002): 213-252.
+  <a href="https://doi.org/10.1023/A:1014983229213">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Bergström and Moberg, 2002]</code></summary>
+<p>This paper describes how the weather data, used in the learners
+project, has been obtained.</p>
+</details>
+<ul>
+<li>
+<p><code>[Bertram, 2009]</code> Bertram, Dane.
+  "The social nature of issue tracking in software engineering."
+  University of Calgary (2009).</p>
+</li>
+<li>
+<p><code>[Bhat and Nagappan, 2006]</code> Bhat, Thirumalesh, and Nachiappan Nagappan.
+  "Evaluating the efficacy of test-driven development: industrial case
+  studies." Proceedings of the 2006 ACM/IEEE international symposium on
+  Empirical software engineering. 2006.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Bhat and Nagappan, 2006]</code></summary>
+<p>Doing TDD results in code that takes 15% longer to develop,
+with 2x higher code quality.</p>
+</details>
+<ul>
+<li>
+<p><code>[Booch 2007]</code> Grady Booch et al.,
+  Object-oriented analysis and design with applications - 3rd ed,
+  Addison-wesley 2007.</p>
+</li>
+<li>
+<p><code>[Chacon and Straub, 2014]</code> Chacon, Scott, and Ben Straub.
+  Pro git. Springer Nature, 2014.
+  <a href="https://git-scm.com/book/en/v2">Book homepage</a>.
+  <a href="chacon_and_straub_2014.pdf">PDF</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Chacon and Straub, 2014]</code></summary>
+<p>This is <em>the</em> book about Git. I (Richel) do not think this book
+is suitable for beginners, however.</p>
+<p>It is open access.</p>
+</details>
+<ul>
+<li><code>[Chambers, 2019]</code> Chambers, Chris. "What’s next for registered reports?."
+  Nature 573.7773 (2019): 187-189.
+  <a href="https://doi.org/10.1038/d41586-019-02674-6">Comment (i.e. it is not a paper) homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Chambers, 2019]</code></summary>
+<p>This comment (i.e. an article that introduces multiple papers)
+described the current and future challenges of registered reports.</p>
+<p>It has a cartoon that illustrates the difference between
+traditional science and registered reports.</p>
+</details>
+<ul>
+<li>
+<p><code>[Church, 1941]</code> The  Calculi of lambda-conversion, Princeton,
+  Princeton University Press,
+  Londos: Humphrey Milford Oxford University Press, 1941</p>
+</li>
+<li>
+<p><code>[Coad et al., 1999]</code> Coad, Peter and Luca, Jeff de and Lefebvre,
+  Eric Java Modeling Color with Uml: Enterprise Components
+  and Process with CD-ROM, Prentice Hall PTR, 1999</p>
+</li>
+<li>
+<p><code>[Dijkstra, 1970]</code> Notes On Structured Programming,
+  T.H. - Report 70-WSK-03,Second edition April 1970</p>
+</li>
+<li>
+<p><code>[Erdogmus and Morisio, 2005]</code> Erdogmus, Hakan, Maurizio Morisio, and
+  Marco Torchiano. "On the effectiveness of the test-first approach to
+  programming." IEEE Transactions on software Engineering 31.3 (2005): 226-237.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Erdogmus and Morisio, 2005]</code></summary>
+<p>TDD makes developers more productive and increases the quality of the code.</p>
+</details>
+<ul>
+<li>
+<p><code>[Flor et al., 1991]</code> Flor, Nick V.; Hutchins, Edwin L. (1991).
+  "Analyzing Distributed Cognition in Software Teams:
+  A Case Study of Team Programming During Perfective Software Maintenance".
+  In Koenemann-Belliveau, Jürgen; Moher, Thomas G.; Robertson, Scott P. (eds.).
+  Empirical Studies of Programmers: Fourth Workshop.
+  Ablex. pp. 36–64. ISBN 978-0-89391-856-9.</p>
+</li>
+<li>
+<p><code>[Forsgren et al., 2018]</code> Forsgren, Nicole, Jez Humble, and Gene Kim.
+  Accelerate: The science of lean software and devops:
+  Building and scaling high performing technology organizations.
+  IT Revolution, 2018.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Forsgren et al., 2018]</code></summary>
+<p>This book is written by some computer scientists,
+where they measure software development metrics
+to find out what really works.</p>
+<p>Their conclusions are summed up in Appendix A,
+which has the following headers:</p>
+<ul>
+<li>Continuous Delivery<ul>
+<li>Use version control for all production artifacts</li>
+<li>Automate your deployment process</li>
+<li>Implement Continuous Integration</li>
+<li>Use trunk-based development methods</li>
+<li>Implement test automation</li>
+<li>Support test data management</li>
+<li>Shift Left on Security (i.e. make security part of the software delivery)</li>
+<li>Implement Continuous Delivery (CD)</li>
+</ul>
+</li>
+<li>Architecture<ul>
+<li>Use a Loosely Coupled Architecture</li>
+<li>Architect for Empowered Teams</li>
+</ul>
+</li>
+<li>Product and Process<ul>
+<li>Gather and Implement Customer Feedback</li>
+<li>Make the Flow of Work Visible through the Value Stream</li>
+<li>Work in Small Batches</li>
+<li>Foster and Enable Team Experimentation</li>
+</ul>
+</li>
+<li>Lean Management and Monitoring<ul>
+<li>Have a Lightweight Change Approval Processes</li>
+<li>Monitor across Application and Infrastructure to Inform Business Decisions</li>
+<li>Check System Health Proactively</li>
+<li>Improve Processes and Manage Work with Work-In-Process (WIP) Limits</li>
+<li>Visualize Work to Monitor Quality and Communicate throughout the Team</li>
+</ul>
+</li>
+<li>Cultural<ul>
+<li>Support a Generative Culture</li>
+<li>Encourage and Support Learning</li>
+<li>Support and Facilitate Collaboration among Teams</li>
+<li>Provide Resources and Tools that Make Work Meaningful</li>
+<li>Support or Embody Transformational Leadership</li>
+</ul>
+</li>
+</ul>
+</details>
+<ul>
+<li>
+<p><code>[Fowler's website]</code>
+  <a href="https://martinfowler.com/articles/on-pair-programming.html">Fowler's website</a></p>
+</li>
+<li>
+<p><code>[Gamma et al., 1995]</code> Gamma, Erich, et al.
+  "Elements of reusable object-oriented software." Design Patterns (1995).</p>
+</li>
+<li>
+<p><code>[George and Williams, 2004]</code> George, Boby, and Laurie Williams.
+  "A structured experiment of test-driven development."
+  Information and software Technology 46.5 (2004): 337-342.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[George and Williams, 2004]</code></summary>
+<p>TDD takes 16% more time, with 18% more black-box tests that pass.</p>
+</details>
+<ul>
+<li>
+<p><code>[Gunderloy, 2007]</code> Gunderloy, Mike, ed.
+  Painless project management with FogBugz. Berkeley, CA: Apress, 2007.</p>
+</li>
+<li>
+<p><code>[Hattie, 2012]</code> Hattie, John.
+  Visible learning for teachers: Maximizing impact on learning.
+  Routledge, 2012.</p>
+</li>
+<li>
+<p><code>[Henney, 2010]</code>, Kevlin.
+  97 things every programmer should know:
+  collective wisdom from the experts. "
+  O'Reilly Media, Inc.", 2010.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Henney, 2010]</code></summary>
+<p>This book gives 97 pieces of advice, as given by experts.
+Here is the table of content:</p>
+<ul>
+<li>Act with Prudence</li>
+<li>Apply Functional Programming Principles</li>
+<li>Ask "What Would the User Do?" (You Are Not the User)</li>
+<li>Automate Your Coding Standard</li>
+<li>Beauty Is in Simplicity</li>
+<li>Before You Refactor</li>
+<li>Beware the Share</li>
+<li>The Boy Scout Rule</li>
+<li>Check Your Code First Before Looking to Blame Others</li>
+<li>Choose Your Tools with Care</li>
+<li>Code in the Language of the Domain</li>
+<li>Code Is Design</li>
+<li>Code Layout Matters</li>
+<li>Code Reviews</li>
+<li>Coding with Reason</li>
+<li>A Comment on Comments</li>
+<li>Comment Only What the Code Cannot Say</li>
+<li>Continuous Learning</li>
+<li>Convenience Is Not an –ility</li>
+<li>Deploy Early and Often</li>
+<li>Distinguish Business Exceptions from Technical</li>
+<li>Do Lots of Deliberate Practice</li>
+<li>Domain-Specific Languages</li>
+<li>Don't Be Afraid to Break Things</li>
+<li>Don't Be Cute with Your Test Data</li>
+<li>Don't Ignore That Error!</li>
+<li>Don't Just Learn the Language, Understand its Culture</li>
+<li>Don't Nail Your Program into the Upright Position</li>
+<li>Don't Rely on "Magic Happens Here"</li>
+<li>Don't Repeat Yourself</li>
+<li>Don't Touch That Code!</li>
+<li>Encapsulate Behavior, Not Just State</li>
+<li>Floating-Point Numbers Aren't Real</li>
+<li>Fulfill Your Ambitions with Open Source</li>
+<li>The Golden Rule of API Design</li>
+<li>The Guru Myth</li>
+<li>Hard Work Does Not Pay Off</li>
+<li>How to Use a Bug Tracker</li>
+<li>Improve Code by Removing It</li>
+<li>Install Me</li>
+<li>Inter-Process Communication Affects Application Response Time</li>
+<li>Keep the Build Clean</li>
+<li>Know How to Use Command-line Tools</li>
+<li>Know Well More than Two Programming Languages</li>
+<li>Know Your IDE</li>
+<li>Know Your Limits</li>
+<li>Know Your Next Commit</li>
+<li>Large Interconnected Data Belongs to a Database</li>
+<li>Learn Foreign Languages</li>
+<li>Learn to Estimate</li>
+<li>Learn to Say "Hello, World"</li>
+<li>Let Your Project Speak for Itself</li>
+<li>The Linker Is Not a Magical Program</li>
+<li>The Longevity of Interim Solutions</li>
+<li>Make Interfaces Easy to Use Correctly and Hard to Use Incorrectly</li>
+<li>Make the Invisible More Visible</li>
+<li>Message Passing Leads to Better Scalability in Parallel Systems</li>
+<li>A Message to the Future</li>
+<li>Missing Opportunities for Polymorphism</li>
+<li>News of the Weird: Testers Are Your Friends</li>
+<li>One Binary</li>
+<li>Only the Code Tells the Truth</li>
+<li>Own (and Refactor) the Build</li>
+<li>Pair Program and Feel the Flow</li>
+<li>Prefer Domain-Specific Types to Primitive Types</li>
+<li>Prevent Errors</li>
+<li>The Professional Programmer</li>
+<li>Put Everything Under Version Control</li>
+<li>Put the Mouse Down and Step Away from the Keyboard</li>
+<li>Read Code</li>
+<li>Read the Humanities</li>
+<li>Reinvent the Wheel Often</li>
+<li>Resist the Temptation of the Singleton Pattern</li>
+<li>The Road to Performance Is Littered with Dirty Code Bombs</li>
+<li>Simplicity Comes from Reduction</li>
+<li>The Single Responsibility Principle</li>
+<li>Start from Yes</li>
+<li>Step Back and Automate, Automate, Automate</li>
+<li>Take Advantage of Code Analysis Tools</li>
+<li>Test for Required Behavior, Not Incidental Behavior</li>
+<li>Test Precisely and Concretely</li>
+<li>Test While You Sleep (and over Weekends)</li>
+<li>Testing Is the Engineering Rigor of Software Development</li>
+<li>Thinking in States</li>
+<li>Two Heads Are Often Better than One</li>
+<li>Two Wrongs Can Make a Right (and Are Difficult to Fix)</li>
+<li>Ubuntu Coding for Your Friends</li>
+<li>The Unix Tools Are Your Friends</li>
+<li>Use the Right Algorithm and Data Structure</li>
+<li>Verbose Logging Will Disturb Your Sleep</li>
+<li>WET Dilutes Performance Bottlenecks</li>
+<li>When Programmers and Testers Collaborate</li>
+<li>Write Code as If You Had to Support It for the Rest of Your Life</li>
+<li>Write Small Functions Using Examples</li>
+<li>Write Tests for People</li>
+<li>You Gotta Care About the Code</li>
+<li>Your Customers Do Not Mean What They Say</li>
+</ul>
+</details>
+<ul>
+<li>
+<p><code>[ISO 12207:2017]</code>
+  <a href="https://www.iso.org/standard/63712.html">ISO/IEC/IEEE 12207:2017 Systems and software engineering — Software life cycle processes</a></p>
+</li>
+<li>
+<p><code>[Jacobson, 1992]</code>
+  Jacobson, Ivar, et al.
+  Object-Oriented Software Engineering,
+  a usecase driven approach, Addison-wesley 1992</p>
+</li>
+<li>
+<p><code>[Janzen and Saiedian, 2006]</code> Janzen, David S., and Hossein Saiedian.
+  "Test-driven learning: intrinsic integration of testing into the CS/SE
+  curriculum." Acm Sigcse Bulletin 38.1 (2006): 254-258.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Janzen and Saiedian, 2006]</code></summary>
+<p>TDD increases quality of the code.</p>
+</details>
+<ul>
+<li><code>[Jiménez et al., 2017]</code> Jiménez, Rafael C., et al.
+  "Four simple recommendations to encourage best practices
+  in research software." F1000Research 6 (2017): ELIXIR-876.
+  <a href="https://pubmed.ncbi.nlm.nih.gov/28751965/">Paper homepage</a>
+  <a href="jimenez_et_al_2017.pdf">PDF</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Jiménez et al., 2017]</code></summary>
+<p>This open-access paper gives some best practices in research software.</p>
+<p>These are the 4 recommendations:</p>
+<ul>
+<li>Make source code publicly accessible from day one</li>
+<li>Make software easy to discover by providing software metadata
+  via a popular community registry</li>
+<li>Adopt a licence and comply with the licence of third-party dependencies</li>
+<li>Define clear and transparent contribution, governance and
+  communication processes</li>
+</ul>
+</details>
+<ul>
+<li>
+<p><code>[Jones et al., 2001]</code>
+  <a href="https://www.sciencedirect.com/science/article/pii/S0308521X01000543">Jones JW, Keating BA, Porter CH. Approaches to modular model development. Agricultural Systems. 2001 Nov 1;70(2):421–43</a></p>
+</li>
+<li>
+<p><code>[Khan, 2009]</code> Khan, Iftikhar Ahmed.
+  Towards a mood sensitive integrated development environment
+  to enhance the performance of programmers.
+  Diss. Brunel University, School of Information Systems,
+  Computing and Mathematics, 2009.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Khan, 2009]</code></summary>
+<p>This PhD thesis investigates both programmer mood and IDE.
+In the final chapter, the IDE is used to improve a programmer's
+mood when a negative emotion is detected.
+To improve the mood of a programmer,
+a video is shown to urge the developer to do ... exercises...?</p>
+</details>
+<ul>
+<li><code>[Kline and Seffah, 2005]</code> Kline, Rex Bryan, and Ahmed Seffah.
+  "Evaluation of integrated software development environments:
+  Challenges and results from three empirical studies."
+  International journal of human-computer studies 63.6 (2005): 607-627.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Kline and Seffah, 2005]</code></summary>
+<p>This study states that IDEs are 'too often functionality-oriented
+and difficult to use, learn, and master'. The more experienced
+uses score the usability of an IDE higher.</p>
+<p><img alt="Kline and Seffah, 2005, figure 1" src="kline_and_seffah_2005_fig_1.png" /></p>
+<!-- The image is enhanced with https://herhor.net/minecraft/imager -->
+<p>The large standard deviations in the experts is explain by the low
+amount of experts: there were 7 experts (compared to a 100 beginners).</p>
+</details>
+<ul>
+<li><code>[Kroll et al., 2013]</code> Kroll, Josiane, et al.
+  "A systematic literature review of best practices and challenges in
+  follow-the-sun software development."
+  2013 IEEE 8th International Conference on Global Software Engineering
+  Workshops. IEEE, 2013.
+  <a href="https://doi-org.ezproxy.its.uu.se/10.1109/ICGSEW.2013.10">Paper homepage</a>
+  <a href="kroll_et_al_2013.pdf">PDF</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Kroll et al., 2013]</code></summary>
+<p>This open-access paper is a literature review, tailored to best practices in
+Follow-the-sun software development. Below is a table that shows
+how many papers (<code>n</code>) recommend a specific practice.</p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Best practice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Agile methods</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Use of technology for knowledge sharing</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Process documentation</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Use of an FTP Server (or data repository) to exchange code and documents</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Time window</td>
+</tr>
+</tbody>
+</table>
+</details>
+<ul>
+<li><code>[Lakos, 1996]</code> John Lakos. Large-Scale C++ Software Design. 1996.
+  ISBN: 0-201-63362-0.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Lakos, 1996]</code></summary>
+<p>This book discusses how top design large scale C++ software,
+with some advice that can by applied to all programming languages.</p>
+</details>
+<ul>
+<li><code>[Langr, 2013]</code> Langr, Jeff. Better, Code, and Sleep Better.
+  "Modern C++ Programming with Test-Driven Development." (2013).</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Langr, 2013]</code></summary>
+<p>In this book, Jeff Langr describes how to do TDD in C++.</p>
+<p>The subtitle is: 'Code better. Sleep better'.</p>
+<p>Chapter 11, 'Growing and sustaining TDD' provides for</p>
+<ul>
+<li>research on TDD</li>
+<li>the Bad Test Death spiral. Below is a possible path, where
+  the book provides ways to counter it.<ul>
+<li>The team writes mostly integration tests</li>
+<li>The growing body of tests begins to pass the pain threshold</li>
+<li>Developers run the test suit less frequently
+or run subsets of the tests</li>
+<li>Developers delete tests</li>
+<li>Defects begin to increase</li>
+<li>The team, or management, questions the value of TDD</li>
+<li>The team abandons TDD</li>
+</ul>
+</li>
+<li>The rules for pair programming<ul>
+<li>Two programmers actively develop a solution</li>
+<li>The programmers typically sit side by side</li>
+<li>At any given time, one is the driver, the other is the navigator</li>
+<li>The programmers swap roles frequently,
+e.g. every time a test fails or passes</li>
+<li>Pairing sessions are short-lived, around 90 minutes,
+to increase knowledge (and hence, reduce risk) across the team</li>
+</ul>
+</li>
+<li>Code katas</li>
+</ul>
+</details>
+<ul>
+<li><code>[Leau et al., 2012]</code> Leau, Yu Beng, et al.
+  "Software development life cycle AGILE vs traditional approaches."
+  International Conference on Information and Network Technology.
+  Vol. 37. No. 1. 2012.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Leau et al., 2012]</code></summary>
+<p>This paper compares Agile versus traditional software development,
+with Table 1 (see below) sums up the findings:</p>
+<p><!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Agile</th>
+<th>Traditional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User requirement</td>
+<td>Iterative acquisition</td>
+<td>Detailed user requirements are well-defined before coding/implementation</td>
+</tr>
+<tr>
+<td>Rework cost</td>
+<td>Low</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Development direction</td>
+<td>Readily changeable</td>
+<td>Fixed</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>On every iteration</td>
+<td>After coding phase completed</td>
+</tr>
+<tr>
+<td>Customer involvement</td>
+<td>High</td>
+<td>Low</td>
+</tr>
+<tr>
+<td>Extra quality required for developers</td>
+<td>Interpersonal skills &amp; basic business knowledge</td>
+<td>Nothing in particular</td>
+</tr>
+<tr>
+<td>Suitable Project scale</td>
+<td>Low to medium-scaled</td>
+<td>Large-scaled</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+</details>
+<ul>
+<li><code>[Li and Ahmed, 2023]</code> Li, Jiawei, and Iftekhar Ahmed.
+  "Commit message matters: Investigating impact and evolution of
+  commit message quality."
+  2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE).
+  IEEE, 2023.
+  <a href="https://doi.org/10.1109/ICSE48619.2023.00076">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Li and Ahmed, 2023]</code></summary>
+<p>This paper is about the impact and evolution of commit message quality.</p>
+<p>They define a good commit message as such:</p>
+<blockquote>
+<p>it should have both the summary of the
+code change (What) and the motivation/reason behind it (Why).</p>
+</blockquote>
+</details>
+<ul>
+<li><code>[Liberty, 2001]</code> Jesse Liberty. Sams teach yourself C++ in 24 hours.
+  ISBN: 0-672-32224-2.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Liberty, 2001]</code></summary>
+<p>This is a friendly to read book about C++,
+with some advice that applies to all programming languages.</p>
+</details>
+<ul>
+<li><code>[Madeyski et al., 2010]</code> Madeyski, Lech, and
+  Gestión de sistemas de información.
+  Test-driven development: An empirical evaluation of agile practice.
+  Heidelberg: Springer, 2010.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Madeyski et al., 2010]</code></summary>
+<p>TDD helps better modularisation.</p>
+</details>
+<ul>
+<li>
+<p><code>[Martin, 2007]</code> Martin, Robert C.
+  "Professionalism and test-driven development."
+  IEEE Software 24.3 (2007): 32-36.</p>
+</li>
+<li>
+<p><code>[Martin, 2009]</code> Martin, Robert C.
+  Clean code: a handbook of agile software craftsmanship.
+  Pearson Education, 2009.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Martin, 2009]</code></summary>
+<p>This book is written by the famous Robert C. Martin
+and gives advice how to develop software best.</p>
+</details>
+<ul>
+<li>
+<p><code>[Martin, 2011]</code> Martin, Robert C.
+  The clean coder: a code of conduct for professional programmers.
+  Pearson Education, 2011.</p>
+</li>
+<li>
+<p><code>[Martin, 2017]</code> Martin, Robert C. "Clean architecture." 12 Sep. 2017,</p>
+</li>
+<li>
+<p><code>[Mayr, 2005]</code> Mayr, Herwig.
+  Projekt Engineering: Ingenieurmäßige Softwareentwicklung in Projektgruppen.
+  Hanser Verlag, 2005.</p>
+</li>
+<li>
+<p><code>[Morales et al., 2019]</code> Morales, Jenny, et al.
+  "How “friendly” integrated development environments are?."
+  International Conference on Human-Computer Interaction.
+  Cham: Springer International Publishing, 2019.
+  <a href="https://doi.org/10.1007/978-3-030-21902-4_7">Paper homepage</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Morales et al., 2019]</code></summary>
+<p>This study asks students to evaluate how friendly different IDEs
+are to use.</p>
+<p>Note that it misquotes <code>[Beelders and du Plessis, 2015]</code>,
+where this paper insinuates that syntax highlighting (as
+typically provided by IDEs) is a good thing. The misquoted
+paper, however, found that there is no difference between black-and-white
+code versus colored syntax highlighted code.</p>
+</details>
+<ul>
+<li><code>[Munafò et al., 2017]</code> Munafò, Marcus R., et al.
+  "A manifesto for reproducible science."
+  Nature human behaviour 1.1 (2017): 0021.
+  <a href="https://doi.org/10.1038/s41562-016-0021">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Munafò et al., 2017]</code></summary>
+<p>This paper describes practices that hinder reproducibility
+of scientific findings, as well as measures to increase reproducibility
+of scientific findings, such as using registered reports.</p>
+</details>
+<ul>
+<li>
+<p><code>[Nagappan et al., 2008]</code> Nagappan, Nachiappan, et al.
+  "Realizing quality improvement through test driven development:
+  results and experiences of four industrial teams."
+  Empirical Software Engineering 13 (2008): 289-302.</p>
+</li>
+<li>
+<p><code>[Ordoñez-Pacheco et al., 2021]</code>
+  Ordoñez-Pacheco, Rodrigo, Karen Cortes-Verdin, and Jorge Octavio
+  Ocharán-Hernández.
+  "Best practices for software development: A systematic literature review."
+  International Conference on Software Process Improvement.
+  Springer, Cham, 2021.
+  Note: this paper does not exist. It is not part of the book
+  'Advances in Intelligent Informatics', volume 320,
+  ISBN 978-3-319-11217-6.</p>
+</li>
+<li>
+<p><code>[Pastrana et al., 2025]</code> Pastrana, Manuel, et al.
+  "Best Practices Evidenced for Software Development Based on DevOps
+  and Scrum: A Literature Review."
+  Applied Sciences 15.10 (2025): 5421.
+  <a href="https://doi.org/10.3390/app15105421">Paper homepage</a>.
+  <a href="pastrana_et_al_2025.pdf">PDF</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Pastrana et al., 2025]</code></summary>
+<p>This open-access paper is a literature review paper on Scrum and DevOps.</p>
+<p>Box 11 shows the benefits of Scrum and DevOps practices.
+Here is an adapted version of box 11:</p>
+<p><!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --></p>
+<table>
+<thead>
+<tr>
+<th>Benefits</th>
+<th>Improvement Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scrum adoption</td>
+<td>Actively involved stakeholders</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Transparent communication channels</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Increased team collaboration</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Improved predictability</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Creation of a collaborative culture</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Continuous improvement</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Constant quality measurement or concurrent testing</td>
+</tr>
+<tr>
+<td>DevOps adoption</td>
+<td>Early and continuous feedback</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Productivity increased by 20%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Deployment time decreased by 30%</td>
+</tr>
+<tr>
+<td>Faster release cycles</td>
+<td>Time to market decreased by 25%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Incident resolution time decreased by 40%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Quality deliverable</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Early and continuous feedback</td>
+</tr>
+<tr>
+<td>Continuous integration</td>
+<td>Quality deliverable</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Time to market decreased by 25%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Incident resolution time decreased by 40%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Transparent communication channels</td>
+</tr>
+<tr>
+<td>Automated testing</td>
+<td>Test execution speed increased by 35%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Defect detection increased by 18%</td>
+</tr>
+<tr>
+<td>Security automation</td>
+<td>Security vulnerabilities decreased by 30%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>response time decreased by 50%</td>
+</tr>
+<tr>
+<td>Agile transformation</td>
+<td>The development cycle decreased by 25%</td>
+</tr>
+<tr>
+<td>.</td>
+<td>Project success rates increased by 18%</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+<p>I removed the conclusion to <code>[Sravani et al., 2023]</code> (<code>[117]</code> in the paper)
+as that paper does not supply these numbers at all.</p>
+<p>I used
+<a href="https://doc2lang.com/image-to-table">the Doc2Lang image to table converter</a>
+to convert the image to a table.</p>
+</details>
+<ul>
+<li>
+<p><code>[PEP 8]</code> Van Rossum, Guido, Barry Warsaw, and Nick Coghlan.
+  "PEP 8–style guide for python code." Python. org 1565 (2001): 28.</p>
+</li>
+<li>
+<p><code>[Perez-Riverol et al., 2016]</code>
+  Perez-Riverol, Yasset, et al. "Ten simple rules for taking advantage
+  of Git and GitHub." PLoS computational biology 12.7 (2016): e1004947.
+  <a href="https://doi.org/10.1371/journal.pcbi.1004947">Paper homepage</a>
+  <a href="perez_riverol_et_al_2016.pdf">PDF</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Perez-Riverol et al., 2016]</code></summary>
+<p>This open-access paper shares 10 simple rules to take advantage of <code>git</code>
+and GitHub:</p>
+<ul>
+<li>Rule 1: Use GitHub to Track Your Projects</li>
+<li>Rule 2: GitHub for Single Users, Teams, and Organizations</li>
+<li>Rule 3: Developing and Collaborating on New Features:
+  Branching and Forking</li>
+<li>Rule 4: Naming Branches and Commits: Tags and Semantic Versions</li>
+<li>Rule 5: Let GitHub Do Some Tasks for You: Integrate</li>
+<li>Rule 6: Let GitHub Do More Tasks for You: Automate</li>
+<li>Rule 7: Use GitHub to Openly and Collaboratively Discuss,
+  Address, and Close Issues</li>
+<li>Rule 8: Make Your Code Easily Citable, and Cite Source Code!</li>
+<li>Rule 9: Promote and Discuss Your Projects: Web Page and More</li>
+<li>Rule 10: Use GitHub to Be Social: Follow and Watch</li>
+</ul>
+</details>
+<ul>
+<li><code>[Ram, 2013]</code> Ram, Karthik.
+  "Git can facilitate greater reproducibility and increased transparency
+  in science." Source code for biology and medicine 8.1 (2013): 7.
+  <a href="https://link.springer.com/article/10.1186/1751-0473-8-7">Paper homepage</a>
+  <a href="ram_2013.pdf">PDF</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Ram, 2013]</code></summary>
+<p>This open-access paper supplies these 8 use cases for Git in science.</p>
+<ul>
+<li>Lab notebook</li>
+<li>Facilitating collaboration</li>
+<li>Backup and failsafe against data loss</li>
+<li>Freedom to explore new ideas and methods</li>
+<li>Mechanism to solicit feedback and reviews</li>
+<li>Increase transparency and verifiability</li>
+<li>Managing large data</li>
+<li>Lowering barriers to reuse</li>
+</ul>
+</details>
+<ul>
+<li>
+<p><code>[Rumbaugh, 1991]</code> Rumbaugh et. al,
+  Object-oriented modeling and design, Prentice-Hall, Inc. 1991</p>
+</li>
+<li>
+<p><code>[Schwartz and Gurung, 2012]</code>
+  Schwartz, Beth M., and Regan AR Gurung.
+  Evidence-based teaching for higher education.
+  American Psychological Association, 2012.</p>
+</li>
+<li>
+<p><code>[Serban et al., 2020]</code> Serban, Alex, et al.
+  "Adoption and effects of software engineering best practices
+  in machine learning." Proceedings of the 14th ACM/IEEE
+  International Symposium on Empirical Software Engineering and
+  Measurement (ESEM). 2020.
+  <a href="https://doi.org/10.1145/3382494.3410681">Paper homepage</a>.
+  <a href="serban_et_al_2020.pdf">PDF</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Serban et al., 2020]</code></summary>
+<p>This open-access article shows the importance of a practice
+and how much it is adopted, in the context of a machine learning project:</p>
+<p><img alt="Serban et al., 2020, figure 3, annotation mine" src="serban_et_al_2020_fig_3_annotated.png" /></p>
+<p>Note that there are 2x a 28, where 29 is absent. I assume that the
+28 to the right, with and orange circle and an importance of 0.2
+had to be 29. I assume so, as the 28 with a green triangle
+should indeed be a green triangle. This has been clearly annotated :-)</p>
+<p>These are the top 10 most important practices, after which I show
+the full table:</p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25</td>
+<td>Log Production Predictions with the Model's Version and Input Data</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Work Against a Shared Backlog</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Continuously Monitor the Behaviour of Deployed Models</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Use Continuous Integration</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Automate Model Deployment</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Use Versioning for Data, Model, Configurations and Training Scripts</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Use A Collaborative Development Platform</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Enforce Fairness and Privacy</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Run Automated Regression Tests</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Enable Parallel Training Experiments</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the full table:</p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Use Sanity Checks for All External Data Sources</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Check that Input Data is Complete, Balanced and Well Distributed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Write Reusable Scripts for Data Cleaning and Merging</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ensure Data Labelling is Performed in a Strictly Controlled Process</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Make Data Sets Available on Shared Infrastructure (private or public)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Share a Clearly Defined Training Objective within the Team</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Capture the Training Objective in a Metric that is Easy to Measure and Understand</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Test all Feature Extraction Code</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Assign an Owner to Each Feature and Document its Rationale</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Actively Remove or Archive Features That are Not Used</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Peer Review Training Scripts</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Enable Parallel Training Experiments</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Automate Hyper-Parameter Optimisation and Model Selection</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Continuously Measure Model Quality and Performance</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Share Status and Outcomes of Experiments Within the Team</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Use versioning for Data, Model, Configurations and Training Scripts</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Run Automated Regression Tests</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Use Continuous Integration</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Use Static Analysis to Check Code Quality</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Automate Model Deployment</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Continuously Monitor the Behaviour of Deployed Models</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Enable Shadow Deployment</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Perform Checks to Detect Skews between Models</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Enable Automatic Roll Backs for Production Models</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Log Production Predictions with the Model's Version and Input Data</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Use A Collaborative Development Platform</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Work Against a Shared Backlog</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Communicate, Align, and Collaborate With Multidisciplinary Team Members</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Enforce Fairness and Privacy</td>
+</tr>
+</tbody>
+</table>
+<p>I used
+<a href="https://doc2lang.com/image-to-table">the Doc2Lang image to table converter</a>
+to convert the image to a table</p>
+</details>
+<ul>
+<li><code>[Soderberg et al., 2021]</code> Soderberg, Courtney K., et al.
+  "Initial evidence of research quality of registered reports
+  compared with the standard publishing model."
+  Nature Human Behaviour 5.8 (2021): 990-997.
+  <a href="https://doi.org/10.1038/s41562-021-01142-4">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Soderberg et al., 2021]</code></summary>
+<p>This paper shows that registered reports result in better
+science, compared to 'regular' papers.</p>
+<p>Here is figure 3 of that paper:</p>
+<p><img alt="Soderberg et al., 2021, figure 3" src="soderberg_et_al_2021_fig_3.png" /></p>
+<p>In this experiment, researches selected 'regular' papers
+and registered reports. The researchers then asked reviewers
+to score papers on the feature shown in the figure,
+where these reviewers were unaware of this experimental variable.</p>
+<p>For all features (including 'Creativity'), registered reports
+scored higher.</p>
+</details>
+<ul>
+<li>
+<p><code>[Sravani et al., 2023]</code> Sravani, Diyyala, et al.
+  "Python security in devOps: Best practices for secure coding,
+  configuration management, and continuous testing and monitoring."
+  2023 4th International Conference on Electronics and Sustainable
+  Communication Systems (ICESC). IEEE, 2023.</p>
+</li>
+<li>
+<p><code>[Stieler and Bauer, 2023]</code> Stieler, Fabian, and Bernhard Bauer.
+  "Git workflow for active learning-a development methodology proposal
+  for data-centric AI projects." (2023).
+  <a href="https://doi.org/10.5220/0011988400003464">Paper homepage</a>.
+  <a href="stieler_and_bauer_2023.pdf">PDF</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Stieler and Bauer, 2023]</code></summary>
+<p>This open-access paper applies <code>[Serban et al., 2020]</code>
+for a data-centric AI project called GW4AL.
+It is irrelevant for us.</p>
+</details>
+<ul>
+<li><code>[Stodden and Miguez, 2014]</code> Stodden, Victoria, and Sheila Miguez.
+  "Best practices for computational science:
+  Software infrastructure and environments for reproducible and
+  extensible research." (2014).
+  <a href="https://openresearchsoftware.metajnl.com/articles/jors.ay">Paper homepage</a>.
+  <a href="stodden_and_miguez_2014.pdf">PDF</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Stodden and Miguez, 2014]</code></summary>
+<p>This open-access paper suggests these best practices about how to setup
+your infrastructure to achieve reproducible research:</p>
+<ul>
+<li>Open licensing should be used for data and code</li>
+<li>Workflow tracking should be carried out during the research process.</li>
+<li>Data must be available and accessible</li>
+<li>Code and methods must be available and accessible</li>
+<li>All 3rd party data and software should be cited</li>
+</ul>
+</details>
+<ul>
+<li>
+<p><code>[Stroustrup, 1997]</code> Bjarne Stroustrup.
+  The C++ Programming Language (3rd edition). 1997.
+  ISBN: 0-201-88954-4.</p>
+</li>
+<li>
+<p><code>[Stroustrup, 1998]</code> Stroustrup B. What is “Object-oriented Programming”?
+  Software, IEEE. 1988 Jun 1;5:10–20.</p>
+</li>
+<li>
+<p><code>[Stroustrup, 2013]</code> Bjarne Stroustrup.
+  The C++ Programming Language (4th edition). 2013. ISBN: 978-0-321-56384-2.</p>
+</li>
+<li>
+<p><code>[Stroustrup and Sutter, 2017]</code>
+  Stroustrup, Bjarne, and Herb Sutter.
+  "C++ Core Guidelines (2017)."
+  <a href="http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">Website</a>.
+  (Cited on pages 100 and 103) (2015).</p>
+</li>
+<li>
+<p><code>[Sutter and Alexandrescu, 2004]</code> Herb Sutter, Andrei Alexandrescu.
+  C++ coding standards: 101 rules, guidelines, and best practices. 2004.
+  ISBN: 0-32-111358-6. Chapter 68: 'Assert liberally to document internal
+  assumptions and invariants'</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Sutter and Alexandrescu, 2004]</code></summary>
+<p>This C++ classic gives 101 rules in C++ software development.
+Even though this course uses Python,
+some advice applies to all programming languages.</p>
+<p><!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --></p>
+<table>
+<thead>
+<tr>
+<th>Idx</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Don't sweat the small stuff (Or: Know what not to standardize.)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Compile cleanly at high warning levels</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Use an automated build system</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Use a version control system</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Invest in code reviews</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Give one entity one cohesive responsibility</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Correctness, simplicity, and clarity come first</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Know when and how to code for scalability</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Don't optimize prematurely</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Don't pessimize prematurely</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Minimize global and shared data</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Hide information</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Know when and how to code for concurrency</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Ensure resources are owned by objects. Use explicit RAII and smart pointers.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Prefer compileand link-time errors to run-time errors</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Use <code>const</code> proactively</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Avoid macros</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Avoid magic numbers</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Declare variables as locally as possible</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Always initialize variables</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Avoid long functions. Avoid deep nesting</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Avoid initialization dependencies across compilation units</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Minimize definitional dependencies. Avoid cyclic dependencies</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Make header files self-sufficient</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Always write internal <code>#include</code> guards. Never write external <code>#include</code> guards.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Take parameters appropriately by value, (smart) pointer, or reference</td>
+</tr>
+<tr>
+<td>26</td>
+<td>Preserve natural semantics for overloaded operators</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Prefer the canonical forms of arithmetic and assignment operators</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Prefer the canonical form of <code>++</code> and <code>--</code> . Prefer calling the prefix forms</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Consider overloading to avoid implicit type conversions</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Avoid overloading <code>&amp;&amp;</code>, [the <code>or</code> operator], or <code>,</code> (comma)</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Don't write code that depends on the order of evaluation of function arguments</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Be clear what kind of class you're writing</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Prefer minimal classes to monolithic classes</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Prefer composition to inheritance</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Avoid inheriting from classes that were not designed to be base classes</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Prefer providing abstract interfaces</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Public inheritance is substitutability. Inherit, not to reuse, but to be reused</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Practice safe overriding</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Consider making virtual functions nonpublic, and public functions nonvirtual</td>
+</tr>
+<tr>
+<td>40</td>
+<td>Avoid providing implicit conversions</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Make data members private, except in behaviourless aggregates (C-style <code>struct</code>s)</td>
+</tr>
+<tr>
+<td>42</td>
+<td>Don't give away your internals</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Pimpl judiciously</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Prefer writing nonmember nonfriend functions</td>
+</tr>
+<tr>
+<td>45</td>
+<td>Always provide <code>new</code> and <code>delete</code> together</td>
+</tr>
+<tr>
+<td>46</td>
+<td>If you provide any class-specific <code>new</code>, provide all of the standard forms (plain, in-place, and <code>nothrow</code>)</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Define and initialize member variables in the same order</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Prefer initialization to assignment in constructors</td>
+</tr>
+<tr>
+<td>49</td>
+<td>Avoid calling virtual functions in constructors and destructors</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Make base class destructors public and virtual, or protected and nonvirtual</td>
+</tr>
+<tr>
+<td>51</td>
+<td>Destructors, deallocation, and <code>swap</code> never fail</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Copy and destroy consistently</td>
+</tr>
+<tr>
+<td>53</td>
+<td>Explicitly enable or disable copying</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Avoid slicing. Consider <code>Clone</code> in stead of copying in base classes</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Prefer the canonical form of assignment</td>
+</tr>
+<tr>
+<td>56</td>
+<td>Whenever it makes sense, provide a no-fail swap (and provide it correctly)</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Keep a type and its nonmember function interface in the same namespace</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Keep types and functions in separate namespaces unless they're specifically intended to work together</td>
+</tr>
+<tr>
+<td>59</td>
+<td>Don't write namespace <code>using</code>s in a header file or before an <code>#include</code></td>
+</tr>
+<tr>
+<td>60</td>
+<td>Avoid allocating and deallocating memory in different modules</td>
+</tr>
+<tr>
+<td>61</td>
+<td>Don't define entities with linkage in a header file</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Don't allow exceptions to propagate across module boundaries</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Use sufficiently portable types in a module's interface</td>
+</tr>
+<tr>
+<td>64</td>
+<td>Blend static and dynamic polymorphism judiciously</td>
+</tr>
+<tr>
+<td>65</td>
+<td>Customize intentionally and explicitly</td>
+</tr>
+<tr>
+<td>66</td>
+<td>Don't specialize function templates</td>
+</tr>
+<tr>
+<td>67</td>
+<td>Don't write unintentionally nongeneric code</td>
+</tr>
+<tr>
+<td>68</td>
+<td>Assert liberally to document internal assumptions and invariants</td>
+</tr>
+<tr>
+<td>69</td>
+<td>Establish a rational error handling policy, and follow it strictly</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Distinguish between errors and non-errors</td>
+</tr>
+<tr>
+<td>71</td>
+<td>Design and write error-safe code</td>
+</tr>
+<tr>
+<td>72</td>
+<td>Prefer to use exceptions to report errors</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Throw by value, catch by reference</td>
+</tr>
+<tr>
+<td>74</td>
+<td>Report, handle, and translate errors appropriately</td>
+</tr>
+<tr>
+<td>75</td>
+<td>Avoid exception specifications.</td>
+</tr>
+<tr>
+<td>76</td>
+<td>Use vector by default. Otherwise, choose an appropriate container</td>
+</tr>
+<tr>
+<td>77</td>
+<td>Use <code>vector</code> and <code>string</code> instead of arrays</td>
+</tr>
+<tr>
+<td>78</td>
+<td>Use <code>vector</code> (and <code>string::c_str</code>) to exchange data with non-C++ APIs</td>
+</tr>
+<tr>
+<td>79</td>
+<td>Store only values and smart pointers in containers</td>
+</tr>
+<tr>
+<td>80</td>
+<td>Prefer push back to other ways of expanding a sequence</td>
+</tr>
+<tr>
+<td>81</td>
+<td>Prefer range operations to single-element operations</td>
+</tr>
+<tr>
+<td>82</td>
+<td>Use the accepted idioms to really shrink capacity and really erase elements</td>
+</tr>
+<tr>
+<td>83</td>
+<td>Use a checked STL implementation</td>
+</tr>
+<tr>
+<td>84</td>
+<td>Prefer algorithm calls to handwritten loops</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Use the right STL search algorithm</td>
+</tr>
+<tr>
+<td>86</td>
+<td>Use the right STL sort algorithm</td>
+</tr>
+<tr>
+<td>87</td>
+<td>Make predicates pure functions</td>
+</tr>
+<tr>
+<td>88</td>
+<td>Prefer function objects over functions as algorithm and comparer arguments</td>
+</tr>
+<tr>
+<td>89</td>
+<td>Write function objects correctly</td>
+</tr>
+<tr>
+<td>90</td>
+<td>Avoid type switching; prefer polymorphism</td>
+</tr>
+<tr>
+<td>91</td>
+<td>Rely on types, not on representations</td>
+</tr>
+<tr>
+<td>92</td>
+<td>Avoid using <code>reinterpret_cast</code></td>
+</tr>
+<tr>
+<td>93</td>
+<td>Avoid using <code>static_cast</code> on pointers</td>
+</tr>
+<tr>
+<td>94</td>
+<td>Avoid casting away <code>const</code></td>
+</tr>
+<tr>
+<td>95</td>
+<td>Don't use C-style casts</td>
+</tr>
+<tr>
+<td>96</td>
+<td>Don't <code>memcpy</code> or <code>memcmp</code> non-PODs</td>
+</tr>
+<tr>
+<td>97</td>
+<td>Don't use unions to reinterpret representation.</td>
+</tr>
+<tr>
+<td>98</td>
+<td>Don't use varargs (ellipsis)</td>
+</tr>
+<tr>
+<td>99</td>
+<td>Don't use invalid objects. Don't use unsafe functions</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Don't treat arrays polymorphically</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+</details>
+<ul>
+<li><code>[Thomas and Hunt, 2019]</code>
+  Thomas, David, and Andrew Hunt.
+  The Pragmatic Programmer: your journey to mastery.
+  Addison-Wesley Professional, 2019.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Thomas and Hunt, 2019]</code></summary>
+<p>This book is a classic, with 100 tips.
+Here is an overview of the (sometimes cryptically phrased) tips,
+as well as the page of the book where you can find it explained.</p>
+<table>
+<thead>
+<tr>
+<th>Tip</th>
+<th>Page</th>
+<th>Tip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>xxi</td>
+<td>Care About Your Craft</td>
+</tr>
+<tr>
+<td>2</td>
+<td>xxi</td>
+<td>Think! About Your Work</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2</td>
+<td>You Have Agency</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>Provide Options, Don't Make Lame Excuses</td>
+</tr>
+<tr>
+<td>5</td>
+<td>7</td>
+<td>Don't Live with Broken Windows</td>
+</tr>
+<tr>
+<td>6</td>
+<td>9</td>
+<td>Be a Catalyst for Change</td>
+</tr>
+<tr>
+<td>7</td>
+<td>10</td>
+<td>Remember the Big Picture</td>
+</tr>
+<tr>
+<td>8</td>
+<td>12</td>
+<td>Make Quality a Requirements Issue</td>
+</tr>
+<tr>
+<td>9</td>
+<td>15</td>
+<td>Invest Regularly in Your Knowledge Portfolio</td>
+</tr>
+<tr>
+<td>10</td>
+<td>17</td>
+<td>Critically Analyze What You Read and Hear</td>
+</tr>
+<tr>
+<td>11</td>
+<td>20</td>
+<td>English is Just Another Programming Language</td>
+</tr>
+<tr>
+<td>12</td>
+<td>22</td>
+<td>It's Both What You Say and the Way You Say It</td>
+</tr>
+<tr>
+<td>13</td>
+<td>23</td>
+<td>Build Documentation In, Don't Bolt It On</td>
+</tr>
+<tr>
+<td>14</td>
+<td>28</td>
+<td>Good Design Is Easier to Change Than Bad Design</td>
+</tr>
+<tr>
+<td>15</td>
+<td>31</td>
+<td>DRY - Don't Repeat Yourself</td>
+</tr>
+<tr>
+<td>16</td>
+<td>38</td>
+<td>Make It Easy to Reuse</td>
+</tr>
+<tr>
+<td>17</td>
+<td>40</td>
+<td>Eliminate Effects Between Unrelated Things</td>
+</tr>
+<tr>
+<td>18</td>
+<td>48</td>
+<td>There Are No Final Decisions</td>
+</tr>
+<tr>
+<td>19</td>
+<td>49</td>
+<td>Forgo Following Fads</td>
+</tr>
+<tr>
+<td>20</td>
+<td>51</td>
+<td>Use Tracer Bullets to Find the Target</td>
+</tr>
+<tr>
+<td>21</td>
+<td>57</td>
+<td>Prototype to Learn</td>
+</tr>
+<tr>
+<td>22</td>
+<td>60</td>
+<td>Program Close to the Problem Domain</td>
+</tr>
+<tr>
+<td>23</td>
+<td>66</td>
+<td>Estimate to Avoid Surprises</td>
+</tr>
+<tr>
+<td>24</td>
+<td>70</td>
+<td>Iterate the Schedule with the Code</td>
+</tr>
+<tr>
+<td>25</td>
+<td>75</td>
+<td>Keep Knowledge in Plain Text</td>
+</tr>
+<tr>
+<td>26</td>
+<td>79</td>
+<td>Use the Power of Command Shells</td>
+</tr>
+<tr>
+<td>27</td>
+<td>81</td>
+<td>Achieve Editor Fluency</td>
+</tr>
+<tr>
+<td>28</td>
+<td>85</td>
+<td>Always Use Version Control</td>
+</tr>
+<tr>
+<td>29</td>
+<td>89</td>
+<td>Fix the Problem, Not the Blame</td>
+</tr>
+<tr>
+<td>30</td>
+<td>89</td>
+<td>Don't Panic</td>
+</tr>
+<tr>
+<td>31</td>
+<td>91</td>
+<td>Failing Test Before Fixing Code</td>
+</tr>
+<tr>
+<td>32</td>
+<td>92</td>
+<td>Read the Damn Error Message</td>
+</tr>
+<tr>
+<td>33</td>
+<td>95</td>
+<td><code>select</code> Isn't Broken</td>
+</tr>
+<tr>
+<td>34</td>
+<td>96</td>
+<td>Don't Assume It - Prove It</td>
+</tr>
+<tr>
+<td>35</td>
+<td>98</td>
+<td>Learn a Text Manipulation Language</td>
+</tr>
+<tr>
+<td>36</td>
+<td>102</td>
+<td>You Can't Write Perfect Software</td>
+</tr>
+<tr>
+<td>37</td>
+<td>107</td>
+<td>Design with Contracts</td>
+</tr>
+<tr>
+<td>38</td>
+<td>113</td>
+<td>Crash Early</td>
+</tr>
+<tr>
+<td>39</td>
+<td>115</td>
+<td>Use Assertions to Prevent the Impossible</td>
+</tr>
+<tr>
+<td>40</td>
+<td>118</td>
+<td>Finish What You Start</td>
+</tr>
+<tr>
+<td>41</td>
+<td>121</td>
+<td>Act Locally</td>
+</tr>
+<tr>
+<td>42</td>
+<td>126</td>
+<td>Take Small Steps - Always</td>
+</tr>
+<tr>
+<td>43</td>
+<td>127</td>
+<td>Avoid Fortune-Telling</td>
+</tr>
+<tr>
+<td>44</td>
+<td>131</td>
+<td>Decoupled Code Is Easier to Change</td>
+</tr>
+<tr>
+<td>45</td>
+<td>132</td>
+<td>Tell, Don't Ask</td>
+</tr>
+<tr>
+<td>46</td>
+<td>134</td>
+<td>Don't Chain Method Calls</td>
+</tr>
+<tr>
+<td>47</td>
+<td>136</td>
+<td>Avoid Global Data</td>
+</tr>
+<tr>
+<td>48</td>
+<td>136</td>
+<td>If It's Important Enough To Be Global, Wrap It in an API</td>
+</tr>
+<tr>
+<td>49</td>
+<td>149</td>
+<td>Programming Is About Code, But Programs Are About Data</td>
+</tr>
+<tr>
+<td>50</td>
+<td>153</td>
+<td>Don't Hoard State; Pass It Around</td>
+</tr>
+<tr>
+<td>51</td>
+<td>161</td>
+<td>Don't Pay Inheritance Tax</td>
+</tr>
+<tr>
+<td>52</td>
+<td>162</td>
+<td>Prefer Interfaces to Express Polymorphism</td>
+</tr>
+<tr>
+<td>53</td>
+<td>163</td>
+<td>Delegate to Services, Has-A Trumps Is-A</td>
+</tr>
+<tr>
+<td>54</td>
+<td>165</td>
+<td>Use Mixins to Share Functionality</td>
+</tr>
+<tr>
+<td>55</td>
+<td>166</td>
+<td>Parameterize Your App Using External Configuration</td>
+</tr>
+<tr>
+<td>56</td>
+<td>171</td>
+<td>Analyze Workflow to Improve Concurrency</td>
+</tr>
+<tr>
+<td>57</td>
+<td>174</td>
+<td>Shared State Is Incorrect State</td>
+</tr>
+<tr>
+<td>58</td>
+<td>180</td>
+<td>Random Failures Are Often Concurrency Issues</td>
+</tr>
+<tr>
+<td>59</td>
+<td>182</td>
+<td>Use Actors For Concurrency Without Shared State</td>
+</tr>
+<tr>
+<td>60</td>
+<td>189</td>
+<td>Use Blackboards to Coordinate Workflow</td>
+</tr>
+<tr>
+<td>61</td>
+<td>194</td>
+<td>Listen to Your Inner Lizard</td>
+</tr>
+<tr>
+<td>62</td>
+<td>200</td>
+<td>Don't Program by Coincidence</td>
+</tr>
+<tr>
+<td>63</td>
+<td>207</td>
+<td>Estimate the Order of Your Algorithms</td>
+</tr>
+<tr>
+<td>64</td>
+<td>208</td>
+<td>Test Your Estimates</td>
+</tr>
+<tr>
+<td>65</td>
+<td>212</td>
+<td>Refactor Early, Refactor Often</td>
+</tr>
+<tr>
+<td>66</td>
+<td>214</td>
+<td>Testing Is Not About Finding Bugs</td>
+</tr>
+<tr>
+<td>67</td>
+<td>216</td>
+<td>A Test Is the First User of Your Code</td>
+</tr>
+<tr>
+<td>68</td>
+<td>218</td>
+<td>Build End-To-End, Not Top-Down or Bottom Up</td>
+</tr>
+<tr>
+<td>69</td>
+<td>221</td>
+<td>Design to Test</td>
+</tr>
+<tr>
+<td>70</td>
+<td>223</td>
+<td>Test Your Software, or Your Users Will</td>
+</tr>
+<tr>
+<td>71</td>
+<td>224</td>
+<td>Use Property-Based Tests to Validate Your Assumptions</td>
+</tr>
+<tr>
+<td>72</td>
+<td>234</td>
+<td>Keep It Simple and Minimize Attack Surfaces</td>
+</tr>
+<tr>
+<td>73</td>
+<td>235</td>
+<td>Apply Security Patches Quickly</td>
+</tr>
+<tr>
+<td>74</td>
+<td>242</td>
+<td>Name Well; Rename When Needed</td>
+</tr>
+<tr>
+<td>75</td>
+<td>244</td>
+<td>No One Knows Exactly What They Want</td>
+</tr>
+<tr>
+<td>76</td>
+<td>245</td>
+<td>Programmers Help People Understand What They Want</td>
+</tr>
+<tr>
+<td>77</td>
+<td>246</td>
+<td>Requirements Are Learned in a Feedback Loop</td>
+</tr>
+<tr>
+<td>78</td>
+<td>247</td>
+<td>Work with a User to Think Like a User</td>
+</tr>
+<tr>
+<td>79</td>
+<td>248</td>
+<td>Policy Is Metadata</td>
+</tr>
+<tr>
+<td>80</td>
+<td>251</td>
+<td>Use a Project Glossary</td>
+</tr>
+<tr>
+<td>81</td>
+<td>254</td>
+<td>Don't Think Outside the Box - Find the Box</td>
+</tr>
+<tr>
+<td>82</td>
+<td>259</td>
+<td>Don't Go into the Code Alone</td>
+</tr>
+<tr>
+<td>83</td>
+<td>259</td>
+<td>Agile Is Not a Noun; Agile Is How You Do Things</td>
+</tr>
+<tr>
+<td>84</td>
+<td>264</td>
+<td>Maintain Small Stable Teams</td>
+</tr>
+<tr>
+<td>85</td>
+<td>266</td>
+<td>Schedule It to Make It Happen</td>
+</tr>
+<tr>
+<td>86</td>
+<td>268</td>
+<td>Organize Fully Functional Teams</td>
+</tr>
+<tr>
+<td>87</td>
+<td>271</td>
+<td>Do What Works, Not What's Fashionable</td>
+</tr>
+<tr>
+<td>88</td>
+<td>273</td>
+<td>Deliver When Users Need It</td>
+</tr>
+<tr>
+<td>89</td>
+<td>274</td>
+<td>Use Version Control to Drive Builds, Tests, and Releases</td>
+</tr>
+<tr>
+<td>90</td>
+<td>275</td>
+<td>Test Early, Test Often, Test Automatically</td>
+</tr>
+<tr>
+<td>91</td>
+<td>275</td>
+<td>Coding Ain't Done 'Til All the Tests Run</td>
+</tr>
+<tr>
+<td>92</td>
+<td>277</td>
+<td>Use Saboteurs to Test Your Testing</td>
+</tr>
+<tr>
+<td>93</td>
+<td>278</td>
+<td>Test State Coverage, Not Code Coverage</td>
+</tr>
+<tr>
+<td>94</td>
+<td>278</td>
+<td>Find Bugs Once</td>
+</tr>
+<tr>
+<td>95</td>
+<td>279</td>
+<td>Don't Use Manual Procedures</td>
+</tr>
+<tr>
+<td>96</td>
+<td>281</td>
+<td>Delight Users, Don't Just Deliver Code</td>
+</tr>
+<tr>
+<td>97</td>
+<td>282</td>
+<td>Sign Your Work</td>
+</tr>
+<tr>
+<td>98</td>
+<td>286</td>
+<td>First, Do No Harm</td>
+</tr>
+<tr>
+<td>99</td>
+<td>287</td>
+<td>Don't Enable Scumbags</td>
+</tr>
+<tr>
+<td>100</td>
+<td>287</td>
+<td>It's Your Life. Share it. Celebrate it. Build it. AND HAVE FUN!</td>
+</tr>
+</tbody>
+</table>
+</details>
+<ul>
+<li><code>[Tian et al, 2022]</code> Tian, Yingchen, et al.
+  "What makes a good commit message?."
+  Proceedings of the 44th International Conference on Software Engineering.
+  2022.
+  <a href="https://doi.org/10.1145/3510003.3510205">Paper homepage</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Tian et al, 2022]</code></summary>
+<p>This paper describes what makes a good commit message,
+classifying good commit messages in 'What' and 'Why'
+categories.</p>
+<p>It does describe reasonably clear what is a bad commit message,
+however, it not give any clear guidance on what is a good commit message.</p>
+</details>
+<ul>
+<li>
+<p><code>[Uncle Bob, 2024]</code>
+  <a href="https://youtu.be/hFRq2vONviM?si=rt8KQQC69yqVpxz2">YouTube video 'Is Test Driven Development Slow?' by Uncle Bob</a></p>
+</li>
+<li>
+<p><code>[Visser et al., 2016]</code> Visser, Joost, et al.
+  Building software teams: Ten best practices for
+  effective software development. " O'Reilly Media, Inc.", 2016.</p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Visser et al., 2016]</code></summary>
+<p>This closed-access paper has the following table of content:</p>
+<ul>
+<li>Derive Metrics from Your Measurement Goals</li>
+<li>Make Definition of Done Explicit</li>
+<li>Control Code Versions and Development Branches</li>
+<li>Control Development, Test, Acceptance, and Production Environments</li>
+<li>Automate Tests</li>
+<li>Use Continuous Integration</li>
+<li>Automate Deployment</li>
+<li>Standardize the Development Environment</li>
+<li>Manage Usage of Third-Party Code</li>
+<li>Document Just Enough</li>
+</ul>
+</details>
+<ul>
+<li>
+<p><code>[Wickham, 2019]</code> Wickham, Hadley. Advanced R. Chapman and Hall/CRC, 2019.</p>
+</li>
+<li>
+<p><code>[Williams and Kessler, 2000]</code> Williams, Laurie; Kessler, Robert R.;
+  Cunningham, Ward; Jeffries, Ron (2000).
+  "Strengthening the case for pair programming" (PDF).
+  IEEE Software. 17 (4): 19–25. CiteSeerX 10.1.1.33.5248.
+  doi:10.1109/52.854064.</p>
+</li>
+<li>
+<p><code>[Wilson et al., 2014]</code> Wilson, Greg, et al.
+  "Best practices for scientific computing."
+  PLoS biology 12.1 (2014): e1001745.
+  <a href="https://doi.org/10.1371/journal.pbio.1001745">Paper homepage</a>.
+  <a href="wilson_et_al_2014.pdf">PDF</a></p>
+</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Wilson et al., 2014]</code></summary>
+<p>This paper summarizes best practices.
+Here is (a slightly adapted) box 1 from that paper:</p>
+<p><!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --></p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Theme</th>
+<th>Recommendatation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Write programs for people, not computers</td>
+<td>A program should not require its readers to hold more than a handful of facts in memory at once.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make names consistent, distinctive, and meaningful.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make code style and formatting consistent.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Let the computer do the work</td>
+<td>Make the computer repeat tasks.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Save recent commands in a file for re-use.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a build tool to automate workflows.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Make incremental changes</td>
+<td>Work in small steps with frequent feedback and course correction.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a version control system.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put everything that has been created manually in version control.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Don't repeat yourself (or others)</td>
+<td>Every piece of data must have a single authoritative representation in the system.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Modularize code rather than copying and pasting.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Re-use code instead of rewriting it.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Plan for mistakes</td>
+<td>Add assertions to programs to check their operation.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use an off-the-shelf unit testing library.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Turn bugs into test cases.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a symbolic debugger.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Optimize software only after it works correctly</td>
+<td>Use a profiler to identify bottlenecks.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Write code in the highest-level language possible.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Document design and purpose, not mechanics</td>
+<td>Document interfaces and reasons, not implementations.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Refactor code in preference to explaining how it works.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Embed the documentation for a piece of software in that software.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Collaborate</td>
+<td>Use pre-merge code reviews.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use pair programming when bringing someone new up to speed and when tackling particularly tricky problems.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use an issue tracking tool.</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+</details>
+<ul>
+<li><code>[Wilson et al., 2017]</code> Wilson, Greg, et al.
+  "Good enough practices in scientific computing."
+  PLoS computational biology 13.6 (2017): e1005510.
+  <a href="https://doi.org/10.1371/journal.pcbi.1005510">Paper homepage</a>.
+  <a href="wilson_et_al_2017.pdf">PDF</a></li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Wilson et al., 2017]</code></summary>
+<p>This paper summarizes best practices that are good enough.
+Here is (a slightly adapted) box 1 from that paper:</p>
+<p><!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line --></p>
+<table>
+<thead>
+<tr>
+<th><code>n</code></th>
+<th>Theme</th>
+<th>Recommendatation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Data management</td>
+<td>Save the raw data.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Ensure that raw data are backed up in more than one location.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create the data you wish to see in the world.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create analysis-friendly data.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Record all the steps used to process data.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Anticipate the need to use multiple tables, and use a unique identifier for every record.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Submit data to a reputable DOI-issuing repository so that others can access and cite it.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Software</td>
+<td>Place a brief explanatory comment at the start of every program.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Decompose programs into functions.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Be ruthless about eliminating duplication.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Always search for well-maintained software libraries that do what you need.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Test libraries before relying on them.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Give functions and variables meaningful names.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make dependencies and requirements explicit.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Do not comment and uncomment sections of code to control a program's behavior.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Provide a simple example or test data set.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Submit code to a reputable DOI-issuing repository.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Collaboration</td>
+<td>Create an overview of your project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create a shared "to-do" list for the project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Decide on communication strategies.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make the license explicit.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Make the project citable.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Project organization</td>
+<td>Put each project in its own directory, which is named after the project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put text documents associated with the project in the doc directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put raw data and metadata in a data directory and files generated during cleanup and analysis in a results directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put project source code in the src directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Put external scripts or compiled programs in the bin directory.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Name all files to reflect their content or function.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Keeping track of changes</td>
+<td>Back up (almost) everything created by a human being as soon as it is created.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Keep changes small.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Share changes frequently.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Create, maintain, and use a checklist for saving and sharing changes to the project.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Store each project in a folder that is mirrored off the researcher's working machine.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Add a file called CHANGELOG.txt to the project's docs subfolder.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Copy the entire project whenever a significant change has been made.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Use a version control system.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Manuscripts</td>
+<td>Write manuscripts using online tools with rich formatting, change tracking, and reference management.</td>
+</tr>
+<tr>
+<td>.</td>
+<td>.</td>
+<td>Write the manuscript in a plain text format that permits version control.</td>
+</tr>
+</tbody>
+</table>
+<!-- markdownlint-enable MD013 -->
+</details>
+<ul>
+<li><code>[Yas et al., 2023]</code> Yas, Qahtan M., Abdulbasit Alazzawi, and
+  Bahbibi Rahmatullah. "A comprehensive review of software development
+  life cycle methodologies: Pros, cons, and future directions."
+  Iraqi Journal for Computer Science and Mathematics 4.4 (2023): 14.</li>
+</ul>
+<details class="- info">
+<summary>Summary of <code>[Yas et al., 2023]</code></summary>
+<p>This paper tries to collect and categorize
+all software development life cycles.
+The primary grouping is between traditional and agile models.</p>
+<p>Figure 3 depicts the waterfall model:</p>
+<p><img alt="Yas, 2023, figure 3" src="yas_2023_figure_3.png" /></p>
+<p>Figure 8 depicts the eXtreme programming model:</p>
+<p><img alt="Yas, 2023, figure 8, enhanced" src="yas_2023_figure_8_enhanced.png" /></p>
+</details>
+<ul>
+<li>
+<p><code>[Yuan et al., 2014]</code>
+  Yuan, Ding, et al.
+  "Simple testing can prevent most critical failures:
+  An analysis of production failures in distributed data-intensive systems."
+  11th USENIX Symposium on Operating Systems Design and Implementation
+  (OSDI 14). 2014.</p>
+</li>
+<li>
+<p><code>[Zen of Python]</code>
+  <a href="https://peps.python.org/pep-0020/#the-zen-of-python">Zen Of Python: 'Errors should never pass silently'</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../misc/project_workflows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Project workflows">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Project workflows
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../reflections/" class="md-footer__link md-footer__link--next" aria-label="Next: Reflections">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Reflections
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.footer", "navigation.expand", "search.suggest", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.action.edit", "content.action.view"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-graphviz.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
