@@ -65,7 +65,7 @@ In words:
 
 Here we see the workflow for multiple developers:
 
-```
+```mermaid
 gitGraph
     commit
     branch develop
