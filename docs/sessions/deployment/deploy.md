@@ -86,7 +86,7 @@ tags:
 - 2 levels of dependencies
 
     - packages
-    - sysstem libraries
+    - system libraries
 
 ??? note "System libraries"
 
