@@ -209,7 +209,7 @@ graph LR
 
 ### Exercise
 
-!!!  info "Well formed requirements"
+!!! info "Well formed requirements"
     Lets look at the examples for the Learners project and analyze if they
     conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md). The Goal of this exercise is to read through the page and learn what a wellformed requirment is, then look through and discuss the requirments. After this see if you can spot any system or functional requirment that needs expanding. Make a document about this in your learners folder called requirment_analysis_NN.md
 
@@ -234,6 +234,6 @@ graph LR
 
 ## Extra reading
 
-Some extra material that are outside of what we use directly in the course compiled by Lars Eklund on different formal software development methodologies, [SDLC and modelleling methods](/docs/sessions/development_design/software_development_process.md)
+Some extra material that are outside of what we use directly in the course compiled by Lars Eklund on different formal software development methodologies, [SDLC and modelleling methods](../../development_design/software_development_process.md)
 
 
