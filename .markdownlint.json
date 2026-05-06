@@ -49,6 +49,4 @@
   "MD024": false,
   // MD029/ol-prefix Ordered list item prefix
   "MD029": false,
-  // MD049/emphasis-style Emphasis style [Expected: asterisk; Actual: underscore] //Needed if you want to combine 
-  "MD049": false,
 }
