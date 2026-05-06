@@ -452,7 +452,7 @@ Consider using the `is_even` function.
     - [R](https://youtu.be/Lah3fm3lUiA?si=40JdVJAO3oBcjrkH)
 
 
-## 5.4. Exercise 4: `is_prime`
+## 5.4. (Optional) Exercise 4: `is_prime`
 
 Develop a function called `is_prime`.
 
@@ -481,7 +481,7 @@ Develop a function called `is_prime`.
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
-## 5.5. Exercise 5: the research project
+## 5.5. (Optional) Exercise 5: the research project
 
 For our research project, we have already written some tests
 in [the session about `assert`](../assert/README.md).
