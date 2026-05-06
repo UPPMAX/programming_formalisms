@@ -35,11 +35,9 @@ tags:
 
     - **Total** 75 min
     - Theory 20+10
+      - Start by not showing screen
+      - ask questions
     - Exercises 30+15 min
-
-    Questions:
-
-    
 
 ## Introduction
 
@@ -65,7 +63,8 @@ tags:
     - package dependencies (Python, R etcetera)
     - libraries (compiled languages like C C++ Fortran)
     - OS Platforms
-    - Shared service
+    - system libraries
+    - shared service
 
 ??? question "Discussion: Reproducibility?"
 
@@ -80,8 +79,6 @@ tags:
     Different codes in the same environment can have conflicting dependencies.
 
 ## To make sure about needed dependencies
-
-??? question 
 
 - 2 levels of dependencies
 
@@ -534,7 +531,7 @@ For this we use a `.gitignore` file (put in root folder)
 ### Principle
 
 - Initiate git project
-    - Browse to right _root_ directory (the folder containing all the project-related files)
+    - Browse to right *root* directory (the folder containing all the project-related files)
 - Stage and commit
 - upload to github
 
@@ -553,7 +550,7 @@ For this we use a `.gitignore` file (put in root folder)
 ???- question "Exercise 1A: Identify existing project"
 
     - Just use an existing programming project you already have
-    - Browse to right _root_ directory (the folder containing all the project-related files)
+    - Browse to right *root* directory (the folder containing all the project-related files)
 
 ???- question "Exercise 1B: Make a code base for a new test project"
 
