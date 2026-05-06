@@ -304,7 +304,7 @@ Steps:
 
 - The 3 groups create one branch each according to issue above.
 - Go to the branch
-- Create a .py file which can be a function in the full program with a good name in the ``src/weather`` directory
+- Create a .py file which can be a function in the full program with a good name in the ``weather`` directory
 - Copy-paste the suitable example below.
 - (If there is time) Make a docstring describing what the function should do
 - We will not go further with the file now, so let's go back to ``main``

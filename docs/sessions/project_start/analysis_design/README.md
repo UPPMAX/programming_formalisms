@@ -4,6 +4,8 @@ tags:
   - analysis
 ---
 
+# Planning
+
 <!-- This file is not spellchecked by .github/workflows/check_spelling.yaml -->
 
 !!! info "Learning outcomes"
@@ -13,8 +15,6 @@ tags:
     - understand what the goal of the analysis phase is
     - understand why verification and validation means
     - Have an understanding of a well formed requirement
-
-# Planning
 
 ## Verification and validation
 
@@ -234,5 +234,6 @@ graph LR
 
 ## Extra reading
 
-Some extra material that are outside of what we use directly in the course compiled by Lars Eklund on different formal software development methodologies,[SDLC and modelleling methods](../../development_design/software_development_process.md)
+Some extra material that are outside of what we use directly in the course compiled by Lars Eklund on different formal software development methodologies,[SDLC and modelleling methods](../development_design/software_development_process.md)
+
 

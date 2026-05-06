@@ -39,8 +39,11 @@ jobs:
           rm -rf docs/sessions/unused
           rm -rf docs/shared_documents
 
+
       - name: Remove file or folders that need to be corrected
         run: |
           rm docs/sessions/project_start/analysis_design/README.md
+          rm docs/sessions/project_start/analysis_design/Risk.md
+          rm docs/sessions/development_design/risk_and_requirements_exercise.md
 
       - uses: igsekor/pyspelling-any@v0.0.2

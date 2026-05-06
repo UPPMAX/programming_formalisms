@@ -96,7 +96,7 @@ a random integer value from 1 to and including 6.
 
     - Create a topic branch for your pair. Branch of from `develop`
     - Work within scaffolding of the learners project
-        - Functions are in `src/[package_name]/`.
+        - Functions are in `[package_name]/`.
           Call the file `utils_[names].py`, e.g. `utils_anna_and_sven.py`
         - Tests are in `tests/`.
           Call the file `test_utils_[names].py`,

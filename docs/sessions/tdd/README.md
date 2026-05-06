@@ -250,7 +250,7 @@ def my_function(x):
 Below are some TDD exercise,
 with the goal of practicing TDD.
 
-Work in the `src/learners` folder and create a file named
+Work in the `learners` folder and create a file named
 after you, e.g. `sven.py`, `anna_and_sven.py`, `team_cool.py`.
 
 If you use R and it would help, at [the 'Videos' subsection](#videos),
@@ -452,7 +452,7 @@ Consider using the `is_even` function.
     - [R](https://youtu.be/Lah3fm3lUiA?si=40JdVJAO3oBcjrkH)
 
 
-## 5.4. Exercise 4: `is_prime`
+## 5.4. (Optional) Exercise 4: `is_prime`
 
 Develop a function called `is_prime`.
 
@@ -481,7 +481,12 @@ Develop a function called `is_prime`.
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
-## 5.5. Exercise 5: the research project
+## 5.5. (Optional) Exercise 5: your favorite function
+
+Develop your favorite function using TDD.
+Or use [some suggested functions here](../../misc/functions/README.md).
+
+## 5.6. (Optional) Exercise 6: the research project
 
 For our research project, we have already written some tests
 in [the session about `assert`](../assert/README.md).

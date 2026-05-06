@@ -334,7 +334,8 @@ Because it ...
 
 - is free (as in beer)
 - works on all operating systems
-- has plugins that are easy to install to develop Python code as part of a Python package
+- has plugins that are easy to install
+  to develop Python code as part of a Python package
 - has version control built-in
 - has a built-in terminal
 
@@ -410,7 +411,7 @@ RJCB: this is already described, more concise and with more screenshots
 
 <!--
 
-RJCB: Thiis is put in the git configuration section
+RJCB: This is put in the git configuration section
 
 #### Using VS Code as a git editor
 

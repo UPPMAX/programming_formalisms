@@ -40,6 +40,8 @@ jobs:
           rm -rf docs/reflections
           rm -rf docs/sessions/unused
           rm -rf docs/shared_documents
+          rm -rf docs/sessions/development_design
+          rm docs/sessions/project_start/analysis_design/README.md
 
       # Indented blocks are ignored, as the linter assumes it to be code.
       # In our case, it is not: for us, it is usually an admonition (i.e. a 'question' or 'info' block)

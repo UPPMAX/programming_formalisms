@@ -55,4 +55,3 @@ There are a lot of sessions in [the schedule](../../schedule.md).
 Take a sneak peak at some that you think you will like.
 What do you think will be your favorite session?
 
-

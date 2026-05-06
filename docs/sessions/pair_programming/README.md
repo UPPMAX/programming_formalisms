@@ -33,7 +33,7 @@ tags:
 
     - A shared document where duos can assign themselves to a class,
       needed for exercise 2
-    - The learner project must have a folder `/src/[package_name]`
+    - The learner project must have a folder `/[package_name]`
       where learners can put their code,
       needed for exercise 2
 
@@ -189,8 +189,6 @@ Before doing the exercises:
 
 The exercise, to be done as a pair:
 
-- Work on a branch for your group, e.g. `lasse_and_maja`.
-  Branch off from `develop`
 - Develop the code together
 - Share code by `push`ing it
 - Agree upon when the code is done

@@ -225,9 +225,9 @@ Pick something at your level, in the relevant folder:
 
 What                                  |Which folder
 --------------------------------------|--------------
-A simple function                     |`src/learners`
-An try-out of the analysis of the data|`src/learners`
-An analysis of the data               |`src/weather`
+A simple function                     |`learners`
+An try-out of the analysis of the data|`learners`
+An analysis of the data               |`weather`
 
 When uploading your code, check the results of the CI scripts regularly:
 
@@ -287,7 +287,7 @@ When uploading your code, check the results of the CI scripts regularly:
     For example, take this error:
 
     ```text
-    src/learners/probability.py:13:5: RET505 [*] Unnecessary `else` after `return` statement
+    learners/probability.py:13:5: RET505 [*] Unnecessary `else` after `return` statement
        |
     11 |     if (x>0.0) & (x<1.0):
     12 |         return True
@@ -296,7 +296,7 @@ When uploading your code, check the results of the CI scripts regularly:
     14 |         return False
     ```
 
-    The error occurs in the file `src/learners/probability.py` at line 13.
+    The error occurs in the file `learners/probability.py` at line 13.
     In this case, there is an unnecessary `else` after `return` statement,
     which has error code `RET505`. Googling for `ruff RET505`
     takes you to [the corresponding ruff documentation](https://docs.astral.sh/ruff/rules/superfluous-else-return/).
