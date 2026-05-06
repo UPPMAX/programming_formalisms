@@ -35,8 +35,8 @@ tags:
 
     - **Total** 75 min
     - Theory 20+10
-      - Start by not showing screen
-      - ask questions
+        - Start by not showing screen
+        - ask questions
     - Exercises 30+15 min
 
 ## Introduction
@@ -133,7 +133,7 @@ tags:
 
 ???- info  "Conda & pip"
 
-    **These _Python-related_ tools try to solve the following problems:**
+    **These *Python-related* tools try to solve the following problems:**
 
     - **Defining a specific set of dependencies**, possibly with well-defined versions
     - requirements.txt...
