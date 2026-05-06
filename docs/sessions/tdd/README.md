@@ -481,7 +481,12 @@ Develop a function called `is_prime`.
     - [Python](https://youtu.be/qVtHieuwM1M)
     - [R](https://youtu.be/JtM_YSrbiek?si=KgumBG-S0e_3daUU)
 
-## 5.5. (Optional) Exercise 5: the research project
+## 5.5. (Optional) Exercise 5: your favorite function
+
+Develop your favorite function using TDD.
+Or use [some suggested functions here](../../misc/functions/README.md).
+
+## 5.6. (Optional) Exercise 6: the research project
 
 For our research project, we have already written some tests
 in [the session about `assert`](../assert/README.md).
