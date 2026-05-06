@@ -120,6 +120,7 @@ tags:
     - Python packages:
         - pip (PyPI)
         - conda packages and environments
+        - also: ``uv``, ``pixi``, ``poetry``
     - R:
         - R repos like CRAN and GitHub (devtools)
         - conda
@@ -150,15 +151,15 @@ tags:
     
 ??? question "When is this over-kill?"
 
-   - If the needed dependencies are few and well-defined
-   - Some programming languages?
+    - If the needed dependencies are few and well-defined
+    - Some programming languages?
 
 ??? info "Python: Conda & virtual environments"
 
     **These *Python-related* tools try to solve the following problems:**
 
     - **Defining a specific set of dependencies**, possibly with well-defined versions
-    - Definition file: ``requirements.txt`` 
+    - Definition file: ``requirements.txt``, ``environment.yml``
     - **Installing those dependencies** mostly automatically
     - **Recording the versions** for all dependencies
     - **Isolated environments**
@@ -167,7 +168,8 @@ tags:
         - Using **different Python/R versions** per project??
         - Provide tools and services to **share packages**
 
-### Principle using python pip in a virtual environment
+### Principle using python pip in a virtual environment (``venv``)
+
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll briefly cover the other tools after the exercise.
@@ -496,7 +498,7 @@ tags:
 
 ### Ignoring files and paths with ``.gitignore``
 
-Compiled and generated files are not committed to version control. 
+Compiled and generated files are not committed to version control.
 
 ??? info "Here are some reasons"
 
