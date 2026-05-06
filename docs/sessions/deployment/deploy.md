@@ -37,27 +37,56 @@ tags:
     - Theory 20+10
     - Exercises 30+15 min
 
-## Introduction
+    Questions:
 
-- It's about Distribution!
+    
+
+## Introduction
 
 !!! note
 
     - Many projects/scripts start as something for personal use, but expands to be distributed.
     - Let's start in that end and be prepared.
-    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 !!! tip
 
     - Make your program or workflow work for others and yourself in the future.
 
+??? question "Discussion: What is deployment?"
+
+    > Software deployment is all of the activities that make a software system available for use.
+    *Wikipedia*
+
+    - Producer side: Prepare so user can install and use
+    - User side: Install after instructions
+
+??? question "Discussion: What to think about as developer?"
+
+    - package dependencies (Python, R etcetera)
+    - libraries (compiled languages like C C++ Fortran)
+    - OS Platforms
+    - Shared service
+
+??? question "Discussion: Reproducibility?"
+
+     We can control our code but how can we control dependencies?
+
+??? question "Discussion: 10-year challenge?"
+
+     Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
+
+??? question "Discussion: Dependency hell"
+
+    Different codes in the same environment can have conflicting dependencies.
+
 ## To make sure about needed dependencies
 
-- **Reproducibility**: We can control our code but how can we control dependencies?
-- **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
-- **Dependency hell**: Different codes in the same environment can have conflicting dependencies.
+??? question 
 
 - 2 levels of dependencies
+
+    - packages
+    - sysstem libraries
 
 ??? note "System libraries"
 
@@ -66,13 +95,6 @@ tags:
         - are these typically not installed already?
         - in the **best world test on Windows/Mac and Linux platforms**
             - and with as empty as possible environment
-
-??? note "packages, like in Python"
-
-    - Python packages
-    - R packages
-    - Julia packages
-    - Matlab Add-ons
 
 ??? note "Shared services like HPC clusters"
 
@@ -92,7 +114,7 @@ tags:
 !!! info "We need to"
 
     - Inform what is needed to run the software in the README file (Next session)
-    - Or provide them with everything needed (file )
+    - Or provide them with everything needed (file)
         - hopefully not interfering with other software they are using
 
 ??? info "Ways to distribute"
