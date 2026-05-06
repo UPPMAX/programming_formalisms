@@ -177,33 +177,46 @@ You are now on your own branch!
 
 Modify something on your feature branch.
 
-![The sven branch is modified](vs_code_sven_is_modified_not_commited.png)
+???- question "How does that look like?"
+
+    ![The sven branch is modified](vs_code_sven_is_modified_not_commited.png)
+
 
 Commit the code as usual.
 
-![VS Code before commit, click commit](vs_code_before_commit.png)
+???- question "How does that look like?"
+
+    ![VS Code before commit, click commit](vs_code_before_commit.png)
 
 Sync as usual.
 
-![VS Code before sync, click sync](vs_code_click_sync_on_sven.png)
+???- question "How does that look like?"
+
+    ![VS Code before sync, click sync](vs_code_click_sync_on_sven.png)
 
 Now we have a commit on our feature branch.
 Time to merge it do `develop`!
 
 In VS Code, checkout the `develop` branch.
 
-![Click on select branch](vs_code_click_select_branch.png)
+???- question "How does that look like?"
 
-![Click on the develop branch](vs_code_checkout_develop.png)
+    ![Click on select branch](vs_code_click_select_branch.png)
+
+    ![Click on the develop branch](vs_code_checkout_develop.png)
 
 In VS Code, click on 'Merge'. It is hidden under the lower kebab button
 at the top of the 'Source control' tab.
 
-![Click merge](vs_code_click_merge.png)
+???- question "How does that look like?"
+
+    ![Click merge](vs_code_click_merge.png)
 
 Click the branch to merge with.
 
-![Click to merge with sven](vs_code_click_merge_with_sven.png)
+???- question "How does that look like?"
+
+    ![Click to merge with sven](vs_code_click_merge_with_sven.png)
 
 If you get a merge conflict, fix it.
 
