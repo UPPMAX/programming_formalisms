@@ -232,15 +232,13 @@ How do you turn your own small project into the next NumPy? Do you want to?
 
 ## Licenses
 
-Browse and get an overview of [Software and licensing](https://coderefinery.github.io/social-coding/software-licensing/)
-
 - Copyright: Protects creative expression: software, writing, graphics, photos, certain datasets, this presentation. Practically “forever” (lifetime of author + 70 years).
 - Derative work: Sampling/remixing
 
 ![license-models](./img/license-models.png)
 > European Commission, Directorate-General for Informatics, Schmitz, P., European Union Public Licence (EUPL): guidelines July 2021, Publications Office, 2021, <https://data.europa.eu/doi/10.2799/77160>
 
-Comments:
+Comments on the taxonomy:
 
 - Arrows represent compatibility (A -> B: B can reuse A)
 - Proprietary/custom: Derivative work typically not possible (no arrow goes from proprietary to open)
@@ -248,21 +246,23 @@ Comments:
 - Copyleft/reciprocal: Derivative work must be made available under the same license terms
 - NC (non-commercial) and ND (non-derivative) exist for data licenses but not really for software licenses
 
-- Taxonomy:
-    - Proprietary vs open source
-    - copyleft vs permissive
-   
-    - Public domain: 
-- When add license?
-   - Early (more complicated to change it later when already public
-   - (Work as if it public for beginning! 
-- How to add license
-   - Your code is derivative work if you have started from an existing code and made changes to it or if you incorporated an existing code into your code.
-       - If your code is derivative work, then you need to check the license of the original code.
-   - From "scratch"
-       - Does your work contract, grant, or collaboration agreement dictate a specific license?
-       - Is there an intent to commercialize the code?
-       - When there is unknown or mixed ownership: If there are multiple persons or organizations as owners of the code, all must agree to the license.
+??? question "When to add license?"
+
+    - Early (more complicated to change it later when already public)
+    - Work as if it was public for beginning!
+
+??? question "How to choose license?"
+
+    - Your code is derivative work if you have started from an existing code and made changes to it or if you incorporated an existing code into your code.
+        - If your code is derivative work, then you need to check the license of the original code.
+    - From "scratch"
+        - Does your work contract, grant, or collaboration agreement dictate a specific license?
+        - Is there an intent to commercialize the code?
+        - When there is unknown or mixed ownership: If there are multiple persons or organizations as owners of the code, all must agree to the license.
+
+??? question "Want to learn more?"
+
+    [Software and licensing lesson by Code Refinery](https://coderefinery.github.io/social-coding/software-licensing/)
 
 ## Start a Git/GitHub repo from personal existing project
 
