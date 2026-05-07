@@ -7,6 +7,7 @@ Given the below project brief we are to create a rudimentary requirement specifi
 ???+ question "Exercise"
 
     Discuss risks and requirements for the program above given this [SRS](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md).
+    
     - First copy the SRS example into your learners folder.
     - In your copy you will add fields for  risk, risk type, probablity, severity and  mitigation strategy.
     - Analys each requirment for the risk it bears
