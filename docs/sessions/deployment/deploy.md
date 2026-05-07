@@ -22,7 +22,6 @@ tags:
     - But also...
         - some theory of packages
         - some theory of containers
-        - starting a git repo from existing code project
 
 ???- note "Instructor notes"
 
@@ -32,11 +31,11 @@ tags:
 
     Lesson Plan:
 
-    - **Total** 75 min
-    - Theory 20+10
+    - **Total** 40 min
+    - Theory 15
         - Start by not showing screen
         - ask questions
-    - Exercises 30+15 min
+    - Exercises 25 min
 
 ## Introduction
 
