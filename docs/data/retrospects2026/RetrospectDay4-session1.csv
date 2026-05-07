@@ -1,0 +1,90 @@
+﻿Question 1,
+Date (UTC),2026-05-07
+Session,1
+Type,open
+Question,What helped us learn
+Respondents,16
+,
+Responses,Upvotes
+Working in pairs!,0
+Repeating pair programming today was super useful when having some strange errors.,0
+making errors,0
+Guided by an expert trully inspired a lot as a low leverl python user,0
+Given time to work on the problems with a friend.,0
+Having coding buddies made everything more fun.,0
+"Good, friendly, helpful, loose, informal atmosphere",0
+"Maybe out of the scope, but it would've been nice to dig a bit deeper in how to set up some basic CI.",0
+Today was great. A lot of practical examples and coding.,0
+"Working with different people is helpful, it is good to switch from being more or less knowledgable than your partner",0
+The hands-on exercises that allowed us to also incorporate some of the stuff we learned during the last days,0
+the practical exercises,0
+Reminders for the breaks are veeeeeery nice.,0
+"Pairing up with really knowledgable and helpful people helped learn new thing or solutions to complicated problems. Also when we did not know anything, we tried together and came to the outcome.",0
+Having time to work in groups was nice.,0
+I enjoyed Richéls explanations. I think the real in depth understanding happened when we worked on these topics together.,0
+The 'call for help' function was used a lot and indeed helped!,0
+Having all the people merging at the same time,0
+"- Teacher's explanation before the practical teamwork.
+- The teamwork itself.
+- The clarofication that follows the teamwork in the main room.",0
+"Working with branches, commits, merges, and GitHub Actions helped us learn how collaborative programming works.",0
+the changing of partners was really good,0
+"exercises, theory",0
+the changing of partners was really good,0
+Nothing in particular.,0
+"Some more step-by-step instructions for the whole merging procedure would have been helpful, to have as a reference.",0
+being in group with the same person,0
+"This is already good enough, even swapping partners after two breakout room sessions.",0
+,
+,
+,
+Question 2,
+Date (UTC),2026-05-07
+Session,1
+Type,open
+Question,What held us back
+Respondents,15
+,
+Responses,Upvotes
+A bit nerous  with some function i‘m not familiar with but need to generate a module,0
+Having all the people merging at the same time (sometimes it was confusing when in dev files appear and disappear),0
+"What held us back was confusion with Git branches, pull/push synchronization, merge conflicts, and understanding GitHub Actions errors.",0
+Technical problems with VS Code and git,0
+"The prodecure with pulling and pushing could be reiterated better, especially when pushing on main.",0
+I think explaining the main vs development branch vs our own branches a bit would be helpful. Also reminding to pull before pushing. I didn't push to main enough because I was working locally,0
+people were in very different stages. Sometimes I felt lost on what do to. Was I supposed to focus on merging any woring code into dev an? or on actually writing fuctional code for the do_analysis()?,0
+"I think some of the questions in the  course material were a but vague.  I think that Ricgéls instructions were clear in a majority of cases, but the were a bit vague in e cases",0
+I think the Formal testing framework needed a bit more time than it was given,0
+"The possibility of having another job after we were done did not occurr to me, so maybe next time could be made explicit :)",0
+Sometimes a little chaotic and challangin with merging for a novice with 20 people contributing at the same time. More support needed sometimes.,0
+Mostly technical knowledge gaps was holding me back but was lucky to have helps from experienced colleagues who helped.,0
+Did not understand how to work on analysis.py,0
+"I guess working with data and plotting requires some basic knowledge of some packages, e.g. pandas to work with the tables or matplotlid, and their APIs, and this slowed me down a bit.",0
+being in group with the same person,0
+Not much,0
+Perhaps a guide to some of the more common error messages that come up in vscode.,0
+,
+,
+,
+Question 3,
+Date (UTC),2026-05-07
+Session,1
+Type,open
+Question,what can we improve to help us learn better.
+Respondents,12
+,
+Responses,Upvotes
+I think the system works well.,0
+"Idk, maybe just having some time between each day to each student to have the learners repository cleaner",0
+I think the teaching pace is constructive.,0
+I think there should be a lot more formal questionnaires later every  task complete.,0
+For someone that has never contributed to main before. I would be nice to see the process in a short demo. feature branch-->develop-->main in vscode to get more confident.,0
+Explain where to develop before telling us to start working on it. own branchs vs devolpment vs main,0
+"Maybe to improve the commits to main, people could be divided in two random teams and then at the end of the day/the session the team commits could be summed and the team with most commits wins!",0
+"I think the time kept for day4's exercise are very adequate. People need this time, specially who are not very experienced. I would keep the time for exercises and code development as is.",0
+More clear instructions for the pratical exercises. Perhaps more back into the big room together and reflecting on what was happening.,0
+"In some cases improve the clarity of question and tasks.  ""What exactly are we supposed to do"" Some examples could be projects not being pushed to main, and some uncertainty regarding the wether proje",0
+Some more real-life examples. I feel like this course gives a good introduction but it might be difficult to incorporate into a science project,0
+"Similar to the answer 'I don't know', everyone should be forced to push on main, even if a picture or empty file.",0
+"Focus on coding that does not require experience with specific packages. For example, reading a file line by line, extract some information into a list, and then write to file.",0
+more theory,0
