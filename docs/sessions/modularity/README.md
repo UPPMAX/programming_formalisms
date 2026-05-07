@@ -283,7 +283,8 @@ Note that this is not recommended.
     Here is how to forward a function call to a function
     of the same name in other module:
 
-    ```python analysis.py
+    ```python
+    # Filename: analysis.py
     from weather.anna import read_data as annas_read_data
 
     def read_data():
