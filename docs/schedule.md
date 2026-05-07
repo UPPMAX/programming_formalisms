@@ -52,11 +52,11 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[Development introduction](session
 .         |.            |.                  |.
 Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
+.         | 10:15-11:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
+.         | 13:00-14:00 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | Richèl Bilderbeek |[Modular programming](sessions/modularity/README.md)
 .         | 15:00-15:15 | .                 |Break
