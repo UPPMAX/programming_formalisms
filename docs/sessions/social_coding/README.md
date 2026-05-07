@@ -178,35 +178,6 @@ Types of things that can be reused:
 - Copying from Stack Overflow
 
 Do you want others to reuse what you make?
-How do you turn your own small project into the next NumPy? Do you want to?
-
-### What contributes to reusability?"
-
-??? question "3: When you find a repository with code/library you would like to reuse, what are the things you look at to decide whether you use it?"
-
-    - Date of last code change
-      > ... is the project abandoned?
-    - Release history
-      > ... how about stability and backwards-compatibility?
-    - Versioning
-      > ... will it be painful to upgrade?
-    - Number of open pull requests and issues
-      > ... are they followed-up?
-    - Installation instructions
-      > ... will it be difficult to get it running?
-    - Example
-      > ... will it be difficult to get started?
-    - License
-      > ... am I allowed to use it?
-    - Contribution guide
-      > ... how to contribute and decision process?
-    - Code of conduct
-      > ... how to make clear which behaviors are unacceptable and discouraged? How violations of Code of conduct will be handled?
-    - Trust and community
-      > ... somebody you trust recommended it?
-    
-    ... most of which you have or will learn during the
-    [CodeRefinery](https://coderefinery.org) workshop!
 
 ## Sharing or not sharing?
 
@@ -229,11 +200,17 @@ How do you turn your own small project into the next NumPy? Do you want to?
     - Our **goal is to provide all the information** that researchers, data scientists, software engineers, policymakers, and other practitioners in academia, industry, government and the public sector need **to ensure that the projects they work on are easy to reproduce and reuse**.
     - [The Turing Way Handbook](https://book.the-turing-way.org/index.html)
 
-
 ## Licenses
 
-- Copyright: Protects creative expression: software, writing, graphics, photos, certain datasets, this presentation. Practically “forever” (lifetime of author + 70 years).
-- Derative work: Sampling/remixing
+- **Copyright:** Protects creative expression:
+    - software,
+    - writing,
+    - graphics,
+    - photos,
+    - certain data sets,
+    - this presentation.
+    - Practically “forever” (lifetime of author + 70 years).
+- **Derivative work:** Sampling/remixing
 
 ![license-models](./img/license-models.png)
 > European Commission, Directorate-General for Informatics, Schmitz, P., European Union Public Licence (EUPL): guidelines July 2021, Publications Office, 2021, <https://data.europa.eu/doi/10.2799/77160>
