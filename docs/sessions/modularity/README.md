@@ -92,7 +92,7 @@ Based on this, `do_it` is the function that the user should `import`.
     A logistic function is function that exists to make it easier/shorter
     to write code. One application is to provide two function
     names to do the same:
-    
+
 
     ```python
     def create_png_figure(filename):
@@ -309,12 +309,12 @@ How many modules, and with which names, do you think the research project needs?
       and `output`/`create_output`/`analysis` (for working on
       the data)': sure, this seems like a reasonable distinction.
     - 'three, called `process_input` (for reading data)
-      and `figures` (for creating the figures) and `statistics` (for 
+      and `figures` (for creating the figures) and `statistics` (for
       creating the statistics output)':
       sure, this seems like a reasonable distinction.
 
     Adding a module for utility functions is reasonable too.
-    
+
 What do you think is a good rule for the amount of modularity?
 
 ???- question "Answer"
@@ -340,7 +340,7 @@ graph TB
   do_a
   do_a_unsafe
   do_a --> |uses| do_a_unsafe
-  
+
   do_b
   do_b_impl
   do_b --> |uses| do_b_impl
