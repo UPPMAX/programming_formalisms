@@ -237,7 +237,7 @@ Browse and get an overview of [Software and licensing](https://coderefinery.gith
 - Copyright: Protects creative expression: software, writing, graphics, photos, certain datasets, this presentation. Practically “forever” (lifetime of author + 70 years).
 - Derative work: Sampling/remixing
 
-![license-models](docs/sessions/social_coding/img/license-models.png)
+![license-models](./img/license-models.png)
 > European Commission, Directorate-General for Informatics, Schmitz, P., European Union Public Licence (EUPL): guidelines July 2021, Publications Office, 2021, <https://data.europa.eu/doi/10.2799/77160>
 
 Comments:
