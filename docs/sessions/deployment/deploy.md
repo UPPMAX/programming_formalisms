@@ -10,7 +10,6 @@ tags:
 !!! questions
 
     - How to make your program work for others?
-    - How to start a git repo from existing code project?
     
 !!! info "Learning outcomes of 'Deployment'"
 
@@ -23,7 +22,6 @@ tags:
     - But also...
         - some theory of packages
         - some theory of containers
-        - starting a git repo from existing code project
 
 ???- note "Instructor notes"
 
@@ -33,11 +31,11 @@ tags:
 
     Lesson Plan:
 
-    - **Total** 75 min
-    - Theory 20+10
+    - **Total** 40 min
+    - Theory 15
         - Start by not showing screen
         - ask questions
-    - Exercises 30+15 min
+    - Exercises 25 min
 
 ## Introduction
 
@@ -543,178 +541,6 @@ For this we use a `.gitignore` file (put in root folder)
 
     - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
     - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
-
-## Start a Git/GitHub repo from personal existing project
-
-- Many projects/scripts start as something for personal use, but expands to be distributed.
-- Let's start in that end and be prepared.
-
-### Principle
-
-- Initiate git project
-    - Browse to right *root* directory (the folder containing all the project-related files)
-- Stage and commit
-- upload to github
-
-### (Optional) Exercise 2: 10-15 minutes
-
-- Let's say you have some code you have started to work with
-
-!!! tip
-
-    - Work individually locally (in VS Code or terminal)
-    - Help each-other if getting stuck
-    - Start with 1A OR 1B
-        - 1a goes to Breakout room 1
-        - 1b goes to Breakout room 2
-
-???- question "Exercise 1A: Identify existing project"
-
-    - Just use an existing programming project you already have
-    - Browse to right *root* directory (the folder containing all the project-related files)
-
-???- question "Exercise 1B: Make a code base for a new test project"
-
-    - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
-
-    ???+ question "In VS Code?"
-
-        - Make a new window
-        - Open Folder
-
-            ![start_VSC](../../img/start_VSC.png)
-
-        - Create new Folder with name ``test_project``
-        - Select folder
-        - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
-
-        ```python
-        # We just want some output from a simple program
-        print('Hello world!')
-        ```
-
-???- question "Exercise 2: Initiate the project"
-
-    ???- question "VS CODE"
-
-        ![initialize_VSC](../../img/initialize_VSC.png)
-
-        - **RECOMMENDED** Publish to GitHub diectly **and you are done**!
-            - You may change the name of the repo for the GitHub instance, but not recommended.
-            - Include the file(s) (in this case the hello.py file) in the repo!
-            - Double check it was created on GitHub!
-                - It should show up under repos in your user space
-
-        - ALTERNATIVE: Initialize and then continue with step 3.
-
-    ???- question "Terminal"
-
-        - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
-        - run ``git init``
-        - make sure that there is a ``.git`` directory created
-            - you have to show hidden files, in bash terminal with ``ls -a``
-
-        - Now you have a git repo called ``test_project``
-        - Check with the command: ``git status``
-            - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next.
-
-???- question "(If needed) Exercise 3: Add and commit the content"
-
-    - So far, there is no content. We have to manually add the content to the repo.
-    - Add and Commit your changes
-
-    ??? question "VS Code"
-
-         We do this all the time! :)
-
-    ???- question "Terminal"
-
-        ```console
-        git add
-        git commit -m 'first commit'
-        ```
-
-???- question "(If needed) Exercise 4: Upload to GitHub"
-
-    ???- question "In VS Code"
-
-        - There is an opportunity to directly publish on GitHub
-
-    ???- question "From GitHub"
-
-        - Make sure that you are **logged into GitHub**.
-        - You can use this for both VS Code and terminal
-
-        ![New repo](../../img/New_repo.png){ width=60% }
-
-        - To create a repository we either click the green button "New" (top right corner).
-
-        - Or if you see your profile page, there is a "+" menu (top right corner).
-
-        ![New top-right](../../img/new-top-right.png){ width=60% }
-
-        ---
-
-        - On this page choose a project name, e.g. ``test_project`` or a project name suiting your existing project.
-
-        - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
-
-        - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
-        - and **NO Licence**
-
-        ![New repo](../../img/New_repo_formalisms.png)
-        > Example project
-
-        - Press "**Create repository**"
-
-        ![Create and push](../../img/created_push.PNG)
-
-        - Choose **html**
-        - Copy-paste the code for "**…or push an existing repository from the command line**"
-        - Go to **local git terminal** and go to the **git project you started above**
-        - Paste the code
-
-        - Did it work??
-        - Reload the GitHub page and see the files present locally is also present there.
-
-        **Done!**
-
-### What we did
-
-??? info "Workflow"
-
-    ```mermaid
-    graph TB
-
-    P["Project idea"] -->|git init| Node2
-    P["Project idea"] --> hello.py -->|git add| Node4
-    Node4 --> |git commit| Node1
-    Node2 --> |git push| Node5
-    
-    %% C[Uncommited changed hello.py] -->|commit button| R
-    R <--> Node5
-           subgraph "Local Git"
-            Node2[project]
-            Node1[hello.py]
-            Node1 <--> Node2
-    
-            end
-    
-            subgraph "staging area"
-            Node4[hello.py]
-            end
-    
-            subgraph "GitHub"
-            Node5[project]
-            R[hello.py]
-            end
-    
-    ```
-
-!!! info "About releases"
-
-
-    [About releases on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 
 ## Summary
 

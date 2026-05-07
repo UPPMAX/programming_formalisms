@@ -43,6 +43,7 @@ nav:
     - Improve run-time speed: sessions/optimisation/improve_runtime_speed.md
   - Deployment:
     - Implement the project as a package: sessions/package/README.md
+    - Social coding: sessions/social_coding/README.md
     - Deploy: sessions/deployment/deploy.md
     - Documentation: sessions/deployment/documentation.md
     - Wrap-up: misc/wrap_up.md

@@ -6,11 +6,11 @@ tags:
   - ending
 ---
 
-# Ending documentation
+# Documentation
 
 !!! questions
 
-    - How can the user understand how to run your program and what it does?
+    - How can the user understand how to install and run your program and what it does?
 
 ???+ info "Learning outcomes of 'Documentation'"
 
@@ -35,6 +35,12 @@ tags:
         - Wiki
         - GitHub pages/ReadTheDocs
         - MkDocs/sphinx
+
+## Why documentation?
+
+??? question "Why?"
+
+??? question "What different kinds?"
 
 ## Revisiting documentation
 
@@ -273,7 +279,7 @@ tags:
 
 ## Exercises
 
-### Exercises 30-40 min
+### Exercises 30 min
 
 - We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
