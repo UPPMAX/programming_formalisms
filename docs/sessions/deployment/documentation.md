@@ -273,13 +273,30 @@ tags:
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
+### Wikis
+
+- Take the documentation for the user to the **next level**.
+- If README feels too short.. try **Wiki**
+
+- Popular solutions (but many others exist):
+    - [MediaWiki](https://www.mediawiki.org)
+    - [Dokuwiki](https://www.dokuwiki.org)
+    - These typically needs to be hosted and maintained
+- Also on GitHub!
+    - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
+    - [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)
+    - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
+
+
+
 ## Exercises
 
 ### Exercises 30 min
 
 - We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
-- (External) users should be able to install and use the the complete tool, including dependencies
+- External users should be able to install and use the the complete tool, including dependencies
+- Also expore Wiki pages
 
 !!! info "Intro"
 
@@ -418,17 +435,6 @@ tags:
     - Teacher makes Code review if needed
 
 ## Going further with documentation
-
-### Wikis
-
-- Popular solutions (but many others exist):
-    - [MediaWiki](https://www.mediawiki.org)
-    - [Dokuwiki](https://www.dokuwiki.org)
-    - These typically needs to be hosted and maintained
-- Also on GitHub!
-    - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
-    - [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)
-    - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
 
 ### HTML static site generators
 
