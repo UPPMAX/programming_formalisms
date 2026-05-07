@@ -77,7 +77,7 @@ avoided to be imported.
 
 Here is schematic of two functions in a module:
 
-```
+```mermaid
 graph TB
   do_it
   do_it_impl
@@ -209,7 +209,7 @@ of the same functionality.
 
 Here we have a schematic overview of all functions in a module:
 
-```
+```mermaid
 graph TB
   is_prime
   is_prime_impl_a
