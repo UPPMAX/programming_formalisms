@@ -287,8 +287,6 @@ tags:
     - [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)
     - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
 
-
-
 ## Exercises
 
 ### Exercises 30 min
@@ -296,7 +294,7 @@ tags:
 - We already have a file called ``README.md`` in ``/learners`` folder, that is used for information for the course participants.
 - Let's work with a README file for potential users. We can call it ``README-EXT.md``
 - External users should be able to install and use the the complete tool, including dependencies
-- Also expore Wiki pages
+- Also explore Wiki pages
 
 !!! info "Intro"
 
