@@ -91,7 +91,6 @@ tags:
         - will your program require specific "system files"
         - are these typically not installed already?
         - in the **best world test on Windows/Mac and Linux platforms**
-            - and with as empty as possible environment
 
 ??? note "Shared services like HPC clusters"
 
@@ -114,11 +113,14 @@ tags:
     - Or provide them with everything needed (file)
         - hopefully not interfering with other software they are using
 
-??? info "Ways to distribute"
+## Distribution
+
+!!! info "Ways to distribute"
 
     - Python packages:
         - pip (PyPI)
-        - conda
+        - conda packages and environments
+        - also: ``uv``, ``pixi``, ``poetry``
     - R:
         - R repos like CRAN and GitHub (devtools)
         - conda
@@ -131,29 +133,46 @@ tags:
     - General tools
         - Containers
 
-???- info  "Conda & pip"
+## Isolated environments
+
+??? question "Discussion: What is an isolated environment?"
+
+    These solve both the identification of needed dependencies and help in installations.
+
+!!! tip "Principles to define dependencies needed"
+
+    - Work in an isolated environment
+    - Start with empty environment
+    - See what is needed for the program to work?
+    - Add the missing packages or libraries until the errors go away
+    - save the environment variables in a file.
+    
+    Best is to do this already in the beginning!
+    
+??? question "When is this over-kill?"
+
+    - If the needed dependencies are few and well-defined
+    - Some programming languages?
+
+??? info "Python: Conda & virtual environments"
 
     **These *Python-related* tools try to solve the following problems:**
 
     - **Defining a specific set of dependencies**, possibly with well-defined versions
-    - requirements.txt...
+    - Definition file: ``requirements.txt``, ``environment.yml``
     - **Installing those dependencies** mostly automatically
     - **Recording the versions** for all dependencies
-    - **Isolated environments** (venv, virtualenv)
+    - **Isolated environments**
         - On your computer for projects so they can use different software.
         - Isolate environments on computers with many users (and allow self-installations)
         - Using **different Python/R versions** per project??
         - Provide tools and services to **share packages**
 
+### Principle using python pip in a virtual environment (``venv``)
+
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll briefly cover the other tools after the exercise.
-
-## Recording dependencies
-
-- Start with empty environment
-
-### Principle using python pip in a virtual environment
 
 - We can make other users aware of the dependencies for our Python project.
 - One can state those specifically as a list in a README
@@ -200,21 +219,6 @@ tags:
         git merge venv
         git push
     ```
-
-## Ignoring files and paths with ``.gitignore``
-
-Compiled and generated files are not committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use a `.gitignore` file (put in root folder)
-
-- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
-
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
 
 ## Exercise 1: Identify lacking packages (15-20 min)
@@ -491,6 +495,23 @@ For this we use a `.gitignore` file (put in root folder)
         - [Singularity course](https://pmitev.github.io/UPPMAX-Singularity-workshop/)
         - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
         - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
+
+### Ignoring files and paths with ``.gitignore``
+
+Compiled and generated files are not committed to version control.
+
+??? info "Here are some reasons"
+
+    - Your code could be run on different platforms.
+    - These files are automatically generated and thus do not contribute in any meaningful way.
+    - The number of changes to track per source code change can increase quickly.
+    - When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use a `.gitignore` file (put in root folder)
+
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
+
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
 ???- admonition "Workflows"
 
