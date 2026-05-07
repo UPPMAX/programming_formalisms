@@ -212,16 +212,25 @@ graph LR
 ### Exercise
 
 !!! info "Well formed requirements"
+
     Lets look at the examples for the Learners project and analyze if they
-    conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md). The Goal of this exercise is to read through the page and learn what a wellformed requirment is, then look through and discuss the requirments. After this see if you can spot any system or functional requirment that needs expanding. Make a document about this in your learners folder called requirment_analysis_NN.md
+    conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md). 
+    
+    The Goal of this exercise is to read through the page and learn what a wellformed requirment is, then look through and discuss the requirments. 
+    
+    After this see if you can spot any system or functional requirement that needs expanding. 
+    
+    Make a document about this in your learners folder called requirment_analysis_NN.md
 
 ???- "Remember what makes a requirement well formed. "
+
     A well-formed specified requirement contains one or more of the following:
-        — it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
-        — it is qualified by measurable conditions;
-        — it is bounded by constraints;
-        — it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
-        — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
+    
+    - it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
+    - it is qualified by measurable conditions;
+    - it is bounded by constraints;
+    - it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
+    - it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
 
 
 ## References
