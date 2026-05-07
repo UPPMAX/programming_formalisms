@@ -6,12 +6,13 @@ tags:
 
 # Social coding
 
-
 !!! info "Learning outcomes of 'Social coding'"
 
     Learners
 
     - have an overview of motivations, benefits, but also risks of sharing and reusing code.
+    - How to start a git repo from existing code project?
+
 
 !!! note
 
