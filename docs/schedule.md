@@ -64,11 +64,16 @@ Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_p
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
 Friday    | 09:00-10:00 | Richèl Bilderbeek |[Implement the project as a package](sessions/package/README.md)
+.         | 10:00-10:15 | .                 |Break
 .         | 10:15-11:00 | Richèl Bilderbeek |[Runtime speed profile](sessions/optimisation/runtime_speed_profiles.md)
+.         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Björn Claremar    |[Social Coding](sessions/social_coding/README.md)
-.         | 13:00-13:30 | Björn Claremar    |[Deployment](sessions/deployment/deploy.md)
-.         | 13:30-13:50 | Björn Claremar    |[Documentation](sessions/deployment/documentation.md)
-.         | 14:05-15:00 | Björn Claremar    |[Documentation](sessions/deployment/documentation.md)
+.         | 12:00-13:00 | .                 |Break
+.         | 13:00-13:40 | Björn Claremar    |[Deployment](sessions/deployment/deploy.md)
+.         | 13:40-14:00 | Björn Claremar    |[Documentation part 1](sessions/deployment/documentation.md)
+.         | 14:00-14:15 | .                 |Break
+.         | 14:15-15:00 | Björn Claremar    |[Documentation part 2](sessions/deployment/documentation.md)
+.         | 15:00-15:15 | .                 |Break
 .         | 15:15-15:40 | Björn Claremar    |[Wrap-up](misc/wrap_up.md)
 .         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
 
