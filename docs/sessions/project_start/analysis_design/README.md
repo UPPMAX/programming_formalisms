@@ -70,7 +70,8 @@ What guidance can we then gleen in what a Requirement is the above mentioned pap
 -- "Why do we need a Software Requirements Specification(SRS) in Research software
     [Bajraktari et al. 2024](https://arxiv.org/pdf/2405.07781) argue that requirements engineering is necessary in research software to improve maintainability, reproducibility, and collaboration between researchers and developers. Furthermore, empirical studies of Software Requirement Specifications (SRS) have shown that academic environments play a significant role in evaluating and improving requirements engineering techniques.
 
-!!! "Regulatory requirement!"
+!!! note "Regulatory requirement!"
+
     A well formed SRS will be asked of you to full fill regulatory requirements especially  if you work with AI , Sensitive data or medical software.
     Examples:
     -[AI act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng) , [Development analysis of the AI act](https://artificialintelligenceact.eu/)
@@ -81,14 +82,15 @@ According to ISO/IEC/IEEE 29148:2018 (Systems and software engineering — Life 
 **Defining requirements begins with stakeholder needs (or goals, or objectives) that are refined and
 evolve before arriving as valid stakeholder requirements.**
 
-!!!- info "What is a well formed Requirement" (ISO/IEC/IEEE 29148:2018)?"
+??? question "What is a well formed Requirement" (ISO/IEC/IEEE 29148:2018)?"
 
     A well-formed specified requirement contains one or more of the following:
-        — it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
-        — it is qualified by measurable conditions;
-        — it is bounded by constraints;
-        — it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
-        — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
+        
+    - it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
+    - it is qualified by measurable conditions;
+    - it is bounded by constraints;
+    - it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
+    - it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
 
 The generalize SDLC, from the IEEE Guide—Adoption of ISO/IEC TR 24748-1:2010 starts with needs analysis
 
@@ -210,16 +212,25 @@ graph LR
 ### Exercise
 
 !!! info "Well formed requirements"
+
     Lets look at the examples for the Learners project and analyze if they
-    conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md). The Goal of this exercise is to read through the page and learn what a wellformed requirment is, then look through and discuss the requirments. After this see if you can spot any system or functional requirment that needs expanding. Make a document about this in your learners folder called requirment_analysis_NN.md
+    conform to a well formed requirement, these [requirements](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/docs/requirements.md). 
+    
+    The Goal of this exercise is to read through the page and learn what a wellformed requirment is, then look through and discuss the requirments. 
+    
+    After this see if you can spot any system or functional requirement that needs expanding. 
+    
+    Make a document about this in your learners folder called requirment_analysis_NN.md
 
 ???- "Remember what makes a requirement well formed. "
+
     A well-formed specified requirement contains one or more of the following:
-        — it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
-        — it is qualified by measurable conditions;
-        — it is bounded by constraints;
-        — it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
-        — it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
+    
+    - it shall be met or possessed by a system to solve a problem, achieve an objective or address a stakeholder concern;
+    - it is qualified by measurable conditions;
+    - it is bounded by constraints;
+    - it defines the performance of the system when used by a specific stakeholder or the corresponding capability of the system but not a capability of the user, operator or other stakeholder; and
+    - it can be verified (e.g., the realization of the requirement in the system can be demonstrated).
 
 
 ## References
