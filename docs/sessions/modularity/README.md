@@ -273,7 +273,7 @@ data, and uses Sven's code for doing the statistics and creating the figures.
 In that way, both Anna and Sven could develop their functions independently
 and gain confidence in their work.
 
-Note that this is not recommended. 
+Note that this is not recommended.
 
 ???- question "How does that look like in code?"
 
@@ -329,7 +329,7 @@ What do you think is a good rule for the amount of modularity?
 
 ## Exercise 2: function wrappers
 
-The course material 
+The course material
 mentions [function wrappers](#function-wrappers)
 and [allowing unsafe functions](#allowing-unsafe-functions).
 Combining their diagrams in the one below,
