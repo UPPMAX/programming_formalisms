@@ -543,8 +543,6 @@ For this we use a `.gitignore` file (put in root folder)
     - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
     - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
 
-
-
 ## Summary
 
 !!! info "Key points"
