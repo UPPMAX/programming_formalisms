@@ -10,6 +10,8 @@ tags:
 
     Learners ...
 
+    - understand what a module is
+    - understand reasons for using multiple modules
     - can work with code from another module
 
 ??? question "For teachers"
@@ -17,6 +19,7 @@ tags:
     Prior:
 
     - What is a module?
+    - Why would you use modules?
 
 ## What is a module?
 
