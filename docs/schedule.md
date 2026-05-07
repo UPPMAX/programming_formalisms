@@ -56,15 +56,15 @@ Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_p
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
+.         | 13:00-14:00 | Richèl Bilderbeek |[Modular programming](sessions/modularity/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |[Modular programming](sessions/modularity/README.md)
+.         | 14:15-15:00 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |Code review
+.         | 15:15-15:40 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
-Friday    | 09:00-09:45 | Richèl Bilderbeek |[Implement the project as a package](sessions/package/README.md)
-.         | 10:00-11:00 | Richèl Bilderbeek |.
+Friday    | 09:00-10:00 | Richèl Bilderbeek |[Implement the project as a package](sessions/package/README.md)
+.         | 10:15-11:00 | Richèl Bilderbeek |[Runtime speed profile](sessions/optimisation/runtime_speed_profiles.md)
 .         | 11:15-12:00 | Björn Claremar    |[Deployment](sessions/deployment/deploy.md)
 .         | 13:00-13:30 | Björn Claremar    |[Deployment p2](sessions/deployment/deploy.md)
 .         | 13:30-13:50 | Björn Claremar    |[Documentation](sessions/deployment/documentation.md)
