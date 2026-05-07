@@ -34,16 +34,16 @@ nav:
     - assert: sessions/assert/README.md
     - Test-driven development: sessions/tdd/README.md
     - Pair programming: sessions/pair_programming/README.md
-    - Using a formal testing framework: sessions/testing_framework/README.md
-    - Continuous integration: sessions/continuous_integration/README.md
     - Branches: sessions/branches/README.md
-    - Contributing & code review: sessions/git/contribute.md
-    - Sharing and social coding: sessions/social_coding/social_coding.md
+    - Continuous integration: sessions/continuous_integration/README.md
+    - Modularity: sessions/modularity/README.md
+    - Using a formal testing framework: sessions/testing_framework/README.md
     - Runtime speed profiles: sessions/optimisation/runtime_speed_profiles.md
-    - Improve run-time speed: sessions/optimisation/improve_runtime_speed.md
     - Big-O: sessions/optimisation/big_o.md
+    - Improve run-time speed: sessions/optimisation/improve_runtime_speed.md
   - Deployment:
     - Implement the project as a package: sessions/package/README.md
+    - Social coding: sessions/social_coding/README.md
     - Deploy: sessions/deployment/deploy.md
     - Documentation: sessions/deployment/documentation.md
     - Wrap-up: misc/wrap_up.md
@@ -174,6 +174,8 @@ not_in_nav: |
   data/counts/2024_autumn/README.md
   data/counts/2024_summer/README.md
   data/counts/2025_autumn/README.md
+  data/retrospects2026/20260505.md
+  data/retrospects2026/20260506.md
   data_structures/built_in_data_structures.md
   data_structures/README.md
   deployment/img/README.md
@@ -397,7 +399,9 @@ not_in_nav: |
   sessions/extra_bc/reproducible_deeper.md
   sessions/extra_bc/sdlc_models.md
   sessions/extra_bc/sharing_deeper.md
+  sessions/git/branches.md
   sessions/git/clone.md
+  sessions/git/contribute.md
   sessions/git/img/README.md
   sessions/git/spring2024/apply_branches.md
   sessions/git/spring2024/apply_merge.md
@@ -406,14 +410,16 @@ not_in_nav: |
   sessions/lifecycle/2024_bjoern/sdlc_old.md
   sessions/lifecycle/2025_bjoern/sdlc.md
   sessions/merge_conflicts/2025_bjoern/merge.md
-  sessions/modularity/README.md
+  sessions/modularity/2025_lars/README.md
   sessions/object_oriented_development/README.md
   sessions/optimisation/README.md
   sessions/project/projects.md
   sessions/project_introduction/2025_bjoern/configurations.md
   sessions/project_start/README.md
+  sessions/project_start/analysis_design/Risk.md
   sessions/project_start/analysis_design/README.md
   sessions/recursive_algorithms/README.md
+  sessions/social_coding/social_coding.md
   sessions/testing/testing_in_a_team.md
   sessions/testing/testing_indeterminate_functions.md
   sessions/project_start/spring2024/startup.md
@@ -462,6 +468,7 @@ not_in_nav: |
   shared_documents/2025_autumn/20251028.md
   shared_documents/2025_autumn/20251029.md
   shared_documents/2025_autumn/README.md
+  shared_documents/2026_summer/20260504.md
   social_coding/not_used/notes_social_coding.md
   social_coding/not_used/notes_social_coding_long.md
   summary_week.md
@@ -469,5 +476,6 @@ not_in_nav: |
   testing/testing_indeterminate_functions.md
   testing/testing_in_a_team.md
   watching/README.md
+
 
 

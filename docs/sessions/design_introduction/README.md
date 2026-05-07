@@ -109,7 +109,7 @@ The schematic below may be how the design ends up:
 ```mermaid
 graph TB
   subgraph package[the 'weather' package]
-    subgraph main_module[the 'main' module]
+    subgraph main_module[the 'analysis' module]
       read_data
       do_experiment
       create_figure

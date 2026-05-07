@@ -225,8 +225,8 @@ Pick something at your level, in the relevant folder:
 
 What                                  |Which folder
 --------------------------------------|--------------
-A simple function                     |`learners`
-An try-out of the analysis of the data|`learners`
+A simple function                     |`weather`
+An try-out of the analysis of the data|`weather`
 An analysis of the data               |`weather`
 
 When uploading your code, check the results of the CI scripts regularly:

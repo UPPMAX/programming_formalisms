@@ -1,441 +1,450 @@
 ---
 tags:
-  - modular programming
-  - refactoring
+  - module
+  - modularity
 ---
 
-# Refactoring and Modular programming
+# Modularity
 
-???- info "Learning outcomes"
+!!! info "Learning outcomes"
 
-    - Understand the concept of code smells and design smells.
+    Learners ...
 
-    - Grasp the idea of the "zero line" in software design and its relevance.
+    - understand what a module is
+    - understand reasons for using multiple modules
+    - can work with code from another module
 
-    - Gain an introductory understanding of modular programming and iterative refactoring.
-
-    - Learn about common interfaces, protocols, and their role in modular programming.
-
-    - Recognize and address tight coupling in code to improve modularity.
-
-    - Appreciate the importance of modularization in collaborative projects, especially for reducing conflicts in version control.
-
-    ```mermaid
-    gantt
-        title "Lesson plan Refactoring, and modularization"
-        dateFormat mm
-        axisFormat %M
-        Refactoring: refactoring,00, 10m
-        Refactoring Exercise: Exercise_1, 10, 20m
-        Modularity:Modularity_1,30, 15m
-    ```
-
-???- info "Learning outcomes of Refactoring"
-
-    - Learners learns about code smells and design smells
-
-
-???- info "Learning outcomes of Modular programming"
-
-    - The learners has a introductory understanding to the modular programming paradigm and the concept of iterative refactoring of code.
-
-    - The concepts of common interface and protocols are introduced to the learners
-
-    - The learners are introduced the concept of coupling and how to find tight coupling
-
-    - The learners learn the importance of modularization when collaborating on larger projects by example of the reduced number of conflicts of commits.
-
-    - The learners partitions their design and message passing by refactoring design and implementation according to the modular paradigms for the student project
-
-
-???- question "For teachers"
+??? question "For teachers"
 
     Prior:
 
-    - What is a Refactoring?
-    - What is a Design/code Smell?
-    - What is a Module?
-    - Why make modular design/code, what is the benefit?
+    - What is a module?
+    - Why would you use modules?
 
-## Refactoring
+## What is a module?
 
-???- "What is Refactoring"
+In the context of a Python package,
+a module is file containing Python code.
 
-    Refactoring is a systematic process of improving code without creating new functionality that can transform a mess into clean code and simple design.
-    [refactoring.guru](https://refactoring.guru/refactoring)
+We are already using modules, such as in this line:
 
-
-### Revisiting class design
-
-The most important relationship classes can have
-are association, composition and inheritance.
-
-#### Bad structure
-
-- `PetsIOwn` is a relation DB table not an object as it has
-- no function, which pets an owner has is not a object that exist in the real world - big semantic gap.
-
-```mermaid
-classDiagram
-    Owner-->PetsIOwn
-    Dog*--"1"Head
-    Dog*--"1"Body
-    Dog*--"0..1"Tail
-    PetsIOwn o--"0..*"Dog
-    PetsIOwn o--"0..*"Cat
-    PetsIOwn o--"0..*"GoldFish
-    Animal <|--Dog
-    Animal <|--Cat
-    Animal <|--GoldFish
+```python
+import os.path
 ```
 
-Refactored design, the Refactoring is done already in design space as a iteration of your design
+Here we import the `path` function from the `os` module.
+The `os` module is a Python module for functions related to work
+with the operating system.
+
+## Why use modules?
+
+- To group related code
+- To hide implementation details
+
+## Examples of using modules
+
+## Grouping related code
+
+Modules are used to group related code, such as one module
+reading input data, where another module is tasked with doing statistics
+on data.
+
+A commonly found module is a folder called `utils` or a file called
+`utils.py`.
+This is typical for functions that are needed, but not
+the core of the package: they are so-called 'utility functions'
+that are there 'to help'.
+
+Examples:
+
+- [`utils.py` in `seaborn`](https://github.com/mwaskom/seaborn/blob/master/seaborn/utils.py)
+- [`_utils.py` in `pytorch`](https://github.com/pytorch/pytorch/blob/main/torch/_utils.py)
+- [the `utils` folder in Keras](https://github.com/keras-team/keras/tree/master/keras/src/utils)
+- [the `util` folder in Pandas](https://github.com/pandas-dev/pandas/tree/main/pandas/util)
+
+A Python filename starting with an underscore, e.g. `_utils.py`,
+is a hint (by social convention) that this module is not meant
+to be used by a regular user.
+
+## Function wrappers
+
+Modules can be used as a unit to create wrapper functions.
+
+A wrapper function is a function that consists of calling another
+function, without adding functionality.
+
+Users of a module will import functions of a module by name (i.e.
+they do not import all function).
+The word `impl`, short for 'implementation' is -by social convention-
+avoided to be imported.
+
+Here is schematic of two functions in a module:
 
 ```mermaid
-classDiagram
-    Owner --> Animal: cares for
-    Owner o-- Animal: owns
-    Dog *-- "1"Head
-    Dog *-- "1"Body
-    Dog *-- "0..1"Tail
-    Animal <|-- Dog
-    Animal <|-- Cat
-    Animal <|-- GoldFish
+graph TB
+  do_it
+  do_it_impl
+  do_it --> |uses| do_it_impl
 ```
 
-What was this ann effect of a phenomenon known as Design Smell.
+Based on this, `do_it` is the function that the user should `import`.
 
-Code smell and design smell are two very good reason to do refactoring
+???- question "Could you show some code as an example?"
 
-- What? How can code "smell"??
-- Well it doesn't have a nose... but it definitely can stink!
+    A *logistic function* is a perfect example of a wrapper function.
+    A logistic function is function that exists to make it easier/shorter
+    to write code. One application is to provide two function
+    names to do the same:
 
-From [https://refactoring.guru/](https://refactoring.guru/).
 
-Some examples of code smell
+    ```python
+    def create_png_figure(filename):
+      # Code to create a PNG
 
-- Bloaters
-- Object-Orientation Abusers
-- Change Presenters
-- Dispensables
-- Couplers
+    def create_figure_png(filename):
+      create_png_figure(filename)
+    ```
+
+    Another example is found in code that we encountered before:
+
+    ```python
+    fun is_prime(x):
+        """Determine if a number is prime."""
+        return is_prime_impl(x, 2)
+
+    def is_prime_impl(no, i):
+        """Determine if a number is prime.
+
+        Usage: 'is_prime_impl(x, 2)', where 'x' is the number you want to test.
+        """
+        if no == i:
+            return True
+        elif no % i == 0:
+            return False
+        return is_prime_impl(no, i + 1)
+    ```
+
+    In this code, the bad interface of `is_prime_impl` is *wrapped*
+    into the better interface of `is_prime`.
+
+    ???- question "Why does `is_prime_impl` have a bad interface?"
+
+        Because nothing stops you from writing this:
+
+        ```python
+        is_prime_impl(x, 3) # Ha! I can use 3!
+        ```
+
+## Allowing unsafe functions
+
+Modules can be used as a unit to create unsafe functions.
+
+Unsafe functions, in this context, are functions that do **not**
+check their input. Sometimes, checking the input of a function takes
+too long. Unsafe/unchecked functions typically -by social convention-
+have `unsafe` or `unchecked` in their function name:
+
+```mermaid
+graph TB
+  do_it
+  do_it_unsafe
+  do_it --> |uses| do_it_unsafe
+```
+
+???- question "Could you show some code as an example?"
+
+    In this example, assume that checking the data type of the input
+    is costly (it is not), then this is a familiar example:
+
+    ```python
+    def is_zero(x):
+        """Determines if the input is one integer that is zero"""
+        if not isinstance(x, int):
+            raise TypeError("'x' must be of type int")
+        return is_zero_unchecked(x)
+
+    def is_zero_unchecked(x):
+        """Determines if the input is one integer that is zero"""
+        assert isinstance(x, int)
+        if x == 0:
+            return True
+        return False
+
+    ```
+
+    Now we see that `is_zero` is a function that is intended to be used
+    and produce proper error messages.
+
+    Its unchecked version does the actual work. It *does* have an `assert`
+    statement, which means that, when running the code in debug mode,
+    the input is still checked.
+
+    ???- question "What about adding a third function without the `assert`?"
+
+        Sure, you can add a third function:
+
+        ```python
+        def is_zero(x):
+            """Determines if the input is one integer that is zero"""
+            if not isinstance(x, int):
+                raise TypeError("'x' must be of type int")
+            return is_zero_unchecked(x)
+
+        def is_zero_unchecked(x):
+            """Determines if the input is one integer that is zero"""
+            assert isinstance(x, int)
+            return is_zero_impl(x)
+
+        def is_zero_impl(x):
+            """Determines if the input is one integer that is zero"""
+            if x == 0:
+                return True
+            return False
+        ```
+
+        If you have measured you need this (which is not in this case),
+        sure, you go!
+
+## Keeping different versions of the same functionality
+
+Modules can be used as a unit to create different versions
+of the same functionality.
+
+Here we have a schematic overview of all functions in a module:
+
+```mermaid
+graph TB
+  is_prime
+  is_prime_impl_a
+  is_prime_impl_b
+  is_prime --> |uses| is_prime_impl_b
+  is_prime_impl_a <--> |tested to have the same output| is_prime_impl_b
+```
+
+This module has two implementations of determining whether a number is prime.
+And there *are* many methods to do so.
+
+It can be that the first implementation is readable-yet-slow,
+i.e. good enough for a first implementation!
+
+However, it may have been the case that **it was measured** that this
+implementation slowed down the rest of the package's calculations.
+Hence, a second, faster implementation was developed.
+
+This second implementation was easy to test: it should have the same output
+as the first, so you can opt to write a test as such:
+
+```python
+for x in range(100):
+  assert is_prime_impl_a(x) == is_prime_impl_b(x)
+```
+
+## A new team working together
+
+In a newly formed team, modules can be used to ease into using the same code.
+
+Here is a schematic diagram of all functions in a package:
+
+
+```mermaid
+graph TB
+  subgraph package[the 'weather' package]
+    subgraph main_module[the 'analysis' module]
+      read_data
+      do_experiment
+      create_figure
+      create_statistics_output
+    end
+    subgraph anna_module[the 'anna' module]
+      anna_read_data[read_data]
+    end
+    subgraph sven_module[the 'sven' module]
+      sven_create_figure[create_figure]
+      sven_create_statistics_output[create_statistics_output]
+    end
+  end
+  read_data --> anna_read_data
+  create_figure --> sven_create_figure
+  create_statistics_output --> sven_create_statistics_output
+  do_experiment --> read_data
+  do_experiment --> create_figure
+  do_experiment --> create_statistics_output
+```
+
+We see that the main module, `analysis` uses Anna's code for reading the
+data, and uses Sven's code for doing the statistics and creating the figures.
+In that way, both Anna and Sven could develop their functions independently
+and gain confidence in their work.
+
+Note that this is not recommended.
+
+???- question "How does that look like in code?"
+
+    Here is how to forward a function call to a function
+    of the same name in other module:
+
+    ```python
+    # Filename: analysis.py
+    from weather.anna import read_data as annas_read_data
+
+    def read_data():
+        """Read the weather data from file."""
+        return annas_read_data()
+    ```
 
 ## Exercises
 
-???+ "Read and discuss"
+## Exercise 1: what level of modularity?
 
-    - Read [https://refactoring.guru/refactoring](https://refactoring.guru/refactoring)
-       and discuss how this can be implemented also in the design phase (10 min)
+One can go crazy with modularity and putting each function in its own
+module.
 
-    - Consider is your class diagram reflecting your code
+How many modules, and with which names, do you think the research project needs?
 
-???- question "Bad Weather identify the design smells"
+???- question "Answer"
 
-    Identify the different design smells of the following diagram use notes to denote the found smells, then put it in a markdown document and commit to your learners space in the project.
+    As far as I know, there are no recommendations from the literature here.
 
-    ```mermaid
-        classDiagram
+    These are answers that I think are reasonable:
 
-            %% =======================
-            %% SMELLY DESIGN
-            %% =======================
-            namespace Smelly {
-                class Website {
-                    +String url
-                    +String repoPath
-                    +String filters
-                    +void loadEverythingAtOnce()
-                    +void reloadPageOnFilterChange()
-                    +void renderAllPlotsAndStatsTogether()
-                    +void handleDownloadRequest(fileType, filter, plot, stat, timeRange, dateRange, region)
-                }
+    - 'one, called `analysis`': this is absolutely the best starting point,
+      as it is the most simple
+    - 'two, called `input`/`read_data`/`process_input` (for reading data)
+      and `output`/`create_output`/`analysis` (for working on
+      the data)': sure, this seems like a reasonable distinction.
+    - 'three, called `process_input` (for reading data)
+      and `figures` (for creating the figures) and `statistics` (for
+      creating the statistics output)':
+      sure, this seems like a reasonable distinction.
 
-                class FilterManager {
-                    +String selectedTime
-                    +String selectedDate
-                    +String selectedRegion
-                    +void applyFilters(time, date, region)
-                    +void filterEverything()
-                }
+    Adding a module for utility functions is reasonable too.
 
-                class PlotManager {
-                    +void drawTimeSeries(data)
-                    +void drawHistogramAndBoxPlotTogether(data)
-                    +void renderAllStatsOnPlot(data)
-                }
+What do you think is a good rule for the amount of modularity?
 
-                class StatsManager {
-                    +float average
-                    +float minimum
-                    +float maximum
-                    +float median
-                    +float mode
-                    +void computeAllStatsInOneMethod(data)
-                }
+???- question "Answer"
 
-                class DownloadManager {
-                    +void downloadEverything()
-                    +void zipEverythingTogether()
-                }
+    As far as I know, there are no recommendations from the literature here.
 
-                class GitHubBackend {
-                    +String dataPath
-                    +void connectToGitHub()
-                    +void loadDataIntoAnalysisProgram(file)
-                    +void sendVerifyMessageToUser()
-                }
-            }
-        %% relationships
-        Website --> FilterManager
-        Website --> PlotManager
-        Website --> StatsManager
-        Website --> DownloadManager
-        Website --> GitHubBackend
-        FilterManager --> PlotManager
-        PlotManager --> StatsManager
-        DownloadManager --> GitHubBackend
+    My rule would be:
 
-        %% color all smelly classes red
-        style Website fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-        style FilterManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-        style PlotManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-        style StatsManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-        style DownloadManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-        style GitHubBackend fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+    > Split up code in different files/modules when you feel you are losing
+    > the overview.
+    > When in doubt, also split up code in different files/modules.
 
+## Exercise 2: function wrappers
+
+The course material
+mentions [function wrappers](#function-wrappers)
+and [allowing unsafe functions](#allowing-unsafe-functions).
+Combining their diagrams in the one below,
+they look identical:
+
+```mermaid
+graph TB
+  do_a
+  do_a_unsafe
+  do_a --> |uses| do_a_unsafe
+
+  do_b
+  do_b_impl
+  do_b --> |uses| do_b_impl
+```
+
+What is the relationship between these two reasons to use modules?
+
+???- question "Answer"
+
+    As far as I know, there are no recommendations from the literature here.
+
+    Informally, you can say 'we wrap the unsafe function in a safer one'
+    and you can get away with this.
+
+    However, one could be more strict and state that a wrapper function
+    does not add functionality. From that statement, adding checks
+    on the input disqualifies a function from being a wrapper function.
+
+## Exercise 3: multiple implementations
+
+In the section
+['Keeping different versions of the same functionality'](#keeping-different-versions-of-the-same-functionality)
+the word 'measurement' is put in bold.
+
+How do you imagine this measurement was done?
+
+???- question "Answer"
+
+    A good first guess would be 'by running the code as a whole'.
+
+    However, from that alone, we cannot conclude that it was the `is_prime`
+    function that slowed down the code as a whole.
+
+    One needs to create a run-time speed profile (as
+    discussed in
+    [the 'Runtime speed profiles' session of this course](../optimisation/runtime_speed_profiles.md),
+    to be sure to speed-optimize the right function.
+
+You are using TDD to develop code. In pseudocode,
+which test would you write to add `is_prime_impl_b` to your code?
+
+???- question "Answer"
+
+    ```python
+    # Measure the runtime of calling is_prime_impl_a on many numbers
+    # Measure the runtime of calling is_prime_impl_b on many numbers
+    # Assert the runtime of is_prime_impl_b is less then is_prime_impl_a
     ```
 
-???- "Answer design smells"
+Assume you've put a lot of time in writing `is_prime_impl_b`,
+but it does not pass that test.
 
-    Here is one answer, there can be more design smells that given here!
+Will you keep `is_prime_impl_b`?
 
-    ```mermaid
+???- question "Answer"
 
-        classDiagram
+    You are free to delete it: it adds nothing useful to your code
+    and you do have version control to retrieve it if needed
+    (which is close to never!).
 
-        %% =======================
-        %% SMELLY DESIGN
-        %% =======================
-        namespace Smelly {
-            class Website {
-                +String url
-                +String repoPath
-                +String filters
-                +void loadEverythingAtOnce()
-                +void reloadPageOnFilterChange()
-                +void renderAllPlotsAndStatsTogether()
-                +void handleDownloadRequest(fileType, filter, plot, stat, timeRange, dateRange, region)
-            }
+    You can keep it as a reminder of a failed attempt.
+    This will either slow down your tests (as you will need to test it)
+    or lower your code coverage (if you chose not to test it anymore).
 
-            class FilterManager {
-                +String selectedTime
-                +String selectedDate
-                +String selectedRegion
-                +void applyFilters(time, date, region)
-                +void filterEverything()
-            }
+## Exercise 4: A new team working together
 
-            class PlotManager {
-                +void drawTimeSeries(data)
-                +void drawHistogramAndBoxPlotTogether(data)
-                +void renderAllStatsOnPlot(data)
-            }
+In the session [A new team working together](#a-new-team-working-together)
+it is recommended **not** to use modules to indicate who wrote them,
+but it argues it is a possible feature of a new team.
 
-            class StatsManager {
-                +float average
-                +float minimum
-                +float maximum
-                +float median
-                +float mode
-                +void computeAllStatsInOneMethod(data)
-            }
+What would be the next step?
 
-            class DownloadManager {
-                +void downloadEverything()
-                +void zipEverythingTogether()
-            }
+???- question "Answer"
 
-            class GitHubBackend {
-                +String dataPath
-                +void connectToGitHub()
-                +void loadDataIntoAnalysisProgram(file)
-                +void sendVerifyMessageToUser()
-            }
-        }
-            %% relationships
-            Website --> FilterManager
-            Website --> PlotManager
-            Website --> StatsManager
-            Website --> DownloadManager
-            Website --> GitHubBackend
-            FilterManager --> PlotManager
-            PlotManager --> StatsManager
-            DownloadManager --> GitHubBackend
+    The people should move their code to the main module.
 
-            %% color all smelly classes red
-            style Website fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-            style FilterManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-            style PlotManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-            style StatsManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-            style DownloadManager fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-            style GitHubBackend fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+    For example, instead of this:
 
-            note for Website "Smells: God Class, Long Parameter List, Tight Coupling, Bloater"
-            note for FilterManager "Smells: Feature Envy (accesses others' data)"
-            note for PlotManager "Smells: Duplicated Responsibility with StatsManager"
-            note for StatsManager "Smells: Large Method computeAllStatsInOneMethod"
-            note for DownloadManager "Smells: Does too much (handles all file types)"
-            note for GitHubBackend "Smells: UI and backend mixed"
+    ```python analysis.py
+    from weather.anna import read_data as annas_read_data
+
+    def read_data():
+        """Read the weather data from file."""
+        return annas_read_data()
     ```
 
-???- "Refactor your design document"
+    Use
 
-    Either:
-    Chose an Issue that you are responsible for!
+    ```python analysis.py
 
-    Try to consider what in your code are or will require classes to know about each other (Association).
-    Try to consider which have a has-a relationship (composition if destroying an instance of the first class destroys the composing part)
-
-    or
-
-    Refactor the above design into a good design. Consider things like technology lock in and other issues.
-
-
-???- info "Answer here is one example of fixed structure"
-
-    Here is an example of how a refactored example from the above design
-
-    ```mermaid
-        classDiagram
-
-        namespace WeatherAnalysis {
-
-        class UserInterface {
-            +start()
-        }
-
-        class webapp {
-            +start()
-        }
-        class CLI {
-            +start()
-        }
-
-        class DataController {
-            +applyTimeFilter()
-            +applyDateFilter()
-            +applyRegionFilter()
-        }
-
-        class PlotService {
-            +drawTimeSeries()
-            +drawHistogram()
-            +drawBoxPlot()
-        }
-
-        class StatsService {
-            +computeAverage()
-            +computeMin()
-            +computeMax()
-            +computeMedian()
-            +computeMode()
-        }
-
-        class DownloadService {
-            +exportRawData()
-            +exportFilteredData()
-            +exportPlot()
-            +exportStats()
-        }
-
-        class GitHubDataSource {
-            +loadData()
-            +verifyData()
-        }
-    }
-        %% relations
-        UserInterface --> DataController
-        DataController --> PlotService
-        DataController --> StatsService
-        UserInterface --> DownloadService
-        DownloadService --> GitHubDataSource
-        CLI --|> UserInterface
-        WebApp --|> UserInterface
-
-        %% color clean classes green
-        style UserInterface fill:#ddffdd,stroke:#00aa00,stroke-width:2px
-        style DataController fill:#ddffdd,stroke:#00aa00,stroke-width:2px
-        style PlotService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
-        style StatsService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
-        style DownloadService fill:#ddffdd,stroke:#00aa00,stroke-width:2px
-        style GitHubDataSource fill:#ddffdd,stroke:#00aa00,stroke-width:2px
-
-        note for UserInterface "Clean: Controller coordinates components"
-        note for DataController "Single Responsibility: handles filtering only"
-        note for PlotService "Separate concern: visual rendering"
-        note for StatsService "Separate concern: statistical computation"
-        note for DownloadService "Exports only"
-        note for GitHubDataSource "Isolated backend logic"
-
+    def read_data():
+        """Read the weather data from file."""
+        # Anna's implementation of 'read_data' here
     ```
 
+Why should a mature team allow/disallow such personal modules?
 
-???- "Refactor your code"
-    Chose an Issue that you are responsible for go through the code and refactor the code.(if you do not have an issue claim one)
+???- question "Answer"
 
-## Code Coupling
+    A mature team should disallow such personal modules,
+    as all team members are responsible for the code as a whole.
 
-???- "What is Coupling in code"
-
-Lets talk about Tightly vs loosely coupled code.
-
-???- "What is tightly coupled code?"
-
-     Tightly coupled code is when a group of classes are highly dependent on one another. This isn't necessarily a bad thing, but it can make the code harder to test because of the dependent classes are so intertwined. They can't be used independently or substituted easily.
-
-    In tightly coupled systems, each component or class in the system knows details about many other components or classes. They are interdependent, meaning that if one component changes, it can have a ripple effect on all other components that depend on it. This can make the system as a whole more difficult to maintain, because changes in one place can require changes in many other places.
-
-???- "Why is loose coupling to prefer"
-
-    - Easier Maintenance: Because each component is independent, changes in one component don't require changes in other components. This makes the system as a whole easier to maintain.
-
-    - Improved Testability: Components can be tested independently, without needing to set up and manage other components. This makes it easier to write unit tests, and makes the tests more reliable, because they're less likely to be affected by changes in other parts of the system.
-
-    - Greater Flexibility and Reusability: Because components don't depend on each other, they can be more easily reused in different parts of the system, or even in different systems. They can also be replaced or upgraded without affecting other components.
-
-!!! Hint "Circular dependency"
-
-    A circular dependency occurs when two entities both rely on data from each other, either directly or through secondary coupling. This can be a natural an un avoidable consequence of the domain space or it as it is usually seen in software development an anti pattern that is a pattern that hinders development.
-
-## Modular Programming
-
-???- "What is Modular Programming"
-
-    Modular programming as a term introduced by Larry Constantine et.al at the Symposium on Modular Programming, organized at the Information and Systems Institute in July 1968.
-
-    Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality.
-
-!!! info "lets read about modular programming (10 min)"
-
-    This is a Wikipedia article on [modular programming](https://en.wikipedia.org/wiki/Modular_programming)
-
-??? question "Lets Discuss"
-
-From this these for principles are generally considered a requirement for modularity
-
-- no communication in with no communication out
-- no communication in with some communication out
-- some communication in with some communication out
-- some communication in with no communication out
-
-!!! info "What does it mean in practice"
-
-    - That what you must clearly define for any function or object is a Common Interface that is static
-    - That there are no side effect from your implementation
-    - That you do not do message passing by reference.
-    - That you program  black box methods and classes.
-
-???- "Why is Modular Programming something to strive for"
-
-    - Reusability
-    - Working with others (encapsulation of work and function)
+    All team members, however, should never break the main branch!

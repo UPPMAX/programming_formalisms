@@ -10,14 +10,14 @@
 
 ## Risk analysis
 
-Risk analysis is central in some systems like RDD(Risk Driven Development),
-FDA(FDA-1997-D-0029) splits into two types Business risks and Technical risk.
+Risk analysis is central in some systems like RDD (Risk Driven Development),
+FDA (FDA-1997-D-0029) splits into two types Business risks and Technical risk.
 Where Business risk relates to direct requirements while technical risks
 are from derived requirements.
 One type of risk assessment is the Failure modes and effects analysis
 commonly abbreviated FMEA
 which calculate the risk in Probability of occurrence x severity of
-risk **RISK=PxS** a risk matrix is used to define what level of severity
+risk **RISK = P x S** a risk matrix is used to define what level of severity
 and occurrence warrants what action.
 
 !!! hint "How big should the risk analysis matrix be?"
@@ -25,9 +25,10 @@ and occurrence warrants what action.
     It is common is to divide it in 5 severity categories and 5 probability
     levels then establishing a table as below to asses which needs are the
     most important to address.
-    Risk probability goes from P1 (very unlikely to
+    
+    - Risk probability goes from P1 (very unlikely to
     occur) - P5(Happens in all execution)
-    Risk severity goes from S1(minor or no effect),
+    - Risk severity goes from S1(minor or no effect),
     S2(Some Impact or noticeable by user),
     S3(Major impact on execution of program or result with minor loss of
     resources at end user),
@@ -143,8 +144,9 @@ and occurrence warrants what action.
     Then develop towards risks that are acceptable
 
 ???- "Turning Requirements and Risk matrix into actionable Feature list"
-  Using the Requirements and risk matrix we can design a feature list
-  which can be tracked using issues or project tab in Git or in a separate
-  document. The feature list describes how to solve a requirement in
-  plaintext english and with flowcharts This initiates a design phase in
-  the development
+
+    Using the Requirements and risk matrix we can design a feature list
+    which can be tracked using issues or project tab in Git or in a separate
+    document. The feature list describes how to solve a requirement in
+    plaintext english and with flowcharts. This initiates a design phase in
+    the development.

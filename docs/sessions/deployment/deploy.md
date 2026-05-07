@@ -10,7 +10,6 @@ tags:
 !!! questions
 
     - How to make your program work for others?
-    - How to start a git repo from existing code project?
     
 !!! info "Learning outcomes of 'Deployment'"
 
@@ -23,7 +22,6 @@ tags:
     - But also...
         - some theory of packages
         - some theory of containers
-        - starting a git repo from existing code project
 
 ???- note "Instructor notes"
 
@@ -33,31 +31,57 @@ tags:
 
     Lesson Plan:
 
-    - **Total** 75 min
-    - Theory 20+10
-    - Exercises 30+15 min
+    - **Total** 40 min
+    - Theory 15
+        - Start by not showing screen
+        - ask questions
+    - Exercises 25 min
 
 ## Introduction
-
-- It's about Distribution!
 
 !!! note
 
     - Many projects/scripts start as something for personal use, but expands to be distributed.
     - Let's start in that end and be prepared.
-    - The following steps can be very valuable for you in a couple of months as well as you revisit your code and don't know what it does or why you did this and that.
 
 !!! tip
 
     - Make your program or workflow work for others and yourself in the future.
 
+??? question "Discussion: What is deployment?"
+
+    > Software deployment is all of the activities that make a software system available for use.
+    *Wikipedia*
+
+    - Producer side: Prepare so user can install and use
+    - User side: Install after instructions
+
+??? question "Discussion: What to think about as developer?"
+
+    - package dependencies (Python, R etcetera)
+    - libraries (compiled languages like C C++ Fortran)
+    - OS Platforms
+    - system libraries
+    - shared service
+
+??? question "Discussion: Reproducibility?"
+
+     We can control our code but how can we control dependencies?
+
+??? question "Discussion: 10-year challenge?"
+
+     Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
+
+??? question "Discussion: Dependency hell"
+
+    Different codes in the same environment can have conflicting dependencies.
+
 ## To make sure about needed dependencies
 
-- **Reproducibility**: We can control our code but how can we control dependencies?
-- **10-year challenge**: Try to build/run your own code that you have created 10 (or less) years ago. Will your code from today work in 5 years if you don’t change it?
-- **Dependency hell**: Different codes in the same environment can have conflicting dependencies.
-
 - 2 levels of dependencies
+
+    - packages
+    - system libraries
 
 ??? note "System libraries"
 
@@ -65,14 +89,6 @@ tags:
         - will your program require specific "system files"
         - are these typically not installed already?
         - in the **best world test on Windows/Mac and Linux platforms**
-            - and with as empty as possible environment
-
-??? note "packages, like in Python"
-
-    - Python packages
-    - R packages
-    - Julia packages
-    - Matlab Add-ons
 
 ??? note "Shared services like HPC clusters"
 
@@ -92,14 +108,17 @@ tags:
 !!! info "We need to"
 
     - Inform what is needed to run the software in the README file (Next session)
-    - Or provide them with everything needed (file )
+    - Or provide them with everything needed (file)
         - hopefully not interfering with other software they are using
 
-??? info "Ways to distribute"
+## Distribution
+
+!!! info "Ways to distribute"
 
     - Python packages:
         - pip (PyPI)
-        - conda
+        - conda packages and environments
+        - also: ``uv``, ``pixi``, ``poetry``
     - R:
         - R repos like CRAN and GitHub (devtools)
         - conda
@@ -112,29 +131,46 @@ tags:
     - General tools
         - Containers
 
-???- info  "Conda & pip"
+## Isolated environments
 
-    **These _Python-related_ tools try to solve the following problems:**
+??? question "Discussion: What is an isolated environment?"
+
+    These solve both the identification of needed dependencies and help in installations.
+
+!!! tip "Principles to define dependencies needed"
+
+    - Work in an isolated environment
+    - Start with empty environment
+    - See what is needed for the program to work?
+    - Add the missing packages or libraries until the errors go away
+    - save the environment variables in a file.
+    
+    Best is to do this already in the beginning!
+    
+??? question "When is this over-kill?"
+
+    - If the needed dependencies are few and well-defined
+    - Some programming languages?
+
+??? info "Python: Conda & virtual environments"
+
+    **These *Python-related* tools try to solve the following problems:**
 
     - **Defining a specific set of dependencies**, possibly with well-defined versions
-    - requirements.txt...
+    - Definition file: ``requirements.txt``, ``environment.yml``
     - **Installing those dependencies** mostly automatically
     - **Recording the versions** for all dependencies
-    - **Isolated environments** (venv, virtualenv)
+    - **Isolated environments**
         - On your computer for projects so they can use different software.
         - Isolate environments on computers with many users (and allow self-installations)
         - Using **different Python/R versions** per project??
         - Provide tools and services to **share packages**
 
+### Principle using python pip in a virtual environment (``venv``)
+
 - Let's focus here on PyPI!
     - Remember we made a package this morning!
 - We'll briefly cover the other tools after the exercise.
-
-## Recording dependencies
-
-- Start with empty environment
-
-### Principle using python pip in a virtual environment
 
 - We can make other users aware of the dependencies for our Python project.
 - One can state those specifically as a list in a README
@@ -181,21 +217,6 @@ tags:
         git merge venv
         git push
     ```
-
-## Ignoring files and paths with ``.gitignore``
-
-Compiled and generated files are not committed to version control. There are many reasons for this:
-
-- Your code could be run on different platforms.
-- These files are automatically generated and thus do not contribute in any meaningful way.
-- The number of changes to track per source code change can increase quickly.
-- When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use a `.gitignore` file (put in root folder)
-
-- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
-
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
 
 ## Exercise 1: Identify lacking packages (15-20 min)
@@ -473,6 +494,23 @@ For this we use a `.gitignore` file (put in root folder)
         - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
         - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
 
+### Ignoring files and paths with ``.gitignore``
+
+Compiled and generated files are not committed to version control.
+
+??? info "Here are some reasons"
+
+    - Your code could be run on different platforms.
+    - These files are automatically generated and thus do not contribute in any meaningful way.
+    - The number of changes to track per source code change can increase quickly.
+    - When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use a `.gitignore` file (put in root folder)
+
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
+
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
+
 ???- admonition "Workflows"
 
     **Learn more**
@@ -503,178 +541,6 @@ For this we use a `.gitignore` file (put in root folder)
 
     - [Collection of (Academic) software repo links](https://www.softwareheritage.org/)
     - [Awesome list of Research Software Registries](https://github.com/NLeSC/awesome-research-software-registries)
-
-## Start a Git/GitHub repo from personal existing project
-
-- Many projects/scripts start as something for personal use, but expands to be distributed.
-- Let's start in that end and be prepared.
-
-### Principle
-
-- Initiate git project
-    - Browse to right _root_ directory (the folder containing all the project-related files)
-- Stage and commit
-- upload to github
-
-### (Optional) Exercise 2: 10-15 minutes
-
-- Let's say you have some code you have started to work with
-
-!!! tip
-
-    - Work individually locally (in VS Code or terminal)
-    - Help each-other if getting stuck
-    - Start with 1A OR 1B
-        - 1a goes to Breakout room 1
-        - 1b goes to Breakout room 2
-
-???- question "Exercise 1A: Identify existing project"
-
-    - Just use an existing programming project you already have
-    - Browse to right _root_ directory (the folder containing all the project-related files)
-
-???- question "Exercise 1B: Make a code base for a new test project"
-
-    - Make a ``test_project`` directory in a good place (like a local ``Programming formalisms`` course folder)
-
-    ???+ question "In VS Code?"
-
-        - Make a new window
-        - Open Folder
-
-            ![start_VSC](../../img/start_VSC.png)
-
-        - Create new Folder with name ``test_project``
-        - Select folder
-        - Create and save a file ``hello.py`` with the following code base and the in-code documentation answering the question "why".
-
-        ```python
-        # We just want some output from a simple program
-        print('Hello world!')
-        ```
-
-???- question "Exercise 2: Initiate the project"
-
-    ???- question "VS CODE"
-
-        ![initialize_VSC](../../img/initialize_VSC.png)
-
-        - **RECOMMENDED** Publish to GitHub diectly **and you are done**!
-            - You may change the name of the repo for the GitHub instance, but not recommended.
-            - Include the file(s) (in this case the hello.py file) in the repo!
-            - Double check it was created on GitHub!
-                - It should show up under repos in your user space
-
-        - ALTERNATIVE: Initialize and then continue with step 3.
-
-    ???- question "Terminal"
-
-        - Be in a terminal and go to the ``project`` folder, which will be the project repository (**repo**)
-        - run ``git init``
-        - make sure that there is a ``.git`` directory created
-            - you have to show hidden files, in bash terminal with ``ls -a``
-
-        - Now you have a git repo called ``test_project``
-        - Check with the command: ``git status``
-            - It is always a safe command to run and in general a good idea to do when you are trying to figure out what to do next.
-
-???- question "(If needed) Exercise 3: Add and commit the content"
-
-    - So far, there is no content. We have to manually add the content to the repo.
-    - Add and Commit your changes
-
-    ??? question "VS Code"
-
-         We do this all the time! :)
-
-    ???- question "Terminal"
-
-        ```console
-        git add
-        git commit -m 'first commit'
-        ```
-
-???- question "(If needed) Exercise 4: Upload to GitHub"
-
-    ???- question "In VS Code"
-
-        - There is an opportunity to directly publish on GitHub
-
-    ???- question "From GitHub"
-
-        - Make sure that you are **logged into GitHub**.
-        - You can use this for both VS Code and terminal
-
-        ![New repo](../../img/New_repo.png){ width=60% }
-
-        - To create a repository we either click the green button "New" (top right corner).
-
-        - Or if you see your profile page, there is a "+" menu (top right corner).
-
-        ![New top-right](../../img/new-top-right.png){ width=60% }
-
-        ---
-
-        - On this page choose a project name, e.g. ``test_project`` or a project name suiting your existing project.
-
-        - **NOTE** It is not necessary to have the same name but it makes things easier to know what is what when syncing between GitHub and git.
-
-        - For the sake of this exercise **do NOT select** "Initialize this repository with a README"
-        - and **NO Licence**
-
-        ![New repo](../../img/New_repo_formalisms.png)
-        > Example project
-
-        - Press "**Create repository**"
-
-        ![Create and push](../../img/created_push.PNG)
-
-        - Choose **html**
-        - Copy-paste the code for "**…or push an existing repository from the command line**"
-        - Go to **local git terminal** and go to the **git project you started above**
-        - Paste the code
-
-        - Did it work??
-        - Reload the GitHub page and see the files present locally is also present there.
-
-        **Done!**
-
-### What we did
-
-??? info "Workflow"
-
-    ```mermaid
-    graph TB
-
-    P["Project idea"] -->|git init| Node2
-    P["Project idea"] --> hello.py -->|git add| Node4
-    Node4 --> |git commit| Node1
-    Node2 --> |git push| Node5
-    
-    %% C[Uncommited changed hello.py] -->|commit button| R
-    R <--> Node5
-           subgraph "Local Git"
-            Node2[project]
-            Node1[hello.py]
-            Node1 <--> Node2
-    
-            end
-    
-            subgraph "staging area"
-            Node4[hello.py]
-            end
-    
-            subgraph "GitHub"
-            Node5[project]
-            R[hello.py]
-            end
-    
-    ```
-
-!!! info "About releases"
-
-
-    [About releases on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 
 ## Summary
 

@@ -484,7 +484,7 @@ Develop a function called `is_prime`.
 ## 5.5. (Optional) Exercise 5: your favorite function
 
 Develop your favorite function using TDD.
-Or use [some suggested functions here](../../misc/functions/README.md).
+Or use [some suggested functions here](../../misc/functions.md).
 
 ## 5.6. (Optional) Exercise 6: the research project
 
