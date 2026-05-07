@@ -198,10 +198,6 @@ tags:
 
         ![license_project](../../img/license_project.png)
 
-!!! info "See also"
-
-    [Extra material about licensing](https://uppmax.github.io/programming_formalisms_intro/sharing_deeper.html#licensing)
-
 ### Acknowledgements
 
 - Add references that inspired or added algorithms to your code
