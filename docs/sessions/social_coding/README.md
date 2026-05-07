@@ -220,7 +220,7 @@ How do you turn your own small project into the next NumPy? Do you want to?
 ### Principle
 
 - Initiate git project
-    - Browse to right *root* directory (the folder containing all the project-related files)
+    - Browse to right _root_ directory (the folder containing all the project-related files)
 - Stage and commit
 - upload to github
 
@@ -239,7 +239,7 @@ How do you turn your own small project into the next NumPy? Do you want to?
 ???- question "Exercise 1A: Identify existing project"
 
     - Just use an existing programming project you already have
-    - Browse to right *root* directory (the folder containing all the project-related files)
+    - Browse to right _root_ directory (the folder containing all the project-related files)
 
 ???- question "Exercise 1B: Make a code base for a new test project"
 
