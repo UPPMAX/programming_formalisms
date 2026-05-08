@@ -173,7 +173,8 @@ tags:
 
     There is more:
     ![images](link to file),
-    [links](documentation.md#markdown),
+    [links](documentation.md#markdown)
+    
     A|B|C
     -|-|-
     1|x|y
@@ -198,7 +199,7 @@ tags:
 - About the software
 - What does it do?
 - One (Punch-)line describing what it does.
-    - Also in GitHub in upper right corner! 
+    - Also in GitHub in upper right corner!
 - More information below below the first description
 
 ### Installation section
@@ -437,7 +438,7 @@ formalisms/programming_formalisms_project_summer_2026/tree/main) in the About se
 ??? question "Make sections about 'Citation', 'License' and 'Authors' and 'Acknowledgements"
 
     - Create branch ``sharing``
-    - Work with a CITATION(.cff) file as well 
+    - Work with a CITATION(.cff) file as well
 
     ???- question "How?"
 
