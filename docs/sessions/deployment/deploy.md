@@ -218,6 +218,22 @@ tags:
         git push
     ```
 
+### Ignoring files and paths with ``.gitignore``
+
+Compiled and generated files are not committed to version control.
+
+??? info "Here are some reasons"
+
+    - Your code could be run on different platforms.
+    - These files are automatically generated and thus do not contribute in any meaningful way.
+    - The number of changes to track per source code change can increase quickly.
+    - When tracking generated files you could see differences in the code although you haven't touched the code.
+
+For this we use a `.gitignore` file (put in root folder)
+
+- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
+
+- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
 ## Exercise 1: Identify lacking packages (15-20 min)
 
@@ -493,23 +509,6 @@ tags:
         - [Singularity course](https://pmitev.github.io/UPPMAX-Singularity-workshop/)
         - [Environments by CodeRefinery](https://coderefinery.github.io/reproducible-research/environments)
         - [Containers in the extra material](https://uppmax.github.io/programming_formalisms_intro/reproducible_deeper.html#containers)
-
-### Ignoring files and paths with ``.gitignore``
-
-Compiled and generated files are not committed to version control.
-
-??? info "Here are some reasons"
-
-    - Your code could be run on different platforms.
-    - These files are automatically generated and thus do not contribute in any meaningful way.
-    - The number of changes to track per source code change can increase quickly.
-    - When tracking generated files you could see differences in the code although you haven't touched the code.
-
-For this we use a `.gitignore` file (put in root folder)
-
-- [Read more](https://uppmax.github.io/programming_formalisms_intro/git_deeper.html)
-
-- [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
 ???- admonition "Workflows"
 
