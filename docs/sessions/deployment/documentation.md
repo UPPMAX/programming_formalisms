@@ -37,10 +37,6 @@ tags:
 
 ??? question "What different kinds?"
 
-## Kinds
-
-!!! admonition "Documentation comes in different forms"
-
     - **Tutorials**: learning-oriented, allows the newcomer to get started
     - **How-to guides**: goal-oriented, shows how to solve a specific problem
     - **Explanation**: understanding-oriented, explains a concept
@@ -56,17 +52,18 @@ tags:
 
     **There is no one size fits all**: often for small projects a `README.md` can be enough (more about md format later).
 
-### In-code documentation
+??? question "In-code documentation?"
 
-- Comments, function docstrings, ...
-- Advantages
-    - Good for programmers
-    - Version controlled alongside code
-    - Can be used to auto-generate documentation for functions/classes
-- Disadvantage
-    - Probably not enough for users
+    - Comments, function docstrings, ...
+    - Answers "Why?" not "What?"
+    - Advantages
+        - Good for programmers
+        - Version controlled alongside code
+        - Can be used to auto-generate documentation for functions/classes
+    - Disadvantage
+        - Probably not enough for users
 
-!!! admonition "Directory structure"
+??? admonition "Directory structure"
 
     - **Different projects should have separate folders**
 
@@ -84,30 +81,38 @@ tags:
 
 ??? discussion "Did we follow this?"
 
+    Well, this is a course and we needed to do a bit differently
+
 ### Where are we?
 
-**DONE**
+??? info "Done"
 
-- &#9745; In-code documentation
-- &#9745; Project documentation:
-    - requirements: what is the goal of the software, risks, platforms
-    - the analysis: pseudocode and UML
-    - risk analysis
+    - &#9745; In-code documentation
+    - &#9745; Project documentation:
+        - requirements: what is the goal of the software, risks, platforms
+        - the analysis: pseudocode and UML
+        - risk analysis
 
-**Finalize today**
+??? info "Finalize today"
 
-- &#9744; README
-    - &#9744; Installation instruction
-    - &#9744; Tutorial: get started
-    - &#9744; Citation
+    - &#9744; README
+        - &#9744; Installation instruction
+        - &#9744; Tutorial: get started
+        - &#9744; Citation
+    - 
+    
 
-**Further documentation for future projects**
+??? question "What about the other documentation forms?
 
-- &#9744; **License**
-- &#9744; **Tutorials**: learning-oriented, allows the newcomer to get started
-- &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
-- &#9744; **Explanation**: understanding-oriented, explains a concept
-- &#9744; **Reference**: information-oriented, describes the machinery
+    **Further documentation for future projects**
+    
+    You can dig into this at a later state!
+
+    - &#9744; **License**
+    - &#9744; **Tutorials**: learning-oriented, allows the newcomer to get started
+    - &#9744; **How-to guides**: goal-oriented, shows how to solve a specific problem
+    - &#9744; **Explanation**: understanding-oriented, explains a concept
+    - &#9744; **Reference**: information-oriented, describes the machinery
 
 ## Markdown
 
@@ -124,7 +129,6 @@ tags:
     Nothing special needed for a normal paragraph.
 
         This is a code block
-
 
     **Bold** and *emphasized*.
 
@@ -148,6 +152,34 @@ tags:
 
     ```
 
+    # This is a section heading in Markdown
+
+    ## This is a subsection header
+
+    Nothing special needed for a normal paragraph.
+
+        This is a code block
+
+    **Bold** and *emphasized*.
+
+    A list:
+
+    - this is an item
+    - another item
+
+    A numbered list:
+
+    1. this is an item
+    1. items are numbered automatically
+
+    There is more:
+    ![images](link to file),
+    [links](URL),
+    A|B|C
+    -|-|-
+    1|x|y
+    2|m|n
+
 ??? info "Read more"
 
     [reStructuredText and Markdown](../extra_bc/documentation_deeper.md/#restructuredtext-and-markdown)
@@ -167,7 +199,7 @@ tags:
 - About the software
 - What does it do?
 - One (Punch-)line describing what it does.
-    - Also in GitHub in upper right corner!
+    - Also in GitHub in upper right corner! 
 - More information below below the first description
 
 ### Installation section
@@ -204,18 +236,6 @@ tags:
 
 - How to contribute?
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#runing-this-version-on-sacharomyces-data>
-
-### Licensing
-
-We covered this in [Social coding](../social_coding/README.md)
-
-- We can click on the license and a image will also show up!
-
-    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/LICENSE)
-
-    ???- question "How does that look like?"
-
-        ![license_project](../../img/license_project.png)
 
 ### Acknowledgements
 
@@ -292,6 +312,19 @@ We covered this in [Social coding](../social_coding/README.md)
     - pip: <https://github.com/caleblareau/mgatk?tab=readme-ov-file>
     - binaries/executable: <https://github.com/dougspeed/LDAK?tab=readme-ov-file#how-to-obtain-ldak>
 
+### Licensing
+
+We covered this in [Social coding](../social_coding/README.md)
+
+- We can click on the license and a image will also show up!
+
+    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/LICENSE)
+
+    ???- question "How does that look like?"
+
+        ![license_project](../../img/license_project.png)
+
+
 ### Wikis
 
 - Take the documentation for the user to the **next level**.
@@ -357,7 +390,6 @@ We covered this in [Social coding](../social_coding/README.md)
 - 1 person types directly in GitHub
 - Do ``git push`` first from local command-line, everyone!
 
-
 ### Group 1: Make 'installation instruction' in groups
 
 ???- info "Hints **FIX**"
@@ -382,17 +414,28 @@ We covered this in [Social coding](../social_coding/README.md)
     - Open the file ``learners/README-EXT.md``
 
     - Be inspired by the examples above
-    - Include the section "**About**" which should give some background of what the program does and how to run it.
+    - Include the section "**About**" which should give some background of what the program does.
+
+    - When done, make pull request to main
+    - Also add a Description/Punchline in the upper right corner at [Project repo first page](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/tree/main) in the About section (The "setting wheel")
+
+### Group 3: Formulate a "Getting started" section
+
+    - Create branch ``getting_started``
+    - Open the file ``learners/README-EXT.md``
+
+    - Be inspired by the examples above
     - Include the section '**Getting started**'
 
     - When done, make pull request to main
+formalisms/programming_formalisms_project_summer_2026/tree/main) in the About section (The "setting wheel")
 
-### Group 3: Formulate "Sharing sections"
+### Group 4: Formulate "Sharing sections"
 
-???+ question "Make sections about 'Citation', 'License' and 'Authors'"
+???+ question "Make sections about 'Citation', 'License' and 'Authors' and 'Acknowledgements"
 
     - Create branch ``sharing``
-    - Work with a CITATION(.cff) file
+    - Work with a CITATION(.cff) file as well 
 
     ???- question "How?"
 
@@ -440,9 +483,42 @@ We covered this in [Social coding](../social_coding/README.md)
 
     - When done, make pull request to main
 
+### Group 5: Make the Wiki `Home` page  
+
+???+ question "Make the Wiki `Home.md´ page"
+
+    - Work in GitHub! <https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/wiki>
+    - [Start example](https://github.com/UPPMAX/programming_formalisms/wiki)
+    - Start with **New page** and call it `Home.md`
+    - Choose `md` language
+    - Write some interestng heading (be inspired by: )
+    - Commit! 
+    - For instance, write section names and put links to 
+        - planning documents page 
+
+    - End with adding a a link to the sub page `known_problems.md` that should have been crated already
+
+### Group 6: Make a Wiki sub page  
+
+???+ question "Make the Wiki `known_problems.md´ page"
+
+    - Work in GitHub! <https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/wiki>
+    - [Start example](https://github.com/UPPMAX/programming_formalisms/wiki)
+    - Start with **New page** and call it `known_problems.md`
+    - Choose `md` language
+    - Write some interestng headings
+    - Commit! 
+    - (Group 5 will link to this page at some stage)
+    - Try to remember what is still missing in the package!
+    - Write it down.
+
 ???- solution "Example solution from last course"
 
      [programming_formalisms_project_autumn_2024](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/blob/master/README-EXT.md)
+
+
+
+
 
 ### Discussion of the README file
 
