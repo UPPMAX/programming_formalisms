@@ -219,7 +219,7 @@ We covered this in [Social coding](../social_coding/README.md)
 
 ### Acknowledgements
 
-- Add references that *inspired or added algorithms* to your code
+- Add references that _inspired or added algorithms_ to your code
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements>
 
 ### References/Citation
