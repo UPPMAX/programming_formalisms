@@ -241,6 +241,22 @@ Comments on the taxonomy:
 
     [Software and licensing lesson by Code Refinery](https://coderefinery.github.io/social-coding/software-licensing/)
 
+### Our project
+
+- We use GPL-3 in the project
+
+> Strong copyleft share-alike (GPL, AGPL)
+> Derivative work is free software and derivative work extends to the combined project
+> If the licenses of components are strong copyleft, one must use the same license
+
+- We can click on the license and a image will also show up!
+
+    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/LICENSE)
+
+    ???- question "How does that look like?"
+
+        ![license_project](../../img/license_project.png)
+
 ## Start a Git/GitHub repo from personal existing project
 
 - Many projects/scripts start as something for personal use, but expands to be distributed.
