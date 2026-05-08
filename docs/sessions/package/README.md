@@ -388,6 +388,58 @@ Confirm that the package works.
     Wait around 3 seconds and try again :+1:
 
 ```python
-import weather
+import weather.analysis
 weather.analysis.do_analysis()
 ```
+
+???- question "I get an assertion error?"
+
+    This happens when there are failing assert in the package, for example:
+
+    ```text
+    richel@richel-latitude-7430:~/GitHubs$ python
+    Python 3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import weather.analysis
+    Anna's function has read the data
+    Sven's function has created statistics output
+    Sven's function has created a figure
+    Analysis done
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "/home/richel/.local/lib/python3.12/site-packages/weather/analysis.py", line 67, in <module>
+        assert check_file_exists("main.py")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    AssertionError
+    ```
+
+    To fix this, run Python in release mode:
+
+    ```bash
+    python -O
+    ```
+
+    Now the `assert`s are removed.
+
+
+???- question "How does this look like?"
+
+    Similar to this:
+
+    ```text
+    richel@richel-latitude-7430:~/GitHubs$ python -O
+    Python 3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import weather.analysis
+    Anna's function has read the data
+    Sven's function has created statistics output
+    Sven's function has created a figure
+    Analysis done
+    >>> weather.analysis.do_analysis()
+    Anna's function has read the data
+    Sven's function has created statistics output
+    Sven's function has created a figure
+    Analysis done
+    >>> 
+    ```
+
