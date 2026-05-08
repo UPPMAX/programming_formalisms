@@ -23,13 +23,8 @@ tags:
 
 ???+ info "Content"
 
+    - Repo structure
     - content of README
-        - installation
-        - get started
-        - test
-        - citation
-
-    - Revisit licence
 
     - View other possibilities
         - Wiki
@@ -42,7 +37,7 @@ tags:
 
 ??? question "What different kinds?"
 
-## Revisiting documentation
+## Kinds
 
 !!! admonition "Documentation comes in different forms"
 
@@ -60,6 +55,34 @@ tags:
         - risk analysis
 
     **There is no one size fits all**: often for small projects a `README.md` can be enough (more about md format later).
+
+### In-code documentation
+
+- Comments, function docstrings, ...
+- Advantages
+    - Good for programmers
+    - Version controlled alongside code
+    - Can be used to auto-generate documentation for functions/classes
+- Disadvantage
+    - Probably not enough for users
+
+!!! admonition "Directory structure"
+
+    - **Different projects should have separate folders**
+
+    - README file
+    - Data  (version controlled)(.gitignore)
+    - Processed data intermediate
+    - (Manuscript)
+    - Results  data, tables, figures (version controlled, git tags for manuscript version)
+    - Src version controlled code goes here
+        - License (here or in the 1st level)
+        - Requirements.txt
+    - Doc
+    - index
+    - .gitignore file
+
+??? discussion "Did we follow this?"
 
 ### Where are we?
 
@@ -184,36 +207,16 @@ tags:
 
 ### Licensing
 
-- We use GPL-3 in the project
-
-> Strong copyleft share-alike (GPL, AGPL)
-> Derivative work is free software and derivative work extends to the combined project
-> If the licenses of components are strong copyleft, one must use the same license
-
-- We can click on the license and a image will also show up!
-
-    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/LICENSE)
-
-    ???- question "How does that look like?"
-
-        ![license_project](../../img/license_project.png)
+We covered this in [Social coding](../social_coding/README.md)
 
 ### Acknowledgements
 
-- Add references that inspired or added algorithms to your code
+- Add references that *inspired or added algorithms* to your code
 - Example: <https://github.com/KamilSJaron/smudgeplot/tree/v0.3.0?tab=readme-ov-file#acknowledgements>
 
 ### References/Citation
 
 - Think the same as for a scientific paper
-
-???- info "Practical recommendations"
-
-    - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
-    - Open source license can't demand citation, but it is required by science ethics anyway.
-    - Make it as easy as possible! Clearly say what you want cited.
-    - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
-    - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
 ??? example "Example with NextFlow"
 
@@ -226,6 +229,14 @@ tags:
       cite doi:10.1038/nbt.3820
       http://nextflow.io
     ```  
+
+???- info "Practical recommendations"
+
+    - Get a [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) using [Zenodo](https://zenodo.org) or similar services.
+    - Open source license can't demand citation, but it is required by science ethics anyway.
+    - Make it as easy as possible! Clearly say what you want cited.
+    - Make it easy for scripts and tools, use the [Citation File Format](https://citation-file-format.github.io).
+    - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 
 ???+ "Recommended format for software citation"
 
