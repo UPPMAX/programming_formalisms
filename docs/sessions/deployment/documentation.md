@@ -209,6 +209,14 @@ tags:
 
 We covered this in [Social coding](../social_coding/README.md)
 
+- We can click on the license and a image will also show up!
+
+    - [LICENSE](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/LICENSE)
+
+    ???- question "How does that look like?"
+
+        ![license_project](../../img/license_project.png)
+
 ### Acknowledgements
 
 - Add references that *inspired or added algorithms* to your code
