@@ -99,10 +99,9 @@ tags:
         - &#9744; Installation instruction
         - &#9744; Tutorial: get started
         - &#9744; Citation
-    - 
+    - Other levels like Wiki
     
-
-??? question "What about the other documentation forms?
+??? question "What about the other documentation forms?"
 
     **Further documentation for future projects**
     
@@ -174,7 +173,7 @@ tags:
 
     There is more:
     ![images](link to file),
-    [links](URL),
+    [links](documentation.md#markdown),
     A|B|C
     -|-|-
     1|x|y
@@ -338,6 +337,7 @@ We covered this in [Social coding](../social_coding/README.md)
     - [About wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
     - [Adding or editing wiki pages](https://docs.github.com/en/communities/documenting-your-project-with-wikis/adding-or-editing-wiki-pages)
     - Example with [WRF weather model](https://github.com/wrf-model/WRF/wiki)
+    - [Example here](https://github.com/UPPMAX/programming_formalisms/wiki)
 
 ## Exercises
 
@@ -375,7 +375,7 @@ We covered this in [Social coding](../social_coding/README.md)
 
     There is more:
     ![images](link to file),
-    [links](URL),
+    [links](documentatation.md#first-steps-for-all),
 
     A|B|C
     -|-|-
@@ -398,7 +398,7 @@ We covered this in [Social coding](../social_coding/README.md)
     - ``weather`` is a python package needed by ``main.py``
     - available here: <https://test.pypi.org/project/weather/1.0.1/>
 
-???+ question "Make 'installation instruction'"
+??? question "Make 'installation instruction'"
 
     - Create branch ``installation``
     - Open the file ``learners/README-EXT.md``
@@ -406,9 +406,9 @@ We covered this in [Social coding](../social_coding/README.md)
     - Include the sections "**Dependencies**" and "**Installing**"
     - When done, make pull request to main
 
-### Group 2 Formulate an 'About' section
+### Group 2: Formulate an 'About' section
 
-???+ question "Make 'About' and 'Getting started'"
+??? question "Make 'About'"
 
     - Create branch ``about``
     - Open the file ``learners/README-EXT.md``
@@ -421,6 +421,8 @@ We covered this in [Social coding](../social_coding/README.md)
 
 ### Group 3: Formulate a "Getting started" section
 
+??? question "Make 'Getting started'"
+
     - Create branch ``getting_started``
     - Open the file ``learners/README-EXT.md``
 
@@ -432,7 +434,7 @@ formalisms/programming_formalisms_project_summer_2026/tree/main) in the About se
 
 ### Group 4: Formulate "Sharing sections"
 
-???+ question "Make sections about 'Citation', 'License' and 'Authors' and 'Acknowledgements"
+??? question "Make sections about 'Citation', 'License' and 'Authors' and 'Acknowledgements"
 
     - Create branch ``sharing``
     - Work with a CITATION(.cff) file as well 
@@ -485,7 +487,7 @@ formalisms/programming_formalisms_project_summer_2026/tree/main) in the About se
 
 ### Group 5: Make the Wiki `Home` page  
 
-???+ question "Make the Wiki `Home.md´ page"
+??? question "Make the Wiki `Home.md´ page"
 
     - Work in GitHub! <https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/wiki>
     - [Start example](https://github.com/UPPMAX/programming_formalisms/wiki)
@@ -500,7 +502,7 @@ formalisms/programming_formalisms_project_summer_2026/tree/main) in the About se
 
 ### Group 6: Make a Wiki sub page  
 
-???+ question "Make the Wiki `known_problems.md´ page"
+??? question "Make the Wiki `known_problems.md´ page"
 
     - Work in GitHub! <https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/wiki>
     - [Start example](https://github.com/UPPMAX/programming_formalisms/wiki)
@@ -512,20 +514,17 @@ formalisms/programming_formalisms_project_summer_2026/tree/main) in the About se
     - Try to remember what is still missing in the package!
     - Write it down.
 
-???- solution "Example solution from last course"
+???- solution "Example solution from earlier course"
 
      [programming_formalisms_project_autumn_2024](https://github.com/programming-formalisms/programming_formalisms_project_autumn_2024/blob/master/README-EXT.md)
 
-
-
-
-
-### Discussion of the README file
+### Discussion of the exercises
 
 ???- question "Discussion: Describe what you've done and why?"
 
     - We go through the README!
     - Teacher makes Code review if needed
+    - We go through the Wiki
 
 ## Going further with documentation
 
