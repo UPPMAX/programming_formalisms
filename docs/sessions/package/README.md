@@ -168,7 +168,7 @@ Building a package means collecting all the files
 needed to be able to distribute it.
 
 The most important file for this is a file called `pyproject.toml`,
-which desribes which files to use in the package.
+which describes which files to use in the package.
 `pyproject.toml` is called the *package manifest*.
 The `toml` file extension hints that this file is written in TOML,
 a markup language.
