@@ -48,7 +48,7 @@ flowchart TD
     version_control_many[Version control on multiple branches]:::richel_node
     pair_programming[Pair programming]:::richel_node
     tdd[TDD]:::richel_node
-    Retrospect[Retrospect]:::lars_node
+    retrospect[Retrospect]:::lars_node
     design[Design Intoduction]:::richel_node
     testing[Testing]:::richel_node
     social_coding[Social Coding]:::bjorn_node
@@ -58,12 +58,12 @@ flowchart TD
     deployment[Deployment]:::bjorn_node
     documentation[Documentation]:::bjorn_node
     contious_itegration[Continious Integration]:::richel_node
-
+    development --> retrospect
     SDLC --> reg_rep
     SDLC --> requirements
     requirements --> design
     design --> development
-    SDLC --> Retrospect
+    SDLC --> retrospect
     SDLC --> development
     SDLC --> requirements
     SDLC --> tdd
@@ -85,6 +85,12 @@ flowchart TD
     reg_rep --> documentation
     requirements --> documentation
     risk_analysis --> documentation
+    risk_analysis --> design
+    tdd--> documentation
+    testing --> documentation
+    deployment --> documentation
+    deployment --> social_coding
+    development --> pair_programming
 ```
 
 > Overview of the course.
