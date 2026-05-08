@@ -163,15 +163,117 @@ in the regular way.
 
 #### Exercise 2.1: Build the package distribution files
 
-Follow the steps at [the official Python packaging documentation](https://packaging.python.org/en/latest/tutorials/packaging-projects/):
+In this exercise, we are going to build the package.
+Building a package means collecting all the files
+needed to be able to distribute it.
 
-Install `build`:
+The most important file for this is a file called `pyproject.toml`,
+which desribes which files to use in the package.
+`pyproject.toml` is called the *package manifest*.
+The `toml` file extension hints that this file is written in TOML,
+a markup language.
+
+Take a look at that file.
+
+???- question "How does that file look?"
+
+    The file will look similar to this:
+
+    ```text
+    [build-system]
+    requires = ["hatchling"]
+    build-backend = "hatchling.build"
+
+    [tool.hatch.build.targets.wheel]
+    packages = ["weather"]
+
+    [project]
+    name = "uppsalaweathersummer2026"
+    version = "0.1"
+    authors = [
+      { name="Richèl Bilderbeek", email="rjcbilderbeek@gmail.com" },
+    ]
+    description = "The Programming Formalisms course learners project"
+    readme = "README.md"
+    requires-python = ">=3.7"
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
+
+
+    [project.urls]
+    "Homepage" = "https://github.com/programming-formalisms/programming_formalisms_project_summer_2026"
+    "Bug Tracker" = "https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/issues"
+
+    [tool.ruff]
+        lint.select = ["ALL"]
+        lint.ignore = ["ANN", "PT", "PTH", "D211", "D213", "S101", "B006"]
+
+    [tool.hatch.build.targets.sdist]
+    include = [
+      "/data",
+      "/weather",
+      "/tests",
+    ]
+    ```
+
+What is the version of our package?
+
+???- question "Answer"
+
+    The version can be found at the `project` section, for example:
+
+    ```text
+    [project]
+    ...
+    version = "0.1"
+    ```
+
+    In this case, the version is 0.1.
+
+Will the work in the `learners` folder be part of the package? Why?
+
+???- question "Answer"
+
+    No.
+
+    We can see in the section below, that only the `data`, `weather`
+    and `tests` folders become part of our package:
+
+    ```text
+    [tool.hatch.build.targets.sdist]
+    include = [
+      "/data",
+      "/weather",
+      "/tests",
+    ]
+    ```
+
+From our package manifest, we need to install the Python package
+to build our Python package.
+For this, we follow the steps at
+[the official Python packaging documentation](https://packaging.python.org/en/latest/tutorials/packaging-projects/):
+
+Install the `build` Python package:
 
 ```bash
 python3 -m pip install --upgrade build --break-system-packages
 ```
 
-Running `build`:
+Before building, we need to modify the `pyproject.toml` file,
+so that all learners have a unique project and all can upload
+it to PyPI.
+
+In `pyproject.toml`, modify the project name to something unique, e.g:
+
+```text
+[project]
+name = "uppsalaweathersummer2026sven"
+```
+
+Run `build` in the root folder of our package to build our unique package:
 
 ```bash
 python3 -m build
@@ -195,7 +297,8 @@ python3 -m build
     Successfully built weather-1.0.1.tar.gz and weather-1.0.1-py3-none-any.whl
     ```
 
-Now there will be files in the `dist` folder:
+Now there will be files in the `dist` folder.
+These are the file to distribute your files.
 
 ???- question "How does that look like?"
 
@@ -211,7 +314,8 @@ Well done, you've just created the package distribution files!
 Last step is to upload our package distribution files
 to [https://test.pypi.org](https://test.pypi.org):
 
-Install `twine`:
+Install the `twine` package to be able to upload our
+package distribution files:
 
 ```bash
 python3 -m pip install --upgrade twine --break-system-packages
@@ -265,3 +369,25 @@ Indeed, the package can now be found at [https://test.pypi.org/project/weather/1
 
     ![`bacsim` on PyPI](bacsim_on_testpypi.png)
 
+Confirm that the package works.
+
+
+???- question "'No matching distribution found'?"
+
+    This happens if you are too quick:
+
+    ```text
+    richel@richel-latitude-7430:~/GitHubs/programming_formalisms_project_summer_2026$ pip install -i https://test.pypi.org/simple/ uppsalaweathersummer2026richel==0.3 --break-system-packages
+    Defaulting to user installation because normal site-packages is not writeable
+    WARNING: Skipping /usr/lib/python3.12/dist-packages/protontricks-1.10.5.dist-info due to invalid metadata entry 'name'
+    Looking in indexes: https://test.pypi.org/simple/
+    ERROR: Could not find a version that satisfies the requirement uppsalaweathersummer2026richel==0.3 (from versions: 0.1, 0.2)
+    ERROR: No matching distribution found for uppsalaweathersummer2026richel==0.3
+    ```
+
+    Wait around 3 seconds and try again :+1:
+
+```python
+import weather
+weather.analysis.do_analysis()
+```
