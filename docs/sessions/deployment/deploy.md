@@ -235,9 +235,9 @@ For this we use a `.gitignore` file (put in root folder)
 
 - [Our course repo](https://github.com/programming-formalisms/programming_formalisms_project_summer_2026/blob/main/.gitignore)
 
-## Exercise 1: Identify lacking packages (15-20 min)
+## (optional) Exercise 1: Identify lacking packages (15-20 min)
 
-!!! tip
+? tip (If running this in class)
 
     - Work individually locally (in VS Code)
     - Help each-other if getting stuck
