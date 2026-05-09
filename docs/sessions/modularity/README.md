@@ -350,7 +350,9 @@ graph TB
   do_b --> |uses| do_b_impl
 ```
 
-What is the relationship between these two reasons to use modules?
+What is the relationship between these setups, e.g. 'all/some/none of the
+times you wrap a function, you are doing so to allow/disallow/sometimes
+allow unsafe functions'?
 
 ???- question "Answer"
 
