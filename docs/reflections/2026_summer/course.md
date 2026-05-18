@@ -3,6 +3,12 @@
 - Author: Richel
 - Date: 2026-05-08
 
+I am unsure that the way Retrospects are done follows the literature;
+I feel it is mostly gut feeling.
+I can be convinced on the idea to do an evaluation formally like this,
+but I have never found the formal rules of it.
+I have failed to find a book on this so far. 
+
 ## Suggested to discuss
 
 - What is good teaching?
@@ -17,3 +23,5 @@
 - [Host of course repository](https://github.com/UPPMAX/programming_formalisms/issues/200):
   My suggestion: keep the repo where it is, as it does not benefit teaching
   to change URL.
+
+
