@@ -43,6 +43,11 @@ jobs:
           rm -rf docs/sessions/development_design
           rm docs/sessions/project_start/analysis_design/README.md
 
+      # Fix an example of a Markdown header 1
+      - name: Fix Markdown example
+        run: |
+          sed -i 's/# This is a section heading in Markdown/## This is a section heading in Markdown/g' docs/sessions/deployment/documentation.md
+
       # Indented blocks are ignored, as the linter assumes it to be code.
       # In our case, it is not: for us, it is usually an admonition (i.e. a 'question' or 'info' block)
       # Here all indented text is unindented

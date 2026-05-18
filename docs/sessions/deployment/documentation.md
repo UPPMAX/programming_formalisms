@@ -150,6 +150,11 @@ tags:
     2|m|n
     ```
 
+    <!-- The line below triggers the Markdown style checker, -->
+    <!-- as one should not have multiple title headers in a document. -->
+    <!-- To fix this, '/.github/workflows/check_markdown.yaml -->
+    <!-- converts it to a header 2 -->
+
     # This is a section heading in Markdown
 
     ## This is a subsection header
