@@ -129,7 +129,7 @@ tags:
 
         This is a code block
 
-    **Bold** and *emphasized*.
+    **Bold** and _emphasized_.
 
     A list:
 
@@ -148,7 +148,6 @@ tags:
     -|-|-
     1|x|y
     2|m|n
-
     ```
 
     # This is a section heading in Markdown
@@ -159,7 +158,7 @@ tags:
 
         This is a code block
 
-    **Bold** and *emphasized*.
+    **Bold** and _emphasized_.
 
     A list:
 
