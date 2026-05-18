@@ -97,7 +97,7 @@ flowchart TD
 > Red: Richel.
 > Green: Lars.
 > Blue: Björn.
-> 
+>
 ## Miscellaneous good links
 
 - [Further learning](../further_learning.md)
