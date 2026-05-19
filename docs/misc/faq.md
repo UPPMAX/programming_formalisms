@@ -607,17 +607,34 @@ Parts taken from [https://nbis-reproducible-research.readthedocs.io/en/course_21
 
 ## Course teaching
 
+### Why is the course learner-centered?
+
+Because that is good teaching.
+
+This course defines good teaching as 'evidence-based
+methods to let learners acquire new skills and the monitoring
+of this acquisition'. This means that it should be observed
+that learners need more/less to time to practice and following
+the schedule based on that. Learner-centered teaching has
+an effect size from 0.36 `[Hattie ranking]`
+or 0.64/0.70 `[Cornelius-White, 2007][Hattie, 2012]`.
+
+Or: it is useless to go faster than the learners can follow.
+Lecturing is known to negatively affect learning `[Hattie, 2023]`.
+
+The teaching methods of this course follow the
+evidence-based teaching cycle by `[Bell, 2020a]`,
+which allows learner-centered teaching.
+
 ## What is the goal of the shared project?
 
 See [Projects](../sessions/project/README.md) for the goal of the shared project.
 
 ## How is the course prepared?
 
-- meetings
-- lesson plans in the course material
-- general lesson plans, which can be found at
-  ['Misc } lesson_plans'](../lesson_plans/README.md)
-  of this GitHub repository
+- [Our meetings](../meeting_notes/README.md)
+- The lesson plans in the course material
+- [Our lesson plans on a per-day basis](../lesson_plans/README.md)
 
 ## What happens to the retrospectives?
 
@@ -652,3 +669,34 @@ Because we like to be transparent.
 ## Why do you publish your reflections?
 
 Because we like to be transparent.
+
+## References
+
+- `[Bell, 2020a]`
+  Bell, Mike. The fundamentals of teaching:
+  A five-step model to put the research evidence into practice. Routledge, 2020.
+- `[Cornelius-White, 2007]`
+  Cornelius-White, Jeffrey. "Learner-centered teacher-student relationships
+  are effective: A meta-analysis." Review of educational
+  research 77.1 (2007): 113-143.
+- `[Hattie, 2012]`
+  Hattie, John. Visible learning for teachers:
+  Maximizing impact on learning. Routledge, 2012.
+  The effect size of student centered learning can be found on page 157,
+  which references `[Cornelius-White, 2007]` where an
+  an effect size of 0.64 or 0.7 was found
+  One example open access study is `[Knight & Wood, 2005].`
+- `[Hattie, 2023]`
+  Hattie, John. Visible learning:
+  The sequel: A synthesis of over 2,100 meta-analyses relating to achievement.
+  Routledge, 2023. The effect size of lecturing can be found on page 363,
+  which has an effect size of -0.26 with a robustness index of 4 out of 5
+  and is based on 3 meta analyses using 273 studies using 27,296 people,
+  measuring for 614 effects with a standard error of 0.08.
+  One example open access study is `[Knight & Wood, 2005].`
+- `[Hattie ranking]`
+  [The Hattie Ranking](https://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/)
+- `[Knight & Wood, 2005]`
+  Knight, Jennifer K., and William B. Wood.
+  "Teaching more by lecturing less." Cell biology education 4.4 (2005): 298-310.
+  [paper](https://www.lifescied.org/doi/full/10.1187/05-06-0082)

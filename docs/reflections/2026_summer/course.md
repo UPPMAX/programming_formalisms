@@ -22,9 +22,11 @@
 - More formal Retrospects:
   I am unsure that the way Retrospects are done follows the literature;
   I feel it is mostly done on gut feeling.
-  I can be convinced on the idea to do an evaluation formally like this,
-  but I have never found the formal rules of it.
-  I have failed to find a book on this so far.
+  I can be convinced on the idea to do a formal evaluation like this,
+  but I have never found the formal rules of it, nor have I found a book on
+  this so.
+  If no formal Retrospect rules are found, I suggest a regular daily anonymous
+  evaluation.
 - Specify course goal again:
   [it was decided to be 'Give an understanding of formal principles of software development'](https://github.com/UPPMAX/programming_formalisms/issues/54).
   Teaching at the (Bloom) 'Understand' level does not call for a project
@@ -33,3 +35,4 @@
   However, the team decided to keep it.
   This means that we teach at the Apply level, hence I think the course goal
   should then be: 'Apply formal principles of software development'.
+
