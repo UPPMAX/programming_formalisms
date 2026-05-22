@@ -35,4 +35,6 @@
   However, the team decided to keep it.
   This means that we teach at the Apply level, hence I think the course goal
   should then be: 'Apply formal principles of software development'.
+- How often should the course run?
+  My favorite: twice a year
 
