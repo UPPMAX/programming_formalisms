@@ -1,23 +1,33 @@
 # Meeting
 
-## Remove obsolete files
+- [Should we transfer the repo to https://github.com/NAISS-Training?](https://github.com/UPPMAX/programming_formalisms/issues/200).
+  - R: Against. Keep the repo where it is, as it does not benefit teaching
+    to change URL.
+- Should the course be
+  [script-first or package-first?](https://github.com/UPPMAX/programming_formalisms/issues/225):
+  - RB: Script first, as there is no literature that recommends using
+    a package
+- [Should we publish the Zoom URL in private repository?](https://github.com/UPPMAX/programming_formalisms/issues/224):
+  - RB: yes, as this rewards the people that do prepare
+- [Should we invite more teachers?](https://github.com/UPPMAX/programming_formalisms/issues/205).
+  - RB: yes. I suggest to invite former course participants
+- How to evaluate?
+  RB is unsure that the way Retrospects are done follows the literature;
+  and feel it is mostly done on gut feeling.
+  RB can be convinced on the idea to do a formal evaluation like this,
+  but has never found the formal rules of it, nor has found a book on
+  this so.
+  - RB: follow the formal Retrospect rules, or use regular daily anonymous
+    evaluation.
+- Specify course goal again:
+  [it was decided to be 'Give an understanding of formal principles of software development'](https://github.com/UPPMAX/programming_formalisms/issues/54).
+  Teaching at the (Bloom) 'Understand' level does not call for a project
+  to Apply it, hence RB suggested to
+  [discuss with the team to remove the project](https://github.com/UPPMAX/programming_formalisms/issues/100).
+  However, the team decided to keep it.
+  This means that we teach at the Apply level
+  - RB: the course goal should then be: 'Apply formal principles of software development'.
+- How often should the course run?
+  - RB: twice a year
 
-Currently, we only use our MkDocs pages.
-This means PDFs and Powerpoint presentations
-are obsolete.
 
-Here is a list of such obsolete files:
-
-```text
-./development_design/Modular_Programming.pdf
-./development_design/Development and Programming Formalisms vt2023.pdf
-./development_design/Development_and_Programming_Formalisms.pdf
-./development_design/development_and_programming_formalisms_ht2023.pdf
-./development_design/ZoomWhiteboard.pdf
-./development_design/img/AI_assisted_No_UU_logo.pptx
-./development_design/analysis_and_design_programming_formalism_ht_2023.pdf
-./common_practices/slides/notes_code_review.pdf
-./img/development_design/AI_assisted_No_UU_logo.pptx
-```
-
-I suggest to delete all these
