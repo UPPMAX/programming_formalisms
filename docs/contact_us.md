@@ -19,5 +19,7 @@ Role                  |Name             |Contact details
 ----------------------|-----------------|------------------------------------------
 Course leader, teacher|Björn Claremar   |[Contact details](https://www.uu.se/en/contact-and-organisation/staff?query=N4-6)
 Course leader, teacher|Richèl Bilderbeek|[Contact details](https://www.uu.se/en/contact-and-organisation/staff?query=N21-617)
+Course leader, teacher|?                |?
+Teacher               |?                |?
 
 <!-- markdownlint-enable MD013 -->
