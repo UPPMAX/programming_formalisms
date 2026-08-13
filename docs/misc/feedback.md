@@ -7,9 +7,7 @@ tags:
 # Feedback
 
 You can share any feedback anonymously during the day
-[in this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSczt5TXbKmtMtIVPKhgXcQ2epsaFE4D_mSK9Tqi6CR6hU550Q/viewform?usp=publish-editor).
-
-<!-- https://hackmd.io/@k477sRgaS86BlstUj83IKQ/Byd3nNvRxl -->
+[TODO: in this Google Form](https://github.com/UPPMAX/programming_formalisms/issues/226).
 
 These results will be published publicly at the end of each day.
 
