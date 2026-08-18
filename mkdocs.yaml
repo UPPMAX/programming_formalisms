@@ -131,7 +131,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
-  - mkdocs_graphviz
+  # This plugin does not work anymore
+  # - mkdocs_graphviz
 
 plugins:
   - search # Add search box
