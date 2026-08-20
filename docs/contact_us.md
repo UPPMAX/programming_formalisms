@@ -18,8 +18,8 @@ Never hesitate to contact us!
 Role                  |Name             |Contact details
 ----------------------|-----------------|------------------------------------------
 Course leader, teacher|Björn Claremar   |[Contact details](https://www.uu.se/en/contact-and-organisation/staff?query=N4-6)
+Course leader, teacher|Marcus Lundberg  |[Contact details](https://www.scilifelab.se/researchers/marcus-lundberg/)
 Course leader, teacher|Richèl Bilderbeek|[Contact details](https://www.uu.se/en/contact-and-organisation/staff?query=N21-617)
-Course leader, teacher|?                |?
 Teacher               |?                |?
 
 <!-- markdownlint-enable MD013 -->
