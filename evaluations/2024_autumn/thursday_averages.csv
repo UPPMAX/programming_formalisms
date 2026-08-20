@@ -1,0 +1,19 @@
+question,mean
+"Comprehend the principles of object-oriented development, such as information hi",7.8
+Gain an introductory understanding of modular programming,7.6
+I can criticise functions,8.4
+I can give a function a proper name,9
+I can give some features of good function design,9.2
+I can write a class to express what the data it contains,7.6
+I inderstand difference between composition and aggregation,6.4
+I understand the type of relation 'composition' is,7.6
+I understand the type of relation 'inheritance' is,7.4
+I understand why function design is important,9.2
+Iterative refactoring.,3
+"Learn about common interfaces, protocols, and their role in modular programming.",4.8
+"Learn the definition and characteristics of an object, including its ability to ",7.8
+Recognize and address tight coupling in code to improve modularity.,2.8
+"Recognize the importance of relationships between classes, including association",7.2
+Understand the benefits of object-oriented development,8.4
+Understand the concept of code smells and design smells.,6
+Understand the definition and structure of a class as a collection of objects wi,8.6
