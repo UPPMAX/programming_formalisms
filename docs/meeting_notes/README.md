@@ -7,7 +7,9 @@ tags:
 
 # Meeting notes
 
-The meeting notes.
+The public meeting notes.
+
+There is [a GitHub repository for private notes](https://github.com/programming-formalisms/teachers).
 
 <!-- Putting the links between less-then and greater-than signs does not work here :-/ -->
 
