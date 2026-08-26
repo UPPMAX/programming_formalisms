@@ -28,7 +28,11 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/cou
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Lars Eklund       |[Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-15:40 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
+.         | 13:00-14:00 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
+.         | 14:00-14:15 | .                 |Break
+.         | 14:15-15:00 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
+.         | 15:00-15:15 | .                 |Break
+.         | 15:15-15:40 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
 .         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
 .         |.            |.                  |.
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
