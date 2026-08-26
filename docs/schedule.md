@@ -61,7 +61,7 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_p
 .         | 15:15-15:50 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
-Thursday  | 09:00-10:00 | Richèl Bilderbeek |Use pre-merge code reviews
+Thursday  | 09:00-10:00 | Richèl Bilderbeek |Use pre-merge code reviews, in-code comments
 .         | 10:00-10:15 | .                 |Break
 .         | 10:15-11:00 | Richèl Bilderbeek |Class design 1
 .         | 11:00-11:15 | .                 |Break
