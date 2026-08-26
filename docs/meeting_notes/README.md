@@ -50,5 +50,11 @@ There is [a GitHub repository for private notes](https://github.com/programming-
 - [20241115](20241115.md)
 - [20241129](20241129.md)
 - [20241217](20241217.md)
+- [20251204](20251204.md)
+- [20260427](20260427.md)
+- [20260609](20260609.md)
+- [20260818](20260818.md)
+- [20260825](20260825.md)
+- [20260903](20260903.md)
 
-`next.md` (if present) are the notes for a yet-to-be-scheduled meeting.
+- `next.md` (if present) are the notes for a yet-to-be-scheduled meeting.
