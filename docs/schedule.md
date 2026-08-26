@@ -53,6 +53,7 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
 .         | 10:15-11:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
+.         | ?           | RB                |Use a symbolic debugger
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-14:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 14:00-14:15 | .                 |Break
@@ -69,14 +70,17 @@ Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Working with multiple branches](s
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-14:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | .                 |.
+.         | 14:15-15:00 | RB                |Use pre-merge code reviews
 .         | 15:00-15:15 | .                 |Break
 .         | 15:15-15:50 | .                 |.
 .         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
-Friday    | 09:00-10:00 | .                 |.
+Friday    | 09:00-10:00 | ML                |Runtime speed profiles 1/2
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | .                 |.
+.         | 10:15-11:00 | ML                |Runtime speed profiles 2/2
+.         | ?           | ML                |Big-O
+.         | ?           | ML                |Improve run-time speed 1/2
+.         | ?           | ML                |Improve run-time speed 2/2
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Björn Claremar    |[Social Coding](sessions/social_coding/README.md)
 .         | 12:00-13:00 | .                 |Break
