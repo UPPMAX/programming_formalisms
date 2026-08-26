@@ -18,7 +18,6 @@ For a detailed daily schedule, see the detailed schedule of that day.
 
 
 <!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
-<!-- markdownlint-disable MD055 --><!-- We use three pipes to indicate an empty row -->
 
 Day       | Time        | Teacher           | Subject
 ----------|-------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,4 +97,3 @@ Friday    | 09:00-10:00 | Richèl Bilderbeek |[Implement the project as a packag
 -->
 
 <!-- markdownlint-enable MD013 -->
-<!-- markdownlint-enable MD055 -->
