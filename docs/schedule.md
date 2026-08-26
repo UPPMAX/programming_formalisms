@@ -26,27 +26,27 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/cou
 .         | 10:00-10:15 | .                 |Break
 .         | 10:15-11:00 | Richèl Bilderbeek |[Registered report](sessions/registered_report/README.md)
 .         | 11:00-11:15 | .                 |Break
-.         | 11:15-12:00 | Lars Eklund       |[Define and plan project](sessions/project_start/analysis_design/README.md)
+.         | 11:15-12:00 | Richèl Bilderbeek |[Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
+.         | 13:00-14:00 | .                 |.
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
+.         | 14:15-15:00 | .                 |.
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Lars Eklund       |[Requirements and risk assessment introduction](sessions/project_start/analysis_design/Risk.md)
-.         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
+.         | 15:15-15:50 | .                 |.
+.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | Richèl Bilderbeek |[Version control](sessions/version_control/README.md)
+.         | 10:15-11:00 | .                 |.
 .         | 11:00-11:15 | .                 |Break
-.         | 11:15-12:00 | Richèl Bilderbeek |[Integrated development environment](sessions/ide/README.md)
+.         | 11:15-12:00 | .                 |.
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |[Merge conflicts](sessions/merge_conflicts/README.md)
+.         | 13:00-14:00 | .                 |.
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | Richèl Bilderbeek |[Design introduction](sessions/design_introduction/README.md), [Function design](sessions/function_design/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |[Development introduction](sessions/development_introduction/README.md), [assert](sessions/assert/README.md)
-.         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
+.         | 15:15-15:50 | Richèl Bilderbeek |[Development introduction](sessions/development_introduction/README.md), [assert](sessions/assert/README.md)
+.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
 Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
 .         | 10:00-10:15 | .                 |Break
@@ -58,8 +58,8 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
-.         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
+.         | 15:15-15:50 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
+.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
 Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
 .         | 10:00-10:15 | .                 |Break
@@ -69,14 +69,14 @@ Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Working with multiple branches](s
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-14:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
+.         | 14:15-15:00 | .                 |.
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Richèl Bilderbeek |[Formal testing framework](sessions/testing_framework/README.md)
-.         | 15:40-16:00 | Lars Eklund       |Confidence and retrospect
+.         | 15:15-15:50 | .                 |.
+.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
-Friday    | 09:00-10:00 | Richèl Bilderbeek |[Implement the project as a package](sessions/package/README.md)
+Friday    | 09:00-10:00 | .                 |.
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | Richèl Bilderbeek |[Implement the project as a package](sessions/package/README.md)
+.         | 10:15-11:00 | .                 |.
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Björn Claremar    |[Social Coding](sessions/social_coding/README.md)
 .         | 12:00-13:00 | .                 |Break
@@ -85,8 +85,8 @@ Friday    | 09:00-10:00 | Richèl Bilderbeek |[Implement the project as a packag
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | Björn Claremar    |[Documentation part 2](sessions/deployment/documentation.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:40 | Björn Claremar    |[Wrap-up](misc/wrap_up.md)
-.         | 15:40-16:00 | Lars Eklund       | Confidence and retrospect
+.         | 15:15-15:50 | Björn Claremar    |[Wrap-up](misc/wrap_up.md)
+.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 
 <!--
 
