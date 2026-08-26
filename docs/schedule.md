@@ -28,7 +28,7 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/cou
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[Define and plan project](sessions/project_start/analysis_design/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | .                 |.
+.         | 13:00-14:00 | Björn Claremar    |[Deployment](sessions/deployment/deploy.md)
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | .                 |.
 .         | 15:00-15:15 | .                 |Break
