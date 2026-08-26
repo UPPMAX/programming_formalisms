@@ -30,57 +30,53 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek |[Course introduction](sessions/cou
 .         | 12:00-13:00 | .                 |Break
 .         | 13:00-14:00 | Björn Claremar    |[Deployment](sessions/deployment/deploy.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | .                 |.
+.         | 14:15-15:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:50 | .                 |.
+.         | 15:15-15:50 | Richèl Bilderbeek |[Design introduction](sessions/design_introduction/README.md), [Function design](sessions/function_design/README.md)
 .         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
-Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Software development life cycle](sessions/lifecycle/README.md)
-.         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | .                 |.
-.         | 11:00-11:15 | .                 |Break
-.         | 11:15-12:00 | .                 |.
-.         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | .                 |.
-.         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |[Design introduction](sessions/design_introduction/README.md), [Function design](sessions/function_design/README.md)
-.         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:50 | Richèl Bilderbeek |[Development introduction](sessions/development_introduction/README.md), [assert](sessions/assert/README.md)
-.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
-.         |.            |.                  |.
-Wednesday | 09:00-10:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
+Tuesday   | 09:00-10:00 | Richèl Bilderbeek |[Development introduction](sessions/development_introduction/README.md), [assert](sessions/assert/README.md)
 .         | 10:00-10:15 | .                 |Break
 .         | 10:15-11:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
-.         | ?           | RB                |Use a symbolic debugger
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
+.         | 13:00-14:00 | Richèl Bilderbeek |[TDD](sessions/tdd/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
+.         | 14:15-15:00 | Richèl Bilderbeek |Use a symbolic debugger
 .         | 15:00-15:15 | .                 |Break
 .         | 15:15-15:50 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
-Thursday  | 09:00-10:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
+Wednesday | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
+.         | 10:15-11:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_programming/README.md)
 .         | 11:00-11:15 | .                 |Break
-.         | 11:15-12:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
+.         | 11:15-12:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
 .         | 12:00-13:00 | .                 |Break
-.         | 13:00-14:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
+.         | 13:00-14:00 | Richèl Bilderbeek |[Working with multiple branches](sessions/branches/README.md)
 .         | 14:00-14:15 | .                 |Break
-.         | 14:15-15:00 | RB                |Use pre-merge code reviews
+.         | 14:15-15:00 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:50 | .                 |.
+.         | 15:15-15:50 | Richèl Bilderbeek |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
 .         |.            |.                  |.
-Friday    | 09:00-10:00 | ML                |Runtime speed profiles 1/2
+Thursday  | 09:00-10:00 | Richèl Bilderbeek |Use pre-merge code reviews
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | ML                |Runtime speed profiles 2/2
-.         | ?           | ML                |Big-O
-.         | ?           | ML                |Improve run-time speed 1/2
-.         | ?           | ML                |Improve run-time speed 2/2
+.         | 10:15-11:00 | Richèl Bilderbeek |Class design 1
+.         | 11:00-11:15 | .                 |Break
+.         | 11:15-12:00 | Marcus Lundberg   |Runtime speed profiles 1/2
+.         | 12:00-13:00 | .                 |Break
+.         | 13:00-14:00 | Marcus Lundberg   |Runtime speed profiles 2/2
+.         | 14:00-14:15 | .                 |Break
+.         | 14:15-15:00 | Marcus Lundberg   |Big-O 1/2
+.         | 15:00-15:15 | .                 |Break
+.         | 15:15-15:50 | Marcus Lundberg   |Big-O 2/2
+.         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
+.         |.            |.                  |.
+Friday    | 09:00-10:00 | Marcus Lundberg   |Improve run-time speed 1/2
+.         | 10:00-10:15 | .                 |Break
+.         | 10:15-11:00 | Marcus Lundberg   |Improve run-time speed 2/2
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Björn Claremar    |[Social Coding](sessions/social_coding/README.md)
 .         | 12:00-13:00 | .                 |Break
