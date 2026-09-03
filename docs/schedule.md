@@ -63,7 +63,7 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek |[Pair programming](sessions/pair_p
 .         |.            |.                  |.
 Thursday  | 09:00-10:00 | Richèl Bilderbeek |Use pre-merge code reviews, in-code comments
 .         | 10:00-10:15 | .                 |Break
-.         | 10:15-11:00 | Richèl Bilderbeek |Class design 1
+.         | 10:15-11:00 | Richèl Bilderbeek |Refactoring
 .         | 11:00-11:15 | .                 |Break
 .         | 11:15-12:00 | Marcus Lundberg   |Runtime speed profiles 1/2
 .         | 12:00-13:00 | .                 |Break
@@ -85,19 +85,7 @@ Friday    | 09:00-10:00 | Marcus Lundberg   |Improve run-time speed 1/2
 .         | 14:00-14:15 | .                 |Break
 .         | 14:15-15:00 | Björn Claremar    |[Documentation part 2](sessions/deployment/documentation.md)
 .         | 15:00-15:15 | .                 |Break
-.         | 15:15-15:50 | Björn Claremar    |[Wrap-up](misc/wrap_up.md)
+.         | 15:15-15:50 | Richèl Bilderbeek |[Wrap-up](misc/wrap_up.md)
 .         | 15:50-16:00 | Richèl Bilderbeek |Evaluation
-
-<!--
-
-[Formal git workflow, contribute](sessions/git/contribute.md)
-[Social coding and sharing](sessions/social_coding/social_coding.md)
-[Expressive data type](sessions/expressive_data_type/README.md)
-[Object-oriented design](sessions/object_oriented_development/README.md)
-[Has-a relation](sessions/has_a_relation/README.md)
-[class design](sessions/data_structures/class_design.md)
-[Runtime speed profiles](sessions/optimisation/runtime_speed_profiles.md)
-[Improve run-time speed](sessions/optimisation/improve_runtime_speed.md)
--->
 
 <!-- markdownlint-enable MD013 -->
