@@ -16,8 +16,7 @@ to give scientists with some experience in programming and scripting
 
 Only what is used by the student project is course content,
 with alternatives relevant to academics provided in lecture
-(or extra material) to what we do
-([#52](https://github.com/UPPMAX/programming_formalisms/issues/52)).
+(or extra material) to what we do.
 As we need discuss alternatives besides the course content, by definition,
 all exercises cannot be part of the project
 ([#43](https://github.com/UPPMAX/programming_formalisms/issues/43)).
@@ -39,11 +38,10 @@ Teach evidence-based or expert-recommended best practices on how to:
 - write reusable code
 - deploy code
 
-Understand and do formal software development practices:
+Apply formal software development practices:
 
-- understand, use and create a UML class diagram
-- understand and use a formal git branching model
-- understand and use a formal project workflow
-- understand and practice social coding,
+- work with a formal git branching model
+- work within a formal project workflow
+- do social coding,
   such as pair programming and code reviews
-- understand and use a run-time speed profiler
+- use a run-time speed profiler
