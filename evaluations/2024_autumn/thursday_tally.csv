@@ -1,0 +1,61 @@
+question,answer,n
+"Comprehend the principles of object-oriented development, such as information hi",6,2
+"Comprehend the principles of object-oriented development, such as information hi",8,1
+"Comprehend the principles of object-oriented development, such as information hi",9,1
+"Comprehend the principles of object-oriented development, such as information hi",10,1
+Gain an introductory understanding of modular programming,7,2
+Gain an introductory understanding of modular programming,8,3
+I can criticise functions,7,1
+I can criticise functions,8,2
+I can criticise functions,9,1
+I can criticise functions,10,1
+I can give a function a proper name,8,1
+I can give a function a proper name,9,3
+I can give a function a proper name,10,1
+I can give some features of good function design,7,1
+I can give some features of good function design,9,1
+I can give some features of good function design,10,3
+I can write a class to express what the data it contains,7,2
+I can write a class to express what the data it contains,8,3
+I inderstand difference between composition and aggregation,4,1
+I inderstand difference between composition and aggregation,6,2
+I inderstand difference between composition and aggregation,7,1
+I inderstand difference between composition and aggregation,9,1
+I understand the type of relation 'composition' is,5,1
+I understand the type of relation 'composition' is,7,1
+I understand the type of relation 'composition' is,8,1
+I understand the type of relation 'composition' is,9,2
+I understand the type of relation 'inheritance' is,6,1
+I understand the type of relation 'inheritance' is,7,2
+I understand the type of relation 'inheritance' is,8,1
+I understand the type of relation 'inheritance' is,9,1
+I understand why function design is important,7,1
+I understand why function design is important,9,1
+I understand why function design is important,10,3
+Iterative refactoring.,1,2
+Iterative refactoring.,2,1
+Iterative refactoring.,4,1
+Iterative refactoring.,7,1
+"Learn about common interfaces, protocols, and their role in modular programming.",3,1
+"Learn about common interfaces, protocols, and their role in modular programming.",5,3
+"Learn about common interfaces, protocols, and their role in modular programming.",6,1
+"Learn the definition and characteristics of an object, including its ability to ",6,1
+"Learn the definition and characteristics of an object, including its ability to ",7,1
+"Learn the definition and characteristics of an object, including its ability to ",8,1
+"Learn the definition and characteristics of an object, including its ability to ",9,2
+Recognize and address tight coupling in code to improve modularity.,1,2
+Recognize and address tight coupling in code to improve modularity.,2,1
+Recognize and address tight coupling in code to improve modularity.,3,1
+Recognize and address tight coupling in code to improve modularity.,7,1
+"Recognize the importance of relationships between classes, including association",4,1
+"Recognize the importance of relationships between classes, including association",6,1
+"Recognize the importance of relationships between classes, including association",8,2
+"Recognize the importance of relationships between classes, including association",10,1
+Understand the benefits of object-oriented development,8,3
+Understand the benefits of object-oriented development,9,2
+Understand the concept of code smells and design smells.,4,2
+Understand the concept of code smells and design smells.,5,1
+Understand the concept of code smells and design smells.,8,1
+Understand the concept of code smells and design smells.,9,1
+Understand the definition and structure of a class as a collection of objects wi,8,2
+Understand the definition and structure of a class as a collection of objects wi,9,3

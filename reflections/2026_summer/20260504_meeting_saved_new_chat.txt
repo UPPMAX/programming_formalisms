@@ -1,0 +1,246 @@
+2026-05-04 08:49:53 From [Learner 1] To Everyone:
+	Hi everyone!
+	
+2026-05-04 08:50:02 From [Teacher from 11:00 onward] Lars Eklund To Everyone:
+	HI
+	
+2026-05-04 09:01:05 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://richelbilderbeek.github.io/teaching/who_is_richel/
+	
+2026-05-04 09:10:50 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/course_introduction/
+	
+2026-05-04 09:13:52 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	Marcus! Welcome!
+	
+2026-05-04 09:14:03 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	And here we have a private chat!
+	
+2026-05-04 09:14:09 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	Welcome to the course!
+	
+2026-05-04 09:14:14 From [Learner 2] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	I got the wrong zoom link so I missed the introduction .What are we supposed to do?
+	
+2026-05-04 09:14:17 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	What is your question
+	
+2026-05-04 09:14:22 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	Ah, clear!
+	
+2026-05-04 09:14:47 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	Read ://uppmax.github.io/programming_formalisms/sessions/course_introduction , then do exercise 1, then signal you are done, then do exercise 2 :-)
+	
+2026-05-04 09:14:53 From [Teacher on Friday] Björn Claremar To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/course_introduction/
+	
+2026-05-04 09:14:53 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	Clear enough?
+	
+2026-05-04 09:14:55 From [Learner 2] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	ok!
+	
+2026-05-04 09:15:01 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	Great! Enjoy!
+	
+2026-05-04 09:15:35 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 3] (direct message):
+	You are first, well done! Was everything clear?
+	
+2026-05-04 09:16:43 From [Learner 3] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Yes, all clear
+	
+2026-05-04 09:35:00 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/project_introduction/
+	
+2026-05-04 10:02:41 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Please take a break until 10:15!
+	
+2026-05-04 10:03:38 From [Teacher on Friday] Björn Claremar To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Seems [Learner 7] has not set up GitHub and is not good in English
+	Shall I take here in a break out room 10.15?
+	
+2026-05-04 10:04:00 From [Teacher on Friday] Björn Claremar To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	It was very difficult to make her answer if she had a user name even
+	
+2026-05-04 10:04:01 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Teacher on Friday] Björn Claremar (direct message):
+	Thanks! I will take some extra care there :-)
+	
+2026-05-04 10:08:05 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Please take a break until 10:15!
+	
+2026-05-04 10:33:38 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/registered_report/#registered-report
+	
+2026-05-04 11:10:07 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 2] (direct message):
+	I was thinking about your comments on replicability/reproducibility. 
+	
+	I don't know your train of thoughts yet, but I think you'd agree it would be fun if there would be a research that produce a significant result on one operating system, and none on another :-)
+	
+	Thanks for this idea!
+	
+2026-05-04 11:12:12 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 5] (direct message):
+	Hi [Learner 5], can you speak Spanish? 
+	
+	We have a learner that struggles with English. She is now with a Spanish speaker, until 12:00. I look for someone to take over from 13:00 onward. Can you speak Spaning and would you volunteer? Would be awesome!
+	
+2026-05-04 11:13:44 From [Learner 2] To Everyone:
+	https://www.nature.com/articles/nbt.3820
+	
+2026-05-04 11:17:03 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 6] (direct message):
+	Hi [Learner 6], welcome the course! We will get you up to speed soon :-)
+	
+2026-05-04 11:17:28 From [Learner 5] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Hey. Yes I do. Happy to help.
+	
+2026-05-04 11:18:10 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 6] (direct message):
+	I think we have met before. I have good (but very vague memories) of you! Or am I misremembering?
+	
+2026-05-04 11:18:47 From [Learner 6] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Yes! I took the intro to python course with you last semester 🙂
+	
+2026-05-04 11:21:51 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	Lars is discussing this page:
+	
+	https://uppmax.github.io/programming_formalisms/sessions/project_start/analysis_design/ 
+	
+	In case you want it one your second/third/fourth screen :-)
+	
+2026-05-04 12:38:04 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 1] (direct message):
+	Hi [Learner 1], I see you've not yet accepted your GitHub invite yet. How to do so is described at https://uppmax.github.io/programming_formalisms/sessions/project_introduction/#exercise-3-share-your-hypothesis-to-test  :-)
+	
+2026-05-04 12:38:12 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 1] (direct message):
+	*[Learner 1]
+	
+2026-05-04 13:05:21 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://github.com/programming-formalisms/programming_formalisms_project_summer_2026
+	
+2026-05-04 13:13:40 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 1] (direct message):
+	Looking now ... :-) ....
+	
+2026-05-04 13:14:31 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 1] (direct message):
+	Nope, not yet ...
+	Image 2026-05-04 at 131424.png
+	
+2026-05-04 13:15:07 From [Learner 1] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	OK! I'll look into it again.
+	
+2026-05-04 13:15:40 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 1] (direct message):
+	We'll have the time to figure it out. You can follow the lecture first :-)
+	
+2026-05-04 13:35:32 From [Teacher] Lars Eklund To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/project_start/analysis_design/Risk/
+	
+2026-05-04 13:53:43 From [Teacher] Lars Eklund To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/development_design/risk_and_requirements_exercise/
+	
+2026-05-04 13:55:50 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Björn Claremar (direct message):
+	Welcome back!
+	
+2026-05-04 14:22:12 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:22:31 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:22:55 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:23:12 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:23:28 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:23:47 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:24:13 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:24:38 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:24:57 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:25:47 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:34:26 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BREAKTIME! Break until 14:40!
+	
+2026-05-04 14:36:46 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	I stole Federico!
+	
+2026-05-04 14:40:00 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BACK TO WORK! Good luck with finishing the exercises!
+	
+2026-05-04 14:41:54 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	BACK TO WORK :-) ! Good luck with finishing the exercises!
+	
+2026-05-04 15:16:27 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 5] (direct message):
+	Thanks so much for your help! I hope you are enjoying it!
+	
+2026-05-04 15:21:01 From [Learner 5] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Yes! Thanks. If you want to team me up with her again that is of course great.
+	
+2026-05-04 15:21:56 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 5] (direct message):
+	Great to hear! I will happily use you to help out (together with the other Spanish-speaking people)!
+	
+2026-05-04 15:31:39 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To Everyone:
+	Break until 15:40! See you then!
+	
+2026-05-04 15:44:35 From [Teacher] Lars Eklund To Everyone:
+	https://hackmd.io/@k477sRgaS86BlstUj83IKQ/RetrospectMonday2026/edit
+	
+2026-05-04 15:52:16 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 8] (direct message):
+	- What helped us learn (let us move forward) 2 min
+	
+	- What stopped us from learning (What held us back) 2 min
+	
+	- What could we do to improve learning (What can we invent) 2 min
+	
+2026-05-04 15:54:42 From [Learner 8] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	First question: [Merged with shared document]
+	3rd question: [Merged with shared document]
+	
+2026-05-04 15:54:50 From [Learner 9] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Hi Richel, sorry to bother. My stuff disappeared, both the comment I added and my name and email…
+	
+2026-05-04 15:54:59 From [Learner 8] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	2nd question: I was too busy trying to fix my connection issue
+	
+2026-05-04 15:55:02 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 8] (direct message):
+	Thanks, I will blend it with the rest!
+	
+2026-05-04 15:55:18 From [Teacher in background] Richèl 'Rea-shell' Bilderbeek To [Learner 8] (direct message):
+	No need to feel bad, things like this happen :-)
+	
+2026-05-04 15:59:30 From [Learner 9] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Ok, I rewrote it and it did not disappear again, it seems 😬
+	
+2026-05-04 16:02:11 From [Learner 8] To [Teacher in background] Richèl 'Rea-shell' Bilderbeek (direct message):
+	Confidence report
+	Q1: [Merged with shared document]
+	Q2: [Merged with shared document]
+	Q3: [Merged with shared document]
+	Q4: [Merged with shared document]
+	Q5: [Merged with shared document]
+	Q6: [Merged with shared document]
+	Q7: [Merged with shared document]
+	Q8: [Merged with shared document]
+	Q9: [Merged with shared document]
+	Q10: [Merged with shared document]
+	Q11: [Merged with shared document]
+	Q12: [Merged with shared document]
+	Q13: [Merged with shared document]
+	Q14: [Merged with shared document]
+	Q15: [Merged with shared document]
+	Q16: [Merged with shared document]
+	
+2026-05-04 16:02:14 From [Learner 10] To Everyone:
+	Thank you for today
+	
+2026-05-04 16:02:19 From [Learner 9] To Everyone:
+	!\
+	

@@ -1,0 +1,13 @@
+@startuml
+!pragma useVerticalIf on
+start
+    repeat:for each element in array; 
+        repeat:for each element i in array;
+            if (array[i] > array[i+1]) then (yes) 
+                :swap array[i] and array[i + 1];
+            else (no)
+            endif
+    repeat while (i < n-1 ) is (true)
+  repeat while (elements left in array) is (true) not (//sorted//)
+stop
+@enduml
