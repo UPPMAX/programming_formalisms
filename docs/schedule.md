@@ -52,9 +52,9 @@ Wednesday | 09:00-10:00 | Richèl Bilderbeek    |[Pair programming](sessions/pai
 .         | 10:00-10:15 | .                    |Break
 .         | 10:15-11:00 | Richèl Bilderbeek    |[Pair programming](sessions/pair_programming/README.md)
 .         | 11:00-11:15 | .                    |Break
-.         | 11:15-12:00 | ?Chaitali Chakraborty|[Working with multiple branches](sessions/branches/README.md)
+.         | 11:15-12:00 | Chaitali Chakraborty |[Working with multiple branches](sessions/branches/README.md)
 .         | 12:00-13:00 | .                    |Break
-.         | 13:00-14:00 | ?Chaitali Chakraborty|[Working with multiple branches](sessions/branches/README.md)
+.         | 13:00-14:00 | Chaitali Chakraborty |[Working with multiple branches](sessions/branches/README.md)
 .         | 14:00-14:15 | .                    |Break
 .         | 14:15-15:00 | Richèl Bilderbeek    |[Continuous integration](sessions/continuous_integration/README.md)
 .         | 15:00-15:15 | .                    |Break
