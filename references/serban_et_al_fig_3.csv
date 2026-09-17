@@ -1,0 +1,31 @@
+Nr.,Title
+1,Use Sanity Checks for All External Data Sources
+2,"Check that Input Data is Complete, Balanced and Well Distributed"
+3,Write Reusable Scripts for Data Cleaning and Merging
+4,Ensure Data Labelling is Performed in a Strictly Controlled Process
+5,Make Data Sets Available on Shared Infrastructure (private or public)
+6,Share a Clearly Defined Training Objective within the Team
+7,Capture the Training Objective in a Metric thatis Easy to Measure and Understand
+8,Test all Feature Extraction Code
+9,Assign an Owner to Each Feature and Document its Rationale
+10,Actively Remove or Archive Features That are Not Used
+11,Peer Review Training Scripts
+12,Enable Parallel Training Experiments
+13,Automate Hyper-Parameter Optimisation and Model Selection
+14,Continuously Measure Model Quality and Performance
+15,Share Status and Outcomes of Experiments Within the Team
+16,"Use Versioningfor Data, Model, Configurations and Training Scripts"
+,
+17,Run Automated Regression Tests
+18,Use Continuous Integration
+19,Use Static Analysis to Check Code Quality
+20,Automate Model Deployment
+21,Continuously Monitor the Behaviour of Deployed Models
+22,Enable Shadow Deployment
+23,Perform Checks to Detect Skews between Models
+24,Enable Automatic Roll Backs for Production Models
+25,Log Production Predictions with the Model's Version and Input Data
+26,Use A Collaborative Development Platform
+27,Work Against a Shared Backlog
+28,"Communicate, Align, and Collaborate With Multidisciplinary Team Members"
+29,Enforce Fairness and Privacy

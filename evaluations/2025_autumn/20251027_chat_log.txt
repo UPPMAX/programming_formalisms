@@ -1,0 +1,155 @@
+08:48:24 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://uppmax.github.io/programming_formalisms/evaluations/2025_autumn/20251024/
+	
+09:12:31 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Björn is at https://uppmax.github.io/programming_formalisms/git/branches/  :-)
+	
+09:17:19 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L1 (direct message):
+	For today, during the pair programming, I will group you with someone very comfortable with VSCode. In that way, you'll catch up better
+	
+09:18:11 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L2 (direct message):
+	Hi Alice, for today, during the pair programming, I will group you with someone very comfortable with Python. In that way, you'll catch up better :-) . Will be fun!
+	
+09:18:36 From L2 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	Yes, thank you!
+	
+09:19:43 From L1 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	Ok, thanks
+	
+09:19:58 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L1 (direct message):
+	It will be most fun that way :-)
+	
+09:21:39 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L3 (direct message):
+	Hi L3! Welcome to the Programming Formalisms course! How fun to see you here too!
+	
+09:21:59 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L3 (direct message):
+	We are now going through https://uppmax.github.io/programming_formalisms/git/branches/  :-)
+	
+09:40:30 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Link to repo: https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025
+	
+09:40:54 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Link to Pull Request: https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/pull/17
+	
+09:44:49 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/pull/17
+	
+09:56:47 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Break until 10:12
+	
+10:13:59 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Exercise is at https://uppmax.github.io/programming_formalisms/git/branches/#exercise-1-create-a-and-switch-to-a-project-branch  :-)
+	
+10:16:23 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	This is the issue with info: https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/issues/18
+	
+10:19:50 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Exercise is at https://uppmax.github.io/programming_formalisms/git/branches/#exercise-1-create-a-and-switch-to-a-project-branch  :-) 
+	
+	This is the issue with info: https://github.com/programming-formalisms/programming_formalisms_project_autumn_2025/issues/18
+	
+10:50:37 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	We are on exercise https://uppmax.github.io/programming_formalisms/git/branches/#exercises  :-)
+	
+11:04:55 From Björn Claremar To Everyone:
+	https://uppmax.github.io/programming_formalisms/git/merge/
+	
+11:15:30 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L3 (direct message):
+	Hi L3, welcome back! Want me to get you up to speed?
+	
+11:33:35 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L4 (direct message):
+	The answer is that you change branches in a folder that has an analysis running, the files will be changed to the versions on that branch. 
+	
+	This is just as much a problem as in other contexts: I think it results in undefined behavior :-)
+	
+11:34:27 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	thanks
+	
+11:34:40 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L4 (direct message):
+	I hope it helps :-)
+	
+11:34:46 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	so so
+	
+11:35:03 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	I was looking for a way to avoid duplicates
+	
+11:35:23 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	maybe using tree
+	
+11:35:28 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	or something like that
+	
+11:36:50 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L4 (direct message):
+	A code repository is not too big (typically megabytes), so duplicates are fine. I actually do this: run code someplace and modify elsewhere :-)
+	
+11:38:57 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	I might start doing that
+	
+11:39:19 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L4 (direct message):
+	I typically run code on an HPC cluster and develop locally :-) . It works great!
+	
+11:40:12 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	https://git-scm.com/docs/git-worktree
+	
+11:40:26 From L4 To Richèl 'Rea-shell' Bilderbeek [Silent observer] (direct message):
+	I was thinking something like this one
+	
+11:41:33 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L4 (direct message):
+	Cool, I did not know that that existed! Thanks! I do feel I do not really need it, but hey, now I know I can :-)
+	
+11:47:23 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Björn is at https://uppmax.github.io/programming_formalisms/git/contribute/  :-)
+	
+12:01:26 From Björn Claremar To Everyone:
+	12.50 sensitive data
+	
+12:01:33 From Björn Claremar To Everyone:
+	13.00 ordinary Schedule!
+	
+12:59:06 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Early warning: I will show some program and maybe Zoom kicks me out. If I am kicked out, please start reading https://uppmax.github.io/programming_formalisms/tdd_at_bigger_scale/  . I will then be back in 2 minutes :-)
+	
+13:00:28 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	- [ ] Discuss my reflection, `https://uppmax.github.io/programming_formalisms/reflections/2025_autumn/20251024/`
+	- [ ] Show TDD examples:
+	    - Conquer Chess, at `https://github.com/richelbilderbeek/conquer_chess/blob/main/src/test_game.cpp#L57`
+	    - beautier, at `https://github.com/ropensci/beautier/blob/main/tests/testthat/test-check_param.R`
+	- [ ] Discuss TDD at a bigger scale, `https://uppmax.github.io/programming_formalisms/tdd_at_bigger_scale/`
+	
+13:10:18 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://uppmax.github.io/programming_formalisms/tdd_at_bigger_scale/#tdd-at-a-bigger-scale
+	
+13:11:50 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://uppmax.github.io/programming_formalisms/tdd_at_bigger_scale/#1-why-use-test-driven-development-at-a-bigger-scale
+	
+13:15:15 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Please run to and including 3.1, not 3.2
+	
+13:15:34 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	(but you can continue reading if you want: we'll discuss it soon)
+	
+13:16:03 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L1 (direct message):
+	Was it a clear text so far?
+	
+13:52:29 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Take a break until 14:07
+	
+14:08:54 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://uppmax.github.io/programming_formalisms/pair_programming/
+	
+14:12:41 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://uppmax.github.io/programming_formalisms/pair_programming/#exercise-1-understand-pair-programming
+	
+14:14:36 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To L3 (direct message):
+	Want to blend in with the groups?
+	
+14:55:55 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	Break until 15:10!
+	
+15:09:25 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://docs.python.org/3/reference/import.html#regular-packages
+	
+15:10:42 From Richèl 'Rea-shell' Bilderbeek [Silent observer] To Everyone:
+	https://uppmax.github.io/programming_formalisms/pair_programming/#exercise-3-practice-pair-programming
+	

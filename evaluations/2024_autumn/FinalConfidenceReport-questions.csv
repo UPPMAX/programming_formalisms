@@ -1,0 +1,55 @@
+Slide 1;;;;;;;;;;;
+Date;2024-11-22;;;;;;;;;;
+Session;1;;;;;;;;;;
+Type;slide;;;;;;;;;;
+Title;Final confidence report;;;;;;;;;;
+Respondents;1;;;;;;;;;;
+;;;;;;;;;;;
+No votes for this session;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Question 2;;;;;;;;;;;
+Date;2024-11-22;;;;;;;;;;
+Session;1;;;;;;;;;;
+Type;scales;;;;;;;;;;
+Question;I am confidant that...;;;;;;;;;;
+Respondents;6;;;;;;;;;;
+;;;;;;;;;;;
+Choices;Weighted average;1;2;3;4;5;6;7;8;9;10
+ I understand how to methodically optimize the runtime speed of my code;7,83;0;0;0;1;0;0;1;2;0;2
+- I understand what Big O is;9,17;0;0;0;0;0;0;0;1;3;2
+- I can create a Big O profile of my project;7,33;1;0;0;0;0;1;0;1;1;2
+- I can read a runtime speed profile;9,33;0;0;0;0;0;0;1;0;1;4
+- I can create a runtime speed profile;8,83;0;0;0;1;0;0;0;0;1;4
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Question 3;;;;;;;;;;;
+Date;2024-11-22;;;;;;;;;;
+Session;1;;;;;;;;;;
+Type;scales;;;;;;;;;;
+Question;I am confidant that...;;;;;;;;;;
+Respondents;6;;;;;;;;;;
+;;;;;;;;;;;
+Choices;Weighted average;1;2;3;4;5;6;7;8;9;10
+- I can mentalize the installation needs from the users' perspective;6,17;0;1;0;0;1;1;1;1;1;0
+- I can evaluate different available tools for reproducibility and installations;6,5;0;0;1;0;1;1;1;1;0;1
+- I can make an installation instruction for potential users;8,5;0;0;0;0;1;0;1;0;1;3
+- I know the most important sections for a full public README;9,67;0;0;0;0;0;0;0;0;2;4
+- I can make citation info;9,17;0;0;0;0;0;0;0;1;3;2
+- I know how to find instruction of going to more sophisticated documentation;8;0;0;0;0;0;1;1;2;1;1
+;;;;;;;;;;;
+;;;;;;;;;;;
+;;;;;;;;;;;
+Question 4;;;;;;;;;;;
+Date;2024-11-22;;;;;;;;;;
+Session;1;;;;;;;;;;
+Type;scales;;;;;;;;;;
+Question;I am confidant that...;;;;;;;;;;
+Respondents;6;;;;;;;;;;
+;;;;;;;;;;;
+Choices;Weighted average;1;2;3;4;5;6;7;8;9;10
+The course met my expectations;9,33;0;0;0;0;0;0;0;1;2;3
+I learned a lot of new things about software development as a process;10;0;0;0;0;0;0;0;0;0;6
+I will use what I learned in my projects;9,83;0;0;0;0;0;0;0;0;1;5

@@ -1,0 +1,37 @@
+2026-05-06 09:11:10 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/tdd/
+	
+2026-05-06 09:14:30 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/tdd/#2-what-is-test-driven-development
+	
+2026-05-06 09:15:37 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	We are reading https://uppmax.github.io/programming_formalisms/sessions/tdd/#2-what-is-test-driven-development  .
+	
+	When done, use the Yes checkmark in Zoom, then read the next section.
+	
+	We continue when 2/3 are done :+1:
+	
+2026-05-06 09:45:42 From [Learner 1] To Richèl 'Rea-shell' Bilderbeek (direct message):
+	Hey! I am sorry. I will have to leave from 10-12. Can you perhaps put me in a group of 3?
+	
+2026-05-06 10:34:32 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	git add .
+	
+2026-05-06 10:34:38 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	git commit -m "Fix"
+	
+2026-05-06 10:34:40 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	git pull
+	
+2026-05-06 10:34:43 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	git push
+	
+2026-05-06 13:25:50 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	https://uppmax.github.io/programming_formalisms/sessions/pair_programming/
+	
+2026-05-06 15:02:28 From Richèl 'Rea-shell' Bilderbeek To Everyone:
+	If you are alone at the start of the next session, I will ruthlessly move you to another room :-)
+	
+2026-05-06 15:39:51 From Lars Eklund To Everyone:
+	https://www.menti.com/alhqcfbz16nn
+	
