@@ -1,0 +1,7 @@
+learning_outcome,is_richel,mean
+I can methodically optimize the runtime speed of my code,TRUE,3.8
+I am able to distinguish bad from good advice regarding runtime speed optimization,TRUE,4
+I can create a runtime speed profile,TRUE,4.4
+I can put the code of a project into a Python package,TRUE,4.4
+I can upload my Python package on PyPI,TRUE,4.4
+I can read a runtime speed profile,TRUE,4.8

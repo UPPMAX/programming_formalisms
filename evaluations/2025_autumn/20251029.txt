@@ -1,0 +1,15 @@
+R,I can put the code of a project into a Python package,4,4,5,5,4
+R,I can upload my Python package on PyPI,4,4,5,5,4
+R,I can methodically optimize the runtime speed of my code,3,4,4,4,4
+R,I can create a runtime speed profile,5,4,5,4,4
+R,I can read a runtime speed profile,5,5,5,5,4
+R,I am able to distinguish bad from good advice regarding runtime speed optimization,4,4,3,4,5
+B,I can mentalize the installation needs from the users' perspective,3,4,5,4,5
+B,I can initialize a new project,4,5,5,4,3
+B,I know the most important sections for a full public README,5,5,4,3,4
+B,I can make an installation instruction for potential users,3,4,4,5
+B,I can make citation info,3,3,3,4
+B,I know how to find instruction of going to more sophisticated documentation 
+U,The course met my expectations,2,4,2,4
+U,I learned a lot of new things about software development as a process,5,5,5,5,4
+U,I will use what I learned in my projects,5,5,5,4,5

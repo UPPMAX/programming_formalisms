@@ -1,0 +1,159 @@
+﻿Question 1,
+Date (UTC),2026-05-08
+Session,1
+Type,open
+Question,What helped us learn
+Respondents,14
+,
+Responses,Upvotes
+The interactive exercises were most helpful (entire week),0
+Little groups,0
+"Again, the pair sessions were great.",0
+Looking at the GitHub workflows and reflecting over how we worked before and now.,0
+"Working together, have discussions and Q&A. I think it helps to keep attention and engage participants.",0
+The break down in theory and practice sessions was very helpful. It helps refocusing and not getting too distracted.,0
+"A lot of interesting colleagues, great exercise design and good discussion and peer review helped.",0
+Have a general idea of how the package should be from the beginning,0
+The good atmosphere on the course. Both teacher and student were vey nice and friendly and it felt liek a safe environment to make mistakes and really ask questions. It made me lear a lot!,0
+I think short intensive readthroughs+demos combined with hands on exercises worked really well.,0
+The interaction with other students (entire week),0
+Richèl,0
+Working in pairs,0
+"Little theory, lots of hands on",0
+"What helped us learn was the practical work in VS Code, the step-by-step exercises, and the support from teachers and classmates.",0
+I like working in breakout rooms! Changing partners was helpful. I like the quick overview together and then working on it independently/in pairs. Detailed and clear exercises were great to work on,0
+"The small groups were helpful to meet other people and get different good practices from different people, to then teach them to the next person!",0
+"Listening through the lectures today; For the entire week, from some lectures and some discussions in the breakout rooms. Overall the documentation of the course is good and I'll be relooking it!",0
+The slow pace,0
+"- Teachers' explanation of concepts before breakout room labs
+- breakout room labs
+- Wrap-ups after breakout room labs
+- Breakout room labs themselves
+- Switching partners in teams.",0
+Interactive exercises with reflexions after that.,0
+interacting with different people,0
+The teachers were very nice!,0
+,
+,
+,
+Question 2,
+Date (UTC),2026-05-08
+Session,1
+Type,open
+Question,What held us back
+Respondents,13
+,
+Responses,Upvotes
+Long lectures in the afternoon tend to me a bit heavy (on a full stomach),0
+Today was a bit too much lecturing (in slow pace) and too little interactive exercises (especially after lunch),0
+Too much theory material on the second part of today (Friday). It was not interactive. We did not have time in the breakout rooms.,0
+Not sure today.,0
+"Generally, the pace of the course could be a bit faster for  me",0
+time,0
+I think the frequent schedule changes made it a little hard to follow the course timeline. Especially if one missed an hour or two somewhere.,0
+Sometimes not clear the concrete goal of an exercise,0
+"Some sessions today were a bit too dense with concepts, and I reckon some people were a bit lost at the end.",0
+"What held us back was that many concepts were completely new, especially Python packages, virtual environments, GitHub, branches, and dependencies",0
+"Everything is part of learning. So, nothing to say here.",0
+It was not hindering but it was more perceptive. A large bunch working on the same repository helped us see the challenges. of git.,0
+Fear of breaking main? XD,0
+I did not quite understand how the CI can be integrated into a github repository,0
+"Björns session was good, but a little too theory heavy...?",0
+Sticking to the schedule would have helped,0
+Some lectures are maybe too theorethycal,0
+It's from the discussions in break out rooms with some consistent partners; I guess for the course it could be set as two groups - one want to work independently and two in groups; Then it'd be good,0
+Dev branch still was very far away from main. It would have beedn good to fix it. And lern how to bring back everything together. The last exercise did not really work a,0
+Lectures going on too long without breakout rooms or asking questions of the studies. Also switching to lectures to the final bit on friday slowed a lot of the momentum working on the project,0
+,
+,
+,
+Question 3,
+Date (UTC),2026-05-08
+Session,1
+Type,open
+Question,what can we improve to help us learn better.
+Respondents,13
+,
+Responses,Upvotes
+"It would also be useful to have more time to practice, either in groups or individually, in VS Code. This would help us feel more confident and better understand the workflow.",0
+maybe less or shorter breaks,0
+HAve more interaction or exercises on the last part of this day.,0
+Include interactive exercises during the last day with documentation,0
+more theory,0
+Update Schedule if we are skipping parts/jumping ahead/changing order.,0
+The last session can be more interesting if the theory part is a little bit sorter and let more time to make the documentation,0
+Last day is too much info. Maybe first day could be a bit faste and give more time for the rest.,0
+"Maybe increase the breakout room time a bit. However, it's good enough as is.",0
+"Maybe switching the teachers earlier in the course could be helpful, so that a 'new face' does not come in at the end of the course :)",0
+As a student take this course early on in career to understand the nooks of being a computer scientist.,0
+"The course was understandable and dynamic, even for people like us who had little or no previous programming experience. The practical exercises and group support helped us follow the process better.",0
+Having all of the exercises be clear. An overview of how to work on the project earlier in the course would've been good. I would have been more confident working on main earlier!,0
+More structuring who work on what during the project implementation in the main folder,0
+have a second part of the course.... more time to keep development the project would be great,0
+"Less concepts, but possibly digging into them a bit deeper. For this, it might be good to ask participants what would they like to learn before the course, so that you can put more emphasis on that.",0
+I'd pack myself with the foundation. And relooking this course would be good source! Thanks to all the teachers!,0
+I might be easier if the sessions follow more similar format. E.g. 10 min theory + 10 min demo + 25 min exercise (+45 min exercise part 2 if needed) ..._,0
+"Maybe requiring to all of us merge branches or whether having a directory for day analysis ""Temp_learners"" which is deleted at the end of the day and other like ""Final_learners""",0
+,
+,
+,
+Question 4,
+Date (UTC),2026-05-08
+Session,1
+Type,open
+Question,How strict should we teachers be with the prerequisites? Any ideas on how to enforce your suggestion?
+Respondents,13
+,
+Responses,Upvotes
+"From my experience the students were able to follow along with the programming for the most part, so the prerequisites were good.",0
+Maybe a questionnaire on git to understand if the participant is ready.,0
+"I think it is fine to be more lax with the prerequisites, as long as this does not slow down the schedule. I think having the exercises timed was a good strategy.",0
+I would have an exercise of git push/pull in the requirements! It was very clear how to set up the git account but I think having everyone make their first doc in read me for example would be good!,0
+I did not feel that any students lacked knowledge such that they held back the course. One could have a 'test myself' with 10-20 questions ensuring that all students share the same knowledege,0
+"I think the form when applying to the course, asking about previous programming experience is a good tool.",0
+I think not to strict. It was fine. I think people had different strengths. Maybe tell the participant to practice a bit before the course. a few exercises before would bring people to the same page.,0
+"There is no need to enforce very strict prerequisites, but maybe in the introductory email there could be a couple of videos to watch if people are unsure that their level in something is high enough.",0
+I think everyone fulfilled the requirements (to my knowledge)! I think having one more task would not take too long.,0
+"I think one could be wery strict with basic prerequisities like having vscode, python and git installed, having GitHub account (even PyPi account before course?)
+Maybe less so with experience",0
+"With prerequisites, you might send some short tutorials and if we feel comfortable with to work on that e.g. git",0
+Language requirements maybe?,0
+"I think the prerequisites should be clear but not too strict. Some participants may be new to programming, but they can still learn if the course includes basic support at the beginning.",0
+It it hard to be strict I think. But perhaps have some requirements that participants should be able to do x and y with tool z. ei. Perhaps be able to use git pul and push and know what merges are,0
+"The flexibility helps in asking and answering some practical questions, as long we are learning how to write and organise a project and its code in a more professional and formal manner.",0
+"I program mostly in R and python code was not so easy but still think I did not miss anything important on the course. It is not really about writing a ""weather"" package but about the process.",0
+"As for the how to enforce. Maybe every student could be required to reply in issue with their username, create a file in ./learners and commit to it. That should still be managable before course...?",0
+,
+,
+,
+Question 5,
+Date (UTC),2026-05-08
+Session,1
+Type,open
+Question,Which session(s)/topic(s) should get more time at the cost of which session(s)/topic(s)?
+Respondents,15
+,
+Responses,Upvotes
+I would love to have more time to practice TDD.,0
+we skipped runtime/speed profile and i think that was okay,0
+development at the cost of the design document,0
+"I think the more ""check this out"" or point out interesting thing to research on your own parts can be trimmed down. For example the wiki feature is interesting, but not essential learning.",0
+Unittests could have more time and less time on how to use git on the first day (since it is a per-requisit),0
+"I think more time should be given to the sessions on VS Code, GitHub, virtual environments, dependencies, and packaging, because these topics are difficult for beginners but very important.",0
+Development session should get more time at the cost of design may be!,0
+I don't have a suggestion on it. Maybe peer testing of code between different groups to see if the packages are working.,0
+I think it was good. Lat day felt really long.,0
+I liked the idea of registred reports. But sice we did not use them it might have stuck less compared to other sessions. Perhaps remove it to discuss how to work with git and branches,0
+I think the formal testing part which we did get to would have been interesting. Maybe there could be a number of core subjects and then people vote on the additional ones at the start of the course?,0
+development,0
+"How to use an IDE or Vscode was also quite long, I think that could be a self-learning module before the course starts for those that need to refresh",0
+I really like how much time we spent on TDD and pair-programming! It was the most fun and we were also able to implement the habits we had learned earlier!,0
+I think the contents were good. Less lectures specially on Friday. More exercises and discussion in breakout rooms.,0
+"The first day theoretical sessions time could be reduced and spread over the more practical session, such testing, git workflow, and module/package building.",0
+"Maybe the modularity session was not as helpful, since it was mostly about functions. Maybe skip it and get more testing in? Or more pair programming?",0
+The first two days compared to the 3 final ones. Maybe registered report and Risks. Documentation could be usefull. Maybe a practical on containers?,0
+IDE is a prerrequisite so maybe is not so useful that part,0
+"Maybe pair programming for every lecture and not as long lectures. Also maybe a Q&A time at the end could be useful, in case something is still unclear?",0
+"TDD (creating tests in general) and CI, at the expense of documentation (it is something that one can achieve with a bit of common sense) and packaging (this might be too specific to Python)",0
+"I would allocate more time to Formal testing framework, building a new project (what files and folders should be included and why, what is a good structure of data science project, ...)",0
+Function design maybe it is already implicit in the other previous classes? idk,0
