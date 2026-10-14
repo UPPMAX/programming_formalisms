@@ -37,11 +37,11 @@ Monday    | 09:00-10:00 | Richèl Bilderbeek    |[Course introduction](sessions/
 .         |.            |.                     |.
 Tuesday   | 09:00-10:00 | Richèl Bilderbeek    |[Development introduction](sessions/development_introduction/README.md), [assert](sessions/assert/README.md)
 .         | 10:00-10:15 | .                    |Break
-.         | 10:15-11:00 | ?Dakouri Kobri       |[TDD](sessions/tdd/README.md)
+.         | 10:15-11:00 | Dakouri Kobri        |[TDD](sessions/tdd/README.md)
 .         | 11:00-11:15 | .                    |Break
-.         | 11:15-12:00 | ?Dakouri Kobri       |[TDD](sessions/tdd/README.md)
+.         | 11:15-12:00 | Dakouri Kobri        |[TDD](sessions/tdd/README.md)
 .         | 12:00-13:00 | .                    |Break
-.         | 13:00-14:00 | ?Dakouri Kobri       |[TDD](sessions/tdd/README.md)
+.         | 13:00-14:00 | Dakouri Kobri        |[TDD](sessions/tdd/README.md)
 .         | 14:00-14:15 | .                    |Break
 .         | 14:15-15:00 | Richèl Bilderbeek    |Use a symbolic debugger
 .         | 15:00-15:15 | .                    |Break
