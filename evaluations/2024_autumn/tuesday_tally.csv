@@ -1,0 +1,42 @@
+question,answer,n
+"I can create, assign and close an issue",5,8
+I can name at least three roles that are present in a team,3,1
+I can name at least three roles that are present in a team,4,5
+I can name at least three roles that are present in a team,5,2
+I can use TDD to develop functions,3,3
+I can use TDD to develop functions,4,4
+I can use TDD to develop functions,5,1
+I can use a kanban board,4,2
+I can use a kanban board,5,6
+I know how to  make a risk for a requirment,4,3
+I know how to  make a risk for a requirment,5,5
+I know the basic features of RAD (Rapid Application Development),1,1
+I know the basic features of RAD (Rapid Application Development),3,5
+I know the basic features of RAD (Rapid Application Development),4,2
+I know the major parts of a developel cycle,3,1
+I know the major parts of a developel cycle,4,5
+I know the major parts of a developel cycle,5,2
+I know the major technichal risks with a SW project,3,3
+I know the major technichal risks with a SW project,4,5
+I know where to find the 'latest' best practices,1,1
+I know where to find the 'latest' best practices,2,1
+I know where to find the 'latest' best practices,3,2
+I know where to find the 'latest' best practices,4,2
+I know where to find the 'latest' best practices,5,2
+I understand the key features of  XP (eXtreme Programming),2,1
+I understand the key features of  XP (eXtreme Programming),3,3
+I understand the key features of  XP (eXtreme Programming),4,3
+I understand the key features of  XP (eXtreme Programming),5,1
+I understand the spiral model of SDLC,3,1
+I understand the spiral model of SDLC,4,5
+I understand the spiral model of SDLC,5,2
+I understand what SDLC is,4,7
+I understand what SDLC is,5,1
+I understand why TDD is important,4,4
+I understand why TDD is important,5,4
+I understand why `assert` is important,3,4
+I understand why `assert` is important,4,3
+I understand why `assert` is important,5,1
+I understand why a kanban board is important,4,1
+I understand why a kanban board is important,5,7
+I understand why issues are important,5,8
