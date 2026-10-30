@@ -39,6 +39,7 @@ jobs:
           rm -rf docs/sessions/project_introduction/2025_bjoern
           rm -rf docs/sessions/project_start/not_used
           rm -rf docs/sessions/project_start/spring2024
+          rm -rf docs/sessions/tdd/20261014_richel/README.md
           rm -rf docs/sessions/unused
           echo "No broken links here" > docs/meeting_notes/20260903.md
 
