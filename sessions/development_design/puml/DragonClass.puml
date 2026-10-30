@@ -1,0 +1,12 @@
+@startuml
+!theme hacker
+Class Character{} 
+Class Monster{} 
+Class Dragon{} 
+Class Orc{} 
+Class Hero{}
+Character <|-- Monster
+Character <|-- Hero
+Monster <|-- Dragon
+Monster <|-- Orc
+@enduml
