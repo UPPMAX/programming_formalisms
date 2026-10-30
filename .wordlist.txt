@@ -1,4 +1,8 @@
 matias
+Chaitali
+Chakraborty
+Dakouri
+Kobri
 Mixins
 bugfix
 github
