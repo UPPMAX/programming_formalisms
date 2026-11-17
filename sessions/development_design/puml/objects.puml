@@ -1,0 +1,14 @@
+@startuml
+!theme hacker
+object Dragon
+object Orc
+object Hero 
+object teeth
+object fire 
+
+Dragon..>Hero:eats
+Hero...>Orc:fights
+Orc..>Hero:swings axe
+Dragon o..> "*" teeth
+Dragon o..> fire
+@enduml

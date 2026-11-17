@@ -1,0 +1,15 @@
+learning_outcome,is_richel,mean
+I know where to find the 'latest' best practices,FALSE,2.2
+I know the major technical risks with a SW project,FALSE,2.3333333333333335
+I know how to make a risk for a requirment,FALSE,2.5
+I can use TDD to develop functions,TRUE,2.8
+I understand what SDLC is,FALSE,3.2
+I know what a Feature is,FALSE,3.6666666666666665
+I understand why TDD is important,TRUE,3.8
+I can use a kanban board,TRUE,4
+I know the major parts of a development cycle,FALSE,4
+I understand how features relate to Requirements,FALSE,4
+I understand why `assert` is important,TRUE,4.2
+I can create assign and close an issue,TRUE,4.4
+I understand why a kanban board is important,TRUE,4.6
+I understand why issues are important,TRUE,4.8

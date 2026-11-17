@@ -1,0 +1,51 @@
+question,answer,n
+I can create a Big O profile of my project,1,1
+I can create a Big O profile of my project,6,1
+I can create a Big O profile of my project,8,1
+I can create a Big O profile of my project,9,1
+I can create a Big O profile of my project,10,2
+I can create a runtime speed profile,4,1
+I can create a runtime speed profile,9,1
+I can create a runtime speed profile,10,4
+I can evaluate different available tools for reproducibility and installations,3,1
+I can evaluate different available tools for reproducibility and installations,5,1
+I can evaluate different available tools for reproducibility and installations,6,1
+I can evaluate different available tools for reproducibility and installations,7,1
+I can evaluate different available tools for reproducibility and installations,8,1
+I can evaluate different available tools for reproducibility and installations,10,1
+I can make an installation instruction for potential users,5,1
+I can make an installation instruction for potential users,7,1
+I can make an installation instruction for potential users,9,1
+I can make an installation instruction for potential users,10,3
+I can make citation info,8,1
+I can make citation info,9,3
+I can make citation info,10,2
+I can mentalize the installation needs from the users' perspective,2,1
+I can mentalize the installation needs from the users' perspective,5,1
+I can mentalize the installation needs from the users' perspective,6,1
+I can mentalize the installation needs from the users' perspective,7,1
+I can mentalize the installation needs from the users' perspective,8,1
+I can mentalize the installation needs from the users' perspective,9,1
+I can read a runtime speed profile,7,1
+I can read a runtime speed profile,9,1
+I can read a runtime speed profile,10,4
+I know how to find instruction of going to more sophisticated documentation,6,1
+I know how to find instruction of going to more sophisticated documentation,7,1
+I know how to find instruction of going to more sophisticated documentation,8,2
+I know how to find instruction of going to more sophisticated documentation,9,1
+I know how to find instruction of going to more sophisticated documentation,10,1
+I know the most important sections for a full public README,9,2
+I know the most important sections for a full public README,10,4
+I learned a lot of new things about software development as a process,10,6
+I understand how to methodically optimize the runtime speed of my code,4,1
+I understand how to methodically optimize the runtime speed of my code,7,1
+I understand how to methodically optimize the runtime speed of my code,8,2
+I understand how to methodically optimize the runtime speed of my code,10,2
+I understand what Big O is,8,1
+I understand what Big O is,9,3
+I understand what Big O is,10,2
+I will use what I learned in my projects,9,1
+I will use what I learned in my projects,10,5
+The course met my expectations,8,1
+The course met my expectations,9,2
+The course met my expectations,10,3
