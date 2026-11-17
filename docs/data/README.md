@@ -26,4 +26,4 @@ Summer 2024|33 ([source](counts/2024_summer/README.md))                         
 Autumn 2024|23 ([source](counts/2024_autumn/README.md))                                                       |~7 (30%)
 Summer 2025|?                                                                                                 |~6
 Autumn 2025|15 ([source](counts/2025_autumn/README.md))                                                       |~6 (40%)
-Summer 2026|26 ([source](https://github.com/UPPMAX/programming_formalisms/issues/196#issuecomment-4175469826))|?
+Summer 2026|26 ([source](https://github.com/UPPMAX/programming_formalisms/issues/196#issuecomment-4175469826))|14 (54%)
